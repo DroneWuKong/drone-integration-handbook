@@ -1,6 +1,6 @@
 # Unsolved Problems in Mesh Networking & Drone Swarm Operations
 
-**What the industry claims vs. what physics actually allows**
+**The Unhandled Exceptions in Mesh Networking & Drone Swarm Operations**
 
 *Version 1.0 — March 2026*
 
