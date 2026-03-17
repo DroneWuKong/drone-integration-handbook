@@ -92,8 +92,8 @@ manufacturer documentation.
 
 ### Part 5 — Platform References
 
-16. [Orqa MRM Family](platforms/orqa/) *(restricted — available to authorized operators)*
-17. Additional platform profiles added as community contributions.
+Platform-specific profiles added as community contributions.
+See [CONTRIBUTING.md](CONTRIBUTING.md) to submit a platform profile.
 
 ---
 
