@@ -37,25 +37,35 @@ PLATFORMS = [
     ("platforms/cots/dji-agras-t50.md", 106, "DJI Agras T50"),
     ("platforms/cots/dji-flycart-30.md", 107, "DJI FlyCart 30"),
     ("platforms/cots/flyability-elios-3.md", 108, "Flyability Elios 3"),
+    ("platforms/cots/xag-p100-p150.md", 109, "XAG P100 Pro / P150"),
+    ("platforms/cots/hylio-ag-272.md", 110, "Hylio AG-272"),
+    ("platforms/cots/sensefly-ebee-x.md", 111, "senseFly eBee X"),
+    ("platforms/cots/quantum-trinity-pro.md", 112, "Quantum Systems Trinity Pro"),
+    ("platforms/cots/dji-mavic3-enterprise.md", 113, "DJI Mavic 3 Enterprise"),
+    ("platforms/cots/dji-matrice-4.md", 114, "DJI Matrice 4 Series"),
     ("platforms/blue-uas/skydio-x10.md", 201, "Skydio X10 / X10D"),
     ("platforms/blue-uas/freefly-astro.md", 202, "Freefly Astro"),
     ("platforms/blue-uas/inspired-flight-if1200a.md", 203, "Inspired Flight IF1200A"),
     ("platforms/blue-uas/teal-2.md", 204, "Teal 2"),
     ("platforms/blue-uas/parrot-anafi-usa.md", 205, "Parrot ANAFI USA"),
     ("platforms/blue-uas/wingtra-wingtraone.md", 206, "WingtraOne / WingtraRAY"),
+    ("platforms/blue-uas/ascent-aerosystems.md", 207, "Ascent Aerosystems"),
     ("platforms/open-source/holybro-x500-pixhawk6x.md", 301, "Holybro X500 V2 + Pixhawk 6X"),
     ("platforms/open-source/ardupilot-px4-reference.md", 302, "ArduPilot / PX4 General Reference"),
     ("platforms/tactical/anduril-ghost-x.md", 401, "Anduril Ghost X"),
     ("platforms/tactical/teal-black-widow.md", 402, "Teal Black Widow"),
     ("platforms/tactical/skyfish-osprey.md", 403, "Skyfish Osprey"),
     ("platforms/tactical/sifly-q12.md", 404, "SiFly Q12"),
+    ("platforms/tactical/hoverfly-livesky.md", 405, "Hoverfly LiveSky / Spectre"),
+    ("platforms/tactical/shield-ai-nova-2.md", 406, "Shield AI Nova 2"),
+    ("platforms/tactical/neros-archer.md", 407, "Neros Archer"),
 ]
 
 PLATFORM_PARTS = [
-    ("COTS", [101, 102, 103, 104, 105, 106, 107, 108]),
-    ("NDAA / Blue UAS", [201, 202, 203, 204, 205, 206]),
+    ("COTS", [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]),
+    ("NDAA / Blue UAS", [201, 202, 203, 204, 205, 206, 207]),
     ("Open-Source / Custom", [301, 302]),
-    ("Tactical / Defense", [401, 402, 403, 404]),
+    ("Tactical / Defense", [401, 402, 403, 404, 405, 406, 407]),
 ]
 
 PARTS = [
