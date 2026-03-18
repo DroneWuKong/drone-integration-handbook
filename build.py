@@ -194,7 +194,7 @@ body {{
   font-weight: 400;
 }}
 
-.site-header nav a {{
+.site-header .nav-desktop a {{
   font-family: var(--mono);
   font-size: 0.7rem;
   color: var(--text-dim);
@@ -205,7 +205,7 @@ body {{
   transition: color 0.2s;
 }}
 
-.site-header nav a:hover {{
+.site-header .nav-desktop a:hover {{
   color: var(--accent);
 }}
 
@@ -554,13 +554,91 @@ body {{
   color: var(--accent);
 }}
 
+/* ── HAMBURGER BUTTON ── */
+.menu-btn {{
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 200;
+}}
+
+.menu-btn span {{
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--text-dim);
+  margin: 4px 0;
+  transition: transform 0.25s, opacity 0.25s;
+}}
+
+.menu-btn.active span:nth-child(1) {{
+  transform: rotate(45deg) translate(4px, 4px);
+  background: var(--accent);
+}}
+
+.menu-btn.active span:nth-child(2) {{
+  opacity: 0;
+}}
+
+.menu-btn.active span:nth-child(3) {{
+  transform: rotate(-45deg) translate(4px, -4px);
+  background: var(--accent);
+}}
+
+/* ── MOBILE MENU ── */
+.mobile-menu {{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 150;
+  background: rgba(10, 10, 10, 0.97);
+  backdrop-filter: blur(16px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}}
+
+.mobile-menu.open {{
+  display: flex;
+}}
+
+.mobile-menu-link {{
+  font-family: var(--mono);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--border);
+  width: 80%;
+  text-align: center;
+  transition: color 0.2s;
+}}
+
+.mobile-menu-link:last-child {{
+  border-bottom: none;
+}}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:active {{
+  color: var(--accent);
+}}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {{
   body {{ font-size: 15px; }}
   .hero {{ padding: 4rem 1.25rem 3rem; }}
   .toc, .content {{ padding-left: 1.25rem; padding-right: 1.25rem; }}
   .site-header {{ padding: 0.75rem 1.25rem; }}
-  .site-header nav {{ display: none; }}
+  .nav-desktop {{ display: none; }}
+  .menu-btn {{ display: block; }}
   .chapter pre {{ padding: 1rem; }}
 }}
 
@@ -577,12 +655,22 @@ body {{
 
 <header class="site-header">
   <div class="logo">DRONE INTEGRATION HANDBOOK <span>v1.0</span></div>
-  <nav>
+  <nav class="nav-desktop">
     <a href="#toc">Contents</a>
     <a href="https://github.com/DroneWuKong/drone-integration-handbook">GitHub</a>
     <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md">Contribute</a>
   </nav>
+  <button class="menu-btn" id="menuBtn" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#toc" class="mobile-menu-link">Contents</a>
+  <a href="https://github.com/DroneWuKong/drone-integration-handbook" class="mobile-menu-link">GitHub</a>
+  <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md" class="mobile-menu-link">Contribute</a>
+  <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md" class="mobile-menu-link">Roadmap</a>
+</div>
 
 <div class="hero">
   <h1>The Drone Integration Handbook</h1>
@@ -625,6 +713,25 @@ body {{
 const btt = document.getElementById('btt');
 window.addEventListener('scroll', () => {{
   btt.classList.toggle('visible', window.scrollY > 600);
+}});
+
+// Mobile menu
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuBtn.addEventListener('click', () => {{
+  menuBtn.classList.toggle('active');
+  mobileMenu.classList.toggle('open');
+  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+}});
+
+// Close menu when a link is tapped
+mobileMenu.querySelectorAll('a').forEach(link => {{
+  link.addEventListener('click', () => {{
+    menuBtn.classList.remove('active');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }});
 }});
 </script>
 
