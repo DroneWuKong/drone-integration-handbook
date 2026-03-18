@@ -725,6 +725,7 @@ body {{
   <div class="logo">DRONE INTEGRATION HANDBOOK <span>v1.0</span></div>
   <nav class="nav-desktop">
     <a href="#toc">Contents</a>
+    <a href="forge.html">Forge</a>
     <a href="https://github.com/DroneWuKong/drone-integration-handbook">GitHub</a>
     <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md">Contribute</a>
   </nav>
@@ -735,6 +736,7 @@ body {{
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="#toc" class="mobile-menu-link">Contents</a>
+  <a href="forge.html" class="mobile-menu-link">Forge</a>
   <a href="https://github.com/DroneWuKong/drone-integration-handbook" class="mobile-menu-link">GitHub</a>
   <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md" class="mobile-menu-link">Contribute</a>
   <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md" class="mobile-menu-link">Roadmap</a>
@@ -817,9 +819,657 @@ mobileMenu.querySelectorAll('a').forEach(link => {{
     print("  Done.")
 
 
+def build_forge_dashboard(base_dir, output_dir):
+    """Build the Forge Mission Control dashboard page."""
+    import json
+    import glob
+
+    print("\nBuilding Forge Mission Control dashboard...")
+
+    parts_db_dir = os.path.join(base_dir, "data", "parts-db")
+
+    # ── Load all data ──
+    def load_json(filename):
+        path = os.path.join(parts_db_dir, filename)
+        if os.path.exists(path):
+            with open(path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        return []
+
+    drone_models = load_json("drone_models.json")
+    build_guides = load_json("build_guides.json")
+
+    # Count JSON category files
+    json_files = sorted(glob.glob(os.path.join(parts_db_dir, "*.json")))
+    categories = {}
+    total_parts = 0
+    for jf in json_files:
+        fname = os.path.basename(jf)
+        cat_name = fname.replace(".json", "").replace("_", " ").title()
+        with open(jf, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        count = len(data) if isinstance(data, list) else 0
+        categories[cat_name] = count
+        total_parts += count
+
+    # Count platform markdown profiles
+    platforms_dir = os.path.join(base_dir, "platforms")
+    platform_count = 0
+    platform_categories = {}
+    if os.path.isdir(platforms_dir):
+        for subdir in sorted(os.listdir(platforms_dir)):
+            subpath = os.path.join(platforms_dir, subdir)
+            if os.path.isdir(subpath):
+                md_files = [f for f in os.listdir(subpath) if f.endswith(".md")]
+                platform_categories[subdir] = len(md_files)
+                platform_count += len(md_files)
+
+    # Count handbook chapters
+    chapter_count = len(CHAPTERS)
+
+    # ── Build drone models table rows ──
+    model_rows = ""
+    for m in drone_models:
+        pid = m.get("pid", "")
+        name = m.get("name", "")
+        build_class = m.get("build_class", "").replace("_", " ").title()
+        mfr = m.get("manufacturer", "—")
+        vtype = m.get("vehicle_type", "—")
+        ndaa = m.get("ndaa_compliant", None)
+        blue = m.get("blue_uas", None)
+
+        # Status badges
+        badges = ""
+        if ndaa is True:
+            badges += '<span class="badge badge-green">NDAA</span> '
+        elif ndaa is False:
+            badges += '<span class="badge badge-red">!NDAA</span> '
+        if blue is True:
+            badges += '<span class="badge badge-blue">Blue UAS</span>'
+
+        model_rows += f"""<tr>
+          <td class="cell-mono">{pid}</td>
+          <td>{name}</td>
+          <td>{build_class}</td>
+          <td>{mfr}</td>
+          <td>{badges}</td>
+        </tr>\n"""
+
+    # ── Build category cards ──
+    cat_cards = ""
+    for cat_name, count in sorted(categories.items()):
+        cat_cards += f"""<div class="db-card">
+          <div class="db-card-count">{count}</div>
+          <div class="db-card-label">{cat_name}</div>
+        </div>\n"""
+
+    # ── Build platform breakdown ──
+    plat_breakdown = ""
+    cat_labels = {"cots": "COTS / Enterprise", "blue-uas": "NDAA / Blue UAS",
+                  "open-source": "Open-Source / Custom", "tactical": "Tactical / Defense"}
+    for subdir, count in platform_categories.items():
+        label = cat_labels.get(subdir, subdir.replace("-", " ").title())
+        plat_breakdown += f'<div class="plat-row"><span>{label}</span><span class="plat-count">{count}</span></div>\n'
+
+    # ── Forge HTML ──
+    forge_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forge — Mission Control</title>
+<meta name="description" content="Forge Mission Control — interactive dashboard for the Drone Integration Handbook parts database.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {{
+  --bg-deep: #060a0e;
+  --bg: #0a1018;
+  --bg-surface: #0f1620;
+  --bg-elevated: #141e2a;
+  --bg-card: #111a24;
+  --text: #c4d0dc;
+  --text-dim: #5a6a7a;
+  --text-bright: #e8eef4;
+  --accent: #22d3ee;
+  --accent-glow: rgba(34, 211, 238, 0.15);
+  --accent-dim: #0e7490;
+  --border: #1a2636;
+  --border-bright: #2a3a4e;
+  --green: #4ade80;
+  --red: #f87171;
+  --blue: #60a5fa;
+  --amber: #fbbf24;
+  --mono: 'JetBrains Mono', monospace;
+  --sans: 'Inter', -apple-system, sans-serif;
+}}
+
+*, *::before, *::after {{ box-sizing: border-box; margin: 0; padding: 0; }}
+
+html {{ scroll-behavior: smooth; }}
+
+body {{
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg-deep);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}}
+
+/* ── NOISE TEXTURE ── */
+body::before {{
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+}}
+
+/* ── TOP BAR ── */
+.topbar {{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(6, 10, 14, 0.88);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 1.5rem;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}}
+
+.topbar-left {{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}}
+
+.topbar-logo {{
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}}
+
+.topbar-logo span {{
+  color: var(--text-dim);
+  font-weight: 400;
+  margin-left: 0.5rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+}}
+
+.topbar-status {{
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--green);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}}
+
+.topbar-status::before {{
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--green);
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--green);
+  animation: pulse 2s ease-in-out infinite;
+}}
+
+@keyframes pulse {{
+  0%, 100% {{ opacity: 1; }}
+  50% {{ opacity: 0.4; }}
+}}
+
+.topbar-nav {{
+  display: flex;
+  gap: 1.25rem;
+}}
+
+.topbar-nav a {{
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}}
+
+.topbar-nav a:hover {{ color: var(--accent); }}
+
+/* ── LAYOUT ── */
+.forge-container {{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  position: relative;
+  z-index: 1;
+}}
+
+.forge-header {{
+  margin-bottom: 2.5rem;
+}}
+
+.forge-header h1 {{
+  font-family: var(--mono);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.25rem;
+}}
+
+.forge-header p {{
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  max-width: 600px;
+}}
+
+.forge-credit {{
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  color: var(--text-dim);
+  margin-top: 0.5rem;
+  letter-spacing: 0.03em;
+  opacity: 0.7;
+}}
+
+/* ── STAT CARDS ── */
+.stat-grid {{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}}
+
+.stat-card {{
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}}
+
+.stat-card::before {{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 100%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}}
+
+.stat-card:hover {{
+  border-color: var(--border-bright);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}}
+
+.stat-card:hover::before {{ opacity: 1; }}
+
+.stat-number {{
+  font-family: var(--mono);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}}
+
+.stat-label {{
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}}
+
+.stat-sub {{
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  margin-top: 0.5rem;
+  font-style: italic;
+}}
+
+/* ── SECTION HEADERS ── */
+.section-header {{
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}}
+
+/* ── DATABASE GRID ── */
+.db-grid {{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}}
+
+.db-card {{
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  transition: border-color 0.2s;
+}}
+
+.db-card:hover {{
+  border-color: var(--border-bright);
+}}
+
+.db-card-count {{
+  font-family: var(--mono);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-bright);
+}}
+
+.db-card-label {{
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}}
+
+/* ── PLATFORM BREAKDOWN ── */
+.plat-section {{
+  margin-bottom: 2.5rem;
+}}
+
+.plat-row {{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.8rem;
+}}
+
+.plat-row span:first-child {{
+  color: var(--text);
+}}
+
+.plat-count {{
+  font-family: var(--mono);
+  font-weight: 600;
+  color: var(--accent);
+}}
+
+/* ── MODELS TABLE ── */
+.table-wrap {{
+  overflow-x: auto;
+  margin-bottom: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}}
+
+.models-table {{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}}
+
+.models-table thead {{
+  background: var(--bg-elevated);
+}}
+
+.models-table th {{
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-bright);
+}}
+
+.models-table td {{
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}}
+
+.models-table tbody tr:hover {{
+  background: var(--bg-surface);
+}}
+
+.cell-mono {{
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}}
+
+/* ── BADGES ── */
+.badge {{
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+}}
+
+.badge-green {{ background: rgba(74,222,128,0.15); color: var(--green); }}
+.badge-red {{ background: rgba(248,113,113,0.1); color: var(--red); }}
+.badge-blue {{ background: rgba(96,165,250,0.15); color: var(--blue); }}
+
+/* ── SEARCH ── */
+.search-bar {{
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--text);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s;
+}}
+
+.search-bar::placeholder {{ color: var(--text-dim); }}
+.search-bar:focus {{ border-color: var(--accent-dim); }}
+
+/* ── FOOTER ── */
+.forge-footer {{
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+}}
+
+.forge-footer p {{
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  letter-spacing: 0.03em;
+}}
+
+.forge-footer a {{
+  color: var(--accent-dim);
+  text-decoration: none;
+}}
+
+.forge-footer a:hover {{ color: var(--accent); }}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {{
+  .topbar-nav {{ display: none; }}
+  .stat-grid {{ grid-template-columns: repeat(2, 1fr); }}
+  .db-grid {{ grid-template-columns: repeat(3, 1fr); }}
+  .forge-container {{ padding: 1.5rem 1rem 3rem; }}
+}}
+
+@media (max-width: 480px) {{
+  .stat-grid {{ grid-template-columns: 1fr; }}
+  .db-grid {{ grid-template-columns: repeat(2, 1fr); }}
+}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left">
+    <div class="topbar-logo">FORGE<span>Mission Control</span></div>
+    <div class="topbar-status">Systems Nominal</div>
+  </div>
+  <nav class="topbar-nav">
+    <a href="index.html">Handbook</a>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook">GitHub</a>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md">Contribute</a>
+  </nav>
+</div>
+
+<div class="forge-container">
+
+  <div class="forge-header">
+    <h1>Mission Control</h1>
+    <p>Interactive dashboard for the Drone Integration Handbook parts database. Vetted parts only.</p>
+    <div class="forge-credit">Architecture: Ted Strazimiri &middot; Data: Drone Integration Handbook</div>
+  </div>
+
+  <!-- STAT CARDS -->
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-number">{len(categories)}</div>
+      <div class="stat-label">Categories</div>
+      <div class="stat-sub">{total_parts:,} total parts indexed</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">{len(drone_models)}</div>
+      <div class="stat-label">Drone Models</div>
+      <div class="stat-sub">{len([m for m in drone_models if m.get('build_class','').startswith('enterprise') or m.get('build_class','').startswith('tactical')])} platforms + {len([m for m in drone_models if not m.get('build_class','').startswith('enterprise') and not m.get('build_class','').startswith('tactical')])} custom builds</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">{len(build_guides)}</div>
+      <div class="stat-label">Build Guides</div>
+      <div class="stat-sub">Step-by-step assembly &amp; config</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">{platform_count}</div>
+      <div class="stat-label">Platforms</div>
+      <div class="stat-sub">{len(platform_categories)} categories of integration profiles</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">{chapter_count}</div>
+      <div class="stat-label">Chapters</div>
+      <div class="stat-sub">Handbook reference material</div>
+    </div>
+  </div>
+
+  <!-- PARTS DATABASE BREAKDOWN -->
+  <div class="section-header">Parts Database</div>
+  <div class="db-grid">
+    {cat_cards}
+  </div>
+
+  <!-- PLATFORM BREAKDOWN -->
+  <div class="section-header">Platform Profiles</div>
+  <div class="plat-section">
+    {plat_breakdown}
+    <div class="plat-row" style="border-bottom:none;font-weight:600;">
+      <span style="color:var(--text-bright);">Total</span>
+      <span class="plat-count">{platform_count}</span>
+    </div>
+  </div>
+
+  <!-- DRONE MODELS TABLE -->
+  <div class="section-header">All Drone Models</div>
+  <input type="text" class="search-bar" id="modelSearch" placeholder="Filter models...">
+  <div class="table-wrap">
+    <table class="models-table" id="modelsTable">
+      <thead>
+        <tr>
+          <th>PID</th>
+          <th>Model</th>
+          <th>Class</th>
+          <th>Manufacturer</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        {model_rows}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="forge-footer">
+    <p>
+      <a href="index.html">Read the Handbook</a> &middot;
+      <a href="https://github.com/DroneWuKong/drone-integration-handbook">Source on GitHub</a> &middot;
+      CC BY-SA 4.0
+    </p>
+    <p style="margin-top:0.5rem;">Built in the field. With real data. On real hardware.</p>
+  </div>
+
+</div>
+
+<script>
+// Table search/filter
+const search = document.getElementById('modelSearch');
+const table = document.getElementById('modelsTable');
+const rows = table.querySelectorAll('tbody tr');
+
+search.addEventListener('input', () => {{
+  const q = search.value.toLowerCase();
+  rows.forEach(row => {{
+    const text = row.textContent.toLowerCase();
+    row.style.display = text.includes(q) ? '' : 'none';
+  }});
+}});
+</script>
+
+</body>
+</html>"""
+
+    os.makedirs(output_dir, exist_ok=True)
+    forge_path = os.path.join(output_dir, "forge.html")
+    with open(forge_path, "w", encoding="utf-8") as f:
+        f.write(forge_html)
+
+    print(f"  Output: {forge_path}")
+    print(f"  Size: {os.path.getsize(forge_path):,} bytes")
+    print(f"  Stats: {len(categories)} categories, {len(drone_models)} models, {len(build_guides)} guides, {platform_count} platforms, {chapter_count} chapters")
+    print("  Forge dashboard done.")
+
+
 if __name__ == "__main__":
     # Resolve paths relative to this script's location
     script_dir = os.path.dirname(os.path.abspath(__file__))
     base_dir = script_dir  # chapters are in subdirs of repo root
     output_dir = os.path.join(script_dir, "site")
     build_site(base_dir, output_dir)
+    build_forge_dashboard(base_dir, output_dir)
