@@ -1,0 +1,1614 @@
+[
+  {
+    "pid": "MDL-1000",
+    "name": "Apex Freestyle 5\"",
+    "description": "The quintessential 5-inch freestyle quad. Built around the proven TBS Source One V6 frame and Axisflying 2207.5 motors on 6S, this build delivers explosive power and predictable handling for flips, rolls, power loops, and proximity flying. HAKRC F722 stack keeps things simple with a single-board FC+ESC solution. Analog 5.8GHz video keeps weight down and latency minimal. ELRS 2.4GHz for rock-solid control link. The go-to build for pilots stepping up from beginner quads or building their first custom rig.",
+    "vehicle_type": "quad",
+    "build_class": "5inch_freestyle",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [
+        {
+          "pid": "FRM-1005"
+        }
+      ],
+      "motors": [
+        {
+          "pid": "MTR-1000",
+          "quantity": 4
+        }
+      ],
+      "stacks": [
+        {
+          "pid": "STK-1000"
+        }
+      ],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [
+        {
+          "pid": "PRP-1009",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1009",
+          "quantity": 2
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1001"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1028"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1000"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1017"
+        }
+      ],
+      "gps_modules": [],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-1001",
+    "name": "Venom Racer 5\"",
+    "description": "Purpose-built 5-inch race quad optimized for gate speed and low lap times. The HGLRC MY5 frame sheds every unnecessary gram while maintaining crash durability. High-KV 2207 2120KV motors paired with a 60A ESC deliver instant throttle response on 6S. Separate FC and ESC allow individual replacement after race crashes. Lightweight analog video system and RadioMaster ELRS nano receiver keep the all-up weight under 300g dry. Built for competitive MultiGP and FAI racing.",
+    "vehicle_type": "quad",
+    "build_class": "5inch_racing",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [
+        {
+          "pid": "FRM-1003"
+        }
+      ],
+      "motors": [
+        {
+          "pid": "MTR-1003",
+          "quantity": 4
+        }
+      ],
+      "stacks": [],
+      "flight_controllers": [
+        {
+          "pid": "FC-1000"
+        }
+      ],
+      "escs": [
+        {
+          "pid": "ESC-1001"
+        }
+      ],
+      "propellers": [
+        {
+          "pid": "PRP-1010",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1008",
+          "quantity": 3
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1002"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1030"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1016"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1017"
+        }
+      ],
+      "gps_modules": [],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-1002",
+    "name": "Cloudwalker HD 5\"",
+    "description": "Premium 5-inch HD freestyle build designed for pilots who want crystal-clear digital video without sacrificing flight performance. The FlyFishRC Volador II VX5 frame is specifically engineered for DJI O4/Walksnail camera mounting. Axisflying Argus ECO stack pairs an F4 FC with a 60A ESC for reliable power delivery. Walksnail Avatar HD Pro camera feeds stunning 1080p video to your goggles. True diversity ELRS receiver ensures bulletproof link in urban and mountain environments. This is the build for YouTube-quality FPV footage.",
+    "vehicle_type": "quad",
+    "build_class": "5inch_freestyle",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [
+        {
+          "pid": "FRM-1009"
+        }
+      ],
+      "motors": [
+        {
+          "pid": "MTR-1000",
+          "quantity": 4
+        }
+      ],
+      "stacks": [
+        {
+          "pid": "STK-1005"
+        }
+      ],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [
+        {
+          "pid": "PRP-1007",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1009",
+          "quantity": 2
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1019"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1010"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1008"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1009"
+        }
+      ],
+      "gps_modules": [],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-1003",
+    "name": "Horizon Scout 7\" Long Range",
+    "description": "7-inch long range explorer built for 20+ minute flights and 10+ km range. VCI Hobby ARES 2808 1350KV motors spin efficient 7-inch props at low RPM for maximum flight time on 6S Li-Ion packs. H743 flight controller runs GPS Rescue for automatic return-to-home on signal loss. Flywoo GOKU GPS module provides fast satellite fix. ELRS true diversity receiver on 2.4GHz ensures control link integrity at distance. HDZero video system delivers low-latency digital video. This is a serious long range platform for pilots exploring mountain ranges, coastlines, and backcountry terrain.",
+    "vehicle_type": "quad",
+    "build_class": "7inch_long_range",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [],
+      "motors": [
+        {
+          "pid": "MTR-1001",
+          "quantity": 4
+        }
+      ],
+      "stacks": [],
+      "flight_controllers": [
+        {
+          "pid": "FC-1003"
+        }
+      ],
+      "escs": [
+        {
+          "pid": "ESC-1002"
+        }
+      ],
+      "propellers": [
+        {
+          "pid": "PRP-1008",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1000",
+          "quantity": 2
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1001"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1010"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1008"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1005"
+        }
+      ],
+      "gps_modules": [
+        {
+          "pid": "GPS-1009"
+        }
+      ],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-1004",
+    "name": "Voyager LR6 6\" Cruiser",
+    "description": "Efficient 6-inch long range cruiser optimized for smooth cinematic flights and maximum endurance. Lumenier 2307 JohnnyFPV V3 Pro motors deliver silky-smooth throttle response at low KV, perfect for cinematic orbits and long glides. 6S Li-Ion battery pack provides 15-25 minute flight times depending on flying style. GPS rescue and ELRS long range link provide safety margin for flights beyond visual line of sight. Designed for pilots who prioritize flight time and video quality over acrobatic performance.",
+    "vehicle_type": "quad",
+    "build_class": "6inch_long_range",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [],
+      "motors": [
+        {
+          "pid": "MTR-1006",
+          "quantity": 4
+        }
+      ],
+      "stacks": [],
+      "flight_controllers": [
+        {
+          "pid": "FC-1008"
+        }
+      ],
+      "escs": [
+        {
+          "pid": "ESC-1000"
+        }
+      ],
+      "propellers": [
+        {
+          "pid": "PRP-1031",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1020",
+          "quantity": 2
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1001"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1028"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1008"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1009"
+        }
+      ],
+      "gps_modules": [
+        {
+          "pid": "GPS-1012"
+        }
+      ],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-1005",
+    "name": "Atlas X 10\" CineLifter",
+    "description": "Heavy-lift 10-inch cinelifter designed to carry full-size cinema cameras (GoPro, Sony A6000, RED Komodo) for professional aerial cinematography. iFlight XING2 3110 motors at 900KV provide massive torque on 6S while maintaining efficiency. Lumenier Siege 80A ESC handles the sustained high-current draw of large propellers under camera payload. Lumenier LUX H743 FC with dual IMU provides rock-solid stabilization. 9-inch MacroQuad propellers generate enormous thrust with low noise. This platform is for commercial filmmakers and cinema FPV operators who need reliability and payload capacity above all else.",
+    "vehicle_type": "quad",
+    "build_class": "10inch_cinelifter",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [],
+      "motors": [
+        {
+          "pid": "MTR-1027",
+          "quantity": 4
+        }
+      ],
+      "stacks": [],
+      "flight_controllers": [
+        {
+          "pid": "FC-1009"
+        }
+      ],
+      "escs": [
+        {
+          "pid": "ESC-1007"
+        }
+      ],
+      "propellers": [
+        {
+          "pid": "PRP-1002",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1029",
+          "quantity": 2
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1001"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1028"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1025"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1005"
+        }
+      ],
+      "gps_modules": [
+        {
+          "pid": "GPS-1006"
+        }
+      ],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-1006",
+    "name": "Stealth Hawk 5\" Premium",
+    "description": "No-compromise premium 5-inch freestyle build using top-tier components throughout. Orqa QuadCore H7 FC with ICM42688 IMU for the cleanest gyro data and fastest PID loop processing. Holybro Tekko32 65A AM32 ESC provides headroom for aggressive flying with zero desync risk. Axisflying 2207.5 motors deliver consistent performance session after session. HDZero Freestyle V2 digital video for the lowest latency HD feed available. True diversity ELRS ensures control link never drops. Built for experienced pilots who demand the absolute best from every component.",
+    "vehicle_type": "quad",
+    "build_class": "5inch_freestyle",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [
+        {
+          "pid": "FRM-1005"
+        }
+      ],
+      "motors": [
+        {
+          "pid": "MTR-1000",
+          "quantity": 4
+        }
+      ],
+      "stacks": [],
+      "flight_controllers": [
+        {
+          "pid": "FC-1008"
+        }
+      ],
+      "escs": [
+        {
+          "pid": "ESC-1002"
+        }
+      ],
+      "propellers": [
+        {
+          "pid": "PRP-1007",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1009",
+          "quantity": 2
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1001"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1010"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1008"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1009"
+        }
+      ],
+      "gps_modules": [],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-1007",
+    "name": "First Flight 5\" Beginner",
+    "description": "Budget-friendly 5-inch freestyle build designed as the ideal first custom drone. Every component is chosen for reliability, ease of assembly, and forgiveness during the learning curve. HAKRC F722 stack simplifies wiring with a single FC+ESC board. Foxeer Micro Cat 4 camera and SpeedyBee TX800 VTX provide solid analog video at a fraction of digital system costs. Lower-KV 1960KV motors on 6S give smooth, predictable power delivery that won't catch beginners off guard. Total build cost under $250 USD excluding battery and radio equipment. Perfect for pilots graduating from simulators to real flight.",
+    "vehicle_type": "quad",
+    "build_class": "5inch_freestyle",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [
+        {
+          "pid": "FRM-1005"
+        }
+      ],
+      "motors": [
+        {
+          "pid": "MTR-1000",
+          "quantity": 4
+        }
+      ],
+      "stacks": [
+        {
+          "pid": "STK-1000"
+        }
+      ],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [
+        {
+          "pid": "PRP-1009",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1008",
+          "quantity": 2
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1001"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1028"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1000"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1017"
+        }
+      ],
+      "gps_modules": [],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-1008",
+    "name": "CineMaster 7\" Cinema",
+    "description": "7-inch cinematic platform tuned for buttery-smooth footage. T-Motor VELOX V2808 cinematic motors at 1300KV deliver ultra-smooth throttle response with minimal vibration, critical for jello-free video. Lumenier Siege 80A ESC provides ample current headroom for the larger props. Gemfan Hurricane 7050 tri-blade props balanced for cinema work. The entire build philosophy prioritizes low vibration, smooth power delivery, and long flight times over raw acrobatic performance. Ideal for real estate, commercial, and nature cinematography shoots.",
+    "vehicle_type": "quad",
+    "build_class": "7inch_cinematic",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [],
+      "motors": [
+        {
+          "pid": "MTR-1102",
+          "quantity": 4
+        }
+      ],
+      "stacks": [],
+      "flight_controllers": [
+        {
+          "pid": "FC-1003"
+        }
+      ],
+      "escs": [
+        {
+          "pid": "ESC-1007"
+        }
+      ],
+      "propellers": [
+        {
+          "pid": "PRP-1030",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1007",
+          "quantity": 2
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1001"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1028"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1008"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1009"
+        }
+      ],
+      "gps_modules": [
+        {
+          "pid": "GPS-1009"
+        }
+      ],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-1009",
+    "name": "ThunderBolt 5\" Power",
+    "description": "High-power 5-inch build for pilots who want maximum thrust-to-weight ratio. VCI Hobby Yuki Savage 2207 2120KV motors paired with Holybro Tekko32 65A AM32 ESC deliver explosive acceleration and instant throttle response. Higher KV motors on 6S push the power envelope, requiring a beefy ESC to match. Orqa QuadCore H7 FC processes the fastest PID loops for locked-in handling at extreme speeds. This is the build for power loops, juicy flicks, and aggressive proximity flying where raw power makes the difference.",
+    "vehicle_type": "quad",
+    "build_class": "5inch_freestyle",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [
+        {
+          "pid": "FRM-1003"
+        }
+      ],
+      "motors": [
+        {
+          "pid": "MTR-1003",
+          "quantity": 4
+        }
+      ],
+      "stacks": [],
+      "flight_controllers": [
+        {
+          "pid": "FC-1008"
+        }
+      ],
+      "escs": [
+        {
+          "pid": "ESC-1002"
+        }
+      ],
+      "propellers": [
+        {
+          "pid": "PRP-1010",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1009",
+          "quantity": 3
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1002"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1030"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1016"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1017"
+        }
+      ],
+      "gps_modules": [],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-1010",
+    "name": "Nomad Explorer 7\" Ultra LR",
+    "description": "Ultra long range 7-inch explorer built for maximum distance and flight time. EMAX ECO II 2807 1300KV motors spin 7-inch bi-blade props at the efficiency sweet spot for 6S Li-Ion packs. Lumenier NAV 6000mAh 6S 18650 Li-Ion battery provides 25-35 minute flight times in cruise. GPS rescue with compass-equipped Flywoo GOKU Pro module ensures safe return from beyond visual range. ELRS true diversity 2.4GHz receiver maintains control link at 15+ km. Every component choice prioritizes range and endurance over performance. For mountain crossings, coastline exploration, and pushing the boundaries of what a quad can reach.",
+    "vehicle_type": "quad",
+    "build_class": "7inch_long_range",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [],
+      "motors": [
+        {
+          "pid": "MTR-1048",
+          "quantity": 4
+        }
+      ],
+      "stacks": [],
+      "flight_controllers": [
+        {
+          "pid": "FC-1003"
+        }
+      ],
+      "escs": [
+        {
+          "pid": "ESC-1005"
+        }
+      ],
+      "propellers": [
+        {
+          "pid": "PRP-1018",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1020",
+          "quantity": 2
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1001"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1028"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1008"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1005"
+        }
+      ],
+      "gps_modules": [
+        {
+          "pid": "GPS-1012"
+        }
+      ],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-1011",
+    "name": "Phantom 6\" Digital LR",
+    "description": "Premium 6-inch digital long range cruiser combining HD video quality with extended range capability. Ethix Mr Steele Stout 2307 V5 1950KV motors provide the perfect balance of efficiency and responsiveness for 6-inch props on 6S. HDZero Freestyle V2 digital video delivers the lowest-latency HD feed for confident flying at distance. Compass-equipped GPS module enables position-aware features and GPS rescue. iFlight BLITZ H743 FC handles GPS processing, RPM filtering, and HD OSD simultaneously without breaking a sweat. For pilots who want the best video quality on a long range platform.",
+    "vehicle_type": "quad",
+    "build_class": "6inch_long_range",
+    "image_file": "",
+    "pdf_file": "",
+    "relations": {
+      "frames": [],
+      "motors": [
+        {
+          "pid": "MTR-1092",
+          "quantity": 4
+        }
+      ],
+      "stacks": [],
+      "flight_controllers": [
+        {
+          "pid": "FC-1003"
+        }
+      ],
+      "escs": [
+        {
+          "pid": "ESC-1001"
+        }
+      ],
+      "propellers": [
+        {
+          "pid": "PRP-1051",
+          "quantity": 4
+        }
+      ],
+      "batteries": [
+        {
+          "pid": "BAT-1000",
+          "quantity": 2
+        }
+      ],
+      "fpv_cameras": [
+        {
+          "pid": "CAM-1001"
+        }
+      ],
+      "video_transmitters": [
+        {
+          "pid": "VTX-1010"
+        }
+      ],
+      "receivers": [
+        {
+          "pid": "RCV-1008"
+        }
+      ],
+      "antennas": [
+        {
+          "pid": "ANT-1009"
+        }
+      ],
+      "gps_modules": [
+        {
+          "pid": "GPS-1012"
+        }
+      ],
+      "capacitors": [],
+      "buzzers": []
+    }
+  },
+  {
+    "pid": "MDL-2000",
+    "name": "DJI Matrice 350 RTK",
+    "description": "DJI flagship enterprise platform. Triple gimbal, 55-min flight time, DJI O3 Enterprise transmission (2.4/5.8 GHz, 20 km), IP55. Supports Zenmuse H30/H30T, L2, L1, P1 payloads. E-Port for companion computers. NOT NDAA compliant.",
+    "vehicle_type": "quad",
+    "build_class": "enterprise_cots",
+    "image_file": "",
+    "pdf_file": "",
+    "platform_category": "cots",
+    "manufacturer": "DJI",
+    "ndaa_compliant": false,
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": 55,
+    "max_payload_kg": 2.73,
+    "rf_bands": [
+      "2.4 GHz",
+      "5.8 GHz"
+    ],
+    "video_system": "DJI O3 Enterprise",
+    "thermal_capable": true,
+    "thermal_sensor": "Via Zenmuse H30T/H20T (640x512)",
+    "sdk_available": true,
+    "handbook_profile": "platforms/cots/dji-m350-rtk.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2001",
+    "name": "DJI Matrice 30T",
+    "description": "DJI mid-tier enterprise drone. Integrated quad-sensor (48MP zoom, 12MP wide, 640x512 thermal, LRF). 41-min flight, DJI O3 Enterprise, IP55. DJI Dock compatible. NOT NDAA compliant.",
+    "vehicle_type": "quad",
+    "build_class": "enterprise_cots",
+    "image_file": "",
+    "pdf_file": "",
+    "platform_category": "cots",
+    "manufacturer": "DJI",
+    "ndaa_compliant": false,
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": 41,
+    "max_payload_kg": 0,
+    "rf_bands": [
+      "2.4 GHz",
+      "5.8 GHz"
+    ],
+    "video_system": "DJI O3 Enterprise",
+    "thermal_capable": true,
+    "thermal_sensor": "640x512 integrated",
+    "sdk_available": true,
+    "handbook_profile": "platforms/cots/dji-m30t.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2002",
+    "name": "Autel EVO MAX 4T V2",
+    "description": "Autel flagship enterprise. Quad-sensor gimbal (50MP wide, 48MP zoom 10x optical, 640x512 thermal, LRF 1200m). SkyLink 3.0 (900/2.4/5.2/5.8 GHz), GPS-denied SLAM flight, A-Mesh drone-to-drone networking, AES-256, 42-min flight. XE variant is NDAA compliant.",
+    "vehicle_type": "quad",
+    "build_class": "enterprise_cots",
+    "image_file": "",
+    "pdf_file": "",
+    "platform_category": "cots",
+    "manufacturer": "Autel Robotics",
+    "ndaa_compliant": "XE variant only",
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": 42,
+    "max_payload_kg": 0,
+    "rf_bands": [
+      "900 MHz",
+      "2.4 GHz",
+      "5.2 GHz",
+      "5.8 GHz"
+    ],
+    "video_system": "SkyLink 3.0",
+    "thermal_capable": true,
+    "thermal_sensor": "640x512 integrated",
+    "sdk_available": true,
+    "handbook_profile": "platforms/cots/autel-evo-max-4t.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2003",
+    "name": "Skydio X10D",
+    "description": "Skydio defense variant. Best-in-class AI autonomy, NVIDIA Jetson Orin, six 32MP nav cameras, FLIR Boson+ 640x512 thermal. GPS-denied flight, NightSense zero-light ops. Open MAVLink, RAS-A compliant. Blue UAS listed. Made in USA.",
+    "vehicle_type": "quad",
+    "build_class": "enterprise_blue_uas",
+    "image_file": "",
+    "pdf_file": "",
+    "platform_category": "blue_uas",
+    "manufacturer": "Skydio",
+    "ndaa_compliant": true,
+    "blue_uas": true,
+    "firmware": "proprietary (Skydio Autonomy)",
+    "mavlink_support": true,
+    "max_flight_time_min": 40,
+    "max_payload_kg": 0.34,
+    "rf_bands": [
+      "5G/LTE",
+      "Doodle Labs mesh"
+    ],
+    "video_system": "Encrypted AES-256",
+    "thermal_capable": true,
+    "thermal_sensor": "FLIR Boson+ 640x512",
+    "sdk_available": true,
+    "handbook_profile": "platforms/blue-uas/skydio-x10.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2004",
+    "name": "Freefly Astro",
+    "description": "American-made PX4 mapping/inspection drone. Auterion Skynode FC, triple-redundant IMU, MAVLink native, Smart Dovetail payload swap, 61MP Sony LR1, Doodle Labs radio, LTE. Blue UAS certified. 25-min flight, 2 lb payload. Made in USA.",
+    "vehicle_type": "quad",
+    "build_class": "enterprise_blue_uas",
+    "image_file": "",
+    "pdf_file": "",
+    "platform_category": "blue_uas",
+    "manufacturer": "Freefly Systems",
+    "ndaa_compliant": true,
+    "blue_uas": true,
+    "firmware": "Auterion Enterprise PX4",
+    "mavlink_support": true,
+    "max_flight_time_min": 25,
+    "max_payload_kg": 0.9,
+    "rf_bands": [
+      "Doodle Labs",
+      "LTE"
+    ],
+    "video_system": "Doodle Labs + LTE",
+    "thermal_capable": "via payload",
+    "thermal_sensor": "via payload adapter",
+    "sdk_available": true,
+    "handbook_profile": "platforms/blue-uas/freefly-astro.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2005",
+    "name": "Inspired Flight IF1200A",
+    "description": "Heavy-lift hexacopter built to USAF standards. ArduPilot firmware, MAVLink, 19.1 lb payload (Part 107), 43-min flight, SAFE motor-out redundancy. Universal payload interface for LiDAR, EO/IR, Phase One. Blue UAS, NDAA, Green UAS certified. Made in USA.",
+    "vehicle_type": "hex",
+    "build_class": "enterprise_blue_uas",
+    "image_file": "",
+    "pdf_file": "",
+    "platform_category": "blue_uas",
+    "manufacturer": "Inspired Flight Technologies",
+    "ndaa_compliant": true,
+    "blue_uas": true,
+    "firmware": "ArduPilot",
+    "mavlink_support": true,
+    "max_flight_time_min": 43,
+    "max_payload_kg": 8.66,
+    "rf_bands": [
+      "Doodle Labs / NDAA radio"
+    ],
+    "video_system": "Via GS-ONE GCS",
+    "thermal_capable": "via payload",
+    "thermal_sensor": "via payload (FLIR, L3Harris)",
+    "sdk_available": false,
+    "handbook_profile": "platforms/blue-uas/inspired-flight-if1200a.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2006",
+    "name": "Teal 2",
+    "description": "Compact ISR drone optimized for night ops. FLIR Hadron 640R (640x512 radiometric thermal, 16MP EO). 30-min flight, 2.75 lb, AES-256 encrypted, modular/field-repairable. Blue UAS certified. Made in USA.",
+    "vehicle_type": "quad",
+    "build_class": "tactical_blue_uas",
+    "image_file": "",
+    "pdf_file": "",
+    "platform_category": "blue_uas",
+    "manufacturer": "Teal Drones / Red Cat Holdings",
+    "ndaa_compliant": true,
+    "blue_uas": true,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": 30,
+    "max_payload_kg": 0,
+    "rf_bands": [
+      "2.4 GHz"
+    ],
+    "video_system": "AES-256 encrypted ISM",
+    "thermal_capable": true,
+    "thermal_sensor": "FLIR Hadron 640R (640x512)",
+    "sdk_available": false,
+    "handbook_profile": "platforms/blue-uas/teal-2.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2007",
+    "name": "Parrot ANAFI USA",
+    "description": "Ultra-light enterprise drone (500g). Triple sensor (32x zoom, wide, FLIR Boson 320 thermal). 32-min flight. GOV (WiFi) and MIL (Microhard radio) variants. Blue UAS listed. NDAA compliant. French-designed.",
+    "vehicle_type": "quad",
+    "build_class": "enterprise_blue_uas",
+    "image_file": "",
+    "pdf_file": "",
+    "platform_category": "blue_uas",
+    "manufacturer": "Parrot",
+    "ndaa_compliant": true,
+    "blue_uas": true,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": 32,
+    "max_payload_kg": 0,
+    "rf_bands": [
+      "WiFi 802.11 a/b/g/n",
+      "Microhard (MIL)"
+    ],
+    "video_system": "WiFi / Microhard",
+    "thermal_capable": true,
+    "thermal_sensor": "FLIR Boson 320",
+    "sdk_available": true,
+    "handbook_profile": "platforms/blue-uas/parrot-anafi-usa.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2008",
+    "name": "Anduril Ghost X",
+    "description": "Medium-range military reconnaissance drone. Helicopter-type design, 80-90 min endurance, ~15 mi range, 11 kg payload. Anduril Lattice AI autonomy. Blue UAS. Combat-proven in Ukraine. Govt/mil procurement only. Made in USA.",
+    "vehicle_type": "helicopter",
+    "build_class": "tactical_defense",
+    "image_file": "",
+    "pdf_file": "",
+    "platform_category": "tactical",
+    "manufacturer": "Anduril Industries",
+    "ndaa_compliant": true,
+    "blue_uas": true,
+    "firmware": "Anduril Lattice",
+    "mavlink_support": false,
+    "max_flight_time_min": 90,
+    "max_payload_kg": 11,
+    "rf_bands": [
+      "classified"
+    ],
+    "video_system": "Lattice integrated",
+    "thermal_capable": true,
+    "thermal_sensor": "EO/IR mission kit",
+    "sdk_available": false,
+    "handbook_profile": "platforms/tactical/anduril-ghost-x.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2009",
+    "name": "Holybro X500 V2 + Pixhawk 6X",
+    "description": "Reference PX4/ArduPilot development platform. Carbon fiber, no-solder assembly, Pixhawk 6X (STM32H753, triple IMU, Ethernet), M10 GPS, SiK telemetry. Mounts for RPi, Jetson, RealSense. ~18 min flight. NOT NDAA compliant.",
+    "vehicle_type": "quad",
+    "build_class": "development",
+    "image_file": "",
+    "pdf_file": "",
+    "platform_category": "open_source",
+    "manufacturer": "Holybro",
+    "ndaa_compliant": false,
+    "blue_uas": false,
+    "firmware": "PX4 / ArduPilot",
+    "mavlink_support": true,
+    "max_flight_time_min": 18,
+    "max_payload_kg": 1.5,
+    "rf_bands": [
+      "915 MHz (SiK)",
+      "2.4 GHz (RC)"
+    ],
+    "video_system": "DIY (add your own)",
+    "thermal_capable": false,
+    "thermal_sensor": "N/A",
+    "sdk_available": true,
+    "handbook_profile": "platforms/open-source/holybro-x500-pixhawk6x.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2010",
+    "name": "DJI Agras T50",
+    "description": "Agricultural spraying/spreading drone. Coaxial twin-rotor, 40 kg spray / 50 kg spread payload. Dual atomizing system, phased array radar, 52 acres/hr. D-RTK cm-level positioning. DJI Terra mapping. NOT NDAA compliant.",
+    "vehicle_type": "quad_coaxial",
+    "build_class": "agriculture",
+    "platform_category": "cots",
+    "manufacturer": "DJI",
+    "ndaa_compliant": false,
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": null,
+    "max_payload_kg": 50,
+    "rf_bands": [
+      "2.4 GHz",
+      "5.8 GHz"
+    ],
+    "thermal_capable": false,
+    "handbook_profile": "platforms/cots/dji-agras-t50.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2011",
+    "name": "DJI FlyCart 30",
+    "description": "Heavy-lift delivery drone. 30 kg (dual battery) / 40 kg (single battery). Cargo + winch modes. 28 km range empty, 16 km loaded. DJI O3, IP55, ADS-B, integrated parachute. FAA approved with Remote ID. NOT NDAA compliant.",
+    "vehicle_type": "quad_octo",
+    "build_class": "delivery",
+    "platform_category": "cots",
+    "manufacturer": "DJI",
+    "ndaa_compliant": false,
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": 29,
+    "max_payload_kg": 40,
+    "rf_bands": [
+      "2.4 GHz",
+      "5.8 GHz"
+    ],
+    "thermal_capable": false,
+    "handbook_profile": "platforms/cots/dji-flycart-30.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2012",
+    "name": "Flyability Elios 3",
+    "description": "Confined space inspection drone. Collision-tolerant carbon cage. LiDAR SLAM navigation, 4K + thermal, GPS-denied. Recovers from upside-down flips. For tanks, boilers, mines, tunnels. 12-17 min flight. Swiss-made.",
+    "vehicle_type": "quad_caged",
+    "build_class": "confined_space",
+    "platform_category": "cots",
+    "manufacturer": "Flyability",
+    "ndaa_compliant": false,
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": 17,
+    "max_payload_kg": 0,
+    "rf_bands": [
+      "proprietary"
+    ],
+    "thermal_capable": true,
+    "thermal_sensor": "Radiometric thermal integrated",
+    "handbook_profile": "platforms/cots/flyability-elios-3.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2013",
+    "name": "WingtraOne GEN II / WingtraRAY",
+    "description": "Fixed-wing VTOL mapping drone. 59-min flight, 16 m/s cruise, PPK GNSS 1-3 cm accuracy. Swappable sensors (61MP RGB, 42MP full-frame, multispectral, LiDAR). Blue UAS, Green UAS. WingtraRAY covers 1300 acres/flight. Swiss-made.",
+    "vehicle_type": "fixed_wing_vtol",
+    "build_class": "mapping",
+    "platform_category": "blue_uas",
+    "manufacturer": "Wingtra",
+    "ndaa_compliant": true,
+    "blue_uas": true,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": 59,
+    "max_payload_kg": 0.8,
+    "rf_bands": [
+      "proprietary"
+    ],
+    "thermal_capable": false,
+    "handbook_profile": "platforms/blue-uas/wingtra-wingtraone.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2014",
+    "name": "XAG P100 Pro / P150",
+    "description": "Chinese ag drone. P100: 50kg payload, 60L tank, 70 ac/hr. P150: 70L tank, 80kg max. Hot-swap spray/spread/map. NOT NDAA.",
+    "vehicle_type": "quad_coaxial",
+    "build_class": "agriculture",
+    "platform_category": "cots",
+    "manufacturer": "XAG",
+    "ndaa_compliant": false,
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": null,
+    "max_payload_kg": 80,
+    "handbook_profile": "platforms/cots/xag-p100-p150.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2015",
+    "name": "Hylio AG-272",
+    "description": "US-made NDAA-compliant ag spray drone. 18 gal, 8-rotor, 50 ac/hr, TeeJet nozzles, GroundLink controller, AgroSol GCS. Made in Houston TX.",
+    "vehicle_type": "octo",
+    "build_class": "agriculture",
+    "platform_category": "cots",
+    "manufacturer": "Hylio",
+    "ndaa_compliant": true,
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": null,
+    "max_payload_kg": 68,
+    "handbook_profile": "platforms/cots/hylio-ag-272.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2016",
+    "name": "senseFly eBee X",
+    "description": "Fixed-wing hand-launch mapping drone. 90-min flight, 500ha coverage, swappable cameras (RGB/multispectral/thermal). NDAA compliant. AgEagle.",
+    "vehicle_type": "fixed_wing",
+    "build_class": "mapping",
+    "platform_category": "cots",
+    "manufacturer": "senseFly/AgEagle",
+    "ndaa_compliant": true,
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": 90,
+    "max_payload_kg": 0.5,
+    "handbook_profile": "platforms/cots/sensefly-ebee-x.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2017",
+    "name": "Quantum Systems Trinity Pro",
+    "description": "Long-endurance fixed-wing VTOL. 90-min flight, 75 km range, AI-ready edge computing. NATO/defense pedigree. German-made, NDAA compliant.",
+    "vehicle_type": "fixed_wing_vtol",
+    "build_class": "mapping",
+    "platform_category": "cots",
+    "manufacturer": "Quantum Systems",
+    "ndaa_compliant": true,
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": 90,
+    "max_payload_kg": 1,
+    "handbook_profile": "platforms/cots/quantum-trinity-pro.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2018",
+    "name": "DJI Mavic 3 Enterprise",
+    "description": "Compact enterprise drone. Thermal (3T): 48MP+12MP zoom+640x512 thermal. Multispectral (3M): RGB+4-band. 45-min flight. NOT NDAA.",
+    "vehicle_type": "quad",
+    "build_class": "enterprise_cots",
+    "platform_category": "cots",
+    "manufacturer": "DJI",
+    "ndaa_compliant": false,
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": 45,
+    "max_payload_kg": 0,
+    "handbook_profile": "platforms/cots/dji-mavic3-enterprise.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2019",
+    "name": "Hoverfly LiveSky/Spectre",
+    "description": "Tethered UAS. Unlimited flight time via power tether. Persistent ISR, comms relay. Spectre is Blue UAS listed. Made in USA.",
+    "vehicle_type": "quad_tethered",
+    "build_class": "tethered",
+    "platform_category": "tactical",
+    "manufacturer": "Hoverfly Technologies",
+    "ndaa_compliant": true,
+    "blue_uas": true,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": null,
+    "max_payload_kg": 5,
+    "handbook_profile": "platforms/tactical/hoverfly-livesky.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2020",
+    "name": "Shield AI Nova 2",
+    "description": "Autonomous indoor ISR drone. Hivemind AI: no GPS, no pilot, no comms needed. Room-by-room autonomous clearing/mapping. NDAA. Made in USA. Mil/govt only.",
+    "vehicle_type": "quad",
+    "build_class": "tactical_indoor",
+    "platform_category": "tactical",
+    "manufacturer": "Shield AI",
+    "ndaa_compliant": true,
+    "blue_uas": false,
+    "firmware": "Hivemind",
+    "mavlink_support": false,
+    "max_flight_time_min": null,
+    "max_payload_kg": 0,
+    "handbook_profile": "platforms/tactical/shield-ai-nova-2.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2021",
+    "name": "Neros Archer",
+    "description": "Blue UAS FPV drone. Up to 160 km/h. EW-resistant. First FPV on Blue UAS list (2025 29 Palms). Made in LA, CA.",
+    "vehicle_type": "fpv",
+    "build_class": "tactical_fpv",
+    "platform_category": "tactical",
+    "manufacturer": "Neros Technologies",
+    "ndaa_compliant": true,
+    "blue_uas": true,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": null,
+    "max_payload_kg": 0,
+    "handbook_profile": "platforms/tactical/neros-archer.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  },
+  {
+    "pid": "MDL-2022",
+    "name": "Ascent Aerosystems",
+    "description": "Coaxial drone design. Compact, robust, high-performance. Industrial, defense, public safety. NDAA compliant.",
+    "vehicle_type": "coaxial",
+    "build_class": "enterprise_blue_uas",
+    "platform_category": "blue_uas",
+    "manufacturer": "Ascent Aerosystems",
+    "ndaa_compliant": true,
+    "blue_uas": false,
+    "firmware": "proprietary",
+    "mavlink_support": false,
+    "max_flight_time_min": null,
+    "max_payload_kg": null,
+    "handbook_profile": "platforms/blue-uas/ascent-aerosystems.md",
+    "relations": {
+      "frames": [],
+      "motors": [],
+      "stacks": [],
+      "flight_controllers": [],
+      "escs": [],
+      "propellers": [],
+      "batteries": [],
+      "fpv_cameras": [],
+      "video_transmitters": [],
+      "receivers": [],
+      "antennas": [],
+      "gps_modules": []
+    }
+  }
+]

@@ -1,0 +1,4770 @@
+[
+  {
+    "pid": "STK-1000",
+    "category": "stacks",
+    "name": "HAKRC Flytower Stack - F722 F7230 V2 FC + 50A 2-6S BLHeli_S ESC - 30.5x30.5",
+    "manufacturer": "HAKRC",
+    "description": "The HAKRC Flytower Stack is a powerful and professional-grade stack built for advanced FPV drone applications.",
+    "link": "https://www.getfpv.com/electronics/stacks/hakrc-flytower-stack-f722-f7230-v2-fc-50a-2-6s-blheli-s-esc-30-5x30-5.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/2/3/23922-6.jpg",
+    "approx_price": 99.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_current_a": 50,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 6,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1001",
+    "category": "stacks",
+    "name": "HDZero Halo 70A 3-8S AM32 4-in-1 ESC - 20x20",
+    "manufacturer": "HDZero",
+    "description": "The HDZero Halo 70A 3-8S AM32 4-in-1 ESC - 20x20 is designed for pilots who demand both power and reliability.",
+    "link": "https://www.getfpv.com/electronics/stacks/hdzero-halo-70a-3-8s-am32-4-in-1-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero_halo_stack_-_h743_elrs_fc_icm42688_70a_blheli_32_esc_-_20x20_3_3.jpg",
+    "approx_price": 84.99,
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_current_a": 70,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 70,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 8,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 70,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1002",
+    "category": "stacks",
+    "name": "HDZero Halo Stack - H743 ELRS FC (MPU6000) + 70A AM32 ESC - 20x20",
+    "manufacturer": "HDZero",
+    "description": "The HDZero Halo Stack - H743 ELRS FC (MPU6000 Gyro) + 70A AM32 ESC - 20x20 combines the Halo Flight Controller and Halo 4in1 70A ESC into a race-ready powertrain, engineered by HDZero—leaders in high-performance digital FPV systems.",
+    "link": "https://www.getfpv.com/electronics/stacks/hdzero-halo-stack-h743-elrs-fc-mpu6000-70a-am32-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero_halo_stack_-_h743_elrs_fc_icm42688_70a_blheli_32_esc_-_20x20_1_1.jpg",
+    "approx_price": 169.99,
+    "mcu_family": "H7",
+    "imu": "MPU6000",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_current_a": 70,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 70,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 8,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 70,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "H7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1003",
+    "category": "stacks",
+    "name": "HDZero Halo Stack - H743 ELRS FC (ICM42688) + 70A BLHeli_32 ESC - 20x20",
+    "manufacturer": "HDZero",
+    "description": "The HDZero Halo Stack - H743 ELRS FC (ICM42688) + 70A BLHeli_32 ESC - 20x20 combines the Halo Flight Controller and Halo 4in1 70A ESC into a race-ready powertrain, engineered by HDZero—leaders in high-performance digital FPV systems.",
+    "link": "https://www.getfpv.com/electronics/stacks/hdzero-halo-stack-h743-elrs-fc-icm42688-70a-blheli-32-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero_halo_stack_-_h743_elrs_fc_icm42688_70a_blheli_32_esc_-_20x20_1.jpg",
+    "approx_price": 156.99,
+    "mcu_family": "H7",
+    "imu": "ICM42688",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_current_a": 70,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 70,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 8,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 70,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "H7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1004",
+    "category": "stacks",
+    "name": "Flycolor SpeedyPizza CrustCore Stack - F7 FC + 60A 3-6S BLHeli_32 4-in-1 ESC - ICM42688 - 20x20 ",
+    "manufacturer": "FlyColor",
+    "description": "The Flycolor SpeedyPizza CrustCore Stack delivers high-performance flight control and powerful ESC capabilities in a compact 20x20mm form factor. Featuring an F7 flight controller with the ICM42688 gyro, this stack ensures ultra-precise handling and smooth performance.",
+    "link": "https://www.getfpv.com/electronics/stacks/flycolor-speedypizza-crustcore-stack-f7-fc-60a-3-6s-blheli-32-4-in-1-esc-icm42688-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/fle153_1.jpg",
+    "approx_price": 167.99,
+    "mcu_family": "F7",
+    "imu": "ICM42688",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1005",
+    "category": "stacks",
+    "name": "Axisflying Argus ECO Stack - F4 FC + 60A 6S 4-in-1 BLHeli_S ESC - 30x30",
+    "manufacturer": "Axisflying",
+    "description": "The Axisflying Argus ECO Stack features an F4 flight controller and 60A 6S 4-in-1 BLHeli_S ESC, providing a powerful yet lightweight solution for FPV builds.",
+    "link": "https://www.getfpv.com/electronics/stacks/axisflying-argus-eco-stack-f4-fc-60a-6s-4-in-1-blheli-s-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/x/axisflying-argus-eco-stack---f4-fc-_-60a-6s-4-in-1-blheli_s-esc---30x30-_image-1__1.jpg",
+    "approx_price": 129.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 30.5,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "cell_count_max": 6,
+    "esc_format": "4in1",
+    "cell_count_min": 3,
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1006",
+    "category": "stacks",
+    "name": "Hobbywing XRotor Stack - F7 FC + 45A 3-6S BLHeli_32 4-in-1 ESC - 20x20",
+    "manufacturer": "Hobbywing",
+    "description": "The Hobbywing XRotor Stack, equipped with an STM32F722 MCU and a high-sensitivity ICM20602 six-axis motion sensor, offers powerful computing abilities and fast processing speed.",
+    "link": "https://www.getfpv.com/electronics/stacks/hobbywing-xrotor-stack-f7-fc-45a-3-6s-blheli-32-4-in-1-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/hobbywing-xrotor-stack---f7-fc-_-45a-3-6s-blheli_32-4-in-1-esc---20x20-_image-1_1_.jpg",
+    "approx_price": 137.49,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 45,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 45,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 45,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1007",
+    "category": "stacks",
+    "name": "DarwinFPV Cement Stack - F7 FC + 100A 3-8S ESC - ICM42688",
+    "manufacturer": "",
+    "description": "Introducing Darwin FPV's \"Cement\" stack: the ultimate solution for professional pilots, addressing the reliability issues of FPV drones.",
+    "link": "https://www.getfpv.com/electronics/stacks/darwinfpv-cement-stack-f7-fc-100a-3-8s-esc-icm42688.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/d/a/darwinfpv-cement-ultra-durable-f7-100a-ip67-waterproof-stack---icm42688-_image-1_.jpg",
+    "approx_price": 172.99,
+    "mcu_family": "F7",
+    "imu": "ICM42688",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_current_a": 100,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 100,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 8,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 100,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1008",
+    "category": "stacks",
+    "name": "Holybro F7 Stack - F722 Kakute FC - TEKKO32 F4 50A 4-in-1 ESC - 30.5 x 30.5",
+    "manufacturer": "Holybro",
+    "description": "Introducing the Holybro Kakute F7 Stack: a powerful fusion of the Holybro Kakute F722 flight controller and TEKKO32 F4 50A 4-in-1 ESC.",
+    "link": "https://www.getfpv.com/electronics/stacks/holybro-f7-stack-f722-kakute-fc-tekko32-f4-50a-4-in-1-esc-30-5-x-30-5.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-kakute-f7-stack---f722-tekko32-f4-_-50a--4-in-1-esc----30.5-x-30.5-_image-3_1_.jpg",
+    "approx_price": 116.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_current_a": 50,
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 8,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1009",
+    "category": "stacks",
+    "name": "TBS Lucid Pro Stack - F4 FC + 60A 3-6S AM32 4-in-1 ESC - MPU6000 - Gorilla 39x16",
+    "manufacturer": "Team BlackSheep",
+    "description": "The TBS Lucid Pro Stack designed for racing and freestyle, caters to both seasoned pilots and newcomers.",
+    "link": "https://www.getfpv.com/electronics/stacks/tbs-lucid-pro-stack-f4-fc-60a-3-6s-am-32-4-in-1-esc-mpu6000-gorilla-39x16.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-lucid-freestyle-stack---f4-fc-_-60a-3-6s-4-in-1-esc---icm42688p-_image-5_.jpg",
+    "approx_price": 129.99,
+    "mcu_family": "F4",
+    "imu": "MPU6000",
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1010",
+    "category": "stacks",
+    "name": "TBS Lucid Freestyle Stack - F4 FC + 60A 3-6S AM32 4-in-1 ESC - ICM42688 - Gorilla 39x16",
+    "manufacturer": "Team BlackSheep",
+    "description": "The TBS Lucid Freestyle Flight Stack, designed for racing and freestyle, caters to both seasoned pilots and newcomers.",
+    "link": "https://www.getfpv.com/electronics/stacks/tbs-lucid-freestyle-stack-f4-fc-60a-3-6s-am-32-4-in-1-esc-icm42688-gorilla-39x16.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-lucid-freestyle-stack---f4-fc-_-60a-3-6s-4-in-1-esc---icm42688p-_image-5__1.jpg",
+    "approx_price": 116.99,
+    "mcu_family": "F4",
+    "imu": "ICM42688",
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1011",
+    "category": "stacks",
+    "name": "Skystars Fly Stack - F722 Mini HD Pro FC + KM35 PRO 35A BLHeli_32 3-6S 4-in-1 ESC - 20x20 ",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Fly Stack features an F722 Mini HD Pro Flight Controller and a Kramam PRO 35A BLHeli_32 4-i-n1 ESC with a 20x20 mounting pattern!",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-f722-mini-hd-pro-fc-km35-pro-35a-blheli-32-3-6s-4-in-1-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/m/img_0132.jpg",
+    "approx_price": 111.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 35,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 35,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 35,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1012",
+    "category": "stacks",
+    "name": "Hobbywing XRotor Micro Combo Stack - F7 FC + 65A 4-in-1 BLHeli_32 ESC",
+    "manufacturer": "Hobbywing",
+    "description": "The XRotor Micro Combo from Hobbywing continues to impress with its latest iteration.",
+    "link": "https://www.getfpv.com/electronics/stacks/hobbywing-xrotor-micro-combo-stack-f7-fc-65a-4-in-1-blheli-32-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/hobbywing_xrotor_micro_combo_stack_-_f7_fc_65a_4-in-1_blheli_32_esc_4_.jpg",
+    "approx_price": 142.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 65,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 65,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 65,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1013",
+    "category": "stacks",
+    "name": "GEPRC F722 AIO - F722 FC+ 35A 2S-6S BLS ESC",
+    "manufacturer": "GEPRC",
+    "description": "The GEPRC F722 AIO is equipped with an F722 FC and 35A 2S-6S BLS ESC. This AIO stack adopts MCU STM32F722, which gives a powerful performance and higher computing speed.",
+    "link": "https://www.getfpv.com/electronics/stacks/geprc-f722-aio-f722-fc-35a-2s-6s-bls-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc_f722_aio_1.jpg",
+    "approx_price": 116.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 25.5,
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_current_a": 35,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 35,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 6,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 25.5,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 35,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "25.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1014",
+    "category": "stacks",
+    "name": "Flywoo GOKU Pro Mini Stack - F7 FC + 45A 2-6S AM32 4-in-1 ESC - ICM42688 - 20x20",
+    "manufacturer": "Flywoo",
+    "description": "The Flywoo GOKU Pro Mini Stack is a high-performance 20x20mm flight stack featuring an F7 flight controller and a 45A 2-6S AM32 4-in-1 ESC.",
+    "link": "https://www.getfpv.com/electronics/stacks/flywoo-goku-pro-mini-stack-f7-fc-45a-2-6s-am32-4-in-1-esc-icm42688-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-pro-mini-stack---f7-fc-_-45a-2-6s-am32-4-in-1-esc---icm42688---20x20-_image--1_.jpg",
+    "approx_price": 90.99,
+    "mcu_family": "F7",
+    "imu": "ICM42688",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_current_a": 45,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 45,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 6,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 45,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1015",
+    "category": "stacks",
+    "name": "Flywoo GOKU Stack - F722 FC (ICM42688) + 55A AM32 2-6S ESC - 30x30",
+    "manufacturer": "Flywoo",
+    "description": "The new GOKU Pro V2 F722 AM32 55A BLS Stack from FLYWOO offers a compact size, high-performance main control, and multiple motor outputs.",
+    "link": "https://www.getfpv.com/electronics/stacks/flywoo-goku-stack-f722-fc-icm42688-55a-2-6s-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-f722-pro-v2-50a-bls-stack-_image-1_.jpg",
+    "approx_price": 103.99,
+    "mcu_family": "F7",
+    "imu": "ICM42688",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 6,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1016",
+    "category": "stacks",
+    "name": "iFlight BLITZ Stack - F7 V1.2 FC + E55 4-in-1 55A ESC",
+    "manufacturer": "iFlight",
+    "description": "The iFlight BLITZ F7 Stack features an F7 V1.2 Flight Controller and an E55 4-in-1 55A ESC. The V1.1 FC now has a new gyro, improved circuit design, better components, and a lower noise level!",
+    "link": "https://www.getfpv.com/electronics/stacks/iflight-blitz-stack-f7-v1-2-fc-e55-4-in-1-55a-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight-blitz-f7-v1_2_.jpg",
+    "approx_price": 168.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 6,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1017",
+    "category": "stacks",
+    "name": "Flywoo GOKU V3 HD Stack - F4 FC + 35A 2-6S 4-in-1 BLHeli_S ESC w/ LED + ELRS 2.4GHz - 16x16",
+    "manufacturer": "Flywoo",
+    "description": "The Flywoo GOKU V3 HD Stack combines high-performance components in a compact 16x16mm design, ideal for QUAD drone builds. Featuring an F4 flight controller and a 35A 2-6S 4-in-1 BLHeli_S ESC, this stack ensures smooth and reliable power delivery for your drone.",
+    "link": "https://www.getfpv.com/electronics/stacks/flywoo-goku-v3-hd-stack-f4-fc-35a-2-6s-4-in-1-blheli-s-esc-w-led-elrs-2-4ghz-16x16.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo_1_1.jpg",
+    "approx_price": 84.49,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 16.0,
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_current_a": 35,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 35,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 6,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 16.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 35,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3_inch",
+    "tags": [
+      "F7",
+      "16.0mm",
+      "3 inch"
+    ]
+  },
+  {
+    "pid": "STK-1018",
+    "category": "stacks",
+    "name": "Iflight Borg 5S 60R Stack F4 Flight Controller 60A 3 8S Bl32 4 In 1 Esc 20X20",
+    "manufacturer": "",
+    "description": "The iFlight Borg 5S 60R Stack is built for serious FPV racers, combining a high-performance Borg 5S RX F4 Flight Controller with the powerful Borg 60R 60A 4-in-1 ESC in a compact 20×20 form factor—perfect for modern 5\" racing drones.",
+    "link": "https://www.getfpv.com/electronics/stacks/iflight-borg-5s-60r-stack-f4-flight-controller-60a-3-8s-bl32-4-in-1-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/i/f/iflight-borg-5s-60r-stack---f4-flight-controller-_-60a-3-8s-bl32-4-in-1-esc---20x20-_image-1_.jpg",
+    "approx_price": 113.49,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 8,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F4",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1019",
+    "category": "stacks",
+    "name": "HDZero Halo 70A 3-8S BLHeli_32 4-in-1 ESC - 20x20",
+    "manufacturer": "HDZero",
+    "description": "The HDZero Halo 70A 3-8S BLHeli_32 4-in-1 ESC - 20x20 is designed for pilots who demand both power and reliability.",
+    "link": "https://www.getfpv.com/electronics/stacks/hdzero-halo-70a-3-8s-blheli-32-4-in-1-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero_halo_stack_-_h743_elrs_fc_icm42688_70a_blheli_32_esc_-_20x20_3_4.jpg",
+    "approx_price": 89.99,
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_current_a": 70,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 70,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 8,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 70,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1020",
+    "category": "stacks",
+    "name": "iFlight Borg Stack - 5S RX F4 FC + 60RS 60A 4-in-1 BLHeli_32 4-8S ESC - 20X20",
+    "manufacturer": "iFlight",
+    "description": "The iFlight Borg Stack - 5S RX FC + 60RS 4-IN-1 ESC is built for serious FPV racers, combining a high-performance Borg 5S RX F4 Flight Controller with the powerful Borg 60RS 60A 4-in-1 ESC in a compact 20×20 form factor.",
+    "link": "https://www.getfpv.com/electronics/stacks/iflight-borg-stack-5s-rx-f4-fc-60rs-60a-4-in-1-blheli-32-4-8s-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/2/3/23085-1_1.jpg",
+    "approx_price": 113.49,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 4,
+    "cell_count_max": 8,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 4,
+      "cell_count_max": 8,
+      "voltage_min_v": 12.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F4",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1021",
+    "category": "stacks",
+    "name": "HGLRC Specter Integrated Stack Box - F722 FC + 60A 2-6S 4-in-1 ESC ",
+    "manufacturer": "HGLRC",
+    "description": "Introducing the HGLRC Specter Integrated Stack Box - your hassle-free solution for thrilling flights.",
+    "link": "https://www.getfpv.com/electronics/stacks/hglrc-specter-integrated-stack-box-f722-fc-60a-2-6s-4-in-1-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc-specter-integrated-stack-box---f760-fc-_-60a-2-6s-4-in-1-esc-_image-1_.jpg",
+    "approx_price": 176.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1022",
+    "category": "stacks",
+    "name": "Flywoo GOKU HEX V3 HD Stack - F4 FC + 20A 2-4S 6-in-1 BLHeli_S ESC w/ LED + ELRS 2.4GHz - 16x16",
+    "manufacturer": "Flywoo",
+    "description": "The Flywoo GOKU HEX V3 HD Stack combines high-performance components in a compact 16x16mm design, ideal for HEX drone builds. Featuring an F4 flight controller and a 20A 2-4S 6-in-1 BLHeli_S ESC, this stack ensures smooth and reliable power delivery for your drone.",
+    "link": "https://www.getfpv.com/electronics/stacks/flywoo-goku-hex-v3-hd-stack-f4-fc-20a-2-4s-6-in-1-blheli-s-esc-w-led-elrs-2-4ghz-16x16.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-hex-hd-stack---f4-fc-_-20a-2-4s-6-in-1-blheli_s-esc-w-led---16x16-_image-1_.jpg",
+    "approx_price": 90.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 16.0,
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "esc_current_a": 20,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 20,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 4,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 17.4,
+      "mounting_pattern_mm": 16.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 20,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3_inch",
+    "tags": [
+      "F4",
+      "16.0mm",
+      "3 inch"
+    ]
+  },
+  {
+    "pid": "STK-1023",
+    "category": "stacks",
+    "name": "Axisflying Argus Mini Stack - F722 FC + 40A 4-6S BLHeli_32 ESC - 20x20",
+    "manufacturer": "Axisflying",
+    "description": "The lightweight Axisflying Argus Mini Stack is specially designed for small-size FPV drones.",
+    "link": "https://www.getfpv.com/electronics/stacks/axisflying-argus-mini-stack-f722-fc-40a-4-6s-blheli-32-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/x/axisflying-argus-mini-stack---f722-fc-_-40a-4-6s-blheli32-esc---20x20-1.jpg",
+    "approx_price": 155.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 4,
+    "cell_count_max": 6,
+    "esc_current_a": 40,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 40,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 4,
+      "cell_count_max": 6,
+      "voltage_min_v": 12.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 40,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1024",
+    "category": "stacks",
+    "name": "SkyStars Mini Fly Stack - F722 Mini HD Pro FC + KM40 40A 3-6S BLHeli_32 4-in-1 ESC - 20x20",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Mini Fly Stack features an F722 Mini HD Pro flight controller and a Kramam KM40 40A BLHeli_32 4-in-1 ESC with a 20x20 mounting pattern!",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-mini-fly-stack-f722-mini-hd-pro-fc-km40-40a-3-6s-blheli-32-4-in-1-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars-mini-fly-stack---f722-mini-hd-pro-fc-_-km40-40a-esc---20x20.jpg",
+    "approx_price": 128.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 5,
+    "esc_current_a": 40,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 40,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 5,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 21.8,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 40,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1025",
+    "category": "stacks",
+    "name": "NewBeeDrone Hummingbird 305 Stack - F7 ELRS FC + 80A AM32 4-in-1 ESC - 30.5x30.5",
+    "manufacturer": "NewBeeDrone",
+    "description": "NewBeeDrone Hummingbird 305 Stack - F7 ELRS FC + 80A AM32 4-in-1 ESC - combines advanced control with unmatched power.",
+    "link": "https://www.getfpv.com/electronics/stacks/newbeedrone-hummingbird-305-stack-f7-el-rs-fc-80a-am32-4-in-1-esc-30-5x30-5.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/e/newbeedrone_hummingbird_305_stack_1.jpg",
+    "approx_price": 109.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_current_a": 80,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 80,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 8,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 80,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1026",
+    "category": "stacks",
+    "name": "SkyStars Fly Stack - F722 HD Pro FC + KM40 Pro 40A BLHeli_32 ESC - Mini 20x20",
+    "manufacturer": "SkyStars",
+    "description": "This SkyStars Fly Stack - F722 HD Pro FC and  KM40 Pro 40A ESC is a powerful 3-6S 20x20 stack with superior electronics.",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-f722-hd-pro-fc-km40-pro-40a-blheli-32-esc-mini-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars_fly_stack_-_f722_hd_pro_fc_km40_pro_40a_blheli_32_esc_mini_1.jpg",
+    "approx_price": 111.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 40,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 40,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 40,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1027",
+    "category": "stacks",
+    "name": "HDZero Halo Stack - H743 ELRS FC (MPU6000) + 70A BLHeli_32 ESC - 20x20",
+    "manufacturer": "HDZero",
+    "description": "The HDZero Halo Stack - H743 ELRS FC (MPU6000 Gyro) + 70A BLHeli_32 ESC - 20x20 combines the Halo Flight Controller and Halo 4in1 70A ESC into a race-ready powertrain, engineered by HDZero—leaders in high-performance digital FPV systems.",
+    "link": "https://www.getfpv.com/electronics/stacks/hdzero-halo-stack-h743-elrs-fc-mpu6000-70a-blheli-32-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero_halo_stack_-_h743_elrs_fc_icm42688_70a_blheli_32_esc_-_20x20_1_2.jpg",
+    "approx_price": 179.99,
+    "mcu_family": "H7",
+    "imu": "MPU6000",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_current_a": 70,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 70,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 8,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 70,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "H7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1028",
+    "category": "stacks",
+    "name": "XILO Stax V3 Combo - F4 FC + 50A 3-6S AM32 4-in-1 ESC",
+    "manufacturer": "XILO",
+    "description": "The XILO Stax V3 Combo (AM32) continues XILO's tradition of offering high-quality FPV gear at a low price point. It couldn't be easier to install and use on your favorite airframe!",
+    "link": "https://www.getfpv.com/electronics/stacks/xilo-stax-v3-combo-f4-fc-50a-3-6s-am32-4-in-1-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/x/i/xilo-stax-v3-f4-50a-am32-3-6s-4-in-1-esc-_thumbnail_.jpg",
+    "approx_price": 116.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 50,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1029",
+    "category": "stacks",
+    "name": "T-Motor Pro II HD Stack - F7 FC + 55A 3-6S AM32 4-in-1 ESC - 30x30",
+    "manufacturer": "Tiger Motors",
+    "description": "The T-Motor Pro II HD Stack combines an F7 flight controller with a 55A 3-6S AM32 4-in-1 ESC for precision and reliability.",
+    "link": "https://www.getfpv.com/electronics/stacks/t-motor-pro-ii-hd-stack-f7-fc-55a-3-6s-am32-4-in-1-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/-/t-motor-pro-ii-hd-stack---f7-fc-_-55a-3-6s-am32-4-in-1-esc---30x30-_image-1_1_.jpg",
+    "approx_price": 174.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1030",
+    "category": "stacks",
+    "name": "Axisflying Argus Pro Plug-n-Play Stack - F7 FC + 65A 3-6S BLHeli_32 ESC w/ Heatsink - 30x30",
+    "manufacturer": "Axisflying",
+    "description": "The Axisflying Argus Pro series combines durability and performance with an aluminum-wrapped, IP54-rated design to protect its PCB from dust and water.",
+    "link": "https://www.getfpv.com/electronics/stacks/axisflying-argus-pro-plug-n-play-stack-f7-fc-65a-3-6s-blheli-32-esc-w-heatsink-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/x/axisflying-argus-pro-plug-n-play-stack---f7-fc-_-65a-3-6s-blheli_32-esc-w-heatsink-_image-1_.jpg",
+    "approx_price": 202.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 65,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 65,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 65,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1031",
+    "category": "stacks",
+    "name": "T-Motor Pro II HD Stack - F722 FC + 55A 3-6S BLHeli_32 4-in-1 ESC - 30x30",
+    "manufacturer": "Tiger Motors",
+    "description": "Introducing the T-Motor F7 & F55A Stack, now designed specifically for the DJI Digital FPV System!",
+    "link": "https://www.getfpv.com/electronics/stacks/t-motor-pro-ii-hd-stack-f722-fc-55a-3-6s-blheli-32-4-in-1-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/-/t-motor-f7-hd-stack---f7-fc-_-55a-3-6s-blheli_32-4-in-1-esc---30x30-_image-1_.jpg",
+    "approx_price": 174.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1032",
+    "category": "stacks",
+    "name": "T-Motor Velox SE Stack - F7 FC + V50A 3-6S 4-in-1 ESC - 30x30",
+    "manufacturer": "Tiger Motors",
+    "description": "The T-Motor Velox SE F7 Stack is compatible with 8 motor outputs and X8 drones, boasts a 42688 gyroscope, and firmware 4.4.3 or higher for enhanced stability.",
+    "link": "https://www.getfpv.com/electronics/stacks/t-motor-velox-se-stack-f7-fc-v50a-3-6s-4-in-1-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/-/t-motor-velox-se---f7-fc-_-v50a-6s-4-in-1-esc---30x30-_image-1_.jpg",
+    "approx_price": 112.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 50,
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1033",
+    "category": "stacks",
+    "name": "DarwinFPV Stack - F411 FC + 30A 3-6S 4-in-1 ESC",
+    "manufacturer": "DarwinFPV",
+    "description": "The DarwinFPV Stack - F411 FC + 30A 3-6S 4-in-1 ESC  is currently the cheapest stack in the FPV world, designed to reduce the budget of entry-level FPV drones as much as possible.",
+    "link": "https://www.getfpv.com/electronics/stacks/darwinfpv-stack-f411-fc-30a-3-6s-4-in-1-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/a/darwinfpv-stack-f411-30a-3-4s-_image-4_1_.jpg",
+    "approx_price": 77.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 30,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 30,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 30,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F4",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1034",
+    "category": "stacks",
+    "name": "Flycolor Raptor TR20 Mini Stack - F722 FC + 60A ESC - 20x20",
+    "manufacturer": "FlyColor",
+    "description": "The Flycolor Raptor TR20 Mini Stack features an F722 Flight Controller, equipped with dual VTX and dual LED pads, offering a convenient selection nearby for enhanced customization.",
+    "link": "https://www.getfpv.com/electronics/stacks/flycolor-raptor-tr20-mini-stack-f722-fc-60a-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flycolor-raptor-60a-f7-tr20-mini-stack_1_-.jpg",
+    "approx_price": 167.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1035",
+    "category": "stacks",
+    "name": "Flywoo GOKU Stack - GN405S FC (ICM42688) 20A ESC AIO + HM850 850MW Microphone VTX",
+    "manufacturer": "Flywoo",
+    "description": "The Flywoo Goku Stack is a high-performance, all-in-one solution for your FPV drone.",
+    "link": "https://www.getfpv.com/electronics/stacks/flywoo-goku-stack-gn405s-fc-icm42688-20a-esc-aio-hm850-850mw-microphone-vtx.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-stack---gn405s-fc-_icm42688_-20a-esc-aio-_-hm850-850mw-microphone-vtx.jpg",
+    "approx_price": 129.99,
+    "mcu_family": "F4",
+    "imu": "ICM42688",
+    "mounting_pattern_mm": 25.5,
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_current_a": 20,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 20,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 6,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 25.5,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 20,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "25.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1036",
+    "category": "stacks",
+    "name": "Axisflying Argus ECO Stack - F405 FC + 55A 6S BLHeli_S ESC",
+    "manufacturer": "Axisflying",
+    "description": "The Axisflying Argus ECO 55A+F405 STACK combines a lightweight F405 flight controller and a 4in1 55A ESC board.",
+    "link": "https://www.getfpv.com/electronics/stacks/axisflying-argus-eco-stack-f405-fc-55a-6s-blheli-s-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/x/axisflying-argus-eco-55a_f405-stack.jpg",
+    "approx_price": 59.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 30.5,
+    "esc_current_a": 55,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "cell_count_max": 6,
+    "cell_count_min": 3,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1037",
+    "category": "stacks",
+    "name": "Diatone Mamba Mini Stack - MK4 F722 APP FC (MPU6000) + 40A 3-6S BLHeli_32 128K ESC - 20x20",
+    "manufacturer": "Diatone",
+    "description": "The Diatone Mamba Mini Stack - MK4 F722 APP FC (MPU6000) + 40A 3-6S BLHeli_32 128K ESC - 20x20 brings a new design scheme, with an easier-to-use flight controller. This 4th generation flight controller features very large pads, synchronous rectifying BEC, and MPU6000 Gyro to name a few.",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-mini-stack-mk4-f722-app-fc-40a-3-6s-blheli-32-128k-esc-mpu6000-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone_mamba_mini_stack_-_mk4_f722_app_fc_45a_55a_65a_3-6s_blheli_32_128k_esc_mpu6000_-_20x20_1_1.jpg",
+    "approx_price": 110.99,
+    "mcu_family": "F7",
+    "imu": "MPU6000",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 40,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 40,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 40,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1038",
+    "category": "stacks",
+    "name": "Diatone Mamba Mini Stack - F722 MK4 FC (ICM42688P) + Reactor 66A 3-6S BLHeli_32 128K ESC",
+    "manufacturer": "Diatone",
+    "description": "EXCLUSIVE GETFPV PREORDER! The Diatone Mamba Mini Stack features an F722 MK4 flight controller with ICM42688P gyro and the new Mamba5 Reactor, a 66A 4-8S ESC with BLHeli_32 firmware and 128K PWM.",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-mini-stack-f722-mk4-fc-icm42688p-reactor-66a-3-6s-blheli-32-128k-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone-mamba-mini-stack---f722-mk4-fc-_icm42688p_-_-reactor-66a-3-6s-blheli_32-128k-esc.jpg",
+    "approx_price": 138.99,
+    "mcu_family": "F7",
+    "imu": "ICM42688P",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 66,
+    "esc_firmware": "BLHeli_32 128K",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 66,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 66,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1039",
+    "category": "stacks",
+    "name": "Diatone Mamba Mini Stack - F722 MK4 FC (MPU6000) + Reactor 66A 3-6S BLHeli_32 128K ESC",
+    "manufacturer": "Diatone",
+    "description": "EXCLUSIVE GETFPV PREORDER! The Diatone Mamba Mini Stack features an F722 MK4 flight controller with MPU6000 gyro and the new Mamba5 Reactor, a 66A 4-8S ESC with BLHeli_32 firmware and 128K PWM.",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-mini-stack-f722-mk4-fc-mpu6000-reactor-66a-3-6s-blheli-32-128k-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone-mamba-mini-stack---f722-mk4-fc-_icm42688p_-_-reactor-66a-3-6s-blheli_32-128k-esc_2__1.jpg",
+    "approx_price": 148.99,
+    "mcu_family": "F7",
+    "imu": "MPU6000",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 66,
+    "esc_firmware": "BLHeli_32 128K",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 66,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 66,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1040",
+    "category": "stacks",
+    "name": "Diatone Mamba Stack Mk4 F722 App Fc 45A 3 6S Bheli 32 128K Esc Mpu6000",
+    "manufacturer": "",
+    "description": "",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-stack-mk4-f722-app-fc-45a-3-6s-bheli-32-128k-esc-mpu6000.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/d/i/diatone_mk4_stack_-_mk4_f722_app_fc_55a_3-6s_esc_mpu6000_1_2.jpg",
+    "approx_price": 149.49,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 45,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "imu": "MPU6000",
+    "continuous_current_per_motor_a": 45,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 45,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1041",
+    "category": "stacks",
+    "name": "Diatone Mamba Stack - MK4 F722 APP FC + 55A 3-6S BHeli_32 128K ESC (MPU6000)",
+    "manufacturer": "Diatone",
+    "description": "The Diatone Mamba Stack - MK4 F722 APP FC + 55A 3-6S BHeli_32 128K ESC (MPU6000) brings a new design scheme, with an easier-to-use flight controller. This 4th generation flight controller features very large pads, synchronous rectifying BEC, and BMI270 Gyro to name a few.",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-stack-mk4-f722-app-fc-55a-3-6s-bheli-32-128k-esc-mpu6000.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone_mk4_stack_-_mk4_f722_app_fc_55a_3-6s_esc_mpu6000_1.jpg",
+    "approx_price": 123.99,
+    "mcu_family": "F7",
+    "imu": "MPU6000",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1042",
+    "category": "stacks",
+    "name": "Diatone Mamba Stack - MK4 F722 APP FC + 65A 3-6S BHeli_32 128K ESC (MPU6000)",
+    "manufacturer": "",
+    "description": "",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-stack-mk4-f722-app-fc-65a-3-6s-bheli-32-128k-esc-mpu6000.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/d/i/diatone_mk4_stack_-_mk4_f722_app_fc_55a_3-6s_esc_mpu6000_1_1.jpg",
+    "approx_price": 143.99,
+    "mcu_family": "F7",
+    "imu": "MPU6000",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 65,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 65,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 65,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1043",
+    "category": "stacks",
+    "name": "T-Motor Mini F7 HD 3-6S Flight Controller w/ OSD + VTX Switch (MPU6000) - 20x20",
+    "manufacturer": "Tiger Motors",
+    "description": "The T-Motor Mini F7 HD 3-6S Flight Controller w/ OSD + VTX Switch (MPU6000) - 20x20 feautures a lightweight and small design with strong performance.",
+    "link": "https://www.getfpv.com/electronics/stacks/t-motor-mini-f7-hd-3-6s-flight-controller-w-osd-vtx-switch-mpu6000-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/-/t-motor_f722_minimicrosoftteams-image_37_.png",
+    "approx_price": 67.99,
+    "mcu_family": "F7",
+    "imu": "MPU6000",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": null,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1044",
+    "category": "stacks",
+    "name": "SkyStars Fly Stack - F405 HD 2 OSD FC + KO55 55A 3-6S 4-in-1 BLHeli_S ESC - 30x30",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Fly Stack features an F405 HD 2 OSD flight controller and a KO55 55A BLHeli_S 4-in-1 ESC with a 30x30 mounting pattern!",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-f405-hd-2-osd-fc-ko55-55a-3-6s-4-in-1-blheli-s-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars-fly-stack---f405-hd-2-osd-fc-_-ko55-55a-3-6s-4-in-1-blheli_s-esc---30x30.jpg",
+    "approx_price": 128.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1045",
+    "category": "stacks",
+    "name": "SkyStars Fly Stack - F722 HD Pro 3 OSD FC + KO45 45A 3-6S 4-in-1 BLHeli_32 128K ESC - 30x30",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Fly Stack features an F722 HD Pro 3 flight controller and a KO45 45A BLHeli_32 4-in-1 128K ESC with a 30x30 mounting pattern!",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-f722-hd-pro-3-fc-ko45-45a-3-6s-4-in-1-blheli-32-128k-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars-fly-stack---f722-hd-pro-3-_-ko45-45a-128k-esc---30x30.jpg",
+    "approx_price": 128.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 45,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 45,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 45,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1046",
+    "category": "stacks",
+    "name": "Skystars Fly Stack - H743 Single Gyro HD FC + KO60 60A BLHeli_32 4-in-1 ESC - 30x30 ",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Fly Stack features a H743 Single Gyro HD Flight Controller and a KO60 BLHeli_32 4-in-1 ESC with a 30x30 mounting pattern.",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-h743-single-gyro-hd-fc-ko60-60a-blheli-32-4-in-1-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/7/h743-ko60-flystack-5_1.jpg",
+    "approx_price": 136.49,
+    "mcu_family": "H7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_32 128K",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "H7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1047",
+    "category": "stacks",
+    "name": "Skystars Fly Stack - F411 Mini HD FC + KO25 25A BLHeli_S 3-6S 4-in-1 ESC - 20x20",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Fly Stack features a F411 Mini HD Flight Controller and a Kramam 25A BLHeli_S 3-6S 4-in-1 ESC with a 20x20 mounting pattern.",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-f411-mini-hd-fc-ko25-25a-blheli-s-3-6s-4-in-1-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/4/f411mini-hd-20x20-fc-ko40-2.jpg",
+    "approx_price": 84.49,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 25,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 25,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 25,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F4",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1048",
+    "category": "stacks",
+    "name": "RUSHFPV RUSH BLADE Stack - F722 DJI FC + 60A 3-6S BLHeli_32 128K Extreme Edition ESC",
+    "manufacturer": "General",
+    "description": "The RUSH BLADE F722 Stack for the DJI Digital FPV System features the RUSH BLADE F722 Digital Flight Controller and RUSH BLADE 60A 3-6S BLHeli_32 4-in-1 ESC (Extreme Edition).",
+    "link": "https://www.getfpv.com/electronics/stacks/rushfpv-rush-blade-stack-f722-dji-fc-60a-3-6s-blheli-32-128k-extreme-edition-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/rushfpv_rush_blade_stack_-_f722_dji_fc_60a_extreme_edition_esc_1_.jpg",
+    "approx_price": 158.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_32 128K",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1049",
+    "category": "stacks",
+    "name": "T-Motor VELOX F7 HD Stack - F7 HD FC + V45A V2 ESC",
+    "manufacturer": "Tiger Motors",
+    "description": "The T-Motor VELOX F7 HD Stack comes with the F7 HD FC and a V45A V2 ESC.",
+    "link": "https://www.getfpv.com/electronics/stacks/t-motor-velox-f7-hd-stack-f7-hd-fc-v45a-v2-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/-/t-motor-velox-f7-hd-stack---f7-hd-fc-_-v45a-esc-main.jpg",
+    "approx_price": 174.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 45,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 45,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 45,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1050",
+    "category": "stacks",
+    "name": "SpeedyBee F405 Stack - F405 V3 FC + 50A 3-6s BLHeli_S 4-in-1 ESC - 30x30",
+    "manufacturer": "SpeedyBee",
+    "description": "The SpeedyBee F405 Stack - F405 V3 FC + 50A 3-6s BLHeli_S 4-in-1 ESC - 30x30 features Bluetooth Pairing, Onboard 4-level Battery Indicators, 1500uF Filtering Capacitator, Built-in Barometer, and many more!",
+    "link": "https://www.getfpv.com/electronics/stacks/speedybee-f405-stack-f405-v3-fc-50a-3-6s-blheli-s-4-in-1-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_-_2022-10-11t215252.927.jpg",
+    "approx_price": 93.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 50,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1051",
+    "category": "stacks",
+    "name": "RUSHFPV RUSH BLADE Power Filter Board Lite w/ 35V 470uF Capacitor ",
+    "manufacturer": "RUSHFPV",
+    "description": "The RUSHFPV RUSH BLADE Power Filter Board Lite is for a 6S LiPo battery and helps protect your RUSH BLADES ESC against any unforeseen current surge or high voltage.",
+    "link": "https://www.getfpv.com/electronics/stacks/rushfpv-rush-blade-power-filter-board-lite-w-35v-470uf-capacitor.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_-_2022-09-26t133152.165.jpg",
+    "approx_price": 4.99,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "compatibility": {
+      "cell_count_min": null,
+      "cell_count_max": null,
+      "voltage_min_v": null,
+      "voltage_max_v": null,
+      "mounting_pattern_mm": null,
+      "mounting_hole_size": null,
+      "battery_connector": null,
+      "continuous_current_per_motor_a": null,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "universal",
+    "tags": []
+  },
+  {
+    "pid": "STK-1052",
+    "category": "stacks",
+    "name": "Diatone Mamba Stack - MK4 F722 FC + 40A 3-6S BLHeli_32 128K ESC - Mini 20x20",
+    "manufacturer": "Diatone",
+    "description": "The Diatone Mamba MK4 Mini Stack features a 20x20 MK4 F722 Flight Controller and 40A 128K ESC. With OSD and an ICM42688P Gyro, this stack is the perfect addition to your FPV build.",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-stack-mk4-f722-fc-40a-3-6s-blheli-32-128k-esc-mini-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/_/m/_mamba_mk4_f722_mini_stack_40a_128k_2_.jpg",
+    "approx_price": 91.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 40,
+    "esc_firmware": "BLHeli_32 128K",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 40,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 40,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1053",
+    "category": "stacks",
+    "name": "Diatone Mamba Stack - MK4 F405 FC + 30A 3-6S BLHeli_S ESC - Mini 20x20",
+    "manufacturer": "Diatone",
+    "description": "The Diatone Mamba MK4 Mini Stack features a 20x20 MK4 F405 Flight Controller and 30A ESC with OSD and an MPU650 Gyro.",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-stack-mk4-f405-fc-30a-3-6s-blheli-s-esc-mini-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone_mamba_stack_-_mk4_f405_fc_40a_3-6s_blheli_s_esc_-_mini_20x20_2__1.jpg",
+    "approx_price": 84.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 30,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 30,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 30,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F4",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1054",
+    "category": "stacks",
+    "name": "Diatone Mamba Stack - MK4 F405 FC + 40A 3-6S BLHeli_S ESC - Mini 20x20",
+    "manufacturer": "Diatone",
+    "description": "The Diatone Mamba MK4 Mini Stack features a 20x20 MK4 F405 Flight Controller and 40A ESC with OSD and an MPU650 Gyro.",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-stack-mk4-f405-fc-40a-3-6s-blheli-s-esc-mini-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone_mamba_stack_-_mk4_f405_fc_40a_3-6s_blheli_s_esc_-_mini_20x20_2_.jpg",
+    "approx_price": 69.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 40,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 40,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 40,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F4",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1055",
+    "category": "stacks",
+    "name": "Diatone Mamba Stack - MK4 F722 APP FC + 65A 3-6S BHeli_32 128K ESC",
+    "manufacturer": "Diatone",
+    "description": "The Diatone Mamba MK4 Stack features an MK4 APP F722 Flight Controller and 65A 128K ESC with OSD and an ICM42688P Gyro.",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-stack-mk4-f722-app-fc-65a-3-6s-bheli-32-128k-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone_mamba_stack_-_mk4.jpg",
+    "approx_price": 133.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 65,
+    "esc_firmware": "BLHeli_32 128K",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 65,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 65,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1056",
+    "category": "stacks",
+    "name": "Diatone Mamba Stack - MK4 F722 APP FC + 55A 3-6S BHeli_32 128K ESC (ICM42688P)",
+    "manufacturer": "Diatone",
+    "description": "The Diatone Mamba MK4 Stack features an MK4 APP F722 Flight Controller and 55A 128K ESC with OSD and an ICM42688P Gyro.",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-stack-mk4-f722-app-fc-55a-3-6s-bheli-32-128k-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone_mamba_stack_-_mk4_1.jpg",
+    "approx_price": 148.49,
+    "mcu_family": "F7",
+    "imu": "ICM42688P",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 65,
+    "esc_firmware": "BLHeli_32 128K",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1057",
+    "category": "stacks",
+    "name": "Diatone Mamba Stack - MK4 F722 APP FC + 45A 3-6S BHeli_32 128K ESC",
+    "manufacturer": "Diatone",
+    "description": "The Diatone Mamba MK4 Stack features an MK4 APP F722 Flight Controller and 45A 128K ESC with OSD and an ICM42688P Gyro.",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-stack-mk4-f722-app-fc-45a-3-6s-bheli-32-128k-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone_mamba_stack_-_mk4_2.jpg",
+    "approx_price": 102.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 45,
+    "esc_firmware": "BLHeli_32 128K",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 45,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 45,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1058",
+    "category": "stacks",
+    "name": "T-Motor VELOX Lite F411 Stack - F411 Lite FC + V45A Lite ESC",
+    "manufacturer": "Tiger Motors",
+    "description": "The T-Motor VELOX Lite F411 Stack is a budget-friendly stack that is equipped with the VELOX Lite F411 FC and the VELOX Lite V45A 3-6S BLHeliS 4-in-1 ESC.",
+    "link": "https://www.getfpv.com/electronics/stacks/t-motor-velox-lite-f411-stack-f411-lite-fc-v45a-lite-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/-/t-motor_velox_lite_f411_stack_-_f411_lite_fc_v45a_lite_esc.png",
+    "approx_price": 96.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 45,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 45,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 45,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1059",
+    "category": "stacks",
+    "name": "SkyStars Fly Tower Stack - F722 HD Pro2 FC + KM50 Pro 50A 3-6S 4-in-1 BLHeli_32 ESC - 30x30",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Fly Tower Stack features an F722 HD Pro2 Flight Controller and a KM50 Pro 50A 3-6S 4-in-1 BLHeli_32 ESC with a 30x30  mounting pattern.",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-tower-stack-f722-hd-pro2-fc-km50-pro-50a-3-6s-4-in-1-blheli-32-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars-fly-tower-stack---f722-hd-pro2-fc-_-km50-pro-50a-3-6s-4-in-1-blheli_32-esc---30x30_main.jpg",
+    "approx_price": 97.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 50,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1060",
+    "category": "stacks",
+    "name": "Diatone Mamba Stack - DJI F405 MK2 FC + F55 55A 128K ESC",
+    "manufacturer": "Diatone",
+    "description": "The Diatone Mamba DJI F405 MK2 FC 55A Stack brings BIG power all in a 30.5x30.5 mounting size! This stack can push 55A all while bringing you the latest features! This stack includes the 128K version ESC. The built-in plugin allows you to easily connect to the DJI FPV Air System.",
+    "link": "https://www.getfpv.com/electronics/stacks/diatone-mamba-stack-dji-f405-mk2-fc-f55-55a-128k-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone_mamba_sack_dji_f405_55a_128k_escdji-mamba-stack-f405-55a-128k-front-low_res-width-1000px.jpg",
+    "approx_price": 93.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "BLHeli_32 128K",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1061",
+    "category": "stacks",
+    "name": "Holybro Kakute H7 BT Stack - Tekko32 F4 50A BLHeli32 4-in-1 ESC + Atlatl HV V2 ",
+    "manufacturer": "Holybro",
+    "description": "The Mini Kakute H7 BT Stack by Holybro comes with the Kakute H7 FC, Tekko32 F4 4-in-1 ESC (50A), and the Atlatl HV V2 VTX. Holybro is saving you time and guesswork by making this powerful stack that will give you max performance and great video quality!",
+    "link": "https://www.getfpv.com/electronics/stacks/holybro-kakute-h7-bt-stack-tekko32-f4-50a-blheli32-4-in-1-esc-atlatl-hv-v2.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_kakute_h7_bt_stack_atlantl_hv_v2_1.jpg",
+    "approx_price": 188.99,
+    "mcu_family": "H7",
+    "mounting_pattern_mm": 30.5,
+    "esc_current_a": 50,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": null,
+      "cell_count_max": null,
+      "voltage_min_v": null,
+      "voltage_max_v": null,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "H7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1062",
+    "category": "stacks",
+    "name": "Holybro Kakute H7 BT - Tekko32 F4 Metal 65A 4-in-1 ESC Stack ",
+    "manufacturer": "Holybro",
+    "description": "The Holybro Kakute H7 BT + Tekko32 F4 Metal 65A 4-in-1 ESC stack brings lots of power all in a 30.5x30.5 mounting size! This stack can push 65A all while bringing you the latest features!",
+    "link": "https://www.getfpv.com/electronics/stacks/holybro-kakute-h7-bt-tekko32-f4-metal-65a-4-in-1-esc-stack.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/e/tekko_32_f4_metal_65a_kakute_h7.jpg",
+    "approx_price": 184.99,
+    "mcu_family": "H7",
+    "mounting_pattern_mm": 30.5,
+    "esc_current_a": 65,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 65,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": null,
+      "cell_count_max": null,
+      "voltage_min_v": null,
+      "voltage_max_v": null,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 65,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "H7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1063",
+    "category": "stacks",
+    "name": "Holybro Kakute H7 BT Stack - Tekko32 F4 Metal 65A 4-in-1 ESC + AtlatI HV V2 ",
+    "manufacturer": "Holybro",
+    "description": "The Mini Kakute H7 BT Stack by Holybro comes with the Kakute H7 FC, Tekko32 F4 Metal 4-in-1 ESC (65A), and the Atlatl HV V2 VTX. Holybro is saving you time and guesswork by making this powerful stack that will give you max performance and great video quality!",
+    "link": "https://www.getfpv.com/electronics/stacks/holybro-kakute-h7-bt-stack-tekko32-f4-metal-65a-4-in-1-esc-atlati-hv-v2.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-tekko32-f4-65a-metal-h7-fc.jpeg",
+    "approx_price": 212.99,
+    "mcu_family": "H7",
+    "mounting_pattern_mm": 30.5,
+    "esc_current_a": 65,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 65,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": null,
+      "cell_count_max": null,
+      "voltage_min_v": null,
+      "voltage_max_v": null,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 65,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "H7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1064",
+    "category": "stacks",
+    "name": "Hobbywing XRotor Micro Combo Stack - F7 FC + 60A 4-in-1 BLHeli_32 ESC",
+    "manufacturer": "Hobbywing",
+    "description": "The XRotor Micro Combo from Hobbywing continues to impress with its latest iteration. The Micro Combo features a 60A 4-in-1 ESC along with an updated F7 Flight Controller. This new FC is similar to other versions with its OSD, and voltage monitoring, but the F7 now comes with an all-new 5V & 12V dual BEC Circuit and a special interface for the DJI image transmission system.",
+    "link": "https://www.getfpv.com/electronics/stacks/hobbywing-xrotor-micro-combo-stack-f7-fc-60a-4-in-1-blheli-32-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/hobbywing_xrotor_micro_combo_stack_-_f7_fc_60a_4-in-1_blheli_32_escuntitled-1-standard-width-1000px.jpg",
+    "approx_price": 142.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1065",
+    "category": "stacks",
+    "name": "SkyStars Fly Tower Stack - F7 FC + KO60 60A 3-6S 4-in-1 BLHeli_32 ESC - 30x30",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars F7+ KO60 Blheli_32 Fly Tower Stack features the SkyStars F7 HD flight controller, as well as the KO60 60A 4-in-1 ESC to give your multirotor full power!",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-tower-stack-f7-fc-ko60-60a-3-6s-4-in-1-blheli-32-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars_f7_ko60_blheli_32_3_.jpg",
+    "approx_price": 89.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1066",
+    "category": "stacks",
+    "name": "SkyStars Fly Tower Stack - F7 FC + KO45 45A 3-6S 4-in-1 BLHeli_32 ESC - 30x30",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars F7+ KO45 Blheli_32 Fly Tower Stack features the SkyStars F7 HD flight controller, as well as the KO45 45A 4-in-1 ESC to give your multirotor full power!",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-tower-stack-f7-fc-ko45-45a-3-6s-4-in-1-blheli-32-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars_f7_ko45_blheli32_fly_stack_6_.jpg",
+    "approx_price": 85.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 45,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 45,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 45,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1067",
+    "category": "stacks",
+    "name": "SkyStars Fly Tower Stack - F4 FC + KO55 55A 3-6S 4-in-1 BLHeli_S ESC - 30x30",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars F4+ KO55 Blheli_S Fly Tower Stack features the SkyStars F4 flight controller, as well as the KO55 55A 4-in-1 ESC to give your multirotor full power!",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-tower-stack-f4-fc-ko55-55a-3-6s-4-in-1-blheli-s-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars_f4_ko55_3-6s_blheli_32_4-in-1_esc_30x30_fly_tower_stack_2_.jpg",
+    "approx_price": 79.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1068",
+    "category": "stacks",
+    "name": "Flywoo GOKU HD745 EVO 40A AIO Stack + HM600 VTX",
+    "manufacturer": "Flywoo",
+    "description": "FLYWOO's new EVO series aims to make AIOs the new hot thing in FPV - and looking at the features, it is hard to resist everything on one board!",
+    "link": "https://www.getfpv.com/electronics/stacks/flywoo-goku-hdf745-evo-aio-40a-stack-hm600-vtx.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-hdf745-evo-aio-40a-stack-_-hm600-vtx-main1000x1000.jpg",
+    "approx_price": 194.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "esc_current_a": 40,
+    "is_aio": true,
+    "continuous_current_per_motor_a": 40,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": null,
+      "cell_count_max": null,
+      "voltage_min_v": null,
+      "voltage_max_v": null,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 40,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1069",
+    "category": "stacks",
+    "name": "Flywoo GOKU GN745 AIO 40A BL32 Stack + HM600 VTX",
+    "manufacturer": "Flywoo",
+    "description": "The GOKU GNF745 40A FC Stack is one of the most integrated and powerful whoop/toothpick AIO boards on the market! Perfect for ultralight quads and toothpicks.",
+    "link": "https://www.getfpv.com/electronics/stacks/flywoo-goku-gn745-aio-40a-bl32-stack-hm600-vtx.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/o/goku-gn745.jpg",
+    "approx_price": 159.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 25.5,
+    "esc_current_a": 40,
+    "is_aio": true,
+    "continuous_current_per_motor_a": 40,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": null,
+      "cell_count_max": null,
+      "voltage_min_v": null,
+      "voltage_max_v": null,
+      "mounting_pattern_mm": 25.5,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 40,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "25.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1070",
+    "category": "stacks",
+    "name": "Flywoo GOKU F411 V2.1 16x16 Micro Stack + 13A 2-4S BL_S 4-in-1 ESC ",
+    "manufacturer": "Flywoo",
+    "description": "The GOKU F411 V2.1 16x16 Micro Stack by Flywoo includes the F411 Flight Controller along with the GOKU BS13A V2 4-in-1 ESC, which can handle up to 4S input voltage and push your FPV racer to the max!",
+    "link": "https://www.getfpv.com/electronics/stacks/flywoo-goku-f411-v2-1-16x16-micro-stack-13a-2-4s-blheli-s-4-in-1-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo_goku_f411_v2.1_16x16_micro_stack_13a_2-4s_blheli_s_4-in-1_esc_.jpg",
+    "approx_price": 72.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 16.0,
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "esc_current_a": 13,
+    "continuous_current_per_motor_a": 13,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 4,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 17.4,
+      "mounting_pattern_mm": 16.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 13,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3_inch",
+    "tags": [
+      "F4",
+      "16.0mm",
+      "3 inch"
+    ]
+  },
+  {
+    "pid": "STK-1071",
+    "category": "stacks",
+    "name": "iFlight SucceX-E Mini F7 Stack + 35A 2-6S BLHeliS 4-in-1 ESC (MPU6000)",
+    "manufacturer": "iFlight",
+    "description": "This stack is plug and play - meaning that no soldering is needed. You can plug this stack into your Caddx Vista, analog VTX and it comes with a universal receiver plug!",
+    "link": "https://www.getfpv.com/electronics/stacks/iflight-succex-e-mini-f7-stack-35a-2-6s-blhelis-4-in-1-esc-mpu6000.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/u/succex-e-mini-f7-35a-esc_3_-1000x1000.jpg",
+    "approx_price": 123.99,
+    "mcu_family": "F7",
+    "imu": "MPU6000",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 35,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 35,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 35,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1072",
+    "category": "stacks",
+    "name": "Flywoo GOKU F411 F4 V2.1 16x16 Stack + 35A 2-6S BL_S 4-in-1 ESC",
+    "manufacturer": "Flywoo",
+    "description": "The Flywoo GOKU F4 35A nano stack features GOKU F411 F4 V2.1 16x16 FC and GOKU 35A 2-6S BL_S 4-in-1 ESC.",
+    "link": "https://www.getfpv.com/electronics/stacks/flywoo-goku-f411-f4-v2-1-16x16-stack-35a-2-6s-bl-s-4-in-1-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/o/o/oo_goku_f411_v2.1_16x16_stack--fc_35a_esc_.jpg",
+    "approx_price": 82.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 16.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 35,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 35,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 16.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 35,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3_inch",
+    "tags": [
+      "F7",
+      "16.0mm",
+      "3 inch"
+    ]
+  },
+  {
+    "pid": "STK-1073",
+    "category": "stacks",
+    "name": "SkyStars F7 HD 20X20 + KM55A Mini 3-6S BLHeli_32 4-in-1 ESC Stack ",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars F7 HD 20X20 Fly Stack comes with the SkyStars F7 3-6S 20x20 HD Flight Controller and  KM55A Mini 3-6S BLHeli_32 4-in-1 ESC, to give your multirotor full power!",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-f7-hd-20x20-km55a-mini-3-6s-blheli-32-4-in-1-esc-stack.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars_f7_hd_20x20_fly_stack.jpg",
+    "approx_price": 94.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "BLHeli_32",
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1074",
+    "category": "stacks",
+    "name": "SkyStars Fly Tower Mini Stack - F7 HD FC+ KM40 40A 3-6S BLHeli_32 4-in-1 ESC - 20x20",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars F7 HD 20X20 Fly Stack comes with the SkyStars F7 3-6S 20x20 HD Flight Controller and  KM40 40A Mini 3-6S BLHeli_32 4-in-1 ESC, to give your multirotor full power!",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-tower-mini-stack-f7-hd-fc-km40-40a-3-6s-blheli-32-4-in-1-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars-f7-hd-20x20-_-km40a-mini-3-6s-blheli_32-4-in-1-esc-stack.jpg",
+    "approx_price": 89.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 40,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 40,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 40,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1075",
+    "category": "stacks",
+    "name": "RushFPV RUSH BLADE F722 FC & 50A 30x30 & RUSH Tank Ⅱ VTX & RUSH PFB Stack/Combo",
+    "manufacturer": "RUSHFPV",
+    "description": "The RUSH BLADE F722 Stack for analog by RUSHFPV features the RUSH TANK II 5.8GHz VTX, RUSH BLADE F722 Flight Controller, RUSH BLADE 50A 3-6S BLHeli_32 4-in-1 ESC (Sports Edition), and the RUSH Power Filter Board (PFB), which can handle up to 6S input voltage and push your FPV racer to the max.",
+    "link": "https://www.getfpv.com/electronics/stacks/rushfpv-rush-blade-f722-fc-50a-30x30-rush-tank-vtx-rush-pfb-stack-combo.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/rushfpv-rush-tank-ii-vtx-stack---blade-f722-flight-controller-_-50a-3-6s-blheli_32-4-in-1-esc-for-analog.jpg",
+    "approx_price": 154.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 50,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1076",
+    "category": "stacks",
+    "name": "Lumenier LUX F7 Ultimate + Razor LED 55A Bundle (F7 FC, 55A 2-6S BLHeli_32 ESC)",
+    "manufacturer": "Lumenier",
+    "description": "The Lumenier LUX F7 Ultimate + Razor LED 55A Stack (F7 FC, 55A 2-6S BLHeli_32 ESC) Combo. Save 5% when buying this as a bundle!",
+    "link": "https://www.getfpv.com/electronics/stacks/lumenier-lux-f7-ultimate-razor-led-55a-bundle.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-lux-f7-led-stack.jpg",
+    "approx_price": 191.41,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 6,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1077",
+    "category": "stacks",
+    "name": "T-Motor Mini F7  Stack + F45A 3-6S BLHeli_32 4-in-1 ESC",
+    "manufacturer": "Tiger Motors",
+    "description": "Get a better flying experience with the T-Motor Mini F45 + Mini F7 Stack! This stack brings lots of power all in a small package!",
+    "link": "https://www.getfpv.com/electronics/stacks/t-motor-mini-f7-stack-f45a-3-6s-blheli-32-4-in-1-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/-/t-motor-mini-f7--stack--f45a-3-6s-blheli_32-4-in-1-esc.jpg",
+    "approx_price": 187.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 45,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 45,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 45,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1078",
+    "category": "stacks",
+    "name": "Flywoo GOKU GN413S 13A 2-4S AIO Toothpick FC + VTX625 Stack",
+    "manufacturer": "Flywoo",
+    "description": "The Flywoo GOKU GN413S AIO Toothpick FC combined with the GOKU VTX625 VTX brings lots of cool features to your small builds!",
+    "link": "https://www.getfpv.com/electronics/stacks/flywoo-goku-gn413s-13a-2-4s-aio-toothpick-fc-vtx625-stack.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/o/goku-gn413s-stack-aio-toothpick-13a-vtx625-2.jpg",
+    "approx_price": 69.99,
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "esc_current_a": 13,
+    "is_aio": true,
+    "continuous_current_per_motor_a": 13,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_pattern_mm": 20.0,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 4,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 17.4,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 13,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1079",
+    "category": "stacks",
+    "name": "GEPRC STABLE F411 Stack - F411 FC + 12A BLHeli_S 4-in-1 ESC + 5.8GHz VTX - 16x16 ",
+    "manufacturer": "GEPRC",
+    "description": "The STABLE F411 VTX Stack by GEPRC comes with a STABLE F411  Flight Controller, 12A BLheli_32 4-in-1 ESC, and 200mW 5.8GHz VTX.",
+    "link": "https://www.getfpv.com/electronics/stacks/geprc-stable-f411-16x16-vtx-stack-f411-flight-controller-12a-blheli-s-4-in-1-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/0/1/01-3807104443.jpg",
+    "approx_price": 65.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 16.0,
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "esc_current_a": 12,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 12,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 4,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 17.4,
+      "mounting_pattern_mm": 16.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 12,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3_inch",
+    "tags": [
+      "F4",
+      "16.0mm",
+      "3 inch"
+    ]
+  },
+  {
+    "pid": "STK-1080",
+    "category": "stacks",
+    "name": "T-Motor F7 Stack - F7 FC + F55A PRO II 3-6S 4-in-1 ESC",
+    "manufacturer": "Tiger Motors",
+    "description": "T-Motor's powerful F7 Flight Controller combined with the F55A Pro II 3-6S 4-in-1 ESC will give you optimized performance and seamless integration in your electronics stack.",
+    "link": "https://www.getfpv.com/electronics/stacks/t-motor-f7-stack-f7-fc-f55a-pro-ii-3-6s-4-in-1-esc-combo.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_0380_1.jpg",
+    "approx_price": 181.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1081",
+    "category": "stacks",
+    "name": "Lumenier LUX Mini F7 20x20 Stack (45A 2-6S Pro ESC, F7 FC, 800mW VTX)",
+    "manufacturer": "",
+    "description": "The Lumenier F7 Mini Stack gives you premium components in a featured-packed platform, all in a 20x20 stack!",
+    "link": "https://www.getfpv.com/electronics/stacks/lumenier-lux-mini-pro-f7-20x20-stack.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/r/a/razor-pro-stack-main.jpg",
+    "approx_price": 149.48,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_current_a": 45,
+    "is_aio": true,
+    "continuous_current_per_motor_a": 45,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 6,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 45,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1082",
+    "category": "stacks",
+    "name": "Lumenier LUX Mini F7 20x20 Stack (30A 2-6S ESC, F7 FC, 800mW VTX)",
+    "manufacturer": "",
+    "description": "The Lumenier F7 Mini Stack gives you premium components in a featured-packed platform, all in a 20x20 stack!",
+    "link": "https://www.getfpv.com/electronics/stacks/lumenier-lux-mini-f7-20x20-stack.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/l/u/lux-20-stack-1.jpg",
+    "approx_price": 149.48,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_current_a": 30,
+    "is_aio": true,
+    "continuous_current_per_motor_a": 30,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 6,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 30,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1083",
+    "category": "stacks",
+    "name": "Skystars Fly Stack - F722 Mini HD Pro FC + KM55 55A AM32 3-6S 4-in-1 ESC - 20x20 ",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Fly Stack features an F722 Mini HD Pro Flight Controller and a Kramam 55A AM32 32Bit 3-6S 20×20 4-i-n1 ESC with a 20x20 mounting pattern.",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-f7-hd-mini-pro-fc-km55-55a-am-32-3-6s-4-in-1-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars-f7-hd-pro-am32-55a-6.jpg",
+    "approx_price": 118.49,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1084",
+    "category": "stacks",
+    "name": "SkyStars Fly Stack - F722 HD Pro 4 FC + AM60 60A AM32 ESC - 30x30",
+    "manufacturer": "SkyStars",
+    "description": "The Skystars F7HD Pro4 Flight Controller paired with the AM60A AM-32 32bit 4-in-1 ESC Fly Tower Stack represents a pinnacle in drone control technology, bundled in this Skystars F7+AM60 AM-32 Fly Stack.",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-f722-hd-pro-4-fc-am60-60a-am-32-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars-fly-stack---f722-hd-pro-4-fc-_-am60-60a-blheli_32-esc---30x30.jpg",
+    "approx_price": 127.49,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1085",
+    "category": "stacks",
+    "name": "Skystars Fly Stack - H743 Dual Gyro HD FC + KM60 60A BLHeli_32 4-in-1 ESC - 30x30",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Fly Stack features a H743 Dual Gyro HD Flight Controller and a Kramam 60A BLHeli_32 4-in-1 ESC with a 30x30 mounting pattern.",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-h743-dual-gyro-hd-fc-km60-60a-blheli-32-4-in-1-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/7/h743-ko60-flystack-5.jpg",
+    "approx_price": 152.49,
+    "mcu_family": "H7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_32 128K",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "H7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1086",
+    "category": "stacks",
+    "name": "SkyStars Fly Stack - F722 HD Pro 3 OSD FC + KO60 60A 3-6S 4-in-1 BLHeli_32 128K ESC - 30x30",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Fly Stack features an F722 HD Pro 3 OSD flight controller and a KO60 60A BLHeli_32 4-in-1 128K ESC with a 30x30 mounting pattern!",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-f722-hd-pro-3-osd-fc-ko60-60a-3-6s-4-in-1-blheli-32-128k-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars-fly-stack---f722-hd-pro-3-_-ko60-60a-128k-esc---30x30.jpg",
+    "approx_price": 128.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 60,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 60,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 60,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1087",
+    "category": "stacks",
+    "name": "GEPRC TAKER Stack - F405 FC+ 50A 3-6S BLHeli_S ESC",
+    "manufacturer": "GEPRC",
+    "description": "The GEPRC TAKER Stack - F405 FC+ 50A 3-6S BLHeli_S ESC is a plug-and-play system designed for the DJI Air Unit.",
+    "link": "https://www.getfpv.com/electronics/stacks/geprc-taker-stack-f405-fc-50a-3-6s-blheli-s-esc.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-taker-stack---f405-_-bls-50a-_image-1_.jpg",
+    "approx_price": 75.49,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 50,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1088",
+    "category": "stacks",
+    "name": "Axisflying Argus PRO Plug & Play Stack - F722 FC + 55A 3-6S BLHeli_32 ESC - 30x30",
+    "manufacturer": "Axisflying",
+    "description": "The Axisflying Argus PRO Plug & Play Stack - F722 FC + 55A 3-6S BLHeli_32 ESC - 30x30 features a full aluminum cover wrap for extra protection.",
+    "link": "https://www.getfpv.com/electronics/stacks/axisflying-argus-pro-plug-play-stack-f722-fc-55a-3-6s-blheli-32-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/x/axisflying-argus-pro-plug-_-play-stack---f722-fc-_-55a-3-6s-blheli_32-esc---30x30-lines-width-1000px.jpg",
+    "approx_price": 188.49,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1089",
+    "category": "stacks",
+    "name": "NewBeeDrone Hummingbird 200 RaceSpec Stack - F4 ELRS FC + 80A AM32 ESC - 20x20",
+    "manufacturer": "NewBeeDrone",
+    "description": "The NewBeeDrone Hummingbird 200 RaceSpec Stack - F4 ELRS FC + 80A AM32 ESC -  is a purpose-built 20x20 flight stack designed from the ground up for competitive 5” FPV racing.",
+    "link": "https://www.getfpv.com/electronics/stacks/newbeedrone-hummingbird-200-racespec-stack-f4-elrs-fc-80a-am32-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/e/newbeedrone_hummingbird_200_racespec_stack_1.jpg",
+    "approx_price": 99.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 80,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 80,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 80,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F4",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1090",
+    "category": "stacks",
+    "name": "SkyStars Fly Stack - F405 HD2 FC + KO50 50A BLHeli_S ESC - 30x30 ",
+    "manufacturer": "SkyStars",
+    "description": "The Skystars F4+KO50 Fly Stack showcases a synergized pairing between the F405 HD2 Flight Controller, featuring the precise BMI270 gyro, a 16MB black box for data retention, and a 5V/2A BEC, and the KO50 4in1 ESC, a robust unit supporting the efficient BLHeli_S protocol.",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-f405-hd2-fc-ko50-50a-blheli-s-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars-f4_ko50-bl_s-fly-stack---30x30.jpg",
+    "approx_price": 84.49,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 50,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1091",
+    "category": "stacks",
+    "name": "Axisflying Argus Mini Stack - F7 FC + 55A 4-6S ESC - 20x20",
+    "manufacturer": "Axisflying",
+    "description": "Upgrade your drone with the Axisflying Argus Mini Stack, featuring an F7 Flight Controller and 55A 4-6S ESC.",
+    "link": "https://www.getfpv.com/electronics/stacks/axisflying-argus-mini-stack-f7-fc-55a-4-6s-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/x/axisflying-argus-mini-stack---f7-fc-_-55a-2-6s-esc---20x20-_image-1_.jpg",
+    "approx_price": 162.49,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 4,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 4,
+      "cell_count_max": 6,
+      "voltage_min_v": 12.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F7",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1092",
+    "category": "stacks",
+    "name": "Flywoo GOKU V3 HD Stack - F4 FC + 20A 2-4S 4-in-1 BLHeli_S ESC w/ LED + ELRS 2.4GHz - 16x16",
+    "manufacturer": "Flywoo",
+    "description": "The Flywoo GOKU V3 HD Stack combines high-performance components in a compact 16x16mm design, ideal for QUAD drone builds. Featuring an F4 flight controller and a 20A 2-4S 4-in-1 BLHeli_S ESC, this stack ensures smooth and reliable power delivery for your drone.",
+    "link": "https://www.getfpv.com/electronics/stacks/flywoo-goku-v3-hd-stack-f4-fc-20a-2-4s-4-in-1-blheli-s-esc-w-led-elrs-2-4ghz-16x16.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo_2.jpg",
+    "approx_price": 77.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 16.0,
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "esc_current_a": 20,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 20,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 4,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 17.4,
+      "mounting_pattern_mm": 16.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 20,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3_inch",
+    "tags": [
+      "F7",
+      "16.0mm",
+      "3 inch"
+    ]
+  },
+  {
+    "pid": "STK-1093",
+    "category": "stacks",
+    "name": "GEPRC FETtec Alpha Stack - G4 FC + 50A 2-6S 4-in-1 ESC - 30x30",
+    "manufacturer": "GEPRC",
+    "description": "The co-branded GEPRC FETtec G4 Alpha GF50A Stack by GEPRC and FETTEC has been released.",
+    "link": "https://www.getfpv.com/electronics/stacks/geprc-fettec-alpha-stack-g4-fc-50a-2-6s-4-in-1-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-fettec-alpha-stack---g4-fc-_-50a-2-6s-4-in-1-esc---30x30-_image-1_.jpg",
+    "approx_price": 168.99,
+    "mcu_family": "G4",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_current_a": 50,
+    "esc_firmware": "FETtec",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 6,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "G4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1094",
+    "category": "stacks",
+    "name": "Skystars Fly Stack - F411 Mini HD FC + KO40 40A BLHeli_S 3-6S 4-in-1 ESC - 20x20",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Fly Stack features a F411 Mini HD Flight Controller and a Kramam 40A BLHeli_S 3-6S 4-in-1 ESC with a 20x20 mounting pattern.",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-f411-mini-hd-fc-ko40-40a-blheli-s-3-6s-4-in-1-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/4/f411mini-hd-20x20-fc-ko40-3_1.jpg",
+    "approx_price": 89.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 40,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 40,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 40,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F4",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1095",
+    "category": "stacks",
+    "name": "Holybro F7 Stack - F722 Kakute FC - TEKKO32 F4 65A 4-in-1 ESC - 30.5 x 30.5",
+    "manufacturer": "Holybro",
+    "description": "Introducing the Holybro Kakute F7 Stack: a powerful fusion of the Holybro Kakute F722 flight controller and TEKKO32 F4 65A 4-in-1 ESC.",
+    "link": "https://www.getfpv.com/electronics/stacks/holybro-f7-stack-f722-kakute-fc-tekko32-f4-65a-4-in-1-esc-30-5-x-30-5.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-kakute-f7-stack---f722-tekko32-f4-_-50a--4-in-1-esc----30.5-x-30.5-_image-1_1__1.jpg",
+    "approx_price": 162.49,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_current_a": 65,
+    "is_aio": true,
+    "continuous_current_per_motor_a": 65,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 8,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 65,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1096",
+    "category": "stacks",
+    "name": "SpeedyBee F405 V4 Stack - F4 V4 FC + 55A BLHeli_S ESC - 30x30",
+    "manufacturer": "SpeedyBee",
+    "description": "Elevate your drone's performance with the SpeedyBee F405 V4 Stack, featuring STM32F405 MCU and ICM42688P gyro for precise control.",
+    "link": "https://www.getfpv.com/electronics/stacks/speedybee-f405-v4-stack-f4-v4-fc-55a-blheli-s-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/p/speedybee-f405-v4-stack---f4-v4-fc-_-55a-blheli_s-esc---30x30_1_.jpg",
+    "approx_price": 93.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 55,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 55,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 55,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1097",
+    "category": "stacks",
+    "name": "Flycolor X-Tower F4 FC + 40A BLHeli32 4-in-1 ESC Stack",
+    "manufacturer": "FlyColor",
+    "description": "The Flycolor F4 40A Stack gives you all the essentials you need to get in the air and fly with the best components.",
+    "link": "https://www.getfpv.com/electronics/stacks/flycolor-x-tower-f4-fc-40a-blheli32-4-in-1-esc-stack.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flycolor-x-tower-omnibus-f4-with-arm-32bit-4in1-40a-esc-pdb-osd-1.jpg",
+    "approx_price": 113.49,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 40,
+    "is_aio": true,
+    "mcu_family": "F4",
+    "continuous_current_per_motor_a": 40,
+    "esc_firmware": "BLHeli_32",
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 40,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F4",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1098",
+    "category": "stacks",
+    "name": "SpeedyBee F7 V3 Stack - F722 FC + 50A BLHeli_32 128K ESC - 30x30",
+    "manufacturer": "SpeedyBee",
+    "description": "The SpeedyBee F7 V3 Stack includes an F722 flight controller and a 50A 128K ESC.",
+    "link": "https://www.getfpv.com/electronics/stacks/speedybee-f7-v3-stack-f722-fc-50a-blheli-32-128k-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/p/speedybee-f7-v3-stack---f722-fc-_-50a-blheli_32-128k-esc---30x30-1.jpg",
+    "approx_price": 163.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 50,
+    "esc_firmware": "BLHeli_32 128K",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1099",
+    "category": "stacks",
+    "name": "SpeedyBee F405 Mini Stack - F405 V3 FC + 35A 3-6S BLHeli_S 4-in-1 ESC - 20x20",
+    "manufacturer": "",
+    "description": "",
+    "link": "https://www.getfpv.com/electronics/stacks/speedybee-f405-mini-stack-f405-v3-fc-35a-3-6s-blheli-s-4-in-1-esc-20x20.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/s/p/speedybee_f405_mini_stack_4_.jpg",
+    "approx_price": 81.99,
+    "mcu_family": "F4",
+    "mounting_pattern_mm": 20.0,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 35,
+    "esc_firmware": "BLHeli_S",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 35,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M2",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 20.0,
+      "mounting_hole_size": "M2",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 35,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "3.5_inch",
+    "tags": [
+      "F4",
+      "20.0mm",
+      "3.5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1100",
+    "category": "stacks",
+    "name": "SkyStars Fly Stack - F722 HD Pro 4 OSD FC + KM50 Pro 50A 3-6S 4-in-1 BLHeli_32 ESC - 30x30",
+    "manufacturer": "SkyStars",
+    "description": "The SkyStars Fly Stack features an F722 HD Pro 4 flight controller and a Kramam KM50 Pro 50A BLHeli_32 4-in-1 ESC with a 30x30 mounting pattern!",
+    "link": "https://www.getfpv.com/electronics/stacks/skystars-fly-stack-f722-hd-pro-4-osd-fc-km50-pro-50a-3-6s-4-in-1-blheli-32-esc-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars-fly-stack---f722-hd-pro-3-osd-fc-_-km50-pro-50a-esc30x30_2_.jpg",
+    "approx_price": 128.99,
+    "mcu_family": "F7",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_current_a": 50,
+    "esc_firmware": "BLHeli_32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 50,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 3,
+      "cell_count_max": 6,
+      "voltage_min_v": 9.0,
+      "voltage_max_v": 26.1,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 50,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  },
+  {
+    "pid": "STK-1101",
+    "category": "stacks",
+    "name": "DYS F7 Stack - F722 FC + 65A 2-8S AM32 4-in-1 ESC - ICM42688P - 30x30",
+    "manufacturer": "DYS",
+    "description": "The DYS F7 Stack combines the advanced DYS F722 Flight Controller with the high-performance 65A AM32 4-in-1 ESC.",
+    "link": "https://www.getfpv.com/electronics/stacks/dys-f7-stack-f722-fc-65a-2-8s-am-32-4-in-1-esc-icm42688p-30x30.html",
+    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/y/dys-stack---f7-fc-_-65a-2-8s-am_32-4-in-1-esc---icm42688p---30x30-_image-1_1_.jpg",
+    "approx_price": 110.49,
+    "mcu_family": "F7",
+    "imu": "ICM42688P",
+    "mounting_pattern_mm": 30.5,
+    "cell_count_min": 2,
+    "cell_count_max": 8,
+    "esc_current_a": 65,
+    "esc_firmware": "AM32",
+    "is_aio": true,
+    "continuous_current_per_motor_a": 65,
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "mounting_hole_size": "M3",
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 8,
+      "voltage_min_v": 6.0,
+      "voltage_max_v": 34.8,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": 65,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v",
+        "continuous_current_per_motor_a"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "F7",
+      "30.5mm",
+      "5 inch"
+    ]
+  }
+]
