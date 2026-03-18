@@ -100,6 +100,9 @@ Full integration profiles — RF links, firmware, payloads, SDKs, and gotchas.
 - [DJI Mavic 4 Pro](platforms/cots/dji-mavic4-pro.md) — Prosumer/light commercial. Not NDAA.
 - [Autel EVO MAX 4T V2](platforms/cots/autel-evo-max-4t.md) — Quad-sensor, GPS-denied, A-Mesh. XE is NDAA.
 - [Autel EVO II Enterprise V3](platforms/cots/autel-evo2-enterprise.md) — Dual-sensor workhorse.
+- [DJI Agras T50](platforms/cots/dji-agras-t50.md) — Ag spraying/spreading, 40 kg payload, 52 acres/hr.
+- [DJI FlyCart 30](platforms/cots/dji-flycart-30.md) — Heavy-lift delivery, 30–40 kg payload.
+- [Flyability Elios 3](platforms/cots/flyability-elios-3.md) — Confined space, collision-tolerant cage, LiDAR SLAM.
 
 **NDAA / Blue UAS / Green UAS:**
 - [Skydio X10 / X10D](platforms/blue-uas/skydio-x10.md) — Best-in-class autonomy. X10D is Blue UAS.
@@ -107,6 +110,7 @@ Full integration profiles — RF links, firmware, payloads, SDKs, and gotchas.
 - [Inspired Flight IF1200A](platforms/blue-uas/inspired-flight-if1200a.md) — Heavy-lift hex, ArduPilot, Blue UAS.
 - [Teal 2](platforms/blue-uas/teal-2.md) — Night ISR, FLIR Hadron 640R, Blue UAS.
 - [Parrot ANAFI USA](platforms/blue-uas/parrot-anafi-usa.md) — Ultra-light, Blue UAS.
+- [WingtraOne / WingtraRAY](platforms/blue-uas/wingtra-wingtraone.md) — Fixed-wing VTOL mapping, 59 min, Blue UAS.
 
 **Open-Source / Custom Build:**
 - [Holybro X500 V2 + Pixhawk 6X](platforms/open-source/holybro-x500-pixhawk6x.md) — Reference PX4 dev kit.

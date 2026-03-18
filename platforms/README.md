@@ -15,6 +15,9 @@ Full integration profiles for drone platforms across four categories. Each profi
 | [DJI Mavic 4 Pro](cots/dji-mavic4-pro.md) | NO | Proprietary | No | 46 min | No |
 | [Autel EVO MAX 4T V2](cots/autel-evo-max-4t.md) | XE only | Proprietary | No | 42 min | 640×512 |
 | [Autel EVO II Enterprise V3](cots/autel-evo2-enterprise.md) | Check | Proprietary | No | 42 min | 640×512 |
+| [DJI Agras T50](cots/dji-agras-t50.md) | NO | Proprietary | No | N/A (ag) | No |
+| [DJI FlyCart 30](cots/dji-flycart-30.md) | NO | Proprietary | No | 29 min | No |
+| [Flyability Elios 3](cots/flyability-elios-3.md) | No | Proprietary | No | 12–17 min | Radiometric |
 
 ## NDAA-Compliant / Blue UAS / Green UAS
 
@@ -25,6 +28,7 @@ Full integration profiles for drone platforms across four categories. Each profi
 | [Inspired Flight IF1200A](blue-uas/inspired-flight-if1200a.md) | YES | ArduPilot | Yes | 43 min | Via payload |
 | [Teal 2](blue-uas/teal-2.md) | YES | Proprietary | No | 30 min | Hadron 640R |
 | [Parrot ANAFI USA](blue-uas/parrot-anafi-usa.md) | YES | Proprietary | No | 32 min | Boson 320 |
+| [WingtraOne GEN II / WingtraRAY](blue-uas/wingtra-wingtraone.md) | YES | Proprietary | No | 59 min | Via sensor |
 
 ## Open-Source / Custom Build
 

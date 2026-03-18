@@ -34,11 +34,15 @@ PLATFORMS = [
     ("platforms/cots/dji-mavic4-pro.md", 103, "DJI Mavic 4 Pro"),
     ("platforms/cots/autel-evo-max-4t.md", 104, "Autel EVO MAX 4T V2"),
     ("platforms/cots/autel-evo2-enterprise.md", 105, "Autel EVO II Enterprise V3"),
+    ("platforms/cots/dji-agras-t50.md", 106, "DJI Agras T50"),
+    ("platforms/cots/dji-flycart-30.md", 107, "DJI FlyCart 30"),
+    ("platforms/cots/flyability-elios-3.md", 108, "Flyability Elios 3"),
     ("platforms/blue-uas/skydio-x10.md", 201, "Skydio X10 / X10D"),
     ("platforms/blue-uas/freefly-astro.md", 202, "Freefly Astro"),
     ("platforms/blue-uas/inspired-flight-if1200a.md", 203, "Inspired Flight IF1200A"),
     ("platforms/blue-uas/teal-2.md", 204, "Teal 2"),
     ("platforms/blue-uas/parrot-anafi-usa.md", 205, "Parrot ANAFI USA"),
+    ("platforms/blue-uas/wingtra-wingtraone.md", 206, "WingtraOne / WingtraRAY"),
     ("platforms/open-source/holybro-x500-pixhawk6x.md", 301, "Holybro X500 V2 + Pixhawk 6X"),
     ("platforms/open-source/ardupilot-px4-reference.md", 302, "ArduPilot / PX4 General Reference"),
     ("platforms/tactical/anduril-ghost-x.md", 401, "Anduril Ghost X"),
@@ -48,8 +52,8 @@ PLATFORMS = [
 ]
 
 PLATFORM_PARTS = [
-    ("COTS", [101, 102, 103, 104, 105]),
-    ("NDAA / Blue UAS", [201, 202, 203, 204, 205]),
+    ("COTS", [101, 102, 103, 104, 105, 106, 107, 108]),
+    ("NDAA / Blue UAS", [201, 202, 203, 204, 205, 206]),
     ("Open-Source / Custom", [301, 302]),
     ("Tactical / Defense", [401, 402, 403, 404]),
 ]
