@@ -28,6 +28,32 @@ CHAPTERS = [
     ("integration/tak.md", 15, "TAK Integration"),
 ]
 
+PLATFORMS = [
+    ("platforms/cots/dji-m350-rtk.md", 101, "DJI Matrice 350 RTK"),
+    ("platforms/cots/dji-m30t.md", 102, "DJI Matrice 30T"),
+    ("platforms/cots/dji-mavic4-pro.md", 103, "DJI Mavic 4 Pro"),
+    ("platforms/cots/autel-evo-max-4t.md", 104, "Autel EVO MAX 4T V2"),
+    ("platforms/cots/autel-evo2-enterprise.md", 105, "Autel EVO II Enterprise V3"),
+    ("platforms/blue-uas/skydio-x10.md", 201, "Skydio X10 / X10D"),
+    ("platforms/blue-uas/freefly-astro.md", 202, "Freefly Astro"),
+    ("platforms/blue-uas/inspired-flight-if1200a.md", 203, "Inspired Flight IF1200A"),
+    ("platforms/blue-uas/teal-2.md", 204, "Teal 2"),
+    ("platforms/blue-uas/parrot-anafi-usa.md", 205, "Parrot ANAFI USA"),
+    ("platforms/open-source/holybro-x500-pixhawk6x.md", 301, "Holybro X500 V2 + Pixhawk 6X"),
+    ("platforms/open-source/ardupilot-px4-reference.md", 302, "ArduPilot / PX4 General Reference"),
+    ("platforms/tactical/anduril-ghost-x.md", 401, "Anduril Ghost X"),
+    ("platforms/tactical/teal-black-widow.md", 402, "Teal Black Widow"),
+    ("platforms/tactical/skyfish-osprey.md", 403, "Skyfish Osprey"),
+    ("platforms/tactical/sifly-q12.md", 404, "SiFly Q12"),
+]
+
+PLATFORM_PARTS = [
+    ("COTS", [101, 102, 103, 104, 105]),
+    ("NDAA / Blue UAS", [201, 202, 203, 204, 205]),
+    ("Open-Source / Custom", [301, 302]),
+    ("Tactical / Defense", [401, 402, 403, 404]),
+]
+
 PARTS = [
     ("Part 1 — RF Fundamentals", [1, 2, 3, 4]),
     ("Part 2 — Flight Controller Firmware", [5, 6, 7, 8]),
@@ -79,6 +105,15 @@ def build_toc():
                 if ch_num == num:
                     toc += f'<a href="#ch{num}"><span class="ch-num">{num}</span>{title}</a>\n'
         toc += "</div>\n"
+    # Platform profiles
+    toc += '<div class="toc-part"><h3>Part 5 — Platform References</h3>\n'
+    for cat_name, p_nums in PLATFORM_PARTS:
+        toc += f'<span style="display:block;color:var(--accent-dim);font-size:0.8rem;margin:0.5rem 0 0.2rem 0;">{cat_name}</span>\n'
+        for num in p_nums:
+            for filepath, p_num, title in PLATFORMS:
+                if p_num == num:
+                    toc += f'<a href="#p{num}"><span class="ch-num">&bull;</span>{title}</a>\n'
+    toc += "</div>\n"
     return toc
 
 
@@ -107,12 +142,31 @@ def build_chapters(base_dir):
     return chapters_html
 
 
+def build_platforms(base_dir):
+    """Build all platform profile HTML content."""
+    platforms_html = '<section class="chapter" id="platforms"><h1>Part 5 — Platform References</h1>'
+    platforms_html += '<p><em>Full integration profiles — RF links, firmware, payloads, SDKs, and gotchas. Vetted parts only.</em></p></section>\n'
+    for filepath, p_num, title in PLATFORMS:
+        full_path = os.path.join(base_dir, filepath)
+        md_content = read_chapter(full_path)
+        if not md_content:
+            print(f"  WARNING: Missing {filepath}")
+            continue
+        html_content = md_to_html(md_content)
+        platforms_html += f'<section class="chapter" id="p{p_num}">\n'
+        platforms_html += html_content
+        platforms_html += "\n</section>\n\n"
+        print(f"  Built platform: {title}")
+    return platforms_html
+
+
 def build_site(base_dir, output_dir):
     """Build the complete single-page HTML site."""
     print("Building The Drone Integration Handbook...")
 
     toc = build_toc()
     chapters = build_chapters(base_dir)
+    platforms = build_platforms(base_dir)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -694,6 +748,7 @@ body {{
 
 <div class="content">
 {chapters}
+{platforms}
 </div>
 
 <footer class="site-footer">

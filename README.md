@@ -90,10 +90,33 @@ manufacturer documentation.
     Cursor-on-Target, ATAK, WinTAK — how to get your drone onto
     the common operating picture without a defense contractor.
 
-### Part 5 — Platform References
+### Part 5 — [Platform References](platforms/README.md)
 
-Platform-specific profiles added as community contributions.
-See [CONTRIBUTING.md](CONTRIBUTING.md) to submit a platform profile.
+Full integration profiles — RF links, firmware, payloads, SDKs, and gotchas.
+
+**Commercial Off-the-Shelf:**
+- [DJI Matrice 350 RTK](platforms/cots/dji-m350-rtk.md) — Enterprise flagship. 55 min, triple gimbal. Not NDAA.
+- [DJI Matrice 30T](platforms/cots/dji-m30t.md) — Mid-tier enterprise, integrated quad-sensor. Not NDAA.
+- [DJI Mavic 4 Pro](platforms/cots/dji-mavic4-pro.md) — Prosumer/light commercial. Not NDAA.
+- [Autel EVO MAX 4T V2](platforms/cots/autel-evo-max-4t.md) — Quad-sensor, GPS-denied, A-Mesh. XE is NDAA.
+- [Autel EVO II Enterprise V3](platforms/cots/autel-evo2-enterprise.md) — Dual-sensor workhorse.
+
+**NDAA / Blue UAS / Green UAS:**
+- [Skydio X10 / X10D](platforms/blue-uas/skydio-x10.md) — Best-in-class autonomy. X10D is Blue UAS.
+- [Freefly Astro](platforms/blue-uas/freefly-astro.md) — PX4, MAVLink, Blue UAS. Open architecture.
+- [Inspired Flight IF1200A](platforms/blue-uas/inspired-flight-if1200a.md) — Heavy-lift hex, ArduPilot, Blue UAS.
+- [Teal 2](platforms/blue-uas/teal-2.md) — Night ISR, FLIR Hadron 640R, Blue UAS.
+- [Parrot ANAFI USA](platforms/blue-uas/parrot-anafi-usa.md) — Ultra-light, Blue UAS.
+
+**Open-Source / Custom Build:**
+- [Holybro X500 V2 + Pixhawk 6X](platforms/open-source/holybro-x500-pixhawk6x.md) — Reference PX4 dev kit.
+- [ArduPilot / PX4 General Reference](platforms/open-source/ardupilot-px4-reference.md) — Integration guide for custom builds.
+
+**Tactical / Defense:**
+- [Anduril Ghost X](platforms/tactical/anduril-ghost-x.md) — 80-min endurance, Lattice AI. Govt/mil only.
+- [Teal Black Widow](platforms/tactical/teal-black-widow.md) — SRR Tranche 2 winner. Army procurement.
+- [Skyfish Osprey](platforms/tactical/skyfish-osprey.md) — Precision mapping, NDAA.
+- [SiFly Q12](platforms/tactical/sifly-q12.md) — Endurance-focused, NDAA.
 
 ---
 
