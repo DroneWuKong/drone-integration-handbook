@@ -6009,5 +6009,209 @@
       "BLHeli_32",
       "5 inch"
     ]
+  },
+  {
+    "pid": "ESC-1148",
+    "category": "escs",
+    "name": "ARK 4IN1 ESC CONS (Connectorized)",
+    "manufacturer": "ARK Electronics",
+    "description": "Blue UAS Framework listed 4-in-1 ESC. 50A continuous / 75A burst per motor, 3-8S (up to 65V), STM32F0 MCU, AM32 firmware. DroneCAN + DShot 300/600, onboard 100V/A current sensor. MR30 connectors for mass manufacturing. Made in USA.",
+    "link": "https://arkelectron.com",
+    "continuous_current_per_motor_a": 50,
+    "mounting_pattern_mm": "30.5x30.5",
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_firmware": "AM32",
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "size_class": "standard",
+    "country": "USA",
+    "compliance": {
+      "blue_uas": true,
+      "ndaa_compliant": true,
+      "combat_proven": false,
+      "note": "One of only two 4-in-1 ESCs on Blue UAS Framework. STM32F0 MCU with AM32 open-source firmware."
+    },
+    "tags": [
+      "blue_uas",
+      "ndaa",
+      "dronecan",
+      "am32",
+      "defense"
+    ]
+  },
+  {
+    "pid": "ESC-1149",
+    "category": "escs",
+    "name": "Unusual Machines Brave 55A 4-in-1 ESC",
+    "manufacturer": "Unusual Machines / Rotor Riot",
+    "description": "Blue UAS Framework listed 4-in-1 ESC. 55A continuous / 75A burst, AM32 firmware, 30.5x30.5mm mounting. Manufactured by Ewing Aerospace in Ohio, USA. NASDAQ: UMAC.",
+    "link": "https://www.unusualmachines.com",
+    "continuous_current_per_motor_a": 55,
+    "mounting_pattern_mm": "30.5x30.5",
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_firmware": "AM32",
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "size_class": "standard",
+    "country": "USA",
+    "compliance": {
+      "blue_uas": true,
+      "ndaa_compliant": true,
+      "combat_proven": false,
+      "note": "Manufactured by Ewing Aerospace, Ohio. $3.75M order from Performance Drone Works (Dec 2025). 6,700 units ordered in first week after Blue UAS approval."
+    },
+    "tags": [
+      "blue_uas",
+      "ndaa",
+      "am32",
+      "defense"
+    ]
+  },
+  {
+    "pid": "ESC-1150",
+    "category": "escs",
+    "name": "Hargrave Technologies microDRIVE LP",
+    "manufacturer": "Hargrave Technologies",
+    "description": "Defense-grade individual ESC. 60A continuous / 110A burst, 15-60V, IP67, DroneCAN, proprietary GateKEEPER firmware with FOCAL algorithm. 72-hour onboard data logging, 60+ configurable parameters. 94g. Australian Sovereign Capability Defence Grant recipient.",
+    "link": "https://www.unmannedsystemstechnology.com/company/hargrave-technologies/",
+    "continuous_current_per_motor_a": 60,
+    "cell_count_min": 4,
+    "cell_count_max": 14,
+    "esc_firmware": "GateKEEPER (proprietary)",
+    "esc_format": "individual",
+    "motor_output_count": 1,
+    "size_class": "standard",
+    "country": "Australia",
+    "compliance": {
+      "blue_uas": false,
+      "ndaa_compliant": true,
+      "combat_proven": true,
+      "note": "NDAA-compliant (Australian Five Eyes). Deployed in 50+ countries on 10,000+ aircraft. IP67 rated. Defense-grade with DroneCAN + ARINC825."
+    },
+    "tags": [
+      "ndaa",
+      "defense",
+      "dronecan",
+      "ip67",
+      "data_logging"
+    ]
+  },
+  {
+    "pid": "ESC-1151",
+    "category": "escs",
+    "name": "Hargrave Technologies nanoDRIVE 4LPi",
+    "manufacturer": "Hargrave Technologies",
+    "description": "Defense-grade 4-in-1 ESC. 20A per channel, 7-34V, DroneCAN + ARINC825, 30x30mm mounting. Dual-input priority power failover. Designed for tactical/FPV platforms.",
+    "link": "https://www.unmannedsystemstechnology.com/company/hargrave-technologies/",
+    "continuous_current_per_motor_a": 20,
+    "mounting_pattern_mm": "30x30",
+    "cell_count_min": 2,
+    "cell_count_max": 8,
+    "esc_firmware": "GateKEEPER (proprietary)",
+    "esc_format": "4in1",
+    "motor_output_count": 4,
+    "size_class": "standard",
+    "country": "Australia",
+    "compliance": {
+      "blue_uas": false,
+      "ndaa_compliant": true,
+      "combat_proven": false,
+      "note": "NDAA-compliant (Australian Five Eyes). Dual-input priority failover for redundancy."
+    },
+    "tags": [
+      "ndaa",
+      "defense",
+      "dronecan",
+      "arinc825",
+      "redundant_power"
+    ]
+  },
+  {
+    "pid": "ESC-1152",
+    "category": "escs",
+    "name": "KDE Direct UAS75HVC ESC",
+    "manufacturer": "KDE Direct",
+    "description": "Heavy-lift individual ESC. 75A+ continuous (125A+ models available), 4-14S, IP66, DroneCAN/KDECAN protocol. Aluminum heat-sink enclosure. Made in USA for commercial and defense heavy-lift UAS.",
+    "link": "https://www.kdedirect.com/products/kde-uas75hvc",
+    "continuous_current_per_motor_a": 75,
+    "cell_count_min": 4,
+    "cell_count_max": 14,
+    "esc_firmware": "KDE proprietary",
+    "esc_format": "individual",
+    "motor_output_count": 1,
+    "size_class": "heavy_lift",
+    "country": "USA",
+    "compliance": {
+      "blue_uas": false,
+      "ndaa_compliant": true,
+      "combat_proven": false,
+      "note": "Made in USA. IP66. DroneCAN/KDECAN. Paired with KDE heavy-lift motors for defense platforms."
+    },
+    "tags": [
+      "ndaa",
+      "heavy_lift",
+      "dronecan",
+      "ip66",
+      "usa_made"
+    ]
+  },
+  {
+    "pid": "ESC-1153",
+    "category": "escs",
+    "name": "Vertiq 81-08 G2 Integrated Motor+ESC Module",
+    "manufacturer": "Vertiq",
+    "description": "Blue UAS Framework listed integrated motor+ESC module. Up to 60A/14S. DroneCAN, ArduPilot/PX4 native support. Embedded position sensing for precision control. 81mm stator. Made in USA.",
+    "link": "https://www.vertiq.co/81-08-g2",
+    "continuous_current_per_motor_a": 60,
+    "cell_count_min": 3,
+    "cell_count_max": 14,
+    "esc_firmware": "Vertiq proprietary (IQ Motion)",
+    "esc_format": "integrated_motor_esc",
+    "motor_output_count": 1,
+    "size_class": "heavy_lift",
+    "country": "USA",
+    "compliance": {
+      "blue_uas": true,
+      "ndaa_compliant": true,
+      "combat_proven": false,
+      "note": "Only motor+ESC integrated module on Blue UAS Framework. Includes position sensing, speed control, and DroneCAN in single unit."
+    },
+    "tags": [
+      "blue_uas",
+      "ndaa",
+      "integrated",
+      "dronecan",
+      "position_sensing"
+    ]
+  },
+  {
+    "pid": "ESC-1154",
+    "category": "escs",
+    "name": "Simplex Motion SM4010 FOC ESC",
+    "manufacturer": "Simplex Motion",
+    "description": "European (Swedish) industrial FOC motor controller for UAS. Up to 4,000W. Field-Oriented Control for smooth, efficient operation. Only identified European ESC manufacturer for defense/commercial UAS.",
+    "link": "https://simplexmotion.com/drone-motors/",
+    "continuous_current_per_motor_a": 40,
+    "cell_count_min": 4,
+    "cell_count_max": 14,
+    "esc_firmware": "Simplex proprietary (FOC)",
+    "esc_format": "individual",
+    "motor_output_count": 1,
+    "size_class": "standard",
+    "country": "Sweden",
+    "compliance": {
+      "blue_uas": false,
+      "ndaa_compliant": true,
+      "combat_proven": false,
+      "note": "Swedish manufacture. NATO-allied. Only identified European ESC OEM for UAS applications."
+    },
+    "tags": [
+      "ndaa",
+      "european",
+      "foc",
+      "industrial"
+    ]
   }
 ]
