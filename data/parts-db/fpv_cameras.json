@@ -22,7 +22,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1002",
@@ -59,7 +60,8 @@
     "video_system": "HDZero",
     "camera_size": "nano",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1005",
@@ -72,7 +74,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1006",
@@ -98,7 +101,8 @@
     "size_class": "universal",
     "tags": [],
     "video_system": "Analog",
-    "camera_size": "standard"
+    "camera_size": "standard",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1008",
@@ -134,7 +138,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/a/caddx-walksnail-avatar-gt-kit-_image-1_.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1011",
@@ -171,20 +177,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
-  },
-  {
-    "pid": "CAM-1014",
-    "category": "fpv_cameras",
-    "name": "RunCam HDZero Nano V3  Camera - No MIPI Cable",
-    "manufacturer": "HDZero",
-    "description": "The Runcam Nano V3 HDZero Camera is small and lightweight, ideal for whoops and micro drones.",
-    "link": "https://www.getfpv.com/fpv/cameras/flight-cameras/runcam-hdzero-nano-v3-camera-no-mipi-cable.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam-hdzero-nano-camera-v3.jpg",
-    "video_system": "HDZero",
-    "camera_size": "nano",
-    "size_class": "universal",
-    "tags": []
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1015",
@@ -197,7 +191,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1016",
@@ -224,7 +219,8 @@
     "video_system": "Walksnail",
     "camera_size": "mini",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1018",
@@ -237,7 +233,8 @@
     "video_system": "HDZero",
     "size_class": "universal",
     "tags": [],
-    "camera_size": "micro"
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1019",
@@ -249,7 +246,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-pro-camera.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1020",
@@ -262,7 +261,8 @@
     "video_system": "HDZero",
     "camera_size": "nano",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1021",
@@ -289,7 +289,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1023",
@@ -302,7 +303,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1024",
@@ -315,7 +317,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1025",
@@ -327,7 +330,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/a/n/antlite4_3_2000x.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "nano",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1026",
@@ -340,7 +345,8 @@
     "video_system": "Analog",
     "camera_size": "micro",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/1.8\""
   },
   {
     "pid": "CAM-1027",
@@ -353,7 +359,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1028",
@@ -380,7 +387,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1030",
@@ -393,7 +401,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1031",
@@ -406,7 +415,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1032",
@@ -421,17 +431,6 @@
     "tags": []
   },
   {
-    "pid": "CAM-1033",
-    "category": "fpv_cameras",
-    "name": "Lumenier 3-Way Multi-Camera Video Switcher Board",
-    "manufacturer": "Lumenier",
-    "description": "The Lumenier 3-Way Multi-Camera Video Switcher Board allows you to connect up to 3 video cameras and output 1 at a time via a PWM signal.",
-    "link": "https://www.getfpv.com/fpv/cameras/flight-cameras/lumenier-3-way-video-switcher-board.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-3-way-video-switch-board-main.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "CAM-1034",
     "category": "fpv_cameras",
     "name": "Runcam Phoenix 2 1000TVL 2.1mm FPV Camera - Joshua Bardwell Edition - Silver",
@@ -441,20 +440,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam-phoenix-2-1000tvl-2.1mm-fpv-camera---joshua-bardwell-edition---silver-jb.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
-  },
-  {
-    "pid": "CAM-1035",
-    "category": "fpv_cameras",
-    "name": "RunCam HDZero Micro V3 Camera - No MIPI Cable",
-    "manufacturer": "HDZero",
-    "description": "The Runcam HDZero Micro V3 Camera is optimized for a 16:9 aspect ratio, which matches the HDZero Goggle\u2019s 16:9 display to offer the largest and sharpest picture available for the HDZero system.",
-    "link": "https://www.getfpv.com/fpv/cameras/flight-cameras/runcam-hdzero-micro-v3-camera-no-mipi-cable.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam-hdzero-micro-v3-camera---no-mipi-cable.jpg",
-    "video_system": "HDZero",
+    "video_system": "Analog",
     "camera_size": "micro",
-    "size_class": "universal",
-    "tags": []
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1036",
@@ -480,7 +468,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1038",
@@ -492,7 +481,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero-eco-fpv-system_1_.jpg",
     "video_system": "HDZero",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "camera_size": "micro",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1039",
@@ -504,19 +495,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero-eco-camera-_image-2_.jpg",
     "video_system": "HDZero",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "CAM-1040",
-    "category": "fpv_cameras",
-    "name": "RunCam Thumb 2 4K HD Action Camera + ND Filter Set",
-    "manufacturer": "RunCam",
-    "description": "Introducing the RunCam Thumb 2,\u00a0a lightweight 27g action camera ideal for FPV pilots and creators.",
-    "link": "https://www.getfpv.com/fpv/cameras/flight-cameras/runcam-thumb-2-4k-hd-action-camera-nd-filter-set.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam-thumb-2-_-filters-_hero-image_.jpg",
-    "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "camera_size": "micro",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1041",
@@ -528,7 +509,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/1/_/1__19604.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "nano",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1042",
@@ -541,7 +524,8 @@
     "video_system": "Walksnail",
     "camera_size": "nano",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1043",
@@ -553,7 +537,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/r/u/runcam-phoenix-2-1000tvl-fpv-camera---lumenier-edition---silver.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1044",
@@ -566,7 +552,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1045",
@@ -579,7 +566,8 @@
     "video_system": "Walksnail",
     "camera_size": "nano",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1046",
@@ -627,7 +615,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/e/betafpv_c04_camera_and_vtx_module_2.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "nano",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1050",
@@ -651,7 +641,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-o4-air-unit-pro-camera-module-_image-1_.jpg",
     "video_system": "DJI O4",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1053",
@@ -676,7 +668,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1055",
@@ -689,7 +682,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1056",
@@ -702,7 +696,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1057",
@@ -715,7 +710,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1058",
@@ -728,7 +724,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Walksnail"
+    "video_system": "Walksnail",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1059",
@@ -741,7 +738,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1060",
@@ -753,7 +751,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-camera-v2-w-gyro-_-14mm-cable.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1061",
@@ -766,7 +766,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1062",
@@ -791,7 +792,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1064",
@@ -816,7 +818,8 @@
     "video_system": "Walksnail",
     "camera_size": "nano",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1066",
@@ -829,20 +832,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
-  },
-  {
-    "pid": "CAM-1067",
-    "category": "fpv_cameras",
-    "name": "RunCam HDZero Nano V2 Camera - No MIPI Cable",
-    "manufacturer": "RunCam",
-    "description": "The Runcam Nano V2 HDZero Camera is a 4:3 and 16:9 selectable high definition 720p60 camera designed for HDZero VTX.",
-    "link": "https://www.getfpv.com/fpv/cameras/flight-cameras/runcam-hdzero-nano-v2-camera-no-mipi-cable.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam-hdzero-nano-v2-camera---no-mipi-cable-1.jpg",
-    "video_system": "HDZero",
-    "camera_size": "nano",
-    "size_class": "universal",
-    "tags": []
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1068",
@@ -854,7 +845,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/v/avatar-hd-camera_1.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1069",
@@ -867,7 +860,8 @@
     "video_system": "Walksnail",
     "camera_size": "nano",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1070",
@@ -879,7 +873,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/v/avatar-hd-camera-vtx-kit-main.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1071",
@@ -892,7 +888,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1072",
@@ -929,7 +926,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1075",
@@ -942,7 +940,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1076",
@@ -955,7 +954,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "HDZero"
+    "video_system": "HDZero",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1077",
@@ -968,7 +968,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "HDZero"
+    "video_system": "HDZero",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1078",
@@ -981,7 +982,8 @@
     "video_system": "HDZero",
     "camera_size": "micro",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1079",
@@ -1008,7 +1010,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1081",
@@ -1021,7 +1024,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1082",
@@ -1034,7 +1038,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1083",
@@ -1086,7 +1091,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1087",
@@ -1099,7 +1105,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1088",
@@ -1112,7 +1119,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1089",
@@ -1125,7 +1133,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1090",
@@ -1150,7 +1159,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1092",
@@ -1163,7 +1173,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1093",
@@ -1176,7 +1187,8 @@
     "video_system": "HDZero",
     "camera_size": "nano",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1094",
@@ -1189,7 +1201,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1095",
@@ -1202,7 +1215,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1096",
@@ -1239,7 +1253,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1099",
@@ -1252,7 +1267,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1100",
@@ -1265,7 +1281,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1101",
@@ -1277,7 +1294,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam_link_phoenix_hd_fpv_vista_camera_kit_2.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1102",
@@ -1290,7 +1309,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1103",
@@ -1303,7 +1323,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1104",
@@ -1316,7 +1337,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1105",
@@ -1329,7 +1351,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1106",
@@ -1342,7 +1365,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/1.8\""
   },
   {
     "pid": "CAM-1107",
@@ -1355,7 +1379,8 @@
     "video_system": "Analog",
     "camera_size": "nano",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1108",
@@ -1368,7 +1393,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1109",
@@ -1381,7 +1407,8 @@
     "video_system": "Analog",
     "camera_size": "nano",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1110",
@@ -1394,7 +1421,8 @@
     "video_system": "Analog",
     "camera_size": "micro",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1111",
@@ -1406,7 +1434,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/a/caddx_nebula_pro_hd_digital_fpv_camera_4_.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1112",
@@ -1418,7 +1448,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/c/a/caddx-nebula-pro-hd-digital-fpv-camera-1.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1113",
@@ -1430,7 +1462,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/a/caddx_nebula_pro_hd_digital_fpv_camera_2_.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1114",
@@ -1442,7 +1476,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/a/caddx_nebula_pro_hd_digital_fpv_camera_3_.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1115",
@@ -1454,7 +1490,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/e/nebula-pro-vista-kit-720p120fps-low-latency-hd-digital-fpv-system1.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1116",
@@ -1467,7 +1505,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1117",
@@ -1480,7 +1519,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1118",
@@ -1505,7 +1545,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam_racer_mck_edition_2_.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1120",
@@ -1518,7 +1560,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1121",
@@ -1531,18 +1574,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
-  },
-  {
-    "pid": "CAM-1122",
-    "category": "fpv_cameras",
-    "name": "Shark Byte 12cm MIPI Camera Cable - 12cm",
-    "manufacturer": "Fat Shark",
-    "description": "A replacement or spare Shark Byte MIPI Camera Cable - 12cm",
-    "link": "https://www.getfpv.com/fpv/cameras/flight-cameras/shark-byte-12cm-mipi-camera-cable-12cm.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/1/2/12cm-shark-byte-cable.jpg",
-    "size_class": "universal",
-    "tags": []
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1123",
@@ -1555,7 +1588,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1124",
@@ -1568,7 +1602,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1125",
@@ -1580,7 +1615,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam-phoenix-2-fpv-camera---joshua-bardwell-edition-6.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1126",
@@ -1593,7 +1630,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1127",
@@ -1606,7 +1644,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1128",
@@ -1619,7 +1658,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1129",
@@ -1632,7 +1672,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1130",
@@ -1645,7 +1686,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1131",
@@ -1658,7 +1700,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1132",
@@ -1671,7 +1714,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1133",
@@ -1684,7 +1728,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1134",
@@ -1697,7 +1742,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1135",
@@ -1710,7 +1756,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1136",
@@ -1723,7 +1770,8 @@
     "video_system": "Analog",
     "camera_size": "micro",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1137",
@@ -1736,7 +1784,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1138",
@@ -1762,7 +1811,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1140",
@@ -1775,7 +1825,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1141",
@@ -1788,7 +1839,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1142",
@@ -1801,7 +1853,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1143",
@@ -1814,7 +1867,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1144",
@@ -1827,7 +1881,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1145",
@@ -1840,7 +1895,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1146",
@@ -1853,7 +1909,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1147",
@@ -1866,7 +1923,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1148",
@@ -1879,7 +1937,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1149",
@@ -1892,7 +1951,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1150",
@@ -1905,7 +1965,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1151",
@@ -1918,7 +1979,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1152",
@@ -1943,7 +2005,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1154",
@@ -1956,7 +2019,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1155",
@@ -1969,7 +2033,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1156",
@@ -1981,7 +2046,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/1/5/1556092080583548846.images.1000x1000_1.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1157",
@@ -1993,7 +2060,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/1/5/1556092080252498581.images.1000x1000_1.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1158",
@@ -2005,7 +2074,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/1/5/1556092080352174842.images.1000x1000_1.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1159",
@@ -2018,7 +2089,8 @@
     "video_system": "Analog",
     "camera_size": "micro",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1160",
@@ -2079,7 +2151,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1165",
@@ -2092,7 +2165,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1166",
@@ -2105,7 +2179,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1167",
@@ -2118,7 +2193,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1168",
@@ -2131,7 +2207,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1169",
@@ -2144,7 +2221,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1170",
@@ -2156,7 +2234,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1171",
@@ -2168,7 +2248,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1172",
@@ -2180,7 +2262,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "camera_size": "micro",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1173",
@@ -2193,7 +2277,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1174",
@@ -2206,7 +2291,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1175",
@@ -2219,7 +2305,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1176",
@@ -2232,7 +2319,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1177",
@@ -2257,7 +2345,8 @@
     "size_class": "universal",
     "tags": [],
     "camera_size": "micro",
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1179",
@@ -2270,7 +2359,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1180",
@@ -2283,7 +2373,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1181",
@@ -2335,7 +2426,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1185",
@@ -2348,7 +2440,8 @@
     "video_system": "Walksnail",
     "camera_size": "nano",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1186",
@@ -2361,18 +2454,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
-  },
-  {
-    "pid": "CAM-1187",
-    "category": "fpv_cameras",
-    "name": "Board Camera Lens Mount for the Lumenier CS-600",
-    "manufacturer": "Lumenier",
-    "description": "Lens mount and hardware to enable the CS-600 camera to be taken out of the metal case.",
-    "link": "https://www.getfpv.com/fpv/cameras/flight-cameras/board-camera-lens-mount-for-the-lumenier-cs-600.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/o/board-camera-lens-mount.jpg",
-    "size_class": "universal",
-    "tags": []
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1188",
@@ -2385,7 +2468,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1189",
@@ -2398,7 +2482,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1190",
@@ -2423,7 +2508,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1192",
@@ -2436,7 +2522,8 @@
     "video_system": "HDZero",
     "camera_size": "nano",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1193",
@@ -2449,7 +2536,8 @@
     "camera_size": "micro",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1194",
@@ -2462,7 +2550,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1195",
@@ -2475,18 +2564,8 @@
     "camera_size": "mini",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
-  },
-  {
-    "pid": "CAM-1196",
-    "category": "fpv_cameras",
-    "name": "Transparent Camera Case for the NerdCam3D",
-    "manufacturer": "The Missing Gear",
-    "description": "A protective transparent housing for the NerdCam3D camera.",
-    "link": "https://www.getfpv.com/fpv/cameras/flight-cameras/transparent-camera-case-for-the-nerdcam3d.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/e/nerdcam-transparent-case.jpg",
-    "size_class": "universal",
-    "tags": []
+    "video_system": "Analog",
+    "sensor_size": "1/2\""
   },
   {
     "pid": "CAM-1197",
@@ -2499,7 +2578,8 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   },
   {
     "pid": "CAM-1198",
@@ -2512,6 +2592,7 @@
     "camera_size": "nano",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "sensor_size": "1/3\""
   }
 ]

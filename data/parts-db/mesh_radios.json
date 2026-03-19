@@ -174,7 +174,11 @@
       "military",
       "aviation",
       "long-range"
-    ]
+    ],
+    "frequency_ghz": 1.5,
+    "encryption": "AES-256",
+    "max_throughput_mbps": 150,
+    "mesh_protocol": "Wave Relay (proprietary)"
   },
   {
     "pid": "MESH-1011",
@@ -212,7 +216,11 @@
       "high-power",
       "military",
       "contested-spectrum"
-    ]
+    ],
+    "frequency_ghz": 1.5,
+    "encryption": "AES-256",
+    "max_throughput_mbps": 150,
+    "mesh_protocol": "Wave Relay (proprietary)"
   },
   {
     "pid": "MESH-1012",
@@ -246,7 +254,11 @@
       "BAS",
       "broadcast",
       "licensed-spectrum"
-    ]
+    ],
+    "frequency_ghz": 1.35,
+    "encryption": "AES-256",
+    "max_throughput_mbps": 150,
+    "mesh_protocol": "Wave Relay (proprietary)"
   },
   {
     "pid": "MESH-1013",
@@ -288,7 +300,11 @@
       "FCC-Part-15",
       "urban",
       "federal"
-    ]
+    ],
+    "frequency_ghz": 2.4,
+    "encryption": "AES-256",
+    "max_throughput_mbps": 150,
+    "mesh_protocol": "Wave Relay (proprietary)"
   },
   {
     "pid": "MESH-1014",
@@ -327,7 +343,11 @@
       "federal",
       "public-safety",
       "UGV"
-    ]
+    ],
+    "frequency_ghz": 5.0,
+    "encryption": "AES-256",
+    "max_throughput_mbps": 150,
+    "mesh_protocol": "Wave Relay (proprietary)"
   },
   {
     "pid": "MESH-1015",
@@ -372,7 +392,11 @@
       "FCC-Part-15",
       "commercial",
       "UAV"
-    ]
+    ],
+    "frequency_ghz": 5.0,
+    "encryption": "AES-256",
+    "max_throughput_mbps": 150,
+    "mesh_protocol": "Wave Relay (proprietary)"
   },
   {
     "pid": "MESH-1020",
@@ -396,7 +420,9 @@
       "ground",
       "aircraft",
       "defense"
-    ]
+    ],
+    "encryption": "AES-256",
+    "max_throughput_mbps": 150
   },
   {
     "pid": "MESH-2000",
@@ -416,7 +442,9 @@
       "open-platform",
       "OpenWRT",
       "batman-adv"
-    ]
+    ],
+    "encryption": "AES-256",
+    "max_throughput_mbps": 86
   },
   {
     "pid": "MESH-2001",
@@ -435,7 +463,9 @@
       "tactical",
       "MIMO",
       "OpenWRT"
-    ]
+    ],
+    "encryption": "AES-256",
+    "max_throughput_mbps": 86
   },
   {
     "pid": "MESH-3000",
@@ -459,7 +489,8 @@
       "MIMO",
       "video-streaming",
       "government"
-    ]
+    ],
+    "encryption": "AES-256"
   },
   {
     "pid": "MESH-4000",
@@ -477,6 +508,8 @@
       "mining",
       "dual-radio",
       "full-duplex"
-    ]
+    ],
+    "encryption": "AES-256",
+    "max_throughput_mbps": 100
   }
 ]

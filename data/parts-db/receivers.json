@@ -1,56 +1,5 @@
 [
   {
-    "pid": "RCV-1000",
-    "category": "receivers",
-    "name": "iFlight ELRS Nano 2.4GHz Receiver + 160mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "With the extreme range and high packet rate of the iFlight ELRS Nano 2.4GHz Receiver and 160mm Antenna, failsafes are a thing of the past.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-nano-2-4ghz-receiver-160mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/2/_/2.4g-nano-m4.png",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1001",
-    "category": "receivers",
-    "name": "FrSky X8R 16ch Receiver, SBUS, Smart Port - Amplified PCB Antenna",
-    "manufacturer": "FrSky",
-    "description": "The new FrSky X8R 16ch Receiver with SBUS, Smart Port - Telemetry - Amplified PCB Antenna",
-    "link": "https://www.getfpv.com/radios/receivers/frsky-x8r-16ch-receiver-sbus-smart-port-amplified-pcb-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-x8r-16ch-receiver-sbus-smart-port-amplified-pcb-antenna.jpg",
-    "protocol": "FrSky",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1002",
-    "category": "receivers",
-    "name": "iFlight ELRS 500mW 900MHz Receiver + 220mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "The\u00a0iFlight ELRS 500mW 900MHz Receiver houses high-power telemetry inside a sleek, single-side component design.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-500mw-900mhz-receiver-220mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight_elrs_500mw-1.jpg",
-    "protocol": "ELRS",
-    "size_class": "universal",
-    "tags": [],
-    "frequency_ghz": 0.915
-  },
-  {
-    "pid": "RCV-1003",
-    "category": "receivers",
-    "name": "iFlight ELRS 500mW 900M Receiver + 160mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "The\u00a0iFlight ELRS 500mW 900MHz Receiver houses high-power telemetry inside a sleek, single-side component design.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-500mw-900m-receiver-160mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/9/1/915-500mw-rx-n3.png",
-    "protocol": "ELRS",
-    "size_class": "universal",
-    "tags": [],
-    "frequency_ghz": 0.915
-  },
-  {
     "pid": "RCV-1004",
     "category": "receivers",
     "name": "HappyModel ES900 900MHz ELRS Dual RX Diversity Receiver",
@@ -79,114 +28,6 @@
     "diversity": true
   },
   {
-    "pid": "RCV-1006",
-    "category": "receivers",
-    "name": "iFlight ELRS Dualband 500mW Receiver + 220mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "The iFlight ELRS Dualband 500mW Receiver + 220mm Antenna houses high-power telemetry inside a sleek, single-side component design.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-dualband-500mw-receiver-220mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/5/0/500mw-dualband-1_1.jpg",
-    "protocol": "ELRS",
-    "size_class": "universal",
-    "tags": [],
-    "frequency_ghz": 2.4
-  },
-  {
-    "pid": "RCV-1007",
-    "category": "receivers",
-    "name": "iFlight ELRS Dualband Diversity 100mW Receiver - 2x70mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "The iFlight ELRS Dualband Diversity 100mW Receiver - 2x70mm Antenna\u00a0supports 2.4GHz, 868MHz, and 900MHz frequencies for exceptional stability and reliability.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-dualband-diversity-100mw-receiver-2x70mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/1/0/100mw-dual-diversity-rx-m1.jpg",
-    "protocol": "ELRS",
-    "diversity": true,
-    "size_class": "universal",
-    "tags": [],
-    "frequency_ghz": 2.4
-  },
-  {
-    "pid": "RCV-1008",
-    "category": "receivers",
-    "name": "iFlight ELRS True Diversity 2.4GHz Receiver + 2x160mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "The iFlight ELRS True Diversity 2.4GHz Receiver + 2x160mm Antenna\u00a0is a true dual-antenna diversity receiver with exceptional frequency stability.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-true-diversity-2-4ghz-receiver-2x160mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/2/3/23752-2_1.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "diversity": true,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1009",
-    "category": "receivers",
-    "name": "iFlight ELRS True Diversity 2.4GHz Receiver + 2x220mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "The iFlight ELRS True Diversity 2.4GHz Receiver + 2x220mm Antenna\u00a0is a true dual-antenna diversity receiver with exceptional frequency stability.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-true-diversity-2-4ghz-receiver-2x220mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/2/3/23752-2_2.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "diversity": true,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1010",
-    "category": "receivers",
-    "name": "iFlight ELRS True Diversity 2.4GHz Receiver + 2x70mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "The iFlight ELRS True Diversity 2.4GHz Receiver + 2x70mm Antenna is a true dual-antenna diversity receiver with exceptional frequency stability.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-true-diversity-2-4ghz-receiver-2x70mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/2/3/23752-2.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "diversity": true,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1011",
-    "category": "receivers",
-    "name": "iFlight ELRS Dualband 100mW Receiver - 160mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "The iFlight ELRS Dualband 100mW Receiver - 160mm Antenna\u00a0supports 2.4GHz, 868MHz, and 900MHz frequencies for exceptional stability and reliability.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-dualband-100mw-receiver-160mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/1/0/100mw-dual-rx-m1.jpg",
-    "protocol": "ELRS",
-    "size_class": "universal",
-    "tags": [],
-    "frequency_ghz": 2.4
-  },
-  {
-    "pid": "RCV-1012",
-    "category": "receivers",
-    "name": "iFlight ELRS Nano 2.4GHz Receiver + 70mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "It's finally here, the iFlight ELRS Nano 2.4GHz Receiver + 70mm Antenna with extreme range and packet rate for lowest delay.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-nano-2-4ghz-receiver-70mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight_elrs_nano_2.4ghz_receiver_1.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1013",
-    "category": "receivers",
-    "name": "BETAFPV SuperX Gemini Xross Receiver w/ T-Antenna - Mono ELRS 2.4GHz/915Mhz",
-    "manufacturer": "BETAFPV",
-    "description": "The BETAFPV SuperX Gemini Xross Receiver w/ T-Antenna - Mono ELRS 2.4GHz/915Mhz is powered by Semtech\u2019s LR1121 RF and Espressif\u2019s ESP32-C3 chips.",
-    "link": "https://www.getfpv.com/radios/receivers/betafpv-superx-gemini-xross-receiver-w-t-antenna-mono-elrs-2-4ghz-915mhz.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/e/betafpv_superx_gemini_xross_receiver_w_t-antenna_-_mono_elrs_2.4ghz_915mhz_3.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "RCV-1014",
     "category": "receivers",
     "name": "TBS Crossfire Diversity Nano RX",
@@ -201,20 +42,6 @@
     "frequency_ghz": 0.915
   },
   {
-    "pid": "RCV-1015",
-    "category": "receivers",
-    "name": "BETAFPV SuperX Gemini Xross Receiver w/ T-Antennas - Nano ELRS 2.4GHz/915Mhz",
-    "manufacturer": "BETAFPV",
-    "description": "The BETAFPV SuperX Nano ELRS Dual-Band Diversity Receiver is a true diversity solution designed for maximum reliability in long-range FPV, freestyle, and aerial applications. Equipped with dual receiver chains, TCXO technology for extreme temperature stability, and dual antennas for stronger signal coverage, it ensures consistent performance in demanding environments.",
-    "link": "https://www.getfpv.com/radios/receivers/betafpv-superx-gemini-xross-receiver-w-t-antennas-nano-elrs-2-4ghz-915mhz.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/e/betafpvsuperxnanodiv-3.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": [],
-    "diversity": true
-  },
-  {
     "pid": "RCV-1016",
     "category": "receivers",
     "name": "RadioMaster XR1 Nano Multi-Frequency Receiver - ELRS 2.4GHz",
@@ -225,20 +52,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1017",
-    "category": "receivers",
-    "name": "RadioMaster ExpressLRS 2.4GHz Receiver w/Antennas - RP4TD",
-    "manufacturer": "RadioMaster",
-    "description": "The ExpressLRS 2.4GHz Receiver - RP4TD, with dual-channel 2.4GHz radios, leads in signal sensitivity and performance with its optimized circuit design.",
-    "link": "https://www.getfpv.com/radios/receivers/radiomaster-expresslrs-2-4ghz-receiver-w-antennas-rp4td.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-expresslrs-2.4ghz-true-diversity-nano-receiver-_image-1_.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1018",
@@ -250,20 +65,6 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-xr3-nano-multi-frequency-diversity-receiver---elrs-2.4ghz-_image-1_.jpg",
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
-    "diversity": true,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1019",
-    "category": "receivers",
-    "name": "GEPRC Dual Antenna Diversity Receiver - ELRS 915MHz",
-    "manufacturer": "GEPRC",
-    "description": "The GEPRC ELRS DUAL 915M Diversity Receiver is a next-gen, dual-antenna receiver based on the ExpressLRS open-source project, delivering long-range operation, low latency, and up to 200 Hz refresh rate.",
-    "link": "https://www.getfpv.com/radios/receivers/geprc-dual-antenna-diversity-receiver-elrs-915mhz.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-dual-diversity-receiver---elrs-915mhz-_image-3_.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 0.915,
     "diversity": true,
     "size_class": "universal",
     "tags": []
@@ -321,20 +122,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1024",
-    "category": "receivers",
-    "name": "BETAFPV ELRS Lite V1.1 2.4GHz Receiver w/ Flat Antenna",
-    "manufacturer": "BETAFPV",
-    "description": "The BETAFPV Lite 2.4GHz receiver is based on the ExpressLRS project, an open-source RC link for RC applications.",
-    "link": "https://www.getfpv.com/radios/receivers/betafpv-elrs-lite-v1-1-2-4ghz-receiver-w-flat-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/e/betafpv-elrs-lite-2.4ghz-receiver-with-flat-antenna-_image-1_1_.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1025",
@@ -379,19 +168,6 @@
     "tags": []
   },
   {
-    "pid": "RCV-1028",
-    "category": "receivers",
-    "name": "FrSky TD SR18 2.4GHz 900M Dual-Band Tandem Receiver w/ Antennas",
-    "manufacturer": "FrSky",
-    "description": "The FrSky TD SR18 combines an upgraded ADV Stabilizer function with traditional gyroscope stabilization modes. It features 5 additional channels and advanced pin mapping for diverse flight modes, such as Stabilization, Auto-Level, Hover, and Knife-Edge.",
-    "link": "https://www.getfpv.com/radios/receivers/frsky-td-sr18-2-4ghz-900m-dual-band-tandem-receiver-w-antennas.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-td-sr18_2_.jpg",
-    "protocol": "FrSky",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "RCV-1029",
     "category": "receivers",
     "name": "TBS Crossfire Nano Rx Pro - NDAA",
@@ -402,33 +178,8 @@
     "protocol": "Crossfire",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
-  },
-  {
-    "pid": "RCV-1030",
-    "category": "receivers",
-    "name": "HGLRC ELRS 2.4GHz RX-T Receiver w/ T-Antennas",
-    "manufacturer": "HGLRC",
-    "description": "The HGLRC ELRS 2.4GHz RX-T Receiver stands out with its compact design and versatile connectivity options, making it a convenient choice for RC enthusiasts.",
-    "link": "https://www.getfpv.com/radios/receivers/hglrc-elrs-2-4ghz-rx-t-receiver-w-t-antennas.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc-elrs-2.4ghz-rx-t-receiver_2_.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1031",
-    "category": "receivers",
-    "name": "TBS Crossfire Nano SE LR Receiver w/ Immortal-T V2 Antenna - NDAA",
-    "manufacturer": "Triumph Manufacturing",
-    "description": "TBS takes long-range and UHF technology to the next level with the new and improved NDAA Version of the TBS Crossfire Nano SE LR Receiver.",
-    "link": "https://www.getfpv.com/radios/receivers/tbs-crossfire-nano-se-lr-receiver-w-immortal-t-v2-antenna-ndaa.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-se-rx-_1_1_.jpg",
-    "protocol": "Crossfire",
-    "size_class": "universal",
-    "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1032",
@@ -441,7 +192,8 @@
     "protocol": "Crossfire",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1033",
@@ -454,7 +206,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1034",
@@ -467,7 +220,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1035",
@@ -480,33 +234,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1036",
-    "category": "receivers",
-    "name": "RadioMaster ER5C-i ExpressLRS 2.4GHz PWM Receiver w/ Built-in Antenna",
-    "manufacturer": "RadioMaster",
-    "description": "The\u00a0RadioMaster ER5C-i\u00a0receiver harnesses the advanced ExpressLRS system, offering exceptional reliability, customizable settings, rapid response, and extended reception range for an unparalleled user experience.",
-    "link": "https://www.getfpv.com/radios/receivers/radiomaster-er5c-i-expresslrs-2-4ghz-pwm-receiver-w-built-in-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-er5c-i-expresslrs-2.4ghz-pwm-receiver-built-in-antenna.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1037",
-    "category": "receivers",
-    "name": "FrSky TD R18 2.4GHz 900M Dual-Band Tandem Receiver w/ Antennas",
-    "manufacturer": "FrSky",
-    "description": "The FrSky TD R18 2.4GHz 900M Dual-Band Tandem Receiver is unlike any other FrSky 2.4Ghz or 900Mhz receiver. The TD R18 works simultaneously at both 900Mhz and 2.4Ghz frequencies.",
-    "link": "https://www.getfpv.com/radios/receivers/frsky-td-r18-2-4g-900m-dual-band-tandem-receiver-w-antennas.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/d/td-r18_copy.jpg",
-    "protocol": "FrSky",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1038",
@@ -519,7 +248,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1039",
@@ -531,7 +261,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_-_2022-10-03t164256.147.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1040",
@@ -543,7 +275,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_-_2022-09-01t141052.852.png",
     "size_class": "universal",
     "tags": [],
-    "protocol": "FrSky"
+    "protocol": "FrSky",
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1041",
@@ -556,7 +290,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1042",
@@ -569,7 +304,8 @@
     "protocol": "Crossfire",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1043",
@@ -582,7 +318,8 @@
     "protocol": "Crossfire",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 2.4
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1044",
@@ -595,7 +332,8 @@
     "protocol": "Crossfire",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 2.4
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1045",
@@ -621,7 +359,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flysky-x14s-receiver_1_.jpg",
     "protocol": "Flysky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1047",
@@ -648,7 +388,8 @@
     "protocol": "ELRS",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1049",
@@ -660,7 +401,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-r81-main-1000x1000_1.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1050",
@@ -673,20 +416,8 @@
     "protocol": "Crossfire",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
-  },
-  {
-    "pid": "RCV-1051",
-    "category": "receivers",
-    "name": "TBS Crossfire Nano Rx (SE) w/ Immortal T V2 Antenna",
-    "manufacturer": "Team BlackSheep",
-    "description": "TBS Crossfire Nano RX for people who want to save space and solder. Full range, designed specifically for mini- and micro-quads! The Special Edition (SE) includes the TBS Immortal-T Antenna!",
-    "link": "https://www.getfpv.com/radios/receivers/tbs-crossfire-nano-rx-special-edition.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/a/nano-rx-se.jpg",
-    "protocol": "Crossfire",
-    "size_class": "universal",
-    "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1052",
@@ -699,7 +430,8 @@
     "protocol": "Flysky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1053",
@@ -740,7 +472,8 @@
     "protocol": "ImmersionRC Ghost",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1056",
@@ -771,19 +504,6 @@
     "diversity": true
   },
   {
-    "pid": "RCV-1058",
-    "category": "receivers",
-    "name": "RadioMaster Bandit BR3 915MHz ExpressLRS Receiver w/ Antennas",
-    "manufacturer": "RadioMaster",
-    "description": "Introducing the all-new RadioMaster Bandit BR3 ExpressLRS Receiver.",
-    "link": "https://www.getfpv.com/radios/receivers/radiomaster-bandit-br3-915mhz-expresslrs-receiver-w-antennas.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-bandit-br3-915mhz-expresslrs-receiver.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 0.915,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "RCV-1059",
     "category": "receivers",
     "name": "RadioMaster RP4TD-M ELRS 2.4GHz Mini True Diversity Receiver",
@@ -808,7 +528,8 @@
     "size_class": "universal",
     "tags": [],
     "protocol": "ELRS",
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1061",
@@ -820,7 +541,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-dbr4-dual-band-xross-gemini-expresslrs-receiver-_image-6_.jpg",
     "protocol": "ELRS",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": true
   },
   {
     "pid": "RCV-1062",
@@ -833,20 +556,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1063",
-    "category": "receivers",
-    "name": "iFlight ELRS 2.4GHz Receiver w/ 70mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "The iFlight ELRS 2.4GHz Receiver offers top-tier performance with exceptional frequency stability.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-2-4ghz-receiver-w-70mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight-elrs-2.4ghz-receiver-_image-1_1_.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1064",
@@ -859,7 +570,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1065",
@@ -871,7 +583,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys-mavlink-900mhz-receiver---mr900-30-_image-1__1.jpg",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1066",
@@ -884,20 +597,8 @@
     "protocol": "FrSky",
     "size_class": "universal",
     "tags": [],
-    "diversity": true
-  },
-  {
-    "pid": "RCV-1067",
-    "category": "receivers",
-    "name": "Radiomaster ER5A V2 ExpressLRS 2.4GHz PWM Receiver w/ External Antenna",
-    "manufacturer": "RadioMaster",
-    "description": "The RadioMaster ER5A V2 receiver harnesses the advanced ExpressLRS system, offering exceptional reliability, customizable settings, rapid response, and extended reception range for an unparalleled user experience.",
-    "link": "https://www.getfpv.com/radios/receivers/radiomaster-er5a-v2-expresslrs-2-4ghz-pwm-receiver-w-external-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-er5a-v2-expresslrs-2.4ghz-pwm-receiver-external-antenna_2_.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
+    "diversity": true,
+    "frequency_ghz": 2.4
   },
   {
     "pid": "RCV-1068",
@@ -910,7 +611,8 @@
     "protocol": "Crossfire",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1069",
@@ -922,7 +624,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-fusion-hardware-upgrade-board-1.jpg",
     "size_class": "universal",
     "tags": [],
-    "protocol": "Crossfire"
+    "protocol": "Crossfire",
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1070",
@@ -949,7 +653,8 @@
     "protocol": "Crossfire",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1072",
@@ -962,20 +667,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1073",
-    "category": "receivers",
-    "name": "iFlight ELRS Dualband 500mW Receiver + 160mm Antenna",
-    "manufacturer": "iFlight",
-    "description": "The iFlight ELRS Dualband 500mW Receiver + 160mm Antenna houses high-power telemetry inside a sleek, single-side component design.",
-    "link": "https://www.getfpv.com/radios/receivers/iflight-elrs-dualband-500mw-receiver-160mm-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/5/0/500mw-dualband-1.jpg",
-    "protocol": "ELRS",
-    "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 2.4
+    "diversity": false
   },
   {
     "pid": "RCV-1074",
@@ -987,7 +680,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_-_2022-08-31t151907.331.png",
     "size_class": "universal",
     "tags": [],
-    "protocol": "FrSky"
+    "protocol": "FrSky",
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1075",
@@ -1013,7 +708,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys-mlrs-2.4ghz-receiver---mr24-30-_image-1_.jpg",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1077",
@@ -1025,7 +721,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_-_2022-09-01t124907.119.png",
     "size_class": "universal",
     "tags": [],
-    "protocol": "FrSky"
+    "protocol": "FrSky",
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1078",
@@ -1052,7 +750,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1080",
@@ -1065,7 +764,8 @@
     "protocol": "FrSky",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1081",
@@ -1077,7 +777,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radio-master-r81-8ch-frsky-d8d16-compatible-nano-receiver-wsbus-_-pre-soldered-wires-_image-8_1_.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1082",
@@ -1090,7 +792,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 0.915,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1083",
@@ -1103,7 +806,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 0.915,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1084",
@@ -1116,7 +820,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1085",
@@ -1129,7 +834,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1086",
@@ -1146,19 +852,6 @@
     "frequency_ghz": 0.915
   },
   {
-    "pid": "RCV-1087",
-    "category": "receivers",
-    "name": "RadioMaster RP1 V2 ExpressLRS 2.4GHz Nano Receiver w/ 65mm UFL T-Antenna",
-    "manufacturer": "RadioMaster",
-    "description": "The RadioMaster RP1 V2 ExpressLRS 2.4GHz Nano Receiver w/ 65mm UFL T-Antenna is an open-source receiver based on ExpressLRS.",
-    "link": "https://www.getfpv.com/radios/receivers/radiomaster-rp1-v2-expresslrs-2-4ghz-nano-receiver-w-65mm-ufl-t-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-rp1-expresslrs-2.4ghz-nano-receiver-w-65mm-ufl-t-antenna-_image-1_.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "RCV-1088",
     "category": "receivers",
     "name": "MATEKSYS ExpressLRS 2.4GHz PWM Vario Receiver - ELRS R24-P6V",
@@ -1169,7 +862,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1089",
@@ -1182,20 +876,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1090",
-    "category": "receivers",
-    "name": "RadioMaster ER3C-i ExpressLRS 2.4GHz PWM Receiver w/ Built-in Antenna",
-    "manufacturer": "RadioMaster",
-    "description": "The RadioMaster ER3C-i receiver harnesses the advanced ExpressLRS system, offering exceptional reliability, customizable settings, rapid response, and extended reception range for an unparalleled user experience.",
-    "link": "https://www.getfpv.com/radios/receivers/radiomaster-er3c-i-expresslrs-2-4ghz-pwm-receiver-w-built-in-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-er3c-i-expresslrs-2.4ghz-pwm-receiver-w-built-in-antenna.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1091",
@@ -1208,7 +890,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1092",
@@ -1220,20 +903,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-micro-2.4ghz-4-in-1-module---jr-nano_width-1000px.jpg",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1093",
-    "category": "receivers",
-    "name": "RadioMaster RP2 V2 ExpressLRS 2.4GHz Nano Receiver w/ Fixed SMT Antenna",
-    "manufacturer": "RadioMaster",
-    "description": "The RadioMaster RP2 V2 ExpressLRS 2.4ghz Nano Receiver w/ Fixed SMT Antenna is an open-source receiver based on ExpressLRS.",
-    "link": "https://www.getfpv.com/radios/receivers/radiomaster-rp2-v2-expresslrs-2-4ghz-nano-receiver-w-fixed-smt-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-rp2-v2-expresslrs-2.4ghz-nano-receiver-w-fixed-smt-antenna-_image-1_.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1094",
@@ -1278,20 +949,6 @@
     "diversity": true
   },
   {
-    "pid": "RCV-1097",
-    "category": "receivers",
-    "name": "Skystars Supreme ExpressLRS 2.4GHz Diversity Dual Nano Receiver w/ Brass Antenna",
-    "manufacturer": "SkyStars",
-    "description": "The Skystars Supreme ExpressLRS 2.4GHz Diversity Dual Nano Receiver is a fantastic option for any ELRS user! This receiver features two antennas that operate in diversity mode (antenna-switching) for optimum reception and performance.",
-    "link": "https://www.getfpv.com/radios/receivers/skystars-supreme-expresslrs-2-4ghz-diversity-dual-nano-receiver-w-brass-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars_rc_supreme_expresslrs_ghz_diversity_nano_receiver_4.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "diversity": true,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "RCV-1098",
     "category": "receivers",
     "name": "Immersion RC Ghost Ultimate Hybrid 5.8GHz VTX & 2.4GHz Rx",
@@ -1302,47 +959,8 @@
     "protocol": "ImmersionRC Ghost",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1099",
-    "category": "receivers",
-    "name": "FrSky TD MX 2.4GHz 900M Dual-Band Tandem Receiver w/ Antennas",
-    "manufacturer": "FrSky",
-    "description": "The FrSky TD MX 2.4GHz 900M Dual-Band Tandem Receiver adopts the triple antenna design that provides multi-directional wide coverage for the remote signal.",
-    "link": "https://www.getfpv.com/radios/receivers/frsky-td-mx-2-4ghz-900m-dual-band-tandem-receiver-w-antennas.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/d/td-mx_copy2.jpg",
-    "protocol": "FrSky",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1100",
-    "category": "receivers",
-    "name": "FrSky TD R10 2.4GHz 900M Dual Band Tandem Receiver w/ Antennas",
-    "manufacturer": "FrSky",
-    "description": "The FrSky TD R10 2.4GHz 900M Dual Band Tandem Receiver w/ Antennas is unlike any other FrSky 2.4Ghz or 900Mhz receiver - the TD R10 works simultaneously at both 900Mhz and 2.4Ghz frequencies.",
-    "link": "https://www.getfpv.com/radios/receivers/frsky-td-r10-2-4g-900m-dual-band-tandem-receiver-w-antennas.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/d/td-r10-2_copy2.jpg",
-    "protocol": "FrSky",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1101",
-    "category": "receivers",
-    "name": "Happymodel EP1 Dual True Diversity ExpressLRS Receiver w/ Antennas",
-    "manufacturer": "Happymodel",
-    "description": "The Happymodel EP1 Dual is a true diversity 2.4GHz ELRS receiver with RF amps and two antennas.",
-    "link": "https://www.getfpv.com/radios/receivers/happymodel-ep1-dual-true-diversity-expresslrs-receiver-w-antennas.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel_ep1_dual_3_.jpg",
-    "protocol": "ELRS",
-    "diversity": true,
-    "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 2.4
+    "diversity": false
   },
   {
     "pid": "RCV-1102",
@@ -1354,7 +972,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_-_2022-09-22t162838.150.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": true
   },
   {
     "pid": "RCV-1103",
@@ -1366,7 +986,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_-_2022-09-01t210643.876.png",
     "size_class": "universal",
     "tags": [],
-    "protocol": "FrSky"
+    "protocol": "FrSky",
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1104",
@@ -1379,7 +1001,8 @@
     "protocol": "ELRS",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 2.4
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1105",
@@ -1392,20 +1015,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1106",
-    "category": "receivers",
-    "name": "HGLRC Hermes ExpressLRS Receiver Kit w/ 900RX + 915MHz Omnidirectional T-Antenna",
-    "manufacturer": "HGLRC",
-    "description": "The\u00a0HGLRC Hermes Receiver Kit\u00a0features a 900 ELRS Receiver and a 915MHz Omnidirectional T-Antenna. Lightweight and compact, this receiver is suitable for long-range, racing, or freestyle flights!",
-    "link": "https://www.getfpv.com/radios/receivers/hglrc-hermes-expresslrs-receiver-kit-w-900rx-915mhz-omnidirectional-t-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc-hermes-expresslrs-receiver-kit-w-900rx-_-915mhz-omnidirectional-t-antenna-mian.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 0.915,
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1107",
@@ -1418,7 +1029,8 @@
     "protocol": "ELRS",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 2.4
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1108",
@@ -1431,7 +1043,8 @@
     "protocol": "ELRS",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 2.4
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1109",
@@ -1444,19 +1057,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1110",
-    "category": "receivers",
-    "name": "ImmersionRC Ghost JR TX Module + Atto Receivers Bundle",
-    "manufacturer": "ImmersionRC",
-    "description": "This ImmersionRC Ghost JR Module Bundle is designed\u00a0for both reliable control at extreme range, and extremely low latency with a best-in-class frame rate for the Race circuit. This combination includes a Ghost JR TX Module and two Ghost Atto Receivers! Move so fast everyone will think they've seen a ghost!",
-    "link": "https://www.getfpv.com/radios/receivers/immersionrc-ghost-jr-tx-module-atto-receivers-bundle.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/m/immersionrc-ghost-jr-bundle-main-_no-halloween_.jpg",
-    "protocol": "ImmersionRC Ghost",
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1111",
@@ -1483,7 +1085,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 0.915,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1113",
@@ -1496,7 +1099,8 @@
     "protocol": "ELRS",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1114",
@@ -1508,7 +1112,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight-r81-receiver-_2_-1000x1000.jpg",
     "size_class": "universal",
     "tags": [],
-    "protocol": "FrSky"
+    "protocol": "FrSky",
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1115",
@@ -1521,7 +1127,8 @@
     "protocol": "DSMX",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1116",
@@ -1533,7 +1140,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-tracer-6ch-pwm-nano-rx.jpg",
     "protocol": "TBS Tracer",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1117",
@@ -1545,7 +1153,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/m/immersionrc_ghost_proton_pack_30x30__1_.jpg",
     "protocol": "ImmersionRC Ghost",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1118",
@@ -1557,7 +1167,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/m/immersionrc_ghost_proton_pack_25_x_25_2_.jpg",
     "protocol": "ImmersionRC Ghost",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1119",
@@ -1568,7 +1180,8 @@
     "link": "https://www.getfpv.com/radios/receivers/dragon-link-advanced-433-mhz-1000-mw-receiver.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/0/0/0000315_dragon-link-advanced-433-mhz-1000-mw-receiver.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1120",
@@ -1581,7 +1194,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1121",
@@ -1594,7 +1208,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1122",
@@ -1607,20 +1222,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1123",
-    "category": "receivers",
-    "name": "ImmersionRC Ghost 2.4Ghz Combo Kit (1x TX, 3x RX, 3x Antennas) ",
-    "manufacturer": "ImmersionRC",
-    "description": "The Ghost is the next generation R/C control system from ImmersionRC.",
-    "link": "https://www.getfpv.com/radios/receivers/immersionrc-ghost-2-4ghz-combo-kit-1x-tx-3x-rx-3x-antennas.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/m/immersionrc-ghost-2.4ghz-combo-kit-_1x-tx_-3x-rx_-3x-antennas_-2_1.jpg",
-    "protocol": "ImmersionRC Ghost",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1124",
@@ -1632,7 +1235,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/e/neuron-8a-sbec-3.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1125",
@@ -1644,7 +1249,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/f/rfd900-txmod-rc-transmitter-module.jpg",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1126",
@@ -1656,7 +1262,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/p/spm4651t_a0.jpg",
     "size_class": "universal",
     "tags": [],
-    "protocol": "Spektrum"
+    "protocol": "Spektrum",
+    "diversity": false
   },
   {
     "pid": "RCV-1127",
@@ -1668,7 +1275,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/f/sf410m-1.jpg",
     "size_class": "universal",
     "tags": [],
-    "protocol": "Futaba"
+    "protocol": "Futaba",
+    "diversity": false
   },
   {
     "pid": "RCV-1128",
@@ -1680,7 +1288,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/5/b58d5df408183a82.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1129",
@@ -1692,7 +1302,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/1/e/1e89da66-f085-443e-9723-c87743867805.jpg",
     "size_class": "universal",
     "tags": [],
-    "protocol": "Futaba"
+    "protocol": "Futaba",
+    "diversity": false
   },
   {
     "pid": "RCV-1130",
@@ -1704,7 +1315,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/3/c/3c135ac8-7b15-4a5c-ade6-e39921a2aece.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1131",
@@ -1716,7 +1329,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/x/rxsr-fc-omnibus-f4-v6-1.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1132",
@@ -1729,7 +1344,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1133",
@@ -1741,7 +1357,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/e/e/ee6763d242.jpg",
     "frequency_ghz": 0.915,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1134",
@@ -1754,20 +1371,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 0.915,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1135",
-    "category": "receivers",
-    "name": "FrSky R9 Slim+ OTA 915MHz Long Range Receiver w/ 2pcs Dipole T Antennas",
-    "manufacturer": "FrSky",
-    "description": "The FrSky R9 Slim+ receiver is the updated version of R9 Slim, with optimized performance and 2 detachable antennas.",
-    "link": "https://www.getfpv.com/radios/receivers/frsky-r9-slim-915mhz-long-range-receiver.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/9/r9-slim1.jpg",
-    "protocol": "FrSky",
-    "frequency_ghz": 0.915,
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1136",
@@ -1780,7 +1385,8 @@
     "protocol": "FrSky",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1137",
@@ -1793,7 +1399,8 @@
     "protocol": "FrSky",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "diversity": false
   },
   {
     "pid": "RCV-1138",
@@ -1805,7 +1412,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-rb-10-redundancy-bus-10.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1139",
@@ -1817,7 +1426,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/o/v/oversky-scisky-micro-f3-brushed-flight-control-built-in-rx-option-frsky_1.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1140",
@@ -1829,7 +1440,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-xm-receiver-up-to-16ch.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1141",
@@ -1841,7 +1454,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-x4r-sb-3-16-channel-receiver-with-sbus-and-cppm-without-pins_2.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1142",
@@ -1853,7 +1468,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiolink-r6ds-receiver.jpg",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1143",
@@ -1865,7 +1481,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-s6r-receiver.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1144",
@@ -1877,7 +1495,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/e/lead-1000x1000_9_4.jpg",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1145",
@@ -1889,7 +1508,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/p/spektrum_ar7700_serial_receiver_with_ppm_srxl_remote_rx-kit.jpg",
     "size_class": "universal",
     "tags": [],
-    "protocol": "Spektrum"
+    "protocol": "Spektrum",
+    "diversity": false
   },
   {
     "pid": "RCV-1146",
@@ -1901,7 +1521,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/p/spektrum-airmod.jpg",
     "protocol": "DSM2",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1147",
@@ -1914,7 +1535,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1148",
@@ -1927,7 +1549,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1149",
@@ -1940,7 +1563,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1150",
@@ -1953,7 +1577,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1151",
@@ -1966,33 +1591,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1152",
-    "category": "receivers",
-    "name": "RadioMaster ER5C V2 ExpressLRS 2.4GHz PWM Receiver w/ External Antenna",
-    "manufacturer": "RadioMaster",
-    "description": "The RadioMaster ER5C V2 receiver harnesses the advanced ExpressLRS system, offering exceptional reliability, customizable settings, rapid response, and extended reception range for an unparalleled user experience.",
-    "link": "https://www.getfpv.com/radios/receivers/radiomaster-er5c-v2-expresslrs-2-4ghz-pwm-receiver-w-external-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-er5c-v2-expresslrs-2.4ghz-pwm-receiver-w-external-antenna_2_.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 2.4,
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "RCV-1153",
-    "category": "receivers",
-    "name": "RadioMaster Bandit BR1 915MHz ExpressLRS Receiver w/ Antennas",
-    "manufacturer": "RadioMaster",
-    "description": "The RadioMaster Bandit BR1 Expresslrs Receiver features a built-in TCXO (temperature-compensated crystal oscillator) which ensures reliable, stable, and accurate signal reception for superior performance in demanding environments.",
-    "link": "https://www.getfpv.com/radios/receivers/radiomaster-bandit-br1-915mhz-expresslrs-receiver-w-antennas.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-bandit-br1-915mhz-expresslrs-receiver-5.jpg",
-    "protocol": "ELRS",
-    "frequency_ghz": 0.915,
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1154",
@@ -2005,7 +1605,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1155",
@@ -2017,7 +1618,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-x6r.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1156",
@@ -2028,7 +1631,8 @@
     "link": "https://www.getfpv.com/radios/receivers/dragon-link-micro-uhf-receiver-next-gen-firmware.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/0/0/0000290_micro-receiver.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1157",
@@ -2045,17 +1649,6 @@
     "diversity": true
   },
   {
-    "pid": "RCV-1158",
-    "category": "receivers",
-    "name": "Dragon Link Nano Receiver - Wire Antenna",
-    "manufacturer": "DragonLabs",
-    "description": "The Dragon Link Nano Receiver is a full range, fully filtered, fully shielded, full feature, full telemetry receiver. Dragon Link used the highest quality components and spent the extra money on filtering to give you the best performance possible from this receiver.",
-    "link": "https://www.getfpv.com/radios/receivers/dragon-link-nano-receiver-wire-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/r/dragonlink-nano-wire.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "RCV-1159",
     "category": "receivers",
     "name": "FlySky FS-RX2A Pro V1 2.4Ghz Receiver ",
@@ -2066,7 +1659,8 @@
     "protocol": "Flysky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1160",
@@ -2079,7 +1673,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1161",
@@ -2091,7 +1686,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/e/e/ee6763d242_3.jpg",
     "frequency_ghz": 0.915,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1162",
@@ -2104,7 +1700,8 @@
     "protocol": "ImmersionRC Ghost",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1163",
@@ -2117,7 +1714,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": false
   },
   {
     "pid": "RCV-1164",
@@ -2129,7 +1727,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/x/rxsr-fc-omninxt-f7-new-2.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "frequency_ghz": 2.4,
+    "diversity": false
   },
   {
     "pid": "RCV-1165",
@@ -2141,7 +1741,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/f/sf610-2_1.jpg",
     "size_class": "universal",
     "tags": [],
-    "protocol": "Futaba"
+    "protocol": "Futaba",
+    "diversity": false
   },
   {
     "pid": "RCV-1166",
@@ -2153,6 +1754,7 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/8/7/873c0b03-14b8-41e2-8ecd-7875cb857627.jpg",
     "size_class": "universal",
     "tags": [],
-    "protocol": "Futaba"
+    "protocol": "Futaba",
+    "diversity": false
   }
 ]
