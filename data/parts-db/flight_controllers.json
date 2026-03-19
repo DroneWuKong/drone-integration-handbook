@@ -170,7 +170,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "firmware_targets": "ArduPilot/Betaflight"
   },
   {
     "pid": "FC-1006",
@@ -203,7 +204,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "firmware_targets": "ArduPilot/Betaflight"
   },
   {
     "pid": "FC-1008",
@@ -334,7 +336,8 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1011",
@@ -1078,7 +1081,8 @@
       "G4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1033",
@@ -1309,7 +1313,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1038",
@@ -1762,7 +1767,8 @@
       "G4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1054",
@@ -1941,7 +1947,8 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1062",
@@ -2135,7 +2142,7 @@
     "description": "The\u00a0iFlight BLITZ F7\u00a0V1.1 Flight Controller now has a new gyro, improved circuit design, better components, and lower noise level!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-blitz-f7-v1-2-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/l/blitz_f7_v1_2_m2.png",
-    "mcu_family": "",
+    "mcu_family": "F7",
     "mounting_pattern_mm": 30.5,
     "firmware_targets": "Betaflight",
     "mounting_hole_size": "M3",
@@ -2261,7 +2268,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1072",
@@ -2457,7 +2465,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "firmware_targets": "ArduPilot/Betaflight"
   },
   {
     "pid": "FC-1082",
@@ -2551,7 +2560,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1085",
@@ -3291,7 +3301,8 @@
       "30.5mm",
       "5 inch"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1108",
@@ -3556,7 +3567,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1118",
@@ -3603,7 +3615,8 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1119",
@@ -3822,7 +3835,8 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1124",
@@ -4565,7 +4579,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1156",
@@ -4740,7 +4755,8 @@
       "F4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1165",
@@ -5003,7 +5019,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1173",
@@ -5332,7 +5349,8 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1180",
@@ -6426,7 +6444,8 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "ArduPilot/Betaflight"
   },
   {
     "pid": "FC-1213",
@@ -6991,7 +7010,8 @@
     ],
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1234",
@@ -7876,7 +7896,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1258",
@@ -8334,7 +8355,8 @@
     ],
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1269",
@@ -11359,7 +11381,8 @@
     ],
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1366",
@@ -11658,7 +11681,8 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1382",
@@ -11704,7 +11728,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1384",
@@ -11750,7 +11775,8 @@
     ],
     "cell_count_min": 1,
     "cell_count_max": 4,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1386",

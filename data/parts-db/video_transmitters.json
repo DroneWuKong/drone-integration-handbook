@@ -46,7 +46,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/e/betafpv_p1_air_unit_hd-1.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "max_power_mw": 1000
   },
   {
     "pid": "VTX-1004",
@@ -58,7 +59,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero_whoop_v2-2.jpg",
     "video_system": "HDZero",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 200
   },
   {
     "pid": "VTX-1005",
@@ -83,7 +85,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-pro-kit---32gb-w-dual-antennas_1_.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1007",
@@ -95,7 +98,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-pro-kit---32gb-w-dual-antennas-bundle-_thumbnail_.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1008",
@@ -132,7 +136,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero-freestyle-v2-vtx-kit.jpg",
     "video_system": "HDZero",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1011",
@@ -144,7 +149,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-32gb-single-antenna-_image-1_.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1012",
@@ -156,7 +162,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-mini-1s-kit-bundle-_thumbnail_1_.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 400
   },
   {
     "pid": "VTX-1013",
@@ -168,7 +175,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-repeater-_image-1__1.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1014",
@@ -180,7 +188,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-o4-air-unit-render_main-1000x1000_.jpg",
     "video_system": "DJI O4",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1400
   },
   {
     "pid": "VTX-1015",
@@ -192,7 +201,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-kit-v2----32g-w-gyro.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1016",
@@ -204,7 +214,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/r/truerc-x-air-5.8ghz-mk-ii-antenna-stubby-combo-for-hdzero-vrx4---rhcp-_image-1_1_.jpg",
     "video_system": "HDZero",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1017",
@@ -216,7 +227,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-moonlight-kit---4k-avatar-fpv-system.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1018",
@@ -241,7 +253,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-vtx-v2-module---32gb-dual-antennas-version_2_.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1020",
@@ -253,43 +266,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero-freestyle-v2-vtx-_2_.jpg",
     "video_system": "HDZero",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "VTX-1021",
-    "category": "video_transmitters",
-    "name": "Flywoo Naked O3 Upgrade Case Kit",
-    "manufacturer": "Flywoo",
-    "description": "FLYWOO designed the O3 Upgrade Case Kit, reducing weight by 50% respectively.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/flywoo-naked-o3-upgrade-case-kit.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-naked-o3-upgrade-case-kit_6_.jpg",
-    "size_class": "universal",
     "tags": [],
-    "video_system": "DJI O3"
-  },
-  {
-    "pid": "VTX-1022",
-    "category": "video_transmitters",
-    "name": "Walksnail Avatar HD Mini 1S Lite Kit w/ Heat sink",
-    "manufacturer": "Walksnail",
-    "description": "The Walksnail Avatar HD Lite Camera / Mini 1S VTX Kit features a lite digital camera, antenna, and mini VTX (with heat sink) that works with HD Goggles such as the Walksnail Avatar and Fat Shark HD Dominator.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/walksnail-avatar-hd-mini-1s-lite-kit-w-heatsink.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/v/avatar-hd-lite-camera-_-mini-lite-1s-vtx-kit-with-heatsink.jpg",
-    "video_system": "Walksnail",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "VTX-1023",
-    "category": "video_transmitters",
-    "name": "Walksnail Avatar HD VTX Module V2 - 8GB",
-    "manufacturer": "Walksnail",
-    "description": "This Walksnail Avatar HD VTX\u00a0Module V2\u00a0features built-in 8GB storage without Gyroflow support.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/walksnail-avatar-hd-vtx-module-v2-8gb.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-vtx-module-v2---32g_1.jpg",
-    "video_system": "Walksnail",
-    "size_class": "universal",
-    "tags": []
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1024",
@@ -301,7 +279,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-nano-camera-_-mini-lite-1s-vtx-kit-w-heatsink_1_.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 400
   },
   {
     "pid": "VTX-1025",
@@ -313,7 +292,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-vrx_1__2.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1026",
@@ -337,7 +317,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-unify-pro32-dp---mmcx-_image-2__1.jpg",
     "video_system": "Analog",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1028",
@@ -362,7 +343,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-expresslrs-f4-5a-5-in-1-aio-fc-w-built-in-2.4ghz-rx-front.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "max_power_mw": 400
   },
   {
     "pid": "VTX-1030",
@@ -376,28 +358,6 @@
     "size_class": "universal",
     "tags": [],
     "video_system": "Analog"
-  },
-  {
-    "pid": "VTX-1031",
-    "category": "video_transmitters",
-    "name": "XILO Pit Pal VTX Power Switch",
-    "manufacturer": "XILO",
-    "description": "The XILO Pit Pal VTX Power Switch allows you to remotely power on/off your video transmitter or other devices with this simple board connected to your flight controller.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/xilo-pit-pal-vtx-power-switch.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/p/i/pit-pal-1.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "VTX-1032",
-    "category": "video_transmitters",
-    "name": "TBS 1.2GHz VRX Notch Filter (868/915 MHz)",
-    "manufacturer": "Team BlackSheep",
-    "description": "Getting fuzzy video on your 1.2-1.3GHz receiver when using crossfire? This filter improves video reception for 1.2-1.3GHz video receivers in combination with TBS Crossfire.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/tbs-1-2ghz-vrx-notch-filter-868-915-mhz.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/o/notch-1.2-tbs.jpg",
-    "size_class": "universal",
-    "tags": []
   },
   {
     "pid": "VTX-1033",
@@ -422,7 +382,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/unify-hv-1_2.jpg",
     "video_system": "Analog",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1035",
@@ -434,7 +395,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/unify-hv-1_1.jpg",
     "video_system": "Analog",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1036",
@@ -446,18 +408,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/unify-hv-1.jpg",
     "video_system": "Analog",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "VTX-1037",
-    "category": "video_transmitters",
-    "name": "FatShark Cased Tx Power Cable",
-    "manufacturer": "Fat Shark",
-    "description": "FatShark Cased Tx Power Cable",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/fatshark-cased-tx-power-cable.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/1/6/160-245-large.jpg",
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1038",
@@ -469,7 +421,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-unify-pro32-vtx-mmcx.jpg",
     "video_system": "Analog",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1039",
@@ -481,7 +434,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-unify-pro32-dp---mmcx-_image-1_.jpg",
     "video_system": "Analog",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1040",
@@ -505,7 +459,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/unify-5g8-v3_1.jpg",
     "video_system": "Analog",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1042",
@@ -517,19 +472,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero_race_v3_shark_byte_digital_hd_video_transmitter.jpg",
     "video_system": "HDZero",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "VTX-1043",
-    "category": "video_transmitters",
-    "name": "Caddx Polar 5.8Ghz Replacement Antenna (10.5cm)",
-    "manufacturer": "Caddx",
-    "description": "This replacement\u00a0Caddx Polar 5.8gHz Antenna\u00a0is compatible with the Caddx Polar Vista Air Unit.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/caddx-polar-5-8ghz-replacement-antenna-10-5cm.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/a/caddx-polar-5.8ghz-replacement-antenna-_10.5cm_-main.jpg",
-    "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "max_power_mw": 400
   },
   {
     "pid": "VTX-1044",
@@ -541,7 +485,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-mini-vtx-v3.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 400
   },
   {
     "pid": "VTX-1045",
@@ -557,29 +502,6 @@
     "max_power_mw": 800
   },
   {
-    "pid": "VTX-1046",
-    "category": "video_transmitters",
-    "name": "Walksnail Avatar HD VTX Module V2 - 32GB",
-    "manufacturer": "Walksnail",
-    "description": "This Walksnail Avatar HD VTX Module V2 features built-in 32GB storage with Gyroflow support.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/walksnail-avatar-hd-vtx-module-v2-32gb.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-vtx-module-v2---32g.jpg",
-    "video_system": "Walksnail",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "VTX-1047",
-    "category": "video_transmitters",
-    "name": "IBCrazy 433 MHz/1.3 GHz Notch Filter",
-    "manufacturer": "Video Aerial Systems",
-    "description": "Notch filters are designed to knock out specific bands of radio interference.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/ibcrazy-433-mhz-1-3-ghz-notch-filter.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/4/3/433_1.3-notch-filter-b-e1556638143225-700x460.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "VTX-1048",
     "category": "video_transmitters",
     "name": "Walksnail Ascent Lite VTX Kit",
@@ -589,7 +511,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/a/caddxfpv_walksnail_ascent_lite_vtx_kit-1_1.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 700
   },
   {
     "pid": "VTX-1049",
@@ -601,7 +524,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/h/dhi_goggles_n3_o4_bundle_image.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI O4"
+    "video_system": "DJI O4",
+    "max_power_mw": 1400
   },
   {
     "pid": "VTX-1050",
@@ -613,7 +537,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-o4-air-unit-pro-_main-image_.jpg",
     "video_system": "DJI O4",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1400
   },
   {
     "pid": "VTX-1051",
@@ -625,7 +550,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-kit-v2---32gb-_-gyro-w-dual-antennas-bundle-_thumbnail_.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1052",
@@ -676,7 +602,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-vrx-_-hd-kit-v2---32gb-gyro-_-dual-antennas.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1057",
@@ -701,7 +628,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-kit-v2---32gb-_-gyro-w-dual-antennas_1_.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1059",
@@ -713,7 +641,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-naked-o3-lite-air-unit_2_.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI O3"
+    "video_system": "DJI O3",
+    "max_power_mw": 700
   },
   {
     "pid": "VTX-1060",
@@ -725,7 +654,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-naked-o3-ultra-air-unit-_1_.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI O3"
+    "video_system": "DJI O3",
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1061",
@@ -750,7 +680,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-vrx-_-hd-kit-v2---32gb-w-gyro.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1063",
@@ -762,7 +693,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam_wasp_nano_hd_camera_system_w_link_vtx_.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Walksnail"
+    "video_system": "Walksnail",
+    "max_power_mw": 400
   },
   {
     "pid": "VTX-1064",
@@ -774,7 +706,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam-wasp-hd-fpv-camera-system-w-dji-fpv-air-unit.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "max_power_mw": 700
   },
   {
     "pid": "VTX-1065",
@@ -786,7 +719,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-pro-kit---32g-w-gyro.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1066",
@@ -798,7 +732,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-kit-v2---8g---no-gyro.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1067",
@@ -810,7 +745,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-camera-v2-w-gyro-_-14mm-cable.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1068",
@@ -822,7 +758,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-o3-air-unit-_8_.jpg",
     "video_system": "DJI O3",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1069",
@@ -834,7 +771,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-o3-air-unit-module_8_.jpg",
     "video_system": "DJI O3",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1070",
@@ -846,7 +784,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-transmission-combo-_1_.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI O3"
+    "video_system": "DJI O3",
+    "max_power_mw": 1200
   },
   {
     "pid": "VTX-1071",
@@ -858,7 +797,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/1/2/1234.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "max_power_mw": 600
   },
   {
     "pid": "VTX-1072",
@@ -870,7 +810,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-nano-camera--mini-1s-vtx-kit-_1_.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 350
   },
   {
     "pid": "VTX-1073",
@@ -894,7 +835,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-fyujon-vtx_rx-elrs-2.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "max_power_mw": 400
   },
   {
     "pid": "VTX-1075",
@@ -906,7 +848,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/v/avatar-hd-nano-camera-vtx-kit-main_1.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 350
   },
   {
     "pid": "VTX-1076",
@@ -918,7 +861,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/v/avatar-hd-camera-vtx-kit-main.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 1000
   },
   {
     "pid": "VTX-1077",
@@ -930,7 +874,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/rushfpv-rush-tank-race-ii-5_3_.jpg",
     "video_system": "Analog",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1078",
@@ -942,7 +887,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-digital-hd-fpv-air-unit-kit---original-version-dji-main.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "max_power_mw": 700
   },
   {
     "pid": "VTX-1079",
@@ -980,7 +926,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/a/naked-vista-nebula-pro.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "max_power_mw": 500
   },
   {
     "pid": "VTX-1082",
@@ -992,7 +939,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/a/naked-vista-polar_3_.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "max_power_mw": 500
   },
   {
     "pid": "VTX-1083",
@@ -1016,7 +964,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/a/caddx-polar-micro-digital-fpv-air-unit-camera-kit-silver.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
+    "video_system": "DJI",
+    "max_power_mw": 500
   },
   {
     "pid": "VTX-1085",
@@ -1028,31 +977,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/a/caddx-polar-micro-digital-fpv-vista-camera-kit-silver.jpg",
     "size_class": "universal",
     "tags": [],
-    "video_system": "DJI"
-  },
-  {
-    "pid": "VTX-1086",
-    "category": "video_transmitters",
-    "name": "Happymodel ExpressLRS ES24TX 2.4GHz Micro TX Module",
-    "manufacturer": "Happymodel",
-    "description": "This Micro TX is designed by Happymodel and based on the open-source ExpressLRS which is a very popular low latency and high re-flashed rate RF module for RC Airplane and FPV Racing. Its main hardware architecture is ESP32, ESP8285, and the SX1280 RF chip. The ES24TX module is a complete solution that is plug and play and already pre-loaded with Expresslrs firmware.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/happymodel-expresslrs-es24tx-2-4ghz-micro-tx-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-expresslrs-es24tx-2.4ghz-moduleincludes-black.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "video_system": "Analog"
-  },
-  {
-    "pid": "VTX-1087",
-    "category": "video_transmitters",
-    "name": "Happymodel ExpressLRS 3D Printed JR Bay for ES24TX / ES915TX",
-    "manufacturer": "Happymodel",
-    "description": "This is a 3D Printed JR Bay for the Happymodel ExpressLRS ES24TX / ES915TX.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/happymodel-expresslrs-3d-printed-jr-bay-for-es24tx-es915tx.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-expresslrs-3d-printed-jr-bay-for-es24tx--es915tx-_2_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "video_system": "Analog"
+    "video_system": "DJI",
+    "max_power_mw": 500
   },
   {
     "pid": "VTX-1088",
@@ -1096,18 +1022,6 @@
     "video_system": "Analog"
   },
   {
-    "pid": "VTX-1091",
-    "category": "video_transmitters",
-    "name": "RushFPV 30X30 Plastic Board For VTX",
-    "manufacturer": "RUSHFPV",
-    "description": "A RUSHFPV plastic board for VTXs or radio receivers (30x30).",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/rushfpv-30x30-plastic-board-for-vtx.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/rushfpv_30x30_plastic_board_for_vtx.jpg",
-    "video_system": "Analog",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "VTX-1092",
     "category": "video_transmitters",
     "name": "ImmersionRC Ghost Proton 20x20 Pack ",
@@ -1118,7 +1032,8 @@
     "mounting_pattern_mm": 20.0,
     "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "video_system": "Analog",
+    "max_power_mw": 400
   },
   {
     "pid": "VTX-1093",
@@ -1143,7 +1058,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/rush-fpv-tank-ii-ultimate-30x30-25-800mw-vtx-w-smart-audio---mmcx.jpg",
     "video_system": "Analog",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1095",
@@ -1232,7 +1148,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/e/z/ezgif-1-a5d24321153d.jpg",
     "video_system": "Analog",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1102",
@@ -1270,19 +1187,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc01635-ga.jpg",
     "video_system": "Analog",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "VTX-1105",
-    "category": "video_transmitters",
-    "name": "Sp Racing Stacking Vtx Board Without Vtx Module",
-    "manufacturer": "",
-    "description": "Stackable VTX board to enable direct solder of TBS Unify, RTC6705, or XM+ diversity receiver with your SP Racing F7 Dual FC or SP Racing H7 EXTREME.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/sp-racing-stacking-vtx-board-without-vtx-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/s/p/spracing-f7-vtx-main.jpg",
-    "size_class": "universal",
     "tags": [],
-    "video_system": "Analog"
+    "max_power_mw": 800
   },
   {
     "pid": "VTX-1106",
@@ -1311,17 +1217,6 @@
     "video_system": "Analog"
   },
   {
-    "pid": "VTX-1108",
-    "category": "video_transmitters",
-    "name": "Lumenier Aluminum Heat Sink ",
-    "manufacturer": "Lumenier",
-    "description": "A heat sink from Lumenier to cool and regulate your transmitter.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/lumenier-aluminum-heat-sink.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-heat-sink-1000x1000.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "VTX-1109",
     "category": "video_transmitters",
     "name": "Board Replacement for Plug & Play Transmitter",
@@ -1347,17 +1242,6 @@
     "video_system": "Analog"
   },
   {
-    "pid": "VTX-1111",
-    "category": "video_transmitters",
-    "name": "IBCrazy 1.3 GHz Pass/2.4 GHz Stop Notch Filter",
-    "manufacturer": "Video Aerial Systems",
-    "description": "The updated IBCrazy (VAS) 1.3/2.4 GHz Notch Filter is a new innovative product from Alex Greve (IBCrazy). This notch filter allows you to fly 2.4GHz control with 1.3GHz video. Place it on your video transmitter to greatly increase the range of your 2.4GHz control system.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/ibcrazy-1-3-ghz-pass-2-4-ghz-stop-notch-filter.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/v/i/videoaerialsystems-1.3-2.4ghz-notch-filter-main-1000x1000.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "VTX-1112",
     "category": "video_transmitters",
     "name": "Walksnail Avatar HD Nano Kit V3",
@@ -1367,7 +1251,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-nano-kit-v3.jpg",
     "video_system": "Walksnail",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 350
   },
   {
     "pid": "VTX-1113",
@@ -1409,17 +1294,6 @@
     "video_system": "Analog"
   },
   {
-    "pid": "VTX-1116",
-    "category": "video_transmitters",
-    "name": "FatShark 2p/2p Molex 30cm",
-    "manufacturer": "Fat Shark",
-    "description": "FatShark\u00a02p/2p Molex 30cm",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/fatshark-2p-2p-molex-30cm.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/9/0/90332d979a0b945f167b6a3335f4d476.image.550x550.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "VTX-1117",
     "category": "video_transmitters",
     "name": "HDZero Whoop Lite Bundle (Nano V3 Camera)",
@@ -1429,7 +1303,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero-whoop-lite-v3_2_.jpg",
     "video_system": "HDZero",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "max_power_mw": 200
   },
   {
     "pid": "VTX-1118",
@@ -1456,63 +1331,5 @@
     "size_class": "universal",
     "tags": [],
     "video_system": "Analog"
-  },
-  {
-    "pid": "VTX-1120",
-    "category": "video_transmitters",
-    "name": "FatShark 2p Molex/2p RC Tx Power Cable",
-    "manufacturer": "Fat Shark",
-    "description": "Fat Shark 2p Molex/2p RC Tx replacement power cable.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/fatshark-2p-molex-2p-rc-tx-power-cable.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/2/p/2p-molex.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "VTX-1121",
-    "category": "video_transmitters",
-    "name": "WhiteNoiseFPV Unify Pro VTX Mounting Board V2/V3 - HV/Race/MMCX",
-    "manufacturer": "WhiteNoiseFPV",
-    "description": "Mount your Unify VTX flush with the rest of your electronics stack with the WhiteNoiseFPV Unify Mounting Board.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/whitenoisefpv-unify-pro-vtx-mounting-board-v2-v3-hv-race-mmcx.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/h/whitenoisefpv-unify-pro-vtx-mounting-board-v2v3---hvracemmcx-mian.jpg",
-    "video_system": "Analog",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "VTX-1122",
-    "category": "video_transmitters",
-    "name": "Walksnail Avatar HD VTX Module",
-    "manufacturer": "Walksnail",
-    "description": "The Walksnail Avatar VTX is a lightweight HD system that works with HD Goggles such as the Walksnail Avatar and Fat Shark HD Dominator.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/walksnail-avatar-hd-vtx.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-vtx-main.jpg",
-    "video_system": "Walksnail",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "VTX-1123",
-    "category": "video_transmitters",
-    "name": "VAS Pepperbox XTREME 1.3GHz Antenna (RHCP)",
-    "manufacturer": "Video Aerial Systems",
-    "description": "The ultimate long range antenna. The Pepperbox XTREME from VAS.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/vas-pepperbox-xtreme-1-3ghz-antenna-rhcp.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/p/e/pepperbox-xtreme-rhcp.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "VTX-1124",
-    "category": "video_transmitters",
-    "name": "WhiteNoiseFPV Unify Pro VTX Mounting Board V2.2 - Pro V2/V3(5V only) & Nano",
-    "manufacturer": "WhiteNoiseFPV",
-    "description": "Mount your Unify VTX flush with the rest of your electronics stack with the WhiteNoiseFPV Unify Mounting Board.",
-    "link": "https://www.getfpv.com/fpv/video-transmitters/whitenoisefpv-unify-pro-vtx-mounting-board-v2-2-pro-v2-v3-5v-only-nano.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/n/wn-pro-1.jpg",
-    "video_system": "Analog",
-    "size_class": "universal",
-    "tags": []
   }
 ]
