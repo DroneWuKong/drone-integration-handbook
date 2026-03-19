@@ -59,13 +59,17 @@ PLATFORMS = [
     ("platforms/tactical/hoverfly-livesky.md", 405, "Hoverfly LiveSky / Spectre"),
     ("platforms/tactical/shield-ai-nova-2.md", 406, "Shield AI Nova 2"),
     ("platforms/tactical/neros-archer.md", 407, "Neros Archer"),
+    ("platforms/tactical/modalai-fpv.md", 408, "ModalAI Seeker / Stinger"),
+    ("platforms/tactical/red-cat-fang.md", 409, "Red Cat FANG F7"),
+    ("platforms/tactical/skycutter-shrike.md", 410, "Skycutter Shrike 10"),
+    ("platforms/tactical/vantage-robotics.md", 411, "Vantage Robotics Vesper / Trace"),
 ]
 
 PLATFORM_PARTS = [
     ("COTS", [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]),
     ("NDAA / Blue UAS", [201, 202, 203, 204, 205, 206, 207]),
     ("Open-Source / Custom", [301, 302]),
-    ("Tactical / Defense", [401, 402, 403, 404, 405, 406, 407]),
+    ("Tactical / Defense", [401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411]),
 ]
 
 PARTS = [
