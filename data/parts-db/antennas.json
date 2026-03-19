@@ -24,7 +24,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1002",
@@ -38,7 +39,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1003",
@@ -53,7 +55,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "dipole",
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1004",
@@ -68,7 +71,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "dipole",
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1005",
@@ -83,7 +87,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1006",
@@ -97,7 +102,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1007",
@@ -121,7 +127,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1009",
@@ -149,7 +156,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1011",
@@ -202,7 +210,8 @@
     "connector": "RP-SMA",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1015",
@@ -216,7 +225,8 @@
     "polarization": "LHCP",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1016",
@@ -230,7 +240,8 @@
     "polarization": "LHCP",
     "antenna_type": "directional",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1017",
@@ -245,7 +256,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1018",
@@ -260,7 +272,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1019",
@@ -275,7 +288,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "frequency_ghz": 1.1
+    "frequency_ghz": 1.1,
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1020",
@@ -290,7 +304,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "frequency_ghz": 1.1
+    "frequency_ghz": 1.1,
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1021",
@@ -315,7 +330,8 @@
     "polarization": "RHCP",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1023",
@@ -356,7 +372,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1026",
@@ -371,7 +388,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "dipole",
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1027",
@@ -396,7 +414,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-patch-antenna-v2---avatar-goggles-x.jpg",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1029",
@@ -422,7 +441,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1031",
@@ -437,7 +457,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1032",
@@ -452,7 +473,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1033",
@@ -465,7 +487,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1034",
@@ -489,7 +512,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "RP-SMA"
+    "connector": "RP-SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1036",
@@ -503,7 +527,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1037",
@@ -518,7 +543,8 @@
     "connector": "RP-SMA",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1038",
@@ -531,7 +557,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1039",
@@ -556,7 +583,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1041",
@@ -608,7 +636,8 @@
     "connector": "RP-SMA",
     "antenna_type": "directional",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1045",
@@ -622,7 +651,8 @@
     "polarization": "RHCP",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1046",
@@ -636,7 +666,8 @@
     "polarization": "LHCP",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1047",
@@ -649,7 +680,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1048",
@@ -663,7 +695,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "connector": "RP-SMA"
+    "connector": "RP-SMA",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1049",
@@ -700,7 +733,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1052",
@@ -713,7 +747,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1053",
@@ -727,7 +762,8 @@
     "connector": "U.FL",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1054",
@@ -741,7 +777,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1055",
@@ -755,7 +792,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1056",
@@ -769,7 +807,8 @@
     "connector": "SMA",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1057",
@@ -783,7 +822,8 @@
     "connector": "RP-SMA",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1058",
@@ -797,7 +837,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1059",
@@ -811,7 +852,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1060",
@@ -825,7 +867,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1061",
@@ -839,7 +882,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1062",
@@ -877,7 +921,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1065",
@@ -890,7 +935,8 @@
     "frequency_ghz": 5.8,
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1066",
@@ -903,7 +949,8 @@
     "frequency_ghz": 5.8,
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1067",
@@ -918,7 +965,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1068",
@@ -933,7 +981,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1069",
@@ -946,7 +995,8 @@
     "frequency_ghz": 1.3,
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1070",
@@ -961,7 +1011,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1071",
@@ -976,7 +1027,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1072",
@@ -989,7 +1041,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1073",
@@ -1002,7 +1055,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1074",
@@ -1016,7 +1070,8 @@
     "polarization": "RHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1075",
@@ -1030,7 +1085,8 @@
     "polarization": "RHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1076",
@@ -1044,7 +1100,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1077",
@@ -1059,7 +1116,8 @@
     "connector": "U.FL",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1078",
@@ -1074,7 +1132,8 @@
     "connector": "U.FL",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1079",
@@ -1089,7 +1148,8 @@
     "antenna_type": "omni",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1080",
@@ -1139,7 +1199,8 @@
     "polarization": "RHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1084",
@@ -1153,7 +1214,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1085",
@@ -1167,7 +1229,8 @@
     "polarization": "RHCP",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1086",
@@ -1192,7 +1255,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1088",
@@ -1206,7 +1270,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1089",
@@ -1219,7 +1284,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1090",
@@ -1232,7 +1298,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1091",
@@ -1247,7 +1314,8 @@
     "connector": "MMCX",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1092",
@@ -1299,7 +1367,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1096",
@@ -1313,7 +1382,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1097",
@@ -1327,7 +1397,8 @@
     "polarization": "RHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1098",
@@ -1341,7 +1412,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "dipole",
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1099",
@@ -1355,7 +1427,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1100",
@@ -1369,7 +1442,8 @@
     "polarization": "RHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1101",
@@ -1384,7 +1458,8 @@
     "size_class": "universal",
     "tags": [],
     "connector": "SMA",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1102",
@@ -1399,7 +1474,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1103",
@@ -1414,7 +1490,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1104",
@@ -1429,7 +1506,8 @@
     "tags": [],
     "antenna_type": "dipole",
     "frequency_ghz": 0.915,
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1105",
@@ -1444,7 +1522,8 @@
     "connector": "SMA",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1106",
@@ -1459,7 +1538,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1107",
@@ -1474,7 +1554,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1108",
@@ -1488,7 +1569,8 @@
     "polarization": "RHCP",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1109",
@@ -1528,7 +1610,8 @@
     "polarization": "RHCP",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1112",
@@ -1543,7 +1626,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1113",
@@ -1557,7 +1641,8 @@
     "polarization": "LHCP",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1114",
@@ -1585,7 +1670,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1116",
@@ -1600,7 +1686,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1117",
@@ -1639,7 +1726,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1120",
@@ -1665,7 +1753,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1122",
@@ -1679,7 +1768,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1123",
@@ -1693,7 +1783,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1124",
@@ -1733,7 +1824,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1127",
@@ -1773,7 +1865,8 @@
     "size_class": "universal",
     "tags": [],
     "connector": "SMA",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1130",
@@ -1787,7 +1880,8 @@
     "polarization": "RHCP",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1131",
@@ -1802,7 +1896,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1132",
@@ -1817,7 +1912,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1133",
@@ -1856,7 +1952,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1136",
@@ -1871,7 +1968,8 @@
     "connector": "RP-SMA",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1137",
@@ -1886,7 +1984,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1138",
@@ -1899,7 +1998,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1139",
@@ -1913,7 +2013,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1140",
@@ -1928,7 +2029,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1141",
@@ -1943,7 +2045,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1142",
@@ -1956,7 +2059,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1143",
@@ -1970,7 +2074,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1144",
@@ -1985,7 +2090,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1145",
@@ -1999,7 +2105,8 @@
     "polarization": "RHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1146",
@@ -2013,7 +2120,8 @@
     "polarization": "LHCP",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1147",
@@ -2028,7 +2136,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1148",
@@ -2043,7 +2152,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1149",
@@ -2057,7 +2167,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1150",
@@ -2072,7 +2183,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "dipole",
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1151",
@@ -2099,7 +2211,8 @@
     "antenna_type": "dipole",
     "size_class": "universal",
     "tags": [],
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1153",
@@ -2125,7 +2238,8 @@
     "polarization": "Linear",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1155",
@@ -2139,7 +2253,8 @@
     "polarization": "LHCP",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1156",
@@ -2154,7 +2269,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1157",
@@ -2169,7 +2285,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1158",
@@ -2183,7 +2300,8 @@
     "antenna_type": "dipole",
     "size_class": "universal",
     "tags": [],
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1159",
@@ -2237,7 +2355,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1163",
@@ -2263,7 +2382,8 @@
     "frequency_ghz": 0.433,
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1165",
@@ -2305,7 +2425,8 @@
     "polarization": "Linear",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1168",
@@ -2320,7 +2441,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1169",
@@ -2333,7 +2455,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1170",
@@ -2345,7 +2468,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-o4-air-unit-pro-antenna-_image-1_.jpg",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1171",
@@ -2358,7 +2482,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1172",
@@ -2372,7 +2497,8 @@
     "polarization": "LHCP",
     "antenna_type": "directional",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1173",
@@ -2387,7 +2513,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1174",
@@ -2425,7 +2552,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1177",
@@ -2449,7 +2577,8 @@
     "frequency_ghz": 5.8,
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1179",
@@ -2486,7 +2615,8 @@
     "connector": "SMA",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1182",
@@ -2511,7 +2641,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1184",
@@ -2525,7 +2656,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1185",
@@ -2539,7 +2671,8 @@
     "connector": "SMA",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1186",
@@ -2554,7 +2687,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1187",
@@ -2569,7 +2703,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "MMCX"
+    "connector": "MMCX",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1188",
@@ -2584,7 +2719,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1189",
@@ -2599,7 +2735,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1190",
@@ -2626,7 +2763,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "MMCX"
+    "connector": "MMCX",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1192",
@@ -2664,7 +2802,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1195",
@@ -2703,7 +2842,8 @@
     "frequency_ghz": 5.8,
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1198",
@@ -2717,7 +2857,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1199",
@@ -2745,7 +2886,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1201",
@@ -2760,7 +2902,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1202",
@@ -2775,7 +2918,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1203",
@@ -2790,7 +2934,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1204",
@@ -2805,7 +2950,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1205",
@@ -2820,7 +2966,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1206",
@@ -2835,7 +2982,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1207",
@@ -2850,7 +2998,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1208",
@@ -2865,7 +3014,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1209",
@@ -2880,7 +3030,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1210",
@@ -2895,7 +3046,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1211",
@@ -2919,7 +3071,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1213",
@@ -2934,7 +3087,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1214",
@@ -2949,7 +3103,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1215",
@@ -2964,7 +3119,8 @@
     "connector": "SMA",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1216",
@@ -2979,7 +3135,8 @@
     "antenna_type": "omni",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1217",
@@ -2994,7 +3151,8 @@
     "connector": "MMCX",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1218",
@@ -3009,7 +3167,8 @@
     "connector": "MMCX",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1219",
@@ -3034,7 +3193,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1221",
@@ -3048,7 +3208,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1222",
@@ -3072,7 +3233,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1224",
@@ -3100,7 +3262,8 @@
     "tags": [],
     "antenna_type": "omni",
     "connector": "SMA",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1226",
@@ -3114,7 +3277,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1227",
@@ -3153,7 +3317,8 @@
     "connector": "SMA",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1230",
@@ -3167,7 +3332,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1231",
@@ -3182,7 +3348,8 @@
     "connector": "SMA",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1232",
@@ -3196,7 +3363,8 @@
     "antenna_type": "dipole",
     "size_class": "universal",
     "tags": [],
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1233",
@@ -3221,7 +3389,8 @@
     "polarization": "RHCP",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1235",
@@ -3235,7 +3404,8 @@
     "polarization": "RHCP",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1236",
@@ -3249,7 +3419,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1237",
@@ -3274,7 +3445,8 @@
     "polarization": "LHCP",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1239",
@@ -3289,7 +3461,8 @@
     "connector": "MMCX",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1240",
@@ -3317,7 +3490,8 @@
     "connector": "RP-SMA",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1242",
@@ -3331,7 +3505,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1243",
@@ -3346,7 +3521,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1244",
@@ -3374,7 +3550,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1246",
@@ -3389,7 +3566,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1247",
@@ -3404,7 +3582,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1248",
@@ -3419,7 +3598,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1249",
@@ -3434,7 +3614,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1250",
@@ -3449,7 +3630,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1251",
@@ -3488,7 +3670,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1254",
@@ -3502,7 +3685,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1255",
@@ -3530,7 +3714,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 2.4
+    "frequency_ghz": 2.4,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1257",
@@ -3544,7 +3729,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "dipole",
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1258",
@@ -3558,7 +3744,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1259",
@@ -3572,7 +3759,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 0.915
+    "frequency_ghz": 0.915,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1260",
@@ -3587,7 +3775,8 @@
     "tags": [],
     "antenna_type": "dipole",
     "frequency_ghz": 0.915,
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1261",
@@ -3601,7 +3790,8 @@
     "polarization": "RHCP",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1262",
@@ -3615,7 +3805,8 @@
     "polarization": "LHCP",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1263",
@@ -3630,7 +3821,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1264",
@@ -3645,7 +3837,8 @@
     "connector": "SMA",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1265",
@@ -3659,7 +3852,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "polarization": "LHCP"
+    "polarization": "LHCP",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1266",
@@ -3672,7 +3866,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1267",
@@ -3700,7 +3895,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1269",
@@ -3715,7 +3911,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1270",
@@ -3729,7 +3926,8 @@
     "polarization": "LHCP",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1271",
@@ -3757,7 +3955,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1273",
@@ -3772,7 +3971,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1274",
@@ -3787,7 +3987,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1275",
@@ -3811,7 +4012,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1277",
@@ -3826,7 +4028,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1278",
@@ -3841,7 +4044,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1279",
@@ -3869,7 +4073,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1281",
@@ -3884,7 +4089,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1282",
@@ -3956,7 +4162,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1288",
@@ -3980,7 +4187,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1290",
@@ -3994,7 +4202,8 @@
     "polarization": "LHCP",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1291",
@@ -4047,7 +4256,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "dipole",
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1295",
@@ -4061,7 +4271,8 @@
     "polarization": "RHCP",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1296",
@@ -4127,7 +4338,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "patch"
+    "antenna_type": "patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1301",
@@ -4142,7 +4354,8 @@
     "antenna_type": "omni",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1302",
@@ -4157,7 +4370,8 @@
     "antenna_type": "omni",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1303",
@@ -4172,7 +4386,8 @@
     "connector": "SMA",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1304",
@@ -4187,7 +4402,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1305",
@@ -4202,7 +4418,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1306",
@@ -4217,7 +4434,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1307",
@@ -4232,7 +4450,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1308",
@@ -4247,7 +4466,8 @@
     "connector": "SMA",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1309",
@@ -4262,7 +4482,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1310",
@@ -4277,7 +4498,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1311",
@@ -4318,7 +4540,8 @@
     "connector": "SMA",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1314",
@@ -4331,7 +4554,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1315",
@@ -4344,7 +4568,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1316",
@@ -4357,7 +4582,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1317",
@@ -4405,7 +4631,8 @@
     "antenna_type": "dipole",
     "size_class": "universal",
     "tags": [],
-    "connector": "U.FL"
+    "connector": "U.FL",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1321",
@@ -4420,7 +4647,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1322",
@@ -4435,7 +4663,8 @@
     "connector": "SMA",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1323",
@@ -4501,7 +4730,8 @@
     "antenna_type": "dipole",
     "size_class": "universal",
     "tags": [],
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1328",
@@ -4514,7 +4744,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "MMCX"
+    "connector": "MMCX",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1329",
@@ -4528,7 +4759,8 @@
     "antenna_type": "dipole",
     "size_class": "universal",
     "tags": [],
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1330",
@@ -4566,7 +4798,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1333",
@@ -4579,7 +4812,8 @@
     "connector": "SMA",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1334",
@@ -4594,7 +4828,8 @@
     "antenna_type": "dipole",
     "size_class": "universal",
     "tags": [],
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1335",
@@ -4609,7 +4844,8 @@
     "antenna_type": "dipole",
     "size_class": "universal",
     "tags": [],
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1336",
@@ -4623,7 +4859,8 @@
     "connector": "U.FL",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1337",
@@ -4660,7 +4897,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1340",
@@ -4675,7 +4913,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1341",
@@ -4690,7 +4929,8 @@
     "connector": "SMA",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1342",
@@ -4705,7 +4945,8 @@
     "connector": "SMA",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1343",
@@ -4720,7 +4961,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1344",
@@ -4761,7 +5003,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1347",
@@ -4776,7 +5019,8 @@
     "connector": "SMA",
     "antenna_type": "stubby",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1348",
@@ -4791,7 +5035,8 @@
     "antenna_type": "omni",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1349",
@@ -4817,7 +5062,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "frequency_ghz": 5.0
+    "frequency_ghz": 5.0,
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1351",
@@ -4846,7 +5092,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1353",
@@ -4861,7 +5108,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1354",
@@ -4901,7 +5149,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1357",
@@ -4916,7 +5165,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1358",
@@ -4929,7 +5179,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1359",
@@ -4944,7 +5195,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1360",
@@ -4970,7 +5222,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1362",
@@ -4984,7 +5237,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1363",
@@ -5010,7 +5264,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1365",
@@ -5025,7 +5280,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1366",
@@ -5039,7 +5295,8 @@
     "polarization": "RHCP",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1367",
@@ -5053,7 +5310,8 @@
     "polarization": "RHCP",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1368",
@@ -5067,7 +5325,8 @@
     "connector": "MMCX",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1369",
@@ -5081,7 +5340,8 @@
     "polarization": "RHCP",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1370",
@@ -5095,7 +5355,8 @@
     "polarization": "RHCP",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1371",
@@ -5122,7 +5383,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1373",
@@ -5148,7 +5410,8 @@
     "connector": "RP-SMA",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1375",
@@ -5162,7 +5425,8 @@
     "polarization": "RHCP",
     "antenna_type": "directional",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1376",
@@ -5177,7 +5441,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1377",
@@ -5192,7 +5457,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1378",
@@ -5229,7 +5495,8 @@
     "antenna_type": "omni",
     "size_class": "universal",
     "tags": [],
-    "polarization": "RHCP"
+    "polarization": "RHCP",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1381",
@@ -5279,7 +5546,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "directional",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1385",
@@ -5294,7 +5562,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1386",
@@ -5320,7 +5589,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1388",
@@ -5335,7 +5605,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "frequency_ghz": 5.8
+    "frequency_ghz": 5.8,
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1389",
@@ -5350,7 +5621,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1390",
@@ -5365,7 +5637,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1391",
@@ -5380,7 +5653,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1392",
@@ -5394,7 +5668,8 @@
     "polarization": "RHCP",
     "antenna_type": "directional",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1393",
@@ -5409,7 +5684,8 @@
     "connector": "SMA",
     "antenna_type": "patch",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1394",
@@ -5437,7 +5713,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1396",
@@ -5452,7 +5729,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1397",
@@ -5466,7 +5744,8 @@
     "connector": "RP-SMA",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1398",
@@ -5481,7 +5760,8 @@
     "antenna_type": "dipole",
     "size_class": "universal",
     "tags": [],
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1399",
@@ -5509,7 +5789,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1401",
@@ -5523,7 +5804,8 @@
     "antenna_type": "omni",
     "size_class": "universal",
     "tags": [],
-    "polarization": "RHCP"
+    "polarization": "RHCP",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1402",
@@ -5537,7 +5819,8 @@
     "polarization": "RHCP",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1403",
@@ -5550,7 +5833,8 @@
     "frequency_ghz": 1.3,
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1404",
@@ -5587,7 +5871,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1407",
@@ -5602,7 +5887,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1408",
@@ -5617,7 +5903,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1409",
@@ -5632,7 +5919,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1410",
@@ -5646,7 +5934,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "dipole"
+    "antenna_type": "dipole",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1411",
@@ -5660,7 +5949,8 @@
     "polarization": "RHCP",
     "antenna_type": "directional",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1412",
@@ -5674,7 +5964,8 @@
     "polarization": "RHCP",
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1413",
@@ -5701,7 +5992,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1415",
@@ -5768,7 +6060,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "dipole",
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1420",
@@ -5783,7 +6076,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1421",
@@ -5798,7 +6092,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1422",
@@ -5813,7 +6108,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1423",
@@ -5828,7 +6124,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1424",
@@ -5843,7 +6140,8 @@
     "connector": "U.FL",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1425",
@@ -5858,7 +6156,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "directional"
+    "antenna_type": "directional",
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1426",
@@ -5895,7 +6194,8 @@
     "frequency_ghz": 2.4,
     "antenna_type": "omni",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1429",
@@ -5922,7 +6222,8 @@
     "connector": "RP-SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1431",
@@ -5937,7 +6238,8 @@
     "antenna_type": "omni",
     "size_class": "universal",
     "tags": [],
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1432",
@@ -5952,7 +6254,8 @@
     "connector": "SMA",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1433",
@@ -5980,7 +6283,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1435",
@@ -5994,7 +6298,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "connector": "RP-SMA"
+    "connector": "RP-SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1436",
@@ -6007,7 +6312,8 @@
     "frequency_ghz": 5.8,
     "antenna_type": "directional",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1437",
@@ -6022,7 +6328,8 @@
     "connector": "MMCX",
     "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni"
+    "antenna_type": "omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1438",

@@ -75,7 +75,8 @@
     "protocol": "ImmersionRC Ghost",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1006",
@@ -210,7 +211,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1016",
@@ -277,7 +279,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1021",
@@ -290,7 +293,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 0.915,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1022",
@@ -604,7 +608,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1046",
@@ -707,7 +712,8 @@
     "protocol": "Flysky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1054",
@@ -761,7 +767,8 @@
     "protocol": "TBS Tracer",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 2.4
+    "frequency_ghz": 2.4,
+    "diversity": true
   },
   {
     "pid": "RCV-1058",
@@ -876,7 +883,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-xm-unltra-mini-receiver.jpg",
     "protocol": "FrSky",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1067",
@@ -992,7 +1000,8 @@
     "protocol": "FrSky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1076",
@@ -1029,7 +1038,8 @@
     "protocol": "Flysky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1079",
@@ -1236,7 +1246,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1095",
@@ -1249,7 +1260,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1096",
@@ -1262,7 +1274,8 @@
     "protocol": "ELRS",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1097",
@@ -1456,7 +1469,8 @@
     "protocol": "ImmersionRC Ghost",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1112",
@@ -2027,7 +2041,8 @@
     "protocol": "Flysky",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "diversity": true
   },
   {
     "pid": "RCV-1158",

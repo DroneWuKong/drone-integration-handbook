@@ -71,7 +71,11 @@
     },
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1002",
@@ -103,7 +107,11 @@
     },
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1003",
@@ -143,7 +151,9 @@
       "H7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1004",
@@ -155,7 +165,11 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_pixhawk_standard_baseboard_v2a-1.jpg",
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1005",
@@ -166,7 +180,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-cubelan-8-port-switch.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/u/cubepilot_cubelan_8-port_switch1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1006",
@@ -179,7 +197,11 @@
     "size_class": "universal",
     "tags": [],
     "mcu_family": "H7",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1007",
@@ -190,7 +212,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-cubenode-v3.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/u/cubepilot-cubenodeeth-1_1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1008",
@@ -230,7 +256,9 @@
       "H7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1009",
@@ -270,7 +298,9 @@
       "H7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1010",
@@ -314,7 +344,9 @@
       "G4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1011",
@@ -354,7 +386,9 @@
       "F4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1012",
@@ -394,7 +428,9 @@
       "H7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1013",
@@ -405,7 +441,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-here4-multiband-rtk-gnss-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-here4-multiband-rtk-gnss-gps-module.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1014",
@@ -470,7 +510,9 @@
     "is_aio": true,
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3"
   },
   {
     "pid": "FC-1016",
@@ -515,7 +557,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1017",
@@ -526,7 +570,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/radiomaster-ers-gps-telemetry-sensor-elrs-er.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-ers-gps---precision-gps-sensor-for-elrs-er-receivers_1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1018",
@@ -585,7 +633,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/tbs-chupito-electronics-package.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs_chupito_update2_2.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1020",
@@ -724,7 +776,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1023",
@@ -736,7 +790,11 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_pixhawk_pm02_v3_12s_power_module.jpg",
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1024",
@@ -776,7 +834,9 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1025",
@@ -812,7 +872,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1026",
@@ -851,7 +915,9 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1027",
@@ -939,7 +1005,9 @@
       "H7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1029",
@@ -979,7 +1047,9 @@
       "H7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1030",
@@ -1037,7 +1107,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/tbs-mojito-electronics-package.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-mojito-electronics-package-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1032",
@@ -1129,7 +1203,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1034",
@@ -1169,7 +1245,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1035",
@@ -1209,7 +1289,9 @@
       "G4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1036",
@@ -1343,7 +1425,9 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1039",
@@ -1430,7 +1514,9 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1041",
@@ -1465,7 +1551,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1042",
@@ -1616,11 +1706,6 @@
     "description": "The HQProp 51MMx2 (2x0.9)\u00a0is a 2-blade propeller with a 0.9-inch pitch.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/hqprop-51mmx2-2x0-9-2-blade-propeller-set-of-4-gray.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/q/hqprop-51mmx2-2-blade-propeller-_set-of-4_---gray-_image-2_.jpg",
-    "blade_count": 2,
-    "diameter_in": 2.0,
-    "pitch_in": 0.9,
-    "mounting_hole_mm": 1.5,
-    "hub_type": "press_fit_1.5mm",
     "compatibility": {
       "diameter_in": 2.0,
       "motor_shaft_diameter_mm": 1.5,
@@ -1638,7 +1723,11 @@
       "2.0inch",
       "2-blade",
       "2 inch"
-    ]
+    ],
+    "mounting_pattern_mm": 20.0,
+    "mounting_hole_size": "M2",
+    "cell_count_min": 1,
+    "cell_count_max": 2
   },
   {
     "pid": "FC-1046",
@@ -1725,7 +1814,9 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1048",
@@ -1736,7 +1827,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/runcam-6-action-camera.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam6-action-camera-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1049",
@@ -1747,7 +1842,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/runcam-6-action-camera-w-nd-filter-set.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam6-action-camera-nd-filter-set-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1050",
@@ -1758,7 +1857,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-helical-gps-antenna-mount.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-helical-gps-mount-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1051",
@@ -1769,7 +1872,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-micro-m10-gps-w-case.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-micro-m10-gps-_images-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1052",
@@ -1828,7 +1935,11 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-here4-base.jpg",
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1054",
@@ -1887,7 +1998,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-dronecan-rm3100-professional-grade-compass.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-dronecan-rm3100-professional-grade-compass-1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1056",
@@ -1898,7 +2013,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/lumenier-sam-m10q-gps-module-ndaa.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-gps-module-v1.2-1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1057",
@@ -1909,7 +2028,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-m9n-standard-gps-w-10-pin-cable.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-m9n-standard-gps-10-pin-cable.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1058",
@@ -1995,7 +2118,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1060",
@@ -2033,7 +2158,9 @@
       "G4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1061",
@@ -2044,7 +2171,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-herelink-fan-set.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-herelink-fan-set_3_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1062",
@@ -2079,7 +2210,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1063",
@@ -2090,7 +2225,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-m100-mini-gps.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/i/file_4.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1064",
@@ -2125,7 +2264,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1065",
@@ -2136,7 +2279,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-gm10-mini-v3-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo_goku_gm10_mini_v3_gps_module_1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1066",
@@ -2222,7 +2369,9 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1068",
@@ -2234,7 +2383,11 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_pixhawk_pm07_12s_power_module.jpg",
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1069",
@@ -2273,7 +2426,9 @@
       "Not Listed",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1070",
@@ -2457,7 +2612,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1074",
@@ -2468,7 +2625,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-m80-pro-gps-module-for-fpv-drone-racing.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc_m80_pro_gps_module_for_fpv_drone_4_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1075",
@@ -2588,7 +2749,9 @@
     "tags": [
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1078",
@@ -2600,7 +2763,11 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/d/ads-b-standard-carrier-board-3.jpg",
     "mcu_family": "",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1079",
@@ -2611,7 +2778,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/m3-anti-vibration-silicone-grommet-insert-for-flight-controllers-clear-5-pcs.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/l/clear-grommet.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1080",
@@ -2622,7 +2793,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/matek-digital-airspeed-sensor-aspd-dlvr-can-i2c-uavcan.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/matek_digital_airspeed_sensor_aspd-dlvr_can_i2c_uavcan_2_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1081",
@@ -2633,7 +2808,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-m100-pro-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrcm100pro1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1082",
@@ -2692,7 +2871,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-gm10-pro-v3-gps-module-w-compass.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo_goku_gm10_pro_v3_gps_module_w_compass_2.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1084",
@@ -2795,7 +2978,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-defender-25-blitz-split-gps.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight_defender_25_blitz_split_gps_2_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1087",
@@ -2806,7 +2993,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-gm10-nano-v3-1-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-gm10-nano-v3.1-gps-module-_image-1__1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1088",
@@ -2846,7 +3037,9 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1089",
@@ -2905,7 +3098,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-gm10-mini-v3-gps-w-compass.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-gm10-mini-v3-gps-w-compass.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1091",
@@ -2950,7 +3147,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1092",
@@ -2961,7 +3160,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/geprc-m10-nano-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-m10-nano-gps-module.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1093",
@@ -2972,7 +3175,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-bqnano-v1-compass-baro-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-bqnano-v1-compassbaro-module-main_1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1094",
@@ -2983,7 +3190,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-m80-gps-module-for-fpv-drone-racing.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc-m80-gps-for-fpv-racing-drone-162676_1001x.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1095",
@@ -3023,7 +3234,9 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1096",
@@ -3058,7 +3271,11 @@
     "size_class": "universal",
     "tags": [
       "F4"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1097",
@@ -3098,7 +3315,9 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1098",
@@ -3232,7 +3451,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1101",
@@ -3243,7 +3464,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/frsky-gps-adv-telemetry-sensor.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-gps-adv-telemetry-sensor-_image-2_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1102",
@@ -3323,7 +3548,9 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1104",
@@ -3405,7 +3632,11 @@
     "size_class": "universal",
     "tags": [
       "F4"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1106",
@@ -3445,7 +3676,9 @@
       "F4",
       "16.0mm",
       "3 inch"
-    ]
+    ],
+    "cell_count_min": 1,
+    "cell_count_max": 4
   },
   {
     "pid": "FC-1107",
@@ -3536,7 +3769,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1109",
@@ -3594,7 +3829,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/frsky-ass-100-adv-air-speed-sensor.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-ass-100-adv-air-speed-sensor-_image-2_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1111",
@@ -3605,7 +3844,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-blitz-mini-m10-gps-v2.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight-blitz-mini-m10-gps-v2-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1112",
@@ -3640,7 +3883,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1113",
@@ -3651,7 +3898,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/flyfishrc-m10qmc-5883l-gps-compass-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/h/the_flyfishrc_m10qmc-5883l_gps_2.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1114",
@@ -3691,7 +3942,9 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1115",
@@ -3726,7 +3979,11 @@
     "size_class": "universal",
     "tags": [
       "Not Listed"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1116",
@@ -3783,7 +4040,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/newbeedrone-beeid-v1-1-m10q-gps-module-remote-id.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/e/newbeedrone_beeid_v1.1_m10q_gps_module_with_remoteid_1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1118",
@@ -3827,7 +4088,9 @@
       "G4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1119",
@@ -3862,7 +4125,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1120",
@@ -3907,7 +4174,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1121",
@@ -3947,7 +4216,9 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1122",
@@ -3987,7 +4258,9 @@
       "F4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1123",
@@ -4031,7 +4304,9 @@
       "G4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1124",
@@ -4164,7 +4439,9 @@
       "H7",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1127",
@@ -4199,7 +4476,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1128",
@@ -4234,7 +4515,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1129",
@@ -4269,7 +4554,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1130",
@@ -4356,7 +4645,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1132",
@@ -4367,7 +4658,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-micro-m10-gps-module-w-o-case.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-micro-m10-gps-module-wo-case-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1133",
@@ -4453,7 +4748,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1135",
@@ -4488,7 +4785,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1136",
@@ -4528,7 +4829,9 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1137",
@@ -4615,7 +4918,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1139",
@@ -4654,7 +4959,9 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1140",
@@ -4665,7 +4972,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-mosaic-h-gps-module-w-dual-antennas.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-mosaic-h-dual-antenna-heading-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1141",
@@ -4676,7 +4987,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-herepro-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-herepro-without-istand-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1142",
@@ -4687,7 +5002,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/hex-herepro-usb-adapter-board.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-herepro-usb-adapter-board-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1143",
@@ -4726,7 +5045,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1144",
@@ -4768,7 +5089,9 @@
     "tags": [
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1145",
@@ -4779,7 +5102,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-can-hub-module-w-27cm-cable.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-can-hub-module-27cm-cable-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1146",
@@ -4790,7 +5117,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-helical-gps-mount-vertical.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-helical-mount-vertical-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1147",
@@ -4801,7 +5132,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-gps-extended-length-cable-jst-ghr-10p-420mm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-gps-extended-length-xable-10p-420mm.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1148",
@@ -4812,7 +5147,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-gps-extended-length-cable-jst-ghr-6p-420mm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-gps-extended-length-xable-6p-420mm-_image-1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1149",
@@ -4823,7 +5162,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-unc-adapter-1-4-20.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/h/o/holybro-0.25-inch-unc-adapter-for-h-rtk-_image-2_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1150",
@@ -4834,7 +5177,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-dronecan-gps-extended-length-cable-45cm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-dronecan-gps-extended-length-cable-45-cm-_image-2_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1151",
@@ -4874,7 +5221,9 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1152",
@@ -4885,7 +5234,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-unicore-um982-dual-antenna.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-unicore-um982-dual-antenna_1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1153",
@@ -4896,7 +5249,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-f9p-ultralight-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-f9p-ultralight-gps-module.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1154",
@@ -4978,7 +5335,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1156",
@@ -5014,7 +5375,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1157",
@@ -5025,7 +5390,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-micro-m9n-gps-module-w-case.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-micro-m9n-gps.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1158",
@@ -5036,7 +5405,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-m10-standard-gps-w-10-pin-cable.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-m10-standard-gps-w-10-pin-cable_1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1159",
@@ -5071,7 +5444,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1160",
@@ -5106,7 +5483,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1161",
@@ -5141,7 +5522,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1162",
@@ -5176,7 +5561,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1163",
@@ -5221,7 +5610,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1164",
@@ -5308,7 +5699,9 @@
       "F4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1166",
@@ -5319,7 +5712,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/foxeer-m10q-120-gps-w-5883-compass.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/o/foxeer-m10q-120-gps.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1167",
@@ -5359,7 +5756,9 @@
       "F4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1168",
@@ -5399,7 +5798,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1169",
@@ -5486,7 +5887,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1171",
@@ -5543,7 +5946,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-dronecan-h-rtk-f9p-rover-w-42cm-cable.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-dronecan-h-rtk-f9p-rover-w-42cm-cable.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1173",
@@ -5729,7 +6136,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1177",
@@ -5774,7 +6183,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1178",
@@ -5859,7 +6270,9 @@
       "G4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1180",
@@ -5900,7 +6313,11 @@
     "tags": [
       "F411"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1181",
@@ -5935,7 +6352,11 @@
     "tags": [
       "H7"
     ],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1182",
@@ -5946,7 +6367,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/mateksys-gnss-sam-m10q-gps-module-gallileo-glonass-beidoub1c.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys-gnss-sam-m10q-gps-module.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1183",
@@ -6026,7 +6451,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1185",
@@ -6061,7 +6488,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1186",
@@ -6240,7 +6671,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1190",
@@ -6251,7 +6684,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-gm10-nano-v3-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo_goku_gm10_nano_v3_gps_module_5.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1191",
@@ -6286,7 +6723,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1192",
@@ -6321,7 +6762,11 @@
     "tags": [
       "H7"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1193",
@@ -6356,7 +6801,11 @@
     "tags": [
       "H7"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1194",
@@ -6396,7 +6845,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1195",
@@ -6436,7 +6887,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1196",
@@ -6659,7 +7112,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1201",
@@ -6698,7 +7153,9 @@
       "F4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1202",
@@ -6733,7 +7190,11 @@
     "tags": [
       "Not Listed"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1203",
@@ -6772,7 +7233,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1204",
@@ -6784,7 +7247,11 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/p/i/pixhawk-mini-base.jpg",
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1205",
@@ -6795,7 +7262,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pix32-v6-mini-baseboard.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pix32-v6-mini-baseboard.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1206",
@@ -6830,7 +7301,11 @@
     "tags": [
       "H7"
     ],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1207",
@@ -6865,7 +7340,11 @@
     "size_class": "universal",
     "tags": [
       "F7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1208",
@@ -6923,7 +7402,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-f9p-rover-lite-gnss-w-10-pin-cable.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_h-rtk_f9p_rover_lite_gnss.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1210",
@@ -6935,7 +7418,11 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_dronecan_m8n_gps_5_.jpg",
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1211",
@@ -6969,7 +7456,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1212",
@@ -6980,7 +7471,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-f9p-roverlite-gnss-2nd-gps.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-f9p-rover-lite-gnss-2nd-gps-w-6-pin-cable.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1213",
@@ -7020,7 +7515,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1214",
@@ -7060,7 +7557,9 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1215",
@@ -7148,7 +7647,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1217",
@@ -7189,7 +7690,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM20602"
   },
   {
     "pid": "FC-1218",
@@ -7200,7 +7702,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/diatone-mamba-practice-soldering-board-v2.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_99_.png",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1219",
@@ -7214,7 +7720,11 @@
     "imu": "ICM42688P",
     "firmware_targets": "Ardupilot/PX4",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1220",
@@ -7225,7 +7735,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/zohd-kopilot-lite-gps-module-unit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/z/o/zohd-kopilot-lite-gps-module-unit-_2_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1221",
@@ -7239,7 +7753,11 @@
     "imu": "ICM42688P",
     "firmware_targets": "Ardupilot/PX4",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1222",
@@ -7278,7 +7796,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1223",
@@ -7289,7 +7809,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/mateksys-m10-5883-gnss-compass.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/n/gnss_compass_m10-5883.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1224",
@@ -7300,7 +7824,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/mateksys-ap-periph-gnss-m10-l4-3100-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys_ap_periph_gnss_m10-l4-3100_can_gps.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1225",
@@ -7347,7 +7875,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1226",
@@ -7386,7 +7915,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1227",
@@ -7397,7 +7928,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/cuav-neo-3-pro-gps-module-gnss-u-blox-m9n-can-bus.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/u/cuav-neo-3-pro-gps-module---gnss-u-blox-m9n-can-bus-main.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1228",
@@ -7432,7 +7967,11 @@
     "size_class": "universal",
     "tags": [
       "F7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1229",
@@ -7467,7 +8006,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1230",
@@ -7478,7 +8021,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-hex-here3-can-gnss-gps-module-w-istand-html.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-here3-can-gnss-gps-module-main.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1231",
@@ -7518,7 +8065,9 @@
       "G4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1232",
@@ -7562,7 +8111,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1233",
@@ -7606,7 +8157,9 @@
       "G4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1234",
@@ -7645,7 +8198,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1235",
@@ -7684,7 +8239,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1236",
@@ -7723,7 +8280,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1237",
@@ -7808,7 +8367,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1239",
@@ -7847,7 +8408,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1240",
@@ -7887,7 +8450,9 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1241",
@@ -8026,7 +8591,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "esc_firmware": "BLHeli_S"
   },
   {
     "pid": "FC-1244",
@@ -8066,7 +8632,9 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1245",
@@ -8169,7 +8737,11 @@
     "size_class": "universal",
     "tags": [],
     "mcu_family": "F4",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1248",
@@ -8208,7 +8780,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1249",
@@ -8300,7 +8874,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1251",
@@ -8314,7 +8890,11 @@
     "imu": "ICM42688P",
     "firmware_targets": "Ardupilot/PX4",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1252",
@@ -8354,7 +8934,9 @@
       "G4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1253",
@@ -8368,7 +8950,11 @@
     "imu": "ICM42688P",
     "firmware_targets": "Ardupilot/PX4",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1254",
@@ -8407,7 +8993,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1255",
@@ -8418,7 +9006,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-m8q-5883-v2-0-gps-module-w-compass.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight_m8q-5883_gps_and_compass_v2.0.jpeg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1256",
@@ -8457,7 +9049,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1257",
@@ -8684,7 +9278,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1262",
@@ -8742,7 +9340,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/ztag-drone-laser-tag-board-1pc.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/z/t/ztag-drone-laser-tag-board-_1pc_-1000x1000.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1264",
@@ -8781,7 +9383,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1265",
@@ -8908,7 +9514,9 @@
       "3 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "cell_count_min": 1,
+    "cell_count_max": 4
   },
   {
     "pid": "FC-1268",
@@ -8951,7 +9559,9 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1269",
@@ -9042,7 +9652,10 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "FC-1271",
@@ -9084,7 +9697,9 @@
     "tags": [
       "Not Listed",
       "2 inch"
-    ]
+    ],
+    "mounting_pattern_mm": 20.0,
+    "mounting_hole_size": "M2"
   },
   {
     "pid": "FC-1272",
@@ -9128,7 +9743,9 @@
       "F4",
       "3 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 20.0,
+    "mounting_hole_size": "M2"
   },
   {
     "pid": "FC-1273",
@@ -9218,7 +9835,9 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1275",
@@ -9296,7 +9915,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1277",
@@ -9336,7 +9959,9 @@
       "3 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "cell_count_min": 1,
+    "cell_count_max": 4
   },
   {
     "pid": "FC-1278",
@@ -9376,7 +10001,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1279",
@@ -9459,7 +10088,8 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM20602"
   },
   {
     "pid": "FC-1281",
@@ -9573,7 +10203,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1284",
@@ -9604,7 +10238,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1285",
@@ -9694,7 +10332,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1287",
@@ -9706,7 +10346,10 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/s/t/stan_fpv_20x20_30x30_vibe_dampening_converter.jpg",
     "mounting_pattern_mm": 20.0,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1288",
@@ -9746,7 +10389,9 @@
     "tags": [
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1289",
@@ -9786,7 +10431,9 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1290",
@@ -9822,7 +10469,11 @@
       "H7"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1291",
@@ -9834,7 +10485,11 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs_m8.2_gps_glonass_.jpg",
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "Betaflight/ArduPilot"
+    "firmware_targets": "Betaflight/ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1292",
@@ -9845,7 +10500,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/matek-gnss-m8q-can-uavcan-msp-gps.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/matek_gps_m8q-can_uavcan_msp_4_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1293",
@@ -9931,7 +10590,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1295",
@@ -10064,7 +10725,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight/INAV"
+    "firmware_targets": "Betaflight/INAV",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1298",
@@ -10104,7 +10767,9 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1299",
@@ -10143,7 +10808,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1300",
@@ -10183,7 +10850,9 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1301",
@@ -10268,7 +10937,9 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1303",
@@ -10352,7 +11023,9 @@
     "tags": [
       "F3 + F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3"
   },
   {
     "pid": "FC-1305",
@@ -10394,7 +11067,9 @@
     "tags": [
       "F0"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3"
   },
   {
     "pid": "FC-1306",
@@ -10405,7 +11080,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/hc-05-rf-wireless-bluetooth-transceiver-module-rs232-ttl-to-uart-converter-and-adapter.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/c/hc-05-rf-wireless-bluetooth-transceiver-module-rs232--ttl-to-uart-converter-and-adapter_1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1307",
@@ -10580,7 +11259,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1311",
@@ -10622,7 +11303,9 @@
       "F4",
       "3 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 20.0,
+    "mounting_hole_size": "M2"
   },
   {
     "pid": "FC-1312",
@@ -10664,7 +11347,9 @@
       "F4",
       "3 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 20.0,
+    "mounting_hole_size": "M2"
   },
   {
     "pid": "FC-1313",
@@ -10700,7 +11385,9 @@
     "tags": [
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1314",
@@ -10731,7 +11418,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1315",
@@ -10771,7 +11462,9 @@
     "size_class": "3_inch",
     "tags": [
       "3 inch"
-    ]
+    ],
+    "mounting_pattern_mm": 20.0,
+    "mounting_hole_size": "M2"
   },
   {
     "pid": "FC-1316",
@@ -10810,7 +11503,9 @@
       "esc_firmware": "BLHeli_S"
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3"
   },
   {
     "pid": "FC-1317",
@@ -10846,7 +11541,11 @@
       "F7"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1318",
@@ -10881,7 +11580,11 @@
     "size_class": "universal",
     "tags": [
       "Not Listed"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1319",
@@ -10916,7 +11619,11 @@
     "tags": [
       "F7"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1320",
@@ -10951,7 +11658,11 @@
     "tags": [
       "F7"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1321",
@@ -10986,7 +11697,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1322",
@@ -11161,7 +11876,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1326",
@@ -11246,7 +11965,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1328",
@@ -11286,7 +12007,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1329",
@@ -11317,7 +12040,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1330",
@@ -11348,7 +12075,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1331",
@@ -11383,7 +12114,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1332",
@@ -11468,7 +12203,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1334",
@@ -11554,7 +12291,10 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "imu": "ICM20602"
   },
   {
     "pid": "FC-1336",
@@ -11589,7 +12329,11 @@
     "tags": [
       "F7"
     ],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1337",
@@ -11631,7 +12375,9 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3"
   },
   {
     "pid": "FC-1338",
@@ -11670,7 +12416,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1339",
@@ -11701,7 +12449,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1340",
@@ -11732,7 +12484,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1341",
@@ -11743,7 +12499,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/newbeedrone-nectar-connector-ph2-0-battery-lead.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/p/l/plug1_1903x_abe4003d-d170-4c6f-ab2f-bd6ce8dd79ff_1493x.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1342",
@@ -11778,7 +12538,11 @@
     "tags": [
       "H7"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1343",
@@ -11813,7 +12577,11 @@
     "tags": [
       "H7"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1344",
@@ -11852,7 +12620,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1345",
@@ -11883,7 +12653,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1346",
@@ -11924,7 +12698,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1347",
@@ -11959,7 +12737,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1348",
@@ -11998,7 +12780,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1349",
@@ -12029,7 +12815,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1350",
@@ -12060,7 +12850,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1351",
@@ -12091,7 +12885,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1352",
@@ -12122,7 +12920,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1353",
@@ -12161,7 +12963,11 @@
     "tags": [
       "F7"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1354",
@@ -12196,7 +13002,11 @@
     "tags": [
       "F7"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1355",
@@ -12227,7 +13037,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1356",
@@ -12258,7 +13072,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1357",
@@ -12289,7 +13107,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1358",
@@ -12326,7 +13148,11 @@
     "size_class": "universal",
     "tags": [],
     "mcu_family": "F4",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1359",
@@ -12361,7 +13187,11 @@
     "tags": [
       "F7"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1360",
@@ -12401,7 +13231,9 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1361",
@@ -12412,7 +13244,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/matek-ublox-sam-m8q-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/g/p/gps-sam-m8q-2.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1362",
@@ -12447,7 +13283,12 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight/INAV"
+    "firmware_targets": "Betaflight/INAV",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "imu": "ICM20602"
   },
   {
     "pid": "FC-1363",
@@ -12480,7 +13321,11 @@
     "size_class": "universal",
     "tags": [],
     "mcu_family": "H7",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1364",
@@ -12512,7 +13357,11 @@
     },
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1365",
@@ -12550,7 +13399,9 @@
       "F3",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1366",
@@ -12585,7 +13436,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1367",
@@ -12621,7 +13476,11 @@
       "F4"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1368",
@@ -12652,7 +13511,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1369",
@@ -12687,7 +13550,11 @@
     "tags": [
       "F3"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1370",
@@ -12698,7 +13565,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-air-speed-sensor.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/digital-air-speed-sensor-1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1371",
@@ -12709,7 +13580,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/matek-digital-airspeed-sensor-aspd-4525.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/matek_digital_airspeed_sensor_aspd-4525_3_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1372",
@@ -12720,7 +13595,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/foxeer-m10q-250-gps-w-5883-compass.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/o/foxeer-m10q-250-gps.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1373",
@@ -12731,7 +13610,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/geprc-m10-dq-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-m10-dq-gps-module.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1374",
@@ -12742,7 +13625,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/foxeer-m10q-180-gps-w-5883-compass.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/o/foxeer-m10q-180-gps.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1375",
@@ -12753,7 +13640,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-m100-5883-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc-m100-5883-gps-module.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1376",
@@ -12764,7 +13655,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/geprc-m10-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-m10-gps-module.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1377",
@@ -12823,7 +13718,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-here3-can-gnss-gps-module-w-istand.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-here3-can-gnss-gps-module-main-plus.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1379",
@@ -12863,7 +13762,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1380",
@@ -12903,7 +13804,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1381",
@@ -12947,7 +13850,9 @@
       "G4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1382",
@@ -13023,7 +13928,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1384",
@@ -13066,7 +13975,9 @@
       "F3",
       "16.0mm",
       "3 inch"
-    ]
+    ],
+    "cell_count_min": 1,
+    "cell_count_max": 4
   },
   {
     "pid": "FC-1385",
@@ -13097,7 +14008,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1386",
@@ -13136,7 +14051,10 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1387",
@@ -13147,7 +14065,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/mateksys-m10q-5883-gnss-compass.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys-m10q-5883-gnss-_-compass_1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1388",
@@ -13158,7 +14080,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-dronecan-h-rtk-f9p-helical.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-dronecan-h-rtk-f9p-helical.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1389",
@@ -13197,7 +14123,9 @@
       "H7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1390",
@@ -13237,7 +14165,9 @@
       "H7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1391",
@@ -13272,7 +14202,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1392",
@@ -13303,7 +14237,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1393",
@@ -13342,7 +14280,10 @@
       "F4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1394",
@@ -13381,7 +14322,9 @@
       "F4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1395",
@@ -13392,7 +14335,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-micro-m9n-gps-module-w-o-case.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-micro-m9n-gps-module-wo-case-_image-2_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1396",
@@ -13424,7 +14371,11 @@
     },
     "size_class": "universal",
     "tags": [],
-    "firmware_targets": "ArduPilot"
+    "firmware_targets": "ArduPilot",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1397",
@@ -13463,7 +14414,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1398",
@@ -13503,7 +14456,9 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1399",
@@ -13589,7 +14544,9 @@
       "30.5mm",
       "5 inch"
     ],
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1401",
@@ -13624,7 +14581,12 @@
     "size_class": "universal",
     "tags": [
       "F4"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1402",
@@ -13659,7 +14621,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1403",
@@ -13699,7 +14665,9 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1404",
@@ -13739,7 +14707,9 @@
       "H7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1405",
@@ -13781,7 +14751,9 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3"
   },
   {
     "pid": "FC-1406",
@@ -13812,7 +14784,11 @@
       ]
     },
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1407",
@@ -13892,7 +14868,11 @@
     "tags": [
       "F7"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1409",
@@ -13931,7 +14911,9 @@
       "F405",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1410",
@@ -13970,7 +14952,9 @@
       "H7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1411",
@@ -14006,7 +14990,11 @@
     "tags": [
       "H7"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1412",
@@ -14053,7 +15041,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1413",
@@ -14092,7 +15081,10 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1414",
@@ -14132,7 +15124,11 @@
     "tags": [
       "F4"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1415",
@@ -14167,7 +15163,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1416",
@@ -14202,7 +15202,11 @@
     "size_class": "universal",
     "tags": [
       "H7"
-    ]
+    ],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1417",
@@ -14213,7 +15217,11 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-uart-to-usb-c-converter.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-uart-to-usb-c-converter-_image-3_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1418",
@@ -14252,7 +15260,9 @@
       "H7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "cell_count_min": 3,
+    "cell_count_max": 6
   },
   {
     "pid": "FC-1419",

@@ -2445,8 +2445,6 @@
     "continuous_current_per_motor_a": 55,
     "mounting_pattern_mm": 25.5,
     "mcu_family": "F7",
-    "esc_current_a": 55,
-    "is_aio": true,
     "mounting_hole_size": "M2",
     "compatibility": {
       "mounting_pattern_mm": 25.5,
@@ -3382,9 +3380,7 @@
     "cell_count_max": 6,
     "mcu_family": "F411",
     "cell_count_min": 3,
-    "esc_current_a": 35,
     "esc_firmware": "BLHeli_S",
-    "is_aio": true,
     "compatibility": {
       "mounting_pattern_mm": null,
       "mounting_hole_size": null,
@@ -4167,7 +4163,6 @@
     "cell_count_max": 4,
     "mcu_family": "F4",
     "cell_count_min": 2,
-    "is_aio": true,
     "compatibility": {
       "mounting_pattern_mm": null,
       "mounting_hole_size": null,
@@ -4208,7 +4203,6 @@
     "cell_count_max": 4,
     "mcu_family": "F4",
     "cell_count_min": 2,
-    "is_aio": true,
     "compatibility": {
       "mounting_pattern_mm": null,
       "mounting_hole_size": null,
@@ -6025,13 +6019,6 @@
     "esc_format": "4in1",
     "motor_output_count": 4,
     "size_class": "standard",
-    "country": "USA",
-    "compliance": {
-      "blue_uas": true,
-      "ndaa_compliant": true,
-      "combat_proven": false,
-      "note": "One of only two 4-in-1 ESCs on Blue UAS Framework. STM32F0 MCU with AM32 open-source firmware."
-    },
     "tags": [
       "blue_uas",
       "ndaa",
@@ -6055,13 +6042,6 @@
     "esc_format": "4in1",
     "motor_output_count": 4,
     "size_class": "standard",
-    "country": "USA",
-    "compliance": {
-      "blue_uas": true,
-      "ndaa_compliant": true,
-      "combat_proven": false,
-      "note": "Manufactured by Ewing Aerospace, Ohio. $3.75M order from Performance Drone Works (Dec 2025). 6,700 units ordered in first week after Blue UAS approval."
-    },
     "tags": [
       "blue_uas",
       "ndaa",
@@ -6083,13 +6063,6 @@
     "esc_format": "individual",
     "motor_output_count": 1,
     "size_class": "standard",
-    "country": "Australia",
-    "compliance": {
-      "blue_uas": false,
-      "ndaa_compliant": true,
-      "combat_proven": true,
-      "note": "NDAA-compliant (Australian Five Eyes). Deployed in 50+ countries on 10,000+ aircraft. IP67 rated. Defense-grade with DroneCAN + ARINC825."
-    },
     "tags": [
       "ndaa",
       "defense",
@@ -6113,13 +6086,6 @@
     "esc_format": "4in1",
     "motor_output_count": 4,
     "size_class": "standard",
-    "country": "Australia",
-    "compliance": {
-      "blue_uas": false,
-      "ndaa_compliant": true,
-      "combat_proven": false,
-      "note": "NDAA-compliant (Australian Five Eyes). Dual-input priority failover for redundancy."
-    },
     "tags": [
       "ndaa",
       "defense",
@@ -6142,13 +6108,6 @@
     "esc_format": "individual",
     "motor_output_count": 1,
     "size_class": "heavy_lift",
-    "country": "USA",
-    "compliance": {
-      "blue_uas": false,
-      "ndaa_compliant": true,
-      "combat_proven": false,
-      "note": "Made in USA. IP66. DroneCAN/KDECAN. Paired with KDE heavy-lift motors for defense platforms."
-    },
     "tags": [
       "ndaa",
       "heavy_lift",
@@ -6171,13 +6130,6 @@
     "esc_format": "integrated_motor_esc",
     "motor_output_count": 1,
     "size_class": "heavy_lift",
-    "country": "USA",
-    "compliance": {
-      "blue_uas": true,
-      "ndaa_compliant": true,
-      "combat_proven": false,
-      "note": "Only motor+ESC integrated module on Blue UAS Framework. Includes position sensing, speed control, and DroneCAN in single unit."
-    },
     "tags": [
       "blue_uas",
       "ndaa",
@@ -6200,13 +6152,6 @@
     "esc_format": "individual",
     "motor_output_count": 1,
     "size_class": "standard",
-    "country": "Sweden",
-    "compliance": {
-      "blue_uas": false,
-      "ndaa_compliant": true,
-      "combat_proven": false,
-      "note": "Swedish manufacture. NATO-allied. Only identified European ESC OEM for UAS applications."
-    },
     "tags": [
       "ndaa",
       "european",

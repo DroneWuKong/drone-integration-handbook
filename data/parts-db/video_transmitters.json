@@ -8,7 +8,9 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/wallefpv-naked-o4-pro-air-unit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/wallefpv_naked_o4_pro_air_unit-1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "DJI O4",
+    "max_power_mw": 1600
   },
   {
     "pid": "VTX-1001",
@@ -19,7 +21,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/cubepilot-herelink-blue-air-unit-v1-1.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/u/cubepilot_herelink_blue_air_unit_v1.1_1__1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Proprietary"
   },
   {
     "pid": "VTX-1002",
@@ -30,7 +33,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/cubepilot-herelink-blue-bundle-v1-1.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/u/cubepilot_herelink_blue_bundle_v1.1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Proprietary"
   },
   {
     "pid": "VTX-1003",
@@ -103,7 +107,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/e/m/emax-wyvern-link-vtx_1_.jpg",
     "max_power_mw": 800,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "OpenIPC"
   },
   {
     "pid": "VTX-1009",
@@ -114,7 +119,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/runcam-wifilink-2-g-w-openipc.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/i/wifilink-g_1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "OpenIPC"
   },
   {
     "pid": "VTX-1010",
@@ -258,7 +264,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/flywoo-naked-o3-upgrade-case-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-naked-o3-upgrade-case-kit_6_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "DJI O3"
   },
   {
     "pid": "VTX-1022",
@@ -317,7 +324,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/cubepilot-herelink-hd-air-unit-v1-1.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/herelink-hd-air-unit-v2-_1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Proprietary"
   },
   {
     "pid": "VTX-1027",
@@ -484,7 +492,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/runcam-wifilink-2-w-openipc.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/i/wifilink-1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "OpenIPC"
   },
   {
     "pid": "VTX-1041",
@@ -628,7 +637,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/e/m/emax-wyvern-link-_alpha_-openipc---800mw-vtx-_image-2_.jpg",
     "max_power_mw": 800,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "OpenIPC"
   },
   {
     "pid": "VTX-1053",
@@ -640,7 +650,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/e/m/emax-wyvern-link-_alpha_-openipc---100mw-vtx-_image-1_.jpg",
     "max_power_mw": 100,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "OpenIPC"
   },
   {
     "pid": "VTX-1054",
@@ -676,7 +687,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/newbeedrone-hummingbird-v3-aio-f411-fc-12a-blheli-s-esc-elrs-vtx.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/e/newbeedrone-hummingbird-v3-aio_1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1057",
@@ -688,7 +700,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-stack---gn405s-fc-_icm42688_-20a-esc-aio-_-hm850-850mw-microphone-vtx.jpg",
     "size_class": "universal",
     "tags": [],
-    "max_power_mw": 850
+    "max_power_mw": 850,
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1058",
@@ -711,7 +724,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/flywoo-naked-o3-lite-air-unit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-naked-o3-lite-air-unit_2_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "DJI O3"
   },
   {
     "pid": "VTX-1060",
@@ -722,7 +736,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/flywoo-naked-o3-ultra-air-unit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-naked-o3-ultra-air-unit-_1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "DJI O3"
   },
   {
     "pid": "VTX-1061",
@@ -758,7 +773,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/runcam-wasp-nano-hd-fpv-camera-system-w-link-vtx.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam_wasp_nano_hd_camera_system_w_link_vtx_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Walksnail"
   },
   {
     "pid": "VTX-1064",
@@ -769,7 +785,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/runcam-wasp-hd-fpv-camera-system-w-dji-fpv-air-unit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam-wasp-hd-fpv-camera-system-w-dji-fpv-air-unit.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "DJI"
   },
   {
     "pid": "VTX-1065",
@@ -840,7 +857,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/dji-transmission-combo.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-transmission-combo-_1_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "DJI O3"
   },
   {
     "pid": "VTX-1071",
@@ -875,7 +893,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/cubepilot-herelink-2-4ghz-long-range-hd-video-transmission-system-v1-1.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/herelink-video-transmission-system-1.1-main.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Proprietary"
   },
   {
     "pid": "VTX-1074",
@@ -934,7 +953,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/dji-digital-hd-fpv-air-unit-kit-original-version.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-digital-hd-fpv-air-unit-kit---original-version-dji-main.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "DJI"
   },
   {
     "pid": "VTX-1079",
@@ -945,7 +965,9 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/mateksys-vtx-1g3se-1-2-1-3ghz-video-transmitter.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys-vtx-1g3se-2-1.21.3ghz-video-transmitter-main.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog",
+    "max_power_mw": 400
   },
   {
     "pid": "VTX-1080",
@@ -993,7 +1015,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/runcam-link-phoenix-hd-fpv-camera-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam_link_phoenix_hd_fpv_vista_camera_kit_2.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "DJI"
   },
   {
     "pid": "VTX-1084",
@@ -1004,7 +1027,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/caddx-polar-micro-digital-fpv-air-unit-camera-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/a/caddx-polar-micro-digital-fpv-air-unit-camera-kit-silver.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "DJI"
   },
   {
     "pid": "VTX-1085",
@@ -1066,7 +1090,8 @@
     "max_power_mw": 350,
     "mounting_pattern_mm": 25.5,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1090",
@@ -1079,7 +1104,8 @@
     "max_power_mw": 800,
     "mounting_pattern_mm": 20.0,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1091",
@@ -1165,7 +1191,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/flywoo-goku-gn413s-13a-2-4s-aio-toothpick-fc-vtx625-stack.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/o/goku-gn413s-stack-aio-toothpick-13a-vtx625-2.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1098",
@@ -1279,7 +1306,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-sm-25-25mw-micro-vtx-u-fl-sma-main.jpg",
     "max_power_mw": 25,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1107",
@@ -1291,7 +1319,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-sm-25-25mw-micro-vtx-dipole-antenna-main.jpg",
     "max_power_mw": 25,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1108",
@@ -1313,7 +1342,8 @@
     "link": "https://www.getfpv.com/fpv/video-transmitters/board-replacement-for-plug-play-transmitter.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/o/board-replacement-for-plug-_-play-transmitter-lea.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1110",
@@ -1325,7 +1355,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/m/imag0286_1.jpg",
     "max_power_mw": 400,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1111",
@@ -1373,7 +1404,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/m/img_3636.jpg",
     "max_power_mw": 800,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1115",
@@ -1385,7 +1417,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/m/imag0286_1_3.jpg",
     "max_power_mw": 400,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1116",
@@ -1433,7 +1466,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/m/img_3636_4.jpg",
     "max_power_mw": 800,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "video_system": "Analog"
   },
   {
     "pid": "VTX-1120",

@@ -8,7 +8,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/speedybee-mario-5-dc-arm-back.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/p/speedybee_mario_5_dc_arm_-_back.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1001",
@@ -59,7 +60,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1002",
@@ -70,7 +72,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/speedybee-mario-5-dc-arm-front.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/p/speedybee_mario_5_dc_arm_-_front.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1003",
@@ -122,7 +125,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1004",
@@ -226,7 +230,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1006",
@@ -237,7 +243,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/axisflying-manta-5-se-dc-replacement-arm-front.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/a/x/axisflying_manta_5_se_dc_replacement_arm_-_front.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1007",
@@ -248,7 +255,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/axisflying-manta-5-se-dc-replacement-arm-rear.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/d/d/dda3b38ba2-98af.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1008",
@@ -260,7 +268,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/e/beginner-diy-fpv-drone-kit---qav-s-2-joshua-bardwell-se-5---dominator-bundle1.jpg",
     "prop_size_max_in": 5.0,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1009",
@@ -271,7 +280,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/flyfishrc-volador-vx5-o4-pro-freestyle-frame-kit-black.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/v/o/volador-vx5-1.jpg",
     "prop_size_max_in": 5.0,
-    "dji_o4_compatible": true,
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
       25.5,
@@ -313,7 +321,9 @@
       "5.0inch",
       "O4",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1010",
@@ -323,7 +333,6 @@
     "description": "Built on continuous user feedback and refined design, the AxisFlying Manta 5 Pro is the next evolution in freestyle frames. Featuring a squashed X layout for improved stability and control, this frame combines precision CNC aluminum components with high-quality carbon fiber plates for maximum strength and style.",
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/axisflying-manta-5-pro-o4-pro-frame-kit-squashed-x.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/x/axismanta5prosqxfk-1_1.jpg",
-    "dji_o4_compatible": true,
     "prop_size_max_in": 5.0,
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
@@ -366,7 +375,9 @@
       "5.0inch",
       "O4",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1011",
@@ -376,7 +387,6 @@
     "description": "Experience agile freestyle and smooth cinematic flight with the SpeedyBee Mario 5 XH Frame Kit.",
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/speedybee-mario-5-frame-kit-xh-o4-pro.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/x/h/xh_o4_pro.png",
-    "dji_o4_compatible": true,
     "prop_size_max_in": 5.0,
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
@@ -419,7 +429,9 @@
       "5.0inch",
       "O4",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1012",
@@ -470,7 +482,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1013",
@@ -481,7 +494,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/flyfishrc-volador-vd5-o4-pro-deadcat-frame-kit-black.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/v/o/voladoriivd5-1.jpg",
     "prop_size_max_in": 5.0,
-    "dji_o4_compatible": true,
     "arm_configuration": "deadcat",
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
@@ -536,7 +548,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/flyfishrc-fifty5-o4-pro-freestyle-frame-kit-black.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/i/fifty5-1_1.jpg",
     "prop_size_max_in": 5.0,
-    "dji_o4_compatible": true,
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
       25.5,
@@ -578,7 +589,9 @@
       "5.0inch",
       "O4",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1015",
@@ -629,7 +642,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1016",
@@ -680,7 +695,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1017",
@@ -731,7 +747,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1018",
@@ -743,7 +760,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/e/beginner-diy-fpv-drone-kit---qav-s-2-joshua-bardwell-se-5-analog-main.jpg",
     "prop_size_max_in": 5.0,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1019",
@@ -795,7 +813,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1020",
@@ -847,7 +866,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1021",
@@ -899,7 +919,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1022",
@@ -950,7 +971,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1023",
@@ -1054,7 +1076,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1025",
@@ -1105,7 +1129,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1026",
@@ -1115,7 +1141,6 @@
     "description": "The Lumenier DJI O3 Upgrade Kit allows you to mount a DJI O3 / HD Camera with a 20mm mounting pattern to the QAV-PRO Whoop 5\" frame.",
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/lumenier-qav-pro-whoop-5-cinequads-edition-dji-o3-upgrade-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/l/u/lumenier-qav-pro-whoop-5inch-cinequads-edition---dji-o3-upgrade-kit-1.jpg",
-    "dji_o3_compatible": true,
     "vehicle_subtype": "cine",
     "prop_size_max_in": 5.0,
     "wheelbase_mm": 220,
@@ -1159,7 +1184,8 @@
       "5.0inch",
       "O3",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1027",
@@ -1210,7 +1236,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1028",
@@ -1261,7 +1288,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1029",
@@ -1312,7 +1340,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1030",
@@ -1363,7 +1392,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1031",
@@ -1414,7 +1444,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1032",
@@ -1465,7 +1496,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1033",
@@ -1516,7 +1548,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1034",
@@ -1567,7 +1600,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1035",
@@ -1618,7 +1652,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1036",
@@ -1629,7 +1664,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/aos-rc-v5-o4-frame-kit-aos-5.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/a/o/aos-rc-v5-frame-kit---aos-5.jpg",
     "prop_size_max_in": 5.0,
-    "dji_o4_compatible": true,
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
       25.5,
@@ -1671,7 +1705,9 @@
       "5.0inch",
       "O4",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1037",
@@ -1722,7 +1758,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1038",
@@ -1773,7 +1810,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1039",
@@ -1824,7 +1862,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1040",
@@ -1835,7 +1874,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/quadifier-diamondback-pro-5-frame-kit-type-f-o3.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/q/u/quadifier-diamondback-pro-type-f---o3_1_.jpg",
     "prop_size_max_in": 5.0,
-    "dji_o3_compatible": true,
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
       25.5,
@@ -1877,7 +1915,9 @@
       "5.0inch",
       "O3",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1041",
@@ -1928,7 +1968,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1042",
@@ -1979,7 +2020,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1043",
@@ -2030,7 +2072,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1044",
@@ -2081,7 +2124,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1045",
@@ -2132,7 +2176,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1046",
@@ -2184,7 +2230,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1047",
@@ -2236,7 +2283,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1048",
@@ -2288,7 +2336,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1049",
@@ -2339,7 +2388,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1050",
@@ -2390,7 +2440,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1051",
@@ -2442,7 +2493,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1052",
@@ -2494,7 +2546,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1053",
@@ -2545,7 +2598,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1054",
@@ -2596,7 +2650,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1055",
@@ -2647,7 +2702,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1056",
@@ -2699,7 +2755,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "deadcat"
   },
   {
     "pid": "FRM-1057",
@@ -2750,7 +2807,8 @@
     "tags": [
       "5.5inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1058",
@@ -2801,7 +2859,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1059",
@@ -2852,7 +2912,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1060",
@@ -2903,7 +2964,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1061",
@@ -2954,7 +3016,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1062",
@@ -3005,7 +3069,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1063",
@@ -3056,7 +3121,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1064",
@@ -3107,7 +3173,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1065",
@@ -3158,7 +3225,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1066",
@@ -3209,7 +3277,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1067",
@@ -3260,7 +3330,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1068",
@@ -3311,7 +3383,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1069",
@@ -3362,7 +3436,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1070",
@@ -3468,7 +3544,8 @@
       "5.0inch",
       "deadcat",
       "5 inch"
-    ]
+    ],
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1072",
@@ -3519,7 +3596,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1073",
@@ -3570,7 +3648,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1074",
@@ -3621,7 +3700,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1075",
@@ -3672,7 +3752,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1076",
@@ -3723,7 +3804,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1077",
@@ -3774,7 +3856,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1078",
@@ -3825,7 +3909,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1079",
@@ -3876,7 +3961,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1080",
@@ -3927,7 +4013,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1081",
@@ -3978,7 +4065,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1082",
@@ -4029,7 +4117,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1083",
@@ -4080,7 +4169,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1084",
@@ -4131,7 +4221,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1085",
@@ -4142,7 +4234,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/ethix-konasty-cougar-frame-spare-arms-2pcs.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/d/s/dsc01090-ga.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1086",
@@ -4193,7 +4286,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1087",
@@ -4244,7 +4339,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1088",
@@ -4295,7 +4391,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1089",
@@ -4346,7 +4444,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1090",
@@ -4397,7 +4497,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1091",
@@ -4448,7 +4549,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1092",
@@ -4499,7 +4601,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1093",
@@ -4550,7 +4654,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1094",
@@ -4560,7 +4665,6 @@
     "description": "Experience agile freestyle and smooth cinematic flight with the SpeedyBee Mario 5 DC O4 Frame Kit.",
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/speedybee-mario-5-frame-kit-dc-o4-pro.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/c/dc_o4_pro.png",
-    "dji_o4_compatible": true,
     "arm_configuration": "deadcat",
     "prop_size_max_in": 5.0,
     "wheelbase_mm": 220,
@@ -4605,7 +4709,8 @@
       "O4",
       "deadcat",
       "5 inch"
-    ]
+    ],
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1095",
@@ -4615,7 +4720,6 @@
     "description": "Experience agile freestyle and smooth cinematic flight with the SpeedyBee Mario 5 DC O4 Advanced Frame Kit.",
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/speedybee-mario-5-frame-kit-dc-o4-advanced.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/c/dc_o4_advanced.png",
-    "dji_o4_compatible": true,
     "arm_configuration": "deadcat",
     "prop_size_max_in": 5.0,
     "wheelbase_mm": 220,
@@ -4660,7 +4764,8 @@
       "O4",
       "deadcat",
       "5 inch"
-    ]
+    ],
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1096",
@@ -4711,7 +4816,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1097",
@@ -4762,7 +4869,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1098",
@@ -4773,7 +4881,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/flyfishrc-volador-vd6-o4-pro-deadcat-frame-kit-black.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/v/o/volador-vd6-1.jpg",
     "prop_size_max_in": 6.0,
-    "dji_o4_compatible": true,
     "arm_configuration": "deadcat",
     "wheelbase_mm": 260,
     "fc_mounting_patterns_mm": [
@@ -4826,7 +4933,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/ummagawd-2fiddy-5-replacement-arms-set-of-2.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/u/m/ummagawd-2fiddy-5-replacement-arms-_set-of-2_.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1100",
@@ -4837,7 +4946,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/geprc-mark5-standard-dc-o3-frame-coral-orange.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-mark5-standard-dc-o3-frame---coral-orange.jpg",
     "prop_size_max_in": 5.0,
-    "dji_o3_compatible": true,
     "arm_configuration": "deadcat",
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
@@ -4932,7 +5040,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1102",
@@ -4983,7 +5092,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1103",
@@ -5036,7 +5146,8 @@
       "5.0inch",
       "deadcat",
       "5 inch"
-    ]
+    ],
+    "vehicle_subtype": "cinewhoop"
   },
   {
     "pid": "FRM-1104",
@@ -5087,7 +5198,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1105",
@@ -5138,7 +5251,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1106",
@@ -5189,7 +5304,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1107",
@@ -5240,7 +5356,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1108",
@@ -5291,7 +5408,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1109",
@@ -5342,7 +5461,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1110",
@@ -5352,7 +5473,6 @@
     "description": "Introducing the HGLRC Rekon Y6 5\" LR Drone HD with DJI O3 - ELRS 2.4GHz, your ultimate cutting-edge aerial companion.",
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/hglrc-rekon-y6-5-lr-drone-hd-w-dji-o3-elrs-2-4ghz.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/h/g/hglrc-rekon-y6-5-lr-drone-hd-w-dji-o3---elrs-2.4ghz-_image-1_.jpg",
-    "dji_o3_compatible": true,
     "vehicle_subtype": "long_range",
     "prop_size_max_in": 5.0,
     "wheelbase_mm": 220,
@@ -5396,7 +5516,8 @@
       "5.0inch",
       "O3",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1111",
@@ -5447,7 +5568,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1112",
@@ -5457,7 +5580,6 @@
     "description": "Introducing the AOS RC V5 O3 Frame Kit, an advanced platform engineered for unparalleled performance in drone racing and freestyle flights.",
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/aos-rc-v5-o3-frame-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight-aos-3.5-v5-frame-kit-hero-image.jpg",
-    "dji_o3_compatible": true,
     "prop_size_max_in": 5.0,
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
@@ -5500,7 +5622,9 @@
       "5.0inch",
       "O3",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1113",
@@ -5551,7 +5675,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1114",
@@ -5602,7 +5728,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1115",
@@ -5653,7 +5781,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1116",
@@ -5664,7 +5794,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/quadifier-diamondback-o3-mk-2-5-fpv-frame-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/q/u/quadifier-diamondback-o3mk-2-5inch-fpv-frame-kit_6_.jpg",
     "prop_size_max_in": 5.0,
-    "dji_o3_compatible": true,
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
       25.5,
@@ -5706,7 +5835,9 @@
       "5.0inch",
       "O3",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1117",
@@ -5717,7 +5848,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/quadifier-diamondback-5-replacement-arm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/q/u/quadifier-diamondback-5inch-armt.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1118",
@@ -5768,7 +5900,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1119",
@@ -5819,7 +5952,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1120",
@@ -5870,7 +6004,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "deadcat",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1121",
@@ -5921,7 +6057,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1122",
@@ -5972,7 +6109,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1123",
@@ -6023,7 +6161,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1124",
@@ -6034,7 +6174,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/geprc-mark5-pro-dc-o3-frame-emerald-green.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-mark5-pro-dc-o3-frame---green.jpg",
     "prop_size_max_in": 5.0,
-    "dji_o3_compatible": true,
     "arm_configuration": "deadcat",
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
@@ -6129,7 +6268,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1126",
@@ -6180,7 +6321,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1127",
@@ -6191,7 +6334,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/aos-rc-o3-replacement-arm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/o/aos-rc-o3-replacement-arm.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1128",
@@ -6201,7 +6346,6 @@
     "description": "Exceptional flight performance. Unparalleled versatility. Improved durability. Simple to build. Easy to maintain. This version has been specially\u00a0designed to house the DJI O3 Air Unit.",
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/aos-03-freestyle-fpv-frame-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/o/aos-03-freestyle-fpv-frame-kit.jpg",
-    "dji_o3_compatible": true,
     "prop_size_max_in": 5.0,
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
@@ -6244,7 +6388,9 @@
       "5.0inch",
       "O3",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1129",
@@ -6255,7 +6401,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/aos-rc-freestyle-fpv-drone-replacement-arm-v2.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/o/aos-v2-arms.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1130",
@@ -6306,7 +6454,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1131",
@@ -6357,7 +6507,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1132",
@@ -6408,7 +6559,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1133",
@@ -6459,7 +6611,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1134",
@@ -6510,7 +6663,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1135",
@@ -6561,7 +6715,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1136",
@@ -6612,7 +6767,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1137",
@@ -6663,7 +6819,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1138",
@@ -6714,7 +6872,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1139",
@@ -6765,7 +6924,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1140",
@@ -6816,7 +6977,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1141",
@@ -6868,7 +7030,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1142",
@@ -6974,7 +7137,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1144",
@@ -7026,7 +7190,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1145",
@@ -7078,7 +7243,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1146",
@@ -7130,7 +7296,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1147",
@@ -7181,7 +7348,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1148",
@@ -7232,7 +7401,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "long_range"
   },
   {
     "pid": "FRM-1149",
@@ -7283,7 +7454,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "long_range"
   },
   {
     "pid": "FRM-1150",
@@ -7335,7 +7508,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1151",
@@ -7386,7 +7560,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "deadcat",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1152",
@@ -7397,7 +7573,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/hyperlite-freerange-5-replacement-arm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/h/y/hyperlite-freerange-5-arm.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "long_range"
   },
   {
     "pid": "FRM-1153",
@@ -7448,7 +7626,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "deadcat",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1154",
@@ -7499,7 +7679,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1155",
@@ -7550,7 +7731,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1156",
@@ -7601,7 +7783,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1157",
@@ -7650,7 +7833,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1158",
@@ -7701,7 +7885,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1159",
@@ -7752,7 +7937,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1160",
@@ -7803,7 +7989,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1161",
@@ -7854,7 +8041,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1162",
@@ -7905,7 +8093,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1163",
@@ -7956,7 +8145,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1164",
@@ -7967,7 +8157,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/aos-rc-freestyle-fpv-drone-replacement-arms.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/a/o/aos-rc-freestyle-fpv-drone-replacement-arm-main.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1165",
@@ -8018,7 +8210,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1166",
@@ -8069,7 +8263,9 @@
     "tags": [
       "5.5inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1167",
@@ -8120,7 +8316,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1168",
@@ -8172,7 +8370,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1169",
@@ -8224,7 +8423,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1170",
@@ -8275,7 +8475,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1171",
@@ -8326,7 +8527,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1172",
@@ -8377,7 +8579,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1173",
@@ -8428,7 +8631,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1174",
@@ -8479,7 +8683,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1175",
@@ -8530,7 +8735,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1176",
@@ -8581,7 +8787,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1177",
@@ -8632,7 +8839,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "deadcat"
   },
   {
     "pid": "FRM-1178",
@@ -8683,7 +8891,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1179",
@@ -8735,7 +8944,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "deadcat"
   },
   {
     "pid": "FRM-1180",
@@ -8786,7 +8996,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1181",
@@ -8891,7 +9102,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1183",
@@ -8942,7 +9155,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1184",
@@ -8993,7 +9207,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1185",
@@ -9044,7 +9259,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1186",
@@ -9095,7 +9311,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1187",
@@ -9146,7 +9363,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1188",
@@ -9157,7 +9375,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/ummagawd-cricket-fpv-moongoat-replacement-5-replacement-arms-2pcs.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/u/m/ummagawd-cricket-fpv-moongoat-arms.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1189",
@@ -9208,7 +9427,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1190",
@@ -9219,7 +9439,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/t-motor-ft5-mkii-v2-hd-5-4s-fpv-freestyle-drone-w-dji-air-unit-pnp.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/t/ft5-v2-hd-pnp-drone-5_1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1191",
@@ -9270,7 +9492,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1192",
@@ -9321,7 +9545,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1193",
@@ -9372,7 +9598,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1194",
@@ -9383,7 +9611,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/lumenier-qav-s-5-joshua-bardwell-se-replacement-arm-set-2pcs.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/j/o/joshua-bardwell-qav-s-5-freestyle-quadcopter-frame-2arms_1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1195",
@@ -9434,7 +9664,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1196",
@@ -9485,7 +9717,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1197",
@@ -9536,7 +9770,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1198",
@@ -9587,7 +9823,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1199",
@@ -9638,7 +9876,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1200",
@@ -9689,7 +9928,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1201",
@@ -9740,7 +9981,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1202",
@@ -9791,7 +10033,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1203",
@@ -9842,7 +10086,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1204",
@@ -9893,7 +10138,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "cinewhoop"
   },
   {
     "pid": "FRM-1205",
@@ -9944,7 +10191,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "cinewhoop"
   },
   {
     "pid": "FRM-1206",
@@ -9995,7 +10244,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1207",
@@ -10046,7 +10297,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1208",
@@ -10097,7 +10349,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1209",
@@ -10148,7 +10401,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1210",
@@ -10199,7 +10453,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1211",
@@ -10250,7 +10505,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1212",
@@ -10301,7 +10557,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1213",
@@ -10352,7 +10609,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1214",
@@ -10403,7 +10661,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1215",
@@ -10454,7 +10713,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1216",
@@ -10505,7 +10766,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1217",
@@ -10556,7 +10818,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1218",
@@ -10607,7 +10870,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1219",
@@ -10658,7 +10923,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1220",
@@ -10709,7 +10976,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1221",
@@ -10760,7 +11029,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1222",
@@ -10811,7 +11082,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1223",
@@ -10862,7 +11135,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1224",
@@ -10914,7 +11189,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1225",
@@ -10965,7 +11241,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1226",
@@ -11017,7 +11295,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1227",
@@ -11068,7 +11347,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1228",
@@ -11119,7 +11400,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1229",
@@ -11170,7 +11453,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1230",
@@ -11221,7 +11506,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1231",
@@ -11272,7 +11558,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1232",
@@ -11323,7 +11610,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1233",
@@ -11374,7 +11662,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1234",
@@ -11425,7 +11715,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1235",
@@ -11476,7 +11768,9 @@
     "tags": [
       "2.5inch",
       "3 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1236",
@@ -11527,7 +11821,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1237",
@@ -11578,7 +11874,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1238",
@@ -11629,7 +11927,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1239",
@@ -11680,7 +11980,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1240",
@@ -11731,7 +12033,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1241",
@@ -11782,7 +12086,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1242",
@@ -11834,7 +12139,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1243",
@@ -11886,7 +12192,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1244",
@@ -11937,7 +12244,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1245",
@@ -11989,7 +12297,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1246",
@@ -12040,7 +12349,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1247",
@@ -12093,7 +12404,8 @@
       "5.0inch",
       "true-X",
       "5 inch"
-    ]
+    ],
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1248",
@@ -12144,7 +12456,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1249",
@@ -12195,7 +12509,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1250",
@@ -12246,7 +12562,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1251",
@@ -12297,7 +12614,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1252",
@@ -12348,7 +12666,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1253",
@@ -12399,7 +12718,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1254",
@@ -12450,7 +12770,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1255",
@@ -12501,7 +12822,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1256",
@@ -12552,7 +12875,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1257",
@@ -12603,7 +12927,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1258",
@@ -12654,7 +12980,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1259",
@@ -12705,7 +13033,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1260",
@@ -12756,7 +13085,9 @@
     "tags": [
       "5.5inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1261",
@@ -12807,7 +13138,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1262",
@@ -12858,7 +13190,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1263",
@@ -12909,7 +13242,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1264",
@@ -12960,7 +13294,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1265",
@@ -13011,7 +13347,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1266",
@@ -13062,7 +13400,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1267",
@@ -13113,7 +13452,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1268",
@@ -13164,7 +13504,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1269",
@@ -13215,7 +13557,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1270",
@@ -13266,7 +13610,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1271",
@@ -13317,7 +13663,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1272",
@@ -13368,7 +13715,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1273",
@@ -13419,7 +13767,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1274",
@@ -13470,7 +13820,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1275",
@@ -13521,7 +13872,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1276",
@@ -13572,7 +13925,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1277",
@@ -13623,7 +13977,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1278",
@@ -13674,7 +14029,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1279",
@@ -13725,7 +14081,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1280",
@@ -13776,7 +14133,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1281",
@@ -13827,7 +14186,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1282",
@@ -13878,7 +14238,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1283",
@@ -13929,7 +14290,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1284",
@@ -13980,7 +14343,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1285",
@@ -14031,7 +14395,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1286",
@@ -14082,7 +14447,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1287",
@@ -14133,7 +14500,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1288",
@@ -14184,7 +14553,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1289",
@@ -14196,7 +14567,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/d/s/dsc_0084.jpg",
     "prop_size_max_in": 5.0,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1290",
@@ -14247,7 +14619,8 @@
     "tags": [
       "5.5inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1291",
@@ -14298,7 +14671,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1292",
@@ -14402,7 +14776,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1294",
@@ -14453,7 +14829,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1295",
@@ -14504,7 +14881,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1296",
@@ -14555,7 +14934,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1297",
@@ -14659,7 +15040,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1299",
@@ -14710,7 +15093,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1300",
@@ -14761,7 +15145,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1301",
@@ -14812,7 +15198,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1302",
@@ -14863,7 +15250,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1303",
@@ -14914,7 +15302,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1304",
@@ -14965,7 +15355,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1305",
@@ -15016,7 +15408,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1306",
@@ -15067,7 +15461,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1307",
@@ -15118,7 +15514,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1308",
@@ -15169,7 +15567,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1309",
@@ -15220,7 +15619,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1310",
@@ -15271,7 +15671,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1311",
@@ -15282,7 +15683,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/remix-5-5mm-spare-arms-2pcs.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/r/e/remix5__57794.1516795676_1__1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1312",
@@ -15333,7 +15735,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1313",
@@ -15384,7 +15787,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1314",
@@ -15435,7 +15839,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1315",
@@ -15446,7 +15852,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/tbs-oblivion-pnp.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-oblivion-main-with-props-pnp-1000x1000.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1316",
@@ -15497,7 +15905,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1317",
@@ -15601,7 +16010,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1319",
@@ -15652,7 +16062,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1320",
@@ -15701,7 +16113,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1321",
@@ -15752,7 +16166,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1322",
@@ -15803,7 +16219,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1323",
@@ -15854,7 +16271,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1324",
@@ -15905,7 +16323,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1325",
@@ -15956,7 +16376,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1326",
@@ -16007,7 +16428,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1327",
@@ -16017,7 +16439,6 @@
     "description": "Experience agile freestyle and smooth cinematic flight with the SpeedyBee Mario 5 XH O4 Advanced Frame Kit.",
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/speedybee-mario-5-frame-kit-xh-o4-advanced.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design.png",
-    "dji_o4_compatible": true,
     "prop_size_max_in": 5.0,
     "wheelbase_mm": 220,
     "fc_mounting_patterns_mm": [
@@ -16060,7 +16481,9 @@
       "5.0inch",
       "O4",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1328",
@@ -16111,7 +16534,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1329",
@@ -16122,7 +16546,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/holybro-kopis-2-6s-v2-fpv-racing-drone-bnf.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/k/o/kopis2-6s-v2-a1.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1330",
@@ -16173,7 +16599,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1331",
@@ -16224,7 +16651,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1332",
@@ -16275,7 +16703,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1333",
@@ -16326,7 +16756,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1334",
@@ -16377,7 +16809,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1335",
@@ -16428,7 +16862,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1336",
@@ -16479,7 +16914,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1337",
@@ -16530,7 +16966,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1338",
@@ -16581,7 +17018,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1339",
@@ -16632,7 +17070,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1340",
@@ -16643,7 +17082,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/5-quad-frames/xhover-stingy-v2-5-replacement-arms-2.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/s/t/stingy-v2-arms.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1341",
@@ -16694,7 +17134,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1342",
@@ -16745,7 +17187,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1343",
@@ -16795,7 +17238,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1344",
@@ -16845,7 +17289,8 @@
     "tags": [
       "10.0inch",
       "8-10 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1345",
@@ -16895,7 +17340,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1346",
@@ -16944,7 +17390,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "long_range"
   },
   {
     "pid": "FRM-1347",
@@ -16993,7 +17441,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "long_range"
   },
   {
     "pid": "FRM-1348",
@@ -17042,7 +17492,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "long_range"
   },
   {
     "pid": "FRM-1349",
@@ -17052,7 +17504,6 @@
     "description": "Engineered for durability, the iFlight Nazgul Evoque F6 V2 minimizes dirt buildup, reducing failures. Its DeadCat 262mm wheelbase ensures a clear camera view while optimized airflow enhances cooling.",
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/iflight-nazgul-evoque-f6-v2-dji-o4-pro-frame-kit-deadcat.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled-1_12.jpg",
-    "dji_o4_compatible": true,
     "arm_configuration": "deadcat",
     "prop_size_max_in": 6.0,
     "wheelbase_mm": 260,
@@ -17106,7 +17557,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/iflight-chimera7-pro-v2-7-5-lr-frame-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/g/e/getfpv_1_-_iflight_c.jpg",
     "prop_size_max_in": 7.5,
-    "dji_o4_compatible": true,
     "vehicle_subtype": "long_range",
     "wheelbase_mm": 300,
     "fc_mounting_patterns_mm": [
@@ -17147,7 +17597,8 @@
       "7.5inch",
       "O4",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1351",
@@ -17196,7 +17647,9 @@
     "tags": [
       "8.0inch",
       "8-10 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "cinelifter"
   },
   {
     "pid": "FRM-1352",
@@ -17245,7 +17698,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1353",
@@ -17294,7 +17748,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1354",
@@ -17343,7 +17798,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1355",
@@ -17392,7 +17849,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1356",
@@ -17441,7 +17899,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1357",
@@ -17490,7 +17949,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1358",
@@ -17539,7 +17999,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1359",
@@ -17588,7 +18049,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1360",
@@ -17637,7 +18099,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1361",
@@ -17686,7 +18149,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1362",
@@ -17736,7 +18200,8 @@
     "tags": [
       "10.0inch",
       "8-10 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1363",
@@ -17785,7 +18250,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1364",
@@ -17834,7 +18300,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1365",
@@ -17884,7 +18351,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1366",
@@ -17934,7 +18402,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1367",
@@ -17983,7 +18452,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "long_range"
   },
   {
     "pid": "FRM-1368",
@@ -17994,7 +18465,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/geprc-crocodile75-v3-arm-rear.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-crocodile75-v3-rear-arm.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1369",
@@ -18004,7 +18476,6 @@
     "description": "Introducing the iFlight BOB57 O3 Frame Kit, an innovative long-range HD drone conceptualized in a collaborative effort between iFlight and renowned pilot & videographer, Ellis van Jason.",
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/iflight-bob57-o3-ellis-van-jason-frame-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight-bob57-o3-frame-kit.jpg",
-    "dji_o3_compatible": true,
     "prop_size_max_in": 6.0,
     "wheelbase_mm": 260,
     "fc_mounting_patterns_mm": [
@@ -18045,7 +18516,9 @@
       "6.0inch",
       "O3",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "long_range"
   },
   {
     "pid": "FRM-1370",
@@ -18056,7 +18529,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/geprc-crocodile75-v3-front-arm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-crocodile75-v3-front-arm.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1371",
@@ -18105,7 +18579,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1372",
@@ -18155,7 +18630,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1373",
@@ -18205,7 +18681,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1374",
@@ -18254,7 +18731,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1375",
@@ -18304,7 +18782,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1376",
@@ -18354,7 +18833,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1377",
@@ -18404,7 +18884,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1378",
@@ -18454,7 +18935,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1379",
@@ -18504,7 +18986,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1380",
@@ -18554,7 +19037,8 @@
     "tags": [
       "9.0inch",
       "8-10 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1381",
@@ -18604,7 +19088,8 @@
     "tags": [
       "9.0inch",
       "8-10 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1382",
@@ -18654,7 +19139,8 @@
     "tags": [
       "9.0inch",
       "8-10 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1383",
@@ -18703,7 +19189,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1384",
@@ -18752,7 +19239,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1385",
@@ -18801,7 +19289,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1386",
@@ -18850,7 +19339,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1387",
@@ -18899,7 +19389,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1388",
@@ -18948,7 +19439,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1389",
@@ -19103,7 +19595,8 @@
       "5.0inch",
       "deadcat",
       "5 inch"
-    ]
+    ],
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1392",
@@ -19152,7 +19645,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1393",
@@ -19201,7 +19695,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1394",
@@ -19250,7 +19745,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1395",
@@ -19299,7 +19795,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1396",
@@ -19348,7 +19845,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1397",
@@ -19397,7 +19895,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1398",
@@ -19446,7 +19945,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1399",
@@ -19495,7 +19995,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1400",
@@ -19544,7 +20045,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1401",
@@ -19593,7 +20095,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1402",
@@ -19642,7 +20145,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1403",
@@ -19691,7 +20195,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1404",
@@ -19702,7 +20208,8 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/ethix-konasty-cougar-frame-spare-arms-2pcs.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/d/s/dsc01090-ga.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1405",
@@ -19751,7 +20258,8 @@
     "tags": [
       "10.0inch",
       "8-10 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1406",
@@ -19800,7 +20308,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1407",
@@ -19849,7 +20358,8 @@
     "tags": [
       "8.0inch",
       "8-10 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1408",
@@ -19898,7 +20408,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1409",
@@ -19947,7 +20458,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1410",
@@ -19997,7 +20509,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1411",
@@ -20046,7 +20559,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1412",
@@ -20096,7 +20610,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1413",
@@ -20107,7 +20622,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/flyfishrc-volador-vx6-o4-pro-freestyle-frame-kit-black.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/v/o/volador-vx6-1.jpg",
     "prop_size_max_in": 6.0,
-    "dji_o4_compatible": true,
     "wheelbase_mm": 260,
     "fc_mounting_patterns_mm": [
       30.5
@@ -20147,7 +20661,9 @@
       "6.0inch",
       "O4",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1414",
@@ -20196,7 +20712,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1415",
@@ -20245,7 +20762,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1416",
@@ -20295,7 +20813,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1417",
@@ -20345,7 +20864,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1418",
@@ -20394,7 +20914,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1419",
@@ -20496,7 +21017,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1421",
@@ -20545,7 +21067,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1422",
@@ -20595,7 +21118,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1423",
@@ -20606,7 +21130,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/aos-rc-o3-replacement-arm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/o/aos-rc-o3-replacement-arm.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1424",
@@ -20616,7 +21142,6 @@
     "description": "Exceptional flight performance. Unparalleled versatility. Improved durability. Simple to build. Easy to maintain. This version has been specially\u00a0designed to house the DJI O3 Air Unit.",
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/aos-03-freestyle-fpv-frame-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/o/aos-03-freestyle-fpv-frame-kit.jpg",
-    "dji_o3_compatible": true,
     "prop_size_max_in": 6.0,
     "wheelbase_mm": 260,
     "fc_mounting_patterns_mm": [
@@ -20657,7 +21182,9 @@
       "6.0inch",
       "O3",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1425",
@@ -20707,7 +21234,8 @@
     "tags": [
       "8.0inch",
       "8-10 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1426",
@@ -20757,7 +21285,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1427",
@@ -20859,7 +21388,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1429",
@@ -20908,7 +21438,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1430",
@@ -20959,7 +21490,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1431",
@@ -21008,7 +21540,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1432",
@@ -21057,7 +21590,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1433",
@@ -21106,7 +21640,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1434",
@@ -21155,7 +21690,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1435",
@@ -21204,7 +21740,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1436",
@@ -21253,7 +21790,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1437",
@@ -21303,7 +21842,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "deadcat"
   },
   {
     "pid": "FRM-1438",
@@ -21353,7 +21893,8 @@
     "tags": [
       "8.0inch",
       "8-10 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1439",
@@ -21402,7 +21943,9 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1440",
@@ -21451,7 +21994,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1441",
@@ -21500,7 +22044,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1442",
@@ -21549,7 +22094,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1443",
@@ -21560,7 +22106,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/shen-drones-siccario-cinelifter-3d-printed-parts.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/h/shen-drones-siccario-3d-parts-1000x1000.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "cinelifter"
   },
   {
     "pid": "FRM-1444",
@@ -21609,7 +22157,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1445",
@@ -21658,7 +22207,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1446",
@@ -21709,7 +22259,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1447",
@@ -21760,7 +22312,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1448",
@@ -21809,7 +22363,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1449",
@@ -21858,7 +22413,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1450",
@@ -21907,7 +22463,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1451",
@@ -21956,7 +22513,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1452",
@@ -22008,7 +22567,8 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1453",
@@ -22057,7 +22617,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1454",
@@ -22106,7 +22667,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1455",
@@ -22155,7 +22717,9 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1456",
@@ -22206,7 +22770,9 @@
     "tags": [
       "5.0inch",
       "5 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1457",
@@ -22255,7 +22821,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1458",
@@ -22406,7 +22973,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1461",
@@ -22455,7 +23023,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1462",
@@ -22504,7 +23074,9 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1463",
@@ -22553,7 +23125,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1464",
@@ -22602,7 +23175,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1465",
@@ -22651,7 +23225,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1466",
@@ -22700,7 +23275,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1467",
@@ -22749,7 +23325,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1468",
@@ -22798,7 +23375,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1469",
@@ -22847,7 +23425,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "racing"
   },
   {
     "pid": "FRM-1470",
@@ -22896,7 +23476,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1471",
@@ -22945,7 +23526,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1472",
@@ -22994,7 +23576,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1473",
@@ -23043,7 +23626,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1474",
@@ -23092,7 +23676,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1475",
@@ -23141,7 +23726,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1476",
@@ -23190,7 +23777,9 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1477",
@@ -23239,7 +23828,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1478",
@@ -23288,7 +23878,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1479",
@@ -23337,7 +23928,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1480",
@@ -23386,7 +23978,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1481",
@@ -23435,7 +24028,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1482",
@@ -23484,7 +24078,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1483",
@@ -23495,7 +24090,9 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/qav-defender-6-x8-rtf.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "arm_configuration": "true-X",
+    "vehicle_subtype": "freestyle"
   },
   {
     "pid": "FRM-1484",
@@ -23546,7 +24143,8 @@
     "tags": [
       "4.0inch",
       "4 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1485",
@@ -23557,7 +24155,6 @@
     "link": "https://www.getfpv.com/multi-rotor-frames/6-quad-frames/axisflying-kolas-7-long-range-7-foldable-frame-kit-dji-o3.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/a/x/axisflying-kolas-7-long-range-7-folding-frame-kit---dji-o3.jpg",
     "prop_size_max_in": 7.0,
-    "dji_o3_compatible": true,
     "vehicle_subtype": "long_range",
     "wheelbase_mm": 300,
     "fc_mounting_patterns_mm": [
@@ -23598,7 +24195,8 @@
       "7.0inch",
       "O3",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1486",
@@ -23647,7 +24245,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1487",
@@ -23696,7 +24295,8 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1488",
@@ -23746,7 +24346,8 @@
     "tags": [
       "7.0inch",
       "7 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   },
   {
     "pid": "FRM-1489",
@@ -23795,6 +24396,7 @@
     "tags": [
       "6.0inch",
       "6 inch"
-    ]
+    ],
+    "arm_configuration": "true-X"
   }
 ]
