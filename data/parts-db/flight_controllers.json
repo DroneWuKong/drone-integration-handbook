@@ -75,7 +75,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1002",
@@ -111,7 +112,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1003",
@@ -201,7 +203,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1007",
@@ -346,7 +349,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1011",
@@ -492,7 +496,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1015",
@@ -512,7 +517,8 @@
     "tags": [],
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3"
+    "mounting_hole_size": "M3",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1016",
@@ -559,7 +565,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1017",
@@ -684,7 +691,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1021",
@@ -731,7 +739,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1022",
@@ -778,7 +787,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1023",
@@ -917,7 +927,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1027",
@@ -1096,7 +1107,8 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1031",
@@ -1205,7 +1217,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1034",
@@ -1249,7 +1262,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1035",
@@ -1291,7 +1305,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1036",
@@ -1385,7 +1400,8 @@
       "G4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1038",
@@ -1474,7 +1490,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1040",
@@ -1555,7 +1572,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1042",
@@ -1602,7 +1620,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1043",
@@ -1649,7 +1668,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1044",
@@ -1696,38 +1716,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
-  },
-  {
-    "pid": "FC-1045",
-    "category": "propellers",
-    "name": "HQProp 51MMx2 (2x0.9) 2-Blade Propeller (Set of 4) - Gray",
-    "manufacturer": "HQProp",
-    "description": "The HQProp 51MMx2 (2x0.9)\u00a0is a 2-blade propeller with a 0.9-inch pitch.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/hqprop-51mmx2-2x0-9-2-blade-propeller-set-of-4-gray.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/q/hqprop-51mmx2-2-blade-propeller-_set-of-4_---gray-_image-2_.jpg",
-    "compatibility": {
-      "diameter_in": 2.0,
-      "motor_shaft_diameter_mm": 1.5,
-      "hub_type": "press_fit_1.5mm",
-      "_compat_hard": [
-        "motor_shaft_diameter_mm",
-        "hub_type"
-      ],
-      "_compat_soft": [
-        "diameter_in"
-      ]
-    },
-    "size_class": "2_inch",
-    "tags": [
-      "2.0inch",
-      "2-blade",
-      "2 inch"
-    ],
-    "mounting_pattern_mm": 20.0,
-    "mounting_hole_size": "M2",
-    "cell_count_min": 1,
-    "cell_count_max": 2
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1046",
@@ -1774,7 +1764,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1047",
@@ -2079,7 +2070,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1059",
@@ -2120,7 +2112,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1060",
@@ -2160,22 +2153,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1061",
-    "category": "accessories",
-    "name": "CubePilot Herelink Fan Set",
-    "manufacturer": "CubePilot",
-    "description": "When using Dual Streaming mode, the Herelink can get quite warm, for best results, please install a\u00a0Herelink Fan Set\u00a0on the top using the provided screws, rubber rings, washers and nuts in the installation pack.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-herelink-fan-set.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-herelink-fan-set_3_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1062",
@@ -2214,7 +2193,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1063",
@@ -2268,7 +2248,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1065",
@@ -2329,7 +2310,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1067",
@@ -2428,7 +2410,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1070",
@@ -2474,7 +2457,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1071",
@@ -2520,7 +2504,8 @@
       "G4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1072",
@@ -2567,7 +2552,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1073",
@@ -2614,7 +2600,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1074",
@@ -2716,44 +2703,6 @@
     "imu": "MPU6000"
   },
   {
-    "pid": "FC-1077",
-    "category": "flight_controllers",
-    "name": "Flywoo 30.5x30.5 Insulation Board for ESC or Flight Controller\u00a0(10 pcs)",
-    "manufacturer": "Flywoo",
-    "description": "The Flywoo Insulation Plate prevents a short circuit or static electricity from happening. Great for ESC's and FC's with a 30.5x30.5mm mounting hole.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-30-5x30-5-insulation-board-for-esc-or-flight-controller-10-pcs.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-20x20-insulation-board-for-esc-or-flight-controller-56.jpg",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "compatibility": {
-      "mounting_pattern_mm": 30.5,
-      "mounting_hole_size": "M3",
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "5_inch",
-    "tags": [
-      "30.5mm",
-      "5 inch"
-    ],
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1078",
     "category": "accessories",
     "name": "CubePilot ADS-B Standard Carrier Board ",
@@ -2762,21 +2711,6 @@
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-ads-b-standard-carrier-board.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/d/ads-b-standard-carrier-board-3.jpg",
     "mcu_family": "",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1079",
-    "category": "accessories",
-    "name": "M3 Anti-Vibration Silicone Grommet Insert for Flight Controllers (Clear, 5 Pcs)",
-    "manufacturer": "Lumenier",
-    "description": "This set of 5 anti-vibration flight controller silicone grommet inserts are a great solution to any flight controller vibration woes. (Fits M4 holes and reduces it down to M3)",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/m3-anti-vibration-silicone-grommet-insert-for-flight-controllers-clear-5-pcs.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/l/clear-grommet.jpg",
     "size_class": "universal",
     "tags": [],
     "mounting_pattern_mm": 30.5,
@@ -2920,7 +2854,8 @@
       "G4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1085",
@@ -2967,7 +2902,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1086",
@@ -2982,7 +2918,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1087",
@@ -3149,7 +3086,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1092",
@@ -3159,21 +3097,6 @@
     "description": "The GEP-M10 Nano GPS module offers a compact size, fast and stable positioning, and user-friendly operation.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/geprc-m10-nano-gps-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-m10-nano-gps-module.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1093",
-    "category": "gps_modules",
-    "name": "Flywoo BQNANO V1 Compass/Baro Module",
-    "manufacturer": "Flywoo",
-    "description": "The Flywoo BQNANO V1 Compass/Baro Module is a nano module with a QMC5883L compass and BMP280 barometer combined.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-bqnano-v1-compass-baro-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-bqnano-v1-compassbaro-module-main_1.jpg",
     "size_class": "universal",
     "tags": [],
     "mounting_pattern_mm": 30.5,
@@ -3275,7 +3198,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1097",
@@ -3411,7 +3335,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1100",
@@ -3509,7 +3434,8 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1103",
@@ -3550,7 +3476,8 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1104",
@@ -3597,7 +3524,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1105",
@@ -3636,7 +3564,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1106",
@@ -3724,7 +3653,8 @@
       "G2",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1108",
@@ -3771,7 +3701,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1109",
@@ -3818,7 +3749,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1110",
@@ -3887,7 +3819,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1113",
@@ -3983,7 +3916,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1116",
@@ -4029,7 +3963,8 @@
       "G4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1117",
@@ -4090,7 +4025,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1119",
@@ -4129,7 +4065,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1120",
@@ -4176,7 +4113,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1121",
@@ -4306,7 +4244,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1124",
@@ -4353,7 +4292,8 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1125",
@@ -4441,7 +4381,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1127",
@@ -4480,7 +4421,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1128",
@@ -4519,7 +4461,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1129",
@@ -4558,7 +4501,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1130",
@@ -4605,7 +4549,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1131",
@@ -4750,7 +4695,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1135",
@@ -4789,7 +4735,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1136",
@@ -4878,7 +4825,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1138",
@@ -5047,7 +4995,8 @@
     ],
     "firmware_targets": "ArduPilot",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM20689"
   },
   {
     "pid": "FC-1144",
@@ -5299,7 +5248,8 @@
       "G4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1155",
@@ -5448,7 +5398,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1160",
@@ -5487,7 +5438,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1161",
@@ -5526,7 +5478,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1162",
@@ -5565,7 +5518,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1163",
@@ -5612,7 +5566,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1164",
@@ -5847,7 +5802,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1170",
@@ -5935,7 +5891,8 @@
       "G4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1172",
@@ -5997,7 +5954,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1174",
@@ -6044,7 +6002,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1175",
@@ -6091,7 +6050,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1176",
@@ -6138,7 +6098,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1177",
@@ -6185,7 +6146,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1178",
@@ -6232,7 +6194,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1179",
@@ -6272,7 +6235,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1180",
@@ -6356,7 +6320,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1182",
@@ -6412,7 +6377,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1184",
@@ -6453,7 +6419,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1185",
@@ -6492,7 +6459,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1186",
@@ -6538,7 +6506,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1187",
@@ -6585,7 +6554,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1188",
@@ -6632,7 +6602,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1189",
@@ -6673,7 +6644,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1190",
@@ -6727,7 +6699,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1192",
@@ -6766,7 +6739,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1193",
@@ -6805,7 +6779,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1194",
@@ -6930,7 +6905,8 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1197",
@@ -6977,7 +6953,8 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1198",
@@ -7114,7 +7091,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1201",
@@ -7155,7 +7133,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1202",
@@ -7194,7 +7173,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1203",
@@ -7305,7 +7285,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1207",
@@ -7344,7 +7325,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1208",
@@ -7391,7 +7373,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1209",
@@ -7460,7 +7443,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1212",
@@ -7694,21 +7678,6 @@
     "imu": "ICM20602"
   },
   {
-    "pid": "FC-1218",
-    "category": "accessories",
-    "name": "Diatone Mamba Practice Soldering Board V2",
-    "manufacturer": "Diatone",
-    "description": "The Diatone Mamba Practice Soldering Board V2 replicates a real board and is the best way to practice your soldering. The V2 now with a broad range of pad sizes!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/diatone-mamba-practice-soldering-board-v2.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_99_.png",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1219",
     "category": "accessories",
     "name": "Holybro Pixhawk 6C Aluminum Case + PM02 V3 Power Module + M9N GPS",
@@ -7798,7 +7767,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1223",
@@ -7917,7 +7887,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1227",
@@ -7971,7 +7942,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM20689"
   },
   {
     "pid": "FC-1229",
@@ -8010,7 +7982,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1230",
@@ -8067,7 +8040,8 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1232",
@@ -8159,7 +8133,8 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1234",
@@ -8200,7 +8175,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1235",
@@ -8241,7 +8217,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1236",
@@ -8282,7 +8259,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1237",
@@ -8369,7 +8347,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1239",
@@ -8410,7 +8389,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1240",
@@ -8498,7 +8478,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1242",
@@ -8545,7 +8526,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1243",
@@ -8936,7 +8918,8 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1253",
@@ -8995,7 +8978,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1255",
@@ -9051,7 +9035,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1257",
@@ -9097,7 +9082,8 @@
       "G4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1258",
@@ -9144,7 +9130,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1259",
@@ -9191,7 +9178,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1260",
@@ -9282,7 +9270,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1262",
@@ -9329,22 +9318,8 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
-  },
-  {
-    "pid": "FC-1263",
-    "category": "accessories",
-    "name": "ZTAG Drone Laser Tag Board (1pc)",
-    "manufacturer": "ZTAG",
-    "description": "The ZTAG system is a Drone Laser Tag System designed to work with any HD digital drone! Are you ready to be a real fighter pilot? ZTAG simply provides a circuit board with mounting holes and you can decide the best way to mount this in front of your HD camera. There are STL files for common frames that have 18-33mm spacing between its bottom camera standoff screws. The board will require 5-28V input voltages (handles 2S-6S or 5V directly from your flight controller).",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/ztag-drone-laser-tag-board-1pc.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/z/t/ztag-drone-laser-tag-board-_1pc_-1000x1000.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1264",
@@ -9608,7 +9583,8 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1270",
@@ -9792,7 +9768,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1274",
@@ -9837,7 +9814,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1275",
@@ -9884,7 +9862,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1276",
@@ -10005,7 +9984,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1279",
@@ -10130,7 +10110,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1282",
@@ -10173,76 +10154,6 @@
     ],
     "firmware_targets": "Betaflight",
     "imu": "MPU6000"
-  },
-  {
-    "pid": "FC-1283",
-    "category": "flight_controllers",
-    "name": "STP 3D Color Stick Heads M4 - Lotus Style (Red)",
-    "manufacturer": "STP Racing",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/stp-3d-color-stick-heads-m4-lotus-style-red.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/t/stp_3d_color_stick_heads_m3_-_lotus_style_2__2.jpg",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1284",
-    "category": "flight_controllers",
-    "name": "STP 3D Color Stick Heads M3 - Lotus Style (Red)",
-    "manufacturer": "STP Racing",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/stp-3d-color-stick-heads-m3-lotus-style-red.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/t/stp_3d_color_stick_heads_m3_-_lotus_style_2_.jpg",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1285",
@@ -10551,7 +10462,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1294",
@@ -10592,7 +10504,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1295",
@@ -10639,7 +10552,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1296",
@@ -10686,7 +10600,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1297",
@@ -10810,7 +10725,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1300",
@@ -10898,7 +10814,8 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1302",
@@ -11025,7 +10942,8 @@
     ],
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3"
+    "mounting_hole_size": "M3",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1305",
@@ -11069,22 +10987,8 @@
     ],
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3"
-  },
-  {
-    "pid": "FC-1306",
-    "category": "accessories",
-    "name": "HC-05 RF Wireless Bluetooth Transceiver Module RS232 / TTL to UART Converter and Adapter",
-    "manufacturer": "General",
-    "description": "HC-05 Bluetooth Module can be used in a Master or Slave configuration, making it a great solution for wireless communication.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/hc-05-rf-wireless-bluetooth-transceiver-module-rs232-ttl-to-uart-converter-and-adapter.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/c/hc-05-rf-wireless-bluetooth-transceiver-module-rs232--ttl-to-uart-converter-and-adapter_1.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1307",
@@ -11352,44 +11256,6 @@
     "mounting_hole_size": "M2"
   },
   {
-    "pid": "FC-1313",
-    "category": "flight_controllers",
-    "name": "Flywoo 20x20 Insulation Board for ESC or Flight Controller\u00a0(10 pcs)",
-    "manufacturer": "Flywoo",
-    "description": "The Flywoo Insulation Plate prevents a short circuit or static electricity from happening. Great for ESC's and FC's with a 20x20mm mounting hole.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-20x20-insulation-board-for-esc-or-flight-controller-10-pcs.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-20x20-insulation-board-for-esc-or-flight-controller-qw.jpg",
-    "mounting_pattern_mm": 20.0,
-    "mounting_hole_size": "M2",
-    "compatibility": {
-      "mounting_pattern_mm": 20.0,
-      "mounting_hole_size": "M2",
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "3.5_inch",
-    "tags": [
-      "20.0mm",
-      "3.5 inch"
-    ],
-    "cell_count_min": 2,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1314",
     "category": "flight_controllers",
     "name": "Flywoo BT-NANO V3 Bluetooth Module",
@@ -11464,7 +11330,8 @@
       "3 inch"
     ],
     "mounting_pattern_mm": 20.0,
-    "mounting_hole_size": "M2"
+    "mounting_hole_size": "M2",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1316",
@@ -11584,7 +11451,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1319",
@@ -11662,7 +11530,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1321",
@@ -11748,7 +11617,8 @@
       "16.0mm",
       "3 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1323",
@@ -11880,7 +11750,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1326",
@@ -12118,7 +11989,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1332",
@@ -12164,7 +12036,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1333",
@@ -12421,41 +12294,6 @@
     "cell_count_max": 6
   },
   {
-    "pid": "FC-1339",
-    "category": "flight_controllers",
-    "name": "STP 3D M3 Color Stick Ends - 3MM - Red",
-    "manufacturer": "STP Racing",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/stp-3d-m3-color-stick-ends-3mm-red.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_003777.jpg",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1340",
     "category": "flight_controllers",
     "name": "NewBeeDrone BeeBrain Lite DSM - Project Mockingbird Edition",
@@ -12483,21 +12321,6 @@
         "voltage_max_v"
       ]
     },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1341",
-    "category": "accessories",
-    "name": "NewBeeDrone Nectar Connector PH2.0 Battery Lead",
-    "manufacturer": "NewBeeDrone",
-    "description": "The Nectar Connector is a custom mold design with thicker plug walls that makes it literally impossible to plug a lipo in backward without breaking the battery side plug first.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/newbeedrone-nectar-connector-ph2-0-battery-lead.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/p/l/plug1_1903x_abe4003d-d170-4c6f-ab2f-bd6ce8dd79ff_1493x.jpg",
     "size_class": "universal",
     "tags": [],
     "mounting_pattern_mm": 30.5,
@@ -12542,7 +12365,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1343",
@@ -12581,7 +12405,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1344",
@@ -12622,42 +12447,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1345",
-    "category": "flight_controllers",
-    "name": "STP Spektrum Switch Nut - Orange",
-    "manufacturer": "STP Racing",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/stp-spektrum-switch-nut-orange.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/o/r/orangespek_11.jpg",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1346",
@@ -12702,7 +12493,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1347",
@@ -12741,7 +12533,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1348",
@@ -12784,147 +12577,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1349",
-    "category": "flight_controllers",
-    "name": "SainSmart PLA 1.75mm 1kg - Purple",
-    "manufacturer": "SainSmart",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/printymcprintystuff-7312.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1350",
-    "category": "flight_controllers",
-    "name": "SainSmart TPU 1.75mm .8kg - Purple",
-    "manufacturer": "SainSmart",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/printymcprintystuff-7305.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1351",
-    "category": "flight_controllers",
-    "name": "SainSmart PLA 1.75mm 1kg - Blue",
-    "manufacturer": "SainSmart",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/sainsmart-pla-1-75mm-1kg-blue.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1352",
-    "category": "flight_controllers",
-    "name": "SainSmart PLA 1.75mm 1kg - Silver",
-    "manufacturer": "SainSmart",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/printymcprintystuff-7313.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1353",
@@ -12967,7 +12621,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1354",
@@ -13006,112 +12661,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1355",
-    "category": "flight_controllers",
-    "name": "Brain3D BetaFPV 65x & 75x TPU Canopy - Purple",
-    "manufacturer": "Brain3D",
-    "description": "A replacement plastic canopy from BetaFPV. Fits the BetaFPV 65x & 75x, but may also work on other whoop sized quads!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/brain3d-betafpv-65x-75x-tpu-canopy-purple.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1356",
-    "category": "flight_controllers",
-    "name": "Brain3D BetaFPV 65x & 75x TPU Canopy - Green",
-    "manufacturer": "Brain3D",
-    "description": "A replacement plastic canopy from BetaFPV. Fits the BetaFPV 65x & 75x, but may also work on other whoop sized quads!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/brain3d-betafpv-65x-75x-tpu-canopy-green.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1357",
-    "category": "flight_controllers",
-    "name": "Brain3D BetaFPV 65x & 75x TPU Canopy - Black",
-    "manufacturer": "Brain3D",
-    "description": "A replacement plastic canopy from BetaFPV. Fits the BetaFPV 65x & 75x, but may also work on other whoop sized quads!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/brain3d-betafpv-65x-75x-tpu-canopy-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1358",
@@ -13325,7 +12876,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1364",
@@ -13440,7 +12992,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1367",
@@ -13483,41 +13036,6 @@
     "cell_count_max": 6
   },
   {
-    "pid": "FC-1368",
-    "category": "flight_controllers",
-    "name": "Anti-Vibration Flight Controller Standoff",
-    "manufacturer": "MatekSys",
-    "description": "This set of 4 M3 anti-vibration flight controller standoffs are a great solution to any flight controller vibration woes.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/anti-vibration-flight-controller-standoff-7mm.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/main-1000x1000_5_2.jpg",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1369",
     "category": "flight_controllers",
     "name": "OverSky Scisky Micro F3 Brushed Flight Control built-in RX option, FrSky  ",
@@ -13554,7 +13072,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1370",
@@ -13852,7 +13371,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1382",
@@ -13897,7 +13417,8 @@
       "G4",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1383",
@@ -13978,41 +13499,6 @@
     ],
     "cell_count_min": 1,
     "cell_count_max": 4
-  },
-  {
-    "pid": "FC-1385",
-    "category": "flight_controllers",
-    "name": "SainSmart PLA 1.75mm 1kg - Black",
-    "manufacturer": "SainSmart",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/sainsmart-pla-1-75mm-1kg-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1386",
@@ -14125,7 +13611,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1390",
@@ -14206,42 +13693,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1392",
-    "category": "flight_controllers",
-    "name": "SainSmart TPU 1.75mm .8kg - Teal",
-    "manufacturer": "SainSmart",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/sainsmart-tpu-1-75mm-8kg-teal.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/no_selection",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1393",
@@ -14375,7 +13828,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM20689"
   },
   {
     "pid": "FC-1397",
@@ -14416,7 +13870,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1398",
@@ -14625,7 +14080,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1403",
@@ -14753,42 +14209,8 @@
     ],
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3"
-  },
-  {
-    "pid": "FC-1406",
-    "category": "flight_controllers",
-    "name": "STP 3D M3 Color Stick Ends - 3MM - Black",
-    "manufacturer": "STP Racing",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/stp-3d-m3-color-stick-ends-3mm-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_0037777.jpg",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1407",
@@ -14872,7 +14294,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1409",
@@ -14954,7 +14377,8 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1411",
@@ -15128,7 +14552,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1415",
@@ -15167,7 +14592,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1416",
@@ -15206,7 +14632,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1417",
@@ -15262,7 +14689,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1419",
