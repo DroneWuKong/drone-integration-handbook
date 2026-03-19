@@ -43,51 +43,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
-  },
-  {
-    "pid": "STK-1001",
-    "category": "stacks",
-    "name": "HDZero Halo 70A 3-8S AM32 4-in-1 ESC - 20x20",
-    "manufacturer": "HDZero",
-    "description": "The HDZero Halo 70A 3-8S AM32 4-in-1 ESC - 20x20 is designed for pilots who demand both power and reliability.",
-    "link": "https://www.getfpv.com/electronics/stacks/hdzero-halo-70a-3-8s-am32-4-in-1-esc-20x20.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero_halo_stack_-_h743_elrs_fc_icm42688_70a_blheli_32_esc_-_20x20_3_3.jpg",
-    "mounting_pattern_mm": 20.0,
-    "cell_count_min": 3,
-    "cell_count_max": 8,
-    "esc_current_a": 70,
-    "esc_firmware": "AM32",
-    "is_aio": true,
-    "continuous_current_per_motor_a": 70,
-    "esc_format": "4in1",
-    "motor_output_count": 4,
-    "mounting_hole_size": "M2",
-    "compatibility": {
-      "cell_count_min": 3,
-      "cell_count_max": 8,
-      "voltage_min_v": 9.0,
-      "voltage_max_v": 34.8,
-      "mounting_pattern_mm": 20.0,
-      "mounting_hole_size": "M2",
-      "battery_connector": null,
-      "continuous_current_per_motor_a": 70,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v",
-        "continuous_current_per_motor_a"
-      ]
-    },
-    "size_class": "3.5_inch",
-    "tags": [
-      "20.0mm",
-      "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1002",
@@ -414,7 +371,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1009",
@@ -554,7 +512,8 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1012",
@@ -600,7 +559,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1013",
@@ -786,7 +746,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1017",
@@ -832,7 +793,8 @@
       "F7",
       "16.0mm",
       "3 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1018",
@@ -878,51 +840,8 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
-  },
-  {
-    "pid": "STK-1019",
-    "category": "stacks",
-    "name": "HDZero Halo 70A 3-8S BLHeli_32 4-in-1 ESC - 20x20",
-    "manufacturer": "HDZero",
-    "description": "The HDZero Halo 70A 3-8S BLHeli_32 4-in-1 ESC - 20x20 is designed for pilots who demand both power and reliability.",
-    "link": "https://www.getfpv.com/electronics/stacks/hdzero-halo-70a-3-8s-blheli-32-4-in-1-esc-20x20.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero_halo_stack_-_h743_elrs_fc_icm42688_70a_blheli_32_esc_-_20x20_3_4.jpg",
-    "mounting_pattern_mm": 20.0,
-    "cell_count_min": 3,
-    "cell_count_max": 8,
-    "esc_current_a": 70,
-    "esc_firmware": "BLHeli_32",
-    "is_aio": true,
-    "continuous_current_per_motor_a": 70,
-    "esc_format": "4in1",
-    "motor_output_count": 4,
-    "mounting_hole_size": "M2",
-    "compatibility": {
-      "cell_count_min": 3,
-      "cell_count_max": 8,
-      "voltage_min_v": 9.0,
-      "voltage_max_v": 34.8,
-      "mounting_pattern_mm": 20.0,
-      "mounting_hole_size": "M2",
-      "battery_connector": null,
-      "continuous_current_per_motor_a": 70,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v",
-        "continuous_current_per_motor_a"
-      ]
-    },
-    "size_class": "3.5_inch",
-    "tags": [
-      "20.0mm",
-      "3.5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1020",
@@ -968,7 +887,8 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1021",
@@ -1061,7 +981,8 @@
       "F4",
       "16.0mm",
       "3 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1023",
@@ -1154,7 +1075,8 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1025",
@@ -1200,7 +1122,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1026",
@@ -1246,7 +1169,8 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1027",
@@ -1386,7 +1310,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1030",
@@ -1479,7 +1404,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1032",
@@ -1524,7 +1450,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1033",
@@ -1570,7 +1497,8 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1034",
@@ -2082,7 +2010,8 @@
       "F4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1045",
@@ -2128,7 +2057,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1046",
@@ -2221,7 +2151,8 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1048",
@@ -2267,7 +2198,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1049",
@@ -2313,7 +2245,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1050",
@@ -2361,39 +2294,6 @@
       "5 inch"
     ],
     "imu": "BMI270"
-  },
-  {
-    "pid": "STK-1051",
-    "category": "stacks",
-    "name": "RUSHFPV RUSH BLADE Power Filter Board Lite w/ 35V 470uF Capacitor ",
-    "manufacturer": "RUSHFPV",
-    "description": "The RUSHFPV RUSH BLADE Power Filter Board Lite is for a 6S LiPo battery and helps protect your RUSH BLADES ESC against any unforeseen current surge or high voltage.",
-    "link": "https://www.getfpv.com/electronics/stacks/rushfpv-rush-blade-power-filter-board-lite-w-35v-470uf-capacitor.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_-_2022-09-26t133152.165.jpg",
-    "esc_format": "4in1",
-    "motor_output_count": 4,
-    "compatibility": {
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "battery_connector": null,
-      "continuous_current_per_motor_a": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v",
-        "continuous_current_per_motor_a"
-      ]
-    },
-    "size_class": "universal",
-    "tags": []
   },
   {
     "pid": "STK-1052",
@@ -2486,7 +2386,8 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1054",
@@ -2532,7 +2433,8 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1055",
@@ -2766,7 +2668,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1060",
@@ -2812,7 +2715,8 @@
       "F4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1061",
@@ -2993,7 +2897,8 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1065",
@@ -3039,7 +2944,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1066",
@@ -3085,7 +2991,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1067",
@@ -3131,7 +3038,8 @@
       "F4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1068",
@@ -3174,7 +3082,8 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1069",
@@ -3217,7 +3126,8 @@
       "F7",
       "25.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1070",
@@ -3261,7 +3171,8 @@
       "F4",
       "16.0mm",
       "3 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1071",
@@ -3354,7 +3265,8 @@
       "F7",
       "16.0mm",
       "3 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1073",
@@ -3446,7 +3358,8 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1075",
@@ -3492,7 +3405,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1076",
@@ -3538,7 +3452,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1077",
@@ -3584,7 +3499,8 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1078",
@@ -3721,7 +3637,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1081",
@@ -3766,7 +3683,8 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1082",
@@ -3811,7 +3729,8 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1083",
@@ -3857,7 +3776,8 @@
       "F7",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1084",
@@ -3903,7 +3823,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1085",
@@ -3996,7 +3917,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1087",
@@ -4042,7 +3964,8 @@
       "F4",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1088",
@@ -4135,7 +4058,8 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1090",
@@ -4274,7 +4198,8 @@
       "F7",
       "16.0mm",
       "3 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1093",
@@ -4367,7 +4292,8 @@
       "F4",
       "20.0mm",
       "3.5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1095",
@@ -4412,7 +4338,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "BMI270"
   },
   {
     "pid": "STK-1096",
@@ -4646,7 +4573,8 @@
       "F7",
       "30.5mm",
       "5 inch"
-    ]
+    ],
+    "imu": "ICM42688P"
   },
   {
     "pid": "STK-1101",

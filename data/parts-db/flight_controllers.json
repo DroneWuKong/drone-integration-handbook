@@ -158,22 +158,6 @@
     "cell_count_max": 6
   },
   {
-    "pid": "FC-1004",
-    "category": "accessories",
-    "name": "Holybro Pixhawk Standard Baseboard V2A",
-    "manufacturer": "Holybro",
-    "description": "The Holybro Pixhawk Standard Baseboard V2A is an updated baseboard that can be used with Pixhawk 6X, 5X, and any flight controller that follows the Pixhawk Bus Standard.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-standard-baseboard-v2a.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_pixhawk_standard_baseboard_v2a-1.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "firmware_targets": "ArduPilot",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1005",
     "category": "accessories",
     "name": "CubePilot CubeLAN 8-Port Switch",
@@ -437,21 +421,6 @@
     "cell_count_max": 6
   },
   {
-    "pid": "FC-1013",
-    "category": "gps_modules",
-    "name": "CubePilot Here4 Multiband RTK GNSS GPS Module",
-    "manufacturer": "CubePilot",
-    "description": "The Here 4 is a professional High Precision Dual-band RTK Navigation module.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-here4-multiband-rtk-gnss-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-here4-multiband-rtk-gnss-gps-module.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1014",
     "category": "flight_controllers",
     "name": "NewBeeDrone Hummingbird 255 AIO - F4 FC + 50A 3-6S AM32 ESC",
@@ -569,21 +538,6 @@
     "imu": "ICM42688P"
   },
   {
-    "pid": "FC-1017",
-    "category": "gps_modules",
-    "name": "RadioMaster ERS-GPS Telemetry Sensor - ELRS ER",
-    "manufacturer": "RadioMaster",
-    "description": "The Radiomaster ERS-GPS Telemetry Sensor is a compact, plug-and-play GPS module designed for use with ExpressLRS PWM receivers via the CRSF interface.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/radiomaster-ers-gps-telemetry-sensor-elrs-er.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/a/radiomaster-ers-gps---precision-gps-sensor-for-elrs-er-receivers_1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1018",
     "category": "flight_controllers",
     "name": "Flywoo GOKU GN745 V3 AIO - F7 FC + 45A 2-6S AM32 4-in-1 ESC - ICM42688 25X25",
@@ -630,21 +584,6 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight/ArduPilot/INAV"
-  },
-  {
-    "pid": "FC-1019",
-    "category": "accessories",
-    "name": "TBS Chupito Electronics Package",
-    "manufacturer": "Team BlackSheep",
-    "description": "The TBS Chupito Electronics Package - A full set of electronics for your TBS Chupito.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/tbs-chupito-electronics-package.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs_chupito_update2_2.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1020",
@@ -789,22 +728,6 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "BMI270"
-  },
-  {
-    "pid": "FC-1023",
-    "category": "accessories",
-    "name": "Holybro Pixhawk PM02 V3 12S Power Module ",
-    "manufacturer": "Holybro",
-    "description": "The PM02 Power Module is a simple way of providing the autopilot's flight controller with clean power from a LiPo battery, as well as current consumption and battery voltage measurements all through a 6-pos cable. The PM02 Power Module is designed to power an autopilot flight controller, an RC receiver, and APM accessories (GPS, radio).",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-pm02-v3-12s-power-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_pixhawk_pm02_v3_12s_power_module.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "firmware_targets": "ArduPilot",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1024",
@@ -1109,21 +1032,6 @@
     ],
     "firmware_targets": "Betaflight",
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1031",
-    "category": "accessories",
-    "name": "TBS Mojito Electronics Package",
-    "manufacturer": "Team BlackSheep",
-    "description": "The TBS Mojito Electronics Package is designed to optimize your flying experience with high-performance components tailored specifically for the TBS Mojito wing.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/tbs-mojito-electronics-package.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-mojito-electronics-package-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1032",
@@ -1810,66 +1718,6 @@
     "cell_count_max": 6
   },
   {
-    "pid": "FC-1048",
-    "category": "fpv_cameras",
-    "name": "RunCam 6 Action Camera",
-    "manufacturer": "RunCam",
-    "description": "Introducing the RunCam 6 Action Camera, engineered for thrilling adventures with crystal-clear footage and vibrant colors.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/runcam-6-action-camera.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam6-action-camera-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1049",
-    "category": "fpv_cameras",
-    "name": "RunCam 6 Action Camera w/ ND Filter Set",
-    "manufacturer": "RunCam",
-    "description": "Introducing the RunCam 6 Action Camera, engineered for thrilling adventures with crystal-clear footage and vibrant colors.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/runcam-6-action-camera-w-nd-filter-set.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam6-action-camera-nd-filter-set-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1050",
-    "category": "gps_modules",
-    "name": "Holybro H-RTK Helical GPS Antenna Mount",
-    "manufacturer": "Holybro",
-    "description": "Introducing the Holybro H-RTK Helical GPS Antenna Mount, a precision-engineered solution designed to house your GPS module securely for seamless integration into your aerial platforms.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-helical-gps-antenna-mount.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-helical-gps-mount-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1051",
-    "category": "gps_modules",
-    "name": "Holybro Micro M10 GPS w/ Case",
-    "manufacturer": "Holybro",
-    "description": "This Holybro Micro M10 GPS unit utilizes multi-constellation GNSS powered by u-blox M10, a concurrent GNSS receiver capable of receiving and tracking multiple GNSS systems.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-micro-m10-gps-w-case.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-micro-m10-gps-_images-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1052",
     "category": "flight_controllers",
     "name": "NewBeeDrone X FETTec Infinity AIO - G4 FC (MPU6000) + 45A 3-6S ESC",
@@ -1915,22 +1763,6 @@
       "30.5mm",
       "5 inch"
     ]
-  },
-  {
-    "pid": "FC-1053",
-    "category": "gps_modules",
-    "name": "CubePilot Here4 Base",
-    "manufacturer": "CubePilot",
-    "description": "The Here 4 Base, a product of CubePilot, is compatible with both Ardupilot and PX4 systems.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-here4-base.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-here4-base.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "firmware_targets": "ArduPilot",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1054",
@@ -1979,51 +1811,6 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight"
-  },
-  {
-    "pid": "FC-1055",
-    "category": "gps_modules",
-    "name": "Holybro DroneCAN RM3100 Professional Grade Compass (42cm)",
-    "manufacturer": "Holybro",
-    "description": "The Holybro DroneCAN RM3100 Professional Grade Compass is an advanced compass/magnetometer designed for precise navigation and heading accuracy in unmanned vehicles.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-dronecan-rm3100-professional-grade-compass.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-dronecan-rm3100-professional-grade-compass-1.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1056",
-    "category": "gps_modules",
-    "name": "Lumenier SAM-M10Q GPS Module - NDAA",
-    "manufacturer": "Lumenier",
-    "description": "This\u00a0Lumenier GPS Module features an integrated UBLOX SAM-M10Q and magnetometer for precise positioning in a compact and lightweight design.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/lumenier-sam-m10q-gps-module-ndaa.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-gps-module-v1.2-1.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1057",
-    "category": "gps_modules",
-    "name": "Holybro M9N Standard GPS w/ 10-Pin Cable",
-    "manufacturer": "Holybro",
-    "description": "The Holybro M9N GPS uses multi-constellation GNSS powered by u-blox M9N, a concurrent GNSS receiver that can receive and track multiple GNSS systems.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-m9n-standard-gps-w-10-pin-cable.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-m9n-standard-gps-10-pin-cable.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1058",
@@ -2252,21 +2039,6 @@
     "imu": "ICM42688P"
   },
   {
-    "pid": "FC-1065",
-    "category": "gps_modules",
-    "name": "Flywoo GOKU GM10 Mini V3 GPS Module",
-    "manufacturer": "Flywoo",
-    "description": "The Flywoo GOKU GM10 Mini V3 GPS Module now with more accurate positioning and faster Star Search using the latest M10050 GNSS Chip.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-gm10-mini-v3-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo_goku_gm10_mini_v3_gps_module_1.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1066",
     "category": "flight_controllers",
     "name": "iFlight Defender 25 BLITZ AIO - H7 FC + 20A ESC + OSD",
@@ -2352,22 +2124,6 @@
     ],
     "firmware_targets": "Betaflight",
     "imu": "ICM42688P",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1068",
-    "category": "accessories",
-    "name": "Holybro Pixhawk PM07 14S Power Module ",
-    "manufacturer": "Holybro",
-    "description": "The PM07-14S Power Module serves the purpose of a Power Module as well as a Power Distribution Board.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-pm07-14s-power-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_pixhawk_pm07_12s_power_module.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "firmware_targets": "ArduPilot",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6
   },
@@ -2604,21 +2360,6 @@
     "imu": "ICM42688P"
   },
   {
-    "pid": "FC-1074",
-    "category": "gps_modules",
-    "name": "HGLRC M80 Pro GPS Module for FPV Drone Racing",
-    "manufacturer": "HGLRC",
-    "description": "The\u00a0HGLRC M80 PRO GPS Module comes with a QMC5883 chip to help identify the location of your drone quickly. Ideal for FPV racing drones!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-m80-pro-gps-module-for-fpv-drone-racing.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc_m80_pro_gps_module_for_fpv_drone_4_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1075",
     "category": "flight_controllers",
     "name": "HAKRC F4530D 3-6S HD Flight Controller for DJI",
@@ -2719,36 +2460,6 @@
     "cell_count_max": 6
   },
   {
-    "pid": "FC-1080",
-    "category": "accessories",
-    "name": "MATEKSYS Digital AirSpeed Sensor (ASPD-DLVR, CAN, I2C & UAVCAN)",
-    "manufacturer": "MatekSys",
-    "description": "The Matek Digital Airspeed Sensor ASPD-DLVR features CAN JST-GH connector, UAVCAN Protocol UART1, UART2, UART13 among many other cool features!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/matek-digital-airspeed-sensor-aspd-dlvr-can-i2c-uavcan.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/matek_digital_airspeed_sensor_aspd-dlvr_can_i2c_uavcan_2_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1081",
-    "category": "gps_modules",
-    "name": "HGLRC M100 Pro GPS Module",
-    "manufacturer": "HGLRC",
-    "description": "Unlock next-level navigation performance with the HGLRC M100Pro GPS Module. Powered by a cutting-edge 10th-generation chip, this compact module supports 120 channels and effortlessly tracks over 50 satellites for lightning-fast, accurate positioning.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-m100-pro-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrcm100pro1.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1082",
     "category": "flight_controllers",
     "name": "Flywoo GOKU Pro Mini Stack - F7 FC + 45A 2-6S AM32 4-in-1 ESC - ICM42688 - 20x20",
@@ -2795,21 +2506,6 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight"
-  },
-  {
-    "pid": "FC-1083",
-    "category": "gps_modules",
-    "name": "Flywoo GOKU GM10 Pro V3 GPS Module w/ Compass",
-    "manufacturer": "Flywoo",
-    "description": "The Flywoo GOKU GM10 Pro V3 GPS Module with Compass and with more accurate positioning and faster Star Search using the latest M10050 GNSS Chip.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-gm10-pro-v3-gps-module-w-compass.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo_goku_gm10_pro_v3_gps_module_w_compass_2.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1084",
@@ -2922,21 +2618,6 @@
     "imu": "ICM42688P"
   },
   {
-    "pid": "FC-1087",
-    "category": "gps_modules",
-    "name": "Flywoo GOKU GM10 Nano V3.1 GPS Module",
-    "manufacturer": "Flywoo",
-    "description": "The V3.1 version of the GOKU GM10 Nano GPS retains its extremely small size and adds a new plug.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-gm10-nano-v3-1-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-gm10-nano-v3.1-gps-module-_image-1__1.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1088",
     "category": "flight_controllers",
     "name": "TBS Lucid Pro F4 Mini Flight Controller - MPU6000 - 20x20",
@@ -3027,21 +2708,6 @@
     "firmware_targets": "Betaflight"
   },
   {
-    "pid": "FC-1090",
-    "category": "gps_modules",
-    "name": "Flywoo GOKU GM10 Mini V3 GPS w/ Compass",
-    "manufacturer": "Flywoo",
-    "description": "The Flywoo GOKU GM10 Mini V3 GPS with Compass brings an added layer of navigational precision to drone enthusiasts.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-gm10-mini-v3-gps-w-compass.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-gm10-mini-v3-gps-w-compass.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1091",
     "category": "flight_controllers",
     "name": "BETAFPV Air 5-in-1 AIO - G4 FC + 1S ESC + 400mW VTX + ELRS RX + OSD",
@@ -3088,36 +2754,6 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1092",
-    "category": "gps_modules",
-    "name": "GEPRC M10 Nano GPS Module",
-    "manufacturer": "GEPRC",
-    "description": "The GEP-M10 Nano GPS module offers a compact size, fast and stable positioning, and user-friendly operation.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/geprc-m10-nano-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-m10-nano-gps-module.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1094",
-    "category": "gps_modules",
-    "name": "HGLRC M80 GPS Module for FPV Drone Racing",
-    "manufacturer": "HGLRC",
-    "description": "Get precise location data for your drone with the\u00a0HGLRC M80 GPS Module!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-m80-gps-module-for-fpv-drone-racing.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc-m80-gps-for-fpv-racing-drone-162676_1001x.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1095",
@@ -3288,7 +2924,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1099",
@@ -3753,36 +3390,6 @@
     "imu": "MPU6000"
   },
   {
-    "pid": "FC-1110",
-    "category": "accessories",
-    "name": "FrSky ASS-100 ADV Air Speed Sensor",
-    "manufacturer": "FrSky",
-    "description": "FrSky has enhanced the performance and capability of the original sensor line, resulting in the development of the new FrSKY ADVANCED (ADV) 100 Air Speed sensor series.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/frsky-ass-100-adv-air-speed-sensor.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-ass-100-adv-air-speed-sensor-_image-2_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1111",
-    "category": "gps_modules",
-    "name": "iFlight BLITZ Mini M10 GPS V2",
-    "manufacturer": "iFlight",
-    "description": "The newly upgraded iFlight BLITZ Mini M10 GPS V2 \u00a0has arrived, offering faster and more stable satellite search with the 10th generation chipset.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-blitz-mini-m10-gps-v2.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight-blitz-mini-m10-gps-v2-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1112",
     "category": "flight_controllers",
     "name": "CubePilot The Cube Orange+ Mini Set",
@@ -3821,21 +3428,6 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1113",
-    "category": "gps_modules",
-    "name": "FlyFishRC M10QMC-5883L GPS & Compass Module",
-    "manufacturer": "FlyFish",
-    "description": "The FlyFishRC M10QMC-5883L GPS & Compass Module is a small size, fast positioning, easy-to-use GPS.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/flyfishrc-m10qmc-5883l-gps-compass-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/h/the_flyfishrc_m10qmc-5883l_gps_2.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1114",
@@ -3965,21 +3557,6 @@
       "3.5 inch"
     ],
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1117",
-    "category": "gps_modules",
-    "name": "NewBeeDrone BeeID V1.1 M10Q GPS Module + Remote ID",
-    "manufacturer": "NewBeeDrone",
-    "description": "The NewBeeDrone BeeID V1.1 M10Q GPS Module with RemoteID & Drone Tracker goes beyond compliance.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/newbeedrone-beeid-v1-1-m10q-gps-module-remote-id.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/e/newbeedrone_beeid_v1.1_m10q_gps_module_with_remoteid_1.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1118",
@@ -4340,7 +3917,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1126",
@@ -4595,21 +4173,6 @@
     "cell_count_max": 6
   },
   {
-    "pid": "FC-1132",
-    "category": "gps_modules",
-    "name": "Holybro Micro M10 GPS Module w/o Case",
-    "manufacturer": "Holybro",
-    "description": "This Holybro Micro M10 GPS unit utilizes multi-constellation GNSS powered by u-blox M10, a concurrent GNSS receiver capable of receiving and tracking multiple GNSS systems.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-micro-m10-gps-module-w-o-case.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-micro-m10-gps-module-wo-case-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1133",
     "category": "flight_controllers",
     "name": "Skystars Jupiter AIO - F4 FC + 45A 3-6S BLHeli_S  ESC - 25x25",
@@ -4654,7 +4217,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1134",
@@ -4694,46 +4258,6 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "cell_count_min": 3,
-    "cell_count_max": 6,
-    "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1135",
-    "category": "flight_controllers",
-    "name": "Holybro Pixhawk 6X Pro FC Standard Set w/ PM02D HV",
-    "manufacturer": "Holybro",
-    "description": "Introducing the Holybro Pixhawk 6X Pro FC Module Standard Set, an advanced flight controller system, perfect for modern UAV applications.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6x-pro-fc-standard-set-w-pm02d-hv.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-6x-pro-fc-standard-set-_image-3_1_.jpg",
-    "mcu_family": "H7",
-    "firmware_targets": "Ardupilot/PX4",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "H7",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [
-      "H7"
-    ],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P"
@@ -4909,52 +4433,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1140",
-    "category": "gps_modules",
-    "name": "Holybro H-RTK Mosaic-H GPS Module w/ Dual Antennas",
-    "manufacturer": "Holybro",
-    "description": "The Holybro H-RTK Mosaic-H, with Septentrio's elite GNSS receiver, offers advanced RTK GPS in a compact design.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-mosaic-h-gps-module-w-dual-antennas.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-mosaic-h-dual-antenna-heading-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1141",
-    "category": "gps_modules",
-    "name": "CubePilot HerePro GPS Module",
-    "manufacturer": "CubePilot",
-    "description": "The CubePilot HerePro is a professional high-precision Multi-band RTK Navigation module.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-herepro-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-herepro-without-istand-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1142",
-    "category": "accessories",
-    "name": "CubePilot HerePro USB Adapter Board",
-    "manufacturer": "CubePilot",
-    "description": "The CubePilot HerePro USB Adapter Board offers a seamless connection between the adapter board and external devices via USB.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/hex-herepro-usb-adapter-board.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-herepro-usb-adapter-board-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1143",
@@ -4999,140 +4479,6 @@
     "imu": "ICM20689"
   },
   {
-    "pid": "FC-1144",
-    "category": "flight_controllers",
-    "name": "T-Motor Velox V50A SE 6S BLHeli_32 4-in-1 ESC",
-    "manufacturer": "Tiger Motors",
-    "description": "Introducing the T-Motor Velox V50A SE 6S BLHeli_32 4-in-1 ESC, the pinnacle of electronic speed controllers for high-performance drones.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/t-motor-velox-v50a-se-6s-blheli-32-4-in-1-esc.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/-/t-motor-v50a-se-esc-_image1_.jpg",
-    "mounting_pattern_mm": 30.5,
-    "esc_current_a": 50,
-    "esc_firmware": "BLHeli_32",
-    "is_aio": true,
-    "mounting_hole_size": "M3",
-    "compatibility": {
-      "mounting_pattern_mm": 30.5,
-      "mounting_hole_size": "M3",
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ],
-      "is_aio": true,
-      "esc_current_a": 50,
-      "esc_firmware": "BLHeli_32"
-    },
-    "size_class": "5_inch",
-    "tags": [
-      "30.5mm",
-      "5 inch"
-    ],
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1145",
-    "category": "accessories",
-    "name": "Holybro CAN Hub Module w/ 27cm Cable",
-    "manufacturer": "Holybro",
-    "description": "The Holybro CAN Hub Module is a powered CAN port expansion module developed for various flight controllers and their supporting peripherals.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-can-hub-module-w-27cm-cable.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-can-hub-module-27cm-cable-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1146",
-    "category": "gps_modules",
-    "name": "Holybro H-RTK Helical GPS Vertical Mount",
-    "manufacturer": "Holybro",
-    "description": "Introducing the Holybro H-RTK Helical GPS Vertical Mount a precision-engineered solution designed to house your GPS module securely for seamless integration into your aerial platforms.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-helical-gps-mount-vertical.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-helical-mount-vertical-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1147",
-    "category": "gps_modules",
-    "name": "Holybro GPS Extended Length Cable - JST GHR 10P 420mm",
-    "manufacturer": "Holybro",
-    "description": "Introducing the Holybro GPS Extended Length Cable - 10P, your solution for seamless GPS connectivity over extended distances.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-gps-extended-length-cable-jst-ghr-10p-420mm.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-gps-extended-length-xable-10p-420mm.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1148",
-    "category": "gps_modules",
-    "name": "Holybro GPS Extended Length Cable - JST GHR 6P 420mm",
-    "manufacturer": "Holybro",
-    "description": "Introducing the Holybro GPS Extended Length Cable - 6P, your solution for seamless GPS connectivity over extended distances.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-gps-extended-length-cable-jst-ghr-6p-420mm.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-gps-extended-length-xable-6p-420mm-_image-1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1149",
-    "category": "gps_modules",
-    "name": "Holybro H Rtk Unc Adapter 1 4 20",
-    "manufacturer": "",
-    "description": "Introducing the Holybro 1/4\" UNC Adapter for H-RTK, your solution for seamlessly integrating your H-RTK system with standard camera mounting hardware.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-unc-adapter-1-4-20.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/h/o/holybro-0.25-inch-unc-adapter-for-h-rtk-_image-2_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1150",
-    "category": "gps_modules",
-    "name": "Holybro DroneCAN GPS Extended Length Cable - 45cm",
-    "manufacturer": "Holybro",
-    "description": "Introducing the Holybro DroneCAN GPS Extended Length Cable, extending your drone's capabilities with enhanced flexibility and convenience.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-dronecan-gps-extended-length-cable-45cm.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-dronecan-gps-extended-length-cable-45-cm-_image-2_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1151",
     "category": "flight_controllers",
     "name": "HGLRC Specter F722 Mini HD Flight Controller - MPU6000 - 20x20",
@@ -5172,36 +4518,6 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1152",
-    "category": "gps_modules",
-    "name": "Holybro H-RTK Unicore UM982 (Dual Antenna)",
-    "manufacturer": "Holybro",
-    "description": "The Holybro H-RTK Unicore UM982, featuring a dual antenna system, is an advanced RTK GPS module offering high-precision positioning and unique capabilities for autopilots.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-unicore-um982-dual-antenna.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-unicore-um982-dual-antenna_1.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1153",
-    "category": "gps_modules",
-    "name": "Holybro H-RTK F9P Ultralight GPS Module",
-    "manufacturer": "Holybro",
-    "description": "The Holybro H-RTK F9P Ultralight GPS Module is a sophisticated, ultra-lightweight RTK GNSS module, ideal for applications where minimizing weight is crucial.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-f9p-ultralight-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-f9p-ultralight-gps-module.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
     "cell_count_max": 6
   },
   {
@@ -5252,46 +4568,6 @@
     "imu": "ICM42688P"
   },
   {
-    "pid": "FC-1155",
-    "category": "flight_controllers",
-    "name": "Holybro Durandal FC (ICM20602) + PM02 V3 12S PX4 Power Module",
-    "manufacturer": "Holybro",
-    "description": "The Holybro Durandal w/ PM02 12S is a high-performance flight controller designed by Holybro, featuring the advanced STM32H7 microcontroller series.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-durandal-fc-icm20602-pm02-v3-12s-px4-power-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-durandal-fc-_icm20602_-_-pm02-v3-12s-px4-power-module.jpg",
-    "mcu_family": "H7",
-    "imu": "ICM20602",
-    "firmware_targets": "Ardupilot/PX4",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "H7",
-      "imu": "ICM20602",
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [
-      "H7"
-    ],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1156",
     "category": "flight_controllers",
     "name": "Holybro Durandal FC Module - ICM20602",
@@ -5332,76 +4608,6 @@
     "cell_count_max": 6
   },
   {
-    "pid": "FC-1157",
-    "category": "gps_modules",
-    "name": "Holybro Micro M9N GPS Module w/ Case",
-    "manufacturer": "Holybro",
-    "description": "The Holybro Micro M9N GPS is a compact, high-performance GPS module utilizing the advanced multi-constellation GNSS technology powered by the u-blox M9.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-micro-m9n-gps-module-w-case.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-micro-m9n-gps.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1158",
-    "category": "gps_modules",
-    "name": "Holybro M10 Standard GPS w/ 10-Pin Cable",
-    "manufacturer": "Holybro",
-    "description": "The Holybro M10 GPS uses multi-constellation GNSS powered by the u-blox M10 series, a concurrent GNSS receiver that can receive and track multiple GNSS systems.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-m10-standard-gps-w-10-pin-cable.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-m10-standard-gps-w-10-pin-cable_1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1159",
-    "category": "flight_controllers",
-    "name": "Holybro Pixhawk 6C PM02 V3 + M9N GPS + Plastic Case",
-    "manufacturer": "Holybro",
-    "description": "The\u00a0Pixhawk\u00ae 6C\u00a0is the latest update to the successful family of Pixhawk\u00ae flight controllers, based on the Pixhawk\u00ae FMUv6C Open Standard and Connector Standard.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-pm02-v3-m9n-gps-plastic-case.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-6c-pm02-_-m9n-gps-_-plastic-case_1_.jpg",
-    "mcu_family": "H7",
-    "firmware_targets": "Ardupilot/PX4",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "H7",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [
-      "H7"
-    ],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6,
-    "imu": "ICM42688P"
-  },
-  {
     "pid": "FC-1160",
     "category": "flight_controllers",
     "name": "Holybro Pixhawk 6C Mini FC Module (Model A Pins)",
@@ -5409,86 +4615,6 @@
     "description": "The\u00a0Pixhawk\u00ae 6C Mini\u00a0is the latest update to the successful family of Pixhawk\u00ae flight controllers, based on the Pixhawk\u00ae FMUv6C Open Standard and Connector Standard.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-mini-fc-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-6c-mini-fc-module_1_.jpg",
-    "mcu_family": "H7",
-    "firmware_targets": "Ardupilot/PX4",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "H7",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [
-      "H7"
-    ],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6,
-    "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1161",
-    "category": "flight_controllers",
-    "name": "Holybro Pixhawk 6C Mini + PM02 V3 + M9N GPS (Model A Pins)",
-    "manufacturer": "Holybro",
-    "description": "The Pixhawk\u00ae 6C Mini is the latest update to the successful family of Pixhawk\u00ae flight controllers, based on the Pixhawk\u00ae FMUv6C Open Standard and Connector Standard.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-mini-pm02-v3-m9n-gps.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-6c-mini-_-pm02-v3-_-m9n-gps_1_.jpg",
-    "mcu_family": "H7",
-    "firmware_targets": "Ardupilot/PX4",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "H7",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [
-      "H7"
-    ],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6,
-    "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1162",
-    "category": "flight_controllers",
-    "name": "Holybro Pixhawk 6C PM07 + M9N GPS + Plastic Case",
-    "manufacturer": "Holybro",
-    "description": "The\u00a0Pixhawk\u00ae 6C\u00a0is the latest update to the successful family of Pixhawk\u00ae flight controllers, based on the Pixhawk\u00ae FMUv6C Open Standard and Connector Standard.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-pm07-m9n-gps-plastic-case.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-6c-pm07-_-m9n-gps-_-plastic-case-_1_.jpg",
     "mcu_family": "H7",
     "firmware_targets": "Ardupilot/PX4",
     "compatibility": {
@@ -5655,21 +4781,6 @@
       "30.5mm",
       "5 inch"
     ],
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1166",
-    "category": "gps_modules",
-    "name": "Foxeer M10Q-120 GPS w/ 5883 Compass",
-    "manufacturer": "Foxeer",
-    "description": "Enhance your drone's navigation with the Foxeer M10Q-120 GPS.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/foxeer-m10q-120-gps-w-5883-compass.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/o/foxeer-m10q-120-gps.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6
   },
@@ -5893,21 +5004,6 @@
       "5 inch"
     ],
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1172",
-    "category": "accessories",
-    "name": "Holybro DroneCAN H-RTK F9P Rover w/ 42cm Cable",
-    "manufacturer": "Holybro",
-    "description": "The DroneCAN H-RTK F9P is Holybro's latest high-precision GNSS positioning system, featuring fast convergence times and multi-band RTK support. The Rover model has a flatter profile and stronger water resistance. It uses a dual-band patch antenna and comes with an integrated cable to connect to the CAN bus. It excels in spaces where there are few obstructions.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-dronecan-h-rtk-f9p-rover-w-42cm-cable.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-dronecan-h-rtk-f9p-rover-w-42cm-cable.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1173",
@@ -6281,7 +5377,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1181",
@@ -6322,21 +5419,6 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1182",
-    "category": "gps_modules",
-    "name": "Mateksys GNSS SAM-M10Q GPS Module - Gallileo/GLONASS/BeiDouB1C",
-    "manufacturer": "MatekSys",
-    "description": "The Mateksys GNSS SAM-M10Q GPS Module - Gallileo/GLONASS/BeiDouB1C uses a multi-constellation GNSS module powered by u-blox SAM-M10Q-00B.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/mateksys-gnss-sam-m10q-gps-module-gallileo-glonass-beidoub1c.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys-gnss-sam-m10q-gps-module.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1183",
@@ -6644,61 +5726,6 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6,
-    "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1190",
-    "category": "gps_modules",
-    "name": "Flywoo GOKU GM10 Nano V3 GPS Module",
-    "manufacturer": "Flywoo",
-    "description": "The Flywoo GOKU GM10 Nano V3 GPS Module is an ultra-lightweight GPS module at just 2.2g!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-gm10-nano-v3-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo_goku_gm10_nano_v3_gps_module_5.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1191",
-    "category": "flight_controllers",
-    "name": "Holybro Pixhawk 6X Mini Set w/ M9N GPS",
-    "manufacturer": "Holybro",
-    "description": "The Pixhawk 6X is the latest update to the successful family of Pixhawk flight controllers. This is the 6X Set with a Mini Base Board and includes an M9N GPS.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6x-mini-set-w-m8n-gps.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_pixhawk_6x_mini_set_w_m8n_gps_1_1.jpg",
-    "mcu_family": "H7",
-    "firmware_targets": "Ardupilot/PX4",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "H7",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [
-      "H7"
-    ],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P"
   },
@@ -7215,38 +6242,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1204",
-    "category": "accessories",
-    "name": "Holybro Pixhawk 5X/6X Mini Baseboard",
-    "manufacturer": "Holybro",
-    "description": "The Holybro Pixhawk 5X/6X Mini Baseboard is a Mini Baseboard for the Pixhawk 5X/6X Flight Controller!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-5x-6x-mini-baseboard.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/p/i/pixhawk-mini-base.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "firmware_targets": "ArduPilot",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1205",
-    "category": "accessories",
-    "name": "Holybro Pix32 V6 Mini Baseboard",
-    "manufacturer": "Holybro",
-    "description": "The Holybro Pix32 V6 Mini Baseboard carries the Holybro Pix32 V6 Flight Controller. It connects with a 100-pin connector.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pix32-v6-mini-baseboard.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pix32-v6-mini-baseboard.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1206",
@@ -7377,21 +6374,6 @@
     "imu": "ICM42688P"
   },
   {
-    "pid": "FC-1209",
-    "category": "gps_modules",
-    "name": "Holybro H-RTK F9P Rover Lite GNSS w/ 10-Pin Cable",
-    "manufacturer": "Holybro",
-    "description": "The H-RTK F9P is the latest differential high-precision GNSS positioning system series from Holybro.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-f9p-rover-lite-gnss-w-10-pin-cable.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_h-rtk_f9p_rover_lite_gnss.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1210",
     "category": "gps_modules",
     "name": "Holybro DroneCAN M8N GPS",
@@ -7445,21 +6427,6 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1212",
-    "category": "gps_modules",
-    "name": "Holybro H-RTK F9P Rover Lite GNSS 2nd GPS w/ 6-Pin Cable",
-    "manufacturer": "Holybro",
-    "description": "The H-RTK F9P 2nd GPS is the latest differential high-precision GNSS positioning system series from Holybro.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-h-rtk-f9p-roverlite-gnss-2nd-gps.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-h-rtk-f9p-rover-lite-gnss-2nd-gps-w-6-pin-cable.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1213",
@@ -7678,57 +6645,6 @@
     "imu": "ICM20602"
   },
   {
-    "pid": "FC-1219",
-    "category": "accessories",
-    "name": "Holybro Pixhawk 6C Aluminum Case + PM02 V3 Power Module + M9N GPS",
-    "manufacturer": "Holybro",
-    "description": "The Pixhawk 6C FC combined with the PM02 V3 12S Power Module + M9N GPS brings tons of power to the autopilot and makes it super easy to power and locate the multirotor.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-pm02-v3-power-module-m8n-gps.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/p/i/pixhawk_6c.jpg",
-    "mcu_family": "H7",
-    "imu": "ICM42688P",
-    "firmware_targets": "Ardupilot/PX4",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1220",
-    "category": "gps_modules",
-    "name": "ZOHD KOPILOT Lite GPS Module Unit",
-    "manufacturer": "ZOHD",
-    "description": "The ZOHD Kopilot Lite GPS Module Unit is a spare part for the KOPILOT Autopilot System Flight Controller.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/zohd-kopilot-lite-gps-module-unit.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/z/o/zohd-kopilot-lite-gps-module-unit-_2_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1221",
-    "category": "accessories",
-    "name": "Holybro Pixhawk 6C Aluminum Case + PM07 Power Module",
-    "manufacturer": "Holybro",
-    "description": "The Pixhawk 6C FC combined with the PM07 12S Power Module brings tons of power to the autopilot and makes it super easy to power the multirotor.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-pm07-power-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_pixhawk_6c_pm07_power_module.jpg",
-    "mcu_family": "H7",
-    "imu": "ICM42688P",
-    "firmware_targets": "Ardupilot/PX4",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1222",
     "category": "flight_controllers",
     "name": "Zeez F7 3030 V3 Flight Controller ",
@@ -7769,36 +6685,6 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1223",
-    "category": "gps_modules",
-    "name": "MATEKSYS M10-5883 GNSS & Compass",
-    "manufacturer": "MatekSys",
-    "description": "The MATEKSYS M10-5883 supports GNSS (GPS, GLONASS, Galileo, and BeiDou), offers great RF sensitivity, will help you pick up the best signals, and can improve the dynamic position accuracy with small antennas or in non-line-of-sight scenarios.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/mateksys-m10-5883-gnss-compass.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/n/gnss_compass_m10-5883.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1224",
-    "category": "gps_modules",
-    "name": "MATEKSYS AP Periph GNSS, M10-L4-3100 GPS Module",
-    "manufacturer": "MatekSys",
-    "description": "The\u00a0MATEKSYS AP Periph GNSS, M10-L4-3100 GPS is equipped with AP_Periph L431 CAN node, MAX-M10S, RM3100, SPL06-001, DroneCAN protocol & UART_MSP, and many other cool specs that make this GPS a winner in the wing game!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/mateksys-ap-periph-gnss-m10-l4-3100-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys_ap_periph_gnss_m10-l4-3100_can_gps.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1225",
@@ -7891,21 +6777,6 @@
     "imu": "MPU6000"
   },
   {
-    "pid": "FC-1227",
-    "category": "gps_modules",
-    "name": "CUAV NEO 3 Pro GPS Module w/ Stand",
-    "manufacturer": "CUAV",
-    "description": "The CUAV NEO 3 Pro continues the hardware design of NEO V2, upgrades the GNSS module to Ublox NEO M9N, and supports Beidou, Galileo, GLONASS, and GPS at the same time.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/cuav-neo-3-pro-gps-module-gnss-u-blox-m9n-can-bus.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/u/cuav-neo-3-pro-gps-module---gnss-u-blox-m9n-can-bus-main.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1228",
     "category": "flight_controllers",
     "name": "CUAV V5+ Standard Autopilot Flight Controller - PX4/APM",
@@ -7984,21 +6855,6 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1230",
-    "category": "gps_modules",
-    "name": "CubePilot Here3 CAN GNSS GPS Module w/ iStand",
-    "manufacturer": "CubePilot",
-    "description": "The Here3 GPS (with iStand) is a high-precision GNSS system that supports RTK mode, built with CAN protocol. It is also designed to be dust-proof and splash-proof up to a certain limit.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-hex-here3-can-gnss-gps-module-w-istand-html.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-here3-can-gnss-gps-module-main.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1231",
@@ -8087,7 +6943,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1233",
@@ -8306,7 +7163,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1238",
@@ -8574,7 +7432,8 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "esc_firmware": "BLHeli_S"
+    "esc_firmware": "BLHeli_S",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1244",
@@ -8709,23 +7568,6 @@
     "imu": "BMI270"
   },
   {
-    "pid": "FC-1247",
-    "category": "gps_modules",
-    "name": "Matek Ap Periph Gnss M9N F4 3100 Can Gps",
-    "manufacturer": "",
-    "description": "M9N-F4 series is based on ArudPilots\u2019 AP_Periph firmware,  It is a GNSS+COMPASS+BAROMETER+IMU peripheral with CAN/UAVCAN and UART/MSP interfaces, plus 4x spare UARTs, 1x I2C expansion bus for additional peripherals.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/matek-ap-periph-gnss-m9n-f4-3100-can-gps.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/m/a/matek-ap_periph-gnss-m9n-f4-3100-can-gps.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mcu_family": "F4",
-    "firmware_targets": "Betaflight",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1248",
     "category": "flight_controllers",
     "name": "iFlight SucceX-D F7 TwinG V2.2 F722 Flight Controller - HD Version",
@@ -8764,7 +7606,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1249",
@@ -8858,25 +7701,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1251",
-    "category": "accessories",
-    "name": "Holybro Pixhawk 6C Aluminum Case + PM02 V3 Power Module ",
-    "manufacturer": "Holybro",
-    "description": "The Pixhawk 6C FC combined with the PM02 V3 12S Power Module brings tons of power to the autopilot and makes it super easy to power the multirotor.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-pm02-v3-power-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_pixhawk_6c_pm02_v3_power_module_2_.jpg",
-    "mcu_family": "H7",
-    "imu": "ICM42688P",
-    "firmware_targets": "Ardupilot/PX4",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1252",
@@ -8922,24 +7748,6 @@
     "imu": "ICM42688P"
   },
   {
-    "pid": "FC-1253",
-    "category": "accessories",
-    "name": "Holybro Pixhawk 6C Aluminum Case + PM07 Power Module + M9N GPS",
-    "manufacturer": "Holybro",
-    "description": "The Pixhawk 6C FC combined with the PM07 12S Power Module + M9N GPS brings tons of power to the autopilot and makes it super easy to power and locate the multirotor.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-pm07-power-module-m8n-gps.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/p/i/pixhawk6c_aluminum_pm0714s_m9ngpsset_1800x1800.jpg",
-    "mcu_family": "H7",
-    "imu": "ICM42688P",
-    "firmware_targets": "Ardupilot/PX4",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1254",
     "category": "flight_controllers",
     "name": "Diatone Mamba DJI F722 MK2 Flight Controller - Mini 20x20",
@@ -8980,21 +7788,6 @@
     "cell_count_min": 2,
     "cell_count_max": 6,
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1255",
-    "category": "gps_modules",
-    "name": "iFlight M8Q-5883 V2.0 GPS Module w/ Compass ",
-    "manufacturer": "iFlight",
-    "description": "The iFlight M8Q-5883 GPS comes with an integrated QMC5883L compass module, built-in TCXO crystal, and farad capacitor for a faster hot start, additional front-end LNA and many other features!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-m8q-5883-v2-0-gps-module-w-compass.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight_m8q-5883_gps_and_compass_v2.0.jpeg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1256",
@@ -9226,7 +8019,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1261",
@@ -9362,7 +8156,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1265",
@@ -9403,7 +8198,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1266",
@@ -9449,7 +8245,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1267",
@@ -9536,7 +8333,8 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1269",
@@ -9631,7 +8429,8 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "esc_firmware": "BLHeli_32"
+    "esc_firmware": "BLHeli_32",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1271",
@@ -9721,7 +8520,8 @@
     ],
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 20.0,
-    "mounting_hole_size": "M2"
+    "mounting_hole_size": "M2",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1273",
@@ -9864,41 +8664,6 @@
     ],
     "firmware_targets": "Betaflight",
     "imu": "BMI270"
-  },
-  {
-    "pid": "FC-1276",
-    "category": "flight_controllers",
-    "name": "VAS A.C.E.\u2122 Combat System (PWM)",
-    "manufacturer": "Video Aerial Systems",
-    "description": "The new ACE\u2122 (Advanced Combat Electronics) Combat System for FPV aircraft. For how long have you asked yourself, \u201cWhen can we dog fight our friends with our FPV systems and a laser?\u201d.  The answer is now!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/vas-a-c-e-tm-combat-system-pwm.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/c/acecombat2_1024x1024_2x.jpg",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1277",
@@ -10200,7 +8965,8 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1286",
@@ -10245,64 +9011,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1287",
-    "category": "accessories",
-    "name": "Stan FPV 20x20 / 30x30 Vibe Dampening Converter",
-    "manufacturer": "",
-    "description": "Mix and match stacks or ECS combos even if they aren't the same mounting pattern with the Stan FPV 20x20 / 30x30 \"soft mount\" vibe dampening converter.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/stan-fpv-20x20-30x30-vibe-dampening-converter.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/s/t/stan_fpv_20x20_30x30_vibe_dampening_converter.jpg",
-    "mounting_pattern_mm": 20.0,
-    "size_class": "universal",
-    "tags": [],
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1288",
-    "category": "flight_controllers",
-    "name": "Stan Fpv 20X20 26X26 Aio Vibe Dampening Converter",
-    "manufacturer": "",
-    "description": "Mix and match stacks or ECS combos even if they aren't the same mounting pattern with the Stan FPV 20x20 / 26x26 \"soft mount\" vibe dampening converter.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/stan-fpv-20x20-26x26-aio-vibe-dampening-converter.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/s/t/stan_fpv_20x20_26x26_aio_vibe_dampening_converter_.jpg",
-    "mounting_pattern_mm": 20.0,
-    "is_aio": true,
-    "mounting_hole_size": "M2",
-    "compatibility": {
-      "mounting_pattern_mm": 20.0,
-      "mounting_hole_size": "M2",
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ],
-      "is_aio": true,
-      "esc_current_a": null,
-      "esc_firmware": null
-    },
-    "size_class": "3.5_inch",
-    "tags": [
-      "20.0mm",
-      "3.5 inch"
-    ],
-    "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1289",
@@ -10381,37 +9091,6 @@
     ],
     "firmware_targets": "Betaflight",
     "imu": "ICM42688P",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1291",
-    "category": "gps_modules",
-    "name": "TBS M8.2 GPS Glonass ",
-    "manufacturer": "Team BlackSheep",
-    "description": "Precision GPS / Glonass module for betaflight or pixhawk.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/tbs-m8-2-gps-glonass.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs_m8.2_gps_glonass_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "firmware_targets": "Betaflight/ArduPilot",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1292",
-    "category": "gps_modules",
-    "name": "MATEKSYS GNSS M8Q-CAN, UAVCAN & MSP GPS ",
-    "manufacturer": "MatekSys",
-    "description": "The Matek GNSS M8Q-CAN, UAVCAN & MSP GPS features AP F303 CAN node, SAM-M8Q, QMC5881L, DPS310, I2C, Uart1 & Uart3 breakout. UAVCAN protocol & UART_MSP.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/matek-gnss-m8q-can-uavcan-msp-gps.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/matek_gps_m8q-can_uavcan_msp_4_.jpg",
-    "size_class": "universal",
-    "tags": [],
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
@@ -10642,7 +9321,8 @@
     ],
     "firmware_targets": "Betaflight/INAV",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1298",
@@ -10856,7 +9536,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1303",
@@ -11033,53 +9714,6 @@
     "imu": "MPU6000"
   },
   {
-    "pid": "FC-1308",
-    "category": "flight_controllers",
-    "name": "Lumenier LUX F7 Ultimate + Razor LED 55A Bundle (F7 FC, 55A 2-6S BLHeli_32 ESC)",
-    "manufacturer": "Lumenier",
-    "description": "The Lumenier LUX F7 Ultimate + Razor LED 55A Stack (F7 FC, 55A 2-6S BLHeli_32 ESC) Combo. Save 5% when buying this as a bundle!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/lumenier-lux-f7-ultimate-razor-led-55a-bundle.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-lux-f7-led-stack.jpg",
-    "mcu_family": "F7",
-    "mounting_pattern_mm": 30.5,
-    "cell_count_min": 2,
-    "cell_count_max": 6,
-    "esc_current_a": 55,
-    "esc_firmware": "BLHeli_32",
-    "is_aio": true,
-    "mounting_hole_size": "M3",
-    "compatibility": {
-      "mounting_pattern_mm": 30.5,
-      "mounting_hole_size": "M3",
-      "cell_count_min": 2,
-      "cell_count_max": 6,
-      "voltage_min_v": 6.0,
-      "voltage_max_v": 26.1,
-      "mcu_family": "F7",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ],
-      "is_aio": true,
-      "esc_current_a": 55,
-      "esc_firmware": "BLHeli_32"
-    },
-    "size_class": "5_inch",
-    "tags": [
-      "F7",
-      "30.5mm",
-      "5 inch"
-    ],
-    "firmware_targets": "Betaflight"
-  },
-  {
     "pid": "FC-1309",
     "category": "flight_controllers",
     "name": "T-Motor Mini F7  Stack + F45A 3-6S BLHeli_32 4-in-1 ESC",
@@ -11124,7 +9758,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1310",
@@ -11165,7 +9800,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1311",
@@ -11209,7 +9845,8 @@
     ],
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 20.0,
-    "mounting_hole_size": "M2"
+    "mounting_hole_size": "M2",
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1312",
@@ -11253,42 +9890,8 @@
     ],
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 20.0,
-    "mounting_hole_size": "M2"
-  },
-  {
-    "pid": "FC-1314",
-    "category": "flight_controllers",
-    "name": "Flywoo BT-NANO V3 Bluetooth Module",
-    "manufacturer": "Flywoo",
-    "description": "Add Bluetooth to your favorite quadcopter with Flywoo's superlight BT-NANO V3 Bluetooth Module! This super tiny Bluetooth Module will give you 30 meters of transmission range and more stable performance.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-bt-nano-v2-bluetooth-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-bt-nano-v3_3_.jpg",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "mounting_hole_size": "M2",
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1315",
@@ -11332,47 +9935,6 @@
     "mounting_pattern_mm": 20.0,
     "mounting_hole_size": "M2",
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1316",
-    "category": "flight_controllers",
-    "name": "HAKRC 45A 2-6S BLHeli_S 4-in-1 ESC",
-    "manufacturer": "HAKRC",
-    "description": "The HAKRC 45A 2-6S BLHeli_S 4-in-1 ESC provides great power and value in a 20x20mm/30.5x30.5mm mounting pattern.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/hakrc-45a-2-6s-blheli-s-4-in-1-esc.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/hakrc-8-bit-45a-twin-holes-30.5x30.5mm-and-20x20mm-4in1-esc.jpg",
-    "cell_count_min": 2,
-    "cell_count_max": 6,
-    "esc_current_a": 45,
-    "esc_firmware": "BLHeli_S",
-    "is_aio": true,
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": 2,
-      "cell_count_max": 6,
-      "voltage_min_v": 6.0,
-      "voltage_max_v": 26.1,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ],
-      "is_aio": true,
-      "esc_current_a": 45,
-      "esc_firmware": "BLHeli_S"
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3"
   },
   {
     "pid": "FC-1317",
@@ -11491,7 +10053,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1320",
@@ -11532,45 +10095,6 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1321",
-    "category": "flight_controllers",
-    "name": "iFlight M3 Rubber Damper Balls for F4/F7 Flight Controller (20 pcs)",
-    "manufacturer": "iFlight",
-    "description": "The M3 Rubber Damper Balls by iFlight help reduce the sensitiveness of your flight controller.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-m3-rubber-damper-balls-for-f4-f7-flight-controller-20-pcs.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/3/m3-damper-for-flight-control-m3-yellow-_20pcs---yellow__1.jpg",
-    "mcu_family": "F4",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "F4",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [
-      "F4"
-    ],
-    "firmware_targets": "Betaflight",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1322",
@@ -11665,7 +10189,8 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1324",
@@ -11711,7 +10236,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1325",
@@ -11797,7 +10323,8 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1327",
@@ -11838,7 +10365,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1328",
@@ -11880,76 +10408,6 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1329",
-    "category": "flight_controllers",
-    "name": "BETAFPV HX 115 Quad Crossfire ver.",
-    "manufacturer": "BETAFPV",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/dummy-flight-controller-8523.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/x/hx115_fpv1_1800x1800_3.jpg",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1330",
-    "category": "flight_controllers",
-    "name": "BETAFPV HX 115 HD Quad Frsky ver.",
-    "manufacturer": "BETAFPV",
-    "description": "dummy",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/dummy-flight-controller-8518.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/x/hx115_hd_6_1_1800x1800_2.jpg",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
     "cell_count_max": 6
   },
   {
@@ -12078,7 +10536,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1334",
@@ -12125,7 +10584,8 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1335",
@@ -12206,7 +10666,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM20948"
   },
   {
     "pid": "FC-1337",
@@ -12250,7 +10711,8 @@
     ],
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3"
+    "mounting_hole_size": "M3",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1338",
@@ -12291,7 +10753,8 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1340",
@@ -12326,7 +10789,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1342",
@@ -12446,52 +10910,6 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "cell_count_min": 3,
-    "cell_count_max": 6,
-    "imu": "MPU6000"
-  },
-  {
-    "pid": "FC-1346",
-    "category": "flight_controllers",
-    "name": "XILO Stax Combo - F4 Flight Controller + 45A BLHeli_32 6s 4-in-1 ESC",
-    "manufacturer": "XILO",
-    "description": "The Stax Combo by XILO is a high performance F4 Flight Controller paired with a 45A 32bit 6s 4-in-1 ESC. The plug and play connection makes it easy to install and use on your favorite airframe",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/xilo-stax-combo.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/x/i/xilo-stax-combo---f4-flight-controller-_-45a-blheli_32-6s-4-in-1-esc-main-2.jpg",
-    "esc_current_a": 45,
-    "esc_firmware": "BLHeli_32",
-    "mcu_family": "F4",
-    "is_aio": true,
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "F4",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ],
-      "is_aio": true,
-      "esc_current_a": 45,
-      "esc_firmware": "BLHeli_32"
-    },
-    "size_class": "universal",
-    "tags": [
-      "F4"
-    ],
-    "firmware_targets": "Betaflight",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "MPU6000"
@@ -12703,7 +11121,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1359",
@@ -12742,7 +11161,8 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1360",
@@ -12784,21 +11204,6 @@
     "firmware_targets": "Betaflight",
     "imu": "MPU6000",
     "cell_count_min": 2,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1361",
-    "category": "gps_modules",
-    "name": "MATEKSYS SAM-M8Q GPS Module",
-    "manufacturer": "",
-    "description": "The SAM-M8Q GPS with GLONASS, Galileo, QZSS and SBAS receiver technology and built-in micro patch antenna.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/matek-ublox-sam-m8q-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/g/p/gps-sam-m8q-2.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
     "cell_count_max": 6
   },
   {
@@ -12953,7 +11358,8 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1366",
@@ -13076,111 +11482,6 @@
     "imu": "MPU6000"
   },
   {
-    "pid": "FC-1370",
-    "category": "accessories",
-    "name": "Holybro Digital Air Speed Sensor",
-    "manufacturer": "Holybro",
-    "description": "Holybro Air Speed sensor",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-air-speed-sensor.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/digital-air-speed-sensor-1.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1371",
-    "category": "accessories",
-    "name": "MATEKSYS Digital Airspeed Sensor (ASPD-4525)",
-    "manufacturer": "MatekSys",
-    "description": "The Mateksys Digital Airspeed Sensor ASPD-4525 features a ASPD-4525 sensor board, JST-GH to JST-GH 20cm silicon cable, pitot tube and a clear silicon tubing (40cm) to help monitor your wing's airspeed!",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/matek-digital-airspeed-sensor-aspd-4525.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/matek_digital_airspeed_sensor_aspd-4525_3_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1372",
-    "category": "gps_modules",
-    "name": "Foxeer M10Q-250 GPS w/ 5883 Compass",
-    "manufacturer": "Foxeer",
-    "description": "The Foxeer M10Q-250 GPS boasts a powerful 10th-generation chip and support for multiple satellite systems.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/foxeer-m10q-250-gps-w-5883-compass.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/o/foxeer-m10q-250-gps.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1373",
-    "category": "gps_modules",
-    "name": "GEPRC M10 DQ GPS Module",
-    "manufacturer": "GEPRC",
-    "description": "The GEP-M10 DQ GPS module offers a compact size, fast and stable positioning, and user-friendly operation.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/geprc-m10-dq-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-m10-dq-gps-module.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1374",
-    "category": "gps_modules",
-    "name": "Foxeer M10Q-180 GPS w/ 5883 Compass",
-    "manufacturer": "Foxeer",
-    "description": "The Foxeer M10Q-180 GPS boasts a powerful 10th-generation chip and support for multiple satellite systems,",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/foxeer-m10q-180-gps-w-5883-compass.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/o/foxeer-m10q-180-gps.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1375",
-    "category": "gps_modules",
-    "name": "HGLRC M100-5883 GPS Module",
-    "manufacturer": "HGLRC",
-    "description": "Boost your drone's navigation capabilities with the HGLRC M100-5883 GPS Module.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-m100-5883-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc-m100-5883-gps-module.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1376",
-    "category": "gps_modules",
-    "name": "GEPRC M10 GPS Module",
-    "manufacturer": "GEPRC",
-    "description": "The GEP-M10 GPS module offers a compact size, fast and stable positioning, and user-friendly operation.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/geprc-m10-gps-module.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geprc-m10-gps-module.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1377",
     "category": "flight_controllers",
     "name": "Flywoo GOKU F4 V2 AIO - F405 FC (ICM42688) + 12A 1-2S BLHeli_S ESC + ELRS - 25x25",
@@ -13227,21 +11528,6 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight"
-  },
-  {
-    "pid": "FC-1378",
-    "category": "gps_modules",
-    "name": "CubePilot Here3+ CAN GNSS GPS Module w/ iStand",
-    "manufacturer": "CubePilot",
-    "description": "The\u00a0Here3+ GPS is a cost-efficient GNSS system that supports RTK mode with positioning accuracy down to centimeter-level in an ideal environment.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-here3-can-gnss-gps-module-w-istand.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex-here3-can-gnss-gps-module-main-plus.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1379",
@@ -13463,7 +11749,8 @@
       "3 inch"
     ],
     "cell_count_min": 1,
-    "cell_count_max": 4
+    "cell_count_max": 4,
+    "imu": "MPU6000"
   },
   {
     "pid": "FC-1386",
@@ -13506,36 +11793,6 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1387",
-    "category": "gps_modules",
-    "name": "MATEKSYS M10Q-5883 GNSS & Compass",
-    "manufacturer": "MatekSys",
-    "description": "The MATEKSYS M10Q-5883 GNSS & Compass is a powerful multi-constellation GNSS module powered by u-blox SAM-M10Q-00B.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/mateksys-m10q-5883-gnss-compass.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys-m10q-5883-gnss-_-compass_1.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1388",
-    "category": "gps_modules",
-    "name": "Holybro DroneCAN H-RTK F9P Helical",
-    "manufacturer": "Holybro",
-    "description": "The DroneCAN H-RTK F9P is Holybro's latest high-precision GNSS positioning system, featuring fast convergence times and multi-band RTK support.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-dronecan-h-rtk-f9p-helical.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-dronecan-h-rtk-f9p-helical.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1389",
@@ -13742,22 +11999,8 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
-    "pid": "FC-1395",
-    "category": "gps_modules",
-    "name": "Holybro Micro M9N GPS Module w/o Case",
-    "manufacturer": "Holybro",
-    "description": "The Holybro Micro M9N GPS is a compact and high-performance GPS module utilizing the advanced multi-constellation GNSS technology powered by the u-blox M9.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-micro-m9n-gps-module-w-o-case.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-micro-m9n-gps-module-wo-case-_image-2_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1396",
@@ -13839,48 +12082,6 @@
     "imu": "ICM42688P"
   },
   {
-    "pid": "FC-1398",
-    "category": "flight_controllers",
-    "name": "Holybro Kakute F7 Mini V3 + Tekko32 F3 Mini 45A 4-in-1 ESC Combo",
-    "manufacturer": "Holybro",
-    "description": "The Mini Kakute F7 V3 Combo by Holybro comes with the Kakute F7 Mini V3, and the Tekko32 F3 45A 4-in-1 Mini ESC.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-kakute-f7-mini-v3-tekko32-f3-mini-45a-4-in-1-esc-combo.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/c/fccbd89730.jpg",
-    "mcu_family": "F7",
-    "mounting_pattern_mm": 20.0,
-    "esc_current_a": 45,
-    "mounting_hole_size": "M2",
-    "compatibility": {
-      "mounting_pattern_mm": 20.0,
-      "mounting_hole_size": "M2",
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "F7",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "3.5_inch",
-    "tags": [
-      "F7",
-      "20.0mm",
-      "3.5 inch"
-    ],
-    "firmware_targets": "Betaflight",
-    "cell_count_min": 2,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1399",
     "category": "flight_controllers",
     "name": "JHEMCU GHF13AIO F4 13A 2-4S BL_S 4-in-1 Brushless Flight Controller",
@@ -13924,7 +12125,8 @@
       "16.0mm",
       "3 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "imu": "BMI270"
   },
   {
     "pid": "FC-1400",
@@ -14178,50 +12380,6 @@
     "imu": "MPU6000"
   },
   {
-    "pid": "FC-1407",
-    "category": "flight_controllers",
-    "name": "HAKRC 35A 2-6S BLHeli_S 20x20 4-in-1 ESC",
-    "manufacturer": "HAKRC",
-    "description": "The HAKRC 35A 2-6S BLHeli_S 20x20 4-in-1 ESC provides great power and value in a 20x20mm mounting pattern.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/hakrc-35a-2-6s-blheli-s-20x20-4-in-1-esc.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/hakrc-8-bit-20-x-20mm-35a-4in1-esc.jpg",
-    "mounting_pattern_mm": 20.0,
-    "cell_count_min": 2,
-    "cell_count_max": 6,
-    "esc_current_a": 35,
-    "esc_firmware": "BLHeli_S",
-    "is_aio": true,
-    "mounting_hole_size": "M2",
-    "compatibility": {
-      "mounting_pattern_mm": 20.0,
-      "mounting_hole_size": "M2",
-      "cell_count_min": 2,
-      "cell_count_max": 6,
-      "voltage_min_v": 6.0,
-      "voltage_max_v": 26.1,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ],
-      "is_aio": true,
-      "esc_current_a": 35,
-      "esc_firmware": "BLHeli_S"
-    },
-    "size_class": "3.5_inch",
-    "tags": [
-      "20.0mm",
-      "3.5 inch"
-    ]
-  },
-  {
     "pid": "FC-1408",
     "category": "flight_controllers",
     "name": "FETtec KISS F7 Flight Controller",
@@ -14301,7 +12459,8 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "imu": "ICM42688P"
   },
   {
     "pid": "FC-1410",
@@ -14474,146 +12633,6 @@
     "cell_count_min": 2,
     "cell_count_max": 6,
     "imu": "BMI270"
-  },
-  {
-    "pid": "FC-1414",
-    "category": "flight_controllers",
-    "name": "Hobbywing XRotor Nano Combo - F4 Flight Controller & 20A 4-in-1 ESC",
-    "manufacturer": "Hobbywing",
-    "description": "This is the Hobbywing XRotor Nano-Micro 4-in-1 ESC and Flight Controller Combo.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/hobbywing-xrotor-nano-combo-f4-flight-controller-20a-4-in-1-esc.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/a/nano-combo_1.jpg",
-    "mcu_family": "F4",
-    "esc_current_a": 20,
-    "is_aio": true,
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "F4",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ],
-      "is_aio": true,
-      "esc_current_a": 20,
-      "esc_firmware": null
-    },
-    "size_class": "universal",
-    "tags": [
-      "F4"
-    ],
-    "firmware_targets": "Betaflight",
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6,
-    "imu": "MPU6000"
-  },
-  {
-    "pid": "FC-1415",
-    "category": "flight_controllers",
-    "name": "Holybro Pixhawk 6X FC Standard Set w/ M9N GPS (Model A Pins)",
-    "manufacturer": "Holybro",
-    "description": "The Holybro Pixhawk 6X FC Standard Set w/ M9N GPS is the latest update to the successful family of Pixhawk flight controllers. This is the 6X Set with a Standard Base Board and includes the M9N GPS.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6x-fc-standard-set-w-m8n-gps.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-6x-fc-standard-set-w-m8n-gps_1.jpg",
-    "mcu_family": "H7",
-    "firmware_targets": "Ardupilot/PX4",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "H7",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [
-      "H7"
-    ],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6,
-    "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1416",
-    "category": "flight_controllers",
-    "name": "Holybro Pixhawk 6C PM02 V3 + Plastic Case",
-    "manufacturer": "Holybro",
-    "description": "The Pixhawk\u00ae 6C is the latest update to the successful family of Pixhawk\u00ae flight controllers, based on the Pixhawk\u00ae FMUv6C Open Standard and Connector Standard.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-pm02-v3-plastic-case.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-6c-pm02-v3-_-plastic-case_3_.jpg",
-    "mcu_family": "H7",
-    "firmware_targets": "Ardupilot/PX4",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": "H7",
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [
-      "H7"
-    ],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6,
-    "imu": "ICM42688P"
-  },
-  {
-    "pid": "FC-1417",
-    "category": "accessories",
-    "name": "Holybro UART to USB-C Converter",
-    "manufacturer": "Holybro",
-    "description": "Introducing the Holybro UART to USB-C Converter, your essential tool for seamless connectivity between UART-enabled devices and USB-C ports.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-uart-to-usb-c-converter.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-uart-to-usb-c-converter-_image-3_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
   },
   {
     "pid": "FC-1418",
