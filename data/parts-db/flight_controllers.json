@@ -13421,41 +13421,6 @@
     "imu": "ICM42688P"
   },
   {
-    "pid": "FC-1383",
-    "category": "flight_controllers",
-    "name": "ZOHD Altus VTOL 980mm FPV Plane Kit + Power Combo",
-    "manufacturer": "ZOHD",
-    "description": "The ZOHD Altus VTOL Kit is here! This upgrade enables easy vertical take-offs and landings, enhancing your FPV experience.",
-    "link": "https://www.getfpv.com/electronics/flight-controllers/zohd-altus-vtol-980mm-fpv-plane-kit-power-combo.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/z/o/zohd-altus-vtol-980mm-fpv-plane-kit-_-power-combo-_image-1__2.jpg",
-    "compatibility": {
-      "mounting_pattern_mm": null,
-      "mounting_hole_size": null,
-      "cell_count_min": null,
-      "cell_count_max": null,
-      "voltage_min_v": null,
-      "voltage_max_v": null,
-      "mcu_family": null,
-      "imu": null,
-      "_compat_hard": [
-        "mounting_pattern_mm"
-      ],
-      "_compat_soft": [
-        "mounting_hole_size",
-        "cell_count_min",
-        "cell_count_max",
-        "voltage_min_v",
-        "voltage_max_v"
-      ]
-    },
-    "size_class": "universal",
-    "tags": [],
-    "mounting_pattern_mm": 30.5,
-    "mounting_hole_size": "M3",
-    "cell_count_min": 3,
-    "cell_count_max": 6
-  },
-  {
     "pid": "FC-1384",
     "category": "flight_controllers",
     "name": "Lumenier tinyFISH Power Stack F3 16x16mm Flight Controller + 4A 4-in-1 ESC + FrSky Rx ",
