@@ -1,3 +1,15 @@
 [build]
   publish = "site"
   command = "pip install markdown && python build.py"
+
+[[redirects]]
+  from = "/forge"
+  to = "https://forgeprole.netlify.app"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/forge/*"
+  to = "https://forgeprole.netlify.app/:splat"
+  status = 301
+  force = true
