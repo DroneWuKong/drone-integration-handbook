@@ -10,7 +10,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1001",
@@ -25,7 +27,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "polarization": "RHCP"
   },
   {
     "pid": "ANT-1002",
@@ -40,7 +43,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "polarization": "RHCP"
   },
   {
     "pid": "ANT-1003",
@@ -103,18 +107,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "gain_dbi": 10.0
-  },
-  {
-    "pid": "ANT-1007",
-    "category": "antennas",
-    "name": "Walksnail Avatar HD Pro Kit - 32GB w/ Dual Antennas",
-    "manufacturer": "Walksnail",
-    "description": "The Walksnail Avatar HD Pro Kit utilizes cutting-edge H.265 coding, ensuring top-tier 1080p FPV visuals while maintaining minimal latency.",
-    "link": "https://www.getfpv.com/fpv/antennas/walksnail-avatar-hd-pro-kit-32gb-w-dual-antennas.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-pro-kit---32gb-w-dual-antennas_1_.jpg",
-    "size_class": "universal",
-    "tags": []
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1008",
@@ -128,7 +122,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1009",
@@ -141,7 +136,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1010",
@@ -170,7 +167,9 @@
     "frequency_ghz": 5.8,
     "polarization": "Linear",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1012",
@@ -183,19 +182,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1013",
-    "category": "antennas",
-    "name": "HDZero Freestyle V2 VTX Kit",
-    "manufacturer": "HDZero",
-    "description": "The HDZero Freestyle V2 VTX Kit is a 2nd generation 5.8GHz digital video transmitter kit with a camera, VTX, and antenna that can fit most of the 3.5-inch and 5-inch drones.",
-    "link": "https://www.getfpv.com/fpv/antennas/hdzero-freestyle-v2-vtx-kit.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero-freestyle-v2-vtx-kit.jpg",
-    "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 5.8
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1014",
@@ -227,21 +216,6 @@
     "size_class": "universal",
     "tags": [],
     "gain_dbi": 9.0
-  },
-  {
-    "pid": "ANT-1016",
-    "category": "antennas",
-    "name": "ORT Helical 3-Turn 5.8GHz Antenna w/ 2 pigtails for DJI Integra Goggles - LHCP",
-    "manufacturer": "O.R.T",
-    "description": "Enhance your DJI Integra with the ORT Helical 3-Turn 5.8GHz Antenna. Compact with an\u00a0 LHCP design, it boosts signal strength and range for FPV flights.",
-    "link": "https://www.getfpv.com/fpv/antennas/ort-helical-3-turn-5-8ghz-antenna-w-2-pigtails-for-dji-integra-goggles-lhcp.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/o/r/ort-dji-integra-mod-helical-3-turn-_set-of-2-include-pigtail_---lhcp-_image-2__1.jpg",
-    "frequency_ghz": 5.8,
-    "polarization": "LHCP",
-    "antenna_type": "directional",
-    "size_class": "universal",
-    "tags": [],
-    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1017",
@@ -308,17 +282,6 @@
     "gain_dbi": 10.0
   },
   {
-    "pid": "ANT-1021",
-    "category": "antennas",
-    "name": "Lumenier SAM-M10Q GPS Module + Antenna Rear Mount",
-    "manufacturer": "Brain3D",
-    "description": "This\u00a0GPS Mount\u00a0is a 3D Printed part that secures the Lumenier SAM-M10Q GPS Module to your frame.",
-    "link": "https://www.getfpv.com/fpv/antennas/lumenier-sam-m10q-gps-module-antenna-rear-mount.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-gps-module-_image-2_.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "ANT-1022",
     "category": "antennas",
     "name": "TrueRC X-AIR 5.8GHz MK II Antenna Stubby Combo for HDZero VRX4 - RHCP",
@@ -331,7 +294,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1023",
@@ -344,7 +308,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "directional"
   },
   {
     "pid": "ANT-1024",
@@ -357,7 +323,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "directional"
   },
   {
     "pid": "ANT-1025",
@@ -402,7 +370,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1028",
@@ -415,7 +385,9 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "U.FL",
+    "polarization": "LHCP"
   },
   {
     "pid": "ANT-1029",
@@ -427,7 +399,10 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-axii-duality-antenna-for-dji-o3-air-unit.jpg",
     "frequency_ghz": 5.8,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni",
+    "polarization": "RHCP"
   },
   {
     "pid": "ANT-1030",
@@ -477,20 +452,6 @@
     "gain_dbi": 2.0
   },
   {
-    "pid": "ANT-1033",
-    "category": "antennas",
-    "name": "Lumenier Adapters + AXII Antenna Upgrade Bundle for DJI Goggles 2 - RP-SMA",
-    "manufacturer": "",
-    "description": "The Lumenier Universal Antenna Adapter Kit allows you to connect RP-SMA antennas, such as the Lumenier AXII antennas, to the DJI Goggles 2. Now you can upgrade your Goggles 2 with your favorite FPV antenna!",
-    "link": "https://www.getfpv.com/fpv/antennas/lumenier-adapters-axii-antenna-upgrade-bundle-for-dji-goggles-2-rp-sma.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-universal-antenna-adapter-kit-for-dji-goggles-2---mcx-to-rp-sma-bundle.jpg",
-    "connector": "RP-SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
     "pid": "ANT-1034",
     "category": "antennas",
     "name": "Walksnail Avatar VTX Antenna V2",
@@ -499,21 +460,10 @@
     "link": "https://www.getfpv.com/fpv/antennas/walksnail-avatar-vtx-antenna-v2.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-vtx-antenna-v2.jpg",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1035",
-    "category": "antennas",
-    "name": "Lumenier Universal Antenna Adapter Kit for DJI Goggles 2",
-    "manufacturer": "Lumenier",
-    "description": "The Lumenier Universal Antenna Adapter Kit allows you to connect an RP-SMA or SMA antenna, such as the Lumenier AXII antennas, to the DJI Goggles 2. Now you can upgrade your Goggles 2 with your favorite FPV antenna!",
-    "link": "https://www.getfpv.com/fpv/antennas/lumenier-universal-antenna-adapter-kit-for-dji-goggles-2.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-universal-antenna-adapter-kit-for-dji-goggles-2---mcx-to-rp-sma_2__1_1.jpg",
-    "size_class": "universal",
     "tags": [],
+    "connector": "U.FL",
     "antenna_type": "omni",
-    "connector": "RP-SMA",
-    "gain_dbi": 2.0
+    "polarization": "LHCP"
   },
   {
     "pid": "ANT-1036",
@@ -558,7 +508,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1039",
@@ -570,7 +521,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/r/truerc_x-air_5.8_mk_ii_hdzero_width-1000px.jpg",
     "frequency_ghz": 5.8,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1040",
@@ -584,7 +537,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1041",
@@ -597,7 +551,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1042",
@@ -609,7 +565,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/r/truerc-x-air-5.8ghz-mk-ii-antenna-_set-of-2_---dji-goggles-2_1_.jpg",
     "frequency_ghz": 5.8,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1043",
@@ -622,7 +580,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1044",
@@ -652,7 +612,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1046",
@@ -667,21 +628,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
-  },
-  {
-    "pid": "ANT-1047",
-    "category": "antennas",
-    "name": "Lumenier AXII HD Antenna Upgrade Bundle",
-    "manufacturer": "",
-    "description": "This bundle features the Lumenier AXII Patch HD 5.8GHz Antennas with other Lumenier HD upgrade options!",
-    "link": "https://www.getfpv.com/fpv/antennas/lumenier-axii-hd-antenna-upgrade-bundle.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-axii-hd-antenna-upgrade-bundle-_1_.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "patch",
-    "frequency_ghz": 5.8,
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1048",
@@ -708,7 +656,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/e/c/ec0e6ab5-9709-4759-a870-313971fd8fef.jpg",
     "frequency_ghz": 5.8,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1050",
@@ -720,7 +670,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/0/2/0212c8f8-ed0f-4a3f-8836-6a2cab2a4eae-e1653537143938.jpg",
     "frequency_ghz": 5.8,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1051",
@@ -734,7 +686,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1052",
@@ -748,7 +701,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1053",
@@ -886,17 +840,6 @@
     "gain_dbi": 2.0
   },
   {
-    "pid": "ANT-1062",
-    "category": "antennas",
-    "name": "Lumenier QAV-PRO Micro Whoop 2.5\" Cinequads Edition - TPU Antenna / XT-30 Mount",
-    "manufacturer": "Brain3D",
-    "description": "This\u00a0TPU Antenna / XT-30 Mount\u00a0is for the\u00a0Lumenier QAV-PRO Micro Whoop - Cinequads Edition.",
-    "link": "https://www.getfpv.com/fpv/antennas/lumenier-qav-pro-2-5-micro-whoop-tpu-mount-antenna-xt-30.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-qav-pro-micro-whoop-2.5-cinequads-edition---tpu-antenna---xt-30-mount-profile.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "ANT-1063",
     "category": "antennas",
     "name": "TrueRC X\u00b2-AIR 5.8GHz MK II Antenna Combo Kit w/ Singularity Antennas - LHCP",
@@ -907,7 +850,8 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1064",
@@ -936,7 +880,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "polarization": "RHCP"
   },
   {
     "pid": "ANT-1066",
@@ -950,7 +895,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "polarization": "RHCP"
   },
   {
     "pid": "ANT-1067",
@@ -996,7 +942,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1070",
@@ -1042,7 +989,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "polarization": "RHCP"
   },
   {
     "pid": "ANT-1073",
@@ -1056,7 +1004,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1074",
@@ -1071,7 +1020,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1075",
@@ -1086,7 +1036,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1076",
@@ -1101,7 +1052,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1077",
@@ -1160,7 +1112,10 @@
     "link": "https://www.getfpv.com/fpv/antennas/tbs-crossfire-stock-tx-v2-antenna.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-crossfire-stock-tx-v2-antenna.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni",
+    "polarization": "Linear"
   },
   {
     "pid": "ANT-1081",
@@ -1172,7 +1127,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/m/immersionrc-lzr-mini-5.8ghz-headset-diversity-antennas-_rchp_-1.jpg",
     "frequency_ghz": 5.8,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1082",
@@ -1185,7 +1142,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1083",
@@ -1200,7 +1159,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1084",
@@ -1215,7 +1175,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1085",
@@ -1230,7 +1191,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1086",
@@ -1242,7 +1204,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/r/truerc-x-air1_2.jpg",
     "frequency_ghz": 1.3,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1087",
@@ -1256,7 +1219,8 @@
     "tags": [],
     "antenna_type": "omni",
     "connector": "SMA",
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "polarization": "Linear"
   },
   {
     "pid": "ANT-1088",
@@ -1268,34 +1232,6 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_0318.jpg",
     "frequency_ghz": 0.915,
     "connector": "U.FL",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1089",
-    "category": "antennas",
-    "name": "XILO Phreakstyle Antenna Mount - SMA w/ Immortal-T - Black ",
-    "manufacturer": "Brain3D",
-    "description": "An SMA w/ Immortal-T antenna mount for the XILO Phreakstyle Frame. Printed out of durable TPU.",
-    "link": "https://www.getfpv.com/fpv/antennas/xilo-phreakstyle-antenna-mount-sma-w-immortal-t-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_0366.jpg",
-    "connector": "SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1090",
-    "category": "antennas",
-    "name": "XILO Phreakstyle Antenna Mount - SMA/RX - Black",
-    "manufacturer": "Brain3D",
-    "description": "An SMA/RX antenna mount for the XILO Phreakstyle Frame. Printed out of durable TPU.",
-    "link": "https://www.getfpv.com/fpv/antennas/xilo-phreakstyle-antenna-mount-sma-rx-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_0365.jpg",
-    "connector": "SMA",
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
@@ -1328,7 +1264,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1093",
@@ -1341,7 +1279,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1094",
@@ -1354,7 +1294,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1095",
@@ -1368,7 +1310,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1096",
@@ -1383,7 +1326,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1097",
@@ -1398,7 +1342,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1098",
@@ -1428,7 +1373,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1100",
@@ -1443,7 +1389,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1101",
@@ -1570,7 +1517,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1109",
@@ -1583,7 +1531,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1110",
@@ -1596,7 +1546,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1111",
@@ -1611,7 +1563,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1112",
@@ -1642,7 +1595,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1114",
@@ -1655,7 +1609,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1115",
@@ -1700,7 +1656,9 @@
     "frequency_ghz": 1.3,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1118",
@@ -1713,33 +1671,9 @@
     "frequency_ghz": 1.3,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1119",
-    "category": "antennas",
-    "name": "Lumenier QAV-R 2 Antenna Mount - SMA, Immortal-T - Black",
-    "manufacturer": "Brain3D",
-    "description": "A high-quality 3d printed antenna mount by Brain3D made for the QAV-R 2. Fits any SMA antenna in addition to fitting an Immortal-T style antenna.",
-    "link": "https://www.getfpv.com/fpv/antennas/lumenier-qav-r-2-antenna-mount-sma-immortal-t-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_2012.jpg",
-    "connector": "SMA",
-    "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1120",
-    "category": "antennas",
-    "name": "TBS 1.2GHz VRX Notch Filter (868/915 MHz)",
-    "manufacturer": "Team BlackSheep",
-    "description": "Getting fuzzy video on your 1.2-1.3GHz receiver when using crossfire? This filter improves video reception for 1.2-1.3GHz video receivers in combination with TBS Crossfire.",
-    "link": "https://www.getfpv.com/fpv/antennas/tbs-1-2ghz-vrx-notch-filter-868-915-mhz.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/o/notch-1.2-tbs.jpg",
-    "frequency_ghz": 1.2,
-    "size_class": "universal",
-    "tags": []
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1121",
@@ -1754,7 +1688,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1122",
@@ -1769,7 +1704,8 @@
     "tags": [],
     "antenna_type": "directional",
     "polarization": "Linear",
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1123",
@@ -1784,7 +1720,8 @@
     "tags": [],
     "antenna_type": "directional",
     "polarization": "Linear",
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1124",
@@ -1796,7 +1733,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/x/f/xf-race-ant-915.jpg",
     "frequency_ghz": 0.915,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "polarization": "Linear"
   },
   {
     "pid": "ANT-1125",
@@ -1809,7 +1747,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1126",
@@ -1837,7 +1777,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/sky-hammer.jpg",
     "frequency_ghz": 1.3,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1128",
@@ -1850,7 +1792,8 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1129",
@@ -1881,7 +1824,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1131",
@@ -1898,22 +1842,6 @@
     "antenna_type": "omni",
     "frequency_ghz": 5.8,
     "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1132",
-    "category": "antennas",
-    "name": "VAS ION Pro 5.8GHz SMA Antenna Long Cable (RHCP)",
-    "manufacturer": "Video Aerial Systems",
-    "description": "The Ion is one of the highest gain, non-phased/stacked, omnidirectional 5.8GHz antennas on the market today. Whether used as a transmit or receiver antenna, the Ion will provide excellent video.",
-    "link": "https://www.getfpv.com/fpv/antennas/vas-ion-pro-5-8ghz-sma-antenna-long-cable-rhcp.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/v/a/vas-ion-pro-5.8ghz-sma-long-antenna-_rhcp_.jpg",
-    "frequency_ghz": 5.8,
-    "polarization": "RHCP",
-    "connector": "SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "directional",
-    "gain_dbi": 10.0
   },
   {
     "pid": "ANT-1133",
@@ -1937,7 +1865,10 @@
     "link": "https://www.getfpv.com/fpv/antennas/walksnail-avatar-vtx-antenna-set-of-2.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-antennas-main.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "U.FL",
+    "antenna_type": "omni",
+    "polarization": "LHCP"
   },
   {
     "pid": "ANT-1135",
@@ -1988,20 +1919,6 @@
     "gain_dbi": 2.0
   },
   {
-    "pid": "ANT-1138",
-    "category": "antennas",
-    "name": "SMA to U.FL Cable - 25mm",
-    "manufacturer": "General",
-    "description": "One 25mm SMA to UFL RF adapter cable.",
-    "link": "https://www.getfpv.com/fpv/antennas/sma-to-ufl-cable-25mm.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/m/sma-to-ufl-cable-25mm.jpg",
-    "connector": "SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
     "pid": "ANT-1139",
     "category": "antennas",
     "name": "Lumenier Double AXII 2 Long Range Right-Angle 5.8GHz Antenna (LHCP)",
@@ -2014,7 +1931,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1140",
@@ -2060,7 +1978,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1143",
@@ -2106,7 +2025,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1146",
@@ -2121,7 +2041,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1147",
@@ -2197,7 +2118,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1152",
@@ -2224,7 +2147,10 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/a/caddx-polar-5.8ghz-replacement-antenna-_10.5cm_-main.jpg",
     "frequency_ghz": 5.8,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "U.FL",
+    "antenna_type": "omni",
+    "polarization": "LHCP"
   },
   {
     "pid": "ANT-1154",
@@ -2254,7 +2180,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1156",
@@ -2301,7 +2228,8 @@
     "size_class": "universal",
     "tags": [],
     "polarization": "Linear",
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1159",
@@ -2312,7 +2240,10 @@
     "link": "https://www.getfpv.com/fpv/antennas/walksnail-redbird-antenna-v2-set-of-2-avatar-goggles-x.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-redbird-antenna-v2-_set-of-2_---avatar-goggles-x.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "U.FL",
+    "antenna_type": "omni",
+    "polarization": "LHCP"
   },
   {
     "pid": "ANT-1160",
@@ -2340,7 +2271,9 @@
     "frequency_ghz": 2.4,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1162",
@@ -2369,7 +2302,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1164",
@@ -2383,7 +2318,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni",
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1165",
@@ -2400,18 +2336,6 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "omni"
-  },
-  {
-    "pid": "ANT-1166",
-    "category": "antennas",
-    "name": "IBCrazy 433 MHz/1.3 GHz Notch Filter",
-    "manufacturer": "Video Aerial Systems",
-    "description": "Notch filters are designed to knock out specific bands of radio interference.",
-    "link": "https://www.getfpv.com/fpv/antennas/ibcrazy-433-mhz-1-3-ghz-notch-filter.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/4/3/433_1.3-notch-filter-b-e1556638143225-700x460.jpg",
-    "frequency_ghz": 0.433,
-    "size_class": "universal",
-    "tags": []
   },
   {
     "pid": "ANT-1167",
@@ -2445,20 +2369,6 @@
     "gain_dbi": 2.0
   },
   {
-    "pid": "ANT-1169",
-    "category": "antennas",
-    "name": "Lumenier Adapters + AXII Antenna Upgrade Bundle for DJI Goggles 2 - SMA",
-    "manufacturer": "",
-    "description": "The Lumenier Universal Antenna Adapter Kit allows you to connect SMA antennas, such as the Lumenier AXII antennas, to the DJI Goggles 2. Now you can upgrade your Goggles 2 with your favorite FPV antenna!",
-    "link": "https://www.getfpv.com/fpv/antennas/lumenier-adapters-axii-antenna-upgrade-bundle-for-dji-goggles-2-sma.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-universal-antenna-adapter-kit-for-dji-goggles-2---mcx-to-sma-bundle.jpg",
-    "connector": "SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
     "pid": "ANT-1170",
     "category": "antennas",
     "name": "DJI O4 Air Unit Pro Antenna",
@@ -2469,36 +2379,9 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "directional",
-    "gain_dbi": 10.0
-  },
-  {
-    "pid": "ANT-1171",
-    "category": "antennas",
-    "name": "90\u00b0 MMCX Male to SMA Female Pigtail Extension Cable - 80mm",
-    "manufacturer": "FPVElite",
-    "description": "The 90\u00b0 MMCX to SMA Pigtail Extension Cable offers high-quality construction and reliable performance.",
-    "link": "https://www.getfpv.com/fpv/antennas/90-mmcx-male-to-sma-female-pigtail-extension-cable-80mm.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/9/0/90_-mmcx-to-sma-pigtail---80mm-_image-1_.jpg",
-    "connector": "SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1172",
-    "category": "antennas",
-    "name": "ORT Helical 6-Turn 5.8GHz Antenna w/ 2 pigtails for DJI Integra Goggles - LHCP",
-    "manufacturer": "O.R.T",
-    "description": "Enhance your DJI Integra with the ORT Helical 6-Turn 5.8GHz Antenna. Compact with an\u00a0 LHCP design, it boosts signal strength and range for FPV flights.",
-    "link": "https://www.getfpv.com/fpv/antennas/ort-helical-6-turn-5-8ghz-antenna-w-2-pigtails-for-dji-integra-goggles-lhcp.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/o/r/ort-dji-integra-mod-helical-6-turn-_set-of-2-include-pigtail_-_image-1__2.jpg",
-    "frequency_ghz": 5.8,
-    "polarization": "LHCP",
-    "antenna_type": "directional",
-    "size_class": "universal",
-    "tags": [],
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "MMCX",
+    "polarization": "LHCP"
   },
   {
     "pid": "ANT-1173",
@@ -2526,18 +2409,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/v/a/vas-walksnail-vrx-crosshair-xtreme-mini-mod.jpg",
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1175",
-    "category": "antennas",
-    "name": "DJI HD FPV System AXII Antenna Upgrade Bundle",
-    "manufacturer": "DJI",
-    "description": "Upgrade your stock DJI HD FPV System with the Lumenier AXII Antenna Upgrade Bundle. Up to a 50% increase in performance over stock antennas!",
-    "link": "https://www.getfpv.com/fpv/antennas/dji-hd-fpv-system-axii-antenna-upgrade-bundle.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-axii-antenna-upgrade-hd.jpg",
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1176",
@@ -2554,17 +2428,6 @@
     "tags": [],
     "antenna_type": "omni",
     "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1177",
-    "category": "antennas",
-    "name": "Lumenier QAV-PRO Nano Whoop 2\" Cinequads Edition - Antenna Mount",
-    "manufacturer": "Lumenier",
-    "description": "This Antenna Mount is designed to secure the O3 antenna to the Lumenier QAV-PRO Nano frame.",
-    "link": "https://www.getfpv.com/fpv/antennas/lumenier-qav-pro-nano-whoop-2-cinequads-edition-antenna-mount.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-qav-pro-nano-antenna-mount.jpg",
-    "size_class": "universal",
-    "tags": []
   },
   {
     "pid": "ANT-1178",
@@ -2589,18 +2452,9 @@
     "link": "https://www.getfpv.com/fpv/antennas/dji-o3-air-unit-antenna.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/3/c3c9fb20-f2af-4c23-9b83-55675968e86f.jpg",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1180",
-    "category": "antennas",
-    "name": "Brain3D Five33 Tiny Trainer AXII 2 Antenna Mount",
-    "manufacturer": "Brain3D",
-    "description": "This AXII 2 Antenna Mount is a replacement or spare for the Five33 Tiny Trainer.",
-    "link": "https://www.getfpv.com/fpv/antennas/brain3d-five33-tiny-trainer-axii-2-antenna-mount.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/r/brain3d-five33-tiny-trainer-axii-2-antenna-mount-_2_.jpg",
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "MMCX",
+    "polarization": "LHCP"
   },
   {
     "pid": "ANT-1181",
@@ -2657,7 +2511,8 @@
     "size_class": "universal",
     "tags": [],
     "frequency_ghz": 5.8,
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1185",
@@ -2672,7 +2527,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "polarization": "RHCP"
   },
   {
     "pid": "ANT-1186",
@@ -2777,18 +2633,8 @@
     "polarization": "RHCP",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 0.915
-  },
-  {
-    "pid": "ANT-1193",
-    "category": "antennas",
-    "name": "Shen Drones Thicc 2.0/2.1 Cinelifter 3D Printed Parts (Set of 8)",
-    "manufacturer": "Shen Drones",
-    "description": "These\u00a0Shen Drones 3D Printed parts\u00a0are for the Thicc 2.0/2.1 Cinelifter.",
-    "link": "https://www.getfpv.com/fpv/antennas/shen-drones-thicc-2-0-2-1-cinelifter-3d-printed-parts-set-of-8.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/h/shen-drones-thicc-2.0-2.1-cinelifter-3d-printed-parts-_set-of-8_-main.jpg",
-    "size_class": "universal",
-    "tags": []
+    "frequency_ghz": 0.915,
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1194",
@@ -2816,7 +2662,8 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1196",
@@ -3058,7 +2905,10 @@
     "link": "https://www.getfpv.com/fpv/antennas/caddx-vista-antenna-15cm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/a/caddx-vista-15cm-antenna.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "U.FL",
+    "antenna_type": "omni",
+    "polarization": "LHCP"
   },
   {
     "pid": "ANT-1212",
@@ -3072,7 +2922,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "polarization": "RHCP"
   },
   {
     "pid": "ANT-1213",
@@ -3180,7 +3031,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/x/axii-hd-main.jpg",
     "frequency_ghz": 5.8,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1220",
@@ -3194,7 +3047,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1221",
@@ -3220,7 +3074,10 @@
     "link": "https://www.getfpv.com/fpv/antennas/caddx-vista-antenna-8cm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/n/antenna-for-caddx-vista.jpg",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "U.FL",
+    "antenna_type": "omni",
+    "polarization": "LHCP"
   },
   {
     "pid": "ANT-1223",
@@ -3234,7 +3091,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1224",
@@ -3281,17 +3139,6 @@
     "gain_dbi": 9.0
   },
   {
-    "pid": "ANT-1227",
-    "category": "antennas",
-    "name": "DJI HD FPV System Long Range AXII Antenna Upgrade Bundle",
-    "manufacturer": "DJI",
-    "description": "Upgrade your stock DJI HD FPV System with the Lumenier Long Range AXII Antenna Upgrade Bundle. Up to a 50% increase in performance over stock antennas!",
-    "link": "https://www.getfpv.com/fpv/antennas/dji-hd-fpv-system-long-range-axii-antenna-upgrade-bundle.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-long-range-hd-bundle-axii-duo.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "ANT-1228",
     "category": "antennas",
     "name": "Lumenier AXII 2 Right-Angle 5.8GHz Antenna (RHCP)",
@@ -3302,7 +3149,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1229",
@@ -3364,7 +3213,8 @@
     "size_class": "universal",
     "tags": [],
     "polarization": "Linear",
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1233",
@@ -3376,7 +3226,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/8/6/868_915_longshot_1024x1024_2x.jpg",
     "frequency_ghz": 0.915,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1234",
@@ -3405,7 +3257,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1236",
@@ -3423,17 +3276,6 @@
     "gain_dbi": 2.0
   },
   {
-    "pid": "ANT-1237",
-    "category": "antennas",
-    "name": "XILO Phreakstyle Antenna Mount - AXII/RX - Black",
-    "manufacturer": "Brain3D",
-    "description": "An AXII/RX antenna mount for the XILO Phreakstyle Frame. Printed out of durable TPU.",
-    "link": "https://www.getfpv.com/fpv/antennas/xilo-phreakstyle-antenna-mount-axii-rx-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_0364_1.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
     "pid": "ANT-1238",
     "category": "antennas",
     "name": "Lumenier AXII 2 Right-Angle Stubby 5.8GHz Antenna - SKITZO Hydro Dip SE (LHCP)",
@@ -3446,7 +3288,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1239",
@@ -3475,7 +3318,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1241",
@@ -3535,7 +3380,8 @@
     "frequency_ghz": 2.4,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1245",
@@ -3643,7 +3489,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/h/lhcp-caps.jpg",
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1252",
@@ -3655,7 +3503,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/h/rhcp-caps.jpg",
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1253",
@@ -3699,7 +3549,8 @@
     "polarization": "LHCP",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 2.4
+    "frequency_ghz": 2.4,
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1256",
@@ -3791,7 +3642,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1262",
@@ -3806,7 +3658,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1263",
@@ -3856,20 +3709,6 @@
     "gain_dbi": 2.0
   },
   {
-    "pid": "ANT-1266",
-    "category": "antennas",
-    "name": "DJI FPV Air Unit MMCX Straight to RP-SMA Cable (Pair)",
-    "manufacturer": "DJI",
-    "description": "MMCX to SMA adapter cable connects the DJI FPV Air Unit with the DJI FPV Air Unit Antenna (SMA)",
-    "link": "https://www.getfpv.com/fpv/antennas/dji-fpv-air-unit-mmcx-straight-to-rp-sma-cable-pair.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/2/w/2w4a9985-1_1.jpg",
-    "connector": "RP-SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
     "pid": "ANT-1267",
     "category": "antennas",
     "name": "TrueRC MX\u00b2-AIR 5.8GHz Antenna - RHCP",
@@ -3880,7 +3719,8 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1268",
@@ -3927,7 +3767,8 @@
     "antenna_type": "stubby",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1271",
@@ -3940,7 +3781,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1272",
@@ -3991,31 +3834,6 @@
     "gain_dbi": 2.0
   },
   {
-    "pid": "ANT-1275",
-    "category": "antennas",
-    "name": "Lumenier QAV-R 2 Antenna Mount - AXII - Black",
-    "manufacturer": "Brain3D",
-    "description": "This is a high-quality 3D-printed antenna mount for the QAV-R 2 frame.",
-    "link": "https://www.getfpv.com/fpv/antennas/lumenier-qav-r-2-antenna-mount-axii-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-qav-r-2-antenna-mount---axii---black.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1276",
-    "category": "antennas",
-    "name": "Lumenier QAV-R 2 Antenna Mount - SMA - Black",
-    "manufacturer": "Brain3D",
-    "description": "A high-quality 3d printed antenna mount by Brain3D made for the QAV-R 2. Fits any SMA antenna.",
-    "link": "https://www.getfpv.com/fpv/antennas/lumenier-qav-r-2-antenna-mount-sma-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_2010.jpg",
-    "connector": "SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
     "pid": "ANT-1277",
     "category": "antennas",
     "name": "Lumenier Micro AXII Straight MMCX 5.8GHz Antenna (LHCP)",
@@ -4058,7 +3876,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1280",
@@ -4138,57 +3958,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1286",
-    "category": "antennas",
-    "name": "XILO PHREAK Antenna Mount - AXII / Black",
-    "manufacturer": "Brain3D",
-    "description": "A high-quality 3d printed antenna mount by Brain3D made for the XILO PHREAK.",
-    "link": "https://www.getfpv.com/fpv/antennas/xilo-phreak-antenna-mount-axii-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/9/8/9828_front.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1287",
-    "category": "antennas",
-    "name": "XILO PHREAK Antenna Mount - SMA, Immortal-T / Black",
-    "manufacturer": "Brain3D",
-    "description": "A high-quality 3d printed antenna mount by Brain3D made for the XILO PHREAK.",
-    "link": "https://www.getfpv.com/fpv/antennas/xilo-phreak-antenna-mount-sma-t-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/9/8/9831_front.jpg",
-    "connector": "SMA",
-    "size_class": "universal",
     "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1288",
-    "category": "antennas",
-    "name": "XILO PHREAK Antenna Mount - Micro AXII / Black",
-    "manufacturer": "Brain3D",
-    "description": "A high-quality 3d printed antenna mount by Brain3D made for the XILO PHREAK.",
-    "link": "https://www.getfpv.com/fpv/antennas/xilo-phreak-antenna-mount-micro-axii-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/9/8/9829_front.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1289",
-    "category": "antennas",
-    "name": "XILO PHREAK Antenna Mount - SMA / Black",
-    "manufacturer": "Brain3D",
-    "description": "A high-quality 3d printed antenna mount by Brain3D made for the XILO PHREAK.",
-    "link": "https://www.getfpv.com/fpv/antennas/xilo-phreak-antenna-mount-sma-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/9/8/9830_front.jpg",
     "connector": "SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1290",
@@ -4242,7 +4014,8 @@
     "frequency_ghz": 2.4,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1294",
@@ -4272,7 +4045,8 @@
     "antenna_type": "patch",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1296",
@@ -4285,7 +4059,8 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1297",
@@ -4298,7 +4073,8 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1298",
@@ -4311,7 +4087,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1299",
@@ -4324,7 +4102,9 @@
     "frequency_ghz": 2.4,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1300",
@@ -4339,7 +4119,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "patch",
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1301",
@@ -4512,7 +4293,9 @@
     "frequency_ghz": 1.3,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1312",
@@ -4525,7 +4308,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1313",
@@ -4542,81 +4327,6 @@
     "size_class": "universal",
     "tags": [],
     "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1314",
-    "category": "antennas",
-    "name": "Brain3D Rooster Antenna Mount - SMA - Black",
-    "manufacturer": "Brain3D",
-    "description": "Brain3D offers an SMA Mount specifically for the Armattan Rooster frame.",
-    "link": "https://www.getfpv.com/fpv/antennas/brain3d-rooster-antenna-mount-sma-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/o/roostersma.jpg",
-    "connector": "SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1315",
-    "category": "antennas",
-    "name": "Brain3D Remix Antenna Mount - SMA - Black",
-    "manufacturer": "Brain3D",
-    "description": "Brain3D offers an SMA Mount specifically for the Ummagawd Remix frame.",
-    "link": "https://www.getfpv.com/fpv/antennas/brain3d-remix-antenna-mount-sma-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/e/remixsma_1.jpg",
-    "connector": "SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1316",
-    "category": "antennas",
-    "name": "Brain3D Nova Antenna Mount - SMA - Black",
-    "manufacturer": "Brain3D",
-    "description": "Brain3D offers an SMA Mount specifically for the Skitzo Nova frame.",
-    "link": "https://www.getfpv.com/fpv/antennas/brain-3d-nova-antenna-mount-sma-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/o/novasma1.jpg",
-    "connector": "SMA",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1317",
-    "category": "antennas",
-    "name": "Brain3D Nova Antenna Mount - AXII - Black",
-    "manufacturer": "Brain3D",
-    "description": "Brain3D offers an AXII Mount specifically for the Skitzo Nova frame.",
-    "link": "https://www.getfpv.com/fpv/antennas/brain3d-nova-antenna-mount-axii-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/o/novaaxii2_1.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1318",
-    "category": "antennas",
-    "name": "Brain3D Remix Antenna Mount - AXII - Black",
-    "manufacturer": "Brain3D",
-    "description": "Brain3D offers an AXII Mount specifically for the Ummagawd Remix frame.",
-    "link": "https://www.getfpv.com/fpv/antennas/brain3d-remix-antenna-mount-axii-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/o/nova-axii-1.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1319",
-    "category": "antennas",
-    "name": "Brain3D Rooster Antenna Mount - AXII - Black",
-    "manufacturer": "Brain3D",
-    "description": "Brain3D offers an Axii Mount specifically for the Armattan Rooster frame.",
-    "link": "https://www.getfpv.com/fpv/antennas/brain3d-rooster-antenna-mount-axii-black.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/n/o/novaaxii222_2_.jpg",
-    "size_class": "universal",
-    "tags": []
   },
   {
     "pid": "ANT-1320",
@@ -4676,7 +4386,8 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/x/f/xf-868-antenna.jpg",
     "frequency_ghz": 0.868,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "polarization": "Linear"
   },
   {
     "pid": "ANT-1324",
@@ -4689,7 +4400,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1325",
@@ -4702,7 +4415,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1326",
@@ -4715,7 +4430,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1327",
@@ -4734,20 +4451,6 @@
     "gain_dbi": 2.0
   },
   {
-    "pid": "ANT-1328",
-    "category": "antennas",
-    "name": "AXII Antenna 3D Printed Mount",
-    "manufacturer": "Great 3D",
-    "description": "An antenna mount for the MMCX and UFL AXII Antennas.",
-    "link": "https://www.getfpv.com/fpv/antennas/axii-antenna-3d-printed-mount.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/x/axii-mount.jpg",
-    "size_class": "universal",
-    "tags": [],
-    "antenna_type": "omni",
-    "connector": "MMCX",
-    "gain_dbi": 2.0
-  },
-  {
     "pid": "ANT-1329",
     "category": "antennas",
     "name": "VAS UHF 900 MHz Semi-rigid Dipole Antenna",
@@ -4760,7 +4463,8 @@
     "size_class": "universal",
     "tags": [],
     "polarization": "Linear",
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1330",
@@ -4784,7 +4488,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/v/a/vas-diamond-433.jpg",
     "frequency_ghz": 0.433,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1332",
@@ -4799,20 +4505,6 @@
     "tags": [],
     "antenna_type": "omni",
     "frequency_ghz": 5.8,
-    "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1333",
-    "category": "antennas",
-    "name": "G-Force SMA Stubby VTX Mount",
-    "manufacturer": "G-Force Designs",
-    "description": "G-Force has designed a line of functional antenna mounts for many different flying styles and frames.",
-    "link": "https://www.getfpv.com/fpv/antennas/g-force-sma-stubby-vtx-mount.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/e/geforce-stubby-mount.jpg",
-    "connector": "SMA",
-    "antenna_type": "stubby",
-    "size_class": "universal",
-    "tags": [],
     "gain_dbi": 2.0
   },
   {
@@ -4873,7 +4565,8 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1338",
@@ -4884,21 +4577,10 @@
     "link": "https://www.getfpv.com/fpv/antennas/tbs-crossfire-immortal-t-antenna.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-immortal-antenna.jpg",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1339",
-    "category": "antennas",
-    "name": "SMA to U.FL Cable 50mm",
-    "manufacturer": "General",
-    "description": "One 50mm SMA to UFL RF adapter cable.",
-    "link": "https://www.getfpv.com/fpv/antennas/sma-to-ufl-cable-50mm.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/m/sma-to-ufl-cable-50mm_1.jpg",
-    "connector": "SMA",
-    "size_class": "universal",
     "tags": [],
+    "connector": "SMA",
     "antenna_type": "omni",
-    "gain_dbi": 2.0
+    "polarization": "Linear"
   },
   {
     "pid": "ANT-1340",
@@ -4975,7 +4657,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1345",
@@ -4988,7 +4672,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1346",
@@ -5048,7 +4734,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/v/a/vas-hd-linear-receiver-array-combo_1_1.jpg",
     "size_class": "universal",
     "tags": [],
-    "frequency_ghz": 5.0
+    "frequency_ghz": 5.0,
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1350",
@@ -5063,7 +4751,8 @@
     "tags": [],
     "antenna_type": "patch",
     "frequency_ghz": 5.0,
-    "gain_dbi": 9.0
+    "gain_dbi": 9.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1351",
@@ -5208,7 +4897,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-axii-replacement-caps-rhcp-2pcs.jpg",
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1361",
@@ -5369,7 +5060,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1372",
@@ -5397,21 +5090,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1374",
-    "category": "antennas",
-    "name": "ImmersionRC Replacement SpiroNet RPSMA Omni Covers",
-    "manufacturer": "ImmersionRC",
-    "description": "5 Pack of replacement covers for your antennas.",
-    "link": "https://www.getfpv.com/fpv/antennas/immersionrc-replacement-spironet-rpsma-omni-covers.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/e/replacement-spironet-rpsma-omni-covers_1.jpg",
-    "connector": "RP-SMA",
-    "antenna_type": "omni",
-    "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1375",
@@ -5426,7 +5107,8 @@
     "antenna_type": "directional",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1376",
@@ -5470,7 +5152,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/2/-/2-4-airscrew_1.jpg",
     "frequency_ghz": 2.4,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1379",
@@ -5496,18 +5180,8 @@
     "size_class": "universal",
     "tags": [],
     "polarization": "RHCP",
-    "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1381",
-    "category": "antennas",
-    "name": "36 Dragonlink Rx Antenna Cable",
-    "manufacturer": "",
-    "description": "36\" Dragonlink Rx Antenna Cable",
-    "link": "https://www.getfpv.com/fpv/antennas/36-dragonlink-rx-antenna-cable.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/a/n/antenna-lead-1000x1000_3_1.jpg",
-    "size_class": "universal",
-    "tags": []
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1382",
@@ -5521,19 +5195,9 @@
     "polarization": "RHCP",
     "gain_dbi": 13.0,
     "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1383",
-    "category": "antennas",
-    "name": "IBCrazy 1.3 GHz Pass/2.4 GHz Stop Notch Filter",
-    "manufacturer": "Video Aerial Systems",
-    "description": "The updated IBCrazy (VAS) 1.3/2.4 GHz Notch Filter is a new innovative product from Alex Greve (IBCrazy). This notch filter allows you to fly 2.4GHz control with 1.3GHz video. Place it on your video transmitter to greatly increase the range of your 2.4GHz control system.",
-    "link": "https://www.getfpv.com/fpv/antennas/ibcrazy-1-3-ghz-pass-2-4-ghz-stop-notch-filter.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/v/i/videoaerialsystems-1.3-2.4ghz-notch-filter-main-1000x1000.jpg",
-    "frequency_ghz": 1.3,
-    "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1384",
@@ -5547,7 +5211,8 @@
     "antenna_type": "directional",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1385",
@@ -5564,17 +5229,6 @@
     "tags": [],
     "antenna_type": "omni",
     "gain_dbi": 2.0
-  },
-  {
-    "pid": "ANT-1386",
-    "category": "antennas",
-    "name": "Walksnail Avatar HD Nano Kit V3",
-    "manufacturer": "Walksnail",
-    "description": "The\u00a0Walksnail Avatar HD Nano Kit V3\u00a0features 32GB of built-in storage, and supports 1080P/60fps, with a 4:3 native sensor that provides smooth and stunning images.",
-    "link": "https://www.getfpv.com/fpv/antennas/walksnail-avatar-nano-kit-v3.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-nano-kit-v3.jpg",
-    "size_class": "universal",
-    "tags": []
   },
   {
     "pid": "ANT-1387",
@@ -5669,7 +5323,8 @@
     "antenna_type": "directional",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1393",
@@ -5698,7 +5353,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1395",
@@ -5805,7 +5462,8 @@
     "size_class": "universal",
     "tags": [],
     "polarization": "RHCP",
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1402",
@@ -5820,7 +5478,8 @@
     "antenna_type": "omni",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1403",
@@ -5834,7 +5493,8 @@
     "antenna_type": "omni",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1404",
@@ -5844,17 +5504,6 @@
     "description": "These antennas ensure a reliable connection and robust link performance for your FrSky Horus X12S.",
     "link": "https://www.getfpv.com/fpv/antennas/frsky-horus-x12s-replacement-antenna.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/r/frsky-horus-x12s-replacemet-antenna.jpg",
-    "size_class": "universal",
-    "tags": []
-  },
-  {
-    "pid": "ANT-1405",
-    "category": "antennas",
-    "name": "QAV-SKITZO Horizontal Antenna Mount",
-    "manufacturer": "Lumenier",
-    "description": "Replacement QAV-SKITZO Dark Matter FPV Freestyle Quadcopter Horizontal Antenna Mount.",
-    "link": "https://www.getfpv.com/fpv/antennas/qav-skitzo-horizontal-antenna-mount.html",
-    "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skitzo-horizontal-antenna-mount.jpg",
     "size_class": "universal",
     "tags": []
   },
@@ -5935,7 +5584,8 @@
     "size_class": "universal",
     "tags": [],
     "antenna_type": "dipole",
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1411",
@@ -5950,7 +5600,8 @@
     "antenna_type": "directional",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1412",
@@ -5977,7 +5628,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-axii-antenna-replacement-cap-lhcp.jpg",
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1414",
@@ -6006,7 +5659,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1416",
@@ -6018,7 +5673,9 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/5/_/5.8-ghz-bluebeam-ultra-antenna-6.jpg",
     "frequency_ghz": 5.8,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1417",
@@ -6032,7 +5689,9 @@
     "polarization": "LHCP",
     "gain_dbi": 13.0,
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "patch"
   },
   {
     "pid": "ANT-1418",
@@ -6045,7 +5704,9 @@
     "frequency_ghz": 5.8,
     "polarization": "RHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1419",
@@ -6181,7 +5842,9 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "connector": "SMA",
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1428",
@@ -6195,7 +5858,8 @@
     "antenna_type": "omni",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 2.0
+    "gain_dbi": 2.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1429",
@@ -6208,7 +5872,8 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1430",
@@ -6268,7 +5933,8 @@
     "frequency_ghz": 5.8,
     "polarization": "LHCP",
     "size_class": "universal",
-    "tags": []
+    "tags": [],
+    "antenna_type": "omni"
   },
   {
     "pid": "ANT-1434",
@@ -6313,7 +5979,8 @@
     "antenna_type": "directional",
     "size_class": "universal",
     "tags": [],
-    "gain_dbi": 10.0
+    "gain_dbi": 10.0,
+    "connector": "SMA"
   },
   {
     "pid": "ANT-1437",
