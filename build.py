@@ -23,9 +23,25 @@ CHAPTERS = [
     ("field/blackbox.md", 10, "Blackbox Logs"),
     ("field/pid-tuning.md", 11, "PID Tuning for People Who Fly"),
     ("field/troubleshooting.md", 12, "When Things Go Wrong"),
+    ("field/ghost-config.md", 16, "Ghost RC Link — Operator Configuration"),
+    ("field/unsolved-problems.md", 17, "Unsolved Problems in Mesh & Swarm Ops"),
     ("integration/companion.md", 13, "Adding a Companion Computer"),
     ("integration/mesh-radios.md", 14, "Mesh Radios for Multi-Vehicle"),
     ("integration/tak.md", 15, "TAK Integration"),
+]
+
+COMPONENTS = [
+    ("components/flight-controllers.md", 601, "Flight Controllers"),
+    ("components/escs.md", 602, "Electronic Speed Controllers"),
+    ("components/motors.md", 603, "Motors"),
+    ("components/batteries.md", 604, "Batteries & Power Systems"),
+    ("components/companion-computers.md", 605, "Companion Computers"),
+    ("components/comms-datalinks.md", 606, "EW-Resilient Communications"),
+    ("components/thermal-cameras.md", 607, "Thermal / IR Cameras"),
+    ("components/counter-uas.md", 608, "Counter-UAS"),
+    ("components/propulsion-non-electric.md", 609, "Non-Electric Propulsion"),
+    ("components/orqa-ecosystem.md", 610, "Orqa Ecosystem"),
+    ("components/platforms-global.md", 611, "Non-US Platforms"),
 ]
 
 PLATFORMS = [
@@ -75,7 +91,7 @@ PLATFORM_PARTS = [
 PARTS = [
     ("Part 1 — RF Fundamentals", [1, 2, 3, 4]),
     ("Part 2 — Flight Controller Firmware", [5, 6, 7, 8]),
-    ("Part 3 — Field Operations", [9, 10, 11, 12]),
+    ("Part 3 — Field Operations", [9, 10, 11, 12, 16, 17]),
     ("Part 4 — Integration", [13, 14, 15]),
 ]
 
@@ -132,6 +148,11 @@ def build_toc():
                 if p_num == num:
                     toc += f'<a href="#p{num}"><span class="ch-num">&bull;</span>{title}</a>\n'
     toc += "</div>\n"
+    # Component references
+    toc += '<div class="toc-part"><h3>Part 6 — Component References</h3>\n'
+    for filepath, c_num, title in COMPONENTS:
+        toc += f'<a href="#c{c_num}"><span class="ch-num">&bull;</span>{title}</a>\n'
+    toc += "</div>\n"
     return toc
 
 
@@ -178,6 +199,24 @@ def build_platforms(base_dir):
     return platforms_html
 
 
+def build_components(base_dir):
+    """Build all component reference HTML content."""
+    components_html = '<section class="chapter" id="components"><h1>Part 6 — Component References</h1>'
+    components_html += '<p><em>Deep dives on flight controllers, ESCs, motors, batteries, companion computers, radios, sensors, and complete ecosystems. Specs that matter, gotchas that don\'t show up in datasheets.</em></p></section>\n'
+    for filepath, c_num, title in COMPONENTS:
+        full_path = os.path.join(base_dir, filepath)
+        md_content = read_chapter(full_path)
+        if not md_content:
+            print(f"  WARNING: Missing {filepath}")
+            continue
+        html_content = md_to_html(md_content)
+        components_html += f'<section class="chapter" id="c{c_num}">\n'
+        components_html += html_content
+        components_html += "\n</section>\n\n"
+        print(f"  Built component: {title}")
+    return components_html
+
+
 def build_site(base_dir, output_dir):
     """Build the complete single-page HTML site."""
     print("Building The Drone Integration Handbook...")
@@ -185,6 +224,7 @@ def build_site(base_dir, output_dir):
     toc = build_toc()
     chapters = build_chapters(base_dir)
     platforms = build_platforms(base_dir)
+    components = build_components(base_dir)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -1007,6 +1047,7 @@ body {{
 <div class="content">
 {chapters}
 {platforms}
+{components}
 </div>
 
 <footer class="site-footer">
