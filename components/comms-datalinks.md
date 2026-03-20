@@ -261,23 +261,23 @@ non-Chinese RC link options with both race and long-range performance.
 Works with PX4 (`RC_INPUT` = `GHST`), QGroundControl,
 Betaflight 4.3+, iNav, and ArduPilot. OpenTX 2.3.13+ recommended.
 
-### Orqa IRONghost — EW-Resilient Dual Sub-GHz C2
+### Orqa IRONghost — Licensed-Band C2
 
-Defense-grade C2 link operating on licensed sub-GHz bands with
-dual-radio architecture for contested environments.
+Defense-grade C2 link operating on licensed bands. Dual-radio
+architecture. Manufactured in EU, NDAA compliant.
 
 | Parameter | Value |
 |-----------|-------|
-| Bands | 9xx MHz (primary) + 4xx MHz (shadow) |
-| Max Tx Power | 3W (~22 km with omni antennas) |
+| Spectrum | Licensed bands (contact Orqa for spectrum details) |
+| Max Tx Power | 3W |
 | Modulation | Proprietary, firmware-upgradeable |
 | Video | Combined C2 Rx + 5.8 GHz analog VTx in single module |
 | OTA Updates | Firmware during binding (<60 seconds) |
 
-Minimizes RF emissions during flight. Pilot switches between
-primary and shadow bands as needed. Paired with Orqa Tac.Ctrl
-(MAVLink, ATAK-compatible) and GCS-1 ground station for extended
-range and NLOS operations via aerial repeater.
+Paired with Orqa Tac.Ctrl (MAVLink, ATAK-compatible) and GCS-1
+ground station for extended range and NLOS operations via aerial
+repeater. Requires licensed spectrum — coordinate with your RF
+authority before deployment.
 
 **Critical:** Never power on without all antennas attached — 3W
 reflected back into amplifiers causes permanent damage.

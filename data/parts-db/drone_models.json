@@ -9303,7 +9303,7 @@
   {
     "pid": "MDL-2054",
     "name": "Orqa MRM2-10",
-    "description": "Lightweight multi-role FPV drone with IRONghost EW-resilient dual sub-GHz C2 link. H7 QuadCore FC, 10\" props, 2.5kg payload, ~20km range at 70km/h cruise. MAVLink/ATAK integration via Tac.Ctrl. Orqa Justice camera. EU-manufactured, NDAA compliant.",
+    "description": "Lightweight multi-role FPV drone with IRONghost licensed-band C2 link. H7 QuadCore FC, 10\" props, 2.5kg payload, ~20km range at 70km/h cruise. MAVLink/ATAK integration via Tac.Ctrl. Orqa Justice camera. EU-manufactured, NDAA compliant.",
     "vehicle_type": "quadcopter",
     "build_class": "fpv_multirole",
     "image_file": "",
@@ -9328,7 +9328,7 @@
       "flight_controller": "H7 QuadCore (STM32H743)",
       "esc": "30x30 70A, AM32 firmware",
       "camera": "Orqa Justice Analog (1200 TVL, low-light)",
-      "radios": "IRONghost dual sub-GHz (EW-resilient)",
+      "radios": "IRONghost (licensed bands)",
       "video_system": "5.8 GHz analog",
       "gps": "Integrated with compass and barometric sensor",
       "payload_kg": 2.5,
@@ -9336,15 +9336,15 @@
       "range_km": 20,
       "battery_recommended": "6S4P Li-ion (~16000 mAh)",
       "battery_connectors": "1x XT90 + 2x XT60 (parallel)",
-      "ew_resistance": true,
       "mavlink_support": true,
       "atak_integration": true,
       "firmware": "Betaflight v4.1",
-      "speed_kmh": 70
+      "speed_kmh": 70,
+      "licensed_band_radio": true
     },
     "gcs": {
       "gcs_software": "Orqa GCS-1",
-      "c2_link": "IRONghost dual sub-GHz",
+      "c2_link": "IRONghost (licensed bands)",
       "controller": "Orqa Tac.Ctrl (mandatory)"
     },
     "contracts": {},
@@ -9365,7 +9365,7 @@
       "fpv",
       "quadcopter",
       "ndaa",
-      "ew_resilient",
+      "licensed_band_radio",
       "ironghost",
       "10_inch",
       "multirole",
@@ -9404,7 +9404,7 @@
         "flight_controller": "H7 QuadCore \u2014 STM32H743 / ICM42688P",
         "esc": "30\u00d730 70A AM32",
         "camera": "Orqa Justice 1200 TVL analog",
-        "c2_link": "IRONghost dual sub-GHz (EW-resilient, licensed bands)",
+        "c2_link": "IRONghost (licensed bands)",
         "video": "5.8 GHz analog",
         "payload_kg": 2.5,
         "payload_max_kg": 3.5,
@@ -9412,10 +9412,10 @@
         "speed_kmh": 70,
         "battery": "6S4P Li-ion ~16 000 mAh (XT90 + 2\u00d7 XT60)",
         "firmware": "Betaflight / ArduPilot / iNav / PX4",
-        "ew_resistance": true,
         "mavlink": true,
         "atak": true,
-        "frame": "Carbon fiber, reinforced arms"
+        "frame": "Carbon fiber, reinforced arms",
+        "licensed_band_radio": true
       },
       "gcs": {
         "controller": "Orqa Tac.Ctrl (mandatory)",
@@ -9453,7 +9453,7 @@
   {
     "pid": "MDL-2055",
     "name": "Orqa MRM2-10F",
-    "description": "Foldable variant of MRM2-10. Hand-deployable in ~10 seconds with click-lock folding arms. Same IRONghost EW-resilient C2, 2.5kg payload, ~20km range. EU-manufactured, NDAA compliant.",
+    "description": "Foldable variant of MRM2-10. Hand-deployable in ~10 seconds with click-lock folding arms. Same IRONghost licensed-band C2, 2.5kg payload, ~20km range. EU-manufactured, NDAA compliant.",
     "vehicle_type": "quadcopter (foldable)",
     "build_class": "fpv_multirole",
     "image_file": "",
@@ -9473,21 +9473,21 @@
     "specs": {
       "type": "quadcopter (foldable)",
       "prop_size_inches": 10,
-      "radios": "IRONghost dual sub-GHz (EW-resilient)",
+      "radios": "IRONghost (licensed bands)",
       "video_system": "5.8 GHz analog",
       "payload_kg": 2.5,
       "range_km": 20,
       "deployment_time_s": 10,
       "battery_recommended": "6S4P Li-ion (~16000 mAh)",
-      "ew_resistance": true,
       "mavlink_support": true,
       "atak_integration": true,
       "firmware": "Betaflight v4.1",
-      "speed_kmh": 70
+      "speed_kmh": 70,
+      "licensed_band_radio": true
     },
     "gcs": {
       "gcs_software": "Orqa GCS-1",
-      "c2_link": "IRONghost dual sub-GHz",
+      "c2_link": "IRONghost (licensed bands)",
       "controller": "Orqa Tac.Ctrl (mandatory)"
     },
     "contracts": {},
@@ -9503,7 +9503,7 @@
       "quadcopter",
       "foldable",
       "ndaa",
-      "ew_resilient",
+      "licensed_band_radio",
       "ironghost",
       "10_inch",
       "multirole",
@@ -9540,7 +9540,7 @@
         "prop_size_in": 10,
         "fold_mechanism": "Click-lock folding arms",
         "deployment_time": "~10 seconds",
-        "c2_link": "IRONghost dual sub-GHz (EW-resilient, licensed bands)",
+        "c2_link": "IRONghost (licensed bands)",
         "video": "5.8 GHz analog",
         "payload_kg": 2.5,
         "range_km": 20,
@@ -9548,9 +9548,9 @@
         "battery": "6S4P Li-ion ~16 000 mAh",
         "firmware": "Betaflight v4.1 / ArduPilot / iNav",
         "frame": "Carbon fiber folding arms",
-        "ew_resistance": true,
         "mavlink": true,
-        "atak": true
+        "atak": true,
+        "licensed_band_radio": true
       },
       "gcs": {
         "controller": "Orqa Tac.Ctrl (mandatory)",
@@ -9581,7 +9581,7 @@
   {
     "pid": "MDL-2056",
     "name": "Orqa MRM1-5",
-    "description": "Robust 5\" multi-role platform. Available in ISM (Ghost 2.4 GHz) and EW (IRONghost) variants. 1kg payload, 130km/h max, >15min flight time. Carbon fiber reinforced frame. Training platform and payload delivery. EU-manufactured, NDAA compliant.",
+    "description": "Robust 5\" multi-role platform. Available in ISM (Ghost 2.4 GHz) and licensed-band (IRONghost) variants. 1kg payload, 130km/h max, >15min flight time. Carbon fiber reinforced frame. Training platform and payload delivery. EU-manufactured, NDAA compliant.",
     "vehicle_type": "quadcopter",
     "build_class": "fpv_multirole",
     "image_file": "",
@@ -9596,7 +9596,7 @@
     "compliance": {
       "blue_uas": false,
       "ndaa_compliant": true,
-      "note": "EU-manufactured. Available in ISM (standard) and EW (contested) variants."
+      "note": "EU-manufactured. Available in ISM (standard) and licensed-band variants."
     },
     "specs": {
       "type": "quadcopter",
@@ -9605,7 +9605,7 @@
       "flight_controller": "F405 30x30",
       "esc": "30x30 60A, AM32 firmware",
       "camera": "Orqa Justice Analog (1200 TVL, switchable 4:3/16:9)",
-      "radios": "ISM: Ghost 2.4 GHz / EW: IRONghost dual sub-GHz",
+      "radios": "ISM: Ghost 2.4 GHz / licensed: IRONghost",
       "video_system": "5.8 GHz analog",
       "gps": "Integrated",
       "payload_kg": 1.0,
@@ -9618,15 +9618,15 @@
       "weight_ew_g": 590,
       "battery_included": "P50B 4S1P Li-ion",
       "battery_recommended": "P50B 4S2P Li-ion",
-      "ew_resistance": true,
       "mavlink_support": true,
       "atak_integration": true,
       "firmware": "Betaflight, ArduPilot, iNav",
-      "speed_kmh": 130
+      "speed_kmh": 130,
+      "licensed_band_radio": true
     },
     "gcs": {
       "gcs_software": "Orqa GCS-1 (EW variant)",
-      "c2_link": "ISM: Ghost 2.4 GHz / EW: IRONghost dual sub-GHz",
+      "c2_link": "ISM: Ghost 2.4 GHz / licensed: IRONghost",
       "controller": "EW: Tac.Ctrl (mandatory) / ISM: FPV.Ctrl or any 2.4 GHz RC"
     },
     "contracts": {},
@@ -9652,7 +9652,7 @@
     ],
     "variants": [
       "MRM1-5 ISM (Ghost 2.4 GHz)",
-      "MRM1-5 EW (IRONghost)"
+      "MRM1-5 Licensed-band (IRONghost)"
     ],
     "handbook_profile": "components/orqa-ecosystem.md",
     "industry_id": "PLT-8",
@@ -9682,7 +9682,6 @@
         "esc": "4-in-1 60A AM32",
         "camera": "Orqa Justice 1200 TVL (4:3/16:9 switchable)",
         "c2_link_ism": "Ghost 2.4 GHz (ImmersionRC/Orqa, LoRa/FLRC)",
-        "c2_link_ew": "IRONghost dual sub-GHz (licensed bands)",
         "video": "5.8 GHz analog",
         "payload_kg": 1.0,
         "range_km": 15,
@@ -9696,17 +9695,18 @@
         "battery_included": "P50B 4S1P Li-ion (321 g)",
         "battery_recommended": "P50B 4S2P Li-ion",
         "firmware": "Betaflight / ArduPilot / iNav",
-        "ew_resistance": true,
         "mavlink": true,
         "atak": true,
-        "frame": "Carbon fiber + 4\u00d7 carbon braces (reinforced)"
+        "frame": "Carbon fiber + 4\u00d7 carbon braces (reinforced)",
+        "c2_link_licensed": "IRONghost (licensed bands)",
+        "licensed_band_radio": true
       },
       "gcs": {
         "controller_ism": "FPV.Ctrl or any 2.4 GHz RC",
-        "controller_ew": "Orqa Tac.Ctrl (mandatory for EW variant)",
-        "software_ew": "Orqa GCS-1",
         "c2_protocol": "MAVLink",
-        "atak_integration": "Yes"
+        "atak_integration": "Yes",
+        "controller_licensed": "Orqa Tac.Ctrl (mandatory for EW variant)",
+        "software_licensed": "Orqa GCS-1"
       },
       "funding": {
         "Lightspeed Venture Partners 2024": "$5.8 M Series A (Orqa company-level)",
@@ -9722,7 +9722,7 @@
       },
       "variants": [
         "MRM1-5 ISM (Ghost 2.4 GHz)",
-        "MRM1-5 EW (IRONghost)"
+        "MRM1-5 Licensed-band (IRONghost)"
       ],
       "documentation_availability": "User manual available \u2014 orqafpv.com/manual"
     }

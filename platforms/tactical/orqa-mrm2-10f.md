@@ -9,9 +9,9 @@
 
 ## Overview
 
-The MRM2-10F is the rapid-deployment foldable variant of the MRM2-10. Click-lock folding arms collapse the airframe to backpack size for dismounted operations, then snap back to flight-ready in under 10 seconds — no tools, no adjustments. Same IRONghost EW-resilient C2 link, same 2.5 kg payload capacity, same 20 km range as the fixed-frame MRM2-10. The -F suffix is the only practical difference operationally; the two share the same ground system (Tac.Ctrl + IRONghost QS + GCS-1).
+The MRM2-10F is the rapid-deployment foldable variant of the MRM2-10. Click-lock folding arms collapse the airframe to backpack size, then snap back to flight-ready in under 10 seconds — no tools, no adjustments. Same IRONghost C2 link, same 2.5 kg payload capacity, same 20 km range as the fixed-frame MRM2-10. The two share the same ground system (Tac.Ctrl + IRONghost QS + GCS-1).
 
-Best suited to infantry-attached teams where platform carriage, concealment, or rapid redeployment between positions is a hard requirement.
+Best suited to dismounted teams where platform carriage, concealment, or rapid redeployment between positions is a requirement.
 
 ---
 
@@ -22,7 +22,7 @@ Best suited to infantry-attached teams where platform carriage, concealment, or 
 | Prop Size | 10 inch |
 | Fold Mechanism | Click-lock folding arms |
 | Deployment Time | ~10 seconds hand-deployable |
-| C2 Link | IRONghost — EW-resilient dual sub-GHz (licensed bands) |
+| C2 Link | IRONghost (licensed bands) |
 | Video | 5.8 GHz analog |
 | GPS | Integrated |
 | Payload Capacity | 2.5 kg |
@@ -41,7 +41,7 @@ Best suited to infantry-attached teams where platform carriage, concealment, or 
 
 | Component | Details |
 |-----------|---------|
-| Controller | Orqa Tac.Ctrl (mandatory) |
+| Controller | Orqa Tac.Ctrl |
 | Ground Station | IRONghost QS + IRONghost GS |
 | GCS Software | Orqa GCS-1 |
 | C2 Protocol | MAVLink |
@@ -65,9 +65,9 @@ Best suited to infantry-attached teams where platform carriage, concealment, or 
 ## Gotchas
 
 1. **Fold joint longevity** — click-lock hinges accumulate wear with high training cycles. Inspect and replace per Orqa maintenance schedule.
-2. **Same ground system as MRM2-10** — if operating both variants in theater, Tac.Ctrl and GCS-1 hardware is interchangeable.
-3. **IRONghost is licensed sub-GHz** — same spectrum coordination requirement as MRM2-10.
-4. **Not currently Blue UAS listed** — EU-manufactured NDAA-compliant platform. Not on the DoD Blue UAS approved list.
+2. **Same ground system as MRM2-10** — Tac.Ctrl and GCS-1 hardware is interchangeable between variants.
+3. **IRONghost requires licensed spectrum** — same coordination requirement as MRM2-10.
+4. **Not Blue UAS listed** — EU-manufactured NDAA-compliant platform. Not on the DoD Blue UAS approved list.
 
 ---
 
