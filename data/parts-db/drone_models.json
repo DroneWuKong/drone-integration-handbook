@@ -4,7 +4,7 @@
     "name": "Neros Technologies Archer",
     "manufacturer": "Neros Technologies",
     "description": "Neros Technologies Archer. Fpv Strike platform from USA. MTOW: 2 kg. Payload: 2.0 kg. Endurance: 0.3 hr. Range: 20 km. Max Speed: 160 km/h.",
-    "vehicle_type": "quadcopter",
+    "vehicle_type": "quad (tactical)",
     "build_class": "tactical",
     "category": "fpv_strike",
     "image_file": "",
@@ -65,7 +65,16 @@
       "Archer Block 2"
     ],
     "manufacturer_hq": "El Segundo, CA",
-    "manufacturer_url": "https://neros.tech"
+    "manufacturer_url": "https://neros.tech",
+    "max_flight_time_min": 25,
+    "max_payload_kg": 1.0,
+    "thermal_capable": true,
+    "rf_bands": "Resilient multi-band",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true
   },
   {
     "pid": "DM-0002",
@@ -229,7 +238,7 @@
     "name": "Hoverfly Technologies Spectre",
     "manufacturer": "Hoverfly Technologies",
     "description": "Hoverfly Technologies Spectre. Tethered Persistent platform from USA. MTOW: 5 kg. Payload: 2 kg. Ceiling: 60 m.",
-    "vehicle_type": "Fully closed-loop tethered UAS",
+    "vehicle_type": "quad (tethered)",
     "build_class": "commercial",
     "category": "tethered_persistent",
     "image_file": "",
@@ -280,7 +289,23 @@
     ],
     "variants": [],
     "manufacturer_hq": "Sanford, FL (founded 2010)",
-    "manufacturer_url": "https://hoverflytech.com"
+    "manufacturer_url": "https://hoverflytech.com",
+    "max_flight_time_min": 1,
+    "max_payload_kg": 2.3,
+    "video_system": "EO/IR modular",
+    "thermal_capable": true,
+    "rf_bands": "Tethered",
+    "firmware": "Hoverfly proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": true,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "USA",
+        "note": "Tethered = unlimited endurance. Set to 1 min as placeholder."
+      }
+    }
   },
   {
     "pid": "DM-0005",
@@ -358,7 +383,7 @@
     "name": "Helsing HX-2 Karma",
     "manufacturer": "Helsing",
     "description": "Helsing HX-2 Karma. Loitering Munition platform from Germany. MTOW: 4 kg. Payload: 1 kg. Endurance: 0.5 hr. Range: 100 km. Max Speed: 180 km/h.",
-    "vehicle_type": "AI-enabled loitering munition (x-wing config)",
+    "vehicle_type": "quad (AI-enabled FPV strike)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -403,14 +428,40 @@
       "rate": "1000+/month",
       "facility": "Resilience Factory, Germany"
     },
-    "industry_id": "helsing-hx2-karma"
+    "industry_id": "helsing-hx2-karma",
+    "max_flight_time_min": 20,
+    "max_payload_kg": 2.0,
+    "video_system": "AI vision, autonomous targeting",
+    "thermal_capable": false,
+    "rf_bands": "Resilient encrypted",
+    "firmware": "Helsing AI stack (proprietary)",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "German AI defense company. \u20ac400M+ funding. Ukraine deployed."
+      },
+      "production": {
+        "manufacturing_country": "Germany/Ukraine",
+        "first_delivery_year": 2024
+      },
+      "funding": {
+        "total_funding_usd": 500000000,
+        "key_investors": [
+          "General Catalyst",
+          "Spotify founders"
+        ]
+      }
+    }
   },
   {
     "pid": "DM-0007",
     "name": "Stark Defence OWE-V Virtus",
     "manufacturer": "Stark Defence",
     "description": "Stark Defence OWE-V Virtus. Loitering Munition platform from Germany. MTOW: 7 kg. Payload: 2 kg. Endurance: 1 hr. Range: 100 km. Max Speed: 150 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "VTOL loitering munition",
+    "vehicle_type": "quad (tactical ISR/strike)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -449,14 +500,29 @@
       "total_raised_usd": 62000000,
       "valuation": "$500M"
     },
-    "industry_id": "stark-owe-v-virtus"
+    "industry_id": "stark-owe-v-virtus",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 1.5,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Estonia",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0008",
     "name": "Rheinmetall LUNA NG (HUSAR)",
     "manufacturer": "Rheinmetall",
     "description": "Rheinmetall LUNA NG (HUSAR). Tactical Isr platform from Germany. MTOW: 40 kg. Payload: 8 kg. Endurance: 12 hr. Range: 150 km. Max Speed: 130 km/h. Ceiling: 5000 m.",
-    "vehicle_type": "fixed-wing catapult-launched ISR",
+    "vehicle_type": "fixed-wing (catapult launch, tactical ISR)",
     "build_class": "tactical",
     "category": "tactical_isr",
     "image_file": "",
@@ -489,14 +555,39 @@
     "variants": [],
     "manufacturer_hq": "Dusseldorf, Germany",
     "manufacturer_url": "",
-    "industry_id": "rheinmetall-luna-ng"
+    "industry_id": "rheinmetall-luna-ng",
+    "max_flight_time_min": 720,
+    "max_payload_kg": 40.0,
+    "video_system": "EO/IR gimbal, SIGINT, COMINT",
+    "thermal_capable": true,
+    "rf_bands": "Multi-band encrypted datalink",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Rheinmetall German defense. LUNA NG = 12hr endurance. Bundeswehr HUSAR program."
+      },
+      "production": {
+        "manufacturing_country": "Germany",
+        "first_delivery_year": 2024
+      },
+      "contracts": [
+        {
+          "program": "Bundeswehr HUSAR",
+          "note": "Successor to KZO/LUNA"
+        }
+      ]
+    }
   },
   {
     "pid": "DM-0009",
     "name": "Rheinmetall / UVision (license) Hero Loitering Munition Family",
     "manufacturer": "Rheinmetall / UVision (license)",
     "description": "Rheinmetall / UVision (license) Hero Loitering Munition Family. Loitering Munition platform from Italy. MTOW: 12.5 kg. Payload: 2.5 kg. Endurance: 2 hr. Range: varies 10-150+ km. Max Speed: 185 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "Family of loitering munitions (0.5-50kg warhead)",
+    "vehicle_type": "loitering munition family",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -535,14 +626,23 @@
     ],
     "manufacturer_hq": "Sardinia, Italy (production)",
     "manufacturer_url": "",
-    "industry_id": "rheinmetall-hero-family"
+    "industry_id": "rheinmetall-hero-family",
+    "max_flight_time_min": 120,
+    "max_payload_kg": 30.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "UVision proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true
   },
   {
     "pid": "DM-0010",
     "name": "Delair / KNDS MV-25 OSKAR",
     "manufacturer": "Delair / KNDS",
     "description": "Delair / KNDS MV-25 OSKAR. Loitering Munition platform from France. MTOW: 25 kg. Payload: 5 kg. Endurance: 2 hr. Range: 25 km. Max Speed: 130 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "hand-launched loitering munition",
+    "vehicle_type": "fixed-wing (ISR/targeting)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -579,14 +679,32 @@
       "MV-Heavy"
     ],
     "manufacturer_hq": "France",
-    "manufacturer_url": ""
+    "manufacturer_url": "",
+    "max_flight_time_min": 150,
+    "max_payload_kg": 5.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted datalink",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "French. KNDS defense partnership."
+      },
+      "production": {
+        "manufacturing_country": "France",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0011",
     "name": "Safran Patroller",
     "manufacturer": "Safran",
     "description": "Safran Patroller. Group3 Tactical Male platform from France. MTOW: 1050 kg. Payload: 250 kg. Endurance: 20 hr. Range: 180 km. Max Speed: 300 km/h. Ceiling: 7600 m.",
-    "vehicle_type": "tactical MALE UAV",
+    "vehicle_type": "fixed-wing (MALE tactical ISR)",
     "build_class": "commercial",
     "category": "group3_tactical_male",
     "image_file": "",
@@ -621,14 +739,38 @@
     "variants": [],
     "manufacturer_hq": "Paris, France",
     "manufacturer_url": "",
-    "industry_id": "safran-patroller"
+    "industry_id": "safran-patroller",
+    "max_flight_time_min": 1200,
+    "max_payload_kg": 250.0,
+    "video_system": "EO/IR, SIGINT, radar, COMINT",
+    "thermal_capable": true,
+    "rf_bands": "Multi-band SATCOM + LOS",
+    "firmware": "Safran proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "French MALE UAS. 20hr endurance. French Army SDT program."
+      },
+      "production": {
+        "manufacturing_country": "France",
+        "first_delivery_year": 2024
+      },
+      "contracts": [
+        {
+          "program": "French SDT (Syst\u00e8me de drone tactique)"
+        }
+      ]
+    }
   },
   {
     "pid": "DM-0012",
     "name": "Novadem NX70",
     "manufacturer": "Novadem",
     "description": "Novadem NX70. Micro Isr platform from France. MTOW: 2.5 kg. Payload: 0.5 kg. Endurance: 0.5 hr. Range: 5 km. Max Speed: 50 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "micro reconnaissance quadcopter",
+    "vehicle_type": "quad (micro tactical ISR)",
     "build_class": "commercial",
     "category": "micro_isr",
     "image_file": "",
@@ -662,14 +804,33 @@
     "variants": [],
     "manufacturer_hq": "Aix-en-Provence, France",
     "manufacturer_url": "",
-    "industry_id": "novadem-nx70"
+    "industry_id": "novadem-nx70",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 0.2,
+    "video_system": "EO/IR, 30x zoom",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "French micro UAS. Deployed by French Army."
+      },
+      "production": {
+        "manufacturing_country": "France",
+        "first_delivery_year": 2019
+      }
+    }
   },
   {
     "pid": "DM-0013",
     "name": "Tekever AR3/AR5",
     "manufacturer": "Tekever",
     "description": "Tekever AR3/AR5. Tactical Isr platform from UK. MTOW: 150 kg. Payload: 30 kg. Endurance: 16 hr. Range: 100 km. Max Speed: 150 km/h. Ceiling: 5500 m.",
-    "vehicle_type": "fixed-wing tactical ISTAR",
+    "vehicle_type": "fixed-wing (maritime ISR)",
     "build_class": "tactical",
     "category": "tactical_isr",
     "image_file": "",
@@ -712,14 +873,41 @@
       "facility": "254,000 sq ft Swindon, UK",
       "investment": "GBP400M"
     },
-    "industry_id": "tekever-ar3"
+    "industry_id": "tekever-ar3",
+    "max_flight_time_min": 480,
+    "max_payload_kg": 25.0,
+    "video_system": "EO/IR, radar, AIS, SIGINT",
+    "thermal_capable": true,
+    "rf_bands": "SATCOM + LOS multi-band",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Portuguese. NATO maritime ISR. Frontex operations."
+      },
+      "production": {
+        "manufacturing_country": "Portugal",
+        "first_delivery_year": 2020
+      },
+      "contracts": [
+        {
+          "program": "EMSA/Frontex maritime surveillance"
+        },
+        {
+          "program": "UK maritime patrol"
+        }
+      ]
+    }
   },
   {
     "pid": "DM-0014",
     "name": "Malloy Aeronautics / BAE Systems T-150",
     "manufacturer": "Malloy Aeronautics / BAE Systems",
     "description": "Malloy Aeronautics / BAE Systems T-150. Heavy Lift Vtol platform from UK. MTOW: 68 kg. Payload: 68 kg. Endurance: 0.5 hr. Range: 30 km. Max Speed: 100 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "heavy-lift VTOL multirotor",
+    "vehicle_type": "quad (heavy-lift cargo/logistics)",
     "build_class": "commercial",
     "category": "heavy_lift_vtol",
     "image_file": "",
@@ -758,14 +946,32 @@
     "manufacturer_url": "",
     "industry_id": "malloy-t150",
     "combat_theater": "Ukraine",
-    "notes": "Royal Navy/Marines, deployed Ukraine & Indo-Pacific, missile launch tested"
+    "notes": "Royal Navy/Marines, deployed Ukraine & Indo-Pacific, missile launch tested",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 68.0,
+    "thermal_capable": false,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "UK. BAE partnership. 150kg MTOW. Military logistics."
+      },
+      "production": {
+        "manufacturing_country": "United Kingdom",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0015",
     "name": "Arquimea Q-SLAM Family",
     "manufacturer": "Arquimea",
     "description": "Arquimea Q-SLAM Family. Loitering Munition platform from Spain. MTOW: 12 kg. Payload: 4 kg. Endurance: 1 hr. Range: 40 km. Max Speed: 200 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "man-portable loitering munition family",
+    "vehicle_type": "quad (tactical ISR)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -806,14 +1012,28 @@
     "production": {
       "rate": "1000/month capacity"
     },
-    "industry_id": "arquimea-qslam"
+    "industry_id": "arquimea-qslam",
+    "max_flight_time_min": 25,
+    "max_payload_kg": 1.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Spain"
+      }
+    }
   },
   {
     "pid": "DM-0016",
     "name": "DeltaQuad Evo Tactical",
     "manufacturer": "DeltaQuad",
     "description": "DeltaQuad Evo Tactical. Vtol Fixed Wing Isr platform from Netherlands. MTOW: 7 kg. Payload: 1 kg. Endurance: 2 hr. Range: 500 km. Max Speed: 110 km/h. Ceiling: 4000 m.",
-    "vehicle_type": "VTOL fixed-wing ISR",
+    "vehicle_type": "VTOL fixed-wing (quad-tilt)",
     "build_class": "commercial",
     "category": "vtol_fixed_wing_isr",
     "image_file": "",
@@ -848,14 +1068,33 @@
     "variants": [],
     "manufacturer_hq": "Netherlands",
     "manufacturer_url": "",
-    "industry_id": "deltaquad-evo"
+    "industry_id": "deltaquad-evo",
+    "max_flight_time_min": 110,
+    "max_payload_kg": 1.2,
+    "video_system": "EO/IR modular",
+    "thermal_capable": true,
+    "rf_bands": "Multi-band encrypted",
+    "firmware": "PX4-based",
+    "mavlink_support": true,
+    "sdk_available": true,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Dutch. PX4/MAVLink. NDAA compliant."
+      },
+      "production": {
+        "manufacturing_country": "Netherlands",
+        "first_delivery_year": 2022
+      }
+    }
   },
   {
     "pid": "DM-0017",
     "name": "Saab / UMS Skeldar Skeldar V-200",
     "manufacturer": "Saab / UMS Skeldar",
     "description": "Saab / UMS Skeldar Skeldar V-200. Rotary Maritime Isr platform from Sweden. MTOW: 235 kg. Payload: 40 kg. Endurance: 5 hr. Range: 200 km. Max Speed: 130 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "rotary-wing maritime UAS",
+    "vehicle_type": "helicopter (VTOL ISR, rotary-wing)",
     "build_class": "commercial",
     "category": "rotary_maritime_isr",
     "image_file": "",
@@ -890,14 +1129,33 @@
     "variants": [],
     "manufacturer_hq": "Sweden",
     "manufacturer_url": "",
-    "industry_id": "saab-skeldar-v200"
+    "industry_id": "saab-skeldar-v200",
+    "max_flight_time_min": 300,
+    "max_payload_kg": 40.0,
+    "video_system": "EO/IR, radar, AIS",
+    "thermal_capable": true,
+    "rf_bands": "Multi-band LOS + SATCOM",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Swedish/Swiss. 5hr endurance. Naval ISR. 200kg class."
+      },
+      "production": {
+        "manufacturing_country": "Sweden/Switzerland",
+        "first_delivery_year": 2020
+      }
+    }
   },
   {
     "pid": "DM-0018",
     "name": "ALX Systems ALX Tactical LM",
     "manufacturer": "ALX Systems",
     "description": "ALX Systems ALX Tactical LM. Loitering Munition platform from Belgium. MTOW: 5 kg. Payload: 1 kg. Endurance: 0.5 hr. Range: 50 km. Max Speed: 150 km/h.",
-    "vehicle_type": "Belgian-made tactical loitering munition",
+    "vehicle_type": "loitering munition",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -932,14 +1190,28 @@
     "manufacturer_hq": "Belgium",
     "manufacturer_url": "",
     "industry_id": "alx-systems-lm",
-    "notes": "Fully Belgian-made, GPS-denied capable"
+    "notes": "Fully Belgian-made, GPS-denied capable",
+    "max_flight_time_min": 20,
+    "max_payload_kg": 1.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "France"
+      }
+    }
   },
   {
     "pid": "DM-0019",
     "name": "TAF Industries Kolibri Series",
     "manufacturer": "TAF Industries",
     "description": "TAF Industries Kolibri Series. Fpv Strike platform from Ukraine. MTOW: 5 kg. Payload: 1.5 kg. Endurance: 1 hr. Range: 12 km. Max Speed: 130 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "FPV kamikaze quadcopter",
+    "vehicle_type": "quad (FPV strike)",
     "build_class": "tactical",
     "category": "fpv_strike",
     "image_file": "",
@@ -986,14 +1258,29 @@
       "employees": 1000,
       "revenue_annual": "~$500M"
     },
-    "industry_id": "taf-kolibri"
+    "industry_id": "taf-kolibri",
+    "max_flight_time_min": 15,
+    "max_payload_kg": 0.5,
+    "thermal_capable": false,
+    "rf_bands": "FPV",
+    "firmware": "Custom",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Ukraine",
+        "first_delivery_year": 2023
+      }
+    }
   },
   {
     "pid": "DM-0020",
     "name": "Vyriy Drone Molfar FPV Series",
     "manufacturer": "Vyriy Drone",
     "description": "Vyriy Drone Molfar FPV Series. Fpv Strike platform from Ukraine. MTOW: 1.5 kg. Payload: 0.8 kg. Endurance: 0.3 hr. Range: 15 km. Max Speed: 150 km/h.",
-    "vehicle_type": "FPV kamikaze",
+    "vehicle_type": "quad (FPV strike, various sizes)",
     "build_class": "tactical",
     "category": "fpv_strike",
     "image_file": "",
@@ -1028,14 +1315,29 @@
     "variants": [],
     "manufacturer_hq": "Ukraine",
     "manufacturer_url": "",
-    "industry_id": "vyriy-molfar"
+    "industry_id": "vyriy-molfar",
+    "max_flight_time_min": 20,
+    "max_payload_kg": 2.5,
+    "thermal_capable": false,
+    "rf_bands": "FPV",
+    "firmware": "Custom",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Ukraine",
+        "first_delivery_year": 2023
+      }
+    }
   },
   {
     "pid": "DM-0021",
     "name": "Wild Hornets Wild Hornets FPV Family",
     "manufacturer": "Wild Hornets",
     "description": "Wild Hornets Wild Hornets FPV Family. Fpv Strike platform from Ukraine. MTOW: 1.5 kg. Payload: 1 kg. Endurance: 0.3 hr. Range: 15 km. Max Speed: 150 km/h.",
-    "vehicle_type": "FPV multi-role family",
+    "vehicle_type": "quad (FPV strike)",
     "build_class": "tactical",
     "category": "fpv_strike",
     "image_file": "",
@@ -1074,14 +1376,29 @@
     ],
     "manufacturer_hq": "Ukraine",
     "manufacturer_url": "",
-    "industry_id": "wild-hornets-fpv"
+    "industry_id": "wild-hornets-fpv",
+    "max_flight_time_min": 15,
+    "max_payload_kg": 2.0,
+    "thermal_capable": false,
+    "rf_bands": "FPV",
+    "firmware": "Custom",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Ukraine",
+        "first_delivery_year": 2023
+      }
+    }
   },
   {
     "pid": "DM-0022",
     "name": "Escadrone Escadrone FPV",
     "manufacturer": "Escadrone",
     "description": "Escadrone Escadrone FPV. Fpv Strike platform from Ukraine. MTOW: 1.5 kg. Payload: 1 kg. Endurance: 0.3 hr. Range: 15 km. Max Speed: 150 km/h.",
-    "vehicle_type": "FPV kamikaze (pioneered FPV combat Sept 2022)",
+    "vehicle_type": "quad (FPV strike)",
     "build_class": "tactical",
     "category": "fpv_strike",
     "image_file": "",
@@ -1118,14 +1435,28 @@
     "production": {
       "rate": "1000-1500/month"
     },
-    "industry_id": "escadrone-fpv"
+    "industry_id": "escadrone-fpv",
+    "max_flight_time_min": 15,
+    "max_payload_kg": 1.5,
+    "thermal_capable": false,
+    "rf_bands": "FPV",
+    "firmware": "Custom",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Ukraine"
+      }
+    }
   },
   {
     "pid": "DM-0023",
     "name": "UkrSpecSystems Shark",
     "manufacturer": "UkrSpecSystems",
     "description": "UkrSpecSystems Shark. Tactical Isr platform from Ukraine. MTOW: 20 kg. Payload: 5 kg. Endurance: 3 hr. Range: 80 km. Max Speed: 130 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "catapult-launched fixed-wing ISR",
+    "vehicle_type": "fixed-wing (ISR/targeting)",
     "build_class": "tactical",
     "category": "tactical_isr",
     "image_file": "",
@@ -1173,14 +1504,33 @@
     "manufacturer_url": "",
     "industry_id": "ukrspecsystems-shark",
     "combat_theater": "Ukraine",
-    "notes": "Shark: 80km, ~$520K/system; PD-2: 10hr anti-jam"
+    "notes": "Shark: 80km, ~$520K/system; PD-2: 10hr anti-jam",
+    "max_flight_time_min": 180,
+    "max_payload_kg": 3.0,
+    "video_system": "EO/IR, laser designator",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted LOS",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Ukrainian ISR platform. 3hr endurance. Used extensively in war."
+      },
+      "production": {
+        "manufacturing_country": "Ukraine",
+        "first_delivery_year": 2022
+      }
+    }
   },
   {
     "pid": "DM-0024",
     "name": "Aerorozvidka R18 Octocopter",
     "manufacturer": "Aerorozvidka",
     "description": "Aerorozvidka R18 Octocopter. Heavy Multirotor Strike platform from Ukraine. MTOW: 22 kg. Payload: 5 kg. Endurance: 0.5 hr. Range: 5 km. Max Speed: 60 km/h. Ceiling: 1500 m.",
-    "vehicle_type": "octocopter bomber/strike",
+    "vehicle_type": "octocopter (bomber/ISR)",
     "build_class": "commercial",
     "category": "heavy_multirotor_strike",
     "image_file": "",
@@ -1211,14 +1561,33 @@
     "variants": [],
     "manufacturer_hq": "Ukraine",
     "manufacturer_url": "",
-    "industry_id": "aerorozvidka-r18"
+    "industry_id": "aerorozvidka-r18",
+    "max_flight_time_min": 40,
+    "max_payload_kg": 5.0,
+    "video_system": "EO/IR, munition drop",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "ArduPilot-based",
+    "mavlink_support": true,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Ukrainian volunteer unit platform. Drops anti-tank munitions."
+      },
+      "production": {
+        "manufacturing_country": "Ukraine",
+        "first_delivery_year": 2022
+      }
+    }
   },
   {
     "pid": "DM-0025",
     "name": "UA Dynamics Punisher",
     "manufacturer": "UA Dynamics",
     "description": "UA Dynamics Punisher. Fixed Wing Strike platform from Ukraine. MTOW: 7.5 kg. Payload: 3 kg. Endurance: 3 hr. Range: 45 km. Max Speed: 130 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "reusable fixed-wing strike drone",
+    "vehicle_type": "fixed-wing (strike)",
     "build_class": "commercial",
     "category": "fixed_wing_strike",
     "image_file": "",
@@ -1253,14 +1622,30 @@
     "variants": [],
     "manufacturer_hq": "Ukraine",
     "manufacturer_url": "",
-    "industry_id": "ua-dynamics-punisher"
+    "industry_id": "ua-dynamics-punisher",
+    "max_flight_time_min": 180,
+    "max_payload_kg": 3.0,
+    "video_system": "EO camera, GPS-guided munition delivery",
+    "thermal_capable": false,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Ukraine",
+        "first_delivery_year": 2022
+      }
+    }
   },
   {
     "pid": "DM-0026",
     "name": "UkrJet UJ-26 Bober",
     "manufacturer": "UkrJet",
     "description": "UkrJet UJ-26 Bober. Deep Strike platform from Ukraine. MTOW: 750 kg. Payload: 200 kg. Endurance: 4 hr. Range: 1000 km. Max Speed: 200 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "long-range fixed-wing kamikaze",
+    "vehicle_type": "fixed-wing (long-range strike)",
     "build_class": "defense",
     "category": "deep_strike",
     "image_file": "",
@@ -1303,14 +1688,32 @@
     "manufacturer_url": "",
     "industry_id": "ukrjet-uj26-bober",
     "combat_theater": "Ukraine",
-    "notes": "1000km deep strike into Russia"
+    "notes": "1000km deep strike into Russia",
+    "max_flight_time_min": 120,
+    "max_payload_kg": 20.0,
+    "thermal_capable": false,
+    "rf_bands": "Encrypted + autonomous waypoint",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Ukrainian long-range strike drone. 800+km range."
+      },
+      "production": {
+        "manufacturing_country": "Ukraine",
+        "first_delivery_year": 2023
+      }
+    }
   },
   {
     "pid": "DM-0027",
     "name": "Terminal Autonomy AQ-400 Scythe",
     "manufacturer": "Terminal Autonomy",
     "description": "Terminal Autonomy AQ-400 Scythe. Deep Strike platform from Ukraine. MTOW: 50 kg. Payload: 32 kg. Endurance: 4 hr. Range: 750 km. Max Speed: 180 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "fixed-wing kamikaze (plywood)",
+    "vehicle_type": "fixed-wing (long-range strike)",
     "build_class": "defense",
     "category": "deep_strike",
     "image_file": "",
@@ -1346,14 +1749,32 @@
     "production": {
       "rate": "1000+/month"
     },
-    "industry_id": "terminal-autonomy-aq400"
+    "industry_id": "terminal-autonomy-aq400",
+    "max_flight_time_min": 180,
+    "max_payload_kg": 32.0,
+    "thermal_capable": false,
+    "rf_bands": "Autonomous waypoint",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Ukrainian/Australian. 750km range. Cardboard/composite construction."
+      },
+      "production": {
+        "manufacturing_country": "Ukraine/Australia",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0028",
     "name": "Skyeton Raybird-3",
     "manufacturer": "Skyeton",
     "description": "Skyeton Raybird-3. Deep Isr platform from Ukraine. MTOW: 18 kg. Payload: 4 kg. Endurance: 5 hr. Range: 2500 km. Max Speed: 120 km/h. Ceiling: 4000 m.",
-    "vehicle_type": "long-endurance fixed-wing ISR",
+    "vehicle_type": "fixed-wing (long-endurance ISR)",
     "build_class": "commercial",
     "category": "deep_isr",
     "image_file": "",
@@ -1386,14 +1807,33 @@
     "variants": [],
     "manufacturer_hq": "Ukraine/Slovakia",
     "manufacturer_url": "",
-    "industry_id": "skyeton-raybird3"
+    "industry_id": "skyeton-raybird3",
+    "max_flight_time_min": 600,
+    "max_payload_kg": 4.0,
+    "video_system": "EO/IR",
+    "thermal_capable": true,
+    "rf_bands": "Multi-band",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Ukrainian. 10hr endurance. 50kg MTOW."
+      },
+      "production": {
+        "manufacturing_country": "Ukraine",
+        "first_delivery_year": 2020
+      }
+    }
   },
   {
     "pid": "DM-0029",
     "name": "WB Group Warmate / FlyEye",
     "manufacturer": "WB Group",
     "description": "WB Group Warmate / FlyEye. Loitering Munition platform from Poland. MTOW: 5.3 kg. Payload: 1.4 kg. Endurance: 1 hr. Range: 30 km. Max Speed: 150 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "LM + ISR family",
+    "vehicle_type": "loitering munition (Warmate) + fixed-wing ISR (FlyEye)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -1445,14 +1885,33 @@
     "manufacturer_url": "",
     "industry_id": "wb-warmate3",
     "combat_theater": "Ukraine",
-    "notes": "1000+ produced, Ukraine production"
+    "notes": "1000+ produced, Ukraine production",
+    "max_flight_time_min": 60,
+    "max_payload_kg": 1.4,
+    "video_system": "EO/IR",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted LOS",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Polish defense. Warmate: LM 4kg, 30min. FlyEye: ISR 3hr. Deployed Ukraine."
+      },
+      "production": {
+        "manufacturing_country": "Poland",
+        "first_delivery_year": 2017
+      }
+    }
   },
   {
     "pid": "DM-0030",
     "name": "Primoco UAV One 150",
     "manufacturer": "Primoco UAV",
     "description": "Primoco UAV One 150. Tactical Isr platform from Czech Republic. MTOW: 150 kg. Payload: 30 kg. Endurance: 15 hr. Range: 1800 km. Max Speed: 150 km/h. Ceiling: 4500 m.",
-    "vehicle_type": "fixed-wing tactical ISR",
+    "vehicle_type": "fixed-wing (MALE ISR)",
     "build_class": "tactical",
     "category": "tactical_isr",
     "image_file": "",
@@ -1492,14 +1951,33 @@
       "units_produced": "250+",
       "export_countries": 15
     },
-    "industry_id": "primoco-one150"
+    "industry_id": "primoco-one150",
+    "max_flight_time_min": 900,
+    "max_payload_kg": 30.0,
+    "video_system": "EO/IR, SIGINT, radar",
+    "thermal_capable": true,
+    "rf_bands": "SATCOM + LOS",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Czech. 15hr endurance. 150kg MTOW."
+      },
+      "production": {
+        "manufacturing_country": "Czech Republic",
+        "first_delivery_year": 2021
+      }
+    }
   },
   {
     "pid": "DM-0031",
     "name": "Threod Systems EOS C VTOL",
     "manufacturer": "Threod Systems",
     "description": "Threod Systems EOS C VTOL. Vtol Isr platform from Estonia. MTOW: 16 kg. Payload: 3 kg. Endurance: 3 hr. Range: 50 km. Max Speed: 120 km/h. Ceiling: 4000 m.",
-    "vehicle_type": "VTOL ISR drone",
+    "vehicle_type": "VTOL fixed-wing",
     "build_class": "commercial",
     "category": "vtol_isr",
     "image_file": "",
@@ -1535,14 +2013,33 @@
       "employees": 200,
       "customers_countries": 27
     },
-    "industry_id": "threod-eos-c"
+    "industry_id": "threod-eos-c",
+    "max_flight_time_min": 120,
+    "max_payload_kg": 3.0,
+    "video_system": "EO/IR",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Estonian. 2hr endurance."
+      },
+      "production": {
+        "manufacturing_country": "Estonia",
+        "first_delivery_year": 2022
+      }
+    }
   },
   {
     "pid": "DM-0032",
     "name": "KrattWorks Ghost Dragon",
     "manufacturer": "KrattWorks",
     "description": "KrattWorks Ghost Dragon. Tactical Isr platform from Estonia. MTOW: 25 kg. Payload: 5 kg. Endurance: 5 hr. Range: 100 km. Max Speed: 130 km/h. Ceiling: 4000 m.",
-    "vehicle_type": "ISR quadcopter with neural-net GPS-denied navigation",
+    "vehicle_type": "VTOL fixed-wing",
     "build_class": "tactical",
     "category": "tactical_isr",
     "image_file": "",
@@ -1580,14 +2077,32 @@
     "production": {
       "revenue_usd": 22200000
     },
-    "industry_id": "krattworks-ghost-dragon"
+    "industry_id": "krattworks-ghost-dragon",
+    "max_flight_time_min": 60,
+    "max_payload_kg": 5.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Estonian company. NATO aligned."
+      },
+      "production": {
+        "manufacturing_country": "Estonia",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0033",
     "name": "Origin Robotics BEAK",
     "manufacturer": "Origin Robotics",
     "description": "Origin Robotics BEAK. Autonomous Combat platform from Latvia. MTOW: 2 kg. Payload: 0.5 kg. Endurance: 0.5 hr. Range: 20 km. Max Speed: 150 km/h.",
-    "vehicle_type": "autonomous combat drone",
+    "vehicle_type": "VTOL fixed-wing (tactical ISR)",
     "build_class": "commercial",
     "category": "autonomous_combat",
     "image_file": "",
@@ -1620,14 +2135,29 @@
     "variants": [],
     "manufacturer_hq": "Latvia",
     "manufacturer_url": "",
-    "industry_id": "origin-robotics-beak"
+    "industry_id": "origin-robotics-beak",
+    "max_flight_time_min": 60,
+    "max_payload_kg": 1.5,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "United Kingdom",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0034",
     "name": "Baykar Technology Bayraktar TB2",
     "manufacturer": "Baykar Technology",
     "description": "Baykar Technology Bayraktar TB2. Tactical Ucav platform from Turkey. MTOW: 700 kg. Payload: 55 kg. Endurance: 27 hr. Range: 150 km. Max Speed: 222 km/h. Ceiling: 8200 m.",
-    "vehicle_type": "tactical MALE UCAV",
+    "vehicle_type": "fixed-wing (MALE UCAV)",
     "build_class": "commercial",
     "category": "tactical_ucav",
     "image_file": "",
@@ -1671,14 +2201,39 @@
     "variants": [],
     "manufacturer_hq": "Istanbul, Turkey",
     "manufacturer_url": "",
-    "industry_id": "baykar-tb2"
+    "industry_id": "baykar-tb2",
+    "max_flight_time_min": 1620,
+    "max_payload_kg": 150.0,
+    "video_system": "EO/IR, laser designator, MAM-L/MAM-C munitions",
+    "thermal_capable": true,
+    "thermal_sensor": "CATS FLIR / Wescam MX-15D",
+    "rf_bands": "C-band LOS + SATCOM",
+    "firmware": "Baykar proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Turkish MALE UCAV. 27hr endurance. 650kg MTOW. Combat-proven (Libya, Ukraine, Nagorno-Karabakh)."
+      },
+      "production": {
+        "manufacturing_country": "Turkey",
+        "first_delivery_year": 2015
+      },
+      "contracts": [
+        {
+          "note": "35+ countries. Ukraine, Poland, UAE, etc."
+        }
+      ]
+    }
   },
   {
     "pid": "DM-0035",
     "name": "Baykar Technology Bayraktar Akinci",
     "manufacturer": "Baykar Technology",
     "description": "Baykar Technology Bayraktar Akinci. Heavy Ucav platform from Turkey. MTOW: 6000 kg. Payload: 1500 kg. Endurance: 24 hr. Range: 300 km. Max Speed: 360 km/h. Ceiling: 12200 m.",
-    "vehicle_type": "heavy UCAV",
+    "vehicle_type": "fixed-wing (HALE UCAV)",
     "build_class": "defense",
     "category": "heavy_ucav",
     "image_file": "",
@@ -1714,14 +2269,33 @@
     "variants": [],
     "manufacturer_hq": "Istanbul, Turkey",
     "manufacturer_url": "",
-    "industry_id": "baykar-akinci"
+    "industry_id": "baykar-akinci",
+    "max_flight_time_min": 1440,
+    "max_payload_kg": 1350.0,
+    "video_system": "AESA radar, EO/IR, SIGINT, SAR",
+    "thermal_capable": true,
+    "rf_bands": "Ku-band SATCOM + multi-band LOS",
+    "firmware": "Baykar proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Turkish HALE UCAV. 24hr endurance. 6000kg MTOW. SOM cruise missile capable."
+      },
+      "production": {
+        "manufacturing_country": "Turkey",
+        "first_delivery_year": 2021
+      }
+    }
   },
   {
     "pid": "DM-0036",
     "name": "Baykar Technology Bayraktar Kizilelma (MIUS)",
     "manufacturer": "Baykar Technology",
     "description": "Baykar Technology Bayraktar Kizilelma (MIUS). Jet Ucav platform from Turkey. MTOW: 8500 kg. Payload: 1500 kg. Endurance: 5 hr. Range: 900 km. Max Speed: 1100 km/h. Ceiling: 13700 m.",
-    "vehicle_type": "jet-powered stealth unmanned fighter",
+    "vehicle_type": "fixed-wing (jet-powered UCAV)",
     "build_class": "commercial",
     "category": "jet_ucav",
     "image_file": "",
@@ -1759,14 +2333,33 @@
     "variants": [],
     "manufacturer_hq": "Istanbul, Turkey",
     "manufacturer_url": "",
-    "industry_id": "baykar-kizilelma"
+    "industry_id": "baykar-kizilelma",
+    "max_flight_time_min": 300,
+    "max_payload_kg": 1500.0,
+    "video_system": "AESA radar, EO/IR, SIGINT",
+    "thermal_capable": true,
+    "rf_bands": "Multi-band SATCOM + LOS",
+    "firmware": "Baykar proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Turkish unmanned fighter jet. AI-38 engine. Carrier-capable (TCG Anadolu)."
+      },
+      "production": {
+        "manufacturing_country": "Turkey",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0037",
     "name": "Baykar Technology K2 Kamikaze",
     "manufacturer": "Baykar Technology",
     "description": "Baykar Technology K2 Kamikaze. Loitering Munition platform from Turkey. MTOW: 800 kg. Payload: 200 kg. Range: 2000 km.",
-    "vehicle_type": "long-range AI swarm kamikaze",
+    "vehicle_type": "loitering munition",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -1802,14 +2395,29 @@
     "variants": [],
     "manufacturer_hq": "Istanbul, Turkey",
     "manufacturer_url": "",
-    "industry_id": "baykar-k2"
+    "industry_id": "baykar-k2",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 5.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Baykar proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Turkey",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0038",
     "name": "TAI/TUSAS Anka Series",
     "manufacturer": "TAI/TUSAS",
     "description": "TAI/TUSAS Anka Series. Male Ucav platform from Turkey. MTOW: 1750 kg. Payload: 200 kg. Endurance: 24 hr. Range: 200 km. Max Speed: 217 km/h. Ceiling: 9100 m.",
-    "vehicle_type": "MALE UCAV family",
+    "vehicle_type": "fixed-wing (MALE UCAV)",
     "build_class": "defense",
     "category": "male_ucav",
     "image_file": "",
@@ -1850,14 +2458,33 @@
     ],
     "manufacturer_hq": "Ankara, Turkey",
     "manufacturer_url": "",
-    "industry_id": "tai-anka-series"
+    "industry_id": "tai-anka-series",
+    "max_flight_time_min": 1440,
+    "max_payload_kg": 200.0,
+    "video_system": "EO/IR, SAR, SIGINT",
+    "thermal_capable": true,
+    "rf_bands": "SATCOM + LOS",
+    "firmware": "TAI proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Turkish Aerospace. Anka-S: SATCOM. Aksungur: 24hr endurance."
+      },
+      "production": {
+        "manufacturing_country": "Turkey",
+        "first_delivery_year": 2013
+      }
+    }
   },
   {
     "pid": "DM-0039",
     "name": "STM Kargu",
     "manufacturer": "STM",
     "description": "STM Kargu. Loitering Munition platform from Turkey. MTOW: 6.3 kg. Payload: 1 kg. Endurance: 0.5 hr. Range: 10 km. Max Speed: 150 km/h.",
-    "vehicle_type": "rotary-wing loitering munition",
+    "vehicle_type": "quad (autonomous loitering munition/swarm)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -1900,14 +2527,33 @@
     ],
     "manufacturer_hq": "Ankara, Turkey",
     "manufacturer_url": "",
-    "industry_id": "stm-kargu"
+    "industry_id": "stm-kargu",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 1.0,
+    "video_system": "EO/IR, AI target recognition",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted mesh (swarm capable)",
+    "firmware": "STM proprietary + AI",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Turkish. Kargu-2 = first autonomous swarm attack (Libya 2020, per UN report)."
+      },
+      "production": {
+        "manufacturing_country": "Turkey",
+        "first_delivery_year": 2020
+      }
+    }
   },
   {
     "pid": "DM-0040",
     "name": "Asisguard Songar",
     "manufacturer": "Asisguard",
     "description": "Asisguard Songar. Armed Multirotor platform from Turkey. MTOW: 45 kg. Payload: 15 kg. Endurance: 0.5 hr. Range: 10 km. Max Speed: 80 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "armed quadrotor",
+    "vehicle_type": "octocopter (armed rotary-wing)",
     "build_class": "defense",
     "category": "armed_multirotor",
     "image_file": "",
@@ -1947,14 +2593,33 @@
     "variants": [],
     "manufacturer_hq": "Ankara, Turkey",
     "manufacturer_url": "",
-    "industry_id": "asisguard-songar"
+    "industry_id": "asisguard-songar",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 10.0,
+    "video_system": "EO/IR, weapon systems",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Turkish armed drone. Mounts machine guns, grenade launchers."
+      },
+      "production": {
+        "manufacturing_country": "Turkey",
+        "first_delivery_year": 2020
+      }
+    }
   },
   {
     "pid": "DM-0041",
     "name": "Elbit Systems Skylark Family",
     "manufacturer": "Elbit Systems",
     "description": "Elbit Systems Skylark Family. Mini Isr platform from Israel. MTOW: 7.5 kg. Payload: 1 kg. Endurance: 3 hr. Range: 40 km. Max Speed: 120 km/h. Ceiling: 4600 m.",
-    "vehicle_type": "hand-launched mini ISR family",
+    "vehicle_type": "fixed-wing (hand-launched ISR)",
     "build_class": "commercial",
     "category": "mini_isr",
     "image_file": "",
@@ -1994,14 +2659,33 @@
     ],
     "manufacturer_hq": "Haifa, Israel",
     "manufacturer_url": "",
-    "industry_id": "elbit-skylark"
+    "industry_id": "elbit-skylark",
+    "max_flight_time_min": 180,
+    "max_payload_kg": 1.2,
+    "video_system": "EO/IR stabilized",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted LOS",
+    "firmware": "Elbit proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Israeli. Skylark I-LE: 3hr. 7.5kg. Used by 30+ countries."
+      },
+      "production": {
+        "manufacturing_country": "Israel",
+        "first_delivery_year": 2008
+      }
+    }
   },
   {
     "pid": "DM-0042",
     "name": "Elbit Systems Lanius",
     "manufacturer": "Elbit Systems",
     "description": "Elbit Systems Lanius. Micro Indoor Lm platform from Israel. MTOW: 1.25 kg. Payload: 0.15 kg. Endurance: 0.12 hr. Range: 0.5 km. Max Speed: 70 km/h.",
-    "vehicle_type": "micro indoor loitering munition",
+    "vehicle_type": "quad (autonomous indoor/urban ISR)",
     "build_class": "commercial",
     "category": "micro_indoor_lm",
     "image_file": "",
@@ -2037,14 +2721,33 @@
     "variants": [],
     "manufacturer_hq": "Haifa, Israel",
     "manufacturer_url": "",
-    "industry_id": "elbit-lanius"
+    "industry_id": "elbit-lanius",
+    "max_flight_time_min": 7,
+    "max_payload_kg": 0,
+    "video_system": "AI vision, 3D mapping, obstacle avoidance",
+    "thermal_capable": false,
+    "rf_bands": "Minimal RF (autonomous)",
+    "firmware": "Elbit AI autonomy",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Israeli indoor autonomous drone. Similar concept to Shield AI Nova."
+      },
+      "production": {
+        "manufacturing_country": "Israel",
+        "first_delivery_year": 2023
+      }
+    }
   },
   {
     "pid": "DM-0043",
     "name": "Israel Aerospace Industries Harop/Harpy",
     "manufacturer": "Israel Aerospace Industries",
     "description": "Israel Aerospace Industries Harop/Harpy. Loitering Munition platform from Israel. MTOW: 135 kg. Payload: 23 kg. Endurance: 6 hr. Range: 1000 km. Max Speed: 418 km/h. Ceiling: 4600 m.",
-    "vehicle_type": "loitering munition family",
+    "vehicle_type": "loitering munition (delta-wing SEAD/anti-radar)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -2090,14 +2793,38 @@
     ],
     "manufacturer_hq": "Lod, Israel",
     "manufacturer_url": "",
-    "industry_id": "iai-harop"
+    "industry_id": "iai-harop",
+    "max_flight_time_min": 540,
+    "max_payload_kg": 23.0,
+    "video_system": "EO/IR + anti-radiation homing (Harpy)",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted LOS + autonomous",
+    "firmware": "IAI proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Israeli. Harop: 9hr loiter, 23kg warhead. Harpy: anti-radar. Widely exported."
+      },
+      "production": {
+        "manufacturing_country": "Israel",
+        "first_delivery_year": 2009
+      },
+      "contracts": [
+        {
+          "note": "India, Azerbaijan, Germany, South Korea, etc."
+        }
+      ]
+    }
   },
   {
     "pid": "DM-0044",
     "name": "Aeronautics Group Orbiter Series",
     "manufacturer": "Aeronautics Group",
     "description": "Aeronautics Group Orbiter Series. Tactical Isr platform from Israel. MTOW: 12 kg. Payload: 2.5 kg. Endurance: 4 hr. Range: 100 km. Max Speed: 130 km/h. Ceiling: 5500 m.",
-    "vehicle_type": "tactical ISR family",
+    "vehicle_type": "fixed-wing (tactical ISR family)",
     "build_class": "tactical",
     "category": "tactical_isr",
     "image_file": "",
@@ -2137,14 +2864,33 @@
     ],
     "manufacturer_hq": "Israel",
     "manufacturer_url": "",
-    "industry_id": "aeronautics-orbiter"
+    "industry_id": "aeronautics-orbiter",
+    "max_flight_time_min": 180,
+    "max_payload_kg": 3.0,
+    "video_system": "EO/IR, SIGINT",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted LOS",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Israeli. Orbiter 1K = loitering munition. Orbiter 4 = medium ISR."
+      },
+      "production": {
+        "manufacturing_country": "Israel",
+        "first_delivery_year": 2006
+      }
+    }
   },
   {
     "pid": "DM-0045",
     "name": "XTEND XTEND XOS Platform",
     "manufacturer": "XTEND",
     "description": "XTEND XTEND XOS Platform. Ai Fpv Swarm platform from Israel. MTOW: 3 kg. Payload: 1 kg. Endurance: 0.5 hr. Range: 5 km. Max Speed: 100 km/h.",
-    "vehicle_type": "VR-operated AI tactical drone system",
+    "vehicle_type": "quad (AI-augmented human-machine teaming)",
     "build_class": "commercial",
     "category": "ai_fpv_swarm",
     "image_file": "",
@@ -2185,14 +2931,33 @@
     "funding": {
       "series_b": "$70M+"
     },
-    "industry_id": "xtend-xos"
+    "industry_id": "xtend-xos",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 1.0,
+    "video_system": "AI vision, immersive telepresence",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "XTEND proprietary AI",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Israeli. Human-machine teaming. Used by IDF, USSOCOM. Lockheed partnership."
+      },
+      "production": {
+        "manufacturing_country": "Israel",
+        "first_delivery_year": 2022
+      }
+    }
   },
   {
     "pid": "DM-0046",
     "name": "EDGE Group / ADASI / HALCON QX/Shadow/Hunter Family",
     "manufacturer": "EDGE Group / ADASI / HALCON",
     "description": "EDGE Group / ADASI / HALCON QX/Shadow/Hunter Family. Loitering Munition platform from UAE. MTOW: 25 kg. Payload: 5 kg. Endurance: 2 hr. Range: 60 km. Max Speed: 200 km/h. Ceiling: 4000 m.",
-    "vehicle_type": "family of loitering munitions (6 variants)",
+    "vehicle_type": "Various (loitering munition + VTOL ISR family)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -2231,14 +2996,32 @@
     ],
     "manufacturer_hq": "Abu Dhabi, UAE",
     "manufacturer_url": "",
-    "industry_id": "edge-qx-family"
+    "industry_id": "edge-qx-family",
+    "max_flight_time_min": 120,
+    "max_payload_kg": 50.0,
+    "thermal_capable": true,
+    "rf_bands": "Multi-band",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "UAE defense conglomerate. Shadow 25/50 VTOL ISR. Hunter loitering munition."
+      },
+      "production": {
+        "manufacturing_country": "United Arab Emirates",
+        "first_delivery_year": 2021
+      }
+    }
   },
   {
     "pid": "DM-0047",
     "name": "HESA / Iran Aviation Industries Shahed Family",
     "manufacturer": "HESA / Iran Aviation Industries",
     "description": "HESA / Iran Aviation Industries Shahed Family. Loitering Munition platform from Iran. MTOW: 200 kg. Payload: 40 kg. Range: 2500 km. Max Speed: 185 km/h. Ceiling: 4000 m.",
-    "vehicle_type": "one-way attack UAV family",
+    "vehicle_type": "fixed-wing (one-way attack / loitering)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -2286,14 +3069,33 @@
     ],
     "manufacturer_hq": "Isfahan, Iran",
     "manufacturer_url": "",
-    "industry_id": "hesa-shahed136"
+    "industry_id": "hesa-shahed136",
+    "max_flight_time_min": 120,
+    "max_payload_kg": 40.0,
+    "video_system": "Basic GPS/INS guidance, some EO variants",
+    "thermal_capable": false,
+    "rf_bands": "GPS/INS (autonomous waypoint)",
+    "firmware": "Iranian military proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Iranian. Shahed-136/131 used by Russia in Ukraine. Low-cost mass-produced."
+      },
+      "production": {
+        "manufacturing_country": "Iran (+ Russia licensed production)",
+        "first_delivery_year": 2021
+      }
+    }
   },
   {
     "pid": "DM-0048",
     "name": "AVIC / Chengdu Aircraft Wing Loong Series",
     "manufacturer": "AVIC / Chengdu Aircraft",
     "description": "AVIC / Chengdu Aircraft Wing Loong Series. Male Ucav platform from China. MTOW: 4200 kg. Payload: 480 kg. Endurance: 20 hr. Range: 200 km. Max Speed: 370 km/h. Ceiling: 9000 m.",
-    "vehicle_type": "MALE UCAV export family",
+    "vehicle_type": "fixed-wing (MALE UCAV)",
     "build_class": "defense",
     "category": "male_ucav",
     "image_file": "",
@@ -2335,14 +3137,33 @@
     ],
     "manufacturer_hq": "Chengdu, China",
     "manufacturer_url": "",
-    "industry_id": "avic-wing-loong"
+    "industry_id": "avic-wing-loong",
+    "max_flight_time_min": 2400,
+    "max_payload_kg": 480.0,
+    "video_system": "EO/IR, SAR, SIGINT, PGMs",
+    "thermal_capable": true,
+    "rf_bands": "SATCOM + LOS",
+    "firmware": "AVIC proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Chinese MALE UCAV. Wing Loong II: 40hr endurance. MQ-9 competitor. 20+ export countries."
+      },
+      "production": {
+        "manufacturing_country": "China",
+        "first_delivery_year": 2011
+      }
+    }
   },
   {
     "pid": "DM-0049",
     "name": "CASC CH (Rainbow) Series",
     "manufacturer": "CASC",
     "description": "CASC CH (Rainbow) Series. Male Ucav And Lm platform from China. MTOW: 3300 kg. Payload: 1200 kg. Endurance: 60 hr. Range: 250 km. Max Speed: 300 km/h. Ceiling: 9000 m.",
-    "vehicle_type": "UCAV and loitering munition family",
+    "vehicle_type": "fixed-wing (MALE UCAV)",
     "build_class": "commercial",
     "category": "male_ucav_and_lm",
     "image_file": "",
@@ -2387,14 +3208,33 @@
     ],
     "manufacturer_hq": "Beijing, China",
     "manufacturer_url": "",
-    "industry_id": "casc-ch-series"
+    "industry_id": "casc-ch-series",
+    "max_flight_time_min": 2400,
+    "max_payload_kg": 345.0,
+    "video_system": "EO/IR, SAR, PGMs",
+    "thermal_capable": true,
+    "rf_bands": "SATCOM + LOS",
+    "firmware": "CASC proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Chinese. CH-4/CH-5. Major export to Middle East, Africa."
+      },
+      "production": {
+        "manufacturing_country": "China",
+        "first_delivery_year": 2014
+      }
+    }
   },
   {
     "pid": "DM-0050",
     "name": "Hongdu / AVIC GJ-11 Sharp Sword",
     "manufacturer": "Hongdu / AVIC",
     "description": "Hongdu / AVIC GJ-11 Sharp Sword. Stealth Ucav platform from China. MTOW: 10000 kg. Payload: 2000 kg. Max Speed: 900 km/h. Ceiling: 15000 m.",
-    "vehicle_type": "stealth flying-wing UCAV",
+    "vehicle_type": "fixed-wing (stealth UCAV, flying wing)",
     "build_class": "commercial",
     "category": "stealth_ucav",
     "image_file": "",
@@ -2424,14 +3264,32 @@
     ],
     "variants": [],
     "manufacturer_hq": "Nanchang, China",
-    "manufacturer_url": ""
+    "manufacturer_url": "",
+    "max_flight_time_min": 240,
+    "max_payload_kg": 2000.0,
+    "thermal_capable": true,
+    "rf_bands": "LOS + SATCOM",
+    "firmware": "AVIC proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Chinese stealth UCAV. Flying wing design. Internal weapons bay."
+      },
+      "production": {
+        "manufacturing_country": "China",
+        "first_delivery_year": 2019
+      }
+    }
   },
   {
     "pid": "DM-0051",
     "name": "Tengden TB-001 Twin-Tailed Scorpion",
     "manufacturer": "Tengden",
     "description": "Tengden TB-001 Twin-Tailed Scorpion. Male Ucav platform from China. MTOW: 3200 kg. Payload: 1000 kg. Endurance: 35 hr. Range: 6000 km. Max Speed: 280 km/h. Ceiling: 8000 m.",
-    "vehicle_type": "twin-boom MALE",
+    "vehicle_type": "fixed-wing (twin-boom MALE UCAV)",
     "build_class": "defense",
     "category": "male_ucav",
     "image_file": "",
@@ -2468,14 +3326,33 @@
     "manufacturer_hq": "Sichuan, China",
     "manufacturer_url": "",
     "industry_id": "tengden-tb001",
-    "notes": "35hr, PLARF targeting, circled Taiwan"
+    "notes": "35hr, PLARF targeting, circled Taiwan",
+    "max_flight_time_min": 2100,
+    "max_payload_kg": 500.0,
+    "video_system": "EO/IR, SAR",
+    "thermal_capable": true,
+    "rf_bands": "SATCOM + LOS",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Chinese. 35hr endurance. Twin boom. PLA operated."
+      },
+      "production": {
+        "manufacturing_country": "China",
+        "first_delivery_year": 2021
+      }
+    }
   },
   {
     "pid": "DM-0052",
     "name": "Norinco Feilong-300D",
     "manufacturer": "Norinco",
     "description": "Norinco Feilong-300D. Loitering Munition platform from China. MTOW: 300 kg. Payload: 50 kg. Endurance: 4 hr. Range: 200 km. Max Speed: 250 km/h. Ceiling: 5000 m.",
-    "vehicle_type": "Shahed-136 analog OWA",
+    "vehicle_type": "quad (tactical ISR/strike)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -2508,14 +3385,28 @@
     "variants": [],
     "manufacturer_hq": "Beijing, China",
     "manufacturer_url": "",
-    "industry_id": "norinco-feilong300d"
+    "industry_id": "norinco-feilong300d",
+    "max_flight_time_min": 60,
+    "max_payload_kg": 5.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "China"
+      }
+    }
   },
   {
     "pid": "DM-0053",
     "name": "Korean Air / KAI KUS-FS MUAV",
     "manufacturer": "Korean Air / KAI",
     "description": "Korean Air / KAI KUS-FS MUAV. Male Ucav platform from South Korea. MTOW: 6500 kg. Payload: 500 kg. Endurance: 24 hr. Range: 250 km. Max Speed: 250 km/h. Ceiling: 12000 m.",
-    "vehicle_type": "MALE ISR/strike",
+    "vehicle_type": "fixed-wing (MALE UCAV)",
     "build_class": "defense",
     "category": "male_ucav",
     "image_file": "",
@@ -2549,14 +3440,33 @@
     "variants": [],
     "manufacturer_hq": "South Korea",
     "manufacturer_url": "",
-    "industry_id": "kai-kus-fs"
+    "industry_id": "kai-kus-fs",
+    "max_flight_time_min": 1440,
+    "max_payload_kg": 230.0,
+    "video_system": "EO/IR, SAR, SIGINT",
+    "thermal_capable": true,
+    "rf_bands": "SATCOM + LOS",
+    "firmware": "KAI proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "South Korean MALE. 24hr endurance. MQ-9 equivalent for ROKAF."
+      },
+      "production": {
+        "manufacturing_country": "South Korea",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0054",
     "name": "ideaForge SWITCH / Netra",
     "manufacturer": "ideaForge",
     "description": "ideaForge SWITCH / Netra. Tactical Isr platform from India. MTOW: 4.2 kg. Payload: 0.8 kg. Endurance: 2 hr. Range: 15 km. Max Speed: 80 km/h. Ceiling: 4500 m.",
-    "vehicle_type": "tactical ISR quadcopter family",
+    "vehicle_type": "VTOL fixed-wing (SWITCH) / quad (Netra)",
     "build_class": "tactical",
     "category": "tactical_isr",
     "image_file": "",
@@ -2592,14 +3502,33 @@
     "variants": [],
     "manufacturer_hq": "Mumbai, India",
     "manufacturer_url": "",
-    "industry_id": "ideaforge-switch"
+    "industry_id": "ideaforge-switch",
+    "max_flight_time_min": 120,
+    "max_payload_kg": 2.0,
+    "video_system": "EO/IR",
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Indian. Largest Indian military drone supplier. IPO 2023."
+      },
+      "production": {
+        "manufacturing_country": "India",
+        "first_delivery_year": 2016
+      }
+    }
   },
   {
     "pid": "DM-0055",
     "name": "Solar Industries Nagastra-1",
     "manufacturer": "Solar Industries",
     "description": "Solar Industries Nagastra-1. Loitering Munition platform from India. MTOW: 4.2 kg. Endurance: 0.5 hr. Range: 15 km. Max Speed: 100 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "man-portable loitering munition",
+    "vehicle_type": "loitering munition (tube-launched)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -2635,14 +3564,32 @@
     "variants": [],
     "manufacturer_hq": "Nagpur, India",
     "manufacturer_url": "",
-    "industry_id": "solar-nagastra1"
+    "industry_id": "solar-nagastra1",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 1.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Indian loitering munition. Indian Army order."
+      },
+      "production": {
+        "manufacturing_country": "India",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0056",
     "name": "SYPAQ Corvo PPDS",
     "manufacturer": "SYPAQ",
     "description": "SYPAQ Corvo PPDS. Expendable Strike platform from Australia. MTOW: 7 kg. Payload: 2 kg. Endurance: 2 hr. Range: 120 km. Max Speed: 110 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "cardboard expendable drone",
+    "vehicle_type": "fixed-wing (cardboard/flat-pack ISR/strike)",
     "build_class": "commercial",
     "category": "expendable_strike",
     "image_file": "",
@@ -2678,14 +3625,33 @@
     "variants": [],
     "manufacturer_hq": "Melbourne, Australia",
     "manufacturer_url": "",
-    "industry_id": "sypaq-corvo"
+    "industry_id": "sypaq-corvo",
+    "max_flight_time_min": 60,
+    "max_payload_kg": 3.0,
+    "video_system": "Modular EO",
+    "thermal_capable": false,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Australian. Flat-pack cardboard drone. Provided to Ukraine."
+      },
+      "production": {
+        "manufacturing_country": "Australia",
+        "first_delivery_year": 2022
+      }
+    }
   },
   {
     "pid": "DM-0057",
     "name": "NCSIST Chien Hsiang",
     "manufacturer": "NCSIST",
     "description": "NCSIST Chien Hsiang. Loitering Munition platform from Taiwan. MTOW: 6.5 kg. Endurance: 0.5 hr. Range: 100 km. Max Speed: 250 km/h. Ceiling: 4000 m.",
-    "vehicle_type": "anti-radiation loitering munition",
+    "vehicle_type": "loitering munition (anti-radar, delta wing)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -2720,14 +3686,33 @@
     ],
     "manufacturer_hq": "Taiwan",
     "manufacturer_url": "",
-    "industry_id": "ncsist-chien-hsiang"
+    "industry_id": "ncsist-chien-hsiang",
+    "max_flight_time_min": 300,
+    "max_payload_kg": 30.0,
+    "video_system": "Anti-radiation homing + EO",
+    "thermal_capable": true,
+    "rf_bands": "Autonomous + datalink",
+    "firmware": "NCSIST proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Taiwanese. Anti-radar loitering munition. Similar to IAI Harpy."
+      },
+      "production": {
+        "manufacturing_country": "Taiwan",
+        "first_delivery_year": 2022
+      }
+    }
   },
   {
     "pid": "DM-0058",
     "name": "ST Engineering Skyblade / EagleStrike",
     "manufacturer": "ST Engineering",
     "description": "ST Engineering Skyblade / EagleStrike. Tactical Isr And Lm platform from Singapore. MTOW: 3 kg. Payload: 0.5 kg. Endurance: 1 hr. Range: 30 km. Max Speed: 100 km/h. Ceiling: 3000 m.",
-    "vehicle_type": "tactical ISR and LM family",
+    "vehicle_type": "fixed-wing (hand-launched ISR)",
     "build_class": "commercial",
     "category": "tactical_isr_and_lm",
     "image_file": "",
@@ -2764,14 +3749,32 @@
     ],
     "manufacturer_hq": "Singapore",
     "manufacturer_url": "",
-    "industry_id": "st-engineering-skyblade"
+    "industry_id": "st-engineering-skyblade",
+    "max_flight_time_min": 60,
+    "max_payload_kg": 1.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Singaporean defense. Skyblade: 1hr ISR. EagleStrike: loitering munition."
+      },
+      "production": {
+        "manufacturing_country": "Singapore",
+        "first_delivery_year": 2018
+      }
+    }
   },
   {
     "pid": "DM-0059",
     "name": "Rheinmetall/UVision Hero Family (EU)",
     "manufacturer": "Rheinmetall/UVision",
     "description": "Sardinia factory, \u20ac200M+ backlog, 8 variants",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "loitering munition family",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -2807,14 +3810,28 @@
     "combat_theater": "multiple",
     "ai_autonomy": true,
     "notes": "Sardinia factory, \u20ac200M+ backlog, 8 variants",
-    "industry_id": "rheinmetall-hero-family-eu"
+    "industry_id": "rheinmetall-hero-family-eu",
+    "max_flight_time_min": 120,
+    "max_payload_kg": 30.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "UVision proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Duplicate \u2014 see Hero Loitering Munition Family."
+      }
+    }
   },
   {
     "pid": "DM-0060",
     "name": "Delair/KNDS MV-25 OSKAR",
     "manufacturer": "Delair/KNDS",
     "description": "MATARIS family (5 variants 10-100km), ~100 combat-proven",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -2854,14 +3871,23 @@
     "manufacturer_url": "",
     "industry_id": "delair-knds-oskar",
     "combat_theater": "Ukraine",
-    "notes": "MATARIS family (5 variants 10-100km), ~100 combat-proven"
+    "notes": "MATARIS family (5 variants 10-100km), ~100 combat-proven",
+    "max_flight_time_min": 150,
+    "max_payload_kg": 5.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true
   },
   {
     "pid": "DM-0061",
     "name": "Malloy/BAE Systems T-150",
     "manufacturer": "Malloy/BAE Systems",
     "description": "Royal Navy/Marines, deployed Ukraine & Indo-Pacific, missile launch tested",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "quad (heavy-lift cargo)",
     "build_class": "commercial",
     "category": "heavy_lift_vtol",
     "image_file": "",
@@ -2892,14 +3918,23 @@
     ],
     "variants": [],
     "manufacturer_hq": "",
-    "manufacturer_url": ""
+    "manufacturer_url": "",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 68.0,
+    "thermal_capable": false,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true
   },
   {
     "pid": "DM-0062",
     "name": "Saab/BlueBear Centurion Swarm",
     "manufacturer": "Saab/BlueBear",
     "description": "RAF 216 Squadron, 20-drone swarms, AUKUS trials",
-    "vehicle_type": "multirotor",
+    "vehicle_type": "swarm (multiple small fixed-wing)",
     "build_class": "defense",
     "category": "swarm_autonomy",
     "image_file": "",
@@ -2935,14 +3970,28 @@
     "ai_autonomy": true,
     "swarm_capable": true,
     "notes": "RAF 216 Squadron, 20-drone swarms, AUKUS trials",
-    "industry_id": "saab-centurion-swarm"
+    "industry_id": "saab-centurion-swarm",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 0.5,
+    "thermal_capable": false,
+    "rf_bands": "Mesh network",
+    "firmware": "BlueBear autonomy",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "United Kingdom/Sweden"
+      }
+    }
   },
   {
     "pid": "DM-0063",
     "name": "ALX Systems Tactical LM",
     "manufacturer": "ALX Systems",
     "description": "Fully Belgian-made, GPS-denied capable",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "loitering munition",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -2972,14 +4021,23 @@
     ],
     "variants": [],
     "manufacturer_hq": "",
-    "manufacturer_url": ""
+    "manufacturer_url": "",
+    "max_flight_time_min": 20,
+    "max_payload_kg": 1.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true
   },
   {
     "pid": "DM-0064",
     "name": "UkrSpecSystems Shark/PD-2/Leleka",
     "manufacturer": "UkrSpecSystems",
     "description": "Shark: 80km, ~$520K/system; PD-2: 10hr anti-jam",
-    "vehicle_type": "multirotor",
+    "vehicle_type": "fixed-wing (ISR)",
     "build_class": "tactical",
     "category": "tactical_isr",
     "image_file": "",
@@ -3010,14 +4068,23 @@
     ],
     "variants": [],
     "manufacturer_hq": "",
-    "manufacturer_url": ""
+    "manufacturer_url": "",
+    "max_flight_time_min": 180,
+    "max_payload_kg": 3.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "DM-0065",
     "name": "UkrJet UJ-26 Bober/UJ-25",
     "manufacturer": "UkrJet",
     "description": "1000km deep strike into Russia",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing (long-range strike)",
     "build_class": "commercial",
     "category": "deep_strike_owa",
     "image_file": "",
@@ -3048,14 +4115,23 @@
     ],
     "variants": [],
     "manufacturer_hq": "",
-    "manufacturer_url": ""
+    "manufacturer_url": "",
+    "max_flight_time_min": 120,
+    "max_payload_kg": 20.0,
+    "thermal_capable": false,
+    "rf_bands": "Autonomous",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "DM-0066",
     "name": "WB Group FlyEye",
     "manufacturer": "WB Group",
     "description": "1000+ produced, Ukraine production",
-    "vehicle_type": "multirotor",
+    "vehicle_type": "fixed-wing (ISR)",
     "build_class": "tactical",
     "category": "tactical_isr",
     "image_file": "",
@@ -3086,14 +4162,28 @@
     ],
     "variants": [],
     "manufacturer_hq": "",
-    "manufacturer_url": ""
+    "manufacturer_url": "",
+    "max_flight_time_min": 180,
+    "max_payload_kg": 1.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Poland"
+      }
+    }
   },
   {
     "pid": "DM-0067",
     "name": "WB Group Warmate 20",
     "manufacturer": "WB Group",
     "description": "Hundreds of km range, 20kg warhead",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "loitering munition",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -3129,14 +4219,31 @@
     "ai_autonomy": true,
     "swarm_capable": true,
     "notes": "Hundreds of km range, 20kg warhead",
-    "industry_id": "wb-group-warmate-20"
+    "industry_id": "wb-group-warmate-20",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 4.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Upgraded Warmate. 20kg class."
+      },
+      "production": {
+        "manufacturing_country": "Poland"
+      }
+    }
   },
   {
     "pid": "DM-0068",
     "name": "UDS Swarm Platform",
     "manufacturer": "UDS",
     "description": "\u20ac3.2M funding, AI swarm technologies",
-    "vehicle_type": "multirotor",
+    "vehicle_type": "swarm (multiple small UAVs)",
     "build_class": "defense",
     "category": "swarm_autonomy",
     "image_file": "",
@@ -3172,14 +4279,28 @@
     "ai_autonomy": true,
     "swarm_capable": true,
     "notes": "\u20ac3.2M funding, AI swarm technologies",
-    "industry_id": "uds-swarm-platform"
+    "industry_id": "uds-swarm-platform",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 0.5,
+    "thermal_capable": false,
+    "rf_bands": "Mesh",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "note": "Swarm technology platform"
+      }
+    }
   },
   {
     "pid": "DM-0069",
     "name": "CASC CH-901",
     "manufacturer": "CASC",
     "description": "48-tube vehicle launchers",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "loitering munition (tube-launched)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -3212,14 +4333,28 @@
     "manufacturer_url": "",
     "swarm_capable": true,
     "notes": "48-tube vehicle launchers",
-    "industry_id": "casc-ch-901"
+    "industry_id": "casc-ch-901",
+    "max_flight_time_min": 20,
+    "max_payload_kg": 1.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "CASC proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "China"
+      }
+    }
   },
   {
     "pid": "DM-0070",
     "name": "Hongdu/AVIC GJ-11 Sharp Sword",
     "manufacturer": "Hongdu/AVIC",
     "description": "Flying wing, J-20 loyal wingman, Type 076 naval",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing (stealth UCAV)",
     "build_class": "commercial",
     "category": "stealth_ucav",
     "image_file": "",
@@ -3259,14 +4394,23 @@
     "industry_id": "hongdu-gj11",
     "ai_autonomy": true,
     "swarm_capable": true,
-    "notes": "Flying wing, J-20 loyal wingman, Type 076 naval"
+    "notes": "Flying wing, J-20 loyal wingman, Type 076 naval",
+    "max_flight_time_min": 240,
+    "max_payload_kg": 2000.0,
+    "thermal_capable": true,
+    "rf_bands": "LOS + SATCOM",
+    "firmware": "AVIC proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "DM-0071",
     "name": "Tengden TB-001",
     "manufacturer": "Tengden",
     "description": "35hr, PLARF targeting, circled Taiwan",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing (MALE)",
     "build_class": "commercial",
     "category": "male_isr",
     "image_file": "",
@@ -3295,14 +4439,23 @@
     ],
     "variants": [],
     "manufacturer_hq": "",
-    "manufacturer_url": ""
+    "manufacturer_url": "",
+    "max_flight_time_min": 2100,
+    "max_payload_kg": 500.0,
+    "thermal_capable": true,
+    "rf_bands": "SATCOM",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "DM-0072",
     "name": "Ziyan Blowfish A3",
     "manufacturer": "Ziyan",
     "description": "AI target recognition",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "helicopter (autonomous armed)",
     "build_class": "commercial",
     "category": "armed_helo_uav",
     "image_file": "",
@@ -3337,14 +4490,32 @@
     "ai_autonomy": true,
     "swarm_capable": true,
     "notes": "AI target recognition",
-    "industry_id": "ziyan-blowfish-a3"
+    "industry_id": "ziyan-blowfish-a3",
+    "max_flight_time_min": 60,
+    "max_payload_kg": 12.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "Chinese autonomous armed helicopter drone. Saudi/UAE sales reported."
+      },
+      "production": {
+        "manufacturing_country": "China",
+        "first_delivery_year": 2019
+      }
+    }
   },
   {
     "pid": "DM-0073",
     "name": "Airlogix GOR",
     "manufacturer": "Airlogix",
     "description": "500 GOR ISR quadcopters shipped in 2024. ~$100M in sales.",
-    "vehicle_type": "multirotor",
+    "vehicle_type": "quad (tactical)",
     "build_class": "tactical",
     "category": "tactical_isr",
     "image_file": "",
@@ -3380,14 +4551,28 @@
       "Ukraine (2024)"
     ],
     "notes": "500 GOR ISR quadcopters shipped in 2024. ~$100M in sales.",
-    "industry_id": "airlogix-gor"
+    "industry_id": "airlogix-gor",
+    "max_flight_time_min": 25,
+    "max_payload_kg": 1.5,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Germany"
+      }
+    }
   },
   {
     "pid": "DM-0074",
     "name": "DeViRo RAM II",
     "manufacturer": "DeViRo",
     "description": "Also produces Leleka-100 ISR. Czech co-production through UAC.",
-    "vehicle_type": "multirotor",
+    "vehicle_type": "quad (tactical ISR)",
     "build_class": "tactical",
     "category": "fpv_strike",
     "image_file": "",
@@ -3426,14 +4611,28 @@
       "Ukraine"
     ],
     "notes": "Also produces Leleka-100 ISR. Czech co-production through UAC.",
-    "industry_id": "deviro-ram-ii"
+    "industry_id": "deviro-ram-ii",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 2.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Germany"
+      }
+    }
   },
   {
     "pid": "DM-0075",
     "name": "Antonov AN-196 Liutyi",
     "manufacturer": "Antonov",
     "description": "Long-range kamikaze drone from the historic Antonov bureau. ~$200K/unit target.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing (strike/ISR)",
     "build_class": "commercial",
     "category": "deep_strike_kamikaze",
     "image_file": "",
@@ -3465,14 +4664,28 @@
     "manufacturer_hq": "Kyiv, Ukraine",
     "manufacturer_url": "",
     "notes": "Long-range kamikaze drone from the historic Antonov bureau. ~$200K/unit target.",
-    "industry_id": "antonov-an196"
+    "industry_id": "antonov-an196",
+    "max_flight_time_min": 60,
+    "max_payload_kg": 10.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Ukraine"
+      }
+    }
   },
   {
     "pid": "DM-0076",
     "name": "Frontline Robotics / Quantum Frontline Industries QFI Series",
     "manufacturer": "Frontline Robotics / Quantum Frontline Industries",
     "description": "Joint venture with Germany's Quantum Systems. Up to 10,000 drones/year produced in Germany.",
-    "vehicle_type": "multirotor",
+    "vehicle_type": "quad (heavy-lift tactical)",
     "build_class": "tactical",
     "category": "fpv_strike",
     "image_file": "",
@@ -3504,14 +4717,28 @@
     "manufacturer_hq": "Ukraine/Germany",
     "manufacturer_url": "",
     "notes": "Joint venture with Germany's Quantum Systems. Up to 10,000 drones/year produced in Germany.",
-    "industry_id": "frontline-robotics-qfi"
+    "industry_id": "frontline-robotics-qfi",
+    "max_flight_time_min": 45,
+    "max_payload_kg": 5.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Canada"
+      }
+    }
   },
   {
     "pid": "DM-0077",
     "name": "KAI (Korea Aerospace Industries) Stealth Carrier-Based UCAV",
     "manufacturer": "KAI (Korea Aerospace Industries)",
     "description": "Part of South Korea's broader autonomous combat strategy. Hanwha has separate $524M joint development with General Atomics for Gray Eagle STOL.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing (stealth naval UCAV concept)",
     "build_class": "commercial",
     "category": "group3_plus_ucav",
     "image_file": "",
@@ -3543,14 +4770,29 @@
     "manufacturer_hq": "Sacheon, South Korea",
     "manufacturer_url": "",
     "notes": "Part of South Korea's broader autonomous combat strategy. Hanwha has separate $524M joint development with General Atomics for Gray Eagle STOL.",
-    "industry_id": "kai-kus-fs"
+    "industry_id": "kai-kus-fs",
+    "max_flight_time_min": 300,
+    "max_payload_kg": 500.0,
+    "thermal_capable": true,
+    "rf_bands": "Multi-band",
+    "firmware": "KAI proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "South Korea",
+        "note": "Development stage"
+      }
+    }
   },
   {
     "pid": "DM-0078",
     "name": "Leonardo AWHERO",
     "manufacturer": "Leonardo",
     "description": "Major Italian defense prime. Falco Xplorer is MALE-class.",
-    "vehicle_type": "multirotor",
+    "vehicle_type": "helicopter (rotary-wing VTOL ISR)",
     "build_class": "tactical",
     "category": "tactical_isr",
     "image_file": "",
@@ -3586,14 +4828,33 @@
     "manufacturer_hq": "Rome, Italy",
     "manufacturer_url": "",
     "notes": "Major Italian defense prime. Falco Xplorer is MALE-class.",
-    "industry_id": "leonardo-awhero"
+    "industry_id": "leonardo-awhero",
+    "max_flight_time_min": 300,
+    "max_payload_kg": 40.0,
+    "video_system": "EO/IR, radar, maritime sensors",
+    "thermal_capable": true,
+    "rf_bands": "Multi-band encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Italian. Leonardo defense. Naval/maritime ISR. 200kg class."
+      },
+      "production": {
+        "manufacturing_country": "Italy",
+        "first_delivery_year": 2021
+      }
+    }
   },
   {
     "pid": "DM-0079",
     "name": "Adani / Alpha Design Technologies Hermes 900 (Indian co-production)",
     "manufacturer": "Adani / Alpha Design Technologies",
     "description": "Part of India's Make-in-India defense manufacturing push with Israeli technology transfer.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing (MALE ISR)",
     "build_class": "commercial",
     "category": "group3_plus_isr",
     "image_file": "",
@@ -3628,14 +4889,23 @@
     "manufacturer_hq": "Hyderabad, India",
     "manufacturer_url": "",
     "notes": "Part of India's Make-in-India defense manufacturing push with Israeli technology transfer.",
-    "industry_id": "adani-hermes900-india"
+    "industry_id": "adani-hermes900-india",
+    "max_flight_time_min": 2160,
+    "max_payload_kg": 300.0,
+    "thermal_capable": true,
+    "rf_bands": "SATCOM + LOS",
+    "firmware": "Elbit proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "DM-0080",
     "name": "HAL (Hindustan Aeronautics Limited) CATS Warrior",
     "manufacturer": "HAL (Hindustan Aeronautics Limited)",
     "description": "India's indigenous loyal wingman and stealth UCAV programs. Kiran unmanned variant completed maiden flight 2025.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing (stealth UCAV concept)",
     "build_class": "commercial",
     "category": "loyal_wingman_ucav",
     "image_file": "",
@@ -3670,14 +4940,29 @@
     "manufacturer_hq": "Bangalore, India",
     "manufacturer_url": "",
     "notes": "India's indigenous loyal wingman and stealth UCAV programs. Kiran unmanned variant completed maiden flight 2025.",
-    "industry_id": "hal-cats-warrior"
+    "industry_id": "hal-cats-warrior",
+    "max_flight_time_min": 240,
+    "max_payload_kg": 250.0,
+    "thermal_capable": true,
+    "rf_bands": "Multi-band",
+    "firmware": "HAL proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "India",
+        "note": "Development stage"
+      }
+    }
   },
   {
     "pid": "DM-0081",
     "name": "DroneShield DroneGun / DroneSentry",
     "manufacturer": "DroneShield",
     "description": "A$2.9B market cap. 4,000+ systems sold to 40+ countries. Counter-UAS leader. Included for ecosystem completeness.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "counter-UAS system (not a drone)",
     "build_class": "commercial",
     "category": "counter_uas",
     "image_file": "",
@@ -3714,14 +4999,33 @@
       "multiple NATO deployments"
     ],
     "notes": "A$2.9B market cap. 4,000+ systems sold to 40+ countries. Counter-UAS leader. Included for ecosystem completeness.",
-    "industry_id": "droneshield-aus"
+    "industry_id": "droneshield-aus",
+    "max_flight_time_min": 0,
+    "max_payload_kg": 0,
+    "video_system": "Radar/RF detection + EO/IR tracking",
+    "thermal_capable": true,
+    "rf_bands": "RF jamming (multiple bands)",
+    "firmware": "DroneShield proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Australian counter-UAS company. DroneGun = handheld jammer. DroneSentry = fixed C-UAS. NOT a drone platform."
+      },
+      "production": {
+        "manufacturing_country": "Australia/USA",
+        "first_delivery_year": 2016
+      }
+    }
   },
   {
     "pid": "DM-0082",
     "name": "KNDS (Delair partnership) MATARIS Program",
     "manufacturer": "KNDS (Delair partnership)",
     "description": "France plans to procure 2,000+ loitering munitions. Four variants spanning 10\u2013100 km range.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing (ISR)",
     "build_class": "tactical",
     "category": "loitering_munition",
     "image_file": "",
@@ -3756,14 +5060,28 @@
       "Ukraine (~100 OSKAR units)"
     ],
     "notes": "France plans to procure 2,000+ loitering munitions. Four variants spanning 10\u2013100 km range.",
-    "industry_id": "knds-mataris"
+    "industry_id": "knds-mataris",
+    "max_flight_time_min": 120,
+    "max_payload_kg": 5.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "France"
+      }
+    }
   },
   {
     "pid": "DM-0083",
     "name": "SAMI (Saudi Arabian Military Industries) Ak\u0131nc\u0131 (co-production)",
     "manufacturer": "SAMI (Saudi Arabian Military Industries)",
     "description": "300 Saudi engineers training at Baykar in Turkey. Part of Saudi Vision 2030 defense localization.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing (HALE UCAV co-production)",
     "build_class": "commercial",
     "category": "group3_plus_ucav",
     "image_file": "",
@@ -3795,14 +5113,23 @@
     "manufacturer_hq": "Riyadh, Saudi Arabia",
     "manufacturer_url": "",
     "notes": "300 Saudi engineers training at Baykar in Turkey. Part of Saudi Vision 2030 defense localization.",
-    "industry_id": "sami-akinci-coprod"
+    "industry_id": "sami-akinci-coprod",
+    "max_flight_time_min": 1440,
+    "max_payload_kg": 1350.0,
+    "thermal_capable": true,
+    "rf_bands": "SATCOM",
+    "firmware": "Baykar proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "DM-0084",
     "name": "Baykar Technologies Bayraktar TB3",
     "manufacturer": "Baykar Technologies",
     "description": "Baykar Technologies Bayraktar TB3. Male Ucav platform from Turkey. MTOW: 1600 kg. Payload: 280 kg. Endurance: 24 hr. Range: 300 km. Max Speed: 300 km/h. Ceiling: 10700 m.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing (MALE UCAV, carrier-capable)",
     "build_class": "defense",
     "category": "male_ucav",
     "image_file": "",
@@ -3844,14 +5171,33 @@
     "production": {
       "status": "flight_testing"
     },
-    "industry_id": "baykar-tb3"
+    "industry_id": "baykar-tb3",
+    "max_flight_time_min": 1560,
+    "max_payload_kg": 280.0,
+    "video_system": "EO/IR, AESA radar, MAM munitions",
+    "thermal_capable": true,
+    "rf_bands": "SATCOM + C-band LOS",
+    "firmware": "Baykar proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false,
+    "industry_data": {
+      "compliance": {
+        "note": "TB3 = carrier-variant of TB2. Folding wings for TCG Anadolu. 26hr endurance."
+      },
+      "production": {
+        "manufacturing_country": "Turkey",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-85",
     "name": "Firestorm Tempest 50",
     "manufacturer": "Firestorm Labs",
     "description": "Group 2/3 modular fixed-wing UAS with 3D-printed airframe. Packs into a single Pelican case, man-portable, launch-ready in under 10 minutes. Open architecture supports ISR, EW, comms relay, and light strike missions. Swappable propulsion modules (pusher prop or micro turbojet). 3D printed in ~9 hours, fully assembled in 36 hours. OCTRA flight controller/mission computer controls vehicles 10-1000+ lbs.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "VTOL (Group 2 ISR/strike)",
     "build_class": "defense",
     "category": "tactical_isr",
     "image_file": "",
@@ -3922,14 +5268,33 @@
     },
     "gcs": "OCTRA-based, PX4/QGroundControl compatible, MOSA/GRA compliant",
     "documentation_availability": "limited (defense-focused, some public specs from AUSA/JIFX demos)",
-    "industry_id": "PLT-1"
+    "industry_id": "PLT-1",
+    "max_flight_time_min": 50,
+    "max_payload_kg": 11.0,
+    "video_system": "EO/IR, modular payloads",
+    "thermal_capable": true,
+    "rf_bands": "Multi-band encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "US company (Firestorm Labs). Tempest 50: 50 min endurance, 50 lbs class."
+      },
+      "production": {
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-86",
     "name": "Firestorm El Ni\u00f1o",
     "manufacturer": "Firestorm Labs",
     "description": "Hand-launchable miniature precision-guided system (mPGS). Under 10 lbs, ruck-portable, launch-ready in under 30 seconds. Onboard ATR (Automatic Target Recognition) with autonomous terminal guidance. Designed for small-team organic fires and real-time ISR. Priced for mass employment.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "VTOL (Group 3 ISR/cargo)",
     "build_class": "defense",
     "category": "loitering_munition",
     "image_file": "",
@@ -3986,14 +5351,28 @@
     },
     "gcs": "OCTRA-based",
     "documentation_availability": "minimal (specs from Medium blog posts and conference appearances)",
-    "industry_id": "PLT-2"
+    "industry_id": "PLT-2",
+    "max_flight_time_min": 90,
+    "max_payload_kg": 20.0,
+    "thermal_capable": true,
+    "rf_bands": "Multi-band",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "USA"
+      }
+    }
   },
   {
     "pid": "DM-87",
     "name": "Firestorm Squall",
     "manufacturer": "Firestorm Labs",
     "description": "Group 1 FPV quadcopter combining Orqa's battle-tested technology with Firestorm's additive manufacturing. US-built with NDAA-compliant components. Partnership between Firestorm Labs and Orqa FPV for at-scale production. Designed for US warfighter and allied forces.",
-    "vehicle_type": "multirotor",
+    "vehicle_type": "quad (tactical)",
     "build_class": "defense",
     "category": "fpv_strike",
     "image_file": "",
@@ -4038,14 +5417,28 @@
     },
     "gcs": "Orqa/Firestorm ground station",
     "documentation_availability": "minimal (press release only)",
-    "industry_id": "PLT-3"
+    "industry_id": "PLT-3",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 5.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "USA"
+      }
+    }
   },
   {
     "pid": "DM-88",
     "name": "Airvolute Stribog ISR",
     "manufacturer": "Airvolute",
     "description": "Open-architecture ISR quadcopter with NVIDIA Jetson Xavier NX/Orin NX onboard. GNSS-denied capable via VIO and optical flow. Foldable arms for backpack transport, deployable in 4 minutes. Supports Doodle Labs or Silvus datalinks. STANAG 4609 compliant video. Multiple payload options including FLIR Hadron 640R, NextVision Dragoneye 2/Starling, SIYI ZR10. Water resistant IP54.",
-    "vehicle_type": "multirotor",
+    "vehicle_type": "quad (tactical ISR)",
     "build_class": "defense",
     "category": "tactical_isr",
     "country": "Slovakia",
@@ -4106,14 +5499,32 @@
       "status": "production",
       "facility": "Trnava, Slovakia"
     },
-    "industry_id": "PLT-4"
+    "industry_id": "PLT-4",
+    "max_flight_time_min": 40,
+    "max_payload_kg": 3.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Slovak company. NATO compliant."
+      },
+      "production": {
+        "manufacturing_country": "Slovakia",
+        "first_delivery_year": 2023
+      }
+    }
   },
   {
     "pid": "DM-89",
     "name": "Airvolute Patron FPV",
     "manufacturer": "Airvolute",
     "description": "NVIDIA Jetson Orin Nano-powered FPV drone with AI-driven terminal guidance. Open architecture enables autonomous target acquisition and terminal guidance against armored vehicles with manual abort/takeover capability. 10-inch frame with 3kg payload capacity. Compatible with standard headsets (e.g. Radiomaster) and digital radios (Silvus, Doodle Labs). Single integrated PCB serves as flight controller and airframe top cover. Designed to overcome EW with autonomous guidance.",
-    "vehicle_type": "multirotor",
+    "vehicle_type": "quad (FPV strike)",
     "build_class": "defense",
     "category": "fpv_strike",
     "country": "Slovakia",
@@ -4156,14 +5567,29 @@
       "status": "production",
       "facility": "Trnava, Slovakia"
     },
-    "industry_id": "PLT-5"
+    "industry_id": "PLT-5",
+    "max_flight_time_min": 15,
+    "max_payload_kg": 1.0,
+    "thermal_capable": false,
+    "rf_bands": "FPV encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "Slovakia",
+        "first_delivery_year": 2023
+      }
+    }
   },
   {
     "pid": "MDL-1000",
     "name": "Apex Freestyle 5\"",
     "description": "The quintessential 5-inch freestyle quad. Built around the proven TBS Source One V6 frame and Axisflying 2207.5 motors on 6S, this build delivers explosive power and predictable handling for flips, rolls, power loops, and proximity flying. HAKRC F722 stack keeps things simple with a single-board FC+ESC solution. Analog 5.8GHz video keeps weight down and latency minimal. ELRS 2.4GHz for rock-solid control link. The go-to build for pilots stepping up from beginner quads or building their first custom rig.",
-    "vehicle_type": "quad",
-    "build_class": "5inch_freestyle",
+    "vehicle_type": "quad (5-inch freestyle)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -4227,14 +5653,23 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 6,
+    "max_payload_kg": 0,
+    "thermal_capable": false,
+    "rf_bands": "5.8 GHz analog",
+    "firmware": "Betaflight",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-1001",
     "name": "Venom Racer 5\"",
     "description": "Purpose-built 5-inch race quad optimized for gate speed and low lap times. The HGLRC MY5 frame sheds every unnecessary gram while maintaining crash durability. High-KV 2207 2120KV motors paired with a 60A ESC deliver instant throttle response on 6S. Separate FC and ESC allow individual replacement after race crashes. Lightweight analog video system and RadioMaster ELRS nano receiver keep the all-up weight under 300g dry. Built for competitive MultiGP and FAI racing.",
-    "vehicle_type": "quad",
-    "build_class": "5inch_racing",
+    "vehicle_type": "quad (5-inch racing)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -4302,14 +5737,23 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 4,
+    "max_payload_kg": 0,
+    "thermal_capable": false,
+    "rf_bands": "5.8 GHz analog",
+    "firmware": "Betaflight",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-1002",
     "name": "Cloudwalker HD 5\"",
     "description": "Premium 5-inch HD freestyle build designed for pilots who want crystal-clear digital video without sacrificing flight performance. The FlyFishRC Volador II VX5 frame is specifically engineered for DJI O4/Walksnail camera mounting. Axisflying Argus ECO stack pairs an F4 FC with a 60A ESC for reliable power delivery. Walksnail Avatar HD Pro camera feeds stunning 1080p video to your goggles. True diversity ELRS receiver ensures bulletproof link in urban and mountain environments. This is the build for YouTube-quality FPV footage.",
-    "vehicle_type": "quad",
-    "build_class": "5inch_freestyle",
+    "vehicle_type": "quad (5-inch HD freestyle)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -4373,14 +5817,23 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 7,
+    "max_payload_kg": 0,
+    "thermal_capable": false,
+    "rf_bands": "5.8 GHz digital (Walksnail)",
+    "firmware": "Betaflight",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-1003",
     "name": "Horizon Scout 7\" Long Range",
     "description": "7-inch long range explorer built for 20+ minute flights and 10+ km range. VCI Hobby ARES 2808 1350KV motors spin efficient 7-inch props at low RPM for maximum flight time on 6S Li-Ion packs. H743 flight controller runs GPS Rescue for automatic return-to-home on signal loss. Flywoo GOKU GPS module provides fast satellite fix. ELRS true diversity receiver on 2.4GHz ensures control link integrity at distance. HDZero video system delivers low-latency digital video. This is a serious long range platform for pilots exploring mountain ranges, coastlines, and backcountry terrain.",
-    "vehicle_type": "quad",
-    "build_class": "7inch_long_range",
+    "vehicle_type": "quad (7-inch long range)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -4448,14 +5901,23 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 35,
+    "max_payload_kg": 0.2,
+    "thermal_capable": false,
+    "rf_bands": "2.4 GHz ELRS + 5.8 GHz",
+    "firmware": "Betaflight/iNav",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-1004",
     "name": "Voyager LR6 6\" Cruiser",
     "description": "Efficient 6-inch long range cruiser optimized for smooth cinematic flights and maximum endurance. Lumenier 2307 JohnnyFPV V3 Pro motors deliver silky-smooth throttle response at low KV, perfect for cinematic orbits and long glides. 6S Li-Ion battery pack provides 15-25 minute flight times depending on flying style. GPS rescue and ELRS long range link provide safety margin for flights beyond visual line of sight. Designed for pilots who prioritize flight time and video quality over acrobatic performance.",
-    "vehicle_type": "quad",
-    "build_class": "6inch_long_range",
+    "vehicle_type": "quad (6-inch long range)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -4523,14 +5985,23 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 25,
+    "max_payload_kg": 0.1,
+    "thermal_capable": false,
+    "rf_bands": "2.4 GHz ELRS + 5.8 GHz",
+    "firmware": "Betaflight",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-1005",
     "name": "Atlas X 10\" CineLifter",
     "description": "Heavy-lift 10-inch cinelifter designed to carry full-size cinema cameras (GoPro, Sony A6000, RED Komodo) for professional aerial cinematography. iFlight XING2 3110 motors at 900KV provide massive torque on 6S while maintaining efficiency. Lumenier Siege 80A ESC handles the sustained high-current draw of large propellers under camera payload. Lumenier LUX H743 FC with dual IMU provides rock-solid stabilization. 9-inch MacroQuad propellers generate enormous thrust with low noise. This platform is for commercial filmmakers and cinema FPV operators who need reliability and payload capacity above all else.",
-    "vehicle_type": "quad",
-    "build_class": "10inch_cinelifter",
+    "vehicle_type": "quad (10-inch cinelifter)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -4598,14 +6069,23 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 15,
+    "max_payload_kg": 2.0,
+    "thermal_capable": false,
+    "rf_bands": "2.4 GHz + 5.8 GHz",
+    "firmware": "Betaflight/ArduPilot",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-1006",
     "name": "Stealth Hawk 5\" Premium",
     "description": "No-compromise premium 5-inch freestyle build using top-tier components throughout. Orqa QuadCore H7 FC with ICM42688 IMU for the cleanest gyro data and fastest PID loop processing. Holybro Tekko32 65A AM32 ESC provides headroom for aggressive flying with zero desync risk. Axisflying 2207.5 motors deliver consistent performance session after session. HDZero Freestyle V2 digital video for the lowest latency HD feed available. True diversity ELRS ensures control link never drops. Built for experienced pilots who demand the absolute best from every component.",
-    "vehicle_type": "quad",
-    "build_class": "5inch_freestyle",
+    "vehicle_type": "quad (5-inch premium freestyle)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -4673,14 +6153,23 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 7,
+    "max_payload_kg": 0,
+    "thermal_capable": false,
+    "rf_bands": "5.8 GHz digital (DJI O3)",
+    "firmware": "Betaflight",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-1007",
     "name": "First Flight 5\" Beginner",
     "description": "Budget-friendly 5-inch freestyle build designed as the ideal first custom drone. Every component is chosen for reliability, ease of assembly, and forgiveness during the learning curve. HAKRC F722 stack simplifies wiring with a single FC+ESC board. Foxeer Micro Cat 4 camera and SpeedyBee TX800 VTX provide solid analog video at a fraction of digital system costs. Lower-KV 1960KV motors on 6S give smooth, predictable power delivery that won't catch beginners off guard. Total build cost under $250 USD excluding battery and radio equipment. Perfect for pilots graduating from simulators to real flight.",
-    "vehicle_type": "quad",
-    "build_class": "5inch_freestyle",
+    "vehicle_type": "quad (5-inch beginner)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -4744,14 +6233,23 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 6,
+    "max_payload_kg": 0,
+    "thermal_capable": false,
+    "rf_bands": "5.8 GHz analog",
+    "firmware": "Betaflight",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-1008",
     "name": "CineMaster 7\" Cinema",
     "description": "7-inch cinematic platform tuned for buttery-smooth footage. T-Motor VELOX V2808 cinematic motors at 1300KV deliver ultra-smooth throttle response with minimal vibration, critical for jello-free video. Lumenier Siege 80A ESC provides ample current headroom for the larger props. Gemfan Hurricane 7050 tri-blade props balanced for cinema work. The entire build philosophy prioritizes low vibration, smooth power delivery, and long flight times over raw acrobatic performance. Ideal for real estate, commercial, and nature cinematography shoots.",
-    "vehicle_type": "quad",
-    "build_class": "7inch_cinematic",
+    "vehicle_type": "quad (7-inch cinema)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -4819,14 +6317,23 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 20,
+    "max_payload_kg": 0.5,
+    "thermal_capable": false,
+    "rf_bands": "5.8 GHz digital",
+    "firmware": "Betaflight",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-1009",
     "name": "ThunderBolt 5\" Power",
     "description": "High-power 5-inch build for pilots who want maximum thrust-to-weight ratio. VCI Hobby Yuki Savage 2207 2120KV motors paired with Holybro Tekko32 65A AM32 ESC deliver explosive acceleration and instant throttle response. Higher KV motors on 6S push the power envelope, requiring a beefy ESC to match. Orqa QuadCore H7 FC processes the fastest PID loops for locked-in handling at extreme speeds. This is the build for power loops, juicy flicks, and aggressive proximity flying where raw power makes the difference.",
-    "vehicle_type": "quad",
-    "build_class": "5inch_freestyle",
+    "vehicle_type": "quad (5-inch power freestyle)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -4894,14 +6401,23 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 5,
+    "max_payload_kg": 0,
+    "thermal_capable": false,
+    "rf_bands": "5.8 GHz analog",
+    "firmware": "Betaflight",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-1010",
     "name": "Nomad Explorer 7\" Ultra LR",
     "description": "Ultra long range 7-inch explorer built for maximum distance and flight time. EMAX ECO II 2807 1300KV motors spin 7-inch bi-blade props at the efficiency sweet spot for 6S Li-Ion packs. Lumenier NAV 6000mAh 6S 18650 Li-Ion battery provides 25-35 minute flight times in cruise. GPS rescue with compass-equipped Flywoo GOKU Pro module ensures safe return from beyond visual range. ELRS true diversity 2.4GHz receiver maintains control link at 15+ km. Every component choice prioritizes range and endurance over performance. For mountain crossings, coastline exploration, and pushing the boundaries of what a quad can reach.",
-    "vehicle_type": "quad",
-    "build_class": "7inch_long_range",
+    "vehicle_type": "quad (7-inch ultra long range)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -4969,14 +6485,23 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 45,
+    "max_payload_kg": 0.3,
+    "thermal_capable": false,
+    "rf_bands": "900 MHz ELRS + 5.8 GHz",
+    "firmware": "iNav",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-1011",
     "name": "Phantom 6\" Digital LR",
     "description": "Premium 6-inch digital long range cruiser combining HD video quality with extended range capability. Ethix Mr Steele Stout 2307 V5 1950KV motors provide the perfect balance of efficiency and responsiveness for 6-inch props on 6S. HDZero Freestyle V2 digital video delivers the lowest-latency HD feed for confident flying at distance. Compass-equipped GPS module enables position-aware features and GPS rescue. iFlight BLITZ H743 FC handles GPS processing, RPM filtering, and HD OSD simultaneously without breaking a sweat. For pilots who want the best video quality on a long range platform.",
-    "vehicle_type": "quad",
-    "build_class": "6inch_long_range",
+    "vehicle_type": "quad (6-inch digital long range)",
+    "build_class": "custom_fpv",
     "image_file": "",
     "pdf_file": "",
     "relations": {
@@ -5044,7 +6569,16 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
-    }
+    },
+    "max_flight_time_min": 30,
+    "max_payload_kg": 0.1,
+    "thermal_capable": false,
+    "rf_bands": "2.4 GHz ELRS + 5.8 GHz digital",
+    "firmware": "Betaflight",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": false
   },
   {
     "pid": "MDL-2000",
@@ -6735,7 +8269,7 @@
     "blue_uas": true,
     "firmware": "Hoverfly proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": 0,
+    "max_flight_time_min": 1,
     "max_payload_kg": 2.3,
     "handbook_profile": "platforms/tactical/hoverfly-livesky.md",
     "relations": {
@@ -6797,7 +8331,7 @@
     "video_system": "Modular EO/IR, 30x zoom + thermal",
     "thermal_capable": true,
     "thermal_sensor": "Modular thermal",
-    "rf_bands": "Tethered (no RF C2 needed)",
+    "rf_bands": "Tethered",
     "sdk_available": false,
     "industry_data": {
       "compliance": {
@@ -9590,7 +11124,7 @@
     "pid": "MDL-2045",
     "name": "Custom ArduPilot / PX4 Builds \u2014 General Integration Reference",
     "description": "Any drone built on ArduPilot or PX4 firmware running Pixhawk-compatible hardware. This covers hundreds of commercial products (Freefly Astro, Inspired Flight IF1200, Watts Innovations Prism, Harris Aerial H6, CubePilot-based builds) and thousands of custom builds. The open-source ecosystem is the backbone of non-DJI drone integration.",
-    "vehicle_type": "quad",
+    "vehicle_type": "reference",
     "build_class": "open_source",
     "image_file": "",
     "pdf_file": "",
@@ -9659,7 +11193,14 @@
       "receivers": [],
       "antennas": [],
       "gps_modules": []
-    }
+    },
+    "max_flight_time_min": 1,
+    "max_payload_kg": 0,
+    "thermal_capable": false,
+    "rf_bands": "Various",
+    "firmware": "ArduPilot/PX4",
+    "mavlink_support": true,
+    "sdk_available": true
   },
   {
     "pid": "MDL-2046",
@@ -9708,6 +11249,24 @@
       "receivers": [],
       "antennas": [],
       "gps_modules": []
+    },
+    "max_flight_time_min": 46,
+    "max_payload_kg": 0,
+    "video_system": "Hasselblad 50MP, 4/3 CMOS, 4K120",
+    "thermal_capable": false,
+    "thermal_sensor": null,
+    "rf_bands": "2.4/5.8 GHz (O4)",
+    "firmware": "DJI proprietary",
+    "mavlink_support": false,
+    "sdk_available": true,
+    "industry_data": {
+      "compliance": {
+        "note": "DJI consumer flagship. Not enterprise \u2014 no thermal."
+      },
+      "production": {
+        "manufacturing_country": "China",
+        "first_delivery_year": 2025
+      }
     }
   },
   {
@@ -9777,6 +11336,24 @@
       "receivers": [],
       "antennas": [],
       "gps_modules": []
+    },
+    "max_flight_time_min": 49,
+    "max_payload_kg": 0,
+    "video_system": "M4T: wide + zoom + 640x512 thermal + LRF. M4E: wide + zoom.",
+    "thermal_capable": true,
+    "thermal_sensor": "640x512 (M4T variant)",
+    "rf_bands": "2.4/5.8 GHz (O4, 25km)",
+    "firmware": "DJI proprietary",
+    "mavlink_support": false,
+    "sdk_available": true,
+    "industry_data": {
+      "compliance": {
+        "note": "DJI enterprise. Replaces Mavic 3E line. O4 transmission."
+      },
+      "production": {
+        "manufacturing_country": "China",
+        "first_delivery_year": 2025
+      }
     }
   },
   {
@@ -9792,7 +11369,7 @@
     "manufacturer_url": "",
     "manufacturer_country": "",
     "country": "",
-    "ndaa_compliant": true,
+    "ndaa_compliant": false,
     "blue_uas": false,
     "compliance": {
       "blue_uas": false,
@@ -9826,6 +11403,24 @@
       "receivers": [],
       "antennas": [],
       "gps_modules": []
+    },
+    "max_flight_time_min": 38,
+    "max_payload_kg": 0,
+    "video_system": "Dual 640T: 50MP visible + 640x512 thermal",
+    "thermal_capable": true,
+    "thermal_sensor": "640x512 uncooled",
+    "rf_bands": "2.4/5.8 GHz (SkyLink 2.0)",
+    "firmware": "Autel proprietary",
+    "mavlink_support": false,
+    "sdk_available": true,
+    "industry_data": {
+      "compliance": {
+        "note": "BANNED \u2014 see Autel EVO MAX 4T V2 entry for full regulatory status."
+      },
+      "production": {
+        "manufacturing_country": "China",
+        "first_delivery_year": 2023
+      }
     }
   },
   {
@@ -9841,7 +11436,7 @@
     "manufacturer_url": "",
     "manufacturer_country": "",
     "country": "",
-    "ndaa_compliant": true,
+    "ndaa_compliant": false,
     "blue_uas": false,
     "compliance": {
       "blue_uas": false,
@@ -9894,13 +11489,25 @@
     },
     "gotchas": [
       "No geofencing \u2014 good for operators who need flexibility, but means no built-in airspace safety net. Know your airspace."
-    ]
+    ],
+    "max_flight_time_min": 42,
+    "max_payload_kg": 0,
+    "thermal_capable": true,
+    "rf_bands": "SkyLink 3.0",
+    "firmware": "Autel proprietary",
+    "mavlink_support": false,
+    "sdk_available": true,
+    "industry_data": {
+      "compliance": {
+        "note": "BANNED. Duplicate entry \u2014 see Autel EVO MAX 4T V2."
+      }
+    }
   },
   {
     "pid": "MDL-2050",
     "name": "Teal Drones / Red Cat Holdings Teal Black Widow",
     "description": "The Black Widow is the U.S. Army's Short Range Reconnaissance (SRR) Tranche 2 Program of Record winner. Designed as a soldier-carried ISR platform for squad-level operations. Part of the Red Cat Holdings portfolio alongside the Teal 2 and FANG F7.",
-    "vehicle_type": "quad",
+    "vehicle_type": "quad (SRR ISR)",
     "build_class": "tactical",
     "image_file": "https://redcat.red/wp-content/uploads/2024/black-widow.png",
     "pdf_file": "",
@@ -9943,13 +11550,32 @@
       "receivers": [],
       "antennas": [],
       "gps_modules": []
+    },
+    "max_flight_time_min": 45,
+    "max_payload_kg": 0,
+    "video_system": "FLIR Hadron 640R+ EO/IR",
+    "thermal_capable": true,
+    "thermal_sensor": "Teledyne FLIR Hadron 640R+",
+    "rf_bands": "Doodle Hex-Band (M1-M6, 1625-2510 MHz)",
+    "firmware": "PX4-based + Palantir VNav",
+    "mavlink_support": true,
+    "sdk_available": false,
+    "industry_data": {
+      "compliance": {
+        "note": "SRR Program of Record winner. Successor to Teal 2. 5,880 systems objective."
+      },
+      "production": {
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Salt Lake City, UT",
+        "first_delivery_year": 2025
+      }
     }
   },
   {
     "pid": "MDL-2051",
     "name": "Skyfish Skyfish Osprey",
     "description": "Precision inspection and mapping platform designed for infrastructure and industrial applications. NDAA compliant. Skyfish focuses on high-accuracy 3D modeling and measurement for sectors like energy, construction, and telecommunications.",
-    "vehicle_type": "quad",
+    "vehicle_type": "quad (inspection)",
     "build_class": "tactical",
     "image_file": "",
     "pdf_file": "",
@@ -9959,7 +11585,7 @@
     "manufacturer_country": "",
     "country": "",
     "ndaa_compliant": true,
-    "blue_uas": false,
+    "blue_uas": true,
     "compliance": {
       "blue_uas": false,
       "ndaa_compliant": true,
@@ -9992,13 +11618,26 @@
       "receivers": [],
       "antennas": [],
       "gps_modules": []
+    },
+    "max_flight_time_min": 35,
+    "max_payload_kg": 2.0,
+    "thermal_capable": true,
+    "rf_bands": "2.4 GHz",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2022
+      }
     }
   },
   {
     "pid": "MDL-2052",
     "name": "ModalAI ModalAI Seeker / Stinger",
     "description": "ModalAI produces the most Blue UAS Framework components of any single manufacturer (16 listings). Their VOXL 2 compute platform is the reference companion computer for PX4-based autonomous drones. The Seeker and Stinger are ModalAI's own FPV/autonomous drone platforms built on this ecosystem.",
-    "vehicle_type": "quad",
+    "vehicle_type": "quad (AI tactical)",
     "build_class": "tactical",
     "image_file": "",
     "pdf_file": "",
@@ -10049,6 +11688,18 @@
       "receivers": [],
       "antennas": [],
       "gps_modules": []
+    },
+    "max_flight_time_min": 25,
+    "max_payload_kg": 0.5,
+    "thermal_capable": false,
+    "rf_bands": "2.4/5.8 GHz",
+    "firmware": "PX4 (Qualcomm RB5)",
+    "mavlink_support": true,
+    "sdk_available": true,
+    "industry_data": {
+      "compliance": {
+        "note": "Duplicate \u2014 see ModalAI Seeker/Stinger entries."
+      }
     }
   },
   {
@@ -10098,13 +11749,25 @@
       "receivers": [],
       "antennas": [],
       "gps_modules": []
+    },
+    "max_flight_time_min": 40,
+    "max_payload_kg": 2.0,
+    "thermal_capable": true,
+    "rf_bands": "Encrypted",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "industry_data": {
+      "production": {
+        "manufacturing_country": "USA"
+      }
     }
   },
   {
     "pid": "MDL-2054",
     "name": "Orqa MRM2-10",
     "description": "Lightweight multi-role FPV drone with IRONghost licensed-band C2 link. H7 QuadCore FC, 10\" props, 2.5kg payload, ~20km range at 70km/h cruise. MAVLink/ATAK integration via Tac.Ctrl. Orqa Justice camera. EU-manufactured, NDAA compliant.",
-    "vehicle_type": "quadcopter",
+    "vehicle_type": "quad (FPV multi-role, 10-inch)",
     "build_class": "fpv_multirole",
     "image_file": "",
     "pdf_file": "",
@@ -10233,28 +11896,32 @@
         "Firestorm partnership": "3D-printable Orqa design \u2014 Firestorm Squall (Feb 2026)"
       },
       "production": {
-        "status": "Full production",
-        "manufacturing_country": "Croatia (EU) \u2014 Osijek facility",
-        "annual_capacity": "280,000 drones / year",
-        "capacity_roadmap": "Up to 1 M / year via partner network",
-        "supply_chain": "100% in-house \u2014 zero Chinese components",
-        "partner_network": "NATO-country licensing partners (undisclosed)",
-        "croatia_army_contract": "~\u20ac10 M FPV MRM-2 Interceptor order",
-        "ukraine_deployment": "Active \u2014 confirmed combat use",
-        "compliance_note": "2025 DoD halt resolved \u2014 radio subcomponent moved in-house; verify current status for US contracts"
+        "manufacturing_country": "Croatia",
+        "first_delivery_year": 2024
       },
       "variants": [
         "MRM2-10 (fixed frame)",
         "MRM2-10F (foldable)"
       ],
-      "documentation_availability": "User manual available \u2014 orqafpv.com/manual"
-    }
+      "documentation_availability": "User manual available \u2014 orqafpv.com/manual",
+      "compliance": {
+        "note": "Croatian. NATO-aligned. FPV for strike/ISR."
+      }
+    },
+    "max_flight_time_min": 25,
+    "max_payload_kg": 2.5,
+    "video_system": "HD digital FPV",
+    "thermal_capable": false,
+    "rf_bands": "FPV encrypted",
+    "firmware": "Custom (Betaflight-based)",
+    "mavlink_support": false,
+    "sdk_available": false
   },
   {
     "pid": "MDL-2055",
     "name": "Orqa MRM2-10F",
     "description": "Foldable variant of MRM2-10. Hand-deployable in ~10 seconds with click-lock folding arms. Same IRONghost licensed-band C2, 2.5kg payload, ~20km range. EU-manufactured, NDAA compliant.",
-    "vehicle_type": "quadcopter (foldable)",
+    "vehicle_type": "quad (FPV fixed-wing hybrid, 10-inch)",
     "build_class": "fpv_multirole",
     "image_file": "",
     "pdf_file": "",
@@ -10365,24 +12032,27 @@
         "Baykar partnership": "Integration with Bayraktar TB2"
       },
       "production": {
-        "status": "Full production",
-        "manufacturing_country": "Croatia (EU)",
-        "annual_capacity": "280,000 drones / year (shared MRM line)",
-        "supply_chain": "100% in-house \u2014 zero Chinese components",
-        "note": "Foldable variant of MRM2-10 \u2014 shares production line"
+        "manufacturing_country": "Croatia"
       },
       "variants": [
         "MRM2-10F (foldable)",
         "MRM2-10 (fixed frame)"
       ],
       "documentation_availability": "User manual available \u2014 orqafpv.com/manual"
-    }
+    },
+    "max_flight_time_min": 20,
+    "max_payload_kg": 2.0,
+    "thermal_capable": false,
+    "rf_bands": "FPV encrypted",
+    "firmware": "Custom",
+    "mavlink_support": false,
+    "sdk_available": false
   },
   {
     "pid": "MDL-2056",
     "name": "Orqa MRM1-5",
     "description": "Robust 5\" multi-role platform. Available in ISM (Ghost 2.4 GHz) and licensed-band (IRONghost) variants. 1kg payload, 130km/h max, >15min flight time. Carbon fiber reinforced frame. Training platform and payload delivery. EU-manufactured, NDAA compliant.",
-    "vehicle_type": "quadcopter",
+    "vehicle_type": "quad (FPV, 5-inch)",
     "build_class": "fpv_multirole",
     "image_file": "",
     "pdf_file": "",
@@ -10514,17 +12184,20 @@
         "Baykar partnership": "Integration with Bayraktar TB2"
       },
       "production": {
-        "status": "Full production",
-        "manufacturing_country": "Croatia (EU) \u2014 Osijek facility",
-        "annual_capacity": "280,000 drones / year (shared MRM line)",
-        "supply_chain": "100% in-house \u2014 zero Chinese components",
-        "role": "Primary training platform for MRM2-10 operator pipeline"
+        "manufacturing_country": "Croatia"
       },
       "variants": [
         "MRM1-5 ISM (Ghost 2.4 GHz)",
         "MRM1-5 Licensed-band (IRONghost)"
       ],
       "documentation_availability": "User manual available \u2014 orqafpv.com/manual"
-    }
+    },
+    "max_flight_time_min": 12,
+    "max_payload_kg": 0.5,
+    "thermal_capable": false,
+    "rf_bands": "FPV encrypted",
+    "firmware": "Custom (Betaflight)",
+    "mavlink_support": false,
+    "sdk_available": false
   }
 ]
