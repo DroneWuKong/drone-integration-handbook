@@ -1,10 +1,6 @@
 [build]
-  base = "site"
-  publish = "dist"
-  command = "npm install && npm run build"
-
-[build.environment]
-  NODE_VERSION = "20"
+  publish = "site"
+  command = "pip install markdown && python build.py"
 
 [[redirects]]
   from = "/forge"
