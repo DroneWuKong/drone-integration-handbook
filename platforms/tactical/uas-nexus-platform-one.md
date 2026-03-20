@@ -1,7 +1,7 @@
 # UAS Nexus Platform One
 
 > **Category:** Tactical / MOSA FPV Ecosystem Platform
-> **NDAA Status:** NDAA §848 compliant, Blue UAS listed
+> **NDAA Status:** NDAA §848 compliant — NOT Blue UAS listed (uses Blue UAS-listed components)
 > **Manufacturer:** UAS Nexus (United States)
 > **Availability:** Syndicate membership required — syndicate.uasnexus.com
 
@@ -11,7 +11,7 @@
 
 Platform One is less a fixed product and more an ecosystem — a MOSA-first (Modular Open Systems Architecture) airframe designed to accept whatever Western avionics stack the mission requires. Inspired by Ukraine's decentralized FPV production model: no single golden BOM, no single firmware, no vendor lock-in. The frame is the common denominator; everything else is operator-configured.
 
-Supports 7-inch and 10-inch prop configurations on the same airframe. Solder-free build option available for trainer/non-technical user configuration. Decentralized manufacturing model targets 10,000+ aircraft/month capacity. Full NDAA §848 compliance and Blue UAS listed — one of the few US-manufactured tactical FPV platforms to carry that designation.
+Supports 7-inch and 10-inch prop configurations on the same airframe. Solder-free build option available for trainer/non-technical user configuration. Decentralized manufacturing model targets 10,000+ aircraft/month capacity. Full NDAA §848 compliance. The platform is **not** itself Blue UAS listed, but is designed to accept Blue UAS Framework-listed components (ARK FPV, ModalAI VOXL 2, Auterion Skynode-S, Doodle Labs, etc.).
 
 Access is gated behind UAS Nexus Syndicate membership, which requires request-based approval.
 
@@ -30,7 +30,7 @@ Access is gated behind UAS Nexus Syndicate membership, which requires request-ba
 | Cooling | Active cooling or heatsink (compute-dependent) |
 | Production Capacity | 10,000+ aircraft/month (decentralized manufacturing) |
 | NDAA | §848 compliant |
-| Blue UAS | Listed |
+| Blue UAS | NOT listed — platform accepts Blue UAS Framework components |
 
 ---
 
@@ -95,7 +95,7 @@ Perception and navigation research with modular sensors. Featured: VOXL 2 / VOXL
 3. **Decentralized manufacturing** — high-volume capacity but supply chain coordination is on the operator/integrator.
 4. **Multi-firmware support** — no single "golden path." Operator must select and configure the autopilot stack. VOXL 2 / PX4, ArduPilot, Betaflight, and iNav all have different integration complexities.
 5. **Deeper product catalog behind the membership wall** — publicly available specs are limited. Full component catalog accessible only post-approval.
-6. **Blue UAS listed** — verifiable DoD procurement path, which distinguishes it from most MOSA FPV builds.
+6. **NOT Blue UAS listed** — the platform itself is not on the DoD approved list. It is NDAA §848 compliant and designed to accept Blue UAS Framework-listed components, but those are different designations. Do not represent it as Blue UAS listed in procurement documents.
 
 ---
 
