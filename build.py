@@ -1432,6 +1432,11 @@ mobileMenu.querySelectorAll('a').forEach(link => {{
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(html)
 
+    # robots.txt
+    robots_path = os.path.join(output_dir, "robots.txt")
+    with open(robots_path, "w") as f:
+        f.write("User-agent: *\nDisallow:\nSitemap: https://nvmilldoitmyself.com/\n")
+
     print(f"\n  Output: {output_path}")
     print(f"  Size: {os.path.getsize(output_path):,} bytes")
     print("  Done.")

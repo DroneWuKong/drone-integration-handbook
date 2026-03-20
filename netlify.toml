@@ -1,6 +1,7 @@
 [build]
   publish = "site"
   command = "pip install markdown && python build.py"
+  functions = "netlify/functions"
 
 [[redirects]]
   from = "/forge"
