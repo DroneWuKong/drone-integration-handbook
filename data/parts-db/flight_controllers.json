@@ -12777,5 +12777,87 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight"
+  },
+  {
+    "pid": "FC-1420",
+    "category": "flight_controllers",
+    "name": "Orqa H7 WingCore Fixed-Wing Flight Controller - NDAA",
+    "manufacturer": "Orqa",
+    "description": "NDAA-compliant fixed-wing/VTOL flight controller with STM32H743, twin orthogonal ICM-42688 IMUs, 160A current sensor, 10 servo + 4 motor outputs, and direct JST-GH connection to Orqa C2/VTx modules. Purpose-built for wings, VTOLs, and enterprise/defense UAVs.",
+    "link": "https://shop.orqafpv.com",
+    "mcu": "STM32H743",
+    "mcu_family": "H7",
+    "imu": "ICM42688P",
+    "imu_count": 2,
+    "imu_configuration": "Twin orthogonal",
+    "barometer": "DPS310",
+    "osd_chip": "Orqa custom NDAA-compliant (text + graphics)",
+    "current_sensor_a": 160,
+    "voltage_regulator_5v_a": 8,
+    "servo_regulator_a": 10,
+    "servo_regulator_voltage": "6V / 7.2V (solder-jumper selectable)",
+    "max_input_voltage_s": 12,
+    "motor_outputs": 4,
+    "servo_outputs": 10,
+    "uart_count": 7,
+    "uart7_flow_control": true,
+    "can_bus": true,
+    "i2c_buses": 2,
+    "adc_inputs": 3,
+    "gpio_count": 3,
+    "dual_camera_input": true,
+    "microsd_slot": true,
+    "usb": "USB-C (remote-mountable PCB)",
+    "buzzer": "Built-in with on/off switch",
+    "connector_type": "JST-GH (locking), standard 0.1\" header for servos",
+    "connectors": {
+      "ASPD": "I2C airspeed (pitot)",
+      "CAM": "Dual analog cameras (switchable)",
+      "CAN": "CAN bus",
+      "GPS": "GPS + magnetometer (I2C + UART1)",
+      "HYBRID": "Orqa Dual-Sub Hybrid VTx/C2 Rx (1.5W or 5W)",
+      "SIK": "SIK telemetry radio (UART2)",
+      "VTX": "High-power Orqa Wing VTx (10W, VBAT-powered)",
+      "MOT1": "Motor 1 + telemetry",
+      "MOT2": "Motor 2 + telemetry",
+      "MOT3_4": "Motors 3 & 4 + telemetry"
+    },
+    "firmware_targets": "iNav (preinstalled) / ArduPilot (available) / PX4 (under development)",
+    "firmware_preinstalled": "iNav",
+    "vehicle_type": "Fixed-wing, VTOL, UAV",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M2",
+    "weight_g": 36.6,
+    "dimensions_mm": "54 x 17 x 39",
+    "ndaa_compliant": true,
+    "manufacturing_country": "Croatia (EU)",
+    "dfu_boot": true,
+    "compatibility": {
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M2",
+      "mcu_family": "H7",
+      "imu": "ICM42688P",
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "mounting_hole_size"
+      ]
+    },
+    "size_class": "fixed_wing",
+    "tags": [
+      "H7",
+      "30.5mm",
+      "fixed-wing",
+      "VTOL",
+      "NDAA",
+      "EU-manufactured",
+      "JST-GH",
+      "ICM42688P",
+      "twin-IMU",
+      "12S",
+      "160A-current-sensor",
+      "10-servo"
+    ]
   }
 ]

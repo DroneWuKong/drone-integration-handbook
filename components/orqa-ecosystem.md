@@ -291,25 +291,273 @@ output.
 
 ---
 
-## The Complete Orqa Stack
+## H7 WingCore — Fixed-Wing / VTOL Flight Controller
 
-For NDAA-compliant FPV builds, Orqa offers a fully integrated
-electronics stack where every component is designed to work
-together:
+| Detail | Value |
+|--------|-------|
+| MCU | STM32H743 |
+| IMUs | Twin orthogonal ICM-42688 |
+| Barometer | DPS310 |
+| OSD | Orqa custom NDAA-compliant OSD (text + graphics) |
+| Current Sensor | 160A on-board |
+| Voltage Regulator | 12S (50V) 8A for 5V supply |
+| Servo Regulator | 12S (50V) 10A for 6/7.2V servo power (solder-jumper selectable) |
+| Motor Outputs | 4× motor connectors (JST-GH, with telemetry) |
+| Servo Outputs | 10× standard 0.1" header servo connectors |
+| Connectors | Airspeed (I2C), Hybrid VTx/C2 Rx, High-power VTx, SIK telemetry, dual analog cameras (switchable), CAN bus, GPS/magnetometer, microSD |
+| Additional I/O | 1× full UART (UART7 with RTS/CTS), 3× GPIO, 3× ADC, 1× PWM, LED output |
+| USB | USB-C on remote-mountable PCB |
+| Firmware | iNav (preinstalled), ArduPilot (available), PX4 (under development) |
+| Mounting | 30.5 × 30.5 mm, M2 |
+| Weight | 36.6 g |
+| Dimensions | 54 × 17 × 39 mm |
+| NDAA | Compliant — designed and manufactured in EU |
+
+### Purpose-Built for Wings and VTOLs
+
+The H7 WingCore is not a multirotor FC repurposed for fixed
+wing. It's designed from the ground up for wings, VTOLs, and
+enterprise/defense UAVs. The 10 servo outputs handle the
+multi-actuator demands of complex VTOL transition mechanisms
+(tilt-rotors, quad-plane configs). The 4 dedicated motor
+connectors each include telemetry lines for ESC feedback.
+
+The integrated 160A current sensor and 50V-rated regulators
+support up to 12S battery systems — well beyond the typical
+6S limit of multirotor FCs. The servo regulator provides
+switchable 6V or 7.2V output via solder jumper, matching
+standard and high-voltage servo requirements.
+
+### Direct Integration with Orqa C2 Links
+
+The HYBRID connector provides a direct solder-free JST-GH
+connection to Orqa's Dual-Sub Hybrid (1.5W or 5W) combined
+C2 receiver and video transmitter. The separate VTx connector
+supports the 10W Wing VTx for higher-power video downlink.
+If VTx is used, the Hybrid connector cannot be used
+simultaneously (shared UART6). SIK telemetry radio connects
+via a dedicated JST-GH port on UART2.
+
+The board features a lost-model buzzer with on/off switch —
+critical for fixed-wing recovery after landing in vegetation.
+
+---
+
+## IRONghost — EW-Resilient Dual Sub-GHz C2 Link
+
+IRONghost is Orqa's EW-resilient command and control link
+system, operating on licensed sub-GHz frequency bands. It
+represents a significant step beyond standard ISM-band Ghost
+for contested environments.
+
+| Detail | Value |
+|--------|-------|
+| Architecture | Dual sub-GHz radio (primary + shadow band) |
+| Primary Band | 9xx MHz |
+| Shadow Band | 4xx MHz (multirotor) / 4xx MHz (5" variant) |
+| Max Tx Power | Up to 3W (JR module) |
+| Modulation | Proprietary, firmware-upgradeable |
+| EW Resilience | Designed to resist common jamming on primary band |
+| Video Integration | Combined C2 Rx + 5.8 GHz analog VTx in single module |
+| OTA Updates | Firmware updates over-the-air during binding (<60 seconds) |
+| Frequency Ceiling | ~6.02 GHz (beyond range of most conventional jammers) |
+| Antenna Connectors | RP-SMA (not SMA) — do not swap |
+
+IRONghost uses a "listening mode" approach: the drone
+minimizes its RF emissions during flight, transmitting only
+essential telemetry back to the ground station. The pilot can
+switch between primary and shadow bands when needed. Each
+band's power level is independently configurable.
+
+The system is designed for continuous firmware evolution —
+radios can be updated to improve EW resilience as the threat
+landscape changes. The upper frequency limit (~6 GHz) sits
+above the range of most conventional jamming equipment.
+
+**Critical safety note:** Never power on an IRONghost-equipped
+drone without all antennas properly attached. Reflecting 3W of
+RF power back into the amplifiers without an antenna load will
+cause permanent damage.
+
+### Range Scaling
+
+IRONghost follows standard RF link budget math. At 100 mW
+(20 dBm), typical range is ~4 km with omni antennas. At 3W
+(~35 dBm), the 15 dB increase corresponds to a 5.6× range
+multiplier — roughly 22 km. Directional antennas on the
+ground station further extend this.
+
+---
+
+## Orqa Tac.Ctrl — Tactical Controller
+
+The Tac.Ctrl is Orqa's defense-oriented radio controller,
+purpose-built for IRONghost-equipped platforms. It replaces
+the consumer FPV.Ctrl for tactical operations.
+
+| Detail | Value |
+|--------|-------|
+| C2 Link | IRONghost dual sub-GHz |
+| Protocol | MAVLink support |
+| TAK Integration | ATAK compatible |
+| Multi-Drone | Single controller binds to multiple drones |
+| Band Selection | In-field switching between primary and shadow bands |
+| VTx Control | Channel, band, power, and on/off via menu |
+| Firmware Updates | OTA to drone receivers during bind process |
+
+The Tac.Ctrl provides full IRONghost menu access: radio band
+selection, VTx channel/power configuration, and firmware
+management. Channel mappings follow the standard FPV layout
+(Roll/Pitch/Throttle/Yaw on CH1-4, Arm on CH5, VTx on CH11)
+with additional channels for camera control, payload
+activation, flight mode, pre-arm, and band/power sliders.
+
+---
+
+## Orqa GCS-1 — Ground Control Station
+
+The GCS-1 is Orqa's integrated ground control station for
+extended-range and NLOS (non-line-of-sight) operations with
+MRM platforms.
+
+Key components include the IRONghost Ground Unit (QS 9xx/4xx)
+paired with IRONghost GU RF modules for maximum range, and
+support for aerial repeaters — a separate drone flown to
+altitude as a communication relay between GCS-1 and the
+operational platform. This enables operations beyond direct
+line of sight, around terrain features and urban obstacles.
+
+For video downlink, the GCS-1 pairs with high-gain directional
+receiver antennas. TrueRC Sniper 5.8 GHz antennas are
+specifically recommended by Orqa for maximum video range.
+
+---
+
+## MRM Platform Family — Multi-Role Multicopters
+
+Orqa manufactures a family of multi-role FPV multicopter
+platforms for defense, law enforcement, and enterprise
+applications. All MRM platforms use Orqa's in-house electronics
+stack, are NDAA-compliant (EU-manufactured), and are designed
+for rapid field deployment.
+
+### MRM2-10 — 10" Multi-Role Platform
+
+| Detail | Value |
+|--------|-------|
+| Type | Quadcopter, 10" propellers |
+| Frame | Carbon fiber body and arms |
+| Wheelbase | 465 mm diagonal |
+| FC | H7 QuadCore (STM32H743) |
+| ESC | 30×30 70A, AM32 firmware |
+| Motors | 2814-class, 880 kV |
+| Camera | Orqa Justice Analog (1200 TVL, low-light optimized) |
+| C2 Link | IRONghost dual sub-GHz |
+| Video | 5.8 GHz analog |
+| GPS | Integrated with compass and barometric sensor |
+| Battery | 6S4P Li-ion recommended (~16000 mAh) |
+| Connectors | 1× XT90 + 2× XT60 (parallel) |
+| Max Payload | 2.5 kg (up to 3 kg depending on conditions) |
+| Cruise Speed | ~70 km/h (optimal efficiency) |
+| Est. Range | ~20 km (with recommended battery at cruise speed) |
+| Firmware | Betaflight v4.1 (default), BF Configurator v10.10.0+ |
+| TAK | MAVLink + ATAK via Tac.Ctrl |
+| Controller | Orqa Tac.Ctrl (mandatory) |
+| NDAA | Compliant — EU manufactured |
+
+The MRM2-10 ships with OSD telemetry showing mAh/km for
+real-time range optimization. Lowering cruise speed below the
+70 km/h optimum reduces efficiency due to hover penalty;
+exceeding it exponentially increases current draw.
+
+### MRM2-10F — 10" Foldable Variant
+
+| Detail | Value |
+|--------|-------|
+| Type | Foldable quadcopter, 10" propellers |
+| Deployment | Hand-deployable in ~10 seconds |
+| C2 Link | IRONghost dual sub-GHz |
+| Video | 5.8 GHz analog |
+| Battery | 6S4P Li-ion recommended (~16000 mAh) |
+| Max Payload | 2.5 kg |
+| Cruise Speed | ~70 km/h |
+| Est. Range | ~20 km |
+| Firmware | Betaflight v4.1 |
+| Controller | Orqa Tac.Ctrl (mandatory) |
+| NDAA | Compliant — EU manufactured |
+
+Same electronics and performance as the MRM2-10, with folding
+arms for transport. Arms click-lock into position when
+unfolded. The fold/unfold cycle does not require propeller
+removal. All propellers use "outwards rotation" configuration.
+
+### MRM1-5 — 5" Robust Multi-Role Platform
+
+| Detail | Value |
+|--------|-------|
+| Type | Quadcopter, 5" propellers |
+| Frame | Robust carbon fiber |
+| FC | F405 30×30 |
+| ESC | 30×30 60A, AM32 firmware |
+| Motors | 2408, 2200 kV |
+| Camera | Orqa Justice Analog (1200 TVL, switchable 4:3/16:9) |
+| C2 Link | ISM variant: Ghost 2.4 GHz / EW variant: IRONghost dual sub-GHz |
+| Video | 5.8 GHz analog |
+| GPS | Integrated |
+| Battery | P50B 4S1P Li-ion (included), 4S2P recommended for range |
+| Max Payload | 1 kg |
+| Max Speed | 130 km/h (unloaded), 60 km/h (1 kg payload) |
+| Flight Time | >15 min (unloaded), ~10 min (1 kg with 4S2P) |
+| Est. Range | Up to 15 km (unloaded), >5 km (1 kg with 4S2P) |
+| Weight | 562 g ISM / 590 g EW (without battery) |
+| Firmware | Betaflight, ArduPilot, iNav options |
+| TAK | MAVLink + ATAK support |
+| Controller | EW: Tac.Ctrl (mandatory) / ISM: FPV.Ctrl or any 2.4 GHz RC |
+| NDAA | Compliant — EU manufactured |
+
+The MRM1-5 is the entry-level MRM platform. Available in two
+variants: ISM (Ghost 2.4 GHz, standard operations) and EW
+(IRONghost, contested environments). The ISM variant works
+with any Ghost-compatible controller; the EW variant requires
+the Tac.Ctrl.
+
+---
+
+## The Complete Orqa Ecosystem
+
+Orqa's product line spans from individual components to
+complete integrated platforms. The electronics stack is shared
+across all products — the same FC, ESC, and radio technology
+in standalone components and in complete MRM platforms.
+
+### Component Stack (for custom builds)
 
 | Layer | Product | Interface |
 |-------|---------|-----------|
 | RC Transmitter | FPV.Ctrl + Ghost UberLite | 2.4 GHz Ghost |
+| Tactical Controller | Tac.Ctrl + IRONghost | Dual sub-GHz |
 | RC Receiver | Ghost Átto / Duo / Hybrid | GHST protocol to FC |
-| Flight Controller | F405 3030 / QuadCore H7 | JST-GH to ESC |
+| EW Receiver | IRONghost Dual-Sub Hybrid | Sub-GHz to FC |
+| Flight Controller (Multi) | F405 3030 / QuadCore H7 | JST-GH to ESC |
+| Flight Controller (Wing) | H7 WingCore | JST-GH, 10 servo + 4 motor |
 | ESC | 3030 4-in-1 70A | Direct cable to FC |
-| Video Tx | Ghost Hybrid (combined VTX+Rx) or Tramp | 5.8 GHz analog |
+| Video Tx | Ghost Hybrid / Tramp / Wing VTx (10W) | 5.8 GHz analog |
 | Goggles | FPV.One Pilot | Analog + HDMI |
+| Ground Station | GCS-1 + IRONghost GU | Extended range, NLOS capable |
 
-This is the only complete Western-manufactured FPV electronics
-stack available. Every component is EU-sourced and
-NDAA-compliant. The JST-GH connector standard across the
-stack eliminates solder joints and enables rapid field swap.
+### Complete Platforms
+
+| Platform | Size | C2 | Payload | Range | Use Case |
+|----------|------|-----|---------|-------|----------|
+| MRM1-5 ISM | 5" | Ghost 2.4 GHz | 1 kg | 15 km | Training, standard ops |
+| MRM1-5 EW | 5" | IRONghost | 1 kg | 15 km | Contested environments |
+| MRM2-10 | 10" | IRONghost | 2.5 kg | 20 km | Multi-role tactical |
+| MRM2-10F | 10" | IRONghost | 2.5 kg | 20 km | Foldable tactical |
+
+This is the only complete Western-manufactured FPV drone
+ecosystem available — from individual EU-sourced components
+for custom builds to fully integrated tactical platforms with
+EW-resilient communications and ground control stations.
 
 ---
 
@@ -329,7 +577,16 @@ stack eliminates solder joints and enables rapid field swap.
    sub-4ms latency with 222–250 Hz updates. The FPV.One Pilot
    goggles' focused FOV favors precision over immersion.
 
-4. **QuadCore H7 vs F405 3030:** If you have budget and want
+4. **For fixed-wing / VTOL:** H7 WingCore is the only
+   NDAA-compliant FC purpose-built for wings with enough
+   servo outputs for complex VTOL configs. Direct JST-GH
+   connection to Orqa Hybrid VTx/C2 modules.
+
+5. **For contested environments:** IRONghost-equipped MRM
+   platforms with Tac.Ctrl and GCS-1 provide EW-resilient
+   operations with dual-band C2 and MAVLink/ATAK integration.
+
+6. **QuadCore H7 vs F405 3030:** If you have budget and want
    future headroom, go H7. If you're matching to an existing
    3030 ESC stack or need ArduPilot with well-documented
    board targets, the F405 is battle-tested.
