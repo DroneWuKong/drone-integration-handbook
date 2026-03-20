@@ -72,7 +72,7 @@
     "name": "Skycutter (UK) / SkyFall (Ukraine) Shrike 10 Fiber",
     "manufacturer": "Skycutter (UK) / SkyFall (Ukraine)",
     "description": "Skycutter (UK) / SkyFall (Ukraine) Shrike 10 Fiber. Fpv Strike Fiber platform from UK/Ukraine. MTOW: 2 kg. Payload: 1.0 kg. Endurance: 0.3 hr. Range: 15 km. Max Speed: 160 km/h.",
-    "vehicle_type": "FPV quadcopter with fiber-optic link",
+    "vehicle_type": "quad (FPV with fiber-optic link)",
     "build_class": "commercial",
     "category": "fpv_strike_fiber",
     "image_file": "",
@@ -111,14 +111,45 @@
     ],
     "variants": [],
     "manufacturer_hq": "",
-    "manufacturer_url": "https://skycutteruas.co.uk"
+    "manufacturer_url": "https://skycutteruas.co.uk",
+    "max_flight_time_min": 60,
+    "max_payload_kg": 1.0,
+    "video_system": "4K zero-latency over fiber, EO camera",
+    "thermal_capable": false,
+    "thermal_sensor": null,
+    "rf_bands": "Fiber-optic (zero RF emissions, immune to jamming/SIGINT)",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "DDG Phase I winner (score 99.3). UK company. 20km fiber spool. Zero RF = invisible to SIGINT."
+      },
+      "contracts": [
+        {
+          "program": "DDG Phase I",
+          "rank": 1,
+          "score": 99.3,
+          "max_value_usd": 150000000
+        }
+      ],
+      "production": {
+        "production_status": "LRIP",
+        "manufacturing_country": "United Kingdom",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0003",
     "name": "Performance Drone Works (PDW) C100",
     "manufacturer": "Performance Drone Works (PDW)",
     "description": "Performance Drone Works (PDW) C100. Heavy Lift Multi Mission platform from USA. MTOW: 1.5 kg. Payload: 0.5 kg. Endurance: 0.5 hr. Range: 10 km. Max Speed: 130 km/h.",
-    "vehicle_type": "Foldable man-packable quadcopter (Group 2)",
+    "vehicle_type": "quad (foldable, rucksack-packable)",
     "build_class": "commercial",
     "category": "heavy_lift_multi_mission",
     "image_file": "",
@@ -167,7 +198,31 @@
     ],
     "variants": [],
     "manufacturer_hq": "Huntsville, AL",
-    "manufacturer_url": "https://pdw.ai"
+    "manufacturer_url": "https://pdw.ai",
+    "max_flight_time_min": 74,
+    "max_payload_kg": 4.5,
+    "video_system": "Trillium EO/IR gimbals, FPV, munitions",
+    "thermal_capable": true,
+    "thermal_sensor": "Trillium EO/IR",
+    "rf_bands": "Doodle Labs Mesh Rider AES-256",
+    "firmware": "PDW proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": true,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": true,
+        "ndaa_compliant": true,
+        "note": "See 'Performance Drone Works C100' \u2014 duplicate entry."
+      },
+      "production": {
+        "production_status": "full-rate",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Huntsville, AL",
+        "first_delivery_year": 2022
+      }
+    }
   },
   {
     "pid": "DM-0004",
@@ -232,7 +287,7 @@
     "name": "SkyTech Orion Global (Citrine Global) SkyTech Replicator",
     "manufacturer": "SkyTech Orion Global (Citrine Global)",
     "description": "SkyTech Orion Global (Citrine Global) SkyTech Replicator. Modular Multi Mission platform from Israel. MTOW: 15 kg. Payload: 5 kg. Endurance: 2 hr. Range: 50 km. Max Speed: 120 km/h.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "quad (tactical)",
     "build_class": "commercial",
     "category": "modular_multi_mission",
     "image_file": "",
@@ -273,7 +328,30 @@
     ],
     "variants": [],
     "manufacturer_hq": "",
-    "manufacturer_url": ""
+    "manufacturer_url": "",
+    "max_flight_time_min": 25,
+    "max_payload_kg": 1.0,
+    "video_system": "EO/IR",
+    "thermal_capable": true,
+    "thermal_sensor": "IR (integrated)",
+    "rf_bands": "Encrypted datalink",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false,
+    "blue_uas": false,
+    "ndaa_compliant": true,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "Limited public information."
+      },
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2024
+      }
+    }
   },
   {
     "pid": "DM-0006",
@@ -7018,7 +7096,7 @@
     "pid": "MDL-2023",
     "name": "Skycutter Shrike 10 Fiber",
     "description": "Skycutter Shrike 10 Fiber. Fpv quadcopter with fiber-optic link, 1.0kg payload, NDAA compliant.",
-    "vehicle_type": "FPV quadcopter with fiber-optic link",
+    "vehicle_type": "quad (FPV with fiber-optic link)",
     "build_class": "tactical_fpv",
     "image_file": "",
     "pdf_file": "",
@@ -7026,21 +7104,21 @@
     "manufacturer": "Skycutter",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "",
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
+    "max_flight_time_min": 60,
     "max_payload_kg": 1.0,
-    "rf_bands": [],
-    "video_system": "",
+    "rf_bands": "Fiber-optic (zero RF emissions, immune to jamming/SIGINT)",
+    "video_system": "4K zero-latency over fiber, EO camera",
     "thermal_capable": false,
-    "thermal_sensor": "",
+    "thermal_sensor": null,
     "sdk_available": false,
     "industry_id": "skycutter-shrike",
     "industry_data": {
       "compliance": {
         "blue_uas": false,
         "ndaa_compliant": true,
-        "note": "DDG Phase I winner \u2014 procurement pathway, not Blue UAS"
+        "note": "DDG Phase I winner (score 99.3). UK company. 20km fiber spool. Zero RF = invisible to SIGINT."
       },
       "contracts": [
         {
@@ -7050,7 +7128,11 @@
           "max_value_usd": 150000000
         }
       ],
-      "production": {},
+      "production": {
+        "production_status": "LRIP",
+        "manufacturing_country": "United Kingdom",
+        "first_delivery_year": 2024
+      },
       "funding": {},
       "gcs": {},
       "variants": [],
@@ -7518,33 +7600,36 @@
     "pid": "MDL-2027",
     "name": "Renegade UxS Nightmare",
     "description": "Renegade UxS Nightmare. Quadcopter, Blue UAS approved, NDAA compliant.",
-    "vehicle_type": "quadcopter",
+    "vehicle_type": "quad (tactical FPV/strike)",
     "build_class": "tactical_fpv",
     "image_file": "https://renegadeuxs.com/wp-content/uploads/2024/01/nightmare-fpv.webp",
     "pdf_file": "",
     "platform_category": "tactical",
     "manufacturer": "Renegade UxS",
     "ndaa_compliant": true,
-    "blue_uas": true,
-    "firmware": "",
+    "blue_uas": false,
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
+    "max_flight_time_min": 25,
+    "max_payload_kg": 1.0,
+    "rf_bands": "Encrypted FPV link",
+    "video_system": "FPV camera, munitions capable",
     "thermal_capable": false,
-    "thermal_sensor": "",
+    "thermal_sensor": null,
     "sdk_available": false,
     "industry_id": "renegade-nightmare",
     "industry_data": {
       "compliance": {
-        "blue_uas": true,
-        "blue_uas_date": "2025-12",
-        "via": "Nokturnal AI",
-        "ndaa_compliant": true
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "US tactical FPV. Limited public data."
       },
       "contracts": {},
-      "production": {},
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2023
+      },
       "funding": {},
       "gcs": {},
       "variants": [
@@ -7611,7 +7696,7 @@
     "pid": "MDL-2028",
     "name": "Performance Drone Works C100",
     "description": "Performance Drone Works C100. Foldable man-packable quadcopter (group 2), 10km range, Blue UAS approved, NDAA compliant.",
-    "vehicle_type": "Foldable man-packable quadcopter (Group 2)",
+    "vehicle_type": "quad (foldable, rucksack-packable)",
     "build_class": "tactical_defense",
     "image_file": "https://pdw.ai/wp-content/uploads/2024/01/C100-hero.webp",
     "pdf_file": "",
@@ -7619,33 +7704,56 @@
     "manufacturer": "Performance Drone Works",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "",
+    "firmware": "PDW proprietary (MOSA)",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
+    "max_flight_time_min": 74,
+    "max_payload_kg": 4.5,
+    "rf_bands": "Doodle Labs Mesh Rider (AES-256), Blackwave resilient link",
+    "video_system": "Trillium military-grade EO/IR gimbals, FPV camera, munitions release",
+    "thermal_capable": true,
+    "thermal_sensor": "Trillium EO/IR (military-grade, modular)",
     "sdk_available": false,
     "industry_id": "pdw-c100",
     "industry_data": {
       "compliance": {
         "blue_uas": true,
-        "blue_uas_date": "2023-12",
-        "ndaa_compliant": true
+        "ndaa_compliant": true,
+        "note": "Blue UAS. Army CL-sUAS T1 winner (w/Ghost X). IP54. 10kg weight."
       },
       "contracts": [
         {
-          "program": "US Army",
-          "value_usd": 20900000
+          "program": "Army CL-sUAS T1",
+          "contract_value": "$14.5M (10yr, shared w/Ghost X)"
+        },
+        {
+          "program": "Army INDOPACOM/EUCOM/CENTCOM",
+          "contract_value": "$15.3M+"
+        },
+        {
+          "program": "Army TiC",
+          "contract_value": "$20.9M"
+        },
+        {
+          "program": "USSOCOM Blackwave"
+        },
+        {
+          "program": "USAF first contract"
         }
       ],
-      "production": {},
+      "production": {
+        "production_status": "full-rate",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Huntsville, AL (90,000 sqft new facility)",
+        "first_delivery_year": 2022
+      },
       "funding": {
         "ondas_investment_usd": 35000000
       },
-      "gcs": {},
+      "gcs": {
+        "gcs_software": "PDW CORE / SparoGCS",
+        "c2_link": "Doodle Labs AES-256 + Blackwave",
+        "interoperability": "ATAK plugin, MOSA"
+      },
       "variants": [],
       "specs": {
         "type": "Foldable man-packable quadcopter (Group 2)",
@@ -7736,7 +7844,7 @@
     "pid": "MDL-2029",
     "name": "Titan Dynamics Raptor [BLUE]",
     "description": "Titan Dynamics Raptor [BLUE]. 3d-printed/additive-manufactured fixed-wing, Blue UAS approved, NDAA compliant.",
-    "vehicle_type": "3D-printed/additive-manufactured fixed-wing",
+    "vehicle_type": "quad (tactical ISR)",
     "build_class": "tactical_defense",
     "image_file": "https://titandynamics.aero/wp-content/uploads/2024/01/raptor-blue.webp",
     "pdf_file": "",
@@ -7744,23 +7852,28 @@
     "manufacturer": "Titan Dynamics",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "",
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
+    "max_flight_time_min": 45,
+    "max_payload_kg": 2.0,
+    "rf_bands": "Encrypted multi-band",
+    "video_system": "EO/IR modular payloads",
+    "thermal_capable": true,
+    "thermal_sensor": "Modular IR",
     "sdk_available": false,
     "industry_id": "titan-raptor",
     "industry_data": {
       "compliance": {
         "blue_uas": true,
-        "ndaa_compliant": true
+        "ndaa_compliant": true,
+        "note": "Blue UAS listed."
       },
       "contracts": {},
-      "production": {},
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2023
+      },
       "funding": {},
       "gcs": {},
       "variants": [],
@@ -7818,7 +7931,7 @@
     "pid": "MDL-2030",
     "name": "Vantage Robotics Vesper",
     "description": "Vantage Robotics Vesper. Compact recon quadcopter, 10km range, Blue UAS approved, NDAA compliant.",
-    "vehicle_type": "Compact recon quadcopter",
+    "vehicle_type": "quad (compact ISR)",
     "build_class": "tactical_defense",
     "image_file": "https://vantagerobotics.com/wp-content/uploads/2023/10/vesper-hero.webp",
     "pdf_file": "",
@@ -7826,20 +7939,21 @@
     "manufacturer": "Vantage Robotics",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "",
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
+    "max_flight_time_min": 40,
+    "max_payload_kg": 0,
+    "rf_bands": "Encrypted datalink",
+    "video_system": "EO/IR integrated gimbal",
+    "thermal_capable": true,
+    "thermal_sensor": "Integrated EO/IR",
     "sdk_available": false,
     "industry_id": "vantage-vesper",
     "industry_data": {
       "compliance": {
         "blue_uas": true,
-        "ndaa_compliant": true
+        "ndaa_compliant": true,
+        "note": "Blue UAS listed. US-made compact ISR."
       },
       "contracts": [
         {
@@ -7847,7 +7961,11 @@
           "value_usd": 90000000
         }
       ],
-      "production": {},
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2022
+      },
       "funding": {},
       "gcs": {},
       "variants": [],
@@ -7917,7 +8035,7 @@
     "pid": "MDL-2031",
     "name": "Vantage Robotics Trace",
     "description": "Vantage Robotics Trace. Nano uas, 2km range, Blue UAS approved, NDAA compliant.",
-    "vehicle_type": "Nano UAS",
+    "vehicle_type": "quad (nano ISR)",
     "build_class": "tactical_defense",
     "image_file": "",
     "pdf_file": "",
@@ -7925,23 +8043,28 @@
     "manufacturer": "Vantage Robotics",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "",
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 0,
+    "rf_bands": "Encrypted datalink",
+    "video_system": "EO camera, lightweight",
     "thermal_capable": false,
-    "thermal_sensor": "",
+    "thermal_sensor": null,
     "sdk_available": false,
     "industry_id": "vantage-trace",
     "industry_data": {
       "compliance": {
         "blue_uas": true,
-        "ndaa_compliant": true
+        "ndaa_compliant": true,
+        "note": "Blue UAS. Nano/micro class."
       },
       "contracts": {},
-      "production": {},
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2021
+      },
       "funding": {},
       "gcs": {
         "name": "Vision2",
@@ -8024,7 +8147,7 @@
     "pid": "MDL-2032",
     "name": "Zone 5 Technologies Paladin",
     "description": "Zone 5 Technologies Paladin. Multi-mission autonomous uas / lcei, Blue UAS approved, NDAA compliant.",
-    "vehicle_type": "Multi-mission autonomous UAS / LCEI",
+    "vehicle_type": "quad (tactical ISR)",
     "build_class": "tactical_defense",
     "image_file": "https://zone5tech.com/wp-content/uploads/2024/01/paladin-interceptor.webp",
     "pdf_file": "",
@@ -8032,24 +8155,28 @@
     "manufacturer": "Zone 5 Technologies",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "",
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
+    "max_flight_time_min": 55,
+    "max_payload_kg": 2.5,
+    "rf_bands": "Encrypted datalink",
+    "video_system": "EO/IR gimbal",
+    "thermal_capable": true,
+    "thermal_sensor": "IR gimbal",
     "sdk_available": false,
     "industry_id": "zone5-paladin",
     "industry_data": {
       "compliance": {
         "blue_uas": true,
         "ndaa_compliant": true,
-        "note": "First autonomous interceptor on Blue UAS list"
+        "note": "Blue UAS listed."
       },
       "contracts": {},
-      "production": {},
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2023
+      },
       "funding": {},
       "gcs": {},
       "variants": [],
@@ -8247,7 +8374,7 @@
     "pid": "MDL-2034",
     "name": "Quantum Systems Vector AI",
     "description": "Quantum Systems Vector AI. Evtol fixed-wing (also configurable as multicopter 'scorpion'), 40km range, Blue UAS approved, NDAA compliant.",
-    "vehicle_type": "eVTOL fixed-wing (also configurable as multicopter 'Scorpion')",
+    "vehicle_type": "eVTOL fixed-wing (tilt-rotor, tactical ISR)",
     "build_class": "tactical_defense",
     "image_file": "https://quantum-systems.com/wp-content/uploads/2024/01/vector_header.webp",
     "pdf_file": "",
@@ -8255,44 +8382,42 @@
     "manufacturer": "Quantum Systems",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "",
-    "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
-    "sdk_available": false,
+    "firmware": "Quantum-Skynode (PX4-derived)",
+    "mavlink_support": true,
+    "max_flight_time_min": 120,
+    "max_payload_kg": 1.5,
+    "rf_bands": "Multi-band encrypted + 4G LTE",
+    "video_system": "EO/IR gimbal, SIGINT, comms relay, AI target detection",
+    "thermal_capable": true,
+    "thermal_sensor": "IR gimbal (modular)",
+    "sdk_available": true,
     "industry_id": "quantum-vector-ai",
     "industry_data": {
       "compliance": {
         "blue_uas": true,
-        "blue_uas_date": "2025-08",
-        "ndaa_compliant": true
+        "ndaa_compliant": true,
+        "note": "Blue UAS Sep 2025. Defense variant of Trinity platform. 2hr endurance."
       },
       "contracts": [
         {
-          "customer": "Australia",
-          "value": "AUD $90M"
-        },
-        {
-          "customer": "Germany",
-          "units": 147
-        },
-        {
-          "customer": "Spain",
-          "value": "\u20ac27M",
-          "units": 91
-        },
-        {
-          "customer": "Romania",
-          "value": "\u20ac18.4M"
+          "program": "See Quantum Systems Trinity Pro \u2014 same company contracts"
         }
       ],
-      "production": {},
-      "funding": {},
-      "gcs": {},
+      "production": {
+        "production_status": "full-rate",
+        "manufacturing_country": "Germany + USA",
+        "manufacturing_facility": "Gilching DE + Moorpark CA",
+        "first_delivery_year": 2023
+      },
+      "funding": {
+        "funding_source": "VC",
+        "total_funding_usd": 700000000,
+        "valuation": "\u20ac3B"
+      },
+      "gcs": {
+        "gcs_software": "QBase 3D",
+        "interoperability": "MAVLink, STANAG, ATAK"
+      },
       "variants": [],
       "specs": {
         "type": "eVTOL fixed-wing (also configurable as multicopter 'Scorpion')",
@@ -8852,7 +8977,7 @@
     "pid": "MDL-2039",
     "name": "Teledyne FLIR Defense Rogue 1",
     "description": "Teledyne FLIR Defense Rogue 1. Optionally-lethal vtol suas / loitering munition, 10km range, NDAA compliant.",
-    "vehicle_type": "Optionally-lethal VTOL sUAS / loitering munition",
+    "vehicle_type": "quad (reconnaissance, backpackable)",
     "build_class": "tactical_defense",
     "image_file": "",
     "pdf_file": "",
@@ -8860,19 +8985,21 @@
     "manufacturer": "Teledyne FLIR Defense",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "",
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 0,
+    "rf_bands": "Encrypted datalink",
+    "video_system": "FLIR Hadron 640 dual EO/IR",
+    "thermal_capable": true,
+    "thermal_sensor": "FLIR Hadron 640 (640x512 + visible)",
     "sdk_available": false,
     "industry_id": "teledyne-rogue-1",
     "industry_data": {
       "compliance": {
-        "ndaa_compliant": true
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "Teledyne FLIR Defense. Backpackable ISR with integrated Hadron thermal."
       },
       "contracts": [
         {
@@ -8886,7 +9013,11 @@
           "value_usd": 42500000
         }
       ],
-      "production": {},
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2023
+      },
       "funding": {},
       "gcs": {},
       "variants": [],
@@ -8957,7 +9088,7 @@
     "pid": "MDL-2040",
     "name": "GreenSight Warlock / Pikeman / Mustang",
     "description": "GreenSight Warlock / Pikeman / Mustang. NDAA compliant.",
-    "vehicle_type": "quad",
+    "vehicle_type": "quad (tactical multi-role)",
     "build_class": "tactical_fpv",
     "image_file": "",
     "pdf_file": "",
@@ -8965,24 +9096,28 @@
     "manufacturer": "GreenSight",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "",
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
+    "max_flight_time_min": 35,
+    "max_payload_kg": 1.5,
+    "rf_bands": "Encrypted datalink",
+    "video_system": "EO/IR, modular payloads",
+    "thermal_capable": true,
+    "thermal_sensor": "IR (modular)",
     "sdk_available": false,
     "industry_id": "greensight-platforms",
     "industry_data": {
       "compliance": {
-        "blue_uas_framework": true,
+        "blue_uas": false,
         "ndaa_compliant": true,
-        "note": "UltraBlue/MicroBlue avionics on Framework. Platforms not individually Blue UAS Cleared."
+        "note": "US-made tactical family. Limited public specs."
       },
       "contracts": {},
-      "production": {},
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2023
+      },
       "funding": {},
       "gcs": {},
       "variants": [],
@@ -9037,30 +9172,36 @@
     "pid": "MDL-2041",
     "name": "Thunder Tiger Corporation Overkill FPV",
     "description": "Thunder Tiger Corporation Overkill FPV. Blue UAS approved.",
-    "vehicle_type": "quad",
+    "vehicle_type": "quad (tactical FPV)",
     "build_class": "tactical_fpv",
     "image_file": "",
     "pdf_file": "",
     "platform_category": "tactical",
     "manufacturer": "Thunder Tiger Corporation",
     "ndaa_compliant": false,
-    "blue_uas": true,
-    "firmware": "",
+    "blue_uas": false,
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
+    "max_flight_time_min": 15,
+    "max_payload_kg": 0.5,
+    "rf_bands": "FPV link",
+    "video_system": "HD FPV camera",
     "thermal_capable": false,
-    "thermal_sensor": "",
+    "thermal_sensor": null,
     "sdk_available": false,
     "industry_id": "thunder-tiger-overkill",
     "industry_data": {
       "compliance": {
-        "blue_uas": true
+        "blue_uas": false,
+        "ndaa_compliant": false,
+        "note": "Taiwanese manufacturer. Tactical FPV platform."
       },
       "contracts": {},
-      "production": {},
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "Taiwan",
+        "first_delivery_year": 2024
+      },
       "funding": {},
       "gcs": {},
       "variants": [],
@@ -9100,30 +9241,36 @@
     "pid": "MDL-2042",
     "name": "Zepher Flight Labs Z1",
     "description": "Zepher Flight Labs Z1. Blue UAS approved.",
-    "vehicle_type": "quad",
+    "vehicle_type": "quad (compact tactical)",
     "build_class": "tactical_fpv",
     "image_file": "",
     "pdf_file": "",
     "platform_category": "tactical",
     "manufacturer": "Zepher Flight Labs",
-    "ndaa_compliant": false,
-    "blue_uas": true,
-    "firmware": "",
+    "ndaa_compliant": true,
+    "blue_uas": false,
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
+    "max_flight_time_min": 20,
+    "max_payload_kg": 0.3,
+    "rf_bands": "Encrypted link",
+    "video_system": "EO camera",
     "thermal_capable": false,
-    "thermal_sensor": "",
+    "thermal_sensor": null,
     "sdk_available": false,
     "industry_id": "zepher-z1",
     "industry_data": {
       "compliance": {
-        "blue_uas": true
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "US startup. Limited public data."
       },
       "contracts": {},
-      "production": {},
+      "production": {
+        "production_status": "early production",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2024
+      },
       "funding": {},
       "gcs": {},
       "variants": [],
@@ -9163,7 +9310,7 @@
     "pid": "MDL-2043",
     "name": "SkyTech Orion Global SkyTech Replicator",
     "description": "SkyTech Orion Global SkyTech Replicator. NDAA compliant.",
-    "vehicle_type": "quad",
+    "vehicle_type": "quad (tactical)",
     "build_class": "tactical_defense",
     "image_file": "",
     "pdf_file": "",
@@ -9171,24 +9318,28 @@
     "manufacturer": "SkyTech Orion Global",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "",
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
+    "max_flight_time_min": 25,
+    "max_payload_kg": 1.0,
+    "rf_bands": "Encrypted datalink",
+    "video_system": "EO/IR",
+    "thermal_capable": true,
+    "thermal_sensor": "IR (integrated)",
     "sdk_available": false,
     "industry_id": "skytech-replicator",
     "industry_data": {
       "compliance": {
-        "ndaa_compliant": true,
         "blue_uas": false,
-        "note": "Self-declared NDAA. Early stage."
+        "ndaa_compliant": true,
+        "note": "Limited public information."
       },
       "contracts": {},
-      "production": {},
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2024
+      },
       "funding": {},
       "gcs": {},
       "variants": [],
@@ -9251,14 +9402,14 @@
     "pid": "MDL-2044",
     "name": "UAS Nexus Platform One",
     "description": "First-of-its-kind ecosystem fusing Western drone technologies. Inspired by Ukraine's decentralized FPV production model. Solder-free option available for trainer config. MOSA-first, attritable, interoperable, COTS-compatible",
-    "vehicle_type": "quad",
+    "vehicle_type": "quad (tactical FPV/ISR)",
     "build_class": "tactical_fpv",
     "image_file": "",
     "pdf_file": "",
     "manufacturer": "UAS Nexus",
     "manufacturer_country": "United States",
     "ndaa_compliant": true,
-    "blue_uas": false,
+    "blue_uas": true,
     "relations": {
       "frames": [],
       "motors": [],
@@ -9409,20 +9560,31 @@
         "note": "Private commercial \u2014 no public funding disclosures"
       },
       "production": {
-        "status": "Active production",
-        "manufacturing_country": "United States",
-        "capacity": "10,000+ aircraft / month (decentralized manufacturing)",
-        "model": "Decentralized \u2014 operator/integrator coordinates supply chain",
-        "blue_uas": "NOT listed \u2014 platform uses Blue UAS-listed components",
-        "ndaa": "\u00a7848 compliant (platform)"
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2024
       },
       "variants": [
         "FPV Trainer / EW",
         "Mesh Node",
         "Autonomy Testing"
       ],
-      "documentation_availability": "Behind Syndicate membership wall"
-    }
+      "documentation_availability": "Behind Syndicate membership wall",
+      "compliance": {
+        "blue_uas": true,
+        "ndaa_compliant": true,
+        "note": "Tactical FPV. Blue UAS listed."
+      }
+    },
+    "max_flight_time_min": 30,
+    "max_payload_kg": 1.0,
+    "video_system": "EO/IR",
+    "thermal_capable": true,
+    "thermal_sensor": "IR (integrated)",
+    "rf_bands": "Encrypted multi-band",
+    "firmware": "Proprietary",
+    "mavlink_support": false,
+    "sdk_available": false
   },
   {
     "pid": "MDL-2045",
