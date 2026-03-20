@@ -523,6 +523,183 @@ the Tac.Ctrl.
 
 ---
 
+## DTK APB — Flight Computer + Companion Computer
+
+The DTK APB is Orqa's single-board answer to the "FC + companion
+computer" integration problem. Instead of wiring a Pixhawk to a
+Raspberry Pi over UART and hoping for the best, APB puts an
+STM32H743 flight controller and an NXP i.MX8M Plus Linux computer
+on the same PCB — sharing power, sharing buses, sharing a 65×40 mm
+footprint that weighs 50 grams.
+
+The FC side runs PX4, ArduPilot, iNav, or Betaflight. The SOC side
+runs Orqa's Yocto Linux BSP with a 2.25 TOPS NPU for real-time AI,
+an H.265/H.264 hardware encoder at 1080p60, dual 4-lane MIPI-CSI
+camera inputs, and a PCIe expansion slot. The two halves communicate
+over internal UART and CAN — no external wiring, no connector
+failures, no integration guesswork.
+
+For builds that need onboard computer vision, AI inference, video
+processing, or autonomy running alongside a traditional flight
+controller, the APB eliminates the carrier board problem entirely.
+
+### Specifications
+
+| Detail | Value |
+|--------|-------|
+| SOC | NXP i.MX8M Plus (4x Cortex-A53 + Cortex-M7) |
+| FC MCU | STM32H743 (Cortex-M7) |
+| NPU | 2.25 TOPS |
+| GPU | 3D + 2D |
+| Video Encoder | H.265 / H.264, 1080p @ 60fps |
+| RAM | 4 GB LPDDR4 |
+| Storage | 4 GB eMMC + micro-SD up to 512 GB |
+| IMU | ICM42605 |
+| Barometer | DPS310 |
+| Camera Inputs | 2x 4-lane MIPI-CSI 2 (CSI 1: digital, CSI 2: digital or analog via ADV7282) |
+| Analog Video Out | LVDS-to-CVBS, 720×480 @ 60 Hz (Weston/Wayland) |
+| OSD | ORQA OSD engine — I2C2 @ 0x0a, max7456 emulation |
+| Connectivity | USB 3.0, USB 2.0, 2x UART (switchable), 2x CAN, I2C, 8x PWM, PCIe |
+| Power | 2S–8S battery (external connector, max 40 V) or USB-C PD up to 60 W |
+| Dimensions | 65 × 40 × 22.11 mm |
+| Weight | 50 g |
+| Temp Range | 0°C – 70°C |
+| Mounting | 30.5 mm, M3 |
+| Software | Orqa Yocto Linux BSP, Orqa SDK (Developer Program) |
+| FC Firmware | PX4 / ArduPilot / iNav / Betaflight |
+| NDAA | Compliant — EU manufactured |
+
+### Board Layout
+
+The APB has connectors on all four edges across both sides of the PCB.
+
+**Top side** — CSI 1 and CSI 2 (MIPI camera inputs), SIK/Gimbal
+connector (STM UART6), force flash mode button, DBG (IMX debug
+UART2), fan connector, SD card slot, and three bottom-edge
+connectors: HYBRID (STM) carrying +5V_SW / VID_OUT / V_IN /
+UART3, PWR (IMX) carrying VBUS_IN, and MFC (STM) carrying V_IN /
+UART3_TX / FC_GPIO1–4.
+
+**Bottom side** — CAM INPUT (STM) with +5V_SW / VID_IN, GPS (STM)
+with UART7 / I2C1, GIMBAL (IMX) with UART1 / V_IN, DFU MODE
+button, USB (IMX) with VSYS_5V / USB data, ESC (STM) with 8 motor
+outputs / UART8_RX / ADC_CURR, and CANBus (IMX) with CAN_L /
+CAN_H / +5V_SW.
+
+### Network & SSH
+
+USB-C RNDIS: Board presents as USB Ethernet at `192.168.75.1`, auto
+DHCP to host. SSH: `ssh root@192.168.75.1`. USB-C Ethernet adapter:
+DHCP client + static `192.168.1.75`. MAC prefix: `4E:52:51:`.
+
+### UART Routing
+
+UART3 (`/dev/ttymxc2`) connects through an internal GPIO switch
+that routes it to three possible destinations:
+
+| SW1 | SW2 | Destination |
+|-----|-----|-------------|
+| 0 | 0 | CSI 1 Connector |
+| 0 | 1 | CSI 2 Connector |
+| 1 | 0 | FC UART |
+
+SW1 = GPIO4_IO00, SW2 = GPIO4_IO13. Example routing UART3 to FC:
+
+```bash
+gpioset -c gpiochip3 -z 13=1
+gpioset -c gpiochip3 -z 0=0
+```
+
+UART1 (`/dev/ttymxc0`) is exposed on SOC Connector 1 for general
+use — gimbal, telemetry radio, or other serial peripherals.
+
+### Camera System
+
+**CSI 1** — 4-lane MIPI-CSI, default: 1280×720 @ 60fps digital.
+Device: `/dev/video2`.
+
+**CSI 2** — Switchable between digital MIPI and analog CVBS input
+via ADV7282 decoder. Analog mode: 720×576 PAL @ 50fps, progressive
+(de-interlaced internally). Device: `/dev/video3`. Switch between
+digital and analog by changing the device tree with
+`orqa_dt_switcher`:
+
+- `imx8mp-orqa-apb-rev2.dtb` — CSI 2 digital (default)
+- `imx8mp-orqa-apb-rev2-adv.dtb` — CSI 2 analog
+
+Reboot required after switching. Settings persist across updates.
+
+**Analog video output** — GPIO-controlled LVDS-to-CVBS switch:
+
+```bash
+gpioset -c gpiochip1 -z 20=0   # LVDS to CVBS output (SOC display)
+gpioset -c gpiochip1 -z 20=1   # Analog camera passthrough
+```
+
+Output runs Wayland/Weston at 720×480 @ 60 Hz. Test with:
+`gst-launch-1.0 videotestsrc ! autovideosink`
+
+### OSD Engine
+
+ORQA's hardware OSD emulates the MAX7456 interface over I2C2
+(`/dev/i2c-1`, address `0x0a`). This allows drawing text and
+graphics overlays on the analog video output without touching
+the live video stream — zero additional latency. The OSD chip
+sits between the analog camera input and the VTx output, so
+overlays appear on the transmitted feed in real time.
+
+### CAN Bus
+
+CAN 1 is exposed on SOC Connector 2 (bottom side CANBus connector)
+for external peripherals — GPS, rangefinder, or DroneCAN devices.
+CAN 2 is routed internally to the FC.
+
+### Power
+
+The board accepts 2S–8S battery input through the external power
+connector (max 40 V, 4-pin JST-GH 1.25). USB-C PD provides up to
+60 W (5 V – 20 V, max 3 A) but may not supply enough power for
+the FC under load — supplement with external power for full
+operation. Always apply external power before connecting USB when
+using both simultaneously.
+
+**Thermal note:** The i.MX8M Plus generates significant heat under
+sustained AI/video workloads. Ensure airflow when the board is
+stationary or not enclosed in the heatsink assembly. Auto shutdown
+triggers at 95°C. Monitor with: `cat /sys/class/thermal/thermal_zone0/temp`
+
+### Recovery & Flashing
+
+The board enters recovery mode after three failed boot attempts.
+Recovery provides telnet access at `192.168.75.1` (root, no
+password) with full filesystem access.
+
+For complete re-flash (soft brick recovery), use NXP's `uuu`
+utility from [nxp-imx/mfgtools](https://github.com/nxp-imx/mfgtools):
+
+| Mode | USB Vendor:Product | How to enter |
+|------|-------------------|--------------|
+| Fastboot | 0x35b6:0x0210 | `orqa-reboot fastboot` on running board |
+| Flash | 0x1fc9:0x0146 | Hold button while powering on |
+
+Persistent partitions: `nvram` (64 MB, config files) and `data`
+(remaining flash, general use) survive both OTA updates and
+re-flashing.
+
+### Analog Camera Quirk
+
+The ADV7282 CVBS decoder will hang if the video stream isn't
+properly stopped before the application exits. Always call
+`VIDIOC_STREAMOFF` and `close()` on the camera file descriptor:
+
+```c
+enum v4l2_buf_type type = V4L2_BUF_TYPE_VIDEO_CAPTURE;
+ioctl(camera_fd, VIDIOC_STREAMOFF, &type);
+close(camera_fd);
+```
+
+---
+
 ## The Complete Orqa Ecosystem
 
 Orqa's product line spans from individual components to
@@ -540,6 +717,7 @@ in standalone components and in complete MRM platforms.
 | EW Receiver | IRONghost Dual-Sub Hybrid | Sub-GHz to FC |
 | Flight Controller (Multi) | F405 3030 / QuadCore H7 | JST-GH to ESC |
 | Flight Controller (Wing) | H7 WingCore | JST-GH, 10 servo + 4 motor |
+| Flight Computer | DTK APB (FC + i.MX8M Plus companion) | Internal UART/CAN, 2x MIPI-CSI, PCIe |
 | ESC | 3030 4-in-1 70A | Direct cable to FC |
 | Video Tx | Ghost Hybrid / Tramp / Wing VTx (10W) | 5.8 GHz analog |
 | Goggles | FPV.One Pilot | Analog + HDMI |

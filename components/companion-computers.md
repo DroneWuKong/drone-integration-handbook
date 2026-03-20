@@ -143,18 +143,58 @@ board — the cleanest path to using Pi compute in a compliant build.
 
 ---
 
+## Orqa DTK APB
+
+The DTK APB takes the converged approach to an extreme: an
+STM32H743 flight controller and an NXP i.MX8M Plus Linux SBC
+on a single 65×40 mm board at 50 grams. The FC side runs PX4,
+ArduPilot, iNav, or Betaflight. The SOC side runs Orqa's Yocto
+Linux with a 2.25 TOPS NPU, dual 4-lane MIPI-CSI camera inputs
+(one supporting analog CVBS via ADV7282), an H.265 hardware
+encoder at 1080p60, hardware OSD (MAX7456 emulation), CAN bus,
+and a PCIe expansion slot. FC-to-SOC communication runs over
+internal UART and CAN — no external wiring.
+
+| Detail | Value |
+|--------|-------|
+| HQ | Osijek, Croatia |
+| SOC | NXP i.MX8M Plus (4x Cortex-A53, Cortex-M7) |
+| FC MCU | STM32H743 |
+| NPU | 2.25 TOPS |
+| RAM / Storage | 4 GB LPDDR4 / 4 GB eMMC + micro-SD |
+| Camera Inputs | 2x 4-lane MIPI-CSI 2 |
+| Video Encoder | H.265 / H.264, 1080p @ 60fps |
+| Sensors | ICM42605 IMU, DPS310 barometer |
+| Power | 2S–8S battery or USB-C PD (60 W max) |
+| Weight | 50 g |
+| NDAA | Compliant — EU manufactured |
+
+The APB's sweet spot is FPV builds that need onboard AI, computer
+vision, or video processing without the wiring overhead of a
+separate companion board. The 2.25 TOPS NPU handles lightweight
+inference (object classification, pixel tracking) while the
+hardware encoder can stream processed video back through the
+analog OSD path to existing FPV goggles. Where VOXL 2 targets
+the autonomous PX4 market and Jetson targets heavy ML workloads,
+the APB targets the FPV-first operator who needs compute without
+leaving the analog video ecosystem.
+
+---
+
 ## The Architecture Decision
 
 | Approach | Example | Pros | Cons |
 |----------|---------|------|------|
 | Separate FC + companion | ARKV6X + Jetson Orin NX | Maximum flexibility, hot-swap compute | Wiring complexity, serial bottleneck |
-| Converged FC + compute | ModalAI VOXL 2, Auterion Skynode | Single board, no bottleneck, lighter | Less flexible, vendor lock-in |
+| Converged FC + compute | ModalAI VOXL 2, Auterion Skynode, Orqa DTK APB | Single board, no bottleneck, lighter | Less flexible, vendor lock-in |
 | FC + carrier board | ARKV6X + ARK Jetson PAB Carrier | Best of both — PAB standard allows swapping either | Most complex physically |
 
 For the AI Wingman architecture, VOXL 2 is the primary PX4
 integration target (converged approach). The Orqa DTK APB
-(STM32H7 FC + i.MX8M Plus companion) is the development
-hardware, which follows the separate FC + companion model.
+(STM32H7 FC + i.MX8M Plus companion) is the converged
+development hardware — same single-board philosophy as VOXL 2
+but with FPV-native features (analog video I/O, hardware OSD,
+multi-firmware FC support).
 
 ---
 
@@ -179,6 +219,14 @@ hardware, which follows the separate FC + companion model.
 
 5. **For NDAA builds:** ModalAI VOXL 2 (Blue UAS, converged) or
    ARK Just a Jetson / Jetson PAB Carrier (NDAA, modular).
+
+6. **For FPV builds that need compute:** Orqa DTK APB. It's the
+   only converged FC + companion that keeps you in the analog
+   video ecosystem — hardware OSD, CVBS camera input, and an
+   encoder that can process video on-board without replacing
+   your existing FPV stack. 2.25 TOPS NPU won't run heavy
+   detection models, but it handles classification, tracking,
+   and sensor fusion at the edge.
 
 ---
 

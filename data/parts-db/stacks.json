@@ -4622,5 +4622,159 @@
       "30.5mm",
       "5 inch"
     ]
+  },
+  {
+    "pid": "STK-1102",
+    "category": "stacks",
+    "name": "Orqa DTK APB \u2014 FC + Companion Computer (i.MX8M Plus + STM32H743)",
+    "manufacturer": "Orqa",
+    "description": "Single-board flight computer combining an STM32H743 flight controller with an NXP i.MX8M Plus companion computer (4x Cortex-A53 + Cortex-M7). Dual MIPI-CSI camera inputs (digital + analog via ADV7282 CVBS decoder), 2.25 TOPS NPU for on-board AI, H.265/H.264 1080p60 hardware encoder, ORQA OSD engine (max7456 emulation over I2C), PCIe expansion, CAN bus, GPIO-switched UART routing, USB 3.0, and runs Orqa Yocto Linux BSP. Designed for FPV, autonomous robotics, and hybrid smart drone applications. Part of the DTK ecosystem.",
+    "link": "https://developer.orqafpv.com/index.php/code-on-apb/",
+    "image_file": null,
+    "mcu_family": "H7",
+    "mcu": "STM32H743",
+    "soc": "NXP i.MX8M Plus",
+    "soc_cpu": "4x Cortex-A53 @ 1.8GHz + Cortex-M7",
+    "npu_tops": 2.25,
+    "gpu": "3D + 2D GPU",
+    "video_encoder": "H.265 / H.264 1080p @ 60fps",
+    "ram": "4GB LPDDR4",
+    "emmc": "4GB",
+    "sd_card": "Up to 512GB micro-SD (SD 3.0)",
+    "imu": "ICM42605",
+    "barometer": "DPS310",
+    "camera_inputs": [
+      {
+        "port": "CSI 1",
+        "type": "4-lane MIPI-CSI 2",
+        "default": "1280x720 @ 60fps digital",
+        "device": "/dev/video2"
+      },
+      {
+        "port": "CSI 2",
+        "type": "4-lane MIPI-CSI 2 / ADV7282 CVBS analog",
+        "default": "720x576 @ 50fps PAL (analog mode)",
+        "device": "/dev/video3"
+      }
+    ],
+    "analog_video_output": "LVDS-to-CVBS, 720x480 @ 60Hz (Weston/Wayland)",
+    "osd": "ORQA OSD engine \u2014 I2C2 (/dev/i2c-1) @ 0x0a, max7456 emulation",
+    "connectivity": {
+      "usb": [
+        "USB 3.0 (5Gbit, SOC)",
+        "USB 2.0"
+      ],
+      "uart": {
+        "UART1": {
+          "device": "/dev/ttymxc0",
+          "location": "SOC Connector 1"
+        },
+        "UART3": {
+          "device": "/dev/ttymxc2",
+          "location": "Internal switch \u2014 routes to CSI1, CSI2, or FC via GPIO4_IO00 (SW1) + GPIO4_IO13 (SW2)"
+        }
+      },
+      "can": {
+        "CAN1": "SOC Connector 2",
+        "CAN2": "Internal to FC"
+      },
+      "i2c": "I2C2 \u2014 OSD engine @ 0x0a",
+      "pwm": "8x PWM (up to 8 motors)",
+      "pcie": "PCIe expansion slot"
+    },
+    "network": {
+      "usb_rndis": "192.168.75.1 (auto DHCP to host)",
+      "usb_ethernet": "192.168.1.75 static, DHCP client",
+      "mac_prefix": "4E:52:51:",
+      "ssh": "root@192.168.75.1"
+    },
+    "power": {
+      "battery_range": "2S\u20138S",
+      "external_connector_max_v": 40,
+      "usb_c_pd": "Up to 60W (5V\u201320V, max 3A)",
+      "note": "USB-C alone may not power FC \u2014 supplement with external PSU for full operation"
+    },
+    "dimensions_mm": "65 x 40 x 22.11",
+    "weight_g": 50,
+    "temp_range_c": "0 to 70",
+    "mounting_pattern_mm": 30.5,
+    "mounting_hole_size": "M3",
+    "firmware_targets": "PX4/ArduPilot/iNav/Betaflight (FC) + Orqa Yocto Linux (SOC)",
+    "device_trees": [
+      {
+        "file": "imx8mp-orqa-apb-rev2.dtb",
+        "config": "CSI 2 digital",
+        "default": true
+      },
+      {
+        "file": "imx8mp-orqa-apb-rev2-adv.dtb",
+        "config": "CSI 2 analog",
+        "default": false
+      }
+    ],
+    "recovery": {
+      "telnet": "192.168.75.1 (root, no password)",
+      "flash_tool": "NXP uuu (mfgtools)",
+      "fastboot_usb_id": "0x35b6:0x0210",
+      "flash_mode_usb_id": "0x1fc9:0x0146",
+      "force_flash": "Hold button while powering on"
+    },
+    "partitions": {
+      "nvram": "64MB (config files, persists across updates)",
+      "data": "General use (remaining flash, persists across updates)",
+      "sdcard_mount": "/sdcard",
+      "usb_mount": "/usb"
+    },
+    "os_version_file": "/etc/os-release (VERSION_ID field)",
+    "software": "Orqa Yocto Linux BSP + Orqa SDK (Developer Program)",
+    "cell_count_min": 2,
+    "cell_count_max": 8,
+    "is_aio": false,
+    "esc_current_a": null,
+    "esc_firmware": null,
+    "motor_output_count": 8,
+    "compatibility": {
+      "cell_count_min": 2,
+      "cell_count_max": 8,
+      "voltage_min_v": 7.4,
+      "voltage_max_v": 33.6,
+      "mounting_pattern_mm": 30.5,
+      "mounting_hole_size": "M3",
+      "battery_connector": null,
+      "continuous_current_per_motor_a": null,
+      "_compat_hard": [
+        "mounting_pattern_mm"
+      ],
+      "_compat_soft": [
+        "cell_count_min",
+        "cell_count_max",
+        "voltage_min_v",
+        "voltage_max_v"
+      ]
+    },
+    "size_class": "5_inch",
+    "tags": [
+      "H7",
+      "30.5mm",
+      "companion-computer",
+      "i.MX8M Plus",
+      "NPU",
+      "AI",
+      "MIPI-CSI",
+      "NDAA",
+      "EU-manufactured",
+      "Yocto Linux",
+      "PX4",
+      "ArduPilot",
+      "iNav",
+      "Betaflight",
+      "OSD",
+      "CAN",
+      "PCIe",
+      "DTK",
+      "Croatia"
+    ],
+    "ndaa_compliant": true,
+    "manufacturing_country": "Croatia (EU)"
   }
 ]
