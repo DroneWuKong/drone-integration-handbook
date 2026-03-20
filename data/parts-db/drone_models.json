@@ -4980,17 +4980,14 @@
     "manufacturer": "DJI",
     "ndaa_compliant": false,
     "blue_uas": false,
-    "firmware": "proprietary",
+    "firmware": "DJI proprietary",
     "mavlink_support": false,
     "max_flight_time_min": 55,
-    "max_payload_kg": 2.73,
-    "rf_bands": [
-      "2.4 GHz",
-      "5.8 GHz"
-    ],
-    "video_system": "DJI O3 Enterprise",
+    "max_payload_kg": 2.7,
+    "rf_bands": "2.4/5.1/5.8 GHz (O3 Enterprise)",
+    "video_system": "Zenmuse H30T/H20T/H20N/L2/P1/S1 + PSDK payloads",
     "thermal_capable": true,
-    "thermal_sensor": "Via Zenmuse H30T/H20T (640x512)",
+    "thermal_sensor": "Via Zenmuse H30T/H20T (640x512, \u226450mK)",
     "sdk_available": true,
     "handbook_profile": "platforms/cots/dji-m350-rtk.md",
     "relations": {
@@ -5033,7 +5030,24 @@
     "industry_id": "dji-m350-rtk",
     "tags": [
       "cots_enterprise"
-    ]
+    ],
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": false,
+        "note": "DJI Chinese. FCC Covered List Dec 2025."
+      },
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "China",
+        "first_delivery_year": 2023
+      },
+      "gcs": {
+        "gcs_software": "DJI Pilot 2, FlightHub 2, Terra",
+        "c2_link": "O3 Enterprise 20km AES-256",
+        "sdk": "MSDK V5, PSDK 3.15, Cloud API"
+      }
+    }
   },
   {
     "pid": "MDL-2001",
@@ -5047,17 +5061,14 @@
     "manufacturer": "DJI",
     "ndaa_compliant": false,
     "blue_uas": false,
-    "firmware": "proprietary",
+    "firmware": "DJI proprietary",
     "mavlink_support": false,
     "max_flight_time_min": 41,
     "max_payload_kg": 0,
-    "rf_bands": [
-      "2.4 GHz",
-      "5.8 GHz"
-    ],
-    "video_system": "DJI O3 Enterprise",
+    "rf_bands": "2.4/5.8 GHz (O3 Enterprise)",
+    "video_system": "48MP wide + 12MP zoom 200x + 640x512 thermal (\u226450mK, 30Hz, IR Super-Res) + LRF",
     "thermal_capable": true,
-    "thermal_sensor": "640x512 integrated",
+    "thermal_sensor": "640x512 VOx (\u226450mK, f/1.0, 30Hz, 12\u00b5m)",
     "sdk_available": true,
     "handbook_profile": "platforms/cots/dji-m30t.md",
     "relations": {
@@ -5101,7 +5112,24 @@
     "industry_id": "dji-m30t",
     "tags": [
       "cots_enterprise"
-    ]
+    ],
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": false,
+        "note": "DJI. Nearing EOL, superseded by M4T/M4TD."
+      },
+      "production": {
+        "production_status": "active, nearing EOL",
+        "manufacturing_country": "China",
+        "first_delivery_year": 2022
+      },
+      "gcs": {
+        "gcs_software": "DJI Pilot 2, FlightHub 2",
+        "c2_link": "O3 Enterprise 15km",
+        "sdk": "MSDK V5, PSDK 3.15, Cloud API, Dock-to-Cloud"
+      }
+    }
   },
   {
     "pid": "MDL-2002",
@@ -5113,21 +5141,16 @@
     "pdf_file": "",
     "platform_category": "cots",
     "manufacturer": "Autel Robotics",
-    "ndaa_compliant": "XE variant only",
+    "ndaa_compliant": false,
     "blue_uas": false,
-    "firmware": "proprietary",
+    "firmware": "Autel proprietary",
     "mavlink_support": false,
     "max_flight_time_min": 42,
     "max_payload_kg": 0,
-    "rf_bands": [
-      "900 MHz",
-      "2.4 GHz",
-      "5.2 GHz",
-      "5.8 GHz"
-    ],
-    "video_system": "SkyLink 3.0",
+    "rf_bands": "2.4/5.1/5.8/900 MHz (SkyLink 3.0)",
+    "video_system": "48MP 8K zoom 160x + 48MP wide + 640x512 thermal (\u226450mK) + LRF 1200m",
     "thermal_capable": true,
-    "thermal_sensor": "640x512 integrated",
+    "thermal_sensor": "640x512 VOx (\u226450mK, f/1.0, 12\u00b5m, 8-14\u00b5m LWIR)",
     "sdk_available": true,
     "handbook_profile": "platforms/cots/autel-evo-max-4t.md",
     "relations": {
@@ -5150,6 +5173,24 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
+    },
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": false,
+        "note": "BANNED \u2014 Entity List, FCC Covered, NDAA Sec 1709, DoD Chinese Military Companies."
+      },
+      "production": {
+        "production_status": "active but US sales blocked",
+        "manufacturing_country": "China",
+        "manufacturing_facility": "Shenzhen",
+        "first_delivery_year": 2023
+      },
+      "gcs": {
+        "gcs_software": "Autel Enterprise App",
+        "c2_link": "SkyLink 3.0 AES-256",
+        "sdk": "MSDK, PSDK, UX SDK, Cloud API"
+      }
     }
   },
   {
@@ -5164,17 +5205,14 @@
     "manufacturer": "Skydio",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "proprietary (Skydio Autonomy)",
+    "firmware": "Skydio Autonomy (proprietary)",
     "mavlink_support": true,
     "max_flight_time_min": 40,
-    "max_payload_kg": 0.34,
-    "rf_bands": [
-      "5G/LTE",
-      "Doodle Labs mesh"
-    ],
-    "video_system": "Encrypted AES-256",
+    "max_payload_kg": 0.35,
+    "rf_bands": "2.4/5 GHz (Connect SL), L/S-band 1.6-2.5 GHz (Connect MH)",
+    "video_system": "48MP telephoto + 64MP narrow + 50.3MP wide + FLIR Boson+ 640 thermal, MISB 0601",
     "thermal_capable": true,
-    "thermal_sensor": "FLIR Boson+ 640x512",
+    "thermal_sensor": "Teledyne FLIR Boson+ 640x512 radiometric",
     "sdk_available": true,
     "handbook_profile": "platforms/blue-uas/skydio-x10.md",
     "relations": {
@@ -5236,7 +5274,55 @@
       "blue_uas",
       "ndaa",
       "tactical_isr"
-    ]
+    ],
+    "industry_data": {
+      "compliance": {
+        "blue_uas": true,
+        "ndaa_compliant": true,
+        "note": "Blue UAS May 2024. RAS-A MAVLink."
+      },
+      "contracts": [
+        {
+          "program": "Army SRR T2",
+          "contract_value": "$12.3M"
+        },
+        {
+          "program": "Spain MoD",
+          "contract_value": "\u20ac18M"
+        },
+        {
+          "program": "Norway MoD",
+          "contract_value": "$9.4M"
+        },
+        {
+          "program": "MDA SHIELD IDIQ",
+          "contract_value": "$151B ceiling"
+        }
+      ],
+      "production": {
+        "production_status": "LRIP\u2192full-rate",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Hayward, CA",
+        "capacity": "1000+/mo",
+        "first_delivery_year": 2024
+      },
+      "funding": {
+        "funding_source": "VC",
+        "total_funding_usd": 732000000,
+        "key_investors": [
+          "a16z",
+          "Linse Capital",
+          "KDDI",
+          "NVIDIA"
+        ],
+        "valuation": "$2.2B+"
+      },
+      "gcs": {
+        "gcs_software": "Skydio Flight Deck, ATAK, QGC-Gov",
+        "c2_link": "AES-256 multi-band",
+        "interoperability": "RAS-A MAVLink, ATAK/CoT"
+      }
+    }
   },
   {
     "pid": "MDL-2004",
@@ -5252,15 +5338,12 @@
     "blue_uas": true,
     "firmware": "Auterion Enterprise PX4",
     "mavlink_support": true,
-    "max_flight_time_min": 25,
-    "max_payload_kg": 0.9,
-    "rf_bands": [
-      "Doodle Labs",
-      "LTE"
-    ],
-    "video_system": "Doodle Labs + LTE",
-    "thermal_capable": "via payload",
-    "thermal_sensor": "via payload adapter",
+    "max_flight_time_min": 43,
+    "max_payload_kg": 3.0,
+    "rf_bands": "2.4 GHz (Doodle Labs or Herelink), LTE backup",
+    "video_system": "Sony ILX-LR1 61MP, Workswell Wiris Pro dual RGB+thermal, LiDAR options",
+    "thermal_capable": true,
+    "thermal_sensor": "FLIR Boson 640R / Workswell Wiris Pro 640x512",
     "sdk_available": true,
     "handbook_profile": "platforms/blue-uas/freefly-astro.md",
     "relations": {
@@ -5304,13 +5387,35 @@
     "industry_id": "freefly-astro",
     "tags": [
       "blue_uas"
-    ]
+    ],
+    "industry_data": {
+      "compliance": {
+        "blue_uas": true,
+        "ndaa_compliant": true,
+        "note": "Blue UAS May 2024. NDAA only Doodle Labs config."
+      },
+      "production": {
+        "production_status": "full-rate",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Woodinville, WA",
+        "first_delivery_year": 2021
+      },
+      "funding": {
+        "funding_source": "Bootstrapped",
+        "total_funding_usd": 350000
+      },
+      "gcs": {
+        "gcs_software": "Auterion Mission Control",
+        "c2_link": "2.4 GHz + LTE",
+        "interoperability": "MAVLink, PX4"
+      }
+    }
   },
   {
     "pid": "MDL-2005",
     "name": "Inspired Flight IF1200A",
     "description": "Heavy-lift hexacopter built to USAF standards. ArduPilot firmware, MAVLink, 19.1 lb payload (Part 107), 43-min flight, SAFE motor-out redundancy. Universal payload interface for LiDAR, EO/IR, Phase One. Blue UAS, NDAA, Green UAS certified. Made in USA.",
-    "vehicle_type": "hex",
+    "vehicle_type": "hexa",
     "build_class": "enterprise_blue_uas",
     "image_file": "",
     "pdf_file": "",
@@ -5318,17 +5423,15 @@
     "manufacturer": "Inspired Flight Technologies",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "ArduPilot",
+    "firmware": "ArduPilot (CubePilot Cube Blue H7)",
     "mavlink_support": true,
     "max_flight_time_min": 43,
-    "max_payload_kg": 8.66,
-    "rf_bands": [
-      "Doodle Labs / NDAA radio"
-    ],
-    "video_system": "Via GS-ONE GCS",
-    "thermal_capable": "via payload",
-    "thermal_sensor": "via payload (FLIR, L3Harris)",
-    "sdk_available": false,
+    "max_payload_kg": 8.7,
+    "rf_bands": "2.4 GHz + optional 900 MHz RFD900x",
+    "video_system": "Payload-agnostic: Gremsy VIO F1, Workswell WIRIS, Sentera 6XT, MicaSense Altum-PT",
+    "thermal_capable": true,
+    "thermal_sensor": "Multiple: FLIR Boson 640 via payloads",
+    "sdk_available": true,
     "handbook_profile": "platforms/blue-uas/inspired-flight-if1200a.md",
     "relations": {
       "frames": [],
@@ -5376,7 +5479,29 @@
     "industry_id": "inspired-flight-if1200a",
     "tags": [
       "blue_uas"
-    ]
+    ],
+    "industry_data": {
+      "compliance": {
+        "blue_uas": true,
+        "ndaa_compliant": true,
+        "note": "Also Green UAS."
+      },
+      "production": {
+        "production_status": "full-rate",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "San Luis Obispo, CA",
+        "first_delivery_year": 2022
+      },
+      "funding": {
+        "funding_source": "Seed",
+        "total_funding_usd": 2350000
+      },
+      "gcs": {
+        "gcs_software": "IGC + QGC on Blue Herelink/GS-ONE",
+        "c2_link": "2.4 GHz",
+        "interoperability": "MAVLink, ArduPilot"
+      }
+    }
   },
   {
     "pid": "MDL-2006",
@@ -5390,16 +5515,14 @@
     "manufacturer": "Teal Drones / Red Cat Holdings",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "proprietary",
-    "mavlink_support": false,
+    "firmware": "PX4-based",
+    "mavlink_support": true,
     "max_flight_time_min": 30,
     "max_payload_kg": 0,
-    "rf_bands": [
-      "2.4 GHz"
-    ],
-    "video_system": "AES-256 encrypted ISM",
+    "rf_bands": "2.4 GHz, 1.8 GHz variant, 900 MHz testing",
+    "video_system": "FLIR Hadron 640R dual EO/IR (16MP visible + 640x512 thermal)",
     "thermal_capable": true,
-    "thermal_sensor": "FLIR Hadron 640R (640x512)",
+    "thermal_sensor": "Teledyne FLIR Hadron 640R (Boson 640)",
     "sdk_available": false,
     "handbook_profile": "platforms/blue-uas/teal-2.md",
     "relations": {
@@ -5445,7 +5568,43 @@
     "industry_id": "teal-2",
     "tags": [
       "blue_uas"
-    ]
+    ],
+    "industry_data": {
+      "compliance": {
+        "blue_uas": true,
+        "ndaa_compliant": true,
+        "note": "Blue UAS Jun 2023. SRR PoR (Black Widow)."
+      },
+      "contracts": [
+        {
+          "program": "CBP",
+          "contract_value": "$1M+"
+        },
+        {
+          "program": "DLA/USAF",
+          "contract_value": "$5.2M"
+        },
+        {
+          "program": "Army SRR PoR (Black Widow)",
+          "note": "5,880 systems"
+        }
+      ],
+      "production": {
+        "production_status": "full-rate",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Salt Lake City, UT",
+        "first_delivery_year": 2022
+      },
+      "funding": {
+        "funding_source": "Public (RCAT)",
+        "total_funding_usd": 307000000
+      },
+      "gcs": {
+        "gcs_software": "TAC / WEB controller",
+        "c2_link": "2.4 GHz AES-256",
+        "interoperability": "MAVLink, ATAK/CoT, NettWarrior"
+      }
+    }
   },
   {
     "pid": "MDL-2007",
@@ -5459,17 +5618,14 @@
     "manufacturer": "Parrot",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "proprietary",
+    "firmware": "Parrot proprietary (Linux)",
     "mavlink_support": false,
     "max_flight_time_min": 32,
     "max_payload_kg": 0,
-    "rf_bands": [
-      "WiFi 802.11 a/b/g/n",
-      "Microhard (MIL)"
-    ],
-    "video_system": "WiFi / Microhard",
+    "rf_bands": "2.4/5 GHz Wi-Fi, 1.8 GHz Microhard (MIL)",
+    "video_system": "Triple: 21MP wide + 21MP tele + FLIR Boson 320 thermal, 4K HDR, 32x zoom",
     "thermal_capable": true,
-    "thermal_sensor": "FLIR Boson 320",
+    "thermal_sensor": "FLIR Boson 320 (320x256)",
     "sdk_available": true,
     "handbook_profile": "platforms/blue-uas/parrot-anafi-usa.md",
     "relations": {
@@ -5514,13 +5670,32 @@
     "industry_id": "parrot-anafi-usa",
     "tags": [
       "blue_uas"
-    ]
+    ],
+    "industry_data": {
+      "compliance": {
+        "blue_uas": true,
+        "ndaa_compliant": true,
+        "note": "Original Blue UAS Aug 2020. Temp removed Mar 2025."
+      },
+      "production": {
+        "production_status": "active, transitioning to legacy",
+        "manufacturing_country": "USA (NEOTech MA) + France (R&D)",
+        "first_delivery_year": 2020
+      },
+      "funding": {
+        "funding_source": "Public (Euronext: PARRO)"
+      },
+      "gcs": {
+        "gcs_software": "FreeFlight 6/7, TOGA GCS (MIL)",
+        "c2_link": "Wi-Fi + 1.8 GHz Microhard"
+      }
+    }
   },
   {
     "pid": "MDL-2008",
     "name": "Anduril Ghost X",
     "description": "Medium-range military reconnaissance drone. Helicopter-type design, 80-90 min endurance, ~15 mi range, 11 kg payload. Anduril Lattice AI autonomy. Blue UAS. Combat-proven in Ukraine. Govt/mil procurement only. Made in USA.",
-    "vehicle_type": "helicopter",
+    "vehicle_type": "single-rotor helicopter VTOL",
     "build_class": "tactical_defense",
     "image_file": "",
     "pdf_file": "",
@@ -5530,14 +5705,12 @@
     "blue_uas": true,
     "firmware": "Anduril Lattice",
     "mavlink_support": false,
-    "max_flight_time_min": 90,
-    "max_payload_kg": 11,
-    "rf_bands": [
-      "classified"
-    ],
-    "video_system": "Lattice integrated",
+    "max_flight_time_min": 75,
+    "max_payload_kg": 9.0,
+    "rf_bands": "Multi-band resilient comms, 25km range",
+    "video_system": "Modular EO/IR gimbals, laser designator, comms relay",
     "thermal_capable": true,
-    "thermal_sensor": "EO/IR mission kit",
+    "thermal_sensor": "IR gimbal (modular)",
     "sdk_available": false,
     "handbook_profile": "platforms/tactical/anduril-ghost-x.md",
     "relations": {
@@ -5582,7 +5755,43 @@
     "industry_id": "anduril-ghost-x",
     "tags": [
       "tactical"
-    ]
+    ],
+    "industry_data": {
+      "compliance": {
+        "blue_uas": true,
+        "ndaa_compliant": true,
+        "note": "Army Company-Level sUAS T1 winner Sep 2024."
+      },
+      "contracts": [
+        {
+          "program": "Army CL-sUAS T1",
+          "contract_value": "$14.5M (10yr)"
+        },
+        {
+          "program": "USMC cUAS",
+          "contract_value": "$642M"
+        },
+        {
+          "program": "Replicator",
+          "note": "~$1B"
+        }
+      ],
+      "production": {
+        "production_status": "LRIP/full-rate",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2022,
+        "note": "Group 2. Deployed Ukraine 2022+."
+      },
+      "funding": {
+        "funding_source": "VC (Anduril)",
+        "total_funding_usd": 2800000000,
+        "valuation": "$14B+"
+      },
+      "gcs": {
+        "gcs_software": "Lattice",
+        "interoperability": "ATAK"
+      }
+    }
   },
   {
     "pid": "MDL-2009",
@@ -5669,20 +5878,17 @@
     "pid": "MDL-2010",
     "name": "DJI Agras T50",
     "description": "Agricultural spraying/spreading drone. Coaxial twin-rotor, 40 kg spray / 50 kg spread payload. Dual atomizing system, phased array radar, 52 acres/hr. D-RTK cm-level positioning. DJI Terra mapping. NOT NDAA compliant.",
-    "vehicle_type": "quad_coaxial",
+    "vehicle_type": "coaxial octocopter (agricultural)",
     "build_class": "agriculture",
     "platform_category": "cots",
     "manufacturer": "DJI",
     "ndaa_compliant": false,
     "blue_uas": false,
-    "firmware": "proprietary",
+    "firmware": "DJI proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": 50,
-    "rf_bands": [
-      "2.4 GHz",
-      "5.8 GHz"
-    ],
+    "max_flight_time_min": 18,
+    "max_payload_kg": 50.0,
+    "rf_bands": "2.4/5.8 GHz (O3)",
     "thermal_capable": false,
     "handbook_profile": "platforms/cots/dji-agras-t50.md",
     "relations": {
@@ -5732,26 +5938,41 @@
     "industry_id": "dji-agras-t50",
     "tags": [
       "cots_enterprise"
-    ]
+    ],
+    "video_system": "Dual FPV + phased array radar",
+    "thermal_sensor": null,
+    "sdk_available": false,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": false,
+        "note": "DJI ag. 40L spray, 75L/50kg spread. MTOW 92-103kg."
+      },
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "China",
+        "first_delivery_year": 2024
+      },
+      "gcs": {
+        "gcs_software": "DJI Agras app"
+      }
+    }
   },
   {
     "pid": "MDL-2011",
     "name": "DJI FlyCart 30",
     "description": "Heavy-lift delivery drone. 30 kg (dual battery) / 40 kg (single battery). Cargo + winch modes. 28 km range empty, 16 km loaded. DJI O3, IP55, ADS-B, integrated parachute. FAA approved with Remote ID. NOT NDAA compliant.",
-    "vehicle_type": "quad_octo",
+    "vehicle_type": "coaxial octocopter (cargo)",
     "build_class": "delivery",
     "platform_category": "cots",
     "manufacturer": "DJI",
     "ndaa_compliant": false,
     "blue_uas": false,
-    "firmware": "proprietary",
+    "firmware": "DJI proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": 29,
-    "max_payload_kg": 40,
-    "rf_bands": [
-      "2.4 GHz",
-      "5.8 GHz"
-    ],
+    "max_flight_time_min": 18,
+    "max_payload_kg": 40.0,
+    "rf_bands": "2.4/5.8 GHz (O3)",
     "thermal_capable": false,
     "handbook_profile": "platforms/cots/dji-flycart-30.md",
     "relations": {
@@ -5801,27 +6022,43 @@
     "industry_id": "dji-flycart-30",
     "tags": [
       "cots_enterprise"
-    ]
+    ],
+    "video_system": "Dual FPV + ADS-B + parachute",
+    "thermal_sensor": null,
+    "sdk_available": false,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": false,
+        "note": "DJI cargo. 30kg dual/40kg single. MTOW 95kg. 20m winch."
+      },
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "China",
+        "first_delivery_year": 2024
+      },
+      "gcs": {
+        "gcs_software": "DJI Pilot 2, DeliveryHub"
+      }
+    }
   },
   {
     "pid": "MDL-2012",
     "name": "Flyability Elios 3",
     "description": "Confined space inspection drone. Collision-tolerant carbon cage. LiDAR SLAM navigation, 4K + thermal, GPS-denied. Recovers from upside-down flips. For tanks, boilers, mines, tunnels. 12-17 min flight. Swiss-made.",
-    "vehicle_type": "quad_caged",
+    "vehicle_type": "quad (caged, confined-space)",
     "build_class": "confined_space",
     "platform_category": "cots",
     "manufacturer": "Flyability",
-    "ndaa_compliant": false,
+    "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "proprietary",
+    "firmware": "Flyability proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": 17,
+    "max_flight_time_min": 12,
     "max_payload_kg": 0,
-    "rf_bands": [
-      "proprietary"
-    ],
+    "rf_bands": "2.4/5.8 GHz",
     "thermal_capable": true,
-    "thermal_sensor": "Radiometric thermal integrated",
+    "thermal_sensor": "FLIR Lepton 3.5 (160x120, <50mK, 9fps)",
     "handbook_profile": "platforms/cots/flyability-elios-3.md",
     "relations": {
       "frames": [],
@@ -5866,26 +6103,52 @@
     "industry_id": "flyability-elios-3",
     "tags": [
       "cots_enterprise"
-    ]
+    ],
+    "video_system": "4K + FLIR Lepton 3.5 thermal + Ouster OS0-32 LiDAR",
+    "sdk_available": false,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "Swiss (Paudex). Not covered country."
+      },
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "Switzerland",
+        "first_delivery_year": 2022
+      },
+      "funding": {
+        "funding_source": "VC",
+        "total_funding_usd": 42000000,
+        "key_investors": [
+          "SBI",
+          "ETF Partners",
+          "Swisscom",
+          "Dow",
+          "Chevron"
+        ]
+      },
+      "gcs": {
+        "gcs_software": "Flyability Cockpit + Inspector 5"
+      }
+    }
   },
   {
     "pid": "MDL-2013",
     "name": "WingtraOne GEN II / WingtraRAY",
     "description": "Fixed-wing VTOL mapping drone. 59-min flight, 16 m/s cruise, PPK GNSS 1-3 cm accuracy. Swappable sensors (61MP RGB, 42MP full-frame, multispectral, LiDAR). Blue UAS, Green UAS. WingtraRAY covers 1300 acres/flight. Swiss-made.",
-    "vehicle_type": "fixed_wing_vtol",
+    "vehicle_type": "VTOL fixed-wing (tailsitter)",
     "build_class": "mapping",
     "platform_category": "blue_uas",
     "manufacturer": "Wingtra",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "proprietary",
-    "mavlink_support": false,
+    "firmware": "Wingtra proprietary (ETH Zurich)",
+    "mavlink_support": true,
     "max_flight_time_min": 59,
-    "max_payload_kg": 0.8,
-    "rf_bands": [
-      "proprietary"
-    ],
-    "thermal_capable": false,
+    "max_payload_kg": 1.25,
+    "rf_bands": "2.4 GHz, LTE 4G (RAY only)",
+    "thermal_capable": true,
     "handbook_profile": "platforms/blue-uas/wingtra-wingtraone.md",
     "relations": {
       "frames": [],
@@ -5937,22 +6200,52 @@
     "industry_id": "wingtra-wingtraone",
     "tags": [
       "blue_uas"
-    ]
+    ],
+    "video_system": "MAP61 61MP, Sony a7R IV, MicaSense RedEdge-P, Altum, LiDAR",
+    "thermal_sensor": "MicaSense Altum (survey thermal)",
+    "sdk_available": false,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": true,
+        "ndaa_compliant": true,
+        "note": "Both GEN II + RAY on Blue UAS. Green UAS (RAY)."
+      },
+      "production": {
+        "production_status": "full-rate",
+        "manufacturing_country": "Switzerland",
+        "manufacturing_facility": "Zurich",
+        "first_delivery_year": 2017
+      },
+      "funding": {
+        "funding_source": "VC",
+        "total_funding_usd": 66000000,
+        "key_investors": [
+          "DiamondStream",
+          "EquityPitcher",
+          "Verve",
+          "EIC Fund"
+        ]
+      },
+      "gcs": {
+        "gcs_software": "WingtraPilot / WingtraCLOUD",
+        "c2_link": "2.4 GHz ChaCha20 + LTE"
+      }
+    }
   },
   {
     "pid": "MDL-2014",
     "name": "XAG P100 Pro / P150",
     "description": "Chinese ag drone. P100: 50kg payload, 60L tank, 70 ac/hr. P150: 70L tank, 80kg max. Hot-swap spray/spread/map. NOT NDAA.",
-    "vehicle_type": "quad_coaxial",
+    "vehicle_type": "quad (agricultural)",
     "build_class": "agriculture",
     "platform_category": "cots",
     "manufacturer": "XAG",
     "ndaa_compliant": false,
     "blue_uas": false,
-    "firmware": "proprietary",
+    "firmware": "XAG SuperX 4 Pro",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": 80,
+    "max_flight_time_min": 16,
+    "max_payload_kg": 70.0,
     "handbook_profile": "platforms/cots/xag-p100-p150.md",
     "relations": {
       "frames": [],
@@ -6002,22 +6295,42 @@
     "industry_id": "xag-p100-p150",
     "tags": [
       "cots_enterprise"
-    ]
+    ],
+    "video_system": "FPV + radar + RTK",
+    "thermal_capable": false,
+    "thermal_sensor": null,
+    "rf_bands": "2.4/5.8 GHz + 4G LTE",
+    "sdk_available": false,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": false,
+        "note": "XAG Chinese. P100: 50L/50kg. P150: 70L/70kg."
+      },
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "China",
+        "first_delivery_year": 2023
+      },
+      "gcs": {
+        "gcs_software": "XAG One App"
+      }
+    }
   },
   {
     "pid": "MDL-2015",
     "name": "Hylio AG-272",
     "description": "US-made NDAA-compliant ag spray drone. 18 gal, 8-rotor, 50 ac/hr, TeeJet nozzles, GroundLink controller, AgroSol GCS. Made in Houston TX.",
-    "vehicle_type": "octo",
+    "vehicle_type": "octocopter (agricultural)",
     "build_class": "agriculture",
     "platform_category": "cots",
     "manufacturer": "Hylio",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "proprietary",
-    "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": 68,
+    "firmware": "Hylio AgroSol (ArduPilot-based)",
+    "mavlink_support": true,
+    "max_flight_time_min": 20,
+    "max_payload_kg": 101.3,
     "handbook_profile": "platforms/cots/hylio-ag-272.md",
     "relations": {
       "frames": [],
@@ -6071,22 +6384,47 @@
     "industry_id": "hylio-ag-272",
     "tags": [
       "cots_enterprise"
-    ]
+    ],
+    "video_system": "FPV + RTK + terrain radar",
+    "thermal_capable": false,
+    "thermal_sensor": null,
+    "rf_bands": "2.4 GHz + 900 MHz",
+    "sdk_available": false,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "NDAA confirmed. US-made. 18gal tank. 272kg thrust."
+      },
+      "production": {
+        "production_status": "active (scaling 5000/yr)",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Richmond, TX",
+        "first_delivery_year": 2021
+      },
+      "funding": {
+        "funding_source": "Angel/crowdfunding",
+        "total_funding_usd": 6720000
+      },
+      "gcs": {
+        "gcs_software": "Hylio AgroSol GCS"
+      }
+    }
   },
   {
     "pid": "MDL-2016",
     "name": "senseFly eBee X",
     "description": "Fixed-wing hand-launch mapping drone. 90-min flight, 500ha coverage, swappable cameras (RGB/multispectral/thermal). NDAA compliant. AgEagle.",
-    "vehicle_type": "fixed_wing",
+    "vehicle_type": "fixed-wing",
     "build_class": "mapping",
     "platform_category": "cots",
     "manufacturer": "senseFly/AgEagle",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "proprietary",
+    "firmware": "senseFly proprietary",
     "mavlink_support": false,
     "max_flight_time_min": 90,
-    "max_payload_kg": 0.5,
+    "max_payload_kg": 0.2,
     "handbook_profile": "platforms/cots/sensefly-ebee-x.md",
     "relations": {
       "frames": [],
@@ -6112,22 +6450,42 @@
     "industry_id": "sensefly-ebee-x",
     "tags": [
       "cots_enterprise"
-    ]
+    ],
+    "video_system": "S.O.D.A. 20MP, Aeria X 61MP, RedEdge-P, Duet T thermal",
+    "thermal_capable": true,
+    "thermal_sensor": "senseFly Duet T (640x512)",
+    "rf_bands": "2.4 GHz",
+    "sdk_available": false,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "Swiss. AgEagle NYSE delisting Oct 2026. eBee VISION is Blue UAS."
+      },
+      "production": {
+        "production_status": "active but company at financial risk",
+        "manufacturing_country": "Switzerland",
+        "first_delivery_year": 2019
+      },
+      "gcs": {
+        "gcs_software": "eMotion"
+      }
+    }
   },
   {
     "pid": "MDL-2017",
     "name": "Quantum Systems Trinity Pro",
     "description": "Long-endurance fixed-wing VTOL. 90-min flight, 75 km range, AI-ready edge computing. NATO/defense pedigree. German-made, NDAA compliant.",
-    "vehicle_type": "fixed_wing_vtol",
+    "vehicle_type": "eVTOL fixed-wing (tri-rotor)",
     "build_class": "mapping",
     "platform_category": "cots",
     "manufacturer": "Quantum Systems",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "proprietary",
-    "mavlink_support": false,
+    "firmware": "Quantum-Skynode (PX4-derived)",
+    "mavlink_support": true,
     "max_flight_time_min": 90,
-    "max_payload_kg": 1,
+    "max_payload_kg": 0.7,
     "handbook_profile": "platforms/cots/quantum-trinity-pro.md",
     "relations": {
       "frames": [],
@@ -6149,6 +6507,63 @@
       "ndaa_compliant": false,
       "combat_proven": false,
       "note": ""
+    },
+    "video_system": "Sony ILX-LR1 61MP, Phase One P5 128MP, Qube LiDAR, MicaSense",
+    "thermal_capable": true,
+    "thermal_sensor": "MicaSense Altum-PT",
+    "rf_bands": "2.4 GHz + 868/915 MHz + 4G LTE",
+    "sdk_available": true,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "German. Vector is Blue UAS. \u20ac3B valuation."
+      },
+      "contracts": [
+        {
+          "program": "Bundeswehr FALKE/Twister",
+          "contract_value": "\u20ac85M"
+        },
+        {
+          "program": "Australia Land 129",
+          "contract_value": "AUD $90M"
+        },
+        {
+          "program": "Romania",
+          "contract_value": "\u20ac18.4M"
+        },
+        {
+          "program": "Spain",
+          "contract_value": "\u20ac27M"
+        },
+        {
+          "program": "Ukraine",
+          "note": "619+ Vectors"
+        }
+      ],
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "Germany + USA",
+        "manufacturing_facility": "Gilching DE + Moorpark CA",
+        "first_delivery_year": 2020
+      },
+      "funding": {
+        "funding_source": "VC",
+        "total_funding_usd": 700000000,
+        "key_investors": [
+          "Balderton",
+          "HV Capital",
+          "Thiel",
+          "Airbus",
+          "HENSOLDT",
+          "Porsche SE"
+        ],
+        "valuation": "\u20ac3B"
+      },
+      "gcs": {
+        "gcs_software": "QBase 3D",
+        "interoperability": "MAVLink, PX4/Auterion"
+      }
     }
   },
   {
@@ -6161,7 +6576,7 @@
     "manufacturer": "DJI",
     "ndaa_compliant": false,
     "blue_uas": false,
-    "firmware": "proprietary",
+    "firmware": "DJI proprietary",
     "mavlink_support": false,
     "max_flight_time_min": 45,
     "max_payload_kg": 0,
@@ -6207,22 +6622,43 @@
     "industry_id": "dji-mavic3-enterprise",
     "tags": [
       "cots_enterprise"
-    ]
+    ],
+    "video_system": "20MP Hasselblad wide + 12MP tele 56x. 3T: +640x512 thermal. 3TA: upgraded 8\u00b5m thermal.",
+    "thermal_capable": true,
+    "thermal_sensor": "640x512 VOx (3T: \u226450mK, 30Hz, 12\u00b5m)",
+    "rf_bands": "2.4/5.8 GHz (O3 Enterprise)",
+    "sdk_available": true,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": false,
+        "note": "DJI. Superseded by Matrice 4 series."
+      },
+      "production": {
+        "production_status": "active but superseded",
+        "manufacturing_country": "China",
+        "first_delivery_year": 2022
+      },
+      "gcs": {
+        "gcs_software": "DJI Pilot 2, FlightHub 2",
+        "sdk": "MSDK V5, Cloud API"
+      }
+    }
   },
   {
     "pid": "MDL-2019",
     "name": "Hoverfly LiveSky/Spectre",
     "description": "Tethered UAS. Unlimited flight time via power tether. Persistent ISR, comms relay. Spectre is Blue UAS listed. Made in USA.",
-    "vehicle_type": "quad_tethered",
+    "vehicle_type": "quad (tethered)",
     "build_class": "tethered",
     "platform_category": "tactical",
     "manufacturer": "Hoverfly Technologies",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "proprietary",
+    "firmware": "Hoverfly proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": 5,
+    "max_flight_time_min": 0,
+    "max_payload_kg": 2.3,
     "handbook_profile": "platforms/tactical/hoverfly-livesky.md",
     "relations": {
       "frames": [],
@@ -6279,21 +6715,46 @@
       "tactical",
       "tethered",
       "zero-rf"
-    ]
+    ],
+    "video_system": "Modular EO/IR, 30x zoom + thermal",
+    "thermal_capable": true,
+    "thermal_sensor": "Modular thermal",
+    "rf_bands": "Tethered (no RF C2 needed)",
+    "sdk_available": false,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": true,
+        "ndaa_compliant": true,
+        "note": "Tethered = unlimited flight. 150ft tether."
+      },
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Jupiter, FL",
+        "first_delivery_year": 2017
+      },
+      "funding": {
+        "funding_source": "Private"
+      },
+      "gcs": {
+        "gcs_software": "Hoverfly Command Center",
+        "interoperability": "ATAK video streaming"
+      }
+    }
   },
   {
     "pid": "MDL-2020",
     "name": "Shield AI Nova 2",
     "description": "Autonomous indoor ISR drone. Hivemind AI: no GPS, no pilot, no comms needed. Room-by-room autonomous clearing/mapping. NDAA. Made in USA. Mil/govt only.",
-    "vehicle_type": "quad",
+    "vehicle_type": "quad (autonomous indoor)",
     "build_class": "tactical_indoor",
     "platform_category": "tactical",
     "manufacturer": "Shield AI",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "Hivemind",
+    "firmware": "Hivemind (Shield AI)",
     "mavlink_support": false,
-    "max_flight_time_min": null,
+    "max_flight_time_min": 25,
     "max_payload_kg": 0,
     "handbook_profile": "platforms/tactical/shield-ai-nova-2.md",
     "relations": {
@@ -6329,22 +6790,55 @@
     "industry_id": "shield-ai-nova-2",
     "tags": [
       "tactical"
-    ]
+    ],
+    "video_system": "15 RGBD cameras, 3D SLAM, NVIDIA Xavier AGX",
+    "thermal_capable": false,
+    "thermal_sensor": null,
+    "rf_bands": "2.4 GHz (optional, flies autonomous no-RF)",
+    "sdk_available": true,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "First AI combat drone in US mil history. Gaza tunnel ops."
+      },
+      "production": {
+        "production_status": "full-rate",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "San Diego, CA",
+        "first_delivery_year": 2018
+      },
+      "funding": {
+        "funding_source": "VC",
+        "total_funding_usd": 1400000000,
+        "key_investors": [
+          "a16z",
+          "L3Harris",
+          "Hanwha",
+          "Point72"
+        ],
+        "valuation": "$5.6B"
+      },
+      "gcs": {
+        "gcs_software": "Hivemind (autonomous)",
+        "interoperability": "Hivemind SDK"
+      }
+    }
   },
   {
     "pid": "MDL-2021",
     "name": "Neros Archer",
     "description": "Blue UAS FPV drone. Up to 160 km/h. EW-resistant. First FPV on Blue UAS list (2025 29 Palms). Made in LA, CA.",
-    "vehicle_type": "fpv",
+    "vehicle_type": "quad (tactical FPV/ISR)",
     "build_class": "tactical_fpv",
     "platform_category": "tactical",
     "manufacturer": "Neros Technologies",
     "ndaa_compliant": true,
-    "blue_uas": true,
-    "firmware": "proprietary",
+    "blue_uas": false,
+    "firmware": "Proprietary",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": 0,
+    "max_flight_time_min": 25,
+    "max_payload_kg": 1.0,
     "handbook_profile": "platforms/tactical/neros-archer.md",
     "relations": {
       "frames": [],
@@ -6430,22 +6924,42 @@
       "fpv",
       "kinetic",
       "mass-production"
-    ]
+    ],
+    "video_system": "EO/IR",
+    "thermal_capable": true,
+    "thermal_sensor": "IR (integrated)",
+    "rf_bands": "Resilient multi-band",
+    "sdk_available": false,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "US-made tactical. Limited public data."
+      },
+      "production": {
+        "production_status": "active/LRIP",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2023
+      },
+      "gcs": {
+        "gcs_software": "Neros proprietary"
+      }
+    }
   },
   {
     "pid": "MDL-2022",
     "name": "Ascent Aerosystems",
     "description": "Coaxial drone design. Compact, robust, high-performance. Industrial, defense, public safety. NDAA compliant.",
-    "vehicle_type": "coaxial",
+    "vehicle_type": "coaxial helicopter",
     "build_class": "enterprise_blue_uas",
     "platform_category": "blue_uas",
     "manufacturer": "Ascent Aerosystems",
     "ndaa_compliant": true,
-    "blue_uas": false,
-    "firmware": "proprietary",
-    "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
+    "blue_uas": true,
+    "firmware": "ArduPilot (Pixhawk Cube NDAA)",
+    "mavlink_support": true,
+    "max_flight_time_min": 53,
+    "max_payload_kg": 3.0,
     "handbook_profile": "platforms/blue-uas/ascent-aerosystems.md",
     "relations": {
       "frames": [],
@@ -6471,7 +6985,34 @@
     "industry_id": "ascent-aerosystems",
     "tags": [
       "blue_uas"
-    ]
+    ],
+    "video_system": "NextVision DragonEye2/NightHawk2/Raptor, Gremsy VIO F1, Sony ILX-LR1",
+    "thermal_capable": true,
+    "thermal_sensor": "Multiple via NextVision/Gremsy (640x512+)",
+    "rf_bands": "2.4 GHz, upgradable DoodleLabs/Microhard/L3Harris",
+    "sdk_available": true,
+    "industry_data": {
+      "compliance": {
+        "blue_uas": true,
+        "ndaa_compliant": true,
+        "note": "Blue UAS Jun 2022 + Framework Sep 2025. CMMC L2 110/110. Green UAS."
+      },
+      "production": {
+        "production_status": "full-rate",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Robinson Helicopter, Torrance CA",
+        "first_delivery_year": 2020
+      },
+      "funding": {
+        "funding_source": "Acquired by Robinson Helicopter (Apr 2024)",
+        "total_funding_usd": 1250000
+      },
+      "gcs": {
+        "gcs_software": "Freefly PilotPro, Herelink, UXV Navigator",
+        "c2_link": "2.4 GHz multi-radio",
+        "interoperability": "MAVLink, STANAG, ATAK, MOSA"
+      }
+    }
   },
   {
     "pid": "MDL-2023",
@@ -6579,7 +7120,7 @@
     "pid": "MDL-2024",
     "name": "Red Cat Holdings FANG F7",
     "description": "Red Cat Holdings FANG F7. Quadcopter, Blue UAS approved, NDAA compliant.",
-    "vehicle_type": "quadcopter",
+    "vehicle_type": "quad (7in FPV, retrievable)",
     "build_class": "tactical_fpv",
     "image_file": "https://redcat.red/wp-content/uploads/2025/01/fang-f7-header.webp",
     "pdf_file": "",
@@ -6587,28 +7128,36 @@
     "manufacturer": "Red Cat Holdings",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "Brave F7 (STM32 F722, BMI270 Gyro, BMP390 Barometer)",
+    "firmware": "Betaflight/custom NDAA",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
+    "max_flight_time_min": 12,
+    "max_payload_kg": 0.66,
+    "rf_bands": "Secure encrypted FPV",
+    "video_system": "HD digital FPV, ISR + precision strike payloads",
     "thermal_capable": false,
-    "thermal_sensor": "",
+    "thermal_sensor": null,
     "sdk_available": false,
     "industry_id": "redcat-fang",
     "industry_data": {
       "compliance": {
         "blue_uas": true,
-        "blue_uas_date": "2025-10",
-        "ndaa_compliant": true
+        "ndaa_compliant": true,
+        "note": "Blue UAS 2026. FANG\u2260Black Widow. FANG=FPV strike. Part of ARACHNID."
       },
       "contracts": {},
       "production": {
-        "fang_capacity": "5000/month"
+        "production_status": "full-rate (5000 FPV/mo capacity)",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Salt Lake City UT + ESAero",
+        "first_delivery_year": 2025
       },
-      "funding": {},
-      "gcs": {},
+      "funding": {
+        "funding_source": "Public (RCAT)"
+      },
+      "gcs": {
+        "gcs_software": "FANG controller + WEB GCS (ATAK)",
+        "interoperability": "ATAK via WEB"
+      },
       "variants": [],
       "specs": {
         "type": "quadcopter",
@@ -6724,7 +7273,7 @@
     "pid": "MDL-2025",
     "name": "ModalAI Seeker Vision FPV",
     "description": "ModalAI Seeker Vision FPV. Blue UAS approved, NDAA compliant.",
-    "vehicle_type": "quad",
+    "vehicle_type": "quad (AI tactical FPV)",
     "build_class": "tactical_fpv",
     "image_file": "https://www.modalai.com/cdn/shop/files/seeker-drone-front.png",
     "pdf_file": "",
@@ -6732,26 +7281,36 @@
     "manufacturer": "ModalAI",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "PX4 (integrated)",
-    "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "MVX \u2014 US-built, ChaCha256 encrypted, sub-40ms latency, dual-band digital HD, 11km+ tested",
+    "firmware": "PX4 (Qualcomm Flight RB5)",
+    "mavlink_support": true,
+    "max_flight_time_min": 25,
+    "max_payload_kg": 0.5,
+    "rf_bands": "2.4/5.8 GHz",
+    "video_system": "Qualcomm RB5 AI vision, stereo cameras, GPS-denied nav",
     "thermal_capable": false,
-    "thermal_sensor": "",
-    "sdk_available": false,
+    "thermal_sensor": null,
+    "sdk_available": true,
     "industry_id": "modalai-seeker-vision",
     "industry_data": {
       "compliance": {
         "blue_uas": true,
         "ndaa_compliant": true,
-        "framework_components": 16
+        "note": "Blue UAS. ModalAI acquired by Qualcomm 2024."
       },
       "contracts": {},
-      "production": {},
-      "funding": {},
-      "gcs": {},
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "San Diego CA",
+        "first_delivery_year": 2023
+      },
+      "funding": {
+        "funding_source": "Qualcomm subsidiary"
+      },
+      "gcs": {
+        "gcs_software": "QGC / VOXL SDK",
+        "interoperability": "MAVLink, PX4, ROS2"
+      },
       "variants": [
         "5in",
         "7in (Max)"
@@ -6833,7 +7392,7 @@
     "pid": "MDL-2026",
     "name": "ModalAI Stinger Vision FPV",
     "description": "ModalAI Stinger Vision FPV. 12min flight, Blue UAS approved, NDAA compliant.",
-    "vehicle_type": "quad",
+    "vehicle_type": "quad (compact AI FPV)",
     "build_class": "tactical_fpv",
     "image_file": "https://www.modalai.com/cdn/shop/files/stinger-fpv-front.png",
     "pdf_file": "",
@@ -6841,25 +7400,36 @@
     "manufacturer": "ModalAI",
     "ndaa_compliant": true,
     "blue_uas": true,
-    "firmware": "",
-    "mavlink_support": false,
+    "firmware": "PX4 (Qualcomm Flight RB5)",
+    "mavlink_support": true,
     "max_flight_time_min": 12,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "MVX VTX (ChaCha256, sub-40ms, dual-band HD)",
+    "max_payload_kg": 0.2,
+    "rf_bands": "2.4/5.8 GHz",
+    "video_system": "Qualcomm RB5 AI vision, stereo, GPS-denied",
     "thermal_capable": false,
-    "thermal_sensor": "",
-    "sdk_available": false,
+    "thermal_sensor": null,
+    "sdk_available": true,
     "industry_id": "modalai-stinger-vision",
     "industry_data": {
       "compliance": {
         "blue_uas": true,
-        "ndaa_compliant": true
+        "ndaa_compliant": true,
+        "note": "Blue UAS. Smaller Seeker variant."
       },
       "contracts": {},
-      "production": {},
-      "funding": {},
-      "gcs": {},
+      "production": {
+        "production_status": "active",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "San Diego CA",
+        "first_delivery_year": 2023
+      },
+      "funding": {
+        "funding_source": "Qualcomm subsidiary"
+      },
+      "gcs": {
+        "gcs_software": "QGC / VOXL SDK",
+        "interoperability": "MAVLink, PX4, ROS2"
+      },
       "variants": [],
       "specs": {
         "prop_size_inches": [
@@ -7544,46 +8114,63 @@
     "pid": "MDL-2033",
     "name": "Shield AI V-BAT (MQ-35A)",
     "description": "Shield AI V-BAT (MQ-35A). Single-engine ducted-fan vtol tail-sitter (group 3), Blue UAS approved, NDAA compliant.",
-    "vehicle_type": "Single-engine ducted-fan VTOL tail-sitter (Group 3)",
+    "vehicle_type": "VTOL fixed-wing (tail-sitter)",
     "build_class": "tactical_defense",
     "image_file": "https://shield.ai/wp-content/uploads/2024/07/vbat-team-5-scaled.jpg",
     "pdf_file": "",
     "platform_category": "tactical",
     "manufacturer": "Shield AI",
     "ndaa_compliant": true,
-    "blue_uas": true,
-    "firmware": "",
+    "blue_uas": false,
+    "firmware": "Hivemind (Shield AI)",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
-    "sdk_available": false,
+    "max_flight_time_min": 780,
+    "max_payload_kg": 11.3,
+    "rf_bands": "Multi-band, Silvus, L/S-band",
+    "video_system": "EO/IR, ViDAR maritime, AIS, SIGINT",
+    "thermal_capable": true,
+    "thermal_sensor": "EO/IR gimbal (modular)",
+    "sdk_available": true,
     "industry_id": "shield-ai-vbat",
     "industry_data": {
       "compliance": {
-        "blue_uas": true,
-        "ndaa_compliant": true
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "Group 3. 13hr endurance. 18,000ft. V-BAT Teams swarm."
       },
       "contracts": [
         {
-          "program": "USCG IDIQ",
-          "value_usd": 198000000
+          "program": "USCG ISR",
+          "contract_value": "$198M"
         },
         {
-          "program": "Indian Army",
-          "value_usd": 35000000
+          "program": "Romania",
+          "contract_value": "~$30M"
         },
         {
-          "program": "Netherlands",
-          "units": 12
+          "program": "Japan",
+          "contract_value": "$25M"
+        },
+        {
+          "program": "Ukraine",
+          "note": "170+ sorties"
         }
       ],
-      "production": {},
-      "funding": {},
-      "gcs": {},
+      "production": {
+        "production_status": "full-rate",
+        "manufacturing_country": "USA + India (JSW)",
+        "manufacturing_facility": "Dallas TX (107K sqft)",
+        "first_delivery_year": 2020
+      },
+      "funding": {
+        "funding_source": "VC (Shield AI)",
+        "total_funding_usd": 1400000000,
+        "valuation": "$5.6B"
+      },
+      "gcs": {
+        "gcs_software": "Hivemind",
+        "interoperability": "V-BAT Teams swarm"
+      },
       "variants": [],
       "specs": {
         "type": "Single-engine ducted-fan VTOL tail-sitter (Group 3)",
@@ -7790,7 +8377,7 @@
     "pid": "MDL-2035",
     "name": "AeroVironment Switchblade 300 Block 20",
     "description": "AeroVironment Switchblade 300 Block 20. Fixed-wing tube-launched, 30km range, NDAA compliant.",
-    "vehicle_type": "fixed-wing tube-launched",
+    "vehicle_type": "loitering munition",
     "build_class": "tactical_defense",
     "image_file": "https://www.avinc.com/images/uploads/product_images/Switchblade_300_Header.jpg",
     "pdf_file": "",
@@ -7798,24 +8385,43 @@
     "manufacturer": "AeroVironment",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "",
+    "firmware": "AV proprietary (AV_Halo)",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
+    "max_flight_time_min": 20,
+    "max_payload_kg": 1.8,
+    "rf_bands": "Encrypted DDL, Silvus MANET",
+    "video_system": "EO/IR, CoT GPS, wave-off/recommit",
+    "thermal_capable": true,
+    "thermal_sensor": "Dual EO/IR",
     "sdk_available": false,
     "industry_id": "aerovironment-switchblade-300",
     "industry_data": {
       "compliance": {
-        "ndaa_compliant": true
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "2.7kg AUR. 10km. Modular EFP warhead option."
       },
-      "contracts": {},
-      "production": {},
-      "funding": {},
-      "gcs": {},
+      "contracts": [
+        {
+          "program": "Army ~$1B 5yr (Aug 2024)"
+        },
+        {
+          "program": "France, Canada, Romania, Sweden, Lithuania, Greece, Australia, Ukraine (700+)"
+        }
+      ],
+      "production": {
+        "production_status": "full-rate (scaling 1200+/mo)",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Simi Valley CA + SLC UT",
+        "first_delivery_year": 2011
+      },
+      "funding": {
+        "funding_source": "Public (AVAV)"
+      },
+      "gcs": {
+        "gcs_software": "Tablet FCS",
+        "interoperability": "ATAK, Nett Warrior"
+      },
       "variants": [],
       "specs": {
         "type": "fixed-wing tube-launched",
@@ -7887,7 +8493,7 @@
     "pid": "MDL-2036",
     "name": "AeroVironment Switchblade 600",
     "description": "AeroVironment Switchblade 600. NDAA compliant.",
-    "vehicle_type": "quad",
+    "vehicle_type": "loitering munition (anti-armor)",
     "build_class": "tactical_defense",
     "image_file": "https://www.avinc.com/images/uploads/product_images/Switchblade_600_Header.jpg",
     "pdf_file": "",
@@ -7895,34 +8501,43 @@
     "manufacturer": "AeroVironment",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "",
+    "firmware": "AV proprietary (AV_Halo)",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
+    "max_flight_time_min": 40,
+    "max_payload_kg": 5.4,
+    "rf_bands": "DDL + Silvus MANET + M-Code GPS, 100+km relay",
+    "video_system": "EO/IR, ATR, wave-off/recommit",
+    "thermal_capable": true,
+    "thermal_sensor": "Dual-band EO/IR",
     "sdk_available": false,
     "industry_id": "aerovironment-switchblade-600",
     "industry_data": {
       "compliance": {
-        "ndaa_compliant": true
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "54.5kg AUR. 80km. Javelin warhead. LASSO. Block 2: IP67."
       },
       "contracts": [
         {
-          "program": "Army IDIQ",
-          "value_usd": 990000000,
-          "duration_years": 5
+          "program": "Army LASSO + $1B 5yr"
+        },
+        {
+          "program": "Lithuania, Romania, Sweden, Greece, Canada, Australia, Ukraine"
         }
       ],
       "production": {
-        "current_per_month": 240,
-        "target_per_month": 1200,
-        "facility": "Salt Lake City, UT"
+        "production_status": "full-rate (240\u21921200+/mo)",
+        "manufacturing_country": "USA",
+        "manufacturing_facility": "Simi Valley CA + SLC UT",
+        "first_delivery_year": 2020
       },
-      "funding": {},
-      "gcs": {},
+      "funding": {
+        "funding_source": "Public (AVAV)"
+      },
+      "gcs": {
+        "gcs_software": "Tablet FCS",
+        "interoperability": "ATAK, MOSA, CLT"
+      },
       "variants": [
         "Switchblade 600",
         "Switchblade 600 Block 2"
@@ -8025,7 +8640,7 @@
     "pid": "MDL-2037",
     "name": "AeroVironment Switchblade 400",
     "description": "AeroVironment Switchblade 400. Rocket-assisted tube-launched fixed-wing, 65km range, NDAA compliant.",
-    "vehicle_type": "Rocket-assisted tube-launched fixed-wing",
+    "vehicle_type": "loitering munition (anti-armor, man-portable)",
     "build_class": "tactical_defense",
     "image_file": "",
     "pdf_file": "",
@@ -8033,24 +8648,39 @@
     "manufacturer": "AeroVironment",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "",
+    "firmware": "AV proprietary (AV_Halo)",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
+    "max_flight_time_min": 35,
+    "max_payload_kg": 3.2,
+    "rf_bands": "Silvus MANET, modular radio bays",
+    "video_system": "Gimbaled dual-band EO/IR, ATR, NVIDIA edge",
+    "thermal_capable": true,
+    "thermal_sensor": "Dual-band EO/IR",
     "sdk_available": false,
     "industry_id": "aerovironment-switchblade-400",
     "industry_data": {
       "compliance": {
-        "ndaa_compliant": true
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "NEW Oct 2025. <40lbs. Javelin warhead. RATO. CLT compatible."
       },
-      "contracts": {},
-      "production": {},
-      "funding": {},
-      "gcs": {},
+      "contracts": [
+        {
+          "program": "Army LASSO"
+        }
+      ],
+      "production": {
+        "production_status": "qualification/early production",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2026
+      },
+      "funding": {
+        "funding_source": "Public (AVAV)"
+      },
+      "gcs": {
+        "gcs_software": "Tablet FCS",
+        "interoperability": "ATAK, MOSA, CLT"
+      },
       "variants": [],
       "specs": {
         "type": "Rocket-assisted tube-launched fixed-wing",
@@ -8102,7 +8732,7 @@
     "pid": "MDL-2038",
     "name": "Anduril Industries Bolt-M",
     "description": "Anduril Industries Bolt-M. Quadcopter vtol, 20km range, NDAA compliant.",
-    "vehicle_type": "quadcopter VTOL",
+    "vehicle_type": "loitering munition / strike quad",
     "build_class": "tactical_defense",
     "image_file": "https://www.anduril.com/wp-content/uploads/2024/09/Bolt-Hero.webp",
     "pdf_file": "",
@@ -8110,19 +8740,21 @@
     "manufacturer": "Anduril Industries",
     "ndaa_compliant": true,
     "blue_uas": false,
-    "firmware": "",
+    "firmware": "Anduril Lattice",
     "mavlink_support": false,
-    "max_flight_time_min": null,
-    "max_payload_kg": null,
-    "rf_bands": [],
-    "video_system": "",
-    "thermal_capable": false,
-    "thermal_sensor": "",
+    "max_flight_time_min": 30,
+    "max_payload_kg": 2.0,
+    "rf_bands": "Resilient multi-band",
+    "video_system": "EO/IR targeting, Lattice AI",
+    "thermal_capable": true,
+    "thermal_sensor": "IR (integrated)",
     "sdk_available": false,
     "industry_id": "anduril-bolt-m",
     "industry_data": {
       "compliance": {
-        "ndaa_compliant": true
+        "blue_uas": false,
+        "ndaa_compliant": true,
+        "note": "Offensive loitering munition. Bolt-M\u2260Anvil (cUAS)."
       },
       "contracts": [
         {
@@ -8137,11 +8769,17 @@
         }
       ],
       "production": {
-        "current_per_month": 100,
-        "target_per_month": 175
+        "production_status": "LRIP",
+        "manufacturing_country": "USA",
+        "first_delivery_year": 2024
       },
-      "funding": {},
-      "gcs": {},
+      "funding": {
+        "funding_source": "VC (Anduril)",
+        "total_funding_usd": 2800000000
+      },
+      "gcs": {
+        "gcs_software": "Lattice"
+      },
       "variants": [],
       "specs": {
         "type": "quadcopter VTOL",
