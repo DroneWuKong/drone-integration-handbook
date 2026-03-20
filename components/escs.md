@@ -83,6 +83,25 @@ The Brave 55A pairs with the Brave F7 flight controller
 (F722/BMI270/BMP390) — a full NDAA-compliant flight stack
 from a single manufacturer.
 
+### Orqa 3030 4-in-1 ESC
+
+| Detail | Value |
+|--------|-------|
+| HQ | Osijek, Croatia |
+| NDAA | Compliant — EU manufactured |
+| Current | 70A continuous, 80A burst (10s) |
+| Voltage | 3S–6S |
+| Firmware | AM32 (bi-directional DShot) |
+| Protocols | DShot 300/600/1200 |
+| Mounting | 30.5 × 30.5 mm |
+| Weight | ~28 g |
+
+Purpose-built to stack with the Orqa F405 3030 FC. Hard-mount
+the ESC, soft-mount the FC on top with included silicone
+gummies. JST-GH cable eliminates custom wiring between boards.
+AM32 supports RPM filtering in Betaflight via bi-directional
+DShot.
+
 ---
 
 ## ESC Firmware Landscape

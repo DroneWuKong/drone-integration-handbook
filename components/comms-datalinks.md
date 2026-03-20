@@ -238,6 +238,52 @@ further advantage fiber-optic platforms.
 
 ---
 
+## NDAA RC & C2 Links
+
+Most consumer RC links (ELRS, CRSF, FrSky) are Chinese-manufactured.
+For NDAA-compliant builds, the options narrow significantly.
+
+### Orqa Ghost — 2.4 GHz RC Link
+
+EU-manufactured, NDAA-compliant 2.4 GHz RC link using LoRa-based
+chirp spread spectrum with adaptive FHSS. One of very few
+non-Chinese RC link options with both race and long-range performance.
+
+| Parameter | Value |
+|-----------|-------|
+| Frequency | 2.4 GHz ISM band |
+| Modulation | Chirp Spread Spectrum + Adaptive FHSS (LoRa/FLRC) |
+| Protocol | GHST (native), SBus, SRXL-2, PWM |
+| Modes | Pure Race (222–250 Hz, <4 ms), Normal (~50 Hz), Long Range (~15 Hz) |
+| Receivers | Átto (~0.6 g), Átto Duo (true diversity), Hybrid DUO/UNO V2 (combined VTx + Rx) |
+| Tx Modules | JR bay, Lite bay, UberLite — all 350 mW |
+
+Works with PX4 (`RC_INPUT` = `GHST`), QGroundControl,
+Betaflight 4.3+, iNav, and ArduPilot. OpenTX 2.3.13+ recommended.
+
+### Orqa IRONghost — EW-Resilient Dual Sub-GHz C2
+
+Defense-grade C2 link operating on licensed sub-GHz bands with
+dual-radio architecture for contested environments.
+
+| Parameter | Value |
+|-----------|-------|
+| Bands | 9xx MHz (primary) + 4xx MHz (shadow) |
+| Max Tx Power | 3W (~22 km with omni antennas) |
+| Modulation | Proprietary, firmware-upgradeable |
+| Video | Combined C2 Rx + 5.8 GHz analog VTx in single module |
+| OTA Updates | Firmware during binding (<60 seconds) |
+
+Minimizes RF emissions during flight. Pilot switches between
+primary and shadow bands as needed. Paired with Orqa Tac.Ctrl
+(MAVLink, ATAK-compatible) and GCS-1 ground station for extended
+range and NLOS operations via aerial repeater.
+
+**Critical:** Never power on without all antennas attached — 3W
+reflected back into amplifiers causes permanent damage.
+
+---
+
 ## Choosing Communications
 
 1. **Consumer FPV links (ELRS, CRSF, DJI) are NOT EW-resilient.**

@@ -40,7 +40,6 @@ COMPONENTS = [
     ("components/thermal-cameras.md", 607, "Thermal / IR Cameras"),
     ("components/counter-uas.md", 608, "Counter-UAS"),
     ("components/propulsion-non-electric.md", 609, "Non-Electric Propulsion"),
-    ("components/orqa-ecosystem.md", 610, "Orqa Ecosystem"),
     ("components/platforms-global.md", 611, "Non-US Platforms"),
 ]
 
@@ -139,19 +138,25 @@ def build_toc():
                 if ch_num == num:
                     toc += f'<a href="#ch{num}"><span class="ch-num">{num}</span>{title}</a>\n'
         toc += "</div>\n"
-    # Platform profiles
-    toc += '<div class="toc-part"><h3>Part 5 — Platform References</h3>\n'
+    # Platform profiles — collapsible
+    toc += '<div class="toc-part">\n'
+    toc += '<details class="toc-collapse">\n'
+    toc += '<summary><h3>Part 5 — Platform References</h3><span class="toc-count">' + str(len(PLATFORMS)) + ' platforms</span></summary>\n'
     for cat_name, p_nums in PLATFORM_PARTS:
         toc += f'<span style="display:block;color:var(--accent-dim);font-size:0.8rem;margin:0.5rem 0 0.2rem 0;">{cat_name}</span>\n'
         for num in p_nums:
             for filepath, p_num, title in PLATFORMS:
                 if p_num == num:
                     toc += f'<a href="#p{num}"><span class="ch-num">&bull;</span>{title}</a>\n'
+    toc += '</details>\n'
     toc += "</div>\n"
-    # Component references
-    toc += '<div class="toc-part"><h3>Part 6 — Component References</h3>\n'
+    # Component references — collapsible
+    toc += '<div class="toc-part">\n'
+    toc += '<details class="toc-collapse">\n'
+    toc += '<summary><h3>Part 6 — Component References</h3><span class="toc-count">' + str(len(COMPONENTS)) + ' categories</span></summary>\n'
     for filepath, c_num, title in COMPONENTS:
         toc += f'<a href="#c{c_num}"><span class="ch-num">&bull;</span>{title}</a>\n'
+    toc += '</details>\n'
     toc += "</div>\n"
     return toc
 
@@ -421,6 +426,56 @@ body {{
   color: var(--accent-dim);
   min-width: 2.5rem;
   font-weight: 700;
+}}
+
+/* ── TOC COLLAPSIBLE ── */
+.toc-collapse {{
+  border: none;
+}}
+
+.toc-collapse summary {{
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}}
+
+.toc-collapse summary::-webkit-details-marker {{
+  display: none;
+}}
+
+.toc-collapse summary::before {{
+  content: '▸';
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--accent-dim);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}}
+
+.toc-collapse[open] summary::before {{
+  transform: rotate(90deg);
+}}
+
+.toc-collapse summary h3 {{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  display: inline;
+}}
+
+.toc-collapse .toc-count {{
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+}}
+
+.toc-collapse[open] summary {{
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
 }}
 
 /* ── CHAPTER CONTENT ── */

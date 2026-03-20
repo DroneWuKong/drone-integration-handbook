@@ -143,6 +143,28 @@ specific components).
 Spanish manufacturer targeting the certified/regulated drone market.
 Veronte is one of few FCs with a path to EASA type certification.
 
+### Orqa
+
+| Detail | Value |
+|--------|-------|
+| HQ | Osijek, Croatia |
+| NDAA | Compliant — EU manufactured |
+
+**F405 3030** — STM32F405, 30.5mm, 2S–6S, all JST-GH lockable
+connectors (no soldering), MAX7456 + DisplayPort HD OSD, 8 PWM
+outputs. Stacks directly onto Orqa 3030 ESC. ArduPilot board
+target: `OrcaF405Pro`. DFU flash with `with_bl.hex`.
+
+**QuadCore H7** — STM32H743, ICM-42688-P, 30.5mm, 3S–6S.
+More flash, more UARTs, faster processing than F405. Same IMU
+as ARK FCs. Recommended for new NDAA builds needing headroom.
+
+**H7 WingCore** — Purpose-built for fixed-wing/VTOL. Twin
+orthogonal ICM-42688, DPS310 baro, 160A current sensor, 10 servo
+outputs, 4 motor outputs with telemetry, up to 12S (50V). iNav
+preinstalled, ArduPilot available. Direct JST-GH connection to
+Orqa Hybrid VTx/C2 modules. 36.6 g.
+
 ---
 
 ## Chinese FCs (Context — NOT NDAA)
@@ -178,9 +200,8 @@ added: NOT NDAA COMPLIANT.**
 4. **For NDAA builds:** ARK ARKV6X + PX4 is the cleanest path.
    For Betaflight FPV: ARK FPV FC or Orqa QuadCore H7 / F405 3030
    (EU-manufactured, JST-GH no-solder connectors). For converged
-   compute: Auterion Skynode S or ModalAI VOXL 2. See the
-   [Orqa Ecosystem chapter](orqa-ecosystem.md) for the complete
-   Orqa FC/ESC/Rx stack.
+   compute: Auterion Skynode S or ModalAI VOXL 2. For fixed-wing:
+   Orqa H7 WingCore (10 servo outputs, 12S, NDAA).
 
 ---
 
