@@ -8620,7 +8620,7 @@
     "manufacturer": "UAS Nexus",
     "manufacturer_country": "United States",
     "ndaa_compliant": true,
-    "blue_uas": true,
+    "blue_uas": false,
     "relations": {
       "frames": [],
       "motors": [],
@@ -8638,10 +8638,10 @@
     },
     "country": "United States",
     "compliance": {
-      "blue_uas": true,
+      "blue_uas": false,
       "ndaa_compliant": true,
       "combat_proven": false,
-      "note": "NDAA \u00a7848 compliant. MOSA-first, attritable design."
+      "note": "NDAA \u00a7848 compliant. MOSA-first, attritable design. Platform itself is NOT Blue UAS listed \u2014 compatible with Blue UAS components (ARK FPV, ModalAI VOXL 2, etc.)."
     },
     "specs": {
       "airframe_dimensions": "17in wide x 14in long",
@@ -8662,11 +8662,12 @@
       "airframe": "17in wide \u00d7 14in long",
       "propellers": "7-inch, 10-inch",
       "speed_note": "80 mph",
-      "speed_max_kmh": 129.0,
       "endurance_note": "20+ min at cruise",
       "endurance_hr": 0.33,
       "production_note": "10,000+ aircraft/month (decentralized manufacturing)",
-      "type": "MOSA-first, attritable, interoperable, COTS-compatible"
+      "type": "MOSA-first, attritable, interoperable, COTS-compatible",
+      "speed_kmh": 129,
+      "payload_kg": 5.0
     },
     "compatible_hardware": [
       "ModalAI VOXL2",
@@ -8739,7 +8740,51 @@
     "tags": [
       "tactical"
     ],
-    "handbook_profile": "platforms/tactical/uas-nexus-platform-one.md"
+    "handbook_profile": "docs/handbook/platforms/tactical/uas-nexus-platform-one.md",
+    "industry_data": {
+      "manufacturer_hq": "United States",
+      "manufacturer_url": "https://syndicate.uasnexus.com/pages/platform-one",
+      "specs": {
+        "type": "MOSA-first attritable FPV \u2014 7\" and 10\" configs",
+        "airframe": "17 in \u00d7 14 in",
+        "prop_support": "7-inch and 10-inch",
+        "speed_kmh": 129,
+        "payload_kg": 5.0,
+        "flight_time_min": 20,
+        "power": "6S LiPO or LiON, XT60 bulkhead",
+        "materials": "Carbon fiber, flexible FDM (Shore 95A), stainless hardware",
+        "cooling": "Active or heatsink (compute-dependent)",
+        "autopilot_support": "Betaflight / INAV / PX4 / ArduPilot",
+        "fc_options": "TBS Lucid H7 / BrainFPV RADIX 2 HD / Orqa F405 3030",
+        "compute_options": "VOXL 2 / VOXL 2 Mini / RPi CM5 / Auterion Skynode-S / ARK FPV",
+        "radio_options": "IRONghost / TBS Crossfire / ELRS / Doodle Labs / Silvus / L3Harris SDR",
+        "solder_free_option": "Yes (trainer config)"
+      },
+      "gcs": {
+        "access": "Syndicate membership required",
+        "url": "syndicate.uasnexus.com",
+        "note": "No fixed BOM \u2014 component selection per configuration"
+      },
+      "funding": {
+        "model": "Syndicate membership / ecosystem",
+        "access": "Request-based approval",
+        "note": "Private commercial \u2014 no public funding disclosures"
+      },
+      "production": {
+        "status": "Active production",
+        "manufacturing_country": "United States",
+        "capacity": "10,000+ aircraft / month (decentralized manufacturing)",
+        "model": "Decentralized \u2014 operator/integrator coordinates supply chain",
+        "blue_uas": "NOT listed \u2014 platform uses Blue UAS-listed components",
+        "ndaa": "\u00a7848 compliant (platform)"
+      },
+      "variants": [
+        "FPV Trainer / EW",
+        "Mesh Node",
+        "Autonomy Testing"
+      ],
+      "documentation_availability": "Behind Syndicate membership wall"
+    }
   },
   {
     "pid": "MDL-2045",
@@ -9289,13 +9334,13 @@
       "payload_kg": 2.5,
       "payload_max_kg": 3.0,
       "range_km": 20,
-      "cruise_speed_kmh": 70,
       "battery_recommended": "6S4P Li-ion (~16000 mAh)",
       "battery_connectors": "1x XT90 + 2x XT60 (parallel)",
       "ew_resistance": true,
       "mavlink_support": true,
       "atak_integration": true,
-      "firmware": "Betaflight v4.1"
+      "firmware": "Betaflight v4.1",
+      "speed_kmh": 70
     },
     "gcs": {
       "gcs_software": "Orqa GCS-1",
@@ -9331,7 +9376,7 @@
     "variants": [
       "MRM2-10"
     ],
-    "handbook_profile": "platforms/tactical/orqa-mrm2-10.md",
+    "handbook_profile": "components/orqa-ecosystem.md",
     "industry_id": "PLT-6",
     "documentation_availability": "user manual available",
     "relations": {
@@ -9347,6 +9392,62 @@
       "receivers": [],
       "antennas": [],
       "gps_modules": []
+    },
+    "industry_data": {
+      "manufacturer_hq": "Osijek, Croatia (EU)",
+      "manufacturer_url": "https://orqafpv.com",
+      "specs": {
+        "type": "quadcopter",
+        "prop_size_in": 10,
+        "wheelbase_mm": 465,
+        "motors": "2814-class 880 kV (Orqa)",
+        "flight_controller": "H7 QuadCore \u2014 STM32H743 / ICM42688P",
+        "esc": "30\u00d730 70A AM32",
+        "camera": "Orqa Justice 1200 TVL analog",
+        "c2_link": "IRONghost dual sub-GHz (EW-resilient, licensed bands)",
+        "video": "5.8 GHz analog",
+        "payload_kg": 2.5,
+        "payload_max_kg": 3.5,
+        "range_km": 20,
+        "speed_kmh": 70,
+        "battery": "6S4P Li-ion ~16 000 mAh (XT90 + 2\u00d7 XT60)",
+        "firmware": "Betaflight / ArduPilot / iNav / PX4",
+        "ew_resistance": true,
+        "mavlink": true,
+        "atak": true,
+        "frame": "Carbon fiber, reinforced arms"
+      },
+      "gcs": {
+        "controller": "Orqa Tac.Ctrl (mandatory)",
+        "ground_station": "IRONghost QS (mast-mountable, CAT5) + IRONghost GS video Rx",
+        "software": "Orqa GCS-1",
+        "c2_protocol": "MAVLink",
+        "atak_integration": "Yes",
+        "operator_standoff": "Up to 1 km (IRONghost QS mast)"
+      },
+      "funding": {
+        "Lightspeed Venture Partners 2024": "$5.8 M Series A",
+        "EU SAFE mechanism": "~\u20ac100 M procurement (Ukraine-facing)",
+        "Baykar partnership": "Integration with Bayraktar TB2",
+        "DOK-ING partnership": "Manned-unmanned teaming (MUM-T)",
+        "Firestorm partnership": "3D-printable Orqa design \u2014 Firestorm Squall (Feb 2026)"
+      },
+      "production": {
+        "status": "Full production",
+        "manufacturing_country": "Croatia (EU) \u2014 Osijek facility",
+        "annual_capacity": "280,000 drones / year",
+        "capacity_roadmap": "Up to 1 M / year via partner network",
+        "supply_chain": "100% in-house \u2014 zero Chinese components",
+        "partner_network": "NATO-country licensing partners (undisclosed)",
+        "croatia_army_contract": "~\u20ac10 M FPV MRM-2 Interceptor order",
+        "ukraine_deployment": "Active \u2014 confirmed combat use",
+        "compliance_note": "2025 DoD halt resolved \u2014 radio subcomponent moved in-house; verify current status for US contracts"
+      },
+      "variants": [
+        "MRM2-10 (fixed frame)",
+        "MRM2-10F (foldable)"
+      ],
+      "documentation_availability": "User manual available \u2014 orqafpv.com/manual"
     }
   },
   {
@@ -9376,13 +9477,13 @@
       "video_system": "5.8 GHz analog",
       "payload_kg": 2.5,
       "range_km": 20,
-      "cruise_speed_kmh": 70,
       "deployment_time_s": 10,
       "battery_recommended": "6S4P Li-ion (~16000 mAh)",
       "ew_resistance": true,
       "mavlink_support": true,
       "atak_integration": true,
-      "firmware": "Betaflight v4.1"
+      "firmware": "Betaflight v4.1",
+      "speed_kmh": 70
     },
     "gcs": {
       "gcs_software": "Orqa GCS-1",
@@ -9414,7 +9515,7 @@
     "variants": [
       "MRM2-10F"
     ],
-    "handbook_profile": "platforms/tactical/orqa-mrm2-10f.md",
+    "handbook_profile": "components/orqa-ecosystem.md",
     "industry_id": "PLT-7",
     "documentation_availability": "user manual available",
     "relations": {
@@ -9430,6 +9531,51 @@
       "receivers": [],
       "antennas": [],
       "gps_modules": []
+    },
+    "industry_data": {
+      "manufacturer_hq": "Osijek, Croatia (EU)",
+      "manufacturer_url": "https://orqafpv.com",
+      "specs": {
+        "type": "quadcopter (foldable)",
+        "prop_size_in": 10,
+        "fold_mechanism": "Click-lock folding arms",
+        "deployment_time": "~10 seconds",
+        "c2_link": "IRONghost dual sub-GHz (EW-resilient, licensed bands)",
+        "video": "5.8 GHz analog",
+        "payload_kg": 2.5,
+        "range_km": 20,
+        "speed_kmh": 70,
+        "battery": "6S4P Li-ion ~16 000 mAh",
+        "firmware": "Betaflight v4.1 / ArduPilot / iNav",
+        "frame": "Carbon fiber folding arms",
+        "ew_resistance": true,
+        "mavlink": true,
+        "atak": true
+      },
+      "gcs": {
+        "controller": "Orqa Tac.Ctrl (mandatory)",
+        "ground_station": "IRONghost QS + IRONghost GS",
+        "software": "Orqa GCS-1",
+        "c2_protocol": "MAVLink",
+        "atak_integration": "Yes"
+      },
+      "funding": {
+        "Lightspeed Venture Partners 2024": "$5.8 M Series A (Orqa company-level)",
+        "EU SAFE mechanism": "~\u20ac100 M procurement (Ukraine-facing)",
+        "Baykar partnership": "Integration with Bayraktar TB2"
+      },
+      "production": {
+        "status": "Full production",
+        "manufacturing_country": "Croatia (EU)",
+        "annual_capacity": "280,000 drones / year (shared MRM line)",
+        "supply_chain": "100% in-house \u2014 zero Chinese components",
+        "note": "Foldable variant of MRM2-10 \u2014 shares production line"
+      },
+      "variants": [
+        "MRM2-10F (foldable)",
+        "MRM2-10 (fixed frame)"
+      ],
+      "documentation_availability": "User manual available \u2014 orqafpv.com/manual"
     }
   },
   {
@@ -9465,7 +9611,6 @@
       "payload_kg": 1.0,
       "range_km": 15,
       "range_with_payload_km": 7,
-      "speed_max_kmh": 130,
       "speed_with_payload_kmh": 60,
       "flight_time_min": 15,
       "flight_time_loaded_min": 10,
@@ -9476,7 +9621,8 @@
       "ew_resistance": true,
       "mavlink_support": true,
       "atak_integration": true,
-      "firmware": "Betaflight, ArduPilot, iNav"
+      "firmware": "Betaflight, ArduPilot, iNav",
+      "speed_kmh": 130
     },
     "gcs": {
       "gcs_software": "Orqa GCS-1 (EW variant)",
@@ -9508,7 +9654,7 @@
       "MRM1-5 ISM (Ghost 2.4 GHz)",
       "MRM1-5 EW (IRONghost)"
     ],
-    "handbook_profile": "platforms/tactical/orqa-mrm1-5.md",
+    "handbook_profile": "components/orqa-ecosystem.md",
     "industry_id": "PLT-8",
     "documentation_availability": "user manual available",
     "relations": {
@@ -9524,6 +9670,61 @@
       "receivers": [],
       "antennas": [],
       "gps_modules": []
+    },
+    "industry_data": {
+      "manufacturer_hq": "Osijek, Croatia (EU)",
+      "manufacturer_url": "https://orqafpv.com",
+      "specs": {
+        "type": "quadcopter \u2014 5-inch multirole",
+        "prop_size_in": 5,
+        "motors": "2408 2200 kV (Orqa)",
+        "flight_controller": "Orqa F405 30\u00d730",
+        "esc": "4-in-1 60A AM32",
+        "camera": "Orqa Justice 1200 TVL (4:3/16:9 switchable)",
+        "c2_link_ism": "Ghost 2.4 GHz (ImmersionRC/Orqa, LoRa/FLRC)",
+        "c2_link_ew": "IRONghost dual sub-GHz (licensed bands)",
+        "video": "5.8 GHz analog",
+        "payload_kg": 1.0,
+        "range_km": 15,
+        "range_with_payload_km": 7,
+        "speed_kmh": 130,
+        "speed_with_payload_kmh": 60,
+        "flight_time_min": 15,
+        "flight_time_loaded_min": 10,
+        "weight_ism_g": 562,
+        "weight_ew_g": 590,
+        "battery_included": "P50B 4S1P Li-ion (321 g)",
+        "battery_recommended": "P50B 4S2P Li-ion",
+        "firmware": "Betaflight / ArduPilot / iNav",
+        "ew_resistance": true,
+        "mavlink": true,
+        "atak": true,
+        "frame": "Carbon fiber + 4\u00d7 carbon braces (reinforced)"
+      },
+      "gcs": {
+        "controller_ism": "FPV.Ctrl or any 2.4 GHz RC",
+        "controller_ew": "Orqa Tac.Ctrl (mandatory for EW variant)",
+        "software_ew": "Orqa GCS-1",
+        "c2_protocol": "MAVLink",
+        "atak_integration": "Yes"
+      },
+      "funding": {
+        "Lightspeed Venture Partners 2024": "$5.8 M Series A (Orqa company-level)",
+        "EU SAFE mechanism": "~\u20ac100 M procurement (Ukraine-facing)",
+        "Baykar partnership": "Integration with Bayraktar TB2"
+      },
+      "production": {
+        "status": "Full production",
+        "manufacturing_country": "Croatia (EU) \u2014 Osijek facility",
+        "annual_capacity": "280,000 drones / year (shared MRM line)",
+        "supply_chain": "100% in-house \u2014 zero Chinese components",
+        "role": "Primary training platform for MRM2-10 operator pipeline"
+      },
+      "variants": [
+        "MRM1-5 ISM (Ghost 2.4 GHz)",
+        "MRM1-5 EW (IRONghost)"
+      ],
+      "documentation_availability": "User manual available \u2014 orqafpv.com/manual"
     }
   }
 ]
