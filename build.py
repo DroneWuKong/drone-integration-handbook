@@ -77,13 +77,17 @@ PLATFORMS = [
     ("platforms/tactical/red-cat-fang.md", 409, "Red Cat FANG F7"),
     ("platforms/tactical/skycutter-shrike.md", 410, "Skycutter Shrike 10"),
     ("platforms/tactical/vantage-robotics.md", 411, "Vantage Robotics Vesper / Trace"),
+    ("platforms/tactical/orqa-mrm2-10.md", 412, "Orqa MRM2-10"),
+    ("platforms/tactical/orqa-mrm2-10f.md", 413, "Orqa MRM2-10F (Foldable)"),
+    ("platforms/tactical/orqa-mrm1-5.md", 414, "Orqa MRM1-5"),
+    ("platforms/tactical/uas-nexus-platform-one.md", 415, "UAS Nexus Platform One"),
 ]
 
 PLATFORM_PARTS = [
     ("COTS", [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]),
     ("NDAA / Blue UAS", [201, 202, 203, 204, 205, 206, 207]),
     ("Open-Source / Custom", [301, 302]),
-    ("Tactical / Defense", [401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411]),
+    ("Tactical / Defense", [401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415]),
 ]
 
 PARTS = [

@@ -8739,7 +8739,7 @@
     "tags": [
       "tactical"
     ],
-    "handbook_profile": "docs/handbook/platforms/tactical/uas-nexus-platform-one.md"
+    "handbook_profile": "platforms/tactical/uas-nexus-platform-one.md"
   },
   {
     "pid": "MDL-2045",
@@ -9331,7 +9331,7 @@
     "variants": [
       "MRM2-10"
     ],
-    "handbook_profile": "components/orqa-ecosystem.md",
+    "handbook_profile": "platforms/tactical/orqa-mrm2-10.md",
     "industry_id": "PLT-6",
     "documentation_availability": "user manual available",
     "relations": {
@@ -9414,7 +9414,7 @@
     "variants": [
       "MRM2-10F"
     ],
-    "handbook_profile": "components/orqa-ecosystem.md",
+    "handbook_profile": "platforms/tactical/orqa-mrm2-10f.md",
     "industry_id": "PLT-7",
     "documentation_availability": "user manual available",
     "relations": {
@@ -9508,7 +9508,7 @@
       "MRM1-5 ISM (Ghost 2.4 GHz)",
       "MRM1-5 EW (IRONghost)"
     ],
-    "handbook_profile": "components/orqa-ecosystem.md",
+    "handbook_profile": "platforms/tactical/orqa-mrm1-5.md",
     "industry_id": "PLT-8",
     "documentation_availability": "user manual available",
     "relations": {
