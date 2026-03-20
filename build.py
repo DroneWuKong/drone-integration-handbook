@@ -714,6 +714,238 @@ body {{
   .chapter pre {{ padding: 1rem; }}
 }}
 
+/* ── SEARCH TRIGGER ── */
+.search-trigger {{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.35rem 0.75rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+  transition: border-color 0.2s, color 0.2s;
+}}
+
+.search-trigger:hover {{
+  border-color: var(--border-bright);
+  color: var(--text);
+}}
+
+.search-trigger kbd {{
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.1rem 0.35rem;
+  color: var(--text-dim);
+  line-height: 1;
+}}
+
+.search-trigger svg {{
+  opacity: 0.6;
+}}
+
+/* ── SEARCH OVERLAY ── */
+.search-overlay {{
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: min(15vh, 120px);
+}}
+
+.search-overlay.open {{
+  display: flex;
+}}
+
+.search-modal {{
+  width: min(640px, 92vw);
+  max-height: 70vh;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-bright);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+  animation: searchSlide 0.15s ease-out;
+}}
+
+@keyframes searchSlide {{
+  from {{ opacity: 0; transform: translateY(-12px) scale(0.98); }}
+  to {{ opacity: 1; transform: translateY(0) scale(1); }}
+}}
+
+.search-input-wrap {{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+}}
+
+.search-icon {{
+  flex-shrink: 0;
+  color: var(--accent-dim);
+}}
+
+.search-input {{
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--text-bright);
+  caret-color: var(--accent);
+}}
+
+.search-input::placeholder {{
+  color: var(--text-dim);
+  font-size: 0.95rem;
+}}
+
+.search-esc {{
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.15rem 0.4rem;
+  color: var(--text-dim);
+  flex-shrink: 0;
+}}
+
+.search-results {{
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-bright) transparent;
+}}
+
+.search-empty {{
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}}
+
+.search-result {{
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.12s;
+}}
+
+.search-result:hover,
+.search-result.active {{
+  background: var(--bg-elevated);
+}}
+
+.search-result-chapter {{
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: var(--accent-dim);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}}
+
+.search-result-heading {{
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 0.2rem;
+}}
+
+.search-result-snippet {{
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}}
+
+.search-result-snippet mark {{
+  background: none;
+  color: var(--accent);
+  font-weight: 600;
+}}
+
+.search-count {{
+  padding: 0.4rem 1rem 0.25rem;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  letter-spacing: 0.04em;
+}}
+
+.search-footer {{
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.6rem 1.25rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  letter-spacing: 0.03em;
+}}
+
+.search-footer kbd {{
+  display: inline-block;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0rem 0.3rem;
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  margin-right: 0.15rem;
+  line-height: 1.4;
+}}
+
+@media (max-width: 600px) {{
+  .search-trigger span,
+  .search-trigger kbd {{
+    display: none;
+  }}
+  .search-trigger {{
+    padding: 0.4rem 0.5rem;
+    margin-left: 0;
+  }}
+  .search-modal {{
+    max-height: 85vh;
+    border-radius: 0;
+    width: 100vw;
+  }}
+  .search-overlay {{
+    padding-top: 0;
+    align-items: flex-start;
+  }}
+  .search-footer {{
+    display: none;
+  }}
+}}
+
 /* ── PRINT ── */
 @media print {{
   .site-header, .back-to-top {{ display: none; }}
@@ -729,6 +961,11 @@ body {{
   <div class="logo">DRONE INTEGRATION HANDBOOK <span>v1.0</span></div>
   <nav class="nav-desktop">
     <a href="#toc">Contents</a>
+    <button class="search-trigger" id="searchTrigger" aria-label="Search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <span>Search</span>
+      <kbd>&#8984;K</kbd>
+    </button>
     <a href="https://forgeprole.netlify.app">Forge</a>
     <a href="https://github.com/DroneWuKong/drone-integration-handbook">GitHub</a>
     <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md">Contribute</a>
@@ -739,6 +976,7 @@ body {{
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
+  <a href="#" class="mobile-menu-link" id="mobileSearchLink">Search</a>
   <a href="#toc" class="mobile-menu-link">Contents</a>
   <a href="https://forgeprole.netlify.app" class="mobile-menu-link">Forge</a>
   <a href="https://github.com/DroneWuKong/drone-integration-handbook" class="mobile-menu-link">GitHub</a>
@@ -783,14 +1021,33 @@ body {{
 
 <a href="#" class="back-to-top" id="btt" title="Back to top">&uarr;</a>
 
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-modal">
+    <div class="search-input-wrap">
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" class="search-input" id="searchInput" placeholder="Search chapters, protocols, pinouts, platforms..." autocomplete="off" spellcheck="false">
+      <kbd class="search-esc">ESC</kbd>
+    </div>
+    <div class="search-results" id="searchResults">
+      <div class="search-empty">Type to search across all chapters and platform profiles.</div>
+    </div>
+    <div class="search-footer">
+      <span><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate</span>
+      <span><kbd>&#9166;</kbd> jump</span>
+      <span><kbd>esc</kbd> close</span>
+    </div>
+  </div>
+</div>
+
 <script>
-// Back to top button
+// ── BACK TO TOP ──
 const btt = document.getElementById('btt');
 window.addEventListener('scroll', () => {{
   btt.classList.toggle('visible', window.scrollY > 600);
 }});
 
-// Mobile menu
+// ── MOBILE MENU ──
 const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -800,7 +1057,6 @@ menuBtn.addEventListener('click', () => {{
   document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
 }});
 
-// Close menu when a link is tapped
 mobileMenu.querySelectorAll('a').forEach(link => {{
   link.addEventListener('click', () => {{
     menuBtn.classList.remove('active');
@@ -808,6 +1064,264 @@ mobileMenu.querySelectorAll('a').forEach(link => {{
     document.body.style.overflow = '';
   }});
 }});
+
+// ── SEARCH ENGINE ──
+(function() {{
+  const overlay = document.getElementById('searchOverlay');
+  const input = document.getElementById('searchInput');
+  const resultsEl = document.getElementById('searchResults');
+  const trigger = document.getElementById('searchTrigger');
+  const mobileTrigger = document.getElementById('mobileSearchLink');
+  let activeIdx = -1;
+  let searchIndex = null;
+
+  // Build index on first open — scrape all section content
+  function buildIndex() {{
+    if (searchIndex) return;
+    searchIndex = [];
+    const sections = document.querySelectorAll('.chapter');
+    sections.forEach(section => {{
+      const id = section.id;
+      // Get the chapter/platform title
+      const h1 = section.querySelector('h1');
+      const chapterTitle = h1 ? h1.textContent.trim() : '';
+
+      // Index every h2/h3 as a separate entry with surrounding text
+      const headings = section.querySelectorAll('h2, h3');
+      if (headings.length === 0 && h1) {{
+        // Section with just h1 — index the whole thing
+        const text = section.textContent.replace(/\\s+/g, ' ').trim();
+        searchIndex.push({{ id, chapterTitle, heading: chapterTitle, text, el: section }});
+        return;
+      }}
+
+      headings.forEach(heading => {{
+        // Collect text from this heading until the next heading
+        let text = heading.textContent + ' ';
+        let sib = heading.nextElementSibling;
+        while (sib && !/^H[1-3]$/.test(sib.tagName)) {{
+          text += sib.textContent + ' ';
+          sib = sib.nextElementSibling;
+        }}
+        text = text.replace(/\\s+/g, ' ').trim();
+        searchIndex.push({{
+          id,
+          chapterTitle,
+          heading: heading.textContent.trim(),
+          text,
+          el: heading
+        }});
+      }});
+    }});
+    console.log('Search index built:', searchIndex.length, 'entries');
+  }}
+
+  function openSearch() {{
+    buildIndex();
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    input.value = '';
+    resultsEl.innerHTML = '<div class="search-empty">Type to search across all chapters and platform profiles.</div>';
+    activeIdx = -1;
+    setTimeout(() => input.focus(), 50);
+  }}
+
+  function closeSearch() {{
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    activeIdx = -1;
+  }}
+
+  function escapeHtml(str) {{
+    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  }}
+
+  function highlightMatch(text, terms) {{
+    let result = escapeHtml(text);
+    terms.forEach(t => {{
+      if (t.length < 2) return;
+      const re = new RegExp('(' + t.replace(/[.*+?^${{}}()|[\\]\\\\]/g, '\\\\$&') + ')', 'gi');
+      result = result.replace(re, '<mark>$1</mark>');
+    }});
+    return result;
+  }}
+
+  function getSnippet(text, terms, maxLen) {{
+    maxLen = maxLen || 160;
+    const lower = text.toLowerCase();
+    let bestPos = 0;
+    let bestScore = -1;
+    // Find the position with the most term density
+    for (let i = 0; i < lower.length - 20; i += 10) {{
+      const window = lower.substring(i, i + maxLen);
+      let score = 0;
+      terms.forEach(t => {{
+        let idx = 0;
+        while ((idx = window.indexOf(t, idx)) !== -1) {{
+          score++;
+          idx += t.length;
+        }}
+      }});
+      if (score > bestScore) {{
+        bestScore = score;
+        bestPos = i;
+      }}
+    }}
+    // Snap to word boundary
+    if (bestPos > 0) {{
+      const space = text.lastIndexOf(' ', bestPos + 10);
+      if (space > bestPos - 20) bestPos = space + 1;
+    }}
+    let snippet = text.substring(bestPos, bestPos + maxLen);
+    if (bestPos > 0) snippet = '…' + snippet;
+    if (bestPos + maxLen < text.length) snippet += '…';
+    return snippet;
+  }}
+
+  function doSearch(query) {{
+    if (!query || query.length < 2) {{
+      resultsEl.innerHTML = '<div class="search-empty">Type to search across all chapters and platform profiles.</div>';
+      activeIdx = -1;
+      return;
+    }}
+
+    const terms = query.toLowerCase().split(/\\s+/).filter(t => t.length >= 2);
+    if (terms.length === 0) return;
+
+    // Score each entry
+    const scored = searchIndex.map(entry => {{
+      const lower = entry.text.toLowerCase();
+      const headingLower = entry.heading.toLowerCase();
+      let score = 0;
+      terms.forEach(t => {{
+        // Heading match worth 10x
+        if (headingLower.includes(t)) score += 10;
+        // Body matches
+        let idx = 0;
+        while ((idx = lower.indexOf(t, idx)) !== -1) {{
+          score++;
+          idx += t.length;
+        }}
+      }});
+      // Bonus for all terms present
+      const allPresent = terms.every(t => lower.includes(t) || headingLower.includes(t));
+      if (allPresent) score *= 2;
+      return {{ ...entry, score }};
+    }}).filter(e => e.score > 0)
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 25);
+
+    if (scored.length === 0) {{
+      resultsEl.innerHTML = '<div class="search-empty">No results for &ldquo;' + escapeHtml(query) + '&rdquo;</div>';
+      activeIdx = -1;
+      return;
+    }}
+
+    let html = '<div class="search-count">' + scored.length + ' result' + (scored.length === 1 ? '' : 's') + '</div>';
+    scored.forEach((entry, i) => {{
+      const snippet = getSnippet(entry.text, terms);
+      html += '<a class="search-result" data-idx="' + i + '" data-id="' + entry.id + '">';
+      html += '<div class="search-result-chapter">' + escapeHtml(entry.chapterTitle) + '</div>';
+      html += '<div class="search-result-heading">' + highlightMatch(entry.heading, terms) + '</div>';
+      html += '<div class="search-result-snippet">' + highlightMatch(snippet, terms) + '</div>';
+      html += '</a>';
+    }});
+    resultsEl.innerHTML = html;
+    activeIdx = -1;
+
+    // Store entries for navigation
+    resultsEl._scored = scored;
+
+    // Click handlers
+    resultsEl.querySelectorAll('.search-result').forEach(el => {{
+      el.addEventListener('click', (e) => {{
+        e.preventDefault();
+        const idx = parseInt(el.dataset.idx);
+        jumpToResult(idx);
+      }});
+    }});
+  }}
+
+  function jumpToResult(idx) {{
+    const scored = resultsEl._scored;
+    if (!scored || !scored[idx]) return;
+    closeSearch();
+    const entry = scored[idx];
+    // Scroll to the heading element
+    entry.el.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+    // Flash highlight
+    entry.el.style.transition = 'background 0.3s';
+    entry.el.style.background = 'rgba(34, 211, 238, 0.1)';
+    entry.el.style.borderRadius = '4px';
+    setTimeout(() => {{
+      entry.el.style.background = '';
+      setTimeout(() => entry.el.style.transition = '', 300);
+    }}, 1500);
+  }}
+
+  function setActive(idx) {{
+    const items = resultsEl.querySelectorAll('.search-result');
+    items.forEach(el => el.classList.remove('active'));
+    if (idx >= 0 && idx < items.length) {{
+      items[idx].classList.add('active');
+      items[idx].scrollIntoView({{ block: 'nearest' }});
+    }}
+    activeIdx = idx;
+  }}
+
+  // Event: trigger buttons
+  trigger.addEventListener('click', openSearch);
+  mobileTrigger.addEventListener('click', (e) => {{
+    e.preventDefault();
+    menuBtn.classList.remove('active');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+    openSearch();
+  }});
+
+  // Event: Cmd/Ctrl+K
+  document.addEventListener('keydown', (e) => {{
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {{
+      e.preventDefault();
+      if (overlay.classList.contains('open')) closeSearch();
+      else openSearch();
+    }}
+  }});
+
+  // Event: Escape
+  document.addEventListener('keydown', (e) => {{
+    if (e.key === 'Escape' && overlay.classList.contains('open')) {{
+      closeSearch();
+    }}
+  }});
+
+  // Event: click backdrop
+  overlay.addEventListener('click', (e) => {{
+    if (e.target === overlay) closeSearch();
+  }});
+
+  // Event: typing
+  let debounce;
+  input.addEventListener('input', () => {{
+    clearTimeout(debounce);
+    debounce = setTimeout(() => doSearch(input.value.trim()), 80);
+  }});
+
+  // Event: arrow keys + enter
+  input.addEventListener('keydown', (e) => {{
+    const items = resultsEl.querySelectorAll('.search-result');
+    if (e.key === 'ArrowDown') {{
+      e.preventDefault();
+      setActive(Math.min(activeIdx + 1, items.length - 1));
+    }} else if (e.key === 'ArrowUp') {{
+      e.preventDefault();
+      setActive(Math.max(activeIdx - 1, 0));
+    }} else if (e.key === 'Enter' && activeIdx >= 0) {{
+      e.preventDefault();
+      jumpToResult(activeIdx);
+    }}
+  }});
+}})();
 </script>
 
 </body>
