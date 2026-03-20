@@ -23,11 +23,10 @@ CHAPTERS = [
     ("field/blackbox.md", 10, "Blackbox Logs"),
     ("field/pid-tuning.md", 11, "PID Tuning for People Who Fly"),
     ("field/troubleshooting.md", 12, "When Things Go Wrong"),
-    ("field/ghost-config.md", 16, "Ghost RC Link — Operator Configuration"),
-    ("field/unsolved-problems.md", 17, "Unsolved Problems in Mesh & Swarm Ops"),
     ("integration/companion.md", 13, "Adding a Companion Computer"),
     ("integration/mesh-radios.md", 14, "Mesh Radios for Multi-Vehicle"),
     ("integration/tak.md", 15, "TAK Integration"),
+    ("field/unsolved-problems.md", 16, "Unsolved Problems"),
 ]
 
 COMPONENTS = [
@@ -90,8 +89,9 @@ PLATFORM_PARTS = [
 PARTS = [
     ("Part 1 — RF Fundamentals", [1, 2, 3, 4]),
     ("Part 2 — Flight Controller Firmware", [5, 6, 7, 8]),
-    ("Part 3 — Field Operations", [9, 10, 11, 12, 16, 17]),
+    ("Part 3 — Field Operations", [9, 10, 11, 12]),
     ("Part 4 — Integration", [13, 14, 15]),
+    ("What's Left to Solve", [16]),
 ]
 
 

@@ -1,8 +1,26 @@
-# Unsolved Problems in Mesh Networking & Drone Swarm Operations
+# Unsolved Problems — What's Left to Build
 
 **The Unhandled Exceptions in Mesh Networking & Drone Swarm Operations**
 
 *Version 1.0 — March 2026*
+
+---
+
+This handbook covers what works today — the RF fundamentals,
+the firmware, the field procedures, the integration patterns,
+the components. But a handbook is only useful if it's honest
+about where the knowledge stops.
+
+This chapter is the other side of the ledger. Every problem
+listed here is something the handbook can't solve for you yet
+because nobody has solved it. Some are active research. Some
+have partial answers that fall apart in the real world. Some
+have no credible path forward with current technology.
+
+The point isn't to discourage. The point is to focus. If
+you're building something new, start here — because every
+unsolved problem on this list is an invitation. Solve one and
+the next edition of this handbook gets a new chapter.
 
 ---
 
