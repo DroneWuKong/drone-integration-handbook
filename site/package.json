@@ -1,0 +1,11 @@
+{
+  "name": "drone-integration-handbook",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node src/build.js"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}

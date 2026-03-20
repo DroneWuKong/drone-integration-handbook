@@ -15,4 +15,4 @@ _site/
 node_modules/
 
 # Build output (Netlify builds this)
-site/
+site/dist/
