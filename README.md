@@ -75,6 +75,17 @@ manufacturer documentation.
     Covers: no arm, flyaway, oscillation, video loss, failsafe,
     motor desync, GPS glitch, compass interference.
 
+### Part 3b — Component References
+
+- [Orqa Ecosystem](components/orqa-ecosystem.md)
+  Ghost RC link, F405/H7 flight controllers, 3030 ESC,
+  FPV.One Pilot goggles — the complete EU-manufactured,
+  NDAA-compliant FPV stack.
+
+- [Ghost RC Link — Config Reference](field/ghost-config.md)
+  Binding, firmware updates, VOXL/Betaflight/ArduPilot
+  integration, RF mode selection, and troubleshooting.
+
 ### Part 4 — Integration
 
 13. [Adding a Companion Computer](integration/companion.md)

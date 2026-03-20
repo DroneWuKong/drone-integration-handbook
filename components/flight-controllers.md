@@ -176,8 +176,11 @@ added: NOT NDAA COMPLIANT.**
    IMUs (ARK) enable voting and fault detection.
 
 4. **For NDAA builds:** ARK ARKV6X + PX4 is the cleanest path.
-   For Betaflight FPV: ARK FPV FC. For converged compute:
-   Auterion Skynode S or ModalAI VOXL 2.
+   For Betaflight FPV: ARK FPV FC or Orqa QuadCore H7 / F405 3030
+   (EU-manufactured, JST-GH no-solder connectors). For converged
+   compute: Auterion Skynode S or ModalAI VOXL 2. See the
+   [Orqa Ecosystem chapter](orqa-ecosystem.md) for the complete
+   Orqa FC/ESC/Rx stack.
 
 ---
 

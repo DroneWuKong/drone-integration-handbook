@@ -218,7 +218,7 @@
     "mcu_family": "H7",
     "imu": "ICM42688P",
     "mounting_pattern_mm": 30.5,
-    "firmware_targets": "Betaflight/INAV/Ardupilot/PX4",
+    "firmware_targets": "Betaflight/iNav/ArduPilot/PX4",
     "mounting_hole_size": "M3",
     "compatibility": {
       "mounting_pattern_mm": 30.5,
@@ -244,10 +244,16 @@
     "tags": [
       "H7",
       "30.5mm",
-      "5 inch"
+      "5 inch",
+      "NDAA",
+      "EU-manufactured",
+      "ICM42688P"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "mcu": "STM32H743",
+    "ndaa_compliant": true,
+    "manufacturing_country": "Croatia (EU)"
   },
   {
     "pid": "FC-1009",
@@ -350,7 +356,7 @@
     "mcu_family": "F4",
     "imu": "Multi",
     "mounting_pattern_mm": 30.5,
-    "firmware_targets": "Betaflight/INAV/Ardupilot/PX4",
+    "firmware_targets": "Betaflight/iNav/ArduPilot/PX4",
     "mounting_hole_size": "M3",
     "compatibility": {
       "mounting_pattern_mm": 30.5,
@@ -376,10 +382,32 @@
     "tags": [
       "F4",
       "30.5mm",
-      "5 inch"
+      "5 inch",
+      "NDAA",
+      "EU-manufactured",
+      "no-solder",
+      "JST-GH"
     ],
-    "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "mcu": "STM32F405",
+    "osd_chip": "MAX7456",
+    "uart_count": 6,
+    "pwm_outputs": 8,
+    "bidirectional_dshot": true,
+    "bidirectional_dshot_outputs": "1-4",
+    "barometer": null,
+    "compass": null,
+    "external_compass_i2c": true,
+    "microsd_slot": true,
+    "dual_camera_input": true,
+    "connector_type": "JST-GH (locking, no solder)",
+    "ardupilot_board_target": "OrcaF405Pro",
+    "ndaa_compliant": true,
+    "manufacturing_country": "Croatia (EU)",
+    "designed_for_stack": "Orqa 3030 ESC (ESC-1005)",
+    "soft_mount_gummies": true,
+    "dfu_boot": true
   },
   {
     "pid": "FC-1012",

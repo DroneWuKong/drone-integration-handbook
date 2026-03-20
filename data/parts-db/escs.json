@@ -221,7 +221,7 @@
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/o/r/orqa_3030_70a_4-in-1_esc-1.jpg",
     "continuous_current_per_motor_a": 70,
     "cell_count_max": 6,
-    "esc_firmware": "BLHeli_32",
+    "esc_firmware": "AM32",
     "esc_format": "4in1",
     "cell_count_min": 3,
     "motor_output_count": 4,
@@ -250,9 +250,22 @@
     "size_class": "5_inch",
     "tags": [
       "70A",
-      "BLHeli_32",
-      "5 inch"
-    ]
+      "AM32",
+      "5 inch",
+      "NDAA",
+      "EU-manufactured",
+      "30.5mm",
+      "bi-directional DShot"
+    ],
+    "burst_current_per_motor_a": 80,
+    "burst_duration_s": 10,
+    "protocols": "DShot 300/600/1200, bi-directional",
+    "bidirectional_dshot": true,
+    "weight_g": 28,
+    "connector_type": "JST-GH (direct cable to Orqa F405 FC)",
+    "designed_for_stack": "Orqa F405 3030 FC (FC-1011)",
+    "ndaa_compliant": true,
+    "manufacturing_country": "Croatia (EU)"
   },
   {
     "pid": "ESC-1006",
