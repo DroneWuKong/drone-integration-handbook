@@ -137,7 +137,8 @@
         "first_delivery_year": 2024
       }
     },
-    "video_system": "EO/IR tactical camera"
+    "video_system": "EO/IR tactical camera",
+    "thermal_sensor": "EO/IR (modular payload bay)"
   },
   {
     "pid": "DM-0008",
@@ -202,7 +203,8 @@
           "note": "Successor to KZO/LUNA"
         }
       ]
-    }
+    },
+    "thermal_sensor": "EO/IR stabilized gimbal (Rheinmetall proprietary)"
   },
   {
     "pid": "DM-0009",
@@ -269,7 +271,8 @@
         "manufacturing_country": "Germany"
       }
     },
-    "video_system": "EO/IR seeker + GPS/INS, wave-off capable"
+    "video_system": "EO/IR seeker + GPS/INS, wave-off capable",
+    "thermal_sensor": "EO/IR seeker (UVision)"
   },
   {
     "pid": "DM-0010",
@@ -338,7 +341,8 @@
     "combat_use": [
       "Ukraine (~100 OSKAR units)"
     ],
-    "video_system": "EO/IR, targeting pod"
+    "video_system": "EO/IR, targeting pod",
+    "thermal_sensor": "EO/IR gimbal (modular)"
   },
   {
     "pid": "DM-0011",
@@ -403,8 +407,13 @@
         {
           "program": "French SDT (Syst\u00e8me de drone tactique)"
         }
-      ]
-    }
+      ],
+      "funding": {
+        "funding_source": "Public (EPA: SAF)",
+        "note": "Safran \u2014 \u20ac19B annual revenue"
+      }
+    },
+    "thermal_sensor": "Euroflir 410 EO/IR/LRF gimbal (Safran)"
   },
   {
     "pid": "DM-0012",
@@ -463,8 +472,19 @@
       "production": {
         "manufacturing_country": "France",
         "first_delivery_year": 2019
+      },
+      "contracts": [
+        {
+          "program": "French Army (deployed operationally)",
+          "note": "Micro tactical ISR"
+        }
+      ],
+      "funding": {
+        "funding_source": "Private (Novadem SAS)",
+        "note": "French SME. Acquired by Hanwha Aerospace France 2024."
       }
-    }
+    },
+    "thermal_sensor": "Uncooled micro thermal (integrated)"
   },
   {
     "pid": "DM-0013",
@@ -540,8 +560,14 @@
         {
           "program": "UK maritime patrol"
         }
-      ]
-    }
+      ],
+      "funding": {
+        "funding_source": "VC",
+        "total_funding_usd": 100000000,
+        "note": "Portuguese startup. \u20ac100M+ raised."
+      }
+    },
+    "thermal_sensor": "EO/IR + maritime radar"
   },
   {
     "pid": "DM-0014",
@@ -669,7 +695,8 @@
         "manufacturing_country": "Spain"
       }
     },
-    "video_system": "EO/IR tactical camera"
+    "video_system": "EO/IR tactical camera",
+    "thermal_sensor": "Uncooled thermal (modular)"
   },
   {
     "pid": "DM-0016",
@@ -729,8 +756,21 @@
       "production": {
         "manufacturing_country": "Netherlands",
         "first_delivery_year": 2022
+      },
+      "contracts": [
+        {
+          "program": "Dutch military evaluation"
+        },
+        {
+          "program": "NATO partner deployments"
+        }
+      ],
+      "funding": {
+        "funding_source": "VC",
+        "note": "Dutch startup. Undisclosed funding."
       }
-    }
+    },
+    "thermal_sensor": "FLIR Boson 640 or Wiris Pro (modular)"
   },
   {
     "pid": "DM-0017",
@@ -791,7 +831,8 @@
         "manufacturing_country": "Sweden/Switzerland",
         "first_delivery_year": 2020
       }
-    }
+    },
+    "thermal_sensor": "Wescam MX-8 or L3 EO/IR (modular)"
   },
   {
     "pid": "DM-0018",
@@ -848,7 +889,8 @@
         "manufacturing_country": "France"
       }
     },
-    "video_system": "EO/IR seeker"
+    "video_system": "EO/IR seeker",
+    "thermal_sensor": "IR seeker (terminal guidance)"
   },
   {
     "pid": "DM-0019",
@@ -1171,7 +1213,8 @@
         "manufacturing_country": "Ukraine",
         "first_delivery_year": 2022
       }
-    }
+    },
+    "thermal_sensor": "EO/IR + laser designator"
   },
   {
     "pid": "DM-0024",
@@ -1228,7 +1271,8 @@
         "manufacturing_country": "Ukraine",
         "first_delivery_year": 2022
       }
-    }
+    },
+    "thermal_sensor": "EO/IR + munition drop targeting"
   },
   {
     "pid": "DM-0025",
@@ -1476,7 +1520,8 @@
         "manufacturing_country": "Ukraine",
         "first_delivery_year": 2020
       }
-    }
+    },
+    "thermal_sensor": "EO/IR stabilized gimbal"
   },
   {
     "pid": "DM-0029",
@@ -1553,8 +1598,24 @@
       "production": {
         "manufacturing_country": "Poland",
         "first_delivery_year": 2017
+      },
+      "contracts": [
+        {
+          "program": "Polish Armed Forces (standard issue)"
+        },
+        {
+          "program": "Ukraine (FlyEye + Warmate, donated/sold)"
+        },
+        {
+          "program": "Georgia, Turkey (export)"
+        }
+      ],
+      "funding": {
+        "funding_source": "Private (WB Group)",
+        "note": "Polish defense company. Privately held."
       }
-    }
+    },
+    "thermal_sensor": "EO/IR day/night (FlyEye: stabilized; Warmate: seeker)"
   },
   {
     "pid": "DM-0030",
@@ -1620,7 +1681,8 @@
         "manufacturing_country": "Czech Republic",
         "first_delivery_year": 2021
       }
-    }
+    },
+    "thermal_sensor": "EO/IR + SAR + SIGINT (modular)"
   },
   {
     "pid": "DM-0031",
@@ -1682,7 +1744,8 @@
         "manufacturing_country": "Estonia",
         "first_delivery_year": 2022
       }
-    }
+    },
+    "thermal_sensor": "EO/IR stabilized (10x zoom)"
   },
   {
     "pid": "DM-0032",
@@ -1746,7 +1809,8 @@
         "first_delivery_year": 2024
       }
     },
-    "video_system": "EO/IR modular"
+    "video_system": "EO/IR modular",
+    "thermal_sensor": "EO/IR gimbal (modular)"
   },
   {
     "pid": "DM-0033",
@@ -1802,7 +1866,8 @@
         "first_delivery_year": 2024
       }
     },
-    "video_system": "EO/IR modular payload"
+    "video_system": "EO/IR modular payload",
+    "thermal_sensor": "EO/IR modular payload"
   },
   {
     "pid": "DM-0034",
@@ -1877,7 +1942,11 @@
         {
           "note": "35+ countries. Ukraine, Poland, UAE, etc."
         }
-      ]
+      ],
+      "funding": {
+        "funding_source": "Private (Baykar family-owned)",
+        "note": "No external VC. Revenue-funded. Estimated $2B+ annual revenue."
+      }
     }
   },
   {
@@ -1939,8 +2008,22 @@
       "production": {
         "manufacturing_country": "Turkey",
         "first_delivery_year": 2021
+      },
+      "contracts": [
+        {
+          "program": "Turkish Armed Forces",
+          "note": "Operational since 2021"
+        },
+        {
+          "program": "Pakistan, Bangladesh, Azerbaijan (export orders)"
+        }
+      ],
+      "funding": {
+        "funding_source": "Private (Baykar)",
+        "note": "Same parent."
       }
-    }
+    },
+    "thermal_sensor": "ASELSAN CATS EO/IR + AESA radar"
   },
   {
     "pid": "DM-0036",
@@ -2003,8 +2086,12 @@
       "production": {
         "manufacturing_country": "Turkey",
         "first_delivery_year": 2024
+      },
+      "funding": {
+        "funding_source": "Private (Baykar)"
       }
-    }
+    },
+    "thermal_sensor": "AESA radar + EO/IR (ASELSAN)"
   },
   {
     "pid": "DM-0037",
@@ -2063,7 +2150,8 @@
         "first_delivery_year": 2024
       }
     },
-    "video_system": "EO/IR seeker"
+    "video_system": "EO/IR seeker",
+    "thermal_sensor": "IR seeker (terminal guidance)"
   },
   {
     "pid": "DM-0038",
@@ -2129,8 +2217,21 @@
       "production": {
         "manufacturing_country": "Turkey",
         "first_delivery_year": 2013
+      },
+      "contracts": [
+        {
+          "program": "Turkish Armed Forces (Anka-S SATCOM)",
+          "note": "Aksungur maritime variant"
+        },
+        {
+          "program": "Tunisia, Malaysia (export)"
+        }
+      ],
+      "funding": {
+        "funding_source": "State-owned (Turkish Aerospace Industries)"
       }
-    }
+    },
+    "thermal_sensor": "ASELSAN CATS EO/IR + SAR"
   },
   {
     "pid": "DM-0039",
@@ -2198,8 +2299,18 @@
       "production": {
         "manufacturing_country": "Turkey",
         "first_delivery_year": 2020
+      },
+      "contracts": [
+        {
+          "program": "Turkish Armed Forces",
+          "note": "First autonomous swarm attack (Libya 2020 per UN report)"
+        }
+      ],
+      "funding": {
+        "funding_source": "State-affiliated (STM Defence Technologies)"
       }
-    }
+    },
+    "thermal_sensor": "EO/IR AI vision (autonomous target recognition)"
   },
   {
     "pid": "DM-0040",
@@ -2265,7 +2376,8 @@
         "manufacturing_country": "Turkey",
         "first_delivery_year": 2020
       }
-    }
+    },
+    "thermal_sensor": "EO/IR stabilized gimbal"
   },
   {
     "pid": "DM-0041",
@@ -2330,8 +2442,21 @@
       "production": {
         "manufacturing_country": "Israel",
         "first_delivery_year": 2008
+      },
+      "contracts": [
+        {
+          "program": "IDF (standard issue tactical ISR)"
+        },
+        {
+          "program": "30+ export countries including Australia, UK, Sweden, Colombia"
+        }
+      ],
+      "funding": {
+        "funding_source": "Public (TASE: ESLT)",
+        "note": "Elbit Systems \u2014 $5.5B annual revenue"
       }
-    }
+    },
+    "thermal_sensor": "Stabilized miniature EO/IR day/night"
   },
   {
     "pid": "DM-0042",
@@ -2392,6 +2517,15 @@
       "production": {
         "manufacturing_country": "Israel",
         "first_delivery_year": 2023
+      },
+      "contracts": [
+        {
+          "program": "IDF (indoor autonomous recon)",
+          "note": "Deployed Gaza 2023-present"
+        }
+      ],
+      "funding": {
+        "funding_source": "Public (TASE: ESLT)"
       }
     }
   },
@@ -2469,8 +2603,13 @@
         {
           "note": "India, Azerbaijan, Germany, South Korea, etc."
         }
-      ]
-    }
+      ],
+      "funding": {
+        "funding_source": "State-owned (IAI)",
+        "note": "IAI \u2014 $4.5B annual revenue"
+      }
+    },
+    "thermal_sensor": "Harop: EO/IR seeker. Harpy: anti-radiation homing"
   },
   {
     "pid": "DM-0044",
@@ -2535,8 +2674,12 @@
       "production": {
         "manufacturing_country": "Israel",
         "first_delivery_year": 2006
+      },
+      "funding": {
+        "funding_source": "Rafael subsidiary (acquired 2022)"
       }
-    }
+    },
+    "thermal_sensor": "Stamped EO/IR (Orbiter 3/4), IR seeker (Orbiter 1K LM)"
   },
   {
     "pid": "DM-0045",
@@ -2602,8 +2745,30 @@
       "production": {
         "manufacturing_country": "Israel",
         "first_delivery_year": 2022
+      },
+      "contracts": [
+        {
+          "program": "IDF (deployed operationally)"
+        },
+        {
+          "program": "USSOCOM (evaluation/deployment)"
+        },
+        {
+          "note": "Strategic partnership with Lockheed Martin"
+        }
+      ],
+      "funding": {
+        "funding_source": "VC",
+        "total_funding_usd": 200000000,
+        "key_investors": [
+          "Lupa Systems",
+          "La Maison",
+          "Lockheed Martin"
+        ],
+        "valuation": "$500M+ (2024)"
       }
-    }
+    },
+    "thermal_sensor": "EO/IR (modular, human-machine teaming)"
   },
   {
     "pid": "DM-0046",
@@ -2668,7 +2833,8 @@
         "first_delivery_year": 2021
       }
     },
-    "video_system": "EO/IR, various per variant"
+    "video_system": "EO/IR, various per variant",
+    "thermal_sensor": "EO/IR gimbal (modular)"
   },
   {
     "pid": "DM-0047",
@@ -2810,7 +2976,8 @@
         "manufacturing_country": "China",
         "first_delivery_year": 2011
       }
-    }
+    },
+    "thermal_sensor": "EO/IR gimbal + LRF + SAR"
   },
   {
     "pid": "DM-0049",
@@ -2881,7 +3048,8 @@
         "manufacturing_country": "China",
         "first_delivery_year": 2014
       }
-    }
+    },
+    "thermal_sensor": "EO/IR gimbal + SAR"
   },
   {
     "pid": "DM-0050",
@@ -2941,7 +3109,8 @@
     "ai_autonomy": true,
     "swarm_capable": true,
     "notes": "Flying wing, J-20 loyal wingman, Type 076 naval",
-    "video_system": "Internal weapons bay, presumed EO/IR + radar (classified)"
+    "video_system": "Internal weapons bay, presumed EO/IR + radar (classified)",
+    "thermal_sensor": "AESA radar + EO/IR (internal bay)"
   },
   {
     "pid": "DM-0051",
@@ -3004,7 +3173,8 @@
         "manufacturing_country": "China",
         "first_delivery_year": 2021
       }
-    }
+    },
+    "thermal_sensor": "EO/IR gimbal + SAR"
   },
   {
     "pid": "DM-0052",
@@ -3059,7 +3229,8 @@
         "manufacturing_country": "China"
       }
     },
-    "video_system": "EO/IR tactical"
+    "video_system": "EO/IR tactical",
+    "thermal_sensor": "EO/IR (integrated)"
   },
   {
     "pid": "DM-0053",
@@ -3118,8 +3289,19 @@
       "production": {
         "manufacturing_country": "South Korea",
         "first_delivery_year": 2024
+      },
+      "contracts": [
+        {
+          "program": "ROKAF (Republic of Korea Air Force)",
+          "note": "MQ-9 equivalent for South Korea"
+        }
+      ],
+      "funding": {
+        "funding_source": "Public (KRX: 047810)",
+        "note": "Korea Aerospace Industries"
       }
-    }
+    },
+    "thermal_sensor": "EO/IR + SAR + SIGINT"
   },
   {
     "pid": "DM-0054",
@@ -3180,8 +3362,24 @@
       "production": {
         "manufacturing_country": "India",
         "first_delivery_year": 2016
+      },
+      "contracts": [
+        {
+          "program": "Indian Army (largest Indian military drone supplier)"
+        },
+        {
+          "program": "Indian Navy, BSF, CRPF"
+        },
+        {
+          "note": "IPO 2023 on BSE/NSE"
+        }
+      ],
+      "funding": {
+        "funding_source": "Public (BSE/NSE IPO 2023)",
+        "note": "India's largest military drone maker."
       }
-    }
+    },
+    "thermal_sensor": "EO/IR stabilized gimbal"
   },
   {
     "pid": "DM-0055",
@@ -3304,6 +3502,18 @@
       "production": {
         "manufacturing_country": "Australia",
         "first_delivery_year": 2022
+      },
+      "contracts": [
+        {
+          "program": "Australian Defence Force"
+        },
+        {
+          "program": "Ukraine (cardboard drone deliveries, 2022-present)"
+        }
+      ],
+      "funding": {
+        "funding_source": "Private (SYPAQ Systems)",
+        "note": "Australian SME"
       }
     }
   },
@@ -3365,8 +3575,15 @@
       "production": {
         "manufacturing_country": "Taiwan",
         "first_delivery_year": 2022
-      }
-    }
+      },
+      "contracts": [
+        {
+          "program": "Republic of China (Taiwan) Armed Forces",
+          "note": "Anti-radar SEAD loitering munition"
+        }
+      ]
+    },
+    "thermal_sensor": "Anti-radiation homing + EO seeker"
   },
   {
     "pid": "DM-0058",
@@ -3429,7 +3646,8 @@
         "first_delivery_year": 2018
       }
     },
-    "video_system": "EO/IR miniature gimbal"
+    "video_system": "EO/IR miniature gimbal",
+    "thermal_sensor": "Stabilized miniature EO/IR"
   },
   {
     "pid": "DM-0062",
@@ -3548,7 +3766,8 @@
         "manufacturing_country": "Poland"
       }
     },
-    "video_system": "EO/IR seeker + enhanced warhead"
+    "video_system": "EO/IR seeker + enhanced warhead",
+    "thermal_sensor": "IR seeker + EO targeting"
   },
   {
     "pid": "DM-0068",
@@ -3661,7 +3880,8 @@
         "manufacturing_country": "China"
       }
     },
-    "video_system": "EO/IR seeker (tube-launched loitering munition)"
+    "video_system": "EO/IR seeker (tube-launched loitering munition)",
+    "thermal_sensor": "IR seeker (terminal)"
   },
   {
     "pid": "DM-0072",
@@ -3722,7 +3942,8 @@
         "first_delivery_year": 2019
       }
     },
-    "video_system": "EO/IR, weapon mount systems"
+    "video_system": "EO/IR, weapon mount systems",
+    "thermal_sensor": "EO/IR + weapon aiming"
   },
   {
     "pid": "DM-0073",
@@ -3780,7 +4001,8 @@
         "manufacturing_country": "Germany"
       }
     },
-    "video_system": "EO/IR tactical"
+    "video_system": "EO/IR tactical",
+    "thermal_sensor": "EO/IR modular payload"
   },
   {
     "pid": "DM-0074",
@@ -3841,7 +4063,8 @@
         "manufacturing_country": "Germany"
       }
     },
-    "video_system": "EO/IR tactical gimbal"
+    "video_system": "EO/IR tactical gimbal",
+    "thermal_sensor": "EO/IR gimbal"
   },
   {
     "pid": "DM-0075",
@@ -3895,7 +4118,8 @@
         "manufacturing_country": "Ukraine"
       }
     },
-    "video_system": "EO/IR, strike payload"
+    "video_system": "EO/IR, strike payload",
+    "thermal_sensor": "EO/IR gimbal"
   },
   {
     "pid": "DM-0076",
@@ -3949,7 +4173,8 @@
         "manufacturing_country": "Canada"
       }
     },
-    "video_system": "EO/IR modular"
+    "video_system": "EO/IR modular",
+    "thermal_sensor": "EO/IR gimbal"
   },
   {
     "pid": "DM-0077",
@@ -4004,7 +4229,8 @@
         "note": "Development stage"
       }
     },
-    "video_system": "Presumed EO/IR + radar (development stage)"
+    "video_system": "Presumed EO/IR + radar (development stage)",
+    "thermal_sensor": "AESA radar + EO/IR (concept)"
   },
   {
     "pid": "DM-0078",
@@ -4065,8 +4291,13 @@
       "production": {
         "manufacturing_country": "Italy",
         "first_delivery_year": 2021
+      },
+      "funding": {
+        "funding_source": "State-owned (Leonardo SpA)",
+        "note": "\u20ac15B annual revenue"
       }
-    }
+    },
+    "thermal_sensor": "EO/IR + radar (Gabbiano TS-80 option)"
   },
   {
     "pid": "DM-0079",
@@ -4181,7 +4412,8 @@
         "note": "Development stage"
       }
     },
-    "video_system": "EO/IR, radar (development stage)"
+    "video_system": "EO/IR, radar (development stage)",
+    "thermal_sensor": "AESA radar + EO/IR (concept)"
   },
   {
     "pid": "DM-0081",
@@ -4246,7 +4478,8 @@
         "manufacturing_country": "Australia/USA",
         "first_delivery_year": 2016
       }
-    }
+    },
+    "thermal_sensor": "EO/IR tracking camera (detection system)"
   },
   {
     "pid": "DM-0083",
@@ -4367,8 +4600,18 @@
       "production": {
         "manufacturing_country": "Turkey",
         "first_delivery_year": 2024
+      },
+      "contracts": [
+        {
+          "program": "Turkish Navy (TCG Anadolu carrier)",
+          "note": "Carrier-optimized variant"
+        }
+      ],
+      "funding": {
+        "funding_source": "Private (Baykar)"
       }
-    }
+    },
+    "thermal_sensor": "CATS FLIR EO/IR/LRF (carrier-optimized)"
   },
   {
     "pid": "DM-85",
@@ -4464,8 +4707,19 @@
       "production": {
         "manufacturing_country": "USA",
         "first_delivery_year": 2024
+      },
+      "contracts": [
+        {
+          "program": "US DoD evaluation",
+          "note": "Group 2 ISR/strike platform"
+        }
+      ],
+      "funding": {
+        "funding_source": "VC",
+        "note": "Firestorm Labs \u2014 US defense startup."
       }
-    }
+    },
+    "thermal_sensor": "EO/IR modular payload"
   },
   {
     "pid": "DM-86",
@@ -4544,7 +4798,8 @@
         "manufacturing_country": "USA"
       }
     },
-    "video_system": "EO/IR modular payload bay"
+    "video_system": "EO/IR modular payload bay",
+    "thermal_sensor": "EO/IR modular payload"
   },
   {
     "pid": "DM-87",
@@ -4611,7 +4866,8 @@
         "manufacturing_country": "USA"
       }
     },
-    "video_system": "EO/IR modular"
+    "video_system": "EO/IR modular",
+    "thermal_sensor": "EO/IR modular payload"
   },
   {
     "pid": "DM-88",
@@ -4698,7 +4954,8 @@
         "first_delivery_year": 2023
       }
     },
-    "video_system": "EO/IR gimbal"
+    "video_system": "EO/IR gimbal",
+    "thermal_sensor": "EO/IR gimbal (modular)"
   },
   {
     "pid": "DM-89",
@@ -6285,7 +6542,13 @@
         "gcs_software": "Auterion Mission Control",
         "c2_link": "2.4 GHz + LTE",
         "interoperability": "MAVLink, PX4"
-      }
+      },
+      "contracts": [
+        {
+          "program": "Blue UAS listed",
+          "note": "US public safety / inspection"
+        }
+      ]
     }
   },
   {
@@ -6377,7 +6640,13 @@
         "gcs_software": "IGC + QGC on Blue Herelink/GS-ONE",
         "c2_link": "2.4 GHz",
         "interoperability": "MAVLink, ArduPilot"
-      }
+      },
+      "contracts": [
+        {
+          "program": "Blue UAS listed",
+          "note": "US DoD/DoE inspection and mapping"
+        }
+      ]
     }
   },
   {
@@ -10954,7 +11223,8 @@
         "manufacturing_country": "USA"
       }
     },
-    "video_system": "EO/IR modular"
+    "video_system": "EO/IR modular",
+    "thermal_sensor": "EO/IR modular"
   },
   {
     "pid": "MDL-2054",
