@@ -441,7 +441,15 @@ The BLM8812EU is the newest and most capable chipset — higher sensitivity and 
 
 Lowest latency requires OpenHD custom hardware (purpose-built SBC + camera combination), which can cut latency roughly in half compared to standard configurations. Second-lowest is achievable with the Radxa Rock5 on both air and ground. RPi Zero 2 builds have higher latency — usable for FPV but not competitive with commercial HD systems on this metric.
 
-Practical glass-to-glass latency numbers for RPi-based builds: 80–150ms depending on resolution, codec, and SBC. Custom hardware targets sub-40ms.
+Practical glass-to-glass latency numbers for RPi-based builds: 100–150ms depending on resolution, codec, and SBC (OpenHD states "100ms glass-to-glass, most setups in the 125ms range"). Custom hardware targets sub-40ms. Rock5 sits between the two — hardware H.265 encode gives meaningfully lower latency than RPi.
+
+### Security
+
+OpenHD provides link encryption with verification, ensuring the link cannot be overtaken by external signals. This is configurable through QOpenHD settings.
+
+### Dual Camera + Picture-in-Picture
+
+OpenHD supports two CSI cameras simultaneously — typically forward view + downward/thermal. The ground station displays both via an adjustable picture-in-picture overlay in QOpenHD. Supported camera types include libcamera, veye, raspivid, USB, thermal, and unmanaged cameras.
 
 ### MAVLink Integration
 
@@ -457,6 +465,18 @@ QOpenHD's Android app receives the ground station video and telemetry stream ove
 
 ### Range Realities
 
-55km is the record under ideal conditions — fixed-wing platform, good antennas, line of sight, quiet spectrum. Realistic operational range for a typical build: 5–20km depending on obstructions, antenna gain, and spectrum cleanliness. 2.4GHz gives better obstruction penetration at shorter range; 5.8GHz gives cleaner channels at longer range. Both require line of sight for the extreme numbers.
+55km is the record under ideal conditions — fixed-wing platform, high-gain directional antennas with tracker, line of sight, quiet spectrum.
+
+**Stock antennas (dipoles that come with the adapter): 1–3km.** This is what OpenHD's own FAQ states. Do not expect more without upgrading antennas.
+
+**With upgraded ground antenna (14dBi panel + tracker): 8–15km.** OpenHD's Friis calculation: 14dBi panel / 5dBi omni at 5.2GHz 200mW = 8.2km theoretical.
+
+**With high-gain ground antenna (17–23dBi + tracker): 15–20km+.** Their calculation: 17dBi planar / 5dBi omni at 5.8GHz 500mW = 16.4km theoretical.
+
+The range comes from the antenna, not the radio. See the Antennas chapter (Ch. 3) for the full breakdown of what antennas the OpenHD community uses and how antenna trackers work.
+
+### WiFi Adapter Diversity
+
+OpenHD supports RX diversity — two WiFi adapters on the ground, one omni + one directional, with per-packet best-signal selection. However, do not mix chipsets or vendors for diversity (e.g. don't combine RTL8812AU with RTL8812BU). Use the same chipset on both ground adapters. New users should start with a single adapter and add diversity later.
 
 *See also: [OpenHD Implementation Guide](/components/openhd-implementation-guide) — step-by-step from hardware to first flight*
