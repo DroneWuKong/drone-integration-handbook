@@ -1,0 +1,1197 @@
+[
+  {
+    "pid": "SENS-0001",
+    "category": "sensors",
+    "name": "Ouster OS1 \u2014 Mid-Range Lidar",
+    "manufacturer": "Ouster",
+    "description": "Digital lidar with 5.2M points/sec, 240m range, 360\u00b0 FOV. 447g, IP68/IP69K rated. REV7 sensor with up to 128 channels. NDAA compliant, US manufactured. Standard for UAS mapping and autonomous navigation.",
+    "link": "https://ouster.com/",
+    "approx_price": "$3,000\u2013$12,000",
+    "subcategory": "lidar",
+    "specs": {
+      "points_per_sec": 5200000,
+      "range_m": 240,
+      "accuracy_cm": 1,
+      "fov_deg": 360,
+      "channels": 128
+    },
+    "weight_g": 447,
+    "power_w": 18,
+    "interface": "Ethernet (UDP)",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "digital_lidar",
+      "360_fov",
+      "ip68",
+      "ip69k",
+      "128ch",
+      "mapping",
+      "autonomy"
+    ]
+  },
+  {
+    "pid": "SENS-0002",
+    "category": "sensors",
+    "name": "Ouster OS0 \u2014 Short-Range Wide-FOV Lidar",
+    "manufacturer": "Ouster",
+    "description": "Ultra-wide 90\u00b0 vertical FOV lidar optimized for close-range perception and robotics. Same digital architecture as OS1. Ideal for obstacle avoidance and indoor navigation on UAS.",
+    "link": "https://ouster.com/",
+    "approx_price": "$3,000\u2013$8,000",
+    "subcategory": "lidar",
+    "specs": {
+      "points_per_sec": 5200000,
+      "range_m": 50,
+      "accuracy_cm": 1,
+      "fov_deg": 360,
+      "channels": 128
+    },
+    "weight_g": 447,
+    "power_w": 18,
+    "interface": "Ethernet (UDP)",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "digital_lidar",
+      "wide_vfov_90deg",
+      "short_range",
+      "obstacle_avoidance",
+      "indoor"
+    ]
+  },
+  {
+    "pid": "SENS-0003",
+    "category": "sensors",
+    "name": "Ouster OS2 \u2014 Long-Range Lidar",
+    "manufacturer": "Ouster",
+    "description": "Long-range variant optimized for 200+ meter detection. Narrow vertical FOV focused on distant object detection. Suited for infrastructure inspection, corridor mapping, and perimeter security from UAS.",
+    "link": "https://ouster.com/",
+    "approx_price": "$6,000\u2013$15,000",
+    "subcategory": "lidar",
+    "specs": {
+      "points_per_sec": 5200000,
+      "range_m": 400,
+      "accuracy_cm": 2,
+      "fov_deg": 360,
+      "channels": 128
+    },
+    "weight_g": 447,
+    "power_w": 18,
+    "interface": "Ethernet (UDP)",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "digital_lidar",
+      "long_range",
+      "400m",
+      "infrastructure_inspection"
+    ]
+  },
+  {
+    "pid": "SENS-0004",
+    "category": "sensors",
+    "name": "RIEGL miniVUX-1UAV \u2014 Survey-Grade Airborne Lidar",
+    "manufacturer": "RIEGL",
+    "description": "Survey-grade airborne laser scanner at 1.55 kg. 100 kHz pulse rate, 330m range, eye-safe Class 1. Designed for UAV-based topographic mapping with centimeter accuracy. Austrian manufacture, NATO-aligned.",
+    "link": "https://www.riegl.com/",
+    "approx_price": "$80,000\u2013$150,000",
+    "subcategory": "lidar",
+    "specs": {
+      "points_per_sec": 100000,
+      "range_m": 330,
+      "accuracy_cm": 1.5,
+      "fov_deg": 360
+    },
+    "weight_g": 1550,
+    "power_w": 30,
+    "interface": "Ethernet / USB",
+    "country": "Austria",
+    "compliance": [
+      "ndaa",
+      "nato_aligned"
+    ],
+    "tags": [
+      "survey_grade",
+      "airborne",
+      "100khz",
+      "eye_safe",
+      "topographic",
+      "centimeter_accuracy"
+    ]
+  },
+  {
+    "pid": "SENS-0005",
+    "category": "sensors",
+    "name": "RIEGL VUX-120\u00b2\u00b3 \u2014 High-Performance Airborne Scanner",
+    "manufacturer": "RIEGL",
+    "description": "High-performance airborne laser scanner at 2 kg with 1.8 MHz effective measurement rate, 720m operating altitude, 10mm accuracy. Multi-target echo processing. Professional survey and mapping standard.",
+    "link": "https://www.riegl.com/",
+    "approx_price": "$150,000\u2013$300,000",
+    "subcategory": "lidar",
+    "specs": {
+      "points_per_sec": 1800000,
+      "range_m": 720,
+      "accuracy_cm": 1,
+      "fov_deg": 360
+    },
+    "weight_g": 2000,
+    "power_w": 40,
+    "interface": "Ethernet",
+    "country": "Austria",
+    "compliance": [
+      "ndaa",
+      "nato_aligned"
+    ],
+    "tags": [
+      "survey_grade",
+      "1.8mhz",
+      "720m_altitude",
+      "10mm_accuracy",
+      "multi_echo"
+    ]
+  },
+  {
+    "pid": "SENS-0006",
+    "category": "sensors",
+    "name": "YellowScan Voyager \u2014 Integrated Lidar+INS",
+    "manufacturer": "YellowScan",
+    "description": "Integrated lidar mapping solution combining RIEGL scanner with INS and processing software. 2M usable points/sec, 1cm accuracy. Turnkey solution for professional UAV surveying.",
+    "link": "https://www.yellowscan-lidar.com/",
+    "approx_price": "$100,000\u2013$200,000",
+    "subcategory": "lidar",
+    "specs": {
+      "points_per_sec": 2000000,
+      "range_m": 330,
+      "accuracy_cm": 1,
+      "fov_deg": 360
+    },
+    "weight_g": 2500,
+    "power_w": 45,
+    "interface": "Ethernet",
+    "country": "France",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "integrated_solution",
+      "riegl_scanner",
+      "ins_included",
+      "turnkey",
+      "professional_survey"
+    ]
+  },
+  {
+    "pid": "SENS-0007",
+    "category": "sensors",
+    "name": "Livox Mid-360 \u2014 Budget Lidar",
+    "manufacturer": "Livox (DJI)",
+    "description": "Budget 360\u00b0 lidar at only 265g and $600-900. Non-repetitive scanning pattern provides high point density over time. Strong price-to-performance ratio but Chinese manufacture \u2014 NOT NDAA compliant.",
+    "link": "https://www.livoxtech.com/",
+    "approx_price": "$600\u2013$900",
+    "subcategory": "lidar",
+    "specs": {
+      "points_per_sec": 200000,
+      "range_m": 40,
+      "accuracy_cm": 2,
+      "fov_deg": 360,
+      "slam_stacks": [
+        "FAST-LIO2",
+        "Point-LIO",
+        "LIO-SAM"
+      ],
+      "ros_driver": "livox_ros_driver2",
+      "github_refs": [
+        "https://github.com/hku-mars/FAST_LIO"
+      ]
+    },
+    "weight_g": 265,
+    "power_w": 9,
+    "interface": "Ethernet",
+    "country": "China",
+    "compliance": [
+      "not_ndaa"
+    ],
+    "tags": [
+      "budget",
+      "265g",
+      "non_repetitive_scan",
+      "chinese",
+      "dji_subsidiary"
+    ]
+  },
+  {
+    "pid": "SENS-0008",
+    "category": "sensors",
+    "name": "Ainstein US-D1 \u2014 Radar Altimeter",
+    "manufacturer": "Ainstein",
+    "description": "24 GHz radar altimeter with 50m range, \u00b16cm accuracy, 100 Hz update rate. 110g, IP67. UART/CAN interface. NDAA compliant, ITAR-free. Standard radar altimeter for ArduPilot/PX4 platforms. US manufactured.",
+    "link": "https://ainstein.ai/",
+    "approx_price": "$200\u2013$500",
+    "subcategory": "radar",
+    "specs": {
+      "detection_range_m": 50,
+      "frequency_ghz": 24,
+      "fov_deg": null,
+      "accuracy_cm": 6,
+      "update_rate_hz": 100
+    },
+    "weight_g": 110,
+    "power_w": 2,
+    "interface": "UART / CAN",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar_free"
+    ],
+    "tags": [
+      "radar_altimeter",
+      "24ghz",
+      "50m",
+      "ip67",
+      "ardupilot_px4_standard",
+      "100hz"
+    ]
+  },
+  {
+    "pid": "SENS-0009",
+    "category": "sensors",
+    "name": "Echodyne EchoGuard \u2014 Metamaterial ESA Radar",
+    "manufacturer": "Echodyne",
+    "description": "Metamaterial electronically scanned array (ESA) radar that detects DJI Phantom-4 class drones at ~1 km and vehicles at 3.5 km. 1.25 kg, 120\u00b0x80\u00b0 FOV, under 50W. No mechanical scanning parts. NDAA compliant. Used for airspace awareness and counter-UAS detection.",
+    "link": "https://www.echodyne.com/",
+    "approx_price": "$20,000\u2013$50,000",
+    "subcategory": "radar",
+    "specs": {
+      "detection_range_m": 3500,
+      "frequency_ghz": 24,
+      "fov_deg": 120,
+      "accuracy_cm": null
+    },
+    "weight_g": 1250,
+    "power_w": 50,
+    "interface": "Ethernet",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "metamaterial_esa",
+      "no_moving_parts",
+      "counter_uas",
+      "drone_detection_1km",
+      "vehicle_3.5km",
+      "120x80_fov"
+    ]
+  },
+  {
+    "pid": "SENS-0010",
+    "category": "sensors",
+    "name": "Echodyne EchoGuard CR \u2014 360\u00b0 Radar",
+    "manufacturer": "Echodyne",
+    "description": "360\u00b0 coverage variant of EchoGuard using multiple metamaterial ESA panels. Provides full-hemisphere drone detection and tracking for persistent airspace monitoring.",
+    "link": "https://www.echodyne.com/",
+    "approx_price": "$60,000\u2013$120,000",
+    "subcategory": "radar",
+    "specs": {
+      "detection_range_m": 3500,
+      "frequency_ghz": 24,
+      "fov_deg": 360,
+      "accuracy_cm": null
+    },
+    "weight_g": 5000,
+    "power_w": 150,
+    "interface": "Ethernet",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "metamaterial_esa",
+      "360_coverage",
+      "persistent_monitoring",
+      "counter_uas"
+    ]
+  },
+  {
+    "pid": "SENS-0011",
+    "category": "sensors",
+    "name": "Advanced Navigation Motus \u2014 MEMS IMU",
+    "manufacturer": "Advanced Navigation",
+    "description": "Breakthrough MEMS IMU achieving 0.2\u00b0/hr gyro bias instability \u2014 approaching FOG-grade performance from MEMS technology. Only 26g. Massive cost and weight reduction vs fiber-optic gyros for defense-grade navigation.",
+    "link": "https://www.advancednavigation.com/",
+    "approx_price": "$3,000\u2013$15,000",
+    "subcategory": "imu_ins",
+    "specs": {
+      "gyro_bias_deg_hr": 0.2,
+      "technology": "MEMS"
+    },
+    "weight_g": 26,
+    "power_w": 1.5,
+    "interface": "serial / SPI",
+    "country": "Australia",
+    "compliance": [
+      "ndaa",
+      "five_eyes"
+    ],
+    "tags": [
+      "mems_breakthrough",
+      "0.2_deg_hr",
+      "fog_grade_performance",
+      "26g",
+      "five_eyes"
+    ]
+  },
+  {
+    "pid": "SENS-0012",
+    "category": "sensors",
+    "name": "SBG Systems Quanta Micro \u2014 Tactical INS",
+    "manufacturer": "SBG Systems",
+    "description": "Compact tactical-grade INS at approximately 50g with 0.8\u00b0/hr gyro bias. Integrates GNSS receiver for full navigation solution. French manufacture \u2014 EU/NATO sovereign supply chain.",
+    "link": "https://www.sbg-systems.com/",
+    "approx_price": "$2,000\u2013$8,000",
+    "subcategory": "imu_ins",
+    "specs": {
+      "gyro_bias_deg_hr": 0.8,
+      "technology": "MEMS"
+    },
+    "weight_g": 50,
+    "power_w": 1,
+    "interface": "serial / Ethernet",
+    "country": "France",
+    "compliance": [
+      "ndaa",
+      "eu_sovereign"
+    ],
+    "tags": [
+      "tactical_grade",
+      "0.8_deg_hr",
+      "gnss_integrated",
+      "french_sovereign"
+    ]
+  },
+  {
+    "pid": "SENS-0013",
+    "category": "sensors",
+    "name": "SBG Systems Pulse-40 \u2014 Ultra-Miniature INS",
+    "manufacturer": "SBG Systems",
+    "description": "Ultra-miniature tactical-grade INS at only 12g and 0.3W. Designed for micro-UAS and precision-guided munitions where SWaP is extreme. Includes GNSS and dual-antenna heading.",
+    "link": "https://www.sbg-systems.com/",
+    "approx_price": "$3,000\u2013$10,000",
+    "subcategory": "imu_ins",
+    "specs": {
+      "gyro_bias_deg_hr": 1,
+      "technology": "MEMS"
+    },
+    "weight_g": 12,
+    "power_w": 0.3,
+    "interface": "serial / SPI",
+    "country": "France",
+    "compliance": [
+      "ndaa",
+      "eu_sovereign"
+    ],
+    "tags": [
+      "ultra_miniature",
+      "12g",
+      "0.3w",
+      "micro_uas",
+      "pgm",
+      "dual_antenna"
+    ]
+  },
+  {
+    "pid": "SENS-0014",
+    "category": "sensors",
+    "name": "SBG Systems Ellipse-D \u2014 Dual-Antenna INS/GNSS",
+    "manufacturer": "SBG Systems",
+    "description": "Dual-antenna RTK INS/GNSS providing centimeter-level positioning and precise heading without magnetometer. Standard for UAS survey and mapping applications. French manufacture.",
+    "link": "https://www.sbg-systems.com/",
+    "approx_price": "$5,000\u2013$20,000",
+    "subcategory": "imu_ins",
+    "specs": {
+      "gyro_bias_deg_hr": 3,
+      "technology": "MEMS"
+    },
+    "weight_g": 50,
+    "power_w": 1.5,
+    "interface": "serial / Ethernet / CAN",
+    "country": "France",
+    "compliance": [
+      "ndaa",
+      "eu_sovereign"
+    ],
+    "tags": [
+      "dual_antenna",
+      "rtk",
+      "cm_positioning",
+      "no_magnetometer",
+      "survey_mapping"
+    ]
+  },
+  {
+    "pid": "SENS-0015",
+    "category": "sensors",
+    "name": "VectorNav VN-100 \u2014 AHRS/IMU",
+    "manufacturer": "VectorNav Technologies",
+    "description": "Compact AHRS/IMU with under 10\u00b0/hr gyro bias in under 30g package. Industry standard for commercial UAS attitude reference. US manufactured, NDAA compliant.",
+    "link": "https://www.vectornav.com/",
+    "approx_price": "$1,500\u2013$5,000",
+    "subcategory": "imu_ins",
+    "specs": {
+      "gyro_bias_deg_hr": 10,
+      "technology": "MEMS"
+    },
+    "weight_g": 30,
+    "power_w": 0.5,
+    "interface": "serial / SPI",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "ahrs",
+      "compact",
+      "commercial_standard",
+      "us_manufactured"
+    ]
+  },
+  {
+    "pid": "SENS-0016",
+    "category": "sensors",
+    "name": "VectorNav VN-200 \u2014 GPS/INS",
+    "manufacturer": "VectorNav Technologies",
+    "description": "Integrated GPS/INS module providing position, velocity, and attitude. Kalman filter fuses MEMS IMU with GNSS. Mid-range solution between VN-100 AHRS and VN-300 dual-antenna.",
+    "link": "https://www.vectornav.com/",
+    "approx_price": "$3,000\u2013$8,000",
+    "subcategory": "imu_ins",
+    "specs": {
+      "gyro_bias_deg_hr": 5,
+      "technology": "MEMS"
+    },
+    "weight_g": 30,
+    "power_w": 0.7,
+    "interface": "serial / SPI",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "gps_ins",
+      "kalman_filter",
+      "mid_range"
+    ]
+  },
+  {
+    "pid": "SENS-0017",
+    "category": "sensors",
+    "name": "VectorNav VN-300 \u2014 Dual-Antenna GPS/INS",
+    "manufacturer": "VectorNav Technologies",
+    "description": "Dual-antenna GPS/INS providing precise heading and position without magnetometer. Highest-performance VectorNav solution for UAS and autonomous systems.",
+    "link": "https://www.vectornav.com/",
+    "approx_price": "$5,000\u2013$15,000",
+    "subcategory": "imu_ins",
+    "specs": {
+      "gyro_bias_deg_hr": 3,
+      "technology": "MEMS"
+    },
+    "weight_g": 30,
+    "power_w": 1,
+    "interface": "serial / SPI / Ethernet",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "dual_antenna",
+      "gps_ins",
+      "no_magnetometer",
+      "highest_performance"
+    ]
+  },
+  {
+    "pid": "SENS-0018",
+    "category": "sensors",
+    "name": "Inertial Labs INS-D/P \u2014 Defense INS",
+    "manufacturer": "Inertial Labs",
+    "description": "Defense-grade INS systems for UAS platforms. INS-D for dual-antenna heading, INS-P for precision navigation. US manufactured with NDAA compliance. Supports PX4/ArduPilot integration.",
+    "link": "https://inertiallabs.com/",
+    "approx_price": "$5,000\u2013$20,000",
+    "subcategory": "imu_ins",
+    "specs": {
+      "gyro_bias_deg_hr": 1,
+      "technology": "MEMS"
+    },
+    "weight_g": 100,
+    "power_w": 3,
+    "interface": "serial / Ethernet / CAN",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "defense_grade",
+      "dual_antenna",
+      "px4_ardupilot",
+      "us_manufactured"
+    ]
+  },
+  {
+    "pid": "SENS-0019",
+    "category": "sensors",
+    "name": "ARK Electronics Flow MR \u2014 Optical Flow Sensor",
+    "manufacturer": "ARK Electronics",
+    "description": "Mid-range optical flow sensor for GPS-denied positioning. Blue UAS Framework listed. MEMS IMU integrated (Analog Devices/Murata). Made in USA. Provides visual odometry for indoor and GNSS-denied flight.",
+    "link": "https://arkelectron.com/",
+    "approx_price": "$245",
+    "subcategory": "optical_flow",
+    "specs": {},
+    "weight_g": 10,
+    "power_w": 0.5,
+    "interface": "CAN / I2C",
+    "country": "United States",
+    "compliance": [
+      "blue_uas",
+      "ndaa"
+    ],
+    "tags": [
+      "optical_flow",
+      "gps_denied",
+      "blue_uas",
+      "made_in_usa",
+      "visual_odometry"
+    ]
+  },
+  {
+    "pid": "SENS-0020",
+    "category": "sensors",
+    "name": "KVH 1750 IMU \u2014 FOG",
+    "manufacturer": "KVH Industries",
+    "description": "Fiber-optic gyro IMU with under 0.05\u00b0/hr bias instability. Gold standard for high-accuracy navigation in defense UAS. Significantly heavier and more expensive than MEMS but provides gyro performance 10-100x better.",
+    "link": "https://www.kvh.com/",
+    "approx_price": "$15,000\u2013$40,000",
+    "subcategory": "imu_ins",
+    "specs": {
+      "gyro_bias_deg_hr": 0.05,
+      "technology": "FOG"
+    },
+    "weight_g": 700,
+    "power_w": 10,
+    "interface": "serial / Ethernet",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar"
+    ],
+    "tags": [
+      "fog",
+      "0.05_deg_hr",
+      "gold_standard",
+      "defense_grade",
+      "high_accuracy"
+    ]
+  },
+  {
+    "pid": "SENS-0021",
+    "category": "sensors",
+    "name": "MicaSense RedEdge-P \u2014 Multispectral Camera",
+    "manufacturer": "MicaSense (AgEagle)",
+    "description": "5-band multispectral camera plus 5.1 MP panchromatic for UAS precision agriculture and environmental monitoring. 300g. NDAA compliant, DIU approved. Industry standard for agricultural remote sensing.",
+    "link": "https://micasense.com/",
+    "approx_price": "$5,000\u2013$15,000",
+    "subcategory": "multispectral",
+    "specs": {
+      "band_count": 5,
+      "band_wavelengths_nm": "475/560/668/717/842",
+      "resolution_per_band": "1280x960"
+    },
+    "weight_g": 300,
+    "power_w": 8,
+    "interface": "Ethernet / serial / WiFi",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "diu_approved"
+    ],
+    "tags": [
+      "5_band",
+      "panchromatic",
+      "precision_agriculture",
+      "environmental",
+      "300g",
+      "industry_standard"
+    ]
+  },
+  {
+    "pid": "SENS-0022",
+    "category": "sensors",
+    "name": "MicaSense Altum-PT \u2014 Multispectral + Thermal",
+    "manufacturer": "MicaSense (AgEagle)",
+    "description": "Combined multispectral (5 bands) plus 320x256 thermal sensor for simultaneous crop stress and temperature mapping. Adds FLIR thermal to RedEdge capabilities. NDAA compliant.",
+    "link": "https://micasense.com/",
+    "approx_price": "$10,000\u2013$20,000",
+    "subcategory": "multispectral",
+    "specs": {
+      "band_count": 6,
+      "band_wavelengths_nm": "475/560/668/717/842 + LWIR thermal",
+      "resolution_per_band": "1280x960 + 320x256 thermal"
+    },
+    "weight_g": 405,
+    "power_w": 10,
+    "interface": "Ethernet / serial / WiFi",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "6_band",
+      "multispectral_plus_thermal",
+      "crop_stress",
+      "flir_thermal"
+    ]
+  },
+  {
+    "pid": "SENS-0023",
+    "category": "sensors",
+    "name": "Sentera 6X \u2014 Multi-Sensor Camera",
+    "manufacturer": "Sentera",
+    "description": "6-sensor payload with 5x 3.2 MP multispectral cameras plus 20 MP RGB plus optional FLIR Boson thermal. 290g. NDAA compliant, DIU approved. Designed for precision agriculture and defense ISR on small UAS.",
+    "link": "https://sentera.com/",
+    "approx_price": "$8,000\u2013$15,000",
+    "subcategory": "multispectral",
+    "specs": {
+      "band_count": 6,
+      "band_wavelengths_nm": "multi + RGB + thermal optional",
+      "resolution_per_band": "3.2MP x5 + 20MP RGB"
+    },
+    "weight_g": 290,
+    "power_w": 8,
+    "interface": "serial / USB",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "diu_approved"
+    ],
+    "tags": [
+      "6_sensor",
+      "multispectral",
+      "20mp_rgb",
+      "flir_boson_optional",
+      "290g",
+      "precision_ag",
+      "defense_isr"
+    ]
+  },
+  {
+    "pid": "SEN-0001",
+    "name": "Livox Avia \u2014 Solid-State LiDAR (FAST-LIO reference)",
+    "manufacturer": "Livox (DJI subsidiary)",
+    "description": "Non-repetitive scanning solid-state LiDAR with 70\u00b0 circular FoV. The reference sensor for FAST-LIO/FAST-LIVO SLAM stacks from HKU-MARS lab. Triple-return, 240K points/sec, integrated IMU. Used on DJI Matrice 300/350 and custom research quads.",
+    "category": "sensors",
+    "specs": {
+      "type": "3D LiDAR (solid-state, non-repetitive scanning)",
+      "range_m": 450,
+      "fov_deg": "70.4\u00b0 circular",
+      "points_per_sec": 240000,
+      "returns": 3,
+      "weight_g": 498,
+      "power_w": 9,
+      "interface": "100Mbps Ethernet",
+      "imu": "Built-in BMI088 (200Hz)",
+      "ip_rating": "IP67",
+      "wavelength_nm": 905,
+      "price_usd_approx": 1499,
+      "slam_stacks": [
+        "FAST-LIO2",
+        "FAST-LIVO",
+        "FAST-LIVO2",
+        "Point-LIO",
+        "R3LIVE",
+        "S-FAST_LIO"
+      ],
+      "ros_driver": "livox_ros_driver2",
+      "firmware_compat": [
+        "ArduPilot (via companion)",
+        "PX4 (via companion)"
+      ],
+      "github_refs": [
+        "https://github.com/hku-mars/FAST_LIO",
+        "https://github.com/zlwang7/S-FAST_LIO"
+      ]
+    }
+  },
+  {
+    "pid": "SEN-0002",
+    "name": "Livox Mid-360 \u2014 Budget 360\u00b0 LiDAR",
+    "manufacturer": "Livox (DJI subsidiary)",
+    "description": "360\u00b0 non-repetitive solid-state LiDAR at budget price point. Inertial-grade IMU, 200K pts/sec. Popular for GPS-denied indoor navigation builds. Compatible with FAST-LIO2, Point-LIO.",
+    "category": "sensors",
+    "specs": {
+      "type": "3D LiDAR (solid-state, 360\u00b0 non-repetitive)",
+      "range_m": 70,
+      "fov_deg": "360\u00b0 x 59\u00b0",
+      "points_per_sec": 200000,
+      "returns": 2,
+      "weight_g": 265,
+      "power_w": 9,
+      "interface": "100Mbps Ethernet",
+      "imu": "Built-in (200Hz)",
+      "ip_rating": "IP67",
+      "wavelength_nm": 905,
+      "price_usd_approx": 499,
+      "slam_stacks": [
+        "FAST-LIO2",
+        "Point-LIO",
+        "LIO-SAM"
+      ],
+      "ros_driver": "livox_ros_driver2"
+    }
+  },
+  {
+    "pid": "SEN-0003",
+    "name": "Livox Horizon \u2014 Wide-FoV Solid-State LiDAR",
+    "manufacturer": "Livox (DJI subsidiary)",
+    "description": "81.7\u00b0 x 25.1\u00b0 FoV solid-state LiDAR, automotive-grade. Used in L4 autonomous driving and large drone mapping. FAST-LIO compatible.",
+    "category": "sensors",
+    "specs": {
+      "type": "3D LiDAR (solid-state)",
+      "range_m": 260,
+      "fov_deg": "81.7\u00b0 x 25.1\u00b0",
+      "points_per_sec": 240000,
+      "weight_g": 650,
+      "power_w": 12,
+      "interface": "100Mbps Ethernet",
+      "price_usd_approx": 999,
+      "slam_stacks": [
+        "FAST-LIO2",
+        "R2LIVE"
+      ],
+      "ros_driver": "livox_ros_driver"
+    }
+  },
+  {
+    "pid": "SEN-0004",
+    "name": "RoboSense RS-Helios \u2014 32-Channel Spinning LiDAR",
+    "manufacturer": "RoboSense",
+    "description": "32-channel mechanical spinning LiDAR with 360\u00b0 FoV. Used in S-FAST_LIO RS-LiDAR configuration (zlwang7). 70m range, compact form factor for drone integration.",
+    "category": "sensors",
+    "specs": {
+      "type": "3D LiDAR (mechanical spinning, 32-channel)",
+      "range_m": 70,
+      "fov_deg": "360\u00b0 x 31\u00b0",
+      "points_per_sec": 600000,
+      "channels": 32,
+      "weight_g": 520,
+      "power_w": 9,
+      "interface": "Gigabit Ethernet",
+      "price_usd_approx": 2999,
+      "slam_stacks": [
+        "S-FAST_LIO (RS config)",
+        "FAST-LIO2",
+        "LIO-SAM"
+      ],
+      "ros_driver": "rslidar_sdk",
+      "github_refs": [
+        "https://github.com/zlwang7/S-FAST_LIO"
+      ]
+    }
+  },
+  {
+    "pid": "SEN-0005",
+    "name": "Velodyne VLP-16 (Puck) \u2014 16-Channel Spinning LiDAR",
+    "manufacturer": "Velodyne Lidar (now Ouster)",
+    "description": "Industry-standard 16-channel spinning LiDAR. 100m range, 300K pts/sec. The most commonly used LiDAR in drone SLAM research. Supported by virtually all SLAM stacks.",
+    "category": "sensors",
+    "specs": {
+      "type": "3D LiDAR (mechanical spinning, 16-channel)",
+      "range_m": 100,
+      "fov_deg": "360\u00b0 x 30\u00b0",
+      "points_per_sec": 300000,
+      "channels": 16,
+      "weight_g": 830,
+      "power_w": 8,
+      "interface": "100Mbps Ethernet",
+      "price_usd_approx": 3999,
+      "slam_stacks": [
+        "LIO-SAM",
+        "LeGO-LOAM",
+        "FAST-LIO2",
+        "LOAM",
+        "Cartographer"
+      ],
+      "ros_driver": "velodyne_driver"
+    }
+  },
+  {
+    "pid": "SEN-0006",
+    "name": "Xsens MTi-30 \u2014 Tactical-Grade IMU",
+    "manufacturer": "Xsens (Movella)",
+    "description": "MEMS IMU used paired with RS-Helios in S-FAST_LIO RS-LiDAR datasets. 400Hz gyro/accel, AHRS output. Common external IMU for LiDAR-inertial SLAM when LiDAR lacks built-in IMU.",
+    "category": "sensors",
+    "specs": {
+      "type": "IMU (9-axis MEMS)",
+      "gyro_range_dps": 2000,
+      "accel_range_g": 20,
+      "output_rate_hz": 400,
+      "weight_g": 35,
+      "interface": "UART/SPI/I2C",
+      "price_usd_approx": 1200
+    }
+  },
+  {
+    "pid": "SENS-0024",
+    "category": "sensors",
+    "subcategory": "ins",
+    "name": "Inertial Labs INS-B \u2014 GPS-Aided Inertial Navigation System (Basic)",
+    "manufacturer": "Inertial Labs (VIAVI Solutions)",
+    "description": "Tactical-grade single-antenna GPS-aided INS. Ideal for LiDAR/optical camera UAV payloads. 0.1 deg dynamic heading accuracy, 1.5m horizontal position (GPS L1), 1cm+1ppm RTK. Supports NovAtel OEM719, u-blox ZED-F9P, or Septentrio mosaic-X5. IP67, MIL-STD-810G. Compatible with Pixhawk autopilot and COBHAM AVIATOR UAV 200. 'Tunnel Guide' feature: 0.2% DT position accuracy in GNSS-denied environments.",
+    "link": "https://inertiallabs.com/products/ins-inertial-navigation-systems/",
+    "datasheet": "https://www.inertiallabs.com/wp-content/uploads/2025/01/INS-B-P-D-DL_Datasheet_rev-6.29_Jan_2025.pdf",
+    "weight_g": 220,
+    "dimensions_mm": "120.5 x 53.2 x 49.3",
+    "power_w": 2.5,
+    "supply_voltage_v": "9-36",
+    "imu_grade": "Tactical",
+    "gyro_bias_stability_deg_hr": 1.0,
+    "accel_bias_stability_mg": 0.005,
+    "heading_dynamic_accuracy_deg": 0.1,
+    "pitch_roll_dynamic_accuracy_deg": 0.03,
+    "horizontal_position_accuracy_gps_l1_m": 1.5,
+    "horizontal_position_accuracy_rtk_m": 0.01,
+    "horizontal_position_accuracy_post_m": 0.005,
+    "gnss_receivers": [
+      "NovAtel OEM719",
+      "NovAtel OEM7500",
+      "u-blox ZED-F9P",
+      "Septentrio mosaic-X5"
+    ],
+    "gnss_constellations": [
+      "GPS",
+      "GLONASS",
+      "GALILEO",
+      "BEIDOU",
+      "QZSS",
+      "NavIC",
+      "L-Band"
+    ],
+    "gnss_corrections": [
+      "SBAS",
+      "DGPS",
+      "RTK",
+      "TerraStar PPP"
+    ],
+    "data_rate_hz": 200,
+    "imu_data_rate_hz": 2000,
+    "interfaces": [
+      "RS-232",
+      "RS-422",
+      "CAN",
+      "Ethernet"
+    ],
+    "autopilot_compat": [
+      "Pixhawk",
+      "Embention",
+      "COBHAM AVIATOR UAV 200"
+    ],
+    "software_compat": [
+      "ROS",
+      "LabVIEW",
+      "Waypoint Inertial Explorer",
+      "QINSy"
+    ],
+    "lidar_compat": [
+      "Velodyne",
+      "RIEGL",
+      "FARO"
+    ],
+    "operating_temp_c": "-40 to +75",
+    "protection": "IP67",
+    "mil_std": [
+      "MIL-STD-810G",
+      "MIL-STD-461F"
+    ],
+    "gnss_denied_accuracy_pct_dt": 0.2,
+    "tunnel_guide": true,
+    "ndaa_compliant": true,
+    "itar_free": true,
+    "manufacturer_country": "USA (Paeonian Springs, VA)",
+    "tags": [
+      "INS",
+      "GPS-aided",
+      "tactical-grade",
+      "LiDAR",
+      "survey",
+      "UAV",
+      "RTK",
+      "GNSS-denied",
+      "Pixhawk",
+      "NDAA"
+    ]
+  },
+  {
+    "pid": "SENS-0025",
+    "category": "sensors",
+    "subcategory": "ins",
+    "name": "Inertial Labs INS-P \u2014 GPS-Aided INS with Fluxgate Compass (Professional)",
+    "manufacturer": "Inertial Labs (VIAVI Solutions)",
+    "description": "Professional tactical-grade GPS-aided INS with embedded gyro-compensated Fluxgate compass \u2014 maintains heading without GNSS. 0.3 deg static heading accuracy, 0.1 deg dynamic. Key differentiator: free-inertial heading to <0.4 deg (3-sigma) in GPS-denied ops. Industrial-grade IMU variant of the same form factor. Supports Pixhawk. RESEPI LiDAR integration-ready.",
+    "link": "https://inertiallabs.com/products/ins-inertial-navigation-systems/",
+    "datasheet": "https://www.inertiallabs.com/wp-content/uploads/2025/01/INS-B-P-D-DL_Datasheet_rev-6.29_Jan_2025.pdf",
+    "weight_g": 280,
+    "dimensions_mm": "120.5 x 53.2 x 49.3",
+    "power_w": 3.5,
+    "supply_voltage_v": "9-36",
+    "imu_grade": "Industrial",
+    "gyro_bias_stability_deg_hr": 3.0,
+    "accel_bias_stability_mg": 0.01,
+    "heading_static_accuracy_deg": 0.3,
+    "heading_dynamic_accuracy_deg": 0.1,
+    "heading_free_inertial_accuracy_deg": 0.4,
+    "pitch_roll_dynamic_accuracy_deg": 0.04,
+    "horizontal_position_accuracy_gps_l1_m": 1.5,
+    "horizontal_position_accuracy_rtk_m": 0.01,
+    "fluxgate_compass": true,
+    "gnss_receivers": [
+      "NovAtel OEM719",
+      "u-blox ZED-F9P",
+      "Septentrio mosaic-X5"
+    ],
+    "gnss_constellations": [
+      "GPS",
+      "GLONASS",
+      "GALILEO",
+      "BEIDOU",
+      "QZSS",
+      "NavIC",
+      "L-Band"
+    ],
+    "data_rate_hz": 200,
+    "imu_data_rate_hz": 2000,
+    "interfaces": [
+      "RS-232",
+      "RS-422",
+      "CAN",
+      "Ethernet"
+    ],
+    "autopilot_compat": [
+      "Pixhawk",
+      "Embention",
+      "COBHAM AVIATOR UAV 200"
+    ],
+    "operating_temp_c": "-40 to +75",
+    "protection": "IP67",
+    "mil_std": [
+      "MIL-STD-810G",
+      "MIL-STD-461F"
+    ],
+    "gnss_denied_accuracy_pct_dt": 0.5,
+    "tunnel_guide": true,
+    "ndaa_compliant": true,
+    "itar_free": true,
+    "manufacturer_country": "USA (Paeonian Springs, VA)",
+    "tags": [
+      "INS",
+      "GPS-aided",
+      "industrial-grade",
+      "fluxgate",
+      "heading",
+      "GPS-denied",
+      "UAV",
+      "NDAA"
+    ]
+  },
+  {
+    "pid": "SENS-0026",
+    "category": "sensors",
+    "subcategory": "ins",
+    "name": "Inertial Labs INS-D \u2014 Dual Antenna GPS-Aided INS",
+    "manufacturer": "Inertial Labs (VIAVI Solutions)",
+    "description": "Dual-antenna GPS-aided INS for high-precision heading without magnetic compass. 0.15 deg heading accuracy at 1m baseline (NovAtel OEM7720) or 0.4 deg at 1m (dual u-blox ZED-F9P). 1cm RTK. Tactical-grade IMU. Used on ISR fixed-wing platforms and precision survey drones requiring heading independent of magnetic environment.",
+    "link": "https://inertiallabs.com/products/ins-inertial-navigation-systems/",
+    "weight_g": 320,
+    "dimensions_mm": "120.5 x 53.2 x 49.3",
+    "power_w": 5.0,
+    "supply_voltage_v": "9-36",
+    "imu_grade": "Tactical",
+    "heading_accuracy_1m_baseline_deg": 0.15,
+    "heading_accuracy_2m_baseline_deg": 0.08,
+    "pitch_roll_dynamic_accuracy_deg": 0.03,
+    "horizontal_position_accuracy_rtk_m": 0.01,
+    "dual_antenna": true,
+    "gnss_receivers": [
+      "NovAtel OEM7720",
+      "Septentrio mosaic-H",
+      "Dual u-blox ZED-F9P"
+    ],
+    "gnss_constellations": [
+      "GPS",
+      "GLONASS",
+      "GALILEO",
+      "BEIDOU",
+      "QZSS",
+      "NavIC",
+      "L-Band"
+    ],
+    "data_rate_hz": 200,
+    "interfaces": [
+      "RS-232",
+      "RS-422",
+      "CAN",
+      "Ethernet"
+    ],
+    "operating_temp_c": "-40 to +75",
+    "protection": "IP67",
+    "mil_std": [
+      "MIL-STD-810G",
+      "MIL-STD-461F"
+    ],
+    "ndaa_compliant": true,
+    "itar_free": true,
+    "manufacturer_country": "USA (Paeonian Springs, VA)",
+    "tags": [
+      "INS",
+      "dual-antenna",
+      "tactical-grade",
+      "heading",
+      "RTK",
+      "survey",
+      "ISR",
+      "NDAA"
+    ]
+  },
+  {
+    "pid": "SENS-0027",
+    "category": "sensors",
+    "subcategory": "ahrs",
+    "name": "Inertial Labs AHRS-10P \u2014 MEMS Attitude & Heading Reference System",
+    "manufacturer": "Inertial Labs (VIAVI Solutions)",
+    "description": "Compact MEMS AHRS with fluxgate magnetometers. 0.6 deg dynamic heading accuracy, 0.08 deg pitch/roll. 90 x 27 x 26mm, 84g. Interfaces: RS-232, RS-422, CAN. IP67. Designed for UAVs, gimbals, antenna pointing, and stabilization systems where full GPS-aided INS is overkill. ITAR-free.",
+    "link": "https://inertiallabs.com/products/ahrs/",
+    "weight_g": 84,
+    "dimensions_mm": "90 x 27 x 26",
+    "heading_dynamic_accuracy_deg": 0.6,
+    "pitch_roll_dynamic_accuracy_deg": 0.08,
+    "gyro_bias_stability_deg_hr": 35,
+    "accel_bias_stability_mg": 0.5,
+    "fluxgate_compass": true,
+    "interfaces": [
+      "RS-232",
+      "RS-422",
+      "CAN"
+    ],
+    "operating_temp_c": "-40 to +75",
+    "protection": "IP67",
+    "ndaa_compliant": true,
+    "itar_free": true,
+    "manufacturer_country": "USA (Paeonian Springs, VA)",
+    "tags": [
+      "AHRS",
+      "MEMS",
+      "fluxgate",
+      "compact",
+      "gimbal",
+      "antenna",
+      "stabilization",
+      "UAV",
+      "NDAA",
+      "ITAR-free"
+    ]
+  },
+  {
+    "pid": "SENS-0028",
+    "category": "sensors",
+    "subcategory": "ahrs",
+    "name": "Inertial Labs AHRS-II-P \u2014 Tactical-Grade Attitude & Heading Reference System",
+    "manufacturer": "Inertial Labs (VIAVI Solutions)",
+    "description": "Tactical-grade AHRS with Inertial Labs 8mm fluxgate magnetometers \u2014 superior stability over MEMS magnetics. 0.6 deg gyro-stabilized heading, 0.08 deg pitch/roll dynamic accuracy over full temperature range. Kalman filter based algorithms for UAV, aircraft, vessels, ROV, UGV. IP67. Used as standalone orientation reference where GPS weight/cost is prohibitive.",
+    "link": "https://inertiallabs.com/products/ahrs/",
+    "datasheet": "https://www.inertiallabs.com/wp-content/uploads/2024/03/AHRS-II_Datasheet_rev-3.1_Mar_2024.pdf",
+    "heading_dynamic_accuracy_deg": 0.6,
+    "pitch_roll_dynamic_accuracy_deg": 0.08,
+    "imu_grade": "Tactical",
+    "fluxgate_compass": true,
+    "fluxgate_size_mm": 8,
+    "interfaces": [
+      "RS-232",
+      "RS-422",
+      "CAN"
+    ],
+    "software_compat": [
+      "ROS",
+      "LabVIEW",
+      "Waypoint"
+    ],
+    "operating_temp_c": "-40 to +75",
+    "protection": "IP67",
+    "ndaa_compliant": true,
+    "itar_free": true,
+    "manufacturer_country": "USA (Paeonian Springs, VA)",
+    "tags": [
+      "AHRS",
+      "tactical-grade",
+      "fluxgate",
+      "UAV",
+      "vessel",
+      "UGV",
+      "stabilization",
+      "NDAA",
+      "ITAR-free"
+    ]
+  },
+  {
+    "pid": "SENS-0029",
+    "category": "sensors",
+    "subcategory": "apnt",
+    "name": "Inertial Labs M-AJ-QUATRO \u2014 CRPA Anti-Jamming Antenna System",
+    "manufacturer": "Inertial Labs (VIAVI Solutions)",
+    "description": "Advanced CRPA (Controlled Reception Pattern Antenna) anti-jamming system for Assured PNT in GPS-jammed/spoofed environments. Operates on all L1, L2, L5 GNSS bands. Adaptive digital nulling: >34dB interference suppression (export-free model). Compatible with all Inertial Labs INS products and commercial GNSS receivers \u2014 plug-and-play integration. Released March 2025 (post-VIAVI acquisition). Targets military UAVs, loitering munitions, ISR platforms, commercial aviation.",
+    "link": "https://inertiallabs.com/products/apnt-assured-positioning-navigation-timing/anti-jamming-advanced-antenna-system-m-aj-quatro/",
+    "technology": "CRPA (Controlled Reception Pattern Antenna)",
+    "gnss_bands": [
+      "L1",
+      "L2",
+      "L5"
+    ],
+    "gnss_constellations": [
+      "GPS",
+      "GLONASS",
+      "GALILEO",
+      "BEIDOU",
+      "QZSS"
+    ],
+    "interference_suppression_db": 34,
+    "adaptive_nulling": true,
+    "jammer_direction_finding": true,
+    "compatible_with": [
+      "All Inertial Labs INS models",
+      "Commercial GNSS receivers"
+    ],
+    "applications": [
+      "Military UAV",
+      "Loitering munition",
+      "ISR",
+      "Commercial aviation"
+    ],
+    "release_date": "2025-03",
+    "ndaa_compliant": true,
+    "manufacturer_country": "USA (Paeonian Springs, VA)",
+    "tags": [
+      "APNT",
+      "anti-jam",
+      "CRPA",
+      "GPS-denied",
+      "EW-resilient",
+      "L1",
+      "L2",
+      "L5",
+      "GNSS",
+      "military",
+      "NDAA"
+    ]
+  }
+]
