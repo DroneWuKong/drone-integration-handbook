@@ -480,3 +480,45 @@ The range comes from the antenna, not the radio. See the Antennas chapter (Ch. 3
 OpenHD supports RX diversity — two WiFi adapters on the ground, one omni + one directional, with per-packet best-signal selection. However, do not mix chipsets or vendors for diversity (e.g. don't combine RTL8812AU with RTL8812BU). Use the same chipset on both ground adapters. New users should start with a single adapter and add diversity later.
 
 *See also: [OpenHD Implementation Guide](/components/openhd-implementation-guide) — step-by-step from hardware to first flight*
+
+---
+
+## OpenIPC — IP Camera Firmware for FPV
+
+OpenIPC is the other major open-source digital FPV system, taking a fundamentally different approach from OpenHD. Instead of using a Raspberry Pi as the air unit, OpenIPC reflashes cheap IP camera boards ($15–30) and turns them into FPV video transmitters directly. The IP camera's SoC has a dedicated hardware video encoder, so you get lower latency (80ms at 1080p60) and dramatically lower power consumption (1.7W vs RPi's 5–10W) without a separate encoding step.
+
+### How It Differs from OpenHD
+
+| | OpenIPC | OpenHD |
+|---|---|---|
+| Air unit | IP camera board ($15–30) | RPi Zero 2 / CM4 ($30–80) |
+| Video encoder | SoC hardware H.265 | RPi GPU / software |
+| Latency (1080p60) | ~80ms | 100–150ms |
+| Power draw | 1.7W | 5–10W |
+| Setup difficulty | Harder (SPI flash, UART, SoC-specific) | Easier (SD card) |
+| Camera | IP camera sensors (IMX307, IMX335) | CSI cameras (Arducam, RPi HQ) |
+| Transport | WFB-NG (wifibroadcast next gen) | wifibroadcast (original) |
+
+### Supported Hardware
+
+The firmware runs on SoCs from HiSilicon, Goke (GK7205V200 — most common for FPV), SigmaStar (SSC338Q — recommended for new builds), Ingenic (T31), and several others. WiFi adapters: RTL8812AU and RTL8812EU (same as OpenHD). The community recommends buying adapters from the same batch in pairs.
+
+For ground stations, OpenIPC supports SBC-based receivers (RunCam WiFiLink-RX, Emax Wyvern Link, Radxa Zero3) and PixelPilot — an Android app for Snapdragon devices that also works on Meta Quest VR headsets.
+
+### Key Software
+
+- **Majestic** — the primary video streamer (replaces GStreamer on the IP camera SoC)
+- **WFB-NG** — wifibroadcast next generation, the RF transport layer
+- **divinus** — open-source multi-platform streamer alternative (MIT, 62★)
+- **smolrtsp** — lightweight RTSP server library (MIT, 427★) — useful for any embedded video streaming
+- **ipctool** — identifies unknown IP camera hardware (SoC, sensor, flash chip)
+
+### When to Choose OpenIPC over OpenHD
+
+Choose OpenIPC when weight and power are critical (sub-250g builds, long-endurance fixed wings), when you want the lowest possible latency for FPV racing/freestyle, or when you need night vision on a budget (IMX307 sensor with F0.95 lens). Choose OpenHD when you want easier setup, broader ecosystem support, or need features like dual camera PiP and RC control over the same link.
+
+### Important: Military Use Prohibited
+
+OpenIPC's license (MIT) includes an explicit restriction: "The use of the OpenIPC project and its components for military purposes is not permitted." This is not a standard MIT clause — it's a project-specific addition. If your use case involves military or defense applications, OpenHD (GPL-3.0, no military restriction) or a commercial solution is the appropriate path.
+
+*Repository: [github.com/OpenIPC](https://github.com/OpenIPC) (1.9K★, 120 repos, MIT)*
