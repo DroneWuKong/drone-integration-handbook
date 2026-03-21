@@ -288,6 +288,20 @@ roughly doubles your range. Going from a stock dipole (3 dBi)
 to a panel array (18 dBi) adds 15 dB — that's about 5.6× the
 range. 3 km × 5.6 = ~17 km.
 
+OpenHD's own range calculations (from openhdfpv.org/hardware/antennas,
+assuming -93dBm Rx sensitivity and 10dB link margin) confirm this:
+
+| Ground Antenna | Air Antenna | Freq | TX Power | Calculated Range |
+|----------------|-------------|------|----------|-----------------|
+| Maple 5dBi omni | Maple 5dBi omni | 5.2 GHz | 200 mW | 2.9 km |
+| Maple 14dBi flat panel | 5dBi omni | 5.2 GHz | 200 mW | 8.2 km |
+| 17dBi planar | 5dBi omni | 5.8 GHz | 500 mW | 16.4 km |
+
+Their FAQ states it directly: "1–3km is easy to achieve, even
+with low power WiFi cards and the antennas that come with them.
+Carefully chosen WiFi cards, antennas, and optionally an antenna
+tracker should put 20km+ within reach."
+
 ### Air Side: Stay Omnidirectional
 
 The drone changes orientation constantly — banks, turns, pitches.
@@ -302,10 +316,12 @@ turns away from you. Use omnidirectional antennas:
 - **Stock dipole:** Works fine under 2 km. Replace for anything
   serious.
 
-Use **RHCP (right-hand circular polarization)** on both ends.
-Circular polarization rejects ground reflections (multipath) much
-better than linear. Both air and ground must match — RHCP air
-with RHCP ground, not RHCP with LHCP.
+Use **matching polarization on both ends** — vertical/vertical
+or horizontal/horizontal. Cross-polarization costs 3 dB (half
+your power). RHCP circular polarization works for multipath
+rejection but most wifibroadcast community setups use linear
+vertical since the common directional ground antennas (panels,
+yagis) are linear vertical.
 
 ### Ground Side: This Is Where Range Comes From
 
