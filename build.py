@@ -1,108 +1,106 @@
-#!/usr/bin/env python3
-"""
-Build script for The Drone Integration Handbook static site.
-Combines all chapter markdown files into a single-page HTML document.
-Requires: pip install markdown
-"""
-
 import os
 import re
 import markdown
+from collections import defaultdict
 
-# Chapter order and file mapping
+# ── CHAPTERS: kept ordered — narrative flow matters ──────────────────────────
 CHAPTERS = [
-    ("fundamentals/five-link-types.md", 1, "The Five Link Types"),
-    ("fundamentals/frequency-bands.md", 2, "Frequency Bands & Regulatory Reality"),
-    ("fundamentals/antennas.md", 3, "Antennas for People Who Aren't RF Engineers"),
-    ("fundamentals/link-budgets.md", 4, "Link Budgets Without the Math"),
-    ("firmware/four-firmwares.md", 5, "The Four Firmwares"),
-    ("firmware/msp-protocol.md", 6, "MSP Protocol"),
-    ("firmware/mavlink-protocol.md", 7, "MAVLink Protocol"),
-    ("firmware/uart-layout.md", 8, "UART Layout and Why It Matters"),
-    ("field/preflight.md", 9, "Pre-Flight Checklist That Actually Works"),
-    ("field/blackbox.md", 10, "Blackbox Logs"),
-    ("field/pid-tuning.md", 11, "PID Tuning for People Who Fly"),
-    ("field/troubleshooting.md", 12, "When Things Go Wrong"),
-    ("integration/companion.md", 13, "Adding a Companion Computer"),
-    ("integration/mesh-radios.md", 14, "Mesh Radios for Multi-Vehicle"),
-    ("integration/tak.md", 15, "TAK Integration"),
-    ("field/unsolved-problems.md", 16, "Unsolved Problems"),
-]
-
-COMPONENTS = [
-    ("components/flight-controllers.md", 601, "Flight Controllers"),
-    ("components/escs.md", 602, "Electronic Speed Controllers"),
-    ("components/motors.md", 603, "Motors"),
-    ("components/batteries.md", 604, "Batteries & Power Systems"),
-    ("components/companion-computers.md", 605, "Companion Computers"),
-    ("components/comms-datalinks.md", 606, "EW-Resilient Communications"),
-    ("components/thermal-cameras.md", 607, "Thermal / IR Cameras"),
-    ("components/counter-uas.md", 608, "Counter-UAS"),
-    ("components/propulsion-non-electric.md", 609, "Non-Electric Propulsion"),
-    ("components/platforms-global.md", 611, "Non-US Platforms"),
-    ("components/lidar-mapping-payloads.md", 612, "LiDAR & Mapping Payloads"),
-    ("components/openhd-implementation-guide.md", 613, "OpenHD — Digital Video Link"),
-]
-
-PLATFORMS = [
-    ("platforms/cots/dji-m350-rtk.md", 101, "DJI Matrice 350 RTK"),
-    ("platforms/cots/dji-m30t.md", 102, "DJI Matrice 30T"),
-    ("platforms/cots/dji-mavic4-pro.md", 103, "DJI Mavic 4 Pro"),
-    ("platforms/cots/autel-evo-max-4t.md", 104, "Autel EVO MAX 4T V2"),
-    ("platforms/cots/autel-evo2-enterprise.md", 105, "Autel EVO II Enterprise V3"),
-    ("platforms/cots/dji-agras-t50.md", 106, "DJI Agras T50"),
-    ("platforms/cots/dji-flycart-30.md", 107, "DJI FlyCart 30"),
-    ("platforms/cots/flyability-elios-3.md", 108, "Flyability Elios 3"),
-    ("platforms/cots/xag-p100-p150.md", 109, "XAG P100 Pro / P150"),
-    ("platforms/cots/hylio-ag-272.md", 110, "Hylio AG-272"),
-    ("platforms/cots/sensefly-ebee-x.md", 111, "senseFly eBee X"),
-    ("platforms/cots/quantum-trinity-pro.md", 112, "Quantum Systems Trinity Pro"),
-    ("platforms/cots/dji-mavic3-enterprise.md", 113, "DJI Mavic 3 Enterprise"),
-    ("platforms/cots/dji-matrice-4.md", 114, "DJI Matrice 4 Series"),
-    ("platforms/blue-uas/skydio-x10.md", 201, "Skydio X10 / X10D"),
-    ("platforms/blue-uas/freefly-astro.md", 202, "Freefly Astro"),
-    ("platforms/blue-uas/inspired-flight-if1200a.md", 203, "Inspired Flight IF1200A"),
-    ("platforms/blue-uas/teal-2.md", 204, "Teal 2"),
-    ("platforms/blue-uas/parrot-anafi-usa.md", 205, "Parrot ANAFI USA"),
-    ("platforms/blue-uas/wingtra-wingtraone.md", 206, "WingtraOne / WingtraRAY"),
-    ("platforms/blue-uas/ascent-aerosystems.md", 207, "Ascent Aerosystems"),
-    ("platforms/open-source/holybro-x500-pixhawk6x.md", 301, "Holybro X500 V2 + Pixhawk 6X"),
-    ("platforms/open-source/ardupilot-px4-reference.md", 302, "ArduPilot / PX4 General Reference"),
-    ("platforms/tactical/anduril-ghost-x.md", 401, "Anduril Ghost X"),
-    ("platforms/tactical/teal-black-widow.md", 402, "Teal Black Widow"),
-    ("platforms/tactical/skyfish-osprey.md", 403, "Skyfish Osprey"),
-    ("platforms/tactical/sifly-q12.md", 404, "SiFly Q12"),
-    ("platforms/tactical/hoverfly-livesky.md", 405, "Hoverfly LiveSky / Spectre"),
-    ("platforms/tactical/shield-ai-nova-2.md", 406, "Shield AI Nova 2"),
-    ("platforms/tactical/neros-archer.md", 407, "Neros Archer"),
-    ("platforms/tactical/modalai-fpv.md", 408, "ModalAI Seeker / Stinger"),
-    ("platforms/tactical/red-cat-fang.md", 409, "Red Cat FANG F7"),
-    ("platforms/tactical/skycutter-shrike.md", 410, "Skycutter Shrike 10"),
-    ("platforms/tactical/vantage-robotics.md", 411, "Vantage Robotics Vesper / Trace"),
-    ("platforms/tactical/orqa-mrm2-10.md", 412, "Orqa MRM2-10"),
-    ("platforms/tactical/orqa-mrm2-10f.md", 413, "Orqa MRM2-10F (Foldable)"),
-    ("platforms/tactical/orqa-mrm1-5.md", 414, "Orqa MRM1-5"),
-    ("platforms/tactical/uas-nexus-platform-one.md", 415, "UAS Nexus Platform One"),
-]
-
-PLATFORM_PARTS = [
-    ("COTS", [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114]),
-    ("NDAA / Blue UAS", [201, 202, 203, 204, 205, 206, 207]),
-    ("Open-Source / Custom", [301, 302]),
-    ("Tactical / Defense", [401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415]),
+    ("fundamentals/five-link-types.md",       1,  "The Five Link Types"),
+    ("fundamentals/frequency-bands.md",        2,  "Frequency Bands & Regulatory Reality"),
+    ("fundamentals/antennas.md",               3,  "Antennas for People Who Aren't RF Engineers"),
+    ("fundamentals/link-budgets.md",           4,  "Link Budgets Without the Math"),
+    ("firmware/four-firmwares.md",             5,  "The Four Firmwares"),
+    ("firmware/msp-protocol.md",               6,  "MSP Protocol"),
+    ("firmware/mavlink-protocol.md",           7,  "MAVLink Protocol"),
+    ("firmware/uart-layout.md",                8,  "UART Layout and Why It Matters"),
+    ("field/preflight.md",                     9,  "Pre-Flight Checklist That Actually Works"),
+    ("field/blackbox.md",                      10, "Blackbox Logs"),
+    ("field/pid-tuning.md",                    11, "PID Tuning for People Who Fly"),
+    ("field/troubleshooting.md",               12, "When Things Go Wrong"),
+    ("integration/companion.md",               13, "Adding a Companion Computer"),
+    ("integration/mesh-radios.md",             14, "Mesh Radios for Multi-Vehicle"),
+    ("integration/tak.md",                     15, "TAK Integration"),
+    ("field/unsolved-problems.md",             16, "Unsolved Problems"),
 ]
 
 PARTS = [
-    ("Part 1 — RF Fundamentals", [1, 2, 3, 4]),
+    ("Part 1 — RF Fundamentals",         [1, 2, 3, 4]),
     ("Part 2 — Flight Controller Firmware", [5, 6, 7, 8]),
-    ("Part 3 — Field Operations", [9, 10, 11, 12]),
-    ("Part 4 — Integration", [13, 14, 15]),
-    ("What's Left to Solve", [16]),
+    ("Part 3 — Field Operations",        [9, 10, 11, 12]),
+    ("Part 4 — Integration",             [13, 14, 15]),
+    ("What's Left to Solve",             [16]),
+]
+
+# Category display names for the platforms/ subdirectory names
+_PLATFORM_CATS = [
+    ("cots",         "COTS"),
+    ("blue-uas",     "NDAA / Blue UAS"),
+    ("open-source",  "Open-Source / Custom"),
+    ("tactical",     "Tactical / Defense"),
 ]
 
 
+# ── AUTO-DISCOVERY ───────────────────────────────────────────────────────────
+
+def _title_from_file(filepath):
+    """Read first H1 from a markdown file, fall back to filename."""
+    title = os.path.basename(filepath).replace(".md", "").replace("-", " ").replace("_", " ").title()
+    try:
+        with open(filepath, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith("# "):
+                    return line[2:].strip()
+    except Exception:
+        pass
+    return title
+
+
+def _discover_dir(base_dir, subdir, start_num):
+    """
+    Walk subdir, return sorted list of (rel_path, num, title).
+    Skips README.md and index.md. Numbers are assigned sequentially
+    starting at start_num — stable as long as filenames don't change.
+    """
+    root = os.path.join(base_dir, subdir)
+    if not os.path.isdir(root):
+        return []
+    paths = []
+    for dirpath, dirnames, filenames in os.walk(root):
+        dirnames.sort()
+        for fname in sorted(filenames):
+            if not fname.endswith(".md"):
+                continue
+            if fname.lower() in ("readme.md", "index.md"):
+                continue
+            paths.append(os.path.join(dirpath, fname))
+    return [
+        (os.path.relpath(p, base_dir), start_num + i, _title_from_file(p))
+        for i, p in enumerate(sorted(paths))
+    ]
+
+
+def _build_platforms(base_dir):
+    """Discover all platform .md files, grouped by category subdir."""
+    all_entries = []
+    seen = set()
+    for cat_key, _ in _PLATFORM_CATS:
+        for entry in _discover_dir(base_dir, f"platforms/{cat_key}", len(all_entries) * 0):
+            if entry[0] not in seen:
+                seen.add(entry[0])
+                all_entries.append(entry)
+    # Re-number sequentially across all categories starting at 101
+    return [(rel, 101 + i, title) for i, (rel, _, title) in enumerate(all_entries)]
+
+
+def _build_components(base_dir):
+    """Discover all component .md files."""
+    return _discover_dir(base_dir, "components", 600)
+
+
+# ── HELPERS ──────────────────────────────────────────────────────────────────
+
 def read_chapter(filepath):
-    """Read a chapter markdown file."""
     if not os.path.exists(filepath):
         return ""
     with open(filepath, "r", encoding="utf-8") as f:
@@ -110,23 +108,15 @@ def read_chapter(filepath):
 
 
 def fix_internal_links(html_content, ch_num):
-    """Convert inter-chapter markdown links to anchor links."""
-    # Replace links like (../fundamentals/five-link-types.md) with (#ch1)
     for filepath, num, title in CHAPTERS:
         basename = os.path.basename(filepath)
-        # Handle various relative path patterns
         html_content = html_content.replace(f"({basename})", f"(#ch{num})")
         html_content = html_content.replace(f"(../{filepath})", f"(#ch{num})")
         html_content = html_content.replace(f"({filepath})", f"(#ch{num})")
-        # Handle patterns like (02-frequency-bands.md)
-        html_content = html_content.replace(
-            f"({os.path.basename(filepath)})", f"(#ch{num})"
-        )
     return html_content
 
 
 def md_to_html(md_text):
-    """Convert markdown to HTML."""
     return markdown.markdown(
         md_text,
         extensions=["tables", "fenced_code", "codehilite", "toc"],
@@ -134,108 +124,114 @@ def md_to_html(md_text):
     )
 
 
-def build_toc():
-    """Build the table of contents HTML."""
+# ── TOC ──────────────────────────────────────────────────────────────────────
+
+def build_toc(platforms, components):
     toc = ""
     for part_name, ch_nums in PARTS:
         toc += f'<div class="toc-part"><h3>{part_name}</h3>\n'
         for num in ch_nums:
             for filepath, ch_num, title in CHAPTERS:
                 if ch_num == num:
-                    toc += f'<a href="#ch{num}"><span class="ch-num">{num}</span>{title}</a>\n'
+                    toc += f'<a href="#ch{ch_num}"><span class="ch-num">{ch_num}</span>{title}</a>\n'
         toc += "</div>\n"
-    # Platform profiles — collapsible
-    toc += '<div class="toc-part">\n'
-    toc += '<details class="toc-collapse">\n'
-    toc += '<summary><h3>Part 5 — Platform References</h3><span class="toc-count">' + str(len(PLATFORMS)) + ' platforms</span></summary>\n'
-    for cat_name, p_nums in PLATFORM_PARTS:
-        toc += f'<span style="display:block;color:var(--accent-dim);font-size:0.8rem;margin:0.5rem 0 0.2rem 0;">{cat_name}</span>\n'
-        for num in p_nums:
-            for filepath, p_num, title in PLATFORMS:
-                if p_num == num:
-                    toc += f'<a href="#p{num}"><span class="ch-num">&bull;</span>{title}</a>\n'
-    toc += '</details>\n'
-    toc += "</div>\n"
-    # Component references — collapsible
-    toc += '<div class="toc-part">\n'
-    toc += '<details class="toc-collapse">\n'
-    toc += '<summary><h3>Part 6 — Component References</h3><span class="toc-count">' + str(len(COMPONENTS)) + ' categories</span></summary>\n'
-    for filepath, c_num, title in COMPONENTS:
+
+    # Platforms — collapsible, grouped by category
+    toc += '<div class="toc-part">\n<details class="toc-collapse">\n'
+    toc += (
+        '<summary><h3>Part 5 — Platform References</h3>'
+        f'<span class="toc-count">{len(platforms)} platforms</span></summary>\n'
+    )
+    # Group entries by their parent directory name
+    groups = defaultdict(list)
+    for rel, p_num, title in platforms:
+        cat = os.path.basename(os.path.dirname(rel))
+        groups[cat].append((rel, p_num, title))
+    for cat_key, cat_label in _PLATFORM_CATS:
+        if cat_key not in groups:
+            continue
+        toc += (
+            f'<span style="display:block;color:var(--accent-dim);'
+            f'font-size:0.8rem;margin:0.5rem 0 0.2rem 0;">{cat_label}</span>\n'
+        )
+        for rel, p_num, title in groups[cat_key]:
+            toc += f'<a href="#p{p_num}"><span class="ch-num">&bull;</span>{title}</a>\n'
+    toc += '</details>\n</div>\n'
+
+    # Components — collapsible
+    toc += '<div class="toc-part">\n<details class="toc-collapse">\n'
+    toc += (
+        '<summary><h3>Part 6 — Component References</h3>'
+        f'<span class="toc-count">{len(components)} categories</span></summary>\n'
+    )
+    for rel, c_num, title in components:
         toc += f'<a href="#c{c_num}"><span class="ch-num">&bull;</span>{title}</a>\n'
-    toc += '</details>\n'
-    toc += "</div>\n"
+    toc += '</details>\n</div>\n'
     return toc
 
 
+# ── SECTION BUILDERS ─────────────────────────────────────────────────────────
+
 def build_chapters(base_dir):
-    """Build all chapter HTML content."""
-    chapters_html = ""
+    out = ""
     for filepath, ch_num, title in CHAPTERS:
-        full_path = os.path.join(base_dir, filepath)
-        md_content = read_chapter(full_path)
-        if not md_content:
+        md = read_chapter(os.path.join(base_dir, filepath))
+        if not md:
             print(f"  WARNING: Missing {filepath}")
             continue
-
-        # Convert markdown to HTML
-        html_content = md_to_html(md_content)
-
-        # Fix internal cross-references
-        html_content = fix_internal_links(html_content, ch_num)
-
-        # Wrap in chapter div with anchor
-        chapters_html += f'<section class="chapter" id="ch{ch_num}">\n'
-        chapters_html += html_content
-        chapters_html += "\n</section>\n\n"
+        html = fix_internal_links(md_to_html(md), ch_num)
+        out += f'<section class="chapter" id="ch{ch_num}">\n{html}\n</section>\n\n'
         print(f"  Built chapter {ch_num}: {title}")
+    return out
 
-    return chapters_html
 
-
-def build_platforms(base_dir):
-    """Build all platform profile HTML content."""
-    platforms_html = '<section class="chapter" id="platforms"><h1>Part 5 — Platform References</h1>'
-    platforms_html += '<p><em>Full integration profiles — RF links, firmware, payloads, SDKs, and gotchas. Vetted parts only.</em></p></section>\n'
-    for filepath, p_num, title in PLATFORMS:
-        full_path = os.path.join(base_dir, filepath)
-        md_content = read_chapter(full_path)
-        if not md_content:
+def build_platforms(base_dir, platforms):
+    out = (
+        '<section class="chapter" id="platforms">'
+        '<h1>Part 5 — Platform References</h1>'
+        '<p><em>Full integration profiles — RF links, firmware, payloads, SDKs, '
+        'and gotchas. Vetted parts only.</em></p></section>\n'
+    )
+    for filepath, p_num, title in platforms:
+        md = read_chapter(os.path.join(base_dir, filepath))
+        if not md:
             print(f"  WARNING: Missing {filepath}")
             continue
-        html_content = md_to_html(md_content)
-        platforms_html += f'<section class="chapter" id="p{p_num}">\n'
-        platforms_html += html_content
-        platforms_html += "\n</section>\n\n"
+        out += f'<section class="chapter" id="p{p_num}">\n{md_to_html(md)}\n</section>\n\n'
         print(f"  Built platform: {title}")
-    return platforms_html
+    return out
 
 
-def build_components(base_dir):
-    """Build all component reference HTML content."""
-    components_html = '<section class="chapter" id="components"><h1>Part 6 — Component References</h1>'
-    components_html += '<p><em>Deep dives on flight controllers, ESCs, motors, batteries, companion computers, radios, sensors, and complete ecosystems. Specs that matter, gotchas that don\'t show up in datasheets.</em></p></section>\n'
-    for filepath, c_num, title in COMPONENTS:
-        full_path = os.path.join(base_dir, filepath)
-        md_content = read_chapter(full_path)
-        if not md_content:
+def build_components(base_dir, components):
+    out = (
+        '<section class="chapter" id="components">'
+        '<h1>Part 6 — Component References</h1>'
+        '<p><em>Deep dives on flight controllers, ESCs, motors, batteries, companion '
+        'computers, radios, sensors, and complete ecosystems. Specs that matter, '
+        "gotchas that don't show up in datasheets.</em></p></section>\n"
+    )
+    for filepath, c_num, title in components:
+        md = read_chapter(os.path.join(base_dir, filepath))
+        if not md:
             print(f"  WARNING: Missing {filepath}")
             continue
-        html_content = md_to_html(md_content)
-        components_html += f'<section class="chapter" id="c{c_num}">\n'
-        components_html += html_content
-        components_html += "\n</section>\n\n"
+        out += f'<section class="chapter" id="c{c_num}">\n{md_to_html(md)}\n</section>\n\n'
         print(f"  Built component: {title}")
-    return components_html
+    return out
 
 
 def build_site(base_dir, output_dir):
     """Build the complete single-page HTML site."""
     print("Building The Drone Integration Handbook...")
 
-    toc = build_toc()
+    platforms  = _build_platforms(base_dir)
+    components = _build_components(base_dir)
+    print(f"  Discovered {len(platforms)} platforms, {len(components)} component pages")
+
+    toc = build_toc(platforms, components)
     chapters = build_chapters(base_dir)
-    platforms = build_platforms(base_dir)
-    components = build_components(base_dir)
+    plat_html  = build_platforms(base_dir, platforms)
+    comp_html  = build_components(base_dir, components)
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -1107,8 +1103,8 @@ body {{
 
 <div class="content">
 {chapters}
-{platforms}
-{components}
+{plat_html}
+{comp_html}
 </div>
 
 <footer class="site-footer">
