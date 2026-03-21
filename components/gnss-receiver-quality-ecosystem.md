@@ -142,3 +142,128 @@ Trimble (and Leica, Topcon, NovAtel) is a different product for a different prof
 Confusing them — deploying Emlid hardware and expecting Trimble VRS performance, or dismissing Trimble as overpriced when the use case genuinely benefits from its capabilities — costs accuracy, time, and sometimes careers.
 
 The right question is not "which is better?" but "what does my specific use case need, where will I deploy it, and what is the cost of being wrong?"
+
+---
+
+## Trimble RTX: The Third Paradigm
+
+Everything discussed so far — RTK, PPK, VRS networks, base stations — operates on the same fundamental principle: you need two receivers measuring the same satellites at the same time, and you use the difference to cancel errors. This is differential GNSS in all its forms.
+
+Trimble RTX is something different. It's **Precise Point Positioning (PPP)** delivered as a real-time commercial service. Understanding what makes it a different category — not just a premium version of RTK — is the last piece of the ecosystem picture.
+
+### What PPP Actually Is
+
+Standard differential GNSS (RTK, PPK) eliminates atmospheric and satellite errors by comparing two nearby receivers. The errors largely cancel because both receivers see the same atmosphere and the same satellite clock errors at the same time.
+
+PPP takes a different approach: instead of cancelling the errors by differencing, it **models and corrects every error source directly**. To do this, it uses:
+
+- **Precise satellite orbits** — computed from a global network of reference stations tracking every satellite continuously. Accurate to 2–3cm vs the broadcast ephemeris's 1–2m.
+- **Precise satellite clock corrections** — the clock in each satellite drifts; PPP models it to sub-nanosecond accuracy
+- **Global ionospheric model** — the density of charged particles in the ionosphere varies by location, time of day, and solar activity. PPP models it globally and applies per-receiver corrections
+- **Tropospheric model** — water vapor in the lower atmosphere delays signals in a way that varies with altitude, temperature, and humidity
+- **Phase bias corrections** — carrier phase measurements have systematic biases from receiver and satellite hardware that must be modelled to resolve integer ambiguities
+
+Trimble RTX computes all of these corrections continuously using its global network of approximately 120 reference stations and delivers them to your receiver via **L-band geostationary satellite** (no internet required) or internet/cellular.
+
+### The Fundamental Difference: No Base Station, No VRS, No Local Infrastructure
+
+This is what RTX unlocks that nothing else does.
+
+In any RTK or PPK workflow, you are constrained by:
+- The location of the nearest base station or CORS station
+- The quality of the cellular or radio link delivering corrections
+- The baseline length (which drives atmospheric modelling error)
+
+With Trimble RTX, you need only one receiver and a subscription. There is no base. There is no cellular dependency (satellite delivery). There is no baseline — the corrections are absolute, not relative to a local reference.
+
+**Practical implications:**
+- A pipeline survey crossing 200km of remote terrain: RTX works the entire corridor without moving a base station
+- An offshore vessel: RTX satellite delivery works at sea with no terrestrial infrastructure whatsoever
+- A BVLOS drone corridor survey where no base can be deployed: RTX is the correction source
+- International projects: RTX provides consistent absolute positioning in ITRF 2020 regardless of local datum infrastructure
+
+### The RTX Service Tiers
+
+Trimble RTX is not a single product — it's a family:
+
+| Service | Delivery | Accuracy | Convergence | Best For |
+|---|---|---|---|---|
+| **CenterPoint RTX Fast** | Satellite + Internet | 2cm horizontal, 4cm vertical | <1 minute (ProPoint) | US + W. Europe production survey |
+| **CenterPoint RTX Standard** | Satellite + Internet | 2cm horizontal, 4cm vertical | 15–30 min global | Global remote survey |
+| **ViewPoint RTX** | Satellite + Internet | 10cm | Minutes | GIS, asset inventory |
+| **RangePoint RTX** | Satellite + Internet | 40–50cm | Minutes | Agriculture, GIS |
+| **Trimble xFill / xFillx** | Satellite (backup) | 2cm (offset to local) | Near-instant (bridging) | RTK/VRS backup |
+
+**CenterPoint RTX Fast** covers the continental US and Western Europe with regional atmospheric models that dramatically reduce convergence time. In RTX Fast areas with a ProPoint receiver: converged and ready to survey in under one minute from cold start. That is comparable to RTK initialization time — without a base station.
+
+**CenterPoint RTX Standard** works globally, but without regional atmospheric models. Convergence takes 15–30 minutes. For a surveyor arriving at a new site in Central Africa or Central Asia, this is still a revolutionary capability — RTK simply cannot work there without local infrastructure.
+
+### Convergence: The Critical Limitation
+
+Unlike RTK, which snaps to fix status when integer ambiguities are resolved (discrete event), PPP convergence is a gradual process. Accuracy improves continuously as the receiver accumulates observations and the correction model refines.
+
+**Convergence sequence for CenterPoint RTX Standard (non-ProPoint receiver):**
+- 0–5 minutes: ~30cm accuracy
+- 5–10 minutes: ~15cm accuracy  
+- 10–15 minutes: ~8cm accuracy
+- 15–30 minutes: ~2–4cm accuracy (full specification)
+
+**For CenterPoint RTX Fast with ProPoint (US/W. Europe):**
+- 0–60 seconds: converged to 2cm specification
+- This is genuinely competitive with RTK initialization
+
+The important constraint: **if you lose corrections for an extended period (signal blockage, power cycle, receiver reset), you must reconverge**. Unlike RTK which can re-fix in seconds after a brief dropout, RTX reconvergence starts over. For this reason, Trimble integrates RTX with RTK workflows via xFill rather than positioning them as replacements.
+
+### xFill and xFillx: RTX as Insurance
+
+This is how most professionals actually encounter RTX in daily use — not as their primary correction source, but as the backup that keeps them working when RTK fails.
+
+**xFill (free, 5 minutes):** Built into Trimble Access. When the RTK radio or NTRIP cellular connection drops, xFill automatically engages Trimble RTX satellite corrections as a bridging solution. Accuracy is maintained at RTK-level (±2cm) for up to 5 minutes, offset to the local coordinate system of the RTK job. You keep working through the dead zone.
+
+**xFillx (with CenterPoint RTX subscription, unlimited):** Same as xFill but without the 5-minute limit. For surveying in areas with intermittent cellular coverage or radio range issues, xFillx turns what would be interruptions into seamless continues. The satellite signal is always there.
+
+This is the context behind the survey professional's quote: *"Don't mess around with RTK, go straight to CenterPoint RTX and be done with it."* For a specific class of remote, large-area work, they're right — the logistics of base station setup, radio range management, and cellular coverage simply aren't worth it when RTX can deliver 2cm accuracy globally with less setup overhead.
+
+### RTX vs RTK: The Honest Accuracy Comparison
+
+Peer-reviewed comparisons (including a 2025 study from the Italian Institute for Geophysics and Volcanology, which ran RTX and RTK simultaneously on the same antenna) show that:
+
+- **After full convergence:** RTX horizontal accuracy of 1.5–2cm and vertical of 2.5–4cm is consistently demonstrated. This matches RTK specification.
+- **Before full convergence:** RTX degrades gracefully (still useful at 5–10 minutes); RTK drops sharply from FIX to unreliable FLOAT.
+- **Under canopy / near buildings:** Both degrade. RTX degrades due to signal blockage affecting the global ionospheric model update; RTK degrades due to multipath corrupting carrier phase tracking. Neither has a clear advantage here — ProPoint helps both RTX and RTK on capable receivers.
+- **At long range:** RTX is better. A 100km baseline RTK is not viable; RTX works anywhere.
+- **On kinematic platforms (drones, vehicles):** Both work. RTX initialization on a moving platform takes longer than stationary; RTK can fix while moving if corrections are available.
+
+### What RTX Cannot Do
+
+RTX is not a replacement for RTK in all scenarios:
+
+**Relative accuracy missions:** If you need two points to agree with each other to sub-centimeter precision, RTK (where both points are measured relative to the same base) is more internally consistent than RTX (where both points are absolute but carry their own independent 1.5–2cm uncertainty).
+
+**Machine control:** Construction machine control applications require fast RTK lock, continuous operation, and integration with machine manufacturer systems. RTX convergence latency and the requirement for compatible Trimble receivers makes it impractical for most machine control.
+
+**Canopy environments:** Neither RTX nor RTK is reliable under heavy canopy. If canopy performance is the critical requirement, Trimble ProPoint hardware (R12i) with either correction source is the answer, not the correction source itself.
+
+**Non-Trimble receivers:** RTX is Trimble-proprietary. The satellite-delivered RTX corrections are encrypted for Trimble hardware. Internet-delivered RTX is available via NTRIP to third-party receivers at lower accuracy tiers, but the full CenterPoint RTX Fast service requires Trimble hardware. This is not a hidden fee — it's the business model.
+
+### The Competitive Landscape
+
+Trimble RTX pioneered commercial PPP-as-a-service but is no longer alone:
+
+| Service | Provider | Delivery | Accuracy | Coverage |
+|---|---|---|---|---|
+| CenterPoint RTX | Trimble | L-band + internet | 2cm + fast convergence | Global |
+| TerraStar-C PRO | Hexagon/NovAtel | L-band + internet | 2cm | Global |
+| TerraStar-X | Hexagon/NovAtel | L-band + internet | 2cm + fast convergence | Global |
+| Skylark | Swift Navigation | Internet | 2–5cm | Growing |
+| Atlas | Hemisphere | L-band | 2–4cm | Global |
+| CSRS-PPP | Natural Resources Canada | Internet (post-process only) | 1cm (post) | Global (free) |
+| SSR corrections (IGS-RTS) | IGS | Internet | 5–10cm | Global (free) |
+
+The free IGS real-time streams are worth knowing: accessible via NTRIP, global coverage, multi-constellation. Accuracy is 5–10cm after convergence — fine for GIS and positioning, not survey-grade. For commercial survey work, CenterPoint RTX or TerraStar-C PRO are the established options.
+
+### Where This Leaves the Drone Operator
+
+For drone base station GPS in remote locations where CORS coverage is inadequate for PPK — RTX satellite delivery to a Trimble receiver used as a base station gives you a precisely-positioned base anywhere on Earth. Set up the Trimble base, let it converge for 30 minutes (or 1 minute in RTX Fast regions), use it as your RTK base for the drone mission. You've effectively brought a known survey point to any remote location with no pre-existing infrastructure.
+
+This is one of the practical workflows that separates serious remote survey capability from what a budget GNSS setup can achieve — and it requires the full Trimble ecosystem (receiver + RTX subscription + Trimble Access) to work as described.
