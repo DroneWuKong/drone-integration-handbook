@@ -40,6 +40,8 @@ COMPONENTS = [
     ("components/counter-uas.md", 608, "Counter-UAS"),
     ("components/propulsion-non-electric.md", 609, "Non-Electric Propulsion"),
     ("components/platforms-global.md", 611, "Non-US Platforms"),
+    ("components/lidar-mapping-payloads.md", 612, "LiDAR & Mapping Payloads"),
+    ("components/openhd-implementation-guide.md", 613, "OpenHD — Digital Video Link"),
 ]
 
 PLATFORMS = [
