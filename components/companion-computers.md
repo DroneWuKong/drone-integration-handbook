@@ -228,6 +228,48 @@ multi-firmware FC support).
    detection models, but it handles classification, tracking,
    and sensor fusion at the edge.
 
+7. **For long-range telemetry and fleet management without onboard AI:**
+   DroneEngage on RPI Zero W. 42g complete, cellular, swarm-capable,
+   air-gap deployable. If the requirement is BVLOS telemetry and
+   multi-drone coordination rather than onboard inference, this is
+   the right answer.
+
+---
+
+## DroneEngage — Cellular Companion Software
+
+DroneEngage is not a hardware platform — it's companion computer *software* that turns a Raspberry Pi into a cloud-connected ground link. Developed under the ArduPilot umbrella, it runs alongside any ArduPilot or PX4 flight controller and provides cellular telemetry, video streaming, and swarm management over 4G/LTE/5G.
+
+It answers the question of what software to run on a generic Raspberry Pi when the primary requirement is long-range telemetry and fleet management rather than onboard AI.
+
+### Architecture
+
+A Raspberry Pi connects to the FC over UART or USB, connects to the internet via a USB LTE modem, and runs the DroneEngage agent. From that point the drone is reachable from any browser. The web client handles MAVLink telemetry, gamepad RC, video feeds, geofencing, and swarm coordination. DroneEngage also forwards MAVLink transparently over UDP to Mission Planner or QGroundControl — no change to existing GCS workflows.
+
+### Weight
+
+| Config | Total weight | Capability |
+|--------|-------------|------------|
+| RPI Zero W + LTE modem | **42g** | Full telemetry, cloud GCS, geofencing, swarm |
+| RPI Zero 2 W + modem + camera | **52g** | Above + live video stream |
+| RPI 4 + modem | ~90g | Multi-camera, heavier compute |
+
+42 grams for unlimited-range telemetry, independent geofencing, RC blocking, and swarm coordination is competitive with dedicated telemetry radios — and those don't include cloud GCS or swarm management.
+
+### Key Features
+
+**Air-gap server**: fully self-hosted backend. All drone↔GCS traffic routes through a local Raspberry Pi 4 at the GCS site rather than ArduPilot's cloud. Identical protocol and security model. Viable for contested environments, classified programs, and field sites without reliable internet.
+
+**RC Blocking / TX Freeze**: local field pilot hardware override; TX Freeze holds current throttle for long-range cruise without active stick input.
+
+**Swarm operations**: hierarchical formation management, synchronized missions, single-interface multi-drone control. Developer guide documents the swarm logic — maps directly to CBBA task allocation with a broadcast command layer on top.
+
+**GPS injection**: companion can inject GNSS corrections into the FC — relevant for Hangar's preflight RTK workflow.
+
+### Andruav (Android Predecessor)
+
+Andruav is the original version: an Android phone as companion computer, connected to the FC over USB serial. Phone provides GPS, FPV camera, 4G telemetry, and SMS fallback control. Still maintained; new development is on DroneEngage. Useful for rapid prototyping where Pi + LTE modem overhead isn't justified.
+
 ---
 
 *Last updated: March 2026*

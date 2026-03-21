@@ -314,4 +314,90 @@ reflected back into amplifiers causes permanent damage.
 
 ---
 
+## Meshtastic — LoRa Mesh as a Telemetry Backbone
+
+Meshtastic is an open-source project that turns cheap LoRa radios (typically ESP32-based, sub-$30) into a self-healing encrypted mesh network. It was designed for off-grid human communication, but the architecture maps directly onto drone telemetry requirements for GPS-denied or RF-contested operations.
+
+### Why It Matters for Drones
+
+Commercial drone links (GHST, ELRS, Crossfire) are point-to-point. When the GCS moves out of line-of-sight or the primary link is jammed, you lose everything. Meshtastic offers a different failure mode: packets route through whatever mesh nodes are still alive. A swarm of drones, each carrying a Meshtastic node, effectively forms its own relay network — each aircraft extending range for every other aircraft and the GCS.
+
+Bandwidth is the constraint. Meshtastic at LoRa long-range settings moves roughly 1–5 kbps. That's enough for MAVLink heartbeat, GPS position, battery voltage, and flight mode — the minimum viable telemetry set — but not enough for video, high-rate sensor data, or fast command loops. Think of it as the backup nervous system, not the primary one.
+
+### AkitaEngineering Pattern (DroneBridge32 + Meshtastic)
+
+The AkitaEngineering Meshtastic-Integration-for-DroneBridge32-Swarm project (GitHub, GPL-3.0) demonstrates the integration architecture: Arduino C++ on DroneBridge32 parses MAVLink from the FC, encrypts the telemetry payload with AES, and transmits over Meshtastic. Python ground station plugins receive, decrypt, display, and send control commands back. The project also implements geofencing at the mesh layer (drone enforces a fence independent of FC), dynamic channel switching based on link quality, and emergency landing commands that propagate through the mesh even under degraded conditions.
+
+The code is a reference implementation, not production firmware — no versioned releases, minimal testing. But the architectural patterns are sound and directly applicable:
+
+- **MAVLink-over-Meshtastic bridge**: parse MAVLink on the embedded side, serialize the essential fields, transmit over LoRa, reassemble on the GCS side and re-inject into Mission Planner or QGroundControl via UDP.
+- **Mesh-layer geofencing**: the drone enforces its fence using its own GPS + the received boundary definition, independent of FC-level fence. This survives link degradation.
+- **Swarm broadcast commands**: Meshtastic's broadcast addressing lets a single GCS message reach all nodes in the mesh simultaneously — useful for emergency stop, RTL, or mode change across a swarm.
+- **Dynamic channel switching**: if interference is detected on the primary channel, both sides coordinate a channel hop through a pre-agreed fallback sequence.
+
+### Hardware
+
+Any Meshtastic-compatible LoRa hardware works. The most drone-relevant options:
+
+| Device | Weight | Form factor | Notes |
+|--------|--------|-------------|-------|
+| LilyGo T-Beam | ~35g | Dev board | GPS onboard — useful for mesh relay nodes |
+| Heltec LoRa 32 | ~8g | Compact | No GPS, pure mesh relay |
+| RAK WisBlock | ~5–15g | Modular | Cleanest integration option for embedded builds |
+| TTGO LoRa32 | ~10g | Compact | Common, well-supported |
+
+All run at 915 MHz (US) or 868 MHz (EU). LoRa is ISM band — no license required, but power limits apply. At maximum legal EIRP, reliable range in open terrain is 5–15 km depending on antenna and terrain.
+
+### Integration Pattern for Wingman/Command
+
+For a Wingman swarm deployment, the recommended architecture is a **dual-link stack**: GHST (or ELRS) as the primary high-bandwidth link for normal operations, Meshtastic as the secondary low-bandwidth link for telemetry heartbeat and emergency commands. The Meshtastic node on each drone runs independently of the primary link — it has its own power rail, its own CPU, and its own antenna. A primary link failure leaves the mesh intact.
+
+The MAVLink-over-Meshtastic bridge runs as a process on the companion computer (APB or VOXL 2), feeding MAVLink telemetry from the FC to the Meshtastic serial interface, and forwarding received commands from the mesh back to the FC.
+
+---
+
+## DroneEngage — Cellular Telemetry at Scale
+
+DroneEngage is the ArduPilot project's cloud companion software, running on Raspberry Pi and providing unlimited-range telemetry, video streaming, and fleet management over 4G/LTE/5G. It is the Linux successor to Andruav (the Android companion app) and is actively developed under the ArduPilot umbrella.
+
+### What It Does
+
+A Raspberry Pi connected to an ArduPilot or PX4 flight controller via UART/USB becomes a DroneEngage unit. The Pi connects to the internet via a USB LTE modem or HAT, and from that point the drone is reachable from anywhere with a browser. The web client provides a full ground control station: MAVLink telemetry, gamepad control, video streaming, geofencing, and swarm management.
+
+Key capabilities:
+
+- **Unlimited telemetry range** — the link goes through the internet, so range is only limited by cellular coverage. Relevant for BVLOS operations.
+- **MAVLink forwarding** — DroneEngage forwards MAVLink transparently to Mission Planner, QGroundControl, or any UDP endpoint. No change to existing GCS workflows.
+- **Video streaming** — supports Raspberry Pi cameras and USB cameras. Stream from one or multiple cameras simultaneously.
+- **Swarm operations** — control multiple drones from a single interface with synchronized missions and hierarchical formation management.
+- **RC Blocking / TX Freeze** — a local field pilot can override remote control; TX Freeze holds throttle position for safe long-range cruise without active stick input.
+- **Independent geofencing** — enforced at the companion computer level, independent of the FC's fence logic. Survives FC configuration changes.
+- **Air-gap server** — self-hostable backend for operations where cloud dependency is unacceptable (contested environments, classified sites, comms-restricted areas).
+
+### Hardware
+
+DroneEngage runs on Raspberry Pi Zero W, Zero 2 W, Pi 3, 4, or 5. Weight matters:
+
+| Platform | Weight (with LTE modem) | Use case |
+|---|---|---|
+| RPI Zero W | ~42g complete | Telemetry-only, minimal payload budget |
+| RPI Zero 2 W + camera | ~52g | Telemetry + single camera stream |
+| RPI 3/4 | ~85–95g | Multi-camera, heavier compute tasks |
+
+The 42g complete-system figure for the Zero W is notable — it's competitive with dedicated telemetry radios when you factor in that you're also getting cloud connectivity, geofencing, and swarm management in the same package.
+
+### Andruav (Legacy Android Path)
+
+Andruav is the predecessor: an Android phone running as a companion computer, connected to the FC over USB serial. The phone provides GPS, camera (FPV), cellular telemetry, and SMS-based control as a fallback. It's simpler to deploy for rapid prototyping — tape a phone to the airframe, connect USB, install the app — but less capable than DroneEngage for serious operations. Active development has shifted to DroneEngage; Andruav is maintained for existing deployments.
+
+### Air-Gap Deployment
+
+For operations where cloud routing is off the table, DroneEngage supports a self-hosted server that can run on a Raspberry Pi 4 at the GCS site. All drone-to-GCS traffic routes through this local server rather than ArduPilot's cloud infrastructure. The protocol and security model are identical — the only change is the server endpoint. This makes DroneEngage viable for classified programs, contested environments, and locations with unreliable internet.
+
+### Integration with Command
+
+DroneEngage's swarm logic and its air-gap server are directly relevant to Command's architecture. The hierarchical swarm formation model (lead drone + subordinates, commands propagate through the tree) maps to CBBA task allocation with a broadcast command layer on top. The air-gap server pattern is exactly what Command needs for field-deployable C&C without cloud dependency. The DroneEngage communication protocol is documented (see ArduPilot cloud docs) and could serve as a reference or direct integration point for Command's GCS-to-swarm link.
+
+---
+
 *Last updated: March 2026*
