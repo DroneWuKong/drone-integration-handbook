@@ -401,3 +401,62 @@ DroneEngage's swarm logic and its air-gap server are directly relevant to Comman
 ---
 
 *Last updated: March 2026*
+
+---
+
+## OpenHD — Open-Source Digital Video Link
+
+OpenHD is the open-source answer to DJI O3, Walksnail Avatar, and HDZero. Instead of proprietary hardware running a proprietary protocol, it puts commodity RTL8812AU WiFi adapters into a one-way broadcast mode (wifibroadcast) that behaves like an analog video transmitter — no association handshake, no ACK, just raw packets into the air. The result is a long-range digital HD video link built from hardware you can source on AliExpress for under $50 total.
+
+The suite transmits HD video, two-way UAV telemetry, two-way OpenHD telemetry (settings, range adjustments, channel changes, wifi modulation), and RC control signals — all multiplexed over a single RF channel, using MAVLink for the telemetry layer. The world record stands at 55km on a fixed-wing platform.
+
+### Why It Matters
+
+Commercial HD video links (DJI O3, HDZero, Walksnail) cost $150–400 for the air unit alone, lock you into specific cameras, and ship from China. OpenHD costs $15–30 for the air unit, works with any CSI camera your SBC supports, and is open source down to the driver level. For teams that need HD video over ranges where commercial links won't reach, or who can't use Chinese-manufactured hardware, OpenHD is the practical path.
+
+It's also the only digital FPV link where you can inspect and modify every layer of the stack — from the WiFi driver to the video codec to the OSD renderer.
+
+### How Wifibroadcast Works
+
+Standard WiFi requires both ends to associate before exchanging data. That association process adds latency and creates a hard cliff at range — when signal degrades below the association threshold, the link drops entirely. Wifibroadcast bypasses association entirely. The air unit injects raw 802.11 frames directly into the driver; the ground unit captures all frames promiscuously regardless of source. This is the same transmission model as analog video: signal degrades gracefully with distance rather than falling off a cliff. FEC (forward error correction) across multiple packets replaces the ACK mechanism, so isolated packet loss doesn't corrupt the stream.
+
+### Hardware Stack
+
+**Air unit (minimum):**
+Raspberry Pi Zero 2 (not the original Zero 1 — not supported), a dedicated BEC for the WiFi adapter, and a supported camera with the 22-pin type B CSI cable. The WiFi adapter must be soldered to the SBC's USB pads — vibration will disconnect any plug-in connection.
+
+**Air unit (better):**
+Raspberry Pi CM4 with Ochin CM4 carrier board, plus a supported WiFi card. The CM4 enables dual camera, better thermal performance, and lower latency.
+
+**Ground station:**
+A laptop with SecureBoot disabled, plus a supported WiFi adapter. X86 performance matters — faster hardware means lower decode latency. For lowest latency ground decode, a Radxa Rock 5 is the current recommendation — it hardware-encodes H.265 in real time.
+
+**WiFi adapters:**
+
+Supported chipsets: RTL8812AU, RTL8814AU, RTL8811AU, RTL8812BU, RTL8812EU. Top picks: ALFA AWUS036ACH (500mW, 8812AU, 2× RP-SMA), ASUS USB-AC56 (500mW, 8812AU, widely available), "Taobao card" (generic 8812AU, 500mW, 2× u.fl). Most users prefer 5.8GHz — cleaner spectrum than 2.4GHz and no interference with 2.4GHz RC transmitters. 5.8GHz does not offer better penetration but has cleaner channels in most operating environments.
+
+The BLM8812EU is the newest and most capable chipset — higher sensitivity and better power output — but has no FCC/CE certification so import and use are at the operator's discretion.
+
+### Latency
+
+Lowest latency requires OpenHD custom hardware (purpose-built SBC + camera combination), which can cut latency roughly in half compared to standard configurations. Second-lowest is achievable with the Radxa Rock5 on both air and ground. RPi Zero 2 builds have higher latency — usable for FPV but not competitive with commercial HD systems on this metric.
+
+Practical glass-to-glass latency numbers for RPi-based builds: 80–150ms depending on resolution, codec, and SBC. Custom hardware targets sub-40ms.
+
+### MAVLink Integration
+
+OpenHD passes MAVLink telemetry transparently over the wifibroadcast link. The air unit connects to the FC via UART (same as any telemetry radio — standard MAVLink port configuration). On the ground, QOpenHD receives and displays the telemetry, and also forwards the MAVLink stream over UDP so Mission Planner or QGroundControl can connect simultaneously. This makes OpenHD a functional telemetry radio replacement, not just a video link.
+
+### Integration with Wingman / Buddy
+
+QOpenHD's Android app receives the ground station video and telemetry stream over WiFi or USB. For Wingman deployments, this means:
+
+- Buddy can consume the MAVLink UDP stream from the OpenHD ground station without any modification to the existing telemetry pipeline — it connects as a second MAVLink client on the same forwarded stream.
+- The video stream can be pulled via RTSP or UDP from the ground station and displayed in Buddy's live view alongside the GCS data.
+- OpenHD's RC passthrough can operate alongside dedicated GHST/ELRS links — video and telemetry over OpenHD, high-rate control commands over the primary link.
+
+### Range Realities
+
+55km is the record under ideal conditions — fixed-wing platform, good antennas, line of sight, quiet spectrum. Realistic operational range for a typical build: 5–20km depending on obstructions, antenna gain, and spectrum cleanliness. 2.4GHz gives better obstruction penetration at shorter range; 5.8GHz gives cleaner channels at longer range. Both require line of sight for the extreme numbers.
+
+*See also: [OpenHD Implementation Guide](/components/openhd-implementation-guide) — step-by-step from hardware to first flight*
