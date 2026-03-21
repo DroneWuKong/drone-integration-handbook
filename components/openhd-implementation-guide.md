@@ -1,6 +1,6 @@
 # OpenHD Implementation Guide
 
-OpenHD is an open-source digital HD video link built on wifibroadcast — commodity RTL8812AU WiFi adapters repurposed as a one-way broadcast video transmitter. This guide takes you from an empty bench to a working long-range video link with MAVLink telemetry passthrough.
+OpenHD is an open-source digital HD video link built on wifibroadcast — commodity WiFi adapters repurposed as a broadcast video transmitter. Video is one-way broadcast (no association, no ACK — degrades gracefully like analog). Telemetry, settings, and RC control are bidirectional. The link supports encryption with verification. This guide takes you from an empty bench to a working long-range video link with MAVLink telemetry passthrough.
 
 **Difficulty:** Moderate — requires Linux comfort, soldering, and MAVLink configuration  
 **Time to first link:** 2–4 hours  
@@ -20,7 +20,7 @@ Two nodes — Air and Ground — each running the OpenHD software stack on a Lin
              [CSI Cam]                                           [Live Video]
 ```
 
-No network router. No association. No ACK. One-way broadcast with FEC.
+No network router. No association. No ACK. Video is one-way broadcast with FEC. Telemetry and settings are bidirectional. OpenHD also supports dual cameras with picture-in-picture, low-latency RC control via USB joystick, and link encryption.
 
 ---
 
@@ -31,7 +31,7 @@ No network router. No association. No ACK. One-way broadcast with FEC.
 | Item | Notes | ~Cost |
 |------|-------|-------|
 | Raspberry Pi Zero 2 W | Air unit. **Not** Zero 1 — not supported | $15 |
-| 2× ASUS USB-AC56 or ALFA AWUS036ACH | One for air, one for ground (RTL8812AU) | $20–30 each |
+| 2× ASUS USB-AC56 or ALFA AWUS036ACH | One for air, one for ground (RTL8812AU, 500mW). For best performance: BLM8812EU (800mW+, no FCC/CE cert). | $20–30 each |
 | Arducam or RPi HQ Camera | CSI, supported by OpenHD drivers | $25–50 |
 | 22-pin type B CSI cable | Pi Zero uses this, not standard 15-pin | $3 |
 | 5V/3A BEC for WiFi adapter | Dedicated power — mandatory | $5 |
@@ -61,7 +61,7 @@ OpenHD custom hardware (purpose-built SBC + camera combination). Check the proje
 ## Step 1: Flash Air Image
 
 1. Download the latest OpenHD Evo image from [openhdfpv.org/downloads](https://openhdfpv.org/downloads). Select the image matching your SBC (Pi Zero 2, CM4, Rock5, or x86).
-2. Flash to SD card (Pi Zero 2) or eMMC (CM4 via Ochin) using Balena Etcher or `dd`.
+2. Flash to SD card (Pi Zero 2) or eMMC (CM4 via Ochin) using the **OpenHD ImageWriter** (recommended — available at openhdfpv.org/downloads) or Balena Etcher.
    - CM4/Ochin: enter flash mode by holding the button while connecting USB-C power. Flash is slow — do not disconnect.
 3. First boot takes several minutes. The SBC reboots multiple times during initial config. This is normal.
 
@@ -126,7 +126,7 @@ Enable both on air and ground if your adapters support it (RTL8812AU and 8814AU 
 Set per local regulations. Higher power = longer range. Configure in SOFTWARE SETUP → TX POWER.
 
 **RX Diversity (ground):**  
-You can connect multiple WiFi adapters to the ground station for receive diversity. Keep adapters same chipset and manufacturer. Not recommended for new users.
+You can connect multiple WiFi adapters to the ground station for receive diversity — OpenHD picks the best signal per packet. Keep adapters same chipset and same manufacturer. Do not mix RTL8812AU with RTL8812BU or different brands. Not recommended for new users — start with a single adapter.
 
 ---
 
