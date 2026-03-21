@@ -260,6 +260,92 @@ Before buying new antennas, check the ones you have:
 
 ---
 
+## Long-Range Antenna Setups (What Actually Gets You 20km)
+
+When you see someone post a 20km flight on a wifibroadcast system
+like OpenHD, they're not using stock dipoles. They're using a
+high-gain directional antenna on the ground pointed at the drone,
+usually with an antenna tracker. The drone side stays omni.
+
+This is the same principle as TV broadcasting. The TV tower has
+a high-power omnidirectional transmitter. Your house has a
+directional antenna (the dish, the yagi on the roof) pointed at
+the tower. One side broadcasts everywhere, the other side listens
+in one direction very well. Wifibroadcast systems work identically.
+
+### Stock Antennas: Set Realistic Expectations
+
+| Setup | Ground Antenna | Air Antenna | Realistic Range |
+|-------|---------------|-------------|-----------------|
+| Stock both ends | Dipole 2-3 dBi | Dipole 2-3 dBi | 1-3 km |
+| Upgraded ground | Patch 8-12 dBi | Dipole 2-3 dBi | 5-8 km |
+| Directional + tracker | Yagi 12-14 dBi | Cloverleaf 3 dBi | 8-15 km |
+| High-gain + tracker | Panel array 16-18 dBi | Pagoda 4 dBi | 10-20 km |
+| Extreme | Grid/dish 20-24 dBi | Omni 3 dBi | 20 km+ |
+
+**The math is simple.** Every 6 dB of additional antenna gain
+roughly doubles your range. Going from a stock dipole (3 dBi)
+to a panel array (18 dBi) adds 15 dB — that's about 5.6× the
+range. 3 km × 5.6 = ~17 km.
+
+### Air Side: Stay Omnidirectional
+
+The drone changes orientation constantly — banks, turns, pitches.
+A directional antenna on the drone would lose link every time it
+turns away from you. Use omnidirectional antennas:
+
+- **Cloverleaf / Skew-Planar (RHCP):** 2-3 dBi, circular
+  polarized. Better multipath rejection than linear dipoles.
+  The standard upgrade from stock.
+- **Pagoda (RHCP):** 3-5 dBi, still mostly omni. Slight
+  gain improvement over cloverleaf.
+- **Stock dipole:** Works fine under 2 km. Replace for anything
+  serious.
+
+Use **RHCP (right-hand circular polarization)** on both ends.
+Circular polarization rejects ground reflections (multipath) much
+better than linear. Both air and ground must match — RHCP air
+with RHCP ground, not RHCP with LHCP.
+
+### Ground Side: This Is Where Range Comes From
+
+| Antenna | Gain | Beamwidth | Needs Tracker? | Notes |
+|---------|------|-----------|----------------|-------|
+| Stock dipole | 2-3 dBi | 360° omni | No | Default. Fine for close-in. |
+| Patch panel (flat) | 8-12 dBi | 60-90° | No | Point toward flying area. Good first upgrade. |
+| Yagi | 10-14 dBi | 30-50° | Recommended | Classic directional. Cheap, effective. |
+| Helical (RHCP) | 12-16 dBi | 30-40° | Yes | Circular polarized — best for wifibroadcast. |
+| Panel array (2×2 / 4×4) | 14-18 dBi | 20-30° | Yes | High gain, manageable size. Popular for long range. |
+| Grid / parabolic dish | 18-24 dBi | 10-15° | Must track | Extreme range. Very narrow beam — loses link without tracker. |
+
+### Antenna Trackers
+
+Once your ground antenna exceeds ~10 dBi, the beam is narrow
+enough that you need to physically point it at the drone. An
+antenna tracker does this automatically using the drone's GPS
+position from the telemetry stream.
+
+| Tracker | Protocol | Cost | Notes |
+|---------|----------|------|-------|
+| u360gts | MAVLink / LTM / GPS | $30-60 DIY | Open-source, Arduino. Most popular in long-range FPV. Uses GPS from telemetry to compute bearing + elevation. |
+| YAAPU AAT | MAVLink via ELRS/Crossfire | $40-80 DIY | Runs on OpenTX/EdgeTX radio. Yaapu telemetry script drives servos. |
+| Commercial (various) | Various | $200-500 | Pre-built. Less common — most long-range pilots DIY. |
+
+### Dual Antenna Diversity (Best Practice)
+
+Run two antennas on the ground: one omni + one directional on a
+tracker. The receiver picks the strongest signal per packet.
+
+This gives you reliable close-range coverage (omni catches the
+drone overhead, behind you, during takeoff/landing) AND long-range
+capability (directional catches it at 15km). No switching, no
+manual pointing for nearby flights.
+
+Most wifibroadcast systems (OpenHD, Ruby) support antenna
+diversity natively — plug in two adapters and it works.
+
+---
+
 ## Next
 
 - **Chapter 4: Link Budgets Without the Math** — estimating
