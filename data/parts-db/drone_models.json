@@ -411,6 +411,9 @@
       "funding": {
         "funding_source": "Public (EPA: SAF)",
         "note": "Safran \u2014 \u20ac19B annual revenue"
+      },
+      "gcs": {
+        "gcs": "Safran GCS (containerized)"
       }
     },
     "thermal_sensor": "Euroflir 410 EO/IR/LRF gimbal (Safran)"
@@ -482,6 +485,9 @@
       "funding": {
         "funding_source": "Private (Novadem SAS)",
         "note": "French SME. Acquired by Hanwha Aerospace France 2024."
+      },
+      "gcs": {
+        "gcs": "Novadem handheld controller"
       }
     },
     "thermal_sensor": "Uncooled micro thermal (integrated)"
@@ -565,6 +571,10 @@
         "funding_source": "VC",
         "total_funding_usd": 100000000,
         "note": "Portuguese startup. \u20ac100M+ raised."
+      },
+      "gcs": {
+        "gcs": "Tekever AtlantikOS (cloud-based)",
+        "note": "Maritime C2."
       }
     },
     "thermal_sensor": "EO/IR + maritime radar"
@@ -768,6 +778,9 @@
       "funding": {
         "funding_source": "VC",
         "note": "Dutch startup. Undisclosed funding."
+      },
+      "gcs": {
+        "gcs": "DeltaQuad GCS (QGroundControl-based)"
       }
     },
     "thermal_sensor": "FLIR Boson 640 or Wiris Pro (modular)"
@@ -1212,6 +1225,10 @@
       "production": {
         "manufacturing_country": "Ukraine",
         "first_delivery_year": 2022
+      },
+      "gcs": {
+        "gcs": "UkrSpecSystems GCS",
+        "note": "Field-portable laptop."
       }
     },
     "thermal_sensor": "EO/IR + laser designator"
@@ -1613,6 +1630,10 @@
       "funding": {
         "funding_source": "Private (WB Group)",
         "note": "Polish defense company. Privately held."
+      },
+      "gcs": {
+        "gcs": "WB Group GCS tablet",
+        "note": "FlyEye: portable. Warmate: firing tablet."
       }
     },
     "thermal_sensor": "EO/IR day/night (FlyEye: stabilized; Warmate: seeker)"
@@ -1680,6 +1701,9 @@
       "production": {
         "manufacturing_country": "Czech Republic",
         "first_delivery_year": 2021
+      },
+      "gcs": {
+        "gcs": "Primoco GCS (containerized)"
       }
     },
     "thermal_sensor": "EO/IR + SAR + SIGINT (modular)"
@@ -1946,6 +1970,10 @@
       "funding": {
         "funding_source": "Private (Baykar family-owned)",
         "note": "No external VC. Revenue-funded. Estimated $2B+ annual revenue."
+      },
+      "gcs": {
+        "gcs": "Baykar GCS (proprietary)",
+        "note": "Containerized ground station."
       }
     }
   },
@@ -2021,6 +2049,10 @@
       "funding": {
         "funding_source": "Private (Baykar)",
         "note": "Same parent."
+      },
+      "gcs": {
+        "gcs": "Baykar GCS (proprietary)",
+        "note": "Multi-screen C2."
       }
     },
     "thermal_sensor": "ASELSAN CATS EO/IR + AESA radar"
@@ -2229,6 +2261,9 @@
       ],
       "funding": {
         "funding_source": "State-owned (Turkish Aerospace Industries)"
+      },
+      "gcs": {
+        "gcs": "TAI GCS (proprietary)"
       }
     },
     "thermal_sensor": "ASELSAN CATS EO/IR + SAR"
@@ -2308,6 +2343,10 @@
       ],
       "funding": {
         "funding_source": "State-affiliated (STM Defence Technologies)"
+      },
+      "gcs": {
+        "gcs": "STM tablet controller",
+        "note": "Swarm-capable."
       }
     },
     "thermal_sensor": "EO/IR AI vision (autonomous target recognition)"
@@ -2454,6 +2493,10 @@
       "funding": {
         "funding_source": "Public (TASE: ESLT)",
         "note": "Elbit Systems \u2014 $5.5B annual revenue"
+      },
+      "gcs": {
+        "gcs": "Elbit TORCH GCS",
+        "note": "Tactical handheld + tablet."
       }
     },
     "thermal_sensor": "Stabilized miniature EO/IR day/night"
@@ -2526,6 +2569,9 @@
       ],
       "funding": {
         "funding_source": "Public (TASE: ESLT)"
+      },
+      "gcs": {
+        "gcs": "Elbit Legion-X autonomy"
       }
     }
   },
@@ -2607,6 +2653,9 @@
       "funding": {
         "funding_source": "State-owned (IAI)",
         "note": "IAI \u2014 $4.5B annual revenue"
+      },
+      "gcs": {
+        "gcs": "IAI Harop Control Unit"
       }
     },
     "thermal_sensor": "Harop: EO/IR seeker. Harpy: anti-radiation homing"
@@ -2677,6 +2726,9 @@
       },
       "funding": {
         "funding_source": "Rafael subsidiary (acquired 2022)"
+      },
+      "gcs": {
+        "gcs": "Aeronautics Orbiter GCS"
       }
     },
     "thermal_sensor": "Stamped EO/IR (Orbiter 3/4), IR seeker (Orbiter 1K LM)"
@@ -2766,6 +2818,10 @@
           "Lockheed Martin"
         ],
         "valuation": "$500M+ (2024)"
+      },
+      "gcs": {
+        "gcs": "XTEND XOS (human-machine teaming)",
+        "note": "Gesture/VR control."
       }
     },
     "thermal_sensor": "EO/IR (modular, human-machine teaming)"
@@ -2975,6 +3031,9 @@
       "production": {
         "manufacturing_country": "China",
         "first_delivery_year": 2011
+      },
+      "gcs": {
+        "gcs": "AVIC GCS (containerized shelter)"
       }
     },
     "thermal_sensor": "EO/IR gimbal + LRF + SAR"
@@ -3047,6 +3106,9 @@
       "production": {
         "manufacturing_country": "China",
         "first_delivery_year": 2014
+      },
+      "gcs": {
+        "gcs": "CASC GCS (containerized)"
       }
     },
     "thermal_sensor": "EO/IR gimbal + SAR"
@@ -3299,6 +3361,9 @@
       "funding": {
         "funding_source": "Public (KRX: 047810)",
         "note": "Korea Aerospace Industries"
+      },
+      "gcs": {
+        "gcs": "KAI GCS (military containerized)"
       }
     },
     "thermal_sensor": "EO/IR + SAR + SIGINT"
@@ -3377,6 +3442,10 @@
       "funding": {
         "funding_source": "Public (BSE/NSE IPO 2023)",
         "note": "India's largest military drone maker."
+      },
+      "gcs": {
+        "gcs": "ideaForge GCS (tablet + laptop)",
+        "note": "Indian military standard."
       }
     },
     "thermal_sensor": "EO/IR stabilized gimbal"
@@ -3514,6 +3583,10 @@
       "funding": {
         "funding_source": "Private (SYPAQ Systems)",
         "note": "Australian SME"
+      },
+      "gcs": {
+        "gcs": "Simple handheld controller",
+        "note": "Expendable platform \u2014 minimal GCS."
       }
     }
   },
@@ -4295,6 +4368,9 @@
       "funding": {
         "funding_source": "State-owned (Leonardo SpA)",
         "note": "\u20ac15B annual revenue"
+      },
+      "gcs": {
+        "gcs": "Leonardo MFCS (Multi-Function Control Station)"
       }
     },
     "thermal_sensor": "EO/IR + radar (Gabbiano TS-80 option)"
@@ -4609,6 +4685,9 @@
       ],
       "funding": {
         "funding_source": "Private (Baykar)"
+      },
+      "gcs": {
+        "gcs": "Baykar Naval GCS"
       }
     },
     "thermal_sensor": "CATS FLIR EO/IR/LRF (carrier-optimized)"
@@ -4717,6 +4796,9 @@
       "funding": {
         "funding_source": "VC",
         "note": "Firestorm Labs \u2014 US defense startup."
+      },
+      "gcs": {
+        "gcs": "QGroundControl / ArduPilot"
       }
     },
     "thermal_sensor": "EO/IR modular payload"
@@ -4796,6 +4878,9 @@
     "industry_data": {
       "production": {
         "manufacturing_country": "USA"
+      },
+      "gcs": {
+        "gcs": "QGroundControl / ArduPilot"
       }
     },
     "video_system": "EO/IR modular payload bay",
@@ -4864,6 +4949,9 @@
     "industry_data": {
       "production": {
         "manufacturing_country": "USA"
+      },
+      "gcs": {
+        "gcs": "QGroundControl / ArduPilot"
       }
     },
     "video_system": "EO/IR modular",
@@ -8756,7 +8844,9 @@
         "first_delivery_year": 2023
       },
       "funding": {},
-      "gcs": {},
+      "gcs": {
+        "gcs": "Custom FPV + autonomous"
+      },
       "variants": [
         "Nightmare",
         "Nightmare Digital",
@@ -9007,7 +9097,9 @@
         "first_delivery_year": 2023
       },
       "funding": {},
-      "gcs": {},
+      "gcs": {
+        "gcs": "QGroundControl"
+      },
       "variants": [],
       "specs": {
         "type": "3D-printed/additive-manufactured fixed-wing",
@@ -9310,7 +9402,9 @@
         "first_delivery_year": 2023
       },
       "funding": {},
-      "gcs": {},
+      "gcs": {
+        "gcs": "QGroundControl"
+      },
       "variants": [],
       "specs": {
         "type": "Multi-mission autonomous UAS / LCEI",
@@ -10251,7 +10345,9 @@
         "first_delivery_year": 2023
       },
       "funding": {},
-      "gcs": {},
+      "gcs": {
+        "gcs": "GreenSight Autonomous Software"
+      },
       "variants": [],
       "specs": {
         "ultrablue": "Bespoke NDAA-compliant avionics stack \u2014 mission computer + flight controller, in commercial deployment since 2020",
@@ -10473,7 +10569,9 @@
         "first_delivery_year": 2024
       },
       "funding": {},
-      "gcs": {},
+      "gcs": {
+        "gcs": "Custom GCS"
+      },
       "variants": [],
       "specs": {
         "configurations": 4,
@@ -10962,6 +11060,10 @@
       "production": {
         "manufacturing_country": "China",
         "first_delivery_year": 2025
+      },
+      "gcs": {
+        "gcs": "DJI Pilot 2 / DJI FlightHub 2",
+        "note": "Cloud fleet management."
       }
     }
   },
@@ -11097,6 +11199,9 @@
         "manufacturing_country": "USA",
         "manufacturing_facility": "Salt Lake City, UT",
         "first_delivery_year": 2025
+      },
+      "gcs": {
+        "gcs": "Teal OS / Custom GCS"
       }
     }
   },
@@ -11159,6 +11264,9 @@
       "production": {
         "manufacturing_country": "USA",
         "first_delivery_year": 2022
+      },
+      "gcs": {
+        "gcs": "Skyfish Autopilot"
       }
     },
     "video_system": "EO/IR inspection gimbal"
@@ -11221,6 +11329,9 @@
     "industry_data": {
       "production": {
         "manufacturing_country": "USA"
+      },
+      "gcs": {
+        "gcs": "QGroundControl"
       }
     },
     "video_system": "EO/IR modular",
@@ -11700,6 +11811,9 @@
       },
       "funding": {
         "funding_source": "Public (NASDAQ: AVAV)"
+      },
+      "gcs": {
+        "gcs": "AeroVironment DGCS"
       }
     }
   },
