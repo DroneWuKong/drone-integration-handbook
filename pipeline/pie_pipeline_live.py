@@ -1470,6 +1470,105 @@ def analyze_gov_programs(db):
     return flags, component_demand_drivers
 
 
+
+
+# ──────────────────────────────────────────
+# 13c. FOREIGN UAS ECOSYSTEM INTELLIGENCE
+# ──────────────────────────────────────────
+
+FOREIGN_PROGRAMS = [
+    {"country": "China", "program": "DJI global dominance + PLA drone swarm production",
+     "significance": "80% global consumer share. NDAA ban shifts demand to domestic. PLA producing FPV at industrial scale.",
+     "component_signals": ["DJI custom SoCs", "Chinese BLDC motors", "LiPo cells (CATL/BYD)", "Ambarella CV72"]},
+    {"country": "Turkey", "program": "Baykar (TB2/TB3/Akinci/Kizilelma) — #2 drone exporter, 35+ customers",
+     "significance": "Proved drone warfare doctrine in Libya, Nagorno-Karabakh, Ukraine. Building indigenous supply chain after Canada sensor embargo.",
+     "component_signals": ["Rotax/TEI engines", "Aselsan EO/IR", "Ukrainian AI-322 engine (Kizilelma)"]},
+    {"country": "Iran", "program": "Shahed mass production — supplying Russia at scale",
+     "significance": "Drives gray market component demand. GUR teardowns show 15+ Western countries\'components despite sanctions.",
+     "component_signals": ["Limbach L550E replicas", "Commercial GNSS", "Western chips via gray market", "RPi (diverted)"]},
+    {"country": "Ukraine", "program": "Fastest-iterating FPV ecosystem — thousands/month, Brave1 accelerator",
+     "significance": "Combat-testing drives global doctrine. Integrating Hivemind. Competes with US Drone Dominance for same FPV parts.",
+     "component_signals": ["STM32 FCs", "ELRS/Crossfire", "Caddx/Walksnail cameras", "Chinese motors/ESCs"]},
+    {"country": "EU/NATO", "program": "FCAS (€100B+), EuroDrone, Airbus Wingman, sovereignty push",
+     "significance": "EU building indigenous drone capability to reduce US/Chinese dependency.",
+     "component_signals": ["NanoXplore FPGAs", "Safran engines/sensors", "Thales electronics"]},
+    {"country": "India", "program": "ideaForge + Solar Industries + Adani defense — indigenous drone push",
+     "significance": "Rapidly building domestic capability. Nagastra-1 loitering munition deployed.",
+     "component_signals": ["Indian electronics assembly", "Israeli technology transfer"]},
+    {"country": "South Korea", "program": "KAI stealth UCAV + Samsung/SK Hynix DRAM supply",
+     "significance": "Critical DRAM supplier for all SBCs globally. Stealth UCAV development.",
+     "component_signals": ["Samsung DRAM", "SK Hynix memory", "Korean aerospace composites"]},
+    {"country": "Australia", "program": "SYPAQ Corvo (cardboard drone, used in Ukraine) + MQ-28 Ghost Bat CCA",
+     "significance": "Five Eyes ally. MQ-28 is CCA testbed feeding US/UK programs.",
+     "component_signals": ["Boeing autonomy stack", "Australian composites"]},
+    {"country": "Russia", "program": "Alabuga factory + Lancet + Orlan — mass drone production using diverted Western parts",
+     "significance": "GUR tracks 5,534 foreign components across 190 Russian weapon systems. Drives diversion pipeline.",
+     "component_signals": ["RPi (40K+ diverted)", "Chinese motors/ESCs", "Western MCUs via China/UAE"]},
+    {"country": "Poland", "program": "WB Group Warmate/FlyEye — NATO eastern flank drone capability",
+     "significance": "Polish drones combat-deployed. Poland investing €2B in anti-drone barrier.",
+     "component_signals": ["European electronics", "NATO-interop datalinks"]},
+    {"country": "Croatia", "program": "Orqa — EU-manufactured NDAA FPV ecosystem (FC, ESC, goggles)",
+     "significance": "Only EU-manufactured complete FPV stack. NDAA-compliant. NATO ally.",
+     "component_signals": ["STM32H7 (Orqa FC)", "IRONghost RC link", "Custom ESCs"]},
+]
+
+
+def analyze_foreign(db):
+    """Track foreign UAS ecosystems and supply chain implications."""
+    flags = []
+    models = db.get("drone_models", [])
+    country_platforms = {}
+    for m in models:
+        c = (m.get("country") or "Unknown").strip()
+        country_platforms.setdefault(c, []).append(m)
+    countries_in_db = len(country_platforms)
+    non_us_count = sum(len(v) for k, v in country_platforms.items() if k.lower() not in ("usa", "united states"))
+    print(f"  Foreign programs tracked: {len(FOREIGN_PROGRAMS)}")
+    print(f"  Countries in Forge DB: {countries_in_db} ({non_us_count} non-US platforms)")
+
+    for prog in FOREIGN_PROGRAMS:
+        country = prog["country"]
+        db_plats = []
+        for c_key, plats in country_platforms.items():
+            if country.lower() in c_key.lower():
+                db_plats.extend(plats)
+        sev = "warning" if country in ("China", "Russia", "Iran") else "info"
+        flags.append({
+            "id": flag_id(f"foreign-{country}-{prog['program'][:20]}"),
+            "timestamp": now, "flag_type": "correlation", "severity": sev,
+            "title": f"{country}: {prog['program'][:65]}",
+            "detail": f"{prog['significance']} Components: {', '.join(prog['component_signals'][:4])}." + (f" Forge DB: {len(db_plats)} platforms." if db_plats else ""),
+            "confidence": 0.85,
+            "prediction": f"Monitor {country} UAS activity for supply chain implications.",
+            "platform_id": None, "component_id": None,
+            "data_sources": ["foreign_intel", "forge_parts_db"],
+        })
+
+    # Ukraine + US competing for same FPV parts
+    ukr = country_platforms.get("Ukraine", [])
+    if len(ukr) >= 10:
+        flags.append({
+            "id": flag_id("ukraine-us-fpv-competition"), "timestamp": now,
+            "flag_type": "procurement_spike", "severity": "warning",
+            "title": f"Ukraine ({len(ukr)} platforms) and US Drone Dominance compete for same FPV components",
+            "detail": f"Both programs use STM32, ELRS, Caddx/Walksnail, Chinese motors/ESCs. Compound demand on shared FPV supply chain.",
+            "confidence": 0.88, "prediction": "FPV component prices rise 10-20% from dual-program demand.",
+            "platform_id": None, "component_id": "stm32h7",
+            "data_sources": ["forge_parts_db", "foreign_intel"],
+        })
+
+    flags.append({
+        "id": flag_id("global-landscape"), "timestamp": now,
+        "flag_type": "correlation", "severity": "info",
+        "title": f"Global UAS landscape: {countries_in_db} countries, {len(models)} platforms in Forge DB",
+        "detail": f"42 countries tracked. Global proliferation means component demand is worldwide, not just US defense.",
+        "confidence": 0.95, "prediction": "Global drone proliferation drives component demand beyond any single nation.",
+        "platform_id": None, "component_id": None,
+        "data_sources": ["forge_parts_db"],
+    })
+    return flags
+
+
 # ──────────────────────────────────────────
 # 14. MAIN
 # ──────────────────────────────────────────
@@ -1538,6 +1637,10 @@ def main():
     gov_flags, gov_demand = analyze_gov_programs(db)
     all_flags.extend(gov_flags)
 
+    print("\nAnalyzing foreign UAS ecosystems...")
+    foreign_flags = analyze_foreign(db)
+    all_flags.extend(foreign_flags)
+
     print("\nGenerating predictions...")
     preds = generate_predictions(len(blue), len(ndaa), db)
 
@@ -1591,6 +1694,7 @@ def main():
     print(f"  Allied nations: {len(ALLIED_SUPPLY)}")
     print(f"  Policy signals: {len(POLICY_SIGNALS)}")
     print(f"  Gov/DoD programs: {len(GOV_PROGRAMS)}")
+    print(f"  Foreign programs: {len(FOREIGN_PROGRAMS)}")
     print(f"  Flags generated: {len(all_flags)}")
     sev_counts = {}
     for f in all_flags:
