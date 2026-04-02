@@ -13,6 +13,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PARTS_DB = REPO_ROOT / "data" / "parts-db"
+FORGE_DB = REPO_ROOT / "data" / "forge_database.json"
 FLAGS_OUT = REPO_ROOT / "data" / "flags.json"
 PREDS_OUT = REPO_ROOT / "data" / "predictions.json"
 
@@ -33,15 +34,37 @@ def flag_id(seed):
 # ──────────────────────────────────────────
 
 def load_forge():
-    """Load all parts-db JSON files into a unified dict."""
+    """Load Forge data — prefer forge_database.json (219 platforms), fall back to parts-db."""
     db = {}
     total = 0
+
+    # Try the master forge_database.json first (has all 219 platforms)
+    if FORGE_DB.exists():
+        master = load_json(FORGE_DB)
+        if isinstance(master, dict):
+            if "drone_models" in master:
+                db["drone_models"] = master["drone_models"]
+                total += len(master["drone_models"])
+                print(f"  forge_database.json: {len(master['drone_models'])} platforms (master)")
+            if "components" in master:
+                # components here is category metadata, not individual parts
+                pass
+            if "industry" in master:
+                db["industry"] = master.get("industry", [])
+
+    # Always load parts-db for component-level data
     for f in sorted(PARTS_DB.glob("*.json")):
         data = load_json(f)
         if isinstance(data, list):
-            db[f.stem] = data
+            key = f.stem
+            # Don't overwrite drone_models if we got the full 219 from forge_database.json
+            if key == "drone_models" and "drone_models" in db and len(db["drone_models"]) > len(data):
+                print(f"  parts-db/{f.name}: {len(data)} entries (skipped — master has {len(db['drone_models'])})")
+                continue
+            db[key] = data
             total += len(data)
-    print(f"  Forge DB: {total} components across {len(db)} categories")
+
+    print(f"  Total: {total} entries across {len(db)} categories")
     return db
 
 

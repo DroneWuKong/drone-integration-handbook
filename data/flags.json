@@ -1,7 +1,7 @@
 [
   {
     "id": "c5af86037af6",
-    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "timestamp": "2026-04-02T06:43:08.621103+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 4B found in Geran-2/3 (Shahed-136/238)",
@@ -17,7 +17,7 @@
   },
   {
     "id": "248217679ba3",
-    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "timestamp": "2026-04-02T06:43:08.621103+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi found in Geran-5",
@@ -33,7 +33,7 @@
   },
   {
     "id": "3d1fd93cab17",
-    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "timestamp": "2026-04-02T06:43:08.621103+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 5 found in Molniya-2R",
@@ -49,7 +49,7 @@
   },
   {
     "id": "562b363e0af0",
-    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "timestamp": "2026-04-02T06:43:08.621103+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 4B confirmed in Geran-2/3 'Borscht' tracker \u2014 40,000+ units diverted",
@@ -67,7 +67,7 @@
   },
   {
     "id": "21eef1620b14",
-    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "timestamp": "2026-04-02T06:43:08.621103+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 5 confirmed in Molniya-2R reconnaissance drone",
@@ -85,7 +85,7 @@
   },
   {
     "id": "ee13e070c884",
-    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "timestamp": "2026-04-02T06:43:08.621103+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi tracker with mesh networking in Geran-5 jet drone",
@@ -103,7 +103,7 @@
   },
   {
     "id": "bc6a4d56da83",
-    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "timestamp": "2026-04-02T06:43:08.621103+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "US-manufactured mesh radios: 14 of 24 options \u2014 NDAA bottleneck",
@@ -117,23 +117,8 @@
     ]
   },
   {
-    "id": "cd0639863f4c",
-    "timestamp": "2026-04-02T06:39:58.139352+00:00",
-    "flag_type": "correlation",
-    "severity": "info",
-    "title": "Blue UAS Cleared List at 23 platforms \u2014 procurement demand expanding",
-    "detail": "Forge DB tracks 23 Blue UAS platforms across 20 manufacturers. Each platform requires trusted SBC/SoM, MCU, thermal, GNSS, and radio components. Scaling across 23 platforms creates compound demand on shared component supply chains.",
-    "confidence": 0.95,
-    "prediction": "Component demand proportional to fleet-wide production volume. Monitor distributor lead times for Jetson, QRB5165, STM32H7.",
-    "platform_id": null,
-    "component_id": null,
-    "data_sources": [
-      "forge_parts_db"
-    ]
-  },
-  {
     "id": "67c6cfb0ec03",
-    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "timestamp": "2026-04-02T06:43:08.621103+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "5 companion boards use Qualcomm QRB5165 \u2014 supply chain cluster",
@@ -148,7 +133,7 @@
   },
   {
     "id": "2ee90455f913",
-    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "timestamp": "2026-04-02T06:43:08.621103+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "7 companion boards use NVIDIA Jetson Orin \u2014 supply chain cluster",
@@ -163,7 +148,7 @@
   },
   {
     "id": "b4b1f68be794",
-    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "timestamp": "2026-04-02T06:43:08.621103+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "2 companion boards use NVIDIA Jetson AGX \u2014 supply chain cluster",
