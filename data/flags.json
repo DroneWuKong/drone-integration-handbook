@@ -1,7 +1,7 @@
 [
   {
     "id": "c5af86037af6",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 4B found in Geran-2/3 (Shahed-136/238)",
@@ -17,7 +17,7 @@
   },
   {
     "id": "248217679ba3",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi found in Geran-5",
@@ -33,7 +33,7 @@
   },
   {
     "id": "3d1fd93cab17",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 5 found in Molniya-2R",
@@ -49,7 +49,7 @@
   },
   {
     "id": "562b363e0af0",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 4B confirmed in Geran-2/3 'Borscht' tracker \u2014 40,000+ units diverted",
@@ -67,7 +67,7 @@
   },
   {
     "id": "21eef1620b14",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 5 confirmed in Molniya-2R reconnaissance drone",
@@ -85,7 +85,7 @@
   },
   {
     "id": "ee13e070c884",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi tracker with mesh networking in Geran-5 jet drone",
@@ -102,8 +102,24 @@
     ]
   },
   {
+    "id": "4b1f1f665173",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "critical",
+    "title": "Geographic risk: Taiwan \u2014 high risk, critical to Blue UAS supply chain",
+    "detail": "Taiwan: Cross-strait tensions. TSMC concentration. Single point of failure for all advanced chips. Critical components: Qualcomm QRB5165 (fab), TSMC node for Jetson, Ambarella SoCs. Affected Blue UAS platforms: All Jetson-based, All QRB5165-based, All Ambarella-based.",
+    "confidence": 0.88,
+    "prediction": "Any disruption in Taiwan cascades to Qualcomm QRB5165 (fab), TSMC node for Jetson supply for all Blue UAS programs.",
+    "platform_id": null,
+    "component_id": "qualcomm-qrb5165-(fab)",
+    "data_sources": [
+      "geopolitical_risk",
+      "supply_chain_mapping"
+    ]
+  },
+  {
     "id": "bc6a4d56da83",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "US-manufactured mesh radios: 14 of 24 options \u2014 NDAA bottleneck",
@@ -118,7 +134,7 @@
   },
   {
     "id": "68cba2525d93",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Shield AI Hivemind (Shield AI) \u2014 combat-deployed, 5 active contracts",
@@ -135,7 +151,7 @@
   },
   {
     "id": "f79bd79fb6d8",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Anduril Lattice (Anduril Industries) \u2014 combat-deployed, 4 active contracts",
@@ -151,8 +167,157 @@
     ]
   },
   {
+    "id": "dcb26d11ad60",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "Policy: FCC blocks new foreign drone imports (equipment authorization freeze)",
+    "detail": "Date: 2025-12. Domestic Blue UAS demand spike \u2014 no new Chinese drone models can enter market Affected manufacturers: All Blue UAS manufacturers (positive), DJI/Autel (negative). Component pressure: Jetson Orin NX, QRB5165, STM32H7.",
+    "confidence": 0.95,
+    "prediction": "Demand shift toward domestic/allied components. Monitor lead times for Jetson Orin NX, QRB5165.",
+    "platform_id": null,
+    "component_id": "jetson-orin-nx",
+    "data_sources": [
+      "policy_tracker",
+      "fcc",
+      "congress"
+    ]
+  },
+  {
+    "id": "86a5f98e63a3",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "Policy: Drone Dominance executive order \u2014 'Unleashing U.S. Military Drone Domi",
+    "detail": "Date: 2025-07. Massive defense FPV procurement acceleration. Blue UAS list transitions to DCMA. Affected manufacturers: Neros, Teal, ModalAI, All FPV component suppliers. Component pressure: STM32H7, ESP32-S3, ELRS modules, FLIR thermals.",
+    "confidence": 0.95,
+    "prediction": "Demand shift toward domestic/allied components. Monitor lead times for STM32H7, ESP32-S3.",
+    "platform_id": null,
+    "component_id": "stm32h7",
+    "data_sources": [
+      "policy_tracker",
+      "fcc",
+      "congress"
+    ]
+  },
+  {
+    "id": "b8b8b3c4f8f0",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "Policy: DRAM tariff & AI datacenter priority \u2014 memory allocation shift",
+    "detail": "Date: 2025-2026. AI datacenters get DRAM priority. SBC makers (RPi, embedded) pay more, wait longer. Affected manufacturers: RPi, All SBC manufacturers, Embedded system builders. Component pressure: RPi CM4/CM5, Jetson modules, LPDDR4X.",
+    "confidence": 0.95,
+    "prediction": "Demand shift toward domestic/allied components. Monitor lead times for RPi CM4/CM5, Jetson modules.",
+    "platform_id": null,
+    "component_id": "rpi-cm4/cm5",
+    "data_sources": [
+      "policy_tracker",
+      "fcc",
+      "congress"
+    ]
+  },
+  {
+    "id": "235f5f7023b4",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "Policy: US tariff escalation \u2014 25%+ on Chinese electronics components",
+    "detail": "Date: 2026. Components sourced from China cost more. NDAA compliance pressure increases. Affected manufacturers: Any platform with Chinese-origin components, Autel (CN/US hybrid). Component pressure: Motors (many CN-made), ESCs, Frames, Batteries.",
+    "confidence": 0.95,
+    "prediction": "Demand shift toward domestic/allied components. Monitor lead times for Motors (many CN-made), ESCs.",
+    "platform_id": null,
+    "component_id": "motors-(many-cn-made)",
+    "data_sources": [
+      "policy_tracker",
+      "fcc",
+      "congress"
+    ]
+  },
+  {
+    "id": "1f24895a4547",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "price_anomaly",
+    "severity": "warning",
+    "title": "Blue UAS BOM cost index: $4,348 \u2014 720% premium over non-compliant build",
+    "detail": "Reference Blue UAS ISR quad BOM: $4,348. Equivalent non-compliant build: $530. Compliance premium: 720%. Largest cost drivers: mesh radio ($1,800), companion computer ($599), frame ($400). DRAM pricing and tariffs push this index higher each quarter.",
+    "confidence": 0.9,
+    "prediction": "BOM index trending up. DRAM + tariffs add ~8-15% YoY. At $4,348, cost barrier limits Blue UAS adoption by smaller agencies.",
+    "platform_id": null,
+    "component_id": "bom-index",
+    "data_sources": [
+      "forge_parts_db",
+      "distributor_pricing"
+    ]
+  },
+  {
+    "id": "e2928f63ec27",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "Neros Technologies: 2500/mo capacity with 50 employees \u2014 lean operation",
+    "detail": "Neros Technologies (Los Angeles, CA): ~2500 units/mo with 50 employees (50 units/employee/mo). Facilities: LA manufacturing. Signal: Drone Dominance FPV at scale. 2,200+/mo claimed. High output-per-employee ratio suggests limited surge capacity.",
+    "confidence": 0.72,
+    "prediction": "Production scaling risk if contract demand exceeds capacity. Workforce expansion or second shift needed.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "workforce_analysis",
+      "capacity_estimate"
+    ]
+  },
+  {
+    "id": "b11df271fa7b",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "price_anomaly",
+    "severity": "warning",
+    "title": "DRAM pricing: +8.5% QoQ, +22% YoY \u2014 cascading to SBC costs",
+    "detail": "DDR4 8Gb contract: $3.25/unit. LPDDR4X: $3.8/unit. QoQ increase: 8.5%. Driver: AI datacenter demand consuming production capacity. Impact: RPi 5 8GB: $80\u2192$95, 16GB: $120\u2192$145. Orin NX 16GB: $599\u2192$649. Forecast: Elevated through 2027, possible easing 2028. Morgan Stanley projects $620B AI infrastructure spend in 2026 (up from $470B in 2025).",
+    "confidence": 0.93,
+    "prediction": "DRAM pressure continues through 2027. Every SBC and companion computer in the Forge DB is affected. No relief until new fab capacity comes online ~2028.",
+    "platform_id": null,
+    "component_id": "dram-lpddr4x",
+    "data_sources": [
+      "trendforce",
+      "rpi_earnings",
+      "morgan_stanley"
+    ]
+  },
+  {
+    "id": "9116aa2d5db4",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "Geographic risk: Israel \u2014 medium risk (Hailo AI accelerators, D-Fend C-UAS)",
+    "detail": "Israel: Strong ally but regional instability. Hailo-8/10H AI chips used in drone vision systems. Critical components: Hailo AI accelerators, D-Fend C-UAS, Various defense components.",
+    "confidence": 0.78,
+    "prediction": "Monitor Israel stability. Component sourcing diversification recommended.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "geopolitical_risk",
+      "supply_chain_mapping"
+    ]
+  },
+  {
+    "id": "d89cc92c827e",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "Geographic risk: South Korea \u2014 medium risk (Samsung DRAM, SK Hynix memory)",
+    "detail": "South Korea: Major DRAM supplier. Samsung/SK Hynix produce majority of global DRAM. North Korea tensions. Critical components: Samsung DRAM, SK Hynix memory, Samsung foundry.",
+    "confidence": 0.78,
+    "prediction": "Monitor South Korea stability. Component sourcing diversification recommended.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "geopolitical_risk",
+      "supply_chain_mapping"
+    ]
+  },
+  {
     "id": "67c6cfb0ec03",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "5 companion boards use Qualcomm QRB5165 \u2014 supply chain cluster",
@@ -167,7 +332,7 @@
   },
   {
     "id": "2ee90455f913",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "7 companion boards use NVIDIA Jetson Orin \u2014 supply chain cluster",
@@ -182,7 +347,7 @@
   },
   {
     "id": "b4b1f68be794",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "2 companion boards use NVIDIA Jetson AGX \u2014 supply chain cluster",
@@ -197,7 +362,7 @@
   },
   {
     "id": "7ad4922628a9",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Swarmer (Swarmer (getswarmer.com)) \u2014 combat-deployed, 1 active contracts",
@@ -214,7 +379,7 @@
   },
   {
     "id": "5de4858d53ce",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Auterion / PX4 (Auterion) \u2014 combat-deployed, 2 active contracts",
@@ -231,7 +396,7 @@
   },
   {
     "id": "eb0c4eb72935",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Skydio: 1 platforms in Forge DB (0 Blue UAS)",
@@ -248,7 +413,7 @@
   },
   {
     "id": "833100baad16",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Shield AI: 3 platforms in Forge DB (0 Blue UAS)",
@@ -265,7 +430,7 @@
   },
   {
     "id": "46550618a735",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Anduril Industries: 3 platforms in Forge DB (1 Blue UAS)",
@@ -282,7 +447,7 @@
   },
   {
     "id": "856a608a31a3",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Teal Drones / Red Cat Holdings: 3 platforms in Forge DB (2 Blue UAS)",
@@ -299,7 +464,7 @@
   },
   {
     "id": "a5d0bfad8ece",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "ModalAI: 3 platforms in Forge DB (1 Blue UAS)",
@@ -316,7 +481,7 @@
   },
   {
     "id": "eae46329a924",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Neros Technologies: 2 platforms in Forge DB (1 Blue UAS)",
@@ -333,7 +498,7 @@
   },
   {
     "id": "f2b437ef2edf",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "AeroVironment: 4 platforms in Forge DB (0 Blue UAS)",
@@ -350,7 +515,7 @@
   },
   {
     "id": "0332f661b8df",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Freefly Systems: 2 platforms in Forge DB (1 Blue UAS)",
@@ -367,7 +532,7 @@
   },
   {
     "id": "62b4feb3d4af",
-    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Parrot: 2 platforms in Forge DB (1 Blue UAS)",
@@ -380,6 +545,167 @@
       "forge_parts_db",
       "forge_compliance",
       "software_ecosystem"
+    ]
+  },
+  {
+    "id": "0f31fa9409cb",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "C-UAS and UAS share SDR modules supply \u2014 2 C-UAS companies competing",
+    "detail": "Counter-UAS companies (DroneShield, D-Fend Solutions) use SDR modules, same silicon as Blue UAS platforms. C-UAS scaling (FEMA $250M grant, JIATF contracts, FIFA World Cup security) adds demand to shared supply chain.",
+    "confidence": 0.8,
+    "prediction": "C-UAS + UAS compound demand on SDR modules. Monitor as C-UAS contracts scale in 2026.",
+    "platform_id": null,
+    "component_id": "sdr-modules",
+    "data_sources": [
+      "cuas_tracking",
+      "defense_contracts"
+    ]
+  },
+  {
+    "id": "496c2e2938d7",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "C-UAS and UAS share FPGA supply \u2014 2 C-UAS companies competing",
+    "detail": "Counter-UAS companies (Epirus, L3Harris) use FPGA, same silicon as Blue UAS platforms. C-UAS scaling (FEMA $250M grant, JIATF contracts, FIFA World Cup security) adds demand to shared supply chain.",
+    "confidence": 0.8,
+    "prediction": "C-UAS + UAS compound demand on FPGA. Monitor as C-UAS contracts scale in 2026.",
+    "platform_id": null,
+    "component_id": "fpga",
+    "data_sources": [
+      "cuas_tracking",
+      "defense_contracts"
+    ]
+  },
+  {
+    "id": "637609b9a4a3",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "C-UAS: DroneShield \u2014 3 contracts, competes for drone supply chain",
+    "detail": "DroneShield (Australia/US): Largest C-UAS customer base globally, 955+ protected sites Products: RfPatrol, DroneGun, DroneSentry. Hardware deps: SDR modules, NVIDIA Jetson (AI detection), FPGA signal processing. Contracts: $6.2M Asia-Pacific military (Mar 2026), FEMA $250M C-UAS grant program, US Army fixed-site.",
+    "confidence": 0.85,
+    "prediction": "DroneShield scaling drives demand for SDR modules, NVIDIA Jetson (AI detection).",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "cuas_tracking",
+      "defense_contracts"
+    ]
+  },
+  {
+    "id": "a0ce98a8c36b",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "C-UAS: Dedrone (Axon) \u2014 3 contracts, competes for drone supply chain",
+    "detail": "Dedrone (Axon) (US): 300-drone identification database. Sensor fusion platform. Products: DedroneTracker.AI, DedroneRapidResponse. Hardware deps: RF sensors, Radar modules, GPU compute (AI classification). Contracts: Axon acquisition, FAA integration, Fortune 500 sites.",
+    "confidence": 0.85,
+    "prediction": "Dedrone (Axon) scaling drives demand for RF sensors, Radar modules.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "cuas_tracking",
+      "defense_contracts"
+    ]
+  },
+  {
+    "id": "6eb5364fe45e",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "C-UAS: Epirus \u2014 2 contracts, competes for drone supply chain",
+    "detail": "Epirus (US): High-power microwave directed energy. Defeats drone swarms. Products: Leonidas HPM, SmartPower. Hardware deps: GaN amplifiers, Custom power electronics, FPGA. Contracts: JIATF C-UAS contract (Mar 2026), GDLS/Kodiak autonomous HPM integration.",
+    "confidence": 0.85,
+    "prediction": "Epirus scaling drives demand for GaN amplifiers, Custom power electronics.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "cuas_tracking",
+      "defense_contracts"
+    ]
+  },
+  {
+    "id": "79f2daa5dee8",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "C-UAS: D-Fend Solutions \u2014 2 contracts, competes for drone supply chain",
+    "detail": "D-Fend Solutions (Israel/US): Cyber-takeover approach \u2014 hijacks drone control link. Products: EnforceAir. Hardware deps: SDR modules, RF analysis compute. Contracts: US federal agencies, Airport protection.",
+    "confidence": 0.85,
+    "prediction": "D-Fend Solutions scaling drives demand for SDR modules, RF analysis compute.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "cuas_tracking",
+      "defense_contracts"
+    ]
+  },
+  {
+    "id": "d8e9beaa5913",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "C-UAS: Anduril (Anvil/Sentry) \u2014 3 contracts, competes for drone supply chain",
+    "detail": "Anduril (Anvil/Sentry) (US): Kinetic C-UAS interceptor + AI sensor tower. Lattice C2 backbone. Products: Anvil interceptor, Sentry Tower. Hardware deps: NVIDIA Jetson AGX Orin, Lattice FPGA, Doodle Labs mesh. Contracts: Replicator, USCENTCOM, USINDOPACOM.",
+    "confidence": 0.85,
+    "prediction": "Anduril (Anvil/Sentry) scaling drives demand for NVIDIA Jetson AGX Orin, Lattice FPGA.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "cuas_tracking",
+      "defense_contracts"
+    ]
+  },
+  {
+    "id": "3870a917f4b8",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "C-UAS: L3Harris \u2014 2 contracts, competes for drone supply chain",
+    "detail": "L3Harris (US): Major defense prime ramping C-UAS production. Products: Counter-UAS systems, MANET radios. Hardware deps: Custom RF, FPGA, Signal processing ASICs. Contracts: C-UAS production ramp (Mar 2026), JIATF.",
+    "confidence": 0.85,
+    "prediction": "L3Harris scaling drives demand for Custom RF, FPGA.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "cuas_tracking",
+      "defense_contracts"
+    ]
+  },
+  {
+    "id": "572ce49c2c58",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Policy: American Security Drone Act (ASDA) \u2014 bans DJI for federal use",
+    "detail": "Date: 2024. Federal agencies must transition to Blue UAS. Creates demand cliff for DJI, ramp for domestic. Affected manufacturers: DJI (banned), All Blue UAS manufacturers (demand surge). Component pressure: All Blue UAS companion computers, NDAA-compliant radios.",
+    "confidence": 0.95,
+    "prediction": "Demand shift toward domestic/allied components. Monitor lead times for All Blue UAS companion computers, NDAA-compliant radios.",
+    "platform_id": null,
+    "component_id": "all-blue-uas-companion-computers",
+    "data_sources": [
+      "policy_tracker",
+      "fcc",
+      "congress"
+    ]
+  },
+  {
+    "id": "25291590b238",
+    "timestamp": "2026-04-02T07:05:39.333989+00:00",
+    "flag_type": "price_anomaly",
+    "severity": "info",
+    "title": "Mesh radio is 41% of Blue UAS BOM \u2014 single largest cost driver",
+    "detail": "Doodle Labs entry-level mesh: $1,800. Silvus MN Micro: $4,500-5,200. This single component is 41% of the total $4,348 BOM. No low-cost NDAA-compliant alternative exists at MANET performance tier.",
+    "confidence": 0.92,
+    "prediction": "Mesh radio cost is the biggest barrier to Blue UAS fleet scaling. Market opportunity for lower-cost NDAA mesh entrants.",
+    "platform_id": null,
+    "component_id": "mesh-radios",
+    "data_sources": [
+      "forge_parts_db",
+      "bom_analysis"
     ]
   }
 ]
