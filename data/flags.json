@@ -1,7 +1,7 @@
 [
   {
     "id": "c5af86037af6",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 4B found in Geran-2/3 (Shahed-136/238)",
@@ -35,7 +35,7 @@
   },
   {
     "id": "248217679ba3",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi found in Geran-5",
@@ -69,7 +69,7 @@
   },
   {
     "id": "3d1fd93cab17",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 5 found in Molniya-2R",
@@ -103,7 +103,7 @@
   },
   {
     "id": "562b363e0af0",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 4B confirmed in Geran-2/3 'Borscht' tracker \u2014 40,000+ units diverted",
@@ -155,7 +155,7 @@
   },
   {
     "id": "21eef1620b14",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 5 confirmed in Molniya-2R reconnaissance drone",
@@ -207,7 +207,7 @@
   },
   {
     "id": "ee13e070c884",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi tracker with mesh networking in Geran-5 jet drone",
@@ -259,7 +259,7 @@
   },
   {
     "id": "4b1f1f665173",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "supply_constraint",
     "severity": "critical",
     "title": "Geographic risk: Taiwan \u2014 high risk, critical to Blue UAS supply chain",
@@ -293,7 +293,7 @@
   },
   {
     "id": "bc6a4d56da83",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "US-manufactured mesh radios: 14 of 24 options \u2014 NDAA bottleneck",
@@ -318,7 +318,7 @@
   },
   {
     "id": "68cba2525d93",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Shield AI Hivemind (Shield AI) \u2014 combat-deployed, 5 active contracts",
@@ -361,7 +361,7 @@
   },
   {
     "id": "f79bd79fb6d8",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Anduril Lattice (Anduril Industries) \u2014 combat-deployed, 4 active contracts",
@@ -404,7 +404,7 @@
   },
   {
     "id": "dcb26d11ad60",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: FCC blocks new foreign drone imports (equipment authorization freeze)",
@@ -447,7 +447,7 @@
   },
   {
     "id": "86a5f98e63a3",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: Drone Dominance executive order \u2014 'Unleashing U.S. Military Drone Domi",
@@ -490,7 +490,7 @@
   },
   {
     "id": "b8b8b3c4f8f0",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: DRAM tariff & AI datacenter priority \u2014 memory allocation shift",
@@ -533,7 +533,7 @@
   },
   {
     "id": "235f5f7023b4",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: US tariff escalation \u2014 25%+ on Chinese electronics components",
@@ -576,7 +576,7 @@
   },
   {
     "id": "1f24895a4547",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "price_anomaly",
     "severity": "warning",
     "title": "Blue UAS BOM cost index: $4,348 \u2014 720% premium over non-compliant build",
@@ -610,7 +610,7 @@
   },
   {
     "id": "e2928f63ec27",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Neros Technologies: 2500/mo capacity with 50 employees \u2014 lean operation",
@@ -644,7 +644,7 @@
   },
   {
     "id": "b11df271fa7b",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "price_anomaly",
     "severity": "warning",
     "title": "DRAM pricing: +8.5% QoQ, +22% YoY \u2014 cascading to SBC costs",
@@ -687,7 +687,7 @@
   },
   {
     "id": "9116aa2d5db4",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Geographic risk: Israel \u2014 medium risk (Hailo AI accelerators, D-Fend C-UAS)",
@@ -721,7 +721,7 @@
   },
   {
     "id": "d89cc92c827e",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Geographic risk: South Korea \u2014 medium risk (Samsung DRAM, SK Hynix memory)",
@@ -755,7 +755,7 @@
   },
   {
     "id": "b021552dd110",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / Under Secretary R&E: Drone Dominance Program (DDP)",
@@ -807,7 +807,7 @@
   },
   {
     "id": "bfafb2cfb399",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / SecDef: Replicator \u2192 DAWG (Defense Autonomous Warfare Group)",
@@ -859,7 +859,7 @@
   },
   {
     "id": "20352c30e640",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army: Army SRR (Short Range Reconnaissance)",
@@ -911,7 +911,7 @@
   },
   {
     "id": "6cfd8ef05c55",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army: Army FoSUAS (Family of Small UAS)",
@@ -963,7 +963,7 @@
   },
   {
     "id": "2e8cb8cef28d",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army PEO Aviation: Army FTUAS (Future Tactical UAS)",
@@ -1015,7 +1015,7 @@
   },
   {
     "id": "b16566f4336c",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Marine Corps: USMC FPV Drone Program",
@@ -1067,7 +1067,7 @@
   },
   {
     "id": "44234d860120",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Air Force: USAF CCA (Collaborative Combat Aircraft)",
@@ -1119,7 +1119,7 @@
   },
   {
     "id": "4890daffd9cb",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD: JIATF-401 (Joint Interagency Task Force for C-UAS)",
@@ -1171,7 +1171,7 @@
   },
   {
     "id": "9423957f5134",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Congress / FCC: NDAA FY25 Section 1709 (Foreign Drone Ban)",
@@ -1223,7 +1223,7 @@
   },
   {
     "id": "33e43c3b4077",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "White House / SecDef: Drone Dominance Executive Order (Jul 2025)",
@@ -1275,7 +1275,7 @@
   },
   {
     "id": "91c02588d72b",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Congress: ASDA (American Security Drone Act)",
@@ -1327,7 +1327,7 @@
   },
   {
     "id": "d755a122937d",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / State Dept: Ukraine Security Assistance Initiative (USAI)",
@@ -1379,7 +1379,7 @@
   },
   {
     "id": "12be8c22e11c",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DCMA (transferred from DIU Jul 2025): Blue UAS Cleared List (DCMA)",
@@ -1431,7 +1431,7 @@
   },
   {
     "id": "3a5946d0af80",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "China: DJI global dominance + PLA drone swarm production",
@@ -1465,7 +1465,7 @@
   },
   {
     "id": "6ed2c28d60c4",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Iran: Shahed mass production \u2014 supplying Russia at scale",
@@ -1499,7 +1499,7 @@
   },
   {
     "id": "4ca9eb9961a5",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Russia: Alabuga factory + Lancet + Orlan \u2014 mass drone production using di",
@@ -1533,7 +1533,7 @@
   },
   {
     "id": "81d9bca863a5",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Ukraine (23 platforms) and US Drone Dominance compete for same FPV components",
@@ -1567,7 +1567,7 @@
   },
   {
     "id": "67c6cfb0ec03",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "5 companion boards use Qualcomm QRB5165 \u2014 supply chain cluster",
@@ -1592,7 +1592,7 @@
   },
   {
     "id": "2ee90455f913",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "7 companion boards use NVIDIA Jetson Orin \u2014 supply chain cluster",
@@ -1617,7 +1617,7 @@
   },
   {
     "id": "b4b1f68be794",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "2 companion boards use NVIDIA Jetson AGX \u2014 supply chain cluster",
@@ -1642,7 +1642,7 @@
   },
   {
     "id": "7ad4922628a9",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Swarmer (Swarmer (getswarmer.com)) \u2014 combat-deployed, 1 active contracts",
@@ -1685,7 +1685,7 @@
   },
   {
     "id": "5de4858d53ce",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Auterion / PX4 (Auterion) \u2014 combat-deployed, 2 active contracts",
@@ -1728,7 +1728,7 @@
   },
   {
     "id": "eb0c4eb72935",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Skydio: 1 platforms in Forge DB (0 Blue UAS)",
@@ -1771,7 +1771,7 @@
   },
   {
     "id": "833100baad16",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Shield AI: 3 platforms in Forge DB (0 Blue UAS)",
@@ -1814,7 +1814,7 @@
   },
   {
     "id": "46550618a735",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Anduril Industries: 3 platforms in Forge DB (1 Blue UAS)",
@@ -1857,7 +1857,7 @@
   },
   {
     "id": "856a608a31a3",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Teal Drones / Red Cat Holdings: 3 platforms in Forge DB (2 Blue UAS)",
@@ -1900,7 +1900,7 @@
   },
   {
     "id": "a5d0bfad8ece",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "ModalAI: 3 platforms in Forge DB (1 Blue UAS)",
@@ -1943,7 +1943,7 @@
   },
   {
     "id": "eae46329a924",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Neros Technologies: 2 platforms in Forge DB (1 Blue UAS)",
@@ -1986,7 +1986,7 @@
   },
   {
     "id": "f2b437ef2edf",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "AeroVironment: 4 platforms in Forge DB (0 Blue UAS)",
@@ -2029,7 +2029,7 @@
   },
   {
     "id": "0332f661b8df",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Freefly Systems: 2 platforms in Forge DB (1 Blue UAS)",
@@ -2072,7 +2072,7 @@
   },
   {
     "id": "62b4feb3d4af",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Parrot: 2 platforms in Forge DB (1 Blue UAS)",
@@ -2115,7 +2115,7 @@
   },
   {
     "id": "0f31fa9409cb",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "C-UAS and UAS share SDR modules supply \u2014 2 C-UAS companies competing",
@@ -2149,7 +2149,7 @@
   },
   {
     "id": "496c2e2938d7",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "C-UAS and UAS share FPGA supply \u2014 2 C-UAS companies competing",
@@ -2183,7 +2183,7 @@
   },
   {
     "id": "637609b9a4a3",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: DroneShield \u2014 3 contracts, competes for drone supply chain",
@@ -2217,7 +2217,7 @@
   },
   {
     "id": "a0ce98a8c36b",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Dedrone (Axon) \u2014 3 contracts, competes for drone supply chain",
@@ -2251,7 +2251,7 @@
   },
   {
     "id": "6eb5364fe45e",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Epirus \u2014 2 contracts, competes for drone supply chain",
@@ -2285,7 +2285,7 @@
   },
   {
     "id": "79f2daa5dee8",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: D-Fend Solutions \u2014 2 contracts, competes for drone supply chain",
@@ -2319,7 +2319,7 @@
   },
   {
     "id": "d8e9beaa5913",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Anduril (Anvil/Sentry) \u2014 3 contracts, competes for drone supply chain",
@@ -2353,7 +2353,7 @@
   },
   {
     "id": "3870a917f4b8",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: L3Harris \u2014 2 contracts, competes for drone supply chain",
@@ -2387,7 +2387,7 @@
   },
   {
     "id": "572ce49c2c58",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Policy: American Security Drone Act (ASDA) \u2014 bans DJI for federal use",
@@ -2430,7 +2430,7 @@
   },
   {
     "id": "25291590b238",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "price_anomaly",
     "severity": "info",
     "title": "Mesh radio is 41% of Blue UAS BOM \u2014 single largest cost driver",
@@ -2464,7 +2464,7 @@
   },
   {
     "id": "fc644ad2188c",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "U.S. Army: Army MRR (Medium Range Reconnaissance)",
@@ -2516,7 +2516,7 @@
   },
   {
     "id": "12564c7f7a5f",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "FEMA / DHS: FEMA C-UAS Grant Program",
@@ -2568,7 +2568,7 @@
   },
   {
     "id": "cbba9917a29e",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Turkey: Baykar (TB2/TB3/Akinci/Kizilelma) \u2014 #2 drone exporter, 35+ custom",
@@ -2602,7 +2602,7 @@
   },
   {
     "id": "e7afb28385ef",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Ukraine: Fastest-iterating FPV ecosystem \u2014 thousands/month, Brave1 acceler",
@@ -2636,7 +2636,7 @@
   },
   {
     "id": "052f63104448",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EU/NATO: FCAS (\u20ac100B+), EuroDrone, Airbus Wingman, sovereignty push",
@@ -2670,7 +2670,7 @@
   },
   {
     "id": "6de5178117df",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "India: ideaForge + Solar Industries + Adani defense \u2014 indigenous drone p",
@@ -2704,7 +2704,7 @@
   },
   {
     "id": "f8b43ba79a3e",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "South Korea: KAI stealth UCAV + Samsung/SK Hynix DRAM supply",
@@ -2738,7 +2738,7 @@
   },
   {
     "id": "8fa546cd000c",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Australia: SYPAQ Corvo (cardboard drone, used in Ukraine) + MQ-28 Ghost Bat ",
@@ -2772,7 +2772,7 @@
   },
   {
     "id": "53bb266b195d",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Poland: WB Group Warmate/FlyEye \u2014 NATO eastern flank drone capability",
@@ -2806,7 +2806,7 @@
   },
   {
     "id": "7a6790d9a392",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Croatia: Orqa \u2014 EU-manufactured NDAA FPV ecosystem (FC, ESC, goggles)",
@@ -2840,7 +2840,7 @@
   },
   {
     "id": "0d17f6c63c02",
-    "timestamp": "2026-04-02T17:41:20.571646+00:00",
+    "timestamp": "2026-04-02T17:42:15.078864+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Global UAS landscape: 42 countries, 219 platforms in Forge DB",
