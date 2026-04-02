@@ -1,0 +1,113 @@
+name: Pattern Intelligence Pipeline
+
+on:
+  schedule:
+    # Run daily at 06:00 UTC (adjustable)
+    - cron: '0 6 * * *'
+  
+  workflow_dispatch:
+    # Manual trigger from GitHub Actions UI
+    inputs:
+      full_refresh:
+        description: 'Run full correlation analysis (slower)'
+        required: false
+        default: 'false'
+        type: boolean
+
+  push:
+    paths:
+      # Re-run when Forge data changes
+      - 'data/**'
+      - 'platforms/**'
+      - 'pipeline/**'
+
+permissions:
+  contents: write   # Needed to commit output back to repo
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install -r pipeline/requirements.txt
+
+      - name: Run Pattern Intelligence Pipeline
+        env:
+          MOUSER_API_KEY: ${{ secrets.MOUSER_API_KEY }}
+          DIGIKEY_API_KEY: ${{ secrets.DIGIKEY_API_KEY }}
+          FULL_REFRESH: ${{ github.event.inputs.full_refresh || 'false' }}
+        run: |
+          cd pipeline
+          python pie_pipeline.py \
+            --output ../data/pie_output.json \
+            --flags ../data/flags.json \
+            --predictions ../data/predictions.json \
+            $( [ "$FULL_REFRESH" = "true" ] && echo "--full-correlation" )
+
+      - name: Validate output
+        run: |
+          python -c "
+          import json, sys
+          for f in ['data/pie_output.json', 'data/flags.json', 'data/predictions.json']:
+              try:
+                  data = json.load(open(f))
+                  print(f'  ✓ {f}: valid JSON ({len(json.dumps(data))} bytes)')
+              except Exception as e:
+                  print(f'  ✗ {f}: {e}')
+                  sys.exit(1)
+          "
+
+      - name: Commit updated data
+        run: |
+          git config user.name "PIE Bot"
+          git config user.email "pie-bot@users.noreply.github.com"
+          git add data/pie_output.json data/flags.json data/predictions.json
+          
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No data changes — skipping commit"
+          else
+            FLAGS=$(python -c "import json; print(len(json.load(open('data/flags.json'))))")
+            git commit -m "🔍 PIE: ${FLAGS} flags | $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      - name: Summary
+        run: |
+          echo "## Pattern Intelligence Pipeline Run" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          python -c "
+          import json
+          o = json.load(open('data/pie_output.json'))
+          flags = json.load(open('data/flags.json'))
+          preds = json.load(open('data/predictions.json'))
+          meta = o.get('metadata', {}).get('data_sources', {})
+          
+          print(f'| Metric | Value |')
+          print(f'|--------|-------|')
+          print(f'| Forge platforms | {meta.get(\"forge_db\", {}).get(\"platforms\", \"?\")} |')
+          print(f'| Forge components | {meta.get(\"forge_db\", {}).get(\"components\", \"?\")} |')
+          print(f'| Active flags | {len(flags)} |')
+          print(f'| Predictions | {len(preds)} |')
+          print(f'| FAA drones | {meta.get(\"osint\", {}).get(\"faa_registered_drones\", \"?\")} |')
+          print(f'| GUR components | {meta.get(\"osint\", {}).get(\"gur_components_tracked\", \"?\")} |')
+          
+          if flags:
+              print(f'')
+              print(f'### Active Flags')
+              for f in flags[:10]:
+                  sev = f.get(\"severity\", \"?\")
+                  print(f'- **[{sev}]** {f.get(\"title\", \"\")}')
+          " >> $GITHUB_STEP_SUMMARY
