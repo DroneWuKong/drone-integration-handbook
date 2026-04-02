@@ -1,56 +1,81 @@
 [
   {
-    "timeframe": "Q2 2026",
+    "timeframe": "Q3 2026",
+    "event": "Jetson Orin NX allocation-only for defense (13 boards in Forge DB depend on Jetson)",
+    "probability": 0.65,
+    "impact": "critical",
+    "drivers": [
+      "23 Blue UAS platforms scaling simultaneously",
+      "13 companion boards use Jetson silicon",
+      "DRAM pricing pressure (AI datacenter competition)",
+      "NVIDIA AI priority over embedded/edge"
+    ],
+    "model": "forge_bom_analysis + supply_extrapolation",
+    "last_updated": "2026-04-02T06:39:58.139352+00:00"
+  },
+  {
+    "timeframe": "Q2-Q3 2026",
     "event": "STM32H7 becomes allocated for defense FPV production",
     "probability": 0.72,
     "impact": "high",
-    "drivers": ["Neros Archer 2,200/mo for Drone Dominance", "Orqa FC production scaling", "General FPV demand surge"],
-    "model": "linear_extrapolation + contract_signal",
-    "last_updated": "2026-04-02T06:00:00Z"
+    "drivers": [
+      "Drone Dominance FPV program scaling (Neros Archer 2,200+/mo)",
+      "300 FCs in Forge DB \u2014 majority STM32",
+      "FPV commercial + defense demand on same MCU supply"
+    ],
+    "model": "forge_bom_analysis",
+    "last_updated": "2026-04-02T06:39:58.139352+00:00"
   },
   {
     "timeframe": "Q3 2026",
-    "event": "Jetson Orin NX allocation-only for defense customers",
-    "probability": 0.65,
-    "impact": "critical",
-    "drivers": ["Skydio X10D + Shield AI V-BAT + Anduril Ghost-X scaling", "DRAM pricing pressure", "NVIDIA AI datacenter priority"],
-    "model": "structural_var + demand_forecast",
-    "last_updated": "2026-04-02T06:00:00Z"
-  },
-  {
-    "timeframe": "Q3 2026",
-    "event": "Mesh radio supply bottleneck (Doodle Labs / Silvus)",
+    "event": "Mesh radio supply bottleneck \u2014 only 24 options tracked, limited NDAA-compliant sources",
     "probability": 0.71,
     "impact": "high",
-    "drivers": ["Multi-vehicle Blue UAS programs", "Lattice Mesh contract", "MANET demand for SOF"],
-    "model": "granger_causality + backlog_growth",
-    "last_updated": "2026-04-02T06:00:00Z"
+    "drivers": [
+      "Multi-vehicle Blue UAS programs (Lattice Mesh, Replicator)",
+      "Only 24 mesh radios in Forge DB",
+      "Doodle Labs + Silvus dominate Blue UAS mesh \u2014 concentration risk"
+    ],
+    "model": "forge_bom_analysis + concentration_risk",
+    "last_updated": "2026-04-02T06:39:58.139352+00:00"
   },
   {
     "timeframe": "Q4 2026",
-    "event": "RPi CM4 gray market premium exceeds 50% in China",
+    "event": "RPi gray market premium exceeds 50% in China",
     "probability": 0.58,
     "impact": "medium",
-    "drivers": ["DRAM crunch continues", "Active diversion pipeline (GUR confirmed)", "RPi price hikes cascade"],
-    "model": "price_anomaly + diversion_model",
-    "last_updated": "2026-04-02T06:00:00Z"
-  },
-  {
-    "timeframe": "Q1 2027",
-    "event": "QRB5165 successor (Qualcomm RB7) enters Blue UAS Framework",
-    "probability": 0.82,
-    "impact": "medium",
-    "drivers": ["ModalAI next-gen roadmap", "Teal Black Widow SRR requirements", "Edge AI performance gap"],
-    "model": "product_lifecycle + contract_signal",
-    "last_updated": "2026-04-02T06:00:00Z"
+    "drivers": [
+      "DRAM crunch continues through 2027",
+      "Active diversion pipeline (GUR confirmed 40K+ units)",
+      "RPi price hikes cascade (Pi 5 8GB now $95)"
+    ],
+    "model": "price_anomaly + diversion_tracking",
+    "last_updated": "2026-04-02T06:39:58.139352+00:00"
   },
   {
     "timeframe": "H2 2026",
-    "event": "FLIR Boson 640 allocation tightens following next USAI package",
+    "event": "FLIR Boson 640 allocation tightens following next Ukraine USAI package",
     "probability": 0.84,
     "impact": "high",
-    "drivers": ["AeroVironment Switchblade 600 production ramp", "Ukraine aid packages (6-week lag correlation)", "Limited thermal sensor alternatives at 640 resolution"],
-    "model": "cross_correlation + granger_causality",
-    "last_updated": "2026-04-02T06:00:00Z"
+    "drivers": [
+      "AeroVironment Switchblade 600 production ramp",
+      "Ukraine USAI packages (6-week lag correlation with Boson lead times)",
+      "Limited 640-resolution thermal alternatives"
+    ],
+    "model": "cross_correlation + contract_signal",
+    "last_updated": "2026-04-02T06:39:58.139352+00:00"
+  },
+  {
+    "timeframe": "2027",
+    "event": "QRB5165 successor enters Blue UAS Framework (5 boards currently depend on QRB5165)",
+    "probability": 0.82,
+    "impact": "medium",
+    "drivers": [
+      "ModalAI next-gen roadmap",
+      "5 companion boards use QRB5165 in Forge DB",
+      "Edge AI performance requirements increasing"
+    ],
+    "model": "product_lifecycle",
+    "last_updated": "2026-04-02T06:39:58.139352+00:00"
   }
 ]

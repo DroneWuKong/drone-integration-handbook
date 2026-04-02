@@ -1,122 +1,179 @@
 [
   {
-    "id": "diversion-rpi4-geran2-1743566400",
-    "timestamp": "2026-04-02T06:00:00Z",
+    "id": "c5af86037af6",
+    "timestamp": "2026-04-02T06:39:58.139352+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
-    "title": "Diversion risk: RPi 4B confirmed in Geran-2 (Shahed-136) 'Borscht' tracker",
-    "detail": "GUR teardown confirmed RPi 4B used as 'Borscht Tracker V3' in Geran-2 drone. 40,000+ units reportedly procured and routed into Russian drone production. Cross-reference with Forge BOM: RPi CM4 used by Freefly Astro (Blue UAS) and Inspired Flight IF1200A (Blue UAS). Same supply chain, competing demand.",
-    "confidence": 0.94,
-    "prediction": "RPi gray market premium in China will remain elevated. Monitor Taobao/AliExpress pricing for CM4 divergence above 30% MSRP as leading indicator of active diversion pipeline.",
+    "title": "Diversion risk: Raspberry Pi 4B found in Geran-2/3 (Shahed-136/238)",
+    "detail": "GUR teardown confirmed Raspberry Pi 4B used as 'Borscht Tracker V3' in Geran-2/3 (Shahed-136/238). 40,000+ units reportedly diverted. Forge DB contains 'DroneEngage \u2014 Cloud-Connected MAVLink Companion Platform' using same silicon family \u2014 shared supply chain with verified diversion pipeline.",
+    "confidence": 0.93,
+    "prediction": "Gray market premium persists. DRAM-driven price hikes may slow diversion as cost-benefit shifts, but active procurement pipelines remain.",
     "platform_id": null,
-    "component_id": "rpi-cm4",
-    "data_sources": ["gur_war_sanctions", "forge_parts_db", "distributor_pricing"],
-    "correlation_r": null,
-    "correlation_lag_weeks": null
+    "component_id": "raspberry-pi-4b",
+    "data_sources": [
+      "gur_war_sanctions",
+      "forge_parts_db"
+    ]
   },
   {
-    "id": "spike-neros-stm32h7-1743566400",
-    "timestamp": "2026-04-01T14:22:00Z",
-    "flag_type": "procurement_spike",
+    "id": "248217679ba3",
+    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "flag_type": "diversion_risk",
     "severity": "critical",
-    "title": "STM32H7 orders 3.2x baseline for Neros Archer production ramp",
-    "detail": "Drone Dominance FPV program scaling. Neros monthly production jumped from 800 to 2,200 units. STM32H743 orders from authorized distributors spiked correspondingly. Component cross-referenced against Forge BOM — confirmed sole FC MCU for Archer platform.",
-    "confidence": 0.94,
-    "prediction": "STM32H7 lead times likely to extend to 10+ weeks by Q3 2026 if FPV scaling continues at current rate. Alternative: STM32H750 (pin-compatible, lower flash).",
-    "platform_id": "neros-archer",
-    "component_id": "stm32h743",
-    "data_sources": ["forge_bom", "distributor_api", "contract_signal"],
-    "correlation_r": null,
-    "correlation_lag_weeks": null
+    "title": "Diversion risk: Raspberry Pi found in Geran-5",
+    "detail": "GUR teardown confirmed Raspberry Pi used as 'Tracker + 3G/4G modem' in Geran-5. Unknown quantity units reportedly diverted. Forge DB contains 'DroneEngage \u2014 Cloud-Connected MAVLink Companion Platform' using same silicon family \u2014 shared supply chain with verified diversion pipeline.",
+    "confidence": 0.93,
+    "prediction": "Gray market premium persists. DRAM-driven price hikes may slow diversion as cost-benefit shifts, but active procurement pipelines remain.",
+    "platform_id": null,
+    "component_id": "raspberry-pi",
+    "data_sources": [
+      "gur_war_sanctions",
+      "forge_parts_db"
+    ]
   },
   {
-    "id": "constraint-orin-nx-1743566400",
-    "timestamp": "2026-03-22T16:30:00Z",
+    "id": "3d1fd93cab17",
+    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "flag_type": "diversion_risk",
+    "severity": "critical",
+    "title": "Diversion risk: Raspberry Pi 5 found in Molniya-2R",
+    "detail": "GUR teardown confirmed Raspberry Pi 5 used as 'Reconnaissance computer' in Molniya-2R. Unknown quantity units reportedly diverted. Forge DB contains 'DroneEngage \u2014 Cloud-Connected MAVLink Companion Platform' using same silicon family \u2014 shared supply chain with verified diversion pipeline.",
+    "confidence": 0.93,
+    "prediction": "Gray market premium persists. DRAM-driven price hikes may slow diversion as cost-benefit shifts, but active procurement pipelines remain.",
+    "platform_id": null,
+    "component_id": "raspberry-pi-5",
+    "data_sources": [
+      "gur_war_sanctions",
+      "forge_parts_db"
+    ]
+  },
+  {
+    "id": "562b363e0af0",
+    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "flag_type": "diversion_risk",
+    "severity": "critical",
+    "title": "RPi 4B confirmed in Geran-2/3 'Borscht' tracker \u2014 40,000+ units diverted",
+    "detail": "GUR War & Sanctions portal and Ukrainian military intelligence confirmed Raspberry Pi 4B as the core of the 'Borscht Tracker V3' in Geran-2 (Shahed-136) and Geran-3 (Shahed-238) attack drones. Reports indicate 40,000+ units procured via gray market channels. RPi CEO Eben Upton acknowledged use in Russian drones and tightened end-use requirements for China sales. Cross-reference: RPi CM4 used by Freefly Astro (Blue UAS) and custom ArduPilot builds.",
+    "confidence": 0.94,
+    "prediction": "RPi gray market premium in China remains elevated (30-50% above MSRP). Active procurement pipeline confirmed by multiple intelligence sources.",
+    "platform_id": null,
+    "component_id": "raspberry-pi-4b",
+    "data_sources": [
+      "gur_war_sanctions",
+      "euromaidanpress",
+      "united24media",
+      "heise"
+    ]
+  },
+  {
+    "id": "21eef1620b14",
+    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "flag_type": "diversion_risk",
+    "severity": "critical",
+    "title": "RPi 5 confirmed in Molniya-2R reconnaissance drone",
+    "detail": "GUR documented RPi 5 integrated alongside Chinese Mini PC F8 (rebranded as 'Raskat') running Windows 11 in the Molniya-2R reconnaissance UAV. The Molniya-2R is the recon variant of the kamikaze FPV drone, used for monitoring Ukrainian positions and strike adjustment. Confirms active, ongoing procurement of latest-gen RPi hardware despite tightened export controls.",
+    "confidence": 0.94,
+    "prediction": "RPi gray market premium in China remains elevated (30-50% above MSRP). Active procurement pipeline confirmed by multiple intelligence sources.",
+    "platform_id": null,
+    "component_id": "raspberry-pi-5",
+    "data_sources": [
+      "gur_war_sanctions",
+      "euromaidanpress",
+      "united24media",
+      "heise"
+    ]
+  },
+  {
+    "id": "ee13e070c884",
+    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "flag_type": "diversion_risk",
+    "severity": "critical",
+    "title": "RPi tracker with mesh networking in Geran-5 jet drone",
+    "detail": "Russia's Geran-5 (6m wingspan, jet-powered, 90kg warhead, 1000km range) uses a 12-channel Kometa satellite navigation system and a tracker based on RPi with 3G/4G modems. The Geran-5 also features XK-F358 mesh network modems enabling 'chain control' \u2014 multiple drones in a salvo maintaining comms. This represents escalation from simple GPS-guided to mesh-networked swarm capability, all built on commercially available SBCs.",
+    "confidence": 0.94,
+    "prediction": "RPi gray market premium in China remains elevated (30-50% above MSRP). Active procurement pipeline confirmed by multiple intelligence sources.",
+    "platform_id": null,
+    "component_id": "raspberry-pi",
+    "data_sources": [
+      "gur_war_sanctions",
+      "euromaidanpress",
+      "united24media",
+      "heise"
+    ]
+  },
+  {
+    "id": "bc6a4d56da83",
+    "timestamp": "2026-04-02T06:39:58.139352+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
-    "title": "NVIDIA Jetson Orin NX lead time extended: 12 → 16 weeks",
-    "detail": "Distributor API data (Arrow, Mouser) shows Jetson Orin NX 16GB lead time increase. Correlated with three Blue UAS platforms scaling simultaneously: Skydio X10D, Shield AI V-BAT, Anduril Ghost-X. DRAM pricing pressure compounds constraint.",
-    "confidence": 0.88,
-    "prediction": "Blue UAS programs collectively consuming ~2,400 Orin NX/month. At current trajectory, allocation-only by Q4 2026.",
+    "title": "US-manufactured mesh radios: 14 of 24 options \u2014 NDAA bottleneck",
+    "detail": "Forge DB tracks 24 mesh radios. Only 14 from US manufacturers. Blue UAS platforms require NDAA-compliant mesh for multi-vehicle ops. Doodle Labs and Silvus dominate the Blue UAS mesh market \u2014 limited supplier diversity creates concentration risk.",
+    "confidence": 0.82,
+    "prediction": "Mesh radio becomes supply bottleneck as multi-drone programs (Lattice, Replicator) scale. Limited alternatives at MANET performance tier.",
     "platform_id": null,
-    "component_id": "jetson-orin-nx",
-    "data_sources": ["distributor_api", "forge_bom", "dram_pricing"],
-    "correlation_r": 0.87,
-    "correlation_lag_weeks": 4
+    "component_id": "mesh-radios",
+    "data_sources": [
+      "forge_parts_db"
+    ]
   },
   {
-    "id": "contract-teal-usmc-1743566400",
-    "timestamp": "2026-03-25T11:40:00Z",
-    "flag_type": "contract_signal",
-    "severity": "info",
-    "title": "USMC FPV Program contract award: $47M to Red Cat / Teal",
-    "detail": "Forge Industry Intel picked up USMC contract for Teal 2 at scale. Implies 4,000+ unit delivery over 18 months. QRB5165 (VOXL 2) is sole companion compute — Qualcomm allocation likely secured. Cross-reference: ModalAI Seeker uses same SoM.",
-    "confidence": 0.97,
-    "prediction": "QRB5165 allocation shift toward defense. Commercial ModalAI customers may face longer lead times Q3-Q4 2026.",
-    "platform_id": "teal-2",
-    "component_id": "qrb5165",
-    "data_sources": ["forge_industry_intel", "forge_bom", "sam_gov"],
-    "correlation_r": null,
-    "correlation_lag_weeks": null
-  },
-  {
-    "id": "corr-boson-usai-1743566400",
-    "timestamp": "2026-03-20T08:00:00Z",
+    "id": "cd0639863f4c",
+    "timestamp": "2026-04-02T06:39:58.139352+00:00",
     "flag_type": "correlation",
     "severity": "info",
-    "title": "FLIR Boson 640 demand correlated with Ukraine USAI packages (r=0.87, 6wk lag)",
-    "detail": "Pattern engine detected: Boson 640 lead time extensions correlate with announced Ukraine Security Assistance packages containing Switchblade 600. AeroVironment production ramp is the causal link. Granger test: p=0.003 at 6-week lag.",
-    "confidence": 0.91,
-    "prediction": "Next USAI package announcement likely triggers further Boson 640 allocation tightening within 4-6 weeks.",
-    "platform_id": "aerovironment-switchblade",
-    "component_id": "flir-boson",
-    "data_sources": ["forge_bom", "distributor_api", "defense_contracts"],
-    "correlation_r": 0.87,
-    "correlation_lag_weeks": 6
-  },
-  {
-    "id": "predict-mesh-shortage-1743566400",
-    "timestamp": "2026-03-18T13:45:00Z",
-    "flag_type": "prediction",
-    "severity": "warning",
-    "title": "Mesh radio supply bottleneck predicted: Q3 2026",
-    "detail": "Granger causality model: Defense MANET procurement (Anduril Ghost-X, L3Harris integration) is leading Doodle Labs backlog by ~8 weeks. Current backlog growth rate + Lattice Mesh program = demand exceeds capacity by Q3.",
-    "confidence": 0.76,
-    "prediction": "Mesh radio becomes next supply bottleneck for multi-vehicle Blue UAS. Alternative: Rajant Kinetic Mesh (longer lead but more capacity). Handbook reference: Ch.14 Mesh Radios.",
+    "title": "Blue UAS Cleared List at 23 platforms \u2014 procurement demand expanding",
+    "detail": "Forge DB tracks 23 Blue UAS platforms across 20 manufacturers. Each platform requires trusted SBC/SoM, MCU, thermal, GNSS, and radio components. Scaling across 23 platforms creates compound demand on shared component supply chains.",
+    "confidence": 0.95,
+    "prediction": "Component demand proportional to fleet-wide production volume. Monitor distributor lead times for Jetson, QRB5165, STM32H7.",
     "platform_id": null,
-    "component_id": "doodlelabs-rm915",
-    "data_sources": ["forge_bom", "distributor_api", "granger_model"],
-    "correlation_r": null,
-    "correlation_lag_weeks": 8
+    "component_id": null,
+    "data_sources": [
+      "forge_parts_db"
+    ]
   },
   {
-    "id": "diversion-rpi5-molniya-1743566400",
-    "timestamp": "2026-03-15T09:00:00Z",
-    "flag_type": "diversion_risk",
-    "severity": "critical",
-    "title": "RPi 5 confirmed in Russian Molniya-2R reconnaissance drone",
-    "detail": "GUR War & Sanctions portal documented RPi 5 integrated alongside Chinese Mini PC F8 (rebranded as 'Raskat') running Windows 11. Molniya-2R is the recon variant of the FPV kamikaze drone. RPi 5 8GB retail: $80 MSRP, China gray market: ¥780+ (~$108, +35% premium).",
-    "confidence": 0.92,
-    "prediction": "RPi Foundation tightened end-use requirements for China sales, but gray market circumvention continues. DRAM-driven price hikes may paradoxically slow diversion as cost-benefit ratio shifts for Russian procurement.",
+    "id": "67c6cfb0ec03",
+    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "5 companion boards use Qualcomm QRB5165 \u2014 supply chain cluster",
+    "detail": "Forge DB: ModalAI VOXL 2, ModalAI VOXL 2 Mini, ARK Electronics VOXL2 RTK PAB , Qualcomm Flight RB5 Platform all use Qualcomm QRB5165. Avg price: $905. Same silicon dependency means a shortage at the chip level impacts all boards in this cluster simultaneously.",
+    "confidence": 0.85,
+    "prediction": "Monitor Qualcomm QRB5165 chip availability. Any fab disruption or allocation shift cascades to 5 companion computer products.",
     "platform_id": null,
-    "component_id": "rpi-5",
-    "data_sources": ["gur_war_sanctions", "euromaidanpress", "forge_parts_db"],
-    "correlation_r": null,
-    "correlation_lag_weeks": null
+    "component_id": "qualcomm-qrb5165",
+    "data_sources": [
+      "forge_parts_db"
+    ]
   },
   {
-    "id": "price-elrs900-1743566400",
-    "timestamp": "2026-03-12T07:55:00Z",
-    "flag_type": "price_anomaly",
-    "severity": "warning",
-    "title": "ELRS 900MHz module pricing up 14% across all distributors",
-    "detail": "GetFPV, RaceDayQuads, Pyrodrone all raised ELRS 900MHz TX/RX pricing. Price tracker flagged 2.1σ anomaly vs 90-day moving average. Correlates with ESP32/SX1276 chip cost increase and surge in tactical FPV builds for Drone Dominance program. Handbook reference: Ch.1 Link Types, Ch.2 Frequency Bands.",
-    "confidence": 0.79,
-    "prediction": "FPV component inflation driven by dual commercial + defense demand. ELRS ecosystem may face further 8-12% pressure as Drone Dominance scales through H2 2026.",
-    "platform_id": "neros-archer",
-    "component_id": "elrs-900",
-    "data_sources": ["distributor_pricing", "forge_parts_db", "price_anomaly_model"],
-    "correlation_r": null,
-    "correlation_lag_weeks": null
+    "id": "2ee90455f913",
+    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "7 companion boards use NVIDIA Jetson Orin \u2014 supply chain cluster",
+    "detail": "Forge DB: ARK Electronics Just A Jetson, ARK Electronics Jetson PAB Car, NVIDIA Jetson Orin NX 16GB, NVIDIA Jetson Orin Nano 8GB all use NVIDIA Jetson Orin. Avg price: $428. Same silicon dependency means a shortage at the chip level impacts all boards in this cluster simultaneously.",
+    "confidence": 0.85,
+    "prediction": "Monitor NVIDIA Jetson Orin chip availability. Any fab disruption or allocation shift cascades to 7 companion computer products.",
+    "platform_id": null,
+    "component_id": "nvidia-jetson-orin",
+    "data_sources": [
+      "forge_parts_db"
+    ]
+  },
+  {
+    "id": "b4b1f68be794",
+    "timestamp": "2026-04-02T06:39:58.139352+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "2 companion boards use NVIDIA Jetson AGX \u2014 supply chain cluster",
+    "detail": "Forge DB: NVIDIA Jetson AGX Orin 64GB, NVIDIA Jetson AGX Thor all use NVIDIA Jetson AGX. Avg price: $999. Same silicon dependency means a shortage at the chip level impacts all boards in this cluster simultaneously.",
+    "confidence": 0.85,
+    "prediction": "Monitor NVIDIA Jetson AGX chip availability. Any fab disruption or allocation shift cascades to 2 companion computer products.",
+    "platform_id": null,
+    "component_id": "nvidia-jetson-agx",
+    "data_sources": [
+      "forge_parts_db"
+    ]
   }
 ]
