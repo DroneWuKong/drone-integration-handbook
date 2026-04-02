@@ -52,11 +52,45 @@ jobs:
 
           if git diff --staged --quiet; then
             echo "No data changes — skipping commit"
+            echo "DATA_CHANGED=false" >> $GITHUB_ENV
           else
             FLAGS=$(python3 -c "import json; print(len(json.load(open('data/flags.json'))))")
             PREDS=$(python3 -c "import json; print(len(json.load(open('data/predictions.json'))))")
             git commit -m "🔍 PIE: ${FLAGS} flags, ${PREDS} predictions | $(date -u '+%Y-%m-%d %H:%M UTC')"
             git push
+            echo "DATA_CHANGED=true" >> $GITHUB_ENV
+          fi
+
+      - name: Sync to Forge repo
+        if: env.DATA_CHANGED == 'true'
+        env:
+          FORGE_PAT: ${{ secrets.FORGE_PAT }}
+        run: |
+          if [ -z "$FORGE_PAT" ]; then
+            echo "⚠ FORGE_PAT secret not set — skipping Forge sync"
+            echo "  Add a PAT with repo scope as FORGE_PAT in Settings → Secrets"
+            exit 0
+          fi
+
+          echo "Syncing data to Forge repo..."
+          git clone --depth 1 https://${FORGE_PAT}@github.com/DroneWuKong/droneclear_Forge.git /tmp/forge
+          
+          FORGE_SRC="DroneClear Components Visualizer"
+          cp data/flags.json "/tmp/forge/${FORGE_SRC}/pie_flags.json"
+          cp data/predictions.json "/tmp/forge/${FORGE_SRC}/pie_predictions.json"
+          
+          cd /tmp/forge
+          git config user.name "PIE Bot"
+          git config user.email "pie-bot@users.noreply.github.com"
+          git add -A
+
+          if git diff --staged --quiet; then
+            echo "Forge already up to date"
+          else
+            FLAGS=$(python3 -c "import json; print(len(json.load(open('${FORGE_SRC}/pie_flags.json'))))")
+            git commit -m "🔍 PIE sync: ${FLAGS} flags | $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "✓ Forge repo updated — Netlify will redeploy"
           fi
 
       - name: Summary
