@@ -1,7 +1,7 @@
 [
   {
     "id": "c5af86037af6",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 4B found in Geran-2/3 (Shahed-136/238)",
@@ -35,7 +35,7 @@
   },
   {
     "id": "248217679ba3",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi found in Geran-5",
@@ -69,7 +69,7 @@
   },
   {
     "id": "3d1fd93cab17",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 5 found in Molniya-2R",
@@ -103,7 +103,7 @@
   },
   {
     "id": "562b363e0af0",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 4B confirmed in Geran-2/3 'Borscht' tracker \u2014 40,000+ units diverted",
@@ -155,7 +155,7 @@
   },
   {
     "id": "21eef1620b14",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 5 confirmed in Molniya-2R reconnaissance drone",
@@ -207,7 +207,7 @@
   },
   {
     "id": "ee13e070c884",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi tracker with mesh networking in Geran-5 jet drone",
@@ -259,7 +259,7 @@
   },
   {
     "id": "4b1f1f665173",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "supply_constraint",
     "severity": "critical",
     "title": "Geographic risk: Taiwan \u2014 high risk, critical to Blue UAS supply chain",
@@ -293,7 +293,7 @@
   },
   {
     "id": "bc6a4d56da83",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "US-manufactured mesh radios: 14 of 24 options \u2014 NDAA bottleneck",
@@ -318,7 +318,7 @@
   },
   {
     "id": "68cba2525d93",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Shield AI Hivemind (Shield AI) \u2014 combat-deployed, 5 active contracts",
@@ -361,7 +361,7 @@
   },
   {
     "id": "f79bd79fb6d8",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Anduril Lattice (Anduril Industries) \u2014 combat-deployed, 4 active contracts",
@@ -404,7 +404,7 @@
   },
   {
     "id": "dcb26d11ad60",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: FCC blocks new foreign drone imports (equipment authorization freeze)",
@@ -447,7 +447,7 @@
   },
   {
     "id": "86a5f98e63a3",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: Drone Dominance executive order \u2014 'Unleashing U.S. Military Drone Domi",
@@ -490,7 +490,7 @@
   },
   {
     "id": "b8b8b3c4f8f0",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: DRAM tariff & AI datacenter priority \u2014 memory allocation shift",
@@ -533,7 +533,7 @@
   },
   {
     "id": "235f5f7023b4",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: US tariff escalation \u2014 25%+ on Chinese electronics components",
@@ -576,7 +576,7 @@
   },
   {
     "id": "1f24895a4547",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "price_anomaly",
     "severity": "warning",
     "title": "Blue UAS BOM cost index: $4,348 \u2014 720% premium over non-compliant build",
@@ -610,7 +610,7 @@
   },
   {
     "id": "e2928f63ec27",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Neros Technologies: 2500/mo capacity with 50 employees \u2014 lean operation",
@@ -644,7 +644,7 @@
   },
   {
     "id": "b11df271fa7b",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "price_anomaly",
     "severity": "warning",
     "title": "DRAM pricing: +8.5% QoQ, +22% YoY \u2014 cascading to SBC costs",
@@ -687,7 +687,7 @@
   },
   {
     "id": "9116aa2d5db4",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Geographic risk: Israel \u2014 medium risk (Hailo AI accelerators, D-Fend C-UAS)",
@@ -721,7 +721,7 @@
   },
   {
     "id": "d89cc92c827e",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Geographic risk: South Korea \u2014 medium risk (Samsung DRAM, SK Hynix memory)",
@@ -755,7 +755,7 @@
   },
   {
     "id": "b021552dd110",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / Under Secretary R&E: Drone Dominance Program (DDP)",
@@ -807,7 +807,7 @@
   },
   {
     "id": "bfafb2cfb399",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / SecDef: Replicator \u2192 DAWG (Defense Autonomous Warfare Group)",
@@ -859,7 +859,7 @@
   },
   {
     "id": "20352c30e640",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army: Army SRR (Short Range Reconnaissance)",
@@ -911,7 +911,7 @@
   },
   {
     "id": "6cfd8ef05c55",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army: Army FoSUAS (Family of Small UAS)",
@@ -963,7 +963,7 @@
   },
   {
     "id": "2e8cb8cef28d",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army PEO Aviation: Army FTUAS (Future Tactical UAS)",
@@ -1015,7 +1015,7 @@
   },
   {
     "id": "b16566f4336c",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Marine Corps: USMC FPV Drone Program",
@@ -1067,7 +1067,7 @@
   },
   {
     "id": "44234d860120",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Air Force: USAF CCA (Collaborative Combat Aircraft)",
@@ -1119,7 +1119,7 @@
   },
   {
     "id": "4890daffd9cb",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD: JIATF-401 (Joint Interagency Task Force for C-UAS)",
@@ -1171,7 +1171,7 @@
   },
   {
     "id": "9423957f5134",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Congress / FCC: NDAA FY25 Section 1709 (Foreign Drone Ban)",
@@ -1223,7 +1223,7 @@
   },
   {
     "id": "33e43c3b4077",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "White House / SecDef: Drone Dominance Executive Order (Jul 2025)",
@@ -1275,7 +1275,7 @@
   },
   {
     "id": "91c02588d72b",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Congress: ASDA (American Security Drone Act)",
@@ -1327,7 +1327,7 @@
   },
   {
     "id": "d755a122937d",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / State Dept: Ukraine Security Assistance Initiative (USAI)",
@@ -1379,7 +1379,7 @@
   },
   {
     "id": "12be8c22e11c",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DCMA (transferred from DIU Jul 2025): Blue UAS Cleared List (DCMA)",
@@ -1431,7 +1431,7 @@
   },
   {
     "id": "3a5946d0af80",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "China: DJI global dominance + PLA drone swarm production",
@@ -1465,7 +1465,7 @@
   },
   {
     "id": "6ed2c28d60c4",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Iran: Shahed mass production \u2014 supplying Russia at scale",
@@ -1499,7 +1499,7 @@
   },
   {
     "id": "4ca9eb9961a5",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Russia: Alabuga factory + Lancet + Orlan \u2014 mass drone production using di",
@@ -1533,7 +1533,7 @@
   },
   {
     "id": "81d9bca863a5",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Ukraine (23 platforms) and US Drone Dominance compete for same FPV components",
@@ -1566,8 +1566,649 @@
     ]
   },
   {
+    "id": "7fa8baa38045",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "warning",
+    "title": "RF/Comms: TrellisWare Technologies \u2014 Provides TSM (Tactical Scalable MANET) waveform \u2014 the standard MANET w",
+    "detail": "TrellisWare Technologies (San Diego, CA): Provides TSM (Tactical Scalable MANET) waveform \u2014 the standard MANET waveform for SOF and Army tactical networks. Licensed to L3Harris, Thales, Collins. TSM runs on AN/PRC-163, AN/PRC-167, and multiple handhelds. Products: TSM Shadow (TW-950), TW-400 TrellisWare Radio, TSM Waveform SDK. SOF relevance: critical. Drone link: TrellisWare waveforms on drone mesh radios enable SOF UAS to operate on the same MANET as dismounted operators \u2014 same network, same COP. HW deps: FPGA (waveform execution), L3Harris AN/PRC-163 (host radio), SDR platforms.",
+    "confidence": 0.88,
+    "prediction": "SOF drone operations depend on TrellisWare Technologies interoperability. Contract wins drive HW demand for FPGA (waveform execution), L3Harris AN/PRC-163 (host radio).",
+    "platform_id": null,
+    "component_id": "tsm-shadow-(tw-950)",
+    "data_sources": [
+      "trellis_primary",
+      "sof_programs"
+    ],
+    "sources": [
+      {
+        "name": "TrellisWare Technologies",
+        "url": "https://www.trellisware.com",
+        "description": "TSM waveform provider for SOF tactical MANET. Licensed to L3Harris, Thales, Collins.",
+        "validation": "Company primary source. Product datasheets and integration documentation.",
+        "type": "primary",
+        "id": "trellis_primary"
+      },
+      {
+        "name": "USSOCOM Program Tracking",
+        "url": "https://www.socom.mil",
+        "description": "SOF-specific procurement programs: PEO-SOF Warrior, SOFWERX, AFSOC STRATFI, SOF TUAS.",
+        "validation": "DoD press releases, SOCOM budget documents, SOFWERX event reports.",
+        "type": "aggregated",
+        "id": "sof_programs"
+      }
+    ]
+  },
+  {
+    "id": "ef9f82748fb2",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "warning",
+    "title": "RF/Comms: L3Harris \u2014 Tactical Radios \u2014 Primary tactical radio provider for US military. AN/PRC-163 is the bac",
+    "detail": "L3Harris \u2014 Tactical Radios (Melbourne, FL): Primary tactical radio provider for US military. AN/PRC-163 is the backbone radio for SOF and conventional forces. Supports TrellisWare TSM + SRW + MUOS waveforms. Products: AN/PRC-163 (Manpack), AN/PRC-167 (Handheld), RF-335M. SOF relevance: critical. Drone link: Drone datalinks must be interoperable with PRC-163 networks for SOF integration. Gateway/bridge solutions needed. HW deps: FPGA (Xilinx/AMD), GaN amplifiers, SDR processing.",
+    "confidence": 0.88,
+    "prediction": "SOF drone operations depend on L3Harris \u2014 Tactical Radios interoperability. Contract wins drive HW demand for FPGA (Xilinx/AMD), GaN amplifiers.",
+    "platform_id": null,
+    "component_id": "an/prc-163-(manpack)",
+    "data_sources": [
+      "defense_contracts",
+      "sof_programs"
+    ],
+    "sources": [
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "USSOCOM Program Tracking",
+        "url": "https://www.socom.mil",
+        "description": "SOF-specific procurement programs: PEO-SOF Warrior, SOFWERX, AFSOC STRATFI, SOF TUAS.",
+        "validation": "DoD press releases, SOCOM budget documents, SOFWERX event reports.",
+        "type": "aggregated",
+        "id": "sof_programs"
+      }
+    ]
+  },
+  {
+    "id": "457e7d690d01",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "warning",
+    "title": "RF/Comms: Persistent Systems \u2014 Most deployed tactical mesh radio. Wave Relay OS (custom Android). Sel",
+    "detail": "Persistent Systems (New York, NY): Most deployed tactical mesh radio. Wave Relay OS (custom Android). Self-forming/healing. No master node. Used by SOF, Army, Marines. $10K-50K/node. Products: MPU5 Wave Relay, Embedded Module, GVR5. SOF relevance: critical. Drone link: MPU5 on ground + Doodle Labs/Silvus on drones creates the mesh backbone for multi-domain UAS operations. HW deps: Qualcomm WiFi silicon, Custom MIMO antennas, ARM processors.",
+    "confidence": 0.88,
+    "prediction": "SOF drone operations depend on Persistent Systems interoperability. Contract wins drive HW demand for Qualcomm WiFi silicon, Custom MIMO antennas.",
+    "platform_id": null,
+    "component_id": "mpu5-wave-relay",
+    "data_sources": [
+      "forge_parts_db",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "d588c3b0c8b4",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "warning",
+    "title": "TrellisWare TSM waveform is the bridge between SOF ground radios and drone mesh networks",
+    "detail": "TrellisWare's TSM (Tactical Scalable MANET) waveform runs on L3Harris AN/PRC-163, the standard SOF radio. For drones to operate on SOF networks, they need either: (a) a TSM-compatible radio onboard, or (b) a gateway bridging drone mesh (Doodle Labs/Silvus/Persistent) to TSM network. This integration requirement drives demand for both drone mesh radios AND gateway hardware. Handbook Ch.14 and Ch.15 (TAK Integration) cover the technical bridge.",
+    "confidence": 0.9,
+    "prediction": "SOF UAS interop with TrellisWare/PRC-163 networks is a procurement requirement. Companies solving this bridge get contracts.",
+    "platform_id": null,
+    "component_id": "trellisware-tsm",
+    "data_sources": [
+      "sof_programs",
+      "defense_contracts",
+      "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "USSOCOM Program Tracking",
+        "url": "https://www.socom.mil",
+        "description": "SOF-specific procurement programs: PEO-SOF Warrior, SOFWERX, AFSOC STRATFI, SOF TUAS.",
+        "validation": "DoD press releases, SOCOM budget documents, SOFWERX event reports.",
+        "type": "aggregated",
+        "id": "sof_programs"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
+    ]
+  },
+  {
+    "id": "c0c9b7de9474",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "warning",
+    "title": "EW threat landscape drives GPS-denied autonomy, FHSS links, and mesh resilience requirements",
+    "detail": "Russian EW (R-330Zh, Pole-21, Krasukha-4) jams 900MHz/2.4GHz/5.8GHz \u2014 exactly the drone bands. This drives demand for: (1) GPS-denied navigation (Hivemind, Skydio VIO, VectorNav INS), (2) frequency-hopping RC links (ELRS FHSS, IRONghost dual-band), (3) resilient mesh networking (Doodle Labs, Silvus with anti-jam), (4) chip-scale atomic clocks for timing without GPS. Every EW advance by adversaries creates component demand for the countermeasure. Handbook Ch.2 (Frequency Bands) and component ref (EW-Resilient Communications) cover this.",
+    "confidence": 0.92,
+    "prediction": "EW arms race accelerates. Expect continued demand growth for FHSS radios, INS modules, and autonomous navigation compute.",
+    "platform_id": null,
+    "component_id": "ew-resilient-comms",
+    "data_sources": [
+      "foreign_intel",
+      "defense_contracts",
+      "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
+    ]
+  },
+  {
+    "id": "2875b0fb64a6",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "SOF: USSOCOM PEO-SOF Warrior \u2014 All SOF-unique equipment including UAS",
+    "detail": "USSOCOM PEO-SOF Warrior: SOF has its own procurement path \u2014 faster, less bureaucratic than Big Army. PEO-SOF Warrior buys directly. Platforms: V-BAT, Ghost-X, Switchblade. Component demand: Silvus MN Micro, TrellisWare TSM, FLIR thermals, Jetson Orin.",
+    "confidence": 0.88,
+    "prediction": "SOF procurement drives demand for Silvus MN Micro, TrellisWare TSM.",
+    "platform_id": null,
+    "component_id": "silvus-mn-micro",
+    "data_sources": [
+      "sof_programs",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "USSOCOM Program Tracking",
+        "url": "https://www.socom.mil",
+        "description": "SOF-specific procurement programs: PEO-SOF Warrior, SOFWERX, AFSOC STRATFI, SOF TUAS.",
+        "validation": "DoD press releases, SOCOM budget documents, SOFWERX event reports.",
+        "type": "aggregated",
+        "id": "sof_programs"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "a9d9e98f12c6",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "SOF: SOFWERX / SOCOM Forge \u2014 Rapid prototyping and evaluation for SOF",
+    "detail": "SOFWERX / SOCOM Forge: SOFWERX runs rapid experimentation events. SOCOM Forge tests new tech in weeks, not years. Pipeline for emerging drone companies. Platforms: Multiple emerging platforms tested. Component demand: Diverse \u2014 whatever prototypes use.",
+    "confidence": 0.88,
+    "prediction": "SOF procurement drives demand for Diverse \u2014 whatever prototypes use.",
+    "platform_id": null,
+    "component_id": "diverse-\u2014-whatever-prototypes-use",
+    "data_sources": [
+      "sof_programs",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "USSOCOM Program Tracking",
+        "url": "https://www.socom.mil",
+        "description": "SOF-specific procurement programs: PEO-SOF Warrior, SOFWERX, AFSOC STRATFI, SOF TUAS.",
+        "validation": "DoD press releases, SOCOM budget documents, SOFWERX event reports.",
+        "type": "aggregated",
+        "id": "sof_programs"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "c7caf1ccb90c",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "SOF: SOF Tactical UAS (SOF TUAS) \u2014 Group 3 UAS for SOF missions \u2014 ISR, strike, resupply",
+    "detail": "SOF Tactical UAS (SOF TUAS): SOF needs longer range, longer endurance, more payload than SRR quads. V-BAT, Altius fill this gap. Platforms: Shield AI V-BAT, Anduril Altius, AeroVironment platforms. Component demand: Tactical mesh radios, Heavy-lift motors, EO/IR gimbals, Fuel cells.",
+    "confidence": 0.88,
+    "prediction": "SOF procurement drives demand for Tactical mesh radios, Heavy-lift motors.",
+    "platform_id": null,
+    "component_id": "tactical-mesh-radios",
+    "data_sources": [
+      "sof_programs",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "USSOCOM Program Tracking",
+        "url": "https://www.socom.mil",
+        "description": "SOF-specific procurement programs: PEO-SOF Warrior, SOFWERX, AFSOC STRATFI, SOF TUAS.",
+        "validation": "DoD press releases, SOCOM budget documents, SOFWERX event reports.",
+        "type": "aggregated",
+        "id": "sof_programs"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "1f9c20e3e564",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "SOF: USSOCOM Counter-UAS \u2014 Protecting SOF from enemy drones",
+    "detail": "USSOCOM Counter-UAS: SOF teams are high-value targets for enemy FPV drones. Portable C-UAS is critical. DroneShield RfPatrol, D-Fend EnforceAir. Platforms: DroneShield RfPatrol, D-Fend EnforceAir, Anduril Anvil. Component demand: SDR modules, RF detection antennas, AI compute for classification.",
+    "confidence": 0.88,
+    "prediction": "SOF procurement drives demand for SDR modules, RF detection antennas.",
+    "platform_id": null,
+    "component_id": "sdr-modules",
+    "data_sources": [
+      "sof_programs",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "USSOCOM Program Tracking",
+        "url": "https://www.socom.mil",
+        "description": "SOF-specific procurement programs: PEO-SOF Warrior, SOFWERX, AFSOC STRATFI, SOF TUAS.",
+        "validation": "DoD press releases, SOCOM budget documents, SOFWERX event reports.",
+        "type": "aggregated",
+        "id": "sof_programs"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "dd4246a241ff",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "SOF: AFSOC (Air Force Special Ops Command) \u2014 AFSOC drone programs \u2014 STRATFI with Shield AI",
+    "detail": "AFSOC (Air Force Special Ops Command): AFSOC funded Shield AI STRATFI contract to integrate Hivemind onto V-BAT. AFSOC drives autonomous ISR requirements. Platforms: Shield AI V-BAT Teams, Various ISR platforms. Component demand: Hivemind compute (Jetson), V-BAT airframes, SATCOM terminals.",
+    "confidence": 0.88,
+    "prediction": "SOF procurement drives demand for Hivemind compute (Jetson), V-BAT airframes.",
+    "platform_id": null,
+    "component_id": "hivemind-compute-(jetson)",
+    "data_sources": [
+      "sof_programs",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "USSOCOM Program Tracking",
+        "url": "https://www.socom.mil",
+        "description": "SOF-specific procurement programs: PEO-SOF Warrior, SOFWERX, AFSOC STRATFI, SOF TUAS.",
+        "validation": "DoD press releases, SOCOM budget documents, SOFWERX event reports.",
+        "type": "aggregated",
+        "id": "sof_programs"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "8ba7aa6ac291",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "warning",
+    "title": "GPS-denied navigation demand surging \u2014 6 PNT solutions tracked",
+    "detail": "Every contested drone operation assumes GPS jamming. This drives parallel demand for: INS/IMU (VectorNav, Emcore, KVH), visual navigation (Skydio VIO, Hivemind), chip-scale atomic clocks (Microsemi CSAC), and multi-constellation GNSS with anti-jam (u-blox F9P + Tallysman antennas). Forge DB tracks 74 GPS modules. The shift from GPS-reliant to GPS-resilient drives component demand across all Blue UAS platforms.",
+    "confidence": 0.9,
+    "prediction": "GPS-denied nav components become standard on all tactical UAS. Expect INS + VIO as baseline requirements by 2027.",
+    "platform_id": null,
+    "component_id": "gps-denied-nav",
+    "data_sources": [
+      "forge_parts_db",
+      "defense_contracts",
+      "sof_programs"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "USSOCOM Program Tracking",
+        "url": "https://www.socom.mil",
+        "description": "SOF-specific procurement programs: PEO-SOF Warrior, SOFWERX, AFSOC STRATFI, SOF TUAS.",
+        "validation": "DoD press releases, SOCOM budget documents, SOFWERX event reports.",
+        "type": "aggregated",
+        "id": "sof_programs"
+      }
+    ]
+  },
+  {
+    "id": "6df7104fe702",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "Drone motor supply chain: majority Chinese-manufactured",
+    "detail": "T-Motor, BrotherHobby, EMAX, iFlight, XING (iFlight), Sunnysky \u2014 dominant FPV motor brands are all Chinese. Even 'premium' motors from Western brands often use Chinese stator laminations, magnets, and bearings. NDAA-compliant motor alternatives exist (KDE Direct, Allied Motion, Plettenberg, MAD Components) but at 3-5x cost.",
+    "confidence": 0.87,
+    "prediction": "NDAA motor/battery compliance remains the hardest supply chain challenge for domestic UAS manufacturing.",
+    "platform_id": null,
+    "component_id": "motor_china_dependency",
+    "data_sources": [
+      "forge_parts_db",
+      "fpv_market"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "FPV Component Market Tracking",
+        "url": "https://www.getfpv.com",
+        "description": "Commercial FPV component pricing and availability. GetFPV, RaceDayQuads, Pyrodrone.",
+        "validation": "Live retailer pricing. Monitored for anomalies against 90-day moving averages.",
+        "type": "primary",
+        "id": "fpv_market"
+      }
+    ]
+  },
+  {
+    "id": "b1eecb0649ff",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "LiPo/Li-Ion cells: CATL, BYD, EVE dominate global production",
+    "detail": "Nearly all drone LiPo packs use Chinese-manufactured cells. Molicel (Taiwan/Canada) and Samsung (S.Korea) are alternatives but at higher cost and limited availability for drone-format cells. This is the deepest NDAA compliance challenge \u2014 there is no US LiPo cell manufacturer at scale.",
+    "confidence": 0.87,
+    "prediction": "NDAA motor/battery compliance remains the hardest supply chain challenge for domestic UAS manufacturing.",
+    "platform_id": null,
+    "component_id": "battery_china_dependency",
+    "data_sources": [
+      "forge_parts_db",
+      "supply_chain_mapping"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      }
+    ]
+  },
+  {
+    "id": "211d3340c0d8",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "Financial: Shield AI \u2014 Valued at $2.7B+ (Series F)",
+    "detail": "Shield AI: Largest defense AI startup valuation. Signals investor confidence in autonomous drone software. Hivemind licensing model. Demand prediction: High growth trajectory \u2192 Jetson Orin demand increases as Hivemind deploys on more platforms.",
+    "confidence": 0.82,
+    "prediction": "High growth trajectory \u2192 Jetson Orin demand increases as Hivemind deploys on more platforms.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "rpi_earnings",
+      "defense_contracts",
+      "forge_industry_intel"
+    ],
+    "sources": [
+      {
+        "name": "Raspberry Pi FY2025 Earnings",
+        "url": "https://www.theregister.com/2026/03/31/raspberry_pi_fy_2025/",
+        "description": "RPi Holdings (LON:RPI) annual results. Revenue $323.5M, DRAM impact, diversion acknowledgment.",
+        "validation": "Public company financial disclosure. Audited results. CEO statements on drone diversion.",
+        "type": "primary",
+        "id": "rpi_earnings"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
+      }
+    ]
+  },
+  {
+    "id": "07c9d4c60237",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "Financial: Anduril Industries \u2014 Valued at $14B+ / Arsenal-1 factory planned",
+    "detail": "Anduril Industries: Building 'Arsenal-1' mass production facility. $14B valuation. Largest defense tech startup. Demand prediction: Arsenal-1 drives massive component demand when online \u2014 Jetson AGX Orin, Lattice FPGA, Doodle Labs mesh at scale.",
+    "confidence": 0.82,
+    "prediction": "Arsenal-1 drives massive component demand when online \u2014 Jetson AGX Orin, Lattice FPGA, Doodle Labs mesh at scale.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "rpi_earnings",
+      "defense_contracts",
+      "forge_industry_intel"
+    ],
+    "sources": [
+      {
+        "name": "Raspberry Pi FY2025 Earnings",
+        "url": "https://www.theregister.com/2026/03/31/raspberry_pi_fy_2025/",
+        "description": "RPi Holdings (LON:RPI) annual results. Revenue $323.5M, DRAM impact, diversion acknowledgment.",
+        "validation": "Public company financial disclosure. Audited results. CEO statements on drone diversion.",
+        "type": "primary",
+        "id": "rpi_earnings"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
+      }
+    ]
+  },
+  {
+    "id": "bbdf4f1e0630",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "Financial: Red Cat Holdings (RCAT) \u2014 SRR win + Drone Dominance + stock 400%+ YoY",
+    "detail": "Red Cat Holdings (RCAT): Teal Black Widow won SRR. Stock surged. Raised capital. Scaling production. $47M USMC contract. Demand prediction: RCAT scaling \u2192 QRB5165 (VOXL 2), FLIR Lepton/Hadron, Silvus MN Micro demand.",
+    "confidence": 0.82,
+    "prediction": "RCAT scaling \u2192 QRB5165 (VOXL 2), FLIR Lepton/Hadron, Silvus MN Micro demand.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "rpi_earnings",
+      "defense_contracts",
+      "forge_industry_intel"
+    ],
+    "sources": [
+      {
+        "name": "Raspberry Pi FY2025 Earnings",
+        "url": "https://www.theregister.com/2026/03/31/raspberry_pi_fy_2025/",
+        "description": "RPi Holdings (LON:RPI) annual results. Revenue $323.5M, DRAM impact, diversion acknowledgment.",
+        "validation": "Public company financial disclosure. Audited results. CEO statements on drone diversion.",
+        "type": "primary",
+        "id": "rpi_earnings"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
+      }
+    ]
+  },
+  {
+    "id": "065f565aafba",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "Financial: AeroVironment (AVAV) \u2014 Revenue $745M+ FY25, Switchblade production ramp",
+    "detail": "AeroVironment (AVAV): Dominant loitering munition maker. Ukraine USAI packages drive Switchblade demand. Sustained revenue growth. Demand prediction: AVAV production ramp \u2192 FLIR Boson 640, Xilinx FPGA, custom AV SoC demand sustained through Ukraine aid.",
+    "confidence": 0.82,
+    "prediction": "AVAV production ramp \u2192 FLIR Boson 640, Xilinx FPGA, custom AV SoC demand sustained through Ukraine aid.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "rpi_earnings",
+      "defense_contracts",
+      "forge_industry_intel"
+    ],
+    "sources": [
+      {
+        "name": "Raspberry Pi FY2025 Earnings",
+        "url": "https://www.theregister.com/2026/03/31/raspberry_pi_fy_2025/",
+        "description": "RPi Holdings (LON:RPI) annual results. Revenue $323.5M, DRAM impact, diversion acknowledgment.",
+        "validation": "Public company financial disclosure. Audited results. CEO statements on drone diversion.",
+        "type": "primary",
+        "id": "rpi_earnings"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
+      }
+    ]
+  },
+  {
     "id": "67c6cfb0ec03",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "5 companion boards use Qualcomm QRB5165 \u2014 supply chain cluster",
@@ -1592,7 +2233,7 @@
   },
   {
     "id": "2ee90455f913",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "7 companion boards use NVIDIA Jetson Orin \u2014 supply chain cluster",
@@ -1617,7 +2258,7 @@
   },
   {
     "id": "b4b1f68be794",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "2 companion boards use NVIDIA Jetson AGX \u2014 supply chain cluster",
@@ -1642,7 +2283,7 @@
   },
   {
     "id": "7ad4922628a9",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Swarmer (Swarmer (getswarmer.com)) \u2014 combat-deployed, 1 active contracts",
@@ -1685,7 +2326,7 @@
   },
   {
     "id": "5de4858d53ce",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Auterion / PX4 (Auterion) \u2014 combat-deployed, 2 active contracts",
@@ -1728,7 +2369,7 @@
   },
   {
     "id": "eb0c4eb72935",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Skydio: 1 platforms in Forge DB (0 Blue UAS)",
@@ -1771,7 +2412,7 @@
   },
   {
     "id": "833100baad16",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Shield AI: 3 platforms in Forge DB (0 Blue UAS)",
@@ -1814,7 +2455,7 @@
   },
   {
     "id": "46550618a735",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Anduril Industries: 3 platforms in Forge DB (1 Blue UAS)",
@@ -1857,7 +2498,7 @@
   },
   {
     "id": "856a608a31a3",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Teal Drones / Red Cat Holdings: 3 platforms in Forge DB (2 Blue UAS)",
@@ -1900,7 +2541,7 @@
   },
   {
     "id": "a5d0bfad8ece",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "ModalAI: 3 platforms in Forge DB (1 Blue UAS)",
@@ -1943,7 +2584,7 @@
   },
   {
     "id": "eae46329a924",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Neros Technologies: 2 platforms in Forge DB (1 Blue UAS)",
@@ -1986,7 +2627,7 @@
   },
   {
     "id": "f2b437ef2edf",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "AeroVironment: 4 platforms in Forge DB (0 Blue UAS)",
@@ -2029,7 +2670,7 @@
   },
   {
     "id": "0332f661b8df",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Freefly Systems: 2 platforms in Forge DB (1 Blue UAS)",
@@ -2072,7 +2713,7 @@
   },
   {
     "id": "62b4feb3d4af",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Parrot: 2 platforms in Forge DB (1 Blue UAS)",
@@ -2115,7 +2756,7 @@
   },
   {
     "id": "0f31fa9409cb",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "C-UAS and UAS share SDR modules supply \u2014 2 C-UAS companies competing",
@@ -2149,7 +2790,7 @@
   },
   {
     "id": "496c2e2938d7",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "C-UAS and UAS share FPGA supply \u2014 2 C-UAS companies competing",
@@ -2183,7 +2824,7 @@
   },
   {
     "id": "637609b9a4a3",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: DroneShield \u2014 3 contracts, competes for drone supply chain",
@@ -2217,7 +2858,7 @@
   },
   {
     "id": "a0ce98a8c36b",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Dedrone (Axon) \u2014 3 contracts, competes for drone supply chain",
@@ -2251,7 +2892,7 @@
   },
   {
     "id": "6eb5364fe45e",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Epirus \u2014 2 contracts, competes for drone supply chain",
@@ -2285,7 +2926,7 @@
   },
   {
     "id": "79f2daa5dee8",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: D-Fend Solutions \u2014 2 contracts, competes for drone supply chain",
@@ -2319,7 +2960,7 @@
   },
   {
     "id": "d8e9beaa5913",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Anduril (Anvil/Sentry) \u2014 3 contracts, competes for drone supply chain",
@@ -2353,7 +2994,7 @@
   },
   {
     "id": "3870a917f4b8",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: L3Harris \u2014 2 contracts, competes for drone supply chain",
@@ -2387,7 +3028,7 @@
   },
   {
     "id": "572ce49c2c58",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Policy: American Security Drone Act (ASDA) \u2014 bans DJI for federal use",
@@ -2430,7 +3071,7 @@
   },
   {
     "id": "25291590b238",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "price_anomaly",
     "severity": "info",
     "title": "Mesh radio is 41% of Blue UAS BOM \u2014 single largest cost driver",
@@ -2464,7 +3105,7 @@
   },
   {
     "id": "fc644ad2188c",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "U.S. Army: Army MRR (Medium Range Reconnaissance)",
@@ -2516,7 +3157,7 @@
   },
   {
     "id": "12564c7f7a5f",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "FEMA / DHS: FEMA C-UAS Grant Program",
@@ -2568,7 +3209,7 @@
   },
   {
     "id": "cbba9917a29e",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Turkey: Baykar (TB2/TB3/Akinci/Kizilelma) \u2014 #2 drone exporter, 35+ custom",
@@ -2602,7 +3243,7 @@
   },
   {
     "id": "e7afb28385ef",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Ukraine: Fastest-iterating FPV ecosystem \u2014 thousands/month, Brave1 acceler",
@@ -2636,7 +3277,7 @@
   },
   {
     "id": "052f63104448",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EU/NATO: FCAS (\u20ac100B+), EuroDrone, Airbus Wingman, sovereignty push",
@@ -2670,7 +3311,7 @@
   },
   {
     "id": "6de5178117df",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "India: ideaForge + Solar Industries + Adani defense \u2014 indigenous drone p",
@@ -2704,7 +3345,7 @@
   },
   {
     "id": "f8b43ba79a3e",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "South Korea: KAI stealth UCAV + Samsung/SK Hynix DRAM supply",
@@ -2738,7 +3379,7 @@
   },
   {
     "id": "8fa546cd000c",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Australia: SYPAQ Corvo (cardboard drone, used in Ukraine) + MQ-28 Ghost Bat ",
@@ -2772,7 +3413,7 @@
   },
   {
     "id": "53bb266b195d",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Poland: WB Group Warmate/FlyEye \u2014 NATO eastern flank drone capability",
@@ -2806,7 +3447,7 @@
   },
   {
     "id": "7a6790d9a392",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Croatia: Orqa \u2014 EU-manufactured NDAA FPV ecosystem (FC, ESC, goggles)",
@@ -2840,7 +3481,7 @@
   },
   {
     "id": "0d17f6c63c02",
-    "timestamp": "2026-04-02T17:42:15.078864+00:00",
+    "timestamp": "2026-04-02T17:50:14.081358+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Global UAS landscape: 42 countries, 219 platforms in Forge DB",
@@ -2860,6 +3501,865 @@
         "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
         "type": "primary",
         "id": "forge_parts_db"
+      }
+    ]
+  },
+  {
+    "id": "629c2fc4d50c",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "RF/Comms: Collins Aerospace (RTX) \u2014 Airborne radio/datalink provider. TruNet enables air-to-ground mesh. C",
+    "detail": "Collins Aerospace (RTX) (Cedar Rapids, IA): Airborne radio/datalink provider. TruNet enables air-to-ground mesh. Critical for CCA and MUM-T operations. Products: Team Connect MANET, TruNet networking, AN/ARC-210 (airborne). SOF relevance: high. Drone link: CCA programs need Collins/L3Harris datalinks to integrate autonomous drones with crewed fighter networks. HW deps: FPGA, GaN PAs, Custom ASICs.",
+    "confidence": 0.88,
+    "prediction": "SOF drone operations depend on Collins Aerospace (RTX) interoperability. Contract wins drive HW demand for FPGA, GaN PAs.",
+    "platform_id": null,
+    "component_id": "team-connect-manet",
+    "data_sources": [
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "78d8cf68cc7a",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "RF/Comms: Silvus Technologies \u2014 High-throughput MIMO mesh. 100+ Mbps. Used on Teal 2 (Blue UAS). MN Mi",
+    "detail": "Silvus Technologies (Los Angeles, CA): High-throughput MIMO mesh. 100+ Mbps. Used on Teal 2 (Blue UAS). MN Micro is smallest tactical mesh at drone SWaP. Products: StreamCaster SC4200, MN Micro, SC4400. SOF relevance: high. Drone link: MN Micro integrated on Teal 2 Blue UAS for SOF ISR. StreamCaster for ground relay. HW deps: Custom MIMO silicon, GaN amplifiers.",
+    "confidence": 0.88,
+    "prediction": "SOF drone operations depend on Silvus Technologies interoperability. Contract wins drive HW demand for Custom MIMO silicon, GaN amplifiers.",
+    "platform_id": null,
+    "component_id": "streamcaster-sc4200",
+    "data_sources": [
+      "forge_parts_db",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "4b0aee7dfb4e",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "RF/Comms: Doodle Labs \u2014 Most popular mesh radio for drone integration. OpenWRT + batman-adv un",
+    "detail": "Doodle Labs (Burnaby, BC / US operations): Most popular mesh radio for drone integration. OpenWRT + batman-adv under the hood. L/S/C-Band options. Used on Ghost-X. Products: Helix Smart Radio, Mini OEM, RM-915/RM-2450. SOF relevance: high. Drone link: Primary mesh radio for Anduril Ghost-X and multiple Blue UAS platforms. Handbook Ch.14 reference. HW deps: Qualcomm/Atheros WiFi silicon, Custom firmware.",
+    "confidence": 0.88,
+    "prediction": "SOF drone operations depend on Doodle Labs interoperability. Contract wins drive HW demand for Qualcomm/Atheros WiFi silicon, Custom firmware.",
+    "platform_id": null,
+    "component_id": "helix-smart-radio",
+    "data_sources": [
+      "forge_parts_db",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "d55c00c83120",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "RF/Comms: Rajant Corporation \u2014 Kinetic Mesh \u2014 each node is a router. Mobile ad-hoc networking for ind",
+    "detail": "Rajant Corporation (Morrisville, PA): Kinetic Mesh \u2014 each node is a router. Mobile ad-hoc networking for industrial + defense. InstaMesh protocol. Products: BreadCrumb LX5, Sparrow, Peregrine. SOF relevance: medium. Drone link: Alternative to Doodle/Silvus for drone mesh. More capacity but higher SWaP. HW deps: Dual-radio architecture, Custom mesh firmware.",
+    "confidence": 0.88,
+    "prediction": "SOF drone operations depend on Rajant Corporation interoperability. Contract wins drive HW demand for Dual-radio architecture, Custom mesh firmware.",
+    "platform_id": null,
+    "component_id": "breadcrumb-lx5",
+    "data_sources": [
+      "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
+    ]
+  },
+  {
+    "id": "6c0bc6fb4967",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "RF/Comms: Mobilicom \u2014 Blue UAS Framework certified datalinks. IP mesh networking for UAS C2 ",
+    "detail": "Mobilicom (Israel/US): Blue UAS Framework certified datalinks. IP mesh networking for UAS C2 + video. Products: SkyHopper PRO, SkyHopper PRO Lite, SkyHopper PRO Micro. SOF relevance: medium. Drone link: Blue UAS Framework certified \u2014 pre-approved for integration on Blue UAS platforms. HW deps: SDR platform, MIMO antennas.",
+    "confidence": 0.88,
+    "prediction": "SOF drone operations depend on Mobilicom interoperability. Contract wins drive HW demand for SDR platform, MIMO antennas.",
+    "platform_id": null,
+    "component_id": "skyhopper-pro",
+    "data_sources": [
+      "diu_blue_uas",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "DIU/DCMA Blue UAS Cleared List",
+        "url": "https://www.diu.mil/blue-uas-cleared-list",
+        "description": "Official DoD Blue UAS list. 50+ platforms, 14+ framework components.",
+        "validation": "Official DoD certification. Primary source.",
+        "type": "primary",
+        "id": "diu_blue_uas"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "c4bdbeb1a2fd",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "EW: Sierra Nevada Corporation (SNC) \u2014 Drones operating in EW-contested environments need frequency-hopp",
+    "detail": "Sierra Nevada Corporation (SNC) (Sparks, NV) Products: MOD-X EW suite, Counter-comms systems, ISR platforms. Major EW provider. Counter-comms capability directly impacts drone C2 links. SNC EW drives need for resilient waveforms. Drone impact: Drones operating in EW-contested environments need frequency-hopping (ELRS FHSS), GPS-denied nav, and mesh resilience.",
+    "confidence": 0.82,
+    "prediction": "EW capability from Sierra Nevada Corporation (SNC) drives countermeasure demand in drone ecosystem.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "foreign_intel",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "4071ff304886",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "EW: CACI International \u2014 Drives requirement for EW-resilient drone comms. ELRS frequency-h",
+    "detail": "CACI International (Reston, VA) Products: Electronic warfare systems, SIGINT platforms, Spectrum management. EW and SIGINT provider. Their systems are what drones face in contested environments. Drone impact: Drives requirement for EW-resilient drone comms. ELRS frequency-hopping, Hivemind GPS-denied operation.",
+    "confidence": 0.82,
+    "prediction": "EW capability from CACI International drives countermeasure demand in drone ecosystem.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "foreign_intel",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "7d89b8813a87",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "EW: Northrop Grumman \u2014 EW Division \u2014 Friendly EW (JCREW) can inadvertently jam friendly drone links \u2014 ",
+    "detail": "Northrop Grumman \u2014 EW Division (Linthicum, MD) Products: AN/ALQ-131, JCREW counter-IED/EW, Cyber/EW integrated systems. JCREW counter-IED jammers also affect drone control links. Same spectrum, same problem. Drone impact: Friendly EW (JCREW) can inadvertently jam friendly drone links \u2014 frequency deconfliction is critical.",
+    "confidence": 0.82,
+    "prediction": "EW capability from Northrop Grumman \u2014 EW Division drives countermeasure demand in drone ecosystem.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "foreign_intel",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "c32e4139ad73",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "EW: Russian EW (Reported) \u2014 Russian EW is why GPS-denied autonomy (Hivemind, Skydio VIO) and ",
+    "detail": "Russian EW (Reported) (Russia) Products: Krasukha-4, Zhitel, R-330Zh (drone-specific jammer). Russia deploys drone-specific jammers. R-330Zh targets 900MHz/2.4GHz/5.8GHz \u2014 exactly the bands drones use. Pole-21 GPS jammer. Drone impact: Russian EW is why GPS-denied autonomy (Hivemind, Skydio VIO) and frequency-hopping links (ELRS, IRONghost) exist. The threat drives the technology.",
+    "confidence": 0.82,
+    "prediction": "EW capability from Russian EW (Reported) drives countermeasure demand in drone ecosystem.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "foreign_intel",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "0f5959c029b6",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Nav/PNT: VectorNav Technologies \u2014 Primary sensor for inertial dead-reckoning during GPS denial",
+    "detail": "VectorNav Technologies (Dallas, TX, IMU/INS): Tactical-grade inertial navigation. When GPS is jammed, INS provides dead-reckoning. Used in defense and commercial UAS. GPS-denied role: Primary sensor for inertial dead-reckoning during GPS denial. Drift rate determines useful duration without GPS.",
+    "confidence": 0.85,
+    "prediction": "VectorNav Technologies demand grows as GPS-denied requirements become standard.",
+    "platform_id": null,
+    "component_id": "vn-100-(imu)",
+    "data_sources": [
+      "forge_parts_db",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "2f17eebf75b5",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Nav/PNT: Emcore / KVH Industries \u2014 FOG provides much lower drift than MEMS. Enables hours of GP",
+    "detail": "Emcore / KVH Industries (Various US, FOG/IMU): Fiber-optic gyro \u2014 highest accuracy inertial. Used in precision navigation for cruise missiles and high-end UAS. GPS-denied role: FOG provides much lower drift than MEMS. Enables hours of GPS-denied operation vs minutes for MEMS.",
+    "confidence": 0.85,
+    "prediction": "Emcore / KVH Industries demand grows as GPS-denied requirements become standard.",
+    "platform_id": null,
+    "component_id": "emcore-en-300-(fog)",
+    "data_sources": [
+      "forge_parts_db",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "0965070b85ef",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Nav/PNT: Skydio Visual-Inertial Odometry \u2014 Purely visual navigation. Works indoors, in GPS-denied envir",
+    "detail": "Skydio Visual-Inertial Odometry (San Mateo, CA, visual_nav): Camera-based navigation \u2014 no GPS needed. Uses 6 fisheye cameras + AI to build real-time 3D map and localize. Best-in-class commercial visual nav. GPS-denied role: Purely visual navigation. Works indoors, in GPS-denied environments, under jamming. Requires good visibility.",
+    "confidence": 0.85,
+    "prediction": "Skydio Visual-Inertial Odometry demand grows as GPS-denied requirements become standard.",
+    "platform_id": null,
+    "component_id": "skydio-autonomy-(vio)",
+    "data_sources": [
+      "forge_parts_db",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "7672b0edb4f4",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Nav/PNT: Shield AI Hivemind (GPS-denied) \u2014 Multi-sensor fusion for GPS-denied flight. 200+ flights in U",
+    "detail": "Shield AI Hivemind (GPS-denied) (San Diego, CA, ai_nav): Fuses IMU + camera + any available sensors for navigation without GPS. Combat-tested in Ukraine under Russian EW. GPS-denied role: Multi-sensor fusion for GPS-denied flight. 200+ flights in Ukraine under active Russian jamming.",
+    "confidence": 0.85,
+    "prediction": "Shield AI Hivemind (GPS-denied) demand grows as GPS-denied requirements become standard.",
+    "platform_id": null,
+    "component_id": "hivemind-pilot-(gps-denied-sta",
+    "data_sources": [
+      "forge_parts_db",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "fbd7fb021d2a",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Nav/PNT: Chip-Scale Atomic Clocks (CSAC) \u2014 Maintains timing accuracy for mesh radios and sensor synchro",
+    "detail": "Chip-Scale Atomic Clocks (CSAC) (Various, timing): GPS provides timing as much as position. When GPS is jammed, CSAC provides precise timing for FHSS radios and sensor fusion. GPS-denied role: Maintains timing accuracy for mesh radios and sensor synchronization when GPS timing is unavailable.",
+    "confidence": 0.85,
+    "prediction": "Chip-Scale Atomic Clocks (CSAC) demand grows as GPS-denied requirements become standard.",
+    "platform_id": null,
+    "component_id": "microsemi-sa.45s-csac",
+    "data_sources": [
+      "forge_parts_db",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "84aa35310038",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Nav/PNT: u-blox GNSS Modules \u2014 Primary GNSS receiver. First component to fail under jamming",
+    "detail": "u-blox GNSS Modules (Switzerland, gnss): Dominant GNSS module supplier for commercial and Blue UAS drones. ZED-F9P is the standard RTK module. GPS-denied role: Primary GNSS receiver. First component to fail under jamming \u2014 drives need for INS backup.",
+    "confidence": 0.85,
+    "prediction": "u-blox GNSS Modules demand grows as GPS-denied requirements become standard.",
+    "platform_id": null,
+    "component_id": "zed-f9p-(rtk)",
+    "data_sources": [
+      "forge_parts_db",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "1eaaabc4b5e5",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Hydrogen fuel cells emerging for long-endurance UAS",
+    "detail": "Intelligent Energy (UK), Doosan Mobility (S.Korea), HES Energy (Singapore) \u2014 fuel cells enable 2-4 hour flight vs 30-45 min on LiPo. Still early-stage for tactical UAS but defense interest growing.",
+    "confidence": 0.87,
+    "prediction": "NDAA motor/battery compliance remains the hardest supply chain challenge for domestic UAS manufacturing.",
+    "platform_id": null,
+    "component_id": "fuel_cell_emerging",
+    "data_sources": [
+      "forge_parts_db",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "a92d6f2b7d83",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Hybrid-electric propulsion for Group 3+ UAS",
+    "detail": "Parallel Flight Technologies, Currawong Engineering (Australia) \u2014 hybrid systems combining small engines with electric motors for heavy-lift, long-endurance. Addresses the range limitation of pure-electric UAS.",
+    "confidence": 0.87,
+    "prediction": "NDAA motor/battery compliance remains the hardest supply chain challenge for domestic UAS manufacturing.",
+    "platform_id": null,
+    "component_id": "hybrid_electric",
+    "data_sources": [
+      "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
+    ]
+  },
+  {
+    "id": "f78b9cc462fa",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Test/Event: Drone Dominance Gauntlet \u2014 Gauntlet results directly determine which manufacturers scal",
+    "detail": "Drone Dominance Gauntlet (Fort Benning, GA (and rotating)): DoD competitive evaluation for DDP vendors. Phase 1 winners announced Mar 2026. Defines which platforms get volume orders. Demand signal: Gauntlet results directly determine which manufacturers scale production \u2192 which components see demand spikes.",
+    "confidence": 0.8,
+    "prediction": "Watch Drone Dominance Gauntlet results for procurement direction signals.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "gov_programs",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "954d78747d2b",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Test/Event: Army Yuma Proving Ground \u2014 Test failures can delay programs. Test successes accelerate ",
+    "detail": "Army Yuma Proving Ground (Yuma, AZ): Primary Army UAS test range. FTUAS, SRR, and FoSUAS evaluation conducted here. Demand signal: Test failures can delay programs. Test successes accelerate procurement timelines.",
+    "confidence": 0.8,
+    "prediction": "Watch Army Yuma Proving Ground results for procurement direction signals.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "gov_programs",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "8e6e36337e52",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Test/Event: AUVSI XPONENTIAL \u2014 Leading indicator \u2014 announcements at XPONENTIAL often preced",
+    "detail": "AUVSI XPONENTIAL (Annual conference): Largest UAS industry event. New product launches, partnership announcements, procurement signals. Demand signal: Leading indicator \u2014 announcements at XPONENTIAL often precede contract awards by 3-6 months.",
+    "confidence": 0.8,
+    "prediction": "Watch AUVSI XPONENTIAL results for procurement direction signals.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "gov_programs",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "0d3c5f8ba7a0",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Test/Event: Army Best Drone Warfighter Competition \u2014 Competition results influence which platforms get adopted at",
+    "detail": "Army Best Drone Warfighter Competition (Huntsville, AL (Feb 2026)): Competitive evaluation of soldier drone skills. Drives training requirements and platform standardization. Demand signal: Competition results influence which platforms get adopted at unit level.",
+    "confidence": 0.8,
+    "prediction": "Watch Army Best Drone Warfighter Competition results for procurement direction signals.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "gov_programs",
+      "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
+    ]
+  },
+  {
+    "id": "0efbbe9aa568",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Financial: Raspberry Pi Holdings (LON:RPI) \u2014 Revenue $323M FY25 +25%, shares +24%",
+    "detail": "Raspberry Pi Holdings (LON:RPI): RPi now public company. Revenue growth driven by US+China demand. Acknowledged drone diversion issue. DRAM costs driving price hikes. Demand prediction: RPi pricing continues up. CM4/CM5 constrained. Gray market premium persists.",
+    "confidence": 0.82,
+    "prediction": "RPi pricing continues up. CM4/CM5 constrained. Gray market premium persists.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "rpi_earnings",
+      "defense_contracts",
+      "forge_industry_intel"
+    ],
+    "sources": [
+      {
+        "name": "Raspberry Pi FY2025 Earnings",
+        "url": "https://www.theregister.com/2026/03/31/raspberry_pi_fy_2025/",
+        "description": "RPi Holdings (LON:RPI) annual results. Revenue $323.5M, DRAM impact, diversion acknowledgment.",
+        "validation": "Public company financial disclosure. Audited results. CEO statements on drone diversion.",
+        "type": "primary",
+        "id": "rpi_earnings"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
+      }
+    ]
+  },
+  {
+    "id": "f0cd49750d15",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Financial: Axon (AXON) \u2014 Acquired Dedrone (C-UAS)",
+    "detail": "Axon (AXON): Axon acquiring Dedrone signals C-UAS market maturation. Big-company entry validates space. Demand prediction: Axon resources accelerate Dedrone scaling \u2192 C-UAS RF sensor demand increases.",
+    "confidence": 0.82,
+    "prediction": "Axon resources accelerate Dedrone scaling \u2192 C-UAS RF sensor demand increases.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "rpi_earnings",
+      "defense_contracts",
+      "forge_industry_intel"
+    ],
+    "sources": [
+      {
+        "name": "Raspberry Pi FY2025 Earnings",
+        "url": "https://www.theregister.com/2026/03/31/raspberry_pi_fy_2025/",
+        "description": "RPi Holdings (LON:RPI) annual results. Revenue $323.5M, DRAM impact, diversion acknowledgment.",
+        "validation": "Public company financial disclosure. Audited results. CEO statements on drone diversion.",
+        "type": "primary",
+        "id": "rpi_earnings"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
+      }
+    ]
+  },
+  {
+    "id": "3f51109854cd",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Financial: DroneShield (DRO.AX) \u2014 A$1.2B European pipeline, multiple contracts",
+    "detail": "DroneShield (DRO.AX): Australian C-UAS company with massive European pipeline. $6.2M Asia-Pacific contract Mar 2026. Demand prediction: DroneShield scaling \u2192 SDR module demand, RF detection hardware, AI classification compute.",
+    "confidence": 0.82,
+    "prediction": "DroneShield scaling \u2192 SDR module demand, RF detection hardware, AI classification compute.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "rpi_earnings",
+      "defense_contracts",
+      "forge_industry_intel"
+    ],
+    "sources": [
+      {
+        "name": "Raspberry Pi FY2025 Earnings",
+        "url": "https://www.theregister.com/2026/03/31/raspberry_pi_fy_2025/",
+        "description": "RPi Holdings (LON:RPI) annual results. Revenue $323.5M, DRAM impact, diversion acknowledgment.",
+        "validation": "Public company financial disclosure. Audited results. CEO statements on drone diversion.",
+        "type": "primary",
+        "id": "rpi_earnings"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
+      }
+    ]
+  },
+  {
+    "id": "fddbfc8bc997",
+    "timestamp": "2026-04-02T17:50:14.080799+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Financial: Kratos Defense (KTOS) \u2014 Valkyrie CCA + drone target production",
+    "detail": "Kratos Defense (KTOS): Attritable drone maker. XQ-58 Valkyrie is CCA candidate. Also makes BQM target drones. Airbus partnership for German Valkyrie. Demand prediction: CCA production \u2192 tactical datalink demand, AI compute, propulsion components.",
+    "confidence": 0.82,
+    "prediction": "CCA production \u2192 tactical datalink demand, AI compute, propulsion components.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "rpi_earnings",
+      "defense_contracts",
+      "forge_industry_intel"
+    ],
+    "sources": [
+      {
+        "name": "Raspberry Pi FY2025 Earnings",
+        "url": "https://www.theregister.com/2026/03/31/raspberry_pi_fy_2025/",
+        "description": "RPi Holdings (LON:RPI) annual results. Revenue $323.5M, DRAM impact, diversion acknowledgment.",
+        "validation": "Public company financial disclosure. Audited results. CEO statements on drone diversion.",
+        "type": "primary",
+        "id": "rpi_earnings"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
       }
     ]
   }

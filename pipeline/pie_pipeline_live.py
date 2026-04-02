@@ -11,6 +11,15 @@ import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Import supplemental analysis modules
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from pie_supplemental import (
+    analyze_rf_comms, analyze_ew, analyze_sof, analyze_nav_pnt,
+    analyze_propulsion, analyze_test_infra, analyze_financial,
+    SUPPLEMENTAL_SOURCES,
+)
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PARTS_DB = REPO_ROOT / "data" / "parts-db"
 FORGE_DB = REPO_ROOT / "data" / "forge_database.json"
@@ -255,6 +264,10 @@ SOURCES = {
         "type": "primary",
     },
 }
+
+
+# Merge supplemental sources
+SOURCES.update(SUPPLEMENTAL_SOURCES)
 
 
 def resolve_sources(source_ids):
@@ -1897,6 +1910,34 @@ def main():
     print("\nAnalyzing foreign UAS ecosystems...")
     foreign_flags = analyze_foreign(db)
     all_flags.extend(foreign_flags)
+
+    print("\nAnalyzing RF/comms ecosystem...")
+    rf_flags = analyze_rf_comms(db)
+    all_flags.extend(rf_flags)
+
+    print("\nAnalyzing EW threat landscape...")
+    ew_flags = analyze_ew(db)
+    all_flags.extend(ew_flags)
+
+    print("\nAnalyzing SOF-specific programs...")
+    sof_flags = analyze_sof(db)
+    all_flags.extend(sof_flags)
+
+    print("\nAnalyzing navigation/PNT (GPS-denied)...")
+    nav_flags = analyze_nav_pnt(db)
+    all_flags.extend(nav_flags)
+
+    print("\nAnalyzing propulsion supply chain...")
+    prop_flags = analyze_propulsion(db)
+    all_flags.extend(prop_flags)
+
+    print("\nAnalyzing test & training infrastructure...")
+    test_flags = analyze_test_infra()
+    all_flags.extend(test_flags)
+
+    print("\nAnalyzing financial signals...")
+    fin_flags = analyze_financial()
+    all_flags.extend(fin_flags)
 
     print("\nGenerating predictions...")
     preds = generate_predictions(len(blue), len(ndaa), db)
