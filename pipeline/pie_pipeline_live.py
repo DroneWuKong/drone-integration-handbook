@@ -1224,6 +1224,253 @@ def analyze_allied_supply(db):
 
 
 # ──────────────────────────────────────────
+# 13b. GOVERNMENT & DOD PROGRAMS
+# ──────────────────────────────────────────
+
+GOV_PROGRAMS = [
+    # ── DoD Drone Programs ──
+    {
+        "name": "Drone Dominance Program (DDP)",
+        "agency": "DoD / Under Secretary R&E",
+        "status": "active — Phase 1 orders placed Mar 2026",
+        "budget": "$1.4B congressional appropriation (FY25 reconciliation) + ongoing",
+        "scope": "200,000+ small UAS by 2027. 30,000 by Jul 2026. Gauntlet competitive trials.",
+        "platforms": ["Neros Archer", "PDW C100", "Multiple FPV vendors"],
+        "component_demand": ["STM32H7", "ESP32-S3", "ELRS 900MHz", "FPV cameras", "LiPo batteries"],
+        "category": "procurement",
+        "impact": "critical",
+    },
+    {
+        "name": "Replicator → DAWG (Defense Autonomous Warfare Group)",
+        "agency": "DoD / SecDef",
+        "status": "active — renamed from Replicator. Focus on larger autonomous systems.",
+        "budget": "$500M+ (Replicator 1). Additional funding through Replicator 2.",
+        "scope": "Thousands of attritable autonomous systems. All-domain. Replicator 2 focused on C-UAS.",
+        "platforms": ["Anduril Ghost-X", "Anduril Altius", "Switchblade 600", "Dive-LD UUV"],
+        "component_demand": ["Jetson AGX Orin", "FLIR Boson 640", "Doodle Labs mesh", "Lattice FPGA"],
+        "category": "procurement",
+        "impact": "critical",
+    },
+    {
+        "name": "Army SRR (Short Range Reconnaissance)",
+        "agency": "U.S. Army",
+        "status": "active — Tranche 2 selection pending. 5,880 systems over 5 years.",
+        "budget": "Program of record. Multi-year acquisition.",
+        "scope": "Platoon-level ISR quad. <5 lbs. 30 min endurance. Selected: Skydio X10D, Teal Black Widow.",
+        "platforms": ["Skydio X10D", "Teal Black Widow"],
+        "component_demand": ["NVIDIA Jetson Orin NX", "Qualcomm QRB5165", "FLIR Lepton/Hadron"],
+        "category": "procurement",
+        "impact": "high",
+    },
+    {
+        "name": "Army MRR (Medium Range Reconnaissance)",
+        "agency": "U.S. Army",
+        "status": "active — FY2026 budget requested 107 systems",
+        "budget": "FY2026 budget line",
+        "scope": "Company-level sUAS. 10km+ range, 30 min endurance.",
+        "platforms": ["TBD — competitive"],
+        "component_demand": ["Long-range datalinks", "Companion computers", "RTK GNSS"],
+        "category": "procurement",
+        "impact": "medium",
+    },
+    {
+        "name": "Army FoSUAS (Family of Small UAS)",
+        "agency": "U.S. Army",
+        "status": "active — replacing RQ-11 Raven. Multiple tiers.",
+        "budget": "Multi-year. Part of $1.4B reconciliation allocation.",
+        "scope": "Fielding UAS 'in every Division by end of 2026' per SecDef memo.",
+        "platforms": ["SRR winners", "MRR winners", "FTUAS candidates"],
+        "component_demand": ["All Blue UAS components at scale"],
+        "category": "procurement",
+        "impact": "critical",
+    },
+    {
+        "name": "Army FTUAS (Future Tactical UAS)",
+        "agency": "U.S. Army PEO Aviation",
+        "status": "active — Group 3 UAS replacement for Shadow.",
+        "budget": "Major program of record",
+        "scope": "Replacing RQ-7 Shadow. Longer range, VTOL, autonomous. Textron/L3Harris competing.",
+        "platforms": ["Textron Aerosonde HQ", "L3Harris FVR-90"],
+        "component_demand": ["Heavy-lift motors", "Tactical datalinks", "EO/IR payloads"],
+        "category": "procurement",
+        "impact": "high",
+    },
+    {
+        "name": "USMC FPV Drone Program",
+        "agency": "U.S. Marine Corps",
+        "status": "active — $47M to Red Cat/Teal. RFI for <$4K FPV airframes.",
+        "budget": "$47M+ initial",
+        "scope": "FPV at scale for every Marine unit. Cost target: <$4,000/airframe.",
+        "platforms": ["Teal 2", "Neros Archer", "Various FPV vendors"],
+        "component_demand": ["STM32H7", "ELRS modules", "FPV cameras", "Walksnail/Caddx"],
+        "category": "procurement",
+        "impact": "high",
+    },
+    {
+        "name": "USAF CCA (Collaborative Combat Aircraft)",
+        "agency": "U.S. Air Force",
+        "status": "active — Increment 1 flight demos 2026. Anduril YFQ-44A vs GA-ASI YFQ-42A.",
+        "budget": "$5.8B (FY2025-2029 FYDP)",
+        "scope": "Autonomous drone wingmen for F-35/NGAD. AI-enabled swarm combat.",
+        "platforms": ["Anduril YFQ-44A (Fury)", "GA-ASI YFQ-42A"],
+        "component_demand": ["Shield AI Hivemind", "NVIDIA Jetson (AI)", "Tactical mesh", "EW systems"],
+        "category": "procurement",
+        "impact": "critical",
+    },
+    # ── Counter-UAS Programs ──
+    {
+        "name": "JIATF-401 (Joint Interagency Task Force for C-UAS)",
+        "agency": "DoD",
+        "status": "active — established Aug 2025. Replicator 2 resources consolidated here.",
+        "budget": "Replicator 2 budget + congressional funding",
+        "scope": "Lead organization for C-sUAS. Homeland defense + force protection.",
+        "platforms": ["Anduril Anvil", "Fortem DroneHunter", "Epirus Leonidas", "L3Harris C-UAS"],
+        "component_demand": ["RF sensors", "SDR modules", "AI compute (detection)", "Directed energy"],
+        "category": "counter_uas",
+        "impact": "high",
+    },
+    {
+        "name": "FEMA C-UAS Grant Program",
+        "agency": "FEMA / DHS",
+        "status": "active — $250M distributed to 11 World Cup sites",
+        "budget": "$250M",
+        "scope": "Counter-drone protection for FIFA 2026 World Cup venues + critical infrastructure.",
+        "platforms": ["DroneShield", "Dedrone", "D-Fend", "Various C-UAS"],
+        "component_demand": ["RF detection hardware", "Radar modules", "C2 compute"],
+        "category": "counter_uas",
+        "impact": "medium",
+    },
+    # ── Policy & Legislative ──
+    {
+        "name": "NDAA FY25 Section 1709 (Foreign Drone Ban)",
+        "agency": "Congress / FCC",
+        "status": "enacted — FCC implementing equipment authorization freeze",
+        "budget": "Regulatory (no direct budget)",
+        "scope": "Blocks new foreign-manufactured drone models from US market. Exemptions for Blue UAS.",
+        "platforms": ["DJI (blocked)", "All domestic manufacturers (benefited)"],
+        "component_demand": ["Demand shift to all domestic/NDAA components"],
+        "category": "legislative",
+        "impact": "critical",
+    },
+    {
+        "name": "Drone Dominance Executive Order (Jul 2025)",
+        "agency": "White House / SecDef",
+        "status": "enacted — 'Unleashing U.S. Military Drone Dominance'",
+        "budget": "Directs Pentagon spending priorities",
+        "scope": "Rescinds restrictive drone policies. FAA BVLOS rulemaking. Domestic manufacturing priority.",
+        "platforms": ["All domestic UAS manufacturers"],
+        "component_demand": ["Broad demand acceleration across all Blue UAS components"],
+        "category": "executive",
+        "impact": "critical",
+    },
+    {
+        "name": "ASDA (American Security Drone Act)",
+        "agency": "Congress",
+        "status": "enacted — bans DJI + covered entities for federal use",
+        "budget": "Regulatory",
+        "scope": "Federal agencies must transition to trusted/Blue UAS platforms.",
+        "platforms": ["DJI (banned)", "All Blue UAS (demand surge)"],
+        "component_demand": ["All Blue UAS companion computers", "NDAA radios", "Trusted sensors"],
+        "category": "legislative",
+        "impact": "high",
+    },
+    # ── Ukraine Security Assistance ──
+    {
+        "name": "Ukraine Security Assistance Initiative (USAI)",
+        "agency": "DoD / State Dept",
+        "status": "ongoing — multiple aid packages",
+        "budget": "$50B+ total US military aid since 2022",
+        "scope": "Includes Switchblade 600, various UAS, counter-drone systems, ammunition.",
+        "platforms": ["Switchblade 600", "Various ISR drones"],
+        "component_demand": ["FLIR Boson 640", "Custom AV SoC", "Xilinx FPGA", "Tactical batteries"],
+        "category": "security_assistance",
+        "impact": "high",
+    },
+    # ── Blue UAS Program ──
+    {
+        "name": "Blue UAS Cleared List (DCMA)",
+        "agency": "DCMA (transferred from DIU Jul 2025)",
+        "status": "active — 50+ platforms cleared. Continuous on-ramp.",
+        "budget": "Evaluation/certification program",
+        "scope": "Cybersecurity + supply chain vetting for federal drone procurement. Framework includes components.",
+        "platforms": ["50+ cleared platforms", "14+ framework components"],
+        "component_demand": ["All components must pass NDAA + cyber review"],
+        "category": "certification",
+        "impact": "high",
+    },
+]
+
+
+def analyze_gov_programs(db):
+    """Track government and DoD programs that drive UAS component demand."""
+    flags = []
+    models = db.get("drone_models", [])
+    print(f"  Government programs tracked: {len(GOV_PROGRAMS)}")
+
+    # Aggregate component demand across all programs
+    component_demand_drivers = {}
+    for prog in GOV_PROGRAMS:
+        for comp in prog["component_demand"]:
+            component_demand_drivers.setdefault(comp, []).append(prog["name"])
+
+    # Flag programs by impact level
+    for prog in GOV_PROGRAMS:
+        severity = "warning" if prog["impact"] in ("critical", "high") else "info"
+
+        # Count how many Forge DB platforms are involved
+        involved = []
+        for pname in prog["platforms"]:
+            for m in models:
+                if pname.lower() in (m.get("name") or "").lower():
+                    involved.append(m.get("name", ""))
+                    break
+
+        flags.append({
+            "id": flag_id(f"gov-{prog['name'][:30]}"),
+            "timestamp": now,
+            "flag_type": "contract_signal",
+            "severity": severity,
+            "title": f"{prog['agency']}: {prog['name']}",
+            "detail": (
+                f"Status: {prog['status']}. "
+                f"Budget: {prog['budget']}. "
+                f"Scope: {prog['scope']} "
+                f"Platforms: {', '.join(prog['platforms'][:4])}. "
+                f"Component demand: {', '.join(prog['component_demand'][:4])}."
+                + (f" Forge DB matches: {', '.join(involved[:3])}." if involved else "")
+            ),
+            "confidence": 0.95,
+            "prediction": f"Active program driving demand for {', '.join(prog['component_demand'][:2])}.",
+            "platform_id": None,
+            "component_id": prog["component_demand"][0].lower().replace(" ", "-") if prog["component_demand"] else None,
+            "data_sources": ["gov_programs", "congress_gov", "defensescoop", "sam_gov"],
+        })
+
+    # Flag components with demand from 3+ government programs
+    for comp, programs in component_demand_drivers.items():
+        if len(programs) >= 3:
+            flags.append({
+                "id": flag_id(f"gov-compound-{comp}"),
+                "timestamp": now,
+                "flag_type": "procurement_spike",
+                "severity": "warning",
+                "title": f"{comp}: demand driven by {len(programs)} government programs simultaneously",
+                "detail": (
+                    f"{comp} is pulled by: {', '.join(programs[:5])}. "
+                    f"Each program independently drives procurement volume. "
+                    f"Combined demand creates compound pressure on a single component supply chain."
+                ),
+                "confidence": 0.88,
+                "prediction": f"Multi-program demand makes {comp} a bottleneck candidate. Monitor distributor lead times.",
+                "platform_id": None,
+                "component_id": comp.lower().replace(" ", "-"),
+                "data_sources": ["gov_programs", "supply_chain_analysis"],
+            })
+
+    return flags, component_demand_drivers
+
+
+# ──────────────────────────────────────────
 # 14. MAIN
 # ──────────────────────────────────────────
 
@@ -1287,6 +1534,10 @@ def main():
     geo_flags = analyze_allied_supply(db)
     all_flags.extend(geo_flags)
 
+    print("\nAnalyzing government & DoD programs...")
+    gov_flags, gov_demand = analyze_gov_programs(db)
+    all_flags.extend(gov_flags)
+
     print("\nGenerating predictions...")
     preds = generate_predictions(len(blue), len(ndaa), db)
 
@@ -1339,6 +1590,7 @@ def main():
     print(f"  C-UAS companies: {len(CUAS_COMPANIES)}")
     print(f"  Allied nations: {len(ALLIED_SUPPLY)}")
     print(f"  Policy signals: {len(POLICY_SIGNALS)}")
+    print(f"  Gov/DoD programs: {len(GOV_PROGRAMS)}")
     print(f"  Flags generated: {len(all_flags)}")
     sev_counts = {}
     for f in all_flags:
