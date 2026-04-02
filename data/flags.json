@@ -1,7 +1,7 @@
 [
   {
     "id": "c5af86037af6",
-    "timestamp": "2026-04-02T06:43:08.621103+00:00",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 4B found in Geran-2/3 (Shahed-136/238)",
@@ -17,7 +17,7 @@
   },
   {
     "id": "248217679ba3",
-    "timestamp": "2026-04-02T06:43:08.621103+00:00",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi found in Geran-5",
@@ -33,7 +33,7 @@
   },
   {
     "id": "3d1fd93cab17",
-    "timestamp": "2026-04-02T06:43:08.621103+00:00",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 5 found in Molniya-2R",
@@ -49,7 +49,7 @@
   },
   {
     "id": "562b363e0af0",
-    "timestamp": "2026-04-02T06:43:08.621103+00:00",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 4B confirmed in Geran-2/3 'Borscht' tracker \u2014 40,000+ units diverted",
@@ -67,7 +67,7 @@
   },
   {
     "id": "21eef1620b14",
-    "timestamp": "2026-04-02T06:43:08.621103+00:00",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 5 confirmed in Molniya-2R reconnaissance drone",
@@ -85,7 +85,7 @@
   },
   {
     "id": "ee13e070c884",
-    "timestamp": "2026-04-02T06:43:08.621103+00:00",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi tracker with mesh networking in Geran-5 jet drone",
@@ -103,7 +103,7 @@
   },
   {
     "id": "bc6a4d56da83",
-    "timestamp": "2026-04-02T06:43:08.621103+00:00",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "US-manufactured mesh radios: 14 of 24 options \u2014 NDAA bottleneck",
@@ -117,8 +117,42 @@
     ]
   },
   {
+    "id": "68cba2525d93",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "Shield AI Hivemind (Shield AI) \u2014 combat-deployed, 5 active contracts",
+    "detail": "Shield AI Hivemind: AI pilot + swarm coordination. EdgeOS middleware, Hivemind Pilot, Commander C2. GPS/comms-denied capable. Combat status: 200+ flights in Ukraine on V-BAT, 200+ Russian targets identified. Contracts: USAF CCA Increment 1 (YFQ-44A), AFSOC STRATFI, Ukraine Brave1, Taiwan NCSIST. Hardware dependencies: NVIDIA Jetson Orin, Hivemind ASIC. Integrated on: Shield AI V-BAT, Anduril YFQ-44A (Fury CCA), MQ-20 Avenger, Destinus Hornet.",
+    "confidence": 0.92,
+    "prediction": "Contract wins for Shield AI drive hardware demand for NVIDIA Jetson Orin, Hivemind ASIC. Monitor distributor lead times.",
+    "platform_id": null,
+    "component_id": "nvidia-jetson-orin",
+    "data_sources": [
+      "forge_industry_intel",
+      "defense_contracts",
+      "software_ecosystem"
+    ]
+  },
+  {
+    "id": "f79bd79fb6d8",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "warning",
+    "title": "Anduril Lattice (Anduril Industries) \u2014 combat-deployed, 4 active contracts",
+    "detail": "Anduril Lattice: AI-powered C2 and sensor fusion platform. Connects autonomous systems into unified kill chain. Mesh networking, threat detection. Combat status: Deployed in USCENTCOM, USINDOPACOM theaters. Contracts: Replicator Phase 2, USSOCOM MFWS, Lattice Mesh network, Taiwan integration. Hardware dependencies: NVIDIA Jetson AGX Orin, Lattice CertusPro-NX FPGA, Doodle Labs mesh radios. Integrated on: Anduril Ghost-X, Anduril Altius, Anduril Anvil (C-UAS), Sentry Tower.",
+    "confidence": 0.92,
+    "prediction": "Contract wins for Anduril Industries drive hardware demand for NVIDIA Jetson AGX Orin, Lattice CertusPro-NX FPGA. Monitor distributor lead times.",
+    "platform_id": null,
+    "component_id": "nvidia-jetson-agx-orin",
+    "data_sources": [
+      "forge_industry_intel",
+      "defense_contracts",
+      "software_ecosystem"
+    ]
+  },
+  {
     "id": "67c6cfb0ec03",
-    "timestamp": "2026-04-02T06:43:08.621103+00:00",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "5 companion boards use Qualcomm QRB5165 \u2014 supply chain cluster",
@@ -133,7 +167,7 @@
   },
   {
     "id": "2ee90455f913",
-    "timestamp": "2026-04-02T06:43:08.621103+00:00",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "7 companion boards use NVIDIA Jetson Orin \u2014 supply chain cluster",
@@ -148,7 +182,7 @@
   },
   {
     "id": "b4b1f68be794",
-    "timestamp": "2026-04-02T06:43:08.621103+00:00",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "2 companion boards use NVIDIA Jetson AGX \u2014 supply chain cluster",
@@ -159,6 +193,193 @@
     "component_id": "nvidia-jetson-agx",
     "data_sources": [
       "forge_parts_db"
+    ]
+  },
+  {
+    "id": "7ad4922628a9",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Swarmer (Swarmer (getswarmer.com)) \u2014 combat-deployed, 1 active contracts",
+    "detail": "Swarmer: Combat-proven collaborative autonomy. Single operator \u2192 hundreds of drones. AI-driven navigation, scalable swarm ops. Combat status: Combat-proven collaborative autonomy software. Contracts: Combat-deployed (details classified). Hardware dependencies: Various FPV/tactical FCs, Companion computers. Integrated on: Multiple tactical platforms.",
+    "confidence": 0.92,
+    "prediction": "Contract wins for Swarmer (getswarmer.com) drive hardware demand for Various FPV/tactical FCs, Companion computers. Monitor distributor lead times.",
+    "platform_id": null,
+    "component_id": "various-fpv/tactical-fcs",
+    "data_sources": [
+      "forge_industry_intel",
+      "defense_contracts",
+      "software_ecosystem"
+    ]
+  },
+  {
+    "id": "5de4858d53ce",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Auterion / PX4 (Auterion) \u2014 combat-deployed, 2 active contracts",
+    "detail": "Auterion / PX4: Enterprise PX4-based flight OS. Skynode hardware + AuterionOS. Open standards, MAVLink native. Combat status: PX4 ecosystem deployed on multiple platforms in Ukraine. Contracts: Blue UAS Framework component, NATO interop. Hardware dependencies: Qualcomm QRB5165, STM32H7 (Pixhawk). Integrated on: Quantum Systems Trinity, Freefly Astro, Various Blue UAS Framework integrators.",
+    "confidence": 0.92,
+    "prediction": "Contract wins for Auterion drive hardware demand for Qualcomm QRB5165, STM32H7 (Pixhawk). Monitor distributor lead times.",
+    "platform_id": null,
+    "component_id": "qualcomm-qrb5165",
+    "data_sources": [
+      "forge_industry_intel",
+      "defense_contracts",
+      "software_ecosystem"
+    ]
+  },
+  {
+    "id": "eb0c4eb72935",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Skydio: 1 platforms in Forge DB (0 Blue UAS)",
+    "detail": "Manufacturer: Skydio. Visual autonomy leader. X10D is Blue UAS. Largest enterprise drone fleet in US Gov. Platforms: Skydio X10D. Software: Skydio Autonomy Engine. Key hardware dependencies: NVIDIA Jetson Orin NX, Sony IMX sensors. Forge DB: 1 total, 0 Blue UAS, 0 NDAA.",
+    "confidence": 0.95,
+    "prediction": "Production scaling at Skydio directly impacts demand for NVIDIA Jetson Orin NX, Sony IMX sensors.",
+    "platform_id": "MDL-2003",
+    "component_id": "nvidia-jetson-orin-nx",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance",
+      "software_ecosystem"
+    ]
+  },
+  {
+    "id": "833100baad16",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Shield AI: 3 platforms in Forge DB (0 Blue UAS)",
+    "detail": "Manufacturer: Shield AI. Hivemind on V-BAT, CCA YFQ-44A, Ukraine. $2.7B+ valuation. Platforms: Shield AI Nova 2, Shield AI V-BAT (MQ-35A), Shield AI Shield AI Nova 2. Software: Shield AI Hivemind. Key hardware dependencies: NVIDIA Jetson Orin, Hivemind ASIC. Forge DB: 3 total, 0 Blue UAS, 1 NDAA.",
+    "confidence": 0.95,
+    "prediction": "Production scaling at Shield AI directly impacts demand for NVIDIA Jetson Orin, Hivemind ASIC.",
+    "platform_id": "MDL-2020",
+    "component_id": "nvidia-jetson-orin",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance",
+      "software_ecosystem"
+    ]
+  },
+  {
+    "id": "46550618a735",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Anduril Industries: 3 platforms in Forge DB (1 Blue UAS)",
+    "detail": "Manufacturer: Anduril Industries. Ghost-X, Altius, Anvil. Replicator Phase 2. Lattice C2 platform. Platforms: Anduril Ghost X, Anduril Industries Bolt-M, Anduril Industries Anduril Ghost X. Software: Anduril Lattice. Key hardware dependencies: NVIDIA Jetson AGX Orin, Lattice FPGA, Doodle Labs mesh. Forge DB: 3 total, 1 Blue UAS, 1 NDAA.",
+    "confidence": 0.95,
+    "prediction": "Production scaling at Anduril Industries directly impacts demand for NVIDIA Jetson AGX Orin, Lattice FPGA.",
+    "platform_id": "MDL-2008",
+    "component_id": "nvidia-jetson-agx-orin",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance",
+      "software_ecosystem"
+    ]
+  },
+  {
+    "id": "856a608a31a3",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Teal Drones / Red Cat Holdings: 3 platforms in Forge DB (2 Blue UAS)",
+    "detail": "Manufacturer: Teal Drones / Red Cat Holdings. Teal 2, Black Widow (SRR Tranche 2). FPV + ISR. Drone Dominance. Platforms: Teal 2, Teal Drones / Red Cat Holdings Teal Black Widow, Teal Drones / Red Cat Holdings Teal 2. Software: ModalAI VOXL SDK, Gambit (via ModalAI). Key hardware dependencies: Qualcomm QRB5165, FLIR Lepton/Hadron. Forge DB: 3 total, 2 Blue UAS, 2 NDAA.",
+    "confidence": 0.95,
+    "prediction": "Production scaling at Teal Drones / Red Cat Holdings directly impacts demand for Qualcomm QRB5165, FLIR Lepton/Hadron.",
+    "platform_id": "MDL-2006",
+    "component_id": "qualcomm-qrb5165",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance",
+      "software_ecosystem"
+    ]
+  },
+  {
+    "id": "a5d0bfad8ece",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "ModalAI: 3 platforms in Forge DB (1 Blue UAS)",
+    "detail": "Manufacturer: ModalAI. VOXL 2 is Blue UAS Framework autopilot. Seeker/Stinger for SRR. Platforms: ModalAI Seeker Vision FPV, ModalAI Stinger Vision FPV, ModalAI ModalAI Seeker / Stinger. Software: ModalAI VOXL SDK, Gambit Autonomy. Key hardware dependencies: Qualcomm QRB5165. Forge DB: 3 total, 1 Blue UAS, 1 NDAA.",
+    "confidence": 0.95,
+    "prediction": "Production scaling at ModalAI directly impacts demand for Qualcomm QRB5165.",
+    "platform_id": "MDL-2025",
+    "component_id": "qualcomm-qrb5165",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance",
+      "software_ecosystem"
+    ]
+  },
+  {
+    "id": "eae46329a924",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Neros Technologies: 2 platforms in Forge DB (1 Blue UAS)",
+    "detail": "Manufacturer: Neros Technologies. Archer FPV. Drone Dominance at scale \u2014 2,200+/mo production. Platforms: Neros Archer, Neros Technologies Archer. Software: Custom (ELRS + Betaflight/ArduPilot). Key hardware dependencies: STM32H7, ESP32-S3, ELRS 900MHz. Forge DB: 2 total, 1 Blue UAS, 1 NDAA.",
+    "confidence": 0.95,
+    "prediction": "Production scaling at Neros Technologies directly impacts demand for STM32H7, ESP32-S3.",
+    "platform_id": "MDL-2021",
+    "component_id": "stm32h7",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance",
+      "software_ecosystem"
+    ]
+  },
+  {
+    "id": "f2b437ef2edf",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "AeroVironment: 4 platforms in Forge DB (0 Blue UAS)",
+    "detail": "Manufacturer: AeroVironment. Switchblade 600. Major Ukraine supplier. USSOCOM contracts. Platforms: AeroVironment Switchblade 300 Block 20, AeroVironment Switchblade 600, AeroVironment Switchblade 400, AeroVironment VAPOR CLE. Software: Proprietary AV autonomy. Key hardware dependencies: Custom AV SoC, Xilinx FPGA, FLIR Boson 640. Forge DB: 4 total, 0 Blue UAS, 0 NDAA.",
+    "confidence": 0.95,
+    "prediction": "Production scaling at AeroVironment directly impacts demand for Custom AV SoC, Xilinx FPGA.",
+    "platform_id": "MDL-2035",
+    "component_id": "custom-av-soc",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance",
+      "software_ecosystem"
+    ]
+  },
+  {
+    "id": "0332f661b8df",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Freefly Systems: 2 platforms in Forge DB (1 Blue UAS)",
+    "detail": "Manufacturer: Freefly Systems. Astro is Blue UAS. Open architecture. DOI/USGS mapping. Platforms: Freefly Astro, Freefly Systems Freefly Astro (Astro Max). Software: PX4 + Herelink. Key hardware dependencies: RPi CM4, Herelink v2. Forge DB: 2 total, 1 Blue UAS, 1 NDAA.",
+    "confidence": 0.95,
+    "prediction": "Production scaling at Freefly Systems directly impacts demand for RPi CM4, Herelink v2.",
+    "platform_id": "MDL-2004",
+    "component_id": "rpi-cm4",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance",
+      "software_ecosystem"
+    ]
+  },
+  {
+    "id": "62b4feb3d4af",
+    "timestamp": "2026-04-02T07:01:07.514528+00:00",
+    "flag_type": "contract_signal",
+    "severity": "info",
+    "title": "Parrot: 2 platforms in Forge DB (1 Blue UAS)",
+    "detail": "Manufacturer: Parrot. ANAFI USA. Blue UAS. French-made. Army SRR legacy. Platforms: Parrot ANAFI USA, Parrot Parrot ANAFI USA. Software: Parrot FreeFlight SDK. Key hardware dependencies: Parrot P7 SoC, FLIR Boson 320. Forge DB: 2 total, 1 Blue UAS, 1 NDAA.",
+    "confidence": 0.95,
+    "prediction": "Production scaling at Parrot directly impacts demand for Parrot P7 SoC, FLIR Boson 320.",
+    "platform_id": "MDL-2007",
+    "component_id": "parrot-p7-soc",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance",
+      "software_ecosystem"
     ]
   }
 ]

@@ -506,6 +506,255 @@ def generate_predictions(blue_count, ndaa_count, db):
 
 
 # ──────────────────────────────────────────
+# 7. SOFTWARE ECOSYSTEM TRACKING
+# ──────────────────────────────────────────
+
+# Maps software platforms → hardware dependencies → manufacturers
+# When a software company wins a contract, the hardware they run on gets demand pressure
+
+SOFTWARE_ECOSYSTEM = [
+    {
+        "name": "Shield AI Hivemind",
+        "company": "Shield AI",
+        "type": "autonomy_os",
+        "description": "AI pilot + swarm coordination. EdgeOS middleware, Hivemind Pilot, Commander C2. GPS/comms-denied capable.",
+        "hardware_deps": ["NVIDIA Jetson Orin", "Hivemind ASIC"],
+        "platforms_integrated": ["Shield AI V-BAT", "Anduril YFQ-44A (Fury CCA)", "MQ-20 Avenger", "Destinus Hornet", "Destinus Ruta", "NGC Talon IQ"],
+        "contracts": ["USAF CCA Increment 1 (YFQ-44A)", "AFSOC STRATFI", "Ukraine Brave1", "Taiwan NCSIST", "ST Engineering Singapore"],
+        "combat_deployed": True,
+        "combat_note": "200+ flights in Ukraine on V-BAT, 200+ Russian targets identified",
+    },
+    {
+        "name": "Gambit Autonomy",
+        "company": "Gambit",
+        "type": "autonomy_orchestration",
+        "description": "Hardware-agnostic autonomy orchestration. Multi-robot coordination, adaptive intelligence, cross-platform (air/land/sea).",
+        "hardware_deps": ["Qualcomm QRB5165 (via VOXL 2)", "ModalAI VOXL SDK"],
+        "platforms_integrated": ["ModalAI Seeker", "ModalAI VOXL 2 ecosystem", "third-party VOXL SDK vehicles"],
+        "contracts": ["USAF contract (>$500 combined)", "CENTCOM multi-sensor fusion", "ModalAI partnership (Mar 2026)"],
+        "combat_deployed": False,
+        "combat_note": "",
+    },
+    {
+        "name": "Swarmer",
+        "company": "Swarmer (getswarmer.com)",
+        "type": "swarm_autonomy",
+        "description": "Combat-proven collaborative autonomy. Single operator → hundreds of drones. AI-driven navigation, scalable swarm ops.",
+        "hardware_deps": ["Various FPV/tactical FCs", "Companion computers"],
+        "platforms_integrated": ["Multiple tactical platforms"],
+        "contracts": ["Combat-deployed (details classified)"],
+        "combat_deployed": True,
+        "combat_note": "Combat-proven collaborative autonomy software",
+    },
+    {
+        "name": "Anduril Lattice",
+        "company": "Anduril Industries",
+        "type": "c2_mesh",
+        "description": "AI-powered C2 and sensor fusion platform. Connects autonomous systems into unified kill chain. Mesh networking, threat detection.",
+        "hardware_deps": ["NVIDIA Jetson AGX Orin", "Lattice CertusPro-NX FPGA", "Doodle Labs mesh radios"],
+        "platforms_integrated": ["Anduril Ghost-X", "Anduril Altius", "Anduril Anvil (C-UAS)", "Sentry Tower"],
+        "contracts": ["Replicator Phase 2", "USSOCOM MFWS", "Lattice Mesh network", "Taiwan integration"],
+        "combat_deployed": True,
+        "combat_note": "Deployed in USCENTCOM, USINDOPACOM theaters",
+    },
+    {
+        "name": "Skydio Autonomy Engine",
+        "company": "Skydio",
+        "type": "visual_autonomy",
+        "description": "Visual SLAM + obstacle avoidance + 3D scanning. Computer vision-first autonomy. Edge AI on Jetson.",
+        "hardware_deps": ["NVIDIA Jetson Orin NX", "Custom Skydio ASIC", "Sony IMX sensors"],
+        "platforms_integrated": ["Skydio X10D", "Skydio X2D"],
+        "contracts": ["USSOCOM", "CBP Replicator", "DOI fleet", "US Army SRR"],
+        "combat_deployed": False,
+        "combat_note": "",
+    },
+    {
+        "name": "Auterion / PX4",
+        "company": "Auterion",
+        "type": "flight_os",
+        "description": "Enterprise PX4-based flight OS. Skynode hardware + AuterionOS. Open standards, MAVLink native.",
+        "hardware_deps": ["Qualcomm QRB5165", "STM32H7 (Pixhawk)"],
+        "platforms_integrated": ["Quantum Systems Trinity", "Freefly Astro", "Various Blue UAS Framework integrators"],
+        "contracts": ["Blue UAS Framework component", "NATO interop"],
+        "combat_deployed": True,
+        "combat_note": "PX4 ecosystem deployed on multiple platforms in Ukraine",
+    },
+    {
+        "name": "Palladyne AI",
+        "company": "Palladyne AI (formerly Sarcos)",
+        "type": "autonomy_middleware",
+        "description": "Platform-agnostic autonomy for heterogeneous robot fleets. Swarm integration, multi-domain coordination.",
+        "hardware_deps": ["Various companion computers"],
+        "platforms_integrated": ["Draganfly drones", "Various ground/air platforms"],
+        "contracts": ["Draganfly swarm integration (Mar 2026)"],
+        "combat_deployed": False,
+        "combat_note": "",
+    },
+]
+
+
+def analyze_software(db):
+    """Analyze software ecosystem — map software to hardware dependencies and manufacturers."""
+    flags = []
+    models = db.get("drone_models", [])
+
+    # Build manufacturer → platforms map from Forge DB
+    mfr_platforms = {}
+    for m in models:
+        mfr = (m.get("manufacturer") or "").strip()
+        if mfr:
+            mfr_platforms.setdefault(mfr, []).append(m)
+
+    print(f"  Software platforms tracked: {len(SOFTWARE_ECOSYSTEM)}")
+    print(f"  Manufacturers in Forge DB: {len(mfr_platforms)}")
+
+    # Track hardware demand driven by software contracts
+    hw_demand_from_sw = {}  # hardware_dep → [software platforms driving demand]
+
+    for sw in SOFTWARE_ECOSYSTEM:
+        for hw in sw["hardware_deps"]:
+            hw_demand_from_sw.setdefault(hw, []).append(sw["name"])
+
+        # Flag combat-deployed software with active scaling
+        if sw["combat_deployed"] and sw["contracts"]:
+            flags.append({
+                "id": flag_id(f"sw-combat-{sw['name']}"),
+                "timestamp": now,
+                "flag_type": "contract_signal",
+                "severity": "warning" if len(sw["contracts"]) >= 3 else "info",
+                "title": f"{sw['name']} ({sw['company']}) — combat-deployed, {len(sw['contracts'])} active contracts",
+                "detail": (
+                    f"{sw['name']}: {sw['description']} "
+                    f"Combat status: {sw['combat_note']}. "
+                    f"Contracts: {', '.join(sw['contracts'][:4])}. "
+                    f"Hardware dependencies: {', '.join(sw['hardware_deps'])}. "
+                    f"Integrated on: {', '.join(sw['platforms_integrated'][:4])}."
+                ),
+                "confidence": 0.92,
+                "prediction": f"Contract wins for {sw['company']} drive hardware demand for {', '.join(sw['hardware_deps'][:2])}. Monitor distributor lead times.",
+                "platform_id": None,
+                "component_id": sw["hardware_deps"][0].lower().replace(" ", "-") if sw["hardware_deps"] else None,
+                "data_sources": ["forge_industry_intel", "defense_contracts", "software_ecosystem"],
+            })
+
+    # Flag hardware with multiple software stacks competing for it
+    for hw, sw_list in hw_demand_from_sw.items():
+        if len(sw_list) >= 2:
+            flags.append({
+                "id": flag_id(f"sw-hw-convergence-{hw}"),
+                "timestamp": now,
+                "flag_type": "correlation",
+                "severity": "warning" if len(sw_list) >= 3 else "info",
+                "title": f"{len(sw_list)} autonomy stacks depend on {hw} — compound demand",
+                "detail": (
+                    f"Software convergence on {hw}: {', '.join(sw_list)}. "
+                    f"Each software platform winning new contracts drives additional hardware demand. "
+                    f"When Shield AI wins a CCA contract, Anduril wins Replicator, and Skydio wins SRR — "
+                    f"they all pull from the same {hw} supply."
+                ),
+                "confidence": 0.87,
+                "prediction": f"{hw} supply chain feels compound pressure from multiple software-driven scaling programs.",
+                "platform_id": None,
+                "component_id": hw.lower().replace(" ", "-"),
+                "data_sources": ["software_ecosystem", "forge_bom"],
+            })
+
+    return flags, hw_demand_from_sw
+
+
+# ──────────────────────────────────────────
+# 7b. MANUFACTURER-SPECIFIC ANALYSIS
+# ──────────────────────────────────────────
+
+def analyze_manufacturers(db, sw_hw_demand):
+    """Map specific UAS manufacturers to their component dependencies and software stacks."""
+    flags = []
+    models = db.get("drone_models", [])
+
+    # Key manufacturers to track — map to their known SBC/software stacks
+    MFR_INTEL = {
+        "Skydio": {
+            "software": ["Skydio Autonomy Engine"],
+            "key_hw": ["NVIDIA Jetson Orin NX", "Sony IMX sensors"],
+            "note": "Visual autonomy leader. X10D is Blue UAS. Largest enterprise drone fleet in US Gov.",
+        },
+        "Shield AI": {
+            "software": ["Shield AI Hivemind"],
+            "key_hw": ["NVIDIA Jetson Orin", "Hivemind ASIC"],
+            "note": "Hivemind on V-BAT, CCA YFQ-44A, Ukraine. $2.7B+ valuation.",
+        },
+        "Anduril Industries": {
+            "software": ["Anduril Lattice"],
+            "key_hw": ["NVIDIA Jetson AGX Orin", "Lattice FPGA", "Doodle Labs mesh"],
+            "note": "Ghost-X, Altius, Anvil. Replicator Phase 2. Lattice C2 platform.",
+        },
+        "Teal Drones / Red Cat Holdings": {
+            "software": ["ModalAI VOXL SDK", "Gambit (via ModalAI)"],
+            "key_hw": ["Qualcomm QRB5165", "FLIR Lepton/Hadron"],
+            "note": "Teal 2, Black Widow (SRR Tranche 2). FPV + ISR. Drone Dominance.",
+        },
+        "ModalAI": {
+            "software": ["ModalAI VOXL SDK", "Gambit Autonomy"],
+            "key_hw": ["Qualcomm QRB5165"],
+            "note": "VOXL 2 is Blue UAS Framework autopilot. Seeker/Stinger for SRR.",
+        },
+        "Neros Technologies": {
+            "software": ["Custom (ELRS + Betaflight/ArduPilot)"],
+            "key_hw": ["STM32H7", "ESP32-S3", "ELRS 900MHz"],
+            "note": "Archer FPV. Drone Dominance at scale — 2,200+/mo production.",
+        },
+        "AeroVironment": {
+            "software": ["Proprietary AV autonomy"],
+            "key_hw": ["Custom AV SoC", "Xilinx FPGA", "FLIR Boson 640"],
+            "note": "Switchblade 600. Major Ukraine supplier. USSOCOM contracts.",
+        },
+        "Freefly Systems": {
+            "software": ["PX4 + Herelink"],
+            "key_hw": ["RPi CM4", "Herelink v2"],
+            "note": "Astro is Blue UAS. Open architecture. DOI/USGS mapping.",
+        },
+        "Parrot": {
+            "software": ["Parrot FreeFlight SDK"],
+            "key_hw": ["Parrot P7 SoC", "FLIR Boson 320"],
+            "note": "ANAFI USA. Blue UAS. French-made. Army SRR legacy.",
+        },
+    }
+
+    for mfr_name, intel in MFR_INTEL.items():
+        # Find this manufacturer's platforms in Forge DB
+        mfr_models = [m for m in models if mfr_name.lower() in (m.get("manufacturer") or "").lower()]
+        blue_models = [m for m in mfr_models if m.get("compliance", {}).get("blue_uas")]
+        ndaa_models = [m for m in mfr_models if m.get("compliance", {}).get("ndaa_compliant")]
+
+        if not mfr_models:
+            continue
+
+        platform_names = [m.get("name", "") for m in mfr_models[:5]]
+
+        flags.append({
+            "id": flag_id(f"mfr-{mfr_name}"),
+            "timestamp": now,
+            "flag_type": "contract_signal",
+            "severity": "info",
+            "title": f"{mfr_name}: {len(mfr_models)} platforms in Forge DB ({len(blue_models)} Blue UAS)",
+            "detail": (
+                f"Manufacturer: {mfr_name}. {intel['note']} "
+                f"Platforms: {', '.join(platform_names)}. "
+                f"Software: {', '.join(intel['software'])}. "
+                f"Key hardware dependencies: {', '.join(intel['key_hw'])}. "
+                f"Forge DB: {len(mfr_models)} total, {len(blue_models)} Blue UAS, {len(ndaa_models)} NDAA."
+            ),
+            "confidence": 0.95,
+            "prediction": f"Production scaling at {mfr_name} directly impacts demand for {', '.join(intel['key_hw'][:2])}.",
+            "platform_id": mfr_models[0].get("pid") if mfr_models else None,
+            "component_id": intel["key_hw"][0].lower().replace(" ", "-") if intel["key_hw"] else None,
+            "data_sources": ["forge_parts_db", "forge_compliance", "software_ecosystem"],
+        })
+
+    return flags
+
+
+# ──────────────────────────────────────────
 # 8. MAIN
 # ──────────────────────────────────────────
 
@@ -536,6 +785,14 @@ def main():
     print("\nCross-referencing GUR diversion data...")
     div_flags = analyze_diversion(db)
     all_flags.extend(div_flags)
+
+    print("\nAnalyzing software ecosystem...")
+    sw_flags, sw_hw_demand = analyze_software(db)
+    all_flags.extend(sw_flags)
+
+    print("\nAnalyzing manufacturers...")
+    mfr_flags = analyze_manufacturers(db, sw_hw_demand)
+    all_flags.extend(mfr_flags)
 
     print("\nGenerating predictions...")
     preds = generate_predictions(len(blue), len(ndaa), db)
