@@ -20,6 +20,263 @@ PREDS_OUT = REPO_ROOT / "data" / "predictions.json"
 now = datetime.now(timezone.utc).isoformat()
 
 
+# ──────────────────────────────────────────
+# SOURCE REGISTRY — every data source with URL, description, validation
+# ──────────────────────────────────────────
+
+SOURCES = {
+    # ── Forge Ecosystem ──
+    "forge_parts_db": {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+    },
+    "forge_compliance": {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA §848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+    },
+    "forge_industry_intel": {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+    },
+    "forge_bom": {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+    },
+    # ── GUR / Ukraine Intelligence ──
+    "gur_war_sanctions": {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+    },
+    "euromaidanpress": {
+        "name": "Euromaidan Press",
+        "url": "https://euromaidanpress.com/2025/12/22/new-russian-reconnaissance-drone-uses-british-raspberry-pi-microcomputer-and-licensed-windows-11/",
+        "description": "Independent Ukrainian English-language media. Reported on RPi 5 in Molniya-2R and RPi in Geran-5.",
+        "validation": "Cites GUR primary sources directly. Cross-referenced with GUR portal data.",
+        "type": "reporting",
+    },
+    "united24media": {
+        "name": "United24 Media",
+        "url": "https://united24media.com/latest-news/british-raspberry-pi-found-powering-russias-geran-strike-drone-despite-santions-15841",
+        "description": "Official Ukrainian fundraising platform media arm. Reported 40,000+ RPi units procured for Geran drones.",
+        "validation": "Cites Polkovnik GSh Telegram channel (linked to Ukraine's Armed Forces) and GUR disclosures.",
+        "type": "reporting",
+    },
+    "heise": {
+        "name": "Heise Online (Germany)",
+        "url": "https://www.heise.de/en/news/Russian-jet-kamikaze-drone-with-Raspberry-Pi-4-10669801.html",
+        "description": "German tech publication. Reported on RPi 4 found in Geran-3 jet drone teardown by Ukrainian intelligence.",
+        "validation": "Independent German reporting based on GUR HUR published analysis.",
+        "type": "reporting",
+    },
+    "dronexl_gur": {
+        "name": "DroneXL — GUR Teardown Analysis",
+        "url": "https://dronexl.co/2026/03/02/ukraine-gur-russian-drones-foreign-parts/",
+        "description": "Detailed walkthrough of GUR War & Sanctions portal. Documents 5,534 components, 190 weapon systems, interactive 3D models.",
+        "validation": "Primary reporting from the GUR portal with component-level detail.",
+        "type": "reporting",
+    },
+    # ── Government / Policy ──
+    "gov_programs": {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking — Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+    },
+    "congress_gov": {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+    },
+    "defensescoop": {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+    },
+    "sam_gov": {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+    },
+    "congress": {
+        "name": "US Congress / NDAA",
+        "url": "https://www.congress.gov",
+        "description": "National Defense Authorization Act text, appropriations bills, committee reports.",
+        "validation": "Official legislative text. Primary source for policy analysis.",
+        "type": "primary",
+    },
+    "fcc": {
+        "name": "Federal Communications Commission",
+        "url": "https://www.fcc.gov",
+        "description": "FCC equipment authorization data. Source for foreign drone import restrictions (NDAA §1709).",
+        "validation": "Official regulatory data. Primary source.",
+        "type": "primary",
+    },
+    "policy_tracker": {
+        "name": "Policy Signal Aggregation",
+        "url": "https://www.govconwire.com/articles/drones-unmanned-systems-war-dept-initiatives-dawg",
+        "description": "Aggregated policy signals from executive orders, congressional actions, and agency memos.",
+        "validation": "Cross-referenced across multiple reporting sources and official government documents.",
+        "type": "aggregated",
+    },
+    # ── Market / Financial ──
+    "trendforce": {
+        "name": "TrendForce DRAM Pricing",
+        "url": "https://www.trendforce.com/prices/dram",
+        "description": "Semiconductor market research. DRAM contract pricing, quarterly forecasts.",
+        "validation": "Industry-standard pricing source. Cited by RPi, Samsung, SK Hynix in earnings.",
+        "type": "primary",
+    },
+    "rpi_earnings": {
+        "name": "Raspberry Pi FY2025 Earnings",
+        "url": "https://www.theregister.com/2026/03/31/raspberry_pi_fy_2025/",
+        "description": "RPi Holdings (LON:RPI) annual results. Revenue $323.5M, DRAM impact, diversion acknowledgment.",
+        "validation": "Public company financial disclosure. Audited results. CEO statements on drone diversion.",
+        "type": "primary",
+    },
+    "morgan_stanley": {
+        "name": "Morgan Stanley AI Infrastructure Forecast",
+        "url": "https://www.techspot.com/news/110770-analysts-warn-ai-demand-could-push-consumer-tech.html",
+        "description": "$620B AI infrastructure spend in 2026 (up from $470B in 2025). DRAM supply impact analysis.",
+        "validation": "Institutional research. Cited alongside Citi, Macquarie, Nomura analyst reports.",
+        "type": "reporting",
+    },
+    "distributor_pricing": {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+    },
+    # ── Defense Contracts ──
+    "defense_contracts": {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+    },
+    # ── DIU / DCMA ──
+    "diu_blue_uas": {
+        "name": "DIU/DCMA Blue UAS Cleared List",
+        "url": "https://www.diu.mil/blue-uas-cleared-list",
+        "description": "Official DoD Blue UAS Cleared List. 50+ platforms vetted for cybersecurity and supply chain trust.",
+        "validation": "Official DoD certification. Primary source. Transitioned to DCMA per Jul 2025 SecDef memo.",
+        "type": "primary",
+    },
+    # ── Supply Chain / Geopolitical ──
+    "supply_chain_mapping": {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+    },
+    "geopolitical_risk": {
+        "name": "Geopolitical Risk Assessment",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Allied nation stability and supply chain concentration risk. Taiwan/TSMC, S.Korea/DRAM focus.",
+        "validation": "Based on published geopolitical analysis, TSMC concentration data, and DRAM market reports.",
+        "type": "derived",
+    },
+    # ── Software / Autonomy ──
+    "software_ecosystem": {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+    },
+    # ── C-UAS ──
+    "cuas_tracking": {
+        "name": "Counter-UAS Industry Tracking",
+        "url": "https://nvmilldoitmyself.com/#c605",
+        "description": "C-UAS companies, products, contracts. Tracks shared component demand between C-UAS and UAS.",
+        "validation": "Company disclosures, contract awards, Handbook Ch. Counter-UAS reference.",
+        "type": "aggregated",
+    },
+    # ── Workforce ──
+    "workforce_analysis": {
+        "name": "Manufacturer Workforce & Capacity Estimates",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Employee counts, facility locations, production rate estimates for UAS manufacturers.",
+        "validation": "LinkedIn data, company disclosures, press releases, job posting analysis. Estimates marked as such.",
+        "type": "estimated",
+    },
+    "capacity_estimate": {
+        "name": "Production Capacity Estimates",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Monthly production capacity estimates based on contract deliverables, company statements, and facility size.",
+        "validation": "Derived from contract volumes, delivery timelines, and company disclosures. Marked as estimates.",
+        "type": "estimated",
+    },
+    # ── BOM ──
+    "bom_analysis": {
+        "name": "BOM Cost Index Analysis",
+        "url": "https://nvmillbuilditmyself.com/cost/",
+        "description": "Reference Blue UAS BOM costed from Forge parts-db pricing. Compared to non-compliant equivalent.",
+        "validation": "Component prices from Forge DB (distributor-sourced). BOM composition from platform profiles.",
+        "type": "derived",
+    },
+    # ── Foreign Intel ──
+    "foreign_intel": {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+    },
+    "fpv_market": {
+        "name": "FPV Component Market Tracking",
+        "url": "https://www.getfpv.com",
+        "description": "Commercial FPV component pricing and availability. GetFPV, RaceDayQuads, Pyrodrone.",
+        "validation": "Live retailer pricing. Monitored for anomalies against 90-day moving averages.",
+        "type": "primary",
+    },
+}
+
+
+def resolve_sources(source_ids):
+    """Convert a list of source ID strings into rich source objects with URLs."""
+    resolved = []
+    for sid in source_ids:
+        if sid in SOURCES:
+            s = SOURCES[sid].copy()
+            s["id"] = sid
+            resolved.append(s)
+        else:
+            resolved.append({
+                "id": sid,
+                "name": sid.replace("_", " ").title(),
+                "url": "",
+                "description": "",
+                "validation": "",
+                "type": "unknown",
+            })
+    return resolved
+
+
 def load_json(path):
     with open(path) as f:
         return json.load(f)
@@ -1676,6 +1933,11 @@ def main():
     # Sort flags: critical first, then by type
     severity_order = {"critical": 0, "warning": 1, "info": 2, "prediction": 3}
     all_flags.sort(key=lambda f: severity_order.get(f["severity"], 9))
+
+    # Resolve source IDs → rich source objects with URLs, descriptions, validation
+    for flag in all_flags:
+        raw_sources = flag.get("data_sources", [])
+        flag["sources"] = resolve_sources(raw_sources)
 
     # Write output
     FLAGS_OUT.parent.mkdir(exist_ok=True)

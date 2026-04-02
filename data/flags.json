@@ -1,7 +1,7 @@
 [
   {
     "id": "c5af86037af6",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 4B found in Geran-2/3 (Shahed-136/238)",
@@ -13,11 +13,29 @@
     "data_sources": [
       "gur_war_sanctions",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "248217679ba3",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi found in Geran-5",
@@ -29,11 +47,29 @@
     "data_sources": [
       "gur_war_sanctions",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "3d1fd93cab17",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 5 found in Molniya-2R",
@@ -45,11 +81,29 @@
     "data_sources": [
       "gur_war_sanctions",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "562b363e0af0",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 4B confirmed in Geran-2/3 'Borscht' tracker \u2014 40,000+ units diverted",
@@ -63,11 +117,45 @@
       "euromaidanpress",
       "united24media",
       "heise"
+    ],
+    "sources": [
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Euromaidan Press",
+        "url": "https://euromaidanpress.com/2025/12/22/new-russian-reconnaissance-drone-uses-british-raspberry-pi-microcomputer-and-licensed-windows-11/",
+        "description": "Independent Ukrainian English-language media. Reported on RPi 5 in Molniya-2R and RPi in Geran-5.",
+        "validation": "Cites GUR primary sources directly. Cross-referenced with GUR portal data.",
+        "type": "reporting",
+        "id": "euromaidanpress"
+      },
+      {
+        "name": "United24 Media",
+        "url": "https://united24media.com/latest-news/british-raspberry-pi-found-powering-russias-geran-strike-drone-despite-santions-15841",
+        "description": "Official Ukrainian fundraising platform media arm. Reported 40,000+ RPi units procured for Geran drones.",
+        "validation": "Cites Polkovnik GSh Telegram channel (linked to Ukraine's Armed Forces) and GUR disclosures.",
+        "type": "reporting",
+        "id": "united24media"
+      },
+      {
+        "name": "Heise Online (Germany)",
+        "url": "https://www.heise.de/en/news/Russian-jet-kamikaze-drone-with-Raspberry-Pi-4-10669801.html",
+        "description": "German tech publication. Reported on RPi 4 found in Geran-3 jet drone teardown by Ukrainian intelligence.",
+        "validation": "Independent German reporting based on GUR HUR published analysis.",
+        "type": "reporting",
+        "id": "heise"
+      }
     ]
   },
   {
     "id": "21eef1620b14",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 5 confirmed in Molniya-2R reconnaissance drone",
@@ -81,11 +169,45 @@
       "euromaidanpress",
       "united24media",
       "heise"
+    ],
+    "sources": [
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Euromaidan Press",
+        "url": "https://euromaidanpress.com/2025/12/22/new-russian-reconnaissance-drone-uses-british-raspberry-pi-microcomputer-and-licensed-windows-11/",
+        "description": "Independent Ukrainian English-language media. Reported on RPi 5 in Molniya-2R and RPi in Geran-5.",
+        "validation": "Cites GUR primary sources directly. Cross-referenced with GUR portal data.",
+        "type": "reporting",
+        "id": "euromaidanpress"
+      },
+      {
+        "name": "United24 Media",
+        "url": "https://united24media.com/latest-news/british-raspberry-pi-found-powering-russias-geran-strike-drone-despite-santions-15841",
+        "description": "Official Ukrainian fundraising platform media arm. Reported 40,000+ RPi units procured for Geran drones.",
+        "validation": "Cites Polkovnik GSh Telegram channel (linked to Ukraine's Armed Forces) and GUR disclosures.",
+        "type": "reporting",
+        "id": "united24media"
+      },
+      {
+        "name": "Heise Online (Germany)",
+        "url": "https://www.heise.de/en/news/Russian-jet-kamikaze-drone-with-Raspberry-Pi-4-10669801.html",
+        "description": "German tech publication. Reported on RPi 4 found in Geran-3 jet drone teardown by Ukrainian intelligence.",
+        "validation": "Independent German reporting based on GUR HUR published analysis.",
+        "type": "reporting",
+        "id": "heise"
+      }
     ]
   },
   {
     "id": "ee13e070c884",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi tracker with mesh networking in Geran-5 jet drone",
@@ -99,11 +221,45 @@
       "euromaidanpress",
       "united24media",
       "heise"
+    ],
+    "sources": [
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Euromaidan Press",
+        "url": "https://euromaidanpress.com/2025/12/22/new-russian-reconnaissance-drone-uses-british-raspberry-pi-microcomputer-and-licensed-windows-11/",
+        "description": "Independent Ukrainian English-language media. Reported on RPi 5 in Molniya-2R and RPi in Geran-5.",
+        "validation": "Cites GUR primary sources directly. Cross-referenced with GUR portal data.",
+        "type": "reporting",
+        "id": "euromaidanpress"
+      },
+      {
+        "name": "United24 Media",
+        "url": "https://united24media.com/latest-news/british-raspberry-pi-found-powering-russias-geran-strike-drone-despite-santions-15841",
+        "description": "Official Ukrainian fundraising platform media arm. Reported 40,000+ RPi units procured for Geran drones.",
+        "validation": "Cites Polkovnik GSh Telegram channel (linked to Ukraine's Armed Forces) and GUR disclosures.",
+        "type": "reporting",
+        "id": "united24media"
+      },
+      {
+        "name": "Heise Online (Germany)",
+        "url": "https://www.heise.de/en/news/Russian-jet-kamikaze-drone-with-Raspberry-Pi-4-10669801.html",
+        "description": "German tech publication. Reported on RPi 4 found in Geran-3 jet drone teardown by Ukrainian intelligence.",
+        "validation": "Independent German reporting based on GUR HUR published analysis.",
+        "type": "reporting",
+        "id": "heise"
+      }
     ]
   },
   {
     "id": "4b1f1f665173",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "supply_constraint",
     "severity": "critical",
     "title": "Geographic risk: Taiwan \u2014 high risk, critical to Blue UAS supply chain",
@@ -115,11 +271,29 @@
     "data_sources": [
       "geopolitical_risk",
       "supply_chain_mapping"
+    ],
+    "sources": [
+      {
+        "name": "Geopolitical Risk Assessment",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Allied nation stability and supply chain concentration risk. Taiwan/TSMC, S.Korea/DRAM focus.",
+        "validation": "Based on published geopolitical analysis, TSMC concentration data, and DRAM market reports.",
+        "type": "derived",
+        "id": "geopolitical_risk"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      }
     ]
   },
   {
     "id": "bc6a4d56da83",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "US-manufactured mesh radios: 14 of 24 options \u2014 NDAA bottleneck",
@@ -130,11 +304,21 @@
     "component_id": "mesh-radios",
     "data_sources": [
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "68cba2525d93",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Shield AI Hivemind (Shield AI) \u2014 combat-deployed, 5 active contracts",
@@ -147,11 +331,37 @@
       "forge_industry_intel",
       "defense_contracts",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "f79bd79fb6d8",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Anduril Lattice (Anduril Industries) \u2014 combat-deployed, 4 active contracts",
@@ -164,11 +374,37 @@
       "forge_industry_intel",
       "defense_contracts",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "dcb26d11ad60",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: FCC blocks new foreign drone imports (equipment authorization freeze)",
@@ -181,11 +417,37 @@
       "policy_tracker",
       "fcc",
       "congress"
+    ],
+    "sources": [
+      {
+        "name": "Policy Signal Aggregation",
+        "url": "https://www.govconwire.com/articles/drones-unmanned-systems-war-dept-initiatives-dawg",
+        "description": "Aggregated policy signals from executive orders, congressional actions, and agency memos.",
+        "validation": "Cross-referenced across multiple reporting sources and official government documents.",
+        "type": "aggregated",
+        "id": "policy_tracker"
+      },
+      {
+        "name": "Federal Communications Commission",
+        "url": "https://www.fcc.gov",
+        "description": "FCC equipment authorization data. Source for foreign drone import restrictions (NDAA \u00a71709).",
+        "validation": "Official regulatory data. Primary source.",
+        "type": "primary",
+        "id": "fcc"
+      },
+      {
+        "name": "US Congress / NDAA",
+        "url": "https://www.congress.gov",
+        "description": "National Defense Authorization Act text, appropriations bills, committee reports.",
+        "validation": "Official legislative text. Primary source for policy analysis.",
+        "type": "primary",
+        "id": "congress"
+      }
     ]
   },
   {
     "id": "86a5f98e63a3",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: Drone Dominance executive order \u2014 'Unleashing U.S. Military Drone Domi",
@@ -198,11 +460,37 @@
       "policy_tracker",
       "fcc",
       "congress"
+    ],
+    "sources": [
+      {
+        "name": "Policy Signal Aggregation",
+        "url": "https://www.govconwire.com/articles/drones-unmanned-systems-war-dept-initiatives-dawg",
+        "description": "Aggregated policy signals from executive orders, congressional actions, and agency memos.",
+        "validation": "Cross-referenced across multiple reporting sources and official government documents.",
+        "type": "aggregated",
+        "id": "policy_tracker"
+      },
+      {
+        "name": "Federal Communications Commission",
+        "url": "https://www.fcc.gov",
+        "description": "FCC equipment authorization data. Source for foreign drone import restrictions (NDAA \u00a71709).",
+        "validation": "Official regulatory data. Primary source.",
+        "type": "primary",
+        "id": "fcc"
+      },
+      {
+        "name": "US Congress / NDAA",
+        "url": "https://www.congress.gov",
+        "description": "National Defense Authorization Act text, appropriations bills, committee reports.",
+        "validation": "Official legislative text. Primary source for policy analysis.",
+        "type": "primary",
+        "id": "congress"
+      }
     ]
   },
   {
     "id": "b8b8b3c4f8f0",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: DRAM tariff & AI datacenter priority \u2014 memory allocation shift",
@@ -215,11 +503,37 @@
       "policy_tracker",
       "fcc",
       "congress"
+    ],
+    "sources": [
+      {
+        "name": "Policy Signal Aggregation",
+        "url": "https://www.govconwire.com/articles/drones-unmanned-systems-war-dept-initiatives-dawg",
+        "description": "Aggregated policy signals from executive orders, congressional actions, and agency memos.",
+        "validation": "Cross-referenced across multiple reporting sources and official government documents.",
+        "type": "aggregated",
+        "id": "policy_tracker"
+      },
+      {
+        "name": "Federal Communications Commission",
+        "url": "https://www.fcc.gov",
+        "description": "FCC equipment authorization data. Source for foreign drone import restrictions (NDAA \u00a71709).",
+        "validation": "Official regulatory data. Primary source.",
+        "type": "primary",
+        "id": "fcc"
+      },
+      {
+        "name": "US Congress / NDAA",
+        "url": "https://www.congress.gov",
+        "description": "National Defense Authorization Act text, appropriations bills, committee reports.",
+        "validation": "Official legislative text. Primary source for policy analysis.",
+        "type": "primary",
+        "id": "congress"
+      }
     ]
   },
   {
     "id": "235f5f7023b4",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: US tariff escalation \u2014 25%+ on Chinese electronics components",
@@ -232,11 +546,37 @@
       "policy_tracker",
       "fcc",
       "congress"
+    ],
+    "sources": [
+      {
+        "name": "Policy Signal Aggregation",
+        "url": "https://www.govconwire.com/articles/drones-unmanned-systems-war-dept-initiatives-dawg",
+        "description": "Aggregated policy signals from executive orders, congressional actions, and agency memos.",
+        "validation": "Cross-referenced across multiple reporting sources and official government documents.",
+        "type": "aggregated",
+        "id": "policy_tracker"
+      },
+      {
+        "name": "Federal Communications Commission",
+        "url": "https://www.fcc.gov",
+        "description": "FCC equipment authorization data. Source for foreign drone import restrictions (NDAA \u00a71709).",
+        "validation": "Official regulatory data. Primary source.",
+        "type": "primary",
+        "id": "fcc"
+      },
+      {
+        "name": "US Congress / NDAA",
+        "url": "https://www.congress.gov",
+        "description": "National Defense Authorization Act text, appropriations bills, committee reports.",
+        "validation": "Official legislative text. Primary source for policy analysis.",
+        "type": "primary",
+        "id": "congress"
+      }
     ]
   },
   {
     "id": "1f24895a4547",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "price_anomaly",
     "severity": "warning",
     "title": "Blue UAS BOM cost index: $4,348 \u2014 720% premium over non-compliant build",
@@ -248,11 +588,29 @@
     "data_sources": [
       "forge_parts_db",
       "distributor_pricing"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      }
     ]
   },
   {
     "id": "e2928f63ec27",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Neros Technologies: 2500/mo capacity with 50 employees \u2014 lean operation",
@@ -264,11 +622,29 @@
     "data_sources": [
       "workforce_analysis",
       "capacity_estimate"
+    ],
+    "sources": [
+      {
+        "name": "Manufacturer Workforce & Capacity Estimates",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Employee counts, facility locations, production rate estimates for UAS manufacturers.",
+        "validation": "LinkedIn data, company disclosures, press releases, job posting analysis. Estimates marked as such.",
+        "type": "estimated",
+        "id": "workforce_analysis"
+      },
+      {
+        "name": "Production Capacity Estimates",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Monthly production capacity estimates based on contract deliverables, company statements, and facility size.",
+        "validation": "Derived from contract volumes, delivery timelines, and company disclosures. Marked as estimates.",
+        "type": "estimated",
+        "id": "capacity_estimate"
+      }
     ]
   },
   {
     "id": "b11df271fa7b",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "price_anomaly",
     "severity": "warning",
     "title": "DRAM pricing: +8.5% QoQ, +22% YoY \u2014 cascading to SBC costs",
@@ -281,11 +657,37 @@
       "trendforce",
       "rpi_earnings",
       "morgan_stanley"
+    ],
+    "sources": [
+      {
+        "name": "TrendForce DRAM Pricing",
+        "url": "https://www.trendforce.com/prices/dram",
+        "description": "Semiconductor market research. DRAM contract pricing, quarterly forecasts.",
+        "validation": "Industry-standard pricing source. Cited by RPi, Samsung, SK Hynix in earnings.",
+        "type": "primary",
+        "id": "trendforce"
+      },
+      {
+        "name": "Raspberry Pi FY2025 Earnings",
+        "url": "https://www.theregister.com/2026/03/31/raspberry_pi_fy_2025/",
+        "description": "RPi Holdings (LON:RPI) annual results. Revenue $323.5M, DRAM impact, diversion acknowledgment.",
+        "validation": "Public company financial disclosure. Audited results. CEO statements on drone diversion.",
+        "type": "primary",
+        "id": "rpi_earnings"
+      },
+      {
+        "name": "Morgan Stanley AI Infrastructure Forecast",
+        "url": "https://www.techspot.com/news/110770-analysts-warn-ai-demand-could-push-consumer-tech.html",
+        "description": "$620B AI infrastructure spend in 2026 (up from $470B in 2025). DRAM supply impact analysis.",
+        "validation": "Institutional research. Cited alongside Citi, Macquarie, Nomura analyst reports.",
+        "type": "reporting",
+        "id": "morgan_stanley"
+      }
     ]
   },
   {
     "id": "9116aa2d5db4",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Geographic risk: Israel \u2014 medium risk (Hailo AI accelerators, D-Fend C-UAS)",
@@ -297,11 +699,29 @@
     "data_sources": [
       "geopolitical_risk",
       "supply_chain_mapping"
+    ],
+    "sources": [
+      {
+        "name": "Geopolitical Risk Assessment",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Allied nation stability and supply chain concentration risk. Taiwan/TSMC, S.Korea/DRAM focus.",
+        "validation": "Based on published geopolitical analysis, TSMC concentration data, and DRAM market reports.",
+        "type": "derived",
+        "id": "geopolitical_risk"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      }
     ]
   },
   {
     "id": "d89cc92c827e",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Geographic risk: South Korea \u2014 medium risk (Samsung DRAM, SK Hynix memory)",
@@ -313,11 +733,29 @@
     "data_sources": [
       "geopolitical_risk",
       "supply_chain_mapping"
+    ],
+    "sources": [
+      {
+        "name": "Geopolitical Risk Assessment",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Allied nation stability and supply chain concentration risk. Taiwan/TSMC, S.Korea/DRAM focus.",
+        "validation": "Based on published geopolitical analysis, TSMC concentration data, and DRAM market reports.",
+        "type": "derived",
+        "id": "geopolitical_risk"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      }
     ]
   },
   {
     "id": "b021552dd110",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / Under Secretary R&E: Drone Dominance Program (DDP)",
@@ -331,11 +769,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "bfafb2cfb399",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / SecDef: Replicator \u2192 DAWG (Defense Autonomous Warfare Group)",
@@ -349,11 +821,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "20352c30e640",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army: Army SRR (Short Range Reconnaissance)",
@@ -367,11 +873,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "6cfd8ef05c55",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army: Army FoSUAS (Family of Small UAS)",
@@ -385,11 +925,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "2e8cb8cef28d",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army PEO Aviation: Army FTUAS (Future Tactical UAS)",
@@ -403,11 +977,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "b16566f4336c",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Marine Corps: USMC FPV Drone Program",
@@ -421,11 +1029,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "44234d860120",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Air Force: USAF CCA (Collaborative Combat Aircraft)",
@@ -439,11 +1081,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "4890daffd9cb",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD: JIATF-401 (Joint Interagency Task Force for C-UAS)",
@@ -457,11 +1133,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "9423957f5134",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Congress / FCC: NDAA FY25 Section 1709 (Foreign Drone Ban)",
@@ -475,11 +1185,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "33e43c3b4077",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "White House / SecDef: Drone Dominance Executive Order (Jul 2025)",
@@ -493,11 +1237,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "91c02588d72b",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Congress: ASDA (American Security Drone Act)",
@@ -511,11 +1289,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "d755a122937d",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / State Dept: Ukraine Security Assistance Initiative (USAI)",
@@ -529,11 +1341,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "12be8c22e11c",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DCMA (transferred from DIU Jul 2025): Blue UAS Cleared List (DCMA)",
@@ -547,11 +1393,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "3a5946d0af80",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "China: DJI global dominance + PLA drone swarm production",
@@ -563,11 +1443,29 @@
     "data_sources": [
       "foreign_intel",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "6ed2c28d60c4",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Iran: Shahed mass production \u2014 supplying Russia at scale",
@@ -579,11 +1477,29 @@
     "data_sources": [
       "foreign_intel",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "4ca9eb9961a5",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Russia: Alabuga factory + Lancet + Orlan \u2014 mass drone production using di",
@@ -595,11 +1511,29 @@
     "data_sources": [
       "foreign_intel",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "81d9bca863a5",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Ukraine (23 platforms) and US Drone Dominance compete for same FPV components",
@@ -611,11 +1545,29 @@
     "data_sources": [
       "forge_parts_db",
       "foreign_intel"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      }
     ]
   },
   {
     "id": "67c6cfb0ec03",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "5 companion boards use Qualcomm QRB5165 \u2014 supply chain cluster",
@@ -626,11 +1578,21 @@
     "component_id": "qualcomm-qrb5165",
     "data_sources": [
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "2ee90455f913",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "7 companion boards use NVIDIA Jetson Orin \u2014 supply chain cluster",
@@ -641,11 +1603,21 @@
     "component_id": "nvidia-jetson-orin",
     "data_sources": [
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "b4b1f68be794",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "2 companion boards use NVIDIA Jetson AGX \u2014 supply chain cluster",
@@ -656,11 +1628,21 @@
     "component_id": "nvidia-jetson-agx",
     "data_sources": [
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "7ad4922628a9",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Swarmer (Swarmer (getswarmer.com)) \u2014 combat-deployed, 1 active contracts",
@@ -673,11 +1655,37 @@
       "forge_industry_intel",
       "defense_contracts",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "5de4858d53ce",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Auterion / PX4 (Auterion) \u2014 combat-deployed, 2 active contracts",
@@ -690,11 +1698,37 @@
       "forge_industry_intel",
       "defense_contracts",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Industry Intelligence",
+        "url": "https://nvmillbuilditmyself.com/industry/",
+        "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
+        "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
+        "type": "primary",
+        "id": "forge_industry_intel"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "eb0c4eb72935",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Skydio: 1 platforms in Forge DB (0 Blue UAS)",
@@ -707,11 +1741,37 @@
       "forge_parts_db",
       "forge_compliance",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "833100baad16",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Shield AI: 3 platforms in Forge DB (0 Blue UAS)",
@@ -724,11 +1784,37 @@
       "forge_parts_db",
       "forge_compliance",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "46550618a735",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Anduril Industries: 3 platforms in Forge DB (1 Blue UAS)",
@@ -741,11 +1827,37 @@
       "forge_parts_db",
       "forge_compliance",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "856a608a31a3",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Teal Drones / Red Cat Holdings: 3 platforms in Forge DB (2 Blue UAS)",
@@ -758,11 +1870,37 @@
       "forge_parts_db",
       "forge_compliance",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "a5d0bfad8ece",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "ModalAI: 3 platforms in Forge DB (1 Blue UAS)",
@@ -775,11 +1913,37 @@
       "forge_parts_db",
       "forge_compliance",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "eae46329a924",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Neros Technologies: 2 platforms in Forge DB (1 Blue UAS)",
@@ -792,11 +1956,37 @@
       "forge_parts_db",
       "forge_compliance",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "f2b437ef2edf",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "AeroVironment: 4 platforms in Forge DB (0 Blue UAS)",
@@ -809,11 +1999,37 @@
       "forge_parts_db",
       "forge_compliance",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "0332f661b8df",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Freefly Systems: 2 platforms in Forge DB (1 Blue UAS)",
@@ -826,11 +2042,37 @@
       "forge_parts_db",
       "forge_compliance",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "62b4feb3d4af",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Parrot: 2 platforms in Forge DB (1 Blue UAS)",
@@ -843,11 +2085,37 @@
       "forge_parts_db",
       "forge_compliance",
       "software_ecosystem"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      },
+      {
+        "name": "UAS Software Ecosystem Tracking",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
+        "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
+        "type": "aggregated",
+        "id": "software_ecosystem"
+      }
     ]
   },
   {
     "id": "0f31fa9409cb",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "C-UAS and UAS share SDR modules supply \u2014 2 C-UAS companies competing",
@@ -859,11 +2127,29 @@
     "data_sources": [
       "cuas_tracking",
       "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Counter-UAS Industry Tracking",
+        "url": "https://nvmilldoitmyself.com/#c605",
+        "description": "C-UAS companies, products, contracts. Tracks shared component demand between C-UAS and UAS.",
+        "validation": "Company disclosures, contract awards, Handbook Ch. Counter-UAS reference.",
+        "type": "aggregated",
+        "id": "cuas_tracking"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
     ]
   },
   {
     "id": "496c2e2938d7",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "C-UAS and UAS share FPGA supply \u2014 2 C-UAS companies competing",
@@ -875,11 +2161,29 @@
     "data_sources": [
       "cuas_tracking",
       "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Counter-UAS Industry Tracking",
+        "url": "https://nvmilldoitmyself.com/#c605",
+        "description": "C-UAS companies, products, contracts. Tracks shared component demand between C-UAS and UAS.",
+        "validation": "Company disclosures, contract awards, Handbook Ch. Counter-UAS reference.",
+        "type": "aggregated",
+        "id": "cuas_tracking"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
     ]
   },
   {
     "id": "637609b9a4a3",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: DroneShield \u2014 3 contracts, competes for drone supply chain",
@@ -891,11 +2195,29 @@
     "data_sources": [
       "cuas_tracking",
       "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Counter-UAS Industry Tracking",
+        "url": "https://nvmilldoitmyself.com/#c605",
+        "description": "C-UAS companies, products, contracts. Tracks shared component demand between C-UAS and UAS.",
+        "validation": "Company disclosures, contract awards, Handbook Ch. Counter-UAS reference.",
+        "type": "aggregated",
+        "id": "cuas_tracking"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
     ]
   },
   {
     "id": "a0ce98a8c36b",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Dedrone (Axon) \u2014 3 contracts, competes for drone supply chain",
@@ -907,11 +2229,29 @@
     "data_sources": [
       "cuas_tracking",
       "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Counter-UAS Industry Tracking",
+        "url": "https://nvmilldoitmyself.com/#c605",
+        "description": "C-UAS companies, products, contracts. Tracks shared component demand between C-UAS and UAS.",
+        "validation": "Company disclosures, contract awards, Handbook Ch. Counter-UAS reference.",
+        "type": "aggregated",
+        "id": "cuas_tracking"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
     ]
   },
   {
     "id": "6eb5364fe45e",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Epirus \u2014 2 contracts, competes for drone supply chain",
@@ -923,11 +2263,29 @@
     "data_sources": [
       "cuas_tracking",
       "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Counter-UAS Industry Tracking",
+        "url": "https://nvmilldoitmyself.com/#c605",
+        "description": "C-UAS companies, products, contracts. Tracks shared component demand between C-UAS and UAS.",
+        "validation": "Company disclosures, contract awards, Handbook Ch. Counter-UAS reference.",
+        "type": "aggregated",
+        "id": "cuas_tracking"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
     ]
   },
   {
     "id": "79f2daa5dee8",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: D-Fend Solutions \u2014 2 contracts, competes for drone supply chain",
@@ -939,11 +2297,29 @@
     "data_sources": [
       "cuas_tracking",
       "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Counter-UAS Industry Tracking",
+        "url": "https://nvmilldoitmyself.com/#c605",
+        "description": "C-UAS companies, products, contracts. Tracks shared component demand between C-UAS and UAS.",
+        "validation": "Company disclosures, contract awards, Handbook Ch. Counter-UAS reference.",
+        "type": "aggregated",
+        "id": "cuas_tracking"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
     ]
   },
   {
     "id": "d8e9beaa5913",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Anduril (Anvil/Sentry) \u2014 3 contracts, competes for drone supply chain",
@@ -955,11 +2331,29 @@
     "data_sources": [
       "cuas_tracking",
       "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Counter-UAS Industry Tracking",
+        "url": "https://nvmilldoitmyself.com/#c605",
+        "description": "C-UAS companies, products, contracts. Tracks shared component demand between C-UAS and UAS.",
+        "validation": "Company disclosures, contract awards, Handbook Ch. Counter-UAS reference.",
+        "type": "aggregated",
+        "id": "cuas_tracking"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
     ]
   },
   {
     "id": "3870a917f4b8",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: L3Harris \u2014 2 contracts, competes for drone supply chain",
@@ -971,11 +2365,29 @@
     "data_sources": [
       "cuas_tracking",
       "defense_contracts"
+    ],
+    "sources": [
+      {
+        "name": "Counter-UAS Industry Tracking",
+        "url": "https://nvmilldoitmyself.com/#c605",
+        "description": "C-UAS companies, products, contracts. Tracks shared component demand between C-UAS and UAS.",
+        "validation": "Company disclosures, contract awards, Handbook Ch. Counter-UAS reference.",
+        "type": "aggregated",
+        "id": "cuas_tracking"
+      },
+      {
+        "name": "Defense Contract Tracking",
+        "url": "https://breakingdefense.com",
+        "description": "Contract awards, program milestones, and acquisition signals from defense reporting.",
+        "validation": "Cross-referenced across DefenseScoop, Breaking Defense, Defense Daily, and SAM.gov.",
+        "type": "aggregated",
+        "id": "defense_contracts"
+      }
     ]
   },
   {
     "id": "572ce49c2c58",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Policy: American Security Drone Act (ASDA) \u2014 bans DJI for federal use",
@@ -988,11 +2400,37 @@
       "policy_tracker",
       "fcc",
       "congress"
+    ],
+    "sources": [
+      {
+        "name": "Policy Signal Aggregation",
+        "url": "https://www.govconwire.com/articles/drones-unmanned-systems-war-dept-initiatives-dawg",
+        "description": "Aggregated policy signals from executive orders, congressional actions, and agency memos.",
+        "validation": "Cross-referenced across multiple reporting sources and official government documents.",
+        "type": "aggregated",
+        "id": "policy_tracker"
+      },
+      {
+        "name": "Federal Communications Commission",
+        "url": "https://www.fcc.gov",
+        "description": "FCC equipment authorization data. Source for foreign drone import restrictions (NDAA \u00a71709).",
+        "validation": "Official regulatory data. Primary source.",
+        "type": "primary",
+        "id": "fcc"
+      },
+      {
+        "name": "US Congress / NDAA",
+        "url": "https://www.congress.gov",
+        "description": "National Defense Authorization Act text, appropriations bills, committee reports.",
+        "validation": "Official legislative text. Primary source for policy analysis.",
+        "type": "primary",
+        "id": "congress"
+      }
     ]
   },
   {
     "id": "25291590b238",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "price_anomaly",
     "severity": "info",
     "title": "Mesh radio is 41% of Blue UAS BOM \u2014 single largest cost driver",
@@ -1004,11 +2442,29 @@
     "data_sources": [
       "forge_parts_db",
       "bom_analysis"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "BOM Cost Index Analysis",
+        "url": "https://nvmillbuilditmyself.com/cost/",
+        "description": "Reference Blue UAS BOM costed from Forge parts-db pricing. Compared to non-compliant equivalent.",
+        "validation": "Component prices from Forge DB (distributor-sourced). BOM composition from platform profiles.",
+        "type": "derived",
+        "id": "bom_analysis"
+      }
     ]
   },
   {
     "id": "fc644ad2188c",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "U.S. Army: Army MRR (Medium Range Reconnaissance)",
@@ -1022,11 +2478,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "12564c7f7a5f",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "FEMA / DHS: FEMA C-UAS Grant Program",
@@ -1040,11 +2530,45 @@
       "congress_gov",
       "defensescoop",
       "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Congressional Research Service (CRS)",
+        "url": "https://www.congress.gov/crs-product/IF12668",
+        "description": "CRS reports on Army sUAS programs, NDAA provisions, and DoD drone procurement.",
+        "validation": "Official nonpartisan congressional research. Primary source for legislative analysis.",
+        "type": "primary",
+        "id": "congress_gov"
+      },
+      {
+        "name": "DefenseScoop",
+        "url": "https://defensescoop.com/2026/03/05/dod-drone-dominance-program-orders-deliveries-military-units/",
+        "description": "Defense technology news. Primary reporting on Drone Dominance orders, Blue UAS updates.",
+        "validation": "Cited by DoD officials. Primary source for Gauntlet results and delivery timelines.",
+        "type": "reporting",
+        "id": "defensescoop"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
     ]
   },
   {
     "id": "cbba9917a29e",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Turkey: Baykar (TB2/TB3/Akinci/Kizilelma) \u2014 #2 drone exporter, 35+ custom",
@@ -1056,11 +2580,29 @@
     "data_sources": [
       "foreign_intel",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "e7afb28385ef",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Ukraine: Fastest-iterating FPV ecosystem \u2014 thousands/month, Brave1 acceler",
@@ -1072,11 +2614,29 @@
     "data_sources": [
       "foreign_intel",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "052f63104448",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EU/NATO: FCAS (\u20ac100B+), EuroDrone, Airbus Wingman, sovereignty push",
@@ -1088,11 +2648,29 @@
     "data_sources": [
       "foreign_intel",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "6de5178117df",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "India: ideaForge + Solar Industries + Adani defense \u2014 indigenous drone p",
@@ -1104,11 +2682,29 @@
     "data_sources": [
       "foreign_intel",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "f8b43ba79a3e",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "South Korea: KAI stealth UCAV + Samsung/SK Hynix DRAM supply",
@@ -1120,11 +2716,29 @@
     "data_sources": [
       "foreign_intel",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "8fa546cd000c",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Australia: SYPAQ Corvo (cardboard drone, used in Ukraine) + MQ-28 Ghost Bat ",
@@ -1136,11 +2750,29 @@
     "data_sources": [
       "foreign_intel",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "53bb266b195d",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Poland: WB Group Warmate/FlyEye \u2014 NATO eastern flank drone capability",
@@ -1152,11 +2784,29 @@
     "data_sources": [
       "foreign_intel",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "7a6790d9a392",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Croatia: Orqa \u2014 EU-manufactured NDAA FPV ecosystem (FC, ESC, goggles)",
@@ -1168,11 +2818,29 @@
     "data_sources": [
       "foreign_intel",
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   },
   {
     "id": "0d17f6c63c02",
-    "timestamp": "2026-04-02T07:26:14.813554+00:00",
+    "timestamp": "2026-04-02T17:41:20.571646+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Global UAS landscape: 42 countries, 219 platforms in Forge DB",
@@ -1183,6 +2851,16 @@
     "component_id": null,
     "data_sources": [
       "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
     ]
   }
 ]
