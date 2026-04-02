@@ -1,0 +1,56 @@
+[
+  {
+    "timeframe": "Q2 2026",
+    "event": "STM32H7 becomes allocated for defense FPV production",
+    "probability": 0.72,
+    "impact": "high",
+    "drivers": ["Neros Archer 2,200/mo for Drone Dominance", "Orqa FC production scaling", "General FPV demand surge"],
+    "model": "linear_extrapolation + contract_signal",
+    "last_updated": "2026-04-02T06:00:00Z"
+  },
+  {
+    "timeframe": "Q3 2026",
+    "event": "Jetson Orin NX allocation-only for defense customers",
+    "probability": 0.65,
+    "impact": "critical",
+    "drivers": ["Skydio X10D + Shield AI V-BAT + Anduril Ghost-X scaling", "DRAM pricing pressure", "NVIDIA AI datacenter priority"],
+    "model": "structural_var + demand_forecast",
+    "last_updated": "2026-04-02T06:00:00Z"
+  },
+  {
+    "timeframe": "Q3 2026",
+    "event": "Mesh radio supply bottleneck (Doodle Labs / Silvus)",
+    "probability": 0.71,
+    "impact": "high",
+    "drivers": ["Multi-vehicle Blue UAS programs", "Lattice Mesh contract", "MANET demand for SOF"],
+    "model": "granger_causality + backlog_growth",
+    "last_updated": "2026-04-02T06:00:00Z"
+  },
+  {
+    "timeframe": "Q4 2026",
+    "event": "RPi CM4 gray market premium exceeds 50% in China",
+    "probability": 0.58,
+    "impact": "medium",
+    "drivers": ["DRAM crunch continues", "Active diversion pipeline (GUR confirmed)", "RPi price hikes cascade"],
+    "model": "price_anomaly + diversion_model",
+    "last_updated": "2026-04-02T06:00:00Z"
+  },
+  {
+    "timeframe": "Q1 2027",
+    "event": "QRB5165 successor (Qualcomm RB7) enters Blue UAS Framework",
+    "probability": 0.82,
+    "impact": "medium",
+    "drivers": ["ModalAI next-gen roadmap", "Teal Black Widow SRR requirements", "Edge AI performance gap"],
+    "model": "product_lifecycle + contract_signal",
+    "last_updated": "2026-04-02T06:00:00Z"
+  },
+  {
+    "timeframe": "H2 2026",
+    "event": "FLIR Boson 640 allocation tightens following next USAI package",
+    "probability": 0.84,
+    "impact": "high",
+    "drivers": ["AeroVironment Switchblade 600 production ramp", "Ukraine aid packages (6-week lag correlation)", "Limited thermal sensor alternatives at 640 resolution"],
+    "model": "cross_correlation + granger_causality",
+    "last_updated": "2026-04-02T06:00:00Z"
+  }
+]

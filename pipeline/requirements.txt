@@ -1,0 +1,26 @@
+# Core data processing
+numpy>=1.26
+pandas>=2.2
+scipy>=1.13
+
+# Time-series & statistical models
+statsmodels>=0.14
+prophet>=1.1
+
+# ML for forecasting
+scikit-learn>=1.5
+xgboost>=2.0
+
+# HTTP & scraping
+requests>=2.32
+beautifulsoup4>=4.12
+lxml>=5.2
+
+# Data validation
+pydantic>=2.7
+
+# Rate limiting for API calls
+ratelimit>=2.2
+
+# JSON output
+orjson>=3.10

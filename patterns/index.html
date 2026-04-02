@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pattern Intelligence — Forge Module</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#060a11;--surface:#0b1120;--card:#0f1729;--card-hi:#141e34;
+  --border:#1a2744;--border-hi:#253a5c;
+  --amber:#f59e0b;--amber-d:#f59e0b20;
+  --blue:#3b82f6;--blue-d:#3b82f618;
+  --green:#22c55e;--green-d:#22c55e18;
+  --red:#ef4444;--red-d:#ef444418;
+  --purple:#a78bfa;--purple-d:#a78bfa18;
+  --cyan:#06b6d4;--cyan-d:#06b6d418;
+  --orange:#f97316;--orange-d:#f9731618;
+  --text:#e2e8f0;--text-s:#94a3b8;--text-d:#64748b;--text-xd:#475569;
+  --font:'DM Sans',system-ui,sans-serif;
+  --mono:'JetBrains Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+
+/* ── Forge nav bar (matches existing modules) ── */
+.forge-nav{display:flex;align-items:center;gap:12px;padding:12px 20px;border-bottom:1px solid var(--border);font-size:13px}
+.forge-nav .logo{font-weight:700;color:var(--amber);letter-spacing:-0.02em}
+.forge-nav .sep{color:var(--text-xd)}
+.forge-nav .current{color:var(--text);font-weight:600}
+.forge-nav .links{margin-left:auto;display:flex;gap:12px;font-size:11px}
+.forge-nav .links a{color:var(--text-d);padding:4px 8px;border:1px solid transparent;border-radius:5px;transition:all .15s}
+.forge-nav .links a:hover{color:var(--text-s);border-color:var(--border);text-decoration:none}
+
+/* ── Tabs ── */
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--border);padding:0 20px}
+.tab{background:none;border:none;border-bottom:2px solid transparent;color:var(--text-d);padding:10px 16px;font:500 11px var(--font);cursor:pointer;transition:all .15s}
+.tab.active{color:var(--amber);border-bottom-color:var(--amber);font-weight:600}
+.tab .count{background:var(--red);color:#fff;border-radius:8px;padding:1px 5px;font-size:9px;margin-left:4px;font-weight:700}
+
+/* ── Layout ── */
+.content{padding:16px 20px;max-width:960px;margin:0 auto}
+.panel{display:none}.panel.active{display:block}
+.search-bar{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:7px 12px;font:11px var(--font);color:var(--text);width:100%;outline:none;margin-bottom:14px}
+.search-bar:focus{border-color:var(--amber)}
+.filter-row{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.filter-btn{background:none;border:1px solid var(--border);color:var(--text-d);border-radius:6px;padding:4px 10px;font:10px var(--font);cursor:pointer;text-transform:capitalize;transition:all .15s}
+.filter-btn.active{border-color:var(--amber);color:var(--text);background:var(--amber-d)}
+
+/* ── Badges ── */
+.badge{padding:2px 8px;border-radius:5px;font:600 10px var(--mono);white-space:nowrap;letter-spacing:.03em;display:inline-block}
+.badge-blue{background:var(--blue-d);color:var(--blue)}.badge-green{background:var(--green-d);color:var(--green)}
+.badge-red{background:var(--red-d);color:var(--red)}.badge-amber{background:var(--amber-d);color:var(--amber)}
+.badge-purple{background:var(--purple-d);color:var(--purple)}.badge-cyan{background:var(--cyan-d);color:var(--cyan)}
+.badge-orange{background:var(--orange-d);color:var(--orange)}
+
+/* ── Severity dot ── */
+.sev{width:8px;height:8px;border-radius:50%;display:inline-block;flex-shrink:0}
+.sev-critical{background:var(--red);box-shadow:0 0 6px #ef444466}
+.sev-warning{background:var(--amber);box-shadow:0 0 6px #f59e0b66}
+.sev-info{background:var(--blue);box-shadow:0 0 6px #3b82f666}
+.sev-prediction{background:var(--purple);box-shadow:0 0 6px #a78bfa66}
+
+/* ── Flag cards ── */
+.flag-list{display:flex;flex-direction:column;gap:6px}
+.flag-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px 16px;cursor:pointer;transition:all .15s;text-align:left;font-family:var(--font);display:flex;gap:12px;align-items:flex-start;width:100%}
+.flag-card:hover{background:var(--card-hi);border-color:var(--border-hi)}
+.flag-card .meta{display:flex;gap:6px;align-items:center;margin-bottom:4px;flex-wrap:wrap}
+.flag-card .title{font-size:12px;font-weight:500;color:var(--text);line-height:1.4}
+
+/* ── Flag detail ── */
+.flag-detail{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px}
+.flag-detail .header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:12px}
+.flag-detail .body{font-size:12px;color:var(--text-s);line-height:1.7;margin-bottom:16px}
+.flag-detail .cards{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.flag-detail .info-card{background:var(--surface);border-radius:8px;padding:8px 12px;flex:1 1 140px;min-width:140px}
+.flag-detail .info-card .label{font:500 9px var(--font);color:var(--text-d);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.flag-detail .prediction-box{background:var(--purple-d);border:1px solid #a78bfa22;border-radius:8px;padding:10px 14px}
+.flag-detail .prediction-box .label{font:600 9px var(--font);color:var(--purple);text-transform:uppercase;letter-spacing:.06em;margin-bottom:4px}
+.close-btn{background:none;border:none;color:var(--text-d);font-size:18px;cursor:pointer;padding:4px;line-height:1}
+
+/* ── Prediction cards ── */
+.pred-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:10px}
+.pred-card .drivers{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.pred-card .driver{font-size:10px;color:var(--text-s);background:var(--surface);padding:2px 7px;border-radius:4px}
+
+/* ── Component table ── */
+.comp-table{width:100%;border-collapse:separate;border-spacing:0 4px;min-width:640px}
+.comp-table th{padding:6px 10px;font:500 9px var(--font);color:var(--text-d);text-align:left;text-transform:uppercase;letter-spacing:.06em}
+.comp-table td{padding:10px;background:var(--card)}
+.comp-table tr td:first-child{border-radius:8px 0 0 8px}
+.comp-table tr td:last-child{border-radius:0 8px 8px 0}
+
+/* ── Platform cards ── */
+.plat-card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:8px}
+.plat-card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:8px}
+.plat-card .tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:6px}
+.plat-card .tag{font-size:10px;color:var(--text-s);background:var(--surface);padding:2px 6px;border-radius:4px}
+
+/* ── Footer ── */
+.footer{margin-top:24px;padding:14px 0;border-top:1px solid var(--border);display:flex;justify-content:space-between;font-size:10px;color:var(--text-d);flex-wrap:wrap;gap:8px}
+
+/* ── Responsive ── */
+@media(max-width:640px){
+  .forge-nav .links{display:none}
+  .flag-detail .cards{flex-direction:column}
+  .comp-table{font-size:10px}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ Forge Navigation Bar ═══ -->
+<nav class="forge-nav">
+  <a href="https://nvmillbuilditmyself.com/" class="logo">Forge</a>
+  <span class="sep">/</span>
+  <span class="current">Pattern Intelligence</span>
+  <div class="links">
+    <a href="https://nvmillbuilditmyself.com/">Bench</a>
+    <a href="https://nvmillbuilditmyself.com/platforms/">Platforms</a>
+    <a href="https://nvmillbuilditmyself.com/compliance/">Compliance</a>
+    <a href="https://nvmillbuilditmyself.com/industry/">Industry Intel</a>
+    <a href="https://nvmillbuilditmyself.com/intel/">Intel Feed</a>
+    <a href="https://nvmilldoitmyself.com">Handbook</a>
+  </div>
+</nav>
+
+<!-- ═══ Tabs ═══ -->
+<div class="tabs" id="tabs">
+  <button class="tab active" data-tab="flags">Flagged Patterns <span class="count" id="flag-count">—</span></button>
+  <button class="tab" data-tab="platforms">Blue UAS Tracking</button>
+  <button class="tab" data-tab="components">Component Watch</button>
+  <button class="tab" data-tab="predictions">Predictions</button>
+</div>
+
+<!-- ═══ Content ═══ -->
+<div class="content">
+
+  <!-- FLAGS PANEL -->
+  <div class="panel active" id="panel-flags">
+    <div class="filter-row" id="severity-filters"></div>
+    <div id="flag-detail-container" style="display:none"></div>
+    <div class="flag-list" id="flag-list"></div>
+  </div>
+
+  <!-- PLATFORMS PANEL -->
+  <div class="panel" id="panel-platforms">
+    <p style="font-size:11px;color:var(--text-d);margin-bottom:12px">
+      Blue UAS & tracked platforms from <a href="https://nvmillbuilditmyself.com/platforms/">Forge DB (219 platforms)</a> ·
+      Compliance from <a href="https://nvmillbuilditmyself.com/compliance/">Compliance Dashboard</a>
+    </p>
+    <div id="platform-list"></div>
+  </div>
+
+  <!-- COMPONENTS PANEL -->
+  <div class="panel" id="panel-components">
+    <p style="font-size:11px;color:var(--text-d);margin-bottom:12px">
+      Tracked from <a href="https://nvmillbuilditmyself.com/">Forge (3,500+ components)</a> ·
+      Cross-referenced with distributor APIs &amp; <a href="https://nvmilldoitmyself.com">Handbook Ch.13</a>
+    </p>
+    <div style="overflow-x:auto" id="component-table-wrap"></div>
+  </div>
+
+  <!-- PREDICTIONS PANEL -->
+  <div class="panel" id="panel-predictions">
+    <p style="font-size:11px;color:var(--text-d);margin-bottom:14px">
+      Generated by correlation engine: Granger causality, cross-correlation &amp; structural VAR models against Forge DB + distributor data
+    </p>
+    <div id="prediction-list"></div>
+  </div>
+
+  <div class="footer">
+    <span>Pipeline: GitHub Actions · Data: Forge DB + GUR OSINT + distributor APIs</span>
+    <span style="font-family:var(--mono)">PIE v0.2 · Forge Module</span>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+// Pattern Intelligence Engine — Forge Module
+// Loads data from /data/flags.json + /data/predictions.json
+// (committed by GitHub Actions pipeline)
+// ═══════════════════════════════════════════════════════════
+
+const FLAG_META = {
+  procurement_spike: {label:"Procurement Spike",badge:"badge-red",sev:"critical",icon:"▲"},
+  supply_constraint: {label:"Supply Constraint",badge:"badge-amber",sev:"warning",icon:"⬡"},
+  price_anomaly:     {label:"Price Anomaly",badge:"badge-orange",sev:"warning",icon:"◈"},
+  diversion_risk:    {label:"Diversion Risk",badge:"badge-red",sev:"critical",icon:"⚠"},
+  contract_signal:   {label:"Contract Signal",badge:"badge-blue",sev:"info",icon:"★"},
+  prediction:        {label:"Prediction",badge:"badge-purple",sev:"prediction",icon:"◎"},
+  correlation:       {label:"Correlation",badge:"badge-cyan",sev:"info",icon:"⟐"},
+};
+
+// ── Simulated platform + component data (in production: fetched from Forge API) ──
+const PLATFORMS = [
+  {id:"skydio-x10d",name:"Skydio X10D",mfr:"Skydio",tier:"blue",country:"US",combat:false,sbc:["NVIDIA Jetson Orin NX"],prod:380,yoy:42,contracts:["USSOCOM FY25","CBP Replicator"]},
+  {id:"teal-2",name:"Teal 2",mfr:"Red Cat / Teal",tier:"blue",country:"US",combat:true,sbc:["Qualcomm RB5","STM32H7"],prod:520,yoy:88,contracts:["SRR Tranche 2","USMC FPV","Drone Dominance"]},
+  {id:"freefly-astro",name:"Freefly Astro",mfr:"Freefly Systems",tier:"blue",country:"US",combat:false,sbc:["RPi CM4"],prod:145,yoy:18,contracts:["DOI Survey Fleet"]},
+  {id:"anduril-ghost-x",name:"Anduril Ghost-X",mfr:"Anduril Industries",tier:"blue",country:"US",combat:true,sbc:["Jetson AGX Orin","Lattice FPGA"],prod:210,yoy:135,contracts:["USSOCOM MFWS","Replicator Phase 2"]},
+  {id:"shield-v-bat",name:"Shield AI V-BAT",mfr:"Shield AI",tier:"blue",country:"US",combat:true,sbc:["NVIDIA Orin","Hivemind AI"],prod:85,yoy:67,contracts:["USMC Group 3"]},
+  {id:"neros-archer",name:"Neros Archer",mfr:"Neros Technologies",tier:"blue",country:"US",combat:true,sbc:["STM32H7","ESP32-S3"],prod:2200,yoy:310,contracts:["Drone Dominance FPV"]},
+  {id:"modalai-seeker",name:"ModalAI Seeker",mfr:"ModalAI",tier:"blue",country:"US",combat:true,sbc:["VOXL 2 (QRB5165)"],prod:340,yoy:95,contracts:["SRR Tranche 2","Army FTUAS"]},
+  {id:"aerovironment-switchblade",name:"Switchblade 600",mfr:"AeroVironment",tier:"blue",country:"US",combat:true,sbc:["Custom AV SoC"],prod:480,yoy:72,contracts:["USSOCOM","Ukraine USAI"]},
+];
+
+const COMPONENTS = [
+  {id:"jetson-orin-nx",name:"NVIDIA Jetson Orin NX 16GB",cat:"SBC/SoM",price:649,avg:599,lead:16,status:"constrained",users:["Skydio","Shield AI","Anduril"]},
+  {id:"qrb5165",name:"Qualcomm QRB5165 (VOXL 2)",cat:"SBC/SoM",price:479,avg:449,lead:10,status:"available",users:["Teal","ModalAI"]},
+  {id:"rpi-cm4",name:"RPi Compute Module 4 (8GB)",cat:"SBC",price:105,avg:90,lead:8,status:"constrained",users:["Freefly","Inspired Flight"]},
+  {id:"stm32h743",name:"STM32H743VIT6",cat:"MCU/FC",price:14.50,avg:12,lead:6,status:"available",users:["Neros","Pixhawk builds"]},
+  {id:"flir-boson",name:"FLIR Boson 640",cat:"Thermal",price:3400,avg:3200,lead:18,status:"allocated",users:["AeroVironment","Anduril"]},
+  {id:"doodlelabs-rm915",name:"Doodle Labs RM-915-2J",cat:"Mesh Radio",price:2100,avg:1800,lead:20,status:"constrained",users:["Anduril"]},
+  {id:"elrs-900",name:"ELRS 900MHz Module",cat:"RC Link",price:32,avg:28,lead:3,status:"available",users:["Neros","FPV builders"]},
+  {id:"silvus-mn-micro",name:"Silvus MN Micro",cat:"Mesh Radio",price:5200,avg:4500,lead:22,status:"allocated",users:["Teal"]},
+];
+
+let FLAGS = [];
+let PREDICTIONS = [];
+let activeTab = "flags";
+let activeSeverity = "all";
+let selectedFlag = null;
+
+// ── Data loading ──
+async function loadData() {
+  try {
+    const [fRes, pRes] = await Promise.all([
+      fetch("../data/flags.json").then(r => r.ok ? r.json() : []),
+      fetch("../data/predictions.json").then(r => r.ok ? r.json() : []),
+    ]);
+    FLAGS = fRes; PREDICTIONS = pRes;
+  } catch(e) {
+    console.warn("Could not load pipeline data, using empty state:", e);
+    FLAGS = []; PREDICTIONS = [];
+  }
+  document.getElementById("flag-count").textContent = FLAGS.length;
+  renderAll();
+}
+
+// ── Tab switching ──
+document.querySelectorAll(".tab").forEach(t => {
+  t.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
+    document.querySelectorAll(".panel").forEach(x => x.classList.remove("active"));
+    t.classList.add("active");
+    document.getElementById("panel-" + t.dataset.tab).classList.add("active");
+    activeTab = t.dataset.tab;
+    selectedFlag = null;
+    document.getElementById("flag-detail-container").style.display = "none";
+    document.getElementById("flag-list").style.display = "";
+  });
+});
+
+// ── Severity filters ──
+function renderFilters() {
+  const c = document.getElementById("severity-filters");
+  const sevs = ["all","critical","warning","info","prediction"];
+  c.innerHTML = sevs.map(s => {
+    const count = s === "all" ? FLAGS.length : FLAGS.filter(f => (FLAG_META[f.flag_type]||{}).sev === s).length;
+    return `<button class="filter-btn ${activeSeverity===s?"active":""}" data-sev="${s}">${s==="all"?"All ("+count+")":s}</button>`;
+  }).join("");
+  c.querySelectorAll(".filter-btn").forEach(b => b.addEventListener("click", () => {
+    activeSeverity = b.dataset.sev;
+    renderFilters();
+    renderFlags();
+  }));
+}
+
+// ── Flag list ──
+function renderFlags() {
+  const list = document.getElementById("flag-list");
+  let flags = FLAGS;
+  if (activeSeverity !== "all") flags = flags.filter(f => (FLAG_META[f.flag_type]||{}).sev === activeSeverity);
+
+  list.innerHTML = flags.map(f => {
+    const m = FLAG_META[f.flag_type] || {label:"Unknown",badge:"badge-amber",sev:"info",icon:"?"};
+    const conf = Math.round((f.confidence||0)*100);
+    const confBadge = conf > 85 ? "badge-green" : "badge-amber";
+    const date = new Date(f.timestamp).toLocaleDateString();
+    return `<div class="flag-card" data-id="${f.id}">
+      <span class="sev sev-${m.sev}"></span>
+      <div style="flex:1;min-width:0">
+        <div class="meta">
+          <span class="badge ${m.badge}">${m.icon} ${m.label}</span>
+          <span style="font:10px var(--mono);color:var(--text-d)">${date}</span>
+          <span class="badge ${confBadge}">${conf}%</span>
+        </div>
+        <div class="title">${f.title}</div>
+      </div>
+    </div>`;
+  }).join("");
+
+  list.querySelectorAll(".flag-card").forEach(card => {
+    card.addEventListener("click", () => {
+      selectedFlag = FLAGS.find(f => f.id === card.dataset.id);
+      renderFlagDetail();
+    });
+  });
+}
+
+// ── Flag detail ──
+function renderFlagDetail() {
+  if (!selectedFlag) return;
+  const f = selectedFlag;
+  const m = FLAG_META[f.flag_type] || {};
+  const conf = Math.round((f.confidence||0)*100);
+  const date = new Date(f.timestamp).toLocaleDateString();
+
+  const dc = document.getElementById("flag-detail-container");
+  const fl = document.getElementById("flag-list");
+  dc.style.display = "block";
+  fl.style.display = "none";
+
+  let html = `<div class="flag-detail" style="border-left:3px solid var(${m.sev==="critical"?"--red":m.sev==="warning"?"--amber":m.sev==="prediction"?"--purple":"--blue"})">
+    <div class="header">
+      <div>
+        <div class="meta" style="display:flex;gap:8px;align-items:center;margin-bottom:6px">
+          <span class="sev sev-${m.sev}"></span>
+          <span class="badge ${m.badge}">${m.icon} ${m.label}</span>
+          <span style="font:10px var(--mono);color:var(--text-d)">${date}</span>
+        </div>
+        <div style="font-size:14px;font-weight:600;line-height:1.4">${f.title}</div>
+      </div>
+      <button class="close-btn" id="close-detail">×</button>
+    </div>
+    <div class="body">${f.detail}</div>
+    <div class="cards">
+      <div class="info-card"><div class="label">Confidence</div>
+        <div style="font:700 20px var(--mono);color:${conf>85?"var(--green)":"var(--amber)"}">${conf}%</div>
+      </div>`;
+
+  if (f.correlation_r) {
+    html += `<div class="info-card"><div class="label">Correlation</div>
+      <div style="font:700 16px var(--mono);color:var(--cyan)">r = ${f.correlation_r}</div>
+      ${f.correlation_lag_weeks ? `<div style="font:10px var(--font);color:var(--text-d);margin-top:2px">${f.correlation_lag_weeks}-week lag</div>` : ""}
+    </div>`;
+  }
+
+  if (f.data_sources && f.data_sources.length) {
+    html += `<div class="info-card"><div class="label">Data Sources</div>
+      <div style="display:flex;gap:4px;flex-wrap:wrap;margin-top:4px">
+        ${f.data_sources.map(s => `<span class="badge badge-cyan">${s.replace(/_/g," ")}</span>`).join("")}
+      </div>
+    </div>`;
+  }
+
+  html += `</div>`; // close .cards
+
+  if (f.prediction) {
+    html += `<div class="prediction-box"><div class="label">◎ Prediction</div>
+      <div style="font-size:12px;color:var(--text-s);line-height:1.6">${f.prediction}</div>
+    </div>`;
+  }
+
+  html += `</div>`;
+  dc.innerHTML = html;
+  document.getElementById("close-detail").addEventListener("click", () => {
+    dc.style.display = "none";
+    fl.style.display = "";
+    selectedFlag = null;
+  });
+}
+
+// ── Platforms ──
+function renderPlatforms() {
+  const c = document.getElementById("platform-list");
+  const tierBadge = {blue:"badge-blue",ndaa:"badge-green",commercial:"badge-amber",adversary:"badge-red"};
+  const tierLabel = {blue:"◆ Blue UAS",ndaa:"◇ NDAA §848",commercial:"○ Commercial",adversary:"✕ Adversary"};
+
+  c.innerHTML = PLATFORMS.map(p => `<div class="plat-card">
+    <div class="top">
+      <div>
+        <div style="display:flex;gap:8px;align-items:center;margin-bottom:4px">
+          <span style="font-size:13px;font-weight:600">${p.name}</span>
+          <span class="badge ${tierBadge[p.tier]}">${tierLabel[p.tier]}</span>
+          ${p.combat?'<span class="badge badge-red">COMBAT</span>':""}
+        </div>
+        <div style="font-size:11px;color:var(--text-s)">${p.mfr} · ${p.country}</div>
+      </div>
+      <div style="text-align:right">
+        <div style="font:700 18px var(--mono);color:${p.yoy>50?"var(--green)":"var(--text)"}">${p.prod.toLocaleString()}<span style="font-size:10px;color:var(--text-d)">/mo</span></div>
+        <span class="badge ${p.yoy>0?"badge-green":"badge-red"}">${p.yoy>0?"+":""}${p.yoy}% YoY</span>
+      </div>
+    </div>
+    <div class="tags">
+      <span style="font-size:10px;color:var(--text-d);margin-right:4px">SBC:</span>
+      ${p.sbc.map(s=>`<span class="badge badge-cyan">${s}</span>`).join("")}
+    </div>
+    ${p.contracts.length?`<div class="tags"><span style="font-size:10px;color:var(--text-d);margin-right:4px">Contracts:</span>${p.contracts.map(c=>`<span class="badge badge-amber">${c}</span>`).join("")}</div>`:""}
+  </div>`).join("");
+}
+
+// ── Components ──
+function renderComponents() {
+  const w = document.getElementById("component-table-wrap");
+  const statusColor = {available:"badge-green",constrained:"badge-amber",allocated:"badge-red"};
+
+  let html = `<table class="comp-table"><thead><tr>
+    <th>Component</th><th>Category</th><th>Price</th><th>Δ Avg</th><th>Lead</th><th>Status</th><th>Blue UAS Users</th>
+  </tr></thead><tbody>`;
+
+  COMPONENTS.forEach(c => {
+    const delta = Math.round(((c.price - c.avg) / c.avg) * 100);
+    html += `<tr>
+      <td><div style="font-size:12px;font-weight:600">${c.name}</div></td>
+      <td><span class="badge badge-cyan">${c.cat}</span></td>
+      <td style="font:12px var(--mono)">$${c.price}</td>
+      <td><span class="badge ${delta>0?"badge-red":"badge-green"}">${delta>0?"+":""}${delta}%</span></td>
+      <td style="font:11px var(--mono);color:var(--text-s)">${c.lead}wk</td>
+      <td><span class="badge ${statusColor[c.status]}">${c.status}</span></td>
+      <td><div style="display:flex;gap:4px;flex-wrap:wrap">${c.users.map(u=>`<span style="font-size:9px;color:var(--blue);background:var(--blue-d);padding:1px 5px;border-radius:3px">${u}</span>`).join("")}</div></td>
+    </tr>`;
+  });
+
+  html += `</tbody></table>`;
+  w.innerHTML = html;
+}
+
+// ── Predictions ──
+function renderPredictions() {
+  const c = document.getElementById("prediction-list");
+  const impactColor = {critical:"--red",high:"--amber",medium:"--blue",low:"--text-d"};
+
+  c.innerHTML = PREDICTIONS.map(p => {
+    const ic = impactColor[p.impact] || "--text-d";
+    return `<div class="pred-card" style="border-left:3px solid var(${ic})">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:8px">
+        <div>
+          <div style="display:flex;gap:6px;align-items:center;margin-bottom:6px">
+            <span class="badge badge-purple">◎ ${p.timeframe}</span>
+            <span class="badge" style="background:var(${ic})18;color:var(${ic})">${p.impact} impact</span>
+          </div>
+          <div style="font-size:13px;font-weight:600;line-height:1.4">${p.event}</div>
+        </div>
+        <div style="text-align:center;min-width:60px">
+          <div style="font:700 22px var(--mono);color:${p.probability>0.7?"var(--amber)":"var(--text-s)"}">${Math.round(p.probability*100)}%</div>
+          <div style="font-size:9px;color:var(--text-d)">probability</div>
+        </div>
+      </div>
+      <div class="drivers">
+        <span style="font-size:10px;color:var(--text-d)">Drivers:</span>
+        ${p.drivers.map(d=>`<span class="driver">${d}</span>`).join("")}
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function renderAll() {
+  renderFilters();
+  renderFlags();
+  renderPlatforms();
+  renderComponents();
+  renderPredictions();
+}
+
+loadData();
+</script>
+</body>
+</html>
