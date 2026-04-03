@@ -11,7 +11,7 @@
       "NVIDIA AI priority over embedded/edge"
     ],
     "model": "forge_bom_analysis + supply_extrapolation",
-    "last_updated": "2026-04-03T21:13:52.387289+00:00"
+    "last_updated": "2026-04-03T22:19:14.213354+00:00"
   },
   {
     "timeframe": "Q2-Q3 2026",
@@ -24,7 +24,7 @@
       "FPV commercial + defense demand on same MCU supply"
     ],
     "model": "forge_bom_analysis",
-    "last_updated": "2026-04-03T21:13:52.387289+00:00"
+    "last_updated": "2026-04-03T22:19:14.213354+00:00"
   },
   {
     "timeframe": "Q3 2026",
@@ -37,7 +37,7 @@
       "Doodle Labs + Silvus dominate Blue UAS mesh \u2014 concentration risk"
     ],
     "model": "forge_bom_analysis + concentration_risk",
-    "last_updated": "2026-04-03T21:13:52.387289+00:00"
+    "last_updated": "2026-04-03T22:19:14.213354+00:00"
   },
   {
     "timeframe": "Q4 2026",
@@ -50,7 +50,7 @@
       "RPi price hikes cascade (Pi 5 8GB now $95)"
     ],
     "model": "price_anomaly + diversion_tracking",
-    "last_updated": "2026-04-03T21:13:52.387289+00:00"
+    "last_updated": "2026-04-03T22:19:14.213354+00:00"
   },
   {
     "timeframe": "H2 2026",
@@ -63,7 +63,7 @@
       "Limited 640-resolution thermal alternatives"
     ],
     "model": "cross_correlation + contract_signal",
-    "last_updated": "2026-04-03T21:13:52.387289+00:00"
+    "last_updated": "2026-04-03T22:19:14.213354+00:00"
   },
   {
     "timeframe": "2027",
@@ -76,7 +76,7 @@
       "Edge AI performance requirements increasing"
     ],
     "model": "product_lifecycle",
-    "last_updated": "2026-04-03T21:13:52.387289+00:00"
+    "last_updated": "2026-04-03T22:19:14.213354+00:00"
   },
   {
     "timeframe": "Q2-Q3 2026",
@@ -89,7 +89,7 @@
       "DroneShield + Epirus scaling"
     ],
     "model": "cuas_correlation",
-    "last_updated": "2026-04-03T21:13:52.387289+00:00"
+    "last_updated": "2026-04-03T22:19:14.213354+00:00"
   },
   {
     "timeframe": "2026-2028",
@@ -103,7 +103,7 @@
       "NDAA compliance premium"
     ],
     "model": "bom_cost_trend",
-    "last_updated": "2026-04-03T21:13:52.387289+00:00"
+    "last_updated": "2026-04-03T22:19:14.213354+00:00"
   },
   {
     "timeframe": "2026-2027",
@@ -116,6 +116,6 @@
       "No alternative foundry at scale"
     ],
     "model": "geopolitical_risk + supply_chain_mapping",
-    "last_updated": "2026-04-03T21:13:52.387289+00:00"
+    "last_updated": "2026-04-03T22:19:14.213354+00:00"
   }
 ]
