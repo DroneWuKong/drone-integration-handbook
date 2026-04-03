@@ -30,7 +30,35 @@ jobs:
         with:
           python-version: '3.12'
 
-      # No pip install needed — live pipeline uses only stdlib
+      # Sync parts-db from canonical source (Ai-Project repo)
+      - name: Sync parts-db from Ai-Project
+        env:
+          FORGE_PAT: ${{ secrets.FORGE_PAT }}
+        run: |
+          echo "Syncing parts-db from Ai-Project (canonical source)..."
+          CLONE_URL="https://github.com/DroneWuKong/Ai-Project.git"
+          if [ -n "$FORGE_PAT" ]; then
+            CLONE_URL="https://${FORGE_PAT}@github.com/DroneWuKong/Ai-Project.git"
+          fi
+
+          git clone --depth 1 --filter=blob:none --sparse "$CLONE_URL" /tmp/ai-project 2>/dev/null
+          git -C /tmp/ai-project sparse-checkout set data/parts-db 2>/dev/null
+
+          if [ -d "/tmp/ai-project/data/parts-db" ]; then
+            cp /tmp/ai-project/data/parts-db/*.json data/parts-db/
+            PARTS=$(python3 -c "
+          import json, glob
+          t=0
+          for f in glob.glob('data/parts-db/*.json'):
+              d=json.load(open(f))
+              if isinstance(d,list): t+=len(d)
+          print(t)
+          ")
+            echo "  ✓ Synced: ${PARTS} components"
+          else
+            echo "  ⚠ Could not sync — using existing parts-db"
+          fi
+          rm -rf /tmp/ai-project
 
       - name: Run PIE Live Pipeline
         run: python pipeline/pie_pipeline_live.py
@@ -48,7 +76,7 @@ jobs:
         run: |
           git config user.name "PIE Bot"
           git config user.email "pie-bot@users.noreply.github.com"
-          git add data/flags.json data/predictions.json
+          git add data/parts-db/ data/flags.json data/predictions.json
 
           if git diff --staged --quiet; then
             echo "No data changes — skipping commit"
