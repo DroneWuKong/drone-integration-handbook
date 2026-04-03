@@ -1966,7 +1966,8 @@ def main():
 
     print("\nMapping alternative components...")
     alt_flags = analyze_alternatives(db)
-    all_flags.extend(alt_flags)
+    # Alternatives now rendered in the What-If simulator cascade — don't duplicate in flags
+    print(f"  ({len(alt_flags)} alternative mappings in What-If simulator — not added to flags)")
 
     print("\nScoring price elasticity...")
     elast_flags = analyze_price_elasticity()
