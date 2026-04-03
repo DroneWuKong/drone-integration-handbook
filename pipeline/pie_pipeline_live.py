@@ -1978,7 +1978,8 @@ def main():
 
     print("\nRunning what-if simulations...")
     whatif_flags = analyze_what_if()
-    all_flags.extend(whatif_flags)
+    # What-if scenarios are in the interactive simulator tab — don't duplicate in flags list
+    print(f"  (4 scenarios in What-If simulator tab — not added to flags)")
 
     print("\nMatching temporal patterns...")
     temp_flags = analyze_temporal_patterns()
