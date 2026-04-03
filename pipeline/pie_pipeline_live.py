@@ -441,9 +441,11 @@ def analyze_sbcs(db):
         name = c.get("name", "")
         price_str = c.get("approx_price", "")
 
-        # Parse price
+        # Parse price — handle string, int, float
         price = 0
-        if price_str:
+        if isinstance(price_str, (int, float)):
+            price = float(price_str)
+        elif isinstance(price_str, str) and price_str:
             nums = re.findall(r'[\d,]+\.?\d*', price_str.replace(",", ""))
             if nums:
                 price = float(nums[0])

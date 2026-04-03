@@ -1,0 +1,2159 @@
+{
+  "schema_version": "v3",
+  "metadata": {
+    "exported_at": "2026-02-22T00:00:00Z",
+    "source": "ProjectDClear",
+    "notes": "Master schema template v3. One example entry per category shows ALL valid fields. Omit fields that are not applicable — do not null-fill everything. The compatibility block on each component is what the compatibility engine reads. Each compatibility block includes _compat_hard (ERROR if violated) and _compat_soft (WARNING if violated) arrays."
+  },
+  "components": {
+    "frames": [
+      {
+        "pid": "FRM-0001",
+        "name": "Example Frame 5 inch",
+        "manufacturer": "FlyFish RC",
+        "description": "5-inch freestyle quad frame",
+        "link": "https://example.com/frame",
+        "image_file": "component_images/example-frame.png",
+        "vehicle_type": "quad",
+        "_vehicle_type_options": "quad | hex | octo | tricopter | fixed_wing | flying_wing | vtol | coaxial",
+        "prop_size_in": 5,
+        "wheelbase_mm": 220,
+        "wingspan_mm": null,
+        "fuselage_length_mm": null,
+        "motor_count": 4,
+        "arm_configuration": "true-X",
+        "_arm_configuration_options": "true-X | stretched-X | deadcat | H-frame | V-tail | flying-wing | Y6 | X8 | other",
+        "material": [
+          "carbon_fiber"
+        ],
+        "_material_options": "carbon_fiber | aluminum | glass_fiber | plastic | foam | wood | EPO | EPP | hybrid",
+        "arm_thickness_mm": 4,
+        "top_plate_thickness_mm": 2,
+        "bottom_plate_thickness_mm": 2.5,
+        "fc_mounting_patterns_mm": [
+          20,
+          25.5,
+          30.5
+        ],
+        "_fc_mounting_notes": "List of supported FC/stack mounting hole spacing in mm. Common: 16, 20, 25.5, 30.5, 35, 45.",
+        "fc_mounting_hole_size": "M3",
+        "_fc_mounting_hole_options": "M2 | M2.5 | M3",
+        "stack_height_mm": 35,
+        "standoff_height_mm": 30,
+        "motor_mount_bolt_size": "M3",
+        "_motor_mount_bolt_options": "M2 | M2.5 | M3 | M5",
+        "prop_size_min_in": 5,
+        "prop_size_max_in": 5.3,
+        "camera_mount_size": "micro",
+        "_camera_mount_size_options": "nano (14mm) | micro (22mm) | mini (26mm) | standard (28mm) | fixed | none",
+        "camera_mount_width_mm": 22,
+        "camera_tilt_range_deg": [
+          0,
+          60
+        ],
+        "canopy_included": true,
+        "canopy_material": "TPU",
+        "_canopy_material_options": "TPU | polycarbonate | carbon_fiber | glass_fiber | none",
+        "battery_position": "bottom",
+        "_battery_position_options": "top | bottom | both | internal",
+        "battery_strap_width_mm": 20,
+        "dji_o3_compatible": true,
+        "dji_o4_compatible": false,
+        "walksnail_compatible": true,
+        "vtx_antenna_passthrough": true,
+        "gps_mount": true,
+        "weight_g": 145,
+        "tags": [
+          "5inch",
+          "freestyle",
+          "carbon",
+          "true-X"
+        ],
+        "compatibility": {
+          "prop_size_min_in": 5,
+          "prop_size_max_in": 5.3,
+          "fc_mounting_patterns_mm": [
+            20,
+            25.5,
+            30.5
+          ],
+          "motor_mount_bolt_size": "M3",
+          "camera_mount_width_mm": 22,
+          "battery_strap_width_mm": 20,
+          "motor_mount_hole_spacing_mm": 16,
+          "_compat_hard": [
+            "fc_mounting_patterns_mm",
+            "motor_mount_bolt_size",
+            "motor_mount_hole_spacing_mm"
+          ],
+          "_compat_soft": [
+            "prop_size_min_in",
+            "prop_size_max_in",
+            "camera_mount_width_mm",
+            "battery_strap_width_mm"
+          ],
+          "fc_mounting_hole_size": "M3"
+        },
+        "size_class": "universal",
+        "motor_mount_hole_spacing_mm": 16,
+        "vehicle_subtype": "long_range"
+      }
+    ],
+    "motors": [
+      {
+        "pid": "MTR-0001",
+        "name": "Example Motor 2207 1980KV",
+        "manufacturer": "RCINPOWER",
+        "description": "2207 freestyle motor for 5-inch builds",
+        "link": "https://example.com/motor",
+        "image_file": "component_images/example-motor.png",
+        "stator_size": "2207",
+        "_stator_size_notes": "Concatenation of diameter+height in mm. Common: 0702, 0703, 1103, 1105, 1404, 1505, 1605, 1804, 2004, 2006, 2105, 2207, 2306, 2407, 2506, 2809, 3115, 3220, 3616, 4014, 5215",
+        "stator_diameter_mm": 22,
+        "stator_height_mm": 7,
+        "kv_rating": 1980,
+        "cell_count_min": 4,
+        "cell_count_max": 6,
+        "voltage_min_v": 14.8,
+        "voltage_max_v": 25.2,
+        "max_continuous_current_a": 35,
+        "max_burst_current_a": 45,
+        "max_power_w": 850,
+        "shaft_diameter_mm": 3,
+        "motor_direction": "bidirectional",
+        "_motor_direction_options": "CW | CCW | bidirectional",
+        "pole_count": 14,
+        "magnet_count": 14,
+        "motor_bell_material": "aluminum_7075",
+        "_bell_material_options": "aluminum_6061 | aluminum_7075 | titanium | steel",
+        "stator_material": "silicon_steel",
+        "wire_gauge_awg": 24,
+        "motor_connector": "solder_pads",
+        "_motor_connector_options": "solder_pads | 2mm_bullet | 3.5mm_bullet | 4mm_bullet | 5mm_bullet | MR30",
+        "motor_mount_hole_spacing_mm": 16,
+        "_motor_mount_notes": "Mounting hole spacing in mm. Common: 9, 12, 16, 19. Match to frame motor mount.",
+        "motor_mount_bolt_size": "M3",
+        "prop_shaft_style": "standard",
+        "_prop_shaft_style_options": "standard | T-mount | 1.5mm_press | 2mm_press | 3mm_threaded | 5mm_threaded",
+        "prop_nut_thread": "M5",
+        "_prop_nut_thread_options": "M3 | M5 | none",
+        "weight_g": 33,
+        "thrust_data": [
+          "[object Object]"
+        ],
+        "tags": [
+          "5inch",
+          "freestyle",
+          "6S",
+          2207
+        ],
+        "compatibility": {
+          "cell_count_min": 4,
+          "cell_count_max": 6,
+          "prop_size_min_in": 4.5,
+          "prop_size_max_in": 5.5,
+          "motor_mount_bolt_size": "M3",
+          "motor_mount_hole_spacing_mm": 16,
+          "min_esc_current_per_motor_a": 35,
+          "_compat_hard": [
+            "motor_mount_bolt_size",
+            "motor_mount_hole_spacing_mm"
+          ],
+          "_compat_soft": [
+            "cell_count_min",
+            "cell_count_max",
+            "prop_size_min_in",
+            "prop_size_max_in",
+            "min_esc_current_per_motor_a"
+          ]
+        },
+        "prop_size_min_in": 5.0,
+        "prop_size_max_in": 5.5,
+        "motor_count": 4,
+        "size_class": "5_inch",
+        "pack_count": 1
+      }
+    ],
+    "servos": [
+      {
+        "pid": "SRV-0001",
+        "name": "Example Servo Digital Metal Gear Micro",
+        "manufacturer": "KST",
+        "description": "Digital metal gear micro servo for fixed-wing control surfaces",
+        "link": "https://example.com/servo",
+        "image_file": "component_images/example-servo.png",
+        "servo_type": "digital",
+        "_servo_type_options": "digital | analog",
+        "gear_material": "metal",
+        "_gear_material_options": "metal | plastic | nylon | titanium",
+        "torque_kg_cm": 2.5,
+        "torque_voltage_v": 6,
+        "speed_sec_60deg": 0.1,
+        "rotation_range_deg": 180,
+        "voltage_min_v": 4.8,
+        "voltage_max_v": 7.4,
+        "signal_protocol": [
+          "PWM",
+          "S.Bus"
+        ],
+        "connector": "JR_PWM",
+        "_connector_options": "JR_PWM | JST-GH | BLS | Futaba | Hitec",
+        "mount_style": "standard_servo",
+        "_mount_style_options": "standard | micro | sub_micro | mini | nano",
+        "weight_g": 15,
+        "tags": [
+          "fixed_wing",
+          "servo",
+          "digital",
+          "metal_gear"
+        ],
+        "compatibility": {
+          "voltage_min_v": 4.8,
+          "voltage_max_v": 7.4,
+          "signal_protocol": [
+            "PWM",
+            "S.Bus"
+          ],
+          "_compat_hard": [
+            "signal_protocol"
+          ],
+          "_compat_soft": [
+            "voltage_min_v",
+            "voltage_max_v"
+          ]
+        }
+      }
+    ],
+    "stacks": [
+      {
+        "pid": "STK-0001",
+        "name": "Example H743 65A Stack 30x30",
+        "manufacturer": "GEPRC",
+        "description": "H743 FC + 65A 4-in-1 ESC stack",
+        "link": "https://example.com/stack",
+        "image_file": "component_images/example-stack.png",
+        "stack_type": "fc_esc",
+        "_stack_type_options": "fc_esc | fc_esc_vtx | aio_1s2s | aio_4s | aio_6s",
+        "mounting_pattern_mm": 30.5,
+        "_mounting_pattern_options": "16 | 20 | 25.5 | 26 | 30.5 | 35 | 45",
+        "mounting_hole_size": "M3",
+        "weight_g": 28,
+        "fc": {
+          "mcu": "STM32H743",
+          "_mcu_options": "STM32F405 | STM32F411 | STM32F722 | STM32F745 | STM32F765 | STM32H743 | AT32F435 | GD32F405 | iMXRT1062",
+          "mcu_clock_mhz": 480,
+          "imu": [
+            "ICM42688P"
+          ],
+          "_imu_options": "MPU6000 | MPU6500 | ICM20689 | ICM42688P | ICM42605 | BMI270 | BMI088 | LSM6DSO",
+          "imu_count": 1,
+          "imu_dual_gyro": false,
+          "barometer": "BMP280",
+          "_barometer_options": "BMP280 | BMP388 | DPS310 | MS5611 | SPL06 | null",
+          "barometer_integrated": true,
+          "osd_chip": "software",
+          "_osd_chip_options": "AT7456E | MAX7456 | software | none",
+          "blackbox": "flash",
+          "_blackbox_options": "flash | sd_card | microsd | microsd_spi | none",
+          "blackbox_size_mb": 128,
+          "current_sensor_integrated": true,
+          "current_sensor_max_a": 165,
+          "voltage_sense_max_v": 35,
+          "uart_count": 7,
+          "i2c_count": 2,
+          "spi_count": 3,
+          "usb_connector": "USB-C",
+          "_usb_connector_options": "micro_USB | USB-C",
+          "usb_passthrough": true,
+          "motor_output_count": 8,
+          "motor_protocols": [
+            "DSHOT150",
+            "DSHOT300",
+            "DSHOT600",
+            "DSHOT1200",
+            "Multishot",
+            "Oneshot125",
+            "PWM"
+          ],
+          "_motor_protocol_options": "DSHOT150 | DSHOT300 | DSHOT600 | DSHOT1200 | Bidirectional_DSHOT | Multishot | Oneshot125 | Oneshot42 | PWM",
+          "bidirectional_dshot": true,
+          "led_strip_output": true,
+          "buzzer_output": true,
+          "camera_control_output": true,
+          "beeper_output": true,
+          "boot_button": true,
+          "bec_5v_v": 5,
+          "bec_5v_ma": 2000,
+          "bec_5v_connector": "solder_pads",
+          "_bec_connector_options": "solder_pads | JST-GH_2pin | JST-PH_2pin | JST-SH",
+          "bec_9v_v": 9,
+          "bec_9v_ma": 2000,
+          "bec_9v_connector": "solder_pads",
+          "bec_12v_v": null,
+          "bec_12v_ma": null,
+          "fc_target": "GEPRC_TAKER_H743",
+          "firmware_support": [
+            "Betaflight",
+            "iNav",
+            "Ardupilot"
+          ],
+          "_firmware_options": "Betaflight | iNav | Ardupilot | KISS | Emuflight | Cleanflight",
+          "betaflight_version_min": "4.3",
+          "inav_version_min": "5.0",
+          "ardupilot_version_min": "4.3"
+        },
+        "esc": {
+          "cell_count_min": 3,
+          "cell_count_max": 6,
+          "voltage_min_v": 9,
+          "voltage_max_v": 26,
+          "continuous_current_per_motor_a": 65,
+          "burst_current_per_motor_a": 80,
+          "motor_output_count": 4,
+          "motor_protocols": [
+            "DSHOT150",
+            "DSHOT300",
+            "DSHOT600",
+            "DSHOT1200",
+            "Multishot",
+            "Oneshot125",
+            "PWM"
+          ],
+          "bidirectional_dshot": true,
+          "rpm_filter_support": true,
+          "esc_telemetry": true,
+          "current_sensing_per_motor": true,
+          "esc_firmware": "BLHeli_32",
+          "_esc_firmware_options": "BLHeli_S | BLHeli_32 | AM32 | KISS | Bluejay | proprietary",
+          "input_connector": "XT60",
+          "_input_connector_options": "BT2.0 | PH2.0 | JST-PHR | XT30 | XT60 | XT60H | XT90 | XT90-S | solder_pads",
+          "motor_connector": "solder_pads",
+          "_motor_connector_options": "solder_pads | 2mm_bullet | 3.5mm_bullet | 4mm_bullet"
+        },
+        "tags": [
+          "30x30",
+          "H7",
+          "65A",
+          "BLHeli_32",
+          "Betaflight",
+          "iNav"
+        ],
+        "compatibility": {
+          "cell_count_min": 3,
+          "cell_count_max": 6,
+          "voltage_min_v": 9,
+          "voltage_max_v": 26,
+          "mounting_pattern_mm": 30.5,
+          "mounting_hole_size": "M3",
+          "battery_connector": "XT60",
+          "motor_output_count": 4,
+          "firmware_support": [
+            "Betaflight",
+            "iNav",
+            "Ardupilot"
+          ],
+          "_compat_hard": [
+            "mounting_pattern_mm",
+            "mounting_hole_size",
+            "battery_connector"
+          ],
+          "_compat_soft": [
+            "cell_count_min",
+            "cell_count_max",
+            "voltage_min_v",
+            "voltage_max_v",
+            "motor_output_count",
+            "firmware_support"
+          ],
+          "continuous_current_per_motor_a": 50
+        },
+        "mcu_family": "F7",
+        "cell_count_min": 2,
+        "cell_count_max": 6,
+        "esc_current_a": 50,
+        "esc_firmware": "BLHeli_S",
+        "is_aio": true,
+        "continuous_current_per_motor_a": 50,
+        "esc_format": "4in1",
+        "motor_output_count": 4,
+        "size_class": "5_inch",
+        "imu": "MPU6000"
+      }
+    ],
+    "flight_controllers": [
+      {
+        "pid": "FC-0001",
+        "name": "Example Standalone F7 Flight Controller",
+        "manufacturer": "Matek",
+        "description": "Standalone F7 FC, no ESC included",
+        "link": "https://example.com/fc",
+        "image_file": "component_images/example-fc.png",
+        "mcu": "STM32F722",
+        "mcu_clock_mhz": 216,
+        "imu": [
+          "MPU6000",
+          "ICM42688P"
+        ],
+        "imu_count": 2,
+        "imu_dual_gyro": true,
+        "barometer": "BMP388",
+        "barometer_integrated": true,
+        "osd_chip": "AT7456E",
+        "blackbox": "microsd",
+        "blackbox_size_mb": null,
+        "current_sensor_integrated": false,
+        "current_sensor_max_a": null,
+        "voltage_sense_max_v": 26,
+        "uart_count": 6,
+        "i2c_count": 2,
+        "spi_count": 3,
+        "usb_connector": "USB-C",
+        "usb_passthrough": false,
+        "motor_output_count": 8,
+        "motor_protocols": [
+          "DSHOT150",
+          "DSHOT300",
+          "DSHOT600",
+          "Multishot",
+          "Oneshot125",
+          "PWM"
+        ],
+        "bidirectional_dshot": true,
+        "led_strip_output": true,
+        "buzzer_output": true,
+        "camera_control_output": true,
+        "boot_button": true,
+        "bec_5v_v": 5,
+        "bec_5v_ma": 1500,
+        "bec_5v_connector": "JST-GH_2pin",
+        "bec_9v_v": null,
+        "bec_9v_ma": null,
+        "mounting_pattern_mm": 30.5,
+        "mounting_hole_size": "M3",
+        "fc_target": "MATEKF722",
+        "firmware_support": [
+          "Betaflight",
+          "iNav"
+        ],
+        "betaflight_version_min": "4.2",
+        "inav_version_min": "4.0",
+        "weight_g": 9,
+        "tags": [
+          "30x30",
+          "F7",
+          "dual_gyro",
+          "SD_card"
+        ],
+        "compatibility": {
+          "mounting_pattern_mm": 30.5,
+          "mounting_hole_size": "M3",
+          "firmware_support": [
+            "Betaflight",
+            "iNav"
+          ],
+          "_compat_hard": [
+            "mounting_pattern_mm",
+            "mounting_hole_size"
+          ],
+          "_compat_soft": [
+            "firmware_support"
+          ],
+          "cell_count_min": 2,
+          "cell_count_max": 8,
+          "voltage_min_v": 6.0,
+          "voltage_max_v": 34.8,
+          "mcu_family": "F4",
+          "imu": "ICM42688P",
+          "is_aio": true,
+          "esc_current_a": 5,
+          "esc_firmware": "Bluejay",
+          "diameter_in": 2.0,
+          "motor_shaft_diameter_mm": 1.5,
+          "hub_type": "press_fit_1.5mm"
+        },
+        "_mcu_options": "STM32F405 | STM32F411 | STM32F722 | STM32F745 | STM32F765 | STM32H743 | AT32F435 | GD32F405 | iMXRT1062",
+        "_imu_options": "MPU6000 | MPU6500 | ICM20689 | ICM42688P | ICM42605 | BMI270 | BMI088 | LSM6DSO",
+        "_barometer_options": "BMP280 | BMP388 | DPS310 | MS5611 | SPL06 | null",
+        "_osd_chip_options": "AT7456E | MAX7456 | software | none",
+        "_blackbox_options": "flash | sd_card | microsd | microsd_spi | none",
+        "_usb_connector_options": "micro_USB | USB-C",
+        "_motor_protocol_options": "DSHOT150 | DSHOT300 | DSHOT600 | DSHOT1200 | Bidirectional_DSHOT | Multishot | Oneshot125 | Oneshot42 | PWM",
+        "_bec_5v_connector_options": "solder_pads | JST-GH_2pin | JST-PH_2pin | JST-SH",
+        "_firmware_options": "Betaflight | iNav | Ardupilot | KISS | Emuflight | Cleanflight",
+        "mcu_family": "F4",
+        "cell_count_min": 2,
+        "cell_count_max": 8,
+        "size_class": "5_inch",
+        "firmware_targets": "Betaflight/INAV/Ardupilot",
+        "esc_current_a": 5,
+        "esc_firmware": "Bluejay",
+        "is_aio": true,
+        "blade_count": 2,
+        "diameter_in": 2.0,
+        "pitch_in": 0.9,
+        "mounting_hole_mm": 1.5,
+        "hub_type": "press_fit_1.5mm"
+      }
+    ],
+    "escs": [
+      {
+        "pid": "ESC-0001",
+        "name": "Example Standalone 80A 4-in-1 ESC",
+        "manufacturer": "Skystars",
+        "description": "Standalone 4-in-1 ESC, no FC included",
+        "link": "https://example.com/esc",
+        "image_file": "component_images/example-esc.png",
+        "esc_format": "4in1",
+        "_esc_format_options": "4in1 | individual | 2in1 | 6in1 | 8in1",
+        "cell_count_min": 2,
+        "cell_count_max": 8,
+        "voltage_min_v": 6,
+        "voltage_max_v": 35,
+        "continuous_current_per_motor_a": 80,
+        "burst_current_per_motor_a": 100,
+        "motor_output_count": 4,
+        "motor_protocols": [
+          "DSHOT150",
+          "DSHOT300",
+          "DSHOT600",
+          "DSHOT1200",
+          "Multishot",
+          "Oneshot125",
+          "PWM"
+        ],
+        "bidirectional_dshot": true,
+        "rpm_filter_support": true,
+        "esc_telemetry": true,
+        "current_sensing_per_motor": true,
+        "esc_firmware": "BLHeli_32",
+        "input_connector": "XT60",
+        "motor_connector": "solder_pads",
+        "mounting_pattern_mm": 30.5,
+        "mounting_hole_size": "M3",
+        "weight_g": 18,
+        "tags": [
+          "30x30",
+          "8S",
+          "80A",
+          "BLHeli_32"
+        ],
+        "compatibility": {
+          "cell_count_min": 2,
+          "cell_count_max": 8,
+          "voltage_min_v": 6,
+          "voltage_max_v": 35,
+          "mounting_pattern_mm": 30.5,
+          "battery_connector": "XT60",
+          "firmware_support": [
+            "BLHeli_32"
+          ],
+          "_compat_hard": [
+            "mounting_pattern_mm",
+            "battery_connector"
+          ],
+          "_compat_soft": [
+            "cell_count_min",
+            "cell_count_max",
+            "voltage_min_v",
+            "voltage_max_v",
+            "firmware_support"
+          ],
+          "mounting_hole_size": "M3",
+          "continuous_current_per_motor_a": 50,
+          "mcu_family": "F4",
+          "is_aio": true,
+          "esc_current_a": 55,
+          "esc_firmware": "BLHeli_S"
+        },
+        "size_class": "5_inch",
+        "mcu_family": "F4",
+        "esc_current_a": 55,
+        "is_aio": true
+      }
+    ],
+    "aio_boards": [
+      {
+        "pid": "AIO-0001",
+        "name": "Example AIO 1-2S FC+ESC",
+        "manufacturer": "BetaFPV",
+        "description": "All-in-one FC+ESC for 1S-2S tiny whoops",
+        "link": "https://example.com/aio",
+        "image_file": "component_images/example-aio.png",
+        "includes_vtx": false,
+        "includes_rx": false,
+        "cell_count_min": 1,
+        "cell_count_max": 2,
+        "voltage_min_v": 3.7,
+        "voltage_max_v": 8.7,
+        "continuous_current_per_motor_a": 5,
+        "burst_current_per_motor_a": 8,
+        "mcu": "STM32F411",
+        "imu": [
+          "MPU6000"
+        ],
+        "barometer_integrated": false,
+        "osd_chip": "software",
+        "blackbox": "flash",
+        "blackbox_size_mb": 32,
+        "uart_count": 3,
+        "motor_output_count": 4,
+        "motor_protocols": [
+          "DSHOT300",
+          "DSHOT600",
+          "PWM"
+        ],
+        "bidirectional_dshot": true,
+        "usb_connector": "USB-C",
+        "bec_5v_v": 5,
+        "bec_5v_ma": 300,
+        "battery_connector": "BT2.0",
+        "_battery_connector_options": "BT2.0 | PH2.0 | JST-PHR_2pin | JST-PH_2pin | XT30",
+        "motor_connector": "JST_PH_2pin",
+        "_aio_motor_connector_options": "JST_PH_2pin | solder_pads | Molex_Pico | 1mm_JST",
+        "mounting_pattern_mm": 25.5,
+        "mounting_hole_size": "M2",
+        "fc_target": "BETAFPVF411",
+        "firmware_support": [
+          "Betaflight"
+        ],
+        "weight_g": 3.5,
+        "tags": [
+          "1S",
+          "2S",
+          "tiny_whoop",
+          "AIO",
+          "25x25"
+        ],
+        "compatibility": {
+          "cell_count_min": 1,
+          "cell_count_max": 2,
+          "voltage_min_v": 3.7,
+          "voltage_max_v": 8.7,
+          "mounting_pattern_mm": 25.5,
+          "battery_connector": "BT2.0",
+          "_compat_hard": [
+            "mounting_pattern_mm",
+            "battery_connector"
+          ],
+          "_compat_soft": [
+            "cell_count_min",
+            "cell_count_max",
+            "voltage_min_v",
+            "voltage_max_v"
+          ]
+        }
+      }
+    ],
+    "pdbs": [
+      {
+        "pid": "PDB-0001",
+        "name": "Example PDB 500A",
+        "manufacturer": "TBS",
+        "description": "High-current power distribution board for X-Class or cinelifter",
+        "link": "https://example.com/pdb",
+        "image_file": "component_images/example-pdb.png",
+        "cell_count_min": 2,
+        "cell_count_max": 12,
+        "voltage_min_v": 6,
+        "voltage_max_v": 50,
+        "max_continuous_current_a": 500,
+        "esc_outputs": 4,
+        "esc_output_connector": "XT60",
+        "input_connector": "AS150",
+        "_input_connector_options": "XT60 | XT90 | XT90-S | AS150 | EC8 | solder_pads",
+        "bec_5v_v": 5,
+        "bec_5v_ma": 3000,
+        "bec_12v_v": 12,
+        "bec_12v_ma": 3000,
+        "current_sensor_integrated": true,
+        "current_sensor_max_a": 500,
+        "mounting_pattern_mm": 30.5,
+        "mounting_hole_size": "M3",
+        "weight_g": 25,
+        "tags": [
+          "X-Class",
+          "cinelifter",
+          "high_current",
+          "500A"
+        ],
+        "compatibility": {
+          "cell_count_min": 2,
+          "cell_count_max": 12,
+          "voltage_max_v": 50,
+          "input_connector": "AS150",
+          "_compat_hard": [
+            "input_connector"
+          ],
+          "_compat_soft": [
+            "cell_count_min",
+            "cell_count_max",
+            "voltage_max_v"
+          ]
+        }
+      }
+    ],
+    "voltage_regulators": [
+      {
+        "pid": "VRG-0001",
+        "name": "Example Ultra Small 5V Booster",
+        "manufacturer": "Fractal",
+        "description": "High-power 5V boost regulator for video/digital systems",
+        "link": "https://example.com/bec",
+        "image_file": "component_images/example-bec.png",
+        "regulator_type": "boost",
+        "_regulator_type_options": "linear | buck | boost | buck-boost | LDO",
+        "input_voltage_min_v": 1.5,
+        "input_voltage_max_v": 5.5,
+        "output_voltage_v": 5,
+        "output_current_ma": 3000,
+        "efficiency_pct": 92,
+        "input_connector": "solder_pads",
+        "output_connector": "solder_pads",
+        "weight_g": 1.2,
+        "tags": [
+          "BEC",
+          "5V",
+          "boost",
+          "tiny_whoop"
+        ],
+        "compatibility": {
+          "input_voltage_min_v": 1.5,
+          "input_voltage_max_v": 5.5,
+          "output_voltage_v": 5,
+          "_compat_hard": [],
+          "_compat_soft": [
+            "input_voltage_min_v",
+            "input_voltage_max_v",
+            "output_voltage_v"
+          ]
+        }
+      }
+    ],
+    "batteries": [
+      {
+        "pid": "BAT-0001",
+        "name": "Example 6S 1300mAh 160C LiPo XT60",
+        "manufacturer": "Tattu",
+        "description": "R-Line racing LiPo for 5-inch builds",
+        "link": "https://example.com/battery",
+        "image_file": "component_images/example-battery.png",
+        "chemistry": "LiPo",
+        "_chemistry_options": "LiPo | LiHV | Li-ion_18650 | Li-ion_21700 | LiFePO4 | NiMH | semi_solid_state",
+        "cell_count": 6,
+        "cell_parallel": 1,
+        "cell_config": "6S1P",
+        "nominal_voltage_v": 22.2,
+        "full_charge_voltage_v": 25.2,
+        "_full_charge_notes": "LiPo: 4.20V/cell | LiHV: 4.35V/cell | Li-ion: 4.20V/cell",
+        "storage_voltage_v": 23.1,
+        "min_discharge_voltage_v": 18,
+        "_min_discharge_notes": "LiPo: 3.0V/cell | Li-ion: 2.5V/cell",
+        "capacity_mah": 1300,
+        "capacity_wh": 28.86,
+        "continuous_c_rating": 160,
+        "burst_c_rating": 320,
+        "continuous_discharge_a": 208,
+        "battery_connector": "XT60",
+        "_battery_connector_options": "BT2.0 | PH2.0 | JST-PHR | XT30 | XT30U | XT60 | XT60H | XT90 | XT90-S | AS150 | EC3 | EC5 | EC8 | XT150",
+        "balance_connector": "JST-XH",
+        "balance_connector_pins": 7,
+        "dimensions_mm": {
+          "length": 115,
+          "width": 48,
+          "height": 28
+        },
+        "weight_g": 208,
+        "ir_per_cell_mohm": 2.5,
+        "battery_strap_width_mm": 20,
+        "tags": [
+          "6S",
+          "LiPo",
+          "racing",
+          "XT60",
+          "1300mAh"
+        ],
+        "compatibility": {
+          "cell_count": 6,
+          "chemistry": "LiPo",
+          "voltage_nominal_v": 22.2,
+          "voltage_max_v": 25.2,
+          "connector_type": "XT60",
+          "_compat_hard": [
+            "connector_type"
+          ],
+          "_compat_soft": [
+            "cell_count",
+            "chemistry",
+            "voltage_nominal_v",
+            "voltage_max_v"
+          ]
+        },
+        "voltage_nominal_v": 22.2,
+        "voltage_max_v": 25.2,
+        "size_class": "5_inch",
+        "discharge_rate_c": 130,
+        "voltage_from_name": 22.2,
+        "pack_count": 3,
+        "price_per_unit": 66.66
+      }
+    ],
+    "battery_chargers": [
+      {
+        "pid": "CHG-0001",
+        "name": "Example 4-Channel 250W Smart Charger",
+        "manufacturer": "HOTA",
+        "description": "4-port AC/DC smart balance charger with display",
+        "link": "https://example.com/charger",
+        "image_file": "component_images/example-charger.png",
+        "channel_count": 4,
+        "charge_type": "ac_dc",
+        "_charge_type_options": "ac_only | dc_only | ac_dc",
+        "max_ac_power_w": 1000,
+        "max_dc_power_w_per_channel": 250,
+        "max_charge_current_a_per_channel": 15,
+        "cell_count_min": 1,
+        "cell_count_max": 8,
+        "supported_chemistries": [
+          "LiPo",
+          "LiHV",
+          "Li-ion",
+          "LiFePO4",
+          "NiMH"
+        ],
+        "balance_charging": true,
+        "parallel_charging": true,
+        "storage_mode": true,
+        "discharge": true,
+        "output_connector": "XT60",
+        "input_connector_ac": "IEC_C14",
+        "_ac_connector_options": "IEC_C14 | NEMA_5-15 | EU_type_F | UK_type_G",
+        "input_connector_dc": "XT60",
+        "usb_c_output": true,
+        "usb_c_output_w": 65,
+        "display": "IPS_LCD",
+        "_display_options": "color_LCD | IPS_LCD | mono_LCD | OLED | LED | none",
+        "wireless_connectivity": null,
+        "_wireless_options": "WiFi | Bluetooth | none",
+        "weight_g": 580,
+        "tags": [
+          "4-channel",
+          "AC/DC",
+          "250W",
+          "balance"
+        ],
+        "compatibility": {
+          "cell_count_min": 1,
+          "cell_count_max": 8,
+          "supported_chemistries": [
+            "LiPo",
+            "LiHV",
+            "Li-ion",
+            "LiFePO4",
+            "NiMH"
+          ],
+          "_compat_hard": [],
+          "_compat_soft": [
+            "cell_count_min",
+            "cell_count_max",
+            "supported_chemistries"
+          ]
+        }
+      }
+    ],
+    "propellers": [
+      {
+        "pid": "PRP-0001",
+        "name": "Example 5.1x2.75 Tri-Blade",
+        "manufacturer": "Gemfan",
+        "description": "5-inch tri-blade freestyle prop",
+        "link": "https://example.com/propeller",
+        "image_file": "component_images/example-propeller.png",
+        "diameter_in": 5.1,
+        "pitch_in": 2.75,
+        "blade_count": 3,
+        "material": "polycarbonate",
+        "_material_options": "polycarbonate | nylon | PA12 | nylon_glass_fiber | carbon_fiber | flexible_PC",
+        "hub_type": "standard",
+        "_hub_type_options": "standard | T-mount | press_fit_1.5mm | press_fit_2mm | press_fit_3mm | butterfly_5mm",
+        "mounting_hole_mm": 5,
+        "prop_nut_included": false,
+        "direction": "CW_CCW_pair",
+        "_direction_options": "CW | CCW | CW_CCW_pair | 3D_reversible",
+        "weight_g_per_prop": 4.5,
+        "tags": [
+          "5inch",
+          "tri-blade",
+          "freestyle",
+          "polycarbonate"
+        ],
+        "compatibility": {
+          "motor_shaft_diameter_mm": 5,
+          "hub_type": "standard",
+          "recommended_motor_kv_4s": [
+            2300,
+            2800
+          ],
+          "recommended_motor_kv_6s": [
+            1700,
+            2100
+          ],
+          "_compat_hard": [
+            "motor_shaft_diameter_mm",
+            "hub_type"
+          ],
+          "_compat_soft": [
+            "recommended_motor_kv_4s",
+            "recommended_motor_kv_6s"
+          ],
+          "diameter_in": 4.9
+        },
+        "is_3d": true,
+        "size_class": "5_inch",
+        "pack_count": 4,
+        "price_per_unit": 0.75,
+        "folding": true
+      }
+    ],
+    "fpv_cameras": [
+      {
+        "pid": "CAM-0001",
+        "name": "Example Analog FPV Camera 1200TVL",
+        "manufacturer": "Caddx",
+        "description": "High-resolution analog FPV camera with starlight sensor",
+        "link": "https://example.com/camera",
+        "image_file": "component_images/example-camera.png",
+        "video_system": "analog",
+        "sensor_type": "CMOS",
+        "_sensor_type_options": "CMOS | CCD | Starlight-CMOS",
+        "sensor_size": "1/1.8",
+        "_sensor_size_options": "1/4",
+        "resolution_tvl": 1200,
+        "aspect_ratio": "4:3",
+        "_aspect_ratio_options": "4:3 | 16:9 | switchable",
+        "fov_deg": 155,
+        "min_illumination_lux": 0.001,
+        "video_format": "auto",
+        "_video_format_options": "NTSC | PAL | auto",
+        "camera_size": "micro",
+        "_camera_size_options": "nano_14mm | micro_22mm | mini_26mm | standard_28mm | custom",
+        "body_width_mm": 22,
+        "lens_thread": "M8",
+        "_lens_thread_options": "M7 | M8 | M12 | custom",
+        "wdr": true,
+        "latency_ms": 15,
+        "osd_menu": true,
+        "camera_control_input": true,
+        "dynamic_range_db": 130,
+        "voltage_min_v": 4.5,
+        "voltage_max_v": 36,
+        "current_ma": 350,
+        "output_signal": "CVBS",
+        "output_connector": "JST-PH_3pin",
+        "_output_connector_options": "solder_pads | JST-PH_3pin | JST-GH_3pin | composite_3pin | proprietary",
+        "weight_g": 12,
+        "tags": [
+          "micro",
+          "analog",
+          "starlight",
+          "low_light",
+          "1200TVL"
+        ],
+        "compatibility": {
+          "voltage_min_v": 4.5,
+          "voltage_max_v": 36,
+          "output_signal": "CVBS",
+          "body_width_mm": 22,
+          "lens_thread": "M8",
+          "requires_analog_vtx": true,
+          "_compat_hard": [
+            "output_signal",
+            "body_width_mm"
+          ],
+          "_compat_soft": [
+            "voltage_min_v",
+            "voltage_max_v",
+            "lens_thread",
+            "requires_analog_vtx"
+          ]
+        },
+        "size_class": "universal"
+      }
+    ],
+    "digital_video_cameras": [
+      {
+        "pid": "DVC-0001",
+        "name": "Example Digital FPV Camera HD",
+        "manufacturer": "Caddx / Walksnail",
+        "description": "Digital HD FPV camera for Walksnail Avatar system",
+        "link": "https://example.com/digital-cam",
+        "image_file": "component_images/example-dvc.png",
+        "digital_system": "Walksnail_Avatar",
+        "_digital_system_options": "DJI_O3 | DJI_O4 | DJI_O4_Lite | DJI_O4_Pro | HDZero | Walksnail_Avatar | OpenHD",
+        "sensor_size": "1/2.0",
+        "video_resolution": "1080p60",
+        "_resolution_options": "720p60 | 1080p60 | 1080p120 | 4K30 | 4K60",
+        "fov_deg": 162,
+        "latency_ms": 20,
+        "local_recording": false,
+        "image_stabilization": "none",
+        "_stabilization_options": "optical | electronic | none",
+        "camera_to_vtx_connector": "proprietary_coax",
+        "_cam_vtx_connector_options": "proprietary_coax | MIPI | JST | coax | integrated",
+        "voltage_min_v": 5,
+        "voltage_max_v": 26,
+        "weight_g": 12,
+        "tags": [
+          "digital",
+          "HD",
+          "Walksnail",
+          "1080p"
+        ],
+        "compatibility": {
+          "digital_system": "Walksnail_Avatar",
+          "requires_air_unit": "Walksnail_Avatar",
+          "voltage_min_v": 5,
+          "voltage_max_v": 26,
+          "_compat_hard": [
+            "digital_system",
+            "requires_air_unit"
+          ],
+          "_compat_soft": [
+            "voltage_min_v",
+            "voltage_max_v"
+          ]
+        }
+      }
+    ],
+    "thermal_cameras": [
+      {
+        "pid": "THM-0001",
+        "name": "Example LWIR Thermal Camera 640x512",
+        "manufacturer": "Axisflying",
+        "description": "Long-wave infrared thermal imaging payload",
+        "link": "https://example.com/thermal",
+        "image_file": "component_images/example-thermal.png",
+        "sensor_type": "LWIR",
+        "_sensor_type_options": "LWIR | MWIR | SWIR | near-IR",
+        "resolution": "640x512",
+        "_resolution_options": "160x120 | 256x192 | 320x256 | 384x288 | 640x512",
+        "wavelength_um": "8-14",
+        "fov_deg": 45,
+        "thermal_sensitivity_mk": 50,
+        "frame_rate_hz": 25,
+        "output_signal": "CVBS",
+        "_output_signal_options": "CVBS | HDMI | USB | Ethernet | MIPI",
+        "voltage_min_v": 5,
+        "voltage_max_v": 12,
+        "current_ma": 800,
+        "weight_g": 40,
+        "tags": [
+          "thermal",
+          "LWIR",
+          "payload",
+          "surveillance"
+        ],
+        "compatibility": {
+          "voltage_min_v": 5,
+          "voltage_max_v": 12,
+          "output_signal": "CVBS",
+          "_compat_hard": [
+            "output_signal"
+          ],
+          "_compat_soft": [
+            "voltage_min_v",
+            "voltage_max_v"
+          ]
+        }
+      }
+    ],
+    "action_cameras": [
+      {
+        "pid": "ACT-0001",
+        "name": "Example Action Camera 4K",
+        "manufacturer": "DJI",
+        "description": "Waterproof action camera with electronic stabilization",
+        "link": "https://example.com/action-cam",
+        "image_file": "component_images/example-action-cam.png",
+        "max_resolution": "4K120",
+        "_resolution_options": "1080p60 | 4K30 | 4K60 | 4K120 | 5.7K30 | 8K30",
+        "sensor_size": "1/1.3",
+        "fov_deg": 155,
+        "image_stabilization": "RockSteady_EIS",
+        "_stabilization_options": "optical_OIS | electronic_EIS | horizon_lock | none | proprietary",
+        "waterproof_depth_m": 10,
+        "storage_type": "microSD",
+        "max_bitrate_mbps": 130,
+        "battery_type": "internal",
+        "_battery_type_options": "internal | external_proprietary | 18650 | AA",
+        "charging_connector": "USB-C",
+        "naked_mod_compatible": false,
+        "_naked_mod_notes": "Whether PCB can be extracted to reduce weight (popular for GoPro Hero 6/7/8/9/10/11)",
+        "mount_type": "DJI_action",
+        "_mount_type_options": "GoPro_3prong | DJI_action | RunCam_thread | 1/4_20 | custom | TPU_bracket",
+        "audio": true,
+        "weight_g": 145,
+        "tags": [
+          "action_camera",
+          "4K",
+          "waterproof",
+          "DJI"
+        ],
+        "compatibility": {
+          "mount_type": "DJI_action",
+          "weight_consideration_g": 145,
+          "_compat_hard": [
+            "mount_type"
+          ],
+          "_compat_soft": [
+            "weight_consideration_g"
+          ]
+        }
+      }
+    ],
+    "video_transmitters": [
+      {
+        "pid": "VTX-0001",
+        "name": "Example Analog 2.5W VTX",
+        "manufacturer": "GEPRC",
+        "description": "High-power analog 5.8GHz VTX with SmartAudio",
+        "link": "https://example.com/vtx",
+        "image_file": "component_images/example-vtx.png",
+        "video_standard": "analog",
+        "_video_standard_options": "analog | digital | optical_fiber",
+        "digital_system": null,
+        "_digital_system_options": "null | DJI_O3 | DJI_O4 | DJI_O4_Lite | DJI_O4_Pro | HDZero | Walksnail_Avatar | OpenHD",
+        "frequency_band": "5.8GHz",
+        "_frequency_options": "5.8GHz | 2.4GHz | 1.3GHz | 1.2GHz | optical",
+        "supported_bands_5ghz": [
+          "A",
+          "B",
+          "E",
+          "F",
+          "R"
+        ],
+        "_5ghz_band_options": "A (Boscam) | B (Boscam) | E (Boscam) | F/Airwave | R/Raceband | L/Lowband | H (DJI) | Race",
+        "channel_count": 48,
+        "power_levels_mw": [
+          25,
+          100,
+          200,
+          400,
+          600,
+          1000,
+          2500
+        ],
+        "max_power_mw": 2500,
+        "power_watts": "2.50",
+        "antenna_connector": "MMCX",
+        "_antenna_connector_options": "SMA | RP-SMA | MMCX | U.FL | IPEX4 | SMA_right_angle",
+        "control_protocol": "SmartAudio_v2",
+        "_control_protocol_options": "SmartAudio_v1.0 | SmartAudio_v2.0 | IRC_Tramp | none",
+        "osd_support": false,
+        "heat_sink": true,
+        "fan": false,
+        "video_input": "CVBS",
+        "_video_input_options": "CVBS | HDMI | MIPI | proprietary | integrated_camera",
+        "voltage_min_v": 7,
+        "voltage_max_v": 26,
+        "current_idle_ma": 450,
+        "current_max_ma": 2200,
+        "mounting_pattern_mm": 20,
+        "mounting_hole_size": "M2",
+        "weight_g": 38,
+        "tags": [
+          "analog",
+          "5.8GHz",
+          "2.5W",
+          "SmartAudio",
+          "20x20"
+        ],
+        "compatibility": {
+          "voltage_min_v": 7,
+          "voltage_max_v": 26,
+          "video_standard": "analog",
+          "antenna_connector": "MMCX",
+          "video_input": "CVBS",
+          "mounting_pattern_mm": 20,
+          "requires_analog_camera": true,
+          "_compat_hard": [
+            "video_standard",
+            "antenna_connector",
+            "video_input"
+          ],
+          "_compat_soft": [
+            "voltage_min_v",
+            "voltage_max_v",
+            "mounting_pattern_mm",
+            "requires_analog_camera"
+          ]
+        },
+        "size_class": "universal",
+        "video_system": "HDZero"
+      },
+      {
+        "pid": "VTX-0002",
+        "name": "Example Digital Air Unit O4",
+        "manufacturer": "DJI",
+        "description": "DJI O4 digital video transmission air unit",
+        "link": "https://example.com/dji-o4",
+        "image_file": "component_images/example-dji-o4.png",
+        "video_standard": "digital",
+        "digital_system": "DJI_O4",
+        "frequency_band": "5.8GHz",
+        "max_video_resolution": "1080p100",
+        "max_range_km": 20,
+        "latency_ms": 13,
+        "antenna_connector": "U.FL",
+        "camera_connector": "proprietary_coax",
+        "video_input": "proprietary",
+        "voltage_min_v": 7,
+        "voltage_max_v": 26,
+        "current_max_ma": 3500,
+        "max_power_mw": 1000,
+        "mounting_pattern_mm": 25.5,
+        "mounting_hole_size": "M2",
+        "weight_g": 31,
+        "tags": [
+          "digital",
+          "DJI",
+          "O4",
+          "HD",
+          "long_range"
+        ],
+        "compatibility": {
+          "video_standard": "digital",
+          "digital_system": "DJI_O4",
+          "voltage_min_v": 7,
+          "voltage_max_v": 26,
+          "requires_dji_camera": true,
+          "requires_dji_goggles": true,
+          "_compat_hard": [
+            "video_standard",
+            "digital_system"
+          ],
+          "_compat_soft": [
+            "voltage_min_v",
+            "voltage_max_v",
+            "requires_dji_camera",
+            "requires_dji_goggles"
+          ]
+        }
+      },
+      {
+        "pid": "VTX-0003",
+        "name": "Example Optical Fiber FPV 5km",
+        "manufacturer": "Generic",
+        "description": "Fiber optic FPV video and data link, 5km range, zero RF interference",
+        "link": "https://example.com/fiber-vtx",
+        "image_file": "component_images/example-fiber-vtx.png",
+        "video_standard": "optical_fiber",
+        "digital_system": "optical_fiber",
+        "max_range_km": 5,
+        "fiber_diameter_mm": 0.9,
+        "video_resolution": "1080p30",
+        "latency_ms": 1,
+        "rf_emissions": false,
+        "data_link_included": true,
+        "voltage_min_v": 7,
+        "voltage_max_v": 26,
+        "weight_g": 85,
+        "tags": [
+          "optical_fiber",
+          "zero_RF",
+          "long_range",
+          "unique"
+        ],
+        "compatibility": {
+          "video_standard": "optical_fiber",
+          "digital_system": "optical_fiber",
+          "requires_matched_ground_unit": true,
+          "_compat_hard": [
+            "video_standard",
+            "digital_system"
+          ],
+          "_compat_soft": [
+            "requires_matched_ground_unit"
+          ]
+        }
+      }
+    ],
+    "fpv_goggles": [
+      {
+        "pid": "GOG-0001",
+        "name": "Example HD Box Goggle",
+        "manufacturer": "HDZero",
+        "description": "Dual-system box goggles: HDZero digital + analog",
+        "link": "https://example.com/goggles",
+        "image_file": "component_images/example-goggles.png",
+        "goggle_type": "box_goggle",
+        "_goggle_type_options": "box_goggle | compact_goggle | head_unit | screen_monitor | binocular_lenses",
+        "supported_video_systems": [
+          "HDZero",
+          "analog"
+        ],
+        "_digital_system_options": "DJI_O3 | DJI_O4 | DJI_O4_Pro | HDZero | Walksnail_Avatar | OpenHD | analog",
+        "screen_type": "LCD",
+        "_screen_type_options": "LCD | IPS | OLED | micro-OLED | micro-LCD",
+        "screen_resolution": "1280x960",
+        "screen_count": 2,
+        "fov_deg": 46,
+        "ipd_adjustment": true,
+        "ipd_range_mm": [
+          58,
+          72
+        ],
+        "diopter_adjustment": false,
+        "dvr_integrated": true,
+        "dvr_resolution": "1080p30",
+        "diversity_rx": true,
+        "analog_bands_supported": [
+          "A",
+          "B",
+          "E",
+          "F",
+          "R"
+        ],
+        "analog_channel_count": 48,
+        "antenna_ports": 4,
+        "antenna_connector": "SMA",
+        "_antenna_connector_options": "SMA | RP-SMA | MMCX | LHCP | RHCP",
+        "fan": true,
+        "head_tracking": false,
+        "hdmi_in": true,
+        "hdmi_out": false,
+        "av_in": true,
+        "power_connector": "XT60",
+        "_power_connector_options": "XT60 | XT30 | barrel_DC_5525 | USB-C | internal_battery | 2S_JST",
+        "voltage_min_v": 7,
+        "voltage_max_v": 26,
+        "internal_battery": false,
+        "latency_ms": 4,
+        "weight_g": 480,
+        "tags": [
+          "HDZero",
+          "analog",
+          "box_goggle",
+          "dual_system",
+          "DVR"
+        ],
+        "compatibility": {
+          "supported_video_systems": [
+            "HDZero",
+            "analog"
+          ],
+          "antenna_connector": "SMA",
+          "voltage_min_v": 7,
+          "voltage_max_v": 26,
+          "_compat_hard": [
+            "supported_video_systems"
+          ],
+          "_compat_soft": [
+            "antenna_connector",
+            "voltage_min_v",
+            "voltage_max_v"
+          ]
+        }
+      }
+    ],
+    "antennas": [
+      {
+        "pid": "ANT-0001",
+        "name": "Example 5.8GHz RHCP Omni Air Antenna",
+        "manufacturer": "TrueRC",
+        "description": "RHCP omni-directional 5.8GHz VTX antenna",
+        "link": "https://example.com/antenna",
+        "image_file": "component_images/example-antenna.png",
+        "antenna_type": "omni",
+        "_antenna_type_options": "omni | directional | patch | panel | yagi | helical | dipole | cloverleaf | mushroom | lollipop | pagoda | stubby",
+        "use_case": "vtx",
+        "_use_case_options": "vtx | vrx | rc_link_tx | rc_link_rx | gps | wifi | multi",
+        "frequency_mhz": 5800,
+        "frequency_range_mhz": [
+          5645,
+          5945
+        ],
+        "gain_dbi": 1.6,
+        "polarization": "RHCP",
+        "_polarization_options": "RHCP | LHCP | linear_vertical | linear_horizontal | circular_switchable",
+        "connector": "SMA",
+        "_connector_options": "SMA_male | SMA_female | RP-SMA_male | RP-SMA_female | MMCX | U.FL | IPEX4 | N_type",
+        "connector_gender": "male",
+        "cable_length_mm": 0,
+        "cable_type": null,
+        "_cable_type_options": "RG316 | RG174 | LMR100 | LMR200 | null",
+        "body_material": "fiberglass",
+        "waterproof": true,
+        "length_mm": 75,
+        "vswr": 1.2,
+        "polarization_label": "RHCP",
+        "weight_g": 8,
+        "tags": [
+          "5.8GHz",
+          "RHCP",
+          "SMA",
+          "omni",
+          "VTX"
+        ],
+        "compatibility": {
+          "connector": "SMA_male",
+          "frequency_mhz": 5800,
+          "use_case": "vtx",
+          "polarization": "RHCP",
+          "_compat_hard": [
+            "connector",
+            "frequency_mhz",
+            "polarization"
+          ],
+          "_compat_soft": [
+            "use_case"
+          ]
+        },
+        "frequency_ghz": 5.8,
+        "size_class": "universal"
+      }
+    ],
+    "ground_antennas": [
+      {
+        "pid": "GAT-0001",
+        "name": "Example 5.8GHz Directional Panel Ground Antenna",
+        "manufacturer": "GEPRC",
+        "description": "High-gain directional flat-panel antenna for ground station",
+        "link": "https://example.com/ground-antenna",
+        "image_file": "component_images/example-ground-antenna.png",
+        "antenna_type": "patch_panel",
+        "use_case": "vrx",
+        "frequency_mhz": 5800,
+        "frequency_range_mhz": [
+          5645,
+          5945
+        ],
+        "gain_dbi": 9,
+        "polarization": "RHCP",
+        "connector": "SMA_female",
+        "cable_length_mm": 150,
+        "cable_type": "RG316",
+        "length_mm": 85,
+        "weight_g": 45,
+        "tags": [
+          "5.8GHz",
+          "directional",
+          "panel",
+          "ground_station",
+          "high_gain"
+        ],
+        "compatibility": {
+          "connector": "SMA_female",
+          "frequency_mhz": 5800,
+          "use_case": "vrx",
+          "_compat_hard": [
+            "connector",
+            "frequency_mhz"
+          ],
+          "_compat_soft": [
+            "use_case"
+          ]
+        },
+        "_antenna_type_options": "omni | directional | patch | panel | yagi | helical | dipole | cloverleaf | mushroom | lollipop | pagoda | stubby",
+        "_use_case_options": "vtx | vrx | rc_link_tx | rc_link_rx | gps | wifi | multi",
+        "_polarization_options": "RHCP | LHCP | linear_vertical | linear_horizontal | circular_switchable",
+        "_connector_options": "SMA_male | SMA_female | RP-SMA_male | RP-SMA_female | MMCX | U.FL | IPEX4 | N_type",
+        "_cable_type_options": "RG316 | RG174 | LMR100 | LMR200 | null"
+      }
+    ],
+    "receivers": [
+      {
+        "pid": "RCV-0001",
+        "name": "Example ELRS 2.4GHz Receiver",
+        "manufacturer": "RadioMaster",
+        "description": "Lightweight 2.4GHz ExpressLRS receiver with U.FL antenna",
+        "link": "https://example.com/receiver",
+        "image_file": "component_images/example-receiver.png",
+        "rc_protocol": "ELRS",
+        "_rc_protocol_options": "ELRS | CRSF_Crossfire | CRSF_Tracer | FrSky_ACCST_D8 | FrSky_ACCST_D16 | FrSky_ACCESS | FlySky_AFHDS | FlySky_AFHDS2A | DSMX | DSM2 | DSMR | GHST_Ghost | PWM | SBUS | iBUS | SUMD | SRXL2 | Futaba_FASST | Futaba_SFHSS",
+        "frequency_mhz": 2400,
+        "_frequency_options": "868 | 900 | 915 | 2400 | 5800",
+        "link_type": "bidirectional",
+        "_link_type_options": "bidirectional | unidirectional",
+        "telemetry": true,
+        "telemetry_protocol": "CRSF",
+        "fc_interface": "UART_CRSF",
+        "_fc_interface_options": "UART_CRSF | UART_ELRS | UART_GHST | SBUS | FPORT | FBUS | PPM | iBUS | SUMD | SRXL2 | PWM | DSMX",
+        "channel_count": 16,
+        "packet_rate_hz": [
+          50,
+          100,
+          150,
+          250,
+          500
+        ],
+        "latency_ms": 4,
+        "failsafe": true,
+        "failsafe_type": "last_known",
+        "_failsafe_options": "last_known | no_pulses | custom | cut_throttle",
+        "diversity_rx": false,
+        "antenna_type": "dipole",
+        "_antenna_type_options": "dipole | PCB_trace | whip | chip | diversity | ceramic_patch",
+        "antenna_count": 1,
+        "antenna_connector": "U.FL",
+        "_antenna_connector_options": "U.FL | IPEX1 | IPEX4 | SMA | RP-SMA | integrated",
+        "binding_method": "wifi_or_button",
+        "voltage_min_v": 3.3,
+        "voltage_max_v": 5,
+        "current_ma": 70,
+        "weight_g": 1.2,
+        "mounting": "solder_pads",
+        "_mounting_options": "solder_pads | 20x20_M2 | 25.5x25.5_M2 | zip_tie | adhesive",
+        "tags": [
+          "ELRS",
+          "2.4GHz",
+          "lightweight",
+          "U.FL"
+        ],
+        "compatibility": {
+          "rc_protocol": "ELRS",
+          "frequency_mhz": 2400,
+          "fc_interface": "UART_CRSF",
+          "voltage_min_v": 3.3,
+          "voltage_max_v": 5,
+          "requires_tx_protocol": "ELRS",
+          "_compat_hard": [
+            "rc_protocol",
+            "fc_interface",
+            "requires_tx_protocol"
+          ],
+          "_compat_soft": [
+            "frequency_mhz",
+            "voltage_min_v",
+            "voltage_max_v"
+          ]
+        },
+        "protocol": "ELRS",
+        "frequency_ghz": 2.4,
+        "size_class": "universal",
+        "diversity": true
+      }
+    ],
+    "transmitters": [
+      {
+        "pid": "TXM-0001",
+        "name": "Example Full-Size Radio Controller 2.4GHz ELRS",
+        "manufacturer": "RadioMaster",
+        "description": "Full-size OpenTX/EdgeTX radio with internal ELRS module",
+        "link": "https://example.com/tx",
+        "image_file": "component_images/example-tx.png",
+        "tx_type": "handheld",
+        "_tx_type_options": "handheld | desktop | surface | rc_module_only",
+        "rc_protocol": "ELRS",
+        "_protocol_options": "ELRS | CRSF_Crossfire | CRSF_Tracer | FrSky_ACCST | FrSky_ACCESS | FlySky_AFHDS2A | DSMX | GHST | multi_protocol | PWM",
+        "frequency_mhz": 2400,
+        "multi_protocol": true,
+        "module_bay": "JR_full",
+        "_module_bay_options": "JR_full | JR_lite | nano | none | internal_only",
+        "channel_count": 32,
+        "gimbals": "hall_effect",
+        "_gimbal_options": "hall_effect | potentiometer | optical",
+        "gimbal_resolution_bits": 12,
+        "switch_count": 8,
+        "switch_types": [
+          "2-pos",
+          "3-pos",
+          "momentary"
+        ],
+        "power_mw": 1000,
+        "rf_chip": "SX1280",
+        "_rf_chip_options": "SX1276 | SX1278 | SX1280 | CC2500 | A7105 | CC1101 | CYRF6936",
+        "battery_type": "18650",
+        "_battery_type_options": "18650 | 21700 | AA | internal_LiPo | external_LiPo",
+        "battery_cells": 2,
+        "battery_capacity_mah": 6000,
+        "internal_charger": true,
+        "charging_connector": "USB-C",
+        "display": "color_LCD",
+        "_display_options": "color_LCD | mono_LCD | OLED | touchscreen | none",
+        "os": "EdgeTX",
+        "_os_options": "EdgeTX | OpenTX | proprietary | none",
+        "speaker": true,
+        "haptic": true,
+        "sd_card": true,
+        "wifi": false,
+        "bluetooth": true,
+        "usb_type": "USB-C",
+        "trainer_port": "3.5mm",
+        "_trainer_port_options": "3.5mm | 3.5mm_TRRS | none",
+        "weight_g": 990,
+        "tags": [
+          "ELRS",
+          "2.4GHz",
+          "EdgeTX",
+          "hall_effect",
+          18650
+        ],
+        "compatibility": {
+          "rc_protocol": "ELRS",
+          "frequency_mhz": 2400,
+          "compatible_rx_protocols": [
+            "ELRS"
+          ],
+          "compatible_module_bay": "JR_full",
+          "_compat_hard": [
+            "rc_protocol"
+          ],
+          "_compat_soft": [
+            "frequency_mhz",
+            "compatible_rx_protocols",
+            "compatible_module_bay"
+          ]
+        }
+      }
+    ],
+    "rf_modules": [
+      {
+        "pid": "RFM-0001",
+        "name": "Example ELRS 915MHz External TX Module",
+        "manufacturer": "GEPRC",
+        "description": "External 915MHz ExpressLRS JR module for longer range",
+        "link": "https://example.com/rf-module",
+        "image_file": "component_images/example-rf-module.png",
+        "rc_protocol": "ELRS",
+        "frequency_mhz": 915,
+        "max_power_mw": 500,
+        "power_levels_mw": [
+          10,
+          25,
+          100,
+          250,
+          500
+        ],
+        "module_bay_type": "JR_full",
+        "_module_bay_options": "JR_full | JR_lite | nano",
+        "antenna_connector": "SMA",
+        "wifi_config": true,
+        "bluetooth_config": false,
+        "weight_g": 65,
+        "tags": [
+          "ELRS",
+          "915MHz",
+          "long_range",
+          "JR_module"
+        ],
+        "compatibility": {
+          "rc_protocol": "ELRS",
+          "frequency_mhz": 915,
+          "module_bay_type": "JR_full",
+          "compatible_rx_protocols": [
+            "ELRS"
+          ],
+          "_compat_hard": [
+            "rc_protocol",
+            "module_bay_type"
+          ],
+          "_compat_soft": [
+            "frequency_mhz",
+            "compatible_rx_protocols"
+          ]
+        }
+      }
+    ],
+    "gps_modules": [
+      {
+        "pid": "GPS-0001",
+        "name": "Example GPS M10 with Compass",
+        "manufacturer": "GEPRC",
+        "description": "u-blox M10 GPS with integrated compass for iNav/ArduPilot",
+        "link": "https://example.com/gps",
+        "image_file": "component_images/example-gps.png",
+        "gps_chip": "u-blox_M10",
+        "_gps_chip_options": "u-blox_M6 | u-blox_M8 | u-blox_M9 | u-blox_M10 | CASIC | Quectel_L76 | AT6558 | MTK_MT3333",
+        "gnss_systems": [
+          "GPS",
+          "GLONASS",
+          "Galileo",
+          "BeiDou"
+        ],
+        "frequency_band": "L1",
+        "_frequency_options": "L1 | L1_L5 | L1_L2 | multi-band",
+        "channels": 18,
+        "position_accuracy_cep_m": 1.5,
+        "update_rate_hz": 10,
+        "_update_rate_options": "1 | 5 | 10 | 18 | 20 | 25",
+        "cold_start_s": 30,
+        "hot_start_s": 1,
+        "compass_integrated": true,
+        "compass_chip": "QMC5883L",
+        "_compass_options": "HMC5883L | QMC5883L | IST8310 | IIS2MDC | LIS3MDL | null",
+        "barometer_integrated": false,
+        "interface": "UART",
+        "_interface_options": "UART | I2C | SPI | USB",
+        "protocol": "UBX",
+        "_protocol_options": "NMEA | UBX | NMEA_UBX | proprietary",
+        "default_baud_rate": 115200,
+        "voltage_min_v": 3.3,
+        "voltage_max_v": 5,
+        "current_ma": 50,
+        "antenna": "integrated_patch",
+        "_antenna_options": "integrated_patch | integrated_chip | external_SMA | external_IPEX",
+        "mounting_hole_size": "M3",
+        "connector": "JST-GH_6pin",
+        "_connector_options": "JST-GH_4pin | JST-GH_6pin | JST-SH | solder_pads | UART_pigtail",
+        "weight_g": 12,
+        "diameter_mm": 25,
+        "tags": [
+          "GPS",
+          "M10",
+          "compass",
+          "iNav",
+          "ArduPilot"
+        ],
+        "compatibility": {
+          "voltage_min_v": 3.3,
+          "voltage_max_v": 5,
+          "interface": "UART",
+          "fc_interface_required": "UART",
+          "compass_requires_i2c": true,
+          "_compat_hard": [
+            "interface",
+            "fc_interface_required"
+          ],
+          "_compat_soft": [
+            "voltage_min_v",
+            "voltage_max_v",
+            "compass_requires_i2c"
+          ]
+        },
+        "size_class": "universal"
+      }
+    ],
+    "optical_flow_sensors": [
+      {
+        "pid": "OPF-0001",
+        "name": "Example Optical Flow + Rangefinder Module",
+        "manufacturer": "Matek",
+        "description": "Combined optical flow and lidar rangefinder for indoor hovering",
+        "link": "https://example.com/optical-flow",
+        "image_file": "component_images/example-optical-flow.png",
+        "optical_flow_chip": "PMW3901",
+        "lidar_chip": "VL53L1X",
+        "max_altitude_m": 4,
+        "update_rate_hz": 100,
+        "interface": "UART",
+        "voltage_min_v": 3.3,
+        "voltage_max_v": 5,
+        "connector": "JST-GH_4pin",
+        "mounting_hole_size": "M3",
+        "weight_g": 4,
+        "tags": [
+          "optical_flow",
+          "lidar",
+          "indoor",
+          "positioning"
+        ],
+        "compatibility": {
+          "voltage_min_v": 3.3,
+          "voltage_max_v": 5,
+          "interface": "UART",
+          "firmware_support": [
+            "Betaflight",
+            "iNav",
+            "Ardupilot"
+          ],
+          "_compat_hard": [
+            "interface"
+          ],
+          "_compat_soft": [
+            "voltage_min_v",
+            "voltage_max_v",
+            "firmware_support"
+          ]
+        },
+        "_optical_flow_chip_options": "PMW3901 | PAA5100 | ADNS3080",
+        "_lidar_chip_options": "VL53L0X | VL53L1X | TFmini | TFLuna",
+        "_interface_options": "UART | I2C | SPI",
+        "_connector_options": "JST-GH_4pin | JST-GH_6pin | JST-SH | solder_pads"
+      }
+    ],
+    "rangefinders": [
+      {
+        "pid": "RNG-0001",
+        "name": "Example Lidar Rangefinder",
+        "manufacturer": "Benewake",
+        "description": "TFmini lidar for altitude hold and obstacle detection",
+        "link": "https://example.com/rangefinder",
+        "image_file": "component_images/example-rangefinder.png",
+        "sensor_type": "lidar",
+        "_sensor_type_options": "lidar | ultrasonic | infrared | radar",
+        "max_range_m": 12,
+        "min_range_m": 0.1,
+        "accuracy_cm": 1,
+        "update_rate_hz": 100,
+        "fov_deg": 2.3,
+        "interface": "UART",
+        "voltage_min_v": 4.5,
+        "voltage_max_v": 6,
+        "weight_g": 5,
+        "tags": [
+          "lidar",
+          "rangefinder",
+          "altitude_hold"
+        ],
+        "compatibility": {
+          "voltage_min_v": 4.5,
+          "voltage_max_v": 6,
+          "interface": "UART",
+          "_compat_hard": [
+            "interface"
+          ],
+          "_compat_soft": [
+            "voltage_min_v",
+            "voltage_max_v"
+          ]
+        }
+      }
+    ],
+    "capacitors": [
+      {
+        "pid": "CAP-0001",
+        "name": "Example 1000uF 35V Low ESR Capacitor",
+        "manufacturer": "Panasonic",
+        "description": "Low-ESR electrolytic cap for ESC power smoothing",
+        "link": "https://example.com/capacitor",
+        "image_file": "component_images/example-cap.png",
+        "capacitance_uf": 1000,
+        "voltage_rating_v": 35,
+        "_voltage_notes": "Must be rated >= max battery voltage. 6S max = 25.2V. Use 35V+ for 6S, 63V+ for 8S.",
+        "esr_type": "low_ESR",
+        "_esr_options": "standard | low_ESR | ultra_low_ESR",
+        "lead_type": "radial",
+        "_lead_options": "radial | SMD | snap-in",
+        "diameter_mm": 10,
+        "height_mm": 20,
+        "weight_g": 8,
+        "tags": [
+          "capacitor",
+          "ESC",
+          "power_filtering"
+        ],
+        "compatibility": {
+          "max_cell_count_for_6s": true,
+          "voltage_rating_v": 35,
+          "_compat_hard": [
+            "voltage_rating_v"
+          ],
+          "_compat_soft": [
+            "max_cell_count_for_6s"
+          ]
+        }
+      }
+    ],
+    "buzzers": [
+      {
+        "pid": "BUZ-0001",
+        "name": "Example Active Buzzer 5V",
+        "manufacturer": "Generic",
+        "description": "Active piezo buzzer for lost model alarm",
+        "link": "https://example.com/buzzer",
+        "image_file": "component_images/example-buzzer.png",
+        "buzzer_type": "active",
+        "_buzzer_type_options": "active | passive",
+        "voltage_v": 5,
+        "current_ma": 30,
+        "sound_db": 95,
+        "frequency_hz": 2700,
+        "connector": "JST-PH_2pin",
+        "_connector_options": "JST-PH_2pin | solder_leads | JST-GH_2pin",
+        "weight_g": 4,
+        "tags": [
+          "buzzer",
+          "lost_model",
+          "5V"
+        ],
+        "compatibility": {
+          "voltage_v": 5,
+          "fc_output_required": "buzzer_pad",
+          "_compat_hard": [
+            "fc_output_required"
+          ],
+          "_compat_soft": [
+            "voltage_v"
+          ]
+        }
+      }
+    ],
+    "led_strips": [
+      {
+        "pid": "LED-0001",
+        "name": "Example WS2812B LED Strip 8 LEDs",
+        "manufacturer": "Generic",
+        "description": "Addressable RGB LED strip for night flying and aesthetics",
+        "link": "https://example.com/led",
+        "image_file": "component_images/example-led.png",
+        "led_type": "WS2812B",
+        "_led_type_options": "WS2812B | WS2812S | APA102 | SK6812 | single_color",
+        "led_count": 8,
+        "voltage_v": 5,
+        "current_ma_per_led": 60,
+        "connector": "JST-PH_3pin",
+        "waterproof": false,
+        "weight_g": 3,
+        "tags": [
+          "LED",
+          "RGB",
+          "WS2812B",
+          "addressable"
+        ],
+        "compatibility": {
+          "voltage_v": 5,
+          "fc_output_required": "LED_strip_pad",
+          "firmware_protocol": "WS2812B",
+          "_compat_hard": [
+            "fc_output_required",
+            "firmware_protocol"
+          ],
+          "_compat_soft": [
+            "voltage_v"
+          ]
+        }
+      }
+    ],
+    "connector_adapters": [
+      {
+        "pid": "CNA-0001",
+        "name": "Example XT60 Male to XT30 Female Adapter",
+        "manufacturer": "Generic",
+        "description": "Adapt XT60 battery to XT30 ESC input",
+        "link": "https://example.com/adapter",
+        "image_file": "component_images/example-adapter.png",
+        "input_connector": "XT60_male",
+        "output_connector": "XT30_female",
+        "_connector_options": "BT2.0 | PH2.0 | JST-PHR | XT30 | XT60 | XT60H | XT90 | XT90-S | AS150 | EC3 | EC5 | EC8",
+        "max_current_a": 60,
+        "max_voltage_v": 35,
+        "wire_gauge_awg": 16,
+        "wire_length_mm": 80,
+        "weight_g": 12,
+        "tags": [
+          "adapter",
+          "XT60",
+          "XT30",
+          "connector"
+        ],
+        "compatibility": {
+          "input_connector": "XT60",
+          "output_connector": "XT30",
+          "max_current_a": 60,
+          "_compat_hard": [
+            "input_connector",
+            "output_connector"
+          ],
+          "_compat_soft": [
+            "max_current_a"
+          ]
+        }
+      }
+    ],
+    "wiring_hardware": [
+      {
+        "pid": "WRH-0001",
+        "name": "Example Silicone Wire Kit 14AWG",
+        "manufacturer": "Generic",
+        "description": "High-strand-count silicone insulated wire for power leads",
+        "link": "https://example.com/wire",
+        "image_file": "component_images/example-wire.png",
+        "hardware_type": "wire",
+        "_hardware_type_options": "wire | heat_shrink | battery_strap | zip_tie | standoff | screw_set | prop_nut | velcro | double_sided_tape | foam_padding | o_ring",
+        "wire_gauge_awg": 14,
+        "insulation_material": "silicone",
+        "_insulation_options": "silicone | PVC | PTFE | nylon",
+        "wire_colors_included": [
+          "red",
+          "black",
+          "yellow",
+          "blue",
+          "green",
+          "white"
+        ],
+        "length_per_color_m": 7.5,
+        "max_current_a": 40,
+        "weight_g": 200,
+        "tags": [
+          "wire",
+          "14AWG",
+          "silicone",
+          "power"
+        ],
+        "compatibility": {
+          "_compat_hard": [],
+          "_compat_soft": []
+        }
+      }
+    ],
+    "tools": [
+      {
+        "pid": "TOL-0001",
+        "name": "Example FPV Tool Kit with Multimeter",
+        "manufacturer": "Flywoo",
+        "description": "Complete FPV quad builder tool kit including soldering iron and multimeter",
+        "link": "https://example.com/tool",
+        "image_file": "component_images/example-tool.png",
+        "tool_type": "kit",
+        "_tool_type_options": "kit | soldering_iron | hot_air_station | multimeter | prop_tool | screwdriver | prop_balancer | hex_driver | battery_tester | conformal_coat | practice_board | cnc | 3d_printer | oscilloscope | power_supply",
+        "items_included": [
+          "soldering_iron",
+          "multimeter",
+          "hex_drivers",
+          "prop_tool"
+        ],
+        "weight_g": 850,
+        "tags": [
+          "tool",
+          "kit",
+          "soldering",
+          "multimeter"
+        ],
+        "compatibility": {
+          "_compat_hard": [],
+          "_compat_soft": []
+        }
+      }
+    ],
+    "accessories": [
+      {
+        "pid": "ACC-0001",
+        "name": "Example Accessory",
+        "manufacturer": "Generic",
+        "description": "Catch-all for items that don't fit other categories",
+        "link": "https://example.com/accessory",
+        "image_file": "component_images/example-accessory.png",
+        "accessory_type": "misc",
+        "_accessory_type_options": "canopy | camera_mount | prop_guard | landing_pad | carry_bag | neck_strap | goggle_battery | filament_TPU | filament_PLA | filament_ABS | filament_PETG | filament_ASA | filament_CF | short_saver | drone_model_prebuilt | chassis_surface | wing_foam | misc",
+        "quantity": 1,
+        "weight_g": null,
+        "tags": [],
+        "compatibility": {
+          "_compat_hard": [],
+          "_compat_soft": []
+        }
+      }
+    ]
+  },
+  "drone_models": [
+    {
+      "pid": "MDL-0001",
+      "name": "Example Drone Build",
+      "description": "Complete drone model referencing all component PIDs",
+      "image_file": "drone_images/example-drone.png",
+      "pdf_file": "pdfs/example-drone-manual.pdf",
+      "vehicle_type": "quad",
+      "build_class": "5inch_freestyle",
+      "_build_class_notes": "freestyle | racing | long_range | cinematic | cinewhoop | tiny_whoop | X-class | fixed_wing | flying_wing | micro | nano",
+      "relations": {
+        "frames": [
+          {
+            "pid": "FRM-0001"
+          }
+        ],
+        "motors": [
+          {
+            "pid": "MTR-0001",
+            "quantity": 4
+          }
+        ],
+        "stacks": [
+          {
+            "pid": "STK-0001"
+          }
+        ],
+        "flight_controllers": [],
+        "escs": [],
+        "aio_boards": [],
+        "pdbs": [],
+        "voltage_regulators": [],
+        "batteries": [
+          {
+            "pid": "BAT-0001",
+            "quantity": 2
+          }
+        ],
+        "battery_chargers": [
+          {
+            "pid": "CHG-0001"
+          }
+        ],
+        "propellers": [
+          {
+            "pid": "PRP-0001",
+            "quantity": 4
+          }
+        ],
+        "fpv_cameras": [
+          {
+            "pid": "CAM-0001"
+          }
+        ],
+        "digital_video_cameras": [],
+        "thermal_cameras": [],
+        "action_cameras": [],
+        "video_transmitters": [
+          {
+            "pid": "VTX-0001"
+          }
+        ],
+        "fpv_goggles": [
+          {
+            "pid": "GOG-0001"
+          }
+        ],
+        "antennas": [
+          {
+            "pid": "ANT-0001",
+            "quantity": 1
+          }
+        ],
+        "ground_antennas": [
+          {
+            "pid": "GAT-0001",
+            "quantity": 2
+          }
+        ],
+        "receivers": [
+          {
+            "pid": "RCV-0001"
+          }
+        ],
+        "transmitters": [
+          {
+            "pid": "TXM-0001"
+          }
+        ],
+        "rf_modules": [],
+        "gps_modules": [],
+        "optical_flow_sensors": [],
+        "rangefinders": [],
+        "capacitors": [
+          {
+            "pid": "CAP-0001",
+            "quantity": 1
+          }
+        ],
+        "buzzers": [
+          {
+            "pid": "BUZ-0001"
+          }
+        ],
+        "led_strips": [],
+        "connector_adapters": [],
+        "wiring_hardware": [
+          {
+            "pid": "WRH-0001"
+          }
+        ],
+        "servos": [],
+        "tools": [
+          {
+            "pid": "TOL-0001"
+          }
+        ],
+        "accessories": []
+      }
+    }
+  ]
+}

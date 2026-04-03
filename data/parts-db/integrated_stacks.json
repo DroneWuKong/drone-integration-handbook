@@ -26,7 +26,32 @@
     "ecosystem": "Orqa DTK (APB + AVP + OPU)",
     "wingman_role": "Primary onboard AI development platform — FC + companion + NPU inference in one board",
     "link": "https://orqafpv.com",
-    "tags": ["imx8m_plus", "stm32h7", "npu", "2.3_tops", "pcie", "mipi_csi", "yocto", "ndaa", "eu_manufactured", "onboard_ai", "orqa_dtk"]
+    "tags": [
+      "imx8m_plus",
+      "stm32h7",
+      "npu",
+      "2.3_tops",
+      "pcie",
+      "mipi_csi",
+      "yocto",
+      "ndaa",
+      "eu_manufactured",
+      "onboard_ai",
+      "orqa_dtk"
+    ],
+    "approx_price": 78,
+    "schema_data": {
+      "fc_mcu": "STM32H7",
+      "companion": "NXP i.MX8M Plus",
+      "npu": "2.3 TOPS",
+      "weight_g": 13,
+      "features": "FC + companion computer on single board. Onboard AI inference. MAVLink bridge built-in.",
+      "firmware": "PX4 (FC side), Linux (companion side)",
+      "connectors": "JST-GH (Pixhawk standard)",
+      "country": "Croatia (EU)",
+      "ndaa_compliant": true,
+      "pinout_notes": "All-in-one board. No separate companion computer wiring needed. Direct Ethernet and serial between FC and companion."
+    }
   },
   {
     "pid": "IS-0002",
@@ -56,7 +81,24 @@
     "blue_uas_framework": true,
     "subcategory": "integrated_fc_companion",
     "link": "https://www.modalai.com/products/voxl-2",
-    "tags": ["qrb5165", "15_tops", "px4_integrated", "vio", "slam", "ros2", "docker", "7_cameras", "16g", "assembled_usa", "blue_uas_framework", "ndaa"]
+    "tags": [
+      "qrb5165",
+      "15_tops",
+      "px4_integrated",
+      "vio",
+      "slam",
+      "ros2",
+      "docker",
+      "7_cameras",
+      "16g",
+      "assembled_usa",
+      "blue_uas_framework",
+      "ndaa"
+    ],
+    "approx_price": 79,
+    "schema_data": {
+      "weight_g": 31
+    }
   },
   {
     "pid": "IS-0003",
@@ -84,7 +126,22 @@
     "blue_uas_framework": true,
     "subcategory": "integrated_fc_companion",
     "link": "https://www.modalai.com/products/voxl-2-mini",
-    "tags": ["qrb5165", "15_tops", "11g", "30.5mm_mount", "micro_drone", "px4_integrated", "8k30", "assembled_usa", "blue_uas_framework", "ndaa"]
+    "tags": [
+      "qrb5165",
+      "15_tops",
+      "11g",
+      "30.5mm_mount",
+      "micro_drone",
+      "px4_integrated",
+      "8k30",
+      "assembled_usa",
+      "blue_uas_framework",
+      "ndaa"
+    ],
+    "approx_price": 70,
+    "schema_data": {
+      "weight_g": 20
+    }
   },
   {
     "pid": "IS-0004",
@@ -110,7 +167,24 @@
     "blue_uas_framework": true,
     "subcategory": "integrated_fc_companion",
     "link": "https://auterion.com/product/skynode-s/",
-    "tags": ["fmuv6x", "stm32h7", "npu", "px4", "auterion_os", "30.5mm", "8s_direct", "blue_uas_framework", "ndaa", "combat_proven_ukraine", "swarm", "track_intercept"]
+    "tags": [
+      "fmuv6x",
+      "stm32h7",
+      "npu",
+      "px4",
+      "auterion_os",
+      "30.5mm",
+      "8s_direct",
+      "blue_uas_framework",
+      "ndaa",
+      "combat_proven_ukraine",
+      "swarm",
+      "track_intercept"
+    ],
+    "approx_price": 75,
+    "schema_data": {
+      "weight_g": 12
+    }
   },
   {
     "pid": "IS-0005",
@@ -144,6 +218,24 @@
     "subcategory": "ndaa_fpv_fc",
     "note": "FC only — no companion computer. Categorized here as the Blue UAS Framework FPV-optimized NDAA alternative alongside integrated stacks.",
     "link": "https://arkelectron.com/product/ark-fpv-flight-controller/",
-    "tags": ["stm32h7", "iim42653", "30.5mm", "3_12s", "12v_vtx_output", "px4", "ardupilot", "betaflight", "made_in_usa", "blue_uas_framework", "ndaa", "1w_heater", "fpv_optimized"]
+    "tags": [
+      "stm32h7",
+      "iim42653",
+      "30.5mm",
+      "3_12s",
+      "12v_vtx_output",
+      "px4",
+      "ardupilot",
+      "betaflight",
+      "made_in_usa",
+      "blue_uas_framework",
+      "ndaa",
+      "1w_heater",
+      "fpv_optimized"
+    ],
+    "approx_price": 79,
+    "schema_data": {
+      "weight_g": 28
+    }
   }
 ]

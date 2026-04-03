@@ -1,0 +1,340 @@
+[
+  {
+    "pid": "GIMBAL-1000",
+    "category": "gimbals_payloads",
+    "name": "Trillium HD25",
+    "manufacturer": "Trillium Engineering",
+    "country": "USA",
+    "description": "Miniature EO or EO/IR gimbal with geopointing. Magnesium enclosure. 720p HD H.264 video. 3x optical zoom visible + optional LWIR. GPS-aided INS for geolocation. Scene/target tracking.",
+    "link": "https://www.trilliumeng.com",
+    "sensors": {
+      "eo": "3x optical zoom",
+      "ir": "optional LWIR (fixed)",
+      "lrf": false,
+      "laser_pointer": false
+    },
+    "stabilization": "direct-drive",
+    "weight_g": null,
+    "video_output": "720p H.264",
+    "interfaces": [
+      "Ethernet",
+      "serial",
+      "analog"
+    ],
+    "ip_rating": "sealed",
+    "tags": [
+      "miniature",
+      "geopointing",
+      "magnesium",
+      "low-cost"
+    ]
+  },
+  {
+    "pid": "GIMBAL-1001",
+    "category": "gimbals_payloads",
+    "name": "Trillium HD25-LV-C",
+    "manufacturer": "Trillium Engineering",
+    "country": "USA",
+    "description": "Low-cost gimbaled imaging system <400g. Advanced imaging and processing for expendable sUAS platforms.",
+    "link": "https://www.trilliumeng.com",
+    "sensors": {
+      "eo": true,
+      "ir": false,
+      "lrf": false,
+      "laser_pointer": false
+    },
+    "stabilization": "direct-drive",
+    "weight_g": 400,
+    "video_output": null,
+    "interfaces": [],
+    "ip_rating": null,
+    "tags": [
+      "expendable",
+      "low-cost",
+      "ultra-light",
+      "sUAS"
+    ]
+  },
+  {
+    "pid": "GIMBAL-1002",
+    "category": "gimbals_payloads",
+    "name": "Trillium HD40",
+    "manufacturer": "Trillium Engineering",
+    "country": "USA",
+    "description": "30x optical zoom EO-only or EO/IR with 10x zoom visible + LWIR. Scene/target tracking. 850nm NV-compatible laser pointer. Direct-drive architecture.",
+    "link": "https://www.trilliumeng.com",
+    "sensors": {
+      "eo": "30x optical zoom (EO) / 10x (EO/IR)",
+      "ir": "optional LWIR",
+      "lrf": false,
+      "laser_pointer": "850nm NV-compatible"
+    },
+    "stabilization": "direct-drive",
+    "weight_g": null,
+    "video_output": "HD",
+    "interfaces": [
+      "Ethernet",
+      "serial"
+    ],
+    "ip_rating": null,
+    "tags": [
+      "30x-zoom",
+      "NV-laser",
+      "direct-drive"
+    ]
+  },
+  {
+    "pid": "GIMBAL-1003",
+    "category": "gimbals_payloads",
+    "name": "Trillium HD55",
+    "manufacturer": "Trillium Engineering",
+    "country": "USA",
+    "description": "5.9\" gimbal. Simultaneous wide and narrow thermal sensing. Lightest weight in class. Full suite of laser options. GD-Loc geolocation technology (Cat 1 accuracy <6m). High-end ISR in low SWaP-C.",
+    "link": "https://www.trilliumeng.com",
+    "sensors": {
+      "eo": true,
+      "ir": "dual thermal (wide+narrow)",
+      "lrf": true,
+      "laser_pointer": true
+    },
+    "stabilization": "direct-drive",
+    "weight_g": null,
+    "video_output": "HD",
+    "interfaces": [
+      "Ethernet"
+    ],
+    "ip_rating": null,
+    "tags": [
+      "dual-thermal",
+      "GD-Loc",
+      "Cat1-geolocation",
+      "low-SWaP-C"
+    ]
+  },
+  {
+    "pid": "GIMBAL-1004",
+    "category": "gimbals_payloads",
+    "name": "Trillium HD95",
+    "manufacturer": "Trillium Engineering",
+    "country": "USA",
+    "description": "SWaP-optimized EO/IR gimbal purpose-built for US Army Future Vertical Lift UAS. Global shutter EO, 0.9 FOV MWIR thermal, SWIR for see-spot designation. LRF + STANAG 3733 laser target designator.",
+    "link": "https://www.trilliumeng.com",
+    "sensors": {
+      "eo": "global shutter",
+      "ir": "MWIR (0.9 FOV) + SWIR",
+      "lrf": true,
+      "laser_pointer": "STANAG 3733 LTD"
+    },
+    "stabilization": "direct-drive",
+    "weight_g": null,
+    "video_output": "HD",
+    "interfaces": [
+      "Ethernet"
+    ],
+    "ip_rating": null,
+    "tags": [
+      "US-Army",
+      "FVL",
+      "MWIR",
+      "SWIR",
+      "laser-designator",
+      "STANAG-3733"
+    ]
+  },
+  {
+    "pid": "GIMBAL-1005",
+    "category": "gimbals_payloads",
+    "name": "Edge Autonomy Octopus ISR E140LC",
+    "manufacturer": "Edge Autonomy / Octopus ISR",
+    "country": "USA",
+    "description": "Stabilized gimbal with global shutter EO + cooled LWIR. IP64 ruggedized. Built-in target tracking, scene steering, artillery fire support. GPS/INS with high-precision geolocation. Non-ITAR.",
+    "link": "https://www.edgeautonomy.io",
+    "sensors": {
+      "eo": "global shutter",
+      "ir": "cooled LWIR",
+      "lrf": false,
+      "laser_pointer": false
+    },
+    "stabilization": "stabilized",
+    "weight_g": null,
+    "video_output": "HD",
+    "interfaces": [
+      "Ethernet"
+    ],
+    "ip_rating": "IP64",
+    "tags": [
+      "cooled-LWIR",
+      "artillery-support",
+      "GPS-INS",
+      "non-ITAR",
+      "geolocation"
+    ]
+  },
+  {
+    "pid": "GIMBAL-1006",
+    "category": "gimbals_payloads",
+    "name": "Nanomotion Velox EO/IR",
+    "manufacturer": "Nanomotion",
+    "country": "Israel",
+    "description": "Miniature 2-axis gyro-stabilized EO/IR payload. 430g. 12MP RGB + 640x512 LWIR. Piezoelectric motor drive. 80 \u03bcRad stabilization precision. MAVLink control. 3 simultaneous video outputs. 10x5 panoramic matrix.",
+    "link": "https://www.nanomotion.com",
+    "sensors": {
+      "eo": "12MP RGB",
+      "ir": "640x512 LWIR uncooled",
+      "lrf": false,
+      "laser_pointer": false
+    },
+    "stabilization": "piezoelectric 2-axis gyro",
+    "weight_g": 430,
+    "video_output": "3 simultaneous outputs",
+    "interfaces": [
+      "MAVLink"
+    ],
+    "ip_rating": null,
+    "tags": [
+      "piezoelectric",
+      "430g",
+      "MAVLink",
+      "panoramic",
+      "ultra-light",
+      "Israeli"
+    ]
+  },
+  {
+    "pid": "GIMBAL-1007",
+    "category": "gimbals_payloads",
+    "name": "Blitz Technology SPECTRUM 300",
+    "manufacturer": "Blitz Technology",
+    "country": "Unknown",
+    "description": "Ultra-lightweight dual-sensor EO/IR for miniature UAVs. 330g. 4K 3840x2160 EO + 640x512 LWIR thermal. Ideal for Group 1 sUAS surveillance.",
+    "link": "https://www.blitz-technology.com",
+    "sensors": {
+      "eo": "4K 3840x2160",
+      "ir": "640x512 LWIR",
+      "lrf": false,
+      "laser_pointer": false
+    },
+    "stabilization": "stabilized",
+    "weight_g": 330,
+    "video_output": "4K",
+    "interfaces": [],
+    "ip_rating": null,
+    "tags": [
+      "330g",
+      "4K",
+      "dual-sensor",
+      "miniature-UAV"
+    ]
+  },
+  {
+    "pid": "GIMBAL-1008",
+    "category": "gimbals_payloads",
+    "name": "Blitz Technology SPECTRUM 500",
+    "manufacturer": "Blitz Technology",
+    "country": "Unknown",
+    "description": "Compact tactical dual-sensor EO/IR. 550g. 4K EO + 50x optical zoom + 1280x1024 LWIR thermal. AI-enabled tracking via SPECTRE5165 onboard processor. Modular, field-upgradeable.",
+    "link": "https://www.blitz-technology.com",
+    "sensors": {
+      "eo": "4K + 50x optical zoom",
+      "ir": "1280x1024 LWIR",
+      "lrf": false,
+      "laser_pointer": false
+    },
+    "stabilization": "stabilized",
+    "weight_g": 550,
+    "video_output": "4K",
+    "interfaces": [],
+    "ip_rating": null,
+    "tags": [
+      "550g",
+      "50x-zoom",
+      "AI-tracking",
+      "1280x1024-thermal",
+      "modular",
+      "field-upgrade"
+    ]
+  },
+  {
+    "pid": "GIMBAL-1009",
+    "category": "gimbals_payloads",
+    "name": "Blitz Technology SPECTRUM 3500",
+    "manufacturer": "Blitz Technology",
+    "country": "Unknown",
+    "description": "High-performance 4-sensor gimbal. 3.7kg. 1080p EO + 640x512 LWIR + laser rangefinder + laser pointer. 45x optical zoom. Tactical operations and long-range reconnaissance.",
+    "link": "https://www.blitz-technology.com",
+    "sensors": {
+      "eo": "1080p + 45x optical zoom",
+      "ir": "640x512 LWIR",
+      "lrf": true,
+      "laser_pointer": true
+    },
+    "stabilization": "stabilized",
+    "weight_g": 3700,
+    "video_output": "1080p",
+    "interfaces": [],
+    "ip_rating": null,
+    "tags": [
+      "4-sensor",
+      "45x-zoom",
+      "LRF",
+      "laser-pointer",
+      "tactical"
+    ]
+  },
+  {
+    "pid": "GIMBAL-1010",
+    "category": "gimbals_payloads",
+    "name": "Austars Model INYYO Q355",
+    "manufacturer": "Austars Model",
+    "country": "China",
+    "description": "Advanced gimbal with Sony Starlight telephoto + thermal + LRF. 6 TOPS AI processor for automatic multi-target detection/recognition/tracking. IP43. Aircraft-grade aluminium.",
+    "link": "https://www.austarsmodel.com",
+    "sensors": {
+      "eo": "Sony Starlight telephoto",
+      "ir": "thermal imager",
+      "lrf": true,
+      "laser_pointer": false
+    },
+    "stabilization": "stabilized",
+    "weight_g": null,
+    "video_output": "HD",
+    "interfaces": [],
+    "ip_rating": "IP43",
+    "tags": [
+      "AI-6TOPS",
+      "multi-target",
+      "Sony-Starlight",
+      "LRF",
+      "Chinese"
+    ]
+  },
+  {
+    "pid": "GIMBAL-1011",
+    "category": "gimbals_payloads",
+    "name": "Austars Model PTS-80AD",
+    "manufacturer": "Austars Model",
+    "country": "China",
+    "description": "Multi-spectrum gimbal: 20x optical zoom visible + NIR + SWIR + MWIR thermal. 60km laser rangefinder. Auto/manual target tracking. Linear motion compensation. Supports laser-guided munitions.",
+    "link": "https://www.austarsmodel.com",
+    "sensors": {
+      "eo": "20x optical zoom + NIR + SWIR",
+      "ir": "MWIR",
+      "lrf": "60km",
+      "laser_pointer": "laser-guided munitions support"
+    },
+    "stabilization": "stabilized",
+    "weight_g": null,
+    "video_output": "HD",
+    "interfaces": [],
+    "ip_rating": null,
+    "tags": [
+      "4-spectrum",
+      "60km-LRF",
+      "MWIR",
+      "SWIR",
+      "NIR",
+      "munitions-support",
+      "Chinese"
+    ]
+  }
+]

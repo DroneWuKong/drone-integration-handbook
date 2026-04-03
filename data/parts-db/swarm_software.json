@@ -1,0 +1,793 @@
+[
+  {
+    "pid": "SWR-0001",
+    "name": "Skybrush Server",
+    "manufacturer": "CollMot Robotics (skybrush.io)",
+    "description": "Industry-standard open-source drone show server. Manages fleets, executes choreographies, handles time sync, LED control, geofencing. Python/Trio async. Supports PX4 + ArduPilot via MAVLink.",
+    "category": "swarm_software",
+    "specs": {
+      "type": "Show Platform (server backend)",
+      "fc_support": [
+        "PX4",
+        "ArduPilot"
+      ],
+      "language": "Python",
+      "protocol": "Flockwave (custom MAVLink-compatible)",
+      "max_drones_tested": "1000+",
+      "start_methods": [
+        "RC trigger",
+        "GPS time auto-start",
+        "MIDI timecode"
+      ],
+      "features": [
+        "LED choreography",
+        "Geofencing",
+        "Time sync (GPS PPS)",
+        "Formation management",
+        "Takeoff/landing sequencing",
+        "Safety checks"
+      ],
+      "license": "GPL-3.0",
+      "github": "https://github.com/skybrush-io/skybrush-server",
+      "stars": 114,
+      "last_updated": "2026-03-21"
+    },
+    "schema_data": {},
+    "approx_price": 0
+  },
+  {
+    "pid": "SWR-0002",
+    "name": "Skybrush Live (GCS Frontend)",
+    "manufacturer": "CollMot Robotics",
+    "description": "React/TypeScript GCS frontend for Skybrush. Real-time map with drone positions, LED preview, formation editor, show timeline, safety controls. Connects to Skybrush Server.",
+    "category": "swarm_software",
+    "specs": {
+      "type": "Show Platform (GCS frontend)",
+      "language": "TypeScript/React",
+      "features": [
+        "Real-time map",
+        "LED preview",
+        "Formation editor",
+        "Show timeline",
+        "Multi-drone management"
+      ],
+      "github": "https://github.com/skybrush-io/live",
+      "stars": 106
+    },
+    "schema_data": {},
+    "approx_price": 0
+  },
+  {
+    "pid": "SWR-0003",
+    "name": "Skybrush Studio for Blender",
+    "manufacturer": "CollMot Robotics",
+    "description": "Blender add-on for designing and validating drone show choreographies. Animate point objects in 3D, assign LED colors, export to Skybrush-compatible format. Collision detection, safety validation.",
+    "category": "swarm_software",
+    "specs": {
+      "type": "Choreography Design Tool",
+      "language": "Python (Blender addon)",
+      "features": [
+        "3D choreography design",
+        "LED color assignment",
+        "Collision detection",
+        "Safety validation",
+        "Export to Skybrush/CSV"
+      ],
+      "github": "https://github.com/skybrush-io/studio-blender",
+      "stars": 79
+    },
+    "schema_data": {},
+    "approx_price": 0
+  },
+  {
+    "pid": "SWR-0004",
+    "name": "MDS (MAVSDK Drone Show)",
+    "manufacturer": "Alireza Ghaderi (alireza787b)",
+    "description": "All-in-one PX4 drone show + smart swarm. MAVSDK-based multi-drone coordination with Docker SITL, React GCS dashboard, SkyBrush import, LED control, leader-follower clustering. Free for <10 drones.",
+    "category": "swarm_software",
+    "specs": {
+      "type": "Show + Swarm (all-in-one)",
+      "fc_support": [
+        "PX4"
+      ],
+      "language": "Python + React",
+      "max_drones_tested": "100+",
+      "features": [
+        "Docker SITL per drone",
+        "React GCS dashboard",
+        "SkyBrush CSV import",
+        "LED WS2812B control",
+        "Leader-follower swarm",
+        "Multi-group operations",
+        "Formation origin GPS calc",
+        "Time sync via GCS server"
+      ],
+      "license": "Dual (free <10 drones, commercial contact)",
+      "github": "https://github.com/alireza787b/mavsdk_drone_show",
+      "stars": 274,
+      "px4_params": {
+        "COM_RCL_EXCEPT": 7,
+        "GF_ACTION": 3,
+        "GF_MAX_HOR_DIST": 1500.0,
+        "GF_MAX_VER_DIST": 200.0,
+        "COM_OBL_RC_ACT": 3,
+        "COM_OF_LOSS_T": 20.0,
+        "EKF2_GPS_P_NOISE": 0.5,
+        "EKF2_GPS_V_NOISE": 0.3,
+        "EKF2_MULTI_IMU": 3
+      }
+    },
+    "schema_data": {},
+    "approx_price": 0
+  },
+  {
+    "pid": "SWR-0005",
+    "name": "DSSE (Drone Swarm Search Environment)",
+    "manufacturer": "Insper (capstone-insper / pfeinsper) + Embraer",
+    "description": "PettingZoo-based multi-agent RL training environment for SAR drone swarm missions. Drones search for shipwrecked people using dynamic probability matrices. Published in JOSS + arXiv (2307.06240). pip install DSSE.",
+    "category": "swarm_software",
+    "specs": {
+      "type": "RL Training Environment",
+      "language": "Python",
+      "framework": "PettingZoo (Gymnasium)",
+      "features": [
+        "Multi-agent RL",
+        "Dynamic probability matrix",
+        "Maritime SAR simulation",
+        "OpenDrift ocean data integration",
+        "Coverage environment",
+        "8-directional + search actions"
+      ],
+      "algorithms_available": [
+        "PPO (CNN)",
+        "PPO (MLP)",
+        "PPO (CNN-LSTM)",
+        "PPO (CNN-Comm)",
+        "DQN (CNN)",
+        "DQN (Multi)",
+        "Decentralized PPO",
+        "Greedy heuristic",
+        "A* coverage"
+      ],
+      "env_params": {
+        "grid_size": "configurable (default 20-40)",
+        "drone_amount": "configurable",
+        "person_amount": "configurable",
+        "drone_speed": "configurable (default 10)",
+        "probability_of_detection": "0.0-1.0",
+        "timestep_limit": "configurable (default 100-300)",
+        "dispersion_inc": "0.05-0.1 (probability spread rate)"
+      },
+      "license": "MIT",
+      "github": "https://github.com/capstone-insper/drone-swarm-search",
+      "algorithms_github": "https://github.com/capstone-insper/drone-swarm-search-algorithms",
+      "paper": "arXiv:2307.06240",
+      "journal": "JOSS vol.9 no.99 p.6746 (2024)",
+      "stars": 68,
+      "pypi": "DSSE",
+      "architecture": {
+        "environments": {
+          "DroneSwarmSearch": "Maritime SAR — drones search for shipwrecked people on dynamic probability matrix. Gaussian dispersion model with drift vector. 9 discrete actions (8 directions + SEARCH). Reward: +1 for finding target, 0 otherwise.",
+          "CoverageDroneSwarmSearch": "Coverage mission — drones must visit all cells on a probability grid generated by Lagrangian particle simulation (OpenDrift). Uses real ocean/wind data. Reward: +1 per new cell searched, +60 completion bonus, -0.2 per step."
+        },
+        "observation_space": "Tuple(position: [x, y], probability_matrix: grid_size×grid_size float32)",
+        "action_space": "Discrete(9): LEFT, RIGHT, UP, DOWN, UP_LEFT, UP_RIGHT, DOWN_LEFT, DOWN_RIGHT, SEARCH",
+        "simulation": {
+          "probability_matrix": "Gaussian probability field centered on disaster position. Drifts with configurable vector. Dispersion increases over time (configurable increment). Numba JIT-compiled for speed.",
+          "particle_simulation": "OpenDrift-based Lagrangian particle simulation. 50,000 particles, configurable radius. Uses real ocean current and wind data for realistic drift patterns.",
+          "time_step": "Derived from drone_speed and cell_size — faster drones get fewer environment steps per real second."
+        },
+        "wrappers": [
+          "RetainDronePosWrapper: Fixes initial drone positions",
+          "AllPositionsWrapper: Returns all drone positions in observation"
+        ]
+      },
+      "rl_algorithms": {
+        "ppo_cnn": {
+          "model": "Dual-branch: Conv2d(1→16, 8x8) → Conv2d(16→32, 4x4) → FC(256) for probability matrix + FC(512→256) for position → Concat → FC(256) → Policy + Value heads",
+          "framework": "Ray RLlib + PyTorch",
+          "hyperparams": {
+            "batch_size": 8192,
+            "lr": 1e-05,
+            "gamma": 0.9999999,
+            "lambda": 0.9,
+            "entropy_coeff": 0.01,
+            "sgd_minibatch": 300,
+            "num_sgd_iter": 10,
+            "workers": 6
+          },
+          "training_target": "20M timesteps or reward_mean=1.75"
+        },
+        "decentralized_ppo": {
+          "description": "Each drone has its own policy network (1:1 agent→module mapping). Same CNN architecture but independently trained per agent. MultiAgentRLModuleSpec.",
+          "training_target": "5M timesteps"
+        },
+        "ppo_cnn_lstm": "PPO with CNN + LSTM for temporal context (sequence-aware search)",
+        "ppo_cnn_comm": "PPO with CNN + inter-drone communication channel",
+        "ppo_mlp": "PPO with MLP (no CNN) — position-only baseline",
+        "dqn_cnn": "DQN with same CNN architecture",
+        "dqn_multi": "Multi-agent DQN",
+        "greedy_heuristic": "Greedy: each drone moves toward highest probability cell. Collision avoidance by waiting. Baseline for RL comparison.",
+        "a_star_coverage": "A* path planning for coverage mission"
+      },
+      "benchmark_setup": {
+        "default_grid": 40,
+        "default_drones": 4,
+        "default_dispersion": 0.1,
+        "drone_start_positions": [
+          [
+            20,
+            0
+          ],
+          [
+            20,
+            39
+          ],
+          [
+            0,
+            20
+          ],
+          [
+            39,
+            20
+          ]
+        ],
+        "person_position": [
+          20,
+          20
+        ],
+        "eval_episodes": 5000
+      },
+      "github_alt": "https://github.com/pfeinsper/drone-swarm-search",
+      "org_url": "https://github.com/capstone-insper",
+      "org_description": "Projeto Final de Engenharia (Capstone) — Insper, São Paulo, Brazil. Engineering + CS capstone projects including DSSE (drone swarm SAR), NVIDIA Jetbot autopilot, RISC-V CPU, RFID testing.",
+      "related_projects": {
+        "NVIDIA_Jetbot_Autopilot": {
+          "github": "https://github.com/capstone-insper/NVIDIA",
+          "stars": 32,
+          "description": "Autonomous car MVP on Jetson Nano. Lane detection (OpenCV yellow mask + linear regression), YOLOv3-tiny stop sign detection, MQTT pub/sub architecture, DeepStream SDK, TensorRT. Brazilian traffic sign recognition.",
+          "hardware": "Jetson Nano + Jetbot chassis + USB camera",
+          "stack": [
+            "OpenCV",
+            "YOLOv3-tiny",
+            "DeepStream SDK",
+            "TensorRT",
+            "MQTT (paho)",
+            "scikit-learn"
+          ],
+          "techniques": {
+            "lane_detection": "Yellow mask (LUT thresholding on R+G-B channel) → morphological open → contour centroids → linear regression for lane line → steering gain from centroid offset",
+            "sign_detection": "YOLOv3-tiny (416x416, conf>0.2) filtered for 'stop sign' class → MQTT publish 'STOP' command",
+            "road_following": "Hough line transform on white mask → angular coefficient filtering (0.62-1.3 for right, -1.3 to -0.62 for left) → vanishing point estimation → MQTT steering commands",
+            "architecture": "Perception (camera) → Detection (YOLO/lane) → MQTT broker → Controller (motor commands). Fully decoupled via pub/sub."
+          }
+        },
+        "RISC-V_CPU": {
+          "github": "https://github.com/capstone-insper/24b-cti-riscv",
+          "stars": 2,
+          "description": "RISC-V CPU implementation in VHDL"
+        }
+      },
+      "algorithms_stars": 22
+    },
+    "schema_data": {},
+    "approx_price": 0
+  },
+  {
+    "pid": "SWR-0006",
+    "name": "ORCUS (Autonomous Swarm Kamikaze System)",
+    "manufacturer": "koesan",
+    "description": "Fully autonomous swarm kamikaze drone system. YOLOv12 detection, ray-ground intersection geo-localization, EKF multi-drone sensor fusion, Hungarian attack assignment, 7-step handshake attack protocol, IBVS terminal guidance. ArduPilot SITL + ROS + Gazebo.",
+    "category": "swarm_software",
+    "specs": {
+      "type": "Tactical Swarm (autonomous engagement)",
+      "fc_support": [
+        "ArduPilot"
+      ],
+      "language": "Python",
+      "framework": "ROS (Melodic/Noetic) + Gazebo + DroneKit + Flask",
+      "features": [
+        "YOLOv12 target detection",
+        "Ray-Ground Intersection (RGI) geo-localization from monocular camera",
+        "EKF-backed multi-drone sensor fusion",
+        "Individual + group target discrimination (2x, 3x targets)",
+        "Hungarian-based dynamic attack assignment",
+        "7-step attack handshake protocol (assign→lock→approve→confirm→echo→validate→attack)",
+        "IBVS terminal guidance (image-based visual servoing)",
+        "Family-aware deconfliction",
+        "Web-based operator control panel (radar, map, ownership)",
+        "PID-based waypoint navigation"
+      ],
+      "config_params": {
+        "takeoff_altitude_m": 5,
+        "square_size_m": 20,
+        "drone_speed_cms": 90,
+        "max_speed_ms": 4.0,
+        "control_interval_s": 0.15,
+        "cell_reached_threshold_m": 1.2,
+        "pid_kp": 0.9,
+        "pid_ki": 0.02,
+        "pid_kd": 0.12,
+        "critical_battery_pct": 20,
+        "gps_median_window": 7,
+        "stuck_timeout_s": 8.0
+      },
+      "license": "MIT",
+      "github": "https://github.com/koesan/ORCUS",
+      "stars": 27,
+      "architecture": {
+        "modules": {
+          "vision": {
+            "detector": "YOLOv12n (640px, conf=0.25, iou=0.40)",
+            "tracker": "BoT-SORT (multi-class, IoU=0.7, track_buffer=90)",
+            "camera": "ROS topic per drone port, 1280x720, HFOV=1.2rad (~69°), 30fps",
+            "group_tracker": "DBSCAN clustering (eps=5m, min_samples=2)"
+          },
+          "swarm": {
+            "coordinator": "1410 lines — target assignment, Hungarian matching, ownership management",
+            "fusion_engine": "648 lines — two-layer EKF: duplicate merge + cross-drone fusion, dynamic merge threshold (base=8m + sigma*2), Mahalanobis gating (3-sigma), covariance-weighted position fusion, coast mode with velocity prediction",
+            "protocol": "7-step attack handshake (ASSIGN→LOCK→APPROVE→CONFIRM→ECHO→VALIDATE→ATTACK), immutable state protection, backoff spam throttle",
+            "battlespace": "Web UI state provider, radar view, target ownership, drone state aggregation, display position smoothing (alpha=0.35)",
+            "target": "TrackedTarget with 50+ attributes: covariance matrix, drone-local ID mapping, group membership, ownership state (FREE/OWNED/RESERVED/HANDOFF), coast mode, observation quality scores",
+            "ownership": "Sticky assignment with handoff policy (30 consecutive frames, 1.5x quality ratio, 10s cooldown)"
+          },
+          "mission": {
+            "attack_fsm": "6 states: IDLE→ECHO→WAIT_CONFIRM→CENTERING→DIVING→IMPACT. Mid-attack guard prevents target swap. Zombie lock failsafe. Phase timeouts: echo=5s, center=10s, global=30s",
+            "ibvs_guidance": "Image-Based Visual Servoing for GPS-independent terminal attack. 3 phases: STARTUP (Vx=1.5m/s, gentle 5° pitch) → APPROACH (ramp to 8m/s, 10° pitch, ease-in-out curve) → TERMINAL (max speed, 15° pitch). Low-pass filters on yaw/vz/vx. Ghost mode (0.5s coast on target loss). Lateral body-frame correction. Pitch compensation for fixed camera mount.",
+            "detection_processor": "RGI (Ray-Ground Intersection) geo-localization from monocular camera + drone attitude. Covariance-aware: cross-range and radial uncertainty scales with depression angle. Edge compensation for FOV distortion.",
+            "navigation": "PID waypoint tracking (Kp=0.9, Ki=0.02, Kd=0.12). GPS median filter (window=7). Stuck detection (0.12m threshold, 8s timeout). Fine approach deceleration (7m threshold, 0.35 scale)."
+          }
+        },
+        "total_python_files": 42,
+        "largest_module_lines": 1410
+      },
+      "sensor_noise_model": {
+        "drone_yaw_std_deg": 5.0,
+        "drone_pitch_std_deg": 2.0,
+        "drone_pixel_noise_std_px": 5.0,
+        "drone_gps_position_std_m": 2.5,
+        "drone_altitude_std_m": 1.5,
+        "camera_mount_pitch_std_deg": 0.5,
+        "camera_mount_roll_std_deg": 0.3
+      },
+      "camera_intrinsics": {
+        "width": 1280,
+        "height": 720,
+        "hfov_rad": 1.2,
+        "pitch_offset_rad": 0.1309,
+        "fx_px": 467.7,
+        "target_real_width_m": 0.45,
+        "target_real_height_m": 1.7
+      },
+      "ibvs_params": {
+        "kp_yaw": 1.5,
+        "kp_dive": 1.2,
+        "vx_max_ms": 8.0,
+        "vx_min_ms": 3.0,
+        "vz_max_ms": 3.0,
+        "terminal_coverage_pct": 55,
+        "steep_dive_coverage_pct": 45,
+        "ghost_timeout_s": 0.5,
+        "ramp_up_time_s": 3.0,
+        "max_pitch_tan": 0.27,
+        "approach_pitch_tan": 0.18,
+        "startup_pitch_tan": 0.087,
+        "yaw_filter_alpha": 0.2,
+        "vz_filter_alpha": 0.15,
+        "vx_filter_alpha": 0.25
+      },
+      "kalman_params": {
+        "mahalanobis_threshold": 9.21,
+        "min_dt": 0.05,
+        "process_noise": 0.1,
+        "initial_covariance": 0.0001,
+        "merge_distance_base_m": 8.0,
+        "merge_distance_max_m": 20.0,
+        "fusion_hard_cap_m": 15.0,
+        "coast_time_s": 8.0,
+        "coast_max_displacement_m": 30.0
+      },
+      "track_lifecycle": {
+        "confirmation_time_s": 0.3,
+        "min_observations": 3,
+        "tentative_timeout_s": 1.2,
+        "lost_timeout_s": 1.3,
+        "delete_timeout_s": 4.0,
+        "identity_conflict_window_s": 0.7
+      }
+    },
+    "schema_data": {},
+    "approx_price": 0
+  },
+  {
+    "pid": "SWR-0007",
+    "name": "CoFlyers",
+    "manufacturer": "MICROS Lab (micros-uav)",
+    "description": "General platform for collective flying of swarm drones. MATLAB/Simulink simulation + real hardware (Crazyflie, Tello). Bio-inspired swarming behaviors, formation control, collective decision-making.",
+    "category": "swarm_software",
+    "specs": {
+      "type": "Research Platform (collective behavior)",
+      "fc_support": [
+        "Crazyflie",
+        "DJI Tello"
+      ],
+      "language": "MATLAB/Simulink",
+      "features": [
+        "Bio-inspired swarming",
+        "Formation control",
+        "Collective decision-making",
+        "Hardware-in-the-loop"
+      ],
+      "license": "MIT",
+      "github": "https://github.com/micros-uav/CoFlyers",
+      "stars": 33
+    },
+    "schema_data": {},
+    "approx_price": 0
+  },
+  {
+    "pid": "SWR-0008",
+    "name": "Crazyswarm2",
+    "manufacturer": "IMRCLab (USC)",
+    "description": "Gold standard for swarm research on Crazyflie nano-quads. Scales to 49+ drones. ROS2 (Humble). Trajectory tracking, formation control, real-time visualization. Motion capture integration.",
+    "category": "swarm_software",
+    "specs": {
+      "type": "Research Swarm (nano-quad)",
+      "fc_support": [
+        "Crazyflie (custom)"
+      ],
+      "language": "Python/C++ (ROS2)",
+      "features": [
+        "49+ drone coordination",
+        "Motion capture integration",
+        "Trajectory tracking",
+        "Real-time visualization",
+        "ROS2 native"
+      ],
+      "github": "https://github.com/IMRCLab/crazyswarm2",
+      "stars": 300
+    },
+    "schema_data": {},
+    "approx_price": 0
+  },
+  {
+    "pid": "SWR-0009",
+    "name": "Insper NVIDIA Jetbot Autopilot",
+    "manufacturer": "Insper (capstone-insper) + NVIDIA partnership",
+    "description": "Autonomous ground vehicle MVP on Jetson Nano. Lane following via OpenCV (yellow lane detection with LUT thresholding + linear regression steering), stop sign detection via YOLOv3-tiny, MQTT pub/sub decoupled architecture, DeepStream SDK + TensorRT inference. Brazilian traffic sign dataset. Relevant to drone CV pipelines — same Jetson + YOLO + steering pattern applies to visual servoing.",
+    "category": "swarm_software",
+    "specs": {
+      "type": "Autonomous Vehicle (ground, transferable to air)",
+      "hardware": [
+        "Jetson Nano",
+        "Jetbot chassis",
+        "USB camera"
+      ],
+      "language": "Python",
+      "framework": "OpenCV + DeepStream SDK + TensorRT + MQTT (paho)",
+      "features": [
+        "Lane detection (LUT yellow mask + contour + linear regression)",
+        "YOLOv3-tiny stop sign detection",
+        "Hough line road following with vanishing point",
+        "MQTT decoupled architecture (perception → broker → controller)",
+        "DeepStream SDK pipeline",
+        "TensorRT acceleration",
+        "Transfer learning notebooks"
+      ],
+      "cv_techniques": {
+        "lane_detection": {
+          "method": "Color channel arithmetic (R*0.5 + G*0.5 - B) → LUT threshold (32-48) → morphological open (11x11) → contour centroids → linear regression",
+          "steering": "Centroid offset from frame center → proportional gain (0.2) + angular coefficient correction"
+        },
+        "sign_detection": {
+          "model": "YOLOv3-tiny",
+          "input_size": "416x416",
+          "confidence_threshold": 0.2,
+          "classes_filtered": [
+            "stop sign"
+          ],
+          "action": "MQTT publish 'STOP' on detection"
+        },
+        "road_following": {
+          "method": "Hough line transform on white HSV mask → angular coefficient filtering (right: 0.62-1.3, left: -1.3 to -0.62) → vanishing point from line intersection → moving average smoothing (window=20)"
+        }
+      },
+      "license": "MIT",
+      "github": "https://github.com/capstone-insper/NVIDIA",
+      "stars": 32
+    },
+    "schema_data": {},
+    "approx_price": 0
+  },
+  {
+    "pid": "SWR-0010",
+    "name": "OpenIPC FPV",
+    "manufacturer": "OpenIPC Community (Italy-based, 2.1K followers)",
+    "description": "Alternative open-source firmware for IP cameras repurposed as FPV air units. Runs on cheap IP camera SoCs (HiSilicon, Goke, SigmaStar, Ingenic, etc.) with wifibroadcast (WFB-NG) for low-latency video. Turns a $15 IP camera board into a digital FPV transmitter. Lower latency than OpenHD on RPi (80ms 1080p60 vs 100-150ms) because the IP camera SoC has a dedicated hardware encoder. MIT license.",
+    "category": "swarm_software",
+    "specs": {
+      "type": "FPV Video Link (IP camera firmware)",
+      "fc_support": [
+        "ArduPilot",
+        "iNav",
+        "Betaflight",
+        "PX4"
+      ],
+      "language": "C (Buildroot-based Linux)",
+      "license": "MIT",
+      "github": "https://github.com/OpenIPC/firmware",
+      "org_url": "https://github.com/OpenIPC",
+      "website": "https://openipc.org",
+      "docs": "https://docs.openipc.org",
+      "stars": 1900,
+      "repos": 120,
+      "followers": 2100,
+      "supported_socs": [
+        "HiSilicon (hi3516ev200/300, hi3518ev300)",
+        "Goke (gk7205v200/300)",
+        "SigmaStar (SSC338Q, SSC30KQ)",
+        "Ingenic (T31)",
+        "Ambarella",
+        "Anyka",
+        "Fullhan",
+        "GrainMedia",
+        "MStar",
+        "Novatek",
+        "XiongMai"
+      ],
+      "fpv_socs_recommended": {
+        "SSC338Q": "Dual-core, future-proof, best performance for new firmware updates",
+        "SSC30KQ": "Single-core cut-down of SSC338Q, budget option",
+        "gk7205v200": "Budget FPV, well-tested, most wiki documentation",
+        "hi3516ev200": "HiSilicon low-latency mode support"
+      },
+      "wifi_adapters": [
+        "RTL8812AU",
+        "RTL8812EU",
+        "AR9271 (2.4GHz only)"
+      ],
+      "cameras_sensors": [
+        "Sony IMX307 (most popular, good night vision with F0.95 lens)",
+        "Sony IMX335",
+        "VEYE 307"
+      ],
+      "latency": {
+        "1080p60_mid_budget": "~80ms glass-to-glass",
+        "720p60": "~60ms",
+        "1080p30_budget": "~100ms",
+        "note": "Lower than OpenHD RPi (100-150ms) because IP camera SoC has dedicated HW encoder"
+      },
+      "power_consumption": {
+        "active_mode": "1.7W",
+        "sensor_off": "1.1W",
+        "note": "Dramatically lower than RPi-based solutions (5-10W)"
+      },
+      "ground_stations": {
+        "SBC_GS": {
+          "description": "SBC-based ground station using Buildroot, maintained by OpenIPC FPV dev team",
+          "supported_hw": [
+            "RunCam WiFiLink-RX",
+            "Emax Wyvern Link",
+            "Radxa Zero3"
+          ],
+          "features": [
+            "DVR recording",
+            "OSD overlay",
+            "Channel scanning",
+            "Gadget mode (USB OTG)"
+          ]
+        },
+        "PixelPilot": {
+          "description": "Android app for Snapdragon devices, decodes RTP video stream",
+          "platform": "Android (Snapdragon SoC required)",
+          "compatible": [
+            "Meta Quest VR HMDs (via SideQuest)",
+            "Snapdragon phones/tablets"
+          ],
+          "github": "https://github.com/OpenIPC/PixelPilot_rk",
+          "stars": 49
+        },
+        "Aviateur": {
+          "description": "Cross-platform desktop ground station (Linux/Windows/macOS)",
+          "github": "https://github.com/OpenIPC/aviateur",
+          "stars": 42
+        }
+      },
+      "key_software": {
+        "firmware": {
+          "github": "https://github.com/OpenIPC/firmware",
+          "stars": 1900,
+          "description": "Main firmware, Buildroot-based"
+        },
+        "wfb_ng": {
+          "description": "WifiBroadcast Next Generation — the core video transport layer"
+        },
+        "majestic": {
+          "description": "Proprietary streamer (replaces GStreamer on IP camera SoCs)"
+        },
+        "divinus": {
+          "github": "https://github.com/OpenIPC/divinus",
+          "stars": 62,
+          "description": "Open-source multi-platform streamer alternative"
+        },
+        "smolrtsp": {
+          "github": "https://github.com/OpenIPC/smolrtsp",
+          "stars": 427,
+          "description": "Lightweight RTSP streaming library"
+        },
+        "ipctool": {
+          "github": "https://github.com/OpenIPC/ipctool",
+          "stars": 220,
+          "description": "IP camera hardware identification tool"
+        },
+        "sbc_groundstations": {
+          "github": "https://github.com/OpenIPC/sbc-groundstations",
+          "stars": 91,
+          "description": "Unified ground station image builder (Buildroot 2)"
+        },
+        "fpv_presets": {
+          "github": "https://github.com/OpenIPC/fpv-presets",
+          "stars": 12,
+          "description": "Configuration presets for FPV setups"
+        }
+      },
+      "vs_openhd": {
+        "air_unit_cost": "$15-30 (IP camera board) vs $30-80 (RPi)",
+        "latency": "60-100ms vs 100-150ms (RPi) — OpenIPC wins on HW encoder",
+        "power": "1.7W vs 5-10W — OpenIPC dramatically lower",
+        "flexibility": "Limited to supported IP camera SoCs vs RPi ecosystem",
+        "ease_of_use": "Harder initial setup (SPI flash, UART, SoC-specific) vs easier (SD card flash)",
+        "cameras": "IP camera sensors (IMX307, etc.) vs CSI cameras (Arducam, RPi HQ)",
+        "community": "Growing rapidly, strong Telegram presence vs established, broader ecosystem",
+        "military_note": "OpenIPC explicitly prohibits military use in their license"
+      },
+      "unique_features": [
+        "Runs on $8-15 IP camera boards (cheapest FPV air unit possible)",
+        "1.7W total power draw (lowest of any digital FPV)",
+        "Hardware H.265 encoding on camera SoC (no separate encoder needed)",
+        "F0.95 fast lens support for night FPV on IMX307",
+        "ipctool for identifying unknown IP camera hardware",
+        "SPI NOR flash direct programming (burn utility)",
+        "APFPV mode — simple WiFi AP mode for phone viewing"
+      ],
+      "fpv_presets": {
+        "source": "https://github.com/OpenIPC/fpv-presets",
+        "presets": {
+          "default-mario-aio": {
+            "status": "Official",
+            "wfb": {
+              "channel": 161,
+              "txpower": 20,
+              "stbc": 1,
+              "ldpc": 1,
+              "mcs_index": 1,
+              "fec_k": 8,
+              "fec_n": 12
+            },
+            "video": {
+              "codec": "h265",
+              "fps": 60,
+              "bitrate": 4096,
+              "resolution": "1920x1080"
+            },
+            "telemetry": {
+              "serial": "ttyS2",
+              "router": "msposd"
+            }
+          },
+          "default-runcam-wifilink": {
+            "status": "Official",
+            "wfb": {
+              "channel": 161,
+              "txpower": 1,
+              "stbc": 0,
+              "ldpc": 0,
+              "mcs_index": 1,
+              "fec_k": 8,
+              "fec_n": 12
+            },
+            "video": {
+              "codec": "h265",
+              "fps": 60,
+              "bitrate": 4096,
+              "resolution": "1920x1080"
+            }
+          },
+          "high-power-fpv": {
+            "status": "Experimental",
+            "wfb": {
+              "channel": 161,
+              "txpower": 20,
+              "stbc": 0,
+              "ldpc": 0,
+              "mcs_index": 1,
+              "fec_k": 8,
+              "fec_n": 12
+            },
+            "video": {
+              "codec": "h264",
+              "fps": 120
+            },
+            "note": "120fps H.264 for racing — lower quality, minimum latency"
+          }
+        },
+        "common_params": {
+          "fec_k": "8 — data shards per FEC block",
+          "fec_n": "12 — total shards (8 data + 4 parity = 33% redundancy)",
+          "mcs_index": "1 — MCS rate index (lower = more robust, less throughput)",
+          "channel_161": "5805 MHz — clean channel, standard for FPV",
+          "telemetry_router": "msposd — MAVLink OSD overlay + routing"
+        }
+      },
+      "reusable_libraries": {
+        "smolrtsp": {
+          "github": "https://github.com/OpenIPC/smolrtsp",
+          "stars": 427,
+          "language": "C",
+          "license": "MIT",
+          "description": "Lightweight RTSP 1.0 server for embedded. Zero-copy parsing. H.264 + H.265 RTP. TCP + UDP. Used by Majestic streamer.",
+          "use_in_forge": "Can replace GStreamer RTSP for edge AI deployments on Jetson/APB. Smaller footprint than full GStreamer pipeline for video-only streaming."
+        },
+        "ipctool": {
+          "github": "https://github.com/OpenIPC/ipctool",
+          "stars": 220,
+          "language": "C",
+          "license": "MIT",
+          "description": "Identifies IP camera hardware — SoC, sensor, flash, network chip. Single static binary (musl). Run on any camera to discover what's inside.",
+          "use_in_forge": "Useful for identifying unknown camera modules on drone payloads. Drop ipctool binary onto any Linux camera board to get SoC/sensor/flash info."
+        },
+        "divinus": {
+          "github": "https://github.com/OpenIPC/divinus",
+          "stars": 62,
+          "language": "C",
+          "license": "MIT",
+          "total_lines": 7198,
+          "description": "Open-source multi-platform IP camera streamer. HAL architecture supports 20+ SoC families. RTSP + RTMP + UDP + fMP4 + MJPEG + JPEG snapshot. Night mode (auto IR cut/LED). OSD overlay. Audio (MP3 encode). ONVIF discovery.",
+          "architecture": {
+            "hal_platforms": [
+              "HiSilicon (hi3516 series)",
+              "Goke (gk7205)",
+              "SigmaStar (infinity3/6/6b0/6e/6c, mercury6)",
+              "Ingenic (T31)",
+              "Rockchip (RV1106/1126)",
+              "GrainMedia (GM813x)",
+              "Allwinner (sun8iw21p1)",
+              "CVITEK (CV181x)"
+            ],
+            "modules": {
+              "server.c": "1499 lines — HTTP API server with endpoints: /api/jpeg (snapshot), /api/mjpeg (stream), /api/mp4 (recording), /api/audio, /api/night (IR mode), /api/osd (overlay), /api/status, /api/cmd, /api/record, /api/time. Plus ONVIF discovery.",
+              "media.c": "950 lines — encoder pipeline: video capture → HAL encode → RTSP + RTMP + UDP + MP4 + HTTP. Audio: PCM → MP3 (libshine) → RTSP + RTMP + MP4.",
+              "stream.c": "456 lines — UDP/RTP streaming with multicast support, client management, RTP header construction",
+              "rtsp/": "3592 lines — full RTSP 1.0 server: session management, RTP packetization (H.264/H.265), thread pool",
+              "night.c": "155 lines — auto day/night switching via GPIO: IR cut filter + IR LED + grayscale mode",
+              "jpeg.c": "143 lines — JPEG snapshot with per-platform HAL abstraction",
+              "region.c": "555 lines — OSD overlay regions (text, bitmap, PNG)",
+              "onvif.c": "397 lines — ONVIF device discovery and media profile responses"
+            }
+          },
+          "http_api_endpoints": {
+            "/api/jpeg": "JPEG snapshot (configurable quality/resolution)",
+            "/api/mjpeg": "MJPEG live stream",
+            "/api/mp4": "MP4 recording (start/stop/status)",
+            "/api/audio": "PCM/MP3 audio stream",
+            "/api/night": "Night mode control (IR cut, IR LED, grayscale)",
+            "/api/osd": "OSD overlay management (text, bitmaps, PNG)",
+            "/api/status": "System status (uptime, encoder state, stream stats)",
+            "/api/cmd": "Remote command execution",
+            "/api/record": "DVR recording control",
+            "/api/time": "System time get/set"
+          },
+          "use_in_forge": [
+            "HAL pattern: portable SoC abstraction for multi-platform camera code — same API, different hardware. Relevant for AI/CV guide when supporting multiple companion computers.",
+            "HTTP API: /api/jpeg endpoint is a clean pattern for grabbing camera frames for AI inference without GStreamer. Hit the endpoint, get a JPEG, run YOLO.",
+            "Night mode: GPIO-based IR cut/LED switching pattern is directly applicable to thermal camera integration on drones.",
+            "RTSP server: lighter than GStreamer for embedded video streaming. The rtsp/ directory is a self-contained 3592-line RTSP implementation.",
+            "UDP/RTP streaming with multicast: the stream.c pattern (456 lines) is a clean reference for implementing WFB-NG style video broadcast."
+          ]
+        }
+      }
+    },
+    "schema_data": {},
+    "approx_price": 0
+  }
+]

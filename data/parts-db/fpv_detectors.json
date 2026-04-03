@@ -1,0 +1,815 @@
+[
+  {
+    "pid": "DET-UA-FPV-Mafi-Чатовий-2",
+    "category": "fpv_detectors",
+    "name": "Чатовий 2",
+    "manufacturer": "FPV Mafia",
+    "country": "Ukraine",
+    "approx_price_usd": 243.9,
+    "approx_price_uah": 10000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 243.9,
+    "description": "FPV goggles by FPV Mafia. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-FPV-Mafi-Чатовий-3",
+    "category": "fpv_detectors",
+    "name": "Чатовий 3",
+    "manufacturer": "FPV Mafia",
+    "country": "Ukraine",
+    "approx_price_usd": 509.76,
+    "approx_price_uah": 20900.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 509.76,
+    "description": "FPV goggles by FPV Mafia. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-АРТЕФАКТ-WHOOVER-2",
+    "category": "fpv_detectors",
+    "name": "WHOOVER 2",
+    "manufacturer": "АРТЕФАКТОРІЯ",
+    "country": "Ukraine",
+    "approx_price_usd": 170.73,
+    "approx_price_uah": 7000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 170.73,
+    "description": "FPV goggles by АРТЕФАКТОРІЯ. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-АРТЕФАКТ-WHOOVER-3.3",
+    "category": "fpv_detectors",
+    "name": "WHOOVER 3.3",
+    "manufacturer": "АРТЕФАКТОРІЯ",
+    "country": "Ukraine",
+    "approx_price_usd": null,
+    "approx_price_uah": null,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 281,
+    "schema_data": {
+      "weight_g": 243
+    },
+    "description": "FPV goggles by АРТЕФАКТОРІЯ. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Intellig-FRANEK",
+    "category": "fpv_detectors",
+    "name": "FRANEK",
+    "manufacturer": "Intelligent Lab",
+    "country": "Ukraine",
+    "approx_price_usd": 378.24,
+    "approx_price_uah": 15508.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 378.24,
+    "description": "FPV goggles by Intelligent Lab. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Intellig-FRANEK-3.0",
+    "category": "fpv_detectors",
+    "name": "FRANEK 3.0",
+    "manufacturer": "Intelligent Lab",
+    "country": "Ukraine",
+    "approx_price_usd": 665.85,
+    "approx_price_uah": 27300.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 665.85,
+    "description": "FPV goggles by Intelligent Lab. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-BlueBird-Чуйка-2.0",
+    "category": "fpv_detectors",
+    "name": "Чуйка 2.0",
+    "manufacturer": "BlueBird",
+    "country": "Ukraine",
+    "approx_price_usd": 460.98,
+    "approx_price_uah": 18900.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 460.98,
+    "description": "FPV goggles by BlueBird. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-BlueBird-Чуйка-3.0",
+    "category": "fpv_detectors",
+    "name": "Чуйка 3.0",
+    "manufacturer": "BlueBird",
+    "country": "Ukraine",
+    "approx_price_usd": 626.83,
+    "approx_price_uah": 25700.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 626.83,
+    "description": "FPV goggles by BlueBird. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Duliia-Дулія-6+",
+    "category": "fpv_detectors",
+    "name": "Дулія 6+",
+    "manufacturer": "Duliia",
+    "country": "Ukraine",
+    "approx_price_usd": 57.32,
+    "approx_price_uah": 2350.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 57.32,
+    "description": "FPV goggles by Duliia. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Дзиґа-Дзиґа",
+    "category": "fpv_detectors",
+    "name": "Дзиґа",
+    "manufacturer": "Дзиґа",
+    "country": "Ukraine",
+    "approx_price_usd": 487.8,
+    "approx_price_uah": 20000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 487.8,
+    "description": "FPV goggles by Дзиґа. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Дзиґа-Дзиґа-(+3.3-",
+    "category": "fpv_detectors",
+    "name": "Дзиґа (+3.3 ГГц)",
+    "manufacturer": "Дзиґа",
+    "country": "Ukraine",
+    "approx_price_usd": 621.95,
+    "approx_price_uah": 25500.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 621.95,
+    "description": "FPV goggles by Дзиґа. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-VIDIK-VIDIK-P",
+    "category": "fpv_detectors",
+    "name": "VIDIK-P",
+    "manufacturer": "VIDIK",
+    "country": "Ukraine",
+    "approx_price_usd": 341.46,
+    "approx_price_uah": 14000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 341.46,
+    "description": "FPV goggles by VIDIK. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-VIDIK-VIDIK-P-v3",
+    "category": "fpv_detectors",
+    "name": "VIDIK-P v3",
+    "manufacturer": "VIDIK",
+    "country": "Ukraine",
+    "approx_price_usd": 451.22,
+    "approx_price_uah": 18500.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 451.22,
+    "description": "FPV goggles by VIDIK. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-VIDIK-VIDIK-S-v3",
+    "category": "fpv_detectors",
+    "name": "VIDIK-S v3",
+    "manufacturer": "VIDIK",
+    "country": "Ukraine",
+    "approx_price_usd": 487.8,
+    "approx_price_uah": 20000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 487.8,
+    "description": "FPV goggles by VIDIK. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Kseonics-DDSR1-V3",
+    "category": "fpv_detectors",
+    "name": "DDSR1 V3",
+    "manufacturer": "Kseonics Technology",
+    "country": "Ukraine",
+    "approx_price_usd": 365.85,
+    "approx_price_uah": 15000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 365.85,
+    "description": "FPV goggles by Kseonics Technology. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Kseonics-Ксеон-М",
+    "category": "fpv_detectors",
+    "name": "Ксеон-М",
+    "manufacturer": "Kseonics Technology",
+    "country": "Ukraine",
+    "approx_price_usd": 219.51,
+    "approx_price_uah": 9000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 219.51,
+    "description": "FPV goggles by Kseonics Technology. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Kseonics-Ксеон-L",
+    "category": "fpv_detectors",
+    "name": "Ксеон-L",
+    "manufacturer": "Kseonics Technology",
+    "country": "Ukraine",
+    "approx_price_usd": 292.68,
+    "approx_price_uah": 12000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 292.68,
+    "description": "FPV goggles by Kseonics Technology. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Kseonics-Ксеон-L-Ведм",
+    "category": "fpv_detectors",
+    "name": "Ксеон-L Ведмідь",
+    "manufacturer": "Kseonics Technology",
+    "country": "Ukraine",
+    "approx_price_usd": 292.68,
+    "approx_price_uah": 12000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 292.68,
+    "description": "FPV goggles by Kseonics Technology. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-603700-ADEVIN-v1.0",
+    "category": "fpv_detectors",
+    "name": "ADEVIN v1.0",
+    "manufacturer": "603700",
+    "country": "Ukraine",
+    "approx_price_usd": 109.76,
+    "approx_price_uah": 4500.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 109.76,
+    "description": "FPV goggles by 603700. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Contra-d-SENSE-3",
+    "category": "fpv_detectors",
+    "name": "SENSE-3",
+    "manufacturer": "Contra-drone",
+    "country": "Ukraine",
+    "approx_price_usd": 634.15,
+    "approx_price_uah": 26000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 634.15,
+    "description": "FPV goggles by Contra-drone. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Scream-I-ПРОРОК",
+    "category": "fpv_detectors",
+    "name": "ПРОРОК",
+    "manufacturer": "Scream Industries",
+    "country": "Ukraine",
+    "approx_price_usd": 512.2,
+    "approx_price_uah": 21000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 512.2,
+    "description": "FPV goggles by Scream Industries. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-KARA-DAG-Obriy-1.3",
+    "category": "fpv_detectors",
+    "name": "Obriy 1.3",
+    "manufacturer": "KARA DAG",
+    "country": "Ukraine",
+    "approx_price_usd": 573.17,
+    "approx_price_uah": 23500.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 573.17,
+    "description": "FPV goggles by KARA DAG. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-KARA-DAG-Obriy-1.3C",
+    "category": "fpv_detectors",
+    "name": "Obriy 1.3C",
+    "manufacturer": "KARA DAG",
+    "country": "Ukraine",
+    "approx_price_usd": 646.34,
+    "approx_price_uah": 26500.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 646.34,
+    "description": "FPV goggles by KARA DAG. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-KARA-DAG-Obriy-1.4C",
+    "category": "fpv_detectors",
+    "name": "Obriy 1.4C",
+    "manufacturer": "KARA DAG",
+    "country": "Ukraine",
+    "approx_price_usd": 768.29,
+    "approx_price_uah": 31500.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 768.29,
+    "description": "FPV goggles by KARA DAG. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-Кояш-Кояш",
+    "category": "fpv_detectors",
+    "name": "Кояш",
+    "manufacturer": "Кояш",
+    "country": "Ukraine",
+    "approx_price_usd": 1073.17,
+    "approx_price_uah": 44000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 1073.17,
+    "description": "FPV goggles by Кояш. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-БАБАЙ-Видун",
+    "category": "fpv_detectors",
+    "name": "Видун",
+    "manufacturer": "БАБАЙ",
+    "country": "Ukraine",
+    "approx_price_usd": 658.54,
+    "approx_price_uah": 27000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 658.54,
+    "description": "FPV goggles by БАБАЙ. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-БАБАЙ-Видун-PRO",
+    "category": "fpv_detectors",
+    "name": "Видун PRO",
+    "manufacturer": "БАБАЙ",
+    "country": "Ukraine",
+    "approx_price_usd": 780.49,
+    "approx_price_uah": 32000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 780.49,
+    "description": "FPV goggles by БАБАЙ. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-БАБАЙ-Видун-7.5",
+    "category": "fpv_detectors",
+    "name": "Видун 7.5",
+    "manufacturer": "БАБАЙ",
+    "country": "Ukraine",
+    "approx_price_usd": 926.83,
+    "approx_price_uah": 38000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 926.83,
+    "description": "FPV goggles by БАБАЙ. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-WonderDe-Тенета-SkyLi",
+    "category": "fpv_detectors",
+    "name": "Тенета SkyLink",
+    "manufacturer": "WonderDevTech",
+    "country": "Ukraine",
+    "approx_price_usd": 658.51,
+    "approx_price_uah": 26999.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 658.51,
+    "description": "FPV goggles by WonderDevTech. display. ° FOV."
+  },
+  {
+    "pid": "DET-UA-AIR3F-ВЙО-БОЙ",
+    "category": "fpv_detectors",
+    "name": "ВЙО-БОЙ",
+    "manufacturer": "AIR3F",
+    "country": "Ukraine",
+    "approx_price_usd": 463.41,
+    "approx_price_uah": 19000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian counter-UAS detection hardware."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "counter_uas",
+      "fpv_detector",
+      "rf_detection"
+    ],
+    "approx_price": 463.41,
+    "description": "FPV goggles by AIR3F. display. ° FOV."
+  }
+]

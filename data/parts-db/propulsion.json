@@ -1,0 +1,491 @@
+[
+  {
+    "pid": "PROP-0001",
+    "category": "propulsion",
+    "name": "Intelligent Energy IE-SOAR 800W",
+    "manufacturer": "Intelligent Energy",
+    "description": "Air-cooled PEM hydrogen fuel cell at 800W. Modular architecture scales to 24 kW. Set flight endurance record of 12 hours 7 minutes. Designed for Group 2-3 UAS requiring multi-hour endurance.",
+    "link": "https://www.intelligent-energy.com/",
+    "approx_price": "$15,000–$30,000",
+    "power_output_w": 800,
+    "fuel_type": "hydrogen",
+    "weight_kg": 2,
+    "max_endurance_hr": 12,
+    "subcategory": "hydrogen_fuel_cell",
+    "country": "United Kingdom",
+    "compliance": [
+      "ndaa",
+      "allied"
+    ],
+    "platforms_integrated": [],
+    "tags": [
+      "pem",
+      "air_cooled",
+      "modular_to_24kw",
+      "12hr_record"
+    ],
+    "schema_data": {
+      "weight_g": 498
+    }
+  },
+  {
+    "pid": "PROP-0002",
+    "category": "propulsion",
+    "name": "Intelligent Energy IE-SOAR 2.4kW",
+    "manufacturer": "Intelligent Energy",
+    "description": "High-power air-cooled PEM fuel cell at 2.4 kW for larger UAS platforms. Same modular IE-SOAR architecture. Suitable for Group 3 platforms requiring significant endurance with heavier payloads.",
+    "link": "https://www.intelligent-energy.com/",
+    "approx_price": "$30,000–$60,000",
+    "power_output_w": 2400,
+    "fuel_type": "hydrogen",
+    "weight_kg": 5,
+    "max_endurance_hr": 6,
+    "subcategory": "hydrogen_fuel_cell",
+    "country": "United Kingdom",
+    "compliance": [
+      "ndaa",
+      "allied"
+    ],
+    "platforms_integrated": [],
+    "tags": [
+      "pem",
+      "air_cooled",
+      "2.4kw",
+      "group_3"
+    ],
+    "schema_data": {
+      "weight_g": 502
+    }
+  },
+  {
+    "pid": "PROP-0003",
+    "category": "propulsion",
+    "name": "Doosan DP30 — Hydrogen Fuel Cell",
+    "manufacturer": "Doosan Mobility Innovation",
+    "description": "World's first mass-produced hydrogen fuel cell for drones. 2.6 kW output, 120-150 minute flights. South Korean manufacture. Proven in commercial applications. Allied-nation supply chain.",
+    "link": "https://www.doosanmobility.com/",
+    "approx_price": "$20,000–$40,000",
+    "power_output_w": 2600,
+    "fuel_type": "hydrogen",
+    "weight_kg": 3.5,
+    "max_endurance_hr": 2.5,
+    "subcategory": "hydrogen_fuel_cell",
+    "country": "South Korea",
+    "compliance": [
+      "ndaa",
+      "allied"
+    ],
+    "platforms_integrated": [],
+    "tags": [
+      "mass_produced",
+      "first_commercial",
+      "2.6kw",
+      "120-150min",
+      "allied"
+    ],
+    "schema_data": {
+      "weight_g": 504
+    }
+  },
+  {
+    "pid": "PROP-0004",
+    "category": "propulsion",
+    "name": "HES Aerostak — Lightweight Fuel Cell",
+    "manufacturer": "HES Energy Systems",
+    "description": "Lightweight hydrogen fuel cell stack designed for long-endurance UAS. Singapore-based. Optimized for weight-critical applications.",
+    "link": "https://www.hes.sg/",
+    "approx_price": "$10,000–$25,000",
+    "power_output_w": 1200,
+    "fuel_type": "hydrogen",
+    "weight_kg": 2,
+    "max_endurance_hr": null,
+    "subcategory": "hydrogen_fuel_cell",
+    "country": "Singapore",
+    "compliance": [
+      "ndaa"
+    ],
+    "platforms_integrated": [],
+    "tags": [
+      "lightweight",
+      "long_endurance"
+    ],
+    "schema_data": {
+      "weight_g": 503
+    }
+  },
+  {
+    "pid": "PROP-0005",
+    "category": "propulsion",
+    "name": "Ballard/Honeywell FCair 650W",
+    "manufacturer": "Ballard Power Systems / Honeywell",
+    "description": "600-1200W PEM fuel cell from Ballard, integrated by Honeywell for defense applications. 41 g/hr H2 consumption at 650W. Canadian/US supply chain ensures NDAA compliance.",
+    "link": "https://www.ballard.com/",
+    "approx_price": "$15,000–$30,000",
+    "power_output_w": 650,
+    "fuel_type": "hydrogen",
+    "weight_kg": 2.5,
+    "max_endurance_hr": null,
+    "subcategory": "hydrogen_fuel_cell",
+    "country": "Canada",
+    "compliance": [
+      "ndaa"
+    ],
+    "platforms_integrated": [],
+    "tags": [
+      "pem",
+      "honeywell_integration",
+      "41g_hr_h2",
+      "canadian_us"
+    ],
+    "schema_data": {
+      "weight_g": 502
+    }
+  },
+  {
+    "pid": "PROP-0006",
+    "category": "propulsion",
+    "name": "Skyfront Perimeter 8 G2K — Gasoline-Electric Hybrid",
+    "manufacturer": "Skyfront",
+    "description": "Blue UAS Select gasoline-electric hybrid powertrain. 5+ hours stock endurance, world record 13 hours 4 minutes / 205 miles. Gas generator charges electric motors for multi-rotor flight. US manufactured.",
+    "link": "https://skyfront.com/",
+    "approx_price": "$50,000–$100,000",
+    "power_output_w": null,
+    "fuel_type": "gasoline",
+    "weight_kg": null,
+    "max_endurance_hr": 13,
+    "subcategory": "hybrid_electric",
+    "country": "United States",
+    "compliance": [
+      "blue_uas_select",
+      "ndaa"
+    ],
+    "platforms_integrated": [
+      "Perimeter 8"
+    ],
+    "tags": [
+      "gasoline_electric",
+      "13hr_record",
+      "205mi",
+      "blue_uas_select",
+      "us_manufactured"
+    ],
+    "schema_data": {
+      "weight_g": 503
+    }
+  },
+  {
+    "pid": "PROP-0007",
+    "category": "propulsion",
+    "name": "Quaternium HYBRiX — 2-Stroke Hybrid",
+    "manufacturer": "Quaternium",
+    "description": "2-stroke ICE hybrid multirotor powertrain. World record 10 hours 14 minutes endurance. Spanish manufacture. Popular for commercial long-endurance survey and inspection missions.",
+    "link": "https://www.quaternium.com/",
+    "approx_price": "$15,000–$40,000",
+    "power_output_w": null,
+    "fuel_type": "gasoline",
+    "weight_kg": null,
+    "max_endurance_hr": 10.2,
+    "subcategory": "hybrid_electric",
+    "country": "Spain",
+    "compliance": [
+      "ndaa"
+    ],
+    "platforms_integrated": [
+      "HYBRiX"
+    ],
+    "tags": [
+      "2_stroke",
+      "10hr_record",
+      "spanish",
+      "commercial_endurance"
+    ],
+    "schema_data": {
+      "weight_g": 504
+    }
+  },
+  {
+    "pid": "PROP-0008",
+    "category": "propulsion",
+    "name": "NWUAV NW-44 — Multi-Fuel EFI Engine",
+    "manufacturer": "Northwest UAV (NWUAV)",
+    "description": "43.6cc single-cylinder EFI engine at 3.5 HP and 3.4 kg. Multi-fuel capable (JP-5/JP-8/gasoline). 28,000+ operational hours, 18,000+ engines delivered, 1M+ fleet flight hours. The proven standard for US military small UAS propulsion. US manufactured, NDAA compliant.",
+    "link": "https://www.nwuav.com/",
+    "approx_price": "$5,000–$15,000",
+    "power_output_w": 2600,
+    "fuel_type": "JP-5/JP-8/gasoline (multi-fuel)",
+    "weight_kg": 3.4,
+    "max_endurance_hr": null,
+    "subcategory": "ic_engine_2stroke",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "combat_proven"
+    ],
+    "platforms_integrated": [],
+    "tags": [
+      "43.6cc",
+      "efi",
+      "multi_fuel",
+      "jp5_jp8",
+      "28000_hrs",
+      "18000_engines",
+      "1m_fleet_hrs",
+      "us_military_standard"
+    ],
+    "schema_data": {
+      "weight_g": 500
+    }
+  },
+  {
+    "pid": "PROP-0009",
+    "category": "propulsion",
+    "name": "NWUAV NW-88 — Twin-Cylinder Engine",
+    "manufacturer": "Northwest UAV (NWUAV)",
+    "description": "Twin-cylinder variant for 40-75 kg aircraft class. Higher power output for heavier Group 3 platforms. Same multi-fuel EFI capability and US defense pedigree as NW-44.",
+    "link": "https://www.nwuav.com/",
+    "approx_price": "$10,000–$25,000",
+    "power_output_w": 5000,
+    "fuel_type": "JP-5/JP-8/gasoline (multi-fuel)",
+    "weight_kg": 6,
+    "max_endurance_hr": null,
+    "subcategory": "ic_engine_2stroke",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "platforms_integrated": [],
+    "tags": [
+      "twin_cylinder",
+      "40-75kg_aircraft",
+      "group_3",
+      "multi_fuel",
+      "efi"
+    ],
+    "schema_data": {
+      "weight_g": 498
+    }
+  },
+  {
+    "pid": "PROP-0010",
+    "category": "propulsion",
+    "name": "UAV Turbines Monarch 5 — Microturbine",
+    "manufacturer": "UAV Turbines",
+    "description": "~50 HP turboprop microturbine running heavy fuel (JP-5/JP-8). 100,000 RPM core. US Army contract. Designed for Group 3-4 fixed-wing UAS requiring turbine-class performance with heavy fuel logistics compatibility.",
+    "link": "https://uavturbines.com/",
+    "approx_price": "$50,000–$100,000",
+    "power_output_w": 37000,
+    "fuel_type": "JP-5/JP-8 (heavy fuel)",
+    "weight_kg": 10,
+    "max_endurance_hr": null,
+    "subcategory": "turbine",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "us_army_contract"
+    ],
+    "platforms_integrated": [],
+    "tags": [
+      "microturbine",
+      "50hp",
+      "100000rpm",
+      "heavy_fuel",
+      "us_army",
+      "group_3_4"
+    ],
+    "schema_data": {
+      "weight_g": 507
+    }
+  },
+  {
+    "pid": "PROP-0011",
+    "category": "propulsion",
+    "name": "Currawong Corvid-29 — EFI Engine",
+    "manufacturer": "Currawong Engineering",
+    "description": "29cc EFI engine with 700+ systems fielded on Honeywell T-Hawk and other platforms. Australian manufacture — Five Eyes supply chain. Proven reliability in defense applications.",
+    "link": "https://www.currawongeng.com/",
+    "approx_price": "$3,000–$8,000",
+    "power_output_w": 1800,
+    "fuel_type": "gasoline",
+    "weight_kg": 2,
+    "max_endurance_hr": null,
+    "subcategory": "ic_engine_2stroke",
+    "country": "Australia",
+    "compliance": [
+      "ndaa",
+      "five_eyes",
+      "combat_proven"
+    ],
+    "platforms_integrated": [
+      "Honeywell T-Hawk"
+    ],
+    "tags": [
+      "29cc",
+      "efi",
+      "700_systems",
+      "t_hawk",
+      "five_eyes",
+      "australian"
+    ],
+    "schema_data": {
+      "weight_g": 494
+    }
+  },
+  {
+    "pid": "PROP-0012",
+    "category": "propulsion",
+    "name": "Currawong Corvid-50 — Heavy-Lift EFI Engine",
+    "manufacturer": "Currawong Engineering",
+    "description": "50cc EFI engine for larger UAS platforms. Higher power variant of the proven Corvid architecture. Australian Five Eyes supply chain.",
+    "link": "https://www.currawongeng.com/",
+    "approx_price": "$5,000–$12,000",
+    "power_output_w": 3000,
+    "fuel_type": "gasoline",
+    "weight_kg": 3.5,
+    "max_endurance_hr": null,
+    "subcategory": "ic_engine_2stroke",
+    "country": "Australia",
+    "compliance": [
+      "ndaa",
+      "five_eyes"
+    ],
+    "platforms_integrated": [],
+    "tags": [
+      "50cc",
+      "efi",
+      "heavy_lift",
+      "five_eyes"
+    ],
+    "schema_data": {
+      "weight_g": 502
+    }
+  },
+  {
+    "pid": "PROP-0013",
+    "category": "propulsion",
+    "name": "Rotron RT600 — Zero-Vibration Wankel",
+    "manufacturer": "Rotron Aerospace (UAV Engines Ltd)",
+    "description": "Zero-vibration Wankel rotary engine at 53-100 HP, 7,500 RPM. Multi-fuel capable. Rotary architecture eliminates vibration that disrupts sensors and payloads. UK manufacture.",
+    "link": "https://www.uavenginesltd.co.uk/",
+    "approx_price": "$20,000–$50,000",
+    "power_output_w": 75000,
+    "fuel_type": "multi-fuel",
+    "weight_kg": 15,
+    "max_endurance_hr": null,
+    "subcategory": "ic_engine_wankel",
+    "country": "United Kingdom",
+    "compliance": [
+      "ndaa",
+      "allied"
+    ],
+    "platforms_integrated": [],
+    "tags": [
+      "wankel",
+      "zero_vibration",
+      "53-100hp",
+      "7500rpm",
+      "multi_fuel",
+      "sensor_friendly"
+    ],
+    "schema_data": {
+      "weight_g": 491
+    }
+  },
+  {
+    "pid": "PROP-0014",
+    "category": "propulsion",
+    "name": "Hirth F33 — 2-Stroke UAS Engine",
+    "manufacturer": "Hirth Engines",
+    "description": "Proven 2-stroke engine for UAS applications. Part of Hirth's extensive engine family for unmanned systems. German manufacture — NATO/EU supply chain.",
+    "link": "https://www.hirth-motoren.de/",
+    "approx_price": "$3,000–$10,000",
+    "power_output_w": 2500,
+    "fuel_type": "gasoline",
+    "weight_kg": 3,
+    "max_endurance_hr": null,
+    "subcategory": "ic_engine_2stroke",
+    "country": "Germany",
+    "compliance": [
+      "ndaa",
+      "nato"
+    ],
+    "platforms_integrated": [],
+    "tags": [
+      "2_stroke",
+      "german",
+      "nato_eu",
+      "proven"
+    ],
+    "schema_data": {
+      "weight_g": 509
+    }
+  },
+  {
+    "pid": "PROP-0015",
+    "category": "propulsion",
+    "name": "TEI PD-170 — Turbodiesel",
+    "manufacturer": "TEI (TUSAŞ Engine Industries)",
+    "description": "170 HP turbodiesel engine: 2.1L, twin-turbo, heavy fuel (JP-8). Powers TB3 and AKSUNGUR UAS. Serial production since 2020. Turkish indigenous propulsion — eliminates foreign engine dependence for tactical UAS.",
+    "link": "https://www.tei.com.tr/",
+    "approx_price": "$100,000–$250,000",
+    "power_output_w": 127000,
+    "fuel_type": "JP-8 (heavy fuel)",
+    "weight_kg": 120,
+    "max_endurance_hr": null,
+    "subcategory": "turbodiesel",
+    "country": "Turkey",
+    "compliance": [
+      "nato_member",
+      "combat_proven"
+    ],
+    "platforms_integrated": [
+      "Bayraktar TB3",
+      "AKSUNGUR"
+    ],
+    "tags": [
+      "turbodiesel",
+      "170hp",
+      "2.1l",
+      "twin_turbo",
+      "jp8",
+      "tb3",
+      "aksungur",
+      "serial_production_2020",
+      "indigenous"
+    ],
+    "schema_data": {
+      "weight_g": 508
+    }
+  },
+  {
+    "pid": "PROP-0016",
+    "category": "propulsion",
+    "name": "Ivchenko-Progress AI-322F — Afterburning Turbofan",
+    "manufacturer": "Ivchenko-Progress / Motor Sich",
+    "description": "44 kN afterburning turbofan engine. Powers Baykar Kızılelma jet UCAV. Ukrainian-designed, representing decades of Soviet/Ukrainian turbine expertise. Largest engine in the UAS propulsion database.",
+    "link": "",
+    "approx_price": "$500,000–$2,000,000",
+    "power_output_w": null,
+    "fuel_type": "JP-8 / kerosene",
+    "weight_kg": 570,
+    "max_endurance_hr": null,
+    "subcategory": "turbofan",
+    "country": "Ukraine",
+    "compliance": [
+      "combat_proven"
+    ],
+    "platforms_integrated": [
+      "Baykar Kızılelma"
+    ],
+    "tags": [
+      "turbofan",
+      "44kn",
+      "afterburning",
+      "kizilelma",
+      "ucav",
+      "ukrainian_turbine"
+    ],
+    "schema_data": {
+      "weight_g": 491
+    }
+  }
+]

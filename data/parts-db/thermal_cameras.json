@@ -1,0 +1,1751 @@
+[
+  {
+    "pid": "TCAM-0001",
+    "category": "thermal_cameras",
+    "name": "Teledyne FLIR Boson 640",
+    "manufacturer": "Teledyne FLIR",
+    "description": "Industry-standard uncooled LWIR OEM thermal camera core with 640x512 VOx microbolometer at 12μm pitch. Sets the benchmark for SWaP in drone-integrated thermal imaging. Available in multiple lens configurations from 4.9mm (95° HFOV) to 73mm (5.5° HFOV). NDAA compliant and ITAR free, classified under EAR 6A003.b.4.a.",
+    "link": "https://oem.flir.com/products/boson",
+    "approx_price": "$3,000–$6,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 12,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 7.5,
+    "lens_fov_deg": [
+      95,
+      50,
+      32,
+      24,
+      18,
+      12,
+      8,
+      5.5
+    ],
+    "interface": "CMOS parallel / MIPI / USB",
+    "power_w": 0.6,
+    "subcategory": "oem_core",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar_free",
+      "ear_6a003"
+    ],
+    "tags": [
+      "vox",
+      "uncooled",
+      "lwir",
+      "oem_core",
+      "swap",
+      "radiometric_optional",
+      "shutterless_optional",
+      "boson_sdk"
+    ],
+    "schema_data": {
+      "weight_g": 95
+    }
+  },
+  {
+    "pid": "TCAM-0002",
+    "category": "thermal_cameras",
+    "name": "Teledyne FLIR Boson+ 640",
+    "manufacturer": "Teledyne FLIR",
+    "description": "Enhanced sensitivity variant of the Boson 640 with industry-leading NEdT of less than 20 mK. Improved automatic gain control and scene-based NUC provide better image quality across a wider range of environments. Same form factor as standard Boson for drop-in upgrade compatibility.",
+    "link": "https://oem.flir.com/products/boson",
+    "approx_price": "$5,000–$8,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 12,
+    "netd_mk": 20,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 7.5,
+    "lens_fov_deg": [
+      95,
+      50,
+      32,
+      24,
+      18,
+      12,
+      8,
+      5.5
+    ],
+    "interface": "CMOS parallel / MIPI / USB",
+    "power_w": 0.6,
+    "subcategory": "oem_core",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar_free"
+    ],
+    "tags": [
+      "vox",
+      "uncooled",
+      "lwir",
+      "oem_core",
+      "swap",
+      "enhanced_sensitivity",
+      "boson_plus",
+      "agc_improved"
+    ],
+    "schema_data": {
+      "weight_g": 99
+    }
+  },
+  {
+    "pid": "TCAM-0003",
+    "category": "thermal_cameras",
+    "name": "Teledyne FLIR Boson 320",
+    "manufacturer": "Teledyne FLIR",
+    "description": "Lower-resolution variant of the Boson family with 320x256 VOx uncooled detector at 12μm pitch. Cost-effective option for applications where full VGA thermal resolution is not required. Same mechanical and electrical compatibility as Boson 640 for easy swap between configurations.",
+    "link": "https://oem.flir.com/products/boson",
+    "approx_price": "$1,500–$3,000",
+    "resolution_h": 320,
+    "resolution_v": 256,
+    "pixel_pitch_um": 12,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 7.5,
+    "lens_fov_deg": [
+      50,
+      32,
+      24,
+      18
+    ],
+    "interface": "CMOS parallel / MIPI / USB",
+    "power_w": 0.5,
+    "subcategory": "oem_core",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar_free"
+    ],
+    "tags": [
+      "vox",
+      "uncooled",
+      "lwir",
+      "oem_core",
+      "swap",
+      "qvga",
+      "cost_effective"
+    ],
+    "schema_data": {
+      "weight_g": 101
+    }
+  },
+  {
+    "pid": "TCAM-0004",
+    "category": "thermal_cameras",
+    "name": "Teledyne FLIR Lepton 3.5",
+    "manufacturer": "Teledyne FLIR",
+    "description": "World's highest-volume LWIR micro thermal camera module, smaller than a dime at 0.9g. 160x120 pixels at 12μm pitch with radiometric output across all 19,200 pixels. Interfaces via SPI video and I2C-like CCI control. Scene dynamic range to +400°C. The definitive budget thermal OEM core for mobile and micro-drone integration.",
+    "link": "https://oem.flir.com/products/lepton",
+    "approx_price": "$200–$350",
+    "resolution_h": 160,
+    "resolution_v": 120,
+    "pixel_pitch_um": 12,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 9,
+    "weight_g": 0.9,
+    "lens_fov_deg": [
+      57,
+      50,
+      95,
+      160
+    ],
+    "interface": "SPI / I2C (CCI)",
+    "power_w": 0.15,
+    "subcategory": "oem_core",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar_free"
+    ],
+    "tags": [
+      "vox",
+      "uncooled",
+      "lwir",
+      "micro",
+      "radiometric",
+      "mobile",
+      "highest_volume",
+      "lepton"
+    ],
+    "schema_data": {
+      "weight_g": 105
+    }
+  },
+  {
+    "pid": "TCAM-0005",
+    "category": "thermal_cameras",
+    "name": "Teledyne FLIR Neutrino SX8",
+    "manufacturer": "Teledyne FLIR",
+    "description": "High-performance cooled MWIR camera engine for ISR applications. InSb detector with Stirling cooler provides superior sensitivity for long-range target detection and identification. Designed for integration into advanced gimbal payloads and defense ISR systems.",
+    "link": "https://www.flir.com/products/neutrino-sx8/",
+    "approx_price": "$50,000–$100,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 15,
+    "netd_mk": 20,
+    "spectral_band": "MWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 900,
+    "lens_fov_deg": null,
+    "interface": "Camera Link / GigE",
+    "power_w": 15,
+    "subcategory": "defense_isr",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar"
+    ],
+    "tags": [
+      "insb",
+      "cooled",
+      "mwir",
+      "isr",
+      "stirling_cooler",
+      "long_range",
+      "defense"
+    ],
+    "schema_data": {
+      "weight_g": 97
+    }
+  },
+  {
+    "pid": "TCAM-0006",
+    "category": "thermal_cameras",
+    "name": "Teledyne FLIR Vue TZ20-R",
+    "manufacturer": "Teledyne FLIR",
+    "description": "Dual-thermal-sensor integrated drone payload with radiometric capability. Features two Boson thermal cameras at different focal lengths for simultaneous wide and narrow FOV. Designed for DJI M300/M350 RTK integration with dual gimbal support. Purpose-built for drone inspection and public safety missions.",
+    "link": "https://www.flir.com/products/vue-tz20-r/",
+    "approx_price": "$8,000–$12,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 12,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 580,
+    "lens_fov_deg": [
+      57,
+      18
+    ],
+    "interface": "USB / analog video",
+    "power_w": 8,
+    "subcategory": "integrated_payload",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "dual_sensor",
+      "radiometric",
+      "drone_payload",
+      "dji_compatible",
+      "inspection",
+      "public_safety"
+    ],
+    "schema_data": {
+      "weight_g": 106
+    }
+  },
+  {
+    "pid": "TCAM-0007",
+    "category": "thermal_cameras",
+    "name": "Sierra-Olympic Vayu HD",
+    "manufacturer": "Sierra-Olympic Technologies",
+    "description": "World's highest-resolution uncooled LWIR camera with true 1920x1200 Full HD resolution from a 12μm VOx microbolometer array — 7.5x the pixel count of standard 640x512 sensors. Onboard H.264/H.265 processor, USB3.0 raw output, HDMI 1080p, and IP-video. Available in 25mm, 50mm, and 87mm lens configurations. Open chassis design optimized for drone and unmanned systems integration.",
+    "link": "https://sierraolympia.com/product/vayu-hd/",
+    "approx_price": "$15,000–$25,000",
+    "resolution_h": 1920,
+    "resolution_v": 1200,
+    "pixel_pitch_um": 12,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 450,
+    "lens_fov_deg": [
+      52,
+      26,
+      15
+    ],
+    "interface": "USB3.0 / HDMI / IP (H.264/H.265) / Ethernet",
+    "power_w": 5,
+    "subcategory": "integrated_payload",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "vox",
+      "uncooled",
+      "lwir",
+      "full_hd",
+      "highest_resolution_uncooled",
+      "1920x1200",
+      "open_chassis",
+      "drone_optimized",
+      "object_tracking"
+    ],
+    "schema_data": {
+      "weight_g": 93
+    }
+  },
+  {
+    "pid": "TCAM-0008",
+    "category": "thermal_cameras",
+    "name": "Sierra-Olympic Vayu HD-Industrial",
+    "manufacturer": "Sierra-Olympic Technologies",
+    "description": "Ruggedized variant of the Vayu HD enclosed in an IP54-rated case with sealed and locking connectors. Same 1920x1200 Full HD uncooled thermal sensor in a field-ready enclosure designed to withstand vibration and wide temperature ranges. Multiple mounting options for faster integration.",
+    "link": "https://sierraolympia.com/product/vayu-hd-industrial/",
+    "approx_price": "$18,000–$28,000",
+    "resolution_h": 1920,
+    "resolution_v": 1200,
+    "pixel_pitch_um": 12,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 700,
+    "lens_fov_deg": [
+      52,
+      26,
+      15
+    ],
+    "interface": "USB3.0 / HDMI / IP (H.264/H.265) / Ethernet",
+    "power_w": 6,
+    "subcategory": "integrated_payload",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "vox",
+      "uncooled",
+      "lwir",
+      "full_hd",
+      "ip54",
+      "ruggedized",
+      "vibration_resistant",
+      "industrial"
+    ],
+    "schema_data": {
+      "weight_g": 104
+    }
+  },
+  {
+    "pid": "TCAM-0009",
+    "category": "thermal_cameras",
+    "name": "L3Harris WESCAM MX-10",
+    "manufacturer": "L3Harris Technologies",
+    "description": "Compact multi-sensor turret combining MWIR thermal and HD daylight cameras in a 17 kg stabilized gimbal. Standard payload for Group 2–3 UAS platforms requiring day/night ISR capability. Advanced image processing and target tracking with multiple video output formats.",
+    "link": "https://www.l3harris.com/all-capabilities/wescam-mx-series",
+    "approx_price": "$200,000–$500,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 15,
+    "netd_mk": 25,
+    "spectral_band": "MWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 17000,
+    "lens_fov_deg": null,
+    "interface": "HD-SDI / Ethernet / RS-422",
+    "power_w": 200,
+    "subcategory": "gimbal",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar",
+      "mil_std"
+    ],
+    "tags": [
+      "cooled",
+      "mwir",
+      "multi_sensor",
+      "stabilized_gimbal",
+      "isr",
+      "group_2_3",
+      "day_night"
+    ],
+    "schema_data": {
+      "weight_g": 106
+    }
+  },
+  {
+    "pid": "TCAM-0010",
+    "category": "thermal_cameras",
+    "name": "L3Harris WESCAM MX-15HDi",
+    "manufacturer": "L3Harris Technologies",
+    "description": "Full multi-spectral ISR turret with MWIR cooled thermal, HD daylight spotter, laser rangefinder, and laser designator in a 45 kg stabilized gimbal. Proven on hundreds of military and law enforcement platforms worldwide. Capable of 10+ km target identification.",
+    "link": "https://www.l3harris.com/all-capabilities/wescam-mx-series",
+    "approx_price": "$1,000,000+",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 15,
+    "netd_mk": 20,
+    "spectral_band": "MWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 45000,
+    "lens_fov_deg": null,
+    "interface": "HD-SDI / Ethernet / MIL-STD-1553",
+    "power_w": 350,
+    "subcategory": "gimbal",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar",
+      "mil_std"
+    ],
+    "tags": [
+      "cooled",
+      "mwir",
+      "multi_spectral",
+      "lrf",
+      "laser_designator",
+      "stabilized_gimbal",
+      "isr",
+      "10km_range"
+    ],
+    "schema_data": {
+      "weight_g": 96
+    }
+  },
+  {
+    "pid": "TCAM-0011",
+    "category": "thermal_cameras",
+    "name": "L3Harris WESCAM MX-20",
+    "manufacturer": "L3Harris Technologies",
+    "description": "Largest MX-series turret at 90 kg with 20+ km target identification capability. Full multi-spectral sensor suite including MWIR, SWIR, HD EO, LRF, and laser designator. Designed for MALE/HALE UAS and fixed-wing ISR aircraft. Combat-proven across multiple theaters.",
+    "link": "https://www.l3harris.com/all-capabilities/wescam-mx-series",
+    "approx_price": "$2,000,000+",
+    "resolution_h": 1280,
+    "resolution_v": 1024,
+    "pixel_pitch_um": 15,
+    "netd_mk": 18,
+    "spectral_band": "MWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 90000,
+    "lens_fov_deg": null,
+    "interface": "HD-SDI / Ethernet / MIL-STD-1553",
+    "power_w": 600,
+    "subcategory": "gimbal",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar",
+      "mil_std",
+      "combat_proven"
+    ],
+    "tags": [
+      "cooled",
+      "mwir",
+      "swir",
+      "multi_spectral",
+      "lrf",
+      "laser_designator",
+      "20km_range",
+      "male_hale"
+    ],
+    "schema_data": {
+      "weight_g": 93
+    }
+  },
+  {
+    "pid": "TCAM-0012",
+    "category": "thermal_cameras",
+    "name": "Trillium Engineering HD25",
+    "manufacturer": "Trillium Engineering",
+    "description": "Compact multi-sensor gimbal at only 300g featuring thermal and HD daylight cameras. Designed for Group 1 sUAS requiring the lightest possible stabilized EO/IR payload. Part of Trillium's HD series spanning 25 to 95 class turrets.",
+    "link": "https://trilliumeng.com/",
+    "approx_price": "$15,000–$30,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 12,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 300,
+    "lens_fov_deg": null,
+    "interface": "HD-SDI / Ethernet",
+    "power_w": 8,
+    "subcategory": "gimbal",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar"
+    ],
+    "tags": [
+      "uncooled",
+      "lwir",
+      "stabilized_gimbal",
+      "ultra_light",
+      "group_1",
+      "suas"
+    ],
+    "schema_data": {
+      "weight_g": 93
+    }
+  },
+  {
+    "pid": "TCAM-0013",
+    "category": "thermal_cameras",
+    "name": "Trillium Engineering HD95",
+    "manufacturer": "Trillium Engineering",
+    "description": "Full-capability stabilized multi-sensor turret at 5+ kg. STANAG 3733 rated for NATO interoperability. Selected for US Army Future Vertical Lift (FVL) program. Features cooled MWIR thermal, HD EO, and optional LRF/designator.",
+    "link": "https://trilliumeng.com/",
+    "approx_price": "$100,000–$250,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 15,
+    "netd_mk": 25,
+    "spectral_band": "MWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 5000,
+    "lens_fov_deg": null,
+    "interface": "HD-SDI / Ethernet / RS-422",
+    "power_w": 60,
+    "subcategory": "gimbal",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar",
+      "stanag_3733"
+    ],
+    "tags": [
+      "cooled",
+      "mwir",
+      "stabilized_gimbal",
+      "fvl_program",
+      "nato",
+      "stanag"
+    ],
+    "schema_data": {
+      "weight_g": 99
+    }
+  },
+  {
+    "pid": "TCAM-0014",
+    "category": "thermal_cameras",
+    "name": "Seek Thermal Drone Core",
+    "manufacturer": "Seek Thermal",
+    "description": "Budget-tier uncooled thermal camera core specifically designed for drone integration. 320x240 resolution at 12μm pitch offers best price-per-pixel in its class. Available in 56° and 24° HFOV lens configurations. USB interface for straightforward integration.",
+    "link": "https://www.thermal.com/drone-core.html",
+    "approx_price": "$500–$1,000",
+    "resolution_h": 320,
+    "resolution_v": 240,
+    "pixel_pitch_um": 12,
+    "netd_mk": 70,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 9,
+    "weight_g": 4.4,
+    "lens_fov_deg": [
+      56,
+      24
+    ],
+    "interface": "USB",
+    "power_w": 0.35,
+    "subcategory": "oem_core",
+    "country": "United States",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "uncooled",
+      "lwir",
+      "budget",
+      "drone_specific",
+      "oem_core",
+      "price_per_pixel"
+    ],
+    "schema_data": {
+      "weight_g": 94
+    }
+  },
+  {
+    "pid": "TCAM-0015",
+    "category": "thermal_cameras",
+    "name": "Controp Micro-STAMP",
+    "manufacturer": "Controp Precision Technologies",
+    "description": "World's smallest gyro-stabilized dual-sensor payload at only 300g (65g sensor module). Combines uncooled IR and daylight cameras in a three-gimbal stabilized system. Designed for nano/micro UAS where every gram counts. Delivered to multiple defense customers worldwide.",
+    "link": "https://www.controp.com/family/stamp-family/",
+    "approx_price": "$20,000–$40,000",
+    "resolution_h": 640,
+    "resolution_v": 480,
+    "pixel_pitch_um": 17,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 300,
+    "lens_fov_deg": null,
+    "interface": "analog video / digital",
+    "power_w": 5,
+    "subcategory": "gimbal",
+    "country": "Israel",
+    "compliance": [
+      "combat_proven"
+    ],
+    "tags": [
+      "uncooled",
+      "lwir",
+      "gyro_stabilized",
+      "nano_uas",
+      "dual_sensor",
+      "three_gimbal",
+      "ultra_miniature"
+    ],
+    "schema_data": {
+      "weight_g": 101
+    }
+  },
+  {
+    "pid": "TCAM-0016",
+    "category": "thermal_cameras",
+    "name": "Controp M-STAMP",
+    "manufacturer": "Controp Precision Technologies",
+    "description": "Multi-sensor stabilized miniature payload at 1.3 kg combining uncooled 8-12μm IR camera with continuous zoom lens, HD CMOS day camera, and laser pointer. Three-axis gyro-stabilized gimbal for sUAS tactical over-the-hill reconnaissance missions.",
+    "link": "https://www.controp.com/family/stamp-family/",
+    "approx_price": "$40,000–$80,000",
+    "resolution_h": 640,
+    "resolution_v": 480,
+    "pixel_pitch_um": 17,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 1300,
+    "lens_fov_deg": null,
+    "interface": "analog video / digital / RS-422",
+    "power_w": 12,
+    "subcategory": "gimbal",
+    "country": "Israel",
+    "compliance": [
+      "combat_proven"
+    ],
+    "tags": [
+      "uncooled",
+      "lwir",
+      "gyro_stabilized",
+      "multi_sensor",
+      "continuous_zoom",
+      "laser_pointer",
+      "suas"
+    ],
+    "schema_data": {
+      "weight_g": 97
+    }
+  },
+  {
+    "pid": "TCAM-0017",
+    "category": "thermal_cameras",
+    "name": "Controp T-STAMP XR",
+    "manufacturer": "Controp Precision Technologies",
+    "description": "Triple-sensor stabilized payload at 3.5 kg with cooled 3-5μm MWIR thermal camera (640x512, 15μm, continuous zoom x15), HD day camera (zoom x17), and optional laser designator (1064nm, 10mJ, 1km NATO range). Built-in INS provides geo-location and hold-to-coordinate capability. Delivers optical performance of much larger payloads from small UAS platforms.",
+    "link": "https://www.controp.com/family/stamp-family/",
+    "approx_price": "$100,000–$200,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 15,
+    "netd_mk": 25,
+    "spectral_band": "MWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 3500,
+    "lens_fov_deg": [
+      2,
+      30
+    ],
+    "interface": "digital video / RS-422",
+    "power_w": 35,
+    "subcategory": "gimbal",
+    "country": "Israel",
+    "compliance": [
+      "combat_proven"
+    ],
+    "tags": [
+      "cooled",
+      "mwir",
+      "gyro_stabilized",
+      "triple_sensor",
+      "laser_designator",
+      "ins",
+      "geo_location",
+      "continuous_zoom_x15"
+    ],
+    "schema_data": {
+      "weight_g": 90
+    }
+  },
+  {
+    "pid": "TCAM-0018",
+    "category": "thermal_cameras",
+    "name": "Elbit Systems Mini-POP",
+    "manufacturer": "Elbit Systems",
+    "description": "Compact cooled MWIR multi-sensor payload at 3.5 kg for tactical UAS. Features cooled 3-5μm InSb detector, HD day camera, and optional laser designator. Combat-proven across multiple armed forces and integrated into numerous UAS platforms including Hermes family.",
+    "link": "https://elbitsystems.com/",
+    "approx_price": "$150,000–$300,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 15,
+    "netd_mk": 25,
+    "spectral_band": "MWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 3500,
+    "lens_fov_deg": null,
+    "interface": "digital video / Ethernet",
+    "power_w": 40,
+    "subcategory": "gimbal",
+    "country": "Israel",
+    "compliance": [
+      "combat_proven"
+    ],
+    "tags": [
+      "cooled",
+      "mwir",
+      "insb",
+      "multi_sensor",
+      "tactical_uas",
+      "hermes_family",
+      "laser_designator_optional"
+    ],
+    "schema_data": {
+      "weight_g": 102
+    }
+  },
+  {
+    "pid": "TCAM-0019",
+    "category": "thermal_cameras",
+    "name": "Elbit Systems Micro-POP",
+    "manufacturer": "Elbit Systems",
+    "description": "Ultra-compact multi-sensor payload at 1.5 kg for small tactical UAS. Lighter variant of the Mini-POP optimized for Group 1–2 platforms. Maintains cooled thermal imaging capability in a significantly smaller form factor.",
+    "link": "https://elbitsystems.com/",
+    "approx_price": "$80,000–$150,000",
+    "resolution_h": 640,
+    "resolution_v": 480,
+    "pixel_pitch_um": 15,
+    "netd_mk": 30,
+    "spectral_band": "MWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 1500,
+    "lens_fov_deg": null,
+    "interface": "digital video / Ethernet",
+    "power_w": 20,
+    "subcategory": "gimbal",
+    "country": "Israel",
+    "compliance": [
+      "combat_proven"
+    ],
+    "tags": [
+      "cooled",
+      "mwir",
+      "multi_sensor",
+      "ultra_compact",
+      "group_1_2",
+      "tactical"
+    ],
+    "schema_data": {
+      "weight_g": 93
+    }
+  },
+  {
+    "pid": "TCAM-0020",
+    "category": "thermal_cameras",
+    "name": "Rafael TopLite",
+    "manufacturer": "Rafael Advanced Defense Systems",
+    "description": "Large-format (15-20 inch) multi-sensor turret for medium-altitude UAS platforms. Integrated into Hermes 450/900 and similar MALE UAS. Features cooled MWIR/LWIR thermal, HD EO, LRF, and laser designator. Combat-proven in multiple theaters. STANAG-compliant video outputs.",
+    "link": "https://www.rafael.co.il/",
+    "approx_price": "$500,000–$1,500,000",
+    "resolution_h": 1280,
+    "resolution_v": 1024,
+    "pixel_pitch_um": 15,
+    "netd_mk": 20,
+    "spectral_band": "MWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 30000,
+    "lens_fov_deg": null,
+    "interface": "HD-SDI / Ethernet / MIL-STD-1553",
+    "power_w": 300,
+    "subcategory": "gimbal",
+    "country": "Israel",
+    "compliance": [
+      "combat_proven"
+    ],
+    "tags": [
+      "cooled",
+      "mwir",
+      "multi_sensor",
+      "lrf",
+      "laser_designator",
+      "male_uas",
+      "hermes",
+      "stanag"
+    ],
+    "schema_data": {
+      "weight_g": 105
+    }
+  },
+  {
+    "pid": "TCAM-0021",
+    "category": "thermal_cameras",
+    "name": "Aselsan ASELFLIR-600",
+    "manufacturer": "Aselsan",
+    "description": "Turkey's flagship indigenous EO/IR turret with 1280x1024 HD cooled MWIR sensor, 325mm Cassegrain optics, 4-axis gimbal stabilization, and AI-enabled target recognition. Entered serial production early 2026. Eliminates Turkey's dependence on foreign EO/IR systems. Designed for TB3, AKSUNGUR, and ANKA-3 UAS platforms.",
+    "link": "https://www.aselsan.com.tr/",
+    "approx_price": "$300,000–$800,000",
+    "resolution_h": 1280,
+    "resolution_v": 1024,
+    "pixel_pitch_um": 15,
+    "netd_mk": 22,
+    "spectral_band": "MWIR",
+    "frame_rate_hz": 60,
+    "weight_g": 45000,
+    "lens_fov_deg": null,
+    "interface": "digital video / Ethernet / RS-422",
+    "power_w": 350,
+    "subcategory": "gimbal",
+    "country": "Turkey",
+    "compliance": [
+      "nato_member"
+    ],
+    "tags": [
+      "cooled",
+      "mwir",
+      "hd",
+      "4_axis_gimbal",
+      "ai_target_recognition",
+      "cassegrain_optics",
+      "indigenous",
+      "serial_production_2026"
+    ],
+    "schema_data": {
+      "weight_g": 108
+    }
+  },
+  {
+    "pid": "TCAM-0022",
+    "category": "thermal_cameras",
+    "name": "Aselsan CATS",
+    "manufacturer": "Aselsan",
+    "description": "Common aperture targeting system family for Turkish tactical UAS. Multiple variants from compact sUAS payloads to full multi-sensor turrets. Proven on Bayraktar TB2 and ANKA platforms. Features uncooled and cooled thermal variants with integrated laser systems.",
+    "link": "https://www.aselsan.com.tr/",
+    "approx_price": "$100,000–$300,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 15,
+    "netd_mk": 30,
+    "spectral_band": "MWIR",
+    "frame_rate_hz": 50,
+    "weight_g": 15000,
+    "lens_fov_deg": null,
+    "interface": "digital video / Ethernet",
+    "power_w": 120,
+    "subcategory": "gimbal",
+    "country": "Turkey",
+    "compliance": [
+      "combat_proven",
+      "nato_member"
+    ],
+    "tags": [
+      "cooled",
+      "mwir",
+      "multi_sensor",
+      "tb2",
+      "anka",
+      "laser_designator",
+      "common_aperture"
+    ],
+    "schema_data": {
+      "weight_g": 108
+    }
+  },
+  {
+    "pid": "TCAM-0023",
+    "category": "thermal_cameras",
+    "name": "Workswell WIRIS Pro",
+    "manufacturer": "Workswell",
+    "description": "Fully radiometric dual-sensor drone thermal camera with 640x512 LWIR at 50 mK sensitivity (30 mK optional) and Super Resolution to 1266x1010. Full HD RGB camera with 10x optical zoom. Runs WIRIS OS for full in-flight control. Under 430g with internal 128/256 GB SSD. MAVLink compatible. Czech/EU manufactured — the go-to non-Chinese integrated thermal payload for commercial drone operations.",
+    "link": "https://workswell.eu/thermal-drone-camera-inspection-wiris-pro/",
+    "approx_price": "$8,000–$15,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 17,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 430,
+    "lens_fov_deg": [
+      69,
+      45,
+      32,
+      18
+    ],
+    "interface": "Ethernet (RJ45) / USB / Wi-Fi / MAVLink / UART / CAN",
+    "power_w": 6,
+    "subcategory": "integrated_payload",
+    "country": "Czech Republic",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "uncooled",
+      "lwir",
+      "radiometric",
+      "super_resolution",
+      "wiris_os",
+      "mavlink",
+      "ssd_internal",
+      "10x_zoom_rgb",
+      "eu_nato"
+    ],
+    "schema_data": {
+      "weight_g": 102
+    }
+  },
+  {
+    "pid": "TCAM-0024",
+    "category": "thermal_cameras",
+    "name": "Workswell WIRIS Pro Sc",
+    "manufacturer": "Workswell",
+    "description": "Scientific-grade variant of the WIRIS Pro with standard 30 mK sensitivity (vs 50 mK on Pro). Each unit calibrated in climatic chamber for precision temperature measurement across operating conditions. Designed for research applications requiring highest accuracy: geological surveys, environmental monitoring, precision agriculture. Under 450g.",
+    "link": "https://workswell.eu/thermal-drone-camera-research-wiris-pro-sc/",
+    "approx_price": "$12,000–$18,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 17,
+    "netd_mk": 30,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 450,
+    "lens_fov_deg": [
+      69,
+      45,
+      32,
+      18
+    ],
+    "interface": "Ethernet (RJ45) / USB / Wi-Fi / MAVLink / UART / CAN",
+    "power_w": 6,
+    "subcategory": "integrated_payload",
+    "country": "Czech Republic",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "uncooled",
+      "lwir",
+      "radiometric",
+      "scientific_grade",
+      "climate_calibrated",
+      "30mk",
+      "precision_agriculture",
+      "research"
+    ],
+    "schema_data": {
+      "weight_g": 94
+    }
+  },
+  {
+    "pid": "TCAM-0025",
+    "category": "thermal_cameras",
+    "name": "Workswell WIRIS Enterprise",
+    "manufacturer": "Workswell",
+    "description": "Multi-sensor aerial camera with 640x512 thermal (Super Resolution to 1266x1010), 16MP RGB for mapping, and Full HD with 10x zoom. Designed for security, firefighting, forestry, and environmental applications. WIRIS OS with full in-flight control and streaming. Ethernet integration for command and data.",
+    "link": "https://workswell.eu/infrared-drone-camera-inspection-wiris-enterprise/",
+    "approx_price": "$10,000–$16,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 17,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 470,
+    "lens_fov_deg": [
+      69,
+      45,
+      32,
+      18
+    ],
+    "interface": "Ethernet (RJ45) / USB / Wi-Fi / MAVLink",
+    "power_w": 7,
+    "subcategory": "integrated_payload",
+    "country": "Czech Republic",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "uncooled",
+      "lwir",
+      "multi_sensor",
+      "16mp_rgb",
+      "wiris_os",
+      "security",
+      "firefighting",
+      "mapping"
+    ],
+    "schema_data": {
+      "weight_g": 106
+    }
+  },
+  {
+    "pid": "TCAM-0026",
+    "category": "thermal_cameras",
+    "name": "Gremsy Vio F1",
+    "manufacturer": "Gremsy",
+    "description": "Multi-sensor gimbal payload integrating FLIR Boson 640 thermal core, Sony 4K camera with 20x optical zoom, and 2,400m laser rangefinder. Total weight 854g. F1 variant assembled in the US with FLIR Boson is NDAA-compliant. Designed for inspection, security, and search and rescue on commercial drone platforms.",
+    "link": "https://gremsy.com/",
+    "approx_price": "$12,000–$20,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 12,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 854,
+    "lens_fov_deg": null,
+    "interface": "HDMI / IP / serial",
+    "power_w": 15,
+    "subcategory": "gimbal",
+    "country": "Vietnam",
+    "compliance": [
+      "ndaa"
+    ],
+    "tags": [
+      "flir_boson_640",
+      "4k_zoom_20x",
+      "lrf_2400m",
+      "stabilized_gimbal",
+      "ndaa_us_assembled",
+      "sar",
+      "inspection"
+    ],
+    "schema_data": {
+      "weight_g": 98
+    }
+  },
+  {
+    "pid": "TCAM-0027",
+    "category": "thermal_cameras",
+    "name": "Lynred Pico384",
+    "manufacturer": "Lynred",
+    "description": "Compact uncooled LWIR detector core at 384x288 resolution with 17μm pixel pitch. Manufactured by Lynred (50% Thales / 50% Safran joint venture), the leading European IR detector foundry. Designed as OEM building block for European/NATO defense programs requiring sovereign supply chain.",
+    "link": "https://www.lynred.com/",
+    "approx_price": "$1,000–$3,000",
+    "resolution_h": 384,
+    "resolution_v": 288,
+    "pixel_pitch_um": 17,
+    "netd_mk": 50,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 50,
+    "weight_g": 5,
+    "lens_fov_deg": null,
+    "interface": "analog / CMOS",
+    "power_w": 0.3,
+    "subcategory": "oem_core",
+    "country": "France",
+    "compliance": [
+      "ndaa",
+      "eu_sovereign"
+    ],
+    "tags": [
+      "uncooled",
+      "lwir",
+      "detector_core",
+      "thales_safran",
+      "european_sovereign",
+      "nato"
+    ],
+    "schema_data": {
+      "weight_g": 95
+    }
+  },
+  {
+    "pid": "TCAM-0028",
+    "category": "thermal_cameras",
+    "name": "Lynred ATom1024",
+    "manufacturer": "Lynred",
+    "description": "High-resolution uncooled LWIR detector with 1024x768 resolution. Part of Lynred's ATom family spanning from 160x120 to 1280x1024 formats across LWIR, MWIR, and SWIR spectral bands. European sovereign IR supply for defense and commercial programs. Thales/Safran JV ensures NATO-aligned supply chain.",
+    "link": "https://www.lynred.com/",
+    "approx_price": "$5,000–$10,000",
+    "resolution_h": 1024,
+    "resolution_v": 768,
+    "pixel_pitch_um": 12,
+    "netd_mk": 40,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 10,
+    "lens_fov_deg": null,
+    "interface": "CMOS / MIPI",
+    "power_w": 0.5,
+    "subcategory": "oem_core",
+    "country": "France",
+    "compliance": [
+      "ndaa",
+      "eu_sovereign"
+    ],
+    "tags": [
+      "uncooled",
+      "lwir",
+      "high_resolution",
+      "1024x768",
+      "detector_core",
+      "thales_safran",
+      "european_sovereign"
+    ],
+    "schema_data": {
+      "weight_g": 91
+    }
+  },
+  {
+    "pid": "TCAM-0029",
+    "category": "thermal_cameras",
+    "name": "Leonardo DRS IR Systems",
+    "manufacturer": "Leonardo DRS",
+    "description": "Defense-grade IR detector and camera systems for military UAS and vehicle programs. Leonardo DRS (US subsidiary of Italian Leonardo S.p.A.) manufactures advanced cooled and uncooled focal plane arrays for US defense prime contractors. Products include Talon uncooled cores and cooled MWIR/LWIR systems for tactical to strategic ISR.",
+    "link": "https://www.leonardodrs.com/",
+    "approx_price": "$10,000–$500,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 12,
+    "netd_mk": 25,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 60,
+    "weight_g": null,
+    "lens_fov_deg": null,
+    "interface": "Camera Link / GigE / MIPI",
+    "power_w": null,
+    "subcategory": "defense_isr",
+    "country": "United States",
+    "compliance": [
+      "ndaa",
+      "itar"
+    ],
+    "tags": [
+      "cooled",
+      "uncooled",
+      "lwir",
+      "mwir",
+      "defense_grade",
+      "fpa_manufacturer",
+      "us_manufactured",
+      "prime_contractor"
+    ],
+    "schema_data": {
+      "weight_g": 92
+    }
+  },
+  {
+    "pid": "TCAM-0030",
+    "category": "thermal_cameras",
+    "name": "InfiRay Micro III 640",
+    "manufacturer": "InfiRay (iRay Technology)",
+    "description": "Budget-mid OEM uncooled LWIR core at 640x512 resolution with 12μm pixel pitch and sub-25 mK NETD. Competitive sensitivity at a fraction of Western core pricing. Dominant in Chinese FPV drone and commercial drone markets. NOT NDAA compliant — Chinese origin with potential NDAA ban implications.",
+    "link": "https://www.infiray.com/",
+    "approx_price": "$800–$2,000",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "pixel_pitch_um": 12,
+    "netd_mk": 25,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 25,
+    "weight_g": 20,
+    "lens_fov_deg": null,
+    "interface": "MIPI / CMOS / USB",
+    "power_w": 0.4,
+    "subcategory": "oem_core",
+    "country": "China",
+    "compliance": [
+      "not_ndaa"
+    ],
+    "tags": [
+      "uncooled",
+      "lwir",
+      "budget",
+      "oem_core",
+      "chinese",
+      "fpv_drone_market",
+      "high_sensitivity"
+    ],
+    "schema_data": {
+      "weight_g": 104
+    }
+  },
+  {
+    "pid": "TCAM-0031",
+    "category": "thermal_cameras",
+    "name": "DJI Zenmuse H30T",
+    "manufacturer": "DJI",
+    "description": "Integrated quad-sensor payload with 1280x1024 radiometric thermal, wide-angle and zoom visible cameras, and laser rangefinder. Designed for DJI Matrice 350 RTK. Industry-leading commercial drone thermal payload by market share. NOT NDAA compliant — Chinese origin, restricted for government use.",
+    "link": "https://www.dji.com/zenmuse-h30",
+    "approx_price": "$10,000–$16,000",
+    "resolution_h": 1280,
+    "resolution_v": 1024,
+    "pixel_pitch_um": 12,
+    "netd_mk": 30,
+    "spectral_band": "LWIR",
+    "frame_rate_hz": 30,
+    "weight_g": 920,
+    "lens_fov_deg": [
+      40,
+      58
+    ],
+    "interface": "proprietary DJI",
+    "power_w": 18,
+    "subcategory": "integrated_payload",
+    "country": "China",
+    "compliance": [
+      "not_ndaa"
+    ],
+    "tags": [
+      "uncooled",
+      "lwir",
+      "quad_sensor",
+      "radiometric",
+      "lrf",
+      "dji_matrice",
+      "market_leader",
+      "chinese",
+      "government_restricted"
+    ],
+    "schema_data": {
+      "weight_g": 109
+    }
+  },
+  {
+    "pid": "CAM-UA-Seek-UAV-Тепловізор-U",
+    "category": "thermal_cameras",
+    "name": "Тепловізор UAV 256",
+    "manufacturer": "Seek UAV",
+    "country": "Ukraine",
+    "approx_price_usd": 207.32,
+    "approx_price_uah": 8500.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "thermal",
+      "ukraine"
+    ],
+    "approx_price": 207.32,
+    "description": "Thermal camera by Seek UAV. mK NETD."
+  },
+  {
+    "pid": "CAM-UA-Seek-UAV-Тепловізор-U",
+    "category": "thermal_cameras",
+    "name": "Тепловізор UAV 256 Duo",
+    "manufacturer": "Seek UAV",
+    "country": "Ukraine",
+    "approx_price_usd": 292.68,
+    "approx_price_uah": 12000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "thermal",
+      "ukraine"
+    ],
+    "approx_price": 292.68,
+    "description": "Thermal camera by Seek UAV. mK NETD."
+  },
+  {
+    "pid": "CAM-UA-Seek-UAV-Тепловізор-S",
+    "category": "thermal_cameras",
+    "name": "Тепловізор Seek UAV 384",
+    "manufacturer": "Seek UAV",
+    "country": "Ukraine",
+    "approx_price_usd": 390.24,
+    "approx_price_uah": 16000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "thermal",
+      "ukraine"
+    ],
+    "approx_price": 390.24,
+    "description": "Thermal camera by Seek UAV. mK NETD."
+  },
+  {
+    "pid": "CAM-UA-Seek-UAV-Тепловізор-S",
+    "category": "thermal_cameras",
+    "name": "Тепловізор Seek UAV 640",
+    "manufacturer": "Seek UAV",
+    "country": "Ukraine",
+    "approx_price_usd": 536.59,
+    "approx_price_uah": 22000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "thermal",
+      "ukraine"
+    ],
+    "approx_price": 536.59,
+    "description": "Thermal camera by Seek UAV. mK NETD."
+  },
+  {
+    "pid": "CAM-UA-Odd-Syst-Курбас-256",
+    "category": "thermal_cameras",
+    "name": "Курбас-256",
+    "manufacturer": "Odd Systems",
+    "country": "Ukraine",
+    "approx_price_usd": 243.9,
+    "approx_price_uah": 10000.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "thermal",
+      "ukraine"
+    ],
+    "approx_price": 243.9,
+    "description": "Thermal camera by Odd Systems. mK NETD."
+  },
+  {
+    "pid": "CAM-UA-Odd-Syst-Курбас-384ᵅ",
+    "category": "thermal_cameras",
+    "name": "Курбас-384ᵅ",
+    "manufacturer": "Odd Systems",
+    "country": "Ukraine",
+    "approx_price_usd": 426.83,
+    "approx_price_uah": 17500.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "thermal",
+      "ukraine"
+    ],
+    "approx_price": 426.83,
+    "description": "Thermal camera by Odd Systems. mK NETD."
+  },
+  {
+    "pid": "THR-0032",
+    "category": "thermal_cameras",
+    "name": "Obsidian Sensors Miramar MVF",
+    "manufacturer": "Obsidian Sensors",
+    "country": "USA",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": false,
+      "note": "US-designed (San Diego). Qualcomm spin-out. Allied-nation manufacturing (Taiwan/Japan)."
+    },
+    "tags": [
+      "thermal",
+      "USA",
+      "NDAA"
+    ],
+    "description": "Ultra-lightweight 640x480 LWIR uncooled microbolometer thermal camera built on glass substrate (LAMP process). UVC output over USB-C, 1.2W power draw, 25g without lens. Magnesium housing. ~1ms latency. Made in USA (San Diego, CA). Spun out of Qualcomm 2017.",
+    "approx_price": 800,
+    "schema_data": {
+      "resolution": "640x480",
+      "pixel_pitch_um": 24,
+      "wavelength": "LWIR 8-14 um",
+      "frame_rate_hz": "30 or 9 (fixed at factory)",
+      "netd_mk": "<50",
+      "output_format": "UVC (YUY2)",
+      "connector": "USB-C",
+      "power": "Power over USB",
+      "power_consumption_w": 1.2,
+      "operational_temp_c": "-20 to +65 (extended: -20 to +85)",
+      "storage_temp_c": "-40 to +85",
+      "scene_dynamic_range_c": "-100 to +500 (600°C full)",
+      "latency_ms": "~1",
+      "time_to_first_image_s": "<5",
+      "pixel_operability_pct": ">99.5",
+      "sun_protection": "Yes (short-wave block coating on lens)",
+      "weight_g": 25,
+      "weight_with_backplate_g": 31,
+      "dimensions_mm": "35 x 32 x 32 (camera body, no lens)",
+      "lens_thread": "M25 x 0.5",
+      "hfov_degrees": "40 or 60",
+      "vibration_spec": "10-2000 Hz, 3 Grms",
+      "temperature_cycling": "-40 to +85°C, 1000 cycles",
+      "mounting": "1/4\"-20 screw mount",
+      "housing_material": "Magnesium",
+      "export_classification": {
+        "30hz": "ECCN 6A003.b.4.b",
+        "9hz": "ECCN 6A993"
+      },
+      "tags": [
+        "thermal",
+        "LWIR",
+        "microbolometer",
+        "uncooled",
+        "USB-C",
+        "UVC",
+        "lightweight",
+        "drone-payload",
+        "NDAA-friendly"
+      ]
+    },
+    "industry_data": {
+      "manufacturer_profile": {
+        "company": "Obsidian Sensors, Inc.",
+        "founded": 2017,
+        "origin": "Spun out of Qualcomm with IP and seed funding",
+        "ceo": "John Hong (co-founder)",
+        "hq": "5754 Pacific Center Blvd, Suite 201, San Diego, CA 92121",
+        "phone": "858-500-6050",
+        "website": "https://www.obsidiansensors.com",
+        "incubator": "EvoNexus (California nonprofit tech incubator)",
+        "employees": "~30-50 (estimated)",
+        "technology": "LAMP (Large Area MEMS Platform) — world's only uncooled microbolometers on glass substrates, fabricated in standard flat panel display fabs",
+        "innovation": "Described by Seek Thermal founder Dr. William Parrish as 'the largest innovation since the invention of the microbolometer itself'",
+        "competitors": [
+          "Teledyne FLIR",
+          "InfiRay",
+          "Lynred"
+        ]
+      },
+      "funding": {
+        "funding_source": "VC + Government contracts",
+        "seed": "Qualcomm IP + seed funding (2017)",
+        "series_a": "$24M (2019)",
+        "government_contracts": "$15M+ (US Army + SBIR awards)",
+        "total_raised": "$39M+ (disclosed)",
+        "investors": [
+          "Qualcomm Ventures",
+          "Himax Technologies",
+          "Hyundai Mobis",
+          "US Army",
+          "US National Science Foundation"
+        ],
+        "seeking": "Series B (to establish US packaging capability)",
+        "note": "Himax Technologies strategic investment (2024). Hyundai Mobis investor."
+      },
+      "manufacturing": {
+        "process": "LAMP — microbolometers on glass (not silicon). Uses standard flat panel display fabs.",
+        "partner_1": "Innolux (Taiwan) — T3 LTPS fab, Jhunan. VGA in production, SVGA (800x600) 17um available 2025.",
+        "partner_2": "JDI (Japan Display Inc.) — Gen 4.5 fab, Ishikawa, Japan. Targeting SXGA (1280x1024) 12um in 2026.",
+        "partner_3": "Quanta Computer (Taiwan) — VGA cameras with GMSL for automotive.",
+        "capacity": "Each fab capable of 100M+ focal planes per year",
+        "country": "USA (design) + Taiwan/Japan (fab)",
+        "packaging": "Wafer-level vacuum packaging. US packaging facility planned (Series B)."
+      },
+      "product_roadmap": {
+        "current_vga": "640x480, 24um pixel pitch — shipping to customers",
+        "svga_2025": "800x600, 17um pixel pitch — 50% resolution increase at same price",
+        "sxga_2026": "1280x1024, 12um pixel pitch — via JDI partnership",
+        "hd_future": "1920x1080 planned",
+        "price_target": "VGA sensor well below $200 at volume"
+      },
+      "contracts": [
+        {
+          "program": "US Army",
+          "note": "Multiple contracts to accelerate high-res thermal sensor development"
+        },
+        {
+          "program": "SBIR awards",
+          "note": "NSF + DoD SBIR funding for LAMP technology"
+        },
+        {
+          "program": "Quanta Computer automotive",
+          "note": "GMSL-connected VGA cameras for PAEB/ADAS (2029 NHTSA mandate)"
+        }
+      ],
+      "markets": [
+        "Security/surveillance",
+        "Defense (night vision, drones)",
+        "Automotive (ADAS/AEB)",
+        "Industrial inspection",
+        "Robotics"
+      ],
+      "compliance": {
+        "ndaa_compliant": true,
+        "note": "US-designed (San Diego), Qualcomm spin-out. ECCN 6A003.b.4.b (30Hz) / 6A993 (9Hz). No adversary-nation components. Manufacturing partners are Taiwan (Innolux) and Japan (JDI) — both allied nations.",
+        "blue_uas": false,
+        "blue_uas_note": "Not on Blue UAS list (component, not drone platform). But NDAA-compliant as a payload sensor."
+      }
+    },
+    "source": "obsidiansensors.com"
+  },
+  {
+    "pid": "THR-0033",
+    "name": "Obsidian Sensors Miramar MVF (9 Hz)",
+    "manufacturer": "Obsidian Sensors",
+    "description": "9 Hz version of the Miramar MVF thermal camera. Same 640x480 LWIR sensor, lower frame rate for reduced export control restrictions (ECCN 6A993 vs 6A003.b.4.b for 30Hz version). Ideal for non-defense applications where ITAR is a concern.",
+    "category": "thermal_cameras",
+    "approx_price": 600,
+    "schema_data": {
+      "resolution": "640x480",
+      "pixel_pitch_um": 24,
+      "wavelength": "LWIR 8-14 um",
+      "frame_rate_hz": 9,
+      "netd_mk": "<50",
+      "output_format": "UVC (YUY2)",
+      "connector": "USB-C",
+      "power": "Power over USB",
+      "power_consumption_w": 1.2,
+      "latency_ms": "~1",
+      "weight_g": 25,
+      "dimensions_mm": "35 x 32 x 32",
+      "hfov_degrees": "40 or 60",
+      "mounting": "1/4\"-20 screw mount",
+      "housing_material": "Magnesium",
+      "export_classification": "ECCN 6A993 (lower restriction than 30Hz)",
+      "tags": [
+        "thermal",
+        "LWIR",
+        "9Hz",
+        "low-ITAR",
+        "USB-C",
+        "drone-payload"
+      ]
+    },
+    "country": "USA",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": false,
+      "note": "US-designed (San Diego). Qualcomm spin-out. Allied-nation manufacturing (Taiwan/Japan)."
+    },
+    "tags": [
+      "USA",
+      "NDAA"
+    ],
+    "source": "obsidiansensors.com"
+  },
+  {
+    "pid": "THR-0034",
+    "name": "Obsidian Sensors SVGA Thermal Module (800x600)",
+    "manufacturer": "Obsidian Sensors",
+    "description": "Next-gen SVGA resolution thermal imaging sensor on 17um pixel pitch. 50% higher resolution than VGA Miramar at same price point. Fabricated at Innolux T3 LTPS fab. Wafer-level vacuum packaged. Available late 2025.",
+    "category": "thermal_cameras",
+    "approx_price": 800,
+    "schema_data": {
+      "resolution": "800x600",
+      "pixel_pitch_um": 17,
+      "wavelength": "LWIR 8-14 um",
+      "frame_rate_hz": 30,
+      "netd_mk": "<50",
+      "output_format": "UVC (YUY2)",
+      "connector": "USB-C",
+      "power": "Power over USB",
+      "power_consumption_w": 1.5,
+      "weight_g": 30,
+      "manufacturing": "Innolux T3 LTPS fab, Jhunan, Taiwan",
+      "status": "Available late 2025",
+      "tags": [
+        "thermal",
+        "LWIR",
+        "SVGA",
+        "17um",
+        "high-resolution",
+        "drone-payload"
+      ]
+    },
+    "country": "USA",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": false,
+      "note": "US-designed (San Diego). Qualcomm spin-out. Allied-nation manufacturing (Taiwan/Japan)."
+    },
+    "tags": [
+      "USA",
+      "NDAA"
+    ],
+    "source": "obsidiansensors.com"
+  },
+  {
+    "pid": "THR-0035",
+    "name": "Obsidian Sensors SXGA Thermal Module (1280x1024)",
+    "manufacturer": "Obsidian Sensors",
+    "description": "High-resolution SXGA uncooled thermal sensor on 12um pixel pitch. Fabricated at JDI Gen 4.5 fab in Ishikawa, Japan. New Palomar 2 ROIC with 1344-channel readout at 60Hz. Thermolyte sensor material (advantage over VOx). Planned for 2026.",
+    "category": "thermal_cameras",
+    "approx_price": 1200,
+    "schema_data": {
+      "resolution": "1280x1024",
+      "pixel_pitch_um": 12,
+      "wavelength": "LWIR 8-14 um",
+      "frame_rate_hz": 60,
+      "roic": "Palomar 2 (1344-channel, 60Hz, integrated NUC + ISP + secure auth)",
+      "sensor_material": "Thermolyte (proprietary, advantage over VOx)",
+      "manufacturing": "JDI Gen 4.5 fab, Ishikawa, Japan",
+      "status": "Planned 2026",
+      "note": "Developed under US Army SBIR contract",
+      "tags": [
+        "thermal",
+        "LWIR",
+        "SXGA",
+        "12um",
+        "high-resolution",
+        "defense",
+        "Palomar-2"
+      ]
+    },
+    "country": "USA",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": false,
+      "note": "US-designed (San Diego). Qualcomm spin-out. Allied-nation manufacturing (Taiwan/Japan)."
+    },
+    "tags": [
+      "USA",
+      "NDAA"
+    ],
+    "source": "obsidiansensors.com"
+  },
+  {
+    "pid": "THR-0036",
+    "name": "Obsidian Sensors VGA GMSL Automotive Camera",
+    "manufacturer": "Obsidian Sensors",
+    "description": "VGA thermal camera with GMSL (Gigabit Multimedia Serial Link) interface, co-developed with Quanta Computer for automotive ADAS/AEB applications. Designed for 2029 NHTSA PAEB mandate. RGB+LWIR fusion via AI vision processor.",
+    "category": "thermal_cameras",
+    "approx_price": 500,
+    "schema_data": {
+      "resolution": "640x480",
+      "pixel_pitch_um": 24,
+      "wavelength": "LWIR 8-14 um",
+      "output_format": "GMSL (Gigabit Multimedia Serial Link)",
+      "interface": "GMSL — automotive standard, not USB",
+      "partner": "Quanta Computer (TWSE: 2382.TW)",
+      "application": "Automotive ADAS/AEB — 2029 NHTSA PAEB mandate",
+      "features": [
+        "RGB/LWIR fusion",
+        "AI vision processing",
+        "Pedestrian AEB",
+        "In-cabin vital sign detection"
+      ],
+      "status": "Demonstrated at Autosens USA 2024 Detroit",
+      "tags": [
+        "thermal",
+        "LWIR",
+        "GMSL",
+        "automotive",
+        "ADAS",
+        "AEB"
+      ]
+    },
+    "country": "USA",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": false,
+      "note": "US-designed (San Diego). Qualcomm spin-out. Allied-nation manufacturing (Taiwan/Japan)."
+    },
+    "tags": [
+      "USA",
+      "NDAA"
+    ],
+    "source": "obsidiansensors.com"
+  },
+  {
+    "pid": "THR-0037",
+    "name": "Obsidian Sensors LAMP Focal Plane Array (OEM)",
+    "manufacturer": "Obsidian Sensors",
+    "description": "OEM focal plane array module — the bare microbolometer-on-glass sensor for integration into custom camera designs. Glass substrate with flex-on-glass bonded ROIC. Available in VGA (640x480, 24um) and SVGA (800x600, 17um). For camera OEMs and defense integrators.",
+    "category": "thermal_cameras",
+    "approx_price": 300,
+    "schema_data": {
+      "type": "OEM focal plane array (bare sensor module)",
+      "resolutions_available": [
+        "640x480 (24um)",
+        "800x600 (17um)",
+        "1280x1024 (12um, 2026)"
+      ],
+      "substrate": "Glass (not silicon) — LAMP process",
+      "bonding": "Flex-on-glass (FoG) ROIC bonding",
+      "packaging": "Wafer-level vacuum packaging",
+      "manufacturing_capacity": "100M+ focal planes per year per fab",
+      "fabs": [
+        "Innolux (Taiwan)",
+        "JDI (Japan)"
+      ],
+      "tags": [
+        "OEM",
+        "FPA",
+        "microbolometer",
+        "glass-substrate",
+        "LAMP",
+        "defense-integrator"
+      ]
+    },
+    "country": "USA",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": false,
+      "note": "US-designed (San Diego). Qualcomm spin-out. Allied-nation manufacturing (Taiwan/Japan)."
+    },
+    "tags": [
+      "USA",
+      "NDAA"
+    ],
+    "source": "obsidiansensors.com"
+  },
+  {
+    "pid": "CAM-UA-Odd-Syst-Курбас-640ᵅ",
+    "category": "thermal_cameras",
+    "name": "Курбас-640ᵅ",
+    "manufacturer": "Odd Systems",
+    "country": "Ukraine",
+    "approx_price_usd": 548.78,
+    "approx_price_uah": 22500.0,
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "thermal",
+      "ukraine"
+    ]
+  }
+]

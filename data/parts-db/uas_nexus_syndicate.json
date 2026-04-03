@@ -1,0 +1,214 @@
+[
+  {
+    "id": "mfr_uas_nexus",
+    "name": "UAS Nexus",
+    "type": [
+      "manufacturer",
+      "dealer"
+    ],
+    "hq": "Salt Lake City, UT, USA",
+    "country": "United States",
+    "founded_by": "Bobby Sakaki",
+    "head_of_mechanical": "Ryan LaBarre",
+    "website": "https://syndicate.uasnexus.com/",
+    "ndaa_compliant": true,
+    "blue_uas_aligned": true,
+    "manufacturer": {
+      "description": "Designs and manufactures the Platform One modular FPV ecosystem. MOSA-first, attritable drone platform built for interoperability across Western drone technologies.",
+      "platforms": [
+        "MDL-2044"
+      ],
+      "focus": "Modular tactical FPV platforms with decentralized manufacturing capability",
+      "production_capacity": "10,000+ aircraft/month (decentralized manufacturing)",
+      "design_philosophy": "MOSA-first, attritable, interoperable, COTS-compatible"
+    },
+    "dealer": {
+      "storefront": "UAS Nexus Syndicate",
+      "store_url": "https://syndicate.uasnexus.com/",
+      "store_type": "Members-only marketplace (membership request required)",
+      "description": "Curated marketplace of NDAA and Blue UAS compliant components. All parts vetted for Platform One compatibility and defense/enterprise use.",
+      "component_categories": [
+        "BlueUAS Components",
+        "Antennas",
+        "Batteries",
+        "Cameras",
+        "Computers",
+        "ESCs",
+        "Flight Controllers and Autopilots",
+        "Goggles",
+        "GPS",
+        "Motors",
+        "Radios and C2",
+        "Software",
+        "Transmitters",
+        "Other Components"
+      ],
+      "catalog": [
+        {
+          "name": "Doodle Labs NANO Mesh Rider Radio",
+          "original_manufacturer": "Doodle Labs",
+          "category": "radios",
+          "type": "Mesh datalink",
+          "notes": "Compact, low-SWaP datalink for small UxVs and swarms"
+        },
+        {
+          "name": "Doodle Labs MINI Mesh Rider Radio",
+          "original_manufacturer": "Doodle Labs",
+          "category": "radios",
+          "type": "Mesh datalink",
+          "mimo": "2x2",
+          "notes": "High-throughput control & video backhaul"
+        },
+        {
+          "name": "BlueSDR",
+          "original_manufacturer": "BlueSDR",
+          "category": "radios",
+          "type": "SDR module",
+          "notes": "Ultra-light SDR for signal monitoring and EW experimentation"
+        },
+        {
+          "name": "L3Harris SDR",
+          "original_manufacturer": "L3Harris",
+          "category": "radios",
+          "type": "SDR",
+          "notes": "Rugged SDR for contested RF environments"
+        },
+        {
+          "name": "Silvus StreamCaster",
+          "original_manufacturer": "Silvus Technologies",
+          "category": "radios",
+          "type": "Mesh radio",
+          "notes": "MIMO mesh radio for resilient long-range data links"
+        },
+        {
+          "name": "ORQA Ghost",
+          "original_manufacturer": "ORQA",
+          "category": "rc_links",
+          "type": "Digital RC link",
+          "frequency_ghz": 2.4,
+          "notes": "Low-latency digital RC"
+        },
+        {
+          "name": "TBS Crossfire / ELRS",
+          "original_manufacturer": "TBS",
+          "category": "rc_links",
+          "type": "Long-range RC link",
+          "notes": "Long-range control with robust LQ"
+        },
+        {
+          "name": "TBS Lucid H7",
+          "original_manufacturer": "TBS",
+          "category": "flight_controllers",
+          "mcu": "STM32H7",
+          "form_factor": "30x30mm",
+          "notes": "High-performance H7 FC. Ample UARTs."
+        },
+        {
+          "name": "BrainFPV RADIX 2 HD",
+          "original_manufacturer": "BrainFPV",
+          "category": "flight_controllers",
+          "mcu": "STM32H7",
+          "form_factor": "30x30mm",
+          "notes": "Digital-video friendly I/O. OSD/telemetry support."
+        },
+        {
+          "name": "Orqa F405 3030 FC",
+          "original_manufacturer": "ORQA",
+          "category": "flight_controllers",
+          "mcu": "STM32F405",
+          "form_factor": "30x30mm",
+          "notes": "Reliable F405-class controller for training and testing"
+        },
+        {
+          "name": "Raspberry Pi Compute Module 5",
+          "original_manufacturer": "Raspberry Pi Foundation",
+          "category": "companion_compute",
+          "type": "Companion compute module",
+          "notes": "Pairs with carrier boards for flexible I/O. Autonomy, logging, networking."
+        },
+        {
+          "name": "ModalAI VOXL 2",
+          "original_manufacturer": "ModalAI",
+          "category": "companion_compute",
+          "type": "Integrated AI compute + flight control",
+          "blue_uas_aligned": true,
+          "notes": "On-board AI accelerator SoC"
+        },
+        {
+          "name": "ModalAI VOXL 2 Mini",
+          "original_manufacturer": "ModalAI",
+          "category": "companion_compute",
+          "type": "Compact companion compute + flight control",
+          "form_factor": "42x42mm",
+          "blue_uas_aligned": true,
+          "notes": "Low SWaP. Integrates with Doodle Labs radios."
+        },
+        {
+          "name": "NDAA-Compliant FPV Camera",
+          "original_manufacturer": "Various",
+          "category": "cameras",
+          "notes": "NDAA-compliant supply chain camera for FPV"
+        },
+        {
+          "name": "Low-light EO Camera",
+          "original_manufacturer": "Various",
+          "category": "cameras",
+          "type": "Large-pixel CMOS",
+          "notes": "Enhanced sensitivity for dawn/dusk ops"
+        },
+        {
+          "name": "Perception Camera",
+          "original_manufacturer": "Various",
+          "category": "cameras",
+          "type": "Vision sensor for SLAM/VIO",
+          "notes": "Global/rolling shutter options. Obstacle detection."
+        },
+        {
+          "name": "Downward LiDAR",
+          "original_manufacturer": "Various",
+          "category": "sensors",
+          "type": "Altitude/terrain sensor",
+          "notes": "Short-to-mid range. Precision landing aid."
+        },
+        {
+          "name": "Orqa FPV.One Pilot Goggles",
+          "original_manufacturer": "ORQA",
+          "category": "goggles",
+          "price_usd": 699.99,
+          "notes": "Analog FPV goggles"
+        },
+        {
+          "name": "Fat Shark Aura Analog FPV Camera",
+          "original_manufacturer": "Fat Shark",
+          "category": "cameras",
+          "notes": "Analog FPV camera"
+        },
+        {
+          "name": "Gremsy G-Hadron 640R",
+          "original_manufacturer": "Gremsy",
+          "category": "cameras",
+          "notes": "Higher-end camera/gimbal option"
+        },
+        {
+          "name": "Auterion Skynode-S",
+          "original_manufacturer": "Auterion",
+          "category": "companion_compute",
+          "notes": "Platform One compatible autopilot/compute"
+        },
+        {
+          "name": "ARK FPV",
+          "original_manufacturer": "ARK Electronics",
+          "category": "flight_controllers",
+          "notes": "Platform One compatible flight controller"
+        }
+      ]
+    },
+    "services": [
+      "BlueUAS Compliance",
+      "Engineering (custom integration)",
+      "Go-to-Market (GTM)",
+      "Regulatory",
+      "Training"
+    ]
+  }
+]

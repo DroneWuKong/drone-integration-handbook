@@ -39,14 +39,19 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 34.99,
+    "schema_data": {
+      "weight_g": 8
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1001",
     "category": "flight_controllers",
     "name": "Holybro Pixhawk 6C - Aluminum Case",
     "manufacturer": "Holybro",
-    "description": "The Holybro Pixhawk 6C - Aluminum Case is the latest update to the successful family of Pixhawk\u00ae flight controllers, based on the Pixhawk\u00ae FMUv6C Open Standard and Connector Standard",
+    "description": "The Holybro Pixhawk 6C - Aluminum Case is the latest update to the successful family of Pixhawk® flight controllers, based on the Pixhawk® FMUv6C Open Standard and Connector Standard",
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-aluminum-case.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_pixhawk_6c_-_aluminum_case1.jpg",
     "compatibility": {
@@ -76,14 +81,21 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false,
+    "mcu_family": "H7",
+    "mcu": "STM32H743xx"
   },
   {
     "pid": "FC-1002",
     "category": "flight_controllers",
     "name": "Holybro Pixhawk 6C - Plastic Case",
     "manufacturer": "Holybro",
-    "description": "The Holybro Pixhawk 6C - Plastic Case is the latest update to the successful family of Pixhawk\u00ae flight controllers, based on the Pixhawk\u00ae FMUv6C Open Standard and Connector Standard.",
+    "description": "The Holybro Pixhawk 6C - Plastic Case is the latest update to the successful family of Pixhawk® flight controllers, based on the Pixhawk® FMUv6C Open Standard and Connector Standard.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-plastic-case.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro_pixhawk_6c_-_plastic_case4.jpg",
     "compatibility": {
@@ -113,7 +125,14 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 11
+    },
+    "is_aio": false,
+    "mcu_family": "H7",
+    "mcu": "STM32H743xx"
   },
   {
     "pid": "FC-1003",
@@ -155,7 +174,12 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 59.99,
+    "schema_data": {
+      "weight_g": 10
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1005",
@@ -171,7 +195,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "firmware_targets": "ArduPilot/Betaflight"
+    "firmware_targets": "ArduPilot/Betaflight",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1006",
@@ -189,7 +218,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 66,
+    "schema_data": {
+      "weight_g": 17
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1007",
@@ -205,7 +239,14 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "firmware_targets": "ArduPilot/Betaflight"
+    "firmware_targets": "ArduPilot/Betaflight",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 9
+    },
+    "is_aio": false,
+    "mcu_family": "H7",
+    "mcu": "STM32H757xx"
   },
   {
     "pid": "FC-1008",
@@ -253,14 +294,43 @@
     "cell_count_max": 6,
     "mcu": "STM32H743",
     "ndaa_compliant": true,
-    "manufacturing_country": "Croatia (EU)"
+    "manufacturing_country": "Croatia (EU)",
+    "approx_price": 89.99,
+    "schema_data": {
+      "mcu": "STM32H743",
+      "imu": "ICM-42688-P (dual)",
+      "barometer": "DPS310",
+      "osd": "AT7456E",
+      "mounting_mm": "30.5x30.5",
+      "weight_g": 9,
+      "bec_5v": "2A",
+      "bec_9v": "2A",
+      "firmware": "Betaflight",
+      "uarts": 7,
+      "uart_layout": {
+        "UART1": "VCP/USB (debug)",
+        "UART2": "DJI connector (TX2/RX2) — MSP for digital OSD",
+        "UART3": "TX3/RX3 pads — recommended for GPS",
+        "UART4": "TX4/RX4 pads — recommended for receiver (CRSF/ELRS)",
+        "UART5": "TX5 only — SmartAudio or ESC telemetry",
+        "UART6": "TX6/RX6 pads — available",
+        "UART7": "TX7/RX7 pads — available"
+      },
+      "motor_outputs": "M1-M4 (DShot600 capable)",
+      "connectors": "JST-GH for DJI, solder pads for rest",
+      "country": "Croatia (EU)",
+      "ndaa_compliant": true,
+      "betaflight_target": "ORQA_QUADCORE_H7",
+      "pinout_notes": "Top side: DJI connector, USB-C, boot button. Bottom side: solder pads for UARTs, motor signals, power, LED, buzzer. VBAT input via 4-in-1 ESC connection or direct solder."
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1009",
     "category": "flight_controllers",
     "name": "Lumenier LUX H743 Flight Controller - NDAA",
     "manufacturer": "Lumenier",
-    "description": "The Lumenier LUX H743 \u2013 NDAA Flight Controller features some of the latest sensors in drone technology, including the next-generation InvenSense ICM-45686 Gyro/Accelerometer, Infineon DPS368 barometer, and STMicroelectronics LIS2MDL magnetometer.",
+    "description": "The Lumenier LUX H743 – NDAA Flight Controller features some of the latest sensors in drone technology, including the next-generation InvenSense ICM-45686 Gyro/Accelerometer, Infineon DPS368 barometer, and STMicroelectronics LIS2MDL magnetometer.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/lumenier-lux-h743-flight-controller-ndaa.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-lux-h743-flight-controller---ndaa.jpg",
     "mcu_family": "H7",
@@ -295,7 +365,12 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 79.99,
+    "schema_data": {
+      "weight_g": 9
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1010",
@@ -343,7 +418,11 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 36,
+    "schema_data": {
+      "weight_g": 15
+    }
   },
   {
     "pid": "FC-1011",
@@ -407,7 +486,32 @@
     "manufacturing_country": "Croatia (EU)",
     "designed_for_stack": "Orqa 3030 ESC (ESC-1005)",
     "soft_mount_gummies": true,
-    "dfu_boot": true
+    "dfu_boot": true,
+    "approx_price": 33,
+    "schema_data": {
+      "mcu": "STM32F405",
+      "imu": "ICM-42688-P",
+      "barometer": "DPS310",
+      "osd": "AT7456E",
+      "mounting_mm": "30.5x30.5",
+      "weight_g": 14,
+      "bec_5v": "2A",
+      "firmware": "Betaflight",
+      "uarts": 5,
+      "uart_layout": {
+        "UART1": "VCP/USB",
+        "UART2": "TX2/RX2 — recommended for receiver",
+        "UART3": "TX3/RX3 — recommended for GPS",
+        "UART4": "TX4/RX4 — available",
+        "UART5": "TX5 — SmartAudio"
+      },
+      "motor_outputs": "M1-M4 (DShot600 capable)",
+      "country": "Croatia (EU)",
+      "ndaa_compliant": true,
+      "betaflight_target": "ORQA_3030LITE_F405",
+      "pinout_notes": "Designed to pair with Orqa 3030 70A ESC in a stack. 30.5mm mounting. Standard solder pad layout."
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1012",
@@ -449,7 +553,12 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 74,
+    "schema_data": {
+      "weight_g": 7
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1014",
@@ -497,7 +606,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1015",
@@ -518,14 +631,18 @@
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 66,
+    "schema_data": {
+      "weight_g": 10
+    }
   },
   {
     "pid": "FC-1016",
     "category": "flight_controllers",
     "name": "Flywoo GOKU ERVT 5-in-1 AIO - F405 FC + 1S 5A ESC + 400mw VTX + ELRS RX + OSD",
     "manufacturer": "Flywoo",
-    "description": "Flywoo GOKU ERVT 5-in-1 AIO\u00a0\u00a0\u2013 A revolutionary all-in-one solution.",
+    "description": "Flywoo GOKU ERVT 5-in-1 AIO  – A revolutionary all-in-one solution.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-ervt-5-in-1-aio-f405-fc-1s-5a-esc-400mw-vtx-elrs-rx-osd.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/g/o/goku-f405-ervt-2.jpg",
     "mcu_family": "F4",
@@ -566,7 +683,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 36,
+    "schema_data": {
+      "weight_g": 16
+    }
   },
   {
     "pid": "FC-1018",
@@ -614,7 +735,11 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight/ArduPilot/INAV"
+    "firmware_targets": "Betaflight/ArduPilot/INAV",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 16
+    }
   },
   {
     "pid": "FC-1020",
@@ -662,14 +787,18 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 43,
+    "schema_data": {
+      "weight_g": 12
+    }
   },
   {
     "pid": "FC-1021",
     "category": "flight_controllers",
     "name": "AxisFlying Argus F745 AIO - F745 FC + 40A 4-6S AM32 ESC",
     "manufacturer": "Axisflying",
-    "description": "The AxisFlying Argus F745 AIO - F745 FC + 40A 4-6S AM32 ESC\u00a0is a top-tier flight control system.",
+    "description": "The AxisFlying Argus F745 AIO - F745 FC + 40A 4-6S AM32 ESC is a top-tier flight control system.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/axisflying-argus-f745-aio-f745-fc-40a-4-6s-am32-esc.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/x/axisflying_f745_40a_aio_flight_controller_-_1.jpg",
     "mcu_family": "F7",
@@ -710,7 +839,11 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 53,
+    "schema_data": {
+      "weight_g": 4
+    }
   },
   {
     "pid": "FC-1022",
@@ -758,14 +891,18 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 26,
+    "schema_data": {
+      "weight_g": 15
+    }
   },
   {
     "pid": "FC-1024",
     "category": "flight_controllers",
     "name": "Lumenier LUX MINI F7 V2 Mini Flight Controller - ICM42688 - 20x20",
     "manufacturer": "Lumenier",
-    "description": "The Lumenier LUX MINI F7 V2 Mini Flight Controller packs powerful performance into a compact 5g, 20x20mm form factor \u2014 perfect for both micro and full-sized drones.",
+    "description": "The Lumenier LUX MINI F7 V2 Mini Flight Controller packs powerful performance into a compact 5g, 20x20mm form factor — perfect for both micro and full-sized drones.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/lumenier-lux-mini-f7-v2-mini-flight-controller-icm42688-20x20.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/l/u/lumenier-lux-mini-f7-v2-flight-controller-_thumbnail_1_.jpg",
     "mcu_family": "F7",
@@ -800,14 +937,19 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 31,
+    "schema_data": {
+      "weight_g": 2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1025",
     "category": "flight_controllers",
     "name": "TBS Lucid H7 Flight Controller - ICM42688 - NDAA",
     "manufacturer": "Triumph Manufacturing",
-    "description": "Unleash the full potential of your drone with the NDAA Compliant TBS Lucid H7 Flight Controller \u2014 engineered for peak performance and versatility.",
+    "description": "Unleash the full potential of your drone with the NDAA Compliant TBS Lucid H7 Flight Controller — engineered for peak performance and versatility.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/tbs-lucid-h7-flight-controller-icm42688-ndaa.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-lucid-h7-flight-controller---icm42688---ndaa-_image-6_.jpg",
     "mcu_family": "H7",
@@ -840,7 +982,12 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 71,
+    "schema_data": {
+      "weight_g": 7
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1026",
@@ -882,7 +1029,12 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 59,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1027",
@@ -930,7 +1082,11 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": 15
+    }
   },
   {
     "pid": "FC-1028",
@@ -972,7 +1128,12 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 78,
+    "schema_data": {
+      "weight_g": 6
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1029",
@@ -1014,7 +1175,12 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 74,
+    "schema_data": {
+      "weight_g": 11
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1030",
@@ -1062,7 +1228,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 16
+    }
   },
   {
     "pid": "FC-1032",
@@ -1110,14 +1280,18 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 6
+    }
   },
   {
     "pid": "FC-1033",
     "category": "flight_controllers",
     "name": "HDZero AIO5 - F4 FC + 5A 1S BLHeli_S ESC + ELRS + VTX - 25x25",
     "manufacturer": "HDZero",
-    "description": "The HDZero AIO5 is the world\u2019s first digital video AIO, enabling bind-and-fly 65mm whoops to weigh less than 19.4g.",
+    "description": "The HDZero AIO5 is the world’s first digital video AIO, enabling bind-and-fly 65mm whoops to weigh less than 19.4g.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/hdzero-aio5-f4-fc-5a-1s-blheli-s-esc-elrs-vtx-25x25.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero-aio5---f4-fc-_-5a-blheli_s-esc-_-elrs-_-vtx---25x25-_image-2_.jpg",
     "mcu_family": "F4",
@@ -1158,7 +1332,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": -2
+    }
   },
   {
     "pid": "FC-1034",
@@ -1203,7 +1381,11 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 26,
+    "schema_data": {
+      "weight_g": 12
+    }
   },
   {
     "pid": "FC-1035",
@@ -1246,7 +1428,12 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1036",
@@ -1294,7 +1481,11 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1037",
@@ -1342,14 +1533,18 @@
       "5 inch"
     ],
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1038",
     "category": "flight_controllers",
     "name": "DYS F722 Flight Controller - ICM42688P - 30x30",
     "manufacturer": "DYS",
-    "description": "The\u00a0DYS F7 Flight Controller features an STM32F722 MCU, an ICM42688P gyroscope, a BMP280 barometer, and an AT7456E OSD.",
+    "description": "The DYS F7 Flight Controller features an STM32F722 MCU, an ICM42688P gyroscope, a BMP280 barometer, and an AT7456E OSD.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/dys-f722-flight-controller-icm42688p-30x30.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/y/dys-f722-flight-controller---icm42688p---30x30-_image-1_.jpg",
     "mcu_family": "F7",
@@ -1384,7 +1579,12 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 45,
+    "schema_data": {
+      "weight_g": 7
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1039",
@@ -1432,7 +1632,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 41,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1040",
@@ -1474,7 +1678,12 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 26,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1041",
@@ -1514,7 +1723,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 17
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1042",
@@ -1562,7 +1776,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 50,
+    "schema_data": {
+      "weight_g": 3
+    }
   },
   {
     "pid": "FC-1043",
@@ -1610,7 +1828,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 17
+    }
   },
   {
     "pid": "FC-1044",
@@ -1658,7 +1880,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 24,
+    "schema_data": {
+      "weight_g": 9
+    }
   },
   {
     "pid": "FC-1046",
@@ -1706,7 +1932,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 31,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1047",
@@ -1748,7 +1978,12 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 41,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1052",
@@ -1796,7 +2031,11 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 8
+    }
   },
   {
     "pid": "FC-1054",
@@ -1844,7 +2083,11 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 40,
+    "schema_data": {
+      "weight_g": -2
+    }
   },
   {
     "pid": "FC-1058",
@@ -1892,7 +2135,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 25,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1059",
@@ -1934,7 +2181,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 66,
+    "schema_data": {
+      "weight_g": 9
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1060",
@@ -1976,7 +2228,12 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 8
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1062",
@@ -2016,7 +2273,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 7
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1063",
@@ -2031,7 +2293,12 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": 11
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1064",
@@ -2071,7 +2338,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 3
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1066",
@@ -2118,7 +2390,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 71,
+    "schema_data": {
+      "weight_g": 10
+    }
   },
   {
     "pid": "FC-1067",
@@ -2160,14 +2436,19 @@
     "firmware_targets": "Betaflight",
     "imu": "ICM42688P",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 25,
+    "schema_data": {
+      "weight_g": 9
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1069",
     "category": "flight_controllers",
     "name": "iFlight BLITZ F7 V1.2 Flight Controller",
     "manufacturer": "iFlight",
-    "description": "The\u00a0iFlight BLITZ F7\u00a0V1.1 Flight Controller now has a new gyro, improved circuit design, better components, and lower noise level!",
+    "description": "The iFlight BLITZ F7 V1.1 Flight Controller now has a new gyro, improved circuit design, better components, and lower noise level!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-blitz-f7-v1-2-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/l/blitz_f7_v1_2_m2.png",
     "mcu_family": "F7",
@@ -2202,14 +2483,19 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1070",
     "category": "flight_controllers",
     "name": "Happymodel X12 AIO 5-in-1 Board - F4 FC + 12A ESC",
     "manufacturer": "Happymodel",
-    "description": "The Happymodel X12\u00a0is a\u00a05-in-1\u00a0AIO board featuring an F4 Flight Controller, onbard 12A 4-in-1 ESC, 5.8GHz OpenVTX, and three different receiver options:\u00a0PNP, FrSky, or ELRS. This AIO is great for brushless whoops with its great RX an VTX range!",
+    "description": "The Happymodel X12 is a 5-in-1 AIO board featuring an F4 Flight Controller, onbard 12A 4-in-1 ESC, 5.8GHz OpenVTX, and three different receiver options: PNP, FrSky, or ELRS. This AIO is great for brushless whoops with its great RX an VTX range!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/happymodel-x12-aio-5-in-1-board-f4-fc-12a-esc.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-x12_1_.jpg",
     "mcu_family": "F4",
@@ -2249,7 +2535,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 27,
+    "schema_data": {
+      "weight_g": 17
+    }
   },
   {
     "pid": "FC-1071",
@@ -2297,7 +2587,11 @@
       "5 inch"
     ],
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 11
+    }
   },
   {
     "pid": "FC-1072",
@@ -2345,14 +2639,18 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 43,
+    "schema_data": {
+      "weight_g": 8
+    }
   },
   {
     "pid": "FC-1073",
     "category": "flight_controllers",
     "name": "Happymodel ExpressLRS F4 5A 5-in-1 AIO FC w/ Built-in 2.4GHz Rx",
     "manufacturer": "Happymodel",
-    "description": "The\u00a0Happymodel ExpressLRS F4\u00a0is the world's first AIO 5-in-1 whoop flight controller with a built-in high-performance 2.4GHz ELRS receiver. This F4 flight controller has a built-in 5A ESC, 5.8GHz VTX, and OSD. This AIO is made for 1S long-range and tiny whoops.",
+    "description": "The Happymodel ExpressLRS F4 is the world's first AIO 5-in-1 whoop flight controller with a built-in high-performance 2.4GHz ELRS receiver. This F4 flight controller has a built-in 5A ESC, 5.8GHz VTX, and OSD. This AIO is made for 1S long-range and tiny whoops.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/happymodel-expresslrs-f4-5a-5-in-1-aio-fc-w-built-in-2-4ghz-rx.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-expresslrs-f4-5a-5-in-1-aio-fc-w-built-in-2.4ghz-rx-front.jpg",
     "mcu_family": "F4",
@@ -2393,7 +2691,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 25,
+    "schema_data": {
+      "weight_g": 4
+    }
   },
   {
     "pid": "FC-1075",
@@ -2435,7 +2737,12 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 28,
+    "schema_data": {
+      "weight_g": 9
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1076",
@@ -2477,7 +2784,12 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 42,
+    "schema_data": {
+      "weight_g": 10
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1078",
@@ -2494,7 +2806,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "firmware_targets": "ArduPilot/Betaflight"
+    "firmware_targets": "ArduPilot/Betaflight",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1082",
@@ -2542,14 +2859,18 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 8
+    }
   },
   {
     "pid": "FC-1084",
     "category": "flight_controllers",
     "name": "HDZero AIO15 - G4 FC + 15A ESC + ELRS 2.4GHz RX + 200mW VTX",
     "manufacturer": "HDZero",
-    "description": "The HDZero AIO15 is the world\u2019s first all-in-one digital FPV flight system built for 2S\u20133S tiny whoops and micro freestyle drones. Combining a flight controller, 15A 4-in-1 ESC, HDZero digital VTX, built-in ExpressLRS receiver, and BEC into a compact 31.3\u00d731.3mm board, it delivers powerful performance in an ultra-lightweight form.",
+    "description": "The HDZero AIO15 is the world’s first all-in-one digital FPV flight system built for 2S–3S tiny whoops and micro freestyle drones. Combining a flight controller, 15A 4-in-1 ESC, HDZero digital VTX, built-in ExpressLRS receiver, and BEC into a compact 31.3×31.3mm board, it delivers powerful performance in an ultra-lightweight form.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/hdzero-aio15-g4-fc-15a-esc-elrs-2-4ghz-rx-200mw-vtx.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzeroaio15-1.jpg",
     "mcu_family": "G4",
@@ -2589,7 +2910,11 @@
       "5 inch"
     ],
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 2
+    }
   },
   {
     "pid": "FC-1085",
@@ -2637,7 +2962,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 24,
+    "schema_data": {
+      "weight_g": -1
+    }
   },
   {
     "pid": "FC-1086",
@@ -2653,14 +2982,19 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1088",
     "category": "flight_controllers",
     "name": "TBS Lucid Pro F4 Mini Flight Controller - MPU6000 - 20x20",
     "manufacturer": "Team BlackSheep",
-    "description": "The TBS Lucid Pro F4 Mini Flight Controller\u00a0is the latest in product engineering at TBS, built for racing and freestyle applications and developed to cater to the needs of both seasoned pilots and enthusiastic newcomers.",
+    "description": "The TBS Lucid Pro F4 Mini Flight Controller is the latest in product engineering at TBS, built for racing and freestyle applications and developed to cater to the needs of both seasoned pilots and enthusiastic newcomers.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/tbs-lucid-pro-f4-mini-flight-controller-mpu6000-20x20.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-lucid-freestyle-f4-flight-controller---icm42688---20x20-_image-1__1.jpg",
     "mcu_family": "F4",
@@ -2695,14 +3029,19 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 29,
+    "schema_data": {
+      "weight_g": -1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1089",
     "category": "flight_controllers",
     "name": "Flywoo GOKU Stack - F722 FC (ICM42688) + 55A AM32 2-6S ESC - 30x30",
     "manufacturer": "Flywoo",
-    "description": "The new GOKU Pro V2 F722 AM32 55A BLS Stack\u00a0from FLYWOO offers a compact size, high-performance main control, and multiple motor outputs.",
+    "description": "The new GOKU Pro V2 F722 AM32 55A BLS Stack from FLYWOO offers a compact size, high-performance main control, and multiple motor outputs.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-stack-f722-fc-icm42688-55a-2-6s-esc-30x30.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-f722-pro-v2-50a-bls-stack-_image-1_.jpg",
     "mcu_family": "F7",
@@ -2743,7 +3082,11 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": -1
+    }
   },
   {
     "pid": "FC-1091",
@@ -2791,7 +3134,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 23,
+    "schema_data": {
+      "weight_g": 14
+    }
   },
   {
     "pid": "FC-1095",
@@ -2833,14 +3180,19 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 42,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1096",
     "category": "flight_controllers",
     "name": "MATEKSYS F405-WMN Flight Controller ",
     "manufacturer": "MatekSys",
-    "description": "Matek's F405-WMN (Wing Mini) board is a great flight controller for those looking to save space and weight on their builds.\u00a0 It puts pretty much all features from a full-size\u00a0board on something that measures just 31x26x16mm.",
+    "description": "Matek's F405-WMN (Wing Mini) board is a great flight controller for those looking to save space and weight on their builds.  It puts pretty much all features from a full-size board on something that measures just 31x26x16mm.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/mateksys-f405-wmn-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys_f405-wmn_flight_controller_4_.jpg",
     "mcu_family": "F4",
@@ -2873,7 +3225,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": -2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1097",
@@ -2915,14 +3272,19 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 44,
+    "schema_data": {
+      "weight_g": 8
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1098",
     "category": "flight_controllers",
     "name": "HAKRC AIO Board - Brushless F722 FC + 40A 2-6S BLHeli_S ESC w/ External USB",
     "manufacturer": "HAKRC",
-    "description": "This\u00a0HAKRC AIO Board\u00a0features a brushless F722 flight controller and a 40A 2-6S BLHeli_S ESC. This version carries an external USB. This is an ultra-light 7g brushless AIO flight controller!!\u00a0This FC has a strong performance and can handle 40A continuous current and up to 6S.",
+    "description": "This HAKRC AIO Board features a brushless F722 flight controller and a 40A 2-6S BLHeli_S ESC. This version carries an external USB. This is an ultra-light 7g brushless AIO flight controller!! This FC has a strong performance and can handle 40A continuous current and up to 6S.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/hakrc-aio-board-brushless-f722-fc-40a-2-6s-blheli-s-esc-w-external-usb.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/hakrc-aio-board---brushless-f722--fc-_-40a-2-6s-blheli_s-esc-w-external-usb-main_-_copy.jpg",
     "mcu_family": "F7",
@@ -2963,14 +3325,18 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 14
+    }
   },
   {
     "pid": "FC-1099",
     "category": "flight_controllers",
     "name": "Happymodel Crazy F405 AIO - F4 HD FC + 12A 1-2S BLHeli_S ESC + ELRS",
     "manufacturer": "Happymodel",
-    "description": "The Happymodel Crazy F405 AIO - F4 HD FC + 12A 1-2S BLHeli_S ESC + ELRS\u00a0is a flight controller that seamlessly combines an F4 HD Flight Controller, a 12A 1-2S BLHeli_S ESC, and an embedded Serial ELRS receiver.",
+    "description": "The Happymodel Crazy F405 AIO - F4 HD FC + 12A 1-2S BLHeli_S ESC + ELRS is a flight controller that seamlessly combines an F4 HD Flight Controller, a 12A 1-2S BLHeli_S ESC, and an embedded Serial ELRS receiver.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/happymodel-crazy-f405-aio-f4-hd-fc-12a-1-2s-blheli-s-esc-elrs.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-crazyf405-elrs-hd-1-2s-aio-20899.jpg",
     "mcu_family": "F4",
@@ -3011,7 +3377,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 7
+    }
   },
   {
     "pid": "FC-1100",
@@ -3053,7 +3423,12 @@
     ],
     "imu": "BMI270",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 9
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1101",
@@ -3068,7 +3443,12 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1102",
@@ -3110,7 +3490,12 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 45,
+    "schema_data": {
+      "weight_g": -2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1103",
@@ -3152,14 +3537,19 @@
     ],
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 3
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1104",
     "category": "flight_controllers",
     "name": "Aikon F7 AIO Board - F7 FC + 60A 3-6S BLHeli_S ESC",
     "manufacturer": "Aikon",
-    "description": "The Aikon F7 AIO Board - F7 FC + 60A 3-6S BLHeli_S ESC\u00a0is a new generation flight controller and ESC combination specifically designed for cinewhoops and other high-current applications. All the greatest features into one seamless flight experience!",
+    "description": "The Aikon F7 AIO Board - F7 FC + 60A 3-6S BLHeli_S ESC is a new generation flight controller and ESC combination specifically designed for cinewhoops and other high-current applications. All the greatest features into one seamless flight experience!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/aikon-f7-aio-board-f7-fc-60a-3-6s-blheli-s-esc.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_58_.png",
     "mcu_family": "F7",
@@ -3200,7 +3590,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 16
+    }
   },
   {
     "pid": "FC-1105",
@@ -3240,7 +3634,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 29,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": true
   },
   {
     "pid": "FC-1106",
@@ -3282,14 +3681,19 @@
       "3 inch"
     ],
     "cell_count_min": 1,
-    "cell_count_max": 4
+    "cell_count_max": 4,
+    "approx_price": 28,
+    "schema_data": {
+      "weight_g": 3
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1107",
     "category": "flight_controllers",
     "name": "iFlight BLITZ E80 Pro G2 80A 4-in-1 BLHeli_32 ESC w/ Cover - 35x35/30x30",
     "manufacturer": "iFlight",
-    "description": "The iFlight BLITZ E80 uses a MOSFET PSMN1R0-40YLD, which can withstand a continuous current of 80A at 25\u00b0C, with a maximum power dissipation of 198W.",
+    "description": "The iFlight BLITZ E80 uses a MOSFET PSMN1R0-40YLD, which can withstand a continuous current of 80A at 25°C, with a maximum power dissipation of 198W.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-blitz-e80-pro-g2-80a-4-in-1-blheli-32-esc-35x35-30x30.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight-blitz-e80-pro-g2-80a-4-in-1-blheli_32-esc---35x35-back.jpg",
     "mounting_pattern_mm": 30.5,
@@ -3330,7 +3734,11 @@
       "5 inch"
     ],
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 4
+    }
   },
   {
     "pid": "FC-1108",
@@ -3378,14 +3786,18 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 21,
+    "schema_data": {
+      "weight_g": -1
+    }
   },
   {
     "pid": "FC-1109",
     "category": "flight_controllers",
     "name": "EMAX BabyHawk II HD BLHeli_S F4 2-4S 25A  AIO FC + ESC",
     "manufacturer": "EMAX",
-    "description": "This Emax AIO Flight Controller + ESC is a replacement part for the\u00a0EMAX BabyHawk II HD Freestyle RTF.",
+    "description": "This Emax AIO Flight Controller + ESC is a replacement part for the EMAX BabyHawk II HD Freestyle RTF.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/emax-babyhawk-ii-hd-blheli-s-f4-2-4s-25a-aio-fc-esc.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/e/m/emax-babyhawk-ii-hd-blheli_s-f4-2-4s-25a-aio-fc-_-esc-_1_1000x1000.jpg",
     "mcu_family": "F4",
@@ -3426,7 +3838,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 2
+    }
   },
   {
     "pid": "FC-1112",
@@ -3466,7 +3882,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": 2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1114",
@@ -3508,7 +3929,12 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 55,
+    "schema_data": {
+      "weight_g": 11
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1115",
@@ -3518,7 +3944,7 @@
     "description": "The Cube Orange+ Standard Set (IMU V8) features a high-performance H7 processor and the 1090MHz ADS-B receiver from uAvionix.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-the-cube-orange-standard-set.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex_the_cube_orange_standard_set_ads-b_imu_v8_3__1_1.jpg",
-    "mcu_family": "",
+    "mcu_family": "H7",
     "firmware_targets": "Ardupilot/PX4",
     "compatibility": {
       "mounting_pattern_mm": null,
@@ -3548,14 +3974,20 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 70,
+    "schema_data": {
+      "weight_g": 16
+    },
+    "is_aio": false,
+    "mcu": "STM32H743xx"
   },
   {
     "pid": "FC-1116",
     "category": "flight_controllers",
-    "name": "HDZero Gamma AIO \u2013 G473 FC + 45A AM32 ESC + ELRS RX",
+    "name": "HDZero Gamma AIO – G473 FC + 45A AM32 ESC + ELRS RX",
     "manufacturer": "HDZero",
-    "description": "The HDZero Gamma HD-Ready AIO is built on the STM32G473 MCU, using the 25.5x25.5mm Whoop/Toothpick pattern and optimized for 2.5\u20134 inch drones.",
+    "description": "The HDZero Gamma HD-Ready AIO is built on the STM32G473 MCU, using the 25.5x25.5mm Whoop/Toothpick pattern and optimized for 2.5–4 inch drones.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/hdzero-gamma-aio-g473-fc-45a-am32-esc-elrs-rx.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero_gamma_aio-2.jpg",
     "mcu_family": "G4",
@@ -3596,7 +4028,11 @@
       "3.5 inch"
     ],
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 4
+    }
   },
   {
     "pid": "FC-1118",
@@ -3644,7 +4080,11 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 3
+    }
   },
   {
     "pid": "FC-1119",
@@ -3684,7 +4124,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 3
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1120",
@@ -3732,7 +4177,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 10
+    }
   },
   {
     "pid": "FC-1121",
@@ -3774,7 +4223,12 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 6
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1122",
@@ -3816,14 +4270,19 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 7
+    },
+    "is_aio": true
   },
   {
     "pid": "FC-1123",
     "category": "flight_controllers",
     "name": "BETAFPV Matrix 5-in-1 AIO - G4 FC + 1S ESC + 400mW VTX + ELRS RX + OSD",
     "manufacturer": "BETAFPV",
-    "description": "Introducing the BETAFPV Matrix 1S Brushless AIO,\u00a0 a beginner-friendly, integrated solution with a durable 1mm-thick board and built-in motor plug for easy installation.",
+    "description": "Introducing the BETAFPV Matrix 1S Brushless AIO,  a beginner-friendly, integrated solution with a durable 1mm-thick board and built-in motor plug for easy installation.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/betafpv-matrix-5-in-1-aio-g4-fc-1s-esc-400mw-vtx-elrs-rx-osd.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/e/betafpv-matrix-5-in-1-aio---g4-fc-_-1s-esc-_-400mw-vtx-_-elrs-rx-_-osd-_image-1_.jpg",
     "mcu_family": "G4",
@@ -3864,7 +4323,11 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 10
+    }
   },
   {
     "pid": "FC-1124",
@@ -3912,7 +4375,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 13
+    }
   },
   {
     "pid": "FC-1125",
@@ -3960,7 +4427,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 31,
+    "schema_data": {
+      "weight_g": 16
+    }
   },
   {
     "pid": "FC-1126",
@@ -4002,7 +4473,12 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 72,
+    "schema_data": {
+      "weight_g": 4
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1127",
@@ -4042,14 +4518,19 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 11
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1128",
     "category": "flight_controllers",
     "name": "Holybro Pixhawk 6X Mini FC Module - ICM-45686",
     "manufacturer": "Holybro",
-    "description": "The Holybro Pixhawk Mini 6X FC Module Mini\u00a0Set is a compact, high-performance flight controller for advanced UAV applications.",
+    "description": "The Holybro Pixhawk Mini 6X FC Module Mini Set is a compact, high-performance flight controller for advanced UAV applications.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6x-mini-fc-module-icm-45686.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-mini-6x-fc-module-v2b-standard-set---icm-45686-_image-1__1.jpg",
     "mcu_family": "H7",
@@ -4082,7 +4563,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 36,
+    "schema_data": {
+      "weight_g": 16
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1129",
@@ -4122,7 +4608,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1130",
@@ -4170,7 +4661,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 17,
+    "schema_data": {
+      "weight_g": 3
+    }
   },
   {
     "pid": "FC-1131",
@@ -4212,7 +4707,12 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 79,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1133",
@@ -4260,7 +4760,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 28,
+    "schema_data": {
+      "weight_g": 13
+    }
   },
   {
     "pid": "FC-1134",
@@ -4302,7 +4806,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 68,
+    "schema_data": {
+      "weight_g": 8
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1136",
@@ -4344,7 +4853,12 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 56,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1137",
@@ -4392,7 +4906,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 21,
+    "schema_data": {
+      "weight_g": -2
+    }
   },
   {
     "pid": "FC-1138",
@@ -4434,14 +4952,19 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1139",
     "category": "flight_controllers",
     "name": "Holybro Kakute F722 Flight Controller",
     "manufacturer": "Holybro",
-    "description": "Introducing the Holybro Kakute F722 Flight Controller \u2013 a pinnacle of precision and performance for drone enthusiasts.",
+    "description": "Introducing the Holybro Kakute F722 Flight Controller – a pinnacle of precision and performance for drone enthusiasts.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-kakute-f722-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-kakute-f722-flight-controller-_image-1_1_.jpg",
     "mcu_family": "F7",
@@ -4476,7 +4999,12 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 42,
+    "schema_data": {
+      "weight_g": 10
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1143",
@@ -4518,7 +5046,12 @@
     "firmware_targets": "ArduPilot",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM20689"
+    "imu": "ICM20689",
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 16
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1151",
@@ -4560,7 +5093,12 @@
       "3.5 inch"
     ],
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 46,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1154",
@@ -4608,14 +5146,18 @@
       "5 inch"
     ],
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 9
+    }
   },
   {
     "pid": "FC-1156",
     "category": "flight_controllers",
     "name": "Holybro Durandal FC Module - ICM20602",
     "manufacturer": "Holybro",
-    "description": "The Holybro Durandal\u00a0is a high-performance flight controller designed by Holybro, featuring the advanced STM32H7 microcontroller series.",
+    "description": "The Holybro Durandal is a high-performance flight controller designed by Holybro, featuring the advanced STM32H7 microcontroller series.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-durandal-fc-module-icm20602.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-durandal.jpg",
     "mcu_family": "H7",
@@ -4648,14 +5190,19 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 70,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1160",
     "category": "flight_controllers",
     "name": "Holybro Pixhawk 6C Mini FC Module (Model A Pins)",
     "manufacturer": "Holybro",
-    "description": "The\u00a0Pixhawk\u00ae 6C Mini\u00a0is the latest update to the successful family of Pixhawk\u00ae flight controllers, based on the Pixhawk\u00ae FMUv6C Open Standard and Connector Standard.",
+    "description": "The Pixhawk® 6C Mini is the latest update to the successful family of Pixhawk® flight controllers, based on the Pixhawk® FMUv6C Open Standard and Connector Standard.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-mini-fc-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-6c-mini-fc-module_1_.jpg",
     "mcu_family": "H7",
@@ -4688,7 +5235,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1163",
@@ -4736,7 +5288,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 17,
+    "schema_data": {
+      "weight_g": 15
+    }
   },
   {
     "pid": "FC-1164",
@@ -4784,7 +5340,11 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1165",
@@ -4826,7 +5386,12 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 14
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1167",
@@ -4868,7 +5433,12 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": -1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1168",
@@ -4910,7 +5480,12 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 40,
+    "schema_data": {
+      "weight_g": 13
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1169",
@@ -4958,7 +5533,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 26,
+    "schema_data": {
+      "weight_g": 5
+    }
   },
   {
     "pid": "FC-1170",
@@ -5000,7 +5579,12 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 44,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1171",
@@ -5048,7 +5632,11 @@
       "5 inch"
     ],
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 15
+    }
   },
   {
     "pid": "FC-1173",
@@ -5096,7 +5684,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 45,
+    "schema_data": {
+      "weight_g": 8
+    }
   },
   {
     "pid": "FC-1174",
@@ -5144,7 +5736,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 45,
+    "schema_data": {
+      "weight_g": 14
+    }
   },
   {
     "pid": "FC-1175",
@@ -5192,7 +5788,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 8
+    }
   },
   {
     "pid": "FC-1176",
@@ -5240,7 +5840,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 3
+    }
   },
   {
     "pid": "FC-1177",
@@ -5288,7 +5892,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 42,
+    "schema_data": {
+      "weight_g": 7
+    }
   },
   {
     "pid": "FC-1178",
@@ -5336,7 +5944,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 25,
+    "schema_data": {
+      "weight_g": 8
+    }
   },
   {
     "pid": "FC-1179",
@@ -5378,14 +5990,19 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1180",
     "category": "flight_controllers",
     "name": "Happymodel Superbee F4 Lite AIO - F411 FC + 5A 1S BLHeli_S ESC",
     "manufacturer": "Happymodel",
-    "description": "This\u00a0Happymodel Superbee F4 Lite is the next big thing in ultralight AIOs! This board features a built-in SPI receiver, available in SPI ELRS 2.4GHz or SPI FrSky versions.",
+    "description": "This Happymodel Superbee F4 Lite is the next big thing in ultralight AIOs! This board features a built-in SPI receiver, available in SPI ELRS 2.4GHz or SPI FrSky versions.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/happymodel-superbee-f4-lite-aio-f411-fc-5a-1s-blheli-s-esc.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-superbee-f4-lite-aio.jpg",
     "mcu_family": "F4",
@@ -5424,14 +6041,18 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 21,
+    "schema_data": {
+      "weight_g": 6
+    }
   },
   {
     "pid": "FC-1181",
     "category": "flight_controllers",
     "name": "Holybro Pixhawk 6X Fc Standard Set",
     "manufacturer": "Holybro",
-    "description": "The Holybro Pixhawk 6X FC Standard Set\u00a0is the latest update to the successful family of Pixhawk flight controllers. This is the 6X Set with a Standard Base Board.",
+    "description": "The Holybro Pixhawk 6X FC Standard Set is the latest update to the successful family of Pixhawk flight controllers. This is the 6X Set with a Standard Base Board.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6x-fc-standard-set.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/h/o/holybro_pixhawk_6x_standard_set_2.jpg",
     "mcu_family": "H7",
@@ -5464,7 +6085,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 13
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1183",
@@ -5506,7 +6132,12 @@
       "30.5mm",
       "5 inch"
     ],
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 42,
+    "schema_data": {
+      "weight_g": 14
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1184",
@@ -5548,7 +6179,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1185",
@@ -5588,14 +6224,19 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 31,
+    "schema_data": {
+      "weight_g": 14
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1186",
     "category": "flight_controllers",
     "name": "Happymodel Crazy F411 Pro V1.1 AIO - F4 FC + 20A ESC + OSD - FrSky",
     "manufacturer": "Happymodel",
-    "description": "This\u00a0Happymodel Crazy F411 Pro V1.1 AIO is a 6.3g 2-4S AIO with an F4 flight controller, built-in 20/25A per channel ESC, and FrSky diversity receiver.",
+    "description": "This Happymodel Crazy F411 Pro V1.1 AIO is a 6.3g 2-4S AIO with an F4 flight controller, built-in 20/25A per channel ESC, and FrSky diversity receiver.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/happymodel-crazy-f411-pro-v1-1-aio-f4-fc-20a-esc-osd-frsky.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-crazy-f411-pro-v1.1-aio---f4-fc-_-20a-esc-_-osd---frsky_2_.jpg",
     "mcu_family": "F4",
@@ -5635,7 +6276,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 21,
+    "schema_data": {
+      "weight_g": 2
+    }
   },
   {
     "pid": "FC-1187",
@@ -5683,7 +6328,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 14
+    }
   },
   {
     "pid": "FC-1188",
@@ -5731,7 +6380,11 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 14
+    }
   },
   {
     "pid": "FC-1189",
@@ -5773,7 +6426,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1192",
@@ -5813,7 +6471,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 67,
+    "schema_data": {
+      "weight_g": 17
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1193",
@@ -5853,14 +6516,19 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 67,
+    "schema_data": {
+      "weight_g": -2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1194",
     "category": "flight_controllers",
     "name": "Diatone MAMBA MK4 F405 Mini Flight Controller (ICM42688P)",
     "manufacturer": "Diatone",
-    "description": "Introducing the\u00a0Mamba F405 MINI MK4 Flight Controller\u00a0from\u00a0Diatone. The pad style has been redesigned to increase pad area by 30% and pad spacing by 100%, reducing solder errors and associated failures. It's an all-around easier-to-use flight controller that includes an ICM42688P Gyro.",
+    "description": "Introducing the Mamba F405 MINI MK4 Flight Controller from Diatone. The pad style has been redesigned to increase pad area by 30% and pad spacing by 100%, reducing solder errors and associated failures. It's an all-around easier-to-use flight controller that includes an ICM42688P Gyro.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/diatone-mamba-mk4-f405-mini-flight-controller-icm42688p.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone_mamba_mk4_f405_mini_flight_controller_icm42688p_.jpg",
     "mcu_family": "F4",
@@ -5895,14 +6563,19 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 29,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1195",
     "category": "flight_controllers",
     "name": "Diatone MAMBA MK4 F722 Mini Flight Controller (ICM42688P)",
     "manufacturer": "Diatone",
-    "description": "The\u00a0Diatone Mamba MK4 Mini is an F722 Flight Controller with an ICM4268P8 Gyro, making this FC the perfect addition to your FPV build.",
+    "description": "The Diatone Mamba MK4 Mini is an F722 Flight Controller with an ICM4268P8 Gyro, making this FC the perfect addition to your FPV build.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/diatone-mamba-mk4-f722-mini-flight-controller-icm42688p.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone_mamba_mk4_f722_mini_flight_controller_icm42688p_.jpg",
     "mcu_family": "F7",
@@ -5937,7 +6610,12 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 42,
+    "schema_data": {
+      "weight_g": 14
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1196",
@@ -5979,14 +6657,19 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1197",
     "category": "flight_controllers",
     "name": "BETAFPV Toothpick F722 AIO V1.1 - F722 FC + 35A BLHeli_S 2-6S ESC",
     "manufacturer": "BETAFPV",
-    "description": "The BETAFPV F722\u00a035A 2-6S AIO is a very reliable FC that is made to meet your advanced FPV needs. This AIO comes with an F722 chip and BLHeli_S ESC firmware.",
+    "description": "The BETAFPV F722 35A 2-6S AIO is a very reliable FC that is made to meet your advanced FPV needs. This AIO comes with an F722 chip and BLHeli_S ESC firmware.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/betafpv-toothpick-f722-aio-f722-fc-35a-blheli-s-2-6s-esc.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/b/e/betafpv_toothpick_f722_v1.1_aio_-_f722_fc_35a_blheli_s_2-6s_esc_3_.jpg",
     "mcu_family": "F7",
@@ -6027,14 +6710,18 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 43,
+    "schema_data": {
+      "weight_g": 11
+    }
   },
   {
     "pid": "FC-1198",
     "category": "flight_controllers",
     "name": "Flywoo GOKU Versatile F405 AIO - F405 FC + 12A BLHELI_S 1-2S ESC - No Rx (MPU6000)",
     "manufacturer": "Flywoo",
-    "description": "The\u00a0Flywoo GOKU Versatile F405 AIO features a 2S 12A ESC, OSD, 6 serial ports I2C functionality, and 2XWS2812 LEDs. Building made easy in a compact whoop board!",
+    "description": "The Flywoo GOKU Versatile F405 AIO features a 2S 12A ESC, OSD, 6 serial ports I2C functionality, and 2XWS2812 LEDs. Building made easy in a compact whoop board!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-versatile-f405-aio-f405-fc-12a-blheli-s-1-2s-esc-no-rx-mpu6000.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/f/l/flywoo-goku-versatile-f405-no-rx-_mpu6000_-_4_.jpg",
     "mcu_family": "F4",
@@ -6075,7 +6762,11 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 28,
+    "schema_data": {
+      "weight_g": 14
+    }
   },
   {
     "pid": "FC-1199",
@@ -6123,7 +6814,11 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 29,
+    "schema_data": {
+      "weight_g": 7
+    }
   },
   {
     "pid": "FC-1200",
@@ -6165,7 +6860,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 46,
+    "schema_data": {
+      "weight_g": 12
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1201",
@@ -6207,7 +6907,12 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 29,
+    "schema_data": {
+      "weight_g": 16
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1202",
@@ -6217,7 +6922,7 @@
     "description": "The Cube Orange+ Standard Set (IMU V8) features a high-performance H7 processor and the 1090MHz ADS-B receiver from uAvionix.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-the-cube-orange-standard-set-ads-b-imu-v8.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/hex_the_cube_orange_standard_set_ads-b_imu_v8_3__1.jpg",
-    "mcu_family": "",
+    "mcu_family": "H7",
     "compatibility": {
       "mounting_pattern_mm": null,
       "mounting_hole_size": null,
@@ -6247,7 +6952,13 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 74,
+    "schema_data": {
+      "weight_g": -1
+    },
+    "is_aio": false,
+    "mcu": "STM32H743xx"
   },
   {
     "pid": "FC-1203",
@@ -6289,7 +7000,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 66,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1206",
@@ -6329,7 +7045,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1207",
@@ -6369,7 +7090,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 45,
+    "schema_data": {
+      "weight_g": 4
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1208",
@@ -6417,7 +7143,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 54,
+    "schema_data": {
+      "weight_g": 13
+    }
   },
   {
     "pid": "FC-1210",
@@ -6433,7 +7163,12 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 13
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1211",
@@ -6473,7 +7208,12 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P",
-    "firmware_targets": "ArduPilot/Betaflight"
+    "firmware_targets": "ArduPilot/Betaflight",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 13
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1213",
@@ -6515,7 +7255,12 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 42,
+    "schema_data": {
+      "weight_g": 7
+    },
+    "is_aio": true
   },
   {
     "pid": "FC-1214",
@@ -6557,7 +7302,12 @@
     "firmware_targets": "Betaflight",
     "imu": "BMI270",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 42,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1215",
@@ -6605,7 +7355,11 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 29,
+    "schema_data": {
+      "weight_g": 10
+    }
   },
   {
     "pid": "FC-1216",
@@ -6647,7 +7401,12 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 43,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": true
   },
   {
     "pid": "FC-1217",
@@ -6689,7 +7448,12 @@
       "30.5mm",
       "5 inch"
     ],
-    "imu": "ICM20602"
+    "imu": "ICM20602",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 4
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1222",
@@ -6731,7 +7495,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 7
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1225",
@@ -6779,7 +7548,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 59,
+    "schema_data": {
+      "weight_g": 8
+    }
   },
   {
     "pid": "FC-1226",
@@ -6821,14 +7594,19 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 26,
+    "schema_data": {
+      "weight_g": -1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1228",
     "category": "flight_controllers",
     "name": "CUAV V5+ Standard Autopilot Flight Controller - PX4/APM",
     "manufacturer": "CUAV",
-    "description": "The CUAV V5+\u00ae is an advanced autopilot manufactured by CUAV\u00ae.",
+    "description": "The CUAV V5+® is an advanced autopilot manufactured by CUAV®.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/cuav-v5-flight-controller-drone-autopilot-px4-apm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/u/cuav-v5_-standard-autopilot-flight-controller---px4apm-main.jpg",
     "mcu_family": "F7",
@@ -6861,14 +7639,19 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM20689"
+    "imu": "ICM20689",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 6
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1229",
     "category": "flight_controllers",
     "name": "CUAV X7+ Standard Autopilot Flight Controller - PX4/APM",
     "manufacturer": "CUAV",
-    "description": "The X7+\u00ae Standard Autopilot Flight Controller is a high-performance autopilot. It is an ideal choice for industrial drones and large-scale heavy-duty drones. The X7+ features an H7 processor, an upgraded sensor with a redundancy design, a temperature compensation system, and a CORE separate design.",
+    "description": "The X7+® Standard Autopilot Flight Controller is a high-performance autopilot. It is an ideal choice for industrial drones and large-scale heavy-duty drones. The X7+ features an H7 processor, an upgraded sensor with a redundancy design, a temperature compensation system, and a CORE separate design.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/cuav-x7-standard-autopilot-flight-controller-px4-apm.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/c/u/cuav-x7_-standard-autopilot-flight-controller---px4apm-main.jpg",
     "mcu_family": "H7",
@@ -6901,7 +7684,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 71,
+    "schema_data": {
+      "weight_g": 10
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1231",
@@ -6944,7 +7732,12 @@
     ],
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1232",
@@ -6991,7 +7784,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 29,
+    "schema_data": {
+      "weight_g": 2
+    }
   },
   {
     "pid": "FC-1233",
@@ -7039,14 +7836,18 @@
     "cell_count_min": 2,
     "cell_count_max": 6,
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 5
+    }
   },
   {
     "pid": "FC-1234",
     "category": "flight_controllers",
     "name": "JHEMCU F7-XSD Pro DJI Flight Controller - Mini 20x20 - Standard",
     "manufacturer": "JHEMCU",
-    "description": "The\u00a0JHEMCU F7-XSD Pro Flight Controller\u00a0is designed with DJI pilots in mind! This standard version F7 FC is ultra-light at 4.7g and handles up to 6S batteries.",
+    "description": "The JHEMCU F7-XSD Pro Flight Controller is designed with DJI pilots in mind! This standard version F7 FC is ultra-light at 4.7g and handles up to 6S batteries.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/jhemcu-f7-xsd-pro-dji-flight-controller-mini-20x20-standard.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/j/h/jhemcu-f7-xsd-pro-dji-flight-controller---mini-20x20---standard-main.jpg",
     "mcu_family": "F7",
@@ -7081,14 +7882,19 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 16
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1235",
     "category": "flight_controllers",
     "name": "JHEMCU NOXE F411 V2 DJI Flight Controller - Mini 20x20 - Standard",
     "manufacturer": "JHEMCU",
-    "description": "The\u00a0JHEMCU NOXE F4 V2 Flight Controller\u00a0is made with DJI Pilots in mind. This standard version FC packs 2 UARTs, and a BEC into a mini-sized 20x20 board with 3-6S capabilities!",
+    "description": "The JHEMCU NOXE F4 V2 Flight Controller is made with DJI Pilots in mind. This standard version FC packs 2 UARTs, and a BEC into a mini-sized 20x20 board with 3-6S capabilities!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/jhemcu-noxe-f411-dji-v2-3-6s-flight-controller-mini-20x20-standard.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/j/h/jhemcu-noxe-f411-v2-dji-flight-controller---mini-20x20---standard-main.jpg",
     "mcu_family": "F4",
@@ -7123,14 +7929,19 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 19,
+    "schema_data": {
+      "weight_g": 9
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1236",
     "category": "flight_controllers",
     "name": "JHEMCU NOXE F411 V2 DJI Flight Controller - Mini 20x20 - Deluxe",
     "manufacturer": "JHEMCU",
-    "description": "The\u00a0JHEMCU NOXE F4 V2 Flight Controller\u00a0is made with DJI Pilots in mind. This Deluxe FC packs a 16MB Blackbox, Barometer, 2 UARTs, and BEC into a mini-sized 20x20 board with 3-6S capabilities!",
+    "description": "The JHEMCU NOXE F4 V2 Flight Controller is made with DJI Pilots in mind. This Deluxe FC packs a 16MB Blackbox, Barometer, 2 UARTs, and BEC into a mini-sized 20x20 board with 3-6S capabilities!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/jhemcu-noxe-f411-v2-dji-flight-controller-mini-20x20-deluxe.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/j/h/jhemcu-noxe-f4-v2-deluxe-dji-flight-controller---mini-20x20-main-2.jpg",
     "mcu_family": "F4",
@@ -7165,14 +7976,19 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 22,
+    "schema_data": {
+      "weight_g": 6
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1237",
     "category": "flight_controllers",
     "name": "JHEMCU AIO Board - GSF405A F4 FC + 5A 1-2S ESC w/ Built-in ELRS 2.4GHz Receiver",
     "manufacturer": "JHEMCU",
-    "description": "The\u00a0JHEMCU GS405A AIO\u00a0features an F4 FC and a 5A ESC with built-in ELRS 2.4GHz receiver. This is an ultra-light 3.3g brushless AIO flight controller with 25.5x25.5mm mounting pattern!!\u00a0This FC can handle 5A of continuous current and up to 2S.",
+    "description": "The JHEMCU GS405A AIO features an F4 FC and a 5A ESC with built-in ELRS 2.4GHz receiver. This is an ultra-light 3.3g brushless AIO flight controller with 25.5x25.5mm mounting pattern!! This FC can handle 5A of continuous current and up to 2S.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/jhemcu-aio-board-gsf405a-f4-fc-5a-1-2s-esc-w-built-in-elrs-2-4ghz-receiver.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/j/h/jhemcu-aio-board---gsf405a-f4-fc-_-5a-1-2s-esc-w-built-in-elrsmain.jpg",
     "mcu_family": "F4",
@@ -7212,7 +8028,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 27,
+    "schema_data": {
+      "weight_g": 14
+    }
   },
   {
     "pid": "FC-1238",
@@ -7254,7 +8074,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1239",
@@ -7296,14 +8121,19 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 26,
+    "schema_data": {
+      "weight_g": 12
+    },
+    "is_aio": true
   },
   {
     "pid": "FC-1240",
     "category": "flight_controllers",
     "name": "Axisflying F722 DJI Flight Controller w/ OSD - Mini 20x20",
     "manufacturer": "Axisflying",
-    "description": "The\u00a0Axisflying F722 Flight Controller\u00a0is plug-and-play compatible for both Analog and HD and easily connects to a DJI FPV Air Unit. This FC has a 20x20 mounting pattern and features an MPU6000 Gyro, QMP6988 Barometer, and 5V 3A BEC.",
+    "description": "The Axisflying F722 Flight Controller is plug-and-play compatible for both Analog and HD and easily connects to a DJI FPV Air Unit. This FC has a 20x20 mounting pattern and features an MPU6000 Gyro, QMP6988 Barometer, and 5V 3A BEC.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/axisflying-f722-dji-flight-controller-mini-20x20.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/x/axisflying_f7_fcaxisflying-f7-low_res-width-1000px.jpg",
     "mcu_family": "F7",
@@ -7338,7 +8168,12 @@
     "firmware_targets": "Betaflight",
     "imu": "MPU6000",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 17
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1241",
@@ -7385,7 +8220,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 10
+    }
   },
   {
     "pid": "FC-1242",
@@ -7433,7 +8272,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 10
+    }
   },
   {
     "pid": "FC-1243",
@@ -7481,14 +8324,18 @@
     ],
     "firmware_targets": "Betaflight",
     "esc_firmware": "BLHeli_S",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 46,
+    "schema_data": {
+      "weight_g": 15
+    }
   },
   {
     "pid": "FC-1244",
     "category": "flight_controllers",
     "name": "T-Motor Mini Racer 20x20 F7 Flight Controller",
     "manufacturer": "Tiger Motors",
-    "description": "The\u00a0T-Motor Mini Racer F7\u00a0is a 3-6S 20x20 mini flight controller with a 16MB Blackbox flash memory, 5V.2A BEC, and an MPU6000 gyro. Designed for easy maintenance and low interference.",
+    "description": "The T-Motor Mini Racer F7 is a 3-6S 20x20 mini flight controller with a 16MB Blackbox flash memory, 5V.2A BEC, and an MPU6000 gyro. Designed for easy maintenance and low interference.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/t-motor-mini-racer-20x20-f7-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/-/t-motor_mini_racer_f7miniracer-main_-_copy-low_res-width-1000px.jpg",
     "mcu_family": "F7",
@@ -7523,14 +8370,19 @@
     "firmware_targets": "Betaflight",
     "imu": "MPU6000",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1245",
     "category": "flight_controllers",
     "name": "iFlight Beast H743 V2 AIO Board - H743 FC + 55A BLHeli_S ESC (BMI270)",
     "manufacturer": "iFlight",
-    "description": "This\u00a0iFlight Beast H743 V2 AIO Board\u00a0has an H743 Flight controller and a 55A BLHeli_S ESC.",
+    "description": "This iFlight Beast H743 V2 AIO Board has an H743 Flight controller and a 55A BLHeli_S ESC.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-beast-h743-v2-aio-board-h743-fc-55a-blheli-s-esc-bmi270.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight-beast-h743-v2-aio-board---h743-fc-_-55a-blheli_s-esc-_mpu6000_-back.jpg",
     "mcu_family": "H7",
@@ -7571,14 +8423,18 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 77,
+    "schema_data": {
+      "weight_g": -1
+    }
   },
   {
     "pid": "FC-1246",
     "category": "flight_controllers",
     "name": "HGLRC DJI Zeus F722 Mini 3-6S F7 Flight Controller",
     "manufacturer": "HGLRC",
-    "description": "The\u00a0HGLRC DJI Zeus F722 Mini is a 20x20 flight controller that houses an BMI270 gyro and 3-6S direct LiPo support. Comes with an integrated barometer, 8M black box, and DJI connector.",
+    "description": "The HGLRC DJI Zeus F722 Mini is a 20x20 flight controller that houses an BMI270 gyro and 3-6S direct LiPo support. Comes with an integrated barometer, 8M black box, and DJI connector.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-dji-zeus-f722-mini-3-6s-f7-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc-dji-zeus-f722-mini-3-6s-f7-flight-controller-main.jpg",
     "mcu_family": "F7",
@@ -7613,14 +8469,19 @@
       "20.0mm",
       "3.5 inch"
     ],
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 42,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1248",
     "category": "flight_controllers",
     "name": "iFlight SucceX-D F7 TwinG V2.2 F722 Flight Controller - HD Version",
     "manufacturer": "iFlight",
-    "description": "The\u00a0iFlight\u00a0SucceX-D F7 V2.2\u00a0is a 30.5x30.5 flight controller that\u00a0has an F722 MCU and\u00a0is designed to work seamlessly with DJI\u2019s\u00a0HD FPV system.",
+    "description": "The iFlight SucceX-D F7 V2.2 is a 30.5x30.5 flight controller that has an F722 MCU and is designed to work seamlessly with DJI’s HD FPV system.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-succex-d-f7-twing-v2-2-f722-flight-controller-hd-version.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight-succex-d-f7-twing-v2.2-f722-flight-controller---hd-version-main.jpg",
     "mcu_family": "F7",
@@ -7655,14 +8516,19 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 10
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1249",
     "category": "flight_controllers",
     "name": "iFlight SucceX-D Whoop V3.2 AIO Board - F4 FC + 20A BLHeli_S ESC (MPU6000)",
     "manufacturer": "iFlight",
-    "description": "This\u00a0iFlight SucceX-D V3.2 AIO Board\u00a0has an F4 flight controller with a 20A BLHeli_S ESC. This\u00a0whoop style board from iFlight is plug-n-play with the\u00a0DJI Air Unit\u00a0and\u00a0Caddx Vista HD system.",
+    "description": "This iFlight SucceX-D V3.2 AIO Board has an F4 flight controller with a 20A BLHeli_S ESC. This whoop style board from iFlight is plug-n-play with the DJI Air Unit and Caddx Vista HD system.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-succex-d-whoop-v3-2-aio-board-f4-fc-20a-blheli-s-esc-mpu6000.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/v/3/v3.2v3.2-back-low_res-width-1000px.jpg",
     "mcu_family": "F4",
@@ -7703,14 +8569,18 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 27,
+    "schema_data": {
+      "weight_g": 7
+    }
   },
   {
     "pid": "FC-1250",
     "category": "flight_controllers",
     "name": "iFlight Beast F7 V2 55A AIO 25.5x25.5mm Flight Controller",
     "manufacturer": "iFlight",
-    "description": "The\u00a0Beast F7 55A AIO V2 FC\u00a0is iFlight's new innovation! The new Beast series of AIO FCs combines MCU speed with ESC for a bigger stack!",
+    "description": "The Beast F7 55A AIO V2 FC is iFlight's new innovation! The new Beast series of AIO FCs combines MCU speed with ESC for a bigger stack!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/iflight-beast-f7-v2-55a-aio-25-5x25-5mm-flight-controller-bmi270.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/f/iflight-beast-f7-55a-v2-aio-fc-_bmi270_-25.5x25.5mm-main.jpg",
     "mcu_family": "F7",
@@ -7750,7 +8620,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 6
+    }
   },
   {
     "pid": "FC-1252",
@@ -7793,14 +8667,19 @@
     ],
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1254",
     "category": "flight_controllers",
     "name": "Diatone Mamba DJI F722 MK2 Flight Controller - Mini 20x20",
     "manufacturer": "Diatone",
-    "description": "The Diatone Mamba DJI F722 MINI MK2 Flight Controller is a powerful yet small FC that is compatible with the\u00a0DJI FPV System\u00a0and related HD systems. The\u00a0Mamba DJI F722 MINI MK2 FC is equipped with\u00a0216MHz\u00a0STM32F722RET6 MCU, OSD,\u00a0Dshot300/600/1200, barometer, 6 UARTS, and many other features that make this an excellent mini FC!",
+    "description": "The Diatone Mamba DJI F722 MINI MK2 Flight Controller is a powerful yet small FC that is compatible with the DJI FPV System and related HD systems. The Mamba DJI F722 MINI MK2 FC is equipped with 216MHz STM32F722RET6 MCU, OSD, Dshot300/600/1200, barometer, 6 UARTS, and many other features that make this an excellent mini FC!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/diatone-mamba-dji-f722-mk2-flight-controller-mini-20x20.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/i/diatone_mamba_dji_f722_mini_mk2_flight_controller_2.jpg",
     "mcu_family": "F7",
@@ -7835,7 +8714,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 44,
+    "schema_data": {
+      "weight_g": 14
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1256",
@@ -7877,14 +8761,19 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 27,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1257",
     "category": "flight_controllers",
     "name": "FETtec KISS G4-N AIO Board - G4-N FC + 35A 32bit 3-6S ESC",
     "manufacturer": "FETtec",
-    "description": "The FETtec G4-N AIO\u00a0is a powerful AIO board from FETtec, featuring a G473 flight controller and 35A ESC. This product has no onboard analog OSD, but the use of digital OSDs is still possible as usual.",
+    "description": "The FETtec G4-N AIO is a powerful AIO board from FETtec, featuring a G473 flight controller and 35A ESC. This product has no onboard analog OSD, but the use of digital OSDs is still possible as usual.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/fettec-kiss-g4-n-aio-board-g4-n-fc-35a-32bit-3-6s-esc.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/u/n/untitled_design_10__1.png",
     "mcu_family": "G4",
@@ -7925,7 +8814,11 @@
       "3.5 inch"
     ],
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 5
+    }
   },
   {
     "pid": "FC-1258",
@@ -7973,7 +8866,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 36,
+    "schema_data": {
+      "weight_g": 13
+    }
   },
   {
     "pid": "FC-1259",
@@ -8021,7 +8918,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 28,
+    "schema_data": {
+      "weight_g": 9
+    }
   },
   {
     "pid": "FC-1260",
@@ -8069,14 +8970,18 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 11
+    }
   },
   {
     "pid": "FC-1261",
     "category": "flight_controllers",
     "name": "Betafpv F4 1S 12A Aio Brushless Flight Controller Spi Frsky",
     "manufacturer": "BetaFPV",
-    "description": "BETAFPV has come up with their F4 1S 12A AIO Flight Controller which is suitable for 3\" lightweight builds and toothpick drones like the\u00a0HX115 SE Toothpick Drone.",
+    "description": "BETAFPV has come up with their F4 1S 12A AIO Flight Controller which is suitable for 3\" lightweight builds and toothpick drones like the HX115 SE Toothpick Drone.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/betafpv-f4-1s-12a-aio-brushless-flight-controller-spi-frsky.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/f/4/f4_1s_12a_aio_brushless_flight_controller_3.jpg",
     "mcu_family": "F4",
@@ -8114,7 +9019,11 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 25,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1262",
@@ -8162,7 +9071,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 12
+    }
   },
   {
     "pid": "FC-1264",
@@ -8206,7 +9119,11 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": -1
+    }
   },
   {
     "pid": "FC-1265",
@@ -8248,7 +9165,12 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 36,
+    "schema_data": {
+      "weight_g": 12
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1266",
@@ -8295,14 +9217,18 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 29,
+    "schema_data": {
+      "weight_g": 7
+    }
   },
   {
     "pid": "FC-1267",
     "category": "flight_controllers",
     "name": "Flywoo GOKU HEX F411 16x16 Flight Controller for Hexacopter",
     "manufacturer": "Flywoo",
-    "description": "The Flywoo GOKU F411 Flight Controller (MPU6000)\u00a0features 2 hardware UARTS,\u00a0MPU6000, and an STM32F411 MCU. This great FC also has LEDs attached for lighting.",
+    "description": "The Flywoo GOKU F411 Flight Controller (MPU6000) features 2 hardware UARTS, MPU6000, and an STM32F411 MCU. This great FC also has LEDs attached for lighting.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/flywoo-goku-hex-f411-16x16-flight-controller-for-hexacopter.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_0227_1_1.jpg",
     "mcu_family": "F4",
@@ -8337,7 +9263,12 @@
     "firmware_targets": "Betaflight",
     "imu": "MPU6000",
     "cell_count_min": 1,
-    "cell_count_max": 4
+    "cell_count_max": 4,
+    "approx_price": 18,
+    "schema_data": {
+      "weight_g": 8
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1268",
@@ -8384,7 +9315,11 @@
     "cell_count_min": 2,
     "cell_count_max": 6,
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 2
+    }
   },
   {
     "pid": "FC-1269",
@@ -8432,7 +9367,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 11
+    }
   },
   {
     "pid": "FC-1270",
@@ -8480,7 +9419,11 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "esc_firmware": "BLHeli_32",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 52,
+    "schema_data": {
+      "weight_g": 5
+    }
   },
   {
     "pid": "FC-1271",
@@ -8524,7 +9467,11 @@
       "2 inch"
     ],
     "mounting_pattern_mm": 20.0,
-    "mounting_hole_size": "M2"
+    "mounting_hole_size": "M2",
+    "approx_price": 31,
+    "schema_data": {
+      "weight_g": 10
+    }
   },
   {
     "pid": "FC-1272",
@@ -8571,7 +9518,11 @@
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 20.0,
     "mounting_hole_size": "M2",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 24,
+    "schema_data": {
+      "weight_g": 6
+    }
   },
   {
     "pid": "FC-1273",
@@ -8619,7 +9570,11 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 2
+    }
   },
   {
     "pid": "FC-1274",
@@ -8665,7 +9620,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 23,
+    "schema_data": {
+      "weight_g": 3
+    }
   },
   {
     "pid": "FC-1275",
@@ -8713,7 +9672,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 36,
+    "schema_data": {
+      "weight_g": 8
+    }
   },
   {
     "pid": "FC-1277",
@@ -8755,14 +9718,19 @@
     "firmware_targets": "Betaflight",
     "imu": "MPU6000",
     "cell_count_min": 1,
-    "cell_count_max": 4
+    "cell_count_max": 4,
+    "approx_price": 21,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1278",
     "category": "flight_controllers",
     "name": "EMAX Nanohawk F4 5A 1S BL_S AIO Flight Controller ",
     "manufacturer": "EMAX",
-    "description": "A replacement or spare F4 AIO flight controller for the\u00a0EMAX Nanohawk 1S Micro Brushless FPV Drone.",
+    "description": "A replacement or spare F4 AIO flight controller for the EMAX Nanohawk 1S Micro Brushless FPV Drone.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/emax-nanohawk-f4-5a-1s-bl-s-aio-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/4/8/48a41746-7d6a-40c4-8107-4dda01ea6559.jpg.jpg",
     "mcu_family": "F4",
@@ -8800,14 +9768,18 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 25,
+    "schema_data": {
+      "weight_g": 6
+    }
   },
   {
     "pid": "FC-1279",
     "category": "flight_controllers",
     "name": "SkyStars F405HD Mini 3-6S 20x20 Flight Controller",
     "manufacturer": "SkyStars",
-    "description": "The SkyStars F405HD Mini 3-6S 20x20 Flight Controller\u00a0features 6 UARTS,\u00a0MPU6000,\u00a0STM32F705RGT6 MCU,\u00a0SkyStars F405HD firmware and other cool specs! Compatible with\u00a0DJI Digital HD FPV System.",
+    "description": "The SkyStars F405HD Mini 3-6S 20x20 Flight Controller features 6 UARTS, MPU6000, STM32F705RGT6 MCU, SkyStars F405HD firmware and other cool specs! Compatible with DJI Digital HD FPV System.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/skystars-f405hd-mini-3-6s-20x20-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/1/-/1-2010251k243v6.jpg",
     "mcu_family": "F4",
@@ -8842,7 +9814,12 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": -1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1280",
@@ -8884,7 +9861,12 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM20602"
+    "imu": "ICM20602",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1281",
@@ -8926,7 +9908,12 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 46,
+    "schema_data": {
+      "weight_g": 9
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1282",
@@ -8968,7 +9955,12 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 36,
+    "schema_data": {
+      "weight_g": 3
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1285",
@@ -9016,14 +10008,18 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 41,
+    "schema_data": {
+      "weight_g": 14
+    }
   },
   {
     "pid": "FC-1286",
     "category": "flight_controllers",
     "name": "Holybro Kakute F7 HDV AIO Flight Controller",
     "manufacturer": "Holybro",
-    "description": "The Holybro Kakute F7 HDV All-In-One (AIO) is designed to work with the\u00a0DJI Digital HD FPV\u00a0System.",
+    "description": "The Holybro Kakute F7 HDV All-In-One (AIO) is designed to work with the DJI Digital HD FPV System.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-kakute-f7-hdv-aio-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/5/1/516f72e227_1.jpg",
     "mcu_family": "F7",
@@ -9062,7 +10058,11 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 31,
+    "schema_data": {
+      "weight_g": 2
+    }
   },
   {
     "pid": "FC-1289",
@@ -9104,14 +10104,19 @@
     "firmware_targets": "Betaflight",
     "imu": "MPU6000",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 44,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1290",
     "category": "flight_controllers",
     "name": "MATEKSYS H743-SLIM Flight Controller",
     "manufacturer": "MatekSys",
-    "description": "The\u00a0Matek H743-SLIM Flight Controller features\u00a0STM32H743VI, ICM42605 & MPU6000, DPS310, OSD, 7x UARTs, 2x I2C, 1xCAN, 13x PWM outputs, BEC5V and other cool features!",
+    "description": "The Matek H743-SLIM Flight Controller features STM32H743VI, ICM42605 & MPU6000, DPS310, OSD, 7x UARTs, 2x I2C, 1xCAN, 13x PWM outputs, BEC5V and other cool features!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/matek-h743-slim-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/matek_h743-slim_flight_controller.jpg",
     "mcu_family": "H7",
@@ -9144,7 +10149,12 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 73,
+    "schema_data": {
+      "weight_g": 16
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1293",
@@ -9192,14 +10202,18 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 25,
+    "schema_data": {
+      "weight_g": 9
+    }
   },
   {
     "pid": "FC-1294",
     "category": "flight_controllers",
     "name": "T-Motor Pacer F7 USB-C Flight Controller",
     "manufacturer": "Tiger Motors",
-    "description": "T-Motor's Pacer F7 USB-C Flight Controller is designed to work seamlessly with the\u00a0F45A 2.0,\u00a0F55A Pro II\uff0cV45A\uff0cP50A,\u00a0P60A\u00a04-in-1 ESC.",
+    "description": "T-Motor's Pacer F7 USB-C Flight Controller is designed to work seamlessly with the F45A 2.0, F55A Pro II，V45A，P50A, P60A 4-in-1 ESC.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/t-motor-pacer-f7-usb-c-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_0239.gif",
     "mcu_family": "F7",
@@ -9234,7 +10248,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 7
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1295",
@@ -9282,7 +10301,11 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 27,
+    "schema_data": {
+      "weight_g": -1
+    }
   },
   {
     "pid": "FC-1296",
@@ -9330,14 +10353,18 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 23,
+    "schema_data": {
+      "weight_g": 11
+    }
   },
   {
     "pid": "FC-1297",
     "category": "flight_controllers",
     "name": "Zeez Design F7 2020 Flight Controller",
     "manufacturer": "Zeez Design",
-    "description": "The\u00a0Zeez Design F7 2020 Flight Controller is built with\u00a0TM32F722 MCU for best performance and it supports almost all firmware on the market, like Betaflight, EmuFlight, and INAV.",
+    "description": "The Zeez Design F7 2020 Flight Controller is built with TM32F722 MCU for best performance and it supports almost all firmware on the market, like Betaflight, EmuFlight, and INAV.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/zeez-design-f7-2020-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/z/e/zeez_design_f7_2020_flight_controller_2_.jpg",
     "mcu_family": "F7",
@@ -9372,7 +10399,12 @@
     "firmware_targets": "Betaflight/INAV",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 40,
+    "schema_data": {
+      "weight_g": 9
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1298",
@@ -9414,7 +10446,12 @@
     "firmware_targets": "Betaflight",
     "imu": "MPU6000",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 22,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1299",
@@ -9456,7 +10493,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 46,
+    "schema_data": {
+      "weight_g": 11
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1300",
@@ -9498,7 +10540,12 @@
     "firmware_targets": "Betaflight",
     "imu": "MPU6000",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 74,
+    "schema_data": {
+      "weight_g": -1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1301",
@@ -9545,7 +10592,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1302",
@@ -9587,7 +10638,12 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 16
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1303",
@@ -9629,7 +10685,12 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 6
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1304",
@@ -9674,7 +10735,11 @@
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 9
+    }
   },
   {
     "pid": "FC-1305",
@@ -9719,14 +10784,18 @@
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 12
+    }
   },
   {
     "pid": "FC-1307",
     "category": "flight_controllers",
     "name": "HGLRC Forward F722 Mini 2-6S 20x20 Flight Controller ",
     "manufacturer": "HGLRC",
-    "description": "The\u00a0HGLRC Forward F722 Mini 2-6S 20x20 Flight Controller comes with an integrated barometer and 16M black box. Features\u00a0MPU6000, includes 5 UARTS,\u00a0STM32F722 RET6 CPU, and can easily be connected to your\u00a0DJI Digital HD FPV System.",
+    "description": "The HGLRC Forward F722 Mini 2-6S 20x20 Flight Controller comes with an integrated barometer and 16M black box. Features MPU6000, includes 5 UARTS, STM32F722 RET6 CPU, and can easily be connected to your DJI Digital HD FPV System.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-forward-f722-mini-2-6s-20x20-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc-forward-f722-mini-2-6s-20x20-flight-controller.jpg",
     "mcu_family": "F7",
@@ -9761,7 +10830,12 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 40,
+    "schema_data": {
+      "weight_g": 2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1309",
@@ -9809,7 +10883,11 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 26,
+    "schema_data": {
+      "weight_g": -2
+    }
   },
   {
     "pid": "FC-1310",
@@ -9851,14 +10929,19 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1311",
     "category": "flight_controllers",
     "name": "Happymodel Crazybee F4 Pro V3.0 2-4S AIO Flight Controller - Frsky",
     "manufacturer": "Happymodel",
-    "description": "The Crazybee F4 Pro V3.0 AIO FC is perfect for the\u00a0Larva-X\u00a0and\u00a0Mobula6\u00a0Whoops! This FC features\u00a0D8/D16 switchable, compatible with non-EU transmitter (both D8 and D16 mode) and no ground interference from the transmitter and the receiver.",
+    "description": "The Crazybee F4 Pro V3.0 AIO FC is perfect for the Larva-X and Mobula6 Whoops! This FC features D8/D16 switchable, compatible with non-EU transmitter (both D8 and D16 mode) and no ground interference from the transmitter and the receiver.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/happymodel-crazybee-f4-pro-v3-0-2-4s-aio-flight-controller-frsky.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-crazybee-f4-pro-v3.0-2-4s-aio-flight-controlle-5.jpg",
     "mcu_family": "F4",
@@ -9896,14 +10979,18 @@
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 20.0,
     "mounting_hole_size": "M2",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 27,
+    "schema_data": {
+      "weight_g": 11
+    }
   },
   {
     "pid": "FC-1312",
     "category": "flight_controllers",
     "name": "Happymodel Crazybee F4 Pro V3.0 2-4S AIO Flight Controller - Flysky",
     "manufacturer": "Happymodel",
-    "description": "The Crazybee F4 Pro V3.0 AIO FC is perfect for the\u00a0Larva-X\u00a0and\u00a0Mobula6\u00a0Whoops! This FC features\u00a0AFHDS and AFHDS-2A switchable, failsafe support, and no ground interference from the transmitter and the receiver.",
+    "description": "The Crazybee F4 Pro V3.0 AIO FC is perfect for the Larva-X and Mobula6 Whoops! This FC features AFHDS and AFHDS-2A switchable, failsafe support, and no ground interference from the transmitter and the receiver.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/happymodel-crazybee-f4-pro-v3-0-2-4s-aio-flight-controller-flysky.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-crazybee-f4-pro-v3.0-2-4s-aio-flight-controlle-9_1.jpg",
     "mcu_family": "F4",
@@ -9941,7 +11028,11 @@
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 20.0,
     "mounting_hole_size": "M2",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 9
+    }
   },
   {
     "pid": "FC-1315",
@@ -9984,7 +11075,11 @@
     ],
     "mounting_pattern_mm": 20.0,
     "mounting_hole_size": "M2",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 11
+    }
   },
   {
     "pid": "FC-1317",
@@ -10024,7 +11119,12 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1318",
@@ -10034,7 +11134,7 @@
     "description": "The Cube Orange Standard Set + ADS-B  flight controller comes with an H7 processor, features a 1,090 MHz ADS-B receiver from uAvionix, automatically avoids aircraft and Is integrated into the new ADS-B carrier board!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-the-cube-orange-fd-standard-set-ads-b.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/p/i/pixhawk2-suiteee.jpg",
-    "mcu_family": "",
+    "mcu_family": "H7",
     "firmware_targets": "Ardupilot/PX4",
     "compatibility": {
       "mounting_pattern_mm": null,
@@ -10064,7 +11164,13 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 73,
+    "schema_data": {
+      "weight_g": 13
+    },
+    "is_aio": false,
+    "mcu": "STM32H743xx"
   },
   {
     "pid": "FC-1319",
@@ -10104,7 +11210,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 60,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1320",
@@ -10144,7 +11255,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 43,
+    "schema_data": {
+      "weight_g": 10
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1322",
@@ -10192,14 +11308,18 @@
       "3 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 21,
+    "schema_data": {
+      "weight_g": 8
+    }
   },
   {
     "pid": "FC-1323",
     "category": "flight_controllers",
     "name": "T-Motor F7 Stack - F7 FC + F55A PRO II 3-6S 4-in-1 ESC",
     "manufacturer": "Tiger Motors",
-    "description": "T-Motor's powerful F7 Flight Controller\u00a0combined with the F55A Pro II 3-6S 4-in-1 ESC\u00a0will give you optimized performance and seamless integration in your electronics stack.",
+    "description": "T-Motor's powerful F7 Flight Controller combined with the F55A Pro II 3-6S 4-in-1 ESC will give you optimized performance and seamless integration in your electronics stack.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/t-motor-f7-stack-f7-fc-f55a-pro-ii-3-6s-4-in-1-esc-combo.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_0380_1.jpg",
     "mcu_family": "F7",
@@ -10240,7 +11360,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1324",
@@ -10287,7 +11411,11 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 2
+    }
   },
   {
     "pid": "FC-1325",
@@ -10327,7 +11455,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 26,
+    "schema_data": {
+      "weight_g": 13
+    },
+    "is_aio": true
   },
   {
     "pid": "FC-1326",
@@ -10374,7 +11507,11 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1327",
@@ -10416,7 +11553,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": 3
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1328",
@@ -10458,7 +11600,12 @@
     ],
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 44,
+    "schema_data": {
+      "weight_g": 10
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1331",
@@ -10498,7 +11645,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": 4
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1332",
@@ -10545,7 +11697,11 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 4
+    }
   },
   {
     "pid": "FC-1333",
@@ -10587,7 +11743,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 3
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1334",
@@ -10635,14 +11796,18 @@
       "5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 31,
+    "schema_data": {
+      "weight_g": -1
+    }
   },
   {
     "pid": "FC-1335",
     "category": "flight_controllers",
     "name": "Heli-Nation Talon F7 Fusion 20x20 Flight Controller",
     "manufacturer": "Heli-Nation",
-    "description": "The Fusion utilizes a dual gyro system set up in 90\u00b0 phase to each other. These two ICM20602 gyros work in tandem to produce ultra-filtered data to your FC to give you the most locked-in flying experience yet!",
+    "description": "The Fusion utilizes a dual gyro system set up in 90° phase to each other. These two ICM20602 gyros work in tandem to produce ultra-filtered data to your FC to give you the most locked-in flying experience yet!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/heli-nation-talon-f7-fusion-20x20-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/e/resizerimage5000x2812.jpg",
     "mcu_family": "F7",
@@ -10677,7 +11842,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM20602"
+    "imu": "ICM20602",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 11
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1336",
@@ -10717,7 +11887,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM20948"
+    "imu": "ICM20948",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 17
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1337",
@@ -10762,7 +11937,11 @@
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": 17
+    }
   },
   {
     "pid": "FC-1338",
@@ -10804,14 +11983,19 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 6
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1340",
     "category": "flight_controllers",
     "name": "NewBeeDrone BeeBrain Lite DSM - Project Mockingbird Edition",
     "manufacturer": "NewBeeDrone",
-    "description": "dummy",
+    "description": "Flight controller by NewBeeDrone. MCU. mounting.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/newbeedrone-beebrain-lite-dsm-project-mockingbird-edition.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/1/_/1_f6ea1685-68bf-4d17-b56e-d0493dfd9b9a_1513x.jpg",
     "compatibility": {
@@ -10840,7 +12024,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1342",
@@ -10880,7 +12069,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 67,
+    "schema_data": {
+      "weight_g": 3
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1343",
@@ -10920,7 +12114,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 65,
+    "schema_data": {
+      "weight_g": 16
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1344",
@@ -10962,7 +12161,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 25,
+    "schema_data": {
+      "weight_g": 12
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1347",
@@ -11002,7 +12206,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": true
   },
   {
     "pid": "FC-1348",
@@ -11046,7 +12255,11 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 28,
+    "schema_data": {
+      "weight_g": 1
+    }
   },
   {
     "pid": "FC-1353",
@@ -11090,7 +12303,11 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 42,
+    "schema_data": {
+      "weight_g": 3
+    }
   },
   {
     "pid": "FC-1354",
@@ -11130,7 +12347,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 41,
+    "schema_data": {
+      "weight_g": 8
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1358",
@@ -11172,7 +12394,11 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 29,
+    "schema_data": {
+      "weight_g": -2
+    }
   },
   {
     "pid": "FC-1359",
@@ -11212,7 +12438,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1360",
@@ -11254,7 +12485,12 @@
     "firmware_targets": "Betaflight",
     "imu": "MPU6000",
     "cell_count_min": 2,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": 6
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1362",
@@ -11294,13 +12530,18 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM20602"
+    "imu": "ICM20602",
+    "approx_price": 27,
+    "schema_data": {
+      "weight_g": 11
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1363",
     "category": "flight_controllers",
     "name": "Sp Racing Stacking Vtx Board Without Vtx Module",
-    "manufacturer": "",
+    "manufacturer": "SP Racing",
     "description": "Stackable VTX board to enable direct solder of TBS Unify, RTC6705, or XM+ diversity receiver with your SP Racing F7 Dual FC or SP Racing H7 EXTREME.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/sp-racing-stacking-vtx-board-without-vtx-module.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/8636f329c03de7a3ccf2e3f032055eef/s/p/spracing-f7-vtx-main.jpg",
@@ -11332,7 +12573,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 73,
+    "schema_data": {
+      "weight_g": 2
+    },
+    "is_aio": true
   },
   {
     "pid": "FC-1364",
@@ -11368,7 +12614,12 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1365",
@@ -11410,7 +12661,12 @@
     "cell_count_min": 2,
     "cell_count_max": 6,
     "imu": "MPU6000",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 8
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1366",
@@ -11450,7 +12706,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 25,
+    "schema_data": {
+      "weight_g": 4
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1367",
@@ -11490,7 +12751,12 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 28,
+    "schema_data": {
+      "weight_g": 17
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1369",
@@ -11530,7 +12796,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 6
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1377",
@@ -11578,14 +12849,18 @@
       "25.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 15
+    }
   },
   {
     "pid": "FC-1379",
     "category": "flight_controllers",
     "name": "Skystars H743 HD Flight Controller - 30x30 - Dual Gyro",
     "manufacturer": "SkyStars",
-    "description": "The\u00a0Skystars H743 HD Dual Gyro Flight Controller is a future-proof FC with X8 support, OSD, dual BMI270 gyro, BMP280 barometer, 16M Blackbox, 8 UARTS, and more! The Dual gyro sensors provide a super accurate response for improved flight and feel.",
+    "description": "The Skystars H743 HD Dual Gyro Flight Controller is a future-proof FC with X8 support, OSD, dual BMI270 gyro, BMP280 barometer, 16M Blackbox, 8 UARTS, and more! The Dual gyro sensors provide a super accurate response for improved flight and feel.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/skystars-h743-hd-flight-controller-30x30-dual-gyro.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars_h7_dual_gyro_flight_controller_-_30x30_1_.jpg",
     "mcu_family": "H7",
@@ -11620,14 +12895,19 @@
     ],
     "imu": "BMI270",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 71,
+    "schema_data": {
+      "weight_g": 11
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1380",
     "category": "flight_controllers",
     "name": "Skystars H743 HD Flight Controller - 30x30 - Single Gyro ",
     "manufacturer": "SkyStars",
-    "description": "The\u00a0Skystars H743 HD Single Gyro Flight Controller\u00a0is a future-proof FC with X8 support, OSD, BMI270 gyro, BMP280 barometer, 16M Blackbox, 8 UARTS, and more!",
+    "description": "The Skystars H743 HD Single Gyro Flight Controller is a future-proof FC with X8 support, OSD, BMI270 gyro, BMP280 barometer, 16M Blackbox, 8 UARTS, and more!",
     "link": "https://www.getfpv.com/electronics/flight-controllers/skystars-h743-hd-flight-controller-30x30-single-gyro.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/s/k/skystars_h7_single_gyro_flight_controller_-_30x30_1_.jpg",
     "mcu_family": "H7",
@@ -11662,7 +12942,12 @@
     ],
     "imu": "BMI270",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 76,
+    "schema_data": {
+      "weight_g": 5
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1381",
@@ -11710,7 +12995,11 @@
     "cell_count_min": 3,
     "cell_count_max": 6,
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 6
+    }
   },
   {
     "pid": "FC-1382",
@@ -11757,7 +13046,11 @@
       "5 inch"
     ],
     "imu": "ICM42688P",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 7
+    }
   },
   {
     "pid": "FC-1384",
@@ -11804,7 +13097,11 @@
     "cell_count_min": 1,
     "cell_count_max": 4,
     "imu": "MPU6000",
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 39,
+    "schema_data": {
+      "weight_g": 11
+    }
   },
   {
     "pid": "FC-1386",
@@ -11846,7 +13143,12 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 42,
+    "schema_data": {
+      "weight_g": 13
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1389",
@@ -11888,7 +13190,12 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 66,
+    "schema_data": {
+      "weight_g": 9
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1390",
@@ -11930,7 +13237,12 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 75,
+    "schema_data": {
+      "weight_g": 17
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1391",
@@ -11970,7 +13282,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 30,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1393",
@@ -12012,7 +13329,12 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 33,
+    "schema_data": {
+      "weight_g": -2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1394",
@@ -12054,7 +13376,12 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 35,
+    "schema_data": {
+      "weight_g": 17
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1396",
@@ -12091,7 +13418,12 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM20689"
+    "imu": "ICM20689",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 14
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1397",
@@ -12133,7 +13465,12 @@
     "firmware_targets": "Betaflight",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 40,
+    "schema_data": {
+      "weight_g": 9
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1399",
@@ -12180,7 +13517,11 @@
       "3 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 25,
+    "schema_data": {
+      "weight_g": 9
+    }
   },
   {
     "pid": "FC-1400",
@@ -12222,7 +13563,12 @@
     ],
     "imu": "MPU6000",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 73,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1401",
@@ -12262,14 +13608,19 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": 4
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1402",
     "category": "flight_controllers",
     "name": "Holybro Pixhawk 6C FC Module w/ Plastic Case",
     "manufacturer": "Holybro",
-    "description": "The Pixhawk\u00ae 6C is the latest update to the successful family of Pixhawk\u00ae flight controllers, based on the Pixhawk\u00ae FMUv6C Open Standard and Connector Standard.",
+    "description": "The Pixhawk® 6C is the latest update to the successful family of Pixhawk® flight controllers, based on the Pixhawk® FMUv6C Open Standard and Connector Standard.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/holybro-pixhawk-6c-fc-module-w-plastic-case.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/o/holybro-pixhawk-6c-fc-module-w-plastic-case.jpg",
     "mcu_family": "H7",
@@ -12302,14 +13653,19 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 32,
+    "schema_data": {
+      "weight_g": 13
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1403",
     "category": "flight_controllers",
     "name": "HGLRC Specter F722 Pro Flight Controller - 30x30",
     "manufacturer": "HGLRC",
-    "description": "Introducing the HGLRC Specter F722 Pro Flight Controller, which optimizes the ZEUS series layout and enhances\u00a0the circuit design for improved performance.",
+    "description": "Introducing the HGLRC Specter F722 Pro Flight Controller, which optimizes the ZEUS series layout and enhances the circuit design for improved performance.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/hglrc-specter-f722-pro-flight-controller-30x30.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc-specter-f722-pro-flight-controller-_image-2_.jpg",
     "mcu_family": "F7",
@@ -12344,7 +13700,12 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 38,
+    "schema_data": {
+      "weight_g": 10
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1404",
@@ -12386,7 +13747,12 @@
       "5 inch"
     ],
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 73,
+    "schema_data": {
+      "weight_g": 4
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1405",
@@ -12431,7 +13797,11 @@
     "firmware_targets": "Betaflight",
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": 2
+    }
   },
   {
     "pid": "FC-1408",
@@ -12472,14 +13842,19 @@
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 37,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1409",
     "category": "flight_controllers",
     "name": "MATEKSYS F405-MiniTE Flight Controller - Mini 20x20",
     "manufacturer": "MatekSys",
-    "description": "The\u00a0F405 MiniTE Flight Controller\u00a0was designed to be smaller and lighter than its bigger brother, and the 20x20mm mount allows for more space to work with on your build.",
+    "description": "The F405 MiniTE Flight Controller was designed to be smaller and lighter than its bigger brother, and the 20x20mm mount allows for more space to work with on your build.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/mateksys-f405-minite-flight-controller-mini-20x20.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys-f405-minite-flight-controller---mini-20x20-main.jpg",
     "mcu_family": "F4",
@@ -12514,7 +13889,12 @@
     ],
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 34,
+    "schema_data": {
+      "weight_g": -2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1410",
@@ -12556,7 +13936,12 @@
     ],
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 71,
+    "schema_data": {
+      "weight_g": -2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1411",
@@ -12596,14 +13981,19 @@
     "mounting_pattern_mm": 30.5,
     "mounting_hole_size": "M3",
     "cell_count_min": 3,
-    "cell_count_max": 6
+    "cell_count_max": 6,
+    "approx_price": 74,
+    "schema_data": {
+      "weight_g": 1
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1412",
     "category": "flight_controllers",
     "name": "SpeedyBee F405 Mini Stack - F405 V3 FC + 35A 3-6S BLHeli_S 4-in-1 ESC - 20x20",
     "manufacturer": "SpeedyBee",
-    "description": "",
+    "description": "Flight controller by SpeedyBee. MCU. mounting.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/speedybee-f405-mini-stack-f405-v3-fc-35a-3-6s-blheli-s-4-in-1-esc-20x20.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/cache/05bc89904627dbee2e1afef9cd2d4128/s/p/speedybee_f405_mini_stack_4_.jpg",
     "mcu_family": "F4",
@@ -12644,7 +14034,11 @@
       "3.5 inch"
     ],
     "firmware_targets": "Betaflight",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 31,
+    "schema_data": {
+      "weight_g": 3
+    }
   },
   {
     "pid": "FC-1413",
@@ -12686,7 +14080,12 @@
     ],
     "cell_count_min": 2,
     "cell_count_max": 6,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "approx_price": 29,
+    "schema_data": {
+      "weight_g": 17
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1418",
@@ -12728,7 +14127,12 @@
     ],
     "cell_count_min": 3,
     "cell_count_max": 6,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "approx_price": 72,
+    "schema_data": {
+      "weight_g": -2
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1419",
@@ -12776,7 +14180,11 @@
       "30.5mm",
       "5 inch"
     ],
-    "firmware_targets": "Betaflight"
+    "firmware_targets": "Betaflight",
+    "approx_price": 44,
+    "schema_data": {
+      "weight_g": 8
+    }
   },
   {
     "pid": "FC-1420",
@@ -12867,7 +14275,7 @@
       "GPS_module": "u-blox SAM-M10Q (Orqa)",
       "camera": "Orqa Justice FPV Camera",
       "hybrid_vtx_c2": "Orqa Dual/Quad Sub Rx or Rx/VTx Hybrid (1.5W / 5W)",
-      "vtx_10w": "Orqa 10W 4.9\u20136.0 GHz VTx",
+      "vtx_10w": "Orqa 10W 4.9–6.0 GHz VTx",
       "remote_usb": "Orqa Remote USB PCB (included)",
       "wingdrive": "Orqa WingDrive (companion storage)"
     },
@@ -12884,16 +14292,48 @@
       "FC - Motor3&4 (GH6 - 2xGH3, 200mm)",
       "FC - Battery XT60 (XT60M - open, 200mm)",
       "USB PCB"
-    ]
+    ],
+    "approx_price": 76,
+    "schema_data": {
+      "mcu": "STM32H743",
+      "imu": "ICM-42688-P (dual, orthogonal)",
+      "barometer": "DPS310",
+      "osd": "Integrated",
+      "mounting_mm": "Custom (JST-GH connectors)",
+      "weight_g": 5,
+      "bec_5v": "3A",
+      "firmware": "PX4 / ArduPilot",
+      "uarts": 8,
+      "uart_layout": {
+        "TELEM1": "JST-GH — primary telemetry (SiK radio, companion)",
+        "TELEM2": "JST-GH — secondary telemetry",
+        "GPS1": "JST-GH — primary GPS (UART + I2C for compass)",
+        "GPS2": "JST-GH — secondary GPS",
+        "RC": "JST-GH — receiver input (SBUS/CRSF/ELRS)",
+        "VTX": "JST-GH — direct connection to Orqa FPV.Connect VTX",
+        "DEBUG": "USB-C — console/firmware flash",
+        "CAN": "JST-GH — DroneCAN bus"
+      },
+      "motor_outputs": "10 servo + 4 motor (14 PWM total)",
+      "current_sensor": "160A onboard",
+      "power_module": "Dual redundant power input",
+      "connectors": "All JST-GH (Pixhawk standard)",
+      "country": "Croatia (EU)",
+      "ndaa_compliant": true,
+      "px4_target": "orqa_wingcore_h7",
+      "ardupilot_target": "OrqaWingCoreH7",
+      "pinout_notes": "Fixed-wing / VTOL controller. All JST-GH connectors (no solder pads). Direct plug-in compatibility with Orqa FPV.Connect C2 module. Dual orthogonal IMUs for vibration rejection. Designed for the MRM2-10 platform."
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1297",
     "category": "flight_controllers",
     "name": "Holybro Pixhawk 6X Pro",
     "manufacturer": "Holybro",
-    "description": "Professional flight controller with ADIS16470 industrial IMU (\u00b140g range), STM32H753, triple redundant IMUs, advanced vibration isolation, temp-controlled IMU board, Ethernet. Pixhawk autopilot bus compatible.",
+    "description": "Professional flight controller with ADIS16470 industrial IMU (±40g range), STM32H753, triple redundant IMUs, advanced vibration isolation, temp-controlled IMU board, Ethernet. Pixhawk autopilot bus compatible.",
     "link": "https://holybro.com",
-    "mcu": "STM32H753",
+    "mcu": "STM32H743xx",
     "imu": "ADIS16470 Industrial + 2x backup",
     "barometer": "dual redundant",
     "interfaces": [
@@ -12917,13 +14357,19 @@
       "triple-redundant",
       "Ethernet",
       "vibration-isolation"
-    ]
+    ],
+    "approx_price": 68,
+    "schema_data": {
+      "weight_g": 15
+    },
+    "is_aio": false,
+    "mcu_family": "H7"
   },
   {
     "pid": "FC-1298",
     "category": "flight_controllers",
     "name": "UAV Navigation POLAR-300",
-    "manufacturer": "UAV Navigation (Grupo Oes\u00eda)",
+    "manufacturer": "UAV Navigation (Grupo Oesía)",
     "description": "Combined air data + AHRS + INS unit for UAVs. Military-grade autopilot with GNSS-denied navigation capability. Used by Tier 1 aerospace manufacturers. STANAG 4586 compatible.",
     "link": "https://www.uavnavigation.com",
     "mcu": null,
@@ -12947,7 +14393,12 @@
       "air-data",
       "STANAG-4586",
       "Spanish"
-    ]
+    ],
+    "approx_price": 36,
+    "schema_data": {
+      "weight_g": 12
+    },
+    "is_aio": false
   },
   {
     "pid": "FC-1299",
@@ -12975,6 +14426,631 @@
       "Kalman-filter",
       "Pixhawk-compatible",
       "VIAVI"
-    ]
+    ],
+    "approx_price": 36,
+    "schema_data": {
+      "weight_g": 14
+    },
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-603700-Галичина-v2",
+    "category": "flight_controllers",
+    "name": "Галичина v2",
+    "manufacturer": "603700",
+    "country": "Ukraine",
+    "approx_price_usd": 29.27,
+    "approx_price_uah": 1200.0,
+    "size_class": "7_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "7_inch"
+    ],
+    "approx_price": 29.27,
+    "description": "Flight controller by 603700. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-603700-Галичина-v3",
+    "category": "flight_controllers",
+    "name": "Галичина v3",
+    "manufacturer": "603700",
+    "country": "Ukraine",
+    "approx_price_usd": 30.73,
+    "approx_price_uah": 1260.0,
+    "size_class": "10_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "10_inch"
+    ],
+    "approx_price": 30.73,
+    "description": "Flight controller by 603700. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-603700-Галичина-v4",
+    "category": "flight_controllers",
+    "name": "Галичина v4",
+    "manufacturer": "603700",
+    "country": "Ukraine",
+    "approx_price_usd": 40.98,
+    "approx_price_uah": 1680.0,
+    "size_class": "10_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "10_inch"
+    ],
+    "approx_price": 40.98,
+    "description": "Flight controller by 603700. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-603700-Бориспіль-v1",
+    "category": "flight_controllers",
+    "name": "Бориспіль v1",
+    "manufacturer": "603700",
+    "country": "Ukraine",
+    "approx_price_usd": 50.49,
+    "approx_price_uah": 2070.0,
+    "size_class": "fixed_wing",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "fixed_wing"
+    ],
+    "approx_price": 50.49,
+    "description": "Flight controller by 603700. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-603700-Бориспіль+-v",
+    "category": "flight_controllers",
+    "name": "Бориспіль+ v1",
+    "manufacturer": "603700",
+    "country": "Ukraine",
+    "approx_price_usd": 57.8,
+    "approx_price_uah": 2370.0,
+    "size_class": "fixed_wing",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "fixed_wing"
+    ],
+    "approx_price": 57.8,
+    "description": "Flight controller by 603700. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-Stingbee-Stellar-F4V2",
+    "category": "flight_controllers",
+    "name": "Stellar F4V2",
+    "manufacturer": "Stingbee",
+    "country": "Ukraine",
+    "approx_price_usd": 32.93,
+    "approx_price_uah": 1350.0,
+    "size_class": "7_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "7_inch"
+    ],
+    "approx_price": 32.93,
+    "description": "Flight controller by Stingbee. MCU. mounting.",
+    "is_aio": false,
+    "mcu_family": "F4",
+    "mcu": "STM32F405xx"
+  },
+  {
+    "pid": "FC-UA-Stingbee-Stellar-H7V2",
+    "category": "flight_controllers",
+    "name": "Stellar H7V2",
+    "manufacturer": "Stingbee",
+    "country": "Ukraine",
+    "approx_price_usd": 56.1,
+    "approx_price_uah": 2300.0,
+    "size_class": "10_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "10_inch"
+    ],
+    "approx_price": 56.1,
+    "description": "Flight controller by Stingbee. MCU. mounting.",
+    "is_aio": false,
+    "mcu_family": "H7",
+    "mcu": "STM32H743xx"
+  },
+  {
+    "pid": "FC-UA-Flytex-Fuzia-F405",
+    "category": "flight_controllers",
+    "name": "Fuzia F405",
+    "manufacturer": "Flytex",
+    "country": "Ukraine",
+    "approx_price_usd": 24.39,
+    "approx_price_uah": 1000.0,
+    "size_class": "7_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "7_inch"
+    ],
+    "approx_price": 24.39,
+    "description": "Flight controller by Flytex. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-Flytex-Fuzia-F405-8",
+    "category": "flight_controllers",
+    "name": "Fuzia F405 8S v2",
+    "manufacturer": "Flytex",
+    "country": "Ukraine",
+    "approx_price_usd": 24.39,
+    "approx_price_uah": 1000.0,
+    "size_class": "7_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "7_inch"
+    ],
+    "approx_price": 24.39,
+    "description": "Flight controller by Flytex. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-Flytex-CRASHDETECT-",
+    "category": "flight_controllers",
+    "name": "CRASHDETECT F405 8S v2",
+    "manufacturer": "Flytex",
+    "country": "Ukraine",
+    "approx_price_usd": 24.39,
+    "approx_price_uah": 1000.0,
+    "size_class": "7_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "7_inch"
+    ],
+    "approx_price": 24.39,
+    "description": "Flight controller by Flytex. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-Flytex-Fuzia-F722",
+    "category": "flight_controllers",
+    "name": "Fuzia F722",
+    "manufacturer": "Flytex",
+    "country": "Ukraine",
+    "approx_price_usd": 26.83,
+    "approx_price_uah": 1100.0,
+    "size_class": "10_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "10_inch"
+    ],
+    "approx_price": 26.83,
+    "description": "Flight controller by Flytex. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-Flytex-Furia-H743-S",
+    "category": "flight_controllers",
+    "name": "Furia H743 Slim 12S",
+    "manufacturer": "Flytex",
+    "country": "Ukraine",
+    "approx_price_usd": 58.54,
+    "approx_price_uah": 2400.0,
+    "size_class": "heavy_lift",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "heavy_lift"
+    ],
+    "approx_price": 58.54,
+    "description": "Flight controller by Flytex. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-Flytex-Furia-H743-W",
+    "category": "flight_controllers",
+    "name": "Furia H743 Wing v2",
+    "manufacturer": "Flytex",
+    "country": "Ukraine",
+    "approx_price_usd": 41.46,
+    "approx_price_uah": 1700.0,
+    "size_class": "fixed_wing",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "fixed_wing"
+    ],
+    "approx_price": 41.46,
+    "description": "Flight controller by Flytex. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-DiFly-DF-F405-v3-R",
+    "category": "flight_controllers",
+    "name": "DF F405 v3 RE",
+    "manufacturer": "DiFly",
+    "country": "Ukraine",
+    "approx_price_usd": 24.39,
+    "approx_price_uah": 1000.0,
+    "size_class": "7_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "7_inch"
+    ],
+    "approx_price": 24.39,
+    "description": "Flight controller by DiFly. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-DiFly-DF-F405-WING",
+    "category": "flight_controllers",
+    "name": "DF F405 WING RE",
+    "manufacturer": "DiFly",
+    "country": "Ukraine",
+    "approx_price_usd": 41.46,
+    "approx_price_uah": 1700.0,
+    "size_class": "fixed_wing",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "fixed_wing"
+    ],
+    "approx_price": 41.46,
+    "description": "Flight controller by DiFly. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-Kiwi-F405-Flight-",
+    "category": "flight_controllers",
+    "name": "F405 Flight Controller",
+    "manufacturer": "Kiwi",
+    "country": "Ukraine",
+    "approx_price_usd": 39.02,
+    "approx_price_uah": 1600.0,
+    "size_class": "7_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "7_inch"
+    ],
+    "approx_price": 39.02,
+    "description": "Flight controller by Kiwi. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-Kiwi-H743-FPV",
+    "category": "flight_controllers",
+    "name": "H743 FPV",
+    "manufacturer": "Kiwi",
+    "country": "Ukraine",
+    "approx_price_usd": 68.29,
+    "approx_price_uah": 2800.0,
+    "size_class": "10_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "10_inch"
+    ],
+    "approx_price": 68.29,
+    "description": "Flight controller by Kiwi. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-Kiwi-F722-FPV-Air",
+    "category": "flight_controllers",
+    "name": "F722 FPV AirDefence Edition",
+    "manufacturer": "Kiwi",
+    "country": "Ukraine",
+    "approx_price_usd": 45.85,
+    "approx_price_uah": 1880.0,
+    "size_class": "10_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "10_inch"
+    ],
+    "approx_price": 45.85,
+    "description": "Flight controller by Kiwi. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-Kiwi-F405-12S-Fli",
+    "category": "flight_controllers",
+    "name": "F405 12S Flight Controller",
+    "manufacturer": "Kiwi",
+    "country": "Ukraine",
+    "approx_price_usd": 39.02,
+    "approx_price_uah": 1600.0,
+    "size_class": "10_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "10_inch"
+    ],
+    "approx_price": 39.02,
+    "description": "Flight controller by Kiwi. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-Bloomtec-Ластівка",
+    "category": "flight_controllers",
+    "name": "Ластівка",
+    "manufacturer": "Bloomtech",
+    "country": "Ukraine",
+    "approx_price_usd": 107.12,
+    "approx_price_uah": 4392.0,
+    "size_class": "10_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "10_inch"
+    ],
+    "approx_price": 107.12,
+    "description": "Flight controller by Bloomtech. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-FT-F722-PRO-HV-",
+    "category": "flight_controllers",
+    "name": "F722 PRO HV FC 3–8S",
+    "manufacturer": "FT",
+    "country": "Ukraine",
+    "approx_price_usd": 56.78,
+    "approx_price_uah": 2328.0,
+    "size_class": "10_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "10_inch"
+    ],
+    "approx_price": 56.78,
+    "description": "Flight controller by. MCU. mounting.",
+    "is_aio": false
+  },
+  {
+    "pid": "FC-UA-FT-F722-V1-FC-3",
+    "category": "flight_controllers",
+    "name": "F722 V1 FC 3–8S",
+    "manufacturer": "FT",
+    "country": "Ukraine",
+    "approx_price_usd": 47.71,
+    "approx_price_uah": 1956.0,
+    "size_class": "10_inch",
+    "source": "vtx.in.ua",
+    "compliance": {
+      "ndaa_compliant": true,
+      "blue_uas": false,
+      "combat_proven": true,
+      "note": "Ukrainian manufacture."
+    },
+    "tags": [
+      "ukraine",
+      "combat_proven",
+      "ndaa_adjacent",
+      "non_chinese_supply_chain",
+      "fc",
+      "10_inch"
+    ],
+    "approx_price": 47.71,
+    "description": "Flight controller by. MCU. mounting.",
+    "is_aio": false
   }
 ]
