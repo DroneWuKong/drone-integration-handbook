@@ -19,6 +19,12 @@ from pie_supplemental import (
     analyze_propulsion, analyze_test_infra, analyze_financial,
     SUPPLEMENTAL_SOURCES,
 )
+from pie_advanced import (
+    analyze_dependency_graph, analyze_lead_times, analyze_contract_demand,
+    analyze_conflict_consumption, analyze_alternatives, analyze_price_elasticity,
+    analyze_sanctions_evasion, analyze_what_if, analyze_temporal_patterns,
+    analyze_sentiment_signals, ADVANCED_SOURCES,
+)
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 PARTS_DB = REPO_ROOT / "data" / "parts-db"
@@ -266,8 +272,9 @@ SOURCES = {
 }
 
 
-# Merge supplemental sources
+# Merge supplemental + advanced sources
 SOURCES.update(SUPPLEMENTAL_SOURCES)
+SOURCES.update(ADVANCED_SOURCES)
 
 
 def resolve_sources(source_ids):
@@ -1938,6 +1945,48 @@ def main():
     print("\nAnalyzing financial signals...")
     fin_flags = analyze_financial()
     all_flags.extend(fin_flags)
+
+    print("\n── Advanced Algorithms ──")
+
+    print("\nMapping dependency graph (cascade analysis)...")
+    dep_flags = analyze_dependency_graph(db)
+    all_flags.extend(dep_flags)
+
+    print("\nPredicting lead time trajectories...")
+    lt_flags = analyze_lead_times()
+    all_flags.extend(lt_flags)
+
+    print("\nCalculating contract → component demand...")
+    contract_flags = analyze_contract_demand()
+    all_flags.extend(contract_flags)
+
+    print("\nTracking conflict consumption rates...")
+    conflict_flags = analyze_conflict_consumption()
+    all_flags.extend(conflict_flags)
+
+    print("\nMapping alternative components...")
+    alt_flags = analyze_alternatives(db)
+    all_flags.extend(alt_flags)
+
+    print("\nScoring price elasticity...")
+    elast_flags = analyze_price_elasticity()
+    all_flags.extend(elast_flags)
+
+    print("\nDetecting sanctions evasion patterns...")
+    sanct_flags = analyze_sanctions_evasion()
+    all_flags.extend(sanct_flags)
+
+    print("\nRunning what-if simulations...")
+    whatif_flags = analyze_what_if()
+    all_flags.extend(whatif_flags)
+
+    print("\nMatching temporal patterns...")
+    temp_flags = analyze_temporal_patterns()
+    all_flags.extend(temp_flags)
+
+    print("\nAnalyzing sentiment signals...")
+    sent_flags = analyze_sentiment_signals()
+    all_flags.extend(sent_flags)
 
     print("\nGenerating predictions...")
     preds = generate_predictions(len(blue), len(ndaa), db)

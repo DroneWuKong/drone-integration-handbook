@@ -1,7 +1,7 @@
 [
   {
     "id": "c5af86037af6",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 4B found in Geran-2/3 (Shahed-136/238)",
@@ -35,7 +35,7 @@
   },
   {
     "id": "248217679ba3",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi found in Geran-5",
@@ -69,7 +69,7 @@
   },
   {
     "id": "3d1fd93cab17",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 5 found in Molniya-2R",
@@ -103,7 +103,7 @@
   },
   {
     "id": "562b363e0af0",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 4B confirmed in Geran-2/3 'Borscht' tracker \u2014 40,000+ units diverted",
@@ -155,7 +155,7 @@
   },
   {
     "id": "21eef1620b14",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 5 confirmed in Molniya-2R reconnaissance drone",
@@ -207,7 +207,7 @@
   },
   {
     "id": "ee13e070c884",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi tracker with mesh networking in Geran-5 jet drone",
@@ -259,7 +259,7 @@
   },
   {
     "id": "4b1f1f665173",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "supply_constraint",
     "severity": "critical",
     "title": "Geographic risk: Taiwan \u2014 high risk, critical to Blue UAS supply chain",
@@ -292,8 +292,214 @@
     ]
   },
   {
+    "id": "329eaa04dcfd",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "critical",
+    "title": "Cascade risk: NVIDIA Jetson Orin NX \u2014 5 platforms, 4 programs, SINGLE SOURCE",
+    "detail": "Dependency graph for NVIDIA Jetson Orin NX: Platforms: Skydio X10D, Shield AI V-BAT, Anduril Ghost-X, Neousys FLYC-300. Programs: Army SRR, USAF CCA, Replicator/DAWG, USSOCOM ISR. Upstream: TSMC (fab), Samsung/SK Hynix (DRAM), NVIDIA (design). Single source: YES \u2014 no drop-in replacement. Cascade score: 40 (platforms \u00d7 programs \u00d7 source risk). If NVIDIA Jetson Orin NX supply is disrupted, 4 government programs are directly impacted.",
+    "confidence": 0.9,
+    "prediction": "A NVIDIA Jetson Orin NX disruption cascades to 4 programs within 4-8 weeks of lead time extension.",
+    "platform_id": null,
+    "component_id": "nvidia-jetson-orin-nx",
+    "data_sources": [
+      "forge_bom",
+      "supply_chain_mapping",
+      "gov_programs"
+    ],
+    "sources": [
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      },
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      }
+    ]
+  },
+  {
+    "id": "18d390a80f4d",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "critical",
+    "title": "Cascade risk: Qualcomm QRB5165 \u2014 5 platforms, 3 programs, SINGLE SOURCE",
+    "detail": "Dependency graph for Qualcomm QRB5165: Platforms: ModalAI VOXL 2, ModalAI Seeker, Teal 2, Teal Black Widow. Programs: Army SRR Tranche 2, USMC FPV, Drone Dominance. Upstream: TSMC (fab), Qualcomm (design), Samsung (DRAM). Single source: YES \u2014 no drop-in replacement. Cascade score: 30 (platforms \u00d7 programs \u00d7 source risk). If Qualcomm QRB5165 supply is disrupted, 3 government programs are directly impacted.",
+    "confidence": 0.9,
+    "prediction": "A Qualcomm QRB5165 disruption cascades to 3 programs within 4-8 weeks of lead time extension.",
+    "platform_id": null,
+    "component_id": "qualcomm-qrb5165",
+    "data_sources": [
+      "forge_bom",
+      "supply_chain_mapping",
+      "gov_programs"
+    ],
+    "sources": [
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      },
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      }
+    ]
+  },
+  {
+    "id": "87f3b10e25be",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "critical",
+    "title": "TSMC is upstream of 2/6 critical components \u2014 master cascade node",
+    "detail": "TSMC fabs the silicon for: NVIDIA Jetson Orin NX, Qualcomm QRB5165. A TSMC disruption (Taiwan scenario, earthquake, power grid) simultaneously impacts ALL Jetson, ALL QRB5165, and dependent platforms. No alternative foundry at these process nodes. This is the single highest-impact node in the entire Blue UAS supply chain dependency graph.",
+    "confidence": 0.92,
+    "prediction": "Diversification away from TSMC requires 3-5 year foundry qualification cycle. No near-term mitigation exists at scale.",
+    "platform_id": null,
+    "component_id": "tsmc-foundry",
+    "data_sources": [
+      "supply_chain_mapping",
+      "geopolitical_risk"
+    ],
+    "sources": [
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      },
+      {
+        "name": "Geopolitical Risk Assessment",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Allied nation stability and supply chain concentration risk. Taiwan/TSMC, S.Korea/DRAM focus.",
+        "validation": "Based on published geopolitical analysis, TSMC concentration data, and DRAM market reports.",
+        "type": "derived",
+        "id": "geopolitical_risk"
+      }
+    ]
+  },
+  {
+    "id": "b045c94b1666",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "prediction",
+    "severity": "critical",
+    "title": "What-if: DRAM price doubles (AI demand surge) (25% probability)",
+    "detail": "Scenario: DRAM price doubles (AI demand surge). Probability: 25%. Impact: RPi prices increase $20-60/board. Jetson modules +$100-200. Blue UAS BOM index exceeds $5,000. Affected programs: All Blue UAS programs, Commercial FPV market, Hobbyist market collapse. Recovery: 18-24 months for new DRAM fab capacity. Mitigation: Lock long-term DRAM contracts. Shift to lower-memory configurations. 1GB RPi 5 as alternative.",
+    "confidence": 0.7,
+    "prediction": "If triggered, recovery takes 18-24 months for new DRAM fab capacity. Mitigation: Lock long-term DRAM contracts. Shift to lower-memory configurations. 1GB RPi 5 a",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "geopolitical_risk",
+      "supply_chain_mapping",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "Geopolitical Risk Assessment",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Allied nation stability and supply chain concentration risk. Taiwan/TSMC, S.Korea/DRAM focus.",
+        "validation": "Based on published geopolitical analysis, TSMC concentration data, and DRAM market reports.",
+        "type": "derived",
+        "id": "geopolitical_risk"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "c526f770501c",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "prediction",
+    "severity": "critical",
+    "title": "What-if: Escalated US-China tariffs (50%+ on components) (40% probability)",
+    "detail": "Scenario: Escalated US-China tariffs (50%+ on components). Probability: 40%. Impact: Chinese motors, ESCs, batteries, frames all increase 50%. Non-NDAA drone cost approaches NDAA drone cost. Affected programs: Commercial FPV market, Training/education, Hobbyist entry barrier. Recovery: Permanent structural shift \u2014 drives domestic manufacturing. Mitigation: Accelerate domestic motor/ESC/battery manufacturing. Allied sourcing (Taiwan, S.Korea, EU).",
+    "confidence": 0.7,
+    "prediction": "If triggered, recovery takes Permanent structural shift \u2014 drives domestic manufacturing. Mitigation: Accelerate domestic motor/ESC/battery manufacturing. Allied sourcing (Taiwan, S.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "geopolitical_risk",
+      "supply_chain_mapping",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "Geopolitical Risk Assessment",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Allied nation stability and supply chain concentration risk. Taiwan/TSMC, S.Korea/DRAM focus.",
+        "validation": "Based on published geopolitical analysis, TSMC concentration data, and DRAM market reports.",
+        "type": "derived",
+        "id": "geopolitical_risk"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
     "id": "bc6a4d56da83",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "US-manufactured mesh radios: 14 of 24 options \u2014 NDAA bottleneck",
@@ -318,7 +524,7 @@
   },
   {
     "id": "68cba2525d93",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Shield AI Hivemind (Shield AI) \u2014 combat-deployed, 5 active contracts",
@@ -361,7 +567,7 @@
   },
   {
     "id": "f79bd79fb6d8",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Anduril Lattice (Anduril Industries) \u2014 combat-deployed, 4 active contracts",
@@ -404,7 +610,7 @@
   },
   {
     "id": "dcb26d11ad60",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: FCC blocks new foreign drone imports (equipment authorization freeze)",
@@ -447,7 +653,7 @@
   },
   {
     "id": "86a5f98e63a3",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: Drone Dominance executive order \u2014 'Unleashing U.S. Military Drone Domi",
@@ -490,7 +696,7 @@
   },
   {
     "id": "b8b8b3c4f8f0",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: DRAM tariff & AI datacenter priority \u2014 memory allocation shift",
@@ -533,7 +739,7 @@
   },
   {
     "id": "235f5f7023b4",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: US tariff escalation \u2014 25%+ on Chinese electronics components",
@@ -576,7 +782,7 @@
   },
   {
     "id": "1f24895a4547",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "price_anomaly",
     "severity": "warning",
     "title": "Blue UAS BOM cost index: $4,348 \u2014 720% premium over non-compliant build",
@@ -610,7 +816,7 @@
   },
   {
     "id": "e2928f63ec27",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Neros Technologies: 2500/mo capacity with 50 employees \u2014 lean operation",
@@ -644,7 +850,7 @@
   },
   {
     "id": "b11df271fa7b",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "price_anomaly",
     "severity": "warning",
     "title": "DRAM pricing: +8.5% QoQ, +22% YoY \u2014 cascading to SBC costs",
@@ -687,7 +893,7 @@
   },
   {
     "id": "9116aa2d5db4",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Geographic risk: Israel \u2014 medium risk (Hailo AI accelerators, D-Fend C-UAS)",
@@ -721,7 +927,7 @@
   },
   {
     "id": "d89cc92c827e",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Geographic risk: South Korea \u2014 medium risk (Samsung DRAM, SK Hynix memory)",
@@ -755,7 +961,7 @@
   },
   {
     "id": "b021552dd110",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / Under Secretary R&E: Drone Dominance Program (DDP)",
@@ -807,7 +1013,7 @@
   },
   {
     "id": "bfafb2cfb399",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / SecDef: Replicator \u2192 DAWG (Defense Autonomous Warfare Group)",
@@ -859,7 +1065,7 @@
   },
   {
     "id": "20352c30e640",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army: Army SRR (Short Range Reconnaissance)",
@@ -911,7 +1117,7 @@
   },
   {
     "id": "6cfd8ef05c55",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army: Army FoSUAS (Family of Small UAS)",
@@ -963,7 +1169,7 @@
   },
   {
     "id": "2e8cb8cef28d",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army PEO Aviation: Army FTUAS (Future Tactical UAS)",
@@ -1015,7 +1221,7 @@
   },
   {
     "id": "b16566f4336c",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Marine Corps: USMC FPV Drone Program",
@@ -1067,7 +1273,7 @@
   },
   {
     "id": "44234d860120",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Air Force: USAF CCA (Collaborative Combat Aircraft)",
@@ -1119,7 +1325,7 @@
   },
   {
     "id": "4890daffd9cb",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD: JIATF-401 (Joint Interagency Task Force for C-UAS)",
@@ -1171,7 +1377,7 @@
   },
   {
     "id": "9423957f5134",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Congress / FCC: NDAA FY25 Section 1709 (Foreign Drone Ban)",
@@ -1223,7 +1429,7 @@
   },
   {
     "id": "33e43c3b4077",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "White House / SecDef: Drone Dominance Executive Order (Jul 2025)",
@@ -1275,7 +1481,7 @@
   },
   {
     "id": "91c02588d72b",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Congress: ASDA (American Security Drone Act)",
@@ -1327,7 +1533,7 @@
   },
   {
     "id": "d755a122937d",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / State Dept: Ukraine Security Assistance Initiative (USAI)",
@@ -1379,7 +1585,7 @@
   },
   {
     "id": "12be8c22e11c",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DCMA (transferred from DIU Jul 2025): Blue UAS Cleared List (DCMA)",
@@ -1431,7 +1637,7 @@
   },
   {
     "id": "3a5946d0af80",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "China: DJI global dominance + PLA drone swarm production",
@@ -1465,7 +1671,7 @@
   },
   {
     "id": "6ed2c28d60c4",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Iran: Shahed mass production \u2014 supplying Russia at scale",
@@ -1499,7 +1705,7 @@
   },
   {
     "id": "4ca9eb9961a5",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Russia: Alabuga factory + Lancet + Orlan \u2014 mass drone production using di",
@@ -1533,7 +1739,7 @@
   },
   {
     "id": "81d9bca863a5",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Ukraine (23 platforms) and US Drone Dominance compete for same FPV components",
@@ -1567,7 +1773,7 @@
   },
   {
     "id": "7fa8baa38045",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "RF/Comms: TrellisWare Technologies \u2014 Provides TSM (Tactical Scalable MANET) waveform \u2014 the standard MANET w",
@@ -1601,7 +1807,7 @@
   },
   {
     "id": "ef9f82748fb2",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "RF/Comms: L3Harris \u2014 Tactical Radios \u2014 Primary tactical radio provider for US military. AN/PRC-163 is the bac",
@@ -1635,7 +1841,7 @@
   },
   {
     "id": "457e7d690d01",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "RF/Comms: Persistent Systems \u2014 Most deployed tactical mesh radio. Wave Relay OS (custom Android). Sel",
@@ -1669,7 +1875,7 @@
   },
   {
     "id": "d588c3b0c8b4",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "TrellisWare TSM waveform is the bridge between SOF ground radios and drone mesh networks",
@@ -1712,7 +1918,7 @@
   },
   {
     "id": "c0c9b7de9474",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "EW threat landscape drives GPS-denied autonomy, FHSS links, and mesh resilience requirements",
@@ -1755,7 +1961,7 @@
   },
   {
     "id": "2875b0fb64a6",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "SOF: USSOCOM PEO-SOF Warrior \u2014 All SOF-unique equipment including UAS",
@@ -1789,7 +1995,7 @@
   },
   {
     "id": "a9d9e98f12c6",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "SOF: SOFWERX / SOCOM Forge \u2014 Rapid prototyping and evaluation for SOF",
@@ -1823,7 +2029,7 @@
   },
   {
     "id": "c7caf1ccb90c",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "SOF: SOF Tactical UAS (SOF TUAS) \u2014 Group 3 UAS for SOF missions \u2014 ISR, strike, resupply",
@@ -1857,7 +2063,7 @@
   },
   {
     "id": "1f9c20e3e564",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "SOF: USSOCOM Counter-UAS \u2014 Protecting SOF from enemy drones",
@@ -1891,7 +2097,7 @@
   },
   {
     "id": "dd4246a241ff",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "SOF: AFSOC (Air Force Special Ops Command) \u2014 AFSOC drone programs \u2014 STRATFI with Shield AI",
@@ -1925,7 +2131,7 @@
   },
   {
     "id": "8ba7aa6ac291",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "GPS-denied navigation demand surging \u2014 6 PNT solutions tracked",
@@ -1968,7 +2174,7 @@
   },
   {
     "id": "6df7104fe702",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Drone motor supply chain: majority Chinese-manufactured",
@@ -2002,7 +2208,7 @@
   },
   {
     "id": "b1eecb0649ff",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "LiPo/Li-Ion cells: CATL, BYD, EVE dominate global production",
@@ -2036,7 +2242,7 @@
   },
   {
     "id": "211d3340c0d8",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Financial: Shield AI \u2014 Valued at $2.7B+ (Series F)",
@@ -2079,7 +2285,7 @@
   },
   {
     "id": "07c9d4c60237",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Financial: Anduril Industries \u2014 Valued at $14B+ / Arsenal-1 factory planned",
@@ -2122,7 +2328,7 @@
   },
   {
     "id": "bbdf4f1e0630",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Financial: Red Cat Holdings (RCAT) \u2014 SRR win + Drone Dominance + stock 400%+ YoY",
@@ -2165,7 +2371,7 @@
   },
   {
     "id": "065f565aafba",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Financial: AeroVironment (AVAV) \u2014 Revenue $745M+ FY25, Switchblade production ramp",
@@ -2207,8 +2413,814 @@
     ]
   },
   {
+    "id": "86c0eec94330",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "Cascade risk: STM32H743 \u2014 4 platforms, 4 programs, multi-source",
+    "detail": "Dependency graph for STM32H743: Platforms: Neros Archer, Orqa H7 FC, Pixhawk 6X, ~100+ FCs in Forge DB. Programs: Drone Dominance, USMC FPV, Ukraine FPV production, Commercial FPV. Upstream: STMicroelectronics (EU fab), GlobalFoundries. Single source: No \u2014 alternatives exist. Cascade score: 16 (platforms \u00d7 programs \u00d7 source risk). If STM32H743 supply is disrupted, 4 government programs are directly impacted.",
+    "confidence": 0.9,
+    "prediction": "A STM32H743 disruption cascades to 4 programs within 4-8 weeks of lead time extension.",
+    "platform_id": null,
+    "component_id": "stm32h743",
+    "data_sources": [
+      "forge_bom",
+      "supply_chain_mapping",
+      "gov_programs"
+    ],
+    "sources": [
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      },
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      }
+    ]
+  },
+  {
+    "id": "db4c1675281d",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "Cascade risk: FLIR Boson 640 \u2014 3 platforms, 3 programs, SINGLE SOURCE",
+    "detail": "Dependency graph for FLIR Boson 640: Platforms: Switchblade 600, Anduril Ghost-X, Teal 2 (Hadron). Programs: Ukraine USAI, USSOCOM, Replicator. Upstream: Teledyne FLIR (sole manufacturer). Single source: YES \u2014 no drop-in replacement. Cascade score: 18 (platforms \u00d7 programs \u00d7 source risk). If FLIR Boson 640 supply is disrupted, 3 government programs are directly impacted.",
+    "confidence": 0.9,
+    "prediction": "A FLIR Boson 640 disruption cascades to 3 programs within 4-8 weeks of lead time extension.",
+    "platform_id": null,
+    "component_id": "flir-boson-640",
+    "data_sources": [
+      "forge_bom",
+      "supply_chain_mapping",
+      "gov_programs"
+    ],
+    "sources": [
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      },
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      }
+    ]
+  },
+  {
+    "id": "4f02140488b9",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "Cascade risk: Doodle Labs Helix \u2014 2 platforms, 3 programs, SINGLE SOURCE",
+    "detail": "Dependency graph for Doodle Labs Helix: Platforms: Anduril Ghost-X, Multiple Blue UAS integrators. Programs: Lattice Mesh, Replicator, SOF MANET. Upstream: Qualcomm/Atheros (WiFi silicon), Doodle Labs (firmware/assembly). Single source: YES \u2014 no drop-in replacement. Cascade score: 12 (platforms \u00d7 programs \u00d7 source risk). If Doodle Labs Helix supply is disrupted, 3 government programs are directly impacted.",
+    "confidence": 0.9,
+    "prediction": "A Doodle Labs Helix disruption cascades to 3 programs within 4-8 weeks of lead time extension.",
+    "platform_id": null,
+    "component_id": "doodle-labs-helix",
+    "data_sources": [
+      "forge_bom",
+      "supply_chain_mapping",
+      "gov_programs"
+    ],
+    "sources": [
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      },
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      }
+    ]
+  },
+  {
+    "id": "34c9866fa88d",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "Lead time trend: NVIDIA Jetson Orin NX 16GB \u2014 8\u219212\u219216 weeks (steady)",
+    "detail": "NVIDIA Jetson Orin NX 16GB: lead time increased from 8 to 16 weeks over 6 months. Rate: +4 weeks/quarter (steady). Predicted 6-month: 24 weeks. Driver: 3 Blue UAS platforms scaling + DRAM pricing.",
+    "confidence": 0.78,
+    "prediction": "At current trajectory, NVIDIA Jetson Orin NX 16GB reaches 24-week lead time by Q4 2026. Allocation-only likely.",
+    "platform_id": null,
+    "component_id": "nvidia-jetson-orin-nx-16gb",
+    "data_sources": [
+      "distributor_pricing",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "f3998726eb8f",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "Lead time trend: FLIR Boson 640 \u2014 12\u219214\u219218 weeks (accelerating)",
+    "detail": "FLIR Boson 640: lead time increased from 12 to 18 weeks over 6 months. Rate: +4 weeks/quarter (accelerating). Predicted 6-month: 26 weeks. Driver: Switchblade production + Ukraine USAI packages.",
+    "confidence": 0.78,
+    "prediction": "At current trajectory, FLIR Boson 640 reaches 26-week lead time by Q4 2026. Allocation-only likely.",
+    "platform_id": null,
+    "component_id": "flir-boson-640",
+    "data_sources": [
+      "distributor_pricing",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "c86104ecbcf8",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "Lead time trend: Doodle Labs Helix \u2014 14\u219216\u219220 weeks (accelerating)",
+    "detail": "Doodle Labs Helix: lead time increased from 14 to 20 weeks over 6 months. Rate: +4 weeks/quarter (accelerating). Predicted 6-month: 28 weeks. Driver: Multi-drone programs (Lattice Mesh, Ghost-X).",
+    "confidence": 0.78,
+    "prediction": "At current trajectory, Doodle Labs Helix reaches 28-week lead time by Q4 2026. Allocation-only likely.",
+    "platform_id": null,
+    "component_id": "doodle-labs-helix",
+    "data_sources": [
+      "distributor_pricing",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "5b08e16a3625",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "warning",
+    "title": "Lead time trend: Silvus MN Micro \u2014 16\u219218\u219222 weeks (accelerating)",
+    "detail": "Silvus MN Micro: lead time increased from 16 to 22 weeks over 6 months. Rate: +4 weeks/quarter (accelerating). Predicted 6-month: 30 weeks. Driver: SOF MANET demand + Teal 2 integration.",
+    "confidence": 0.78,
+    "prediction": "At current trajectory, Silvus MN Micro reaches 30-week lead time by Q4 2026. Allocation-only likely.",
+    "platform_id": null,
+    "component_id": "silvus-mn-micro",
+    "data_sources": [
+      "distributor_pricing",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "cccacc6a566b",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "warning",
+    "title": "Contract demand: USMC FPV Program \u2192 11,750 units \u00d7 BOM",
+    "detail": "$47M \u00f7 ~$4,000/unit = ~11,750 units. Component pull: STM32H7 \u00d711,750, QRB5165 (VOXL) \u00d711,750, ELRS 900MHz \u00d711,750, FLIR Lepton \u00d711,750, Silvus MN Micro \u00d711,750, Motors (x4) \u00d747,000, ESCs \u00d747,000, LiPo battery \u00d711,750. Platform: Teal 2 / FPV.",
+    "confidence": 0.82,
+    "prediction": "Delivery timeline drives demand curve. Component orders typically lead production by 8-16 weeks.",
+    "platform_id": null,
+    "component_id": "stm32h7",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom",
+      "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
+    ]
+  },
+  {
+    "id": "8e8e47c1d4db",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "warning",
+    "title": "Contract demand: Drone Dominance Phase 1 (30K units) \u2192 30,000 units \u00d7 BOM",
+    "detail": "$120M \u00f7 ~$4,000/unit = ~30,000 units. Component pull: STM32H7 \u00d730,000, ESP32-S3 \u00d730,000, ELRS 900MHz \u00d730,000, FPV camera \u00d730,000, Motors (x4) \u00d7120,000, ESCs \u00d7120,000, LiPo battery \u00d730,000. Platform: Various FPV.",
+    "confidence": 0.82,
+    "prediction": "Delivery timeline drives demand curve. Component orders typically lead production by 8-16 weeks.",
+    "platform_id": null,
+    "component_id": "stm32h7",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom",
+      "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
+    ]
+  },
+  {
+    "id": "cfcc4b7f8ad6",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "warning",
+    "title": "Contract demand: Army SRR (5,880 systems) \u2192 5,882 units \u00d7 BOM",
+    "detail": "$200M \u00f7 ~$34,000/unit = ~5,882 units. Component pull: Jetson Orin NX \u00d72,941, QRB5165 \u00d72,941, FLIR thermal \u00d75,882, u-blox F9P \u00d75,882, Tactical datalink \u00d75,882. Platform: Skydio X10D / Teal Black Widow.",
+    "confidence": 0.82,
+    "prediction": "Delivery timeline drives demand curve. Component orders typically lead production by 8-16 weeks.",
+    "platform_id": null,
+    "component_id": "jetson-orin-nx",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom",
+      "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
+    ]
+  },
+  {
+    "id": "3f7d33d443ec",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "warning",
+    "title": "Contract demand: Replicator Phase 2 \u2192 10,000 units \u00d7 BOM",
+    "detail": "$500M \u00f7 ~$50,000/unit = ~10,000 units. Component pull: Jetson AGX Orin \u00d710,000, Lattice FPGA \u00d710,000, Doodle Labs mesh \u00d710,000, FLIR Boson 640 \u00d710,000. Platform: Anduril Ghost-X / Altius.",
+    "confidence": 0.82,
+    "prediction": "Delivery timeline drives demand curve. Component orders typically lead production by 8-16 weeks.",
+    "platform_id": null,
+    "component_id": "jetson-agx-orin",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom",
+      "sam_gov"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      },
+      {
+        "name": "SAM.gov (Federal Contract Database)",
+        "url": "https://sam.gov",
+        "description": "Official US federal contract awards database. Source for contract values, awardees, timelines.",
+        "validation": "Official government procurement data. Primary source.",
+        "type": "primary",
+        "id": "sam_gov"
+      }
+    ]
+  },
+  {
+    "id": "258f9cfd80d5",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "warning",
+    "title": "Aggregate demand: Motors (x4) \u2014 167,000 units across 2 contracts",
+    "detail": "Total demand for Motors (x4): 167,000 units. From: USMC FPV Program (11,750 units); Drone Dominance Phase 1 (30K units) (30,000 units).",
+    "confidence": 0.8,
+    "prediction": "167,000 units of Motors (x4) needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "motors-(x4)",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "4bcf128c2982",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "warning",
+    "title": "Aggregate demand: ESCs \u2014 167,000 units across 2 contracts",
+    "detail": "Total demand for ESCs: 167,000 units. From: USMC FPV Program (11,750 units); Drone Dominance Phase 1 (30K units) (30,000 units).",
+    "confidence": 0.8,
+    "prediction": "167,000 units of ESCs needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "escs",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "63f46149e473",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "warning",
+    "title": "Ukraine conflict drone consumption: ~12,800/month \u2014 sustained component demand",
+    "detail": "Estimated monthly consumption: Ukraine FPV drones: ~10,000/mo (Multiple OSINT estimates, Brave1 data). Ukraine ISR drones (Mavic class): ~2,000/mo (Frontline reporting estimates). Russian Geran (Shahed) attacks: ~300/mo (Ukrainian Air Force reports). Russian Lancet: ~500/mo (Frontline estimates). Total component units consumed: ~93,400/month. This demand competes directly with US Drone Dominance program for the same commercial FPV components.",
+    "confidence": 0.72,
+    "prediction": "Conflict consumption is ongoing and additive to all other demand signals. No end in sight as of April 2026.",
+    "platform_id": null,
+    "component_id": "stm32-fc",
+    "data_sources": [
+      "foreign_intel",
+      "gur_war_sanctions",
+      "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      },
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
+    ]
+  },
+  {
+    "id": "2c15d7fd0be7",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "diversion_risk",
+    "severity": "warning",
+    "title": "Gray market signal: RPi 4B (4GB) \u2014 42% premium in China ($78 vs $55 MSRP)",
+    "detail": "Taobao/AliExpress pricing 42% above MSRP. GUR confirmed 40K+ units diverted into Russian drones. When gray market premium exceeds 30%, active diversion procurement is likely. Threshold crossed for RPi 4B (4GB).",
+    "confidence": 0.8,
+    "prediction": "Premium >30% = active procurement pipeline. Monitor for further divergence as indicator of volume.",
+    "platform_id": null,
+    "component_id": "rpi-4b-(4gb)",
+    "data_sources": [
+      "distributor_pricing",
+      "gur_war_sanctions",
+      "foreign_intel"
+    ],
+    "sources": [
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      }
+    ]
+  },
+  {
+    "id": "95b8029c5e7c",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "diversion_risk",
+    "severity": "warning",
+    "title": "Gray market signal: RPi 5 (8GB) \u2014 42% premium in China ($135 vs $95 MSRP)",
+    "detail": "Consistent premium. Found in Molniya-2R recon drone. Active procurement pipeline. When gray market premium exceeds 30%, active diversion procurement is likely. Threshold crossed for RPi 5 (8GB).",
+    "confidence": 0.8,
+    "prediction": "Premium >30% = active procurement pipeline. Monitor for further divergence as indicator of volume.",
+    "platform_id": null,
+    "component_id": "rpi-5-(8gb)",
+    "data_sources": [
+      "distributor_pricing",
+      "gur_war_sanctions",
+      "foreign_intel"
+    ],
+    "sources": [
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      }
+    ]
+  },
+  {
+    "id": "ea302af71947",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "diversion_risk",
+    "severity": "warning",
+    "title": "Gray market signal: RPi CM4 (8GB) \u2014 41% premium in China ($148 vs $105 MSRP)",
+    "detail": "Used by Freefly Astro (Blue UAS). Same component found in Russian drone supply chain. When gray market premium exceeds 30%, active diversion procurement is likely. Threshold crossed for RPi CM4 (8GB).",
+    "confidence": 0.8,
+    "prediction": "Premium >30% = active procurement pipeline. Monitor for further divergence as indicator of volume.",
+    "platform_id": null,
+    "component_id": "rpi-cm4-(8gb)",
+    "data_sources": [
+      "distributor_pricing",
+      "gur_war_sanctions",
+      "foreign_intel"
+    ],
+    "sources": [
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      }
+    ]
+  },
+  {
+    "id": "53d484c464a4",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "prediction",
+    "severity": "warning",
+    "title": "What-if: Taiwan crisis \u2014 TSMC disruption (12% probability)",
+    "detail": "Scenario: Taiwan crisis \u2014 TSMC disruption. Probability: 12%. Impact: All Jetson + QRB5165 production halts. All Blue UAS companion computers affected. No alternative fab at scale. Affected programs: SRR, CCA, Replicator, Drone Dominance (companion compute). Recovery: 12-24 months for alternative foundry qualification. Mitigation: Stockpile critical SoMs. Qualify secondary sources (Samsung foundry for QRB). Accelerate RISC-V alternatives.",
+    "confidence": 0.7,
+    "prediction": "If triggered, recovery takes 12-24 months for alternative foundry qualification. Mitigation: Stockpile critical SoMs. Qualify secondary sources (Samsung foundry for QRB). Ac",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "geopolitical_risk",
+      "supply_chain_mapping",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "Geopolitical Risk Assessment",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Allied nation stability and supply chain concentration risk. Taiwan/TSMC, S.Korea/DRAM focus.",
+        "validation": "Based on published geopolitical analysis, TSMC concentration data, and DRAM market reports.",
+        "type": "derived",
+        "id": "geopolitical_risk"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "e7a4843b267a",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "warning",
+    "title": "Temporal pattern: 'Ukraine USAI package announced' \u2192 'FLIR Boson 640 lead time extends' (6wk lag, r=0.87)",
+    "detail": "Pattern detected across 4 occurrences: 'Ukraine USAI package announced' leads to 'FLIR Boson 640 lead time extends' with a 6-week lag. Correlation: r=0.87. Mechanism: USAI includes Switchblade 600 \u2192 AeroVironment ramps production \u2192 Boson 640 orders spike.",
+    "confidence": 0.861,
+    "prediction": "Next occurrence of 'Ukraine USAI package announced' will trigger 'FLIR Boson 640 lead time exten' ~6 weeks later.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "gov_programs",
+      "distributor_pricing",
+      "temporal_analysis"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "Temporal Pattern Analysis",
+        "url": "https://nvmillbuilditmyself.com/patterns/",
+        "description": "Cross-correlation and lag analysis between cause events (contract awards, USAI packages, EW demos) and effect signals (lead time changes, pricing spikes).",
+        "validation": "Based on historical occurrence matching. Correlation coefficients calculated from available data points.",
+        "type": "derived",
+        "id": "temporal_analysis"
+      }
+    ]
+  },
+  {
+    "id": "528d8cb29f48",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "warning",
+    "title": "Temporal pattern: 'RPi price increase announced' \u2192 'China gray market premium increases' (2wk lag, r=0.91)",
+    "detail": "Pattern detected across 3 occurrences: 'RPi price increase announced' leads to 'China gray market premium increases' with a 2-week lag. Correlation: r=0.91. Mechanism: Official price increase \u2192 gray market arbitrage opportunity increases \u2192 procurement volume rises.",
+    "confidence": 0.873,
+    "prediction": "Next occurrence of 'RPi price increase announced' will trigger 'China gray market premium incr' ~2 weeks later.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "gov_programs",
+      "distributor_pricing",
+      "temporal_analysis"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "Temporal Pattern Analysis",
+        "url": "https://nvmillbuilditmyself.com/patterns/",
+        "description": "Cross-correlation and lag analysis between cause events (contract awards, USAI packages, EW demos) and effect signals (lead time changes, pricing spikes).",
+        "validation": "Based on historical occurrence matching. Correlation coefficients calculated from available data points.",
+        "type": "derived",
+        "id": "temporal_analysis"
+      }
+    ]
+  },
+  {
     "id": "67c6cfb0ec03",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "5 companion boards use Qualcomm QRB5165 \u2014 supply chain cluster",
@@ -2233,7 +3245,7 @@
   },
   {
     "id": "2ee90455f913",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "7 companion boards use NVIDIA Jetson Orin \u2014 supply chain cluster",
@@ -2258,7 +3270,7 @@
   },
   {
     "id": "b4b1f68be794",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "2 companion boards use NVIDIA Jetson AGX \u2014 supply chain cluster",
@@ -2283,7 +3295,7 @@
   },
   {
     "id": "7ad4922628a9",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Swarmer (Swarmer (getswarmer.com)) \u2014 combat-deployed, 1 active contracts",
@@ -2326,7 +3338,7 @@
   },
   {
     "id": "5de4858d53ce",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Auterion / PX4 (Auterion) \u2014 combat-deployed, 2 active contracts",
@@ -2369,7 +3381,7 @@
   },
   {
     "id": "eb0c4eb72935",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Skydio: 1 platforms in Forge DB (0 Blue UAS)",
@@ -2412,7 +3424,7 @@
   },
   {
     "id": "833100baad16",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Shield AI: 3 platforms in Forge DB (0 Blue UAS)",
@@ -2455,7 +3467,7 @@
   },
   {
     "id": "46550618a735",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Anduril Industries: 3 platforms in Forge DB (1 Blue UAS)",
@@ -2498,7 +3510,7 @@
   },
   {
     "id": "856a608a31a3",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Teal Drones / Red Cat Holdings: 3 platforms in Forge DB (2 Blue UAS)",
@@ -2541,7 +3553,7 @@
   },
   {
     "id": "a5d0bfad8ece",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "ModalAI: 3 platforms in Forge DB (1 Blue UAS)",
@@ -2584,7 +3596,7 @@
   },
   {
     "id": "eae46329a924",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Neros Technologies: 2 platforms in Forge DB (1 Blue UAS)",
@@ -2627,7 +3639,7 @@
   },
   {
     "id": "f2b437ef2edf",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "AeroVironment: 4 platforms in Forge DB (0 Blue UAS)",
@@ -2670,7 +3682,7 @@
   },
   {
     "id": "0332f661b8df",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Freefly Systems: 2 platforms in Forge DB (1 Blue UAS)",
@@ -2713,7 +3725,7 @@
   },
   {
     "id": "62b4feb3d4af",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Parrot: 2 platforms in Forge DB (1 Blue UAS)",
@@ -2756,7 +3768,7 @@
   },
   {
     "id": "0f31fa9409cb",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "C-UAS and UAS share SDR modules supply \u2014 2 C-UAS companies competing",
@@ -2790,7 +3802,7 @@
   },
   {
     "id": "496c2e2938d7",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "C-UAS and UAS share FPGA supply \u2014 2 C-UAS companies competing",
@@ -2824,7 +3836,7 @@
   },
   {
     "id": "637609b9a4a3",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: DroneShield \u2014 3 contracts, competes for drone supply chain",
@@ -2858,7 +3870,7 @@
   },
   {
     "id": "a0ce98a8c36b",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Dedrone (Axon) \u2014 3 contracts, competes for drone supply chain",
@@ -2892,7 +3904,7 @@
   },
   {
     "id": "6eb5364fe45e",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Epirus \u2014 2 contracts, competes for drone supply chain",
@@ -2926,7 +3938,7 @@
   },
   {
     "id": "79f2daa5dee8",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: D-Fend Solutions \u2014 2 contracts, competes for drone supply chain",
@@ -2960,7 +3972,7 @@
   },
   {
     "id": "d8e9beaa5913",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Anduril (Anvil/Sentry) \u2014 3 contracts, competes for drone supply chain",
@@ -2994,7 +4006,7 @@
   },
   {
     "id": "3870a917f4b8",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: L3Harris \u2014 2 contracts, competes for drone supply chain",
@@ -3028,7 +4040,7 @@
   },
   {
     "id": "572ce49c2c58",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Policy: American Security Drone Act (ASDA) \u2014 bans DJI for federal use",
@@ -3071,7 +4083,7 @@
   },
   {
     "id": "25291590b238",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "price_anomaly",
     "severity": "info",
     "title": "Mesh radio is 41% of Blue UAS BOM \u2014 single largest cost driver",
@@ -3105,7 +4117,7 @@
   },
   {
     "id": "fc644ad2188c",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "U.S. Army: Army MRR (Medium Range Reconnaissance)",
@@ -3157,7 +4169,7 @@
   },
   {
     "id": "12564c7f7a5f",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "FEMA / DHS: FEMA C-UAS Grant Program",
@@ -3209,7 +4221,7 @@
   },
   {
     "id": "cbba9917a29e",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Turkey: Baykar (TB2/TB3/Akinci/Kizilelma) \u2014 #2 drone exporter, 35+ custom",
@@ -3243,7 +4255,7 @@
   },
   {
     "id": "e7afb28385ef",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Ukraine: Fastest-iterating FPV ecosystem \u2014 thousands/month, Brave1 acceler",
@@ -3277,7 +4289,7 @@
   },
   {
     "id": "052f63104448",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EU/NATO: FCAS (\u20ac100B+), EuroDrone, Airbus Wingman, sovereignty push",
@@ -3311,7 +4323,7 @@
   },
   {
     "id": "6de5178117df",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "India: ideaForge + Solar Industries + Adani defense \u2014 indigenous drone p",
@@ -3345,7 +4357,7 @@
   },
   {
     "id": "f8b43ba79a3e",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "South Korea: KAI stealth UCAV + Samsung/SK Hynix DRAM supply",
@@ -3379,7 +4391,7 @@
   },
   {
     "id": "8fa546cd000c",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Australia: SYPAQ Corvo (cardboard drone, used in Ukraine) + MQ-28 Ghost Bat ",
@@ -3413,7 +4425,7 @@
   },
   {
     "id": "53bb266b195d",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Poland: WB Group Warmate/FlyEye \u2014 NATO eastern flank drone capability",
@@ -3447,7 +4459,7 @@
   },
   {
     "id": "7a6790d9a392",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Croatia: Orqa \u2014 EU-manufactured NDAA FPV ecosystem (FC, ESC, goggles)",
@@ -3481,7 +4493,7 @@
   },
   {
     "id": "0d17f6c63c02",
-    "timestamp": "2026-04-03T06:59:16.522368+00:00",
+    "timestamp": "2026-04-03T16:13:29.785636+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Global UAS landscape: 42 countries, 219 platforms in Forge DB",
@@ -3506,7 +4518,7 @@
   },
   {
     "id": "629c2fc4d50c",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "RF/Comms: Collins Aerospace (RTX) \u2014 Airborne radio/datalink provider. TruNet enables air-to-ground mesh. C",
@@ -3531,7 +4543,7 @@
   },
   {
     "id": "78d8cf68cc7a",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "RF/Comms: Silvus Technologies \u2014 High-throughput MIMO mesh. 100+ Mbps. Used on Teal 2 (Blue UAS). MN Mi",
@@ -3565,7 +4577,7 @@
   },
   {
     "id": "4b0aee7dfb4e",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "RF/Comms: Doodle Labs \u2014 Most popular mesh radio for drone integration. OpenWRT + batman-adv un",
@@ -3599,7 +4611,7 @@
   },
   {
     "id": "d55c00c83120",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "RF/Comms: Rajant Corporation \u2014 Kinetic Mesh \u2014 each node is a router. Mobile ad-hoc networking for ind",
@@ -3624,7 +4636,7 @@
   },
   {
     "id": "6c0bc6fb4967",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "RF/Comms: Mobilicom \u2014 Blue UAS Framework certified datalinks. IP mesh networking for UAS C2 ",
@@ -3658,7 +4670,7 @@
   },
   {
     "id": "c4bdbeb1a2fd",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EW: Sierra Nevada Corporation (SNC) \u2014 Drones operating in EW-contested environments need frequency-hopp",
@@ -3692,7 +4704,7 @@
   },
   {
     "id": "4071ff304886",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EW: CACI International \u2014 Drives requirement for EW-resilient drone comms. ELRS frequency-h",
@@ -3726,7 +4738,7 @@
   },
   {
     "id": "7d89b8813a87",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EW: Northrop Grumman \u2014 EW Division \u2014 Friendly EW (JCREW) can inadvertently jam friendly drone links \u2014 ",
@@ -3760,7 +4772,7 @@
   },
   {
     "id": "c32e4139ad73",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EW: Russian EW (Reported) \u2014 Russian EW is why GPS-denied autonomy (Hivemind, Skydio VIO) and ",
@@ -3794,7 +4806,7 @@
   },
   {
     "id": "0f5959c029b6",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: VectorNav Technologies \u2014 Primary sensor for inertial dead-reckoning during GPS denial",
@@ -3828,7 +4840,7 @@
   },
   {
     "id": "2f17eebf75b5",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: Emcore / KVH Industries \u2014 FOG provides much lower drift than MEMS. Enables hours of GP",
@@ -3862,7 +4874,7 @@
   },
   {
     "id": "0965070b85ef",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: Skydio Visual-Inertial Odometry \u2014 Purely visual navigation. Works indoors, in GPS-denied envir",
@@ -3896,7 +4908,7 @@
   },
   {
     "id": "7672b0edb4f4",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: Shield AI Hivemind (GPS-denied) \u2014 Multi-sensor fusion for GPS-denied flight. 200+ flights in U",
@@ -3930,7 +4942,7 @@
   },
   {
     "id": "fbd7fb021d2a",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: Chip-Scale Atomic Clocks (CSAC) \u2014 Maintains timing accuracy for mesh radios and sensor synchro",
@@ -3964,7 +4976,7 @@
   },
   {
     "id": "84aa35310038",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: u-blox GNSS Modules \u2014 Primary GNSS receiver. First component to fail under jamming",
@@ -3998,7 +5010,7 @@
   },
   {
     "id": "1eaaabc4b5e5",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Hydrogen fuel cells emerging for long-endurance UAS",
@@ -4032,7 +5044,7 @@
   },
   {
     "id": "a92d6f2b7d83",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Hybrid-electric propulsion for Group 3+ UAS",
@@ -4057,7 +5069,7 @@
   },
   {
     "id": "f78b9cc462fa",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Test/Event: Drone Dominance Gauntlet \u2014 Gauntlet results directly determine which manufacturers scal",
@@ -4091,7 +5103,7 @@
   },
   {
     "id": "954d78747d2b",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Test/Event: Army Yuma Proving Ground \u2014 Test failures can delay programs. Test successes accelerate ",
@@ -4125,7 +5137,7 @@
   },
   {
     "id": "8e6e36337e52",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Test/Event: AUVSI XPONENTIAL \u2014 Leading indicator \u2014 announcements at XPONENTIAL often preced",
@@ -4159,7 +5171,7 @@
   },
   {
     "id": "0d3c5f8ba7a0",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Test/Event: Army Best Drone Warfighter Competition \u2014 Competition results influence which platforms get adopted at",
@@ -4193,7 +5205,7 @@
   },
   {
     "id": "0efbbe9aa568",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Financial: Raspberry Pi Holdings (LON:RPI) \u2014 Revenue $323M FY25 +25%, shares +24%",
@@ -4236,7 +5248,7 @@
   },
   {
     "id": "f0cd49750d15",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Financial: Axon (AXON) \u2014 Acquired Dedrone (C-UAS)",
@@ -4279,7 +5291,7 @@
   },
   {
     "id": "3f51109854cd",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Financial: DroneShield (DRO.AX) \u2014 A$1.2B European pipeline, multiple contracts",
@@ -4322,7 +5334,7 @@
   },
   {
     "id": "fddbfc8bc997",
-    "timestamp": "2026-04-03T06:59:16.522222+00:00",
+    "timestamp": "2026-04-03T16:13:29.773725+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Financial: Kratos Defense (KTOS) \u2014 Valkyrie CCA + drone target production",
@@ -4360,6 +5372,1123 @@
         "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
         "type": "primary",
         "id": "forge_industry_intel"
+      }
+    ]
+  },
+  {
+    "id": "b56cc53f1485",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "supply_constraint",
+    "severity": "info",
+    "title": "Cascade risk: ELRS 900MHz \u2014 3 platforms, 3 programs, multi-source",
+    "detail": "Dependency graph for ELRS 900MHz: Platforms: Neros Archer, Ukraine FPV fleet, Commercial FPV. Programs: Drone Dominance, USMC FPV, Ukraine defense. Upstream: Semtech SX1276/SX1262 (LoRa chip), Espressif ESP32. Single source: No \u2014 alternatives exist. Cascade score: 9 (platforms \u00d7 programs \u00d7 source risk). If ELRS 900MHz supply is disrupted, 3 government programs are directly impacted.",
+    "confidence": 0.9,
+    "prediction": "A ELRS 900MHz disruption cascades to 3 programs within 4-8 weeks of lead time extension.",
+    "platform_id": null,
+    "component_id": "elrs-900mhz",
+    "data_sources": [
+      "forge_bom",
+      "supply_chain_mapping",
+      "gov_programs"
+    ],
+    "sources": [
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      },
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      }
+    ]
+  },
+  {
+    "id": "16e7dd36d16c",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: STM32H7 \u2014 41,750 units across 2 contracts",
+    "detail": "Total demand for STM32H7: 41,750 units. From: USMC FPV Program (11,750 units); Drone Dominance Phase 1 (30K units) (30,000 units).",
+    "confidence": 0.8,
+    "prediction": "41,750 units of STM32H7 needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "stm32h7",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "1639b292bde1",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: ELRS 900MHz \u2014 41,750 units across 2 contracts",
+    "detail": "Total demand for ELRS 900MHz: 41,750 units. From: USMC FPV Program (11,750 units); Drone Dominance Phase 1 (30K units) (30,000 units).",
+    "confidence": 0.8,
+    "prediction": "41,750 units of ELRS 900MHz needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "elrs-900mhz",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "459b1663cf75",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: LiPo battery \u2014 41,750 units across 2 contracts",
+    "detail": "Total demand for LiPo battery: 41,750 units. From: USMC FPV Program (11,750 units); Drone Dominance Phase 1 (30K units) (30,000 units).",
+    "confidence": 0.8,
+    "prediction": "41,750 units of LiPo battery needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "lipo-battery",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "5a62ce396189",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: ESP32-S3 \u2014 30,000 units across 1 contracts",
+    "detail": "Total demand for ESP32-S3: 30,000 units. From: Drone Dominance Phase 1 (30K units) (30,000 units).",
+    "confidence": 0.8,
+    "prediction": "30,000 units of ESP32-S3 needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "esp32-s3",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "4ad90fd874f0",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: FPV camera \u2014 30,000 units across 1 contracts",
+    "detail": "Total demand for FPV camera: 30,000 units. From: Drone Dominance Phase 1 (30K units) (30,000 units).",
+    "confidence": 0.8,
+    "prediction": "30,000 units of FPV camera needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "fpv-camera",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "0606bbba4704",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: QRB5165 (VOXL) \u2014 11,750 units across 1 contracts",
+    "detail": "Total demand for QRB5165 (VOXL): 11,750 units. From: USMC FPV Program (11,750 units).",
+    "confidence": 0.8,
+    "prediction": "11,750 units of QRB5165 (VOXL) needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "qrb5165-(voxl)",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "038e3c23cbac",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: FLIR Lepton \u2014 11,750 units across 1 contracts",
+    "detail": "Total demand for FLIR Lepton: 11,750 units. From: USMC FPV Program (11,750 units).",
+    "confidence": 0.8,
+    "prediction": "11,750 units of FLIR Lepton needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "flir-lepton",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "d325d000ff20",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: Silvus MN Micro \u2014 11,750 units across 1 contracts",
+    "detail": "Total demand for Silvus MN Micro: 11,750 units. From: USMC FPV Program (11,750 units).",
+    "confidence": 0.8,
+    "prediction": "11,750 units of Silvus MN Micro needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "silvus-mn-micro",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "31edc7550405",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: Jetson AGX Orin \u2014 10,000 units across 1 contracts",
+    "detail": "Total demand for Jetson AGX Orin: 10,000 units. From: Replicator Phase 2 (10,000 units).",
+    "confidence": 0.8,
+    "prediction": "10,000 units of Jetson AGX Orin needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "jetson-agx-orin",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "0b9f3d7c758f",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: Lattice FPGA \u2014 10,000 units across 1 contracts",
+    "detail": "Total demand for Lattice FPGA: 10,000 units. From: Replicator Phase 2 (10,000 units).",
+    "confidence": 0.8,
+    "prediction": "10,000 units of Lattice FPGA needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "lattice-fpga",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "69a04f648c0a",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: Doodle Labs mesh \u2014 10,000 units across 1 contracts",
+    "detail": "Total demand for Doodle Labs mesh: 10,000 units. From: Replicator Phase 2 (10,000 units).",
+    "confidence": 0.8,
+    "prediction": "10,000 units of Doodle Labs mesh needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "doodle-labs-mesh",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "a0f7831a0d4c",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "procurement_spike",
+    "severity": "info",
+    "title": "Aggregate demand: FLIR Boson 640 \u2014 10,000 units across 1 contracts",
+    "detail": "Total demand for FLIR Boson 640: 10,000 units. From: Replicator Phase 2 (10,000 units).",
+    "confidence": 0.8,
+    "prediction": "10,000 units of FLIR Boson 640 needed over 18-24 months. Verify distributor capacity.",
+    "platform_id": null,
+    "component_id": "flir-boson-640",
+    "data_sources": [
+      "gov_programs",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "e9e285a0cf07",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Alternatives for NVIDIA Jetson Orin NX: 3 NDAA-compliant, 1 non-compliant",
+    "detail": "If NVIDIA Jetson Orin NX is constrained, NDAA alternatives: Qualcomm QRB5165 (VOXL 2) \u2014 Less GPU compute, better power efficiency. Different SDK (SNPE vs CUDA). | Hailo-8 AI Accelerator \u2014 AI inference only \u2014 no general compute. Pair with host processor. | Google Coral Edge TPU \u2014 TensorFlow Lite only. Limited model support. Low power.. Non-NDAA (commercial only): Rockchip RK3588.",
+    "confidence": 0.9,
+    "prediction": "Constrained component \u2192 evaluate alternatives. NDAA compliance limits options significantly.",
+    "platform_id": null,
+    "component_id": "nvidia-jetson-orin-nx",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      }
+    ]
+  },
+  {
+    "id": "ab3be66b73fc",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Alternatives for STM32H743: 3 NDAA-compliant, 0 non-compliant",
+    "detail": "If STM32H743 is constrained, NDAA alternatives: STM32H750 \u2014 Pin-compatible. Less flash (128KB vs 2MB) but cheaper. Use external flash. | STM32F765 \u2014 Previous gen H7. Less compute but well-supported in Betaflight/ArduPilot. | ESP32-S3 \u2014 WiFi/BLE built-in but not suitable as primary FC MCU. Good for companion/mesh.",
+    "confidence": 0.9,
+    "prediction": "Constrained component \u2192 evaluate alternatives. NDAA compliance limits options significantly.",
+    "platform_id": null,
+    "component_id": "stm32h743",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      }
+    ]
+  },
+  {
+    "id": "e042a13efa1e",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Alternatives for FLIR Boson 640: 3 NDAA-compliant, 0 non-compliant",
+    "detail": "If FLIR Boson 640 is constrained, NDAA alternatives: FLIR Lepton 3.5 \u2014 160\u00d7120 vs 640\u00d7512 resolution. Much cheaper ($250 vs $3,200). Lower range. | DRS Tamarisk 640 \u2014 Similar resolution. Different interface. Less common in UAS. | Lynred/Sofradir (French) \u2014 European alternative. ITAR-free. Different integration path.",
+    "confidence": 0.9,
+    "prediction": "Constrained component \u2192 evaluate alternatives. NDAA compliance limits options significantly.",
+    "platform_id": null,
+    "component_id": "flir-boson-640",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      }
+    ]
+  },
+  {
+    "id": "512fcbf33d8d",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Alternatives for Doodle Labs Helix: 3 NDAA-compliant, 0 non-compliant",
+    "detail": "If Doodle Labs Helix is constrained, NDAA alternatives: Silvus StreamCaster \u2014 Higher throughput but 2-3x cost and weight. Different API. | Rajant BreadCrumb \u2014 Kinetic Mesh. More capacity but heavier. Industrial heritage. | Persistent Systems Embedded Module \u2014 Wave Relay. Highest performance but most expensive ($10K+).",
+    "confidence": 0.9,
+    "prediction": "Constrained component \u2192 evaluate alternatives. NDAA compliance limits options significantly.",
+    "platform_id": null,
+    "component_id": "doodle-labs-helix",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      }
+    ]
+  },
+  {
+    "id": "a3a93a7bc944",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Alternatives for RPi Compute Module 4: 1 NDAA-compliant, 2 non-compliant",
+    "detail": "If RPi Compute Module 4 is constrained, NDAA alternatives: ModalAI VOXL 2 \u2014 Massive upgrade. Blue UAS Framework. But $449 vs $90 \u2014 different class.. Non-NDAA (commercial only): Orange Pi 5 (RK3588S), Radxa ROCK 5B.",
+    "confidence": 0.9,
+    "prediction": "Constrained component \u2192 evaluate alternatives. NDAA compliance limits options significantly.",
+    "platform_id": null,
+    "component_id": "rpi-compute-module-4",
+    "data_sources": [
+      "forge_parts_db",
+      "forge_compliance"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "Forge Compliance Dashboard",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Blue UAS, NDAA \u00a7848, ITAR, and country-of-origin status for 219 platforms.",
+        "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
+        "type": "primary",
+        "id": "forge_compliance"
+      }
+    ]
+  },
+  {
+    "id": "88e49a850f7d",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "price_anomaly",
+    "severity": "info",
+    "title": "BOM price elasticity: mesh radio (41% of BOM) and companion computer (14%) dominate cost sensitivity",
+    "detail": "Blue UAS BOM total: $4,348. Price sensitivity ranking: Mesh Radio $1800 (41.4% of BOM, 10% increase = 4.14% BOM impact), Companion Computer $599 (13.8% of BOM, 10% increase = 1.38% BOM impact), Frame $400 (9.2% of BOM, 10% increase = 0.92% BOM impact). A 10% mesh radio price increase adds $180 to BOM. A 10% motor price increase adds only $28.",
+    "confidence": 0.92,
+    "prediction": "Focus cost-reduction efforts on mesh radio and companion computer \u2014 they drive 55% of BOM cost.",
+    "platform_id": null,
+    "component_id": "bom-elasticity",
+    "data_sources": [
+      "forge_parts_db",
+      "bom_analysis"
+    ],
+    "sources": [
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      },
+      {
+        "name": "BOM Cost Index Analysis",
+        "url": "https://nvmillbuilditmyself.com/cost/",
+        "description": "Reference Blue UAS BOM costed from Forge parts-db pricing. Compared to non-compliant equivalent.",
+        "validation": "Component prices from Forge DB (distributor-sourced). BOM composition from platform profiles.",
+        "type": "derived",
+        "id": "bom_analysis"
+      }
+    ]
+  },
+  {
+    "id": "e791699ec0f0",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "diversion_risk",
+    "severity": "info",
+    "title": "Gray market signal: NVIDIA Jetson Orin NX \u2014 25% premium in China ($750 vs $599 MSRP)",
+    "detail": "Premium lower than RPi \u2014 larger unit price makes diversion economics different. When gray market premium exceeds 30%, active diversion procurement is likely. Threshold crossed for NVIDIA Jetson Orin NX.",
+    "confidence": 0.8,
+    "prediction": "Premium >30% = active procurement pipeline. Monitor for further divergence as indicator of volume.",
+    "platform_id": null,
+    "component_id": "nvidia-jetson-orin-nx",
+    "data_sources": [
+      "distributor_pricing",
+      "gur_war_sanctions",
+      "foreign_intel"
+    ],
+    "sources": [
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      }
+    ]
+  },
+  {
+    "id": "ac865b40cf67",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "diversion_risk",
+    "severity": "info",
+    "title": "Gray market signal: STM32H743 \u2014 33% premium in China ($16 vs $12 MSRP)",
+    "detail": "Moderate premium. High volume makes it attractive for diversion. Used in Russian 'Grape Pi 1'. When gray market premium exceeds 30%, active diversion procurement is likely. Threshold crossed for STM32H743.",
+    "confidence": 0.8,
+    "prediction": "Premium >30% = active procurement pipeline. Monitor for further divergence as indicator of volume.",
+    "platform_id": null,
+    "component_id": "stm32h743",
+    "data_sources": [
+      "distributor_pricing",
+      "gur_war_sanctions",
+      "foreign_intel"
+    ],
+    "sources": [
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "GUR War & Sanctions Portal",
+        "url": "https://war-sanctions.gur.gov.ua",
+        "description": "Ukraine's military intelligence (GUR) database of foreign components in captured Russian weapons. 5,534 components across 190 weapon systems.",
+        "validation": "Physical teardowns of captured/downed weapons. Component photos, manufacturer IDs, and PCB analysis published publicly.",
+        "type": "primary",
+        "id": "gur_war_sanctions"
+      },
+      {
+        "name": "Foreign UAS Program Intelligence",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
+        "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
+        "type": "aggregated",
+        "id": "foreign_intel"
+      }
+    ]
+  },
+  {
+    "id": "54565e7f3816",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "prediction",
+    "severity": "info",
+    "title": "What-if: STMicroelectronics fab disruption (EU) (8% probability)",
+    "detail": "Scenario: STMicroelectronics fab disruption (EU). Probability: 8%. Impact: STM32H7 supply halts. 300+ flight controllers in Forge DB affected. Drone Dominance FPV production stops. Affected programs: Drone Dominance, USMC FPV, Ukraine FPV production, All Betaflight/ArduPilot builds. Recovery: 6-12 months \u2014 GlobalFoundries has some STM32 capacity. Mitigation: Qualify GD32 (Chinese clone \u2014 NOT NDAA). Stockpile H743. Shift to RP2350 for simple FCs.",
+    "confidence": 0.7,
+    "prediction": "If triggered, recovery takes 6-12 months \u2014 GlobalFoundries has some STM32 capacity. Mitigation: Qualify GD32 (Chinese clone \u2014 NOT NDAA). Stockpile H743. Shift to RP2350 for sim",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "geopolitical_risk",
+      "supply_chain_mapping",
+      "forge_bom"
+    ],
+    "sources": [
+      {
+        "name": "Geopolitical Risk Assessment",
+        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "description": "Allied nation stability and supply chain concentration risk. Taiwan/TSMC, S.Korea/DRAM focus.",
+        "validation": "Based on published geopolitical analysis, TSMC concentration data, and DRAM market reports.",
+        "type": "derived",
+        "id": "geopolitical_risk"
+      },
+      {
+        "name": "Supply Chain Geographic Mapping",
+        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
+        "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
+        "type": "derived",
+        "id": "supply_chain_mapping"
+      },
+      {
+        "name": "Forge BOM Graph",
+        "url": "https://nvmillbuilditmyself.com/builder/",
+        "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
+        "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
+        "type": "derived",
+        "id": "forge_bom"
+      }
+    ]
+  },
+  {
+    "id": "4fdcd8c459d8",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Temporal pattern: 'Drone Dominance Gauntlet results announced' \u2192 'STM32H7 distributor orders spike' (3wk lag, r=0.79)",
+    "detail": "Pattern detected across 2 occurrences: 'Drone Dominance Gauntlet results announced' leads to 'STM32H7 distributor orders spike' with a 3-week lag. Correlation: r=0.79. Mechanism: Gauntlet winners receive volume orders \u2192 winning platforms place component orders.",
+    "confidence": 0.837,
+    "prediction": "Next occurrence of 'Drone Dominance Gauntlet resul' will trigger 'STM32H7 distributor orders spi' ~3 weeks later.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "gov_programs",
+      "distributor_pricing",
+      "temporal_analysis"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "Temporal Pattern Analysis",
+        "url": "https://nvmillbuilditmyself.com/patterns/",
+        "description": "Cross-correlation and lag analysis between cause events (contract awards, USAI packages, EW demos) and effect signals (lead time changes, pricing spikes).",
+        "validation": "Based on historical occurrence matching. Correlation coefficients calculated from available data points.",
+        "type": "derived",
+        "id": "temporal_analysis"
+      }
+    ]
+  },
+  {
+    "id": "ea12afcb53b5",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Temporal pattern: 'Blue UAS list addition (new platform)' \u2192 'Component demand spike for that pla' (8wk lag, r=0.73)",
+    "detail": "Pattern detected across 6 occurrences: 'Blue UAS list addition (new platform)' leads to 'Component demand spike for that platform's BOM' with a 8-week lag. Correlation: r=0.73. Mechanism: Blue UAS approval \u2192 government agencies start procurement \u2192 platform manufacturer scales.",
+    "confidence": 0.819,
+    "prediction": "Next occurrence of 'Blue UAS list addition (new pl' will trigger 'Component demand spike for tha' ~8 weeks later.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "gov_programs",
+      "distributor_pricing",
+      "temporal_analysis"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "Temporal Pattern Analysis",
+        "url": "https://nvmillbuilditmyself.com/patterns/",
+        "description": "Cross-correlation and lag analysis between cause events (contract awards, USAI packages, EW demos) and effect signals (lead time changes, pricing spikes).",
+        "validation": "Based on historical occurrence matching. Correlation coefficients calculated from available data points.",
+        "type": "derived",
+        "id": "temporal_analysis"
+      }
+    ]
+  },
+  {
+    "id": "f02d95a578b7",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Temporal pattern: 'Russian EW capability demonstrated' \u2192 'GPS-denied nav component orders inc' (12wk lag, r=0.68)",
+    "detail": "Pattern detected across 3 occurrences: 'Russian EW capability demonstrated' leads to 'GPS-denied nav component orders increase' with a 12-week lag. Correlation: r=0.68. Mechanism: New EW threat \u2192 defense requirements updated \u2192 GPS-denied nav becomes mandatory.",
+    "confidence": 0.804,
+    "prediction": "Next occurrence of 'Russian EW capability demonstr' will trigger 'GPS-denied nav component order' ~12 weeks later.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "gov_programs",
+      "distributor_pricing",
+      "temporal_analysis"
+    ],
+    "sources": [
+      {
+        "name": "DoD Program Tracking",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-program-ddp-gauntlets-website-rfi/",
+        "description": "Pentagon drone program tracking \u2014 Drone Dominance, Replicator/DAWG, SRR, CCA, FTUAS.",
+        "validation": "Sourced from DoD RFIs, DefenseScoop, Breaking Defense, Congressional Research Service.",
+        "type": "aggregated",
+        "id": "gov_programs"
+      },
+      {
+        "name": "Distributor Pricing (Mouser/DigiKey/Arrow)",
+        "url": "https://www.mouser.com",
+        "description": "Real-time component pricing and lead times from major electronic distributors.",
+        "validation": "Live API data (when API keys configured). Currently using published MSRP and known pricing.",
+        "type": "primary",
+        "id": "distributor_pricing"
+      },
+      {
+        "name": "Temporal Pattern Analysis",
+        "url": "https://nvmillbuilditmyself.com/patterns/",
+        "description": "Cross-correlation and lag analysis between cause events (contract awards, USAI packages, EW demos) and effect signals (lead time changes, pricing spikes).",
+        "validation": "Based on historical occurrence matching. Correlation coefficients calculated from available data points.",
+        "type": "derived",
+        "id": "temporal_analysis"
+      }
+    ]
+  },
+  {
+    "id": "d94810234f52",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Sentiment signals: 5 community sources tracked as leading indicators",
+    "detail": "Community forums and social media provide 2-6 week leading indicators for supply chain stress. Sources: Reddit r/fpvvideos + r/Multicopter, RCGroups Long Range FPV forum, Reddit r/raspberry_pi, Hackaday / Hackster.io, Defense Twitter/X (analysts, journalists). In production: NLP sentiment scoring + volume tracking against historical baselines. Current implementation: manual pattern tracking from known signal sources.",
+    "confidence": 0.7,
+    "prediction": "Community sentiment is a reliable 2-6 week leading indicator for component shortages. Automated scraping recommended.",
+    "platform_id": null,
+    "component_id": null,
+    "data_sources": [
+      "fpv_market",
+      "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "FPV Component Market Tracking",
+        "url": "https://www.getfpv.com",
+        "description": "Commercial FPV component pricing and availability. GetFPV, RaceDayQuads, Pyrodrone.",
+        "validation": "Live retailer pricing. Monitored for anomalies against 90-day moving averages.",
+        "type": "primary",
+        "id": "fpv_market"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
+    ]
+  },
+  {
+    "id": "eeea8b700331",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Signal: Reddit r/fpvvideos + r/Multicopter \u2014 4-6 weeks before distributor data shows shortage leading indicator for STM32H7",
+    "detail": "Posts about 'STM32H7 out of stock' increased 3x in Q1 2026. Lead time vs distributor data: 4-6 weeks before distributor data shows shortage.",
+    "confidence": 0.72,
+    "prediction": "Monitor Reddit r/fpvvideos + r/Multicopter for early signal on STM32H7 availability.",
+    "platform_id": null,
+    "component_id": "stm32h7",
+    "data_sources": [
+      "fpv_market",
+      "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "FPV Component Market Tracking",
+        "url": "https://www.getfpv.com",
+        "description": "Commercial FPV component pricing and availability. GetFPV, RaceDayQuads, Pyrodrone.",
+        "validation": "Live retailer pricing. Monitored for anomalies against 90-day moving averages.",
+        "type": "primary",
+        "id": "fpv_market"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
+    ]
+  },
+  {
+    "id": "80c921922f7c",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Signal: RCGroups Long Range FPV forum \u2014 3-4 weeks before retail price increases leading indicator for ELRS 900MHz",
+    "detail": "ELRS module availability complaints increasing. Lead time vs distributor data: 3-4 weeks before retail price increases.",
+    "confidence": 0.68,
+    "prediction": "Monitor RCGroups Long Range FPV forum for early signal on ELRS 900MHz availability.",
+    "platform_id": null,
+    "component_id": "elrs-900mhz",
+    "data_sources": [
+      "fpv_market",
+      "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "FPV Component Market Tracking",
+        "url": "https://www.getfpv.com",
+        "description": "Commercial FPV component pricing and availability. GetFPV, RaceDayQuads, Pyrodrone.",
+        "validation": "Live retailer pricing. Monitored for anomalies against 90-day moving averages.",
+        "type": "primary",
+        "id": "fpv_market"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
+    ]
+  },
+  {
+    "id": "d37756ea79c3",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Signal: Reddit r/raspberry_pi \u2014 2-3 weeks before distributor lead time changes leading indicator for RPi CM4/5",
+    "detail": "RPi availability posts correlate with gray market pricing spikes. Lead time vs distributor data: 2-3 weeks before distributor lead time changes.",
+    "confidence": 0.75,
+    "prediction": "Monitor Reddit r/raspberry_pi for early signal on RPi CM4/5 availability.",
+    "platform_id": null,
+    "component_id": "rpi-cm4/5",
+    "data_sources": [
+      "fpv_market",
+      "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "FPV Component Market Tracking",
+        "url": "https://www.getfpv.com",
+        "description": "Commercial FPV component pricing and availability. GetFPV, RaceDayQuads, Pyrodrone.",
+        "validation": "Live retailer pricing. Monitored for anomalies against 90-day moving averages.",
+        "type": "primary",
+        "id": "fpv_market"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
+    ]
+  },
+  {
+    "id": "090b40b40d2d",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Signal: Hackaday / Hackster.io \u2014 Leading indicator of demand shifting to alternatives leading indicator for RPi alternatives",
+    "detail": "Alternative SBC project posts increase when RPi constrained. Lead time vs distributor data: Leading indicator of demand shifting to alternatives.",
+    "confidence": 0.65,
+    "prediction": "Monitor Hackaday / Hackster.io for early signal on RPi alternatives availability.",
+    "platform_id": null,
+    "component_id": "rpi-alternatives",
+    "data_sources": [
+      "fpv_market",
+      "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "FPV Component Market Tracking",
+        "url": "https://www.getfpv.com",
+        "description": "Commercial FPV component pricing and availability. GetFPV, RaceDayQuads, Pyrodrone.",
+        "validation": "Live retailer pricing. Monitored for anomalies against 90-day moving averages.",
+        "type": "primary",
+        "id": "fpv_market"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
+      }
+    ]
+  },
+  {
+    "id": "416c4444068a",
+    "timestamp": "2026-04-03T16:13:29.785172+00:00",
+    "flag_type": "correlation",
+    "severity": "info",
+    "title": "Signal: Defense Twitter/X (analysts, journalists \u2014 1-3 weeks before SAM.gov posting leading indicator for Various",
+    "detail": "Contract award rumors precede official announcements by 1-3 weeks. Lead time vs distributor data: 1-3 weeks before SAM.gov posting.",
+    "confidence": 0.7,
+    "prediction": "Monitor Defense Twitter/X (analysts, journalists) for early signal on Various availability.",
+    "platform_id": null,
+    "component_id": "various",
+    "data_sources": [
+      "fpv_market",
+      "forge_parts_db"
+    ],
+    "sources": [
+      {
+        "name": "FPV Component Market Tracking",
+        "url": "https://www.getfpv.com",
+        "description": "Commercial FPV component pricing and availability. GetFPV, RaceDayQuads, Pyrodrone.",
+        "validation": "Live retailer pricing. Monitored for anomalies against 90-day moving averages.",
+        "type": "primary",
+        "id": "fpv_market"
+      },
+      {
+        "name": "Forge Parts Database",
+        "url": "https://nvmillbuilditmyself.com/",
+        "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
+        "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
+        "type": "primary",
+        "id": "forge_parts_db"
       }
     ]
   }
