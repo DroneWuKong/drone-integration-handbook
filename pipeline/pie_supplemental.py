@@ -498,4 +498,108 @@ SUPPLEMENTAL_SOURCES = {
         "validation": "Official DoD certification. Primary source.",
         "type": "primary",
     },
+    "gray_zone_tracking": {
+        "name": "Gray Zone Entity Tracking",
+        "url": "https://dronedj.com/2026/02/19/anzu-raptor-drone-texas-lawsuit/",
+        "description": "Companies adjacent to Blue UAS ecosystem marketing to government buyers with adversary supply chain dependencies.",
+        "validation": "Texas AG lawsuit filings, House Select Committee letters, security researcher teardowns, FCC filings.",
+        "type": "primary",
+    },
 }
+
+
+# ══════════════════════════════════════════════════════════════
+# 8. GRAY ZONE / ADVERSARY-ADJACENT ENTITY DETECTION
+# ══════════════════════════════════════════════════════════════
+
+GRAY_ZONE_ENTITIES = [
+    {
+        "name": "Anzu Robotics",
+        "hq": "Austin, TX (Delaware LLC)",
+        "status": "Raptor series discontinued Feb 2026. TX AG lawsuit pending.",
+        "adversary_link": "DJI — licensed Mavic 3 Enterprise design. Hardware identical per teardowns. Firmware signed with DJI cryptographic keys. Remote controller is relabeled DJI RC Pro.",
+        "marketing_claim": "Marketed as American-aligned secure alternative to Chinese drones. 'Your Data is Your Data.' US-based operations.",
+        "reality": "TX AG alleges Raptor T is 'essentially a DJI Mavic 3 painted green.' House Select Committee flagged as potential passthrough. ~50% of components from China. DJI retains root crypto keys.",
+        "government_buyers": ["Little Rock PD (6 Raptor T units, SOAR grant)", "Unknown other agencies"],
+        "legal_status": "TX AG lawsuit filed Feb 2026 — seeking civil penalties up to $10K/violation, injunction, disclosure order.",
+        "risk_indicators": [
+            "Licensed adversary technology marketed as domestic alternative",
+            "DJI cryptographic keys control firmware signing",
+            "FCC filings initially omitted DJI relationship",
+            "Component shortage caused by adversary supply chain dependency",
+            "Discontinued after NDAA 2025 demand surge exposed fragility",
+        ],
+        "sources": ["gray_zone_tracking", "congress_gov"],
+    },
+    {
+        "name": "Autel Robotics",
+        "hq": "Bothell, WA (Chinese-owned — Autel Intelligent Technology, Shenzhen)",
+        "status": "Active — selling EVO MAX series to US law enforcement/enterprise.",
+        "adversary_link": "Wholly-owned subsidiary of Shenzhen-based Autel Intelligent Technology. Chinese engineering, Chinese manufacturing.",
+        "marketing_claim": "Markets as alternative to DJI. US office, US support. Not on DJI sanctions list.",
+        "reality": "Chinese-owned, Chinese-manufactured. Not Blue UAS. Not NDAA compliant. Selling to state/local agencies that aren't subject to federal restrictions.",
+        "government_buyers": ["Multiple state/local law enforcement agencies"],
+        "legal_status": "No active litigation. Not on Entity List. But NDAA §1709 may restrict future sales.",
+        "risk_indicators": [
+            "Chinese-owned company marketing to US government agencies",
+            "Benefits from DJI restrictions without being compliant itself",
+            "State/local agencies may not be aware of ownership structure",
+        ],
+        "sources": ["gray_zone_tracking", "foreign_intel"],
+    },
+]
+
+
+def analyze_gray_zone(db):
+    """Detect adversary-adjacent entities marketing to government buyers."""
+    flags = []
+    print(f"  Gray zone entities tracked: {len(GRAY_ZONE_ENTITIES)}")
+
+    for entity in GRAY_ZONE_ENTITIES:
+        risk_count = len(entity["risk_indicators"])
+        sev = "critical" if risk_count >= 4 else "warning" if risk_count >= 2 else "info"
+
+        flags.append({
+            "id": flag_id(f"grayzone-{entity['name'][:20]}"),
+            "timestamp": now,
+            "flag_type": "diversion_risk",
+            "severity": sev,
+            "title": f"Gray zone: {entity['name']} — {entity['status'][:55]}",
+            "detail": (
+                f"{entity['name']} ({entity['hq']}). "
+                f"Adversary link: {entity['adversary_link']} "
+                f"Marketing: {entity['marketing_claim']} "
+                f"Reality: {entity['reality']} "
+                f"Government buyers: {', '.join(entity['government_buyers'][:3])}. "
+                f"Legal: {entity['legal_status']} "
+                f"Risk indicators: {'; '.join(entity['risk_indicators'][:3])}."
+            ),
+            "confidence": 0.90,
+            "prediction": f"Gray zone pattern: adversary technology rebranded for domestic market. Watch for similar entities emerging as DJI restrictions tighten.",
+            "platform_id": None,
+            "component_id": None,
+            "data_sources": entity.get("sources", ["gray_zone_tracking"]),
+        })
+
+    # Systemic flag about the gray zone pattern
+    flags.append({
+        "id": flag_id("grayzone-systemic"),
+        "timestamp": now,
+        "flag_type": "diversion_risk",
+        "severity": "warning",
+        "title": f"Systemic: {len(GRAY_ZONE_ENTITIES)} adversary-adjacent entities detected marketing to US government buyers",
+        "detail": (
+            f"As DJI restrictions tighten (ASDA, NDAA §1709, FCC equipment auth freeze), "
+            f"adversary-linked companies are licensing, rebranding, or white-labeling Chinese drone technology "
+            f"for the US market. Pattern: license DJI/Chinese design → manufacture in third country (Malaysia, etc.) "
+            f"→ market as 'American alternative' → sell to agencies that don't verify supply chain. "
+            f"PIE tracks {len(GRAY_ZONE_ENTITIES)} known entities. This is a growing attack vector against Blue UAS compliance."
+        ),
+        "confidence": 0.88,
+        "prediction": "Expect more gray zone entities to emerge as the DJI ban creates market opportunity. Procurement safeguards needed at state/local level.",
+        "platform_id": None,
+        "component_id": None,
+        "data_sources": ["gray_zone_tracking", "policy_tracker", "congress_gov"],
+    })
+
+    return flags

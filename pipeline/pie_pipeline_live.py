@@ -17,6 +17,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from pie_supplemental import (
     analyze_rf_comms, analyze_ew, analyze_sof, analyze_nav_pnt,
     analyze_propulsion, analyze_test_infra, analyze_financial,
+    analyze_gray_zone,
     SUPPLEMENTAL_SOURCES,
 )
 from pie_advanced import (
@@ -1947,6 +1948,10 @@ def main():
     print("\nAnalyzing financial signals...")
     fin_flags = analyze_financial()
     all_flags.extend(fin_flags)
+
+    print("\nDetecting gray zone / adversary-adjacent entities...")
+    gz_flags = analyze_gray_zone(db)
+    all_flags.extend(gz_flags)
 
     print("\n── Advanced Algorithms ──")
 
