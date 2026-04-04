@@ -192,6 +192,8 @@ const FLAG_META = {
   contract_signal:   {label:"Contract Signal",badge:"badge-blue",sev:"info",icon:"★"},
   prediction:        {label:"Prediction",badge:"badge-purple",sev:"prediction",icon:"◎"},
   correlation:       {label:"Correlation",badge:"badge-cyan",sev:"info",icon:"⟐"},
+  grayzone:          {label:"Gray Zone",badge:"badge-orange",sev:"critical",icon:"◆"},
+  grayzone_xref:     {label:"Gray Zone ✕ Blue UAS",badge:"badge-red",sev:"critical",icon:"◆"},
 };
 
 // ── Simulated platform + component data (in production: fetched from Forge API) ──
@@ -258,7 +260,7 @@ function renderFilters() {
   const c = document.getElementById("severity-filters");
   const sevs = ["all","critical","warning","info","prediction"];
   c.innerHTML = sevs.map(s => {
-    const count = s === "all" ? FLAGS.length : FLAGS.filter(f => (FLAG_META[f.flag_type]||{}).sev === s).length;
+    const count = s === "all" ? FLAGS.length : FLAGS.filter(f => (f.severity || (FLAG_META[f.flag_type]||{}).sev) === s).length;
     return `<button class="filter-btn ${activeSeverity===s?"active":""}" data-sev="${s}">${s==="all"?"All ("+count+")":s}</button>`;
   }).join("");
   c.querySelectorAll(".filter-btn").forEach(b => b.addEventListener("click", () => {
@@ -272,15 +274,16 @@ function renderFilters() {
 function renderFlags() {
   const list = document.getElementById("flag-list");
   let flags = FLAGS;
-  if (activeSeverity !== "all") flags = flags.filter(f => (FLAG_META[f.flag_type]||{}).sev === activeSeverity);
+  if (activeSeverity !== "all") flags = flags.filter(f => (f.severity || (FLAG_META[f.flag_type]||{}).sev) === activeSeverity);
 
   list.innerHTML = flags.map(f => {
     const m = FLAG_META[f.flag_type] || {label:"Unknown",badge:"badge-amber",sev:"info",icon:"?"};
+    const sev = f.severity || m.sev;
     const conf = Math.round((f.confidence||0)*100);
     const confBadge = conf > 85 ? "badge-green" : "badge-amber";
     const date = new Date(f.timestamp).toLocaleDateString();
     return `<div class="flag-card" data-id="${f.id}">
-      <span class="sev sev-${m.sev}"></span>
+      <span class="sev sev-${sev}"></span>
       <div style="flex:1;min-width:0">
         <div class="meta">
           <span class="badge ${m.badge}">${m.icon} ${m.label}</span>
