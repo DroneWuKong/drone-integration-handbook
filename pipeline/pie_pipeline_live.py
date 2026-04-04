@@ -1966,6 +1966,14 @@ def main():
                     gf["sources"] = resolve_sources(gf.get("data_sources", []))
                 all_flags.extend(gz_flags_data)
                 print(f"  Merged {len(gz_flags_data)} gray zone flags into main pipeline")
+            # Also load follow-up research flags if they exist
+            gz_followup = REPO_ROOT / "data" / "grayzone" / "followup_flags.json"
+            if gz_followup.exists():
+                fu_flags = load_json(gz_followup)
+                for gf in fu_flags:
+                    gf["sources"] = resolve_sources(gf.get("data_sources", []))
+                all_flags.extend(fu_flags)
+                print(f"  Merged {len(fu_flags)} gray zone follow-up flags")
         except Exception as e:
             print(f"  Gray zone detector error: {e}")
             # Fallback to basic analysis

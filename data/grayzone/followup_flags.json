@@ -1,0 +1,96 @@
+[
+  {
+    "id": "gz-followup-001",
+    "timestamp": "2026-04-04T06:38:32.427551+00:00",
+    "flag_type": "grayzone",
+    "severity": "warning",
+    "title": "[GRAY ZONE] TX AG v. Anzu: lawsuit frozen 45+ days, no response filed",
+    "detail": "Texas AG lawsuit filed Feb 18, 2026 \u2014 no responsive pleading in 45+ days. XTI Aerospace filed multiple 8-Ks but none mention lawsuit. FY2025 10-K overdue. Potential SEC disclosure gap.",
+    "confidence": 0.9,
+    "data_sources": [
+      "grayzone_detector"
+    ],
+    "entity_id": "anzu-robotics",
+    "dimension": "regulatory_arbitrage"
+  },
+  {
+    "id": "gz-followup-002",
+    "timestamp": "2026-04-04T06:38:32.427551+00:00",
+    "flag_type": "grayzone",
+    "severity": "warning",
+    "title": "[GRAY ZONE] XTI pivoting to distribution \u2014 Anzu next-gen unlikely near-term",
+    "detail": "Zero evidence of Anzu next-gen: no name, specs, patents, jobs. XTI $160M+ guidance from Drone Nerds distribution. XTIA ~$2.08, current ratio 0.49. Unusual Machines silent.",
+    "confidence": 0.85,
+    "data_sources": [
+      "grayzone_detector"
+    ],
+    "entity_id": "anzu-robotics",
+    "dimension": "supply_chain_fragility"
+  },
+  {
+    "id": "gz-followup-003",
+    "timestamp": "2026-04-04T06:38:32.427551+00:00",
+    "flag_type": "grayzone",
+    "severity": "critical",
+    "title": "[GRAY ZONE] FCC blanket ban rendered shell company strategy obsolete",
+    "detail": "Dec 2025: ALL foreign UAS added to Covered List. Last shell auth: Lyno Dynamics Nov 28, 2025. First 4 Conditional Approvals March 2026: SiFly, Mobilicom, ScoutDI, Verge.",
+    "confidence": 0.95,
+    "data_sources": [
+      "grayzone_detector"
+    ],
+    "dimension": "regulatory_arbitrage"
+  },
+  {
+    "id": "gz-followup-004",
+    "timestamp": "2026-04-04T06:38:32.427551+00:00",
+    "flag_type": "grayzone",
+    "severity": "critical",
+    "title": "[GRAY ZONE] SkyRover at Best Buy despite DJI infrastructure \u2014 FCC auth active",
+    "detail": "SkyRover at Best Buy March 2026, $629. DJI FlySafe URLs in app. FCC auths (April 2025) still active. Exploring US manufacturing for Conditional Approval.",
+    "confidence": 0.92,
+    "data_sources": [
+      "grayzone_detector"
+    ],
+    "entity_id": "skyrover-knowact",
+    "dimension": "identity_wash"
+  },
+  {
+    "id": "gz-followup-005",
+    "timestamp": "2026-04-04T06:38:32.427551+00:00",
+    "flag_type": "grayzone",
+    "severity": "warning",
+    "title": "[GRAY ZONE] DJI challenges FCC ban \u2014 Ninth Circuit Case 26-1029",
+    "detail": "DJI filed Feb 2026 arguing FCC exceeded authority, violated Fifth Amendment. FCC moved to dismiss. Outcome determines whether blanket ban holds.",
+    "confidence": 0.9,
+    "data_sources": [
+      "grayzone_detector"
+    ],
+    "dimension": "regulatory_arbitrage"
+  },
+  {
+    "id": "gz-followup-006",
+    "timestamp": "2026-04-04T06:38:32.427551+00:00",
+    "flag_type": "grayzone",
+    "severity": "info",
+    "title": "[GRAY ZONE] New York becomes 7th state to restrict Chinese drone procurement",
+    "detail": "A2237/S3259 signed Dec 2025, effective 2027. Total: 7 states (FL, AR, MS, TN, NV, CT, NY). TX HB 41 stalled. MO blocked.",
+    "confidence": 0.88,
+    "data_sources": [
+      "grayzone_detector"
+    ],
+    "dimension": "regulatory_arbitrage"
+  },
+  {
+    "id": "gz-followup-007",
+    "timestamp": "2026-04-04T06:38:32.427551+00:00",
+    "flag_type": "grayzone",
+    "severity": "critical",
+    "title": "[GRAY ZONE] Florida: Blue UAS 95% sensor reduction, 3-14x replacement cost",
+    "detail": "$200M grounded, $25M for replacements. Broward: 63\u21923 drones. Palm Beach: 100\u21925 missions/mo. Skydio battery fire. DOI: 95% sensor reduction. No federal compliance audit.",
+    "confidence": 0.85,
+    "data_sources": [
+      "grayzone_detector"
+    ],
+    "dimension": "supply_chain_fragility"
+  }
+]
