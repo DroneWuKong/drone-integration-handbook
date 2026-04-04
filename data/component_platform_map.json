@@ -1,0 +1,105 @@
+{
+  "FLIR Boson 640": [
+    "Skydio X10",
+    "Skydio X10D",
+    "Skydio X2D",
+    "Teal 2",
+    "Teal Black Widow",
+    "Inspired Flight IF800",
+    "Inspired Flight IF1200A",
+    "Freefly Astro",
+    "Freefly Alta X",
+    "Parrot ANAFI USA",
+    "Parrot ANAFI UKR",
+    "ModalAI Seeker Vision",
+    "ModalAI Stinger Vision",
+    "Teledyne FLIR Black Hornet",
+    "Neros Archer",
+    "Vantage Robotics Trace",
+    "PDW C100",
+    "AeroVironment Switchblade 600",
+    "Shield AI V-BAT"
+  ],
+  "NVIDIA Jetson Orin NX": [
+    "Skydio X10",
+    "Skydio X10D",
+    "Shield AI V-BAT",
+    "Shield AI Hivemind",
+    "Anduril Ghost X",
+    "Inspired Flight IF800",
+    "Inspired Flight IF1200A",
+    "Freefly Astro"
+  ],
+  "Qualcomm QRB5165": [
+    "ModalAI Seeker Vision",
+    "ModalAI Stinger Vision",
+    "ModalAI Sentinel",
+    "Teal 2",
+    "Teal Black Widow",
+    "Vantage Robotics Trace"
+  ],
+  "STM32H743": [
+    "Skydio X10",
+    "Skydio X10D",
+    "Teal 2",
+    "Teal Black Widow",
+    "ModalAI Seeker Vision",
+    "ModalAI Stinger Vision",
+    "Freefly Astro",
+    "Freefly Alta X",
+    "Inspired Flight IF800",
+    "Neros Archer",
+    "PDW C100",
+    "Shield AI Hivemind (FPV integrations)",
+    "AeroVironment Dragon"
+  ],
+  "ELRS 900MHz": [
+    "ModalAI Seeker Vision",
+    "ModalAI Stinger Vision",
+    "Teal 2",
+    "Teal Black Widow",
+    "Neros Archer",
+    "PDW C100",
+    "Shield AI Hivemind (FPV)",
+    "AeroVironment Dragon"
+  ],
+  "Doodle Labs Helix": [
+    "Skydio X10D",
+    "Teal 2",
+    "Inspired Flight IF800",
+    "Freefly Astro",
+    "Shield AI V-BAT",
+    "ModalAI platforms (optional)"
+  ],
+  "Silvus StreamCaster": [
+    "Shield AI V-BAT",
+    "Anduril Ghost X",
+    "AeroVironment Switchblade",
+    "Inspired Flight IF1200A",
+    "L3Harris FVR-90"
+  ],
+  "u-blox GNSS": [
+    "Skydio X10",
+    "Skydio X10D",
+    "Parrot ANAFI USA",
+    "Parrot ANAFI UKR",
+    "Teal 2",
+    "Teal Black Widow",
+    "ModalAI Seeker Vision",
+    "ModalAI Stinger Vision",
+    "Freefly Astro",
+    "Freefly Alta X",
+    "Inspired Flight IF800",
+    "Inspired Flight IF1200A",
+    "Neros Archer",
+    "AeroVironment Dragon",
+    "Quantum Systems Vector"
+  ],
+  "Semtech LoRa": [
+    "ALL ELRS-based platforms",
+    "ALL TBS Crossfire platforms",
+    "ALL TBS Tracer platforms",
+    "ALL ImmersionRC Ghost platforms",
+    "ALL FrSky R9 platforms"
+  ]
+}
