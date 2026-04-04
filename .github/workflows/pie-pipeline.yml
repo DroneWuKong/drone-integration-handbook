@@ -2,7 +2,7 @@ name: Pattern Intelligence Pipeline
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Daily at 06:00 UTC
+    - cron: '0 15 * * *'  # Daily at 15:00 UTC (after miners at 14:00 UTC)
 
   workflow_dispatch: {}   # Manual trigger from Actions tab
 
