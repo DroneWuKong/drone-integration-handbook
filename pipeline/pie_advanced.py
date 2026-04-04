@@ -31,7 +31,7 @@ DEPENDENCY_GRAPH = {
         "cascade_severity": "critical",
     },
     "Qualcomm QRB5165": {
-        "platforms": ["ModalAI VOXL 2", "ModalAI Seeker Vision", "ModalAI Stinger Vision", "ModalAI Sentinel", "Teal 2", "Teal Black Widow", "Vantage Robotics Trace"],
+        "platforms": ["ModalAI VOXL 2", "ModalAI Seeker Vision", "ModalAI Stinger Vision", "ModalAI Sentinel", "Vantage Robotics Trace"],
         "programs": ["Army SRR Tranche 2", "USMC FPV", "Drone Dominance", "USSOCOM FPV"],
         "upstream": ["TSMC (fab)", "Qualcomm (design)", "Samsung (DRAM)"],
         "single_source": True,
@@ -71,6 +71,20 @@ DEPENDENCY_GRAPH = {
         "upstream": ["u-blox AG (Thalwil, Switzerland — SOLE GNSS ASIC designer)", "TSMC (fab)"],
         "single_source": True,
         "cascade_severity": "high",
+    },
+    "Qualcomm Snapdragon 845": {
+        "platforms": ["Teal 2", "Teal Black Widow", "Teal Golden Eagle"],
+        "programs": ["Army SRR Tranche 2", "Drone Dominance", "USMC FPV"],
+        "upstream": ["TSMC (fab)", "Qualcomm (design)", "Samsung (memory)"],
+        "single_source": True,
+        "cascade_severity": "high",
+    },
+    "Semtech LoRa (SX1276/SX1280/SX1281)": {
+        "platforms": ["ALL ELRS receivers (329/391 in Forge DB)", "ALL TBS Crossfire", "ALL TBS Tracer", "ALL ImmersionRC Ghost", "ALL FrSky R9", "137 control link TX in Forge DB"],
+        "programs": ["Drone Dominance (200K drones)", "USMC FPV", "Ukraine defense (10K+/month)", "Army SRR FPV", "Commercial FPV worldwide"],
+        "upstream": ["Semtech Corporation (Camarillo, CA — PATENTED, no alternative silicon vendor exists)"],
+        "single_source": True,
+        "cascade_severity": "critical",
     },
 }
 
