@@ -2,7 +2,7 @@ name: PIE Procurement Scanner
 
 on:
   schedule:
-    - cron: '30 6 * * *'  # Daily at 06:30 UTC (30 min after PIE pipeline)
+    - cron: '0 15 * * *'  # Daily at 15:00 UTC (30 min after PIE pipeline at 14:30)
   workflow_dispatch:       # Manual trigger
     inputs:
       start_date:
