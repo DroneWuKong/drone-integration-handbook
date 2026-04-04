@@ -107,6 +107,14 @@ jobs:
           cp data/flags.json "/tmp/forge/${FORGE_SRC}/pie_flags.json"
           cp data/predictions.json "/tmp/forge/${FORGE_SRC}/pie_predictions.json"
           
+          # Merge followup flags with proper schema mapping
+          if [ -f "data/grayzone/followup_flags.json" ]; then
+            echo "Merging followup flags..."
+            python3 pipeline/sync_followups_to_forge.py \
+              "/tmp/forge/${FORGE_SRC}/pie_flags.json" \
+              "data/grayzone/followup_flags.json"
+          fi
+          
           cd /tmp/forge
           git config user.name "PIE Bot"
           git config user.email "pie-bot@users.noreply.github.com"
@@ -116,7 +124,8 @@ jobs:
             echo "Forge already up to date"
           else
             FLAGS=$(python3 -c "import json; print(len(json.load(open('${FORGE_SRC}/pie_flags.json'))))")
-            git commit -m "🔍 PIE sync: ${FLAGS} flags | $(date -u '+%Y-%m-%d %H:%M UTC')"
+            PREDS=$(python3 -c "import json; print(len(json.load(open('${FORGE_SRC}/pie_predictions.json'))))")
+            git commit -m "🔍 PIE sync: ${FLAGS} flags, ${PREDS} predictions | $(date -u '+%Y-%m-%d %H:%M UTC')"
             git push
             echo "✓ Forge repo updated — Netlify will redeploy"
           fi
