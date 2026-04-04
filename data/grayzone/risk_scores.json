@@ -87,7 +87,7 @@
           "confidence": 0.95
         }
       ],
-      "scored_at": "2026-04-04T06:38:32.723350+00:00"
+      "scored_at": "2026-04-04T05:12:50.206368+00:00"
     },
     {
       "entity_id": "cogito-specta",
@@ -140,7 +140,7 @@
           "confidence": 0.9
         }
       ],
-      "scored_at": "2026-04-04T06:38:32.723350+00:00"
+      "scored_at": "2026-04-04T05:12:50.206368+00:00"
     },
     {
       "entity_id": "skyrover-knowact",
@@ -223,7 +223,7 @@
           "confidence": 0.9
         }
       ],
-      "scored_at": "2026-04-04T06:38:32.723350+00:00"
+      "scored_at": "2026-04-04T05:12:50.206368+00:00"
     },
     {
       "entity_id": "autel-robotics",
@@ -270,7 +270,7 @@
           "confidence": 0.9
         }
       ],
-      "scored_at": "2026-04-04T06:38:32.723350+00:00"
+      "scored_at": "2026-04-04T05:12:50.206368+00:00"
     }
   ],
   "buyer_impacts": [
@@ -314,7 +314,7 @@
         "Develop transition plan to verified Blue UAS platforms",
         "Review procurement policies for supply chain verification requirements"
       ],
-      "assessed_at": "2026-04-04T06:38:32.723350+00:00"
+      "assessed_at": "2026-04-04T05:12:50.206368+00:00"
     },
     {
       "entity_id": "autel-robotics",
@@ -341,10 +341,10 @@
         "Develop transition plan to verified Blue UAS platforms",
         "Review procurement policies for supply chain verification requirements"
       ],
-      "assessed_at": "2026-04-04T06:38:32.723350+00:00"
+      "assessed_at": "2026-04-04T05:12:50.206368+00:00"
     }
   ],
-  "generated_at": "2026-04-04T06:38:32.723350+00:00",
+  "generated_at": "2026-04-04T05:12:50.206368+00:00",
   "entity_count": 4,
-  "total_flags": 36
+  "total_flags": 34
 }

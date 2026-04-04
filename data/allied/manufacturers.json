@@ -1,0 +1,980 @@
+{
+  "generated_at": "2026-04-04T20:10:18.384186+00:00",
+  "entity_count": 19,
+  "manufacturers": [
+    {
+      "id": "orqa",
+      "name": "Orqa",
+      "country": "Croatia",
+      "hq": "Osijek, Croatia",
+      "founded": "2018",
+      "nato_member": true,
+      "blue_uas_listed": false,
+      "blue_uas_note": "Submissions rejected; DoD purchases paused over Chinese radio module (now resolved in-house)",
+      "ndaa_compliant": true,
+      "ndaa_note": "Claims NDAA compliance; all components now manufactured in-house or EU-sourced",
+      "vertical_integration": "full",
+      "china_free": true,
+      "china_free_note": "Achieved China-free status after moving radio module production in-house. Previously had one Chinese radio component.",
+      "annual_capacity": 280000,
+      "capacity_target": 1000000,
+      "capacity_target_note": "Via Global Manufacturing Partnership Program across NA, EU, Middle East, Indo-Pacific",
+      "products": [
+        {
+          "name": "MRM1-5",
+          "type": "training_fpv",
+          "status": "production"
+        },
+        {
+          "name": "MRM2-10 Interceptor",
+          "type": "combat_fpv",
+          "payload_kg": 3.5,
+          "status": "combat_proven",
+          "note": "EW-resilient, IRONghost dual sub-GHz link, ATAK integration"
+        },
+        {
+          "name": "Dream X",
+          "type": "commercial_fpv",
+          "status": "production"
+        },
+        {
+          "name": "FPV.One Goggles",
+          "type": "fpv_goggles",
+          "status": "production"
+        },
+        {
+          "name": "Flight controllers",
+          "type": "component",
+          "status": "production"
+        },
+        {
+          "name": "ESCs",
+          "type": "component",
+          "status": "production"
+        },
+        {
+          "name": "Motors",
+          "type": "component",
+          "status": "production"
+        },
+        {
+          "name": "Cameras",
+          "type": "component",
+          "status": "production"
+        },
+        {
+          "name": "PCBs",
+          "type": "component",
+          "status": "production"
+        }
+      ],
+      "us_market_presence": {
+        "red_river_army_depot": "Teaming Agreement signed March 2026 \u2014 at heart of SkyFoundry",
+        "firestorm_partnership": "Firestorm Squall 3D-printable FPV drone partnership Feb 2026",
+        "drone_dominance": "Not in Gauntlet Phase 1 top 11",
+        "investors_us": [
+          "Lightspeed Venture Partners",
+          "Radius Capital"
+        ]
+      },
+      "funding": [
+        {
+          "round": "Seed",
+          "amount_eur": 5800000,
+          "date": "2024-12",
+          "lead": "Lightspeed Venture Partners"
+        },
+        {
+          "round": "Series A",
+          "amount_eur": 12700000,
+          "date": "2026-03",
+          "lead": "Expeditions",
+          "participants": [
+            "Lightspeed",
+            "Taiwania Capital",
+            "Radius Capital",
+            "AYMO Ventures"
+          ]
+        }
+      ],
+      "total_raised_eur": 18500000,
+      "revenue": {
+        "2023": 6400000,
+        "2024_projected": 12000000
+      },
+      "defense_contracts": [
+        {
+          "customer": "Croatian Army",
+          "product": "MRM2-10",
+          "value_eur": 10000000,
+          "status": "ordered"
+        },
+        {
+          "customer": "Ukraine (via Croatia EU SAFE)",
+          "value_eur": 100000000,
+          "status": "planned"
+        },
+        {
+          "customer": "Lendurai/Estonia",
+          "value_eur": 400000000,
+          "type": "partnership",
+          "note": "Joint autonomous FPV assembly"
+        },
+        {
+          "customer": "US DoD",
+          "status": "paused_resumed",
+          "note": "Purchases halted over Chinese radio module, CEO says resolved"
+        },
+        {
+          "customer": "Barzan Holdings (Qatar)",
+          "date": "2026-01",
+          "type": "cooperation_agreement"
+        }
+      ],
+      "partnerships": [
+        {
+          "partner": "Baykar (Turkey)",
+          "type": "integration",
+          "note": "FPV drones launched from TB2 mothership"
+        },
+        {
+          "partner": "ImmersionRC (Switzerland)",
+          "type": "acquisition",
+          "date": "2022-2023",
+          "note": "Brought FPV radio stack in-house"
+        },
+        {
+          "partner": "Lendurai (Estonia)",
+          "type": "manufacturing",
+          "note": "Autonomous FPV, \u20ac400M deal"
+        },
+        {
+          "partner": "Red River Army Depot",
+          "type": "teaming_agreement",
+          "date": "2026-03"
+        },
+        {
+          "partner": "Firestorm Labs (US)",
+          "type": "product",
+          "note": "Firestorm Squall FPV drone"
+        }
+      ],
+      "combat_proven": true,
+      "combat_deployments": [
+        "Ukraine (414th Separate Brigade)",
+        "Croatian Army training"
+      ],
+      "supply_chain_risk": "LOW \u2014 fully vertically integrated, EU-manufactured, China-free achieved",
+      "pie_relevance": "CRITICAL \u2014 largest NDAA-compliant FPV production capacity in the Western world. Direct answer to the gray zone problem: this is what Anzu claimed to be but couldn't build.",
+      "flags_for_research": [
+        "Blue UAS rejection reasons \u2014 what specifically failed?",
+        "Chinese radio module incident details and resolution timeline",
+        "Red River Army Depot production timeline and volumes",
+        "Firestorm Squall specs and production status"
+      ]
+    },
+    {
+      "id": "quantum-systems",
+      "name": "Quantum Systems",
+      "country": "Germany",
+      "hq": "Gilching, Germany",
+      "founded": "2015",
+      "nato_member": true,
+      "blue_uas_listed": false,
+      "ndaa_compliant": true,
+      "ndaa_note": "Tactical platforms marketed as NDAA-compliant",
+      "vertical_integration": "high",
+      "china_free": true,
+      "annual_capacity": 5000,
+      "capacity_target": null,
+      "products": [
+        {
+          "name": "Vector AI",
+          "type": "vtol_isr",
+          "endurance_min": 180,
+          "status": "combat_proven"
+        },
+        {
+          "name": "Trinity F90+",
+          "type": "vtol_mapping",
+          "status": "production"
+        },
+        {
+          "name": "Reliant",
+          "type": "drone_carrier",
+          "note": "Designed for US market"
+        }
+      ],
+      "us_market_presence": {
+        "us_production": "Yes \u2014 US production facility established",
+        "drone_dominance": "Not in Gauntlet Phase 1"
+      },
+      "funding_total_eur": 310000000,
+      "valuation_eur": 3000000000,
+      "valuation_note": "Europe's first defense tech unicorn, triple unicorn valuation",
+      "investors": [
+        "Peter Thiel",
+        "Balderton Capital",
+        "HENSOLDT",
+        "Airbus Defence and Space"
+      ],
+      "revenue": {
+        "2022": 20000000,
+        "2025_projected": 300000000
+      },
+      "defense_contracts": [
+        {
+          "customer": "Germany",
+          "status": "active"
+        },
+        {
+          "customer": "Australia",
+          "value_aud": 90000000
+        },
+        {
+          "customer": "Romania",
+          "status": "active"
+        },
+        {
+          "customer": "Spain",
+          "value_eur": 27000000,
+          "units": 91
+        },
+        {
+          "customer": "UK",
+          "status": "active"
+        },
+        {
+          "customer": "Ukraine",
+          "status": "combat_deployed"
+        }
+      ],
+      "production_locations": [
+        "Germany",
+        "Ukraine",
+        "Romania",
+        "Australia",
+        "UK",
+        "US",
+        "Baltics"
+      ],
+      "combat_proven": true,
+      "combat_deployments": [
+        "Ukraine"
+      ],
+      "supply_chain_risk": "LOW \u2014 EU-manufactured, multiple production sites",
+      "pie_relevance": "HIGH \u2014 strongest European tactical ISR alternative to Skydio at lower cost without ITAR restrictions"
+    },
+    {
+      "id": "helsing",
+      "name": "Helsing",
+      "country": "Germany/UK/France",
+      "hq": "Munich, Germany",
+      "founded": "2021",
+      "nato_member": true,
+      "blue_uas_listed": false,
+      "ndaa_compliant": false,
+      "ndaa_note": "EU-compliant, not pursuing US Blue UAS",
+      "vertical_integration": "high",
+      "china_free": true,
+      "annual_capacity": 12000,
+      "capacity_note": "RF-1 Resilience Factory produces 1,000+ HX-2 per month, scalable to tens of thousands",
+      "products": [
+        {
+          "name": "HX-2",
+          "type": "loitering_munition",
+          "range_km": 100,
+          "status": "combat_deployed",
+          "note": "AI-enabled EW resistance, swarm capable"
+        },
+        {
+          "name": "HF-1",
+          "type": "strike_drone",
+          "status": "production"
+        }
+      ],
+      "funding_total_eur": 600000000,
+      "funding_note": "Largest European defense startup round ever",
+      "valuation_eur": 12500000000,
+      "defense_contracts": [
+        {
+          "customer": "Ukraine",
+          "units": 10000,
+          "note": "4,000 HF-1 + 6,000 HX-2"
+        },
+        {
+          "customer": "Germany",
+          "status": "active"
+        },
+        {
+          "customer": "France",
+          "status": "active"
+        },
+        {
+          "customer": "UK",
+          "status": "active"
+        }
+      ],
+      "combat_proven": true,
+      "combat_proven_note": "Ukraine deployment; Bloomberg reported 25% launch rate in initial tests (Helsing disputes)",
+      "supply_chain_risk": "LOW \u2014 EU-manufactured",
+      "pie_relevance": "HIGH \u2014 most aggressive European scaling play, production capacity exceeds all US FPV manufacturers"
+    },
+    {
+      "id": "tekever",
+      "name": "Tekever",
+      "country": "Portugal/UK",
+      "hq": "Lisbon, Portugal",
+      "founded": "2001",
+      "nato_member": true,
+      "blue_uas_listed": false,
+      "ndaa_compliant": false,
+      "vertical_integration": "high",
+      "china_free": true,
+      "annual_capacity": null,
+      "products": [
+        {
+          "name": "AR3",
+          "type": "medium_altitude_isr",
+          "status": "combat_proven",
+          "note": "10,000+ combat flight hours in Ukraine"
+        },
+        {
+          "name": "AR5",
+          "type": "tactical_isr",
+          "status": "production"
+        }
+      ],
+      "valuation_usd": 1330000000,
+      "valuation_note": "Achieved unicorn status 2025",
+      "defense_contracts": [
+        {
+          "customer": "UK (for Ukraine)",
+          "value_usd": 350000000,
+          "product": "AR3"
+        },
+        {
+          "customer": "EMSA maritime surveillance",
+          "value_eur": 30000000
+        },
+        {
+          "customer": "UK OVERMATCH programme",
+          "investment_gbp": 400000000,
+          "note": "254,000 sq ft Swindon manufacturing hub, 1,000+ jobs"
+        }
+      ],
+      "combat_proven": true,
+      "combat_deployments": [
+        "Ukraine \u2014 credited with disabling \u00a33B+ of Russian assets including S-400"
+      ],
+      "supply_chain_risk": "LOW",
+      "pie_relevance": "MEDIUM \u2014 different class (medium altitude ISR) but demonstrates EU manufacturing at scale"
+    },
+    {
+      "id": "delair",
+      "name": "Delair",
+      "country": "France",
+      "hq": "Toulouse, France",
+      "founded": "2011",
+      "nato_member": true,
+      "blue_uas_listed": false,
+      "ndaa_compliant": false,
+      "ndaa_note": "Origine France Garantie certified",
+      "vertical_integration": "high",
+      "china_free": true,
+      "annual_capacity": 31200,
+      "capacity_note": "SQUADRONE subsidiary: 600+ UAVs per week",
+      "products": [
+        {
+          "name": "Colibri UX11",
+          "type": "loitering_munition",
+          "status": "production",
+          "note": "Co-developed with KNDS France"
+        },
+        {
+          "name": "DT46",
+          "type": "isr_artillery",
+          "status": "production",
+          "note": "French Army artillery fire support"
+        },
+        {
+          "name": "DT61",
+          "type": "long_range_multi_mission",
+          "status": "production"
+        }
+      ],
+      "revenue": {
+        "2024": 30000000,
+        "2025_projected": 60000000
+      },
+      "defense_contracts": [
+        {
+          "customer": "French Army",
+          "units": 2000,
+          "product": "Colibri UX11"
+        },
+        {
+          "customer": "Ukraine",
+          "units": 100,
+          "product": "UX11"
+        }
+      ],
+      "combat_proven": true,
+      "supply_chain_risk": "LOW \u2014 fully French sovereign manufacturing",
+      "pie_relevance": "MEDIUM \u2014 French sovereign champion, demonstrates EU capacity for loitering munitions"
+    },
+    {
+      "id": "thunder-tiger",
+      "name": "Thunder Tiger (TTROBOTIX)",
+      "country": "Taiwan",
+      "hq": "Taipei, Taiwan",
+      "founded": "1979 (drones division recent)",
+      "nato_member": false,
+      "blue_uas_listed": true,
+      "blue_uas_product": "Overkill FPV loitering munition",
+      "ndaa_compliant": true,
+      "vertical_integration": "high",
+      "china_free": true,
+      "china_free_note": "Taiwan banned Chinese GPS, optical sensors, FCs, datalinks in military drones",
+      "annual_capacity": 12000,
+      "capacity_note": "1,000+ military drones/month domestic; Ohio assembly site planned",
+      "products": [
+        {
+          "name": "Overkill",
+          "type": "fpv_loitering_munition",
+          "status": "blue_uas_cleared"
+        },
+        {
+          "name": "Various tactical UAS",
+          "type": "military",
+          "status": "production"
+        }
+      ],
+      "us_market_presence": {
+        "blue_uas": true,
+        "drone_dominance": "Competing in Drone Dominance Program",
+        "ohio_facility": "Assembly site planned",
+        "note": "Most immediately accessible allied FPV source for US procurement"
+      },
+      "defense_contracts": [
+        {
+          "customer": "Taiwan MND",
+          "status": "active",
+          "note": "Part of NT$44.2B national drone program"
+        }
+      ],
+      "national_context": {
+        "taiwan_drone_investment_usd": 1430000000,
+        "taiwan_target_2028": 180000,
+        "taiwan_component_self_sufficiency": "70-80%",
+        "drone_alliance_members": 200
+      },
+      "supply_chain_risk": "MEDIUM \u2014 Taiwan strait risk, but 70-80% component self-sufficiency",
+      "pie_relevance": "CRITICAL \u2014 only non-US Blue UAS FPV manufacturer, Ohio assembly creates domestic path"
+    },
+    {
+      "id": "acsl",
+      "name": "ACSL (Autonomous Control Systems Laboratory)",
+      "country": "Japan",
+      "hq": "Tokyo, Japan",
+      "founded": "2013",
+      "nato_member": false,
+      "nato_note": "Major non-NATO ally",
+      "blue_uas_listed": true,
+      "blue_uas_product": "ACSL-PF2",
+      "ndaa_compliant": true,
+      "vertical_integration": "medium",
+      "china_free": true,
+      "annual_capacity": null,
+      "capacity_note": "Scaling to thousands; exact numbers not disclosed",
+      "products": [
+        {
+          "name": "SOTEN",
+          "type": "isr_quadcopter",
+          "weight_kg": 1.7,
+          "price_usd": 10000,
+          "status": "production",
+          "note": "AES-256, hot-swappable cameras, foldable"
+        },
+        {
+          "name": "ACSL-PF2",
+          "type": "isr_quadcopter",
+          "status": "blue_uas_cleared"
+        }
+      ],
+      "us_market_presence": {
+        "blue_uas": true,
+        "subsidiary": "ACSL Inc., Santa Clara, CA",
+        "distributor": "Exertis Almo (largest NA Pro AV distributor)",
+        "dealers": [
+          "DSLRPros",
+          "Advexure"
+        ]
+      },
+      "price_point": "Under $10,000 \u2014 directly targets DJI replacement market",
+      "national_context": {
+        "japan_fy2026_unmanned_budget_usd": 1960000000
+      },
+      "supply_chain_risk": "LOW \u2014 Japanese manufacturing, no Chinese components",
+      "pie_relevance": "HIGH \u2014 Blue UAS listed, affordable DJI alternative, Japanese quality, US subsidiary established"
+    },
+    {
+      "id": "baykar",
+      "name": "Baykar",
+      "country": "Turkey",
+      "hq": "Istanbul, Turkey",
+      "founded": "1984",
+      "nato_member": true,
+      "blue_uas_listed": false,
+      "ndaa_compliant": false,
+      "ndaa_note": "No US market presence; Erdogan family connection and S-400 create barriers",
+      "vertical_integration": "very_high",
+      "china_free": true,
+      "china_free_note": "Indigenized after Canada/Austria/Germany embargoes post-2020 Nagorno-Karabakh",
+      "annual_capacity": 250,
+      "capacity_target": 500,
+      "capacity_note": "Per year for TB2; different scale than FPV \u2014 these are $2-5M MALE UAVs",
+      "products": [
+        {
+          "name": "TB2 Bayraktar",
+          "type": "male_ucav",
+          "endurance_hr": 24,
+          "payload_kg": 150,
+          "price_usd": 2000000,
+          "units_produced": 500,
+          "status": "combat_proven"
+        },
+        {
+          "name": "Akinci",
+          "type": "hale_ucav",
+          "payload_kg": 1500,
+          "status": "production",
+          "note": "$3B Saudi deal"
+        },
+        {
+          "name": "Kizilelma",
+          "type": "unmanned_fighter",
+          "status": "serial_production",
+          "note": "First confirmed air-to-air kill by unmanned aircraft Nov 2025"
+        }
+      ],
+      "revenue_usd": 2000000000,
+      "revenue_note": "90-97.5% from exports",
+      "export_market_share": "~65% of global medium-altitude combat UAV exports",
+      "operators": "36+ countries",
+      "defense_contracts": [
+        {
+          "customer": "Saudi Arabia",
+          "value_usd": 3000000000,
+          "product": "Akinci"
+        },
+        {
+          "customer": "Ukraine",
+          "status": "active"
+        },
+        {
+          "customer": "Croatia",
+          "product": "TB2",
+          "status": "delivered"
+        }
+      ],
+      "partnerships": [
+        {
+          "partner": "Leonardo (Italy)",
+          "type": "joint_venture",
+          "entity": "LBA Systems",
+          "note": "European certification by 2026"
+        },
+        {
+          "partner": "Orqa (Croatia)",
+          "type": "integration",
+          "note": "FPV drones from TB2 mothership"
+        },
+        {
+          "partner": "BAE Systems",
+          "type": "next_gen",
+          "note": "Joint drones for NATO via TAI partnership"
+        }
+      ],
+      "engine_program": {
+        "investment_usd": 300000000,
+        "note": "Indigenous turbofan to replace Ukrainian engines"
+      },
+      "political_risk": "HIGH \u2014 Erdogan son-in-law (Sel\u00e7uk Bayraktar) is chairman; S-400 purchase",
+      "combat_proven": true,
+      "combat_deployments": [
+        "Ukraine",
+        "Libya",
+        "Syria",
+        "Nagorno-Karabakh",
+        "Ethiopia"
+      ],
+      "supply_chain_risk": "MEDIUM \u2014 indigenized post-embargoes but Ukrainian engine dependency remains",
+      "pie_relevance": "MEDIUM for US procurement (political barriers) but HIGH for global context \u2014 world's most successful drone exporter"
+    },
+    {
+      "id": "stm-kargu",
+      "name": "STM (Kargu)",
+      "country": "Turkey",
+      "hq": "Ankara, Turkey",
+      "founded": "1991",
+      "nato_member": true,
+      "blue_uas_listed": false,
+      "ndaa_compliant": false,
+      "products": [
+        {
+          "name": "Kargu-2",
+          "type": "autonomous_loitering_munition",
+          "weight_kg": 7,
+          "endurance_min": 30,
+          "status": "combat_proven",
+          "note": "First potential autonomous lethal weapon used in combat (Libya 2020). AI facial recognition, swarm capability up to 20 units."
+        }
+      ],
+      "combat_proven": true,
+      "combat_deployments": [
+        "Libya (2020) \u2014 first autonomous lethal engagement"
+      ],
+      "pie_relevance": "LOW for US procurement but HIGH for capability tracking \u2014 autonomous swarm capability no US small drone offers"
+    },
+    {
+      "id": "sypaq",
+      "name": "Sypaq",
+      "country": "Australia",
+      "hq": "Melbourne, Australia",
+      "founded": "1992",
+      "nato_member": false,
+      "nato_note": "AUKUS partner",
+      "blue_uas_listed": false,
+      "ndaa_compliant": false,
+      "products": [
+        {
+          "name": "Corvo PPDS",
+          "type": "expendable_delivery",
+          "price_usd": 3500,
+          "payload_kg": 3,
+          "range_km": 120,
+          "note": "Cardboard construction, flatpack self-assembly, GPS/dead-reckoning nav, no datalink required"
+        },
+        {
+          "name": "CorvoX",
+          "type": "export_loitering",
+          "status": "unveiled"
+        }
+      ],
+      "annual_capacity": null,
+      "capacity_note": "Hundreds delivered to Ukraine; exact production rate not disclosed",
+      "defense_contracts": [
+        {
+          "customer": "Ukraine",
+          "status": "active",
+          "note": "Modified for attack missions by operators"
+        }
+      ],
+      "combat_proven": true,
+      "supply_chain_risk": "LOW \u2014 cardboard and commodity electronics, highly redundant",
+      "pie_relevance": "MEDIUM \u2014 radical cost proposition ($3,500 vs $60K Switchblade) but no US market presence yet"
+    },
+    {
+      "id": "elbit-systems",
+      "name": "Elbit Systems",
+      "country": "Israel",
+      "hq": "Haifa, Israel",
+      "founded": "1966",
+      "nato_member": false,
+      "nato_note": "Major non-NATO ally; deep US defense integration",
+      "blue_uas_listed": false,
+      "blue_uas_note": "Procured through FMS/DCS, not Blue UAS",
+      "ndaa_compliant": true,
+      "ndaa_note": "US subsidiary Elbit Systems of America (Fort Worth, TX) \u2014 3,675+ US employees",
+      "products": [
+        {
+          "name": "Hermes 900",
+          "type": "male_uav",
+          "endurance_hr": 36,
+          "payload_kg": 420,
+          "status": "production",
+          "operators": "20+ countries"
+        },
+        {
+          "name": "Hermes 450",
+          "type": "tactical_uav",
+          "status": "production"
+        },
+        {
+          "name": "Skylark",
+          "type": "small_uav",
+          "status": "production"
+        }
+      ],
+      "us_presence": {
+        "employees": 3675,
+        "cbp_contract_usd": 1800000000,
+        "note": "IDIQ contract for border surveillance towers"
+      },
+      "defense_contracts": [
+        {
+          "customer": "International",
+          "value_usd": 120000000,
+          "product": "Hermes 900"
+        },
+        {
+          "customer": "US CBP",
+          "value_usd": 1800000000,
+          "type": "IDIQ"
+        }
+      ],
+      "supply_chain_risk": "LOW \u2014 Israeli sovereign manufacturing, deep US integration",
+      "pie_relevance": "MEDIUM \u2014 different procurement tier (FMS) but demonstrates allied integration model"
+    },
+    {
+      "id": "iai",
+      "name": "Israel Aerospace Industries (IAI)",
+      "country": "Israel",
+      "hq": "Lod, Israel",
+      "founded": "1953",
+      "nato_member": false,
+      "products": [
+        {
+          "name": "Heron",
+          "type": "male_uav",
+          "units_produced": 206,
+          "price_usd": 9500000,
+          "status": "production"
+        },
+        {
+          "name": "Harop",
+          "type": "loitering_munition",
+          "endurance_hr": 6,
+          "range_km": 1000,
+          "warhead_kg": 23,
+          "status": "combat_proven"
+        },
+        {
+          "name": "Harpy",
+          "type": "anti_radiation_drone",
+          "note": "No US-produced subsystems \u2014 fully independent supply chain"
+        }
+      ],
+      "combat_proven": true,
+      "combat_deployments": [
+        "Nagorno-Karabakh (Harop)",
+        "India-Pakistan May 2025 (Harop)"
+      ],
+      "supply_chain_risk": "LOW \u2014 Harpy explicitly designed with zero US components",
+      "pie_relevance": "MEDIUM \u2014 demonstrates fully independent non-Chinese, non-US supply chain is achievable"
+    },
+    {
+      "id": "neros-kela",
+      "name": "Neros Technologies / Kela Technologies",
+      "country": "US/Israel",
+      "hq": "US (Neros) / Israel (Kela)",
+      "founded": "Recent",
+      "blue_uas_listed": true,
+      "ndaa_compliant": true,
+      "products": [
+        {
+          "name": "Archer Fiber",
+          "type": "fiber_optic_fpv",
+          "status": "production",
+          "note": "First NDAA-compliant fiber-optic FPV drone. Ranked #2 in Drone Dominance Gauntlet Phase 1."
+        }
+      ],
+      "us_market_presence": {
+        "drone_dominance_rank": 2,
+        "blue_uas": true
+      },
+      "pie_relevance": "HIGH \u2014 Blue UAS, #2 in Gauntlet, bridges US-Israel supply chain for FPV"
+    },
+    {
+      "id": "skycutter",
+      "name": "Skycutter",
+      "country": "UK",
+      "hq": "United Kingdom",
+      "founded": "Recent",
+      "nato_member": true,
+      "blue_uas_listed": false,
+      "products": [
+        {
+          "name": "Unknown",
+          "type": "fpv_attack",
+          "note": "Scored 99.3 \u2014 highest in Drone Dominance Gauntlet Phase 1"
+        }
+      ],
+      "us_market_presence": {
+        "drone_dominance_rank": 1
+      },
+      "pie_relevance": "CRITICAL \u2014 a British startup outscored every US manufacturer in the Pentagon's own competition"
+    },
+    {
+      "id": "ideaforge",
+      "name": "ideaForge",
+      "country": "India",
+      "hq": "Mumbai, India",
+      "founded": "2009",
+      "nato_member": false,
+      "blue_uas_listed": false,
+      "ndaa_compliant": true,
+      "ndaa_note": "Section 848 compliant per company claims",
+      "products": [
+        {
+          "name": "SWITCH 1.0",
+          "type": "tactical_isr",
+          "status": "production"
+        },
+        {
+          "name": "NINJA",
+          "type": "micro_uav",
+          "status": "production"
+        }
+      ],
+      "us_market_presence": {
+        "jv": "50/50 JV with First Breach Inc., Hagerstown, MD",
+        "investment": "Strategic investment in Vantage Robotics (Blue UAS listed)"
+      },
+      "revenue_note": "Q1 FY26 revenue crashed 85% YoY to \u20b912.8 crore \u2014 financial challenges",
+      "supply_chain_risk": "MEDIUM \u2014 India's broader ecosystem has 90% unregistered Chinese drones",
+      "pie_relevance": "MEDIUM \u2014 US manufacturing JV and Vantage investment create pathway but financial fragility is a concern"
+    },
+    {
+      "id": "malloy-bae",
+      "name": "Malloy Aeronautics (BAE Systems)",
+      "country": "UK",
+      "hq": "United Kingdom",
+      "founded": "2013 (acquired by BAE Feb 2024)",
+      "nato_member": true,
+      "blue_uas_listed": false,
+      "products": [
+        {
+          "name": "TRV-150",
+          "type": "heavy_lift_logistics",
+          "payload_kg": 68,
+          "status": "operational",
+          "note": "All-electric, all-weather. Declared operational by Royal Navy Sep 2025. Entered service with USMC."
+        }
+      ],
+      "annual_capacity": 200,
+      "capacity_note": "Scaled from 12-15/year to ~200 in 2023, now backed by BAE full manufacturing",
+      "defense_contracts": [
+        {
+          "customer": "Royal Navy",
+          "status": "operational"
+        },
+        {
+          "customer": "US Marine Corps",
+          "status": "in_service"
+        },
+        {
+          "customer": "Ukraine",
+          "note": "Blood and munitions delivery to Dnieper River marines"
+        },
+        {
+          "customer": "US Army 3rd Infantry Division",
+          "status": "evaluation",
+          "location": "Fort Stewart"
+        }
+      ],
+      "supply_chain_risk": "LOW \u2014 BAE Systems backing",
+      "pie_relevance": "HIGH \u2014 fills unique heavy-lift niche, already in service with USMC, BAE backing ensures scale"
+    },
+    {
+      "id": "draganfly",
+      "name": "Draganfly",
+      "country": "Canada",
+      "hq": "Saskatoon, Canada",
+      "founded": "1998",
+      "nato_member": true,
+      "blue_uas_listed": false,
+      "blue_uas_note": "Components are Blue UAS certified; full system is not",
+      "ndaa_compliant": true,
+      "products": [
+        {
+          "name": "Commander 3 XL",
+          "type": "multirotor",
+          "price_usd": 23495,
+          "payload_kg": 10,
+          "flight_time_min": 50,
+          "status": "production"
+        }
+      ],
+      "us_market_presence": {
+        "drone_dominance": "Selected for Gauntlet Phase 1; perfect score in Urban Strike mission",
+        "nasdaq_listed": true,
+        "cash_usd": 145000000
+      },
+      "supply_chain_risk": "LOW \u2014 Canadian manufacturing, NDAA components",
+      "pie_relevance": "MEDIUM \u2014 Gauntlet participant, NASDAQ listed, but small production scale"
+    },
+    {
+      "id": "threod-systems",
+      "name": "Threod Systems",
+      "country": "Estonia",
+      "hq": "Tartu, Estonia",
+      "founded": "2012",
+      "nato_member": true,
+      "blue_uas_listed": false,
+      "ndaa_compliant": false,
+      "vertical_integration": "full",
+      "products": [
+        {
+          "name": "Fixed-wing/VTOL recon drones",
+          "type": "reconnaissance",
+          "status": "production"
+        },
+        {
+          "name": "CATA pneumatic launchers",
+          "type": "launch_system",
+          "status": "production"
+        },
+        {
+          "name": "Autopilots",
+          "type": "component",
+          "status": "production"
+        }
+      ],
+      "operators": "27 countries",
+      "defense_contracts": [
+        {
+          "customer": "Ukraine",
+          "units": "100-200"
+        },
+        {
+          "customer": "British Army",
+          "value_usd": 6600000,
+          "product": "CATA launchers",
+          "program": "ASGARD"
+        }
+      ],
+      "revenue_target_usd": 110000000,
+      "national_context": {
+        "estonia_defense_gdp_pct": 5.0,
+        "baltic_drone_wall": "Joint EE-LV-LT-FI-PL initiative, \u20ac12M initial, 1,100+ km NATO eastern border"
+      },
+      "supply_chain_risk": "LOW \u2014 Estonian manufacturing, vertically integrated",
+      "pie_relevance": "MEDIUM \u2014 small but demonstrates Baltic drone ecosystem depth"
+    },
+    {
+      "id": "parrot",
+      "name": "Parrot",
+      "country": "France",
+      "hq": "Paris, France",
+      "founded": "1994",
+      "nato_member": true,
+      "blue_uas_listed": true,
+      "blue_uas_product": "ANAFI USA GOV/MIL",
+      "ndaa_compliant": true,
+      "us_manufacturing": "Boston, MA via NEOTech",
+      "products": [
+        {
+          "name": "ANAFI USA",
+          "type": "isr_quadcopter",
+          "price_usd": 7500,
+          "status": "production",
+          "note": "Blue UAS listed, manufactured in Boston. ~1/3 cost of Skydio X10"
+        }
+      ],
+      "supply_chain_risk": "LOW \u2014 US-manufactured",
+      "pie_relevance": "HIGH \u2014 pioneer allied Blue UAS company, demonstrates the US manufacturing model for allied companies"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+name: PIE Procurement Scanner
+
+on:
+  schedule:
+    - cron: '30 6 * * *'  # Daily at 06:30 UTC (30 min after PIE pipeline)
+  workflow_dispatch:       # Manual trigger
+    inputs:
+      start_date:
+        description: 'Start date for search (YYYY-MM-DD)'
+        required: false
+        default: '2024-01-01'
+      full_scan:
+        description: 'Run full scan (all sources)'
+        required: false
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  scan-procurement:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: Install dependencies
+        run: pip install requests
+      
+      - name: Run Procurement Scraper
+        env:
+          SAM_API_KEY: ${{ secrets.SAM_API_KEY }}
+        run: |
+          python pipeline/procurement/scraper.py \
+            --full \
+            --start-date ${{ github.event.inputs.start_date || '2024-01-01' }} \
+            --limit 50
+      
+      - name: Summarize results
+        run: |
+          echo "### Procurement Scanner Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f data/procurement/gray_zone_matches.json ]; then
+            python3 -c "
+          import json
+          with open('data/procurement/gray_zone_matches.json') as f:
+              data = json.load(f)
+          print(f'| Metric | Value |')
+          print(f'|--------|-------|')
+          print(f'| Federal awards | {data.get(\"federal_awards_total\", 0)} |')
+          print(f'| Gray zone matches | {data.get(\"gray_zone_federal_matches\", 0)} |')
+          print(f'| News mentions | {data.get(\"gray_zone_news_mentions\", 0)} |')
+          vendors = data.get('vendors_flagged', [])
+          if vendors:
+              print(f'| Vendors flagged | {\", \".join(vendors)} |')
+          " >> $GITHUB_STEP_SUMMARY
+          fi
+      
+      - name: Commit procurement data
+        run: |
+          git config user.name "PIE Procurement Scanner"
+          git config user.email "pie@drone-forge.dev"
+          
+          if [ -n "$(git status --porcelain data/procurement/)" ]; then
+            git add data/procurement/
+            
+            MATCHES=$(python3 -c "
+          import json
+          try:
+              with open('data/procurement/gray_zone_matches.json') as f:
+                  data = json.load(f)
+              total = data.get('gray_zone_federal_matches', 0) + data.get('gray_zone_news_mentions', 0)
+              print(total)
+          except:
+              print(0)
+          ")
+            
+            git commit -m "📡 Procurement scan: ${MATCHES} gray zone signals detected
+
+          Automated daily scan of USAspending.gov, SAM.gov, and news sources.
+          Cross-referenced against gray zone entity database."
+            
+            git push
+          else
+            echo "No new procurement data to commit"
+          fi
