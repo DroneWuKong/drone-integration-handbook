@@ -174,5 +174,34 @@
       "https://www.stocktitan.net/news/UMAC/"
     ],
     "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-013",
+    "title": "[GRAY ZONE] Anzu government buyers identified: Little Rock PD (6 units), N. Little Rock PD, Ames PD \u2014 all now holding discontinued/litigated product",
+    "category": "buyer_exposure",
+    "entity": "anzu-robotics",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:36:12.610738+00:00",
+    "detail": "3 confirmed government buyers of Anzu Raptor T: Little Rock PD (6 units, SOAR grant funded), North Little Rock PD (Arkansas grant), Ames PD (IA). TX AG petition references police departments, surveyors, construction firms, utility operators as affected buyer categories. All are now holding a discontinued product with active litigation, no successor timeline, and DJI root key control. TX AG passthrough theory: if successful, could force state/local agencies to pause or reexamine all Anzu contracts. Officers describe Raptor T as 'truly a force multiplier' \u2014 replacement will be operationally disruptive.",
+    "sources": [
+      "https://abjacademy.global/drone-blog/everything-you-need-to-know-about-anzu-raptor-drones/",
+      "https://www.kark.com/news/local-news/north-little-rock-and-little-rock-police-embrace-drones-as-powerful-policing-tools/",
+      "https://dronedj.com/2026/02/19/anzu-raptor-drone-texas-lawsuit/"
+    ],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-014",
+    "title": "[GRAY ZONE] TX AG 'passthrough theory' \u2014 precedent-setting test for all gray zone entities",
+    "category": "legal_precedent",
+    "entity": "all",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:36:12.610738+00:00",
+    "detail": "TX AG Paxton's Anzu lawsuit tests a novel legal theory: that licensing, rebranding, or supply-chain ties to a scrutinized foreign manufacturer can constitute deceptive trade practices under state consumer protection law. If successful, precedent applies to ALL gray zone entities (Cogito/SPECTA, SkyRover/Knowact, future shell companies). TX also seeks court order requiring Anzu to publicly state Raptor T is a rebranded DJI drone + TRO on data collection. Part of coordinated 4-lawsuit strategy (TP-Link, Anzu, Lorex, Temu) \u2014 Texas building a template for other AGs to follow.",
+    "sources": [
+      "https://hoodline.com/2026/02/paxton-targets-austin-drone-maker-in-clash-over-alleged-dji-trojan-horse/",
+      "https://www.texaspolicyresearch.com/texas-files-four-major-lawsuits-against-ccp-linked-companies/"
+    ],
+    "research_status": "UPDATED_2026_04_04"
   }
 ]

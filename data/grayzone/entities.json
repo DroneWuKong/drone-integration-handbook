@@ -176,28 +176,31 @@
         "agency": "Little Rock Police Department",
         "state": "AR",
         "units": 6,
-        "product": "Raptor T",
-        "cost_approx_usd": 56000,
-        "funding_source": "Arkansas SOAR Grant",
-        "date": "2025-04",
-        "use_case": "Patrol drone response team"
+        "model": "Raptor T",
+        "date": "April 2025",
+        "funding": "Arkansas Public Safety Equipment Grant (SOAR program)",
+        "detail": "City Board of Directors approved resolution. Established patrol-based drone response team.",
+        "source": "https://abjacademy.global/drone-blog/everything-you-need-to-know-about-anzu-raptor-drones/"
       },
       {
         "agency": "North Little Rock Police Department",
         "state": "AR",
-        "units": 7,
-        "product": "Raptor T",
-        "funding_source": "Arkansas state grant",
-        "date": "2025"
+        "units": "unknown",
+        "model": "Raptor T",
+        "date": "2025",
+        "funding": "Arkansas grant",
+        "detail": "Officer Jake House: 'What used to take 20 police officers to do, now I can do with two and a drone.' Uses for crime scenes, car crashes, missing kids, SWAT overwatch, K9 deployments.",
+        "source": "https://www.kark.com/news/local-news/north-little-rock-and-little-rock-police-embrace-drones-as-powerful-policing-tools/"
       },
       {
         "agency": "Ames Police Department",
         "state": "IA",
-        "units": null,
-        "product": "Raptor T",
-        "funding_source": "Asset forfeiture",
-        "date": "2025-01",
-        "use_case": "Exterior operations"
+        "units": "unknown",
+        "model": "Raptor T",
+        "date": "2025",
+        "funding": "unknown",
+        "detail": "Integrated Anzu Raptor T into drone program. Referenced in ABJ Academy coverage.",
+        "source": "https://abjacademy.global/drone-blog/everything-you-need-to-know-about-anzu-raptor-drones/"
       }
     ],
     "third_party_ecosystem": [
@@ -440,6 +443,21 @@
         "url": "https://www.tipranks.com/news/company-announcements/xti-aerospace-delays-2025-annual-10-k-filing",
         "title": "TipRanks: XTI 10-K Filing Delay",
         "type": "financial"
+      },
+      {
+        "url": "https://abjacademy.global/drone-blog/everything-you-need-to-know-about-anzu-raptor-drones/",
+        "title": "ABJ Academy: Complete Anzu Raptor Guide (buyer details)",
+        "type": "analysis"
+      },
+      {
+        "url": "https://www.kark.com/news/local-news/north-little-rock-and-little-rock-police-embrace-drones-as-powerful-policing-tools/",
+        "title": "KARK: N. Little Rock & Little Rock PD Anzu Raptor T Deployment",
+        "type": "news"
+      },
+      {
+        "url": "https://hoodline.com/2026/02/paxton-targets-austin-drone-maker-in-clash-over-alleged-dji-trojan-horse/",
+        "title": "Hoodline: Passthrough Legal Theory Analysis",
+        "type": "legal_analysis"
       }
     ],
     "latest_developments": {
@@ -452,7 +470,15 @@
       "randall_warnas_status": "No public statements since lawsuit filing. Previously CEO/sole employee.",
       "umac_xti_nexus": "Unusual Machines (NYSE:UMAC) invested $25M in XTI Series 10 Convertible Preferred at $1.492 conversion \u2014 concurrent with Anzu acquisition. UMAC is NDAA-compliant US drone component manufacturer. CEO Allan Evans cited 'unprecedented opportunity to define domestic drone landscape as US intensifies ban on Chinese companies.' UMAC raised $157.8M equity in 2025, targeting cash-flow positive by end 2026. 2025 revenue $11.2M (101% YoY). $103.3M cash. Needham Buy target $20. UMAC also has $3.75M PDW AM-FPV order and 101st Airborne supply agreements.",
       "drone_nerds_context": "Drone Nerds: largest US drone distributor. Revenue >$100M in 2024, >$55M through June 2025. 10-year profitability record. This is the real asset in the XTI acquisition \u2014 Anzu was the strategic play, Drone Nerds is the revenue engine."
-    }
+    },
+    "known_buyer_categories": [
+      "Police departments",
+      "Fire departments",
+      "Surveyors",
+      "Construction firms",
+      "Utility operators"
+    ],
+    "passthrough_legal_theory": "TX AG Paxton's case tests 'passthrough theory': whether licensing, rebranding, or supply-chain ties to a scrutinized foreign manufacturer can constitute deceptive practices under state consumer protection law. If successful, precedent could apply to all gray zone entities. If injunction granted, state agencies and local governments could be forced to pause/reexamine Anzu contracts."
   },
   {
     "id": "cogito-specta",
