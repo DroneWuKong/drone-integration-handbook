@@ -219,5 +219,21 @@
       "https://fccid.io/2BMUV"
     ],
     "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-016",
+    "title": "[GRAY ZONE] Jan 1, 2027 firmware cliff: 3 deadlines converge \u2014 firmware waiver, Blue UAS exemption, Buy American exemption all expire",
+    "category": "regulatory_deadline",
+    "entity": "all",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:41:46.706799+00:00",
+    "detail": "Three parallel deadlines converge Jan 1, 2027: (1) FCC firmware update waiver expires \u2014 DJI/Autel/all foreign drones lose ability to receive ANY software/firmware updates including security patches, Remote ID compliance, OS compatibility; (2) Blue UAS Covered List exemption expires \u2014 non-US Blue UAS platforms lose FCC authorization pathway; (3) Buy American exemption expires \u2014 domestic-content drones lose current carveout. Impact: 80%+ of 1,800+ law enforcement agencies use DJI. Oregon white paper: 467 drones grounded across 25 states already. After Jan 1 2027 without extension, existing DJI fleets become frozen assets \u2014 no patches, no bug fixes, no OS updates. DroneXL prediction: FCC will establish formal firmware review process (source code submission) that kills update pipeline through bureaucratic friction. DSLRPros warns: firmware freeze \u2192 Remote ID compliance failure, SDK breakage, cloud tool degradation, sensor calibration loss.",
+    "sources": [
+      "https://dronexl.co/2026/01/22/fcc-drone-firmware-updates-january-2027/",
+      "https://dronedj.com/2026/01/27/dji-drone-us-ban-update/",
+      "https://www.dslrpros.com/blogs/drone-trends/a-complete-guide-to-the-dji-drone-ban-2025",
+      "https://www.dslrpros.com/blogs/drone-trends/what-the-fcc-update-means-for-police-dfr-programs-using-dji-in-2026"
+    ],
+    "research_status": "UPDATED_2026_04_04"
   }
 ]
