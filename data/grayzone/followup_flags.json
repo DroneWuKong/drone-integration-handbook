@@ -117,5 +117,62 @@
       "https://www.suasnews.com/2025/12/beyond-dji-us-defense-bill-expands-ban-to-chinese-ground-drones-and-clones/"
     ],
     "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-009",
+    "title": "[GRAY ZONE] Oregon/NASAO white paper: 467 drones grounded, $50M-$2B national exposure across 25 states",
+    "category": "cost_impact",
+    "entity": "all",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:28:44.003239+00:00",
+    "detail": "Oregon Dept of Aviation compiled first multi-state accounting via NASAO. 25 state transportation depts surveyed. 467 drone airframes grounded/restricted across 23 states with explicit counts. National exposure $50M-$2B including state+local agencies and contractors. Wisconsin: 100% fleet grounded. Colorado: 90% capacity lost (16 units, 5 small drones remain). Nebraska: 86% impacted. Indiana: 85% ($400K equipment at risk). Minnesota: 84% foreign-made. Georgia: 80% ($225K). Oregon: 1 compliant drone out of 22. Idaho: $15K drone now costs $42K to replace. White paper recommends waiver until Sept 2027.",
+    "sources": [
+      "https://dronexl.co/2026/03/03/oregon-exposes-real-cost-dji-ban/",
+      "https://dronexl.co/2026/03/03/faa-research-dji-us-drone-platforms/"
+    ],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-010",
+    "title": "[GRAY ZONE] FAA ASSURE research: DJI = 96% of detected US drone platforms, Skydio = 1%",
+    "category": "market_data",
+    "entity": "all",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:28:44.003239+00:00",
+    "detail": "ASSURE A83 2025 Annual Report (Embry-Riddle, Kansas State, NIAR, Wichita State) analyzed Remote ID telemetry through Nov 2025 at 64 monitoring locations. DJI: 96%+ of detected platforms. Skydio (the company that lobbied hardest for restrictions): slightly over 1%. All other manufacturers combined: less than 2.4%. Additionally, 58% of flights within UAS Facility Map areas exceeded altitude limits \u2014 DJI's geofencing system previously prevented exactly these incursions.",
+    "sources": [
+      "https://dronexl.co/2026/03/03/faa-research-dji-us-drone-platforms/"
+    ],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-011",
+    "title": "[GRAY ZONE] FCC Conditional Approval pipeline: 4 cleared, process running 25 days late, no Chinese systems possible",
+    "category": "regulatory",
+    "entity": "all",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:28:44.003239+00:00",
+    "detail": "FCC Conditional Approval process: submit to drones@fcc.gov \u2192 FCC forwards to DoW/DHS \u2192 individualized security assessment \u2192 approval for up to 12 months. Internal target was 45-day review. First batch took 70 days (25 late). All 4 cleared systems are enterprise/inspection from non-Chinese companies (SiFly Q12, Mobilicom SkyHopper, ScoutDI Scout 137, Verge X1). All approvals expire Dec 31, 2026. Onshoring plan required for all critical components. DJI has no practical path: 'the DoW has made no determination removing any Chinese-manufactured system, and nothing in the current framework creates a mechanism for it to do so.' Key timeline: Blue UAS + Buy American exemptions expire Jan 1, 2027.",
+    "sources": [
+      "https://dronexl.co/2026/03/19/fcc-removes-four-drones-covered-list/",
+      "https://www.wiley.law/alert-FCC-Drone-Ban-Update-Roundup-First-Conditional-Approvals-a-Limited-Waiver-Quiet-Revocations-and-First-Challenges-to-the-Ban",
+      "https://www.fcc.gov/covered-list-faqs-uas-and-uas-critical-components",
+      "https://dronelife.com/2026/03/20/fcc-updates-covered-list-introduces-first-conditional-approvals-for-drone-systems/"
+    ],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-012",
+    "title": "[GRAY ZONE] UMAC: $150M March 2026 offering, 101st Airborne supply, PDW AM-FPV \u2014 financial bridge to post-DJI market",
+    "category": "financial",
+    "entity": "anzu-robotics",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:28:44.003239+00:00",
+    "detail": "Unusual Machines (NYSE:UMAC) priced $150M public offering March 19, 2026 at $17/share. Cash position: $103.3M. 2025 revenue: $11.2M (101% YoY). Q4: $4.9M (144% YoY). Strategic investments: $25M in XTI (34% stake at $1.492 conversion), $3.75M PDW AM-FPV order, 101st Airborne Division supply agreements. NDAA-compliant US manufacturer. Needham Buy target $20. Promoted CRO for consumer/enterprise/defense revenue. Targeting cash-flow positive by end 2026. UMAC CEO Evans: 'Drone Nerds has unprecedented opportunity to define domestic drone landscape as US intensifies ban on Chinese companies.'",
+    "sources": [
+      "https://www.prnewswire.com/news-releases/xti-aerospace-acquires-drone-nerds-and-closes-25-million-strategic-investment-by-unusual-machines-302613052.html",
+      "https://www.stocktitan.net/news/UMAC/"
+    ],
+    "research_status": "UPDATED_2026_04_04"
   }
 ]
