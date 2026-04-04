@@ -23,7 +23,7 @@
     "entity": "anzu-robotics",
     "severity": "HIGH",
     "date": "2026-04-04T14:09:16.756004+00:00",
-    "detail": "XTI acquired Anzu + Drone Nerds Nov 10, 2025 for ~$41.6M ($20M cash, $11.9M notes, $9.7M Class B units). Secured $20M JPMorgan revolving credit facility Feb 11, 2026 with Anzu as joint/several co-borrower \u2014 despite Anzu having zero products and active litigation. XTI delayed 10-K filing (April 2026) due to complex purchase price allocations. Sold Inpixon RTLS business Feb 2026. Unusual Machines invested $25M in XTI preferred stock concurrent with acquisition.",
+    "detail": "XTI acquired Anzu + Drone Nerds Nov 10, 2025 for ~$41.6M ($20M cash, $11.9M notes, $9.7M Class B units). Secured $20M JPMorgan revolving credit facility Feb 11, 2026 with Anzu as joint/several co-borrower \u2014 despite Anzu having zero products and active litigation. XTI delayed 10-K filing (April 2026) due to complex purchase price allocations. Sold Inpixon RTLS business Feb 2026. Unusual Machines (UMAC) \u2014 a legitimate US drone manufacturer, NOT a shell \u2014 invested $25M in XTI preferred stock concurrent with acquisition. UMAC's interest is Drone Nerds distribution access, not Anzu.",
     "sources": [
       "https://www.stocktitan.net/sec-filings/XTIA/8-k-xti-aerospace-inc-reports-material-event-d744292c6c66.html",
       "https://www.tipranks.com/news/company-announcements/xti-aerospace-delays-2025-annual-10-k-filing",
@@ -165,12 +165,12 @@
   },
   {
     "id": "gz-followup-012",
-    "title": "[GRAY ZONE] UMAC: $150M March 2026 offering, 101st Airborne supply, PDW AM-FPV \u2014 financial bridge to post-DJI market",
-    "category": "financial",
+    "title": "[MARKET DYNAMICS] UMAC: $150M offering, 101st Airborne supply \u2014 betting on post-DJI domestic vacuum",
+    "category": "market_dynamics",
     "entity": "anzu-robotics",
     "severity": "HIGH",
     "date": "2026-04-04T14:28:44.003239+00:00",
-    "detail": "Unusual Machines (NYSE:UMAC) priced $150M public offering March 19, 2026 at $17/share. Cash position: $103.3M. 2025 revenue: $11.2M (101% YoY). Q4: $4.9M (144% YoY). Strategic investments: $25M in XTI (34% stake at $1.492 conversion), $3.75M PDW AM-FPV order, 101st Airborne Division supply agreements. NDAA-compliant US manufacturer. Needham Buy target $20. Promoted CRO for consumer/enterprise/defense revenue. Targeting cash-flow positive by end 2026. UMAC CEO Evans: 'Drone Nerds has unprecedented opportunity to define domestic drone landscape as US intensifies ban on Chinese companies.'",
+    "detail": "NOT A SHELL COMPANY \u2014 Unusual Machines (NYSE:UMAC) is a legitimate US drone component manufacturer (Fat Shark, Rotor Riot brands). Orlando HQ, 25K sq ft facility, named leadership, full SEC reporting. Strategic play: UMAC invested $25M in XTI to get distribution access via Drone Nerds (>$100M revenue, largest US distributor). Betting the DJI ban creates massive domestic market opportunity. Evans: 'unprecedented opportunity to define domestic drone landscape.' UMAC priced $150M public offering March 2026. Cash: $103.3M. Revenue: $11.2M (101% YoY). Supply agreements: 101st Airborne, PDW AM-FPV ($3.75M order). Needham Buy target $20. NDAA-compliant manufacturer targeting cash-flow positive by end 2026. PIE tracks this as market dynamics signal \u2014 the financial infrastructure being built to fill the post-DJI void.",
     "sources": [
       "https://www.prnewswire.com/news-releases/xti-aerospace-acquires-drone-nerds-and-closes-25-million-strategic-investment-by-unusual-machines-302613052.html",
       "https://www.stocktitan.net/news/UMAC/"
