@@ -1,7 +1,7 @@
 [
   {
     "id": "c5af86037af6",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 4B found in Geran-2/3 (Shahed-136/238)",
@@ -35,7 +35,7 @@
   },
   {
     "id": "248217679ba3",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi found in Geran-5",
@@ -69,7 +69,7 @@
   },
   {
     "id": "3d1fd93cab17",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "Diversion risk: Raspberry Pi 5 found in Molniya-2R",
@@ -103,7 +103,7 @@
   },
   {
     "id": "562b363e0af0",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 4B confirmed in Geran-2/3 'Borscht' tracker \u2014 40,000+ units diverted",
@@ -155,7 +155,7 @@
   },
   {
     "id": "21eef1620b14",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi 5 confirmed in Molniya-2R reconnaissance drone",
@@ -207,7 +207,7 @@
   },
   {
     "id": "ee13e070c884",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "diversion_risk",
     "severity": "critical",
     "title": "RPi tracker with mesh networking in Geran-5 jet drone",
@@ -259,7 +259,7 @@
   },
   {
     "id": "4b1f1f665173",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "supply_constraint",
     "severity": "critical",
     "title": "Geographic risk: Taiwan \u2014 high risk, critical to Blue UAS supply chain",
@@ -293,7 +293,7 @@
   },
   {
     "id": "gz-87a82ab5b7",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Anzu Robotics: Technology licensed from adversary entity: DJI (Shenzhen DJI Technology Co., Ltd",
@@ -317,7 +317,7 @@
   },
   {
     "id": "gz-9d159c48d8",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Anzu Robotics: Teardown confirms adversary hardware: PCB layouts align exactly with DJI Mavic 3",
@@ -341,7 +341,7 @@
   },
   {
     "id": "gz-34ac8930e3",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Anzu Robotics: Firmware signed with adversary crypto keys: Firmware signed and encrypted with D",
@@ -365,7 +365,7 @@
   },
   {
     "id": "gz-534d1c95ac",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Anzu Robotics: Product discontinued due to adversary component shortage",
@@ -389,7 +389,7 @@
   },
   {
     "id": "gz-f6b525e06d",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: Technology licensed from adversary entity: DJI (undisclosed \u2014 no licensing ackno",
@@ -413,7 +413,7 @@
   },
   {
     "id": "gz-8548038800",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: Teardown confirms adversary hardware: Specta Air has identical PCBs to DJI Air 3",
@@ -437,7 +437,7 @@
   },
   {
     "id": "gz-48f5b3952e",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: 95% of components sourced from adversary nations",
@@ -461,7 +461,7 @@
   },
   {
     "id": "gz-c42064fd66",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: Manufacturing in adversary nation: china (presumed)",
@@ -485,7 +485,7 @@
   },
   {
     "id": "gz-1b7efd8311",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: Technology licensed from adversary entity: DJI (undisclosed)",
@@ -509,7 +509,7 @@
   },
   {
     "id": "gz-c6d9e4b238",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: 100% of components sourced from adversary nations",
@@ -533,7 +533,7 @@
   },
   {
     "id": "gz-7a9e433aba",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: Firmware signed with adversary crypto keys: SkyRover app connects DIRECTLY to DJ",
@@ -557,7 +557,7 @@
   },
   {
     "id": "gz-80a4bf8b4d",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: OTA update pipeline touches adversary infrastructure",
@@ -581,7 +581,7 @@
   },
   {
     "id": "gz-d3b7b4f01a",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: Data hosted in adversary nation: china (dji cloud)",
@@ -605,7 +605,7 @@
   },
   {
     "id": "gz-d8aa6585ca",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: Manufacturing in adversary nation: china",
@@ -629,7 +629,7 @@
   },
   {
     "id": "gz-53744aca87",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Autel Robotics: Technology licensed from adversary entity: Proprietary (not DJI derivative)",
@@ -653,7 +653,7 @@
   },
   {
     "id": "gz-93c791f20f",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Autel Robotics: 90% of components sourced from adversary nations",
@@ -677,7 +677,7 @@
   },
   {
     "id": "gz-4947d3dc7a",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Autel Robotics: Manufacturing in adversary nation: china",
@@ -700,78 +700,8 @@
     ]
   },
   {
-    "id": "gz-followup-003",
-    "timestamp": "2026-04-04T06:38:32.427551+00:00",
-    "flag_type": "grayzone",
-    "severity": "critical",
-    "title": "[GRAY ZONE] FCC blanket ban rendered shell company strategy obsolete",
-    "detail": "Dec 2025: ALL foreign UAS added to Covered List. Last shell auth: Lyno Dynamics Nov 28, 2025. First 4 Conditional Approvals March 2026: SiFly, Mobilicom, ScoutDI, Verge.",
-    "confidence": 0.95,
-    "data_sources": [
-      "grayzone_detector"
-    ],
-    "dimension": "regulatory_arbitrage",
-    "sources": [
-      {
-        "id": "grayzone_detector",
-        "name": "Grayzone Detector",
-        "url": "",
-        "description": "",
-        "validation": "",
-        "type": "unknown"
-      }
-    ]
-  },
-  {
-    "id": "gz-followup-004",
-    "timestamp": "2026-04-04T06:38:32.427551+00:00",
-    "flag_type": "grayzone",
-    "severity": "critical",
-    "title": "[GRAY ZONE] SkyRover at Best Buy despite DJI infrastructure \u2014 FCC auth active",
-    "detail": "SkyRover at Best Buy March 2026, $629. DJI FlySafe URLs in app. FCC auths (April 2025) still active. Exploring US manufacturing for Conditional Approval.",
-    "confidence": 0.92,
-    "data_sources": [
-      "grayzone_detector"
-    ],
-    "entity_id": "skyrover-knowact",
-    "dimension": "identity_wash",
-    "sources": [
-      {
-        "id": "grayzone_detector",
-        "name": "Grayzone Detector",
-        "url": "",
-        "description": "",
-        "validation": "",
-        "type": "unknown"
-      }
-    ]
-  },
-  {
-    "id": "gz-followup-007",
-    "timestamp": "2026-04-04T06:38:32.427551+00:00",
-    "flag_type": "grayzone",
-    "severity": "critical",
-    "title": "[GRAY ZONE] Florida: Blue UAS 95% sensor reduction, 3-14x replacement cost",
-    "detail": "$200M grounded, $25M for replacements. Broward: 63\u21923 drones. Palm Beach: 100\u21925 missions/mo. Skydio battery fire. DOI: 95% sensor reduction. No federal compliance audit.",
-    "confidence": 0.85,
-    "data_sources": [
-      "grayzone_detector"
-    ],
-    "dimension": "supply_chain_fragility",
-    "sources": [
-      {
-        "id": "grayzone_detector",
-        "name": "Grayzone Detector",
-        "url": "",
-        "description": "",
-        "validation": "",
-        "type": "unknown"
-      }
-    ]
-  },
-  {
     "id": "329eaa04dcfd",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "critical",
     "title": "Cascade risk: NVIDIA Jetson Orin NX \u2014 8 platforms, 5 programs, SINGLE SOURCE",
@@ -814,7 +744,7 @@
   },
   {
     "id": "18d390a80f4d",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "critical",
     "title": "Cascade risk: Qualcomm QRB5165 \u2014 5 platforms, 4 programs, SINGLE SOURCE",
@@ -857,7 +787,7 @@
   },
   {
     "id": "db4c1675281d",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "critical",
     "title": "Cascade risk: FLIR Boson 640 \u2014 19 platforms, 7 programs, SINGLE SOURCE",
@@ -900,7 +830,7 @@
   },
   {
     "id": "4f02140488b9",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "critical",
     "title": "Cascade risk: Doodle Labs Helix \u2014 6 platforms, 5 programs, SINGLE SOURCE",
@@ -943,7 +873,7 @@
   },
   {
     "id": "dabf01162602",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "critical",
     "title": "Cascade risk: Semtech LoRa (SX1276/SX1280/SX1281) \u2014 6 platforms, 5 programs, SINGLE SOURCE",
@@ -986,7 +916,7 @@
   },
   {
     "id": "87f3b10e25be",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "critical",
     "title": "TSMC is upstream of 4/9 critical components \u2014 master cascade node",
@@ -1020,7 +950,7 @@
   },
   {
     "id": "bc6a4d56da83",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "US-manufactured mesh radios: 14 of 29 options \u2014 NDAA bottleneck",
@@ -1045,7 +975,7 @@
   },
   {
     "id": "68cba2525d93",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Shield AI Hivemind (Shield AI) \u2014 combat-deployed, 5 active contracts",
@@ -1088,7 +1018,7 @@
   },
   {
     "id": "f79bd79fb6d8",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Anduril Lattice (Anduril Industries) \u2014 combat-deployed, 4 active contracts",
@@ -1131,7 +1061,7 @@
   },
   {
     "id": "dcb26d11ad60",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: FCC blocks new foreign drone imports (equipment authorization freeze)",
@@ -1174,7 +1104,7 @@
   },
   {
     "id": "86a5f98e63a3",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: Drone Dominance executive order \u2014 'Unleashing U.S. Military Drone Domi",
@@ -1217,7 +1147,7 @@
   },
   {
     "id": "b8b8b3c4f8f0",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: DRAM tariff & AI datacenter priority \u2014 memory allocation shift",
@@ -1260,7 +1190,7 @@
   },
   {
     "id": "235f5f7023b4",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Policy: US tariff escalation \u2014 25%+ on Chinese electronics components",
@@ -1303,7 +1233,7 @@
   },
   {
     "id": "1f24895a4547",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "price_anomaly",
     "severity": "warning",
     "title": "Blue UAS BOM cost index: $4,348 \u2014 720% premium over non-compliant build",
@@ -1337,7 +1267,7 @@
   },
   {
     "id": "e2928f63ec27",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Neros Technologies: 2500/mo capacity with 50 employees \u2014 lean operation",
@@ -1371,7 +1301,7 @@
   },
   {
     "id": "b11df271fa7b",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "price_anomaly",
     "severity": "warning",
     "title": "DRAM pricing: +8.5% QoQ, +22% YoY \u2014 cascading to SBC costs",
@@ -1414,7 +1344,7 @@
   },
   {
     "id": "9116aa2d5db4",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Geographic risk: Israel \u2014 medium risk (Hailo AI accelerators, D-Fend C-UAS)",
@@ -1448,7 +1378,7 @@
   },
   {
     "id": "d89cc92c827e",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Geographic risk: South Korea \u2014 medium risk (Samsung DRAM, SK Hynix memory)",
@@ -1482,7 +1412,7 @@
   },
   {
     "id": "b021552dd110",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / Under Secretary R&E: Drone Dominance Program (DDP)",
@@ -1534,7 +1464,7 @@
   },
   {
     "id": "bfafb2cfb399",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / SecDef: Replicator \u2192 DAWG (Defense Autonomous Warfare Group)",
@@ -1586,7 +1516,7 @@
   },
   {
     "id": "20352c30e640",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army: Army SRR (Short Range Reconnaissance)",
@@ -1638,7 +1568,7 @@
   },
   {
     "id": "6cfd8ef05c55",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army: Army FoSUAS (Family of Small UAS)",
@@ -1690,7 +1620,7 @@
   },
   {
     "id": "2e8cb8cef28d",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Army PEO Aviation: Army FTUAS (Future Tactical UAS)",
@@ -1742,7 +1672,7 @@
   },
   {
     "id": "b16566f4336c",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Marine Corps: USMC FPV Drone Program",
@@ -1794,7 +1724,7 @@
   },
   {
     "id": "44234d860120",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "U.S. Air Force: USAF CCA (Collaborative Combat Aircraft)",
@@ -1846,7 +1776,7 @@
   },
   {
     "id": "4890daffd9cb",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD: JIATF-401 (Joint Interagency Task Force for C-UAS)",
@@ -1898,7 +1828,7 @@
   },
   {
     "id": "9423957f5134",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Congress / FCC: NDAA FY25 Section 1709 (Foreign Drone Ban)",
@@ -1950,7 +1880,7 @@
   },
   {
     "id": "33e43c3b4077",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "White House / SecDef: Drone Dominance Executive Order (Jul 2025)",
@@ -2002,7 +1932,7 @@
   },
   {
     "id": "91c02588d72b",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Congress: ASDA (American Security Drone Act)",
@@ -2054,7 +1984,7 @@
   },
   {
     "id": "d755a122937d",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DoD / State Dept: Ukraine Security Assistance Initiative (USAI)",
@@ -2106,7 +2036,7 @@
   },
   {
     "id": "12be8c22e11c",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "DCMA (transferred from DIU Jul 2025): Blue UAS Cleared List (DCMA)",
@@ -2158,7 +2088,7 @@
   },
   {
     "id": "3a5946d0af80",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "China: DJI global dominance + PLA drone swarm production",
@@ -2192,7 +2122,7 @@
   },
   {
     "id": "6ed2c28d60c4",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Iran: Shahed mass production \u2014 supplying Russia at scale",
@@ -2226,7 +2156,7 @@
   },
   {
     "id": "4ca9eb9961a5",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Russia: Alabuga factory + Lancet + Orlan \u2014 mass drone production using di",
@@ -2260,7 +2190,7 @@
   },
   {
     "id": "81d9bca863a5",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Ukraine (23 platforms) and US Drone Dominance compete for same FPV components",
@@ -2294,7 +2224,7 @@
   },
   {
     "id": "7fa8baa38045",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "RF/Comms: TrellisWare Technologies \u2014 Provides TSM (Tactical Scalable MANET) waveform \u2014 the standard MANET w",
@@ -2328,7 +2258,7 @@
   },
   {
     "id": "ef9f82748fb2",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "RF/Comms: L3Harris \u2014 Tactical Radios \u2014 Primary tactical radio provider for US military. AN/PRC-163 is the bac",
@@ -2362,7 +2292,7 @@
   },
   {
     "id": "457e7d690d01",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "RF/Comms: Persistent Systems \u2014 Most deployed tactical mesh radio. Wave Relay OS (custom Android). Sel",
@@ -2396,7 +2326,7 @@
   },
   {
     "id": "d588c3b0c8b4",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "TrellisWare TSM waveform is the bridge between SOF ground radios and drone mesh networks",
@@ -2439,7 +2369,7 @@
   },
   {
     "id": "c0c9b7de9474",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "EW threat landscape drives GPS-denied autonomy, FHSS links, and mesh resilience requirements",
@@ -2482,7 +2412,7 @@
   },
   {
     "id": "2875b0fb64a6",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "SOF: USSOCOM PEO-SOF Warrior \u2014 All SOF-unique equipment including UAS",
@@ -2516,7 +2446,7 @@
   },
   {
     "id": "a9d9e98f12c6",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "SOF: SOFWERX / SOCOM Forge \u2014 Rapid prototyping and evaluation for SOF",
@@ -2550,7 +2480,7 @@
   },
   {
     "id": "c7caf1ccb90c",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "SOF: SOF Tactical UAS (SOF TUAS) \u2014 Group 3 UAS for SOF missions \u2014 ISR, strike, resupply",
@@ -2584,7 +2514,7 @@
   },
   {
     "id": "1f9c20e3e564",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "SOF: USSOCOM Counter-UAS \u2014 Protecting SOF from enemy drones",
@@ -2618,7 +2548,7 @@
   },
   {
     "id": "dd4246a241ff",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "SOF: AFSOC (Air Force Special Ops Command) \u2014 AFSOC drone programs \u2014 STRATFI with Shield AI",
@@ -2652,7 +2582,7 @@
   },
   {
     "id": "8ba7aa6ac291",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "GPS-denied navigation demand surging \u2014 6 PNT solutions tracked",
@@ -2695,7 +2625,7 @@
   },
   {
     "id": "6df7104fe702",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Drone motor supply chain: majority Chinese-manufactured",
@@ -2729,7 +2659,7 @@
   },
   {
     "id": "b1eecb0649ff",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "LiPo/Li-Ion cells: CATL, BYD, EVE dominate global production",
@@ -2763,7 +2693,7 @@
   },
   {
     "id": "211d3340c0d8",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Financial: Shield AI \u2014 Valued at $2.7B+ (Series F)",
@@ -2806,7 +2736,7 @@
   },
   {
     "id": "07c9d4c60237",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Financial: Anduril Industries \u2014 Valued at $14B+ / Arsenal-1 factory planned",
@@ -2849,7 +2779,7 @@
   },
   {
     "id": "bbdf4f1e0630",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Financial: Red Cat Holdings (RCAT) \u2014 SRR win + Drone Dominance + stock 400%+ YoY",
@@ -2892,7 +2822,7 @@
   },
   {
     "id": "065f565aafba",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "warning",
     "title": "Financial: AeroVironment (AVAV) \u2014 Revenue $745M+ FY25, Switchblade production ramp",
@@ -2935,7 +2865,7 @@
   },
   {
     "id": "gz-b0ffa243b2",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: FCC filing reveals adversary components: Anzu did NOT disclose DJI relationship ",
@@ -2959,7 +2889,7 @@
   },
   {
     "id": "gz-c97207a64b",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: 50% of components from adversary nations \u2014 partial pass-through",
@@ -2983,7 +2913,7 @@
   },
   {
     "id": "gz-f6b9669917",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: SDK from adversary manufacturer embedded: Firmware signed and encrypted with DJI",
@@ -3007,7 +2937,7 @@
   },
   {
     "id": "gz-c05561bc8e",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: SDK contacts adversary endpoints: White Knight Labs pentest confirmed data goes ",
@@ -3031,7 +2961,7 @@
   },
   {
     "id": "gz-f986229cad",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: Markets to government/public safety without Blue UAS clearance",
@@ -3055,7 +2985,7 @@
   },
   {
     "id": "gz-1458c87fb4",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: Misleading origin claim: \"American owned and operated\"",
@@ -3079,7 +3009,7 @@
   },
   {
     "id": "gz-b9bd075e94",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: Misleading origin claim: \"Your solution is delivered by your neighbors\"",
@@ -3103,7 +3033,7 @@
   },
   {
     "id": "gz-098bf101c3",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: Misleading origin claim: \"An entirely American-owned company\"",
@@ -3127,7 +3057,7 @@
   },
   {
     "id": "gz-b26a37f0c8",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: Misleading origin claim: \"No country of origin disclosed\"",
@@ -3151,7 +3081,7 @@
   },
   {
     "id": "gz-ce3bc4a9af",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: Misleading origin claim: \"No DJI acknowledgment\"",
@@ -3175,7 +3105,7 @@
   },
   {
     "id": "gz-2c3dab08c8",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] SkyRover / Knowact: SDK from adversary manufacturer embedded: SkyRover app connects DIRECTLY to DJI ",
@@ -3199,7 +3129,7 @@
   },
   {
     "id": "gz-c1121a6360",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] SkyRover / Knowact: Misleading origin claim: \"No ownership disclosed\"",
@@ -3223,7 +3153,7 @@
   },
   {
     "id": "gz-f6391d4818",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] SkyRover / Knowact: Misleading origin claim: \"No HQ disclosed\"",
@@ -3247,7 +3177,7 @@
   },
   {
     "id": "gz-7f9e7077c1",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] SkyRover / Knowact: Misleading origin claim: \"No country disclosed\"",
@@ -3271,7 +3201,7 @@
   },
   {
     "id": "gz-a3915d0ee4",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] SkyRover / Knowact: Misleading origin claim: \"Zero transparency\"",
@@ -3295,7 +3225,7 @@
   },
   {
     "id": "gz-b29f48fc07",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Autel Robotics: Markets to government/public safety without Blue UAS clearance",
@@ -3319,7 +3249,7 @@
   },
   {
     "id": "gz-f7cb138bcf",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Autel Robotics: Misleading origin claim: \"US subsidiary in Bothell creates impression of America",
@@ -3343,7 +3273,7 @@
   },
   {
     "id": "gz-f6a7841205",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone_xref",
     "severity": "warning",
     "title": "Gray zone product 'Anzu Raptor' by Anzu Robotics competes with 1 Blue UAS platforms",
@@ -3375,7 +3305,7 @@
   },
   {
     "id": "gz-dfad54b669",
-    "timestamp": "2026-04-04T08:19:03.384759+00:00",
+    "timestamp": "2026-04-04T15:27:17.285079+00:00",
     "flag_type": "grayzone_xref",
     "severity": "warning",
     "title": "Gray zone product 'Anzu Raptor T' by Anzu Robotics competes with 1 Blue UAS platforms",
@@ -3406,79 +3336,8 @@
     ]
   },
   {
-    "id": "gz-followup-001",
-    "timestamp": "2026-04-04T06:38:32.427551+00:00",
-    "flag_type": "grayzone",
-    "severity": "warning",
-    "title": "[GRAY ZONE] TX AG v. Anzu: lawsuit frozen 45+ days, no response filed",
-    "detail": "Texas AG lawsuit filed Feb 18, 2026 \u2014 no responsive pleading in 45+ days. XTI Aerospace filed multiple 8-Ks but none mention lawsuit. FY2025 10-K overdue. Potential SEC disclosure gap.",
-    "confidence": 0.9,
-    "data_sources": [
-      "grayzone_detector"
-    ],
-    "entity_id": "anzu-robotics",
-    "dimension": "regulatory_arbitrage",
-    "sources": [
-      {
-        "id": "grayzone_detector",
-        "name": "Grayzone Detector",
-        "url": "",
-        "description": "",
-        "validation": "",
-        "type": "unknown"
-      }
-    ]
-  },
-  {
-    "id": "gz-followup-002",
-    "timestamp": "2026-04-04T06:38:32.427551+00:00",
-    "flag_type": "grayzone",
-    "severity": "warning",
-    "title": "[GRAY ZONE] XTI pivoting to distribution \u2014 Anzu next-gen unlikely near-term",
-    "detail": "Zero evidence of Anzu next-gen: no name, specs, patents, jobs. XTI $160M+ guidance from Drone Nerds distribution. XTIA ~$2.08, current ratio 0.49. Unusual Machines silent.",
-    "confidence": 0.85,
-    "data_sources": [
-      "grayzone_detector"
-    ],
-    "entity_id": "anzu-robotics",
-    "dimension": "supply_chain_fragility",
-    "sources": [
-      {
-        "id": "grayzone_detector",
-        "name": "Grayzone Detector",
-        "url": "",
-        "description": "",
-        "validation": "",
-        "type": "unknown"
-      }
-    ]
-  },
-  {
-    "id": "gz-followup-005",
-    "timestamp": "2026-04-04T06:38:32.427551+00:00",
-    "flag_type": "grayzone",
-    "severity": "warning",
-    "title": "[GRAY ZONE] DJI challenges FCC ban \u2014 Ninth Circuit Case 26-1029",
-    "detail": "DJI filed Feb 2026 arguing FCC exceeded authority, violated Fifth Amendment. FCC moved to dismiss. Outcome determines whether blanket ban holds.",
-    "confidence": 0.9,
-    "data_sources": [
-      "grayzone_detector"
-    ],
-    "dimension": "regulatory_arbitrage",
-    "sources": [
-      {
-        "id": "grayzone_detector",
-        "name": "Grayzone Detector",
-        "url": "",
-        "description": "",
-        "validation": "",
-        "type": "unknown"
-      }
-    ]
-  },
-  {
     "id": "86c0eec94330",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Cascade risk: STM32H743 \u2014 13 platforms, 5 programs, multi-source",
@@ -3521,7 +3380,7 @@
   },
   {
     "id": "b56cc53f1485",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Cascade risk: ELRS 900MHz \u2014 9 platforms, 4 programs, multi-source",
@@ -3564,7 +3423,7 @@
   },
   {
     "id": "540ac727e368",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Cascade risk: u-blox GNSS \u2014 12 platforms, 5 programs, SINGLE SOURCE",
@@ -3607,7 +3466,7 @@
   },
   {
     "id": "7d3ea182d0e1",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Cascade risk: Qualcomm Snapdragon 845 \u2014 3 platforms, 3 programs, SINGLE SOURCE",
@@ -3650,7 +3509,7 @@
   },
   {
     "id": "34c9866fa88d",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Lead time trend: NVIDIA Jetson Orin NX 16GB \u2014 8\u219212\u219216 weeks (steady)",
@@ -3684,7 +3543,7 @@
   },
   {
     "id": "f3998726eb8f",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Lead time trend: FLIR Boson 640 \u2014 12\u219214\u219218 weeks (accelerating)",
@@ -3718,7 +3577,7 @@
   },
   {
     "id": "c86104ecbcf8",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Lead time trend: Doodle Labs Helix \u2014 14\u219216\u219220 weeks (accelerating)",
@@ -3752,7 +3611,7 @@
   },
   {
     "id": "5b08e16a3625",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "supply_constraint",
     "severity": "warning",
     "title": "Lead time trend: Silvus MN Micro \u2014 16\u219218\u219222 weeks (accelerating)",
@@ -3786,7 +3645,7 @@
   },
   {
     "id": "cccacc6a566b",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Contract demand: USMC FPV Program \u2192 11,750 units \u00d7 BOM",
@@ -3829,7 +3688,7 @@
   },
   {
     "id": "8e8e47c1d4db",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Contract demand: Drone Dominance Phase 1 (30K units) \u2192 30,000 units \u00d7 BOM",
@@ -3872,7 +3731,7 @@
   },
   {
     "id": "cfcc4b7f8ad6",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Contract demand: Army SRR (5,880 systems) \u2192 5,882 units \u00d7 BOM",
@@ -3915,7 +3774,7 @@
   },
   {
     "id": "3f7d33d443ec",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Contract demand: Replicator Phase 2 \u2192 10,000 units \u00d7 BOM",
@@ -3958,7 +3817,7 @@
   },
   {
     "id": "258f9cfd80d5",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Aggregate demand: Motors (x4) \u2014 167,000 units across 2 contracts",
@@ -3992,7 +3851,7 @@
   },
   {
     "id": "4bcf128c2982",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Aggregate demand: ESCs \u2014 167,000 units across 2 contracts",
@@ -4026,7 +3885,7 @@
   },
   {
     "id": "63f46149e473",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "warning",
     "title": "Ukraine conflict drone consumption: ~12,800/month \u2014 sustained component demand",
@@ -4069,7 +3928,7 @@
   },
   {
     "id": "2c15d7fd0be7",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "diversion_risk",
     "severity": "warning",
     "title": "Gray market signal: RPi 4B (4GB) \u2014 42% premium in China ($78 vs $55 MSRP)",
@@ -4112,7 +3971,7 @@
   },
   {
     "id": "95b8029c5e7c",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "diversion_risk",
     "severity": "warning",
     "title": "Gray market signal: RPi 5 (8GB) \u2014 42% premium in China ($135 vs $95 MSRP)",
@@ -4155,7 +4014,7 @@
   },
   {
     "id": "ea302af71947",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "diversion_risk",
     "severity": "warning",
     "title": "Gray market signal: RPi CM4 (8GB) \u2014 41% premium in China ($148 vs $105 MSRP)",
@@ -4198,7 +4057,7 @@
   },
   {
     "id": "e7a4843b267a",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Temporal pattern: 'Ukraine USAI package announced' \u2192 'FLIR Boson 640 lead time extends' (6wk lag, r=0.87)",
@@ -4241,7 +4100,7 @@
   },
   {
     "id": "528d8cb29f48",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "correlation",
     "severity": "warning",
     "title": "Temporal pattern: 'RPi price increase announced' \u2192 'China gray market premium increases' (2wk lag, r=0.91)",
@@ -4284,7 +4143,7 @@
   },
   {
     "id": "cd0639863f4c",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Blue UAS Cleared List at 49 platforms \u2014 procurement demand expanding",
@@ -4309,7 +4168,7 @@
   },
   {
     "id": "67c6cfb0ec03",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "5 companion boards use Qualcomm QRB5165 \u2014 supply chain cluster",
@@ -4334,7 +4193,7 @@
   },
   {
     "id": "2ee90455f913",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "7 companion boards use NVIDIA Jetson Orin \u2014 supply chain cluster",
@@ -4359,7 +4218,7 @@
   },
   {
     "id": "b4b1f68be794",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "2 companion boards use NVIDIA Jetson AGX \u2014 supply chain cluster",
@@ -4384,7 +4243,7 @@
   },
   {
     "id": "7ad4922628a9",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Swarmer (Swarmer (getswarmer.com)) \u2014 combat-deployed, 1 active contracts",
@@ -4427,7 +4286,7 @@
   },
   {
     "id": "5de4858d53ce",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Auterion / PX4 (Auterion) \u2014 combat-deployed, 2 active contracts",
@@ -4470,7 +4329,7 @@
   },
   {
     "id": "0f31fa9409cb",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "C-UAS and UAS share SDR modules supply \u2014 2 C-UAS companies competing",
@@ -4504,7 +4363,7 @@
   },
   {
     "id": "496c2e2938d7",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "C-UAS and UAS share FPGA supply \u2014 2 C-UAS companies competing",
@@ -4538,7 +4397,7 @@
   },
   {
     "id": "637609b9a4a3",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: DroneShield \u2014 3 contracts, competes for drone supply chain",
@@ -4572,7 +4431,7 @@
   },
   {
     "id": "a0ce98a8c36b",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Dedrone (Axon) \u2014 3 contracts, competes for drone supply chain",
@@ -4606,7 +4465,7 @@
   },
   {
     "id": "6eb5364fe45e",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Epirus \u2014 2 contracts, competes for drone supply chain",
@@ -4640,7 +4499,7 @@
   },
   {
     "id": "79f2daa5dee8",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: D-Fend Solutions \u2014 2 contracts, competes for drone supply chain",
@@ -4674,7 +4533,7 @@
   },
   {
     "id": "d8e9beaa5913",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: Anduril (Anvil/Sentry) \u2014 3 contracts, competes for drone supply chain",
@@ -4708,7 +4567,7 @@
   },
   {
     "id": "3870a917f4b8",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "C-UAS: L3Harris \u2014 2 contracts, competes for drone supply chain",
@@ -4742,7 +4601,7 @@
   },
   {
     "id": "572ce49c2c58",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Policy: American Security Drone Act (ASDA) \u2014 bans DJI for federal use",
@@ -4785,7 +4644,7 @@
   },
   {
     "id": "25291590b238",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "price_anomaly",
     "severity": "info",
     "title": "Mesh radio is 41% of Blue UAS BOM \u2014 single largest cost driver",
@@ -4819,7 +4678,7 @@
   },
   {
     "id": "fc644ad2188c",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "U.S. Army: Army MRR (Medium Range Reconnaissance)",
@@ -4871,7 +4730,7 @@
   },
   {
     "id": "12564c7f7a5f",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "FEMA / DHS: FEMA C-UAS Grant Program",
@@ -4923,7 +4782,7 @@
   },
   {
     "id": "cbba9917a29e",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Turkey: Baykar (TB2/TB3/Akinci/Kizilelma) \u2014 #2 drone exporter, 35+ custom",
@@ -4957,7 +4816,7 @@
   },
   {
     "id": "e7afb28385ef",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Ukraine: Fastest-iterating FPV ecosystem \u2014 thousands/month, Brave1 acceler",
@@ -4991,7 +4850,7 @@
   },
   {
     "id": "052f63104448",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EU/NATO: FCAS (\u20ac100B+), EuroDrone, Airbus Wingman, sovereignty push",
@@ -5025,7 +4884,7 @@
   },
   {
     "id": "6de5178117df",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "India: ideaForge + Solar Industries + Adani defense \u2014 indigenous drone p",
@@ -5059,7 +4918,7 @@
   },
   {
     "id": "f8b43ba79a3e",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "South Korea: KAI stealth UCAV + Samsung/SK Hynix DRAM supply",
@@ -5093,7 +4952,7 @@
   },
   {
     "id": "8fa546cd000c",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Australia: SYPAQ Corvo (cardboard drone, used in Ukraine) + MQ-28 Ghost Bat ",
@@ -5127,7 +4986,7 @@
   },
   {
     "id": "53bb266b195d",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Poland: WB Group Warmate/FlyEye \u2014 NATO eastern flank drone capability",
@@ -5161,7 +5020,7 @@
   },
   {
     "id": "7a6790d9a392",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Croatia: Orqa \u2014 EU-manufactured NDAA FPV ecosystem (FC, ESC, goggles)",
@@ -5195,7 +5054,7 @@
   },
   {
     "id": "0d17f6c63c02",
-    "timestamp": "2026-04-04T08:19:03.196915+00:00",
+    "timestamp": "2026-04-04T15:27:17.191200+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Global UAS landscape: 42 countries, 219 platforms in Forge DB",
@@ -5220,7 +5079,7 @@
   },
   {
     "id": "629c2fc4d50c",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "RF/Comms: Collins Aerospace (RTX) \u2014 Airborne radio/datalink provider. TruNet enables air-to-ground mesh. C",
@@ -5245,7 +5104,7 @@
   },
   {
     "id": "78d8cf68cc7a",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "RF/Comms: Silvus Technologies \u2014 High-throughput MIMO mesh. 100+ Mbps. Used on Teal 2 (Blue UAS). MN Mi",
@@ -5279,7 +5138,7 @@
   },
   {
     "id": "4b0aee7dfb4e",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "RF/Comms: Doodle Labs \u2014 Most popular mesh radio for drone integration. OpenWRT + batman-adv un",
@@ -5313,7 +5172,7 @@
   },
   {
     "id": "d55c00c83120",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "RF/Comms: Rajant Corporation \u2014 Kinetic Mesh \u2014 each node is a router. Mobile ad-hoc networking for ind",
@@ -5338,7 +5197,7 @@
   },
   {
     "id": "6c0bc6fb4967",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "RF/Comms: Mobilicom \u2014 Blue UAS Framework certified datalinks. IP mesh networking for UAS C2 ",
@@ -5372,7 +5231,7 @@
   },
   {
     "id": "c4bdbeb1a2fd",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EW: Sierra Nevada Corporation (SNC) \u2014 Drones operating in EW-contested environments need frequency-hopp",
@@ -5406,7 +5265,7 @@
   },
   {
     "id": "4071ff304886",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EW: CACI International \u2014 Drives requirement for EW-resilient drone comms. ELRS frequency-h",
@@ -5440,7 +5299,7 @@
   },
   {
     "id": "7d89b8813a87",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EW: Northrop Grumman \u2014 EW Division \u2014 Friendly EW (JCREW) can inadvertently jam friendly drone links \u2014 ",
@@ -5474,7 +5333,7 @@
   },
   {
     "id": "c32e4139ad73",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "EW: Russian EW (Reported) \u2014 Russian EW is why GPS-denied autonomy (Hivemind, Skydio VIO) and ",
@@ -5508,7 +5367,7 @@
   },
   {
     "id": "0f5959c029b6",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: VectorNav Technologies \u2014 Primary sensor for inertial dead-reckoning during GPS denial",
@@ -5542,7 +5401,7 @@
   },
   {
     "id": "2f17eebf75b5",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: Emcore / KVH Industries \u2014 FOG provides much lower drift than MEMS. Enables hours of GP",
@@ -5576,7 +5435,7 @@
   },
   {
     "id": "0965070b85ef",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: Skydio Visual-Inertial Odometry \u2014 Purely visual navigation. Works indoors, in GPS-denied envir",
@@ -5610,7 +5469,7 @@
   },
   {
     "id": "7672b0edb4f4",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: Shield AI Hivemind (GPS-denied) \u2014 Multi-sensor fusion for GPS-denied flight. 200+ flights in U",
@@ -5644,7 +5503,7 @@
   },
   {
     "id": "fbd7fb021d2a",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: Chip-Scale Atomic Clocks (CSAC) \u2014 Maintains timing accuracy for mesh radios and sensor synchro",
@@ -5678,7 +5537,7 @@
   },
   {
     "id": "84aa35310038",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Nav/PNT: u-blox GNSS Modules \u2014 Primary GNSS receiver. First component to fail under jamming",
@@ -5712,7 +5571,7 @@
   },
   {
     "id": "1eaaabc4b5e5",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Hydrogen fuel cells emerging for long-endurance UAS",
@@ -5746,7 +5605,7 @@
   },
   {
     "id": "a92d6f2b7d83",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Hybrid-electric propulsion for Group 3+ UAS",
@@ -5771,7 +5630,7 @@
   },
   {
     "id": "f78b9cc462fa",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Test/Event: Drone Dominance Gauntlet \u2014 Gauntlet results directly determine which manufacturers scal",
@@ -5805,7 +5664,7 @@
   },
   {
     "id": "954d78747d2b",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Test/Event: Army Yuma Proving Ground \u2014 Test failures can delay programs. Test successes accelerate ",
@@ -5839,7 +5698,7 @@
   },
   {
     "id": "8e6e36337e52",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Test/Event: AUVSI XPONENTIAL \u2014 Leading indicator \u2014 announcements at XPONENTIAL often preced",
@@ -5873,7 +5732,7 @@
   },
   {
     "id": "0d3c5f8ba7a0",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Test/Event: Army Best Drone Warfighter Competition \u2014 Competition results influence which platforms get adopted at",
@@ -5907,7 +5766,7 @@
   },
   {
     "id": "0efbbe9aa568",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Financial: Raspberry Pi Holdings (LON:RPI) \u2014 Revenue $323M FY25 +25%, shares +24%",
@@ -5950,7 +5809,7 @@
   },
   {
     "id": "f0cd49750d15",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Financial: Axon (AXON) \u2014 Acquired Dedrone (C-UAS)",
@@ -5993,7 +5852,7 @@
   },
   {
     "id": "3f51109854cd",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Financial: DroneShield (DRO.AX) \u2014 A$1.2B European pipeline, multiple contracts",
@@ -6036,7 +5895,7 @@
   },
   {
     "id": "fddbfc8bc997",
-    "timestamp": "2026-04-04T08:19:03.187870+00:00",
+    "timestamp": "2026-04-04T15:27:17.185527+00:00",
     "flag_type": "contract_signal",
     "severity": "info",
     "title": "Financial: Kratos Defense (KTOS) \u2014 Valkyrie CCA + drone target production",
@@ -6078,31 +5937,8 @@
     ]
   },
   {
-    "id": "gz-followup-006",
-    "timestamp": "2026-04-04T06:38:32.427551+00:00",
-    "flag_type": "grayzone",
-    "severity": "info",
-    "title": "[GRAY ZONE] New York becomes 7th state to restrict Chinese drone procurement",
-    "detail": "A2237/S3259 signed Dec 2025, effective 2027. Total: 7 states (FL, AR, MS, TN, NV, CT, NY). TX HB 41 stalled. MO blocked.",
-    "confidence": 0.88,
-    "data_sources": [
-      "grayzone_detector"
-    ],
-    "dimension": "regulatory_arbitrage",
-    "sources": [
-      {
-        "id": "grayzone_detector",
-        "name": "Grayzone Detector",
-        "url": "",
-        "description": "",
-        "validation": "",
-        "type": "unknown"
-      }
-    ]
-  },
-  {
     "id": "16e7dd36d16c",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: STM32H7 \u2014 41,750 units across 2 contracts",
@@ -6136,7 +5972,7 @@
   },
   {
     "id": "1639b292bde1",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: ELRS 900MHz \u2014 41,750 units across 2 contracts",
@@ -6170,7 +6006,7 @@
   },
   {
     "id": "459b1663cf75",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: LiPo battery \u2014 41,750 units across 2 contracts",
@@ -6204,7 +6040,7 @@
   },
   {
     "id": "5a62ce396189",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: ESP32-S3 \u2014 30,000 units across 1 contracts",
@@ -6238,7 +6074,7 @@
   },
   {
     "id": "4ad90fd874f0",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: FPV camera \u2014 30,000 units across 1 contracts",
@@ -6272,7 +6108,7 @@
   },
   {
     "id": "0606bbba4704",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: QRB5165 (VOXL) \u2014 11,750 units across 1 contracts",
@@ -6306,7 +6142,7 @@
   },
   {
     "id": "038e3c23cbac",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: FLIR Lepton \u2014 11,750 units across 1 contracts",
@@ -6340,7 +6176,7 @@
   },
   {
     "id": "d325d000ff20",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: Silvus MN Micro \u2014 11,750 units across 1 contracts",
@@ -6374,7 +6210,7 @@
   },
   {
     "id": "31edc7550405",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: Jetson AGX Orin \u2014 10,000 units across 1 contracts",
@@ -6408,7 +6244,7 @@
   },
   {
     "id": "0b9f3d7c758f",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: Lattice FPGA \u2014 10,000 units across 1 contracts",
@@ -6442,7 +6278,7 @@
   },
   {
     "id": "69a04f648c0a",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: Doodle Labs mesh \u2014 10,000 units across 1 contracts",
@@ -6476,7 +6312,7 @@
   },
   {
     "id": "a0f7831a0d4c",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "procurement_spike",
     "severity": "info",
     "title": "Aggregate demand: FLIR Boson 640 \u2014 10,000 units across 1 contracts",
@@ -6510,7 +6346,7 @@
   },
   {
     "id": "88e49a850f7d",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "price_anomaly",
     "severity": "info",
     "title": "BOM price elasticity: mesh radio (41% of BOM) and companion computer (14%) dominate cost sensitivity",
@@ -6544,7 +6380,7 @@
   },
   {
     "id": "e791699ec0f0",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "diversion_risk",
     "severity": "info",
     "title": "Gray market signal: NVIDIA Jetson Orin NX \u2014 25% premium in China ($750 vs $599 MSRP)",
@@ -6587,7 +6423,7 @@
   },
   {
     "id": "ac865b40cf67",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "diversion_risk",
     "severity": "info",
     "title": "Gray market signal: STM32H743 \u2014 33% premium in China ($16 vs $12 MSRP)",
@@ -6630,7 +6466,7 @@
   },
   {
     "id": "4fdcd8c459d8",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Temporal pattern: 'Drone Dominance Gauntlet results announced' \u2192 'STM32H7 distributor orders spike' (3wk lag, r=0.79)",
@@ -6673,7 +6509,7 @@
   },
   {
     "id": "ea12afcb53b5",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Temporal pattern: 'Blue UAS list addition (new platform)' \u2192 'Component demand spike for that pla' (8wk lag, r=0.73)",
@@ -6716,7 +6552,7 @@
   },
   {
     "id": "f02d95a578b7",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Temporal pattern: 'Russian EW capability demonstrated' \u2192 'GPS-denied nav component orders inc' (12wk lag, r=0.68)",
@@ -6759,7 +6595,7 @@
   },
   {
     "id": "d94810234f52",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Sentiment signals: 5 community sources tracked as leading indicators",
@@ -6793,7 +6629,7 @@
   },
   {
     "id": "eeea8b700331",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Signal: Reddit r/fpvvideos + r/Multicopter \u2014 4-6 weeks before distributor data shows shortage leading indicator for STM32H7",
@@ -6827,7 +6663,7 @@
   },
   {
     "id": "80c921922f7c",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Signal: RCGroups Long Range FPV forum \u2014 3-4 weeks before retail price increases leading indicator for ELRS 900MHz",
@@ -6861,7 +6697,7 @@
   },
   {
     "id": "d37756ea79c3",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Signal: Reddit r/raspberry_pi \u2014 2-3 weeks before distributor lead time changes leading indicator for RPi CM4/5",
@@ -6895,7 +6731,7 @@
   },
   {
     "id": "090b40b40d2d",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Signal: Hackaday / Hackster.io \u2014 Leading indicator of demand shifting to alternatives leading indicator for RPi alternatives",
@@ -6929,7 +6765,7 @@
   },
   {
     "id": "416c4444068a",
-    "timestamp": "2026-04-04T08:19:03.196409+00:00",
+    "timestamp": "2026-04-04T15:27:17.191048+00:00",
     "flag_type": "correlation",
     "severity": "info",
     "title": "Signal: Defense Twitter/X (analysts, journalists \u2014 1-3 weeks before SAM.gov posting leading indicator for Various",
@@ -6960,5 +6796,181 @@
         "id": "forge_parts_db"
       }
     ]
+  },
+  {
+    "id": "gz-followup-001",
+    "title": "[GRAY ZONE] TX AG v. Anzu: No response filed after 45+ days \u2014 lawsuit appears frozen",
+    "category": "legal_action",
+    "entity": "anzu-robotics",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:09:16.756004+00:00",
+    "detail": "Texas AG Ken Paxton filed 7-count DTPA lawsuit in Collin County District Court on Feb 18, 2026. Anzu has not filed any public response, answer, or motion to dismiss. DroneLife attempted contact \u2014 no response. Part of coordinated TX AG action against 4 CCP-linked companies (TP-Link, Anzu, Lorex, Temu). Seeks injunctive relief, civil penalties up to $10K per violation, and court order requiring Anzu to disclose Raptor T is a rebranded DJI drone.\n\nAPRIL 4 DOCKET SEARCH: Collin County Odyssey court records system requires login (cijspub.co.collin.tx.us). Trellis.law does not surface the case in public search. No news outlet has reported ANY response, motion, hearing, or court activity since the Feb 18 filing. DroneLife attempted contact with Anzu/Warnas \u2014 no response. Multiple outlets note 'it is not immediately clear how Anzu Robotics has responded.' Under TX civil procedure, defendant typically has 20-26 days to answer after service. At 45+ days with no public activity, case is either: (a) not yet served, (b) awaiting answer with extensions, or (c) being resolved through XTI's counsel. XTI's $20M JPMorgan ABL facility lists Anzu as co-borrower \u2014 active litigation would be material to lender. Recommend manual Collin County Odyssey check.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-002",
+    "title": "[GRAY ZONE] XTI Aerospace: $20M JPMorgan ABL facility with Anzu as co-borrower despite zero products",
+    "category": "corporate_structure",
+    "entity": "anzu-robotics",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:09:16.756004+00:00",
+    "detail": "XTI acquired Anzu + Drone Nerds Nov 10, 2025 for ~$41.6M ($20M cash, $11.9M notes, $9.7M Class B units). Secured $20M JPMorgan revolving credit facility Feb 11, 2026 with Anzu as joint/several co-borrower \u2014 despite Anzu having zero products and active litigation. XTI delayed 10-K filing (April 2026) due to complex purchase price allocations. Sold Inpixon RTLS business Feb 2026. Unusual Machines (UMAC) \u2014 a legitimate US drone manufacturer, NOT a shell \u2014 invested $25M in XTI preferred stock concurrent with acquisition. UMAC's interest is Drone Nerds distribution access, not Anzu.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-003",
+    "title": "[GRAY ZONE] FCC blanket ban rendered ALL shell company strategies obsolete",
+    "category": "regulatory",
+    "entity": "all",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:09:16.756004+00:00",
+    "detail": "FCC Dec 22, 2025 Covered List addition went far beyond expected DJI/Autel-only action \u2014 banned ALL foreign-produced UAS and UAS critical components. DJI+Autel specifically named in Section 1709 NDAA \u2014 cannot bypass even via US manufacturing or licensing. FCC quietly revoked certain DJI/Autel authorizations issued just before the ban. First 4 drones removed from Covered List March 18, 2026 (SiFly, Mobilicom, ScoutDI, Verge) \u2014 all enterprise/inspection, none Chinese-manufactured. DoW 45-day review took 70 days.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-004",
+    "title": "[GRAY ZONE] SkyRover announces vague 5-year US manufacturing 'exploration' \u2014 still selling Chinese hardware",
+    "category": "corporate_evasion",
+    "entity": "skyrover-knowact",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:09:16.756004+00:00",
+    "detail": "SkyRover issued March 2026 statement: 5-year plan to 'explore US-based manufacturing and localized supply chain.' Key word: 'explore' not 'commit.' Near-term plan: 'maintain full FCC compliance' \u2014 no detail on how. S1/X1 still available at retailers. FCC filings list SZ Knowact Robot Technology Co., Ltd (Shenzhen) as manufacturer. Konrad Iturbe's OcuSync frequency bot confirmed DJI hardware signatures. SkyRover lists Hong Kong business address \u2014 still covered by FCC ban.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-005",
+    "title": "[GRAY ZONE] DJI v. FCC: Ninth Circuit Case 26-1029 \u2014 FCC moves to dismiss on ripeness",
+    "category": "legal_action",
+    "entity": "all",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:09:16.756004+00:00",
+    "detail": "DJI filed petition Feb 20, 2026 in Ninth Circuit. Docketed as Case 26-1029. Argues FCC exceeded statutory authority, failed procedures, violated Fifth Amendment. FCC moved to dismiss on ripeness grounds \u2014 bureau-level action not yet reviewed by full Commission. DJI represented by former Solicitor General. Also filed motion for reconsideration at FCC. DJI claims practical impact broader than advertised \u2014 restricting imports even outside scope. Timeline: 6-18 months for oral arguments/decision. Drone Girl predicts modified approach (audits, monitoring) rather than clean overturn.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-006",
+    "title": "[GRAY ZONE] State-level drone bans expanding: FL enforced, NY S.3259 passed, NV Jan 2024",
+    "category": "regulatory",
+    "entity": "all",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:09:16.756004+00:00",
+    "detail": "Florida: Ban enforced since April 2023. Agencies grounded $200M+ of drones. Only $25M replacement funding (12.5% coverage). Blue UAS replacements cost 2-10x more. Broward County grounded 60+ drones. Miami-Dade Fire: 'pushed back five years.' New York: S.3259/A.2237 passed 2025, aligns state procurement with federal Section 889 ban. Nevada: Banned Chinese drones for agencies Jan 2024. Arkansas: Also enacted restrictions. States enforcing with varying success \u2014 cost remains primary barrier.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-007",
+    "title": "[GRAY ZONE] DJI shell company network fully mapped \u2014 12+ entities identified by OcuSync fingerprinting",
+    "category": "osint",
+    "entity": "all",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:09:16.756004+00:00",
+    "detail": "Konrad Iturbe's 'To Catch A Vibe' methodology (Oct 2025) uses DJI OcuSync frequency signatures (5745.5-5829.5 MHz) to identify rebranded DJI drones in FCC filings regardless of corporate branding. Automated GitHub bot scans daily. Identified: Cogito Tech, Spatial Hover, Lyno Dynamics, Fikaxo, Jovistar, WaveGo Tech, Knowact Robot, Skyhigh Tech, Skyany, Skyrover, and more. Evidence of coordinated network: WaveGo filing included Knowact docs, Fikaxo drone migrated to Spatial Hover overnight, DJI logos visible in Skyhigh Tech antenna diagrams. FCC Oct 2025 vote granted retroactive revocation authority specifically targeting this workaround.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-008",
+    "title": "[GRAY ZONE] FY2026 NDAA expands to Chinese ground drones, clones, and C-UAS authority",
+    "category": "legislation",
+    "entity": "all",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:09:16.756004+00:00",
+    "detail": "$900B FY2026 NDAA passed House 312-112. Expands beyond aerial UAS to Chinese ground drones and 'clones.' SAFER SKIES Act grants state/local law enforcement C-UAS mitigation authority for events (2026 World Cup, 2028 Olympics). Mandates joint US-Taiwan drone co-development program by March 2026. Enhanced penalties: $100K/violation for unauthorized C-UAS actions.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-009",
+    "title": "[GRAY ZONE] Oregon/NASAO white paper: 467 drones grounded, $50M-$2B national exposure across 25 states",
+    "category": "cost_impact",
+    "entity": "all",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:28:44.003239+00:00",
+    "detail": "Oregon Dept of Aviation compiled first multi-state accounting via NASAO. 25 state transportation depts surveyed. 467 drone airframes grounded/restricted across 23 states with explicit counts. National exposure $50M-$2B including state+local agencies and contractors. Wisconsin: 100% fleet grounded. Colorado: 90% capacity lost (16 units, 5 small drones remain). Nebraska: 86% impacted. Indiana: 85% ($400K equipment at risk). Minnesota: 84% foreign-made. Georgia: 80% ($225K). Oregon: 1 compliant drone out of 22. Idaho: $15K drone now costs $42K to replace. White paper recommends waiver until Sept 2027.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-010",
+    "title": "[GRAY ZONE] FAA ASSURE research: DJI = 96% of detected US drone platforms, Skydio = 1%",
+    "category": "market_data",
+    "entity": "all",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:28:44.003239+00:00",
+    "detail": "ASSURE A83 2025 Annual Report (Embry-Riddle, Kansas State, NIAR, Wichita State) analyzed Remote ID telemetry through Nov 2025 at 64 monitoring locations. DJI: 96%+ of detected platforms. Skydio (the company that lobbied hardest for restrictions): slightly over 1%. All other manufacturers combined: less than 2.4%. Additionally, 58% of flights within UAS Facility Map areas exceeded altitude limits \u2014 DJI's geofencing system previously prevented exactly these incursions.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-011",
+    "title": "[GRAY ZONE] FCC Conditional Approval pipeline: 4 cleared, process running 25 days late, no Chinese systems possible",
+    "category": "regulatory",
+    "entity": "all",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:28:44.003239+00:00",
+    "detail": "FCC Conditional Approval process: submit to drones@fcc.gov \u2192 FCC forwards to DoW/DHS \u2192 individualized security assessment \u2192 approval for up to 12 months. Internal target was 45-day review. First batch took 70 days (25 late). All 4 cleared systems are enterprise/inspection from non-Chinese companies (SiFly Q12, Mobilicom SkyHopper, ScoutDI Scout 137, Verge X1). All approvals expire Dec 31, 2026. Onshoring plan required for all critical components. DJI has no practical path: 'the DoW has made no determination removing any Chinese-manufactured system, and nothing in the current framework creates a mechanism for it to do so.' Key timeline: Blue UAS + Buy American exemptions expire Jan 1, 2027.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-012",
+    "title": "[MARKET DYNAMICS] UMAC: $150M offering, 101st Airborne supply \u2014 betting on post-DJI domestic vacuum",
+    "category": "market_dynamics",
+    "entity": "anzu-robotics",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:28:44.003239+00:00",
+    "detail": "NOT A SHELL COMPANY \u2014 Unusual Machines (NYSE:UMAC) is a legitimate US drone component manufacturer (Fat Shark, Rotor Riot brands). Orlando HQ, 25K sq ft facility, named leadership, full SEC reporting. Strategic play: UMAC invested $25M in XTI to get distribution access via Drone Nerds (>$100M revenue, largest US distributor). Betting the DJI ban creates massive domestic market opportunity. Evans: 'unprecedented opportunity to define domestic drone landscape.' UMAC priced $150M public offering March 2026. Cash: $103.3M. Revenue: $11.2M (101% YoY). Supply agreements: 101st Airborne, PDW AM-FPV ($3.75M order). Needham Buy target $20. NDAA-compliant manufacturer targeting cash-flow positive by end 2026. PIE tracks this as market dynamics signal \u2014 the financial infrastructure being built to fill the post-DJI void.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-013",
+    "title": "[GRAY ZONE] Anzu government buyers identified: Little Rock PD (6 units), N. Little Rock PD, Ames PD \u2014 all now holding discontinued/litigated product",
+    "category": "buyer_exposure",
+    "entity": "anzu-robotics",
+    "severity": "HIGH",
+    "date": "2026-04-04T14:36:12.610738+00:00",
+    "detail": "3 confirmed government buyers of Anzu Raptor T: Little Rock PD (6 units, SOAR grant funded), North Little Rock PD (Arkansas grant), Ames PD (IA). TX AG petition references police departments, surveyors, construction firms, utility operators as affected buyer categories. All are now holding a discontinued product with active litigation, no successor timeline, and DJI root key control. TX AG passthrough theory: if successful, could force state/local agencies to pause or reexamine all Anzu contracts. Officers describe Raptor T as 'truly a force multiplier' \u2014 replacement will be operationally disruptive.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-014",
+    "title": "[GRAY ZONE] TX AG 'passthrough theory' \u2014 precedent-setting test for all gray zone entities",
+    "category": "legal_precedent",
+    "entity": "all",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:36:12.610738+00:00",
+    "detail": "TX AG Paxton's Anzu lawsuit tests a novel legal theory: that licensing, rebranding, or supply-chain ties to a scrutinized foreign manufacturer can constitute deceptive trade practices under state consumer protection law. If successful, precedent applies to ALL gray zone entities (Cogito/SPECTA, SkyRover/Knowact, future shell companies). TX also seeks court order requiring Anzu to publicly state Raptor T is a rebranded DJI drone + TRO on data collection. Part of coordinated 4-lawsuit strategy (TP-Link, Anzu, Lorex, Temu) \u2014 Texas building a template for other AGs to follow.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-015",
+    "title": "[GRAY ZONE] Knowact corporate structure mapped: Nanshan District (DJI's home district), MAC registered Feb 2025, zero transparency",
+    "category": "corporate_structure",
+    "entity": "skyrover-knowact",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:40:57.625203+00:00",
+    "detail": "SZ Knowact Robot Technology Co., Ltd (\u6df1\u5733\u5e02\u77e5\u884c\u673a\u5668\u4eba\u79d1\u6280\u6709\u9650\u516c\u53f8) registered at Room C3-A081, Building C, Kexing Science Park, Nanshan District, Shenzhen \u2014 the same district as DJI HQ. MAC address block (68:C9:5D) registered Feb 27, 2025 \u2014 single allocation suggests purpose-built entity. FCC filings under grantee code 2BMUV. RC controllers filed under separate entity Skyhigh Tech LLC (with DJI logos in antenna diagrams). SKYROVER app on Apple App Store developed by Knowact \u2014 App Store reviews confirm it's a DJI Fly fork. Network connections: WaveGo Tech filing included Knowact docs, Fikaxo products migrated to Spatial Hover. Zero corporate transparency \u2014 no parent, no leadership, no country of origin on website.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-016",
+    "title": "[GRAY ZONE] Jan 1, 2027 firmware cliff: 3 deadlines converge \u2014 firmware waiver, Blue UAS exemption, Buy American exemption all expire",
+    "category": "regulatory_deadline",
+    "entity": "all",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:41:46.706799+00:00",
+    "detail": "Three parallel deadlines converge Jan 1, 2027: (1) FCC firmware update waiver expires \u2014 DJI/Autel/all foreign drones lose ability to receive ANY software/firmware updates including security patches, Remote ID compliance, OS compatibility; (2) Blue UAS Covered List exemption expires \u2014 non-US Blue UAS platforms lose FCC authorization pathway; (3) Buy American exemption expires \u2014 domestic-content drones lose current carveout. Impact: 80%+ of 1,800+ law enforcement agencies use DJI. Oregon white paper: 467 drones grounded across 25 states already. After Jan 1 2027 without extension, existing DJI fleets become frozen assets \u2014 no patches, no bug fixes, no OS updates. DroneXL prediction: FCC will establish formal firmware review process (source code submission) that kills update pipeline through bureaucratic friction. DSLRPros warns: firmware freeze \u2192 Remote ID compliance failure, SDK breakage, cloud tool degradation, sensor calibration loss.",
+    "sources": [],
+    "research_status": "UPDATED_2026_04_04"
   }
 ]
