@@ -1,0 +1,624 @@
+[
+  {
+    "id": "anzu-robotics",
+    "name": "Anzu Robotics",
+    "legal_name": "Anzu Robotics, LLC",
+    "parent_entity": "XTI Drones Holdings (subsidiary of XTI Aerospace, NASDAQ: XTIA)",
+    "holding_company": "The Origin Group AZ, Inc. (Delaware corporation, pre-acquisition)",
+    "headquarters": "6500 River Place Blvd, Building 7, Suite 2, Austin, TX",
+    "country_of_incorporation": "US (Delaware LLC)",
+    "manufacturing_country": "Malaysia",
+    "manufacturing_facility": "Undisclosed Malaysian factory",
+    "founded": "2023",
+    "status": "active_litigation_product_discontinued",
+    "website": "https://www.anzurobotics.com",
+    "employee_count": "1 confirmed full-time (CEO)",
+    "technology_license_source": "DJI (Shenzhen DJI Technology Co., Ltd.)",
+    "license_details": "Licensed specs and SDK from DJI Mavic 3 Enterprise. DJI receives per-unit payment. Warnas told NYT arrangement was essentially DJI's idea. DJI confirmed in Aug 2024 blog: standard and legal arrangement.",
+    "acquisition": {
+      "date": "2025-11-10",
+      "acquirer": "XTI Aerospace (NASDAQ: XTIA)",
+      "price_total_usd": 3175000,
+      "concurrent_investor": "Unusual Machines Inc \u2014 $25M in XTI preferred stock",
+      "sec_filing": "https://www.sec.gov/Archives/edgar/data/1529113/000121390025108855/ea0264722-8k_xtiaero.htm"
+    },
+    "blue_uas_listed": false,
+    "ndaa_compliant": false,
+    "claims_ndaa_compliant": false,
+    "anzu_compliance_statement": "Explicitly stated: Not Blue UAS, not NDAA compliant, has Chinese components",
+    "targets_government": true,
+    "china_component_pct": 50,
+    "china_component_detail": "~50% from China. DJI P1 OcuSync chipset (proprietary). Thermal sensor from China. DJI batteries backward-compatible.",
+    "discontinued_supply_chain": true,
+    "discontinuation_date": "2026-02-10",
+    "data_hosting_location": "US",
+    "data_hosting_provider": "Aloft Technologies (Syracuse, NY \u2014 ISO 27001 / SOC 2 Type II)",
+    "security_architecture": {
+      "firmware_source": "DJI snapshot in time",
+      "firmware_signing": "DJI cryptographic keys \u2014 DJI retains root key control",
+      "sdk": "DJI SDK \u2014 Aloft app built on it",
+      "controller": "RRC01 \u2014 relabeled DJI RC Pro",
+      "key_chipset": "DJI P1 OcuSync ASIC \u2014 cannot be independently sourced",
+      "chinese_framework": "SecNeo/BangCle present \u2014 not confirmed decrypted",
+      "pentest": "White Knight Labs May 2024 \u2014 data to Aloft only, Chinese domain refs remediated"
+    },
+    "fcc_filings": {
+      "initial_disclosure": "Did NOT disclose DJI relationship \u2014 disclosed only after researchers went public",
+      "source": "https://fcc.report/company/Anzu-Robotics-L-L-C"
+    },
+    "security_researchers": [
+      {
+        "name": "Ian Lewis (Mads Tech)",
+        "contribution": "Hardware teardowns \u2014 identical PCBs to DJI Mavic 3"
+      },
+      {
+        "name": "Kevin Finisterre (@d0tslash)",
+        "contribution": "Firmware and network analysis"
+      },
+      {
+        "name": "Andreas (@Bin4ryDigit)",
+        "contribution": "Firmware binary analysis"
+      },
+      {
+        "name": "Konrad Iturbe",
+        "contribution": "Firmware analysis, documented 9+ suspected DJI shell companies"
+      },
+      {
+        "name": "Jon Sawyer",
+        "contribution": "Cryptographic signature analysis"
+      },
+      {
+        "name": "jcase",
+        "contribution": "Crypto analysis"
+      },
+      {
+        "name": "MAVProxyUser (GitHub)",
+        "contribution": "Documented firmware on DJI CDN"
+      }
+    ],
+    "leadership_history": [
+      {
+        "name": "Randall Warnas",
+        "role": "CEO",
+        "career_arc": [
+          {
+            "company": "DJI",
+            "role": "Enterprise Sales Manager",
+            "period": "~2015-2017"
+          },
+          {
+            "company": "FLIR Systems",
+            "role": "Global head industrial sUAS",
+            "period": "~2017-2021"
+          },
+          {
+            "company": "Autel Robotics NA",
+            "role": "CEO",
+            "period": "June-Aug 2021",
+            "note": "Resigned 9 weeks \u2014 cited nepotism"
+          },
+          {
+            "company": "Anzu Robotics",
+            "role": "Founder/CEO",
+            "period": "2023-present"
+          }
+        ]
+      }
+    ],
+    "misleading_origin_claims": [
+      "American owned and operated",
+      "Your solution is delivered by your neighbors",
+      "An entirely American-owned company"
+    ],
+    "voluntary_disclosures": [
+      "Acknowledged DJI licensing from Day 1",
+      "Stated not Blue UAS and not NDAA compliant",
+      "Acknowledged Chinese thermal sensor",
+      "Said 'If NDAA compliance is required we may not be the right product'"
+    ],
+    "products": [
+      {
+        "name": "Anzu Raptor",
+        "based_on": "DJI Mavic 3 Enterprise",
+        "price_usd": 5099,
+        "status": "discontinued",
+        "discontinued_date": "2026-02-10",
+        "target_markets": [
+          "public_safety",
+          "government",
+          "commercial",
+          "mapping"
+        ],
+        "specs": {
+          "flight_time_min": 45,
+          "weight_g": 915,
+          "camera": "20MP + 56x zoom",
+          "range_miles": 9
+        }
+      },
+      {
+        "name": "Anzu Raptor T",
+        "based_on": "DJI Mavic 3 Enterprise Thermal",
+        "price_usd": 7699,
+        "status": "discontinued",
+        "discontinued_date": "2026-02-10",
+        "target_markets": [
+          "public_safety",
+          "government",
+          "first_responder",
+          "inspection"
+        ],
+        "specs": {
+          "flight_time_min": 45,
+          "weight_g": 920,
+          "camera": "48MP + 640x512 LWIR thermal",
+          "range_miles": 9,
+          "thermal_source": "China"
+        }
+      }
+    ],
+    "pricing_context": {
+      "vs_dji": "$1,500-2,100 more than equivalent DJI",
+      "vs_blue_uas": "Skydio X10D $15K-20K+, Inspired Flight IF800 $25K+, BRINC Lemur $12K+",
+      "gap_analysis": "50-70% cheaper than Blue UAS alternatives"
+    },
+    "dealer_network": [
+      "Drone Nerds",
+      "Florida Drone Supply",
+      "Terrestrial Imaging",
+      "GenPac Drones",
+      "DSLRPros",
+      "Influential Drones",
+      "My Surveying Direct"
+    ],
+    "known_government_buyers": [
+      {
+        "agency": "Little Rock Police Department",
+        "state": "AR",
+        "units": 6,
+        "product": "Raptor T",
+        "cost_approx_usd": 56000,
+        "funding_source": "Arkansas SOAR Grant",
+        "date": "2025-04",
+        "use_case": "Patrol drone response team"
+      },
+      {
+        "agency": "North Little Rock Police Department",
+        "state": "AR",
+        "units": 7,
+        "product": "Raptor T",
+        "funding_source": "Arkansas state grant",
+        "date": "2025"
+      },
+      {
+        "agency": "Ames Police Department",
+        "state": "IA",
+        "units": null,
+        "product": "Raptor T",
+        "funding_source": "Asset forfeiture",
+        "date": "2025-01",
+        "use_case": "Exterior operations"
+      }
+    ],
+    "third_party_ecosystem": [
+      {
+        "company": "ParaZero",
+        "product": "SafeAir Raptor parachute",
+        "certification": "ASTM F3322-22"
+      }
+    ],
+    "legal_actions": [
+      {
+        "plaintiff": "State of Texas (AG Ken Paxton)",
+        "court": "District Court of Collin County, Texas",
+        "filed": "2026-02-18",
+        "case_context": "Second of four CCP-aligned lawsuits that week (TP-Link, Lorex, Temu)",
+        "counts": 7,
+        "statute": "Texas DTPA",
+        "core_allegation": "DJI drones in all but name \u2014 identical hardware, firmware, software, only green paint and American label",
+        "key_technical_claim": "DJI retains root cryptographic keys \u2014 technical capability to access/modify/extract data",
+        "relief_sought": [
+          "TRO on data collection",
+          "Required disclosure as rebranded DJI",
+          "Civil penalties up to $10K per violation",
+          "Attorney fees >$1M"
+        ],
+        "status": "pending \u2014 no public response from Anzu as of April 2026",
+        "other_states": "No other state AG has filed similar action",
+        "filing_url": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Petition_10.pdf"
+      }
+    ],
+    "congressional_scrutiny": [
+      {
+        "body": "House Select Committee on CCP",
+        "members": [
+          "Moolenaar (R-MI)",
+          "Krishnamoorthi (D-IL)"
+        ],
+        "date": "2024-08-20",
+        "questions_to_warnas": 12,
+        "key_conclusion": "Raptor T is essentially a DJI Mavic 3 painted green",
+        "warnas_response": "Public statement only \u2014 no substantive response to 12 questions surfaced"
+      },
+      {
+        "body": "Stefanik, Moolenaar, Crawford",
+        "date": "2025-07",
+        "action": "Requested national security review of Chinese drone manufacturers"
+      }
+    ],
+    "community_reaction": {
+      "defenders": [
+        "sUAS News: 'We are on team Anzu'",
+        "Industry: Warnas was more transparent than most",
+        "Some view ban effort as protectionism for Skydio/BRINC"
+      ],
+      "critics": [
+        "Researchers: transparency about licensing != transparency about DJI root keys",
+        "FCC non-disclosure cited as concealment",
+        "Warnas 'I like to be unaware' undermines independence claims"
+      ]
+    },
+    "timeline": [
+      {
+        "date": "2023",
+        "event": "Anzu incorporated (Delaware)"
+      },
+      {
+        "date": "2023-12",
+        "event": "FCC filings \u2014 DJI NOT disclosed"
+      },
+      {
+        "date": "2024-04",
+        "event": "Raptor series launched"
+      },
+      {
+        "date": "2024-05",
+        "event": "White Knight Labs pentest published"
+      },
+      {
+        "date": "2024-06",
+        "event": "Warnas YouTube: DJI execs asked 'what can we do?'"
+      },
+      {
+        "date": "2024-08-20",
+        "event": "House Select Committee formal inquiry"
+      },
+      {
+        "date": "2024-08",
+        "event": "Researchers publish teardown \u2014 identical PCBs, DJI crypto keys"
+      },
+      {
+        "date": "2024-08-29",
+        "event": "DJI publishes 'Get The Facts' confirming license"
+      },
+      {
+        "date": "2025-01",
+        "event": "Ames PD deploys Raptor T"
+      },
+      {
+        "date": "2025-04",
+        "event": "Little Rock PD purchases 6 Raptor T"
+      },
+      {
+        "date": "2025-07",
+        "event": "Congressional national security review requested"
+      },
+      {
+        "date": "2025-11-10",
+        "event": "XTI Aerospace acquires Anzu for $3.175M"
+      },
+      {
+        "date": "2025-11",
+        "event": "NDAA 2025 demand surge depletes inventory"
+      },
+      {
+        "date": "2025-12-22",
+        "event": "NDAA Section 1709 / FCC Covered List take effect"
+      },
+      {
+        "date": "2026-02-10",
+        "event": "Raptor discontinued \u2014 component shortage"
+      },
+      {
+        "date": "2026-02-18",
+        "event": "Texas AG lawsuit filed \u2014 7 DTPA counts"
+      }
+    ],
+    "notes": "Canonical gray zone case. Warnas was more transparent than Cogito/SkyRover but the gap between 'we licensed DJI tech' and 'DJI retains root crypto keys' is the core issue. NDAA Section 1709 explicitly covers licensing agreements \u2014 arguably written for this exact scenario. Randall is known in the industry and was upfront about many things \u2014 the community is divided on whether he was a bad actor or just caught in a regulatory vise.",
+    "flags_for_deeper_research": [
+      "Full list of government buyers beyond 3 documented",
+      "XTI/Unusual Machines next-gen product plans",
+      "Texas lawsuit status \u2014 has Anzu responded?",
+      "Agency replacement procurement initiated?",
+      "Malaysian factory identity",
+      "Warnas formal responses to Committee's 12 questions"
+    ],
+    "data_sources": [
+      "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Petition_10.pdf",
+      "https://selectcommitteeontheccp.house.gov/sites/evo-subsites/selectcommitteeontheccp.house.gov/files/evo-media-document/2024-08-20%20anzu%20letter.pdf",
+      "https://dronedj.com/2026/02/17/anzu-raptor-drone-production-end/",
+      "https://dronedj.com/2026/02/19/anzu-raptor-drone-texas-lawsuit/",
+      "https://dronelife.com/2026/02/19/texas-ag-sues-anzu-robotics-dji-clone-lawsuit/",
+      "https://www.suasnews.com/2026/02/anzu-robotics-raptor-end-of-life/",
+      "https://viewpoints.dji.com/blog/dji-relationship-with-anzu-robotics",
+      "https://www.sec.gov/Archives/edgar/data/1529113/000121390025108855/ea0264722-8k_xtiaero.htm",
+      "https://www.thezerolux.com/interview-randall-warnas-anzu-robotics/",
+      "https://fcc.report/company/Anzu-Robotics-L-L-C",
+      "https://github.com/MAVProxyUser/BizarreActorPoutsOn",
+      "https://fpvwiki.co.uk/dji-white-label-clone-drones",
+      "https://robotics.press/companies/anzu-robotics/",
+      "https://www.anzurobotics.com/faq/",
+      "https://www.aloft.ai/blog/ensuring-the-security-of-the-anzu-raptor-a-successful-penetration-test-by-white-knight-labs/"
+    ]
+  },
+  {
+    "id": "cogito-specta",
+    "name": "Cogito Tech / SPECTA",
+    "legal_name": "Cogito Tech Company Limited",
+    "headquarters": "Hong Kong",
+    "country_of_incorporation": "Hong Kong",
+    "manufacturing_country": "China (presumed)",
+    "founded": "Unknown \u2014 products appeared 2024",
+    "status": "active_monitoring",
+    "website": "https://spectadrone.com",
+    "technology_license_source": "DJI (undisclosed \u2014 no licensing acknowledged)",
+    "license_details": "NO acknowledgment of DJI. Identical PCBs to DJI Air 3, same P1 chipset, RF emission reports differ only by date/logo removal, firmware forked from DJI with branding stripped.",
+    "blue_uas_listed": false,
+    "ndaa_compliant": false,
+    "claims_ndaa_compliant": false,
+    "targets_government": false,
+    "china_component_pct": 95,
+    "discontinued_supply_chain": false,
+    "data_hosting_location": "Unknown",
+    "data_hosting_provider": "Unknown",
+    "leadership_history": [],
+    "misleading_origin_claims": [
+      "No country of origin disclosed",
+      "No DJI acknowledgment"
+    ],
+    "products": [
+      {
+        "name": "Specta Air",
+        "based_on": "DJI Air 3",
+        "status": "available",
+        "target_markets": [
+          "consumer"
+        ]
+      },
+      {
+        "name": "Specta Mini",
+        "based_on": "DJI Mini variant",
+        "status": "available",
+        "target_markets": [
+          "consumer"
+        ]
+      }
+    ],
+    "known_government_buyers": [],
+    "legal_actions": [],
+    "congressional_scrutiny": [
+      {
+        "body": "House Select Committee on CCP",
+        "date": "2024-08-20",
+        "action": "Named alongside Anzu in letter to Commerce Secretary"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2024-03",
+        "event": "Specta Air appears \u2014 identified as DJI Air 3 clone"
+      },
+      {
+        "date": "2024-06",
+        "event": "DroneDJ covers as 'DJI ban loophole'"
+      },
+      {
+        "date": "2024-08",
+        "event": "Named in congressional letter to Commerce"
+      }
+    ],
+    "notes": "Less transparent than Anzu \u2014 zero DJI acknowledgment, no cybersecurity disclosure. Targets consumer market. Establishes the white-label playbook others replicate.",
+    "flags_for_deeper_research": [
+      "Corporate structure behind Cogito Tech",
+      "Amazon sales volume",
+      "Commerce Dept action on referral",
+      "Post-FCC Covered List availability"
+    ],
+    "data_sources": [
+      "https://chinaselectcommittee.house.gov/sites/evo-subsites/selectcommitteeontheccp.house.gov/files/evo-media-document/2024-08-20%20-%20DOC%20Anzu%20+%20Cogito%20Letter.pdf",
+      "https://dronexl.co/2024/03/26/spectra-air-mirror-image-dji-air-3/",
+      "https://dronedj.com/2024/06/20/dji-ban-loophole-meet-the-specta-and-specta-mini/",
+      "https://fpvwiki.co.uk/dji-white-label-clone-drones"
+    ]
+  },
+  {
+    "id": "skyrover-knowact",
+    "name": "SkyRover / Knowact",
+    "legal_name": "SZ Knowact Robot Technology Co., Ltd.",
+    "headquarters": "Shenzhen, China",
+    "country_of_incorporation": "China",
+    "manufacturing_country": "China",
+    "founded": "Unknown \u2014 products appeared July 2025",
+    "status": "active_monitoring",
+    "website": "https://skyrover.com",
+    "technology_license_source": "DJI (undisclosed)",
+    "license_details": "App connects directly to DJI cloud. Identical encryption keys. DJI login credentials work. Zero corporate transparency. Layered structure for brand rotation if banned.",
+    "blue_uas_listed": false,
+    "ndaa_compliant": false,
+    "claims_ndaa_compliant": false,
+    "targets_government": false,
+    "china_component_pct": 100,
+    "discontinued_supply_chain": false,
+    "data_hosting_location": "China (DJI cloud)",
+    "data_hosting_provider": "DJI cloud infrastructure",
+    "leadership_history": [],
+    "misleading_origin_claims": [
+      "No ownership disclosed",
+      "No HQ disclosed",
+      "No country disclosed",
+      "Zero transparency"
+    ],
+    "products": [
+      {
+        "name": "SkyRover X1",
+        "based_on": "DJI Mini 4 Pro",
+        "status": "available",
+        "target_markets": [
+          "consumer"
+        ]
+      }
+    ],
+    "shell_company_network": {
+      "documented_by": "Konrad Iturbe",
+      "count": "9+ suspected DJI shells since March 2024",
+      "named_entities": [
+        "Skyany",
+        "Jovistar",
+        "Fikaxo",
+        "Lyno Dynamics",
+        "Spatial Hover"
+      ],
+      "pattern": "FCC apps \u2014 Spatial Hover docs contained DJI logos"
+    },
+    "known_government_buyers": [],
+    "legal_actions": [],
+    "congressional_scrutiny": [],
+    "timeline": [
+      {
+        "date": "2025-07",
+        "event": "SkyRover X1 appears \u2014 DJI Mini 4 Pro clone identified"
+      },
+      {
+        "date": "2025-07-22",
+        "event": "DroneXL exposure: DJI infrastructure links confirmed"
+      }
+    ],
+    "notes": "Next-gen gray zone entity \u2014 emerged after Anzu drew scrutiny. Zero transparency, direct DJI cloud, layered corporate structure for resilience. 9+ suspected DJI shells documented.",
+    "flags_for_deeper_research": [
+      "Knowact corporate structure",
+      "FCC action on shell company apps",
+      "US sales volume",
+      "FCC Covered List impact"
+    ],
+    "data_sources": [
+      "https://www.techspot.com/news/108850-skyrover-x1-may-dji-drone-disguise-amid-us.html",
+      "https://dronexl.co/2025/07/22/skyrover-x1-drone-links-to-dji-infrastructure/",
+      "https://fpvwiki.co.uk/dji-white-label-clone-drones"
+    ]
+  },
+  {
+    "id": "autel-robotics",
+    "name": "Autel Robotics",
+    "legal_name": "Autel Robotics Co., Ltd. / Autel Robotics USA LLC",
+    "headquarters": "Shenzhen, China / Bothell, WA (US sub)",
+    "country_of_incorporation": "China",
+    "manufacturing_country": "China",
+    "founded": "2014",
+    "status": "restricted_operational",
+    "website": "https://www.autelrobotics.com",
+    "technology_license_source": "Proprietary (not DJI derivative)",
+    "license_details": "Own technology \u2014 but openly Chinese-owned. Founded by Li Hongjing. Chinese govt 'Little Giant' designation. CITIC Corp (Ministry of Finance) among seed investors. Chinese website markets to 'public security, army, national defense, armed police.'",
+    "blue_uas_listed": false,
+    "ndaa_compliant": false,
+    "claims_ndaa_compliant": false,
+    "targets_government": true,
+    "china_component_pct": 90,
+    "discontinued_supply_chain": false,
+    "data_hosting_location": "Mixed",
+    "data_hosting_provider": "Autel proprietary",
+    "leadership_history": [
+      {
+        "name": "Li Hongjing (Frank Li)",
+        "role": "Founder"
+      }
+    ],
+    "misleading_origin_claims": [
+      "US subsidiary in Bothell creates impression of American company"
+    ],
+    "products": [
+      {
+        "name": "Autel EVO MAX 4T",
+        "based_on": "Autel proprietary",
+        "price_usd": 15799,
+        "status": "available",
+        "target_markets": [
+          "enterprise",
+          "law_enforcement"
+        ]
+      }
+    ],
+    "regulatory_actions": [
+      {
+        "date": "2024-07",
+        "action": "Commerce Entity List \u2014 shipping controlled items to Russia"
+      },
+      {
+        "date": "2025-01",
+        "action": "DoD Section 1260H Chinese Military Companies list"
+      },
+      {
+        "date": "2025-12",
+        "action": "Named in NDAA FY2025 Section 1709"
+      },
+      {
+        "date": "2025-12-22",
+        "action": "FCC Covered List"
+      }
+    ],
+    "known_government_buyers": [
+      {
+        "agency": "US Capitol Police"
+      },
+      {
+        "agency": "Department of Agriculture"
+      },
+      {
+        "agency": "Department of Commerce"
+      },
+      {
+        "agency": "Multiple state/local law enforcement"
+      }
+    ],
+    "legal_actions": [],
+    "congressional_scrutiny": [
+      {
+        "body": "Multiple",
+        "note": "Named in NDAA, Entity List, Section 1260H"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2014",
+        "event": "Founded in Shenzhen"
+      },
+      {
+        "date": "2021-06",
+        "event": "Warnas briefly CEO of NA subsidiary"
+      },
+      {
+        "date": "2024-07",
+        "event": "Commerce Entity List"
+      },
+      {
+        "date": "2025-01",
+        "event": "DoD Chinese Military Companies list"
+      },
+      {
+        "date": "2025-12-22",
+        "event": "FCC Covered List"
+      }
+    ],
+    "notes": "Different gray zone position \u2014 openly Chinese but marketed as DJI alternative to US law enforcement. Own IP unlike Anzu/Cogito/SkyRover. Warnas's 9-week Autel stint connects these entities.",
+    "flags_for_deeper_research": [
+      "Full US govt deployment list",
+      "Entity List impact on contracts",
+      "FCC exemption status",
+      "Next-gen US market plans"
+    ],
+    "data_sources": [
+      "https://en.wikipedia.org/wiki/Autel_Robotics",
+      "https://www.jamescmulvenon.com/wp-content/uploads/2023/10/Autel-Robotics.pdf",
+      "https://abjacademy.global/news/how-pentagon-blacklist-affects-autel-drone-users/"
+    ]
+  }
+]

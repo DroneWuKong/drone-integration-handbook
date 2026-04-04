@@ -1951,8 +1951,29 @@ def main():
     all_flags.extend(fin_flags)
 
     print("\nDetecting gray zone / adversary-adjacent entities...")
-    gz_flags = analyze_gray_zone(db)
-    all_flags.extend(gz_flags)
+    # Run the full gray zone detector if entities.json exists
+    gz_entities_path = REPO_ROOT / "data" / "grayzone" / "entities.json"
+    if gz_entities_path.exists():
+        try:
+            sys.path.insert(0, str(REPO_ROOT / "pipeline"))
+            from grayzone.grayzone_detector import main as gz_main, FLAGS_OUT as GZ_FLAGS_OUT
+            gz_main()
+            # Merge gray zone flags into main flags
+            if GZ_FLAGS_OUT.exists():
+                gz_flags_data = load_json(GZ_FLAGS_OUT)
+                # Add sources to gray zone flags
+                for gf in gz_flags_data:
+                    gf["sources"] = resolve_sources(gf.get("data_sources", []))
+                all_flags.extend(gz_flags_data)
+                print(f"  Merged {len(gz_flags_data)} gray zone flags into main pipeline")
+        except Exception as e:
+            print(f"  Gray zone detector error: {e}")
+            # Fallback to basic analysis
+            gz_flags = analyze_gray_zone(db)
+            all_flags.extend(gz_flags)
+    else:
+        gz_flags = analyze_gray_zone(db)
+        all_flags.extend(gz_flags)
 
     print("\n── Advanced Algorithms ──")
 

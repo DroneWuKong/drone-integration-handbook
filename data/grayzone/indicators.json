@@ -1,0 +1,138 @@
+[
+  {
+    "id": "ind-anzu-001",
+    "entity_id": "anzu-robotics",
+    "type": "teardown",
+    "date": "2024-08",
+    "source": "Ian Lewis (Mads Tech), House Select Committee, independent security researchers",
+    "confirmed_adversary_hardware": true,
+    "detail": "PCB layouts align exactly with DJI Mavic 3 Enterprise. Board part numbers match. Controller RRC01 is relabeled DJI RC Pro with identical firmware. Camera module, gimbal, propulsion all DJI-sourced. DJI P1 OcuSync chipset present \u2014 proprietary ASIC that cannot be independently sourced.",
+    "confidence": 0.97
+  },
+  {
+    "id": "ind-anzu-002",
+    "entity_id": "anzu-robotics",
+    "type": "firmware_analysis",
+    "date": "2024-08",
+    "source": "Andreas (@Bin4ryDigit), Jon Sawyer, jcase, Konrad Iturbe",
+    "adversary_signed": true,
+    "adversary_sdk": true,
+    "adversary_ota": false,
+    "detail": "Firmware signed and encrypted with DJI cryptographic keys \u2014 DJI retains root key control. Built on DJI SDK. SecNeo/BangCle Chinese security framework present \u2014 not confirmed decrypted. MAVProxyUser documented firmware accessible on DJI's own CDN, contradicting independent hosting claims.",
+    "confidence": 0.95
+  },
+  {
+    "id": "ind-anzu-003",
+    "entity_id": "anzu-robotics",
+    "type": "fcc_filing",
+    "date": "2023-12",
+    "source": "House Select Committee, FCC records",
+    "adversary_components_found": true,
+    "detail": "Anzu did NOT disclose DJI relationship in initial FCC filings (Dec 2023). Only disclosed after security researchers publicly revealed connection in mid-2024. House Committee specifically cited this omission.",
+    "confidence": 0.95
+  },
+  {
+    "id": "ind-anzu-004",
+    "entity_id": "anzu-robotics",
+    "type": "network_analysis",
+    "date": "2024-05",
+    "source": "White Knight Labs pentest (published by Aloft), Texas AG investigation",
+    "adversary_endpoints_contacted": true,
+    "detail": "White Knight Labs pentest confirmed data goes exclusively to Aloft servers \u2014 but found references to Chinese domains within system (remediated by Aloft). Texas AG alleges Aloft itself is a DJI-integrated platform. GitHub repo documented firmware accessible on DJI CDN.",
+    "confidence": 0.75
+  },
+  {
+    "id": "ind-anzu-005",
+    "entity_id": "anzu-robotics",
+    "type": "executive_statement",
+    "date": "2024-06",
+    "source": "YouTube interview, NYT, Washington Post",
+    "detail": "Warnas in YouTube interview: DJI execs asked 'what can we do?' about losing market share. Told NYT arrangement was 'essentially DJI's idea.' Told Washington Post about per-unit payments: 'I like to be unaware of that.' House Committee: CEO admitted primary purpose was to circumvent legislative restrictions.",
+    "confidence": 0.95
+  },
+  {
+    "id": "ind-anzu-006",
+    "entity_id": "anzu-robotics",
+    "type": "supply_chain_event",
+    "date": "2026-02-10",
+    "source": "CEO official EOL notice via sUAS News",
+    "detail": "Raptor-series discontinued due to component shortages. NDAA 2025 demand surge Nov/Dec depleted stock. ~50% components from China. DJI P1 OcuSync chipset \u2014 proprietary ASIC \u2014 likely insurmountable bottleneck. CEO: 'We are far from done.'",
+    "confidence": 0.99
+  },
+  {
+    "id": "ind-anzu-007",
+    "entity_id": "anzu-robotics",
+    "type": "corporate_event",
+    "date": "2025-11-10",
+    "source": "SEC 8-K filing",
+    "detail": "XTI Aerospace acquired 100% of Anzu for $3.175M ($1.44M cash + $954K note + 521,966 Class B units). Concurrent: Unusual Machines invested $25M in XTI preferred. Low price reflected limited standalone valuation.",
+    "confidence": 0.99
+  },
+  {
+    "id": "ind-anzu-008",
+    "entity_id": "anzu-robotics",
+    "type": "market_positioning",
+    "date": "2024-2026",
+    "source": "Anzu website, dealer network, agency purchase records",
+    "detail": "Marketed to public safety at $5,099-7,699 \u2014 filling 50-70% price gap between DJI ($3,500-6,500) and Blue UAS ($15,000-25,000+). Sold through 7+ dealers to police departments in AR, IA, and likely others (ParaZero SafeAir Raptor system suggests broader adoption). No geofencing \u2014 removed DJI's restrictions.",
+    "confidence": 0.9
+  },
+  {
+    "id": "ind-cogito-001",
+    "entity_id": "cogito-specta",
+    "type": "teardown",
+    "date": "2024-03",
+    "source": "DroneXL, drone community researchers",
+    "confirmed_adversary_hardware": true,
+    "detail": "Specta Air has identical PCBs to DJI Air 3. Same DJI P1 chipset. RF emission reports differ only by date and logo removal. Firmware forked from DJI with branding stripped. No independent technology whatsoever.",
+    "confidence": 0.95
+  },
+  {
+    "id": "ind-cogito-002",
+    "entity_id": "cogito-specta",
+    "type": "market_positioning",
+    "date": "2024",
+    "source": "Amazon listings, DroneDJ coverage",
+    "detail": "Sold primarily through Amazon with zero corporate transparency. No acknowledgment of DJI relationship. No cybersecurity disclosure. No country of origin on product listings. House Committee called it 'a second ongoing attempt by DJI to white label its products.'",
+    "confidence": 0.9
+  },
+  {
+    "id": "ind-skyrover-001",
+    "entity_id": "skyrover-knowact",
+    "type": "firmware_analysis",
+    "date": "2025-07",
+    "source": "Kevin Finisterre, Jon Sawyer, DroneXL",
+    "adversary_signed": true,
+    "adversary_sdk": true,
+    "adversary_ota": true,
+    "detail": "SkyRover app connects DIRECTLY to DJI cloud infrastructure. Jon Sawyer found identical encryption keys. Users can log in using existing DJI credentials. This is the most direct DJI connection of any white-label \u2014 no Aloft-style intermediary.",
+    "confidence": 0.95
+  },
+  {
+    "id": "ind-skyrover-002",
+    "entity_id": "skyrover-knowact",
+    "type": "corporate_opacity",
+    "date": "2025-07",
+    "source": "Researcher analysis, TechSpot, DroneXL",
+    "detail": "Zero corporate transparency \u2014 no ownership, no HQ, no country of origin on website. Operated through SZ Knowact Robot Technology (Shenzhen). Researchers documented layered structure: 'Knowact gets banned, rotate a new OEM, SkyRover brand is intact.' Part of network of 9+ suspected DJI shells (Skyany, Jovistar, Fikaxo, Lyno Dynamics, Spatial Hover \u2014 last one's FCC docs contained DJI logos).",
+    "confidence": 0.9
+  },
+  {
+    "id": "ind-autel-001",
+    "entity_id": "autel-robotics",
+    "type": "government_designation",
+    "date": "2024-2025",
+    "source": "Commerce Dept, DoD, NDAA, FCC",
+    "detail": "Four regulatory actions in 18 months: Commerce Entity List (July 2024, shipping to Russia), DoD Section 1260H Chinese Military Companies (Jan 2025), NDAA Section 1709 (Dec 2025, named alongside DJI), FCC Covered List (Dec 22, 2025).",
+    "confidence": 0.99
+  },
+  {
+    "id": "ind-autel-002",
+    "entity_id": "autel-robotics",
+    "type": "government_ties",
+    "date": "2023",
+    "source": "Mulvenon research report, Chinese corporate filings",
+    "detail": "Chinese government 'Little Giant' designation. Seed investors include CITIC Corporation subsidiary (ultimately owned by China's Ministry of Finance). Chinese-language website markets to 'public security, army, national defense, and armed police.' Founded by Li Hongjing who also founded Shenzhen Daotong Intelligent Aviation.",
+    "confidence": 0.9
+  }
+]
