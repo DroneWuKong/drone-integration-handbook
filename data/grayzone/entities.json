@@ -425,6 +425,21 @@
         "url": "https://gov.fccid.io/2BBYS-RRC01",
         "title": "FCC Filing: Anzu RC Controller",
         "type": "fcc_filing"
+      },
+      {
+        "url": "https://www.prnewswire.com/news-releases/xti-aerospace-acquires-drone-nerds-and-closes-25-million-strategic-investment-by-unusual-machines-302613052.html",
+        "title": "XTI/UMAC Press Release: Acquisition + $25M Investment",
+        "type": "press_release"
+      },
+      {
+        "url": "https://www.stocktitan.net/news/UMAC/",
+        "title": "UMAC Stock News Feed",
+        "type": "financial"
+      },
+      {
+        "url": "https://www.tipranks.com/news/company-announcements/xti-aerospace-delays-2025-annual-10-k-filing",
+        "title": "TipRanks: XTI 10-K Filing Delay",
+        "type": "financial"
       }
     ],
     "latest_developments": {
@@ -434,7 +449,9 @@
       "fcc_impact": "All foreign-made drones added to FCC Covered List Dec 22, 2025. Anzu Raptor already discontinued Feb 10, 2026. FCC ban renders shell company strategy moot.",
       "product_status": "Zero products for sale. No successor timeline disclosed. No proprietary technology.",
       "competitive_position": "Skydio >$700M raised. Well-capitalized competitors have sovereign supply chains. Anzu has zero-product gap with customer churn accelerating.",
-      "randall_warnas_status": "No public statements since lawsuit filing. Previously CEO/sole employee."
+      "randall_warnas_status": "No public statements since lawsuit filing. Previously CEO/sole employee.",
+      "umac_xti_nexus": "Unusual Machines (NYSE:UMAC) invested $25M in XTI Series 10 Convertible Preferred at $1.492 conversion \u2014 concurrent with Anzu acquisition. UMAC is NDAA-compliant US drone component manufacturer. CEO Allan Evans cited 'unprecedented opportunity to define domestic drone landscape as US intensifies ban on Chinese companies.' UMAC raised $157.8M equity in 2025, targeting cash-flow positive by end 2026. 2025 revenue $11.2M (101% YoY). $103.3M cash. Needham Buy target $20. UMAC also has $3.75M PDW AM-FPV order and 101st Airborne supply agreements.",
+      "drone_nerds_context": "Drone Nerds: largest US drone distributor. Revenue >$100M in 2024, >$55M through June 2025. 10-year profitability record. This is the real asset in the XTI acquisition \u2014 Anzu was the strategic play, Drone Nerds is the revenue engine."
     }
   },
   {
@@ -541,6 +558,51 @@
         "url": "https://dronexl.co/2026/01/09/dji-drone-shell-company-gambit-backfired/",
         "title": "DroneXL: Shell Company Gambit Backfired",
         "type": "analysis"
+      },
+      {
+        "url": "https://thehill.com/policy/defense/4714269-chinas-dominant-drone-industry-is-a-step-ahead-of-congress/",
+        "title": "The Hill: China Drone Industry Ahead of Congress (broke Cogito story)",
+        "type": "news"
+      },
+      {
+        "url": "https://dronenr.com/2024/06/28/first-look-specta-drones-cogito/",
+        "title": "DroneNR: First Look at SPECTA Drones",
+        "type": "analysis"
+      },
+      {
+        "url": "https://www.halfchrome.com/cotigo-specta-air/",
+        "title": "Half Chrome: Specta Air Is The DJI Air 3 (teardown)",
+        "type": "teardown"
+      },
+      {
+        "url": "https://dronedj.com/2024/06/20/dji-ban-loophole-meet-the-specta-and-specta-mini/",
+        "title": "DroneDJ: DJI Ban Loophole \u2014 SPECTA",
+        "type": "news"
+      },
+      {
+        "url": "https://uavcoach.com/dji-loophole/",
+        "title": "UAV Coach: DJI Clone Loophole Analysis",
+        "type": "analysis"
+      },
+      {
+        "url": "https://dronexl.co/2024/03/24/dji-shadowy-shell-game-unveiled/",
+        "title": "DroneXL: DJI Shadowy Shell Game (Cogito section)",
+        "type": "osint"
+      },
+      {
+        "url": "https://fpvwiki.co.uk/dji-white-label-clone-drones",
+        "title": "FPV Wiki: DJI White Label Clone Drones",
+        "type": "osint"
+      },
+      {
+        "url": "https://spectadrone.com/",
+        "title": "SPECTA Official Website",
+        "type": "primary"
+      },
+      {
+        "url": "https://www.cogito-techs.com/",
+        "title": "Cogito Tech Official Website",
+        "type": "primary"
       }
     ],
     "latest_developments": {
@@ -548,7 +610,10 @@
       "fcc_status": "FCC filings under COGITO TECH COMPANY LIMITED (Hong Kong). SPECTA Air and GL3323 both filed. OcuSync frequency fingerprint matches DJI Air 3.",
       "fcc_covered_list_impact": "All foreign-made drones on Covered List as of Dec 22, 2025. Cogito products cannot receive new FCC authorizations.",
       "shell_company_detection": "Identified by Konrad Iturbe's automated OcuSync detection system. Part of 12+ company network using DJI proprietary communication protocols.",
-      "product_status": "SPECTA Air still listed on various retail platforms. Identical PCBs to DJI Air 3 confirmed by teardown analysis."
+      "product_status": "SPECTA Air still listed on various retail platforms. Identical PCBs to DJI Air 3 confirmed by teardown analysis.",
+      "corporate_details": "Hong Kong-based. FCC registration Aug 2023. Website built with Google Sites \u2014 compliance/security/contact links broken. No support infrastructure. Warranty via Amazon only. Denies any DJI connection but OcuSync frequencies, identical PCBs, and patented DJI chipsets prove otherwise.",
+      "product_details": "SPECTA Air = DJI Air 3 (identical PCBs, batteries within 2g, same firmware fork). SPECTA Mini = DJI Mini 2 SE/4K. Manufactured in Malaysia. Sold primarily via Amazon. $1,199 for Air (vs $1,099 DJI Air 3, but includes RC2-equiv controller). Half Chrome teardown: 'It IS the Air 3, inside and out.'",
+      "key_researchers": "Half Chrome (Jack Towne) \u2014 full teardown. Ian Lewis (Mads Tech) \u2014 DJI patented chipset identification. Konrad Iturbe \u2014 OcuSync frequency detection. Kevin Finisterre (@d0tslash) \u2014 firmware analysis confirming DJI involvement."
     }
   },
   {
@@ -825,6 +890,16 @@
         "url": "https://www.auvsi.org/fcc-covered-list-faqs-for-industry-and-international-partners/",
         "title": "AUVSI: FCC Covered List FAQs",
         "type": "industry"
+      },
+      {
+        "url": "https://dronedj.com/2026/03/19/us-drone-ban-new-exemption/",
+        "title": "DroneDJ: Growing Exemption List (Autel still shut out)",
+        "type": "news"
+      },
+      {
+        "url": "https://tech.yahoo.com/cameras/articles/us-drone-ban-2026-explained-173014770.html",
+        "title": "US Drone Ban 2026 Explained (Autel context)",
+        "type": "explainer"
       }
     ],
     "latest_developments": {
@@ -833,7 +908,9 @@
       "authorization_revocations": "FCC quietly revoked certain DJI/Autel authorizations in Jan 2026 that were issued shortly before Dec 22, 2025 Covered List update. No public notice of which devices.",
       "legal_challenge": "DJI filed Ninth Circuit appeal (Case 26-1029). FCC moved to dismiss on ripeness grounds. Autel legal posture unclear but faces same Section 1709 restrictions.",
       "fcc_conditional_approvals": "First 4 non-Chinese drones removed from Covered List March 18, 2026 (SiFly, Mobilicom, ScoutDI, Verge). No Chinese-manufactured system has been cleared. DoW 45-day review took 70 days.",
-      "market_impact": "DJI+Autel commanded 70%+ of US market. 80%+ of 1,800+ law enforcement agencies used DJI. Replacement costs 2-10x higher."
+      "market_impact": "DJI+Autel commanded 70%+ of US market. 80%+ of 1,800+ law enforcement agencies used DJI. Replacement costs 2-10x higher.",
+      "legal_posture": "Autel has been quieter than DJI. The Wiley Law roundup header says 'DJI and Autel Challenge Their Covered List Designations' but detail focuses on DJI's Ninth Circuit filing. Autel appears to be seeking reconsideration at FCC level but no separate federal court challenge confirmed. Autel faces identical Section 1709 restrictions \u2014 cannot bypass even via US manufacturing.",
+      "fcc_revocations": "FCC OET quietly revoked certain Autel authorizations in Jan 2026 that were issued shortly before Dec 22 Covered List. No public notice of which specific devices. TCBs were informed privately."
     }
   }
 ]
