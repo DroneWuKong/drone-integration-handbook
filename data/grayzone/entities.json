@@ -766,6 +766,31 @@
         "url": "https://dronexl.co/2026/01/09/dji-drone-shell-company-gambit-backfired/",
         "title": "DroneXL: DJI Shell Company Gambit Analysis",
         "type": "analysis"
+      },
+      {
+        "url": "https://maclookup.app/macaddress/68c95d",
+        "title": "MAC Address: Knowact registered address (Nanshan District)",
+        "type": "osint"
+      },
+      {
+        "url": "https://apps.apple.com/us/app/skyrover/id6746756666",
+        "title": "Apple App Store: SKYROVER app by Knowact",
+        "type": "primary"
+      },
+      {
+        "url": "https://dronexl.co/2025/10/03/spatial-hover-dji-shell-company-after-fikaxo-drone/",
+        "title": "DroneXL: Spatial Hover/Fikaxo/Knowact network connections",
+        "type": "osint"
+      },
+      {
+        "url": "https://fccid.io/2BMUV",
+        "title": "FCC ID: All Knowact applications (2BMUV)",
+        "type": "fcc_filing"
+      },
+      {
+        "url": "https://fcc.report/company/Sz-Knowact-Robot-Technology-Co-L-T-D",
+        "title": "FCC Report: All Knowact filings",
+        "type": "fcc_filing"
       }
     ],
     "latest_developments": {
@@ -775,6 +800,36 @@
       "shell_company_network": "Konrad Iturbe's automated OcuSync frequency detection bot identified 12+ companies selling DJI-based drones. WaveGo Tech FCC filing included Knowact documentation. DJI logos still visible in Skyhigh Tech FCC antenna diagrams.",
       "retail_status": "SkyRover drones still available on Amazon and at retailers. Spring 2026 sales: S1 bundle $359, X1 $599.",
       "dji_shell_gambit_impact": "DroneXL analysis: shell company strategy 'backfired spectacularly' \u2014 provoked FCC to ban ALL foreign drones, not just DJI. 'The response was predictable to anyone who understands how Washington actually works.'"
+    },
+    "corporate_structure": {
+      "last_updated": "2026-04-04",
+      "registered_name_chinese": "\u6df1\u5733\u5e02\u77e5\u884c\u673a\u5668\u4eba\u79d1\u6280\u6709\u9650\u516c\u53f8",
+      "registered_name_english": "SZ Knowact Robot Technology Co., Ltd",
+      "registered_address": "Room C3-A081, Building C, Kexing Science Park, No.15 Keyuan Road, Science Park Community, Yuehai Street, Nanshan District, Shenzhen, Guangdong 518057, CN",
+      "address_significance": "Nanshan District is DJI's home district. DJI HQ: No.55 Xianyuan Road / 14th Floor, Skyworth Semiconductor Design Building, No.18 Gaoxin South 4th Ave, Nanshan District, Shenzhen. Both in the same technology park cluster in Nanshan.",
+      "mac_address_registration": "MAC prefix 68:C9:5D registered Feb 27, 2025. MA-L block: ~16M addresses. Single allocation suggests new/single-purpose entity.",
+      "fcc_grantee_code": "2BMUV",
+      "fcc_filing_entities": [
+        "SZ Knowact Robot Technology Co., Ltd (drone hardware \u2014 Shenzhen)",
+        "Skyhigh Tech LLC (RC controllers \u2014 US-registered LLC, DJI logos in antenna diagrams)"
+      ],
+      "app_store_developer": "\u6df1\u5733\u5e02\u77e5\u884c\u673a\u5668\u4eba\u79d1\u6280\u6709\u9650\u516c\u53f8 (SZ Knowact Robot Technology Co., Ltd)",
+      "app_description": "SKYROVER app \u2014 App Store reviews confirm: 'exactly like the other guy's app, same layout and features' (DJI Fly). Based on DJI Fly app codebase.",
+      "dji_relationship_evidence": [
+        "OcuSync frequency signatures match DJI (Konrad Iturbe)",
+        "WaveGo Tech FCC filing included Knowact documentation (cross-linked entities)",
+        "DJI logos visible in Skyhigh Tech FCC antenna diagrams",
+        "App is fork of DJI Fly with same layout/features",
+        "Located in same Nanshan District technology park cluster as DJI HQ",
+        "No disclosed corporate ownership, parent company, or leadership"
+      ],
+      "shell_company_network_connections": [
+        "Skyhigh Tech LLC \u2014 filed SkyRover X1 RC controller (DJI logos in docs)",
+        "WaveGo Tech LLC \u2014 FCC filing included Knowact documentation",
+        "Fikaxo Technology Inc \u2014 products migrated to Spatial Hover overnight",
+        "Spatial Hover Inc \u2014 appeared Sept 30, 2025, 4 days after DroneXL exposed network"
+      ],
+      "transparency_score": "ZERO \u2014 no parent company, no HQ, no leadership, no country of origin on website"
     }
   },
   {

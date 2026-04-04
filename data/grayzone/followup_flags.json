@@ -203,5 +203,21 @@
       "https://www.texaspolicyresearch.com/texas-files-four-major-lawsuits-against-ccp-linked-companies/"
     ],
     "research_status": "UPDATED_2026_04_04"
+  },
+  {
+    "id": "gz-followup-015",
+    "title": "[GRAY ZONE] Knowact corporate structure mapped: Nanshan District (DJI's home district), MAC registered Feb 2025, zero transparency",
+    "category": "corporate_structure",
+    "entity": "skyrover-knowact",
+    "severity": "CRITICAL",
+    "date": "2026-04-04T14:40:57.625203+00:00",
+    "detail": "SZ Knowact Robot Technology Co., Ltd (\u6df1\u5733\u5e02\u77e5\u884c\u673a\u5668\u4eba\u79d1\u6280\u6709\u9650\u516c\u53f8) registered at Room C3-A081, Building C, Kexing Science Park, Nanshan District, Shenzhen \u2014 the same district as DJI HQ. MAC address block (68:C9:5D) registered Feb 27, 2025 \u2014 single allocation suggests purpose-built entity. FCC filings under grantee code 2BMUV. RC controllers filed under separate entity Skyhigh Tech LLC (with DJI logos in antenna diagrams). SKYROVER app on Apple App Store developed by Knowact \u2014 App Store reviews confirm it's a DJI Fly fork. Network connections: WaveGo Tech filing included Knowact docs, Fikaxo products migrated to Spatial Hover. Zero corporate transparency \u2014 no parent, no leadership, no country of origin on website.",
+    "sources": [
+      "https://maclookup.app/macaddress/68c95d",
+      "https://apps.apple.com/us/app/skyrover/id6746756666",
+      "https://dronexl.co/2025/10/03/spatial-hover-dji-shell-company-after-fikaxo-drone/",
+      "https://fccid.io/2BMUV"
+    ],
+    "research_status": "UPDATED_2026_04_04"
   }
 ]
