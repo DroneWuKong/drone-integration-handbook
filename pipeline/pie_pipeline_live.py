@@ -1887,7 +1887,8 @@ def main():
 
     print("\nAnalyzing manufacturers...")
     mfr_flags = analyze_manufacturers(db, sw_hw_demand)
-    all_flags.extend(mfr_flags)
+    # Manufacturer profiles feed dependency graph + what-if but don't need individual flags
+    print(f"  ({len(mfr_flags)} manufacturer profiles — data used internally, not added to flags)")
 
     print("\nAnalyzing Counter-UAS ecosystem...")
     cuas_flags = analyze_cuas(db)
