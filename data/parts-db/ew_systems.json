@@ -1,0 +1,496 @@
+[
+  {
+    "pid": "EW-0001",
+    "category": "ew_systems",
+    "name": "DroneShield DroneGun Tactical — Handheld RF Jammer",
+    "manufacturer": "DroneShield",
+    "manufacturer_hq": "Sydney, Australia",
+    "description": "Highly effective handheld C-UAS countermeasure with directional antennas in a rifle-style design. Jams wide range of ISM bands and GNSS satellite navigation frequencies. Forces target drones to land vertically, return to operator, or return to starting point. Non-kinetic — does not damage UAS, preserving forensic evidence. NATO Stock Number assigned. 2+ hours battery life per charge. IP54 rated.",
+    "link": "https://www.droneshield.com/c-uas-products/dronegun-mk4",
+    "approx_price": 30000,
+    "ew_type": "Directional RF jammer",
+    "subcategory": "handheld_jammer",
+    "defeat_method": "RF jamming (ISM bands + GNSS)",
+    "effective_frequencies": "ISM bands + GNSS",
+    "weight_kg": 7.3,
+    "battery_life_hr": 2,
+    "ip_rating": "IP54",
+    "nato_nsn": "5865661650137",
+    "operating_temp_c": [
+      -20,
+      55
+    ],
+    "form_factor": "rifle-style, two-hand operation",
+    "country": "Australia",
+    "compliance": {
+      "fcc_restricted": true,
+      "itar_controlled": false,
+      "nato_nsn": true,
+      "combat_proven": true
+    },
+    "tags": [
+      "handheld",
+      "jammer",
+      "directional",
+      "gnss_denial",
+      "non_kinetic",
+      "forensic_safe",
+      "nato"
+    ],
+    "schema_data": {
+      "weight_g": 7300
+    }
+  },
+  {
+    "pid": "EW-0002",
+    "category": "ew_systems",
+    "name": "DroneShield DroneGun Mk4 — Lightweight Handheld Jammer",
+    "manufacturer": "DroneShield",
+    "manufacturer_hq": "Sydney, Australia",
+    "description": "Advanced lightweight counter-drone jammer with wider environmental suitability than previous models. Compact pistol-grip design with trigger assembly, safety selector switch, and quick-release battery. LED indicators show active bands and disruption status (can be disabled for covert ops). Disrupts FPV video streaming back to remote controller. MIL-STD 1913 rails for scope mounting. No software updates required — ready out of box.",
+    "link": "https://www.droneshield.com/c-uas-products/dronegun-mk4",
+    "approx_price": 25000,
+    "ew_type": "Directional RF jammer",
+    "subcategory": "handheld_jammer",
+    "defeat_method": "RF jamming (ISM + GNSS + FPV video)",
+    "fpv_defeat": true,
+    "form_factor": "pistol-grip handheld",
+    "rail_system": "MIL-STD 1913 Picatinny",
+    "country": "Australia",
+    "compliance": {
+      "fcc_restricted": true
+    },
+    "tags": [
+      "lightweight",
+      "pistol_grip",
+      "fpv_defeat",
+      "covert_capable",
+      "picatinny",
+      "no_software_update"
+    ],
+    "schema_data": {
+      "weight_g": 3500
+    }
+  },
+  {
+    "pid": "EW-0003",
+    "category": "ew_systems",
+    "name": "Flex Force / DZYNE Dronebuster — DoD-Authorized Handheld C-UAS",
+    "manufacturer": "Flex Force (DZYNE Technologies)",
+    "manufacturer_hq": "USA",
+    "description": "Compact, lightweight, cost-effective C-UAS electronic attack system — the only handheld electronic attack system authorized by the US Department of Defense. Converts between integrated fixed-site jammer and man-portable jammer for dismounted troops, security teams, and first responders. Multiple configurations available. ITAR controlled. Dronebuster PNT variant adds positioning/navigation/timing defeat capability.",
+    "link": "https://dzyne.com/",
+    "approx_price": 15000,
+    "ew_type": "Handheld electronic attack",
+    "subcategory": "handheld_jammer",
+    "defeat_method": "RF jamming + optional PNT defeat",
+    "configurations": [
+      "handheld",
+      "fixed-site",
+      "weapon-station mounted"
+    ],
+    "dod_authorized": true,
+    "pnt_variant": "Dronebuster PNT",
+    "form_factor": "compact handheld / fixed mount",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true,
+      "dod_authorized": true,
+      "itar": true,
+      "combat_proven": true
+    },
+    "tags": [
+      "dod_authorized",
+      "handheld",
+      "man_portable",
+      "fixed_site",
+      "pnt_defeat",
+      "itar",
+      "combat_proven"
+    ],
+    "schema_data": {
+      "weight_g": 1400
+    }
+  },
+  {
+    "pid": "EW-0004",
+    "category": "ew_systems",
+    "name": "D-Fend Solutions EnforceAir2 — RF Cyber Takeover C-UAS System",
+    "manufacturer": "D-Fend Solutions",
+    "manufacturer_hq": "Ra'anana, Israel",
+    "description": "High-performance counter-drone system using RF cyber takeover technology — not jamming. Detects, locates, identifies rogue drones, then takes control via protocol manipulation and lands them safely in predefined zones. Non-jamming, non-kinetic, no line-of-sight required. Preserves communications and operational continuity. Supports commercial and proprietary/DIY radio protocols. Deployable as tactical, vehicular, stationary, backpack, and maritime configurations. Trusted by US government agencies.",
+    "link": "https://d-fendsolutions.com/enforceair/",
+    "approx_price": "Contact vendor — typically $200k-$500k system",
+    "ew_type": "RF cyber takeover",
+    "subcategory": "cyber_cuas",
+    "defeat_method": "RF protocol cyber takeover — controlled landing",
+    "non_jamming": true,
+    "non_kinetic": true,
+    "no_line_of_sight_required": true,
+    "detection_capability": true,
+    "supported_protocols": "Commercial + proprietary/DIY radio protocols",
+    "deployment_configs": [
+      "tactical tripod",
+      "backpack man-portable",
+      "vehicular",
+      "stationary pole-mount",
+      "maritime",
+      "long-range directional"
+    ],
+    "form_factor": "modular SDR-based system",
+    "country": "Israel",
+    "compliance": {
+      "us_government_deployed": true,
+      "combat_proven": true
+    },
+    "tags": [
+      "cyber_takeover",
+      "non_jamming",
+      "protocol_manipulation",
+      "safe_landing",
+      "multi_deployment",
+      "sdr",
+      "us_gov"
+    ],
+    "schema_data": {}
+  },
+  {
+    "pid": "EW-0005",
+    "category": "ew_systems",
+    "name": "NT Service EDM4S SkyWiper — Portable Anti-Drone EW Device",
+    "manufacturer": "NT Service",
+    "manufacturer_hq": "Kaunas, Lithuania",
+    "description": "Portable electronic warfare anti-drone device that disrupts small and medium UAVs by jamming communication and satellite navigation systems. Single-operator pointed weapon with 3-5 km effective range. Combat proven in Ukraine — first deployed against Russian separatist drones in Donbas in 2021, continued use against Russian military drones including Eleron-3. Also produced under 'Skybeam' brand in partnership with Israeli company Skylock. Unit cost approximately $15,000 for UA variant.",
+    "link": "https://ntservice.lt/",
+    "approx_price": 15000,
+    "ew_type": "Directional RF + GNSS jammer",
+    "subcategory": "handheld_jammer",
+    "defeat_method": "RF communication + GNSS jamming",
+    "effective_range_km": "3-5",
+    "single_operator": true,
+    "form_factor": "man-portable pointed weapon",
+    "country": "Lithuania",
+    "compliance": {
+      "nato_nation": true,
+      "combat_proven": true,
+      "ukraine_fielded": true
+    },
+    "tags": [
+      "combat_proven",
+      "ukraine",
+      "portable",
+      "gnss_jammer",
+      "single_operator",
+      "lithuania",
+      "nato_ally"
+    ],
+    "schema_data": {
+      "weight_g": 5500
+    }
+  },
+  {
+    "pid": "EW-0006",
+    "category": "ew_systems",
+    "name": "DroneShield DroneSentry — Integrated Detect & Defeat System",
+    "manufacturer": "DroneShield",
+    "manufacturer_hq": "Sydney, Australia",
+    "description": "Fixed-site integrated C-UAS system combining radar, RF direction finding, EO/IR sensors for detection with RF barrage jamming, command link control, and GPS/GNSS jamming for defeat. Provides 360-degree automated protection zone. Multiple sensor fusion for low false-alarm rates. Designed for critical infrastructure, military bases, and event protection.",
+    "link": "https://www.droneshield.com/",
+    "approx_price": "Contact vendor — system pricing",
+    "ew_type": "Integrated detect + defeat",
+    "subcategory": "fixed_site_system",
+    "detection_methods": [
+      "radar",
+      "RF direction finding",
+      "EO/IR"
+    ],
+    "defeat_method": "RF barrage jamming + command link control + GNSS jamming",
+    "coverage": "360-degree automated",
+    "form_factor": "fixed-site installation",
+    "country": "Australia",
+    "compliance": {
+      "combat_proven": true
+    },
+    "tags": [
+      "integrated",
+      "360_degree",
+      "radar",
+      "multi_sensor",
+      "fixed_site",
+      "automated",
+      "critical_infrastructure"
+    ],
+    "schema_data": {}
+  },
+  {
+    "pid": "EW-0007",
+    "category": "ew_systems",
+    "name": "Aselsan KORAL — Land-Based Radar EW System",
+    "manufacturer": "Aselsan",
+    "manufacturer_hq": "Ankara, Turkey",
+    "description": "Land-based radar electronic warfare system providing both electronic support (ESM/ELINT) and electronic attack capabilities. Composed of two trucks — one for electronic support and one for electronic attack. Jams and deceives conventional and complex hostile radar types. Analyzes multiple target signals across wide frequency range. Credited as the 'invisible power' behind Turkey's successful drone operations in Syria, Libya, and Azerbaijan since 2016. Suppresses enemy air defense radar to enable UAS operations.",
+    "link": "https://www.aselsan.com.tr/",
+    "approx_price": "Military procurement",
+    "ew_type": "Radar EW (EA/ES)",
+    "subcategory": "ground_based_radar_ew",
+    "capabilities": [
+      "electronic support (ESM)",
+      "electronic attack (EA)",
+      "ELINT",
+      "radar jamming",
+      "radar deception"
+    ],
+    "defeat_method": "Radar suppression / deception for SEAD",
+    "form_factor": "two-truck system (ES + EA)",
+    "sead_role": true,
+    "country": "Turkey",
+    "compliance": {
+      "nato_nation": true,
+      "combat_proven": true
+    },
+    "tags": [
+      "sead",
+      "radar_ew",
+      "turkey",
+      "combat_proven",
+      "syria",
+      "libya",
+      "azerbaijan",
+      "uas_enabler"
+    ],
+    "schema_data": {}
+  },
+  {
+    "pid": "EW-0008",
+    "category": "ew_systems",
+    "name": "infiniDome GPSdome — GNSS Anti-Jam Protection Module",
+    "manufacturer": "infiniDome",
+    "manufacturer_hq": "Caesarea, Israel",
+    "description": "Compact GNSS anti-jamming protection module using adaptive nulling algorithms to mitigate jamming threats in real-time. Provides high GNSS integrity with minimal weight and power consumption, optimized for UAV platforms. Multi-constellation (GPS, Galileo, BeiDou, GLONASS) and multi-band (L1/L2/L5) support. Sensor fusion with INS for continued navigation during signal degradation. Withstands J/S ratios of 40+ dB.",
+    "link": "https://infinidome.com/",
+    "approx_price": 2500,
+    "ew_type": "GNSS anti-jam protection",
+    "subcategory": "anti_jam_module",
+    "defeat_method": "Adaptive nulling + sensor fusion",
+    "jam_to_signal_db": 40,
+    "constellations": [
+      "GPS",
+      "Galileo",
+      "BeiDou",
+      "GLONASS"
+    ],
+    "frequency_bands": [
+      "L1",
+      "L2",
+      "L5"
+    ],
+    "ins_fusion": true,
+    "form_factor": "compact OEM module",
+    "country": "Israel",
+    "compliance": {},
+    "tags": [
+      "anti_jam",
+      "gnss_protection",
+      "adaptive_nulling",
+      "multi_constellation",
+      "low_swap",
+      "uav_optimized"
+    ],
+    "schema_data": {
+      "weight_g": 50
+    }
+  },
+  {
+    "pid": "EW-0009",
+    "category": "ew_systems",
+    "name": "DroneShield RfPatrol Mk2 — Wearable RF Drone Detector",
+    "manufacturer": "DroneShield",
+    "manufacturer_hq": "Sydney, Australia",
+    "description": "Passive wearable RF drone detection sensor with no intentional RF transmissions for quiet, safe operation. Omni-directional ISM band antenna provides situational awareness of drone threats. Part of the Immediate Response Kit (IRK) paired with DroneGun Mk4 for detect-and-defeat capability. Additional antenna ports available for capability expansion. Designed for dismounted troops and security teams.",
+    "link": "https://www.droneshield.com/",
+    "approx_price": 15000,
+    "ew_type": "Passive RF drone detector",
+    "subcategory": "rf_detector",
+    "passive": true,
+    "no_rf_emissions": true,
+    "form_factor": "wearable body-worn",
+    "paired_with": "DroneGun Mk4 (IRK bundle)",
+    "country": "Australia",
+    "compliance": {
+      "combat_proven": true
+    },
+    "tags": [
+      "passive",
+      "wearable",
+      "rf_detector",
+      "no_emissions",
+      "irk",
+      "situational_awareness"
+    ],
+    "schema_data": {
+      "weight_g": 800
+    }
+  },
+  {
+    "pid": "EW-0010",
+    "category": "ew_systems",
+    "name": "Raytheon NGJ-MB (Next-Generation Jammer Mid-Band)",
+    "manufacturer": "Raytheon Intelligence & Space (RTX)",
+    "manufacturer_hq": "McKinney, TX, USA",
+    "description": "Advanced airborne electronic attack system using agile AESA (Active Electronically Scanned Array) antenna technology with all-digital back end. Denies, disrupts, and degrades enemy communications, air defense systems, and radar. Digital and software-based design increases jamming capability with rapid beam steering and advanced modulation. Operates from increased ranges, attacks multiple targets simultaneously. Designed for EA-18G Growler aircraft. Passed Milestone C for production.",
+    "link": "https://www.rtx.com/",
+    "approx_price": "Military procurement (multi-million $)",
+    "ew_type": "Airborne electronic attack pod",
+    "subcategory": "airborne_jammer",
+    "antenna": "AESA (Active Electronically Scanned Array)",
+    "capabilities": [
+      "radar jamming",
+      "communications jamming",
+      "SEAD",
+      "multi-target simultaneous"
+    ],
+    "platform": "EA-18G Growler",
+    "milestone_c": true,
+    "form_factor": "aircraft-mounted pod",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true,
+      "dod": true
+    },
+    "tags": [
+      "aesa",
+      "airborne",
+      "growler",
+      "sead",
+      "multi_target",
+      "production",
+      "raytheon"
+    ],
+    "schema_data": {}
+  },
+  {
+    "pid": "EW-0011",
+    "category": "ew_systems",
+    "name": "Krasukha-4 — Russian Mobile EW System",
+    "manufacturer": "KRET (Concern Radio-Electronic Technologies)",
+    "manufacturer_hq": "Moscow, Russia",
+    "description": "Russian mobile ground-based electronic warfare system capable of jamming airborne radar systems including AWACS and satellites. Mounted on BAZ-6910 chassis. Deployed extensively in Ukraine conflict for drone suppression, communications degradation, and GPS jamming. Part of Russia's doctrine of using EW to find and isolate positions before overwhelming with artillery fire. One of 14+ dedicated Russian military EW units.",
+    "link": "https://kret.com/",
+    "approx_price": "State military — not commercially available",
+    "ew_type": "Mobile ground-based radar/comms jammer",
+    "subcategory": "ground_based_radar_ew",
+    "capabilities": [
+      "AWACS jamming",
+      "satellite disruption",
+      "drone suppression",
+      "GPS jamming",
+      "communications degradation"
+    ],
+    "form_factor": "vehicle-mounted (BAZ-6910 chassis)",
+    "country": "Russia",
+    "compliance": {
+      "combat_proven": true,
+      "adversary_system": true
+    },
+    "tags": [
+      "russia",
+      "mobile",
+      "awacs_jamming",
+      "ukraine",
+      "combat_proven",
+      "adversary",
+      "vehicle_mounted"
+    ],
+    "schema_data": {}
+  },
+  {
+    "pid": "EW-0012",
+    "category": "ew_systems",
+    "name": "Murmansk-BN — Russian Long-Range HF Jammer",
+    "manufacturer": "KRET (Concern Radio-Electronic Technologies)",
+    "manufacturer_hq": "Moscow, Russia",
+    "description": "Russian ground-based long-range jammer capable of suppressing high-frequency radio communications across a theoretical 300 km range — potentially limiting HF comms for most of a theater of operations. Represents the large-scale, theater-level EW capability that NATO has struggled to match. Part of Russia's deep EW doctrine integrating electronic warfare with kinetic fires.",
+    "link": "https://kret.com/",
+    "approx_price": "State military — not commercially available",
+    "ew_type": "Long-range HF communications jammer",
+    "subcategory": "ground_based_comms_jammer",
+    "theoretical_range_km": 300,
+    "target_spectrum": "HF (high frequency)",
+    "form_factor": "vehicle-mounted ground station",
+    "country": "Russia",
+    "compliance": {
+      "combat_proven": true,
+      "adversary_system": true
+    },
+    "tags": [
+      "russia",
+      "300km",
+      "hf_jammer",
+      "theater_level",
+      "adversary",
+      "long_range"
+    ],
+    "schema_data": {}
+  },
+  {
+    "pid": "EW-0013",
+    "category": "ew_systems",
+    "name": "Pole-21 — Russian Radio Suppression System",
+    "manufacturer": "Russian Federation MoD",
+    "manufacturer_hq": "Russia",
+    "description": "Advanced Russian radio suppression system designed specifically for counter-UAS operations. Detects and neutralizes UAS by intercepting communications and suppressing control channels. Deployed alongside Silok-01 in Russian C-UAS exercises. Part of the evolving Russian EW doctrine that prioritizes drone suppression at the tactical level.",
+    "link": "",
+    "approx_price": "State military — not commercially available",
+    "ew_type": "Radio suppression / C-UAS",
+    "subcategory": "ground_based_comms_jammer",
+    "capabilities": [
+      "UAS detection",
+      "control channel suppression",
+      "communications interception"
+    ],
+    "form_factor": "ground-based system",
+    "country": "Russia",
+    "compliance": {
+      "combat_proven": true,
+      "adversary_system": true
+    },
+    "tags": [
+      "russia",
+      "cuas",
+      "radio_suppression",
+      "adversary",
+      "drone_defeat"
+    ],
+    "schema_data": {}
+  },
+  {
+    "pid": "EW-0014",
+    "category": "ew_systems",
+    "name": "GIDS Spider-AD — Counter-UAV Jammer System",
+    "manufacturer": "GIDS (Defense Science & Technology Organization)",
+    "manufacturer_hq": "Pakistan",
+    "description": "Counter-UAV electronic warfare system capable of jamming drone communication and satellite navigation at ranges beyond 10 km. Available in both vehicle-mounted and man-portable tripod variants. Unveiled at a 2024 defense exhibition. Represents the growing accessibility of EW/C-UAS technology to developing nations as low-cost drone threats proliferate.",
+    "link": "",
+    "approx_price": "Contact vendor",
+    "ew_type": "Counter-UAV RF + GNSS jammer",
+    "subcategory": "ground_based_cuas",
+    "effective_range_km": 10,
+    "defeat_method": "RF communication jamming + GNSS denial",
+    "configurations": [
+      "vehicle-mounted",
+      "man-portable tripod"
+    ],
+    "form_factor": "multi-config ground system",
+    "country": "Pakistan",
+    "compliance": {},
+    "tags": [
+      "cuas",
+      "10km",
+      "vehicle_mounted",
+      "man_portable",
+      "gnss_jamming",
+      "developing_nation"
+    ],
+    "schema_data": {}
+  }
+]

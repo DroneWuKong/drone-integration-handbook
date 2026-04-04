@@ -17375,5 +17375,410 @@
     "max_payload_kg": 2,
     "mtow_kg": 5,
     "propulsion": "Electric quad"
+  },
+  {
+    "name": "Skycutter SC-ISR — Quadcopter ISR Platform",
+    "manufacturer": "Skycutter",
+    "description": "Quadcopter ISR platform with 75 min endurance, 100 kph speed, 666 Wh battery, 40x zoom EO + 6x thermal camera. UK-manufactured.",
+    "vehicle_type": "quadcopter",
+    "build_class": "defense",
+    "country": "United Kingdom",
+    "max_flight_time_min": 75,
+    "max_payload_kg": 2,
+    "compliance": {
+      "ndaa": false,
+      "five_eyes": true
+    },
+    "tags": [
+      "isr",
+      "thermal",
+      "40x_zoom",
+      "uk"
+    ],
+    "ddg_p1": "winner_platform_secondary",
+    "pid": "DM-2062",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Skycutter SC-Orca — One-Way Effector",
+    "manufacturer": "Skycutter",
+    "description": "Autonomous one-way attack effector. GPS-independent strike capability. Designed for contested EW environments.",
+    "vehicle_type": "fixed_wing",
+    "build_class": "defense",
+    "country": "United Kingdom",
+    "compliance": {
+      "ndaa": false,
+      "five_eyes": true
+    },
+    "tags": [
+      "owa",
+      "autonomous",
+      "gps_denied",
+      "uk"
+    ],
+    "ddg_p1": "winner_platform_secondary",
+    "pid": "DM-2063",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Skycutter SC Gryphon — Heavy-Lift Hexacopter",
+    "manufacturer": "Skycutter",
+    "description": "Hexacopter with 25 kg MTOW, 5 kg payload for 1+ hr endurance. Hydrogen fuel cell option for 2-hr endurance.",
+    "vehicle_type": "hexacopter",
+    "build_class": "defense",
+    "country": "United Kingdom",
+    "max_flight_time_min": 60,
+    "max_payload_kg": 5,
+    "compliance": {
+      "ndaa": false,
+      "five_eyes": true
+    },
+    "tags": [
+      "heavy_lift",
+      "hydrogen",
+      "hexacopter",
+      "uk"
+    ],
+    "ddg_p1": "winner_platform_secondary",
+    "pid": "DM-2064",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Napatree Bumblebee — AI-Guided FPV Attack Quadcopter",
+    "manufacturer": "Napatree Technology (Project Eagle / Eric Schmidt)",
+    "description": "FPV attack quadcopter with 70%+ autonomous direct-hit rate. AI target recognition (soldiers, bunkers, vehicles, drones). VIO jam-resistant navigation. Redundant comms including internet-based control. 1,000+ combat flights against Russian targets by spring 2025.",
+    "vehicle_type": "quadcopter",
+    "build_class": "defense",
+    "country": "United States",
+    "compliance": {
+      "combat_proven": true
+    },
+    "tags": [
+      "ai_guided",
+      "70_percent_hit_rate",
+      "vio",
+      "project_eagle",
+      "eric_schmidt",
+      "ukraine_combat"
+    ],
+    "ddg_p1": "winner_rank_3",
+    "pid": "DM-2065",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Napatree Hornet — Fixed-Wing Strike Drone",
+    "manufacturer": "Napatree Technology (Project Eagle / Eric Schmidt)",
+    "description": "Fixed-wing strike drone. ~2m wingspan. 11 lbs (5 kg) payload. 62 mph cruise. 90+ mile range. Planned production: 6,000+ units/month.",
+    "vehicle_type": "fixed_wing",
+    "build_class": "defense",
+    "country": "United States",
+    "max_payload_kg": 5,
+    "compliance": {},
+    "tags": [
+      "fixed_wing",
+      "90_mile_range",
+      "mass_production",
+      "project_eagle"
+    ],
+    "ddg_p1": "winner_platform_secondary",
+    "pid": "DM-2066",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Napatree MEROPS AS3 Surveyor — C-UAS Interceptor",
+    "manufacturer": "Napatree Technology (Project Eagle / Eric Schmidt)",
+    "description": "Fixed-wing C-UAS interceptor targeting Shahed-type drones. ~$14,500/unit. Up to 95% hit rate. 1,900+ intercepts of Russian drones by Nov 2025. Deployed with Poland, Romania, Denmark, NATO. Pentagon deploying to Middle East for Operation Epic Fury.",
+    "vehicle_type": "fixed_wing",
+    "build_class": "defense",
+    "country": "United States",
+    "compliance": {
+      "combat_proven": true,
+      "nato_deployed": true
+    },
+    "tags": [
+      "c_uas",
+      "interceptor",
+      "shahed_killer",
+      "95_percent_hit_rate",
+      "1900_intercepts",
+      "nato",
+      "epic_fury"
+    ],
+    "ddg_p1": "related_platform",
+    "pid": "DM-2067",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Nokturnal AI Nightmare — Blue UAS FPV Strike Drone",
+    "manufacturer": "Nokturnal AI",
+    "description": "Blue UAS Certified FPV strike drone with advanced onboard autonomy and terminal guidance. Best-in-class anti-jam digital radio link. Selected for DIU Project G.I. alongside Auterion, ModalAI, Neros.",
+    "vehicle_type": "quadcopter",
+    "build_class": "defense",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true,
+      "blue_uas": true
+    },
+    "tags": [
+      "blue_uas",
+      "anti_jam",
+      "terminal_guidance",
+      "project_gi",
+      "stealth_company"
+    ],
+    "ddg_p1": "winner_rank_8",
+    "pid": "DM-2068",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Nokturnal AI Unruly — Long-Range Fixed-Wing Strike",
+    "manufacturer": "Nokturnal AI",
+    "description": "Long-range fixed-wing strike platform with advanced visual navigation and conditional behavior logic. GPS-denied, no RF comms required. 100-300 km deep-strike capability.",
+    "vehicle_type": "fixed_wing",
+    "build_class": "defense",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true
+    },
+    "tags": [
+      "deep_strike",
+      "gps_denied",
+      "100_300km",
+      "visual_nav"
+    ],
+    "ddg_p1": "winner_platform_secondary",
+    "pid": "DM-2069",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Nokturnal AI Menace — High-Speed Jet Strike",
+    "manufacturer": "Nokturnal AI",
+    "description": "Blended-wing turbine jet. High-speed/high-impact. Day/night navigation. GPS-independent with no RF comms required.",
+    "vehicle_type": "jet",
+    "build_class": "defense",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true
+    },
+    "tags": [
+      "jet",
+      "blended_wing",
+      "high_speed",
+      "turbine"
+    ],
+    "ddg_p1": "winner_platform_secondary",
+    "pid": "DM-2070",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "HALO Aeronautics PERSES — Disposable FPV Attack Drone",
+    "manufacturer": "HALO Aeronautics (Hush Aerospace + By Light)",
+    "description": "Low-cost disposable FPV quadcopter. Flight-ready in <1 minute. Lower noise than standard drones. Modular payload. Joint venture between Hush Aerospace (UAS manufacturer) and By Light Professional IT Services (1,000+ employees).",
+    "vehicle_type": "quadcopter",
+    "build_class": "defense",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true
+    },
+    "tags": [
+      "disposable",
+      "low_noise",
+      "quick_deploy",
+      "1_minute_ready",
+      "modular_payload"
+    ],
+    "ddg_p1": "winner_rank_9",
+    "pid": "DM-2071",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "HALO Aeronautics HALO-6 VTOL — Long-Endurance ISR",
+    "manufacturer": "HALO Aeronautics (Hush Aerospace + By Light)",
+    "description": "6m wingspan VTOL with 10 hr endurance, 76 mph cruise, 27.22 kg payload. Triple-redundant autopilot. Carbon fiber. Ultra-low acoustic signature. Encrypted comms.",
+    "vehicle_type": "vtol",
+    "build_class": "defense",
+    "country": "United States",
+    "max_flight_time_min": 600,
+    "max_payload_kg": 27.22,
+    "compliance": {
+      "ndaa": true
+    },
+    "tags": [
+      "vtol",
+      "10_hour",
+      "low_acoustic",
+      "triple_redundant",
+      "carbon_fiber"
+    ],
+    "ddg_p1": "winner_platform_secondary",
+    "pid": "DM-2072",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "UDD F10 — China-Free FPV Attack Quadcopter",
+    "manufacturer": "Ukrainian Defense Drones Tech Corp",
+    "description": "FPV attack quadcopter with fully China-free supply chain. Domestically manufactured carbon frames, antennas, FCs, ESCs, radio modems, and video TX. Selected by Pentagon 'largely due to highly successful supply chain localization.' NYT: 'Ukraine Reaches a Milestone: Making China-Free Drones.'",
+    "vehicle_type": "quadcopter",
+    "build_class": "defense",
+    "country": "Ukraine",
+    "compliance": {
+      "china_free": true,
+      "combat_proven": true
+    },
+    "tags": [
+      "china_free",
+      "supply_chain_localized",
+      "fpv",
+      "ukraine_combat",
+      "f_drones"
+    ],
+    "ddg_p1": "winner_rank_6",
+    "pid": "DM-2073",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "UDD F7 — Front-Line FPV Attack Drone",
+    "manufacturer": "Ukrainian Defense Drones Tech Corp",
+    "description": "Recognized as 'most effective weapon on the front lines' by Ukraine's Army of Drones program (end of 2025). Widely used by Ukrainian Armed Forces in active combat.",
+    "vehicle_type": "quadcopter",
+    "build_class": "defense",
+    "country": "Ukraine",
+    "compliance": {
+      "combat_proven": true
+    },
+    "tags": [
+      "most_effective",
+      "army_of_drones",
+      "ukraine_combat"
+    ],
+    "ddg_p1": "related_platform",
+    "pid": "DM-2074",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Neros Archer Fiber — NDAA-Compliant Fiber-Optic FPV",
+    "manufacturer": "Neros Technologies",
+    "description": "World's first NDAA-compliant fiber-optic FPV drone. Partnership with Kela Technologies. Inherently immune to RF jamming and EW. Fiber-optic cable control.",
+    "vehicle_type": "quadcopter",
+    "build_class": "defense",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true,
+      "blue_uas": true
+    },
+    "tags": [
+      "fiber_optic",
+      "ndaa",
+      "ew_immune",
+      "kela_technologies",
+      "first_ndaa_fiber"
+    ],
+    "ddg_p1": "winner_variant",
+    "pid": "DM-2075",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Vector Defense Hammer — 10-inch Fiber-Optic FPV",
+    "manufacturer": "Vector Defense",
+    "description": "First-to-market FPV with fiber-optic integration (5,000m spool). Immune to RF jamming. Gimbaled camera detecting threats at 20 km. Droppable or one-way kinetic payloads. DIU Blue and Green List approved.",
+    "vehicle_type": "quadcopter",
+    "build_class": "defense",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true,
+      "blue_uas": true,
+      "green_uas": true
+    },
+    "tags": [
+      "fiber_optic",
+      "5km_spool",
+      "gimbal",
+      "20km_detection",
+      "blue_green_uas"
+    ],
+    "ddg_p1": "non_advancing",
+    "pid": "DM-2076",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Swarm Defense KIWI — Stackable OWA Drone",
+    "manufacturer": "Swarm Defense Technologies",
+    "description": "One-way attack drone. 10+ km range. Modular payload. Stackable form factor. <2 lbs. Takes <5 minutes to build. Single operator can deploy thousands via proprietary swarm software. 72,000 units/year capacity scaling to 250,000+.",
+    "vehicle_type": "quadcopter",
+    "build_class": "defense",
+    "country": "United States",
+    "compliance": {},
+    "tags": [
+      "stackable",
+      "swarm",
+      "mass_production",
+      "250k_capacity",
+      "5_min_build"
+    ],
+    "ddg_p1": "non_advancing",
+    "pid": "DM-2077",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "General Cherry Bullet Interceptor — High-Speed C-UAS",
+    "manufacturer": "General Cherry Corp",
+    "description": "Counter-UAS interceptor exceeding 300 km/h. Designed to intercept Shahed-type drones. Part of General Cherry's 33 codified defense products. 100,000 drones/month production capacity.",
+    "vehicle_type": "quadcopter",
+    "build_class": "defense",
+    "country": "Ukraine",
+    "compliance": {
+      "nato_aqap_2110": true,
+      "combat_proven": true
+    },
+    "tags": [
+      "interceptor",
+      "300kmh",
+      "shahed_killer",
+      "100k_per_month",
+      "nato_quality"
+    ],
+    "ddg_p1": "non_advancing_related",
+    "pid": "DM-2078",
+    "image_file": "",
+    "relations": {}
+  },
+  {
+    "name": "Auterion Nemyx — Cross-Platform Swarm Strike Engine",
+    "manufacturer": "Auterion",
+    "description": "Cross-platform swarm strike engine introduced September 2025. Enables coordinated autonomous strikes across multiple drone types. 33,000 AI strike kits deployed under $50M Pentagon contract for Ukraine — largest deployment of autonomous technology in the West.",
+    "vehicle_type": "software",
+    "build_class": "defense",
+    "country": "Switzerland / United States",
+    "compliance": {
+      "ndaa": true,
+      "combat_proven": true
+    },
+    "tags": [
+      "swarm",
+      "strike_engine",
+      "33000_kits",
+      "ukraine",
+      "largest_autonomous_deployment"
+    ],
+    "ddg_p1": "winner_rank_5_related",
+    "pid": "DM-2079",
+    "image_file": "",
+    "relations": {}
   }
 ]

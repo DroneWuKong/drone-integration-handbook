@@ -1,0 +1,463 @@
+[
+  {
+    "pid": "AIACCEL-0001",
+    "category": "ai_accelerators",
+    "name": "Hailo-8 M.2 AI Accelerator Module",
+    "manufacturer": "Hailo Technologies",
+    "manufacturer_hq": "Tel Aviv, Israel",
+    "description": "Purpose-built edge AI inference accelerator delivering 26 TOPS in an M.2 form factor at just 2.5W. Dataflow architecture eliminates memory bottleneck — data flows through processing stages continuously without returning to external memory. 100% utilization rates with linear performance stacking (up to 4x = 104 TOPS). Supports TensorFlow, PyTorch, ONNX. Widely adopted for drone vision systems, object detection, pose estimation, and facial recognition.",
+    "link": "https://hailo.ai/products/ai-accelerators/",
+    "approx_price": 99,
+    "ai_compute_tops": 26,
+    "power_w": 2.5,
+    "architecture": "Dataflow",
+    "form_factor": "M.2 Key M",
+    "interface": "PCIe Gen-3.0 x4",
+    "supported_frameworks": [
+      "TensorFlow",
+      "PyTorch",
+      "ONNX"
+    ],
+    "stacking": "Up to 4x (104 TOPS)",
+    "passive_cooling": true,
+    "typical_models": [
+      "YOLOv5/v7/v8/v11",
+      "ResNet",
+      "MobileNet",
+      "EfficientNet"
+    ],
+    "country": "Israel",
+    "compliance": {},
+    "tags": [
+      "26_tops",
+      "2.5w",
+      "m2",
+      "dataflow",
+      "object_detection",
+      "yolo",
+      "stackable",
+      "passive_cooling"
+    ],
+    "schema_data": {
+      "weight_g": 8
+    }
+  },
+  {
+    "pid": "AIACCEL-0002",
+    "category": "ai_accelerators",
+    "name": "Hailo-10H — Edge AI Accelerator with GenAI Support",
+    "manufacturer": "Hailo Technologies",
+    "manufacturer_hq": "Tel Aviv, Israel",
+    "description": "Second-generation AI accelerator delivering 40 TOPS with generative AI capabilities — first to run LLMs, VLMs, and other generative models entirely on-device without cloud. M.2 Key M form factor with on-module 4/8GB LPDDR4. Sub-1-second first-token latency, 10+ tokens/sec on 2B parameter models. YOLOv11m on real-time 4K video at 2.5W typical. AEC-Q100 Grade 2 automotive qualified. Supports Raspberry Pi ecosystem.",
+    "link": "https://hailo.ai/products/ai-accelerators/hailo-10h-m-2-ai-acceleration-module/",
+    "approx_price": 149,
+    "ai_compute_tops": 40,
+    "power_w": 2.5,
+    "architecture": "Dataflow (2nd gen)",
+    "form_factor": "M.2 Key M (2242, 2280)",
+    "interface": "PCIe Gen-3.0 x4",
+    "onboard_ram": "4/8 GB LPDDR4/4X",
+    "supported_frameworks": [
+      "TensorFlow",
+      "TensorFlow Lite",
+      "Keras",
+      "PyTorch",
+      "ONNX"
+    ],
+    "genai_capable": true,
+    "llm_performance": "10+ tokens/sec on 2B models",
+    "first_token_latency_ms": "<1000",
+    "automotive_qualified": "AEC-Q100 Grade 2",
+    "host_architectures": [
+      "x86",
+      "ARM"
+    ],
+    "country": "Israel",
+    "compliance": {
+      "aec_q100": true
+    },
+    "tags": [
+      "40_tops",
+      "genai",
+      "llm",
+      "vlm",
+      "4k_realtime",
+      "automotive_qualified",
+      "raspberry_pi",
+      "on_device_ai"
+    ],
+    "schema_data": {
+      "weight_g": 12
+    }
+  },
+  {
+    "pid": "AIACCEL-0003",
+    "category": "ai_accelerators",
+    "name": "Ambarella CV5 — AI Vision SoC for Drones",
+    "manufacturer": "Ambarella",
+    "manufacturer_hq": "Santa Clara, CA, USA",
+    "description": "Edge AI vision SoC delivering 20+ TOPS optimized for computer vision in drones and cameras. Combines CVflow AI accelerator with advanced ISP for simultaneous AI processing and high-quality imaging. Supports 8K video encoding, multi-camera inputs, CNN and transformer networks. Powers next-gen drone autonomy from L1 to L4 levels. Heritage in aerial imaging (DJI and consumer action cameras). Deployed in Antigravity A1 drone.",
+    "link": "https://www.ambarella.com/products/aiot-industrial-robotics/",
+    "approx_price": "Contact vendor (OEM)",
+    "ai_compute_tops": 20,
+    "architecture": "CVflow AI + ISP",
+    "video_capability": "8K encoding",
+    "camera_inputs": "multiple simultaneous",
+    "supported_networks": [
+      "CNN",
+      "transformer"
+    ],
+    "autonomy_levels": "L1-L4",
+    "isp_integrated": true,
+    "form_factor": "SoC (BGA package)",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true
+    },
+    "tags": [
+      "soc",
+      "cvflow",
+      "8k",
+      "isp",
+      "drone_vision",
+      "autonomy",
+      "ambarella",
+      "multi_camera"
+    ],
+    "schema_data": {}
+  },
+  {
+    "pid": "AIACCEL-0004",
+    "category": "ai_accelerators",
+    "name": "Ambarella CV7 — Multi-Stream AI Vision SoC",
+    "manufacturer": "Ambarella",
+    "manufacturer_hq": "Santa Clara, CA, USA",
+    "description": "Latest generation edge AI vision SoC for processing multiple high-quality camera streams simultaneously via CNNs or transformer networks. Features latest-gen CVflow AI accelerator, in-house ISP with AI-driven features, quad ARM Cortex-A73 cores, hardware video codecs, and 64-bit DRAM interface. Targets 8K consumer products, multi-camera security, robotics, drones, and automotive ADAS.",
+    "link": "https://www.ambarella.com/",
+    "approx_price": "Contact vendor (OEM)",
+    "ai_compute_tops": 30,
+    "architecture": "CVflow AI (3rd gen) + ISP",
+    "cpu_cores": "Quad ARM Cortex-A73",
+    "video_capability": "8K multi-stream",
+    "supported_networks": [
+      "CNN",
+      "transformer"
+    ],
+    "dram": "64-bit interface",
+    "isp_integrated": true,
+    "form_factor": "SoC (BGA package)",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true
+    },
+    "tags": [
+      "cv7",
+      "multi_stream",
+      "8k",
+      "cortex_a73",
+      "transformer",
+      "3rd_gen_cvflow"
+    ],
+    "schema_data": {}
+  },
+  {
+    "pid": "AIACCEL-0005",
+    "category": "ai_accelerators",
+    "name": "Google Coral USB Accelerator — Edge TPU",
+    "manufacturer": "Google",
+    "manufacturer_hq": "Mountain View, CA, USA",
+    "description": "USB-form-factor AI accelerator using Google's Edge TPU providing 4 TOPS for on-device ML inference. Simplest integration path for adding AI capabilities to existing drone companion computers. Supports TensorFlow Lite models compiled via Edge TPU Compiler. Popular for prototyping and lightweight inference tasks like object classification, detection, and tracking on sUAS.",
+    "link": "https://coral.ai/products/accelerator/",
+    "approx_price": 60,
+    "ai_compute_tops": 4,
+    "power_w": 2.5,
+    "architecture": "Edge TPU",
+    "form_factor": "USB dongle",
+    "interface": "USB 3.0",
+    "supported_frameworks": [
+      "TensorFlow Lite"
+    ],
+    "country": "United States",
+    "compliance": {},
+    "tags": [
+      "usb",
+      "edge_tpu",
+      "prototyping",
+      "tensorflow_lite",
+      "low_cost",
+      "plug_and_play"
+    ],
+    "schema_data": {
+      "weight_g": 25
+    }
+  },
+  {
+    "pid": "AIACCEL-0006",
+    "category": "ai_accelerators",
+    "name": "Kneron KL720 — Edge AI SoC",
+    "manufacturer": "Kneron",
+    "manufacturer_hq": "San Diego, CA, USA",
+    "description": "Edge AI processor capable of executing transformer models (GPT-class architectures) in a compact, low-power package. Designed for drones, robotics, and smart cameras. Features hardware NPU with dedicated CNN and RNN/transformer acceleration. Supports multiple AI frameworks. Approximately 1/10th the performance of Hailo-10 but at significantly lower cost and power, suitable for simpler inference tasks.",
+    "link": "https://www.kneron.com/",
+    "approx_price": 30,
+    "ai_compute_tops": 1.5,
+    "power_w": 1,
+    "architecture": "NPU (CNN + transformer)",
+    "form_factor": "SoC module",
+    "transformer_support": true,
+    "country": "United States",
+    "compliance": {},
+    "tags": [
+      "transformer",
+      "low_power",
+      "low_cost",
+      "edge_soc",
+      "cnn",
+      "rnn"
+    ],
+    "schema_data": {
+      "weight_g": 5
+    }
+  },
+  {
+    "pid": "AIACCEL-0007",
+    "category": "ai_accelerators",
+    "name": "DeepX DX-M1 — 25 TOPS Edge AI Accelerator",
+    "manufacturer": "DeepX",
+    "manufacturer_hq": "Seoul, South Korea",
+    "description": "25 TOPS edge AI accelerator in a 5W power envelope designed for drones, robots, and camera systems. Proprietary quantization techniques enable INT8-quantized networks with accuracy comparable to FP32 originals — in some cases actually improving accuracy by reducing overfitting. Sits alongside standalone host CPU as co-processor. Available as module and PCIe card form factors.",
+    "link": "https://www.deepx.ai/",
+    "approx_price": "Contact vendor",
+    "ai_compute_tops": 25,
+    "power_w": 5,
+    "architecture": "NPU with proprietary quantization",
+    "quantization": "INT8 (FP32-comparable accuracy)",
+    "form_factor": "co-processor module / PCIe card",
+    "country": "South Korea",
+    "compliance": {
+      "allied_nation": true
+    },
+    "tags": [
+      "25_tops",
+      "5w",
+      "quantization",
+      "co_processor",
+      "drones",
+      "robots"
+    ],
+    "schema_data": {
+      "weight_g": 30
+    }
+  },
+  {
+    "pid": "AIACCEL-0008",
+    "category": "ai_accelerators",
+    "name": "NVIDIA Jetson Orin Nano — Edge AI Module for Autonomous Drones",
+    "manufacturer": "NVIDIA",
+    "manufacturer_hq": "Santa Clara, CA, USA",
+    "description": "Compact AI compute module delivering up to 40 TOPS with NVIDIA Ampere GPU architecture. Supports CUDA, TensorRT, and the full NVIDIA JetPack SDK including ROS 2. Widely used for drone autonomy, SLAM, VIO, object detection, and path planning. ARK Electronics offers NDAA-compliant 'Just a Jetson' carrier board for defense drone applications. 7-15W configurable power envelope.",
+    "link": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
+    "approx_price": 199,
+    "ai_compute_tops": 40,
+    "power_w": "7-15 (configurable)",
+    "architecture": "NVIDIA Ampere GPU + ARM Cortex-A78AE",
+    "gpu_cores": 1024,
+    "form_factor": "SO-DIMM module",
+    "supported_frameworks": [
+      "CUDA",
+      "TensorRT",
+      "PyTorch",
+      "TensorFlow",
+      "ONNX"
+    ],
+    "ros2_support": true,
+    "slam_capable": true,
+    "ndaa_carrier": "ARK Electronics 'Just a Jetson'",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true
+    },
+    "tags": [
+      "jetson",
+      "cuda",
+      "tensorrt",
+      "ros2",
+      "slam",
+      "vio",
+      "40_tops",
+      "ampere",
+      "ark_electronics"
+    ],
+    "schema_data": {
+      "weight_g": 25
+    }
+  },
+  {
+    "pid": "AIACCEL-0009",
+    "category": "ai_accelerators",
+    "name": "Qualcomm Robotics RB5 — 5G + AI Platform for Drones",
+    "manufacturer": "Qualcomm",
+    "manufacturer_hq": "San Diego, CA, USA",
+    "description": "Integrated 5G connectivity with edge AI processing delivering approximately 15 TOPS through Qualcomm AI Engine. Targets autonomous robots and drones requiring both high-bandwidth connectivity and on-device AI. Wi-Fi 6, Bluetooth 5.1, and 5G mmWave/sub-6. Supports up to 7 concurrent cameras. Heterogeneous compute (CPU + GPU + DSP + NPU). Runs Linux and ROS 2.",
+    "link": "https://www.qualcomm.com/products/technology/robotics",
+    "approx_price": 399,
+    "ai_compute_tops": 15,
+    "power_w": 10,
+    "architecture": "Qualcomm AI Engine (CPU+GPU+DSP+NPU)",
+    "connectivity": [
+      "5G mmWave/sub-6",
+      "Wi-Fi 6",
+      "Bluetooth 5.1"
+    ],
+    "camera_inputs": 7,
+    "form_factor": "SoM (System on Module)",
+    "ros2_support": true,
+    "country": "United States",
+    "compliance": {
+      "ndaa": true
+    },
+    "tags": [
+      "5g",
+      "15_tops",
+      "qualcomm",
+      "ros2",
+      "7_cameras",
+      "heterogeneous_compute"
+    ],
+    "schema_data": {
+      "weight_g": 35
+    }
+  },
+  {
+    "pid": "AIACCEL-0010",
+    "category": "ai_accelerators",
+    "name": "Intel Movidius Myriad X VPU (Neural Compute Stick 2)",
+    "manufacturer": "Intel",
+    "manufacturer_hq": "Santa Clara, CA, USA",
+    "description": "Vision Processing Unit delivering 4 TOPS in a compact USB form factor via Neural Compute Stick 2. Enables adding AI inference to existing systems without hardware modifications. Supported by Intel OpenVINO toolkit for model optimization across TensorFlow, PyTorch, and ONNX. Popular in academic and prototyping drone AI applications. Dedicated neural compute engine for CNN acceleration.",
+    "link": "https://www.intel.com/",
+    "approx_price": 69,
+    "ai_compute_tops": 4,
+    "power_w": 1.5,
+    "architecture": "Movidius Myriad X VPU",
+    "form_factor": "USB stick",
+    "interface": "USB 3.0",
+    "supported_frameworks": [
+      "TensorFlow",
+      "PyTorch",
+      "ONNX",
+      "OpenVINO"
+    ],
+    "country": "United States",
+    "compliance": {
+      "ndaa": true
+    },
+    "tags": [
+      "usb",
+      "vpu",
+      "openvino",
+      "movidius",
+      "4_tops",
+      "prototyping",
+      "academic"
+    ],
+    "schema_data": {
+      "weight_g": 30
+    }
+  },
+  {
+    "pid": "AIACCEL-0011",
+    "category": "ai_accelerators",
+    "name": "Kinara Ara-2 — GenAI Edge Accelerator",
+    "manufacturer": "Kinara",
+    "manufacturer_hq": "San Jose, CA, USA",
+    "description": "Second-generation edge AI accelerator targeting edge servers, laptops, and drones. Accelerates models up to 30 billion INT4 parameters in a 6W power envelope. Demonstrated Llama2-7B generating tens of tokens/sec and StableDiffusion 1.4 at 20 iterations in 10 seconds. VLIW architecture tuned for AI workloads with 5-8x performance over first gen. Optimized for both generative AI and vision workloads.",
+    "link": "https://www.kinara.ai/",
+    "approx_price": "Contact vendor",
+    "ai_compute_tops": 50,
+    "power_w": 6,
+    "architecture": "VLIW + dedicated AI cores",
+    "max_model_params": "30B INT4",
+    "genai_capable": true,
+    "llm_performance": "Tens of tokens/sec on Llama2-7B",
+    "form_factor": "chip / module",
+    "country": "United States",
+    "compliance": {
+      "ndaa": true
+    },
+    "tags": [
+      "genai",
+      "30b_params",
+      "llama2",
+      "stable_diffusion",
+      "vliw",
+      "6w",
+      "2nd_gen"
+    ],
+    "schema_data": {
+      "weight_g": 15
+    }
+  },
+  {
+    "pid": "AIACCEL-0012",
+    "category": "ai_accelerators",
+    "name": "Axelera AI Metis — 214 TOPS Edge AI Chip",
+    "manufacturer": "Axelera AI",
+    "manufacturer_hq": "Eindhoven, Netherlands",
+    "description": "High-performance edge AI chip delivering 214 TOPS peak (mixed precision/INT8) at 14.7 TOPS/W efficiency. Quad-core digital in-memory compute architecture with RISC-V CPUs managing dataflow. Typical power consumption 10W. Designed for edge servers and high-end embedded systems requiring multi-stream video analytics, autonomous driving, and industrial automation.",
+    "link": "https://www.axelera.ai/",
+    "approx_price": "Contact vendor",
+    "ai_compute_tops": 214,
+    "tops_per_watt": 14.7,
+    "power_w": 10,
+    "architecture": "Digital in-memory compute + RISC-V",
+    "form_factor": "chip / PCIe card",
+    "country": "Netherlands",
+    "compliance": {
+      "allied_nation": true
+    },
+    "tags": [
+      "214_tops",
+      "in_memory_compute",
+      "risc_v",
+      "14.7_tops_w",
+      "high_performance"
+    ],
+    "schema_data": {}
+  },
+  {
+    "pid": "AIACCEL-0013",
+    "category": "ai_accelerators",
+    "name": "Syntiant NDP250 — Ultra-Low Power Edge AI",
+    "manufacturer": "Syntiant",
+    "manufacturer_hq": "Irvine, CA, USA",
+    "description": "Ultra-low power edge AI accelerator operating at microwatts for always-on applications and tens of milliwatts for full vision processing. 5x tensor throughput vs previous generation. Designed for always-on computer vision, speech recognition, and sensor data processing on battery-powered drones and wearables. Enables persistent AI monitoring without draining flight batteries.",
+    "link": "https://www.syntiant.com/",
+    "approx_price": 15,
+    "ai_compute_tops": 0.5,
+    "power_w": 0.01,
+    "architecture": "Neural Decision Processor",
+    "form_factor": "ultra-compact chip",
+    "always_on": true,
+    "use_cases": [
+      "wake word",
+      "always-on vision",
+      "sensor fusion",
+      "anomaly detection"
+    ],
+    "country": "United States",
+    "compliance": {
+      "ndaa": true
+    },
+    "tags": [
+      "microwatt",
+      "always_on",
+      "ultra_low_power",
+      "wake_word",
+      "battery_friendly"
+    ],
+    "schema_data": {
+      "weight_g": 1
+    }
+  }
+]
