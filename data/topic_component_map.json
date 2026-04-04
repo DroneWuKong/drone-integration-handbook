@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "description": "Maps intel topic tags to capabilities and downstream component categories",
+    "version": "1.0",
+    "updated": "2026-04-04"
+  },
+  "topics": {
+    "acquisition": {
+      "label": "Acquisition & Procurement",
+      "description": "Government and enterprise drone procurement programs driving component demand",
+      "capabilities": ["platform_assembly", "fleet_deployment", "supply_chain"],
+      "components": ["frames", "flight_controllers", "motors", "escs", "batteries", "propellers", "receivers", "gps_modules"],
+      "demand_signal": "Each platform acquired pulls full BOM — frames, FCs, motors, ESCs, batteries, props, receivers, GPS. Bulk procurement amplifies demand across all categories.",
+      "icon": "🏛️"
+    },
+    "counter-UAS": {
+      "label": "Counter-UAS / C-UAS",
+      "description": "Detection, tracking, and defeat of adversary drones",
+      "capabilities": ["rf_detection", "radar_tracking", "electronic_defeat", "kinetic_defeat"],
+      "components": ["counter_uas", "sensors", "antennas", "mesh_radios", "companion_computers"],
+      "demand_signal": "C-UAS systems require RF sensors, directional antennas, mesh networking for distributed detection, and compute for AI-based classification.",
+      "icon": "🛡️"
+    },
+    "autonomy": {
+      "label": "Autonomous Flight",
+      "description": "GPS-denied navigation, obstacle avoidance, mission planning without human intervention",
+      "capabilities": ["path_planning", "obstacle_avoidance", "gps_denied_nav", "visual_inertial_odometry"],
+      "components": ["companion_computers", "swarm_software", "lidar", "sensors", "gps_modules", "flight_controllers"],
+      "demand_signal": "Autonomy stacks need high-compute SBCs (Jetson, QRB5165), LiDAR/depth sensors, IMUs, and advanced flight controllers with SLAM capability.",
+      "icon": "🤖"
+    },
+    "AI": {
+      "label": "AI / Machine Learning",
+      "description": "On-board inference for target recognition, terrain classification, decision-making",
+      "capabilities": ["edge_inference", "target_recognition", "terrain_classification", "anomaly_detection"],
+      "components": ["companion_computers", "sensors", "fpv_cameras", "thermal_cameras"],
+      "demand_signal": "AI workloads drive demand for GPU-equipped SBCs (Jetson Orin, Hailo-8), high-res cameras for training data, and thermal sensors for multi-modal fusion.",
+      "icon": "🧠"
+    },
+    "C2": {
+      "label": "Command & Control / Datalinks",
+      "description": "Ground control stations, telemetry links, beyond-line-of-sight comms",
+      "capabilities": ["telemetry", "bvlos_comms", "mesh_networking", "encrypted_links"],
+      "components": ["control_link_tx", "mesh_radios", "antennas", "receivers", "video_transmitters"],
+      "demand_signal": "C2 links need TX/RX pairs, directional antennas, mesh radios for relay, and encrypted video transmitters. BVLOS drives higher-power radio demand.",
+      "icon": "📡"
+    },
+    "electronic warfare": {
+      "label": "Electronic Warfare / EW",
+      "description": "Jamming, spoofing, signal intelligence, spectrum denial",
+      "capabilities": ["rf_jamming", "gps_spoofing", "sigint", "spectrum_management"],
+      "components": ["video_scramblers", "antennas", "control_link_tx", "sensors", "companion_computers"],
+      "demand_signal": "EW systems share RF components with C2 but require wideband antennas, SDR-capable radios, and compute for real-time signal processing.",
+      "icon": "⚡"
+    },
+    "one-way attack": {
+      "label": "One-Way Attack / OWA",
+      "description": "Loitering munitions and kamikaze FPV drones designed for single-use strikes",
+      "capabilities": ["precision_strike", "terminal_guidance", "warhead_integration"],
+      "components": ["frames", "motors", "escs", "batteries", "flight_controllers", "fpv_cameras", "receivers", "propellers"],
+      "demand_signal": "OWA drones are CONSUMED on use — every strike = full BOM replacement. Ukraine burns thousands/month. Drives highest volume demand of any category.",
+      "icon": "💥"
+    },
+    "swarming": {
+      "label": "Swarm Operations",
+      "description": "Coordinated multi-drone operations with distributed decision-making",
+      "capabilities": ["swarm_coordination", "mesh_comms", "distributed_compute", "formation_control"],
+      "components": ["swarm_software", "mesh_radios", "companion_computers", "flight_controllers", "gps_modules"],
+      "demand_signal": "Swarms multiply per-unit demand by swarm size (10-1000x). Each node needs mesh radio, compute, GPS. Software is the differentiator (Shield AI Hivemind, Anduril Lattice).",
+      "icon": "🐝"
+    },
+    "ISR": {
+      "label": "Intelligence, Surveillance, Reconnaissance",
+      "description": "Persistent observation, mapping, target acquisition",
+      "capabilities": ["persistent_surveillance", "geoint", "target_acquisition", "battle_damage_assessment"],
+      "components": ["fpv_cameras", "thermal_cameras", "lidar", "sensors", "gps_modules", "video_transmitters", "companion_computers"],
+      "demand_signal": "ISR platforms carry the most expensive payloads — thermal cameras ($3K+), LiDAR ($1K+), multi-spectral sensors. Long endurance drives battery demand.",
+      "icon": "👁️"
+    },
+    "FPV": {
+      "label": "First Person View",
+      "description": "Pilot-in-the-loop drone operations via video feed, primarily for strike and racing",
+      "capabilities": ["manual_piloting", "low_latency_video", "precision_strike"],
+      "components": ["fpv_cameras", "video_transmitters", "receivers", "frames", "motors", "escs", "flight_controllers", "propellers", "batteries", "stacks", "antennas"],
+      "demand_signal": "FPV is the FULL BOM — every component category is pulled. Ukraine FPV consumption is the single largest volume driver in the global drone component market.",
+      "icon": "🎮"
+    },
+    "attritable": {
+      "label": "Attritable / Expendable",
+      "description": "Low-cost platforms designed to be lost without strategic impact",
+      "capabilities": ["mass_production", "rapid_deployment", "cost_optimization"],
+      "components": ["frames", "motors", "escs", "flight_controllers", "batteries", "propellers", "receivers"],
+      "demand_signal": "Attritable design philosophy drives demand toward cheapest-available components. STM32 over Jetson, ELRS over Silvus, 3D-printed frames over carbon fiber.",
+      "icon": "♻️"
+    },
+    "NDAA": {
+      "label": "NDAA Compliance",
+      "description": "National Defense Authorization Act supply chain requirements — no Chinese components",
+      "capabilities": ["supply_chain_compliance", "domestic_manufacturing", "trusted_sourcing"],
+      "components": ["flight_controllers", "companion_computers", "gps_modules", "escs", "motors", "sensors"],
+      "demand_signal": "NDAA compliance creates premium demand for US/allied-manufactured alternatives to Chinese components. Drives 2-5x price premium across all categories.",
+      "icon": "🇺🇸"
+    },
+    "doctrine": {
+      "label": "Military Doctrine",
+      "description": "Evolving military concepts of operation for drone employment",
+      "capabilities": ["tactical_integration", "combined_arms", "mission_planning"],
+      "components": ["swarm_software", "mesh_radios", "companion_computers"],
+      "demand_signal": "Doctrine changes (e.g., Army SRR program, CCA concept) drive long-term procurement patterns. Component demand follows doctrinal adoption 12-24 months later.",
+      "icon": "📋"
+    },
+    "loitering munition": {
+      "label": "Loitering Munitions",
+      "description": "Extended-endurance strike platforms that orbit before engaging",
+      "capabilities": ["persistent_strike", "target_selection", "long_endurance"],
+      "components": ["frames", "motors", "batteries", "flight_controllers", "thermal_cameras", "companion_computers", "gps_modules", "propulsion"],
+      "demand_signal": "Loitering munitions need longer endurance than FPV OWA — drives demand for efficient motors, high-capacity batteries, and thermal sensors for target ID.",
+      "icon": "🎯"
+    },
+    "GPS-denied": {
+      "label": "GPS-Denied Navigation",
+      "description": "Navigation without satellite positioning — visual, inertial, terrain-matching",
+      "capabilities": ["visual_odometry", "inertial_navigation", "terrain_matching", "magnetic_nav"],
+      "components": ["companion_computers", "lidar", "sensors", "flight_controllers"],
+      "demand_signal": "GPS-denied ops are the #1 capability gap. Drives demand for high-compute SBCs, optical flow sensors, LiDAR, and advanced IMUs. Every serious military platform needs this.",
+      "icon": "🧭"
+    },
+    "Blue UAS": {
+      "label": "Blue UAS Cleared List",
+      "description": "DoD-approved platforms meeting cybersecurity, supply chain, and data security standards",
+      "capabilities": ["trusted_platform", "secure_data", "compliant_supply_chain"],
+      "components": ["flight_controllers", "companion_computers", "gps_modules", "mesh_radios", "thermal_cameras", "sensors"],
+      "demand_signal": "Blue UAS approval creates a procurement fast-track. Components in Blue UAS platforms see accelerated demand from government buyers. 49 platforms currently listed.",
+      "icon": "🛡️"
+    },
+    "VTOL": {
+      "label": "Vertical Takeoff & Landing",
+      "description": "Fixed-wing aircraft with vertical takeoff capability — hybrid designs",
+      "capabilities": ["runway_independent", "long_endurance", "hybrid_propulsion"],
+      "components": ["frames", "motors", "propulsion", "escs", "batteries", "flight_controllers", "propellers"],
+      "demand_signal": "VTOL platforms need both multirotor AND fixed-wing components — dual motor sets, transition mechanisms, larger batteries for hover phase.",
+      "icon": "🔄"
+    },
+    "mesh network": {
+      "label": "Mesh Networking",
+      "description": "Ad-hoc radio networks for multi-drone and drone-to-ground comms",
+      "capabilities": ["manet", "relay", "distributed_comms"],
+      "components": ["mesh_radios", "antennas", "control_link_tx"],
+      "demand_signal": "Mesh radios (Silvus, Doodle Labs, Persistent Systems) are the most supply-constrained component class — 20-22 week lead times, allocated to DoD programs.",
+      "icon": "🕸️"
+    }
+  }
+}
