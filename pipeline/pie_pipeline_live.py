@@ -335,8 +335,8 @@ def load_forge():
         data = load_json(f)
         if isinstance(data, list):
             key = f.stem
-            # Don't overwrite drone_models if we got the full 219 from forge_database.json
-            if key == "drone_models" and "drone_models" in db and len(db["drone_models"]) > len(data):
+            # Don't overwrite drone_models if we got them from forge_database.json
+            if key == "drone_models" and "drone_models" in db and len(db["drone_models"]) >= len(data):
                 print(f"  parts-db/{f.name}: {len(data)} entries (skipped — master has {len(db['drone_models'])})")
                 continue
             db[key] = data
