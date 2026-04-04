@@ -349,7 +349,93 @@
       "https://robotics.press/companies/anzu-robotics/",
       "https://www.anzurobotics.com/faq/",
       "https://www.aloft.ai/blog/ensuring-the-security-of-the-anzu-raptor-a-successful-penetration-test-by-white-knight-labs/"
-    ]
+    ],
+    "source_urls": [
+      {
+        "url": "https://www.texasattorneygeneral.gov/news/releases/attorney-general-paxton-files-second-major-lawsuit-against-ccp-aligned-company-week-new-action",
+        "title": "TX AG Official Press Release",
+        "type": "government"
+      },
+      {
+        "url": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Petition_10.pdf",
+        "title": "Full TX AG Petition (PDF)",
+        "type": "legal_filing"
+      },
+      {
+        "url": "https://dronedj.com/2026/02/19/anzu-raptor-drone-texas-lawsuit/",
+        "title": "DroneDJ: TX Lawsuit Analysis",
+        "type": "news"
+      },
+      {
+        "url": "https://dronedj.com/2026/02/17/anzu-raptor-drone-production-end/",
+        "title": "DroneDJ: Raptor Discontinuation",
+        "type": "news"
+      },
+      {
+        "url": "https://dronelife.com/2026/02/19/texas-ag-sues-anzu-robotics-dji-clone-lawsuit/",
+        "title": "DroneLife: TX AG Lawsuit Deep Dive",
+        "type": "news"
+      },
+      {
+        "url": "https://robotics.press/companies/anzu-robotics/",
+        "title": "Robotics.press: Anzu Risk Assessment",
+        "type": "analysis"
+      },
+      {
+        "url": "https://www.texaspolicyresearch.com/texas-files-four-major-lawsuits-against-ccp-linked-companies/",
+        "title": "TX Policy Research: 4 CCP Lawsuits",
+        "type": "analysis"
+      },
+      {
+        "url": "https://cyberinsider.com/texas-ag-sues-tp-link-and-anzu-robotics-citing-china-linked-security-risks/",
+        "title": "CyberInsider: TX AG Dual Lawsuits",
+        "type": "news"
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/1529113/000121390025108855/ea0264722-8k_xtiaero.htm",
+        "title": "SEC 8-K: XTI Acquisition of Anzu",
+        "type": "sec_filing"
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/0001529113/000121390026004167/ea0272359-8k_xtiaero.htm",
+        "title": "SEC 8-K: XTI Updated Acquisition Financials",
+        "type": "sec_filing"
+      },
+      {
+        "url": "https://www.sec.gov/Archives/edgar/data/0001529113/000121390026004732/ea0270447-s3_xtiaero.htm",
+        "title": "SEC S-3: XTI Shelf Registration",
+        "type": "sec_filing"
+      },
+      {
+        "url": "https://www.stocktitan.net/sec-filings/XTIA/8-k-xti-aerospace-inc-reports-material-event-d744292c6c66.html",
+        "title": "XTI $20M JPMorgan ABL Facility",
+        "type": "sec_filing"
+      },
+      {
+        "url": "https://github.com/KonradIT/dji-front-companies",
+        "title": "Konrad Iturbe: DJI Front Companies Tracker",
+        "type": "osint"
+      },
+      {
+        "url": "https://gov.fccid.io/2BBYS-RAPTOR",
+        "title": "FCC Filing: Anzu Raptor",
+        "type": "fcc_filing"
+      },
+      {
+        "url": "https://gov.fccid.io/2BBYS-RRC01",
+        "title": "FCC Filing: Anzu RC Controller",
+        "type": "fcc_filing"
+      }
+    ],
+    "latest_developments": {
+      "last_updated": "2026-04-04",
+      "tx_lawsuit_status": "Filed Feb 18, 2026 in Collin County District Court. 7 counts DTPA. No public response from Anzu as of April 2026. DroneLife attempted contact \u2014 no response. Lawsuit frozen 45+ days.",
+      "xti_acquisition_update": "XTI acquired Anzu + Drone Nerds Nov 10, 2025 for ~$41.6M total ($20M cash, $11.9M notes, $9.7M Class B units). XTI secured $20M JPMorgan ABL facility Feb 11, 2026 with Anzu as co-borrower. XTI delayed 10-K filing (April 2026) due to complex purchase price allocations. Sold legacy Inpixon RTLS business Feb 2026.",
+      "fcc_impact": "All foreign-made drones added to FCC Covered List Dec 22, 2025. Anzu Raptor already discontinued Feb 10, 2026. FCC ban renders shell company strategy moot.",
+      "product_status": "Zero products for sale. No successor timeline disclosed. No proprietary technology.",
+      "competitive_position": "Skydio >$700M raised. Well-capitalized competitors have sovereign supply chains. Anzu has zero-product gap with customer churn accelerating.",
+      "randall_warnas_status": "No public statements since lawsuit filing. Previously CEO/sole employee."
+    }
   },
   {
     "id": "cogito-specta",
@@ -429,7 +515,41 @@
       "https://dronexl.co/2024/03/26/spectra-air-mirror-image-dji-air-3/",
       "https://dronedj.com/2024/06/20/dji-ban-loophole-meet-the-specta-and-specta-mini/",
       "https://fpvwiki.co.uk/dji-white-label-clone-drones"
-    ]
+    ],
+    "source_urls": [
+      {
+        "url": "https://gov.fccid.io/2BCHV-TQFDUB2",
+        "title": "FCC Filing: SPECTA Air",
+        "type": "fcc_filing"
+      },
+      {
+        "url": "https://gov.fccid.io/2BCHV-GL3323",
+        "title": "FCC Filing: Cogito Tech GL3323",
+        "type": "fcc_filing"
+      },
+      {
+        "url": "https://github.com/KonradIT/dji-front-companies",
+        "title": "Konrad Iturbe: DJI Front Companies Tracker",
+        "type": "osint"
+      },
+      {
+        "url": "https://dronexl.co/2025/10/29/drone-detective-bot-tracks-dji-linked-companies/",
+        "title": "DroneXL: Drone Detective Bot Frequency Analysis",
+        "type": "analysis"
+      },
+      {
+        "url": "https://dronexl.co/2026/01/09/dji-drone-shell-company-gambit-backfired/",
+        "title": "DroneXL: Shell Company Gambit Backfired",
+        "type": "analysis"
+      }
+    ],
+    "latest_developments": {
+      "last_updated": "2026-04-04",
+      "fcc_status": "FCC filings under COGITO TECH COMPANY LIMITED (Hong Kong). SPECTA Air and GL3323 both filed. OcuSync frequency fingerprint matches DJI Air 3.",
+      "fcc_covered_list_impact": "All foreign-made drones on Covered List as of Dec 22, 2025. Cogito products cannot receive new FCC authorizations.",
+      "shell_company_detection": "Identified by Konrad Iturbe's automated OcuSync detection system. Part of 12+ company network using DJI proprietary communication protocols.",
+      "product_status": "SPECTA Air still listed on various retail platforms. Identical PCBs to DJI Air 3 confirmed by teardown analysis."
+    }
   },
   {
     "id": "skyrover-knowact",
@@ -504,7 +624,67 @@
       "https://www.techspot.com/news/108850-skyrover-x1-may-dji-drone-disguise-amid-us.html",
       "https://dronexl.co/2025/07/22/skyrover-x1-drone-links-to-dji-infrastructure/",
       "https://fpvwiki.co.uk/dji-white-label-clone-drones"
-    ]
+    ],
+    "source_urls": [
+      {
+        "url": "https://dronelife.com/2025/12/29/fcc-foreign-drone-rule-market-impact/",
+        "title": "DroneLife: SkyRover X1 FCC Filing Analysis",
+        "type": "analysis"
+      },
+      {
+        "url": "https://gov.fccid.io/2BMUV-ARDCF25",
+        "title": "FCC Filing: SkyRover X1 (Knowact)",
+        "type": "fcc_filing"
+      },
+      {
+        "url": "https://gov.fccid.io/2BMUV-AUDAFV25",
+        "title": "FCC Filing: SkyRover X1 (Knowact)",
+        "type": "fcc_filing"
+      },
+      {
+        "url": "https://gov.fccid.io/2BLZI-YKBP22411",
+        "title": "FCC Filing: SkyRover X1 RC (Skyhigh Tech)",
+        "type": "fcc_filing"
+      },
+      {
+        "url": "https://github.com/KonradIT/dji-front-companies",
+        "title": "Konrad Iturbe: DJI Front Companies Tracker",
+        "type": "osint"
+      },
+      {
+        "url": "https://dronexl.co/2025/10/29/drone-detective-bot-tracks-dji-linked-companies/",
+        "title": "DroneXL: OcuSync Frequency Fingerprinting",
+        "type": "osint"
+      },
+      {
+        "url": "https://www.digitalcameraworld.com/drones/the-foreign-made-drone-ban-is-heartbreaking-as-an-american-drone-pilot-but-this-chinese-brand-is-exploring-us-based-manufacturing",
+        "title": "DCW: SkyRover US Manufacturing Plans",
+        "type": "news"
+      },
+      {
+        "url": "https://www.tomshardware.com/tech-industry/suspicious-dji-clones-appear-on-the-market-after-the-fcc-banned-foreign-made-drones-xtra-and-skyrover-drones-look-awfully-familiar",
+        "title": "Tom's Hardware: Suspicious DJI Clones",
+        "type": "news"
+      },
+      {
+        "url": "https://dronexl.co/2026/01/06/youtuber-jeven-dovey-fcc-drone-ban/",
+        "title": "DroneXL: Shell Companies All Banned",
+        "type": "analysis"
+      },
+      {
+        "url": "https://dronexl.co/2026/01/09/dji-drone-shell-company-gambit-backfired/",
+        "title": "DroneXL: DJI Shell Company Gambit Analysis",
+        "type": "analysis"
+      }
+    ],
+    "latest_developments": {
+      "last_updated": "2026-04-04",
+      "fcc_status": "FCC filings list SZ Knowact Robot Technology Co., Ltd (Shenzhen) as company of record. SkyRover X1 RC filed under Skyhigh Tech LLC. All subject to FCC Covered List.",
+      "us_manufacturing": "SkyRover announced 5-year plan to 'explore US-based manufacturing' (March 2026). Plans vague \u2014 'explore' not 'commit'.",
+      "shell_company_network": "Konrad Iturbe's automated OcuSync frequency detection bot identified 12+ companies selling DJI-based drones. WaveGo Tech FCC filing included Knowact documentation. DJI logos still visible in Skyhigh Tech FCC antenna diagrams.",
+      "retail_status": "SkyRover drones still available on Amazon and at retailers. Spring 2026 sales: S1 bundle $359, X1 $599.",
+      "dji_shell_gambit_impact": "DroneXL analysis: shell company strategy 'backfired spectacularly' \u2014 provoked FCC to ban ALL foreign drones, not just DJI. 'The response was predictable to anyone who understands how Washington actually works.'"
+    }
   },
   {
     "id": "autel-robotics",
@@ -619,6 +799,41 @@
       "https://en.wikipedia.org/wiki/Autel_Robotics",
       "https://www.jamescmulvenon.com/wp-content/uploads/2023/10/Autel-Robotics.pdf",
       "https://abjacademy.global/news/how-pentagon-blacklist-affects-autel-drone-users/"
-    ]
+    ],
+    "source_urls": [
+      {
+        "url": "https://www.wiley.law/alert-In-Unexpected-First-of-Its-Kind-Action-FCC-Adds-All-Foreign-Produced-Uncrewed-Aircraft-Systems-and-UAS-Critical-Components-to-Covered-List",
+        "title": "Wiley Law: FCC Covered List Analysis (DJI+Autel)",
+        "type": "legal_analysis"
+      },
+      {
+        "url": "https://www.wiley.law/alert-FCC-Drone-Ban-Update-Roundup-First-Conditional-Approvals-a-Limited-Waiver-Quiet-Revocations-and-First-Challenges-to-the-Ban",
+        "title": "Wiley Law: FCC Revokes DJI/Autel Authorizations",
+        "type": "legal_analysis"
+      },
+      {
+        "url": "https://www.pillsburylaw.com/en/news-and-insights/fcc-categorical-prohibition-foreign-produced-uas-critical-components.html",
+        "title": "Pillsbury: FCC Section 1709 Analysis",
+        "type": "legal_analysis"
+      },
+      {
+        "url": "https://www.akingump.com/en/insights/alerts/fcc-adds-all-foreign-made-uas-and-uas-critical-components-to-covered-list",
+        "title": "Akin Gump: FCC Covered List Legal Brief",
+        "type": "legal_analysis"
+      },
+      {
+        "url": "https://www.auvsi.org/fcc-covered-list-faqs-for-industry-and-international-partners/",
+        "title": "AUVSI: FCC Covered List FAQs",
+        "type": "industry"
+      }
+    ],
+    "latest_developments": {
+      "last_updated": "2026-04-04",
+      "fcc_covered_list": "Named entity in FY2025 NDAA Section 1709 alongside DJI. Unlike generic foreign drone ban, Autel cannot bypass via US manufacturing or licensing \u2014 the ban follows the entity.",
+      "authorization_revocations": "FCC quietly revoked certain DJI/Autel authorizations in Jan 2026 that were issued shortly before Dec 22, 2025 Covered List update. No public notice of which devices.",
+      "legal_challenge": "DJI filed Ninth Circuit appeal (Case 26-1029). FCC moved to dismiss on ripeness grounds. Autel legal posture unclear but faces same Section 1709 restrictions.",
+      "fcc_conditional_approvals": "First 4 non-Chinese drones removed from Covered List March 18, 2026 (SiFly, Mobilicom, ScoutDI, Verge). No Chinese-manufactured system has been cleared. DoW 45-day review took 70 days.",
+      "market_impact": "DJI+Autel commanded 70%+ of US market. 80%+ of 1,800+ law enforcement agencies used DJI. Replacement costs 2-10x higher."
+    }
   }
 ]
