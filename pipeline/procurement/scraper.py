@@ -113,48 +113,56 @@ class USASpendingScraper:
             end_date = datetime.now().strftime("%Y-%m-%d")
 
         url = f"{self.BASE_URL}/search/spending_by_award/"
-        payload = {
-            "filters": {
-                "keywords": [keyword],
-                "time_period": [
-                    {"start_date": start_date, "end_date": end_date}
-                ],
-                "award_type_codes": [
-                    "A", "B", "C", "D",   # Contracts
-                    "02", "03", "04", "05", # Grants
-                ]
-            },
-            "fields": [
-                "Award ID",
-                "Recipient Name",
-                "Award Amount",
-                "Description",
-                "Start Date",
-                "End Date",
-                "Awarding Agency",
-                "Awarding Sub Agency",
-                "Award Type",
-                "recipient_id",
-                "internal_id",
-                "generated_internal_id",
-            ],
-            "page": 1,
-            "limit": limit,
-            "sort": "Award Amount",
-            "order": "desc",
-            "subawards": False,
-        }
 
-        try:
-            resp = requests.post(url, json=payload, timeout=30)
-            resp.raise_for_status()
-            data = resp.json()
-            results = data.get("results", [])
-            print(f"    [{keyword[:30]:30s}] → {len(results)} awards (of {data.get('page_metadata', {}).get('total', '?')} total)")
-            return results
-        except requests.exceptions.RequestException as e:
-            print(f"    [{keyword[:30]:30s}] → ERROR: {e}")
-            return []
+        # USAspending v2: cannot mix contract codes (A-D) and grant codes (02-05) in one query.
+        # Run contracts and grants separately, then merge.
+        all_results = []
+        for award_types, label in [
+            (["A", "B", "C", "D"], "contracts"),
+            (["02", "03", "04", "05"], "grants"),
+        ]:
+            payload = {
+                "filters": {
+                    "keywords": [keyword],
+                    "time_period": [
+                        {"start_date": start_date, "end_date": end_date}
+                    ],
+                    "award_type_codes": award_types,
+                },
+                "fields": [
+                    "Award ID",
+                    "Recipient Name",
+                    "Award Amount",
+                    "Description",
+                    "Start Date",
+                    "End Date",
+                    "Awarding Agency",
+                    "Awarding Sub Agency",
+                    "Award Type",
+                ],
+                "page": 1,
+                "limit": limit,
+                "sort": "Award Amount",
+                "order": "desc",
+                "subawards": False,
+            }
+
+            try:
+                resp = requests.post(url, json=payload, timeout=30)
+                if resp.status_code == 400:
+                    # Log the actual error body so we can diagnose
+                    print(f"    [{keyword[:30]:30s}/{label}] → 400: {resp.text[:200]}")
+                    continue
+                resp.raise_for_status()
+                data = resp.json()
+                results = data.get("results", [])
+                total = data.get("page_metadata", {}).get("total", "?")
+                print(f"    [{keyword[:30]:30s}/{label}] → {len(results)} awards (of {total} total)")
+                all_results.extend(results)
+            except requests.exceptions.RequestException as e:
+                print(f"    [{keyword[:30]:30s}/{label}] → ERROR: {e}")
+
+        return all_results
 
     def search_all_keywords(self, start_date: str = "2023-01-01", limit_per: int = 25) -> list:
         """Search all UAS-related keywords and deduplicate."""
