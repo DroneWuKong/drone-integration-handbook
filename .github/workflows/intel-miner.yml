@@ -1,0 +1,117 @@
+name: Intel News Miner
+
+on:
+  schedule:
+    - cron: '0 14 * * *'   # Daily at 14:00 UTC — runs BEFORE PIE pipeline at 14:30
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  mine-intel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout handbook repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Clone Forge repo (read intel_articles.json)
+        env:
+          FORGE_PAT: ${{ secrets.FORGE_PAT }}
+        run: |
+          if [ -z "$FORGE_PAT" ]; then
+            echo "⚠ FORGE_PAT not set — running without existing articles"
+            exit 0
+          fi
+          git clone --depth 1 \
+            "https://x-access-token:${FORGE_PAT}@github.com/DroneWuKong/droneclear_Forge.git" \
+            /tmp/forge
+          echo "✓ Forge repo cloned"
+
+      - name: Run Intel Miner
+        env:
+          FORGE_INTEL_PATH: /tmp/forge/DroneClear Components Visualizer/intel_articles.json
+        run: |
+          python3 pipeline/intel_miner.py
+
+      - name: Check output
+        run: |
+          if [ ! -f data/intel_articles_new.json ]; then
+            echo "No output file — miner may have had no new articles"
+            exit 0
+          fi
+          NEW_COUNT=$(python3 -c "
+          import json
+          d = json.load(open('data/intel_articles_new.json'))
+          if isinstance(d, list):
+              print(len(d))
+          else:
+              print(d.get('new_count', 0))
+          ")
+          echo "NEW_COUNT=$NEW_COUNT" >> $GITHUB_ENV
+          echo "  Output: $NEW_COUNT"
+
+      - name: Push updated intel_articles.json to Forge
+        env:
+          FORGE_PAT: ${{ secrets.FORGE_PAT }}
+        run: |
+          if [ -z "$FORGE_PAT" ]; then
+            echo "⚠ FORGE_PAT not set — skipping Forge push"
+            exit 0
+          fi
+
+          # Check if output is a real articles array (not a no-new-articles marker)
+          IS_LIST=$(python3 -c "
+          import json
+          d = json.load(open('data/intel_articles_new.json'))
+          print('yes' if isinstance(d, list) else 'no')
+          ")
+
+          if [ "$IS_LIST" != "yes" ]; then
+            echo "No new articles — skipping push"
+            exit 0
+          fi
+
+          COUNT=$(python3 -c "import json; print(len(json.load(open('data/intel_articles_new.json'))))")
+          echo "  Pushing $COUNT articles to Forge..."
+
+          cd /tmp/forge
+          git config user.name "Intel Miner Bot"
+          git config user.email "intel-bot@users.noreply.github.com"
+
+          cp /home/runner/work/drone-integration-handbook/drone-integration-handbook/data/intel_articles_new.json \
+             "DroneClear Components Visualizer/intel_articles.json"
+
+          git add "DroneClear Components Visualizer/intel_articles.json"
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "📰 Intel: ${COUNT} articles | $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin master
+          git push "https://x-access-token:${FORGE_PAT}@github.com/DroneWuKong/droneclear_Forge.git" master
+          echo "✓ Forge updated — Netlify will redeploy"
+
+      - name: Summary
+        run: |
+          echo "## Intel Miner Complete" >> $GITHUB_STEP_SUMMARY
+          echo "- Run: $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          if [ -f data/intel_articles_new.json ]; then
+            COUNT=$(python3 -c "
+          import json
+          d = json.load(open('data/intel_articles_new.json'))
+          print(len(d) if isinstance(d, list) else 0)
+          ")
+            echo "- Articles in output: $COUNT" >> $GITHUB_STEP_SUMMARY
+          fi
