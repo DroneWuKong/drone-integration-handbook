@@ -61,8 +61,21 @@ def load_json(path: Path) -> list | dict:
 # ──────────────────────────────────────────
 
 def load_entities() -> list[dict]:
-    """Load tracked gray zone entities from the registry."""
-    return load_json(GRAYZONE_DIR / "entities.json")
+    """Load tracked gray zone entities from the registry.
+    Handles both flat list format and nested {entities: [...]} format.
+    """
+    data = load_json(GRAYZONE_DIR / "entities.json")
+    if isinstance(data, dict):
+        return data.get("entities", [])
+    return data
+
+
+def load_cross_cutting_intel() -> dict:
+    """Load cross-cutting intelligence (DJI litigation, FCC status, state enforcement)."""
+    data = load_json(GRAYZONE_DIR / "entities.json")
+    if isinstance(data, dict):
+        return data.get("cross_cutting_intel", {})
+    return {}
 
 
 def load_indicators() -> list[dict]:

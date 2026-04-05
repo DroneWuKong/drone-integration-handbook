@@ -16,3 +16,4 @@ node_modules/
 
 # Build output (Netlify builds this)
 site/
+__pycache__/
