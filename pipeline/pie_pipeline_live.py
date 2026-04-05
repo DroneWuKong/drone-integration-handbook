@@ -2164,37 +2164,16 @@ def main():
     sent_flags = analyze_sentiment_signals()
     all_flags.extend(sent_flags)
 
-    print("\nGenerating predictions...")
-    preds = generate_predictions(len(blue), len(ndaa), db)
-
-    # Add new predictions from the expanded analysis
-    preds.append({
-        "timeframe": "Q2-Q3 2026",
-        "event": "C-UAS component demand compounds UAS supply pressure",
-        "probability": 0.68,
-        "impact": "medium",
-        "drivers": ["FEMA $250M C-UAS grant", "FIFA World Cup security", "DroneShield + Epirus scaling"],
-        "model": "cuas_correlation",
-        "last_updated": now,
-    })
-    preds.append({
-        "timeframe": "2026-2028",
-        "event": f"Blue UAS BOM cost index exceeds $5,000 (currently ${sum([599,300,250,189,1800,120,400,280,200,120,40,50]):,})",
-        "probability": 0.73,
-        "impact": "high",
-        "drivers": ["DRAM pricing +22% YoY", "Tariff escalation", "Mesh radio concentration", "NDAA compliance premium"],
-        "model": "bom_cost_trend",
-        "last_updated": now,
-    })
-    preds.append({
-        "timeframe": "2026-2027",
-        "event": "Taiwan tension scenario: TSMC disruption cascades to all Jetson + QRB5165 platforms",
-        "probability": 0.15,
-        "impact": "critical",
-        "drivers": ["TSMC concentration for advanced nodes", "All Blue UAS companion SoCs fab'd in Taiwan", "No alternative foundry at scale"],
-        "model": "geopolitical_risk + supply_chain_mapping",
-        "last_updated": now,
-    })
+    print("\nGenerating predictions (multi-model ensemble)...")
+    try:
+        from prediction_engine import run as _run_predictions
+        preds = _run_predictions(db, all_flags)
+        print(f"  ✓ Ensemble engine: {len(preds)} predictions")
+        for p in preds[:3]:
+            print(f"    [{p['probability']:.2f}] {p['event'][:65]}")
+    except Exception as _e:
+        print(f"  ⚠ Ensemble engine failed ({_e}) — falling back to legacy")
+        preds = generate_predictions(len(blue), len(ndaa), db)
 
     # Sort flags: critical first, then by type
     severity_order = {"critical": 0, "warning": 1, "info": 2, "prediction": 3}

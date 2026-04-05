@@ -1,121 +1,466 @@
 [
   {
-    "timeframe": "Q3 2026",
-    "event": "Jetson Orin NX allocation-only for defense (13 boards in Forge DB depend on Jetson)",
-    "probability": 0.65,
-    "impact": "critical",
-    "drivers": [
-      "15 Blue UAS platforms scaling simultaneously",
-      "13 companion boards use Jetson silicon",
-      "DRAM pricing pressure (AI datacenter competition)",
-      "NVIDIA AI priority over embedded/edge"
-    ],
-    "model": "forge_bom_analysis + supply_extrapolation",
-    "last_updated": "2026-04-05T05:37:11.943808+00:00"
-  },
-  {
-    "timeframe": "Q2-Q3 2026",
-    "event": "STM32H7 becomes allocated for defense FPV production",
-    "probability": 0.72,
-    "impact": "high",
-    "drivers": [
-      "Drone Dominance FPV program scaling (Neros Archer 2,200+/mo)",
-      "322 FCs in Forge DB \u2014 majority STM32",
-      "FPV commercial + defense demand on same MCU supply"
-    ],
-    "model": "forge_bom_analysis",
-    "last_updated": "2026-04-05T05:37:11.943808+00:00"
-  },
-  {
-    "timeframe": "Q3 2026",
-    "event": "Mesh radio supply bottleneck \u2014 only 29 options tracked, limited NDAA-compliant sources",
-    "probability": 0.71,
-    "impact": "high",
-    "drivers": [
-      "Multi-vehicle Blue UAS programs (Lattice Mesh, Replicator)",
-      "Only 29 mesh radios in Forge DB",
-      "Doodle Labs + Silvus dominate Blue UAS mesh \u2014 concentration risk"
-    ],
-    "model": "forge_bom_analysis + concentration_risk",
-    "last_updated": "2026-04-05T05:37:11.943808+00:00"
-  },
-  {
-    "timeframe": "Q4 2026",
-    "event": "RPi gray market premium exceeds 50% in China",
-    "probability": 0.58,
-    "impact": "medium",
-    "drivers": [
-      "DRAM crunch continues through 2027",
-      "Active diversion pipeline (GUR confirmed 40K+ units)",
-      "RPi price hikes cascade (Pi 5 8GB now $95)"
-    ],
-    "model": "price_anomaly + diversion_tracking",
-    "last_updated": "2026-04-05T05:37:11.943808+00:00"
-  },
-  {
+    "id": "pred-a0614adb9b",
     "timeframe": "H2 2026",
-    "event": "FLIR Boson 640 allocation tightens following next Ukraine USAI package",
-    "probability": 0.84,
+    "event": "FLIR Boson 640 tightens \u2014 3 Boson units tracked, AeroV Switchblade ramp drives demand",
+    "probability": 0.8414975450081834,
+    "confidence": 0.8146666666666667,
     "impact": "high",
-    "drivers": [
-      "AeroVironment Switchblade 600 production ramp",
-      "Ukraine USAI packages (6-week lag correlation with Boson lead times)",
-      "Limited 640-resolution thermal alternatives"
+    "model": "ensemble:concentration_risk(0.30) + contract_signal(0.40) + cross_correlation(0.30)",
+    "model_outputs": [
+      {
+        "model": "concentration_risk",
+        "probability": 0.767,
+        "confidence": 1.0,
+        "signal_count": 44,
+        "drivers": [
+          "8/44 thermal_cameras use target vendor(s) (18% concentration)",
+          "91 Blue UAS platforms in Forge DB exposed"
+        ]
+      },
+      {
+        "model": "contract_signal",
+        "probability": 0.81,
+        "confidence": 0.587,
+        "signal_count": 16,
+        "drivers": [
+          "16 contract/procurement flags matched",
+          "0 critical, 13 warning signals"
+        ]
+      },
+      {
+        "model": "cross_correlation",
+        "probability": 0.95,
+        "confidence": 0.857,
+        "signal_count": 49,
+        "drivers": [
+          "24 trigger \u00d7 25 outcome flags (lag ~6w)",
+          "Correlation score: 1.000"
+        ]
+      }
     ],
-    "model": "cross_correlation + contract_signal",
-    "last_updated": "2026-04-05T05:37:11.943808+00:00"
+    "drivers": [
+      "8/44 thermal_cameras use target vendor(s) (18% concentration)",
+      "16 contract/procurement flags matched",
+      "24 trigger \u00d7 25 outcome flags (lag ~6w)",
+      "AeroVironment Switchblade 600 production ramp",
+      "Ukraine USAI packages \u2014 6-week lag correlation with Boson lead times"
+    ],
+    "last_updated": "2026-04-05T05:50:15.737261+00:00"
   },
   {
+    "id": "pred-a34e22bc2e",
+    "timeframe": "Q3 2026",
+    "event": "Jetson Orin NX goes allocation-only for defense (13 boards in Forge DB at risk)",
+    "probability": 0.8151030927835052,
+    "confidence": 0.7759999999999999,
+    "impact": "critical",
+    "model": "ensemble:concentration_risk(0.45) + contract_signal(0.35) + cross_correlation(0.20)",
+    "model_outputs": [
+      {
+        "model": "concentration_risk",
+        "probability": 0.917,
+        "confidence": 1.0,
+        "signal_count": 25,
+        "drivers": [
+          "16/25 companion_computers use target vendor(s) (64% concentration)",
+          "91 Blue UAS platforms in Forge DB exposed"
+        ]
+      },
+      {
+        "model": "contract_signal",
+        "probability": 0.624,
+        "confidence": 0.465,
+        "signal_count": 20,
+        "drivers": [
+          "20 contract/procurement flags matched",
+          "0 critical, 14 warning signals"
+        ]
+      },
+      {
+        "model": "cross_correlation",
+        "probability": 0.8,
+        "confidence": 0.863,
+        "signal_count": 169,
+        "drivers": [
+          "130 trigger \u00d7 39 outcome flags (lag ~8w)",
+          "Correlation score: 1.000"
+        ]
+      }
+    ],
+    "drivers": [
+      "16/25 companion_computers use target vendor(s) (64% concentration)",
+      "20 contract/procurement flags matched",
+      "130 trigger \u00d7 39 outcome flags (lag ~8w)",
+      "91 Blue UAS platforms scaling simultaneously",
+      "13 companion boards depend on Jetson silicon"
+    ],
+    "last_updated": "2026-04-05T05:50:15.737261+00:00"
+  },
+  {
+    "id": "pred-f2c389bd49",
+    "timeframe": "Q3\u2013Q4 2026",
+    "event": "Mesh radio supply bottleneck \u2014 29 options tracked, only 5 NDAA-compliant",
+    "probability": 0.8058534554537885,
+    "confidence": 0.8006666666666667,
+    "impact": "high",
+    "model": "ensemble:concentration_risk(0.35) + contract_signal(0.40) + cross_correlation(0.25)",
+    "model_outputs": [
+      {
+        "model": "concentration_risk",
+        "probability": 0.914,
+        "confidence": 1.0,
+        "signal_count": 29,
+        "drivers": [
+          "17/29 mesh_radios use target vendor(s) (59% concentration)",
+          "91 Blue UAS platforms in Forge DB exposed"
+        ]
+      },
+      {
+        "model": "contract_signal",
+        "probability": 0.61,
+        "confidence": 0.526,
+        "signal_count": 18,
+        "drivers": [
+          "18 contract/procurement flags matched",
+          "0 critical, 9 warning signals"
+        ]
+      },
+      {
+        "model": "cross_correlation",
+        "probability": 0.8,
+        "confidence": 0.876,
+        "signal_count": 55,
+        "drivers": [
+          "21 trigger \u00d7 34 outcome flags (lag ~6w)",
+          "Correlation score: 1.000"
+        ]
+      }
+    ],
+    "drivers": [
+      "17/29 mesh_radios use target vendor(s) (59% concentration)",
+      "18 contract/procurement flags matched",
+      "21 trigger \u00d7 34 outcome flags (lag ~6w)",
+      "Only 5/29 mesh radios are NDAA-tagged in Forge DB",
+      "Doodle Labs + Silvus dominate Blue UAS mesh \u2014 duopoly concentration risk"
+    ],
+    "last_updated": "2026-04-05T05:50:15.737261+00:00"
+  },
+  {
+    "id": "pred-506c001479",
     "timeframe": "2027",
     "event": "QRB5165 successor enters Blue UAS Framework (5 boards currently depend on QRB5165)",
-    "probability": 0.82,
+    "probability": 0.7968333333333333,
+    "confidence": 0.792,
     "impact": "medium",
-    "drivers": [
-      "ModalAI next-gen roadmap",
-      "5 companion boards use QRB5165 in Forge DB",
-      "Edge AI performance requirements increasing"
+    "model": "ensemble:concentration_risk(0.50) + contract_signal(0.50)",
+    "model_outputs": [
+      {
+        "model": "concentration_risk",
+        "probability": 0.809,
+        "confidence": 1.0,
+        "signal_count": 25,
+        "drivers": [
+          "5/25 companion_computers use target vendor(s) (20% concentration)",
+          "91 Blue UAS platforms in Forge DB exposed"
+        ]
+      },
+      {
+        "model": "contract_signal",
+        "probability": 0.776,
+        "confidence": 0.584,
+        "signal_count": 17,
+        "drivers": [
+          "17 contract/procurement flags matched",
+          "0 critical, 12 warning signals"
+        ]
+      }
     ],
-    "model": "product_lifecycle",
-    "last_updated": "2026-04-05T05:37:11.943808+00:00"
+    "drivers": [
+      "5/25 companion_computers use target vendor(s) (20% concentration)",
+      "17 contract/procurement flags matched",
+      "5 companion computers use QRB5165 in Forge DB",
+      "ModalAI next-gen roadmap (VOXL 3 expected 2026\u20132027)"
+    ],
+    "last_updated": "2026-04-05T05:50:15.737261+00:00"
   },
   {
-    "timeframe": "Q2-Q3 2026",
-    "event": "C-UAS component demand compounds UAS supply pressure",
-    "probability": 0.68,
-    "impact": "medium",
-    "drivers": [
-      "FEMA $250M C-UAS grant",
-      "FIFA World Cup security",
-      "DroneShield + Epirus scaling"
-    ],
-    "model": "cuas_correlation",
-    "last_updated": "2026-04-05T05:37:11.943808+00:00"
-  },
-  {
-    "timeframe": "2026-2028",
-    "event": "Blue UAS BOM cost index exceeds $5,000 (currently $4,348)",
-    "probability": 0.73,
-    "impact": "high",
-    "drivers": [
-      "DRAM pricing +22% YoY",
-      "Tariff escalation",
-      "Mesh radio concentration",
-      "NDAA compliance premium"
-    ],
-    "model": "bom_cost_trend",
-    "last_updated": "2026-04-05T05:37:11.943808+00:00"
-  },
-  {
-    "timeframe": "2026-2027",
-    "event": "Taiwan tension scenario: TSMC disruption cascades to all Jetson + QRB5165 platforms",
-    "probability": 0.15,
+    "id": "pred-1ee66f74a7",
+    "timeframe": "Jan 2027",
+    "event": "FCC firmware cliff \u2014 3 simultaneous deadlines ground uncertified gray zone drones",
+    "probability": 0.7923133623819898,
+    "confidence": 0.918,
     "impact": "critical",
-    "drivers": [
-      "TSMC concentration for advanced nodes",
-      "All Blue UAS companion SoCs fab'd in Taiwan",
-      "No alternative foundry at scale"
+    "model": "ensemble:regulatory_progression(0.45) + grayzone_escalation(0.30) + cross_correlation(0.25)",
+    "model_outputs": [
+      {
+        "model": "regulatory_progression",
+        "probability": 0.621,
+        "confidence": 0.861,
+        "signal_count": 7,
+        "drivers": [
+          "7 regulatory/compliance flags matched",
+          "Mean stage score: 0.27"
+        ]
+      },
+      {
+        "model": "grayzone_escalation",
+        "probability": 0.799,
+        "confidence": 1.0,
+        "signal_count": 39,
+        "drivers": [
+          "4 entity(ies): avg composite score 0.673",
+          "39 gray zone flags, 1 legal action flags",
+          "Risk levels: ['CRITICAL', 'HIGH', 'CRITICAL', 'HIGH']"
+        ]
+      },
+      {
+        "model": "cross_correlation",
+        "probability": 0.95,
+        "confidence": 0.893,
+        "signal_count": 36,
+        "drivers": [
+          "10 trigger \u00d7 26 outcome flags (lag ~0w)",
+          "Correlation score: 1.000"
+        ]
+      }
     ],
-    "model": "geopolitical_risk + supply_chain_mapping",
-    "last_updated": "2026-04-05T05:37:11.943808+00:00"
+    "drivers": [
+      "7 regulatory/compliance flags matched",
+      "4 entity(ies): avg composite score 0.673",
+      "10 trigger \u00d7 26 outcome flags (lag ~0w)",
+      "FCC Conditional Approval: 3 deadlines converge Jan 1 2027",
+      "OR/NASAO: 467 drones grounded across 25 states \u2014 $50M\u2013$2B exposure",
+      "FAA ASSURE: DJI = 96% of detected US drone platforms"
+    ],
+    "last_updated": "2026-04-05T05:50:15.737261+00:00"
+  },
+  {
+    "id": "pred-ce0905094d",
+    "timeframe": "H2 2026\u20132027",
+    "event": "Gray zone enforcement event \u2014 federal action against Anzu/SkyRover operators or buyers",
+    "probability": 0.7719307450157399,
+    "confidence": 0.6353333333333333,
+    "impact": "critical",
+    "model": "ensemble:grayzone_escalation(0.45) + regulatory_progression(0.35) + contract_signal(0.20)",
+    "model_outputs": [
+      {
+        "model": "grayzone_escalation",
+        "probability": 0.856,
+        "confidence": 0.9,
+        "signal_count": 28,
+        "drivers": [
+          "2 entity(ies): avg composite score 0.816",
+          "28 gray zone flags, 1 legal action flags",
+          "Risk levels: ['CRITICAL', 'CRITICAL']"
+        ]
+      },
+      {
+        "model": "regulatory_progression",
+        "probability": 0.775,
+        "confidence": 0.856,
+        "signal_count": 10,
+        "drivers": [
+          "10 regulatory/compliance flags matched",
+          "Mean stage score: 0.28"
+        ]
+      },
+      {
+        "model": "contract_signal",
+        "probability": 0.25,
+        "confidence": 0.15,
+        "signal_count": 0,
+        "drivers": [
+          "0 contract/procurement flags matched",
+          "0 critical, 0 warning signals"
+        ]
+      }
+    ],
+    "drivers": [
+      "2 entity(ies): avg composite score 0.816",
+      "10 regulatory/compliance flags matched",
+      "0 contract/procurement flags matched",
+      "TX AG lawsuit active (45+ days, no Anzu response)",
+      "FCC Covered List expansion Dec 2025",
+      "NDAA FY2025 \u00a71709 enforcement pipeline"
+    ],
+    "last_updated": "2026-04-05T05:50:15.737261+00:00"
+  },
+  {
+    "id": "pred-2809b1378d",
+    "timeframe": "Q2\u2013Q3 2026",
+    "event": "STM32H7 becomes allocated for defense FPV (42/322 FCs in DB use STM32)",
+    "probability": 0.7396591304347826,
+    "confidence": 0.7666666666666666,
+    "impact": "high",
+    "model": "ensemble:concentration_risk(0.40) + contract_signal(0.40) + cross_correlation(0.20)",
+    "model_outputs": [
+      {
+        "model": "concentration_risk",
+        "probability": 0.695,
+        "confidence": 1.0,
+        "signal_count": 322,
+        "drivers": [
+          "43/322 flight_controllers use target vendor(s) (13% concentration)",
+          "91 Blue UAS platforms in Forge DB exposed"
+        ]
+      },
+      {
+        "model": "contract_signal",
+        "probability": 0.626,
+        "confidence": 0.441,
+        "signal_count": 20,
+        "drivers": [
+          "20 contract/procurement flags matched",
+          "0 critical, 11 warning signals"
+        ]
+      },
+      {
+        "model": "cross_correlation",
+        "probability": 0.85,
+        "confidence": 0.859,
+        "signal_count": 50,
+        "drivers": [
+          "27 trigger \u00d7 23 outcome flags (lag ~4w)",
+          "Correlation score: 1.000"
+        ]
+      }
+    ],
+    "drivers": [
+      "43/322 flight_controllers use target vendor(s) (13% concentration)",
+      "20 contract/procurement flags matched",
+      "27 trigger \u00d7 23 outcome flags (lag ~4w)",
+      "42/322 flight controllers in Forge DB use STM32",
+      "Defense FPV programs scaling (Neros Archer 2,200+/mo)"
+    ],
+    "last_updated": "2026-04-05T05:50:15.737261+00:00"
+  },
+  {
+    "id": "pred-ec077545d2",
+    "timeframe": "Q2\u2013Q3 2026",
+    "event": "C-UAS component demand compounds UAS supply pressure on shared silicon",
+    "probability": 0.6876259541984733,
+    "confidence": 0.786,
+    "impact": "medium",
+    "model": "ensemble:contract_signal(0.55) + cross_correlation(0.45)",
+    "model_outputs": [
+      {
+        "model": "contract_signal",
+        "probability": 0.548,
+        "confidence": 0.701,
+        "signal_count": 13,
+        "drivers": [
+          "13 contract/procurement flags matched",
+          "0 critical, 4 warning signals"
+        ]
+      },
+      {
+        "model": "cross_correlation",
+        "probability": 0.8,
+        "confidence": 0.871,
+        "signal_count": 60,
+        "drivers": [
+          "18 trigger \u00d7 42 outcome flags (lag ~8w)",
+          "Correlation score: 1.000"
+        ]
+      }
+    ],
+    "drivers": [
+      "13 contract/procurement flags matched",
+      "18 trigger \u00d7 42 outcome flags (lag ~8w)",
+      "FEMA $250M C-UAS grant program",
+      "FIFA World Cup 2026 security procurement",
+      "DroneShield + Epirus share RF/FPGA supply chain with UAS makers"
+    ],
+    "last_updated": "2026-04-05T05:50:15.737261+00:00"
+  },
+  {
+    "id": "pred-9a430ced98",
+    "timeframe": "2026\u20132027",
+    "event": "Blue UAS BOM cost index exceeds $5,000 (currently ~$4,348)",
+    "probability": 0.5814042897612303,
+    "confidence": 0.8236666666666667,
+    "impact": "high",
+    "model": "ensemble:cross_correlation(0.40) + contract_signal(0.30) + regulatory_progression(0.30)",
+    "model_outputs": [
+      {
+        "model": "cross_correlation",
+        "probability": 0.9,
+        "confidence": 0.881,
+        "signal_count": 88,
+        "drivers": [
+          "27 trigger \u00d7 61 outcome flags (lag ~12w)",
+          "Correlation score: 1.000"
+        ]
+      },
+      {
+        "model": "contract_signal",
+        "probability": 0.53,
+        "confidence": 0.725,
+        "signal_count": 3,
+        "drivers": [
+          "3 contract/procurement flags matched",
+          "0 critical, 2 warning signals"
+        ]
+      },
+      {
+        "model": "regulatory_progression",
+        "probability": 0.3,
+        "confidence": 0.865,
+        "signal_count": 4,
+        "drivers": [
+          "4 regulatory/compliance flags matched",
+          "Mean stage score: 0.10"
+        ]
+      }
+    ],
+    "drivers": [
+      "27 trigger \u00d7 61 outcome flags (lag ~12w)",
+      "3 contract/procurement flags matched",
+      "4 regulatory/compliance flags matched",
+      "DRAM pricing +22% YoY",
+      "Section 301 tariff escalation on Chinese components",
+      "NDAA compliance premium \u2014 15\u201330% over commercial pricing"
+    ],
+    "last_updated": "2026-04-05T05:50:15.737261+00:00"
+  },
+  {
+    "id": "pred-ae89d2546e",
+    "timeframe": "2026\u20132028",
+    "event": "Taiwan tension: TSMC disruption cascades to all Jetson + QRB5165 Blue UAS platforms",
+    "probability": 0.25,
+    "confidence": 0.9365,
+    "impact": "critical",
+    "model": "ensemble:concentration_risk(0.50) + cross_correlation(0.50) [black swan cap: 0.25]",
+    "model_outputs": [
+      {
+        "model": "concentration_risk",
+        "probability": 0.919,
+        "confidence": 1.0,
+        "signal_count": 25,
+        "drivers": [
+          "21/25 companion_computers use target vendor(s) (84% concentration)",
+          "91 Blue UAS platforms in Forge DB exposed"
+        ]
+      },
+      {
+        "model": "cross_correlation",
+        "probability": 0.48,
+        "confidence": 0.873,
+        "signal_count": 49,
+        "drivers": [
+          "11 trigger \u00d7 38 outcome flags (lag ~0w)",
+          "Correlation score: 1.000"
+        ]
+      }
+    ],
+    "drivers": [
+      "21/25 companion_computers use target vendor(s) (84% concentration)",
+      "11 trigger \u00d7 38 outcome flags (lag ~0w)",
+      "TSMC concentration for advanced nodes (3nm, 5nm)",
+      "All Blue UAS companion SoCs fabricated in Taiwan",
+      "No alternative foundry at scale \u2014 hard cap applied at 0.25"
+    ],
+    "last_updated": "2026-04-05T05:50:15.737261+00:00"
   }
 ]
