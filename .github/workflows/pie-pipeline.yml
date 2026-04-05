@@ -34,19 +34,27 @@ jobs:
       - name: Sync parts-db from Ai-Project
         env:
           FORGE_PAT: ${{ secrets.FORGE_PAT }}
+          SYNC_PAT: ${{ secrets.SYNC_PAT }}
         run: |
           echo "Syncing parts-db from Ai-Project (canonical source)..."
-          CLONE_URL="https://github.com/DroneWuKong/Ai-Project.git"
-          if [ -n "$FORGE_PAT" ]; then
-            CLONE_URL="https://${FORGE_PAT}@github.com/DroneWuKong/Ai-Project.git"
+
+          # Prefer SYNC_PAT (scoped to Ai-Project) over FORGE_PAT
+          ACCESS_TOKEN="${SYNC_PAT:-$FORGE_PAT}"
+
+          if [ -z "$ACCESS_TOKEN" ]; then
+            echo "  ⚠ No PAT available — using existing parts-db"
+            exit 0
           fi
 
-          git clone --depth 1 --filter=blob:none --sparse "$CLONE_URL" /tmp/ai-project 2>/dev/null
-          git -C /tmp/ai-project sparse-checkout set data/parts-db 2>/dev/null
+          CLONE_URL="https://${ACCESS_TOKEN}@github.com/DroneWuKong/Ai-Project.git"
 
-          if [ -d "/tmp/ai-project/data/parts-db" ]; then
-            cp /tmp/ai-project/data/parts-db/*.json data/parts-db/
-            PARTS=$(python3 -c "
+          # Clone with visible errors (no 2>/dev/null) so failures are diagnosable
+          if git clone --depth 1 --filter=blob:none --sparse "$CLONE_URL" /tmp/ai-project; then
+            git -C /tmp/ai-project sparse-checkout set data/parts-db
+
+            if [ -d "/tmp/ai-project/data/parts-db" ]; then
+              cp /tmp/ai-project/data/parts-db/*.json data/parts-db/
+              PARTS=$(python3 -c "
           import json, glob
           t=0
           for f in glob.glob('data/parts-db/*.json'):
@@ -54,9 +62,12 @@ jobs:
               if isinstance(d,list): t+=len(d)
           print(t)
           ")
-            echo "  ✓ Synced: ${PARTS} components"
+              echo "  ✓ Synced: ${PARTS} components"
+            else
+              echo "  ⚠ parts-db directory not found in Ai-Project — using existing"
+            fi
           else
-            echo "  ⚠ Could not sync — using existing parts-db"
+            echo "  ⚠ Clone failed (auth or network) — using existing parts-db"
           fi
           rm -rf /tmp/ai-project
 
