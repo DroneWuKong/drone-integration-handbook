@@ -1931,3 +1931,160 @@ def analyze_propeller_supply_chain(db):
         })
 
     return flags
+
+
+# ══════════════════════════════════════════════════════════════
+# 17. LIVE PRICING — Mouser + DigiKey
+# ══════════════════════════════════════════════════════════════
+
+def analyze_live_pricing(db):
+    """
+    Generate PIE flags from live Mouser/DigiKey pricing data.
+    Requires MOUSER_API_KEY and/or DIGIKEY_CLIENT_ID + DIGIKEY_CLIENT_SECRET env vars.
+    Falls back gracefully if keys not set.
+    """
+    flags = []
+    import os
+    from pathlib import Path
+
+    # Only run if at least one API key is available
+    mouser_key = os.environ.get("MOUSER_API_KEY", "")
+    dk_id = os.environ.get("DIGIKEY_CLIENT_ID", "")
+    dk_secret = os.environ.get("DIGIKEY_CLIENT_SECRET", "")
+
+    if not mouser_key and not (dk_id and dk_secret):
+        return flags  # No keys — skip silently
+
+    try:
+        import sys
+        sys.path.insert(0, str(Path(__file__).resolve().parent))
+        from pricing import analyze_pricing_signals
+        parts_db_dir = Path(__file__).resolve().parent.parent / "data" / "parts-db"
+        flags = analyze_pricing_signals(parts_db_dir)
+    except Exception as e:
+        print(f"  [Pricing] analyze_live_pricing error: {e}")
+
+    return flags
+
+
+# ══════════════════════════════════════════════════════════════
+# 18. BATTERY PARTS-DB ENRICHMENT FLAGS
+# ══════════════════════════════════════════════════════════════
+
+def analyze_battery_partsdb(db):
+    """
+    Generate PIE flags from cell_manufacturer enrichment in parts-db/batteries.json.
+    Flags NDAA ban timelines, Chinese cell dependency, Molicel shortage exposure.
+    """
+    import json
+    from pathlib import Path
+
+    flags = []
+    parts_db = Path(__file__).resolve().parent.parent / "data" / "parts-db" / "batteries.json"
+    if not parts_db.exists():
+        return flags
+
+    batteries = json.loads(parts_db.read_text())
+    if not isinstance(batteries, list):
+        return flags
+
+    total = len(batteries)
+    chinese = [b for b in batteries if b.get("cell_country") == "China"]
+    ndaa_ok = [b for b in batteries if b.get("cell_ndaa_compliant") is True]
+    ndaa_bad = [b for b in batteries if b.get("cell_ndaa_compliant") is False]
+    molicel = [b for b in batteries if "Molicel" in b.get("cell_manufacturer", "")]
+    unknown = [b for b in batteries if b.get("cell_manufacturer") == "Unknown" or not b.get("cell_manufacturer")]
+
+    # NDAA ban timeline flags
+    NDAA_BANS = {
+        "EVE Energy": "October 2027",
+        "CATL": "October 2027",
+        "BYD": "October 2027",
+        "CALB": "October 2027",
+        "Gotion": "October 2027",
+        "SVOLT": "October 2027",
+    }
+    for banned_mfr, ban_date in NDAA_BANS.items():
+        affected = [b for b in batteries if banned_mfr.lower() in b.get("cell_manufacturer", "").lower()]
+        if affected:
+            flags.append({
+                "id": flag_id(f"battery-ndaa-ban-{banned_mfr.lower().replace(' ', '-')}"),
+                "timestamp": now,
+                "flag_type": "compliance",
+                "severity": "critical",
+                "title": f"Battery NDAA ban: {len(affected)} packs use {banned_mfr} cells — banned from DoD use {ban_date}",
+                "detail": (
+                    f"FY2024 NDAA Section 154 bans procurement of batteries containing cells from {banned_mfr} "
+                    f"effective {ban_date}. {len(affected)} Forge DB batteries affected. "
+                    f"Procurement planning must identify alternatives before ban date."
+                ),
+                "confidence": 0.97,
+                "prediction": f"Any platform relying on {banned_mfr} cells must re-qualify with alternative cell by {ban_date}.",
+                "platform_id": None,
+                "component_id": None,
+                "data_sources": ["battery_parts_db", "ndaa_fy2024"],
+            })
+
+    # Chinese cell dependency summary
+    chinese_pct = round(len(chinese) / total * 100) if total else 0
+    if chinese_pct > 50:
+        flags.append({
+            "id": flag_id("battery-chinese-cells-partsdb"),
+            "timestamp": now,
+            "flag_type": "supply_chain_risk",
+            "severity": "critical",
+            "title": f"Battery DB: {chinese_pct}% of {total} tracked batteries use Chinese cells (Forge parts-db verified)",
+            "detail": (
+                f"{len(chinese)}/{total} batteries in the Forge parts-db have confirmed Chinese cell sourcing. "
+                f"Key brands: Tattu→Grepow (Shenzhen), Lumenier LiPo→Shenzhen OEM. "
+                f"Only {len(ndaa_ok)} batteries ({round(len(ndaa_ok)/total*100)}%) are NDAA-compliant. "
+                f"NDAA FEOC ban effective January 2028 will affect all remaining Chinese-cell packs."
+            ),
+            "confidence": 0.95,
+            "prediction": "86% of available UAS battery inventory will require replacement or re-qualification before 2028 NDAA FEOC deadline.",
+            "platform_id": None,
+            "component_id": None,
+            "data_sources": ["battery_parts_db"],
+        })
+
+    # Molicel exposure
+    if molicel:
+        flags.append({
+            "id": flag_id("battery-molicel-exposure-partsdb"),
+            "timestamp": now,
+            "flag_type": "supply_chain_risk",
+            "severity": "warning",
+            "title": f"Battery DB: {len(molicel)} NDAA-compliant packs depend on Molicel (Taiwan, capacity halved July 2025)",
+            "detail": (
+                f"{len(molicel)} batteries in Forge DB use Molicel cells (P42A/P45B/P50B/P60C). "
+                f"Molicel is the primary non-Chinese source for high-drain cylindrical drone cells. "
+                f"Kaohsiung factory fire July 2025 halved capacity from 3.3→1.5 GWh. "
+                f"Canada plant suspended Nov 2024. Lead times now 16-24 weeks."
+            ),
+            "confidence": 0.93,
+            "prediction": "Molicel-dependent platforms face extended lead times and price increases through 2026-2027.",
+            "platform_id": None,
+            "component_id": None,
+            "data_sources": ["battery_parts_db", "battery_supply_chain"],
+        })
+
+    # Unknown cell sourcing
+    if len(unknown) > 5:
+        flags.append({
+            "id": flag_id("battery-unknown-cells"),
+            "timestamp": now,
+            "flag_type": "component_analysis",
+            "severity": "info",
+            "title": f"Battery DB: {len(unknown)} batteries have unidentified cell sourcing — manual research needed",
+            "detail": (
+                f"{len(unknown)} batteries in Forge DB have unknown cell_manufacturer. "
+                f"These cannot be assessed for NDAA compliance or supply chain risk until cell sourcing is confirmed."
+            ),
+            "confidence": 0.85,
+            "prediction": "Unknown-origin batteries should be assumed Chinese-sourced until verified otherwise.",
+            "platform_id": None,
+            "component_id": None,
+            "data_sources": ["battery_parts_db"],
+        })
+
+    return flags

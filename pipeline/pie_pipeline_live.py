@@ -29,6 +29,8 @@ from pie_supplemental import (
     analyze_receiver_supply_chain,
     analyze_antenna_supply_chain,
     analyze_propeller_supply_chain,
+    analyze_live_pricing,
+    analyze_battery_partsdb,
     SUPPLEMENTAL_SOURCES,
 )
 from pie_advanced import (
@@ -2000,6 +2002,14 @@ def main():
     print("\nAnalyzing propeller supply chain...")
     prop_sc_flags = analyze_propeller_supply_chain(db)
     all_flags.extend(prop_sc_flags)
+
+    print("\nAnalyzing battery parts-db cell sourcing (NDAA ban timelines)...")
+    batt_partsdb_flags = analyze_battery_partsdb(db)
+    all_flags.extend(batt_partsdb_flags)
+
+    print("\nChecking live component pricing (Mouser/DigiKey)...")
+    pricing_flags = analyze_live_pricing(db)
+    all_flags.extend(pricing_flags)
 
     print("\nAnalyzing test & training infrastructure...")
     test_flags = analyze_test_infra()

@@ -61,6 +61,10 @@ jobs:
           rm -rf /tmp/ai-project
 
       - name: Run PIE Live Pipeline
+        env:
+          MOUSER_API_KEY: ${{ secrets.MOUSER_API_KEY }}
+          DIGIKEY_CLIENT_ID: ${{ secrets.DIGIKEY_CLIENT_ID }}
+          DIGIKEY_CLIENT_SECRET: ${{ secrets.DIGIKEY_CLIENT_SECRET }}
         run: python pipeline/pie_pipeline_live.py
 
       - name: Validate output
