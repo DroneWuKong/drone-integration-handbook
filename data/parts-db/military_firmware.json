@@ -1,0 +1,202 @@
+[
+  {
+    "pid": "MFW-0001",
+    "name": "MILELRS",
+    "manufacturer": "Ukrainian Engineers (Community)",
+    "description": "Military fork of ExpressLRS 3.3.2. Adds multiband redundancy (900 MHz + 2.4 GHz simultaneous), encrypted per-transmitter binding keys, real-time EW spectrum scanning with direction-finding, automatic channel switching on interference detection, multi-RX support for redundant control paths, swarm ID, and extended failsafe timers. Pairs with MILBETA for OSD tactical display. Most widely deployed military control link in the Russo-Ukrainian War.",
+    "link": "https://cybershafarat.com/2025/04/06/milelrs-v2-30-firmware-introduces-substantial-upgrades-based-on-expresslrs-3-3-2/",
+    "image": "",
+    "source": "osint",
+    "schema_data": {
+      "base_firmware": "ExpressLRS 3.3.2",
+      "current_version": "v2.30",
+      "origin": "Ukraine",
+      "layer": "control_link",
+      "frequency_bands": [
+        "900 MHz",
+        "2.4 GHz"
+      ],
+      "encryption": true,
+      "ew_hardened": true,
+      "tags": [
+        "military_fork",
+        "elrs",
+        "ew_resistant",
+        "multiband",
+        "swarm",
+        "combat_proven"
+      ]
+    }
+  },
+  {
+    "pid": "MFW-0002",
+    "name": "MILBETA",
+    "manufacturer": "Ukrainian Engineers (Community)",
+    "description": "Military fork of Betaflight (4.3.3/4.5.1). Processes tactical data from MILELRS receivers and displays on pilot OSD. OSD camouflage, EW direction-finding overlay, VTX frequency unlock (3000-6999 MHz), extended failsafe timers (10x), LQ statistics across 12 bands, armed VTX switching.",
+    "link": "https://cybershafarat.com/2024/11/30/milbeta-v1-23-firmware-flashing/",
+    "image": "",
+    "source": "osint",
+    "schema_data": {
+      "base_firmware": "Betaflight 4.3.3 / 4.5.1",
+      "current_version": "v1.23",
+      "origin": "Ukraine",
+      "layer": "fc_firmware",
+      "vtx_range_mhz": "3000-6999",
+      "failsafe_multiplier": "10x",
+      "requires": "MILELRS for EW functions",
+      "tags": [
+        "military_fork",
+        "betaflight",
+        "osd",
+        "ew_display",
+        "combat_proven"
+      ]
+    }
+  },
+  {
+    "pid": "MFW-0003",
+    "name": "BarvinokLRS",
+    "manufacturer": "Barvinok-5 Project",
+    "description": "Independent Ukrainian control link firmware (not an ELRS fork). Distributed free to frontline military units. Operates on multiple frequencies with different RF parameters. Field-proven to maintain link under EW conditions where other systems fail. Defense Builder accelerator grant funded.",
+    "link": "https://dev.ua/en/news/tse-tsyfrove-video-iake-dozvoliaie-zaminyty-analohove-ale-zberihaie-vsi-ioho-harni-storony-rozrobnyk-videomodulia-dlia-bpla-barvinok-5-rozpoviv-pro-holovni-fichi-novoho-produktu-1760507138",
+    "image": "",
+    "source": "osint",
+    "schema_data": {
+      "base_firmware": "Custom (independent)",
+      "origin": "Ukraine",
+      "layer": "control_link",
+      "cost": "Free (military distro)",
+      "ew_hardened": true,
+      "tags": [
+        "military_firmware",
+        "independent",
+        "free_distro",
+        "combat_proven"
+      ]
+    }
+  },
+  {
+    "pid": "MFW-0004",
+    "name": "Barvinok-5 Video Module",
+    "manufacturer": "Barvinok-5 Project",
+    "description": "Encrypted digital video replacing analog FPV. FHSS pseudo-random frequency hopping with very small packets. Retains one-directional transmission and low latency of analog. Prototype phase, beginning manufacturer integration.",
+    "link": "https://dev.ua/en/news/tse-tsyfrove-video-iake-dozvoliaie-zaminyty-analohove-ale-zberihaie-vsi-ioho-harni-storony-rozrobnyk-videomodulia-dlia-bpla-barvinok-5-rozpoviv-pro-holovni-fichi-novoho-produktu-1760507138",
+    "image": "",
+    "source": "osint",
+    "schema_data": {
+      "base_firmware": "Custom",
+      "origin": "Ukraine",
+      "layer": "video_link",
+      "status": "Prototype",
+      "encryption": true,
+      "modulation": "FHSS pseudo-random",
+      "tags": [
+        "military_firmware",
+        "video",
+        "encrypted",
+        "anti_jam",
+        "prototype"
+      ]
+    }
+  },
+  {
+    "pid": "MFW-0005",
+    "name": "1001 DJI Military Firmware",
+    "manufacturer": "Russian Hackers To the Front (Community)",
+    "description": "Custom firmware for DJI Mavic drones. Removes flight limits, improves GPS spoofing resistance, enables high-capacity batteries. ~200,000 drones flashed. Distribution via closed terminal network. Infrastructure compromised by cyberattack July 2025.",
+    "link": "https://therecord.media/cyberattack-russia-firmware-blow-hackers",
+    "image": "",
+    "source": "osint",
+    "schema_data": {
+      "base_firmware": "DJI OEM (modified)",
+      "origin": "Russia",
+      "layer": "platform_firmware",
+      "status": "Distribution disrupted",
+      "scale": "~200,000 drones",
+      "tags": [
+        "military_firmware",
+        "dji_mod",
+        "gps_spoof_resist",
+        "disrupted"
+      ]
+    }
+  },
+  {
+    "pid": "MFW-0006",
+    "name": "CIAJeepDoors",
+    "manufacturer": "Ukrainian Volunteer Developers",
+    "description": "Disables DJI Remote ID to prevent AeroScope operator tracking. Delivered via USB device (Olga). DJI newer models block this patch.",
+    "link": "https://www.c4isrnet.com/battlefield-tech/2022/10/17/how-ukraine-learned-to-cloak-its-drones-from-russian-surveillance/",
+    "image": "",
+    "source": "osint",
+    "schema_data": {
+      "base_firmware": "DJI OEM (patch)",
+      "origin": "Ukraine",
+      "layer": "opsec_patch",
+      "delivery": "USB device (Olga)",
+      "tags": [
+        "military_firmware",
+        "dji_mod",
+        "opsec",
+        "remote_id"
+      ]
+    }
+  },
+  {
+    "pid": "MFW-0007",
+    "name": "mLRS",
+    "manufacturer": "olliw42 (Open Source)",
+    "description": "Open-source LoRa RC + full MAVLink telemetry. 433/868/915/2400 MHz, 7-87 km range. Full diversity. MatekSys purpose-built hardware. ArduPilot native support. Not military-specific but BVLOS/contested-relevant.",
+    "link": "https://github.com/olliw42/mLRS",
+    "image": "",
+    "source": "github",
+    "schema_data": {
+      "base_firmware": "Custom LoRa",
+      "origin": "Open Source",
+      "layer": "control_telemetry",
+      "frequency_bands": [
+        "433 MHz",
+        "868/915 MHz",
+        "2.4 GHz"
+      ],
+      "range_km": "7-87",
+      "protocol": "MAVLink + RC",
+      "tags": [
+        "open_source",
+        "lora",
+        "mavlink",
+        "long_range",
+        "bvlos"
+      ]
+    }
+  },
+  {
+    "pid": "MFW-0008",
+    "name": "DroneBridge ESP32",
+    "manufacturer": "Wolfgang (Open Source)",
+    "description": "ESP32 serial-to-WiFi/ESP-NOW telemetry bridge. AES-256-GCM encryption. MAVLink/MSP/LTM. ~1 km ESP-NOW LR. Swarm via encrypted ESP-NOW broadcasts. $3-5 per board. Pure C (ESP-IDF).",
+    "link": "https://github.com/DroneBridge/ESP32",
+    "image": "",
+    "source": "github",
+    "schema_data": {
+      "base_firmware": "ESP-IDF",
+      "origin": "Open Source",
+      "layer": "telemetry",
+      "encryption": "AES-256-GCM",
+      "protocols": [
+        "MAVLink",
+        "MSP",
+        "LTM"
+      ],
+      "range_km": "~1",
+      "cost": "$3-5",
+      "tags": [
+        "open_source",
+        "esp32",
+        "telemetry",
+        "encrypted",
+        "swarm"
+      ]
+    }
+  }
+]
