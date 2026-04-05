@@ -1,0 +1,188 @@
+{
+  "generated_at": "2026-04-05",
+  "fc_mcu_landscape": {
+    "summary": "STM32 (Swiss/EU) remains dominant FC MCU. AT32 (Chinese) is the low-cost challenger.",
+    "mcus": [
+      {
+        "id": "stm32f405",
+        "name": "STM32F405",
+        "manufacturer": "STMicroelectronics",
+        "manufacturer_hq": "Geneva, Switzerland",
+        "ndaa_compliant": true,
+        "core": "ARM Cortex-M4F",
+        "clock_mhz": 168,
+        "flash_kb": 1024,
+        "sram_kb": 192,
+        "price_usd": "4-5 (normalized post-shortage)",
+        "status": "Workhorse FC MCU. Most F4 flight controllers use this.",
+        "betaflight_support": "Full",
+        "fab_locations": ["Crolles, France", "Agrate Brianza, Italy"]
+      },
+      {
+        "id": "stm32f722",
+        "name": "STM32F722",
+        "manufacturer": "STMicroelectronics",
+        "ndaa_compliant": true,
+        "core": "ARM Cortex-M7",
+        "clock_mhz": 216,
+        "flash_kb": 512,
+        "sram_kb": 256,
+        "status": "Mid-range F7 FC. Better performance than F405.",
+        "betaflight_support": "Full"
+      },
+      {
+        "id": "stm32h743",
+        "name": "STM32H743",
+        "manufacturer": "STMicroelectronics",
+        "ndaa_compliant": true,
+        "core": "ARM Cortex-M7",
+        "clock_mhz": 480,
+        "flash_kb": 2048,
+        "sram_kb": 1024,
+        "status": "Top-tier H7 FC. Required for some advanced Betaflight/ArduPilot features.",
+        "betaflight_support": "Full"
+      },
+      {
+        "id": "at32f435",
+        "name": "AT32F435",
+        "manufacturer": "ArteryTek (Artery)",
+        "manufacturer_hq": "Chongqing, China",
+        "ndaa_compliant": false,
+        "core": "ARM Cortex-M4F",
+        "clock_mhz": 288,
+        "flash_kb": 4032,
+        "sram_kb": 512,
+        "price_usd": "2-3",
+        "status": "Chinese low-cost alternative to STM32F405. Gaining adoption rapidly. 30-50% cheaper.",
+        "betaflight_support": "Full (since BF 4.5)",
+        "strategic_note": "AT32 adoption in FCs increases Chinese silicon dependency. Even 'NDAA-compliant' US brands may use AT32 to cut costs."
+      }
+    ]
+  },
+  "esc_mcu_landscape": {
+    "summary": "ESC MCUs are split between STM32 (allied) and AT32/GD32 (Chinese). AT32F421 is now the most popular ESC MCU for cost.",
+    "mcus": [
+      {
+        "id": "stm32f051",
+        "name": "STM32F051",
+        "manufacturer": "STMicroelectronics",
+        "ndaa_compliant": true,
+        "application": "BLHeli_32 and AM32 ESCs",
+        "status": "Legacy, still common"
+      },
+      {
+        "id": "stm32g071",
+        "name": "STM32G071",
+        "manufacturer": "STMicroelectronics",
+        "ndaa_compliant": true,
+        "application": "AM32 ESCs — best cost-performance for allied MCU",
+        "status": "Popular current choice for AM32"
+      },
+      {
+        "id": "at32f421",
+        "name": "AT32F421",
+        "manufacturer": "ArteryTek (Artery)",
+        "manufacturer_hq": "Chongqing, China",
+        "ndaa_compliant": false,
+        "core": "ARM Cortex-M4",
+        "clock_mhz": 120,
+        "package_mm": "4x4",
+        "application": "AM32 and BLHeli_32 ESCs. Most popular ESC MCU for new designs due to cost.",
+        "strategic_note": "AT32F421 is deeply embedded in ESC supply chain. Hobbywing G2 series uses this chip."
+      },
+      {
+        "id": "gd32e230",
+        "name": "GD32E230",
+        "manufacturer": "GigaDevice",
+        "manufacturer_hq": "Beijing, China",
+        "ndaa_compliant": false,
+        "application": "AM32 ESCs. STM32-adjacent clone.",
+        "status": "Less common than AT32F421 but supported"
+      }
+    ]
+  },
+  "esc_firmware_ecosystem": [
+    {
+      "id": "blheli_32",
+      "name": "BLHeli_32",
+      "type": "closed_source",
+      "license": "Commercial — per-unit licensing fee to manufacturers",
+      "developer": "sskaug (individual developer)",
+      "mcus_supported": ["Various 32-bit ARM"],
+      "market_share_pct": 50,
+      "market_share_note": "Declining. Betaflight officially recommends AM32 over BLHeli_32.",
+      "issue": "Bugs reported in versions after 32.7. Betaflight warns against newer releases.",
+      "strategic_note": "Closed-source firmware from individual developer. Licensing fee adds $0.50-1.00 per ESC. No source code audit possible."
+    },
+    {
+      "id": "am32",
+      "name": "AM32",
+      "type": "open_source",
+      "license": "GPL",
+      "github": "https://github.com/am32-firmware/AM32",
+      "mcus_supported": ["STM32F051", "STM32G071", "STM32L432", "GD32E230", "AT32F421", "AT32F415", "CH32V203"],
+      "market_share_pct": 25,
+      "market_share_note": "Growing rapidly. Betaflight-recommended. FOC support.",
+      "strategic_note": "Open-source enables auditing and allied MCU support (STM32G071). Best path to NDAA-compliant ESC firmware."
+    },
+    {
+      "id": "blheli_s",
+      "name": "BLHeli_S / Bluejay",
+      "type": "open_source",
+      "license": "GPL-3.0",
+      "mcus_supported": ["SiLabs 8-bit (BB1, BB21, BB51)"],
+      "market_share_pct": 20,
+      "market_share_note": "Legacy 8-bit. Budget ESCs. Bluejay fork is recommended.",
+      "status": "Declining — new designs use 32-bit"
+    }
+  ],
+  "mosfet_supply_chain": {
+    "summary": "MOSFETs are the power switching elements in ESCs. 6 per motor phase (2 per phase × 3 phases). Supply is diversified across US, European, and Chinese vendors.",
+    "key_vendors": [
+      {"name": "Infineon Technologies", "hq": "Munich, Germany", "ndaa_compliant": true, "products": ["OptiMOS series"], "note": "Premium power MOSFETs. Used in high-end ESCs."},
+      {"name": "Texas Instruments", "hq": "Dallas, TX", "ndaa_compliant": true, "products": ["CSD19535KCS", "NexFET series"], "note": "US-made power MOSFETs."},
+      {"name": "ON Semiconductor (onsemi)", "hq": "Scottsdale, AZ", "ndaa_compliant": true, "products": ["NTMFS series"], "note": "US power semiconductor leader."},
+      {"name": "STMicroelectronics", "hq": "Geneva, Switzerland", "ndaa_compliant": true, "products": ["STL series"], "note": "European power MOSFETs."},
+      {"name": "Toshiba", "hq": "Tokyo, Japan", "ndaa_compliant": true, "products": ["U-MOSFET series"]},
+      {"name": "Various Chinese", "ndaa_compliant": false, "note": "Budget ESCs use Chinese MOSFETs (unbranded or from Huawei HiSilicon-adjacent fabs). Identified by lack of datasheet/marking on cheaper ESCs."}
+    ],
+    "ndaa_status": "MOSFET supply is well-diversified across allied nations. Not a chokepoint for NDAA compliance.",
+    "source_urls": [
+      "https://thedevanaproject.com/2025/11/30/hardware-design-for-am32-escs/"
+    ]
+  },
+  "imu_sensors": {
+    "summary": "Inertial Measurement Units (IMUs) are critical FC components. Two main vendors.",
+    "vendors": [
+      {
+        "name": "Bosch Sensortec",
+        "hq": "Reutlingen, Germany",
+        "ndaa_compliant": true,
+        "products": ["BMI270", "BMI088"],
+        "status": "BMI270 is the current standard Betaflight IMU. Most F4/F7/H7 FCs use this.",
+        "fab": "Bosch MEMS fab in Germany"
+      },
+      {
+        "name": "InvenSense (TDK)",
+        "hq": "San Jose, CA (TDK subsidiary)",
+        "ndaa_compliant": true,
+        "ndaa_note": "TDK is Japanese parent. InvenSense acquired 2017. MEMS fab in US/Japan.",
+        "products": ["ICM-42688-P", "ICM-20689 (legacy)"],
+        "status": "ICM-42688-P used in premium FCs. MPU6000/6050 legacy.",
+        "note": "Same TDK corporate family as ATL/Dongguan Poweramp (battery supplier), but InvenSense division is US-based."
+      }
+    ],
+    "ndaa_status": "IMU supply is NDAA-compliant. Both major vendors are allied (German/US-Japanese)."
+  },
+  "ndaa_stack_gap": {
+    "problem": "79% of stacks in Forge DB are Chinese-manufactured. US brands (NewBeeDrone, Lumenier) likely use Chinese CM for PCB assembly.",
+    "fc_mcu": "STM32 (Swiss) is NDAA-compliant. AT32 (Chinese) is not — growing adoption threatens compliance.",
+    "esc_mcu": "STM32G071 (Swiss) is NDAA option. AT32F421 (Chinese) is cheaper and gaining share.",
+    "esc_firmware": "AM32 (open-source) can run on STM32 — best NDAA path. BLHeli_32 (closed-source) cannot be audited.",
+    "mosfets": "Allied supply exists (Infineon, TI, onsemi). Not a chokepoint.",
+    "imu": "Allied supply exists (Bosch, InvenSense/TDK). Not a chokepoint.",
+    "pcb_assembly": "Virtually all PCBs assembled in China (Shenzhen). NDAA compliance requires US/allied PCBA — very limited capacity.",
+    "realistic_ndaa_stack": "STM32 FC MCU + STM32 ESC MCU + AM32 firmware + Bosch/InvenSense IMU + allied MOSFETs + US/allied PCBA. Cost premium: 2-4x. Availability: very limited.",
+    "best_hope": "Orqa (Croatia) claims full in-house manufacturing. Ukrainian 603700 stacks are combat-proven and NDAA-adjacent."
+  }
+}

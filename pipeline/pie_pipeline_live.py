@@ -18,6 +18,17 @@ from pie_supplemental import (
     analyze_rf_comms, analyze_ew, analyze_sof, analyze_nav_pnt,
     analyze_propulsion, analyze_test_infra, analyze_financial,
     analyze_gray_zone,
+    analyze_battery_supply_chain, analyze_thermal_supply_chain,
+    analyze_control_link_supply_chain,
+    analyze_stack_supply_chain,
+    analyze_vtx_supply_chain,
+    analyze_esc_supply_chain,
+    analyze_allied_manufacturers,
+    analyze_fpv_camera_supply_chain,
+    analyze_frame_supply_chain,
+    analyze_receiver_supply_chain,
+    analyze_antenna_supply_chain,
+    analyze_propeller_supply_chain,
     SUPPLEMENTAL_SOURCES,
 )
 from pie_advanced import (
@@ -1941,6 +1952,54 @@ def main():
     print("\nAnalyzing propulsion supply chain...")
     prop_flags = analyze_propulsion(db)
     all_flags.extend(prop_flags)
+
+    print("\nAnalyzing battery supply chain...")
+    batt_flags = analyze_battery_supply_chain(db)
+    all_flags.extend(batt_flags)
+
+    print("\nAnalyzing thermal camera supply chain...")
+    therm_flags = analyze_thermal_supply_chain(db)
+    all_flags.extend(therm_flags)
+
+    print("\nAnalyzing control link (C2) supply chain...")
+    c2_flags = analyze_control_link_supply_chain(db)
+    all_flags.extend(c2_flags)
+
+    print("\nAnalyzing FC+ESC stack supply chain...")
+    stack_flags = analyze_stack_supply_chain(db)
+    all_flags.extend(stack_flags)
+
+    print("\nAnalyzing video transmitter (VTX) supply chain...")
+    vtx_flags = analyze_vtx_supply_chain(db)
+    all_flags.extend(vtx_flags)
+
+    print("\nAnalyzing ESC supply chain...")
+    esc_flags = analyze_esc_supply_chain(db)
+    all_flags.extend(esc_flags)
+
+    print("\nAnalyzing allied manufacturer profiles...")
+    allied_flags = analyze_allied_manufacturers(db)
+    all_flags.extend(allied_flags)
+
+    print("\nAnalyzing FPV camera supply chain...")
+    cam_flags = analyze_fpv_camera_supply_chain(db)
+    all_flags.extend(cam_flags)
+
+    print("\nAnalyzing frame supply chain...")
+    frame_flags = analyze_frame_supply_chain(db)
+    all_flags.extend(frame_flags)
+
+    print("\nAnalyzing receiver supply chain...")
+    rx_flags = analyze_receiver_supply_chain(db)
+    all_flags.extend(rx_flags)
+
+    print("\nAnalyzing antenna supply chain...")
+    ant_flags = analyze_antenna_supply_chain(db)
+    all_flags.extend(ant_flags)
+
+    print("\nAnalyzing propeller supply chain...")
+    prop_sc_flags = analyze_propeller_supply_chain(db)
+    all_flags.extend(prop_sc_flags)
 
     print("\nAnalyzing test & training infrastructure...")
     test_flags = analyze_test_infra()

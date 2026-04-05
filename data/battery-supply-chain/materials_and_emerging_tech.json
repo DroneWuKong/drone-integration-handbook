@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-04-05",
+  "raw_material_chokepoints": [
+    {"material": "LFP cathode active material", "chinese_control_pct": 98, "risk": "CRITICAL", "alternatives": "Virtually none at scale"},
+    {"material": "Graphite processing (battery-grade)", "chinese_control_pct": 95, "risk": "CRITICAL", "alternatives": "Syrah (US/Mozambique), Novonix (US/Australia)"},
+    {"material": "Natural graphite mining", "chinese_control_pct": 79, "risk": "CRITICAL", "alternatives": "Brazil, Mozambique, Madagascar"},
+    {"material": "Cobalt refining", "chinese_control_pct": 80, "risk": "CRITICAL", "alternatives": "Umicore (Belgium), Freeport (Finland)"},
+    {"material": "Cobalt DRC mining (ownership)", "chinese_control_pct": 80, "risk": "CRITICAL", "alternatives": "Glencore (Switzerland)"},
+    {"material": "Cathode materials (overall)", "chinese_control_pct": 76, "risk": "CRITICAL", "alternatives": "Umicore, BASF, Sumitomo, L&F (Korea)"},
+    {"material": "Anode materials (overall)", "chinese_control_pct": 90, "risk": "CRITICAL", "alternatives": "Syrah, Novonix, Resonac (Japan)"},
+    {"material": "Electrolyte production", "chinese_control_pct": 82, "risk": "HIGH", "alternatives": "Soulbrain (Korea), Central Glass (Japan)"},
+    {"material": "Separator film", "chinese_control_pct": 72, "risk": "HIGH", "alternatives": "Asahi Kasei/Celgard (Japan/US), Toray, SK IE Tech"},
+    {"material": "Lithium refining", "chinese_control_pct": 65, "risk": "HIGH", "alternatives": "Albemarle (US), SQM (Chile), Arcadium"},
+    {"material": "Battery-grade nickel processing", "chinese_control_pct": 67, "risk": "MEDIUM-HIGH", "alternatives": "BHP (Australia), Vale (Brazil/Canada)"}
+  ],
+  "china_export_weaponization": [
+    {"year": 2023, "action": "Beijing imposed graphite export restrictions"},
+    {"year": 2025, "month": 7, "action": "China restricted LFP and LMFP cathode technology exports"},
+    {"year": 2025, "month": 10, "action": "China expanded cathode export controls"},
+    {"year": 2026, "action": "DRC imposed cobalt export quotas (96,600 MT annually, less than half of 2024 output)"}
+  ],
+  "key_finding": "No 'NDAA-compliant' cell is truly China-free at the raw material level — the question is degree of exposure and whether chokepoints can be rapidly diversified",
+  "regulatory_timeline": [
+    {"law": "FY2020 NDAA Section 848", "status": "active", "scope": "Prohibits Chinese-sourced critical drone components, but batteries NOT explicitly listed"},
+    {"law": "FY2024 NDAA Section 154", "effective_date": "2027-10-01", "scope": "Bans DoD procurement from 6 named Chinese companies: CATL, BYD, EVE Energy, Envision, Gotion, Hithium"},
+    {"law": "FY2026 NDAA", "effective_date": "2028-01-01", "scope": "Extends ban to all Foreign Entities of Concern"}
+  ],
+  "emerging_technologies": [
+    {
+      "id": "silicon-anode",
+      "name": "Silicon-anode lithium-ion",
+      "trl": "7-8",
+      "energy_density_whkg": "370-500",
+      "discharge_rate": "5C continuous / 8C burst",
+      "cycle_life": "300-800",
+      "leader": "Amprius (shipping from US production)",
+      "material_suppliers": ["Sila Nanotechnologies", "Group14 Technologies"],
+      "timeline": "Available now for defense; broad commercial 2027-2028",
+      "ndaa_path": "Strongest near-term — US companies building domestic manufacturing with defense funding"
+    },
+    {
+      "id": "lithium-sulfur",
+      "name": "Lithium-sulfur",
+      "trl": "5-6",
+      "energy_density_whkg": "300-450 practical",
+      "discharge_rate": "0.5-2C",
+      "cycle_life": 3000,
+      "leader": "Lyten (US)",
+      "supply_chain_independence": "Complete — no nickel, cobalt, manganese, or graphite",
+      "limitation": "Low C-rate restricts to fixed-wing/endurance",
+      "cautionary_tale": "Oxis Energy (UK) went bankrupt May 2021",
+      "timeline": "Niche fixed-wing 2025-2026; broader 2028+"
+    },
+    {
+      "id": "solid-state",
+      "name": "Solid-state batteries",
+      "trl": "4-6",
+      "leaders": ["Solid Power (electrolyte licensing to BMW/SK On)", "QuantumScape (QSE-5, 844 Wh/L, automotive only)", "Samsung SDI (500 Wh/kg mass production planned 2027)"],
+      "drone_exception": "Factorial Energy pivoted to drones/robotics; ESOX Group claims production-ready cell at CES 2026",
+      "timeline": "2028-2030 for drone-suitable formats"
+    },
+    {
+      "id": "hydrogen-fuel-cells",
+      "name": "Hydrogen fuel cells",
+      "trl": "7-8",
+      "system_energy_density_whkg": "500-800",
+      "flight_time_multiplier": "3-4x vs battery",
+      "commercially_available": true,
+      "providers": [
+        {"name": "Intelligent Energy (UK)", "products": "IE-SOAR 800W-2.4kW (scalable to 24kW)", "milestone": "UK's first hydrogen BVLOS flight Nov 2025"},
+        {"name": "Doosan Mobility Innovation (South Korea)", "products": "Hydrogen drone powerpacks", "specs": "2+ hour flight, 80 km range"},
+        {"name": "H3 Dynamics (Singapore)", "milestone": "10-hour, 500 km range hand-launched UAV"}
+      ],
+      "limitation": "Requires hydrogen infrastructure; cost-effective only for drones >15 kg MTOW",
+      "timeline": "Available now for medium/large platforms"
+    },
+    {
+      "id": "sodium-ion",
+      "name": "Sodium-ion",
+      "trl": "7-8 in China, 3-5 in West",
+      "energy_density_whkg": "150-175",
+      "viable_for_drones": false,
+      "note": "60-70% of lithium-ion energy density. Natron Energy (US) ceased operations Sep 2025.",
+      "timeline": "Not viable for most drone applications"
+    }
+  ],
+  "cost_analysis": {
+    "ndaa_premium_cylindrical": "3-6x vs Chinese LiPo",
+    "ndaa_premium_us_pouch": "10-20x at current pilot production",
+    "example_6s2p_molicel": {"cell_cost_usd": "60-72", "comparable_chinese_lipo_usd": "15-25"},
+    "molicel_per_cell_usd": "4.50-6.00",
+    "molicel_lead_time_weeks": "8-16",
+    "samsung_40t_per_cell_usd": "4.44-6.00",
+    "samsung_40t_lead_time_weeks": "12-20"
+  },
+  "pouch_cell_gap": {
+    "problem": "Most multirotor drones use LiPo pouch cells. Zero commercial-scale US production exists.",
+    "chinese_share_pct": 90,
+    "cannot_solve": "Molicel and Samsung make cylindrical cells, not pouch",
+    "amprius_pouch_scale": "Pilot scale (<10 MWh/year)",
+    "best_hope": "Badland Batteries $50M DoD APFIT factory in Fargo, targeting 2026 production",
+    "investment_gap": "Current DoD programs total tens of millions vs CHIPS Act-scale $50-100B needed",
+    "realistic_timeline": "US/allied production to match Chinese capacity: 2029-2030 minimum"
+  },
+  "strategic_conclusions": [
+    "Molicel is a single point of failure for allied high-drain cylindrical supply, worsened by July 2025 fire",
+    "No non-Chinese pouch cell supply exists at scale — most drone designs lack NDAA-compliant power source",
+    "China controls 70-98% of every upstream material, so even allied cells carry residual Chinese exposure",
+    "2027-2028 NDAA compliance deadlines will arrive before domestic supply catches up",
+    "Most practical 2026-2028 strategy: Molicel/Samsung cylindrical + accelerated Amprius + design adaptation away from Chinese pouch formats"
+  ]
+}

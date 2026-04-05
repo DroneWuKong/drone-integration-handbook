@@ -1,0 +1,239 @@
+{
+  "generated_at": "2026-04-05",
+  "source_report": "Lithium battery supply chain intelligence for the UAS/drone industry",
+  "us_cell_manufacturers": [
+    {
+      "id": "amprius",
+      "name": "Amprius Technologies",
+      "country": "US",
+      "hq": "Fremont, CA",
+      "ticker": "AMPX",
+      "ndaa_compliant": true,
+      "cell_chemistry": "silicon-anode lithium-ion (SiCore)",
+      "trl": "7-8",
+      "products": [
+        {
+          "model": "SA08",
+          "format": "pouch",
+          "capacity_ah": 11.0,
+          "energy_density_whkg": 338,
+          "discharge_continuous": "5C",
+          "discharge_burst": "8C",
+          "status": "shipping"
+        },
+        {
+          "model": "SA10",
+          "format": "18650",
+          "capacity_ah": 4.0,
+          "status": "shipping"
+        },
+        {
+          "model": "SiMaxx (R&D)",
+          "format": "pouch",
+          "energy_density_whkg": 500,
+          "status": "r_and_d",
+          "note": "Validated by AeroVironment under US Army xTech Prime"
+        }
+      ],
+      "confirmed_customers": [
+        "AALTO/Airbus (Zephyr HAPS — 67-day stratospheric flight)",
+        "AeroVironment",
+        "L3Harris",
+        "Nordic Wing (ASTERO ISR UAV)",
+        "2 unnamed UAS OEMs ($35M + $15M POs in 2025)"
+      ],
+      "financials": {
+        "revenue_pct_aviation_drone": 90,
+        "revenue_pct_period": "Q2 2025",
+        "order_backlog_usd": 53300000,
+        "order_backlog_period": "end Q3 2025",
+        "diu_contract_usd": 12000000,
+        "diu_contract_note": "NDAA compliance across all 11 battery components"
+      },
+      "manufacturing": {
+        "current": "Fremont pilot line",
+        "expansion": [
+          "Korea Battery Alliance (1.8+ GWh capacity)",
+          "Nanotech Energy partnership (CA, Feb 2026)"
+        ],
+        "cancelled": "Brighton, CO $190M factory (pivoted to capital-light model)"
+      },
+      "source_urls": [
+        "https://amprius.com/amprius-ships-high-performance-sicore-cells-to-multiple-drone-customers-from-u-s-pilot-line/",
+        "https://www.aboutenergy.io/post/amprius-sa08-in-drones-a-battery-engineer-s-guide-beyond-the-typical-datasheet",
+        "https://www.unmannedsystemstechnology.com/company/amprius-technologies/",
+        "https://www.manufacturingdive.com/news/amprius-technologies-nanotech-energy-ndaa-drone-silicon-li-ion-batteries/811637/",
+        "https://finance.yahoo.com/news/amprius-secures-strategic-u-based-133000452.html"
+      ]
+    },
+    {
+      "id": "lyten",
+      "name": "Lyten",
+      "country": "US",
+      "hq": "San Jose, CA",
+      "ndaa_compliant": true,
+      "cell_chemistry": "lithium-sulfur",
+      "trl": "5-6",
+      "critical_minerals_free": true,
+      "critical_minerals_note": "Zero nickel, cobalt, manganese, or graphite",
+      "products": [
+        {
+          "model": "Li-S drone cell",
+          "format": "pouch",
+          "energy_density_theoretical_whkg": 2600,
+          "energy_density_practical_whkg": "300-450",
+          "discharge_rate": "0.5-2C",
+          "cycle_life": 3000,
+          "status": "early_production",
+          "limitation": "Low C-rate — fixed-wing and long-endurance only"
+        }
+      ],
+      "demonstrated_flights": [
+        "3+ hour flight on Titan Dynamics 8.5-ft wingspan UAV at 86 mph",
+        "Next-gen cells targeting 8 hours"
+      ],
+      "confirmed_customers": ["AEVEX Aerospace (defense ISR)"],
+      "financials": {
+        "total_funding_usd": 425000000,
+        "exim_bank_letter_usd": 650000000
+      },
+      "manufacturing": {
+        "current": "Semi-automated San Jose pilot line",
+        "expansion": [
+          "Cuberg/Northvolt facility San Leandro ($20M, 200 MWh/year)",
+          "Reno gigafactory ($1B planned, 10 GWh)",
+          "Acquired Northvolt assets: Poland (6 GWh), Sweden, Germany"
+        ]
+      },
+      "source_urls": [
+        "https://lyten.com/2025/05/08/lyten-announces-next-generation-drone-propulsion-initiative-to-support-us-national-security-needs-with-american-made-lithium-sulfur-batteries/",
+        "https://interestingengineering.com/military/us-lithium-sulfur-drone-battery",
+        "https://www.ess-news.com/2025/07/01/us-lithium-sulfur-battery-maker-lyten-buys-northvolts-6-gwh-polish-production-site/"
+      ]
+    },
+    {
+      "id": "american-lithium-energy",
+      "name": "American Lithium Energy",
+      "country": "US",
+      "hq": "Encinitas, CA",
+      "ndaa_compliant": true,
+      "cell_chemistry": "nano-silicon lithium-ion",
+      "products": [
+        {
+          "model": "18650NanoSi-4000ZV",
+          "format": "18650",
+          "capacity_ah": 4.0,
+          "energy_density_whkg": 330,
+          "zero_volt_technology": true,
+          "status": "shipping"
+        }
+      ],
+      "certifications": ["AS9100D", "ISO 9001"],
+      "capacity_cells_per_year": 5000000,
+      "target_markets": ["UAV", "eVTOL", "ISR", "loitering munitions"],
+      "source_urls": [
+        "https://www.unmannedsystemstechnology.com/company/american-lithium-energy-ale/"
+      ]
+    },
+    {
+      "id": "eaglepicher",
+      "name": "EaglePicher Technologies",
+      "country": "US",
+      "hq": "Joplin, MO",
+      "ndaa_compliant": true,
+      "cell_chemistry": "custom Li-ion, Li/CFx-MnO2 primaries",
+      "products": [
+        {
+          "model": "Custom defense cells",
+          "format": "custom",
+          "status": "shipping",
+          "note": "Defense-grade custom, not commercial 18650/21700"
+        }
+      ],
+      "military_platforms": ["Global Hawk", "X-47B UCAS", "85%+ of US missile systems"],
+      "history": "75+ years powering military platforms",
+      "source_urls": [
+        "https://www.eaglepicher.com/industries/aviation/unmanned-aerial-vehicles-uav/"
+      ]
+    },
+    {
+      "id": "crg-defense",
+      "name": "CRG Defense",
+      "country": "US",
+      "ndaa_compliant": true,
+      "ndaa_section": "842",
+      "fcc_covered_list_compliant": true,
+      "products_categories": ["battery cells", "battery packs", "motors", "propulsion systems"],
+      "target_market": "defense UAS",
+      "source_urls": [
+        "https://crgdefense.com/2026/01/15/crg-defense-responds-to-federal-uas-component-sourcing-restrictions-with-american-made-battery-and-propulsion-solutions/"
+      ]
+    },
+    {
+      "id": "enovix",
+      "name": "Enovix",
+      "country": "US",
+      "hq": "Fremont, CA",
+      "ticker": "ENVX",
+      "ndaa_compliant": "partial",
+      "ndaa_note": "Korean ops (Routejade) shipping defense cells; Fab-2 in Malaysia not US soil",
+      "cell_chemistry": "3D silicon-anode",
+      "products": [
+        {
+          "model": "Drone cell",
+          "energy_density_whkg": 341.8,
+          "status": "shipping_defense"
+        }
+      ],
+      "financials": {
+        "defense_pipeline_usd": 100000000,
+        "defense_pipeline_period": "entering 2026",
+        "cash_position_usd": 620800000
+      },
+      "limitation": "Primary focus smartphones/wearables; Malaysia Fab-2 not US soil",
+      "source_urls": [
+        "https://ir.enovix.com/news-releases/news-release-details/enovix-reports-fourth-quarter-and-full-year-2025-results/"
+      ]
+    }
+  ],
+  "us_pack_assemblers": [
+    {
+      "id": "kulr",
+      "name": "KULR Technology",
+      "hq": "Webster, TX",
+      "role": "pack_assembler",
+      "cell_sources": ["Amprius", "Molicel"],
+      "products": ["K1A drone battery system"],
+      "source_urls": ["https://dronelife.com/2025/08/20/kulr-partners-with-amprius-and-molicel-to-launch-advanced-drone-batteries/"]
+    },
+    {
+      "id": "upgrade-energy",
+      "name": "Upgrade Energy",
+      "role": "pack_assembler",
+      "cell_sources": ["Amprius", "Lyten", "Molicel"],
+      "products": ["Gold line", "Red line", "Green line"],
+      "source_urls": ["https://www.upgradeenergytech.com/", "https://amprius.com/partnerships/upgrade-energy/"]
+    },
+    {
+      "id": "maxamps",
+      "name": "MaxAmps",
+      "hq": "Spokane, WA",
+      "role": "pack_assembler",
+      "customers": ["Lockheed", "Boeing", "AeroVironment", "NASA"],
+      "source_urls": ["https://maxamps.com/pages/commercial-drone-lipo-batteries-php"]
+    },
+    {
+      "id": "badland-batteries",
+      "name": "Badland Batteries / Packet Digital",
+      "hq": "Fargo, ND",
+      "role": "pack_assembler",
+      "customers": ["Anduril (Ghost)", "Lockheed (Indago 4)"],
+      "dod_award_usd": 50000000,
+      "dod_award_program": "APFIT",
+      "factory_sqft": 80000,
+      "factory_target": "2026 production",
+      "note": "Most significant US effort to close pouch cell pack gap",
+      "source_urls": ["https://www.badlandbatteries.com/", "https://dronelife.com/2025/10/14/badland-batteries-launches-u-s-made-12s-and-6s-battery-packs-for-commercial-drones/"]
+    }
+  ]
+}

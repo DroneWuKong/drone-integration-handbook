@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-04-05",
+  "source_report": "FC+ESC stack supply chain intelligence for the UAS/drone industry",
+  "stack_manufacturers": [
+    {
+      "id": "skystars",
+      "name": "SkyStars",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 20,
+      "market_position": "Largest stack manufacturer by product count. Budget to mid-range."
+    },
+    {
+      "id": "diatone",
+      "name": "Diatone",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 13,
+      "market_position": "Established drone/stack manufacturer. MAMBA FC/ESC line."
+    },
+    {
+      "id": "flywoo",
+      "name": "Flywoo",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 11,
+      "market_position": "Integrated drone kits + stacks. GOKU line."
+    },
+    {
+      "id": "t-motor",
+      "name": "T-Motor (Tiger Motors)",
+      "country": "China",
+      "hq": "Nanchang, Jiangxi",
+      "ndaa_compliant": false,
+      "products_in_forge": 8,
+      "market_position": "Premium motors and stacks. Used by some enterprise/defense drone builders despite Chinese origin."
+    },
+    {
+      "id": "axisflying",
+      "name": "Axisflying",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 6
+    },
+    {
+      "id": "holybro",
+      "name": "Holybro",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 5,
+      "market_position": "Major ArduPilot/PX4 ecosystem supplier. Pixhawk-based FCs + Tekko ESCs. Enterprise and DIY.",
+      "strategic_note": "Holybro is deeply embedded in the open-source autopilot ecosystem. Many Blue UAS builders start with Holybro hardware."
+    },
+    {
+      "id": "speedybee",
+      "name": "SpeedyBee",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 4,
+      "market_position": "F405 V3/V4 stack is the best-selling budget stack. Bluetooth configuration app."
+    },
+    {
+      "id": "newbeedrone",
+      "name": "NewBeeDrone",
+      "country": "USA",
+      "hq": "Dallas, TX",
+      "ndaa_compliant": true,
+      "ndaa_note": "US company, but boards likely manufactured in China (Shenzhen CM). PCB assembly origin requires verification.",
+      "products_in_forge": 2,
+      "market_position": "US-based FPV brand. Hummingbird stack line. Close partnership with Grepow (Tattu) for batteries.",
+      "source_urls": ["https://newbeedrone.com"]
+    },
+    {
+      "id": "lumenier",
+      "name": "Lumenier (GetFPV)",
+      "country": "USA",
+      "hq": "Sarasota, FL",
+      "ndaa_compliant": true,
+      "ndaa_note": "US company (GetFPV house brand). PCBs likely manufactured in China. Design is US.",
+      "products_in_forge": 3,
+      "market_position": "Premium FPV brand. QAV line frames + Alpha stacks.",
+      "source_urls": ["https://www.getfpv.com"]
+    },
+    {
+      "id": "603700",
+      "name": "603700 (Ukrainian manufacturer)",
+      "country": "Ukraine",
+      "ndaa_compliant": true,
+      "products_in_forge": 4,
+      "market_position": "Ukrainian combat-proven stacks. Галичина v2 and similar. 7-inch class platforms.",
+      "combat_proven": true
+    }
+  ],
+  "country_breakdown": {
+    "China": {"count": 91, "pct": 79},
+    "Ukraine": {"count": 15, "pct": 13},
+    "USA": {"count": 6, "pct": 5},
+    "Hong_Kong": {"count": 2, "pct": 2},
+    "unknown": {"count": 1, "pct": 1}
+  }
+}

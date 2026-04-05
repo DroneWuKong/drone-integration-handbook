@@ -1,0 +1,124 @@
+{
+  "generated_at": "2026-04-05",
+  "source_report": "Video transmitter (VTX) supply chain intelligence for the UAS/drone industry",
+  "video_systems": [
+    {
+      "id": "dji",
+      "name": "DJI FPV System (O3/O4)",
+      "manufacturer": "DJI (SZ DJI Technology)",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "type": "proprietary_closed",
+      "products_in_forge": 7,
+      "frequency": "2.4 GHz / 5.8 GHz dual-band",
+      "resolution": "1080p/120fps (O4 Pro)",
+      "latency_ms": "28-40",
+      "market_position": "Dominant consumer FPV video system. O3/O4 Air Units used in custom builds. Fully proprietary — no interoperability with other systems.",
+      "strategic_note": "DJI FPV system is video-only for custom builds (control via ELRS/Crossfire). DJI's own drones use fully integrated C2+video. ASDA/NDAA bans apply.",
+      "chip_source": "Proprietary DJI SoC (likely HiSilicon or custom Ambarella-derived)",
+      "camera_sensor": "1/2 inch CMOS (likely Sony or OmniVision)"
+    },
+    {
+      "id": "walksnail",
+      "name": "Walksnail Avatar HD System",
+      "manufacturer": "CaddxFPV Technology (Shenzhen) Co., Ltd",
+      "country": "China",
+      "hq": "Shenzhen",
+      "founded": 2017,
+      "ndaa_compliant": false,
+      "type": "proprietary",
+      "products_in_forge": 24,
+      "frequency": "5.8 GHz",
+      "resolution": "1080p/120fps",
+      "latency_ms": 22,
+      "encoding": "H.265",
+      "market_position": "Second-largest digital FPV system. Fastest growing. Lower cost than DJI. 400+ distributors in 70+ countries. US/Germany/Australia offices.",
+      "camera_sensor": "1/1.8 inch Sony Starvis II (Pro line)",
+      "storage": "Built-in 8G/32G",
+      "strategic_note": "Walksnail is the primary DJI alternative for digital FPV, but equally Chinese. No NDAA path."
+    },
+    {
+      "id": "hdzero",
+      "name": "HDZero / Divimath",
+      "manufacturer": "Divimath, Inc.",
+      "country": "USA (company) / Thailand (NDAA manufacturing) / China (HDZero line)",
+      "hq": "USA",
+      "ndaa_compliant": true,
+      "ndaa_note": "Divimath NDAA line: manufactured in Thailand by American/allied-owned factories. HDZero hobby line: assembled in China. Two distinct supply chains.",
+      "type": "open_source_partial",
+      "products_in_forge": 10,
+      "frequency": "5.8 GHz",
+      "resolution": "720p/90fps (current), 1080p planned",
+      "latency_ms": "<1 (near-zero, uncompressed)",
+      "encoding": "Uncompressed video stream",
+      "market_position": "Third-largest digital FPV. Lowest latency of any digital system. Preferred by racers. Proprietary ASICs (tens of millions USD investment).",
+      "chip_source": "Proprietary Divimath ASICs — designed and owned by Divimath, no off-the-shelf components",
+      "ndaa_products": {
+        "manufacturing": "Thailand (American/allied-owned factories)",
+        "encryption": "Encrypted digital video transmission (NDAA line only)",
+        "fc": "Divimath Mini FC — STM32H743, ICM42688, manufactured in Thailand, NDAA compliant",
+        "declaration": "Divimath_NDAA_Product_Declaration.PDF available on website"
+      },
+      "strategic_significance": "CRITICAL — Only NDAA-compliant digital FPV video system. Proprietary ASICs mean no Chinese silicon dependency. Thailand manufacturing avoids China. Divimath is building a complete NDAA drone electronics stack (VTX + FC + goggles).",
+      "source_urls": [
+        "https://www.divimath.com/pages/about",
+        "https://www.divimath.com/pages/ndaa-compliance",
+        "https://www.divimath.com/products/divimath-flight-controller-h743-icm42688-ndaa-compliant",
+        "https://oscarliang.com/hdzero-digital-fpv-system/"
+      ]
+    },
+    {
+      "id": "analog",
+      "name": "Analog 5.8 GHz (various)",
+      "manufacturers": ["RUSHFPV (China)", "TBS Unify (HK/Austria)", "ImmersionRC (Croatia)", "HGLRC (China)", "Lumenier (USA/China CM)", "Foxeer (China)"],
+      "ndaa_compliant": "varies",
+      "type": "open_standard",
+      "products_in_forge": 44,
+      "frequency": "5.8 GHz",
+      "resolution": "NTSC/PAL (480i/576i)",
+      "latency_ms": "<1",
+      "market_position": "Legacy dominant system. Still 37% of VTX in Forge DB. Declining as digital grows. Zero-latency advantage for combat/racing.",
+      "strategic_note": "Analog is the simplest, cheapest, most interoperable video system. Any analog VTX works with any analog VRX. No vendor lock-in. Many analog VTXs use off-the-shelf Realtek or RichWave RF chips (Taiwanese).",
+      "ndaa_options": "ImmersionRC/Orqa (Croatia) and Lumenier (US design) offer analog VTXs with allied supply chains."
+    },
+    {
+      "id": "openipc",
+      "name": "OpenIPC",
+      "type": "open_source",
+      "products_in_forge": 5,
+      "ndaa_compliant": false,
+      "ndaa_note": "Uses Chinese SoCs (HiSilicon, Ingenic, Sigmastar). Open-source firmware but Chinese hardware.",
+      "market_position": "Emerging open-source digital FPV. Uses IP cameras repurposed as FPV VTXs. Very low cost. Community-driven.",
+      "chip_source": "HiSilicon Hi3516 (Huawei subsidiary), Sigmastar (Chinese), Ingenic (Chinese)",
+      "strategic_note": "OpenIPC demonstrates that open-source digital FPV is possible, but relies entirely on Chinese SoCs. Not viable for NDAA.",
+      "source_urls": []
+    }
+  ],
+  "ukrainian_vtx": [
+    {
+      "id": "pilotix",
+      "name": "Pilotix",
+      "country": "Ukraine",
+      "products_in_forge": 7,
+      "ndaa_compliant": true,
+      "combat_proven": true,
+      "note": "Ukrainian analog VTX manufacturer. Combat-proven in EW-contested environments."
+    }
+  ],
+  "camera_sensor_supply": {
+    "summary": "FPV camera sensors are dominated by Sony (Japan) and OmniVision (US). Both are NDAA-compliant.",
+    "vendors": [
+      {"name": "Sony Semiconductor Solutions", "hq": "Japan", "ndaa_compliant": true, "products": ["Starvis / Starvis II CMOS sensors"], "note": "Premium FPV camera sensors. Used by Caddx, RunCam, Foxeer."},
+      {"name": "OmniVision (OMNIVISION Technologies)", "hq": "Santa Clara, CA", "ndaa_compliant": true, "ndaa_note": "US company but acquired by Chinese consortium (Hua Capital) in 2016. Ownership structure requires verification.", "products": ["OV9281", "OV9782"], "note": "Used in some FPV and machine vision cameras."}
+    ],
+    "ndaa_status": "Sony sensors are clearly NDAA-compliant. OmniVision's Chinese ownership (since 2016) may create compliance questions."
+  },
+  "country_breakdown_vtx": {
+    "China": {"count": 82, "pct": 69},
+    "Ukraine": {"count": 15, "pct": 13},
+    "Hong_Kong": {"count": 9, "pct": 8},
+    "USA": {"count": 8, "pct": 7},
+    "Australia": {"count": 4, "pct": 3}
+  }
+}

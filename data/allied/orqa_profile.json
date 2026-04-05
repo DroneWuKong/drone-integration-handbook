@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-04-05",
+  "id": "orqa",
+  "name": "Orqa d.o.o.",
+  "legal_name": "Orqa d.o.o.",
+  "country": "Croatia",
+  "hq": "Osijek, Croatia",
+  "founded": 2018,
+  "founders": ["Srđan Kovačević (CEO)", "Ivan Jelušić (CSO)", "Vlatko Matijević"],
+  "ndaa_compliant": true,
+  "china_free": true,
+  "china_free_note": "One radio module found to contain Chinese-manufactured component during 2025 DoD review — manufacturing moved in-house since then. All current production claimed China-free.",
+  "nato_aligned": true,
+
+  "corporate_history": [
+    {"year": 2018, "event": "Founded in Osijek, Croatia by Kovačević, Jelušić, Matijević"},
+    {"year": 2019, "event": "FPV.One Pilot goggles released — marketed as best-in-class FPV goggles"},
+    {"year": 2022, "month": 4, "event": "Acquired ImmersionRC (Switzerland) — created EU drone electronics powerhouse"},
+    {"year": 2023, "month": 5, "event": "FPV goggles bricked by third-party software incident (license/ransomware dispute)"},
+    {"year": 2024, "event": "$5.8M seed from Lightspeed Venture Partners (US), Radius Capital (US), Decisive Point (US), Day One Capital (Hungary)"},
+    {"year": 2025, "event": "DoD purchases discovered one Chinese-sourced radio module — purchases halted, module moved in-house"},
+    {"year": 2025, "month": 8, "event": "FPV MRM-2 Interceptor officially presented at Zagreb military parade. Croatian Army orders €10M of configured drones"},
+    {"year": 2025, "event": "Baykar partnership announced — Orqa FPV drones to be carried by Bayraktar TB2"},
+    {"year": 2025, "event": "DOK-ING partnership for manned-unmanned teaming (MUM-T)"},
+    {"year": 2025, "event": "Lendurai (Estonia) partnership — autonomy software for next-gen FPV drones. 2-day operator training vs 1 month typical"},
+    {"year": 2025, "month": 12, "event": "Production capacity scaled to 280,000 drones/year at Osijek facility"},
+    {"year": 2026, "month": 3, "event": "€12.7M Series A led by Expeditions fund. Includes Lightspeed, Taiwania Capital, Radius Capital, AYMO Ventures (Croatia)"}
+  ],
+
+  "products": {
+    "drones": [
+      {"model": "MRM1-5", "type": "training_drone", "note": "FPV training platform"},
+      {"model": "MRM2-10 (FPV MRM-2 Interceptor)", "type": "combat_fpv", "ndaa_compliant": true, "ew_resilient": true, "note": "NDAA-compliant, EW-resilient combat FPV. In service with Croatian Armed Forces."},
+      {"model": "Dream X", "type": "commercial_fpv", "note": "Commercial market FPV drone"}
+    ],
+    "electronics": [
+      {"category": "FPV goggles", "model": "FPV.One Pilot", "note": "OLED FPV goggles, sold in 50+ countries"},
+      {"category": "Flight controllers", "note": "Manufactured in-house"},
+      {"category": "Motors", "note": "Manufactured in-house — last Chinese component removed when motor production moved internal"},
+      {"category": "PCBs", "note": "Manufactured in-house"},
+      {"category": "Cameras", "note": "Manufactured in-house"},
+      {"category": "Radios / control links", "model": "Ghost (via ImmersionRC)", "note": "Ghost RC link inherited from ImmersionRC acquisition. Proprietary protocol."},
+      {"category": "Video transmission", "note": "Working on proprietary digital FPV system (no confirmed release timeline)"}
+    ]
+  },
+
+  "manufacturing": {
+    "vertical_integration": "Full — designs and manufactures goggles, FCs, motors, PCBs, cameras, radios, mechanical parts in-house or with EU partners",
+    "primary_facility": "Osijek, Croatia",
+    "capacity_drones_per_year": 280000,
+    "capacity_target": "1,000,000 (with global partner factories)",
+    "partner_manufacturing": "FPV manufacturing licensing partnership with unnamed Western European NATO country",
+    "us_expansion": "US manufacturing planned with Series A funds — Kovačević says US is 'front and center'",
+    "localization_model": "Technology transfer to partner countries for sovereign drone manufacturing capability"
+  },
+
+  "financials": {
+    "revenue_2023_eur": 6400000,
+    "revenue_2024_projected_eur": 12000000,
+    "seed_2024_usd": 5800000,
+    "seed_2024_investors": ["Lightspeed Venture Partners", "Radius Capital", "Decisive Point", "Day One Capital"],
+    "series_a_2026_eur": 12700000,
+    "series_a_2026_investors": ["Expeditions", "Lightspeed Venture Partners", "Taiwania Capital", "Radius Capital", "AYMO Ventures"]
+  },
+
+  "defense_customers": [
+    {"customer": "Croatian Armed Forces", "product": "FPV MRM-2 Interceptor", "value_eur": 10000000, "status": "ordered"},
+    {"customer": "Armed Forces of Ukraine", "product": "FPV drones", "status": "purchased"},
+    {"customer": "US Department of Defense", "product": "FPV drones", "status": "halted 2025 (Chinese module found), likely resumed after in-house fix"},
+    {"customer": "Unnamed NATO countries", "status": "Manufacturing licensing partnerships"}
+  ],
+
+  "partnerships": [
+    {"partner": "Baykar (Turkey)", "type": "integration", "detail": "Orqa FPV drones to be carried/deployed by Bayraktar TB2"},
+    {"partner": "DOK-ING (Croatia)", "type": "MUM-T", "detail": "Manned-unmanned teaming for dual-use applications"},
+    {"partner": "Lendurai (Estonia)", "type": "autonomy", "detail": "AI autonomy software — next-gen autonomous FPV drones, 2-day operator training"},
+    {"partner": "ImmersionRC (acquired)", "type": "acquisition", "detail": "Swiss FPV electronics company. Ghost RC link, analog VTX products."}
+  ],
+
+  "strategic_significance": {
+    "summary": "Orqa is the most important allied FPV drone manufacturer globally. Only company in the Western hemisphere with full vertical integration — all drone building blocks manufactured in-house without Chinese components.",
+    "ndaa_relevance": "NDAA-compliant, China-free supply chain. Positioned for Pentagon contracts. One of very few credible alternatives to Chinese FPV hardware at scale.",
+    "nato_relevance": "Croatia pursuing EU first-manufacturer status for mini combat drones. NATO has praised Orqa's systems. €1.86B EU SAFE mechanism loan planned for Croatian defense modernization.",
+    "competition_vs_ukraine": "Defense Express notes Orqa as serious competitor to Ukrainian FPV manufacturers. Ukraine produced 3M drones in 2025 — Orqa targets 1M globally with partner factories.",
+    "us_market": "Kovačević: Orqa is '100 percent' positioning for Pentagon contracts. US is 'front and center' for manufacturing localization.",
+    "key_differentiator": "Full vertical integration in EU/NATO country. No Chinese components. Manufacturing localization model for sovereign capability in partner nations."
+  },
+
+  "risk_factors": [
+    "2025 Chinese module incident damaged DoD trust — any future component origin issues would be severe",
+    "2023 goggle bricking incident (third-party software) raised reliability concerns",
+    "280K/year capacity is still small vs Chinese manufacturers (Grepow: 1M+ batteries/day)",
+    "Series A funding ($12.7M) is modest compared to US defense drone startups (Anduril, Shield AI)",
+    "Proprietary digital FPV system not yet released — still relies on ImmersionRC Ghost + analog"
+  ],
+
+  "source_urls": [
+    "https://www.tectonicdefense.com/croatias-orqa-fpv-scales-annual-production-to-280000-drones/",
+    "https://total-croatia-news.com/news/osijek-orqa-croatian-military/",
+    "https://en.defence-ua.com/weapon_and_tech/croatias_orqa_aims_for_1m_annual_fpv_drones_without_chinese_parts_ukraine_faces_competition-16949.html",
+    "https://en.wikipedia.org/wiki/Orqa",
+    "https://dronexl.co/2025/12/09/croatian-drone-orqa-pentagon/",
+    "https://therecursive.com/orqa-lightspeed-venture-partners-investment-seed-profile/",
+    "https://therecursive.com/orqa-fpv-drone-startup-series-a-12-7m/",
+    "https://www.suasnews.com/2025/08/orqa-uavs-lead-croatias-defense-modernization-at-zagreb-parade/",
+    "https://orqafpv.com/news-details/swiss-immersionrc-and-croatias-orqa-merge-to-create-eu-based-drone-powerhouse",
+    "https://www.immersionrc.com/about-us/"
+  ]
+}

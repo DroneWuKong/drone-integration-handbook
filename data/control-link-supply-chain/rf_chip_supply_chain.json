@@ -1,0 +1,171 @@
+{
+  "generated_at": "2026-04-05",
+  "critical_rf_chips": [
+    {
+      "id": "sx1280",
+      "name": "Semtech SX1280",
+      "manufacturer": "Semtech Corporation",
+      "manufacturer_hq": "Camarillo, CA, USA",
+      "manufacturer_ticker": "SMTC",
+      "ndaa_compliant": true,
+      "ndaa_note": "US-headquartered fabless semiconductor. Wafers fabricated at TSMC (Taiwan) — see TSMC dependency.",
+      "package": "QFN 4x4mm",
+      "frequency": "2.4 GHz ISM",
+      "modulation": "LoRa, FLRC, FSK/GFSK",
+      "max_power_dbm": 12.5,
+      "sensitivity_dbm": -132,
+      "features": ["Ranging capability", "Ultra-low power", "LoRa spread spectrum"],
+      "application": "ExpressLRS 2.4 GHz — the dominant drone control link protocol",
+      "criticality": "CRITICAL — every 2.4 GHz ELRS device (TX module, receiver, radio) uses this chip",
+      "fab_location": "TSMC (Taiwan) — Fab 6 and Fab 11 confirmed by Semtech PCN-000540 (2019)",
+      "ordering": {
+        "mouser_pn": "SX1280IMLTRT",
+        "mouser_price_usd": 3.50,
+        "digikey_available": true,
+        "lead_time_weeks": "16-26 (varies by allocation)",
+        "moq": 1
+      },
+      "supply_risk": "MEDIUM — single-source IC from Semtech, fabricated at TSMC. Taiwan disruption scenario affects all ELRS hardware.",
+      "source_urls": [
+        "https://www.semtech.com/products/wireless-rf/lora-connect/sx1280",
+        "https://www.mouser.com/PCN/Semtech_Corporation_PCN_000540_SX1272_second_fab.pdf"
+      ]
+    },
+    {
+      "id": "sx1276",
+      "name": "Semtech SX1276/77/78/79",
+      "manufacturer": "Semtech Corporation",
+      "manufacturer_hq": "Camarillo, CA, USA",
+      "ndaa_compliant": true,
+      "package": "QFN 4x4mm / 6x6mm",
+      "frequency": "137-1020 MHz (sub-GHz)",
+      "modulation": "LoRa, FSK/OOK",
+      "application": "ExpressLRS 868/915 MHz — long-range sub-GHz drone control",
+      "criticality": "HIGH — all 900 MHz ELRS devices use this chip family",
+      "fab_location": "TSMC (Taiwan)",
+      "supply_risk": "MEDIUM — same TSMC dependency as SX1280",
+      "source_urls": [
+        "https://cdn-shop.adafruit.com/product-files/3179/sx1276_77_78_79.pdf"
+      ]
+    },
+    {
+      "id": "cc2500",
+      "name": "Texas Instruments CC2500",
+      "manufacturer": "Texas Instruments",
+      "manufacturer_hq": "Dallas, TX, USA",
+      "ndaa_compliant": true,
+      "frequency": "2.4 GHz ISM",
+      "application": "FrSky D16/ACCST protocol. Also in multi-protocol modules (JP4-in-1).",
+      "criticality": "MEDIUM — legacy protocol, declining usage as ELRS grows",
+      "supply_risk": "LOW — mature TI product, multiple fab sources",
+      "source_urls": []
+    },
+    {
+      "id": "nrf24l01",
+      "name": "Nordic Semiconductor nRF24L01",
+      "manufacturer": "Nordic Semiconductor",
+      "manufacturer_hq": "Trondheim, Norway",
+      "ndaa_compliant": true,
+      "frequency": "2.4 GHz ISM",
+      "application": "Multi-protocol modules. Various legacy RC protocols.",
+      "criticality": "LOW — legacy, mostly in JP4-in-1 multi-protocol modules",
+      "supply_risk": "LOW — mature, widely available",
+      "source_urls": []
+    }
+  ],
+  "critical_mcus": [
+    {
+      "id": "esp32",
+      "name": "Espressif ESP32 / ESP8285",
+      "manufacturer": "Espressif Systems",
+      "manufacturer_hq": "Shanghai, China",
+      "ndaa_compliant": false,
+      "application": "ELRS receivers and TX modules — WiFi configuration, OTA firmware updates",
+      "criticality": "HIGH — most ELRS receivers use ESP8285 or ESP32 for WiFi update capability",
+      "fab_location": "TSMC (Taiwan) for ESP32; various for ESP8285",
+      "supply_risk": "MEDIUM — Chinese company, but fabbed at TSMC. Design is Chinese IP.",
+      "ndaa_concern": "Espressif is a Shanghai-based company. ESP32 in ELRS devices means even 'open-source' ELRS has Chinese MCU dependency."
+    },
+    {
+      "id": "stm32",
+      "name": "STMicroelectronics STM32 family",
+      "manufacturer": "STMicroelectronics",
+      "manufacturer_hq": "Geneva, Switzerland (dual-listed France/Italy)",
+      "ndaa_compliant": true,
+      "models_used": ["STM32F407", "STM32F429BIT6", "STM32L432KBU6", "STM32F103"],
+      "application": "Radio MCUs (RadioMaster, Jumper), some ELRS receivers, flight controllers",
+      "criticality": "CRITICAL — EdgeTX firmware runs on STM32. All serious radios and many receivers use STM32.",
+      "fab_locations": ["Crolles, France", "Agrate Brianza, Italy", "Catania, Italy", "Various foundry partners"],
+      "supply_risk": "LOW-MEDIUM — European/allied semiconductor, multiple fabs. 2021-2023 chip shortage caused 52-week lead times but has normalized."
+    }
+  ],
+  "firmware_ecosystem": [
+    {
+      "id": "elrs",
+      "name": "ExpressLRS",
+      "type": "open_source",
+      "license": "GPL-3.0",
+      "governance": "ExpressLRS LLC + open-source community",
+      "github": "https://github.com/ExpressLRS/ExpressLRS",
+      "hardware_agnostic": true,
+      "supported_manufacturers": ["RadioMaster", "Jumper", "BETAFPV", "Happymodel", "NamimnoRC", "iFlight", "GEPRC", "Foxeer", "HGLRC", "SIYI (FM30)", "ImmersionRC"],
+      "rf_chips": ["Semtech SX1280 (2.4 GHz)", "Semtech SX1276/78 (868/915 MHz)"],
+      "max_packet_rate_hz": 1000,
+      "market_share_estimate": "70-80% of FPV drone builds (2025-2026)",
+      "strategic_significance": "Open-source protocol eliminates vendor lock-in. Any manufacturer can build ELRS hardware. But all current manufacturers are Chinese except ImmersionRC/Orqa.",
+      "source_urls": [
+        "https://github.com/ExpressLRS/ExpressLRS"
+      ]
+    },
+    {
+      "id": "edgetx",
+      "name": "EdgeTX",
+      "type": "open_source",
+      "license": "GPL-2.0",
+      "governance": "EdgeTX community (fork of OpenTX)",
+      "application": "Radio transmitter firmware — runs on RadioMaster, Jumper, FrSky hardware",
+      "strategic_significance": "Open-source radio firmware. Decouples firmware from hardware vendor. Enables NDAA-compliant hardware to run same software.",
+      "source_urls": []
+    },
+    {
+      "id": "crossfire",
+      "name": "TBS Crossfire / CRSF",
+      "type": "proprietary",
+      "owner": "Team BlackSheep (Hong Kong/Austria)",
+      "protocol_adoption": "CRSF serial protocol adopted by Betaflight, ELRS, ArduPilot as de facto standard for FC-to-receiver communication",
+      "market_share_estimate": "15-20% (declining, replaced by ELRS)",
+      "strategic_note": "Proprietary protocol from Hong Kong company. CRSF protocol itself is widely used even by ELRS — the serial communication layer is TBS-originated."
+    },
+    {
+      "id": "dji-rc",
+      "name": "DJI RC Protocol",
+      "type": "proprietary_closed",
+      "owner": "DJI (Shenzhen)",
+      "application": "DJI FPV system, DJI O3/O4 Air Unit, DJI Avata/Neo",
+      "frequency": "2.4 GHz / 5.8 GHz dual-band",
+      "market_share_estimate": "Dominant in consumer FPV video link. Separate from control link in most builds.",
+      "strategic_note": "DJI's FPV system is video-only for custom builds (control via ELRS/Crossfire). DJI's own drones use fully proprietary C2+video link."
+    }
+  ],
+  "semtech_corporate": {
+    "name": "Semtech Corporation",
+    "hq": "Camarillo, CA, USA",
+    "ticker": "SMTC",
+    "ndaa_compliant": true,
+    "fabless_since": 2002,
+    "primary_foundry": "TSMC (Taiwan)",
+    "tsmc_fabs_confirmed": ["Fab 6", "Fab 11"],
+    "strategic_significance": "Semtech's LoRa platform (SX1276/SX1280) is the silicon foundation of the entire ELRS ecosystem. Single-source IC — no second-source LoRa transceiver exists from any other vendor. A Semtech supply disruption would halt all ELRS hardware production globally.",
+    "acquired_sierra_wireless": "2023 — $1.2B acquisition added IoT/cellular to LoRa portfolio",
+    "source_urls": [
+      "https://www.semtech.com/products/wireless-rf/lora-connect/sx1280",
+      "https://sst.semiconductor-digest.com/2002/01/semtech-to-become-completely-fabless/"
+    ]
+  },
+  "tsmc_dependency": {
+    "affected_chips": ["Semtech SX1280", "Semtech SX1276/78", "Espressif ESP32"],
+    "risk_scenario": "Taiwan contingency — TSMC disruption cascades to all ELRS hardware production",
+    "mitigation": "None at chip level. ELRS protocol is open-source so alternative RF silicon could theoretically be supported, but no LoRa-equivalent exists.",
+    "cross_reference": "Same TSMC dependency affects all companion computer SoCs (Jetson, QRB5165) — see PIE flag on Taiwan scenario."
+  }
+}

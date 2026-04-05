@@ -1,0 +1,234 @@
+{
+  "generated_at": "2026-04-05",
+  "source_report": "Control link (C2) supply chain intelligence for the UAS/drone industry",
+  "radio_manufacturers": [
+    {
+      "id": "radiomaster",
+      "name": "RadioMaster (Shenzhen RadioMaster Co., Ltd)",
+      "country": "China",
+      "hq": "Shenzhen, Guangdong",
+      "ndaa_compliant": false,
+      "role": "radio_manufacturer",
+      "products": [
+        {"model": "TX16S MKII", "type": "handheld_radio", "protocol": "ELRS/Multi-protocol", "frequency": "2.4 GHz", "price_usd": 160},
+        {"model": "Zorro", "type": "gamepad_radio", "protocol": "ELRS/Multi-protocol", "frequency": "2.4 GHz", "price_usd": 100},
+        {"model": "Pocket", "type": "compact_radio", "protocol": "ELRS", "frequency": "2.4 GHz", "price_usd": 60},
+        {"model": "Bandit", "type": "tx_module", "protocol": "ELRS", "frequency": "868/915 MHz", "price_usd": 40},
+        {"model": "GX12", "type": "handheld_radio", "protocol": "ELRS Gemini-X dual-band", "frequency": "2.4 GHz + 915 MHz", "price_usd": 200, "note": "First dual-band ELRS radio"},
+        {"model": "AX12", "type": "handheld_radio", "protocol": "ELRS", "frequency": "2.4 GHz", "note": "Android-based, MAVLink passthrough, QGroundControl support"}
+      ],
+      "market_position": "Dominant open-source radio maker. TX16S is the de facto standard EdgeTX radio. Largest ELRS hardware ecosystem.",
+      "firmware": "EdgeTX (open-source)",
+      "rf_chips_used": ["Semtech SX1280 (2.4 GHz ELRS)", "TI CC2500 (FrSky protocol)", "Amiccom A7105 (FlySky)", "Nordic NRF24L01 (other protocols)", "Cypress CYRF6936 (DSM)"],
+      "mcu": "STM32F407/F429 (STMicroelectronics)",
+      "china_dependency": "100% — designed and manufactured in Shenzhen",
+      "source_urls": [
+        "https://radiomasterrc.com/pages/about-radiomaster",
+        "https://oscarliang.com/radiomaster-ax12/"
+      ]
+    },
+    {
+      "id": "jumper",
+      "name": "Jumper RC (Changzhou)",
+      "country": "China",
+      "hq": "Changzhou, Jiangsu (distributed via Shenzhen FEETECH RC Model Co.)",
+      "ndaa_compliant": false,
+      "role": "radio_manufacturer",
+      "products": [
+        {"model": "T-Pro V2", "type": "gamepad_radio", "protocol": "ELRS/Multi-protocol", "frequency": "2.4 GHz", "price_usd": 80},
+        {"model": "T20S V2", "type": "handheld_radio", "protocol": "ELRS", "frequency": "2.4 GHz", "price_usd": 180},
+        {"model": "T15", "type": "handheld_radio", "protocol": "ELRS", "frequency": "2.4 GHz", "price_usd": 200},
+        {"model": "Bumblebee", "type": "gamepad_radio", "protocol": "ELRS", "frequency": "2.4 GHz"}
+      ],
+      "market_position": "Second-largest open-source radio maker. Strong in budget and mid-range segment.",
+      "firmware": "EdgeTX (open-source)",
+      "rf_chips_used": ["Semtech SX1280", "JP4-in-1 multi-protocol (CC2500, NRF24L01, A7105, CYRF6936)"],
+      "mcu": "STM32F429BIT6",
+      "china_dependency": "100%",
+      "source_urls": [
+        "https://www.jumper-rc.com/"
+      ]
+    },
+    {
+      "id": "betafpv",
+      "name": "BETAFPV",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "role": "radio_and_receiver_manufacturer",
+      "products": [
+        {"model": "LiteRadio 3 Pro", "type": "gamepad_radio", "protocol": "ELRS", "frequency": "2.4 GHz"},
+        {"model": "SuperD Diversity RX", "type": "receiver", "protocol": "ELRS", "frequency": "2.4 GHz / 915 MHz", "note": "Dual SX1280 or dual SX1276 true diversity"},
+        {"model": "ELRS Nano RX", "type": "receiver", "protocol": "ELRS", "frequency": "2.4 GHz"},
+        {"model": "ELRS Lite RX", "type": "receiver", "protocol": "ELRS", "frequency": "2.4 GHz"}
+      ],
+      "market_position": "Leading tiny whoop / micro drone ecosystem. Strong ELRS receiver line.",
+      "rf_chips_used": ["Semtech SX1280", "Semtech SX1276"],
+      "mcu": "ESP8285 / STM32L432KBU6",
+      "china_dependency": "100%",
+      "source_urls": [
+        "https://betafpv.com/products/superd-elrs-2-4g-diversity-receiver",
+        "https://betafpv.com/products/elrs-nano-receiver"
+      ]
+    },
+    {
+      "id": "happymodel",
+      "name": "Happymodel",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "role": "receiver_manufacturer",
+      "products": [
+        {"model": "EP2 RX", "type": "receiver", "protocol": "ELRS", "frequency": "2.4 GHz", "weight_g": 0.44, "price_usd": 12},
+        {"model": "EP1 RX", "type": "receiver", "protocol": "ELRS", "frequency": "2.4 GHz", "weight_g": 0.42},
+        {"model": "ES24TX Pro", "type": "tx_module", "protocol": "ELRS", "frequency": "2.4 GHz"}
+      ],
+      "market_position": "Pioneering ELRS receiver maker. Smallest/lightest ELRS receivers available.",
+      "rf_chips_used": ["Semtech SX1280 (SX1280IMLTRT)"],
+      "mcu": "ESP8285 / STM32L432KBU6",
+      "china_dependency": "100%",
+      "source_urls": [
+        "https://www.amazon.com/Happymodel-2-4GHz-SX1280-EXPRESSLRS-Receiver/dp/B092J1VP6S"
+      ]
+    },
+    {
+      "id": "tbs",
+      "name": "Team BlackSheep (TBS)",
+      "country": "Hong Kong / Austria",
+      "hq": "Hong Kong (Blacksheep Avionics Co Ltd) + Austria (Conceptos Pirker GmbH, St. Anton am Arlberg)",
+      "ndaa_compliant": false,
+      "ndaa_note": "Hong Kong entity, manufacturing likely China-based. Austrian entity is European commercial arm.",
+      "role": "radio_link_manufacturer",
+      "products": [
+        {"model": "Crossfire TX", "type": "tx_module", "protocol": "Crossfire (proprietary CRSF)", "frequency": "868/915 MHz", "power_w": 2.0, "range_km": 100, "price_usd": 150},
+        {"model": "Crossfire Nano TX", "type": "tx_module_nano", "protocol": "Crossfire", "frequency": "868/915 MHz", "price_usd": 50},
+        {"model": "Tracer Micro TX", "type": "tx_module", "protocol": "Tracer (proprietary)", "frequency": "2.4 GHz", "max_hz": 250, "price_usd": 80},
+        {"model": "Tango 2", "type": "gamepad_radio", "protocol": "Crossfire built-in", "frequency": "868/915 MHz", "price_usd": 200}
+      ],
+      "market_position": "Invented the modern long-range RC link. Crossfire was the industry standard before ELRS. CRSF protocol widely adopted even by competitors. Declining market share as ELRS grows.",
+      "firmware": "Proprietary (closed-source CRSF protocol)",
+      "manufacturing": "Products designed in Hong Kong/Austria, manufactured via Chinese CM partners. Acquired by Orqa (Croatia) April 2022 for the ImmersionRC product line.",
+      "china_dependency": "HIGH — manufacturing in China, HQ in Hong Kong SAR",
+      "source_urls": [
+        "https://www.team-blacksheep.com/about",
+        "https://www.team-blacksheep.com/products/prod:crossfire_tx"
+      ]
+    },
+    {
+      "id": "immersionrc-orqa",
+      "name": "ImmersionRC / Orqa",
+      "country": "Croatia / Switzerland",
+      "hq": "Osijek, Croatia (Orqa d.o.o.) + Switzerland (ImmersionRC)",
+      "ndaa_compliant": true,
+      "ndaa_note": "EU-manufactured. Orqa claims full vertical integration with no Chinese critical components.",
+      "role": "radio_link_and_drone_manufacturer",
+      "products": [
+        {"model": "Ghost (Atto/Hybrid)", "type": "rc_link", "protocol": "Ghost (proprietary)", "frequency": "2.4 GHz", "note": "Ultra-low latency link, designed for FPV racing"},
+        {"model": "Orqa FPV.One Pilot", "type": "fpv_goggles", "note": "Flagship OLED goggles, manufactured in Croatia"}
+      ],
+      "market_position": "Only Western-hemisphere company claiming all drone building blocks manufactured in-house. Orqa acquired ImmersionRC in April 2022 to create EU-based drone powerhouse.",
+      "firmware": "Proprietary",
+      "manufacturing": "Designed and manufactured in Croatia (Orqa) and Switzerland (legacy ImmersionRC)",
+      "china_dependency": "LOW — claims full vertical integration in EU",
+      "strategic_significance": "Potential NDAA-compliant control link alternative. EU defense drone supply chain.",
+      "source_urls": [
+        "https://www.immersionrc.com/about-us/",
+        "https://orqafpv.com/news-details/swiss-immersionrc-and-croatias-orqa-merge-to-create-eu-based-drone-powerhouse"
+      ]
+    },
+    {
+      "id": "frsky",
+      "name": "FrSky (Shenzhen Juhang Technology)",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "role": "radio_manufacturer",
+      "products": [
+        {"model": "Taranis X9D Plus", "type": "handheld_radio", "protocol": "ACCESS/ACCST/D16", "frequency": "2.4 GHz"},
+        {"model": "Tandem X20", "type": "handheld_radio", "protocol": "ACCESS/ELRS dual", "frequency": "2.4 GHz + 868/915 MHz"}
+      ],
+      "market_position": "Legacy dominant brand, now declining. Lost market share to RadioMaster/ELRS ecosystem. ACCESS protocol lock-in drove users away.",
+      "firmware": "FrOS (proprietary) + optional ELRS module bay",
+      "china_dependency": "100%",
+      "source_urls": []
+    },
+    {
+      "id": "flysky",
+      "name": "FlySky (Shenzhen Flysky Technology)",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "role": "radio_manufacturer",
+      "products": [
+        {"model": "FS-i6X", "type": "handheld_radio", "protocol": "AFHDS 2A", "frequency": "2.4 GHz", "price_usd": 50},
+        {"model": "Noble NB4+", "type": "surface_radio", "protocol": "AFHDS 3", "frequency": "2.4 GHz"}
+      ],
+      "market_position": "Budget entry-level. Lowest price point. Losing ground to ELRS budget radios (RadioMaster Pocket, BETAFPV LiteRadio).",
+      "china_dependency": "100%",
+      "source_urls": []
+    },
+    {
+      "id": "siyi",
+      "name": "SIYI Technology (Shenzhen) Co., Ltd",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "role": "enterprise_link_manufacturer",
+      "products": [
+        {"model": "MK32", "type": "enterprise_gcs", "protocol": "Proprietary HD link", "frequency": "2.4 GHz / 5 GHz", "range_km": 30, "price_usd": 1200},
+        {"model": "MK15", "type": "enterprise_gcs", "protocol": "Proprietary HD link", "frequency": "2.4 GHz", "range_km": 15, "price_usd": 600},
+        {"model": "HM30", "type": "hd_link", "protocol": "Proprietary", "frequency": "2.4 GHz", "range_km": 30, "video": "1080p 60fps", "price_usd": 300},
+        {"model": "FM30", "type": "tx_module", "protocol": "ELRS-compatible", "frequency": "2.4 GHz", "note": "Also has ELRS firmware option"}
+      ],
+      "market_position": "Leading Chinese enterprise drone link manufacturer. MK32/MK15 are widely used by commercial drone builders (agriculture, survey, inspection). Qualcomm SoC-based Android GCS.",
+      "soc": "Qualcomm 8-core (MK32/MK15)",
+      "china_dependency": "100%",
+      "strategic_note": "SIYI products are deeply embedded in ArduPilot/PX4 commercial drone ecosystem. No NDAA-compliant equivalent at comparable price/performance exists.",
+      "source_urls": [
+        "https://shop.siyi.biz/",
+        "https://siyi.biz/siyi_file/MK15/MK15%20User%20Manual%20v1.7.pdf"
+      ]
+    }
+  ],
+  "ukrainian_combat_links": [
+    {
+      "id": "chdb",
+      "name": "ЧДБ (ChDB)",
+      "country": "Ukraine",
+      "role": "combat_link_manufacturer",
+      "products_in_forge": 4,
+      "frequency_range": "370-560 MHz",
+      "note": "Non-standard frequency operation. Combat-proven in Ukraine. Custom protocols designed for EW-contested environments.",
+      "ndaa_compliant": true,
+      "source": "vtx.in.ua"
+    },
+    {
+      "id": "aeronetix",
+      "name": "AERONETIX",
+      "country": "Ukraine",
+      "role": "combat_link_manufacturer",
+      "products_in_forge": 10,
+      "note": "Ukrainian combat-proven control links. Custom EW-hardened protocols.",
+      "ndaa_compliant": true,
+      "source": "vtx.in.ua"
+    },
+    {
+      "id": "helloradio",
+      "name": "HelloRadio",
+      "country": "Ukraine",
+      "role": "combat_link_manufacturer",
+      "products_in_forge": 3,
+      "ndaa_compliant": true,
+      "source": "vtx.in.ua"
+    },
+    {
+      "id": "cyclone",
+      "name": "Cyclone",
+      "country": "Ukraine",
+      "role": "combat_link_manufacturer",
+      "products_in_forge": 3,
+      "ndaa_compliant": true,
+      "source": "vtx.in.ua"
+    }
+  ]
+}

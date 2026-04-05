@@ -1,0 +1,155 @@
+{
+  "generated_at": "2026-04-05",
+  "source_report": "ESC supply chain intelligence for the UAS/drone industry",
+  "esc_manufacturers": [
+    {
+      "id": "skystars",
+      "name": "SkyStars",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 14,
+      "firmware": ["BLHeli_32", "AM32"],
+      "market_position": "Largest ESC manufacturer by product count in Forge. Budget to mid-range."
+    },
+    {
+      "id": "t-motor",
+      "name": "T-Motor (Tiger Motors)",
+      "country": "China",
+      "hq": "Nanchang, Jiangxi",
+      "ndaa_compliant": false,
+      "products_in_forge": 14,
+      "firmware": ["BLHeli_32"],
+      "market_position": "Premium ESCs and motors. FLAME and VELOX series. Used in some Blue UAS-adjacent builds despite Chinese origin.",
+      "strategic_note": "T-Motor supplies ESCs to some drone integrators who claim NDAA compliance. Origin verification needed."
+    },
+    {
+      "id": "lumenier",
+      "name": "Lumenier (GetFPV)",
+      "country": "USA",
+      "hq": "Sarasota, FL",
+      "ndaa_compliant": true,
+      "ndaa_note": "US company. 'NDAA' labeled products (e.g. Siege 80A NDAA). PCB assembly origin requires verification — likely allied CM, not Shenzhen.",
+      "products_in_forge": 13,
+      "firmware": ["AM32", "BLHeli_32"],
+      "ndaa_products": [
+        "Lumenier Siege 80A 3-8S AM32 4-in-1 ESC - NDAA",
+        "Lumenier ELITE PRO 60A 2-6S AM32 4-in-1 ESC"
+      ],
+      "market_position": "Largest US ESC brand. GetFPV house brand. Actively marketing NDAA-compliant products.",
+      "source_urls": ["https://www.getfpv.com/brands/lumenier"]
+    },
+    {
+      "id": "fettec",
+      "name": "FETtec",
+      "country": "Germany",
+      "hq": "Germany",
+      "ndaa_compliant": true,
+      "products_in_forge": 4,
+      "firmware": ["FETtec (proprietary FOC)"],
+      "products": [
+        {"model": "SFOC 50A", "note": "Sinusoidal FOC drive — smoother and more efficient than trapezoidal"},
+        {"model": "65A 3-8S 4-in-1"},
+        {"model": "45A 3-6S 4-in-1"},
+        {"model": "35A V1.1 4-in-1"}
+      ],
+      "market_position": "Premium German-engineered ESC. Proprietary FOC firmware (not BLHeli). First to use STM32G473 in FC/ESC. Used by high-end builders and enterprise.",
+      "strategic_significance": "European-manufactured, proprietary FOC firmware, allied supply chain. One of the few genuinely NDAA-compliant ESC options.",
+      "source_urls": ["https://www.fettec.net"]
+    },
+    {
+      "id": "holybro",
+      "name": "Holybro",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 5,
+      "firmware": ["AM32", "BLHeli_32"],
+      "market_position": "Tekko32 ESC line. Major ArduPilot ecosystem supplier. DroneCAN-capable ESCs for enterprise."
+    },
+    {
+      "id": "hobbywing",
+      "name": "Hobbywing",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 4,
+      "firmware": ["BLHeli_32", "AM32"],
+      "market_position": "XRotor series. First major brand to adopt AT32F421 MCU in G2 series ESCs. Also makes enterprise-grade ESCs for large drones.",
+      "strategic_note": "Hobbywing's adoption of AT32 MCU in G2 series accelerated Chinese MCU penetration into ESC ecosystem."
+    },
+    {
+      "id": "foxeer",
+      "name": "Foxeer",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 9,
+      "firmware": ["BLHeli_S", "BLHeli_32"]
+    },
+    {
+      "id": "603700",
+      "name": "603700 (Ukrainian)",
+      "country": "Ukraine",
+      "ndaa_compliant": true,
+      "products_in_forge": 4,
+      "combat_proven": true,
+      "products": [
+        {"model": "Франківськ v1", "current_a": 55},
+        {"model": "Франківськ v2", "current_a": 55},
+        {"model": "Франківськ v3", "current_a": 60},
+        {"model": "СТРИЙ v1", "current_a": 80, "voltage": "8S"}
+      ],
+      "market_position": "Ukrainian combat-proven ESCs. High-current designs for 7-inch and heavy-lift combat drones."
+    },
+    {
+      "id": "kde-direct",
+      "name": "KDE Direct",
+      "country": "USA",
+      "hq": "Bend, OR",
+      "ndaa_compliant": true,
+      "firmware": ["KDE proprietary"],
+      "market_position": "US-manufactured enterprise/defense ESCs. Large drone propulsion systems. Proprietary firmware.",
+      "strategic_significance": "Genuine US-manufactured ESC for large platforms. Used in defense programs. Not FPV-class.",
+      "source_urls": ["https://www.kdedirect.com"]
+    },
+    {
+      "id": "vertiq",
+      "name": "Vertiq (IQ Motion)",
+      "country": "USA",
+      "hq": "Ann Arbor, MI",
+      "ndaa_compliant": true,
+      "firmware": ["Vertiq proprietary (IQ Motion FOC)"],
+      "market_position": "Integrated motor+ESC modules for defense/enterprise. FOC drive. Closed-loop position/velocity control.",
+      "strategic_significance": "US-designed integrated propulsion modules targeting defense market. NDAA compliant.",
+      "source_urls": ["https://www.vertiq.co"]
+    }
+  ],
+  "country_breakdown": {
+    "China": {"count": 119, "pct": 72},
+    "USA": {"count": 24, "pct": 15},
+    "Ukraine": {"count": 13, "pct": 8},
+    "Germany": {"count": 4, "pct": 2},
+    "Hong_Kong": {"count": 2, "pct": 1},
+    "Australia": {"count": 2, "pct": 1}
+  },
+  "firmware_breakdown": {
+    "BLHeli_32": {"count": 75, "pct": 45, "type": "closed_source", "note": "Declining. Betaflight recommends AM32."},
+    "BLHeli_S": {"count": 27, "pct": 16, "type": "open_source_legacy", "note": "8-bit. Bluejay fork recommended."},
+    "AM32": {"count": 17, "pct": 10, "type": "open_source", "note": "Growing. Betaflight-recommended. NDAA path via STM32 MCU."},
+    "unknown": {"count": 37, "pct": 22},
+    "proprietary": {"count": 9, "pct": 5, "note": "FETtec, KDE, Vertiq, Simplex — all allied manufacturers"}
+  },
+  "ndaa_esc_landscape": {
+    "fpv_class": {
+      "compliant_options": ["Lumenier NDAA line (US design, AM32)", "FETtec (Germany, proprietary FOC)", "Divimath (US, Thailand mfg — new entrant)"],
+      "gap": "US brands (Lumenier, XILO) likely use Chinese CM for PCB assembly. FETtec is the only manufacturer with confirmed European assembly.",
+      "cost_premium": "1.5-3x vs Chinese equivalents"
+    },
+    "enterprise_class": {
+      "compliant_options": ["KDE Direct (US manufactured)", "Vertiq/IQ Motion (US designed)", "Holybro → not compliant despite ArduPilot ecosystem use"],
+      "gap": "Enterprise ESCs from KDE and Vertiq are 5-10x more expensive than Chinese equivalents. Limited product range."
+    },
+    "silicon_note": "See stack-supply-chain/silicon_and_firmware.json for MCU (STM32 vs AT32) and MOSFET supply chain details — same analysis applies to standalone ESCs."
+  }
+}

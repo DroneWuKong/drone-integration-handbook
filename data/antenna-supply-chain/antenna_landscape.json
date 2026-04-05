@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-04-05",
+  "source_report": "Antenna supply chain intelligence for the UAS/drone industry",
+  "antenna_manufacturers": [
+    {
+      "id": "truerc",
+      "name": "TrueRC Canada",
+      "country": "Canada",
+      "hq": "Canada",
+      "ndaa_compliant": true,
+      "products_in_forge": 95,
+      "market_share_note": "Largest FPV antenna manufacturer — 24% of Forge DB",
+      "manufacturing": "Designed and manufactured in Canada. Patented helical antenna technology (US Pat 10,804,618, Can Pat 2968566).",
+      "products": ["X-AIR (directional)", "CORE (omni)", "Singularity (stubby)", "DUALITY (dual-band 2.4/5.8 GHz)"],
+      "applications": ["FPV hobbyist", "Military/defense", "Industrial", "Security"],
+      "strategic_significance": "Allied-manufactured antenna leader. Canadian production with US/Canadian patents. Genuine NDAA-compliant.",
+      "source_urls": ["https://truerc.com/", "https://www.truerc.ca/about-us"]
+    },
+    {
+      "id": "lumenier-ant",
+      "name": "Lumenier (GetFPV)",
+      "country": "USA",
+      "hq": "Sarasota, FL",
+      "ndaa_compliant": true,
+      "ndaa_note": "US brand. Some antennas co-developed with TrueRC. Manufacturing origin varies — some may be Chinese CM.",
+      "products_in_forge": 92,
+      "market_share_note": "Second-largest — 23%. House brand of GetFPV, largest US FPV retailer."
+    },
+    {
+      "id": "vas",
+      "name": "Video Aerial Systems (VAS)",
+      "country": "USA",
+      "hq": "USA",
+      "ndaa_compliant": true,
+      "products_in_forge": 78,
+      "market_share_note": "Third-largest — 20%. US-based antenna specialist.",
+      "products": ["Crosshair (directional)", "Ion (omni)", "Pepperbox (array)"],
+      "note": "US antenna manufacturer. Well-regarded for helical and patch designs."
+    },
+    {
+      "id": "tbs-ant",
+      "name": "Team BlackSheep",
+      "country": "Hong Kong / Austria",
+      "ndaa_compliant": false,
+      "products_in_forge": 27,
+      "note": "Crossfire and Tracer antennas. Immortal T dipole is an industry standard."
+    },
+    {
+      "id": "menace-rc",
+      "name": "Menace RC",
+      "country": "China",
+      "ndaa_compliant": false,
+      "products_in_forge": 13
+    },
+    {
+      "id": "orqa-ant",
+      "name": "Orqa",
+      "country": "Croatia",
+      "ndaa_compliant": true,
+      "products_in_forge": 6,
+      "note": "ImmersionRC Ghost antennas. Croatian-manufactured."
+    }
+  ],
+  "country_breakdown": {
+    "USA": {"count": 207, "pct": 53},
+    "China": {"count": 160, "pct": 41},
+    "Hong_Kong": {"count": 27, "pct": 7}
+  },
+  "antenna_technology": {
+    "summary": "FPV antennas are passive RF components. No active electronics, no firmware, no MCU. Manufacturing requires RF engineering expertise and precision fabrication (PCB etching, injection molding, SMA connectors).",
+    "types": {
+      "omni": {"count": 232, "note": "Omnidirectional — used on drones. 360° coverage. Circular polarized (LHCP/RHCP)."},
+      "patch": {"count": 62, "note": "Directional patch — used on goggles. Higher gain, narrower beam."},
+      "stubby": {"count": 29, "note": "Compact omni — popular for goggle mounting."},
+      "dipole": {"count": 20, "note": "Simple linear polarized — used for ELRS receivers (Immortal T)."}
+    },
+    "key_components": {
+      "pcb": "Antenna PCBs use standard FR4 or Rogers high-frequency laminate. Available from allied sources.",
+      "connectors": "SMA/RP-SMA/MMCX/U.FL connectors — manufactured by Amphenol (USA), TE Connectivity (Switzerland), Chinese sources.",
+      "housing": "Polycarbonate injection-molded housings. Commodity manufacturing.",
+      "cable": "Coaxial cable — standard component, allied sources available."
+    }
+  },
+  "ndaa_antenna_assessment": {
+    "status": "STRONG — Antennas are the MOST NDAA-compliant component category",
+    "allied_share_pct": 53,
+    "detail": "53% of FPV antennas are US-branded (TrueRC/Canada + Lumenier + VAS + XILO). Antennas are passive RF components with no electronics, firmware, or Chinese silicon dependency. Manufacturing is precision fabrication, not semiconductor processing.",
+    "truerc_advantage": "TrueRC (Canada) is the gold standard — designed and manufactured in Canada with US/Canadian patents. Proven in military/industrial/security applications.",
+    "realistic_assessment": "Antennas should NOT be a supply chain concern for NDAA builds. Allied manufacturing is mature and cost-competitive. This is a solved problem.",
+    "caveat": "Some US-branded antennas (Lumenier, XILO) may use Chinese CM for lower-cost models. TrueRC and VAS are the most clearly allied-manufactured."
+  }
+}

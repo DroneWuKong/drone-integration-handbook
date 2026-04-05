@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-04-05",
+  "white_label_map": [
+    {"brand": "Tattu / Gens Ace", "cell_source": "Grepow (Shenzhen)", "confidence": "confirmed", "note": "Same parent company"},
+    {"brand": "GNB / GaoNeng", "cell_source": "Self-manufactured (Shenzhen/Dongguan)", "confidence": "confirmed", "note": "Vertically integrated, 80,000 sqm, 1000+ staff"},
+    {"brand": "DOGCOM", "cell_source": "Shenzhen QI Technology (Huizhou)", "confidence": "confirmed", "note": "Per corporate registration"},
+    {"brand": "Ovonic", "cell_source": "Ampow/Chinese manufacturer (Shenzhen area)", "confidence": "high", "note": "Proprietary stacking tech, D2C model"},
+    {"brand": "NewBeeDrone", "cell_source": "Grepow/Tattu", "confidence": "confirmed", "note": "Co-branded R-Line products"},
+    {"brand": "Turnigy", "cell_source": "Chinese OEM(s) for HobbyKing", "confidence": "high", "note": "Shenzhen/Dongguan area factories"},
+    {"brand": "CNHL", "cell_source": "Likely self-manufactured or affiliated", "confidence": "moderate"},
+    {"brand": "Lumenier (LiPo)", "cell_source": "Unspecified Chinese factory", "confidence": "high", "note": "GetFPV house brand; Li-ion NAV packs use Molicel"},
+    {"brand": "XILO", "cell_source": "Unspecified Chinese OEM", "confidence": "high", "note": "GetFPV budget brand"},
+    {"brand": "iFlight / GEPRC / Flywoo / BETAFPV", "cell_source": "Chinese OEM-sourced", "confidence": "high", "note": "Drone frame companies sourcing LiPo packs"},
+    {"brand": "Thunder Power", "cell_source": "Chinese OEM", "confidence": "high", "note": "Longstanding RC brand"}
+  ],
+  "chinese_cell_manufacturers": [
+    {
+      "id": "grepow",
+      "name": "Grepow",
+      "hq": "Shenzhen",
+      "brands": ["Tattu", "Gens Ace"],
+      "daily_output_ah": 1000000,
+      "factories": 4,
+      "factory_area_sqm": 200000,
+      "employees": 3000,
+      "estimated_revenue_usd": 909000000,
+      "cell_range_mah": "220-30,000",
+      "max_discharge_c": 150,
+      "semi_solid_nmc811_whkg": 380,
+      "sanctions_status": "Not on any US sanctions or entity list",
+      "oem_clients_note": "OEM/ODM for numerous brands beyond Tattu/Gens Ace",
+      "source_urls": [
+        "https://www.grepow.com/uav-battery.html",
+        "https://genstattu.com/tattu-uav-battery.html"
+      ]
+    },
+    {
+      "id": "eve-energy",
+      "name": "EVE Energy",
+      "hq": "Huizhou",
+      "products": [
+        {"model": "40P", "format": "21700", "capacity_mah": 4000},
+        {"model": "50E", "format": "21700", "capacity_mah": 5000}
+      ],
+      "scale": "60 GWh gigafactory, 9th largest global EV battery maker",
+      "ndaa_ban": {
+        "section": "FY2024 NDAA Section 154",
+        "effective_date": "2027-10-01",
+        "note": "One of six named Chinese companies banned for DoD procurement"
+      },
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/EVE_Energy",
+        "https://www.arnoldporter.com/en/perspectives/advisories/2023/12/fy24-ndaa-navigating-expanded-restrictions"
+      ]
+    }
+  ],
+  "dji_battery_supply_chain": {
+    "primary_supplier": "ATL (Dongguan Amperex Technology Limited) — TDK Corporation (Japan) subsidiary in Dongguan, China",
+    "secondary_supplier": "SunWoda Electronic (Shenzhen) — confirmed by community teardowns",
+    "critical_link": "ATL is same TDK subsidiary family as Dongguan Poweramp — the company China ordered to cut off Skydio",
+    "byd_clarification": "BYD-DJI partnership is vehicle-mounted drone systems, not battery cells",
+    "source_urls": ["https://mavicpilots.com/threads/who-made-your-mavic-battery.74823/"]
+  },
+  "skydio_crisis": {
+    "date": "2024-10-11",
+    "trigger": "China sanctioned Skydio after US approved $567M Taiwan defense assistance",
+    "supplier": "Dongguan Poweramp Technology Ltd. (TDK subsidiary manufacturing in Dongguan, China)",
+    "mechanism": "China's Ministry of Foreign Affairs directly ordered factory to halt all Skydio operations",
+    "impact": [
+      "Battery rationing from 3 per drone to 1",
+      "Extended warranties",
+      "Alternative supply not expected online until spring 2025"
+    ],
+    "response": {
+      "ceo_quote_summary": "Adam Bry called it 'a clarifying moment'",
+      "funding_secured_usd": 170000000,
+      "diplomatic_engagement": ["Biden administration", "Taiwan Vice President"],
+      "alternative_sourcing": "Actively exploring Taiwanese suppliers, no public replacement named as of early 2025"
+    },
+    "strategic_lesson": "Even Japanese-owned companies are subject to Chinese government orders when factories sit on Chinese soil",
+    "source_urls": [
+      "https://www.skydio.com/blog/chinas-sanctions-on-skydio",
+      "https://techcrunch.com/2024/10/31/us-drone-maker-skydio-faces-battery-squeeze-after-chinese-sanctions/",
+      "https://www.exiger.com/perspectives/china-restricts-supply-of-components-to-top-drone-maker/",
+      "https://dronexl.co/2024/10/30/us-drone-maker-skydio-supply-chain-crisis-chinese-sanctions/"
+    ]
+  }
+}

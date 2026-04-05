@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-04-05",
+  "allied_cell_manufacturers": [
+    {
+      "id": "molicel",
+      "name": "Molicel (E-One Moli Energy)",
+      "country": "Taiwan",
+      "ndaa_compliant": true,
+      "ndaa_note": "Taiwan-manufactured, no Chinese ownership. Raw material provenance requires case-by-case verification.",
+      "criticality": "CRITICAL — single point of failure for allied high-drain cylindrical cells",
+      "cell_chemistry": "lithium-ion",
+      "products": [
+        {"model": "P28A", "format": "18650", "capacity_mah": 2800, "max_discharge_a": 35, "energy_density_whkg": 219, "application": "Standard FPV"},
+        {"model": "P30B", "format": "18650", "capacity_mah": 3000, "max_discharge_a": 36, "energy_density_whkg": 230, "application": "Heavy-lift drones"},
+        {"model": "P42A", "format": "21700", "capacity_mah": 4200, "max_discharge_a": 45, "energy_density_whkg": 216, "application": "Workhorse drone cell"},
+        {"model": "P45B", "format": "21700", "capacity_mah": 4500, "max_discharge_a": 45, "energy_density_whkg": 235, "application": "Improved P42A replacement"},
+        {"model": "P50B", "format": "21700", "capacity_mah": 5000, "max_discharge_a": 60, "energy_density_whkg": 254, "application": "Group14 silicon anode"},
+        {"model": "P60C", "format": "21700", "capacity_mah": 6000, "max_discharge_a": 100, "energy_density_whkg": 288, "discharge_c_rate": 16.7, "application": "2025 release; eVTOL, drones"}
+      ],
+      "customers": ["Archer Aviation (Midnight eVTOL)", "Vertical Aerospace", "FPV pack builders worldwide", "heavy-lift drone manufacturers"],
+      "supply_crisis": {
+        "kaohsiung_fire_date": "2025-07-14",
+        "factory": "Kaohsiung Xiaogang (MQE)",
+        "losses_usd": 500000000,
+        "capacity_before_gwh": 3.3,
+        "capacity_after_gwh": 1.5,
+        "remaining_plant": "Tainan only",
+        "demand_vs_capacity": "Orders through 2026 exceeded 2x combined plant capacity before fire",
+        "canada_factory": "Suspended November 2024",
+        "recovery_plan": "Fast-tracking overseas OEM in Southeast Asia"
+      },
+      "source_urls": [
+        "https://www.molicel.com/newsroom/one-month-report-on-the-fire-incident-at-molie-quantum-energy-corporation-mqe-battery-plant/",
+        "https://en.wikipedia.org/wiki/Molicel",
+        "https://www.ufinebattery.com/blog/top-5-21700-battery-suppliers/"
+      ]
+    },
+    {
+      "id": "samsung-sdi",
+      "name": "Samsung SDI",
+      "country": "South Korea",
+      "ndaa_compliant": true,
+      "ndaa_note": "Korean/Malaysian origin OK. Xi'an China factory (prismatic) requires origin verification.",
+      "products": [
+        {"model": "INR21700-40T", "format": "21700", "capacity_mah": 4000, "max_discharge_a": 35, "application": "Primary alternative high-drain 21700"}
+      ],
+      "manufacturing_locations": ["South Korea", "Malaysia (Seremban)", "Xi'an, China (prismatic — requires verification)", "Kokomo, IN JV (prismatic EV, not drone cells)"],
+      "limitation": "Lower discharge and energy density than Molicel P45B/P50B/P60C",
+      "pricing_usd_per_cell": "4.44-6.00",
+      "lead_time_weeks": "12-20",
+      "source_urls": [
+        "https://www.thunderheartreviews.com/2018/12/samsung-40t-high-drain-21700-li-ion.html",
+        "https://www.electrive.com/2022/07/21/samsung-sdi-is-building-a-second-battery-plant-in-malaysia/"
+      ]
+    },
+    {
+      "id": "lg-energy-solution",
+      "name": "LG Energy Solution",
+      "country": "South Korea",
+      "ndaa_compliant": true,
+      "viable_for_drones": false,
+      "products": [
+        {"model": "M50LT", "format": "21700", "capacity_mah": 5000, "max_discharge_a": 14.4, "discharge_c_rate": 3, "note": "Endurance drones only"},
+        {"model": "HB4/HB6", "format": "18650", "capacity_mah": 1500, "max_discharge_a": 30, "note": "Very low capacity"}
+      ],
+      "us_factories": ["Holland, MI", "Spring Hill, TN"],
+      "limitation": "No competitive high-drain 21700. Not viable for drone cells.",
+      "source_urls": []
+    },
+    {
+      "id": "murata",
+      "name": "Murata (ex-Sony)",
+      "country": "Japan",
+      "ndaa_compliant": true,
+      "products": [
+        {"model": "VTC6A", "format": "18650", "capacity_mah": 3000, "max_discharge_a": 30, "note": "Competitive but 18650 only"}
+      ],
+      "limitation": "18650 only — no 21700. Frequent stock-outs.",
+      "source_urls": ["https://imrbatteries.com/collections/murata-18650-batteries"]
+    },
+    {
+      "id": "panasonic",
+      "name": "Panasonic",
+      "country": "Japan",
+      "ndaa_compliant": true,
+      "viable_for_drones": false,
+      "products": [
+        {"model": "NCR21700A", "format": "21700", "capacity_mah": 5000, "max_discharge_a": 15, "discharge_c_rate": 3}
+      ],
+      "limitation": "Prioritizes energy density over discharge. Tesla cells committed. Not suitable for high-performance drones.",
+      "source_urls": []
+    }
+  ],
+  "european_cell_landscape": {
+    "summary": "European cell manufacturing for drones is effectively nonexistent",
+    "companies": [
+      {"name": "Northvolt", "status": "Bankrupt March 2025, assets acquired by Lyten"},
+      {"name": "VARTA / V4Smart", "status": "Collapsed; Porsche successor nascent, automotive-focused"},
+      {"name": "Saft (France/TotalEnergies)", "status": "Custom military packs, not commercial cells"},
+      {"name": "Epsilor (Israel)", "status": "Pack integrator, not cell manufacturer"},
+      {"name": "Bren-Tronics/EnerSys (US)", "status": "Pack integrator, not cell manufacturer"}
+    ]
+  }
+}

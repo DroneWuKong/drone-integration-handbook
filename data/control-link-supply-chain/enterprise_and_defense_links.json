@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-04-05",
+  "enterprise_c2_links": [
+    {
+      "id": "siyi-enterprise",
+      "name": "SIYI Enterprise Links",
+      "country": "China",
+      "ndaa_compliant": false,
+      "tier": "enterprise",
+      "note": "See radio_manufacturers.json for full profile. Most widely used enterprise link for ArduPilot/PX4 commercial drones. No NDAA-compliant equivalent exists at the same price/feature point."
+    },
+    {
+      "id": "herelink",
+      "name": "Hex/CubePilot HereLink",
+      "country": "China (HK entity)",
+      "hq": "Hong Kong / Xiamen",
+      "ndaa_compliant": false,
+      "tier": "enterprise",
+      "products": [
+        {"model": "HereLink Blue", "protocol": "Proprietary", "frequency": "2.4 GHz", "range_km": 20, "video": "720p", "price_usd": 900, "note": "Blue UAS ecosystem integration. 'Blue' branding but manufactured in China."}
+      ],
+      "strategic_note": "HereLink is the primary GCS for CubePilot Cube-based drones (many Blue UAS platforms). 'HereLink Blue' marketed for defense but HK/China manufactured.",
+      "source_urls": []
+    },
+    {
+      "id": "microhard",
+      "name": "Microhard Systems",
+      "country": "Canada",
+      "hq": "Calgary, Alberta",
+      "ndaa_compliant": true,
+      "tier": "defense_enterprise",
+      "products": [
+        {"model": "pDDL2450", "protocol": "Proprietary OFDM", "frequency": "2.4 GHz", "range_km": 50, "price_usd": 3000},
+        {"model": "pMDDL2450", "protocol": "Proprietary OFDM", "frequency": "2.4 GHz", "range_km": 100, "price_usd": 5000},
+        {"model": "n920D", "protocol": "Proprietary", "frequency": "900 MHz", "range_km": 60}
+      ],
+      "market_position": "De facto standard defense/enterprise datalink. Used by most Blue UAS platforms. NDAA compliant.",
+      "manufacturing": "Designed and manufactured in Calgary, Canada",
+      "customers": ["Skydio", "Shield AI", "Teal Drones", "Multiple Blue UAS OEMs"],
+      "strategic_significance": "CRITICAL — only NDAA-compliant high-performance C2 datalink at scale. No US-manufactured alternative.",
+      "source_urls": []
+    },
+    {
+      "id": "silvus",
+      "name": "Silvus Technologies",
+      "country": "US",
+      "hq": "Los Angeles, CA",
+      "ndaa_compliant": true,
+      "tier": "defense",
+      "products": [
+        {"model": "StreamCaster 4200", "protocol": "MN-MIMO MANET", "frequency": "Multi-band", "range_km": 80, "price_usd": 15000, "note": "MANET mesh radio with C2+video+data"}
+      ],
+      "market_position": "Premium defense MANET mesh with integrated C2. Very high cost limits to military programs.",
+      "manufacturing": "Designed and assembled in Los Angeles",
+      "source_urls": []
+    },
+    {
+      "id": "persistent-systems",
+      "name": "Persistent Systems",
+      "country": "US",
+      "hq": "New York, NY",
+      "ndaa_compliant": true,
+      "tier": "defense",
+      "products": [
+        {"model": "MPU5", "protocol": "Wave Relay MANET", "frequency": "Multi-band", "note": "Soldier-worn MANET node, also used for drone C2"}
+      ],
+      "market_position": "Defense MANET provider. Used for drone-to-soldier mesh networks.",
+      "source_urls": []
+    },
+    {
+      "id": "doodle-labs",
+      "name": "Doodle Labs",
+      "country": "US",
+      "hq": "Marina del Rey, CA",
+      "ndaa_compliant": true,
+      "tier": "defense_enterprise",
+      "products": [
+        {"model": "Helix Smart Radio", "protocol": "Proprietary mesh", "frequency": "Multi-band", "range_km": 30},
+        {"model": "Mesh Rider Radio", "protocol": "802.11 OFDM mesh", "frequency": "2.4/5 GHz", "range_km": 10}
+      ],
+      "market_position": "Growing defense drone datalink. Used by several SOCOM programs.",
+      "source_urls": []
+    }
+  ],
+  "ndaa_gap_analysis": {
+    "hobbyist_fpv": {
+      "current_state": "100% Chinese manufacturing — RadioMaster, Jumper, BETAFPV, Happymodel all Shenzhen-based",
+      "ndaa_alternative": "ImmersionRC/Orqa Ghost (Croatia) is only Western manufacturer. Very limited product range.",
+      "gap_severity": "LOW concern — hobbyist market not subject to NDAA procurement rules"
+    },
+    "enterprise_commercial": {
+      "current_state": "SIYI (China) dominates. HereLink Blue (HK/China) used by Blue UAS ecosystem. No NDAA alternative at SIYI price point.",
+      "ndaa_alternative": "Microhard (Canada) — 3-5x more expensive than SIYI. Doodle Labs growing.",
+      "gap_severity": "HIGH — SIYI/HereLink deeply embedded in ArduPilot commercial ecosystem"
+    },
+    "defense": {
+      "current_state": "Microhard (Canada), Silvus (US), Persistent Systems (US), Doodle Labs (US) serve defense market",
+      "ndaa_alternative": "Multiple NDAA options exist but at 10-50x hobby/enterprise prices",
+      "gap_severity": "LOW — defense market has allied alternatives, just expensive"
+    },
+    "rf_silicon": {
+      "current_state": "Semtech (US) SX1280 is sole ELRS RF chip — fabbed at TSMC Taiwan",
+      "ndaa_alternative": "No second-source LoRa transceiver exists. Entire ELRS ecosystem is single-source.",
+      "gap_severity": "CRITICAL — TSMC dependency for all ELRS silicon. Espressif (China) MCU in most ELRS receivers."
+    }
+  }
+}

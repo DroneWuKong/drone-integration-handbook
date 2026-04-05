@@ -1,0 +1,114 @@
+{
+  "generated_at": "2026-04-05",
+  "source_report": "Propeller supply chain intelligence for the UAS/drone industry",
+  "propeller_manufacturers": [
+    {
+      "id": "hqprop",
+      "name": "HQProp",
+      "country": "China",
+      "hq": "China",
+      "ndaa_compliant": false,
+      "products_in_forge": 211,
+      "market_share_note": "Largest propeller manufacturer — 44% of Forge DB. Durable T-mount series.",
+      "materials": ["Polycarbonate (PC)", "Glass fiber nylon"],
+      "patents": "Patented T-mount technology"
+    },
+    {
+      "id": "gemfan",
+      "name": "Gemfan (Ningbo Gemfan Hobby Co., Ltd)",
+      "country": "China",
+      "hq": "Ningbo, Zhejiang",
+      "founded": 2007,
+      "ndaa_compliant": false,
+      "products_in_forge": 179,
+      "market_share_note": "Second-largest — 37%. ISO 9001:2015 certified. 51 design patents. OEM/ODM for professional UAV companies worldwide.",
+      "materials": ["Polycarbonate (PC)", "Carbon fiber nylon", "Glass fiber nylon"],
+      "manufacturing": "High-precision injection molding, CNC machining, dynamic balance testing",
+      "source_urls": ["https://www.gemfanhobby.com/"]
+    },
+    {
+      "id": "apc",
+      "name": "APC Propellers (Landing Products)",
+      "country": "USA",
+      "hq": "Woodland, CA",
+      "ndaa_compliant": true,
+      "products_in_forge": 19,
+      "market_position": "US-manufactured propellers. Primarily fixed-wing and larger multirotor. Glass-filled nylon. Used in enterprise/defense platforms.",
+      "manufacturing": "Manufactured in Woodland, California, USA",
+      "note": "APC is one of very few US-manufactured propeller brands. Strong in fixed-wing and larger drone market. Not competitive in FPV racing segment."
+    },
+    {
+      "id": "azure-power",
+      "name": "Azure Power",
+      "country": "China",
+      "hq": "China",
+      "ndaa_compliant": false,
+      "products_in_forge": 16
+    },
+    {
+      "id": "lumenier-prop",
+      "name": "Lumenier (GetFPV)",
+      "country": "USA",
+      "hq": "Sarasota, FL",
+      "ndaa_compliant": true,
+      "ndaa_note": "US brand. Propeller manufacturing likely Chinese CM (injection molding).",
+      "products_in_forge": 7
+    },
+    {
+      "id": "prop-ua",
+      "name": "PROP UA",
+      "country": "Ukraine",
+      "ndaa_compliant": true,
+      "products_in_forge": 5,
+      "combat_proven": true,
+      "note": "Ukrainian propeller manufacturer. Combat-proven."
+    }
+  ],
+  "country_breakdown": {
+    "China": {"count": 463, "pct": 96},
+    "Ukraine": {"count": 13, "pct": 3},
+    "USA": {"count": 8, "pct": 2}
+  },
+  "materials_supply_chain": {
+    "summary": "Propellers are injection-molded thermoplastics. No electronics, no firmware. The supply chain is raw plastic pellets → injection molding → dynamic balancing → packaging.",
+    "materials": [
+      {
+        "name": "Polycarbonate (PC)",
+        "usage": "Most common FPV propeller material. Flexible, crash-resistant.",
+        "suppliers": ["Covestro (Germany — Makrolon)", "SABIC (Saudi Arabia — Lexan)", "Chinese producers (Wanhua, etc.)"],
+        "ndaa_status": "Allied supply available (Covestro, SABIC). Chinese alternatives exist at lower cost."
+      },
+      {
+        "name": "Glass fiber reinforced nylon (PA6-GF)",
+        "usage": "Stiffer propellers for higher efficiency. Less crash-resistant.",
+        "suppliers": ["BASF (Germany — Ultramid)", "DuPont (USA — Zytel)", "Chinese producers"],
+        "ndaa_status": "Allied supply available."
+      },
+      {
+        "name": "Carbon fiber reinforced nylon",
+        "usage": "Premium propellers. Highest stiffness-to-weight ratio.",
+        "suppliers": ["Various — carbon fiber from Toray (Japan), nylon from BASF/DuPont"],
+        "ndaa_status": "Allied supply chain for both components."
+      }
+    ],
+    "injection_molding": {
+      "summary": "Propeller injection molding is a commodity manufacturing process. The tooling (molds) requires precision engineering but is a one-time investment. Any injection molding shop can produce propellers.",
+      "chinese_dominance_reason": "HQProp and Gemfan dominate because of aerodynamic design IP, mold tooling investment, and low labor cost — not because injection molding is unavailable elsewhere.",
+      "allied_capability": "Injection molding is widely available in US/EU. APC (USA) demonstrates this. The barrier is mold design IP and cost, not capability."
+    }
+  },
+  "ndaa_propeller_assessment": {
+    "status": "96% Chinese but EASY to fix — no electronics, commodity manufacturing",
+    "problem": "HQProp (44%) and Gemfan (37%) control 81% of the market. Both Chinese. But propellers are injection-molded plastic with no electronics.",
+    "good_news": [
+      "Raw materials (polycarbonate, nylon) available from allied sources (Covestro, BASF, DuPont)",
+      "Injection molding is commodity manufacturing available in any industrialized country",
+      "APC (USA) already manufactures propellers domestically",
+      "No electronics, firmware, or silicon dependency",
+      "Propeller design is relatively simple compared to other drone components"
+    ],
+    "barrier": "Aerodynamic design IP — HQProp and Gemfan have 15+ years of blade profile optimization and 50+ patents. A new entrant would need significant R&D investment or licensing.",
+    "realistic_path": "For defense: APC (US-manufactured) for fixed-wing and larger drones. For FPV class: Lumenier could move injection molding to US. Or license Gemfan/HQProp designs for allied production.",
+    "cost_premium": "US injection molding adds ~2-3x cost. Propellers are consumable (pilots go through many sets), so cost matters more here than for durable components."
+  }
+}

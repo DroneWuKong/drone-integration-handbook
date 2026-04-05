@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-04-05",
+  "source_report": "Drone frame supply chain intelligence — carbon fiber sourcing, CNC cutting, NDAA landscape",
+  "frame_manufacturers": [
+    {
+      "id": "lumenier",
+      "name": "Lumenier (GetFPV)",
+      "country": "USA",
+      "hq": "Sarasota, FL",
+      "ndaa_compliant": true,
+      "ndaa_note": "US-designed. CNC cutting likely done by Chinese CM (Shenzhen carbon fiber shops). Carbon fiber sheet sourced from Toray (Japan) via Chinese intermediaries.",
+      "products_in_forge": 88,
+      "market_share_note": "Largest frame brand by product count — 23% of Forge DB. QAV series is industry standard.",
+      "product_lines": ["QAV-R", "QAV-X", "QAV-S", "Johnny FPV frames"]
+    },
+    {
+      "id": "iflight",
+      "name": "iFlight",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 21,
+      "product_lines": ["Chimera", "Nazgul", "DC5"]
+    },
+    {
+      "id": "armattan",
+      "name": "Armattan Productions",
+      "country": "USA",
+      "hq": "USA",
+      "ndaa_compliant": true,
+      "ndaa_note": "US company. Lifetime warranty on frames. CNC cutting origin requires verification.",
+      "products_in_forge": 12,
+      "market_position": "Premium US frame manufacturer. Famous for lifetime crash replacement warranty."
+    },
+    {
+      "id": "impulserc",
+      "name": "ImpulseRC",
+      "country": "USA",
+      "hq": "USA",
+      "ndaa_compliant": true,
+      "products_in_forge": 11,
+      "market_position": "Premium FPV frames. Apex and Reverb lines. Used by pro pilots."
+    },
+    {
+      "id": "xhover",
+      "name": "XHover",
+      "country": "USA",
+      "hq": "USA",
+      "ndaa_compliant": true,
+      "products_in_forge": 9
+    },
+    {
+      "id": "xilo",
+      "name": "XILO (GetFPV)",
+      "country": "USA",
+      "hq": "Sarasota, FL",
+      "ndaa_compliant": true,
+      "products_in_forge": 15,
+      "market_position": "GetFPV budget brand. Lower-cost alternative to Lumenier."
+    },
+    {
+      "id": "aos",
+      "name": "AOS RC",
+      "country": "China",
+      "hq": "China",
+      "ndaa_compliant": false,
+      "products_in_forge": 13
+    },
+    {
+      "id": "pirat",
+      "name": "PIRAT",
+      "country": "Ukraine",
+      "ndaa_compliant": true,
+      "products_in_forge": 11,
+      "combat_proven": true,
+      "note": "Ukrainian FPV frame brand, combat-proven"
+    },
+    {
+      "id": "fiberform",
+      "name": "FiberForm",
+      "country": "Ukraine",
+      "ndaa_compliant": true,
+      "products_in_forge": 6,
+      "combat_proven": true
+    }
+  ],
+  "country_breakdown": {
+    "USA": {"count": 114, "pct": 30},
+    "China": {"count": 236, "pct": 63},
+    "Ukraine": {"count": 22, "pct": 6},
+    "Hong_Kong": {"count": 5, "pct": 1}
+  },
+  "carbon_fiber_supply_chain": {
+    "summary": "Carbon fiber precursor and sheet production is dominated by Japanese companies (Toray, Teijin, Mitsubishi). Chinese CNC cutting shops process the sheets into frames. Even US frame brands source carbon fiber sheets from Chinese intermediaries who buy Japanese precursor.",
+    "precursor_manufacturers": [
+      {
+        "name": "Toray Industries",
+        "hq": "Tokyo, Japan",
+        "ndaa_compliant": true,
+        "products": ["T300 (standard modulus)", "T700 (high strength)", "T800 (intermediate modulus)"],
+        "market_share_pct": 30,
+        "market_share_note": "World's largest carbon fiber producer. T300 is the standard for drone frames.",
+        "production_locations": ["Japan", "USA (Decatur, AL — Toray Composite Materials America)", "France", "South Korea", "Mexico"],
+        "us_production": "Toray CMA in Decatur, AL produces carbon fiber on US soil. NDAA-compliant.",
+        "note": "Most Chinese carbon fiber sheet manufacturers use Toray precursor — even Chinese frames use Japanese carbon fiber at the raw material level."
+      },
+      {
+        "name": "Teijin (Toho Tenax)",
+        "hq": "Osaka, Japan",
+        "ndaa_compliant": true,
+        "market_share_pct": 15,
+        "production_locations": ["Japan", "Germany (Wuppertal)", "USA (Rockwood, TN)"]
+      },
+      {
+        "name": "Mitsubishi Chemical (formerly Mitsubishi Rayon)",
+        "hq": "Tokyo, Japan",
+        "ndaa_compliant": true,
+        "market_share_pct": 12
+      },
+      {
+        "name": "Hexcel",
+        "hq": "Stamford, CT, USA",
+        "ndaa_compliant": true,
+        "market_share_pct": 10,
+        "note": "Major US carbon fiber producer. Primarily aerospace (Boeing, Airbus). Not typically used for drone frames due to cost."
+      },
+      {
+        "name": "SGL Carbon",
+        "hq": "Wiesbaden, Germany",
+        "ndaa_compliant": true,
+        "market_share_pct": 5
+      },
+      {
+        "name": "Chinese producers (Zhongfu Shenying, Hengshen, Guangwei)",
+        "hq": "Various, China",
+        "ndaa_compliant": false,
+        "market_share_pct": 20,
+        "market_share_note": "China has aggressively expanded carbon fiber production. Quality approaching T300 equivalent. Significantly cheaper.",
+        "note": "Chinese carbon fiber is used in budget frames. Premium brands typically specify Toray T300/T700."
+      }
+    ],
+    "sheet_fabrication": {
+      "summary": "Carbon fiber sheets (prepreg) are fabricated by laminating carbon fiber fabric with epoxy resin under heat/pressure. Most drone-grade sheet fabrication happens in China.",
+      "chinese_share_pct": 80,
+      "allied_options": ["Toray CMA (USA)", "Hexcel (USA)", "Teijin (Germany/USA)", "various European composites shops"],
+      "note": "Sheet fabrication for drone frames is a commodity process. The constraint is cost, not capability — allied manufacturers can do it but at 2-3x Chinese price."
+    },
+    "cnc_cutting": {
+      "summary": "CNC cutting of carbon fiber sheets into frame plates is the final manufacturing step. Dominated by Chinese CNC shops in Shenzhen/Dongguan.",
+      "chinese_share_pct": 85,
+      "note": "Even US frame brands (Lumenier, Armattan, ImpulseRC) likely outsource CNC cutting to Chinese shops. Some may use US CNC shops for NDAA line.",
+      "allied_options": "CNC cutting is widely available in US/EU — not a capability gap, just a cost gap. Any machine shop with a CNC router can cut carbon fiber plates.",
+      "cost_premium": "US CNC cutting: 2-4x Chinese price for same quality"
+    }
+  },
+  "ndaa_frame_assessment": {
+    "good_news": "Frames are the EASIEST component to make NDAA-compliant. Carbon fiber precursor is Japanese (Toray). CNC cutting is a commodity process available in any allied country. No electronics, no firmware, no Chinese silicon dependency.",
+    "current_gap": "US brands design in USA but likely CNC-cut in China for cost. Moving cutting to US/EU would add 2-4x cost premium.",
+    "realistic_path": "Frames should be the first component category to go fully NDAA. Toray USA precursor + US/EU CNC cutting = genuinely China-free frame at modest premium.",
+    "already_ndaa": ["Orqa (Croatia — in-house frame production)", "Ukrainian brands (FiberForm, PIRAT — domestic production)", "Potentially Lumenier/Armattan if they verify US CNC sourcing"]
+  }
+}

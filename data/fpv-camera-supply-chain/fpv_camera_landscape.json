@@ -1,0 +1,112 @@
+{
+  "generated_at": "2026-04-05",
+  "source_report": "FPV camera supply chain intelligence for the UAS/drone industry",
+  "camera_manufacturers": [
+    {
+      "id": "foxeer",
+      "name": "Foxeer",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 79,
+      "market_share_note": "Largest FPV camera manufacturer — 41% of Forge DB",
+      "sensor_source": "Sony (Japan) 1/2\" and 1/3\" CMOS sensors",
+      "product_lines": ["Predator (racing)", "Toothless (starlight)", "Cat (night vision)", "Digisight (dual analog+digital)"],
+      "also_makes": ["VTXs", "antennas", "ESCs", "FCs", "motors"],
+      "source_urls": ["https://www.foxeer.com"]
+    },
+    {
+      "id": "caddx",
+      "name": "CaddxFPV Technology (Shenzhen) Co., Ltd",
+      "country": "China",
+      "hq": "Shenzhen",
+      "founded": 2017,
+      "ndaa_compliant": false,
+      "products_in_forge": 43,
+      "market_share_note": "Second-largest — 22% of Forge DB. Also makes Walksnail Avatar HD system.",
+      "sensor_source": "Sony Starvis / Starvis II (1/1.8\" and 1/2\" CMOS)",
+      "product_lines": ["Ratel (analog)", "Ant (nano)", "Nebula Pro (DJI compatible)", "Walksnail Avatar cameras"],
+      "strategic_note": "Caddx is the only camera company with its own digital FPV ecosystem (Walksnail). Vertically integrated: camera + VTX + goggles.",
+      "source_urls": ["https://www.caddxfpv.com/pages/about-us"]
+    },
+    {
+      "id": "runcam",
+      "name": "RunCam",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 30,
+      "market_share_note": "Third-largest — 16%. Strong in both FPV and action camera segments.",
+      "sensor_source": "Sony CMOS sensors",
+      "product_lines": ["Phoenix (freestyle)", "Nano HD (HDZero)", "Thumb (action camera)"],
+      "hdz_partnership": "RunCam manufactures HDZero-branded cameras (Nano HD, Micro V3, Lux) under Divimath spec",
+      "source_urls": ["https://www.runcam.com"]
+    },
+    {
+      "id": "hdzero-cameras",
+      "name": "HDZero / Divimath cameras",
+      "country": "USA (Divimath) / China (RunCam CM)",
+      "ndaa_compliant": "partial",
+      "ndaa_note": "Divimath NDAA line manufactured in Thailand. Standard HDZero cameras manufactured by RunCam in China.",
+      "products_in_forge": 6,
+      "sensor_source": "Various CMOS",
+      "strategic_note": "HDZero cameras from Divimath NDAA line are the only NDAA-compliant FPV cameras with digital integration."
+    },
+    {
+      "id": "orqa-cameras",
+      "name": "Orqa (in-house cameras)",
+      "country": "Croatia",
+      "ndaa_compliant": true,
+      "products_in_forge": 0,
+      "note": "Orqa manufactures cameras in-house for their MRM-2 drone platform. Not sold separately. See data/allied/orqa_profile.json."
+    }
+  ],
+  "image_sensor_supply_chain": {
+    "summary": "FPV cameras overwhelmingly use Sony CMOS sensors. Sony is the dominant sensor supplier — NDAA compliant (Japan). The camera integrators (Foxeer, Caddx, RunCam) are all Chinese, but the sensor silicon is Japanese.",
+    "sensor_vendors": [
+      {
+        "name": "Sony Semiconductor Solutions",
+        "hq": "Atsugi, Japan",
+        "ndaa_compliant": true,
+        "products": ["Starvis (1st gen)", "Starvis II", "Various 1/2\" and 1/3\" CMOS"],
+        "market_share_pct": 90,
+        "market_share_note": "Virtually all FPV cameras (analog and digital) use Sony sensors. No Chinese sensor competitor at comparable quality.",
+        "fab_locations": ["Kumamoto, Japan (new TSMC/Sony JV fab)", "Nagasaki, Japan"],
+        "strategic_note": "Sony sensor supply is the one component where FPV cameras are NOT China-dependent at the silicon level."
+      },
+      {
+        "name": "OmniVision Technologies",
+        "hq": "Santa Clara, CA (Chinese-owned since 2016)",
+        "ndaa_compliant": "contested",
+        "ndaa_note": "US-headquartered but acquired by Chinese consortium (Hua Capital/CITIC Capital) in 2016 for $1.9B. Ownership structure may fail NDAA scrutiny.",
+        "products": ["OV9281", "OV9782", "OV2312"],
+        "market_share_pct": 5,
+        "market_share_note": "Used in some machine vision and lower-end FPV cameras. Not dominant in FPV."
+      },
+      {
+        "name": "SmartSens Technology",
+        "hq": "Shanghai, China",
+        "ndaa_compliant": false,
+        "products": ["SC2210", "SC3336"],
+        "market_share_pct": 3,
+        "market_share_note": "Chinese sensor company gaining in surveillance/IP cameras. Minor in FPV."
+      }
+    ],
+    "isp_chips": {
+      "summary": "Image Signal Processors (ISPs) in analog cameras typically use Chinese ISP chips (e.g., PixelPlus, Nextchip from Korea, or Fullhan from China). Digital cameras use the VTX system's SoC for ISP processing.",
+      "analog_isp": "Varies — some Korean (Nextchip), some Chinese (Fullhan). Not well-documented in FPV camera specs.",
+      "digital_isp": "Handled by VTX SoC (DJI proprietary, Walksnail proprietary, Divimath ASIC, OpenIPC HiSilicon)"
+    }
+  },
+  "country_breakdown": {
+    "China": {"count": 187, "pct": 97},
+    "Ukraine": {"count": 3, "pct": 2},
+    "USA": {"count": 2, "pct": 1},
+    "Hong_Kong": {"count": 1, "pct": 0}
+  },
+  "ndaa_gap": {
+    "problem": "97% of FPV cameras are Chinese-manufactured. Only NDAA options are Divimath NDAA cameras (Thailand) and Orqa in-house cameras (Croatia, not sold separately).",
+    "sensor_is_not_the_problem": "Sony (Japan) sensors are NDAA-compliant. The issue is camera PCB assembly and ISP/video processing — all done in Shenzhen.",
+    "realistic_path": "Divimath expands NDAA camera line. Orqa could potentially sell cameras separately. Otherwise, FPV cameras are a near-total Chinese dependency."
+  }
+}

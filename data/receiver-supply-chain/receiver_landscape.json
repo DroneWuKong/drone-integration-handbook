@@ -1,0 +1,123 @@
+{
+  "generated_at": "2026-04-05",
+  "source_report": "RC receiver supply chain intelligence — ELRS/Crossfire/Ghost hardware, MCU dependencies, combat receivers",
+  "receiver_manufacturers": [
+    {
+      "id": "radiomaster-rx",
+      "name": "RadioMaster",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 47,
+      "protocol": "ELRS",
+      "market_share_note": "Largest ELRS receiver manufacturer — 12% of all receivers"
+    },
+    {
+      "id": "happymodel-rx",
+      "name": "Happymodel",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 22,
+      "protocol": "ELRS",
+      "note": "Pioneered ultra-light ELRS receivers (0.4g). EP1/EP2/PP series."
+    },
+    {
+      "id": "betafpv-rx",
+      "name": "BETAFPV",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 15,
+      "protocol": "ELRS",
+      "note": "SuperD diversity receiver — dual SX1280 true diversity"
+    },
+    {
+      "id": "frsky-rx",
+      "name": "FrSky",
+      "country": "China",
+      "hq": "Shenzhen",
+      "ndaa_compliant": false,
+      "products_in_forge": 28,
+      "protocol": "FrSky ACCESS/ACCST",
+      "market_position": "Legacy dominant. Declining as ELRS grows. Proprietary ACCESS protocol lock-in."
+    },
+    {
+      "id": "tbs-rx",
+      "name": "Team BlackSheep",
+      "country": "Hong Kong / Austria",
+      "ndaa_compliant": false,
+      "products_in_forge": 9,
+      "protocol": "Crossfire / Tracer",
+      "note": "Crossfire Nano Rx is the standard long-range receiver. Declining vs ELRS."
+    },
+    {
+      "id": "immersionrc-rx",
+      "name": "ImmersionRC / Orqa",
+      "country": "Croatia / Switzerland",
+      "ndaa_compliant": true,
+      "products_in_forge": 7,
+      "protocol": "Ghost",
+      "market_position": "Only NDAA-compliant receiver manufacturer. Ghost protocol — ultra-low latency. Manufactured in Croatia.",
+      "strategic_significance": "ImmersionRC Ghost receivers are the ONLY Western-manufactured ELRS-class RC receivers available."
+    },
+    {
+      "id": "bayckrc",
+      "name": "BAYCKRC",
+      "country": "Ukraine",
+      "ndaa_compliant": true,
+      "products_in_forge": 17,
+      "protocol": "ELRS (MafiaLRS fork)",
+      "combat_proven": true,
+      "note": "Largest Ukrainian receiver manufacturer. Combat-proven ELRS hardware."
+    }
+  ],
+  "country_breakdown": {
+    "International": {"count": 204, "pct": 52, "note": "ELRS targets listed without specific country — most are Chinese-manufactured"},
+    "China": {"count": 110, "pct": 28},
+    "Ukraine": {"count": 60, "pct": 15},
+    "Hong_Kong": {"count": 9, "pct": 2},
+    "USA": {"count": 7, "pct": 2, "note": "All 7 are ImmersionRC Ghost (Croatia-manufactured, US-listed)"},
+    "Australia": {"count": 1, "pct": 0}
+  },
+  "mcu_breakdown": {
+    "esp8285": {"count": 102, "pct": 26, "manufacturer": "Espressif (Shanghai)", "ndaa_compliant": false},
+    "esp32_c3": {"count": 67, "pct": 17, "manufacturer": "Espressif (Shanghai)", "ndaa_compliant": false},
+    "esp32": {"count": 66, "pct": 17, "manufacturer": "Espressif (Shanghai)", "ndaa_compliant": false},
+    "stm32": {"count": 14, "pct": 4, "manufacturer": "STMicroelectronics (Switzerland)", "ndaa_compliant": true},
+    "esp32_s3": {"count": 5, "pct": 1, "manufacturer": "Espressif (Shanghai)", "ndaa_compliant": false},
+    "unknown": {"count": 137, "pct": 35},
+    "summary": "60% of receivers with known MCU use Espressif (Chinese) silicon. Only 4% use STM32 (allied). This is the hidden Chinese dependency in 'open-source' ELRS.",
+    "ndaa_concern": "Even if an ELRS receiver is assembled in Ukraine or by a US brand, the ESP8285/ESP32 MCU is Chinese-designed silicon from a Shanghai company. True NDAA compliance requires STM32-based receivers."
+  },
+  "combat_frequency_landscape": {
+    "standard_24ghz": {"count": 128, "note": "Standard 2.4 GHz ISM band — most ELRS receivers"},
+    "standard_900mhz": {"count": 62, "note": "Sub-GHz 868/915 MHz — long-range ELRS"},
+    "combat_non_standard": {
+      "400mhz": {"count": 20},
+      "500mhz": {"count": 11},
+      "433mhz": {"count": 6},
+      "total": 37,
+      "note": "37 receivers operate on non-standard frequencies (400-500 MHz) designed for EW-contested environments. All are Ukrainian combat receivers.",
+      "significance": "Non-standard frequencies avoid the heavily jammed 2.4 GHz and 5.8 GHz bands used by consumer drones. Ukrainian combat experience drives frequency diversity."
+    }
+  },
+  "ukrainian_receiver_ecosystem": {
+    "total": 60,
+    "manufacturers": 15,
+    "significance": "Ukraine has the second-largest receiver manufacturer base after China. 15 different Ukrainian companies produce receivers — more diversity than any other allied nation. Combat-hardened designs with EW-resistant protocols and non-standard frequencies.",
+    "key_manufacturers": ["BAYCKRC (17)", "FPV Mafia targets (7)", "AYZ (7)", "DiFly (5)", "Flytex (4)", "STELLAR (3)"],
+    "combat_proven": true,
+    "mafialrs": "Many Ukrainian receivers run MafiaLRS, a combat-optimized fork of ExpressLRS with EW hardening features."
+  },
+  "ndaa_receiver_assessment": {
+    "problem": "80%+ of receivers are Chinese-manufactured with Chinese MCUs (Espressif). Even ELRS (open-source protocol) runs on Chinese silicon.",
+    "compliant_options": [
+      "ImmersionRC Ghost (Croatia) — 7 products, proprietary protocol, Western-manufactured",
+      "STM32-based ELRS receivers (rare — only ~14 in Forge DB)",
+      "Ukrainian combat receivers (NDAA-adjacent, allied nation)"
+    ],
+    "gap": "No US-manufactured ELRS receiver exists. ImmersionRC Ghost is the only Western option but uses proprietary (non-ELRS) protocol.",
+    "realistic_path": "Orqa/ImmersionRC expands Ghost receiver line. Or: a US/EU manufacturer builds STM32-based ELRS receivers with allied PCB assembly."
+  }
+}
