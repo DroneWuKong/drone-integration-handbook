@@ -12,6 +12,9 @@ on:
       - 'data/forge_database.json'
       - 'platforms/**'
       - 'pipeline/pie_pipeline_live.py'
+      - 'pipeline/prediction_engine.py'
+      - 'pipeline/brief_generator.py'
+      - '.github/workflows/pie-pipeline.yml'
 
 permissions:
   contents: write
