@@ -376,7 +376,91 @@
         "xti_financial": "XTIA trading ~$2.10 (April 2026). Market cap ~$89M. TTM revenue $3.2M, net loss -$35.6M. $20M JPMorgan ABL facility secured Feb 2026. 2026 revenue forecast $160M (via Drone Nerds). 47 employees. Next earnings May 19, 2026.",
         "part_of_broader_campaign": "TX AG Paxton filed 4 CCP-linked lawsuits in one week: TP-Link, Anzu, Lorex, Temu. Coordinated enforcement strategy.",
         "risk_assessment": "CRITICAL. Zero products, active litigation, no response filed, parent company burning cash. Existential risk if TX ruling goes against Anzu \u2014 precedent for all gray zone entities."
-      }
+      },
+      "composite_score": 0.782,
+      "risk_level": "CRITICAL",
+      "dimension_scores": {
+        "identity_wash": 0.95,
+        "component_passthrough": 0.6,
+        "firmware_dependency": 0.95,
+        "data_routing_risk": 0.7,
+        "regulatory_arbitrage": 0.5,
+        "supply_chain_fragility": 0.8
+      },
+      "flags": [
+        {
+          "dimension": "identity_wash",
+          "signal": "Technology licensed from adversary entity: DJI (Shenzhen DJI Technology Co., Ltd.)",
+          "severity": "critical",
+          "confidence": 0.95
+        },
+        {
+          "dimension": "identity_wash",
+          "signal": "Teardown confirms adversary hardware: PCB layouts align exactly with DJI Mavic 3 Enterprise. Board part numbers match. Controller RRC01 is relabeled DJI RC Pro with identical firmware. Camera module, gimbal, propulsion all DJI-sourced. DJI P1 OcuSync chipset present \u2014 proprietary ASIC that cannot be independently sourced.",
+          "severity": "critical",
+          "confidence": 0.97
+        },
+        {
+          "dimension": "identity_wash",
+          "signal": "FCC filing reveals adversary components: Anzu did NOT disclose DJI relationship in initial FCC filings (Dec 2023). Only disclosed after security researchers publicly revealed connection in mid-2024. House Committee specifically cited this omission.",
+          "severity": "warning",
+          "confidence": 0.95
+        },
+        {
+          "dimension": "component_passthrough",
+          "signal": "50% of components from adversary nations \u2014 partial pass-through",
+          "severity": "warning",
+          "confidence": 0.8
+        },
+        {
+          "dimension": "firmware_dependency",
+          "signal": "Firmware signed with adversary crypto keys: Firmware signed and encrypted with DJI cryptographic keys \u2014 DJI retains root key control. Built on DJI SDK. SecNeo/BangCle Chinese security framework present \u2014 not confirmed decrypted. MAVProxyUser documented firmware accessible on DJI's own CDN, contradicting independent hosting claims.",
+          "severity": "critical",
+          "confidence": 0.95
+        },
+        {
+          "dimension": "firmware_dependency",
+          "signal": "SDK from adversary manufacturer embedded: Firmware signed and encrypted with DJI cryptographic keys \u2014 DJI retains root key control. Built on DJI SDK. SecNeo/BangCle Chinese security framework present \u2014 not confirmed decrypted. MAVProxyUser documented firmware accessible on DJI's own CDN, contradicting independent hosting claims.",
+          "severity": "warning",
+          "confidence": 0.95
+        },
+        {
+          "dimension": "data_routing_risk",
+          "signal": "SDK contacts adversary endpoints: White Knight Labs pentest confirmed data goes exclusively to Aloft servers \u2014 but found references to Chinese domains within system (remediated by Aloft). Texas AG alleges Aloft itself is a DJI-integrated platform. GitHub repo documented firmware accessible on DJI CDN.",
+          "severity": "warning",
+          "confidence": 0.75
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Markets to government/public safety without Blue UAS clearance",
+          "severity": "warning",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Misleading origin claim: \"American owned and operated\"",
+          "severity": "warning",
+          "confidence": 0.7
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Misleading origin claim: \"Your solution is delivered by your neighbors\"",
+          "severity": "warning",
+          "confidence": 0.7
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Misleading origin claim: \"An entirely American-owned company\"",
+          "severity": "warning",
+          "confidence": 0.7
+        },
+        {
+          "dimension": "supply_chain_fragility",
+          "signal": "Product discontinued due to adversary component shortage",
+          "severity": "critical",
+          "confidence": 0.95
+        }
+      ]
     },
     {
       "id": "cogito-specta",
@@ -473,7 +557,55 @@
         "shell_company_exposure": "Identified by Konrad Iturbe's OcuSync fingerprinting bot. FCC filings under COGITO TECH COMPANY LIMITED (Hong Kong). Products: Specta Air (DJI Air 3 clone), Specta Mini.",
         "market_status": "Existing inventory may still be sold at retail. No pathway to new products under current FCC rules.",
         "risk_assessment": "HIGH. Smaller entity than Anzu/SkyRover. No US corporate presence. No litigation but fully exposed to FCC enforcement."
-      }
+      },
+      "composite_score": 0.537,
+      "risk_level": "HIGH",
+      "dimension_scores": {
+        "identity_wash": 0.95,
+        "component_passthrough": 0.9,
+        "firmware_dependency": 0.0,
+        "data_routing_risk": 0.0,
+        "regulatory_arbitrage": 0.5,
+        "supply_chain_fragility": 0.7
+      },
+      "flags": [
+        {
+          "dimension": "identity_wash",
+          "signal": "Technology licensed from adversary entity: DJI (undisclosed \u2014 no licensing acknowledged)",
+          "severity": "critical",
+          "confidence": 0.95
+        },
+        {
+          "dimension": "identity_wash",
+          "signal": "Teardown confirms adversary hardware: Specta Air has identical PCBs to DJI Air 3. Same DJI P1 chipset. RF emission reports differ only by date and logo removal. Firmware forked from DJI with branding stripped. No independent technology whatsoever.",
+          "severity": "critical",
+          "confidence": 0.95
+        },
+        {
+          "dimension": "component_passthrough",
+          "signal": "95% of components sourced from adversary nations",
+          "severity": "critical",
+          "confidence": 0.85
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Misleading origin claim: \"No country of origin disclosed\"",
+          "severity": "warning",
+          "confidence": 0.7
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Misleading origin claim: \"No DJI acknowledgment\"",
+          "severity": "warning",
+          "confidence": 0.7
+        },
+        {
+          "dimension": "supply_chain_fragility",
+          "signal": "Manufacturing in adversary nation: china (presumed)",
+          "severity": "critical",
+          "confidence": 0.9
+        }
+      ]
     },
     {
       "id": "skyrover-knowact",
@@ -571,7 +703,85 @@
         "shell_network": "9+ entities identified by Konrad Iturbe OcuSync bot. FCC filings show: Knowact (drone bodies), Skyhigh Tech LLC (controllers). DJI logos visible in FCC antenna diagrams. WaveGo Tech filing included Knowact documentation.",
         "corporate_opacity": "SkyRover website contains no parent company, headquarters, or country of origin info. Only marketing language. SZ Knowact registered in Nanshan District, Shenzhen \u2014 same district as DJI HQ.",
         "risk_assessment": "CRITICAL (0.850). Most active remaining gray zone entity. Still selling product. Vague US manufacturing promise is years away. Corporate structure deliberately opaque."
-      }
+      },
+      "composite_score": 0.85,
+      "risk_level": "CRITICAL",
+      "dimension_scores": {
+        "identity_wash": 0.9,
+        "component_passthrough": 0.9,
+        "firmware_dependency": 0.95,
+        "data_routing_risk": 0.9,
+        "regulatory_arbitrage": 0.5,
+        "supply_chain_fragility": 0.7
+      },
+      "flags": [
+        {
+          "dimension": "identity_wash",
+          "signal": "Technology licensed from adversary entity: DJI (undisclosed)",
+          "severity": "critical",
+          "confidence": 0.95
+        },
+        {
+          "dimension": "component_passthrough",
+          "signal": "100% of components sourced from adversary nations",
+          "severity": "critical",
+          "confidence": 0.85
+        },
+        {
+          "dimension": "firmware_dependency",
+          "signal": "Firmware signed with adversary crypto keys: SkyRover app connects DIRECTLY to DJI cloud infrastructure. Jon Sawyer found identical encryption keys. Users can log in using existing DJI credentials. This is the most direct DJI connection of any white-label \u2014 no Aloft-style intermediary.",
+          "severity": "critical",
+          "confidence": 0.95
+        },
+        {
+          "dimension": "firmware_dependency",
+          "signal": "SDK from adversary manufacturer embedded: SkyRover app connects DIRECTLY to DJI cloud infrastructure. Jon Sawyer found identical encryption keys. Users can log in using existing DJI credentials. This is the most direct DJI connection of any white-label \u2014 no Aloft-style intermediary.",
+          "severity": "warning",
+          "confidence": 0.95
+        },
+        {
+          "dimension": "firmware_dependency",
+          "signal": "OTA update pipeline touches adversary infrastructure",
+          "severity": "critical",
+          "confidence": 0.95
+        },
+        {
+          "dimension": "data_routing_risk",
+          "signal": "Data hosted in adversary nation: china (dji cloud)",
+          "severity": "critical",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Misleading origin claim: \"No ownership disclosed\"",
+          "severity": "warning",
+          "confidence": 0.7
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Misleading origin claim: \"No HQ disclosed\"",
+          "severity": "warning",
+          "confidence": 0.7
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Misleading origin claim: \"No country disclosed\"",
+          "severity": "warning",
+          "confidence": 0.7
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Misleading origin claim: \"Zero transparency\"",
+          "severity": "warning",
+          "confidence": 0.7
+        },
+        {
+          "dimension": "supply_chain_fragility",
+          "signal": "Manufacturing in adversary nation: china",
+          "severity": "critical",
+          "confidence": 0.9
+        }
+      ]
     },
     {
       "id": "autel-robotics",
@@ -706,7 +916,49 @@
         "market_impact": "Existing authorized models remain legal to sell and operate. No new models can be authorized. DJI and Autel both filed for reconsideration; FCC placed on public notice.",
         "conditional_approvals": "4 conditional approvals granted to other companies (not Autel/DJI) valid until Dec 31, 2026. FCC moving toward granular model-by-model review system. Blue UAS and Buy American exemptions in place until Jan 1, 2027.",
         "risk_assessment": "HIGH. Larger and more established than other gray zone entities. Has real products and real customers. But Section 1709 is uniquely restrictive \u2014 no pathway to US market even with onshoring."
-      }
+      },
+      "composite_score": 0.525,
+      "risk_level": "HIGH",
+      "dimension_scores": {
+        "identity_wash": 0.9,
+        "component_passthrough": 0.9,
+        "firmware_dependency": 0.0,
+        "data_routing_risk": 0.0,
+        "regulatory_arbitrage": 0.5,
+        "supply_chain_fragility": 0.7
+      },
+      "flags": [
+        {
+          "dimension": "identity_wash",
+          "signal": "Technology licensed from adversary entity: Proprietary (not DJI derivative)",
+          "severity": "critical",
+          "confidence": 0.95
+        },
+        {
+          "dimension": "component_passthrough",
+          "signal": "90% of components sourced from adversary nations",
+          "severity": "critical",
+          "confidence": 0.85
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Markets to government/public safety without Blue UAS clearance",
+          "severity": "warning",
+          "confidence": 0.9
+        },
+        {
+          "dimension": "regulatory_arbitrage",
+          "signal": "Misleading origin claim: \"US subsidiary in Bothell creates impression of American company\"",
+          "severity": "warning",
+          "confidence": 0.7
+        },
+        {
+          "dimension": "supply_chain_fragility",
+          "signal": "Manufacturing in adversary nation: china",
+          "severity": "critical",
+          "confidence": 0.9
+        }
+      ]
     }
   ],
   "cross_cutting_intel": {
@@ -745,6 +997,8 @@
     "version": "0.9",
     "last_enriched": "2026-04-04T22:00:00Z",
     "enrichment_sources": "Web search April 4, 2026. TX AG filings, FCC dockets, Ninth Circuit filings, SEC data, OSINT trackers, legal analyses.",
-    "total_source_urls": 47
+    "total_source_urls": 47,
+    "risk_scores_merged": true,
+    "last_merged": "2026-04-05"
   }
 }
