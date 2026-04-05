@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T21:05:45.417013+00:00",
+  "generated_at": "2026-04-05T02:47:26.831961+00:00",
   "federal_awards_total": 0,
   "gray_zone_federal_matches": 0,
   "news_signals_total": 0,
@@ -15,7 +15,7 @@
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     },
     {
       "id": "proc-1463062e5b",
@@ -27,7 +27,7 @@
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     },
     {
       "id": "proc-96e96fbe76",
@@ -39,7 +39,7 @@
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     },
     {
       "id": "proc-683a19be77",
@@ -51,7 +51,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     },
     {
       "id": "proc-d698467706",
@@ -63,7 +63,19 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+    },
+    {
+      "id": "proc-e071af7e13",
+      "source": "news",
+      "title": "Autel and DroneSense Partnership Improves Situational Awareness and Management Game for Public Safety Agencies - Commercial UAV News",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOYURMS2tXOTlSekRvNGE5VnJKS1BGRTZxMkJOSXQzYlh1N3ptbl92dHpPT2xoWXF2UHBGaVpkQlN1NmpaZmI2eHVvZS1ldHpwOVhTSldnMS1zSHNkXzFZSWtCU0pLUkdKbXBaTWdiOVRGdE40azZmdVA2RXYxXy00anBRU0lld3dmM09fd01xOU1GQjU5bTNYanQtZGZVSUJDQjZGZGtEQXhZQTUtZWxZYlpMbm9QWTU4OFdVWmlTc3B4Y2FRYnlNYkd0Z1QtS0NoUmx1a2Y1c1czaWs4THlDcXB3aWtUd21MQkw3OHRKSQ?oc=5",
+      "published": "Mon, 16 Nov 2020 08:00:00 GMT",
+      "news_source": "Commercial UAV News",
+      "matched_term": "autel",
+      "flag_type": "gray_zone_news_mention",
+      "severity": "info",
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     },
     {
       "id": "proc-ba6474a3a4",
@@ -75,7 +87,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     },
     {
       "id": "proc-db87c0aa4b",
@@ -87,7 +99,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     },
     {
       "id": "proc-fb2a44fd6d",
@@ -99,7 +111,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     },
     {
       "id": "proc-9d29833f5f",
@@ -111,19 +123,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
-    },
-    {
-      "id": "proc-f1bd34d883",
-      "source": "news",
-      "title": "Autel's Drone Controversy: A Question Of Intent And Use - DroneXL.co",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA0ZmlqRGlYamlsUFk5QUcxRFVUWHJGUkw1eXBjYmY4MzhwbVF1YWFvWFpSMEg3eG5PbE9EOG5iSTFKWURJUEk0VTJaLTQwSGdSNFRCWktUQ09Nd3d2WWt5MGRUZU90TGtDWWNyS0oyMVc3Sm11NFoxb29R?oc=5",
-      "published": "Mon, 08 Jan 2024 08:00:00 GMT",
-      "news_source": "DroneXL.co",
-      "matched_term": "autel",
-      "flag_type": "gray_zone_news_mention",
-      "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     },
     {
       "id": "proc-51ef0b96f6",
@@ -135,7 +135,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     },
     {
       "id": "proc-aade3f22c1",
@@ -147,7 +147,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     },
     {
       "id": "proc-48f047caaa",
@@ -159,11 +159,11 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-04T21:05:45.417013+00:00"
+      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
     }
   ],
   "vendors_flagged": [
-    "anzu",
-    "autel"
+    "autel",
+    "anzu"
   ]
 }
