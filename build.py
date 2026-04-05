@@ -39,6 +39,45 @@ _PLATFORM_CATS = [
     ("tactical",     "Tactical / Defense"),
 ]
 
+# Component groups — organizes the flat list of 44+ component docs into
+# navigable sub-categories. Matched by substring in the filename.
+_COMPONENT_GROUPS = [
+    ("Propulsion & Airframe", [
+        "frames-", "motors", "escs", "propellers", "propulsion-system",
+        "propulsion-non-electric", "power-architecture",
+    ]),
+    ("Flight Controllers & Firmware", [
+        "flight-controller", "integrated-stacks",
+    ]),
+    ("RF, Comms & Control Links", [
+        "comms-datalinks", "c2-datalinks", "mafiairs", "military-firmware",
+    ]),
+    ("Video & Cameras", [
+        "fpv-cameras", "video-transmitters", "thermal-cameras",
+    ]),
+    ("Navigation & Sensors", [
+        "gps", "gnss-", "rtk-ppk", "navigation-pnt", "lidar",
+        "sensor-payload", "detect-and-avoid",
+    ]),
+    ("Companion & Compute", [
+        "companion-computer", "ai-accelerator", "ground-control",
+    ]),
+    ("Batteries & Power", [
+        "batteries", "battery-deep",
+    ]),
+    ("Defense & Tactical", [
+        "electronic-warfare", "counter-uas", "esad-safe", "tactical-accessories",
+        "rf-detection", "swarm-software",
+    ]),
+    ("Platforms & Compliance", [
+        "platforms-global", "ndaa-compliance", "remote-id", "bvlos",
+        "utm-airspace", "uas-maintenance", "industry-intelligence",
+    ]),
+    ("Manufacturer Guides", [
+        "orqa-hardware", "openhd-implementation",
+    ]),
+]
+
 
 # ── AUTO-DISCOVERY ───────────────────────────────────────────────────────────
 
@@ -158,14 +197,46 @@ def build_toc(platforms, components):
             toc += f'<a href="#p{p_num}"><span class="ch-num">&bull;</span>{title}</a>\n'
     toc += '</details>\n</div>\n'
 
-    # Components — collapsible
+    # Components — collapsible, grouped by topic
     toc += '<div class="toc-part">\n<details class="toc-collapse">\n'
     toc += (
         '<summary><h3>Part 6 — Component References</h3>'
         f'<span class="toc-count">{len(components)} categories</span></summary>\n'
     )
-    for rel, c_num, title in components:
-        toc += f'<a href="#c{c_num}"><span class="ch-num">&bull;</span>{title}</a>\n'
+    # Build lookup: filename → (rel, c_num, title)
+    comp_lookup = {os.path.basename(rel).replace('.md', ''): (rel, c_num, title)
+                   for rel, c_num, title in components}
+    used = set()
+    for group_name, patterns in _COMPONENT_GROUPS:
+        group_entries = []
+        for fname, entry in comp_lookup.items():
+            if fname in used:
+                continue
+            if any(pat in fname for pat in patterns):
+                group_entries.append(entry)
+                used.add(fname)
+        if not group_entries:
+            continue
+        toc += (
+            f'<details class="toc-subgroup"><summary class="toc-subgroup-label">'
+            f'{group_name} <span class="toc-count">({len(group_entries)})</span>'
+            f'</summary>\n'
+        )
+        for rel, c_num, title in group_entries:
+            toc += f'<a href="#c{c_num}"><span class="ch-num">&bull;</span>{title}</a>\n'
+        toc += '</details>\n'
+    # Catch any ungrouped components
+    ungrouped = [(rel, c_num, title) for fname, (rel, c_num, title) in comp_lookup.items()
+                 if fname not in used]
+    if ungrouped:
+        toc += (
+            '<details class="toc-subgroup"><summary class="toc-subgroup-label">'
+            f'Other <span class="toc-count">({len(ungrouped)})</span>'
+            '</summary>\n'
+        )
+        for rel, c_num, title in ungrouped:
+            toc += f'<a href="#c{c_num}"><span class="ch-num">&bull;</span>{title}</a>\n'
+        toc += '</details>\n'
     toc += '</details>\n</div>\n'
     return toc
 
@@ -480,6 +551,53 @@ body {{
   border-bottom: 1px solid var(--border);
 }}
 
+/* ── TOC SUBGROUPS ── */
+.toc-subgroup {{
+  margin: 0.25rem 0 0.25rem 0.5rem;
+  border: none;
+}}
+
+.toc-subgroup-label {{
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.5rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-dim);
+  border-radius: 4px;
+  transition: background 0.15s;
+}}
+
+.toc-subgroup-label:hover {{
+  background: var(--bg-elevated);
+}}
+
+.toc-subgroup-label::-webkit-details-marker {{
+  display: none;
+}}
+
+.toc-subgroup summary::before {{
+  content: '▸';
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  transition: transform 0.15s;
+  flex-shrink: 0;
+}}
+
+.toc-subgroup[open] summary::before {{
+  transform: rotate(90deg);
+}}
+
+.toc-subgroup a {{
+  padding-left: 1.5rem !important;
+  font-size: 0.88rem;
+}}
+
 /* ── CHAPTER CONTENT ── */
 .content {{
   max-width: 860px;
@@ -768,9 +886,13 @@ body {{
   background: rgba(10, 10, 10, 0.97);
   backdrop-filter: blur(16px);
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }}
 
 .mobile-menu.open {{
@@ -779,25 +901,37 @@ body {{
 
 .mobile-menu-link {{
   font-family: var(--mono);
-  font-size: 1.1rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--text);
   text-decoration: none;
-  padding: 1rem 2rem;
-  letter-spacing: 0.04em;
-  border-bottom: 1px solid var(--border);
-  width: 80%;
-  text-align: center;
-  transition: color 0.2s;
-}}
-
-.mobile-menu-link:last-child {{
-  border-bottom: none;
+  padding: 0.55rem 1.5rem;
+  letter-spacing: 0.03em;
+  width: 100%;
+  text-align: left;
+  transition: color 0.15s, background 0.15s;
+  border-radius: 4px;
 }}
 
 .mobile-menu-link:hover,
 .mobile-menu-link:active {{
   color: var(--accent);
+  background: var(--bg-elevated);
+}}
+
+.mobile-nav-section {{
+  padding: 0.5rem 1rem;
+}}
+
+.mobile-nav-heading {{
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--accent-dim);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem 0.25rem;
+  margin-top: 0.25rem;
 }}
 
 /* ── RESPONSIVE ── */
@@ -1073,12 +1207,46 @@ body {{
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#" class="mobile-menu-link" id="mobileSearchLink">Search</a>
-  <a href="#toc" class="mobile-menu-link">Contents</a>
-  <a href="https://forgeprole.netlify.app" class="mobile-menu-link">Forge</a>
-  <a href="https://github.com/DroneWuKong/drone-integration-handbook" class="mobile-menu-link">GitHub</a>
-  <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md" class="mobile-menu-link">Contribute</a>
-  <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md" class="mobile-menu-link">Roadmap</a>
+  <a href="#" class="mobile-menu-link" id="mobileSearchLink">&#x1F50D; Search</a>
+  <div class="mobile-nav-section">
+    <div class="mobile-nav-heading">RF Fundamentals</div>
+    <a href="#ch1" class="mobile-menu-link">1 &middot; Five Link Types</a>
+    <a href="#ch2" class="mobile-menu-link">2 &middot; Frequency Bands</a>
+    <a href="#ch3" class="mobile-menu-link">3 &middot; Antennas</a>
+    <a href="#ch4" class="mobile-menu-link">4 &middot; Link Budgets</a>
+  </div>
+  <div class="mobile-nav-section">
+    <div class="mobile-nav-heading">Firmware</div>
+    <a href="#ch5" class="mobile-menu-link">5 &middot; Four Firmwares</a>
+    <a href="#ch6" class="mobile-menu-link">6 &middot; MSP Protocol</a>
+    <a href="#ch7" class="mobile-menu-link">7 &middot; MAVLink Protocol</a>
+    <a href="#ch8" class="mobile-menu-link">8 &middot; UART Layout</a>
+  </div>
+  <div class="mobile-nav-section">
+    <div class="mobile-nav-heading">Field Ops</div>
+    <a href="#ch9" class="mobile-menu-link">9 &middot; Preflight</a>
+    <a href="#ch10" class="mobile-menu-link">10 &middot; Blackbox</a>
+    <a href="#ch11" class="mobile-menu-link">11 &middot; PID Tuning</a>
+    <a href="#ch12" class="mobile-menu-link">12 &middot; Troubleshooting</a>
+  </div>
+  <div class="mobile-nav-section">
+    <div class="mobile-nav-heading">Integration</div>
+    <a href="#ch13" class="mobile-menu-link">13 &middot; Companion Computer</a>
+    <a href="#ch14" class="mobile-menu-link">14 &middot; Mesh Radios</a>
+    <a href="#ch15" class="mobile-menu-link">15 &middot; TAK Integration</a>
+    <a href="#ch16" class="mobile-menu-link">16 &middot; Unsolved Problems</a>
+  </div>
+  <div class="mobile-nav-section">
+    <div class="mobile-nav-heading">References</div>
+    <a href="#platforms" class="mobile-menu-link">Platforms</a>
+    <a href="#components" class="mobile-menu-link">Components (all)</a>
+    <a href="#toc" class="mobile-menu-link">Full Table of Contents</a>
+  </div>
+  <div class="mobile-nav-section" style="border-top:1px solid var(--border);padding-top:0.75rem;margin-top:0.5rem;">
+    <a href="https://forgeprole.netlify.app" class="mobile-menu-link">Forge</a>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook" class="mobile-menu-link">GitHub</a>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md" class="mobile-menu-link">Roadmap</a>
+  </div>
 </div>
 
 <div class="hero">
