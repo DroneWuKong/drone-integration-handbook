@@ -103,6 +103,7 @@ jobs:
             FLAGS=$(python3 -c "import json; print(len(json.load(open('data/flags.json'))))")
             PREDS=$(python3 -c "import json; print(len(json.load(open('data/predictions.json'))))")
             git commit -m "🔍 PIE: ${FLAGS} flags, ${PREDS} predictions | $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main || git pull --rebase origin master
             git push
             echo "DATA_CHANGED=true" >> $GITHUB_ENV
           fi
@@ -144,6 +145,7 @@ jobs:
             FLAGS=$(python3 -c "import json; print(len(json.load(open('${FORGE_SRC}/pie_flags.json'))))")
             PREDS=$(python3 -c "import json; print(len(json.load(open('${FORGE_SRC}/pie_predictions.json'))))")
             git commit -m "🔍 PIE sync: ${FLAGS} flags, ${PREDS} predictions | $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git pull --rebase origin main || git pull --rebase origin master
             git push
             echo "✓ Forge repo updated — Netlify will redeploy"
           fi
@@ -175,6 +177,7 @@ jobs:
             git add data/briefs/
             if ! git diff --staged --quiet; then
               git commit -m "📋 PIE Brief: ${BRIEF_DATE}"
+              git pull --rebase origin main || git pull --rebase origin master
               git push
             fi
           fi
