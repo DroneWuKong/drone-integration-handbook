@@ -134,6 +134,37 @@ jobs:
             echo "✓ Forge repo updated — Netlify will redeploy"
           fi
 
+      - name: Generate Daily Brief
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "Generating PIE Intelligence Brief..."
+          python3 pipeline/brief_generator.py
+          
+          if [ -f "data/briefs/$(date -u +%Y-%m-%d).json" ]; then
+            echo "✓ Brief generated"
+            # Include brief in Forge sync
+            BRIEF_DATE=$(date -u +%Y-%m-%d)
+            cp "data/briefs/${BRIEF_DATE}.json" /tmp/forge/"DroneClear Components Visualizer/pie_brief.json" 2>/dev/null || true
+            cp "data/briefs/${BRIEF_DATE}.md"   /tmp/forge/"DroneClear Components Visualizer/pie_brief.md"   2>/dev/null || true
+          else
+            echo "⚠ Brief generation skipped (ANTHROPIC_API_KEY may not be set)"
+          fi
+
+      - name: Commit brief to handbook
+        run: |
+          BRIEF_DATE=$(date -u +%Y-%m-%d)
+          BRIEF_FILE="data/briefs/${BRIEF_DATE}.json"
+          if [ -f "$BRIEF_FILE" ]; then
+            git config user.name "PIE Bot"
+            git config user.email "pie-bot@users.noreply.github.com"
+            git add data/briefs/
+            if ! git diff --staged --quiet; then
+              git commit -m "📋 PIE Brief: ${BRIEF_DATE}"
+              git push
+            fi
+          fi
+
       - name: Summary
         run: |
           python3 -c "
