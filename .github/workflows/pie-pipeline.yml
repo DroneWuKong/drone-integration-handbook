@@ -14,7 +14,6 @@ on:
       - 'pipeline/pie_pipeline_live.py'
       - 'pipeline/prediction_engine.py'
       - 'pipeline/brief_generator.py'
-      - '.github/workflows/pie-pipeline.yml'
 
 permissions:
   contents: write
@@ -27,6 +26,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -94,6 +95,8 @@ jobs:
         run: |
           git config user.name "PIE Bot"
           git config user.email "pie-bot@users.noreply.github.com"
+          git fetch origin
+          git reset --soft HEAD
           git add data/parts-db/ data/flags.json data/predictions.json
 
           if git diff --staged --quiet; then
@@ -103,7 +106,7 @@ jobs:
             FLAGS=$(python3 -c "import json; print(len(json.load(open('data/flags.json'))))")
             PREDS=$(python3 -c "import json; print(len(json.load(open('data/predictions.json'))))")
             git commit -m "🔍 PIE: ${FLAGS} flags, ${PREDS} predictions | $(date -u '+%Y-%m-%d %H:%M UTC')"
-            git pull --rebase origin main || git pull --rebase origin master
+            git rebase origin/main 2>/dev/null || git rebase origin/master 2>/dev/null || true
             git push
             echo "DATA_CHANGED=true" >> $GITHUB_ENV
           fi
