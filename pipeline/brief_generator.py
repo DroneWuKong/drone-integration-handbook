@@ -237,7 +237,8 @@ Write the brief in this exact JSON structure:
   "lead_story": {{
     "title": "short title",
     "body": "3-4 sentences. What is happening, why it matters, what the signal strength is. Specific. Cite actual numbers from the data.",
-    "action": "one concrete thing a procurement officer or program manager should do this week because of this"
+    "action": "one concrete thing a procurement officer or program manager should do this week because of this",
+    "sources": [{{"name": "source name", "url": "https://...", "type": "primary|reporting|derived"}}]
   }},
   "gray_zone": [
     {{
@@ -245,7 +246,8 @@ Write the brief in this exact JSON structure:
       "status": "one sentence current status",
       "development": "2-3 sentences on the most significant recent development",
       "buyer_exposure": "who is exposed and what is their risk",
-      "action": "what should an agency currently using this equipment do"
+      "action": "what should an agency currently using this equipment do",
+      "sources": [{{"name": "source name", "url": "https://...", "type": "primary|reporting|derived"}}]
     }}
   ],
   "supply_chain": [
@@ -253,7 +255,8 @@ Write the brief in this exact JSON structure:
       "component": "component name",
       "signal": "what the data shows — probability, concentration ratio, flag count",
       "window": "how much time before this becomes a problem",
-      "action": "specific hedge or action"
+      "action": "specific hedge or action",
+      "sources": [{{"name": "source name", "url": "https://...", "type": "primary|reporting|derived"}}]
     }}
   ],
   "watch_list": [
@@ -288,6 +291,7 @@ Rules:
 - Supply chain: pick the 3 most actionable signals, not all of them.
 - Watch list: 3 items that are trending but not yet critical.
 - Predictions: top 3 only, with real hedges a procurement team could execute.
+- sources: each section must include 1-3 relevant source objects from the data above.
 - Respond ONLY with the JSON object. No preamble, no markdown fences.
 """
     return prompt

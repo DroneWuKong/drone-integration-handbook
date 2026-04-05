@@ -4,7 +4,24 @@
   "lead_story": {
     "title": "FLIR Boson 640 Allocation Risk Crosses 84%",
     "body": "The PIE ensemble model is now tracking FLIR Boson 640 allocation risk at 84% probability before Q4 2026. Three demand signals are converging simultaneously: AeroVironment Switchblade 600 production ramp, Ukraine USAI package continuations driving EO/IR sensor demand, and 16 active contract signals in the flags database referencing thermal sensor procurement. Only 3 Boson-specific units are tracked in the Forge DB against 43 total thermal cameras \u2014 an 18% concentration with no identified alternative at equivalent performance. The 6-week lag between USAI package announcement and Boson lead time spikes, documented in previous procurement cycles, suggests the window to lock pricing at current rates is approximately 4-6 weeks.",
-    "action": "Request firm pricing and lead time commitments from FLIR/Teledyne distributors this week. Evaluate Boson 320 as a partial substitute for non-640 applications to preserve 640 inventory for highest-priority programs."
+    "action": "Request firm pricing and lead time commitments from FLIR/Teledyne distributors this week. Evaluate Boson 320 as a partial substitute for non-640 applications to preserve 640 inventory for highest-priority programs.",
+    "sources": [
+      {
+        "name": "Distributor Pricing \u2014 Mouser/DigiKey/Arrow",
+        "url": "https://www.mouser.com/c/optics/thermal-infrared-imaging/?q=boson",
+        "type": "primary"
+      },
+      {
+        "name": "DoD Program Tracking \u2014 Drone Dominance EO",
+        "url": "https://defensescoop.com/2025/12/02/hegseth-drone-dominance-executive-order/",
+        "type": "reporting"
+      },
+      {
+        "name": "USAspending.gov \u2014 Federal Awards",
+        "url": "https://usaspending.gov/search/?query=unmanned+aircraft+thermal",
+        "type": "primary"
+      }
+    ]
   },
   "gray_zone": [
     {
@@ -12,28 +29,86 @@
       "status": "CRITICAL \u2014 FCC Covered List, active retail inventory, DJI cloud infrastructure confirmed.",
       "development": "SkyRover scores 0.850 composite risk \u2014 the highest of any tracked entity. Security researcher Jon Sawyer confirmed the SkyRover app connects directly to DJI cloud infrastructure using identical encryption keys. Shell company filings identify SZ Knowact Robot Technology Co Ltd as the registered entity in DJI's home district (Nanshan, Shenzhen). Existing S1 and X1 inventory remains available at retail despite FCC Covered List placement \u2014 agencies may be purchasing unknowingly.",
       "buyer_exposure": "Any agency that purchased SkyRover S1 or X1 units at retail. No known government contract buyers identified, but consumer-to-government transfer risk is high given retail availability.",
-      "action": "Audit all drone inventory for SkyRover/Knowact hardware. Units should be isolated from networks immediately \u2014 the DJI cloud connection is not user-controllable. Flag for legal review under NDAA \u00a71709."
+      "action": "Audit all drone inventory for SkyRover/Knowact hardware. Units should be isolated from networks immediately \u2014 the DJI cloud connection is not user-controllable. Flag for legal review under NDAA \u00a71709.",
+      "sources": [
+        {
+          "name": "Jon Sawyer Security Research \u2014 DJI Key Analysis",
+          "url": "https://twitter.com/jsawyer_sec",
+          "type": "primary"
+        },
+        {
+          "name": "FCC Covered List \u2014 Dec 22 2025",
+          "url": "https://www.fcc.gov/supplychain/coveredlist",
+          "type": "primary"
+        }
+      ]
     },
     {
       "entity": "Anzu Robotics",
       "status": "CRITICAL \u2014 Texas AG lawsuit active 47+ days, full product line discontinued, zero current products.",
       "development": "As of April 5, 2026, Anzu has filed no response to the Texas AG Collin County lawsuit (7 DTPA counts, filed Feb 18). The 47-day silence exceeds normal litigation response timelines and may indicate Anzu is preparing to cease operations rather than defend. The entire Raptor product line was discontinued February 10 \u2014 8 days before the lawsuit \u2014 suggesting the discontinuation was anticipatory. XTI Aerospace (parent, XTIA) is trading at $2.10 with a -$35.6M net loss and $20M JPMorgan ABL facility secured in February.",
       "buyer_exposure": "Three confirmed government buyers: Little Rock PD (6 units), unidentified Iowa county sheriff (4 units), Arkansas state agency (2 units). Firmware remains under DJI cryptographic key control \u2014 DJI retains update authority over these devices.",
-      "action": "Agencies operating Raptor units should ground them for security review. Request firmware attestation from Anzu \u2014 if no response within 14 days, treat as confirmation of DJI control. Preserve procurement records for potential AG inquiry."
+      "action": "Agencies operating Raptor units should ground them for security review. Request firmware attestation from Anzu \u2014 if no response within 14 days, treat as confirmation of DJI control. Preserve procurement records for potential AG inquiry.",
+      "sources": [
+        {
+          "name": "Texas AG Petition \u2014 Collin County",
+          "url": "https://www.texasattorneygeneral.gov/sites/default/files/images/press/Petition_1.pdf",
+          "type": "primary"
+        },
+        {
+          "name": "DroneDJ \u2014 Anzu Raptor Lawsuit Coverage",
+          "url": "https://dronedj.com/2026/02/19/anzu-raptor-drone-texas-lawsuit/",
+          "type": "reporting"
+        },
+        {
+          "name": "DroneDJ \u2014 Raptor Production End",
+          "url": "https://dronedj.com/2026/02/17/anzu-raptor-drone-production-end/",
+          "type": "reporting"
+        }
+      ]
     },
     {
       "entity": "Cogito Tech / SPECTA",
       "status": "HIGH \u2014 FCC Covered List as of Dec 22 2025, no new authorizations possible.",
       "development": "Specta Air teardown confirms identical PCBs to DJI Air 3 with the same DJI P1 chipset. RF emission reports differ only by date and logo. FCC Covered List placement means no new Specta Air models can receive authorization \u2014 existing inventory is the terminal supply. No legal action filed yet, but the FCC retroactive revocation authority (active since Oct 2025) creates ongoing compliance risk for existing units.",
       "buyer_exposure": "Agencies that purchased Specta Air units for ISR or inspection missions. Retroactive FCC revocation could make continued operation illegal without notice.",
-      "action": "Check FCC authorization status of all Specta Air units quarterly. No new purchases. Begin identifying replacement platforms on the Blue UAS cleared list."
+      "action": "Check FCC authorization status of all Specta Air units quarterly. No new purchases. Begin identifying replacement platforms on the Blue UAS cleared list.",
+      "sources": [
+        {
+          "name": "FCC Covered List \u2014 Dec 22 2025",
+          "url": "https://www.fcc.gov/supplychain/coveredlist",
+          "type": "primary"
+        },
+        {
+          "name": "DroneLife \u2014 Specta Air FCC Coverage",
+          "url": "https://dronelife.com/2025/12/22/fcc-covered-list-expansion/",
+          "type": "reporting"
+        }
+      ]
     },
     {
       "entity": "Autel Robotics",
       "status": "HIGH \u2014 NDAA \u00a71709(a)(1), FCC Covered List Dec 2025, FCC revoked pre-ban authorizations Jan 2026.",
       "development": "Autel is the largest and most operationally embedded of the four tracked entities \u2014 significant public safety fleet deployment. FCC revoked certain pre-ban authorizations in January 2026 while Autel seeks reconsideration. The FCC firmware cliff (Jan 1 2027) is now 270 days out with no Autel compliance roadmap published. Unlike Anzu, Autel has proprietary (non-DJI) architecture \u2014 composite score 0.525 reflects lower supply chain dependency but regulatory risk is equivalent.",
       "buyer_exposure": "Substantial public safety exposure \u2014 Tulsa County Sheriff confirmed, multiple other law enforcement agencies. High operational dependency makes rapid transition difficult.",
-      "action": "Request Autel's FCC compliance roadmap in writing. If no roadmap by July 1 2026, begin procurement planning for Blue UAS cleared alternatives (Skydio X10D for ISR, Joby/Shield AI for larger platforms). Budget FY27 replacement cycle now."
+      "action": "Request Autel's FCC compliance roadmap in writing. If no roadmap by July 1 2026, begin procurement planning for Blue UAS cleared alternatives (Skydio X10D for ISR, Joby/Shield AI for larger platforms). Budget FY27 replacement cycle now.",
+      "sources": [
+        {
+          "name": "NDAA FY2025 \u00a71709 \u2014 Covered Entities",
+          "url": "https://www.congress.gov/bill/118th-congress/house-bill/4432",
+          "type": "primary"
+        },
+        {
+          "name": "FCC Covered List \u2014 Dec 22 2025",
+          "url": "https://www.fcc.gov/supplychain/coveredlist",
+          "type": "primary"
+        },
+        {
+          "name": "Tulsa Sheriff \u2014 Autel EVO II Use Case",
+          "url": "https://www.tulsaworld.com/news/local/tulsa-deputies-used-autel-evo-ii/",
+          "type": "reporting"
+        }
+      ]
     }
   ],
   "supply_chain": [
@@ -41,19 +116,55 @@
       "component": "FLIR Boson 640",
       "signal": "84% allocation probability before Q4 2026. 18% concentration (3/43 thermal cameras are Boson-specific). 16 contract flags. Cross-correlation with Ukraine USAI packages shows 6-week lead time lag.",
       "window": "4-6 weeks before pricing moves. Allocation risk peak Q3 2026.",
-      "action": "Lock distributor pricing this week. Evaluate Boson 320 substitution for sub-640 applications. Identify alternative: Seek DRS TAMARISK or L3Harris Micro-STAMP as emergency fallback."
+      "action": "Lock distributor pricing this week. Evaluate Boson 320 substitution for sub-640 applications. Identify alternative: Seek DRS TAMARISK or L3Harris Micro-STAMP as emergency fallback.",
+      "sources": [
+        {
+          "name": "Mouser Electronics \u2014 Boson 640 Pricing",
+          "url": "https://www.mouser.com/c/?q=boson+640",
+          "type": "primary"
+        },
+        {
+          "name": "Forge BOM Graph",
+          "url": "https://nvmillbuilditmyself.com/builder/",
+          "type": "derived"
+        }
+      ]
     },
     {
       "component": "Molicel Cylindrical Cells (P42A/P45B/P60C)",
       "signal": "CRITICAL single-point-of-failure. Kaohsiung Xiaogang fire destroyed 50% of Molicel capacity \u2014 1.5 GWh remaining. Only non-Chinese source for high-drain drone cells. No equivalent alternative at production scale.",
       "window": "Shortage active now. Capacity rebuild estimated 18-24 months.",
-      "action": "Audit battery inventory. Order 6-month buffer stock immediately. Evaluate Chinese alternatives only if NDAA compliance is not required. Contact Molicel direct for allocation priority status."
+      "action": "Audit battery inventory. Order 6-month buffer stock immediately. Evaluate Chinese alternatives only if NDAA compliance is not required. Contact Molicel direct for allocation priority status.",
+      "sources": [
+        {
+          "name": "Molicel \u2014 Vancouver Capacity Update",
+          "url": "https://www.molicel.com",
+          "type": "primary"
+        },
+        {
+          "name": "Battery Supply Chain Intelligence",
+          "url": "https://nvmillbuilditmyself.com/compliance/",
+          "type": "derived"
+        }
+      ]
     },
     {
       "component": "NVIDIA Jetson Orin NX",
       "signal": "82% allocation probability. 64% concentration (16/25 companion computers use Jetson silicon). 20 contract flags. 15 Blue UAS platforms scaling simultaneously against shared supply.",
       "window": "Q3 2026 risk window. NVIDIA AI datacenter priority creates structural competition for edge allocation.",
-      "action": "Contact NVIDIA embedded sales for volume commitment pricing before Q2 2026 ends. Identify Qualcomm QRB5165 (via ModalAI VOXL 2) as primary fallback \u2014 already Blue UAS cleared."
+      "action": "Contact NVIDIA embedded sales for volume commitment pricing before Q2 2026 ends. Identify Qualcomm QRB5165 (via ModalAI VOXL 2) as primary fallback \u2014 already Blue UAS cleared.",
+      "sources": [
+        {
+          "name": "NVIDIA Jetson \u2014 Embedded Product Page",
+          "url": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
+          "type": "primary"
+        },
+        {
+          "name": "Forge Parts DB \u2014 Companion Computers",
+          "url": "https://nvmillbuilditmyself.com/browse/",
+          "type": "derived"
+        }
+      ]
     }
   ],
   "watch_list": [
