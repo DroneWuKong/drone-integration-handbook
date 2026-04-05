@@ -4,7 +4,7 @@
     "title": "[GRAY ZONE] TX AG v. Anzu: No response filed after 45+ days \u2014 lawsuit appears frozen",
     "category": "legal_action",
     "entity": "anzu-robotics",
-    "severity": "CRITICAL",
+    "severity": "critical",
     "date": "2026-04-04T14:09:16.756004+00:00",
     "detail": "Texas AG Ken Paxton filed 7-count DTPA lawsuit in Collin County District Court on Feb 18, 2026. Anzu has not filed any public response, answer, or motion to dismiss. DroneLife attempted contact \u2014 no response. Part of coordinated TX AG action against 4 CCP-linked companies (TP-Link, Anzu, Lorex, Temu). Seeks injunctive relief, civil penalties up to $10K per violation, and court order requiring Anzu to disclose Raptor T is a rebranded DJI drone.\n\nAPRIL 4 DOCKET SEARCH: Collin County Odyssey court records system requires login (cijspub.co.collin.tx.us). Trellis.law does not surface the case in public search. No news outlet has reported ANY response, motion, hearing, or court activity since the Feb 18 filing. DroneLife attempted contact with Anzu/Warnas \u2014 no response. Multiple outlets note 'it is not immediately clear how Anzu Robotics has responded.' Under TX civil procedure, defendant typically has 20-26 days to answer after service. At 45+ days with no public activity, case is either: (a) not yet served, (b) awaiting answer with extensions, or (c) being resolved through XTI's counsel. XTI's $20M JPMorgan ABL facility lists Anzu as co-borrower \u2014 active litigation would be material to lender. Recommend manual Collin County Odyssey check.",
     "sources": [
@@ -14,14 +14,23 @@
       "https://cijspub.co.collin.tx.us/",
       "https://apps.collincountytx.gov/JudicialRecords/Search"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:09:16.756004+00:00",
+    "confidence": 0.85,
+    "flag_type": "legal_action",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-002",
     "title": "[GRAY ZONE] XTI Aerospace: $20M JPMorgan ABL facility with Anzu as co-borrower despite zero products",
     "category": "corporate_structure",
     "entity": "anzu-robotics",
-    "severity": "HIGH",
+    "severity": "high",
     "date": "2026-04-04T14:09:16.756004+00:00",
     "detail": "XTI acquired Anzu + Drone Nerds Nov 10, 2025 for ~$41.6M ($20M cash, $11.9M notes, $9.7M Class B units). Secured $20M JPMorgan revolving credit facility Feb 11, 2026 with Anzu as joint/several co-borrower \u2014 despite Anzu having zero products and active litigation. XTI delayed 10-K filing (April 2026) due to complex purchase price allocations. Sold Inpixon RTLS business Feb 2026. Unusual Machines (UMAC) \u2014 a legitimate US drone manufacturer, NOT a shell \u2014 invested $25M in XTI preferred stock concurrent with acquisition. UMAC's interest is Drone Nerds distribution access, not Anzu.",
     "sources": [
@@ -29,14 +38,23 @@
       "https://www.tipranks.com/news/company-announcements/xti-aerospace-delays-2025-annual-10-k-filing",
       "https://www.sec.gov/Archives/edgar/data/0001529113/000121390026004732/ea0270447-s3_xtiaero.htm"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:09:16.756004+00:00",
+    "confidence": 0.85,
+    "flag_type": "corporate_structure",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-003",
     "title": "[GRAY ZONE] FCC blanket ban rendered ALL shell company strategies obsolete",
     "category": "regulatory",
     "entity": "all",
-    "severity": "CRITICAL",
+    "severity": "critical",
     "date": "2026-04-04T14:09:16.756004+00:00",
     "detail": "FCC Dec 22, 2025 Covered List addition went far beyond expected DJI/Autel-only action \u2014 banned ALL foreign-produced UAS and UAS critical components. DJI+Autel specifically named in Section 1709 NDAA \u2014 cannot bypass even via US manufacturing or licensing. FCC quietly revoked certain DJI/Autel authorizations issued just before the ban. First 4 drones removed from Covered List March 18, 2026 (SiFly, Mobilicom, ScoutDI, Verge) \u2014 all enterprise/inspection, none Chinese-manufactured. DoW 45-day review took 70 days.",
     "sources": [
@@ -44,14 +62,23 @@
       "https://dronexl.co/2026/03/19/fcc-removes-four-drones-covered-list/",
       "https://www.wiley.law/alert-In-Unexpected-First-of-Its-Kind-Action-FCC-Adds-All-Foreign-Produced-Uncrewed-Aircraft-Systems-and-UAS-Critical-Components-to-Covered-List"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:09:16.756004+00:00",
+    "confidence": 0.85,
+    "flag_type": "regulatory",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-004",
     "title": "[GRAY ZONE] SkyRover announces vague 5-year US manufacturing 'exploration' \u2014 still selling Chinese hardware",
     "category": "corporate_evasion",
     "entity": "skyrover-knowact",
-    "severity": "HIGH",
+    "severity": "high",
     "date": "2026-04-04T14:09:16.756004+00:00",
     "detail": "SkyRover issued March 2026 statement: 5-year plan to 'explore US-based manufacturing and localized supply chain.' Key word: 'explore' not 'commit.' Near-term plan: 'maintain full FCC compliance' \u2014 no detail on how. S1/X1 still available at retailers. FCC filings list SZ Knowact Robot Technology Co., Ltd (Shenzhen) as manufacturer. Konrad Iturbe's OcuSync frequency bot confirmed DJI hardware signatures. SkyRover lists Hong Kong business address \u2014 still covered by FCC ban.",
     "sources": [
@@ -59,14 +86,23 @@
       "https://dronelife.com/2025/12/29/fcc-foreign-drone-rule-market-impact/",
       "https://www.tomshardware.com/tech-industry/suspicious-dji-clones-appear-on-the-market-after-the-fcc-banned-foreign-made-drones-xtra-and-skyrover-drones-look-awfully-familiar"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:09:16.756004+00:00",
+    "confidence": 0.85,
+    "flag_type": "corporate_evasion",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-005",
     "title": "[GRAY ZONE] DJI v. FCC: Ninth Circuit Case 26-1029 \u2014 FCC moves to dismiss on ripeness",
     "category": "legal_action",
     "entity": "all",
-    "severity": "CRITICAL",
+    "severity": "critical",
     "date": "2026-04-04T14:09:16.756004+00:00",
     "detail": "DJI filed petition Feb 20, 2026 in Ninth Circuit. Docketed as Case 26-1029. Argues FCC exceeded statutory authority, failed procedures, violated Fifth Amendment. FCC moved to dismiss on ripeness grounds \u2014 bureau-level action not yet reviewed by full Commission. DJI represented by former Solicitor General. Also filed motion for reconsideration at FCC. DJI claims practical impact broader than advertised \u2014 restricting imports even outside scope. Timeline: 6-18 months for oral arguments/decision. Drone Girl predicts modified approach (audits, monitoring) rather than clean overturn.",
     "sources": [
@@ -75,14 +111,23 @@
       "https://www.thedronegirl.com/2026/02/26/dji-sues-fcc/",
       "https://www.wiley.law/alert-FCC-Drone-Ban-Update-Roundup-First-Conditional-Approvals-a-Limited-Waiver-Quiet-Revocations-and-First-Challenges-to-the-Ban"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:09:16.756004+00:00",
+    "confidence": 0.85,
+    "flag_type": "legal_action",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-006",
     "title": "[GRAY ZONE] State-level drone bans expanding: FL enforced, NY S.3259 passed, NV Jan 2024",
     "category": "regulatory",
     "entity": "all",
-    "severity": "HIGH",
+    "severity": "high",
     "date": "2026-04-04T14:09:16.756004+00:00",
     "detail": "Florida: Ban enforced since April 2023. Agencies grounded $200M+ of drones. Only $25M replacement funding (12.5% coverage). Blue UAS replacements cost 2-10x more. Broward County grounded 60+ drones. Miami-Dade Fire: 'pushed back five years.' New York: S.3259/A.2237 passed 2025, aligns state procurement with federal Section 889 ban. Nevada: Banned Chinese drones for agencies Jan 2024. Arkansas: Also enacted restrictions. States enforcing with varying success \u2014 cost remains primary barrier.",
     "sources": [
@@ -90,14 +135,23 @@
       "https://abjacademy.global/drone-blog/new-york-drone-laws-faa-active-state-laws-city-restrictions-and-pending-bills/",
       "https://abjacademy.global/drone-blog/dji-ban-in-us-update-timeline-and-effects/"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:09:16.756004+00:00",
+    "confidence": 0.85,
+    "flag_type": "regulatory",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-007",
     "title": "[GRAY ZONE] DJI shell company network fully mapped \u2014 12+ entities identified by OcuSync fingerprinting",
     "category": "osint",
     "entity": "all",
-    "severity": "CRITICAL",
+    "severity": "critical",
     "date": "2026-04-04T14:09:16.756004+00:00",
     "detail": "Konrad Iturbe's 'To Catch A Vibe' methodology (Oct 2025) uses DJI OcuSync frequency signatures (5745.5-5829.5 MHz) to identify rebranded DJI drones in FCC filings regardless of corporate branding. Automated GitHub bot scans daily. Identified: Cogito Tech, Spatial Hover, Lyno Dynamics, Fikaxo, Jovistar, WaveGo Tech, Knowact Robot, Skyhigh Tech, Skyany, Skyrover, and more. Evidence of coordinated network: WaveGo filing included Knowact docs, Fikaxo drone migrated to Spatial Hover overnight, DJI logos visible in Skyhigh Tech antenna diagrams. FCC Oct 2025 vote granted retroactive revocation authority specifically targeting this workaround.",
     "sources": [
@@ -105,54 +159,90 @@
       "https://github.com/KonradIT/dji-front-companies",
       "https://dronexl.co/2026/01/09/dji-drone-shell-company-gambit-backfired/"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:09:16.756004+00:00",
+    "confidence": 0.85,
+    "flag_type": "osint",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-008",
     "title": "[GRAY ZONE] FY2026 NDAA expands to Chinese ground drones, clones, and C-UAS authority",
     "category": "legislation",
     "entity": "all",
-    "severity": "HIGH",
+    "severity": "high",
     "date": "2026-04-04T14:09:16.756004+00:00",
     "detail": "$900B FY2026 NDAA passed House 312-112. Expands beyond aerial UAS to Chinese ground drones and 'clones.' SAFER SKIES Act grants state/local law enforcement C-UAS mitigation authority for events (2026 World Cup, 2028 Olympics). Mandates joint US-Taiwan drone co-development program by March 2026. Enhanced penalties: $100K/violation for unauthorized C-UAS actions.",
     "sources": [
       "https://www.suasnews.com/2025/12/beyond-dji-us-defense-bill-expands-ban-to-chinese-ground-drones-and-clones/"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:09:16.756004+00:00",
+    "confidence": 0.85,
+    "flag_type": "legislation",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-009",
     "title": "[GRAY ZONE] Oregon/NASAO white paper: 467 drones grounded, $50M-$2B national exposure across 25 states",
     "category": "cost_impact",
     "entity": "all",
-    "severity": "CRITICAL",
+    "severity": "critical",
     "date": "2026-04-04T14:28:44.003239+00:00",
     "detail": "Oregon Dept of Aviation compiled first multi-state accounting via NASAO. 25 state transportation depts surveyed. 467 drone airframes grounded/restricted across 23 states with explicit counts. National exposure $50M-$2B including state+local agencies and contractors. Wisconsin: 100% fleet grounded. Colorado: 90% capacity lost (16 units, 5 small drones remain). Nebraska: 86% impacted. Indiana: 85% ($400K equipment at risk). Minnesota: 84% foreign-made. Georgia: 80% ($225K). Oregon: 1 compliant drone out of 22. Idaho: $15K drone now costs $42K to replace. White paper recommends waiver until Sept 2027.",
     "sources": [
       "https://dronexl.co/2026/03/03/oregon-exposes-real-cost-dji-ban/",
       "https://dronexl.co/2026/03/03/faa-research-dji-us-drone-platforms/"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:28:44.003239+00:00",
+    "confidence": 0.85,
+    "flag_type": "cost_impact",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-010",
     "title": "[GRAY ZONE] FAA ASSURE research: DJI = 96% of detected US drone platforms, Skydio = 1%",
     "category": "market_data",
     "entity": "all",
-    "severity": "HIGH",
+    "severity": "high",
     "date": "2026-04-04T14:28:44.003239+00:00",
     "detail": "ASSURE A83 2025 Annual Report (Embry-Riddle, Kansas State, NIAR, Wichita State) analyzed Remote ID telemetry through Nov 2025 at 64 monitoring locations. DJI: 96%+ of detected platforms. Skydio (the company that lobbied hardest for restrictions): slightly over 1%. All other manufacturers combined: less than 2.4%. Additionally, 58% of flights within UAS Facility Map areas exceeded altitude limits \u2014 DJI's geofencing system previously prevented exactly these incursions.",
     "sources": [
       "https://dronexl.co/2026/03/03/faa-research-dji-us-drone-platforms/"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:28:44.003239+00:00",
+    "confidence": 0.85,
+    "flag_type": "market_data",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-011",
     "title": "[GRAY ZONE] FCC Conditional Approval pipeline: 4 cleared, process running 25 days late, no Chinese systems possible",
     "category": "regulatory",
     "entity": "all",
-    "severity": "HIGH",
+    "severity": "high",
     "date": "2026-04-04T14:28:44.003239+00:00",
     "detail": "FCC Conditional Approval process: submit to drones@fcc.gov \u2192 FCC forwards to DoW/DHS \u2192 individualized security assessment \u2192 approval for up to 12 months. Internal target was 45-day review. First batch took 70 days (25 late). All 4 cleared systems are enterprise/inspection from non-Chinese companies (SiFly Q12, Mobilicom SkyHopper, ScoutDI Scout 137, Verge X1). All approvals expire Dec 31, 2026. Onshoring plan required for all critical components. DJI has no practical path: 'the DoW has made no determination removing any Chinese-manufactured system, and nothing in the current framework creates a mechanism for it to do so.' Key timeline: Blue UAS + Buy American exemptions expire Jan 1, 2027.",
     "sources": [
@@ -161,28 +251,46 @@
       "https://www.fcc.gov/covered-list-faqs-uas-and-uas-critical-components",
       "https://dronelife.com/2026/03/20/fcc-updates-covered-list-introduces-first-conditional-approvals-for-drone-systems/"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:28:44.003239+00:00",
+    "confidence": 0.85,
+    "flag_type": "regulatory",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-012",
     "title": "[MARKET DYNAMICS] UMAC: $150M offering, 101st Airborne supply \u2014 betting on post-DJI domestic vacuum",
     "category": "market_dynamics",
     "entity": "anzu-robotics",
-    "severity": "HIGH",
+    "severity": "high",
     "date": "2026-04-04T14:28:44.003239+00:00",
     "detail": "NOT A SHELL COMPANY \u2014 Unusual Machines (NYSE:UMAC) is a legitimate US drone component manufacturer (Fat Shark, Rotor Riot brands). Orlando HQ, 25K sq ft facility, named leadership, full SEC reporting. Strategic play: UMAC invested $25M in XTI to get distribution access via Drone Nerds (>$100M revenue, largest US distributor). Betting the DJI ban creates massive domestic market opportunity. Evans: 'unprecedented opportunity to define domestic drone landscape.' UMAC priced $150M public offering March 2026. Cash: $103.3M. Revenue: $11.2M (101% YoY). Supply agreements: 101st Airborne, PDW AM-FPV ($3.75M order). Needham Buy target $20. NDAA-compliant manufacturer targeting cash-flow positive by end 2026. PIE tracks this as market dynamics signal \u2014 the financial infrastructure being built to fill the post-DJI void.",
     "sources": [
       "https://www.prnewswire.com/news-releases/xti-aerospace-acquires-drone-nerds-and-closes-25-million-strategic-investment-by-unusual-machines-302613052.html",
       "https://www.stocktitan.net/news/UMAC/"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:28:44.003239+00:00",
+    "confidence": 0.85,
+    "flag_type": "market_dynamics",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-013",
     "title": "[GRAY ZONE] Anzu government buyers identified: Little Rock PD (6 units), N. Little Rock PD, Ames PD \u2014 all now holding discontinued/litigated product",
     "category": "buyer_exposure",
     "entity": "anzu-robotics",
-    "severity": "HIGH",
+    "severity": "high",
     "date": "2026-04-04T14:36:12.610738+00:00",
     "detail": "3 confirmed government buyers of Anzu Raptor T: Little Rock PD (6 units, SOAR grant funded), North Little Rock PD (Arkansas grant), Ames PD (IA). TX AG petition references police departments, surveyors, construction firms, utility operators as affected buyer categories. All are now holding a discontinued product with active litigation, no successor timeline, and DJI root key control. TX AG passthrough theory: if successful, could force state/local agencies to pause or reexamine all Anzu contracts. Officers describe Raptor T as 'truly a force multiplier' \u2014 replacement will be operationally disruptive.",
     "sources": [
@@ -190,28 +298,46 @@
       "https://www.kark.com/news/local-news/north-little-rock-and-little-rock-police-embrace-drones-as-powerful-policing-tools/",
       "https://dronedj.com/2026/02/19/anzu-raptor-drone-texas-lawsuit/"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:36:12.610738+00:00",
+    "confidence": 0.85,
+    "flag_type": "buyer_exposure",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-014",
     "title": "[GRAY ZONE] TX AG 'passthrough theory' \u2014 precedent-setting test for all gray zone entities",
     "category": "legal_precedent",
     "entity": "all",
-    "severity": "CRITICAL",
+    "severity": "critical",
     "date": "2026-04-04T14:36:12.610738+00:00",
     "detail": "TX AG Paxton's Anzu lawsuit tests a novel legal theory: that licensing, rebranding, or supply-chain ties to a scrutinized foreign manufacturer can constitute deceptive trade practices under state consumer protection law. If successful, precedent applies to ALL gray zone entities (Cogito/SPECTA, SkyRover/Knowact, future shell companies). TX also seeks court order requiring Anzu to publicly state Raptor T is a rebranded DJI drone + TRO on data collection. Part of coordinated 4-lawsuit strategy (TP-Link, Anzu, Lorex, Temu) \u2014 Texas building a template for other AGs to follow.",
     "sources": [
       "https://hoodline.com/2026/02/paxton-targets-austin-drone-maker-in-clash-over-alleged-dji-trojan-horse/",
       "https://www.texaspolicyresearch.com/texas-files-four-major-lawsuits-against-ccp-linked-companies/"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:36:12.610738+00:00",
+    "confidence": 0.85,
+    "flag_type": "legal_precedent",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-015",
     "title": "[GRAY ZONE] Knowact corporate structure mapped: Nanshan District (DJI's home district), MAC registered Feb 2025, zero transparency",
     "category": "corporate_structure",
     "entity": "skyrover-knowact",
-    "severity": "CRITICAL",
+    "severity": "critical",
     "date": "2026-04-04T14:40:57.625203+00:00",
     "detail": "SZ Knowact Robot Technology Co., Ltd (\u6df1\u5733\u5e02\u77e5\u884c\u673a\u5668\u4eba\u79d1\u6280\u6709\u9650\u516c\u53f8) registered at Room C3-A081, Building C, Kexing Science Park, Nanshan District, Shenzhen \u2014 the same district as DJI HQ. MAC address block (68:C9:5D) registered Feb 27, 2025 \u2014 single allocation suggests purpose-built entity. FCC filings under grantee code 2BMUV. RC controllers filed under separate entity Skyhigh Tech LLC (with DJI logos in antenna diagrams). SKYROVER app on Apple App Store developed by Knowact \u2014 App Store reviews confirm it's a DJI Fly fork. Network connections: WaveGo Tech filing included Knowact docs, Fikaxo products migrated to Spatial Hover. Zero corporate transparency \u2014 no parent, no leadership, no country of origin on website.",
     "sources": [
@@ -220,14 +346,23 @@
       "https://dronexl.co/2025/10/03/spatial-hover-dji-shell-company-after-fikaxo-drone/",
       "https://fccid.io/2BMUV"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:40:57.625203+00:00",
+    "confidence": 0.85,
+    "flag_type": "corporate_structure",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   },
   {
     "id": "gz-followup-016",
     "title": "[GRAY ZONE] Jan 1, 2027 firmware cliff: 3 deadlines converge \u2014 firmware waiver, Blue UAS exemption, Buy American exemption all expire",
     "category": "regulatory_deadline",
     "entity": "all",
-    "severity": "CRITICAL",
+    "severity": "critical",
     "date": "2026-04-04T14:41:46.706799+00:00",
     "detail": "Three parallel deadlines converge Jan 1, 2027: (1) FCC firmware update waiver expires \u2014 DJI/Autel/all foreign drones lose ability to receive ANY software/firmware updates including security patches, Remote ID compliance, OS compatibility; (2) Blue UAS Covered List exemption expires \u2014 non-US Blue UAS platforms lose FCC authorization pathway; (3) Buy American exemption expires \u2014 domestic-content drones lose current carveout. Impact: 80%+ of 1,800+ law enforcement agencies use DJI. Oregon white paper: 467 drones grounded across 25 states already. After Jan 1 2027 without extension, existing DJI fleets become frozen assets \u2014 no patches, no bug fixes, no OS updates. DroneXL prediction: FCC will establish formal firmware review process (source code submission) that kills update pipeline through bureaucratic friction. DSLRPros warns: firmware freeze \u2192 Remote ID compliance failure, SDK breakage, cloud tool degradation, sensor calibration loss.",
     "sources": [
@@ -236,6 +371,15 @@
       "https://www.dslrpros.com/blogs/drone-trends/a-complete-guide-to-the-dji-drone-ban-2025",
       "https://www.dslrpros.com/blogs/drone-trends/what-the-fcc-update-means-for-police-dfr-programs-using-dji-in-2026"
     ],
-    "research_status": "UPDATED_2026_04_04"
+    "research_status": "UPDATED_2026_04_04",
+    "timestamp": "2026-04-04T14:41:46.706799+00:00",
+    "confidence": 0.85,
+    "flag_type": "regulatory_deadline",
+    "platform_id": null,
+    "component_id": null,
+    "prediction": "",
+    "data_sources": [
+      "gray_zone_tracking"
+    ]
   }
 ]

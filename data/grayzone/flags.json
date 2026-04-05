@@ -1,7 +1,7 @@
 [
   {
     "id": "gz-87a82ab5b7",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Anzu Robotics: Technology licensed from adversary entity: DJI (Shenzhen DJI Technology Co., Ltd",
@@ -15,7 +15,7 @@
   },
   {
     "id": "gz-9d159c48d8",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Anzu Robotics: Teardown confirms adversary hardware: PCB layouts align exactly with DJI Mavic 3",
@@ -29,7 +29,7 @@
   },
   {
     "id": "gz-b0ffa243b2",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: FCC filing reveals adversary components: Anzu did NOT disclose DJI relationship ",
@@ -43,7 +43,7 @@
   },
   {
     "id": "gz-c97207a64b",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: 50% of components from adversary nations \u2014 partial pass-through",
@@ -57,7 +57,7 @@
   },
   {
     "id": "gz-34ac8930e3",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Anzu Robotics: Firmware signed with adversary crypto keys: Firmware signed and encrypted with D",
@@ -71,7 +71,7 @@
   },
   {
     "id": "gz-f6b9669917",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: SDK from adversary manufacturer embedded: Firmware signed and encrypted with DJI",
@@ -85,7 +85,7 @@
   },
   {
     "id": "gz-c05561bc8e",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: SDK contacts adversary endpoints: White Knight Labs pentest confirmed data goes ",
@@ -99,7 +99,7 @@
   },
   {
     "id": "gz-f986229cad",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: Markets to government/public safety without Blue UAS clearance",
@@ -113,7 +113,7 @@
   },
   {
     "id": "gz-1458c87fb4",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: Misleading origin claim: \"American owned and operated\"",
@@ -127,7 +127,7 @@
   },
   {
     "id": "gz-b9bd075e94",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: Misleading origin claim: \"Your solution is delivered by your neighbors\"",
@@ -141,7 +141,7 @@
   },
   {
     "id": "gz-098bf101c3",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Anzu Robotics: Misleading origin claim: \"An entirely American-owned company\"",
@@ -155,7 +155,7 @@
   },
   {
     "id": "gz-534d1c95ac",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Anzu Robotics: Product discontinued due to adversary component shortage",
@@ -169,7 +169,7 @@
   },
   {
     "id": "gz-f6b525e06d",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: Technology licensed from adversary entity: DJI (undisclosed \u2014 no licensing ackno",
@@ -183,7 +183,7 @@
   },
   {
     "id": "gz-8548038800",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: Teardown confirms adversary hardware: Specta Air has identical PCBs to DJI Air 3",
@@ -197,7 +197,7 @@
   },
   {
     "id": "gz-48f5b3952e",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: 95% of components sourced from adversary nations",
@@ -211,7 +211,7 @@
   },
   {
     "id": "gz-b26a37f0c8",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: Misleading origin claim: \"No country of origin disclosed\"",
@@ -225,7 +225,7 @@
   },
   {
     "id": "gz-ce3bc4a9af",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: Misleading origin claim: \"No DJI acknowledgment\"",
@@ -239,7 +239,7 @@
   },
   {
     "id": "gz-c42064fd66",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Cogito Tech / SPECTA: Manufacturing in adversary nation: china (presumed)",
@@ -253,7 +253,7 @@
   },
   {
     "id": "gz-1b7efd8311",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: Technology licensed from adversary entity: DJI (undisclosed)",
@@ -267,7 +267,7 @@
   },
   {
     "id": "gz-c6d9e4b238",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: 100% of components sourced from adversary nations",
@@ -281,7 +281,7 @@
   },
   {
     "id": "gz-7a9e433aba",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: Firmware signed with adversary crypto keys: SkyRover app connects DIRECTLY to DJ",
@@ -295,7 +295,7 @@
   },
   {
     "id": "gz-2c3dab08c8",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] SkyRover / Knowact: SDK from adversary manufacturer embedded: SkyRover app connects DIRECTLY to DJI ",
@@ -309,7 +309,7 @@
   },
   {
     "id": "gz-80a4bf8b4d",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: OTA update pipeline touches adversary infrastructure",
@@ -323,7 +323,7 @@
   },
   {
     "id": "gz-d3b7b4f01a",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: Data hosted in adversary nation: china (dji cloud)",
@@ -337,7 +337,7 @@
   },
   {
     "id": "gz-c1121a6360",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] SkyRover / Knowact: Misleading origin claim: \"No ownership disclosed\"",
@@ -351,7 +351,7 @@
   },
   {
     "id": "gz-f6391d4818",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] SkyRover / Knowact: Misleading origin claim: \"No HQ disclosed\"",
@@ -365,7 +365,7 @@
   },
   {
     "id": "gz-7f9e7077c1",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] SkyRover / Knowact: Misleading origin claim: \"No country disclosed\"",
@@ -379,7 +379,7 @@
   },
   {
     "id": "gz-a3915d0ee4",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] SkyRover / Knowact: Misleading origin claim: \"Zero transparency\"",
@@ -393,7 +393,7 @@
   },
   {
     "id": "gz-d8aa6585ca",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] SkyRover / Knowact: Manufacturing in adversary nation: china",
@@ -407,7 +407,7 @@
   },
   {
     "id": "gz-53744aca87",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Autel Robotics: Technology licensed from adversary entity: Proprietary (not DJI derivative)",
@@ -421,7 +421,7 @@
   },
   {
     "id": "gz-93c791f20f",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Autel Robotics: 90% of components sourced from adversary nations",
@@ -435,7 +435,7 @@
   },
   {
     "id": "gz-b29f48fc07",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Autel Robotics: Markets to government/public safety without Blue UAS clearance",
@@ -449,7 +449,7 @@
   },
   {
     "id": "gz-f7cb138bcf",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "warning",
     "title": "[GRAY ZONE] Autel Robotics: Misleading origin claim: \"US subsidiary in Bothell creates impression of America",
@@ -463,7 +463,7 @@
   },
   {
     "id": "gz-4947d3dc7a",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone",
     "severity": "critical",
     "title": "[GRAY ZONE] Autel Robotics: Manufacturing in adversary nation: china",
@@ -477,7 +477,7 @@
   },
   {
     "id": "gz-f6a7841205",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone_xref",
     "severity": "warning",
     "title": "Gray zone product 'Anzu Raptor' by Anzu Robotics competes with 4 Blue UAS platforms",
@@ -491,7 +491,7 @@
   },
   {
     "id": "gz-dfad54b669",
-    "timestamp": "2026-04-05T02:24:16.576716+00:00",
+    "timestamp": "2026-04-05T02:45:21.305817+00:00",
     "flag_type": "grayzone_xref",
     "severity": "warning",
     "title": "Gray zone product 'Anzu Raptor T' by Anzu Robotics competes with 4 Blue UAS platforms",
