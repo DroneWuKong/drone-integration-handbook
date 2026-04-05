@@ -1,0 +1,416 @@
+{
+  "generated_at": "2026-04-05T01:06:12.400711+00:00",
+  "fpa_manufacturers": [
+    {
+      "id": "teledyne-flir",
+      "name": "Teledyne FLIR",
+      "country": "US",
+      "hq": "Wilsonville, OR / Goleta, CA",
+      "ticker": "TDY",
+      "ndaa_compliant": true,
+      "itar_free": true,
+      "export_control": "EAR 6A003.b.4 (Dept of Commerce, NOT State/ITAR)",
+      "fpa_type": "uncooled VOx microbolometer",
+      "pixel_pitches_um": [
+        12,
+        17
+      ],
+      "products": [
+        {
+          "model": "Boson 640",
+          "resolution": "640x512",
+          "pitch_um": 12,
+          "netd_mk": 40,
+          "price_usd": 3000,
+          "price_note": "OEM ~$3000-4000",
+          "itar": false
+        },
+        {
+          "model": "Boson+ 640",
+          "resolution": "640x512",
+          "pitch_um": 12,
+          "netd_mk": 20,
+          "price_usd": 3500,
+          "itar": false,
+          "note": "Best-in-class NDAA thermal for drones"
+        },
+        {
+          "model": "Boson 320",
+          "resolution": "320x256",
+          "pitch_um": 12,
+          "netd_mk": 50,
+          "price_usd": 2000,
+          "itar": false
+        },
+        {
+          "model": "Boson+ 320",
+          "resolution": "320x256",
+          "pitch_um": 12,
+          "netd_mk": 30,
+          "price_usd": 1923,
+          "itar": false
+        },
+        {
+          "model": "Hadron 640R+",
+          "resolution": "640x512 thermal + 64MP visible",
+          "price_usd": 4200,
+          "itar": false,
+          "note": "Dual sensor, 56g, IP54"
+        },
+        {
+          "model": "Lepton 3.5",
+          "resolution": "160x120",
+          "pitch_um": 12,
+          "price_usd": 250,
+          "itar": false,
+          "note": "Highest volume LWIR module globally"
+        },
+        {
+          "model": "Neutrino SX8",
+          "type": "MWIR cooled",
+          "resolution": "640x512",
+          "itar": true,
+          "note": "Military targeting/seekers"
+        }
+      ],
+      "drone_platforms": [
+        "Skydio X10D",
+        "Teal 2",
+        "FLIR SIRAS",
+        "Parrot Anafi USA",
+        "Freefly Astro (via Gremsy)",
+        "Inspired Flight IF1200A"
+      ],
+      "capacity_note": "Dominant Western FPA manufacturer. Designs AND fabs detectors in-house at Goleta CA.",
+      "pie_relevance": "CRITICAL \u2014 THE NDAA-compliant thermal option for drones. ITAR-free Boson is a major development."
+    },
+    {
+      "id": "lynred",
+      "name": "Lynred",
+      "country": "FR",
+      "hq": "Grenoble, France",
+      "ndaa_compliant": true,
+      "ndaa_note": "French/allied. No NDAA restrictions.",
+      "fpa_type": "uncooled a-Si and VOx microbolometer, cooled InSb/MCT",
+      "pixel_pitches_um": [
+        12,
+        15,
+        17
+      ],
+      "products": [
+        {
+          "model": "ATHn",
+          "resolution": "640x480",
+          "pitch_um": 12,
+          "type": "uncooled",
+          "note": "Drone-grade uncooled core"
+        },
+        {
+          "model": "Daphnis",
+          "resolution": "1280x1024",
+          "pitch_um": 12,
+          "type": "cooled MWIR",
+          "note": "HD cooled for ISR"
+        }
+      ],
+      "note": "World's second largest IR detector manufacturer. Supplies European defense (Thales, Safran). Joint venture between Sofradir and ULIS.",
+      "drone_platforms": [
+        "Workswell WIRIS (uses Lynred cores)",
+        "Various European defense UAVs"
+      ],
+      "pie_relevance": "HIGH \u2014 European alternative to FLIR. Key for allied drone builds."
+    },
+    {
+      "id": "bae-systems-ir",
+      "name": "BAE Systems (IR division)",
+      "country": "US",
+      "hq": "Nashua, NH",
+      "ndaa_compliant": true,
+      "itar": true,
+      "fpa_type": "uncooled VOx, cooled MWIR/LWIR",
+      "note": "Makes FPAs for military programs. Not available as OEM drone modules. Powers military EO/IR gimbals.",
+      "pie_relevance": "LOW for drone builders \u2014 military-only, ITAR controlled"
+    },
+    {
+      "id": "l3harris-ir",
+      "name": "L3Harris (IR division)",
+      "country": "US",
+      "hq": "Various",
+      "ndaa_compliant": true,
+      "itar": true,
+      "products": [
+        {
+          "model": "WESCAM MX-10/MX-15/MX-20",
+          "type": "cooled MWIR gimbal",
+          "note": "Large UAS (Gray Eagle, Predator class)"
+        }
+      ],
+      "note": "Makes complete EO/IR gimbal systems, not bare FPAs. ITAR controlled.",
+      "pie_relevance": "MEDIUM \u2014 relevant for large defense UAS only"
+    },
+    {
+      "id": "scd-israel",
+      "name": "SCD (Semi Conductor Devices)",
+      "country": "IL",
+      "hq": "Haifa, Israel",
+      "ndaa_compliant": true,
+      "fpa_type": "InSb, VOx, XBn (barrier detectors)",
+      "note": "Israeli FPA manufacturer. Supplies Elbit, Rafael, Controp. Key for Israeli UAS thermal.",
+      "pie_relevance": "MEDIUM \u2014 Israeli defense ecosystem thermal supplier"
+    },
+    {
+      "id": "iray-infiray",
+      "name": "InfiRay / IRay Technology / Raytron",
+      "country": "CN",
+      "hq": "Yantai, Shandong",
+      "ndaa_compliant": false,
+      "entity_list": true,
+      "sanctions": {
+        "date": "2024-05-01",
+        "authority": "OFAC SDN List",
+        "entity_sanctioned": "Yantai iRay Technology Co. Ltd",
+        "reason": "Supplying Russia with military optics for tanks and armored vehicles",
+        "parent": "Raytron Technology (Shanghai Stock Exchange listed)"
+      },
+      "fpa_type": "uncooled VOx microbolometer",
+      "pixel_pitches_um": [
+        12,
+        10
+      ],
+      "products": [
+        {
+          "model": "Micro III",
+          "resolution": "640x512",
+          "pitch_um": 12,
+          "price_usd": 400,
+          "note": "Drone thermal core, ~1/8 FLIR Boson price"
+        },
+        {
+          "model": "Micro III 384",
+          "resolution": "384x288",
+          "price_usd": 200
+        },
+        {
+          "model": "1280x1024 detector",
+          "resolution": "1280x1024",
+          "note": "Highest resolution Chinese uncooled FPA"
+        }
+      ],
+      "us_distributor": "iRayUSA (Lewisville, TX) \u2014 claims separate entity, but parent Raytron controls both InfiRay Outdoor and Yantai iRay",
+      "price_ratio_vs_flir": "5-10x cheaper than equivalent FLIR",
+      "capacity_note": "38% of global thermal imager shipments (2022, per Yole). Massive production scale.",
+      "pie_relevance": "CRITICAL FLAG \u2014 sanctioned for Russia supply. Parent Raytron likely produces PLA military optics. Shell company structure obscures relationships."
+    },
+    {
+      "id": "hikvision-thermal",
+      "name": "Hikvision (thermal division)",
+      "country": "CN",
+      "hq": "Hangzhou",
+      "ndaa_compliant": false,
+      "entity_list": true,
+      "entity_list_date": "2019-10",
+      "note": "On BIS Entity List since Oct 2019 for Xinjiang surveillance. Sources FPAs from Guide Infrared or in-house. World's largest video surveillance company.",
+      "pie_relevance": "CRITICAL FLAG \u2014 Entity List. Any thermal camera with Hikvision FPA is non-compliant."
+    },
+    {
+      "id": "dahua-thermal",
+      "name": "Dahua Technology (thermal division)",
+      "country": "CN",
+      "hq": "Hangzhou",
+      "ndaa_compliant": false,
+      "entity_list": true,
+      "entity_list_date": "2019-10",
+      "note": "On BIS Entity List since Oct 2019 for Xinjiang surveillance.",
+      "pie_relevance": "CRITICAL FLAG \u2014 Entity List."
+    },
+    {
+      "id": "guide-infrared",
+      "name": "Guide Infrared / Dali Technology",
+      "country": "CN",
+      "hq": "Wuhan",
+      "ndaa_compliant": false,
+      "note": "Major Chinese FPA manufacturer. Supplies Hikvision and other Chinese thermal brands. Not individually named on Entity List but Chinese military-adjacent.",
+      "pie_relevance": "HIGH \u2014 upstream FPA supplier to multiple Chinese thermal brands"
+    }
+  ],
+  "camera_integrators": [
+    {
+      "id": "obsidian-sensors",
+      "name": "Obsidian Sensors",
+      "country": "US",
+      "ndaa_compliant": true,
+      "note": "US thermal camera company. Makes drone-grade thermal modules. Likely uses own or FLIR FPAs.",
+      "products_in_forge": 6
+    },
+    {
+      "id": "seek-thermal",
+      "name": "Seek Thermal / Seek UAV",
+      "country": "US",
+      "hq": "Santa Barbara, CA",
+      "ndaa_compliant": true,
+      "note": "US thermal company. Makes own LWIR detectors (12um VOx). Drone-specific Seek UAV line.",
+      "products_in_forge": 5
+    },
+    {
+      "id": "sierra-olympic",
+      "name": "Sierra-Olympic Technologies",
+      "country": "US",
+      "hq": "Hood River, OR",
+      "ndaa_compliant": true,
+      "note": "High-end military thermal. Viento and Ventus lines for drone gimbals.",
+      "products_in_forge": 2
+    },
+    {
+      "id": "trillium",
+      "name": "Trillium Engineering",
+      "country": "US",
+      "ndaa_compliant": true,
+      "note": "Drone EO/IR gimbal systems.",
+      "products_in_forge": 2
+    },
+    {
+      "id": "workswell",
+      "name": "Workswell",
+      "country": "CZ",
+      "hq": "Prague, Czech Republic",
+      "ndaa_compliant": true,
+      "fpa_source": "Lynred (France)",
+      "note": "EU thermal camera maker. WIRIS Pro used on Freefly Astro. Uses Lynred FPAs \u2014 fully allied supply chain.",
+      "products_in_forge": 3
+    },
+    {
+      "id": "controp",
+      "name": "Controp Precision Technologies",
+      "country": "IL",
+      "ndaa_compliant": true,
+      "fpa_source": "SCD (Israel)",
+      "note": "Israeli defense thermal/EO company. Supplies IDF drone programs.",
+      "products_in_forge": 3
+    },
+    {
+      "id": "elbit-thermal",
+      "name": "Elbit Systems",
+      "country": "IL",
+      "ndaa_compliant": true,
+      "fpa_source": "SCD (Israel)",
+      "note": "Micro STAMP thermal payload for small UAS.",
+      "products_in_forge": 2
+    },
+    {
+      "id": "aselsan",
+      "name": "Aselsan",
+      "country": "TR",
+      "hq": "Ankara, Turkey",
+      "ndaa_compliant": true,
+      "note": "Turkish defense. Makes own uncooled FPAs. NATO member.",
+      "products_in_forge": 2
+    },
+    {
+      "id": "leonardo-drs",
+      "name": "Leonardo DRS",
+      "country": "US",
+      "ndaa_compliant": true,
+      "itar": true,
+      "note": "US subsidiary of Leonardo (Italy). Military thermal/EO. ITAR controlled.",
+      "products_in_forge": 1
+    },
+    {
+      "id": "gremsy",
+      "name": "Gremsy",
+      "country": "VN",
+      "hq": "Ho Chi Minh City, Vietnam",
+      "ndaa_compliant": true,
+      "ndaa_note": "Vietnam is not a prohibited country. Uses FLIR Boson+ cores.",
+      "note": "Drone gimbal maker. New NDAA-compliant payloads with FLIR Boson+ (Lynx, ORUS L).",
+      "products_in_forge": 1
+    }
+  ],
+  "dji_thermal_sourcing": {
+    "products": [
+      "Zenmuse H20T",
+      "Zenmuse H30T",
+      "Mavic 3T Enterprise"
+    ],
+    "fpa_source": "Likely InfiRay/Guide Infrared or in-house DJI detector",
+    "note": "DJI does not disclose FPA source. Given Chinese ecosystem integration, almost certainly Chinese FPAs. NOT NDAA compliant at any level.",
+    "pie_relevance": "Any DJI thermal = Chinese FPA = non-NDAA"
+  },
+  "itar_status": {
+    "key_change": "2020 ITAR reform moved most uncooled LWIR cameras from USML Category XII to EAR/Commerce jurisdiction",
+    "current_rules": {
+      "itar_free": "Uncooled LWIR (8-14um) cameras below certain performance thresholds \u2014 includes FLIR Boson, Boson+, Hadron, Lepton",
+      "itar_controlled": "Cooled MWIR/LWIR cameras, military targeting systems, high-performance seekers (Neutrino LC/SX8, BAE FPAs, L3Harris WESCAM)"
+    },
+    "significance": "FLIR Boson being ITAR-free AND NDAA-compliant is a major development \u2014 allows export to allies and Blue UAS integration without State Dept license"
+  },
+  "price_comparison": {
+    "flir_boson_640": {
+      "price_usd": 3500,
+      "source": "US",
+      "ndaa": true,
+      "itar_free": true
+    },
+    "flir_boson_320": {
+      "price_usd": 2000,
+      "source": "US",
+      "ndaa": true,
+      "itar_free": true
+    },
+    "flir_hadron_640r": {
+      "price_usd": 4200,
+      "source": "US",
+      "ndaa": true,
+      "itar_free": true
+    },
+    "flir_lepton_3_5": {
+      "price_usd": 250,
+      "source": "US",
+      "ndaa": true,
+      "itar_free": true
+    },
+    "infiray_micro_iii_640": {
+      "price_usd": 400,
+      "source": "CN",
+      "ndaa": false,
+      "sanctions": true
+    },
+    "infiray_384": {
+      "price_usd": 200,
+      "source": "CN",
+      "ndaa": false,
+      "sanctions": true
+    },
+    "price_gap": "FLIR Boson 640 is 7-9x more expensive than equivalent InfiRay. This price gap drives non-compliant procurement."
+  },
+  "regulatory_flags": [
+    {
+      "entity": "InfiRay / Yantai iRay Technology",
+      "status": "OFAC SDN List (May 2024)",
+      "reason": "Supplied Russia with military optics",
+      "impact": "Sanctioned. iRayUSA claims separate entity but parent Raytron controls both."
+    },
+    {
+      "entity": "Hikvision",
+      "status": "BIS Entity List (Oct 2019)",
+      "reason": "Xinjiang surveillance",
+      "impact": "Cannot purchase with federal funds"
+    },
+    {
+      "entity": "Dahua",
+      "status": "BIS Entity List (Oct 2019)",
+      "reason": "Xinjiang surveillance",
+      "impact": "Cannot purchase with federal funds"
+    },
+    {
+      "entity": "DJI thermal cameras",
+      "status": "Not individually listed but DJI is effectively banned for federal procurement",
+      "impact": "Chinese FPAs inside make any DJI thermal non-NDAA"
+    }
+  ],
+  "summary": {
+    "fpa_manufacturers_tracked": 9,
+    "camera_integrators_tracked": 10,
+    "ndaa_compliant_options": "FLIR Boson/Boson+ (US), Lynred (FR), SCD (IL), Seek Thermal (US), Obsidian (US), Aselsan (TR)",
+    "key_finding": "FLIR Boson+ is ITAR-free AND NDAA-compliant \u2014 the single most important thermal development for Blue UAS. InfiRay/iRay sanctioned May 2024 for Russia supply but still selling in US via shell company structure. 7-9x price gap between FLIR and Chinese alternatives drives non-compliant procurement."
+  }
+}
