@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-04-05T02:47:26.831961+00:00",
+  "generated_at": "2026-04-05T05:04:38.479094+00:00",
   "federal_awards_total": 0,
   "gray_zone_federal_matches": 0,
-  "news_signals_total": 0,
+  "news_signals_total": 13,
   "gray_zone_news_mentions": 13,
   "all_gray_zone_signals": [
     {
@@ -15,7 +15,7 @@
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-1463062e5b",
@@ -27,7 +27,7 @@
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-96e96fbe76",
@@ -39,7 +39,7 @@
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-683a19be77",
@@ -51,7 +51,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-d698467706",
@@ -63,7 +63,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-e071af7e13",
@@ -75,7 +75,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-ba6474a3a4",
@@ -87,7 +87,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-db87c0aa4b",
@@ -99,7 +99,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-fb2a44fd6d",
@@ -111,7 +111,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-9d29833f5f",
@@ -123,7 +123,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-51ef0b96f6",
@@ -135,7 +135,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-aade3f22c1",
@@ -147,7 +147,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     },
     {
       "id": "proc-48f047caaa",
@@ -159,11 +159,11 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T02:47:26.831961+00:00"
+      "scraped_at": "2026-04-05T05:04:38.479094+00:00"
     }
   ],
   "vendors_flagged": [
-    "autel",
-    "anzu"
+    "anzu",
+    "autel"
   ]
 }
