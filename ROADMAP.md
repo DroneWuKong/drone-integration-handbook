@@ -37,6 +37,20 @@ Open an issue to suggest additions or volunteer to write one.
 - [ ] **Power Systems Deep Dive** — Battery chemistry, BEC selection, power distribution boards, voltage sag under load, field charging.
 - [ ] **Pattern Intelligence Methodology** — How PIE works: flag types, correlation engine, gray zone detection, supply chain forecasting methodology. Public-facing explanation of the intelligence pipeline.
 
+## Planned Field Guides — "Stuff Nobody Has Written"
+
+Operator-level quick references. Laminate-and-carry format. Each fills a gap where the knowledge exists only as tribal knowledge, scattered forum posts, or classified TTPs — nothing consolidated and public.
+
+- [ ] **EW Countermeasures Field Card** — `field/ew-countermeasures.md` — "I'm being jammed, now what?" Decision tree by symptom: video freeze, LQ drop, GPS drift, total blackout. Pre-configured firmware settings, band-switching procedures, abort criteria. The operator-level companion to `components/electronic-warfare.md`.
+- [ ] **Frequency Planning Worksheet** — `field/frequency-planning.md` — Multi-drone frequency deconfliction. Control link, video link, GPS across a 6-drone flight. Channel assignment templates, self-interference avoidance, band planning for contested environments.
+- [ ] **Supply Chain Substitution Guide** — `field/substitution-guide.md` — Drop-in component replacements mapped by pinout, protocol, mounting, and firmware compatibility. "My EP2 is out of stock — what fits?" Consolidated from scattered forum knowledge.
+- [ ] **Fiber-Optic FPV Integration** — `field/fiber-optic-fpv.md` — Spool integration, FC compatibility, cable management, spool motor wiring, weight/range tradeoffs. Both sides mass-producing, near-zero public documentation.
+- [ ] **Thermal / Night FPV Operations** — `field/night-ops.md` — Low-lux camera selection, IR illuminator integration, OSD config for night, cold-weather battery behavior, operational patterns. Pioneered by Wild Hornets, knowledge currently internal.
+- [ ] **Drone-to-Drone Intercept Playbook** — `field/intercept-ops.md` — FPV interceptor requirements (speed, approach angles, prop selection), video settings for tracking airborne targets. Wild Hornets Werewolf/Sting class. Zero public documentation exists.
+- [ ] **Repeater / Relay Deployment** — `field/repeater-relay.md` — Mother drones and fixed repeaters for FPV range extension. Antenna placement, link budget for relay hop, latency impact, when to relay vs fly closer. Generic guide for what TAF Kolibri 13 FR1 does.
+- [ ] **Attritable Drone Production Handbook** — `field/attritable-production.md` — Decentralized manufacturing at scale. Component sourcing, QC checklist for volume production, firmware flashing at scale, pre-flight batch testing for 50+ units. Process knowledge from 160+ Ukrainian manufacturers, currently tribal.
+- [ ] **ELINT for Drone Operators** — `field/elint-operators.md` — Reading spectrum analyzer output, identifying enemy video/control frequencies from SIGINT, correlating ELINT to threat assessment. Taught informally by Flash (Serhii Beskrestnov), never written down.
+
 ## Planned Appendices
 
 - [ ] **Appendix A: Frequency Quick Reference Card** — One-page printable frequency plan template
