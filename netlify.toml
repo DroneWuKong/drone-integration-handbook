@@ -14,3 +14,33 @@
   to = "https://forgeprole.netlify.app/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/builder"
+  to = "https://forgeprole.netlify.app/builder/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/builder/*"
+  to = "https://forgeprole.netlify.app/builder/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/browse/*"
+  to = "https://forgeprole.netlify.app/browse/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/wingman/*"
+  to = "https://forgeprole.netlify.app/wingman/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/platforms/*"
+  to = "https://forgeprole.netlify.app/platforms/:splat"
+  status = 301
+  force = true
