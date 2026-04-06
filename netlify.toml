@@ -1,7 +1,10 @@
 [build]
   publish = "site"
-  command = "pip install markdown && python build.py"
+  command = "pip3 install -r requirements.txt && python3 build.py"
   functions = "netlify/functions"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
 
 [[redirects]]
   from = "/forge"
