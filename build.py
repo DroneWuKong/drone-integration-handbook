@@ -316,24 +316,31 @@ def build_site(base_dir, output_dir):
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/regular/style.css">
 <style>
 :root {{
-  --bg: #0a0a0a;
-  --bg-surface: #111111;
-  --bg-elevated: #1a1a1a;
-  --text: #d4d4d4;
-  --text-dim: #737373;
-  --text-bright: #e5e5e5;
-  --accent: #22d3ee;
-  --accent-dim: #0e7490;
-  --border: #262626;
-  --border-bright: #404040;
-  --code-bg: #0d1117;
-  --success: #4ade80;
-  --warn: #fbbf24;
+  --bg: #0a0b10;
+  --bg-surface: #10111a;
+  --bg-elevated: #161824;
+  --bg-panel: #12131e;
+  --text: #c8cad0;
+  --text-dim: #5a5e6e;
+  --text-bright: #e8eaef;
+  --text-faint: #3e4152;
+  --accent: #00d4ff;
+  --accent-dim: #0088a3;
+  --accent-red: #ff3b5c;
+  --accent-amber: #f59e0b;
+  --border: #1e2030;
+  --border-bright: #2a2d42;
+  --code-bg: #0d0e16;
+  --success: #22c55e;
+  --warn: #f59e0b;
   --mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
-  --serif: 'Source Serif 4', 'Georgia', serif;
+  --heading: 'Rajdhani', 'Barlow Condensed', sans-serif;
+  --body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --radius-sm: 6px;
 }}
 
 *, *::before, *::after {{
@@ -348,8 +355,8 @@ html {{
 }}
 
 body {{
-  font-family: var(--serif);
-  font-size: 17px;
+  font-family: var(--body);
+  font-size: 15px;
   line-height: 1.7;
   color: var(--text);
   background: var(--bg);
@@ -361,64 +368,75 @@ body {{
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 10, 10, 0.92);
+  background: rgba(10, 11, 16, 0.94);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  padding: 0.75rem 2rem;
+  padding: 0.6rem 1.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }}
 
 .site-header .logo {{
-  font-family: var(--mono);
-  font-size: 0.8rem;
+  font-family: var(--heading);
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--accent);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }}
 
 .site-header .logo span {{
   color: var(--text-dim);
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}}
+
+.site-header .nav-desktop {{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }}
 
 .site-header .nav-desktop a {{
   font-family: var(--mono);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   color: var(--text-dim);
   text-decoration: none;
-  margin-left: 1.5rem;
-  letter-spacing: 0.05em;
+  padding: 0.35rem 0.7rem;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  transition: color 0.2s;
+  transition: color 0.15s, background 0.15s;
+  border-radius: var(--radius-sm);
 }}
 
 .site-header .nav-desktop a:hover {{
   color: var(--accent);
+  background: var(--bg-elevated);
 }}
 
 /* ── HERO ── */
 .hero {{
   max-width: 860px;
   margin: 0 auto;
-  padding: 6rem 2rem 4rem;
+  padding: 5rem 2rem 3.5rem;
   text-align: center;
 }}
 
 .hero h1 {{
-  font-family: var(--mono);
-  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-family: var(--heading);
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
   font-weight: 700;
   color: var(--text-bright);
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   margin-bottom: 0.5rem;
 }}
 
 .hero h1::before {{
   content: '// ';
-  color: var(--accent-dim);
+  color: var(--accent);
 }}
 
 .hero .tagline {{
@@ -465,11 +483,11 @@ body {{
 }}
 
 .toc-part h3 {{
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: var(--accent-dim);
-  letter-spacing: 0.1em;
+  font-family: var(--heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 0.75rem;
   padding-bottom: 0.5rem;
@@ -612,40 +630,44 @@ body {{
 }}
 
 .chapter h1 {{
-  font-family: var(--mono);
-  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  font-family: var(--heading);
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
   font-weight: 700;
   color: var(--text-bright);
   margin-bottom: 0.5rem;
-  letter-spacing: -0.01em;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }}
 
 .chapter h2 {{
-  font-family: var(--mono);
-  font-size: 1.15rem;
-  font-weight: 700;
+  font-family: var(--heading);
+  font-size: 1.25rem;
+  font-weight: 600;
   color: var(--accent);
   margin: 2.5rem 0 1rem;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid var(--border);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
 }}
 
 .chapter h3 {{
-  font-family: var(--mono);
-  font-size: 0.95rem;
-  font-weight: 700;
+  font-family: var(--heading);
+  font-size: 1.05rem;
+  font-weight: 600;
   color: var(--text-bright);
   margin: 2rem 0 0.75rem;
+  letter-spacing: 0.01em;
 }}
 
 .chapter h4 {{
   font-family: var(--mono);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: var(--text-dim);
   margin: 1.5rem 0 0.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }}
 
 .chapter p {{
@@ -843,7 +865,7 @@ body {{
 
 /* ── HAMBURGER BUTTON ── */
 .menu-btn {{
-  display: none;
+  display: block;
   background: none;
   border: none;
   cursor: pointer;
@@ -883,7 +905,7 @@ body {{
   right: 0;
   bottom: 0;
   z-index: 150;
-  background: rgba(10, 10, 10, 0.97);
+  background: rgba(10, 11, 16, 0.98);
   backdrop-filter: blur(16px);
   flex-direction: column;
   align-items: stretch;
@@ -924,10 +946,10 @@ body {{
 }}
 
 .mobile-nav-heading {{
-  font-family: var(--mono);
-  font-size: 0.65rem;
-  font-weight: 700;
-  color: var(--accent-dim);
+  font-family: var(--heading);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 0.5rem 1.5rem 0.25rem;
@@ -935,13 +957,12 @@ body {{
 }}
 
 /* ── RESPONSIVE ── */
-@media (max-width: 600px) {{
-  body {{ font-size: 15px; }}
-  .hero {{ padding: 4rem 1.25rem 3rem; }}
+@media (max-width: 768px) {{
+  body {{ font-size: 14px; }}
+  .hero {{ padding: 3.5rem 1.25rem 2.5rem; }}
   .toc, .content {{ padding-left: 1.25rem; padding-right: 1.25rem; }}
-  .site-header {{ padding: 0.75rem 1.25rem; }}
+  .site-header {{ padding: 0.6rem 1rem; }}
   .nav-desktop {{ display: none; }}
-  .menu-btn {{ display: block; }}
   .chapter pre {{ padding: 1rem; }}
 }}
 
@@ -952,9 +973,8 @@ body {{
   gap: 0.5rem;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
-  border-radius: 6px;
+  border-radius: var(--radius-sm);
   padding: 0.35rem 0.75rem;
-  margin-left: 1.5rem;
   cursor: pointer;
   font-family: var(--mono);
   font-size: 0.7rem;
@@ -1189,21 +1209,22 @@ body {{
 <body>
 
 <header class="site-header">
-  <div class="logo">DRONE INTEGRATION HANDBOOK <span>v1.0</span></div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="logo">Handbook <span>v1.0</span></div>
+  </div>
   <nav class="nav-desktop">
-    <a href="#toc">Contents</a>
     <button class="search-trigger" id="searchTrigger" aria-label="Search">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       <span>Search</span>
       <kbd>&#8984;K</kbd>
     </button>
     <a href="https://forgeprole.netlify.app">Forge</a>
+    <a href="https://forgeprole.netlify.app/wingman/">Wingman</a>
     <a href="https://github.com/DroneWuKong/drone-integration-handbook">GitHub</a>
-    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md">Contribute</a>
   </nav>
-  <button class="menu-btn" id="menuBtn" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
 </header>
 
 <div class="mobile-menu" id="mobileMenu">
@@ -1243,9 +1264,16 @@ body {{
     <a href="#toc" class="mobile-menu-link">Full Table of Contents</a>
   </div>
   <div class="mobile-nav-section" style="border-top:1px solid var(--border);padding-top:0.75rem;margin-top:0.5rem;">
-    <a href="https://forgeprole.netlify.app" class="mobile-menu-link">Forge</a>
-    <a href="https://github.com/DroneWuKong/drone-integration-handbook" class="mobile-menu-link">GitHub</a>
-    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md" class="mobile-menu-link">Roadmap</a>
+    <div class="mobile-nav-heading">Forge</div>
+    <a href="https://forgeprole.netlify.app/browse/" class="mobile-menu-link"><i class="ph ph-magnifying-glass"></i> Browse Parts</a>
+    <a href="https://forgeprole.netlify.app/platforms/" class="mobile-menu-link"><i class="ph ph-airplane-tilt"></i> Platforms</a>
+    <a href="https://forgeprole.netlify.app/tools/" class="mobile-menu-link"><i class="ph ph-wrench"></i> Tools</a>
+    <a href="https://forgeprole.netlify.app/wingman/" class="mobile-menu-link"><i class="ph ph-robot"></i> Wingman AI</a>
+    <a href="https://forgeprole.netlify.app/intel/" class="mobile-menu-link"><i class="ph ph-binoculars"></i> Intel Hub</a>
+  </div>
+  <div class="mobile-nav-section" style="border-top:1px solid var(--border);padding-top:0.75rem;margin-top:0.5rem;">
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook" class="mobile-menu-link"><i class="ph ph-github-logo"></i> GitHub</a>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md" class="mobile-menu-link"><i class="ph ph-map-trifold"></i> Roadmap</a>
   </div>
 </div>
 
