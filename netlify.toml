@@ -17,3 +17,15 @@
   to = "https://forgeprole.netlify.app/:splat"
   status = 301
   force = true
+
+[[redirects]]
+  from = "/patterns"
+  to = "https://forgeprole.netlify.app/patterns/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/patterns/"
+  to = "https://forgeprole.netlify.app/patterns/"
+  status = 301
+  force = true

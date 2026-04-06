@@ -1366,7 +1366,7 @@ body {{
     </button>
     <a href="https://forgeprole.netlify.app" class="topbar-pill">Forge</a>
     <a href="https://forgeprole.netlify.app/intel/" class="topbar-pill hide-mobile">Intel</a>
-    <a href="https://forgeprole.netlify.app/patterns-home/" class="topbar-pill hide-mobile">Patterns</a>
+    <a href="https://forgeprole.netlify.app/patterns/" class="topbar-pill hide-mobile">Patterns</a>
     <a href="https://forgeprole.netlify.app/wingman/" class="topbar-pill">Wingman</a>
   </div>
 </header>
