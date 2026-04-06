@@ -363,58 +363,289 @@ body {{
   -webkit-font-smoothing: antialiased;
 }}
 
-/* ── HEADER ── */
-.site-header {{
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  background: rgba(10, 11, 16, 0.94);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
-  padding: 0.6rem 1.25rem;
+/* ── TOPBAR (matches Forge) ── */
+.topbar {{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-panel);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }}
 
-.site-header .logo {{
+.topbar-left {{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}}
+
+.topbar-logo {{
   font-family: var(--heading);
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--accent);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  white-space: nowrap;
 }}
 
-.site-header .logo span {{
-  color: var(--text-dim);
-  font-weight: 500;
-  font-size: 0.8rem;
-  margin-left: 0.5rem;
-}}
-
-.site-header .nav-desktop {{
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
+.topbar-sep {{
+  color: var(--text-faint);
+  font-size: 0.75rem;
   flex-shrink: 0;
 }}
 
-.site-header .nav-desktop a {{
+.topbar-page {{
   font-family: var(--mono);
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   color: var(--text-dim);
-  text-decoration: none;
-  padding: 0.35rem 0.7rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  transition: color 0.15s, background 0.15s;
-  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }}
 
-.site-header .nav-desktop a:hover {{
-  color: var(--accent);
+.topbar-right {{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}}
+
+/* ── Hamburger Button (matches Forge) ── */
+.hamburger-btn {{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: all 0.15s;
+  flex-shrink: 0;
+  font-size: 20px;
+  line-height: 1;
+}}
+
+.hamburger-btn:hover {{
   background: var(--bg-elevated);
+  color: var(--accent);
+  border-color: rgba(0,212,255,0.2);
+}}
+
+.hamburger-btn.open {{
+  background: rgba(0,212,255,0.08);
+  color: var(--accent);
+  border-color: var(--accent);
+}}
+
+/* ── Topbar Pills (matches Forge) ── */
+.topbar-pill {{
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: rgba(0,212,255,0.08);
+  color: var(--accent);
+  border: 1px solid rgba(0,212,255,0.18);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}}
+
+.topbar-pill:hover {{
+  background: rgba(0,212,255,0.16);
+  border-color: rgba(0,212,255,0.35);
+}}
+
+.topbar-pill.ghost {{
+  background: none;
+  color: var(--text-dim);
+  border-color: var(--border);
+}}
+
+.topbar-pill.ghost:hover {{
+  color: var(--text-bright);
+  border-color: var(--border-bright);
+  background: var(--bg-elevated);
+}}
+
+/* Search trigger pill */
+.search-trigger {{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  background: none;
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}}
+
+.search-trigger:hover {{
+  color: var(--text-bright);
+  border-color: var(--border-bright);
+  background: var(--bg-elevated);
+}}
+
+.search-trigger kbd {{
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.1rem 0.3rem;
+  color: var(--text-faint);
+  line-height: 1;
+}}
+
+/* ── Nav Drawer (matches Forge) ── */
+.nav-drawer-overlay {{
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s;
+}}
+
+.nav-drawer-overlay.open {{
+  opacity: 1;
+  pointer-events: auto;
+}}
+
+.nav-drawer {{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 201;
+  width: 280px;
+  max-width: 85vw;
+  background: var(--bg-panel);
+  border-right: 1px solid var(--border);
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}}
+
+.nav-drawer.open {{
+  transform: translateX(0);
+}}
+
+.nav-drawer-header {{
+  padding: 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}}
+
+.nav-drawer-close {{
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: all 0.15s;
+}}
+
+.nav-drawer-close:hover {{
+  color: var(--accent-red);
+  border-color: rgba(255,59,92,0.3);
+}}
+
+.nav-drawer-section {{
+  padding: 12px 16px 4px;
+}}
+
+.nav-drawer-label {{
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+  font-weight: 600;
+  font-family: var(--mono);
+  padding: 0 8px 6px;
+}}
+
+.nav-drawer-item {{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin: 2px 0;
+  color: var(--text-dim);
+  text-decoration: none;
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  transition: all 0.15s;
+  border: 1px solid transparent;
+}}
+
+.nav-drawer-item:hover {{
+  color: var(--text-bright);
+  background: var(--bg-elevated);
+}}
+
+.nav-drawer-item.active {{
+  color: var(--accent);
+  background: rgba(0,212,255,0.06);
+  border-color: rgba(0,212,255,0.12);
+}}
+
+.nav-drawer-item i {{
+  font-size: 16px;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}}
+
+.nav-drawer-footer {{
+  margin-top: auto;
+  padding: 16px;
+  border-top: 1px solid var(--border);
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  color: var(--text-faint);
 }}
 
 /* ── HERO ── */
@@ -868,151 +1099,14 @@ body {{
   color: var(--accent);
 }}
 
-/* ── HAMBURGER BUTTON ── */
-.menu-btn {{
-  display: block;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.5rem;
-  z-index: 200;
-}}
-
-.menu-btn span {{
-  display: block;
-  width: 20px;
-  height: 2px;
-  background: var(--text-dim);
-  margin: 4px 0;
-  transition: transform 0.25s, opacity 0.25s;
-}}
-
-.menu-btn.active span:nth-child(1) {{
-  transform: rotate(45deg) translate(4px, 4px);
-  background: var(--accent);
-}}
-
-.menu-btn.active span:nth-child(2) {{
-  opacity: 0;
-}}
-
-.menu-btn.active span:nth-child(3) {{
-  transform: rotate(-45deg) translate(4px, -4px);
-  background: var(--accent);
-}}
-
-/* ── MOBILE MENU ── */
-.mobile-menu {{
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 150;
-  background: rgba(10, 11, 16, 0.98);
-  backdrop-filter: blur(16px);
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  gap: 0;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-}}
-
-.mobile-menu.open {{
-  display: flex;
-}}
-
-.mobile-menu-link {{
-  display: block;
-  font-family: var(--mono);
-  font-size: 0.88rem;
-  font-weight: 500;
-  color: var(--text);
-  text-decoration: none;
-  padding: 0.55rem 1.5rem;
-  letter-spacing: 0.03em;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: left;
-  transition: color 0.15s, background 0.15s;
-  border-radius: 4px;
-}}
-
-.mobile-menu-link:hover,
-.mobile-menu-link:active {{
-  color: var(--accent);
-  background: var(--bg-elevated);
-}}
-
-.mobile-nav-section {{
-  display: flex;
-  flex-direction: column;
-  padding: 0.5rem 1rem;
-}}
-
-.mobile-nav-heading {{
-  font-family: var(--heading);
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: var(--accent);
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 0.5rem 1.5rem 0.25rem;
-  margin-top: 0.25rem;
-}}
-
 /* ── RESPONSIVE ── */
-@media (min-width: 901px) {{
-  .menu-btn {{ display: none; }}
-}}
-@media (max-width: 900px) {{
+@media (max-width: 768px) {{
   body {{ font-size: 14px; }}
   .hero {{ padding: 3.5rem 1.25rem 2.5rem; }}
   .toc, .content {{ padding-left: 1.25rem; padding-right: 1.25rem; }}
-  .site-header {{ padding: 0.6rem 1rem; }}
-  .nav-desktop {{ display: none; }}
+  .topbar {{ padding: 8px 14px; }}
   .chapter pre {{ padding: 1rem; }}
-}}
-
-/* ── SEARCH TRIGGER ── */
-.search-trigger {{
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  background: var(--bg-elevated);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-sm);
-  padding: 0.35rem 0.75rem;
-  cursor: pointer;
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  color: var(--text-dim);
-  letter-spacing: 0.04em;
-  transition: border-color 0.2s, color 0.2s;
-}}
-
-.search-trigger:hover {{
-  border-color: var(--border-bright);
-  color: var(--text);
-}}
-
-.search-trigger kbd {{
-  font-family: var(--mono);
-  font-size: 0.6rem;
-  background: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 3px;
-  padding: 0.1rem 0.35rem;
-  color: var(--text-dim);
-  line-height: 1;
-}}
-
-.search-trigger svg {{
-  opacity: 0.6;
+  .topbar-pill.hide-mobile {{ display: none; }}
 }}
 
 /* ── SEARCH OVERLAY ── */
@@ -1220,74 +1314,62 @@ body {{
 </head>
 <body>
 
-<header class="site-header">
-  <div style="display:flex;align-items:center;gap:10px;">
-    <button class="menu-btn" id="menuBtn" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
-    <div class="logo">Handbook <span>v1.0</span></div>
+<!-- Nav Drawer Overlay -->
+<div class="nav-drawer-overlay" id="navOverlay"></div>
+
+<!-- Nav Drawer -->
+<nav class="nav-drawer" id="navDrawer">
+  <div class="nav-drawer-header">
+    <span class="topbar-logo">Handbook</span>
+    <button class="nav-drawer-close" id="navDrawerClose" aria-label="Close menu"><i class="ph ph-x"></i></button>
   </div>
-  <nav class="nav-desktop">
+  <div class="nav-drawer-section">
+    <div class="nav-drawer-label">Handbook</div>
+    <a href="#toc" class="nav-drawer-item"><i class="ph ph-list"></i> Table of Contents</a>
+    <a href="#ch1" class="nav-drawer-item"><i class="ph ph-broadcast"></i> RF Fundamentals</a>
+    <a href="#ch5" class="nav-drawer-item"><i class="ph ph-cpu"></i> Firmware</a>
+    <a href="#ch9" class="nav-drawer-item"><i class="ph ph-checklist"></i> Field Ops</a>
+    <a href="#ch13" class="nav-drawer-item"><i class="ph ph-plugs-connected"></i> Integration</a>
+    <a href="#platforms" class="nav-drawer-item"><i class="ph ph-airplane-tilt"></i> Platform References</a>
+    <a href="#components" class="nav-drawer-item"><i class="ph ph-circuitry"></i> Component Docs</a>
+  </div>
+  <div class="nav-drawer-section">
+    <div class="nav-drawer-label">Forge Ecosystem</div>
+    <a href="https://forgeprole.netlify.app" class="nav-drawer-item"><i class="ph ph-database"></i> Forge</a>
+    <a href="https://forgeprole.netlify.app/wingman/" class="nav-drawer-item"><i class="ph ph-robot"></i> Wingman AI</a>
+    <a href="https://forgeprole.netlify.app/browse/" class="nav-drawer-item"><i class="ph ph-magnifying-glass"></i> Browse Parts</a>
+    <a href="https://forgeprole.netlify.app/platforms/" class="nav-drawer-item"><i class="ph ph-airplane-tilt"></i> Platforms</a>
+    <a href="https://forgeprole.netlify.app/intel/" class="nav-drawer-item"><i class="ph ph-binoculars"></i> Intel Hub</a>
+  </div>
+  <div class="nav-drawer-section">
+    <div class="nav-drawer-label">Project</div>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook" class="nav-drawer-item"><i class="ph ph-github-logo"></i> GitHub</a>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md" class="nav-drawer-item"><i class="ph ph-map-trifold"></i> Roadmap</a>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md" class="nav-drawer-item"><i class="ph ph-git-pull-request"></i> Contribute</a>
+  </div>
+  <div class="nav-drawer-footer">v1.0 &middot; CC BY-SA 4.0</div>
+</nav>
+
+<!-- Topbar -->
+<header class="topbar">
+  <div class="topbar-left">
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+      <i class="ph ph-list"></i>
+    </button>
+    <a href="#" class="topbar-logo">Handbook</a>
+    <span class="topbar-sep">/</span>
+    <span class="topbar-page">v1.0</span>
+  </div>
+  <div class="topbar-right">
     <button class="search-trigger" id="searchTrigger" aria-label="Search">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <i class="ph ph-magnifying-glass" style="font-size:13px;"></i>
       <span>Search</span>
       <kbd>&#8984;K</kbd>
     </button>
-    <a href="https://forgeprole.netlify.app">Forge</a>
-    <a href="https://forgeprole.netlify.app/wingman/">Wingman</a>
-    <a href="https://github.com/DroneWuKong/drone-integration-handbook">GitHub</a>
-  </nav>
+    <a href="https://forgeprole.netlify.app" class="topbar-pill hide-mobile">Forge</a>
+    <a href="https://forgeprole.netlify.app/wingman/" class="topbar-pill">Wingman</a>
+  </div>
 </header>
-
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#" class="mobile-menu-link" id="mobileSearchLink">&#x1F50D; Search</a>
-  <div class="mobile-nav-section">
-    <div class="mobile-nav-heading">RF Fundamentals</div>
-    <a href="#ch1" class="mobile-menu-link">1 &middot; Five Link Types</a>
-    <a href="#ch2" class="mobile-menu-link">2 &middot; Frequency Bands</a>
-    <a href="#ch3" class="mobile-menu-link">3 &middot; Antennas</a>
-    <a href="#ch4" class="mobile-menu-link">4 &middot; Link Budgets</a>
-  </div>
-  <div class="mobile-nav-section">
-    <div class="mobile-nav-heading">Firmware</div>
-    <a href="#ch5" class="mobile-menu-link">5 &middot; Four Firmwares</a>
-    <a href="#ch6" class="mobile-menu-link">6 &middot; MSP Protocol</a>
-    <a href="#ch7" class="mobile-menu-link">7 &middot; MAVLink Protocol</a>
-    <a href="#ch8" class="mobile-menu-link">8 &middot; UART Layout</a>
-  </div>
-  <div class="mobile-nav-section">
-    <div class="mobile-nav-heading">Field Ops</div>
-    <a href="#ch9" class="mobile-menu-link">9 &middot; Preflight</a>
-    <a href="#ch10" class="mobile-menu-link">10 &middot; Blackbox</a>
-    <a href="#ch11" class="mobile-menu-link">11 &middot; PID Tuning</a>
-    <a href="#ch12" class="mobile-menu-link">12 &middot; Troubleshooting</a>
-  </div>
-  <div class="mobile-nav-section">
-    <div class="mobile-nav-heading">Integration</div>
-    <a href="#ch13" class="mobile-menu-link">13 &middot; Companion Computer</a>
-    <a href="#ch14" class="mobile-menu-link">14 &middot; Mesh Radios</a>
-    <a href="#ch15" class="mobile-menu-link">15 &middot; TAK Integration</a>
-    <a href="#ch16" class="mobile-menu-link">16 &middot; Unsolved Problems</a>
-  </div>
-  <div class="mobile-nav-section">
-    <div class="mobile-nav-heading">References</div>
-    <a href="#platforms" class="mobile-menu-link">Platforms</a>
-    <a href="#components" class="mobile-menu-link">Components (all)</a>
-    <a href="#toc" class="mobile-menu-link">Full Table of Contents</a>
-  </div>
-  <div class="mobile-nav-section" style="border-top:1px solid var(--border);padding-top:0.75rem;margin-top:0.5rem;">
-    <div class="mobile-nav-heading">Forge</div>
-    <a href="https://forgeprole.netlify.app/browse/" class="mobile-menu-link"><i class="ph ph-magnifying-glass"></i> Browse Parts</a>
-    <a href="https://forgeprole.netlify.app/platforms/" class="mobile-menu-link"><i class="ph ph-airplane-tilt"></i> Platforms</a>
-    <a href="https://forgeprole.netlify.app/tools/" class="mobile-menu-link"><i class="ph ph-wrench"></i> Tools</a>
-    <a href="https://forgeprole.netlify.app/wingman/" class="mobile-menu-link"><i class="ph ph-robot"></i> Wingman AI</a>
-    <a href="https://forgeprole.netlify.app/intel/" class="mobile-menu-link"><i class="ph ph-binoculars"></i> Intel Hub</a>
-  </div>
-  <div class="mobile-nav-section" style="border-top:1px solid var(--border);padding-top:0.75rem;margin-top:0.5rem;">
-    <a href="https://github.com/DroneWuKong/drone-integration-handbook" class="mobile-menu-link"><i class="ph ph-github-logo"></i> GitHub</a>
-    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md" class="mobile-menu-link"><i class="ph ph-map-trifold"></i> Roadmap</a>
-  </div>
-</div>
 
 <div class="hero">
   <h1>The Drone Integration Handbook</h1>
@@ -1353,23 +1435,39 @@ window.addEventListener('scroll', () => {{
   btt.classList.toggle('visible', window.scrollY > 600);
 }});
 
-// ── MOBILE MENU ──
-const menuBtn = document.getElementById('menuBtn');
-const mobileMenu = document.getElementById('mobileMenu');
+// ── NAV DRAWER (Forge pattern) ──
+(function() {{
+  const hamburger = document.getElementById('hamburgerBtn');
+  const drawer = document.getElementById('navDrawer');
+  const overlay = document.getElementById('navOverlay');
+  const closeBtn = document.getElementById('navDrawerClose');
 
-menuBtn.addEventListener('click', () => {{
-  menuBtn.classList.toggle('active');
-  mobileMenu.classList.toggle('open');
-  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-}});
+  function openDrawer() {{
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+    hamburger.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }}
 
-mobileMenu.querySelectorAll('a').forEach(link => {{
-  link.addEventListener('click', () => {{
-    menuBtn.classList.remove('active');
-    mobileMenu.classList.remove('open');
+  function closeDrawer() {{
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+    hamburger.classList.remove('open');
     document.body.style.overflow = '';
+  }}
+
+  hamburger.addEventListener('click', openDrawer);
+  overlay.addEventListener('click', closeDrawer);
+  closeBtn.addEventListener('click', closeDrawer);
+
+  drawer.querySelectorAll('a').forEach(link => {{
+    link.addEventListener('click', closeDrawer);
   }});
-}});
+
+  document.addEventListener('keydown', e => {{
+    if (e.key === 'Escape') closeDrawer();
+  }});
+}})();
 
 // ── SEARCH ENGINE ──
 (function() {{
@@ -1377,7 +1475,6 @@ mobileMenu.querySelectorAll('a').forEach(link => {{
   const input = document.getElementById('searchInput');
   const resultsEl = document.getElementById('searchResults');
   const trigger = document.getElementById('searchTrigger');
-  const mobileTrigger = document.getElementById('mobileSearchLink');
   let activeIdx = -1;
   let searchIndex = null;
 
@@ -1577,13 +1674,6 @@ mobileMenu.querySelectorAll('a').forEach(link => {{
 
   // Event: trigger buttons
   trigger.addEventListener('click', openSearch);
-  mobileTrigger.addEventListener('click', (e) => {{
-    e.preventDefault();
-    menuBtn.classList.remove('active');
-    mobileMenu.classList.remove('open');
-    document.body.style.overflow = '';
-    openSearch();
-  }});
 
   // Event: Cmd/Ctrl+K
   document.addEventListener('keydown', (e) => {{
