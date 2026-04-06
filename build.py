@@ -397,6 +397,7 @@ body {{
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  flex-shrink: 0;
 }}
 
 .site-header .nav-desktop a {{
@@ -497,6 +498,8 @@ body {{
 .toc-part a {{
   display: flex;
   align-items: baseline;
+  width: 100%;
+  box-sizing: border-box;
   padding: 0.5rem 0.75rem;
   margin: 0.15rem 0;
   color: var(--text);
@@ -957,7 +960,10 @@ body {{
 }}
 
 /* ── RESPONSIVE ── */
-@media (max-width: 768px) {{
+@media (min-width: 901px) {{
+  .menu-btn {{ display: none; }}
+}}
+@media (max-width: 900px) {{
   body {{ font-size: 14px; }}
   .hero {{ padding: 3.5rem 1.25rem 2.5rem; }}
   .toc, .content {{ padding-left: 1.25rem; padding-right: 1.25rem; }}
