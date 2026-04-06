@@ -1314,10 +1314,51 @@ body {{
 </head>
 <body>
 
+<!-- Nav Drawer Overlay -->
+<div class="nav-drawer-overlay" id="navOverlay"></div>
+
+<!-- Nav Drawer -->
+<nav class="nav-drawer" id="navDrawer">
+  <div class="nav-drawer-header">
+    <span class="topbar-logo">Handbook</span>
+    <button class="nav-drawer-close" id="navDrawerClose" aria-label="Close menu"><i class="ph ph-x"></i></button>
+  </div>
+  <div class="nav-drawer-section">
+    <div class="nav-drawer-label">Handbook</div>
+    <a href="#toc" class="nav-drawer-item"><i class="ph ph-list"></i> Table of Contents</a>
+    <a href="#ch1" class="nav-drawer-item"><i class="ph ph-broadcast"></i> RF Fundamentals</a>
+    <a href="#ch5" class="nav-drawer-item"><i class="ph ph-cpu"></i> Firmware</a>
+    <a href="#ch9" class="nav-drawer-item"><i class="ph ph-checklist"></i> Field Ops</a>
+    <a href="#ch13" class="nav-drawer-item"><i class="ph ph-plugs-connected"></i> Integration</a>
+    <a href="#platforms" class="nav-drawer-item"><i class="ph ph-airplane-tilt"></i> Platform References</a>
+    <a href="#components" class="nav-drawer-item"><i class="ph ph-circuitry"></i> Component Docs</a>
+  </div>
+  <div class="nav-drawer-section">
+    <div class="nav-drawer-label">Forge Ecosystem</div>
+    <a href="https://forgeprole.netlify.app" class="nav-drawer-item"><i class="ph ph-database"></i> Forge</a>
+    <a href="https://forgeprole.netlify.app/tools-home/" class="nav-drawer-item"><i class="ph ph-wrench"></i> Tools</a>
+    <a href="https://forgeprole.netlify.app/patterns-home/" class="nav-drawer-item"><i class="ph ph-graph"></i> Patterns</a>
+    <a href="https://forgeprole.netlify.app/intel/" class="nav-drawer-item"><i class="ph ph-newspaper"></i> Intel</a>
+    <a href="https://forgeprole.netlify.app/wingman/" class="nav-drawer-item"><i class="ph ph-robot"></i> Wingman AI</a>
+  </div>
+  <div class="nav-drawer-section">
+    <div class="nav-drawer-label">Project</div>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook" class="nav-drawer-item"><i class="ph ph-github-logo"></i> GitHub</a>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md" class="nav-drawer-item"><i class="ph ph-map-trifold"></i> Roadmap</a>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md" class="nav-drawer-item"><i class="ph ph-git-pull-request"></i> Contribute</a>
+  </div>
+  <div class="nav-drawer-footer">v1.0 &middot; CC BY-SA 4.0</div>
+</nav>
+
 <!-- Topbar -->
 <header class="topbar">
   <div class="topbar-left">
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+      <i class="ph ph-list"></i>
+    </button>
     <a href="#" class="topbar-logo">Handbook</a>
+    <span class="topbar-sep">/</span>
+    <span class="topbar-page">v1.0</span>
   </div>
   <div class="topbar-right">
     <button class="search-trigger" id="searchTrigger" aria-label="Search">
@@ -1326,8 +1367,9 @@ body {{
       <kbd>&#8984;K</kbd>
     </button>
     <a href="https://forgeprole.netlify.app" class="topbar-pill hide-mobile">Forge</a>
-    <a href="https://forgeprole.netlify.app/intel/" class="topbar-pill hide-mobile">Intel</a>
+    <a href="https://forgeprole.netlify.app/tools-home/" class="topbar-pill hide-mobile">Tools</a>
     <a href="https://forgeprole.netlify.app/patterns-home/" class="topbar-pill hide-mobile">Patterns</a>
+    <a href="https://forgeprole.netlify.app/intel/" class="topbar-pill hide-mobile">Intel</a>
     <a href="https://forgeprole.netlify.app/wingman/" class="topbar-pill">Wingman</a>
   </div>
 </header>
@@ -1395,6 +1437,39 @@ const btt = document.getElementById('btt');
 window.addEventListener('scroll', () => {{
   btt.classList.toggle('visible', window.scrollY > 600);
 }});
+
+// ── NAV DRAWER (Forge pattern) ──
+(function() {{
+  const hamburger = document.getElementById('hamburgerBtn');
+  const drawer = document.getElementById('navDrawer');
+  const overlay = document.getElementById('navOverlay');
+  const closeBtn = document.getElementById('navDrawerClose');
+
+  function openDrawer() {{
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+    hamburger.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }}
+
+  function closeDrawer() {{
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+    hamburger.classList.remove('open');
+    document.body.style.overflow = '';
+  }}
+
+  hamburger.addEventListener('click', openDrawer);
+  overlay.addEventListener('click', closeDrawer);
+  closeBtn.addEventListener('click', closeDrawer);
+
+  drawer.querySelectorAll('a').forEach(link => {{
+    link.addEventListener('click', closeDrawer);
+  }});
+
+  document.addEventListener('keydown', e => {{
+    if (e.key === 'Escape') closeDrawer();
+  }});
 }})();
 
 // ── SEARCH ENGINE ──
