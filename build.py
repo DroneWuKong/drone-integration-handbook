@@ -1366,6 +1366,7 @@ body {{
       <span>Search</span>
       <kbd>&#8984;K</kbd>
     </button>
+    <a href="https://forgeprole.netlify.app" class="topbar-pill hide-mobile">Forge</a>
     <a href="https://forgeprole.netlify.app/tools-home/" class="topbar-pill hide-mobile">Tools</a>
     <a href="https://forgeprole.netlify.app/patterns-home/" class="topbar-pill hide-mobile">Patterns</a>
     <a href="https://forgeprole.netlify.app/intel/" class="topbar-pill hide-mobile">Intel</a>
