@@ -476,8 +476,9 @@ def main():
     brief = call_claude(prompt)
 
     if not brief:
-        print("  ✗ Brief generation failed.")
-        sys.exit(1)
+        print("  ✗ Brief generation failed — check API credits at console.anthropic.com/billing")
+        print("  ⚠ Skipping brief — pipeline will continue to sync flags and predictions")
+        sys.exit(0)  # Soft exit — don't block Forge sync
 
     # Save
     print("\nSaving brief...")
