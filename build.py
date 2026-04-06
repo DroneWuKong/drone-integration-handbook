@@ -1336,10 +1336,10 @@ body {{
   <div class="nav-drawer-section">
     <div class="nav-drawer-label">Forge Ecosystem</div>
     <a href="https://forgeprole.netlify.app" class="nav-drawer-item"><i class="ph ph-database"></i> Forge</a>
+    <a href="https://forgeprole.netlify.app/tools-home/" class="nav-drawer-item"><i class="ph ph-wrench"></i> Tools</a>
+    <a href="https://forgeprole.netlify.app/patterns-home/" class="nav-drawer-item"><i class="ph ph-graph"></i> Patterns</a>
+    <a href="https://forgeprole.netlify.app/intel/" class="nav-drawer-item"><i class="ph ph-newspaper"></i> Intel</a>
     <a href="https://forgeprole.netlify.app/wingman/" class="nav-drawer-item"><i class="ph ph-robot"></i> Wingman AI</a>
-    <a href="https://forgeprole.netlify.app/browse/" class="nav-drawer-item"><i class="ph ph-magnifying-glass"></i> Browse Parts</a>
-    <a href="https://forgeprole.netlify.app/platforms/" class="nav-drawer-item"><i class="ph ph-airplane-tilt"></i> Platforms</a>
-    <a href="https://forgeprole.netlify.app/intel/" class="nav-drawer-item"><i class="ph ph-binoculars"></i> Intel Hub</a>
   </div>
   <div class="nav-drawer-section">
     <div class="nav-drawer-label">Project</div>
@@ -1366,7 +1366,9 @@ body {{
       <span>Search</span>
       <kbd>&#8984;K</kbd>
     </button>
-    <a href="https://forgeprole.netlify.app" class="topbar-pill hide-mobile">Forge</a>
+    <a href="https://forgeprole.netlify.app/tools-home/" class="topbar-pill hide-mobile">Tools</a>
+    <a href="https://forgeprole.netlify.app/patterns-home/" class="topbar-pill hide-mobile">Patterns</a>
+    <a href="https://forgeprole.netlify.app/intel/" class="topbar-pill hide-mobile">Intel</a>
     <a href="https://forgeprole.netlify.app/wingman/" class="topbar-pill">Wingman</a>
   </div>
 </header>
