@@ -481,6 +481,8 @@ body {{
 
 .toc-part {{
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }}
 
 .toc-part h3 {{
@@ -925,6 +927,7 @@ body {{
 }}
 
 .mobile-menu-link {{
+  display: block;
   font-family: var(--mono);
   font-size: 0.88rem;
   font-weight: 500;
@@ -933,6 +936,7 @@ body {{
   padding: 0.55rem 1.5rem;
   letter-spacing: 0.03em;
   width: 100%;
+  box-sizing: border-box;
   text-align: left;
   transition: color 0.15s, background 0.15s;
   border-radius: 4px;
@@ -945,6 +949,8 @@ body {{
 }}
 
 .mobile-nav-section {{
+  display: flex;
+  flex-direction: column;
   padding: 0.5rem 1rem;
 }}
 
