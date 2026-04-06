@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-05T15:27:59.712931+00:00",
+  "generated_at": "2026-04-06T15:41:40.426837+00:00",
   "federal_awards_total": 547,
   "gray_zone_federal_matches": 1,
-  "news_signals_total": 12,
-  "gray_zone_news_mentions": 12,
+  "news_signals_total": 13,
+  "gray_zone_news_mentions": 13,
   "all_gray_zone_signals": [
     {
       "id": "proc-4c24d11acd",
@@ -18,7 +18,7 @@
       "matched_vendor": "specta",
       "flag_type": "gray_zone_vendor_match",
       "severity": "warning",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     },
     {
       "id": "proc-1ccc75ae24",
@@ -30,7 +30,7 @@
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     },
     {
       "id": "proc-1463062e5b",
@@ -42,7 +42,19 @@
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+    },
+    {
+      "id": "proc-f68f0a8fdd",
+      "source": "news",
+      "title": "Ensuring Anzu Raptor\u2019s Security: White Knight Labs\u2019 Successful Penetration Test - DroneXL.co",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1oZURrRVdxOFVZMlVteTVvak5CRlpLbHJTT0xUd203clVvOXowNTA1WFdGU2ZPNmx2VzV5Sm1FN0VuaXZBMUZIa052WmtpelYxVUZlMWlzRmlOOFo0cFhzWHFHZXUyYnU0TTU4Yl9XbUVPeHVicmh3?oc=5",
+      "published": "Tue, 28 May 2024 07:00:00 GMT",
+      "news_source": "DroneXL.co",
+      "matched_term": "anzu",
+      "flag_type": "gray_zone_news_mention",
+      "severity": "info",
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     },
     {
       "id": "proc-96e96fbe76",
@@ -54,7 +66,7 @@
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     },
     {
       "id": "proc-683a19be77",
@@ -66,7 +78,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     },
     {
       "id": "proc-d698467706",
@@ -78,7 +90,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     },
     {
       "id": "proc-e071af7e13",
@@ -90,7 +102,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     },
     {
       "id": "proc-ba6474a3a4",
@@ -102,19 +114,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
-    },
-    {
-      "id": "proc-fb2a44fd6d",
-      "source": "news",
-      "title": "Autel\u2019s Fixed Wing Drone: Florida Sheriff Acquires First Dragonfish - Dronelife",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcXJRbDVLamxRdGdIZkd1OXRoLWxTWGhoM3VYQ3JCZV9ZVGFLc25xSE9pVVA1X0dXTGszRVRTM0pOWTZvZ0dlaVBsRHFiVElQNGIwUWNvRm9MdHpzLTBrYjFiUUdfdDNTUTFNd0FsUGVIR3BFZHYtYmZDNWdhR2U5aC1fczJZSWJDZ2RFYWEwYlUxV0xvUVRBYzZGVkFyWFlk?oc=5",
-      "published": "Wed, 18 Aug 2021 07:00:00 GMT",
-      "news_source": "Dronelife",
-      "matched_term": "autel",
-      "flag_type": "gray_zone_news_mention",
-      "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     },
     {
       "id": "proc-9d29833f5f",
@@ -126,7 +126,19 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+    },
+    {
+      "id": "proc-fb2a44fd6d",
+      "source": "news",
+      "title": "Autel\u2019s Fixed Wing Drone: Florida Sheriff Acquires First Dragonfish - Dronelife",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOcXJRbDVLamxRdGdIZkd1OXRoLWxTWGhoM3VYQ3JCZV9ZVGFLc25xSE9pVVA1X0dXTGszRVRTM0pOWTZvZ0dlaVBsRHFiVElQNGIwUWNvRm9MdHpzLTBrYjFiUUdfdDNTUTFNd0FsUGVIR3BFZHYtYmZDNWdhR2U5aC1fczJZSWJDZ2RFYWEwYlUxV0xvUVRBYzZGVkFyWFlk?oc=5",
+      "published": "Wed, 18 Aug 2021 07:00:00 GMT",
+      "news_source": "Dronelife",
+      "matched_term": "autel",
+      "flag_type": "gray_zone_news_mention",
+      "severity": "info",
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     },
     {
       "id": "proc-51ef0b96f6",
@@ -138,7 +150,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     },
     {
       "id": "proc-aade3f22c1",
@@ -150,7 +162,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     },
     {
       "id": "proc-48f047caaa",
@@ -162,12 +174,12 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-05T15:27:59.712931+00:00"
+      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
     }
   ],
   "vendors_flagged": [
     "anzu",
-    "specta",
-    "autel"
+    "autel",
+    "specta"
   ]
 }
