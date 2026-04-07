@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-04-06T15:41:40.426837+00:00",
-  "federal_awards_total": 547,
+  "generated_at": "2026-04-07T16:07:59.894039+00:00",
+  "federal_awards_total": 548,
   "gray_zone_federal_matches": 1,
-  "news_signals_total": 13,
-  "gray_zone_news_mentions": 13,
+  "news_signals_total": 12,
+  "gray_zone_news_mentions": 12,
   "all_gray_zone_signals": [
     {
       "id": "proc-4c24d11acd",
@@ -18,7 +18,7 @@
       "matched_vendor": "specta",
       "flag_type": "gray_zone_vendor_match",
       "severity": "warning",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     },
     {
       "id": "proc-1ccc75ae24",
@@ -30,31 +30,31 @@
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     },
     {
       "id": "proc-1463062e5b",
       "source": "news",
-      "title": "Anzu Robotics Launches Innovative Raptor Drone Series with Aloft Technologies Partnership - DroneXL.co",
+      "title": "Anzu Robotics Launches Innovative Raptor Drone Series with Aloft Technologies Partnership - dronexl.co",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9IaWJTSWU0dVJocU92LXhwMjdCMURmZy1ueGNweWhWdzVDdXBiOElVM2EwVTJEOE9GUjFzSlJORmpqUE8xQW1LazVYeEtXVEQ3a3Ixa2NvWlcxSWdUa2xxbEhsODhPRU5Fc3RvMThENnlGWHNa?oc=5",
       "published": "Wed, 17 Apr 2024 07:00:00 GMT",
-      "news_source": "DroneXL.co",
+      "news_source": "dronexl.co",
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     },
     {
       "id": "proc-f68f0a8fdd",
       "source": "news",
-      "title": "Ensuring Anzu Raptor\u2019s Security: White Knight Labs\u2019 Successful Penetration Test - DroneXL.co",
+      "title": "Ensuring Anzu Raptor\u2019s Security: White Knight Labs\u2019 Successful Penetration Test - dronexl.co",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1oZURrRVdxOFVZMlVteTVvak5CRlpLbHJTT0xUd203clVvOXowNTA1WFdGU2ZPNmx2VzV5Sm1FN0VuaXZBMUZIa052WmtpelYxVUZlMWlzRmlOOFo0cFhzWHFHZXUyYnU0TTU4Yl9XbUVPeHVicmh3?oc=5",
       "published": "Tue, 28 May 2024 07:00:00 GMT",
-      "news_source": "DroneXL.co",
+      "news_source": "dronexl.co",
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     },
     {
       "id": "proc-96e96fbe76",
@@ -66,19 +66,31 @@
       "matched_term": "anzu",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     },
     {
       "id": "proc-683a19be77",
       "source": "news",
-      "title": "Tulsa Deputies Used An Autel EVO II To Disarm A Suicidal Man - DroneXL.co",
+      "title": "Tulsa Deputies Used An Autel EVO II To Disarm A Suicidal Man - dronexl.co",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5QNG51SWdqSUFPblEzeHpwbmpkeUFiQVFxTlZKeDl3NGJoN3Y5RlBFdEFtX0NLcEM0QldBTS1tRFVIbDZCVVJhT3lSNmplVjFsMThiMlVmR1YwMkN5MHpGcGZJU1NwYnV5c3NWRjN1eGlVdjA3RDUyVktOQQ?oc=5",
       "published": "Wed, 04 Mar 2026 08:00:00 GMT",
-      "news_source": "DroneXL.co",
+      "news_source": "dronexl.co",
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
+    },
+    {
+      "id": "proc-9d29833f5f",
+      "source": "news",
+      "title": "Rockbridge First Responders Embrace DJI Matrice 30T And Autel 640T - dronexl.co",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE02Y3dXVE5jVGRocFBjZUNoS1ZwbC1jNTVDRUM5ejB4bzJEZlpkZWNScEIzZzh2a0hqUzk3NGlWbEJBYldhdW50NWVPVEFKRlk3aDRldlZ0aF9OcENVY1AzWWp3Tm9pU2JtRXdvOS1CQTAzWjBTdXdR?oc=5",
+      "published": "Sat, 21 Feb 2026 08:00:00 GMT",
+      "news_source": "dronexl.co",
+      "matched_term": "autel",
+      "flag_type": "gray_zone_news_mention",
+      "severity": "info",
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     },
     {
       "id": "proc-d698467706",
@@ -90,19 +102,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
-    },
-    {
-      "id": "proc-e071af7e13",
-      "source": "news",
-      "title": "Autel and DroneSense Partnership Improves Situational Awareness and Management Game for Public Safety Agencies - Commercial UAV News",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxOYURMS2tXOTlSekRvNGE5VnJKS1BGRTZxMkJOSXQzYlh1N3ptbl92dHpPT2xoWXF2UHBGaVpkQlN1NmpaZmI2eHVvZS1ldHpwOVhTSldnMS1zSHNkXzFZSWtCU0pLUkdKbXBaTWdiOVRGdE40azZmdVA2RXYxXy00anBRU0lld3dmM09fd01xOU1GQjU5bTNYanQtZGZVSUJDQjZGZGtEQXhZQTUtZWxZYlpMbm9QWTU4OFdVWmlTc3B4Y2FRYnlNYkd0Z1QtS0NoUmx1a2Y1c1czaWs4THlDcXB3aWtUd21MQkw3OHRKSQ?oc=5",
-      "published": "Mon, 16 Nov 2020 08:00:00 GMT",
-      "news_source": "Commercial UAV News",
-      "matched_term": "autel",
-      "flag_type": "gray_zone_news_mention",
-      "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     },
     {
       "id": "proc-ba6474a3a4",
@@ -114,19 +114,7 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
-    },
-    {
-      "id": "proc-9d29833f5f",
-      "source": "news",
-      "title": "Rockbridge First Responders Embrace DJI Matrice 30T And Autel 640T - DroneXL.co",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE02Y3dXVE5jVGRocFBjZUNoS1ZwbC1jNTVDRUM5ejB4bzJEZlpkZWNScEIzZzh2a0hqUzk3NGlWbEJBYldhdW50NWVPVEFKRlk3aDRldlZ0aF9OcENVY1AzWWp3Tm9pU2JtRXdvOS1CQTAzWjBTdXdR?oc=5",
-      "published": "Sat, 21 Feb 2026 08:00:00 GMT",
-      "news_source": "DroneXL.co",
-      "matched_term": "autel",
-      "flag_type": "gray_zone_news_mention",
-      "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     },
     {
       "id": "proc-fb2a44fd6d",
@@ -138,48 +126,48 @@
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     },
     {
       "id": "proc-51ef0b96f6",
       "source": "news",
-      "title": "New Autel EVO Max 4T Drone Launched At CES 2023 - DroneXL.co",
+      "title": "New Autel EVO Max 4T Drone Launched At CES 2023 - dronexl.co",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5aNXc2NzZYbG5BTzRjVEMwSmZnTTg2Z01DdWJBb05YNnE3cHdMUWYtZmhDUzdVa1U1czBOSV90MDExMDFlU21EdUJXT09tX1FlaGlOcXdEaFhjcVdBamhCeVpaTGEzOVl1OEJjOENTWQ?oc=5",
       "published": "Thu, 05 Jan 2023 08:00:00 GMT",
-      "news_source": "DroneXL.co",
+      "news_source": "dronexl.co",
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     },
     {
       "id": "proc-aade3f22c1",
       "source": "news",
-      "title": "Autel Robotics Implements No-Fly Zones in Conflict Areas to Prevent Drone Misuse - DroneXL.co",
+      "title": "Autel Robotics Implements No-Fly Zones in Conflict Areas to Prevent Drone Misuse - dronexl.co",
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5NT21IQzJRdTlnNmIxUWM2cnEtdk1GTE5fQjBiLWFuUTRDdEV4cEFKZzlDbzlxczB6OGlVZzJHbmVhMXZlRWlsZllNTWtJRmRwNTN4eUhqQlB5WTFlcWU5aUhCQzJ2YXI5bFo0dUQzMWduTjFnRXRLdEJYQS1Gdw?oc=5",
       "published": "Sun, 24 Dec 2023 08:00:00 GMT",
-      "news_source": "DroneXL.co",
+      "news_source": "dronexl.co",
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     },
     {
       "id": "proc-48f047caaa",
       "source": "news",
-      "title": "DJI $279M Lawsuit, Autel Alpha Leak, Country of Origin Ban, NPRM for \u2026 - DroneXL.co",
+      "title": "DJI $279M Lawsuit, Autel Alpha Leak, Country of Origin Ban, NPRM for \u2026 - dronexl.co",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFA1VHB4NnNrTXBWYk11M3o3WlIyZV9Ka1dtQWlxVmhCSWlfVzlQaUZzbVRpeGFocXJhQXJhdFFGamJCLUgza2pSWGU0aEM0bU1ockwwSnRqT3ByMjlyU0VhSGVrZWNZNS1LNkJmWHhESVN6Zw?oc=5",
       "published": "Fri, 05 May 2023 07:00:00 GMT",
-      "news_source": "DroneXL.co",
+      "news_source": "dronexl.co",
       "matched_term": "autel",
       "flag_type": "gray_zone_news_mention",
       "severity": "info",
-      "scraped_at": "2026-04-06T15:41:40.426837+00:00"
+      "scraped_at": "2026-04-07T16:07:59.894039+00:00"
     }
   ],
   "vendors_flagged": [
-    "anzu",
     "autel",
+    "anzu",
     "specta"
   ]
 }
