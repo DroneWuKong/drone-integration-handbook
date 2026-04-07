@@ -3,6 +3,13 @@
 Future chapters, sections, and improvements under consideration.
 Open an issue to suggest additions or volunteer to write one.
 
+## Recently Completed (2026-04-07 — continued)
+
+- [x] **Weight enrichment to 100%** — All 3,615 parts now have weight_g. FPV cameras, GPS, VTX, stacks, control link, thermal cameras, AI accelerators, companion computers, mesh radios, EW systems, ESAD, counter-UAS, swarm software, military firmware, and remaining hardware filled via form-factor/stator/wheelbase/class inference.
+- [x] **Receivers** —  — 391 entries: ELRS/Crossfire/FrSky/Spektrum/FlySky protocols, NDAA landscape (TBS=Swiss NDAA-compliant, all ELRS brands Chinese), UART config, antenna placement, failsafe setup.
+- [x] **GPS & GNSS Modules** —  — 76 entries: u-blox M8N→M10 generations, NDAA table (ARK/Lumenier/CubePilot ✓), DroneCAN integration, compass calibration, dual GPS redundancy.
+- [x] **Antennas** —  — 394 entries: gain/polarization/radiation pattern, stub/cloverleaf/lollipop/patch/helical types, system design by use case, connector ecosystem (SMA/RP-SMA/U.FL/MMCX), NDAA (TrueRC/ImmersionRC ✓).
+
 ## Recently Completed (2026-04-07)
 
 - [x] **Optical Flow & GPS-Denied Positioning** — `components/optical-flow.md` — 7 vetted entries: ARK Flow MR/Flow (USA NDAA), CubePilot HereFlow (Taiwan NDAA), Centeye neuromorphic (USA), Holybro H-Flow (unverified), Matek + DJI (China flagged). NDAA landscape table, PX4/ArduPilot integration, surface requirements. 48th component page.
