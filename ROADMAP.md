@@ -3,6 +3,15 @@
 Future chapters, sections, and improvements under consideration.
 Open an issue to suggest additions or volunteer to write one.
 
+## Recently Completed (2026-04-07)
+
+- [x] **Optical Flow & GPS-Denied Positioning** — `components/optical-flow.md` — 7 vetted entries: ARK Flow MR/Flow (USA NDAA), CubePilot HereFlow (Taiwan NDAA), Centeye neuromorphic (USA), Holybro H-Flow (unverified), Matek + DJI (China flagged). NDAA landscape table, PX4/ArduPilot integration, surface requirements. 48th component page.
+- [x] **DB NDAA enrichment sprint** — 3,571/3,615 parts resolved (98.8%). FC research pass (72✓ 218✗ 37?), thermal cameras (39✓), thermal/counter-UAS/C2/sensors/navigation/propulsion all classified. Manufacturers documented: Teledyne FLIR, L3Harris, Hensoldt, Rohde & Schwarz, Silvus, Shield AI, Rajant, infiniDome, Honeywell, Anello, MicaSense, Sentera, DeepX, Kinara, etc.
+- [x] **DB field enrichment** — 1,271 interface fields inferred (FC/ESC/RX/GPS/VTX); 1,496 weight_g values from stator/form factor (97% props, 94% ESCs, 96% batteries); tag taxonomy normalized to 1,366 canonical tags; canonical ndaa/china/usa/ukraine/nato/israel/five-eyes/blue-uas tags on all 3,573 parts.
+- [x] **Browse modal overhaul** — NDAA shows ✓ green / ✗ red; weight, interface, firmware, price surfaced first; cyan tag chips; amber ndaa_note compliance warning box; links from new links[] field.
+- [x] **Browse NDAA filter pills** — `All / NDAA ✓ / Non-NDAA ✗ / China / USA` quick-filter chips on every category, instant filter, color-coded.
+- [x] **PIE DB integration** — generate_pie_from_db.py scans all 34 categories; 103 db_-prefixed auto-flags (landscape/supply_constraint/supply_chain_risk/diversion/compliance); wired into weekly GitHub Actions pipeline; supply_constraint flags 12→1 (documentation gaps resolved).
+
 ## Recently Completed (2026-04-05)
 
 - [x] **Military Firmware Forks** — `components/military-firmware-forks.md` — MILELRS, MILBETA, FPV_VYZOV, BarvinokLRS/Barvinok-5, "1001" DJI mod, CIAJeepDoors, mLRS, DroneBridge ESP32. Full landscape of combat-adapted open-source firmware.
