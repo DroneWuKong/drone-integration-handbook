@@ -22,6 +22,7 @@ CHAPTERS = [
     ("integration/tak.md",                     15, "TAK Integration"),
     ("field/unsolved-problems.md",             16, "Unsolved Problems"),
     ("vendor/dow-uas-marketplace.md",          17, "How to Get Listed on the Army UAS Marketplace"),
+    ("vendor/dow-uas-marketplace-buyer-access.md", 18, "Army UAS Marketplace — Buyer Account & Access"),
 ]
 
 PARTS = [
@@ -30,7 +31,7 @@ PARTS = [
     ("Part 3 — Field Operations",        [9, 10, 11, 12]),
     ("Part 4 — Integration",             [13, 14, 15]),
     ("What's Left to Solve",             [16]),
-    ("Part 5 — Vendor Guides",           [17]),
+    ("Part 5 — Vendor Guides",           [17, 18]),
 ]
 
 # Category display names for the platforms/ subdirectory names
@@ -1345,7 +1346,8 @@ body {{
   </div>
   <div class="nav-drawer-section">
     <div class="nav-drawer-label">Vendor Guides</div>
-    <a href="#ch17" class="nav-drawer-item"><i class="ph ph-storefront"></i> Army UAS Marketplace</a>
+    <a href="#ch17" class="nav-drawer-item"><i class="ph ph-storefront"></i> Army UAS Marketplace — Vendor</a>
+    <a href="#ch18" class="nav-drawer-item"><i class="ph ph-user-circle"></i> Army UAS Marketplace — Buyer Access</a>
   </div>
   <div class="nav-drawer-section">
     <div class="nav-drawer-label">Project</div>
