@@ -6,6 +6,14 @@ Open an issue to suggest additions or volunteer to write one.
 ## Recently Completed (2026-04-07 — continued)
 
 - [x] **Weight enrichment to 100%** — All 3,615 parts now have weight_g. FPV cameras, GPS, VTX, stacks, control link, thermal cameras, AI accelerators, companion computers, mesh radios, EW systems, ESAD, counter-UAS, swarm software, military firmware, and remaining hardware filled via form-factor/stator/wheelbase/class inference.
+- [x] **Mesh Radios** — `components/mesh-radios.md` — Rajant BreadCrumb, Silvus StreamCaster, Doodle Labs Mesh Rider, Elsight HALO; topology design, MAVLink-over-mesh, bandwidth planning.
+- [x] **Control Link TX** — `components/control-link-tx.md` — ELRS modules, TBS Crossfire/Tracer TX, Spektrum; JR/nano bay formats, power levels, NDAA (TBS Swiss ✓, all ELRS Chinese ✗).
+- [x] **FPV Detectors** — `components/fpv-detectors.md` — RF Explorer, ISDS204B, SDR-based detection; detection targets (analog/digital/FHSS), security monitoring deployment.
+- [x] **Video Scramblers** — `components/video-scramblers.md` — Ukrainian-origin anti-detection systems, MAFIA system context, export controls.
+- [x] **Payload Droppers** — `components/payload-droppers.md` — servo/magnet/winch mechanisms, ArduPilot Gripper integration, MAV_CMD_DO_GRIPPER.
+- [x] **LiDAR Rangefinders** — `components/lidar-rangefinders.md` — LightWare, Benewake, Garmin LIDAR-Lite; terrain following, precision landing, NDAA table.
+- [x] **Survey Sensors & Multispectral** — `components/sensors.md` — MicaSense RedEdge-P/Altum-PT (AgEagle ✓), Sentera 6X (John Deere ✓), Sony ILX-LR1, Phase One; NDVI pipeline, radiometric calibration.
+- [x] **Weight: 100% coverage** — All 3,615 Forge parts now have weight_g values.
 - [x] **Receivers** —  — 391 entries: ELRS/Crossfire/FrSky/Spektrum/FlySky protocols, NDAA landscape (TBS=Swiss NDAA-compliant, all ELRS brands Chinese), UART config, antenna placement, failsafe setup.
 - [x] **GPS & GNSS Modules** —  — 76 entries: u-blox M8N→M10 generations, NDAA table (ARK/Lumenier/CubePilot ✓), DroneCAN integration, compass calibration, dual GPS redundancy.
 - [x] **Antennas** —  — 394 entries: gain/polarization/radiation pattern, stub/cloverleaf/lollipop/patch/helical types, system design by use case, connector ecosystem (SMA/RP-SMA/U.FL/MMCX), NDAA (TrueRC/ImmersionRC ✓).
