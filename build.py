@@ -21,6 +21,7 @@ CHAPTERS = [
     ("integration/mesh-radios.md",             14, "Mesh Radios for Multi-Vehicle"),
     ("integration/tak.md",                     15, "TAK Integration"),
     ("field/unsolved-problems.md",             16, "Unsolved Problems"),
+    ("vendor/dow-uas-marketplace.md",          17, "How to Get Listed on the Army UAS Marketplace"),
 ]
 
 PARTS = [
@@ -29,6 +30,7 @@ PARTS = [
     ("Part 3 — Field Operations",        [9, 10, 11, 12]),
     ("Part 4 — Integration",             [13, 14, 15]),
     ("What's Left to Solve",             [16]),
+    ("Part 5 — Vendor Guides",           [17]),
 ]
 
 # Category display names for the platforms/ subdirectory names
@@ -1340,6 +1342,10 @@ body {{
     <a href="https://forgeprole.netlify.app/patterns-home/" class="nav-drawer-item"><i class="ph ph-graph"></i> Patterns</a>
     <a href="https://forgeprole.netlify.app/intel/" class="nav-drawer-item"><i class="ph ph-newspaper"></i> Intel</a>
     <a href="https://forgeprole.netlify.app/wingman/" class="nav-drawer-item"><i class="ph ph-robot"></i> Wingman AI</a>
+  </div>
+  <div class="nav-drawer-section">
+    <div class="nav-drawer-label">Vendor Guides</div>
+    <a href="#ch17" class="nav-drawer-item"><i class="ph ph-storefront"></i> Army UAS Marketplace</a>
   </div>
   <div class="nav-drawer-section">
     <div class="nav-drawer-label">Project</div>
