@@ -44,7 +44,11 @@
     "approx_price": 59.99,
     "schema_data": {
       "weight_g": 420
-    }
+    },
+    "cell_manufacturer": "Amprius Technologies",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "Lumenier NAV series uses Amprius SiCore/SiMaxx silicon-anode 18650/21700 cells. Amprius HQ in Fremont, CA; MWh-scale US manufacturing facility. GWh-scale contract manufacturing partnerships for overflow capacity. Highest known energy density of any commercial Li-ion cell line. Source: lumenier.com NAV product pages, amprius.com"
   },
   {
     "pid": "BAT-1001",
@@ -91,7 +95,11 @@
     "approx_price": 52,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "Amprius Technologies",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "Lumenier NAV series uses Amprius SiCore/SiMaxx silicon-anode 18650/21700 cells. Amprius HQ in Fremont, CA; MWh-scale US manufacturing facility. GWh-scale contract manufacturing partnerships for overflow capacity. Highest known energy density of any commercial Li-ion cell line. Source: lumenier.com NAV product pages, amprius.com"
   },
   {
     "pid": "BAT-1002",
@@ -138,7 +146,11 @@
     "approx_price": 52,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "Amprius Technologies",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "Lumenier NAV series uses Amprius SiCore/SiMaxx silicon-anode 18650/21700 cells. Amprius HQ in Fremont, CA; MWh-scale US manufacturing facility. GWh-scale contract manufacturing partnerships for overflow capacity. Highest known energy density of any commercial Li-ion cell line. Source: lumenier.com NAV product pages, amprius.com"
   },
   {
     "pid": "BAT-1003",
@@ -185,7 +197,11 @@
     "approx_price": 72,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Amprius Technologies",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "Lumenier NAV series uses Amprius SiCore/SiMaxx silicon-anode 18650/21700 cells. Amprius HQ in Fremont, CA; MWh-scale US manufacturing facility. GWh-scale contract manufacturing partnerships for overflow capacity. Highest known energy density of any commercial Li-ion cell line. Source: lumenier.com NAV product pages, amprius.com"
   },
   {
     "pid": "BAT-1004",
@@ -232,7 +248,11 @@
     "approx_price": 65,
     "schema_data": {
       "weight_g": 201
-    }
+    },
+    "cell_manufacturer": "Amprius Technologies",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "Lumenier NAV series uses Amprius SiCore/SiMaxx silicon-anode 18650/21700 cells. Amprius HQ in Fremont, CA; MWh-scale US manufacturing facility. GWh-scale contract manufacturing partnerships for overflow capacity. Highest known energy density of any commercial Li-ion cell line. Source: lumenier.com NAV product pages, amprius.com"
   },
   {
     "pid": "BAT-1005",
@@ -279,7 +299,11 @@
     "approx_price": 56,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "Amprius Technologies",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "Lumenier NAV series uses Amprius SiCore/SiMaxx silicon-anode 18650/21700 cells. Amprius HQ in Fremont, CA; MWh-scale US manufacturing facility. GWh-scale contract manufacturing partnerships for overflow capacity. Highest known energy density of any commercial Li-ion cell line. Source: lumenier.com NAV product pages, amprius.com"
   },
   {
     "pid": "BAT-1006",
@@ -326,7 +350,11 @@
     "approx_price": 70,
     "schema_data": {
       "weight_g": 197
-    }
+    },
+    "cell_manufacturer": "Amprius Technologies",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "Lumenier NAV series uses Amprius SiCore/SiMaxx silicon-anode 18650/21700 cells. Amprius HQ in Fremont, CA; MWh-scale US manufacturing facility. GWh-scale contract manufacturing partnerships for overflow capacity. Highest known energy density of any commercial Li-ion cell line. Source: lumenier.com NAV product pages, amprius.com"
   },
   {
     "pid": "BAT-1007",
@@ -373,7 +401,11 @@
     "approx_price": 79.99,
     "schema_data": {
       "weight_g": 580
-    }
+    },
+    "cell_manufacturer": "Amprius Technologies",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "Lumenier NAV series uses Amprius SiCore/SiMaxx silicon-anode 18650/21700 cells. Amprius HQ in Fremont, CA; MWh-scale US manufacturing facility. GWh-scale contract manufacturing partnerships for overflow capacity. Highest known energy density of any commercial Li-ion cell line. Source: lumenier.com NAV product pages, amprius.com"
   },
   {
     "pid": "BAT-1008",
@@ -421,7 +453,11 @@
     "approx_price": 29.99,
     "schema_data": {
       "weight_g": 175
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1009",
@@ -469,7 +505,11 @@
     "approx_price": 27.99,
     "schema_data": {
       "weight_g": 185
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "DOGCOM is a Chinese FPV battery brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1010",
@@ -517,7 +557,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 198
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "DOGCOM is a Chinese FPV battery brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1011",
@@ -565,7 +609,11 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 203
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "DOGCOM is a Chinese FPV battery brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1012",
@@ -612,7 +660,11 @@
     "approx_price": 62,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "RadioMaster is a Chinese RC brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1013",
@@ -660,7 +712,11 @@
     "approx_price": 74,
     "schema_data": {
       "weight_g": 207
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1014",
@@ -708,7 +764,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1015",
@@ -756,7 +816,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1016",
@@ -804,7 +868,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1017",
@@ -851,7 +919,11 @@
     "approx_price": 63,
     "schema_data": {
       "weight_g": 191
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1018",
@@ -898,7 +970,11 @@
     "approx_price": 54,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1019",
@@ -946,7 +1022,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1020",
@@ -993,7 +1073,11 @@
     "approx_price": 69.99,
     "schema_data": {
       "weight_g": 540
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1021",
@@ -1040,7 +1124,11 @@
     "approx_price": 52,
     "schema_data": {
       "weight_g": 198
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1022",
@@ -1087,7 +1175,11 @@
     "approx_price": 74,
     "schema_data": {
       "weight_g": 191
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1023",
@@ -1134,7 +1226,11 @@
     "approx_price": 56,
     "schema_data": {
       "weight_g": 204
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1024",
@@ -1182,7 +1278,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 203
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1025",
@@ -1230,7 +1330,11 @@
     "approx_price": 31,
     "schema_data": {
       "weight_g": 201
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1026",
@@ -1277,7 +1381,11 @@
     "approx_price": 61,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Auline is a Chinese FPV battery brand. Cells manufactured by unnamed Chinese OEM. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1027",
@@ -1325,7 +1433,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 204
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1028",
@@ -1373,7 +1485,11 @@
     "approx_price": 31,
     "schema_data": {
       "weight_g": 204
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1029",
@@ -1421,7 +1537,11 @@
     "approx_price": 69.99,
     "schema_data": {
       "weight_g": 650
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1030",
@@ -1469,7 +1589,11 @@
     "approx_price": 31,
     "schema_data": {
       "weight_g": 204
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1031",
@@ -1516,7 +1640,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "iFlight is a Chinese FPV brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1032",
@@ -1564,7 +1692,11 @@
     "approx_price": 20,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1033",
@@ -1612,7 +1744,11 @@
     "approx_price": 20,
     "schema_data": {
       "weight_g": 209
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1034",
@@ -1634,7 +1770,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 197
-    }
+    },
+    "cell_manufacturer": "DJI / Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "critical",
+    "cell_manufacturer_notes": "DJI is on the FCC Covered List (December 2025 expansion). DJI smart batteries use proprietary cells from undisclosed Chinese OEM suppliers. Critical risk: FCC Covered List entity, Jan 1 2027 firmware cliff applies. Source: FCC Covered List, dji.com"
   },
   {
     "pid": "BAT-1035",
@@ -1682,7 +1822,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 201
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1036",
@@ -1730,7 +1874,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 209
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1037",
@@ -1778,7 +1926,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 196
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1038",
@@ -1826,7 +1978,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 208
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1039",
@@ -1874,7 +2030,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1040",
@@ -1922,7 +2082,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 205
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1041",
@@ -1970,7 +2134,11 @@
     "approx_price": 23,
     "schema_data": {
       "weight_g": 207
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1042",
@@ -2018,7 +2186,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 205
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1043",
@@ -2066,7 +2238,11 @@
     "approx_price": 24,
     "schema_data": {
       "weight_g": 203
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1044",
@@ -2114,7 +2290,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 194
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1045",
@@ -2162,7 +2342,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1046",
@@ -2210,7 +2394,11 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 194
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1047",
@@ -2258,7 +2446,11 @@
     "approx_price": 34,
     "schema_data": {
       "weight_g": 207
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1048",
@@ -2306,7 +2498,11 @@
     "approx_price": 34,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Auline is a Chinese FPV battery brand. Cells manufactured by unnamed Chinese OEM. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1049",
@@ -2354,7 +2550,11 @@
     "approx_price": 32,
     "schema_data": {
       "weight_g": 201
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1050",
@@ -2402,7 +2602,11 @@
     "approx_price": 20,
     "schema_data": {
       "weight_g": 204
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1051",
@@ -2449,7 +2653,11 @@
     "approx_price": 74,
     "schema_data": {
       "weight_g": 202
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "GEPRC is a Chinese drone manufacturer. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1052",
@@ -2496,7 +2704,11 @@
     "approx_price": 60,
     "schema_data": {
       "weight_g": 208
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Auline is a Chinese FPV battery brand. Cells manufactured by unnamed Chinese OEM. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1053",
@@ -2543,7 +2755,11 @@
     "approx_price": 56,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Flywoo is a Chinese FPV brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1054",
@@ -2590,7 +2806,11 @@
     "approx_price": 64,
     "schema_data": {
       "weight_g": 204
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Auline is a Chinese FPV battery brand. Cells manufactured by unnamed Chinese OEM. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1055",
@@ -2637,7 +2857,11 @@
     "approx_price": 53,
     "schema_data": {
       "weight_g": 197
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "ZOHD is a Chinese fixed-wing/FPV brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1056",
@@ -2685,7 +2909,11 @@
     "approx_price": 20,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1057",
@@ -2733,7 +2961,11 @@
     "approx_price": 22,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1058",
@@ -2781,7 +3013,11 @@
     "approx_price": 32,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1059",
@@ -2828,7 +3064,11 @@
     "approx_price": 34,
     "schema_data": {
       "weight_g": 204
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1060",
@@ -2876,7 +3116,11 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1061",
@@ -2924,7 +3168,11 @@
     "approx_price": 15,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1062",
@@ -2972,7 +3220,11 @@
     "approx_price": 13,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1063",
@@ -3020,7 +3272,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 195
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1064",
@@ -3068,7 +3324,11 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 207
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1065",
@@ -3115,7 +3375,11 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 195
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1066",
@@ -3162,7 +3426,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 191
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1067",
@@ -3210,7 +3478,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 204
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1068",
@@ -3258,7 +3530,11 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 207
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1069",
@@ -3306,7 +3582,11 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1070",
@@ -3353,7 +3633,11 @@
     "approx_price": 23,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1071",
@@ -3400,7 +3684,11 @@
     "approx_price": 24,
     "schema_data": {
       "weight_g": 194
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1072",
@@ -3448,7 +3736,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 207
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1073",
@@ -3496,7 +3788,11 @@
     "approx_price": 18,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1074",
@@ -3544,7 +3840,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 194
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1075",
@@ -3592,7 +3892,11 @@
     "approx_price": 31,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1076",
@@ -3640,7 +3944,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 196
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1077",
@@ -3687,7 +3995,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1078",
@@ -3734,7 +4046,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 202
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1079",
@@ -3782,7 +4098,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 198
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1080",
@@ -3830,7 +4150,11 @@
     "approx_price": 22,
     "schema_data": {
       "weight_g": 196
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1081",
@@ -3878,7 +4202,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1082",
@@ -3926,7 +4254,11 @@
     "approx_price": 24,
     "schema_data": {
       "weight_g": 202
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1083",
@@ -3974,7 +4306,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1084",
@@ -4022,7 +4358,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1085",
@@ -4070,7 +4410,11 @@
     "approx_price": 32,
     "schema_data": {
       "weight_g": 196
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1086",
@@ -4118,7 +4462,11 @@
     "approx_price": 36,
     "schema_data": {
       "weight_g": 194
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1087",
@@ -4166,7 +4514,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1088",
@@ -4214,7 +4566,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1089",
@@ -4262,7 +4618,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1090",
@@ -4310,7 +4670,11 @@
     "approx_price": 34,
     "schema_data": {
       "weight_g": 195
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1091",
@@ -4358,7 +4722,11 @@
     "approx_price": 14,
     "schema_data": {
       "weight_g": 194
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1092",
@@ -4406,7 +4774,11 @@
     "approx_price": 20,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1093",
@@ -4454,7 +4826,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1094",
@@ -4502,7 +4878,11 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 195
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1095",
@@ -4550,7 +4930,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 191
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Flywoo is a Chinese FPV brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1096",
@@ -4597,7 +4981,11 @@
     "approx_price": 53,
     "schema_data": {
       "weight_g": 191
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Auline is a Chinese FPV battery brand. Cells manufactured by unnamed Chinese OEM. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1097",
@@ -4645,7 +5033,11 @@
     "approx_price": 14,
     "schema_data": {
       "weight_g": 207
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1098",
@@ -4693,7 +5085,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 209
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1099",
@@ -4741,7 +5137,11 @@
     "approx_price": 19,
     "schema_data": {
       "weight_g": 203
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1100",
@@ -4789,7 +5189,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 208
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1101",
@@ -4837,7 +5241,11 @@
     "approx_price": 20,
     "schema_data": {
       "weight_g": 195
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1102",
@@ -4885,7 +5293,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 191
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1103",
@@ -4932,7 +5344,11 @@
     "approx_price": 61,
     "schema_data": {
       "weight_g": 196
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Auline is a Chinese FPV battery brand. Cells manufactured by unnamed Chinese OEM. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1104",
@@ -4980,7 +5396,11 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 197
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1105",
@@ -5027,7 +5447,11 @@
     "approx_price": 54,
     "schema_data": {
       "weight_g": 205
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Auline is a Chinese FPV battery brand. Cells manufactured by unnamed Chinese OEM. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1106",
@@ -5075,7 +5499,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1107",
@@ -5123,7 +5551,11 @@
     "approx_price": 31,
     "schema_data": {
       "weight_g": 201
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1108",
@@ -5171,7 +5603,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1109",
@@ -5219,7 +5655,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 201
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1110",
@@ -5266,7 +5706,11 @@
     "approx_price": 59,
     "schema_data": {
       "weight_g": 205
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Auline is a Chinese FPV battery brand. Cells manufactured by unnamed Chinese OEM. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1111",
@@ -5313,7 +5757,11 @@
     "approx_price": 57,
     "schema_data": {
       "weight_g": 206
-    }
+    },
+    "cell_manufacturer": "Molicel (E-One Moli Energy Corp.)",
+    "cell_manufacturer_country": "Taiwan",
+    "cell_supply_chain_risk": "low",
+    "cell_manufacturer_notes": "Molicel cells (P42A, P50B, P45B) are manufactured by E-One Moli Energy Corp. in Taiwan. Allied nation — no NDAA exposure. P50B: 5000mAh, 60A continuous, 13.5mΩ impedance. P42A: 4200mAh, 45A continuous. Source: molicel.com product pages, becellenergy.com P50B spec"
   },
   {
     "pid": "BAT-1112",
@@ -5361,7 +5809,11 @@
     "approx_price": 32,
     "schema_data": {
       "weight_g": 205
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1113",
@@ -5409,7 +5861,11 @@
     "approx_price": 13,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1114",
@@ -5457,7 +5913,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 209
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1115",
@@ -5505,7 +5965,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 201
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1116",
@@ -5553,7 +6017,11 @@
     "approx_price": 36,
     "schema_data": {
       "weight_g": 196
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1117",
@@ -5601,7 +6069,11 @@
     "approx_price": 32,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1118",
@@ -5649,7 +6121,11 @@
     "approx_price": 22,
     "schema_data": {
       "weight_g": 207
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "BETAFPV is a Chinese micro drone brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1119",
@@ -5697,7 +6173,11 @@
     "approx_price": 34,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1120",
@@ -5745,7 +6225,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "ChinaHobbyLine (proprietary Chinese OEM)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "CNHL (China Hobby Line) manufactures LiPo packs in China with proprietary cells from unnamed Chinese OEM suppliers. Brand explicitly named 'China Hobby Line'. No allied-nation cell sourcing. Source: chinahobbyline.com"
   },
   {
     "pid": "BAT-1121",
@@ -5793,7 +6277,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 206
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1122",
@@ -5841,7 +6329,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 204
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1123",
@@ -5888,7 +6380,11 @@
     "approx_price": 62,
     "schema_data": {
       "weight_g": 205
-    }
+    },
+    "cell_manufacturer": "Molicel (E-One Moli Energy Corp.)",
+    "cell_manufacturer_country": "Taiwan",
+    "cell_supply_chain_risk": "low",
+    "cell_manufacturer_notes": "Molicel cells (P42A, P50B, P45B) are manufactured by E-One Moli Energy Corp. in Taiwan. Allied nation — no NDAA exposure. P50B: 5000mAh, 60A continuous, 13.5mΩ impedance. P42A: 4200mAh, 45A continuous. Source: molicel.com product pages, becellenergy.com P50B spec"
   },
   {
     "pid": "BAT-1124",
@@ -5936,7 +6432,11 @@
     "approx_price": 24,
     "schema_data": {
       "weight_g": 206
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1125",
@@ -5984,7 +6484,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1126",
@@ -6032,7 +6536,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1127",
@@ -6080,7 +6588,11 @@
     "approx_price": 32,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1128",
@@ -6128,7 +6640,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 198
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1129",
@@ -6176,7 +6692,11 @@
     "approx_price": 24,
     "schema_data": {
       "weight_g": 208
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1130",
@@ -6224,7 +6744,11 @@
     "approx_price": 34,
     "schema_data": {
       "weight_g": 203
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1131",
@@ -6272,7 +6796,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 194
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1132",
@@ -6320,7 +6848,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 198
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "DOGCOM is a Chinese FPV battery brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1133",
@@ -6368,7 +6900,11 @@
     "approx_price": 60,
     "schema_data": {
       "weight_g": 195
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Upgrade Energy is a Chinese UAV battery manufacturer. Cells from unnamed Chinese OEM suppliers. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1134",
@@ -6416,7 +6952,11 @@
     "approx_price": 64,
     "schema_data": {
       "weight_g": 203
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Upgrade Energy is a Chinese UAV battery manufacturer. Cells from unnamed Chinese OEM suppliers. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1135",
@@ -6464,7 +7004,11 @@
     "approx_price": 63,
     "schema_data": {
       "weight_g": 207
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Upgrade Energy is a Chinese UAV battery manufacturer. Cells from unnamed Chinese OEM suppliers. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1136",
@@ -6512,7 +7056,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 202
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Auline is a Chinese FPV battery brand. Cells manufactured by unnamed Chinese OEM. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1137",
@@ -6560,7 +7108,11 @@
     "approx_price": 56,
     "schema_data": {
       "weight_g": 206
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Upgrade Energy is a Chinese UAV battery manufacturer. Cells from unnamed Chinese OEM suppliers. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1138",
@@ -6608,7 +7160,11 @@
     "approx_price": 60,
     "schema_data": {
       "weight_g": 205
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Upgrade Energy is a Chinese UAV battery manufacturer. Cells from unnamed Chinese OEM suppliers. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1139",
@@ -6656,7 +7212,11 @@
     "approx_price": 57,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Upgrade Energy is a Chinese UAV battery manufacturer. Cells from unnamed Chinese OEM suppliers. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1140",
@@ -6704,7 +7264,11 @@
     "approx_price": 58,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Upgrade Energy is a Chinese UAV battery manufacturer. Cells from unnamed Chinese OEM suppliers. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1141",
@@ -6752,7 +7316,11 @@
     "approx_price": 61,
     "schema_data": {
       "weight_g": 202
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Upgrade Energy is a Chinese UAV battery manufacturer. Cells from unnamed Chinese OEM suppliers. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1142",
@@ -6800,7 +7368,11 @@
     "approx_price": 63,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Upgrade Energy is a Chinese UAV battery manufacturer. Cells from unnamed Chinese OEM suppliers. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1143",
@@ -6847,7 +7419,11 @@
     "approx_price": 31,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "iFlight is a Chinese FPV brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1144",
@@ -6895,7 +7471,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Flywoo is a Chinese FPV brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1145",
@@ -6943,7 +7523,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1146",
@@ -6980,7 +7564,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 209
-    }
+    },
+    "cell_manufacturer": "DJI / Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "critical",
+    "cell_manufacturer_notes": "DJI is on the FCC Covered List (December 2025 expansion). DJI smart batteries use proprietary cells from undisclosed Chinese OEM suppliers. Critical risk: FCC Covered List entity, Jan 1 2027 firmware cliff applies. Source: FCC Covered List, dji.com"
   },
   {
     "pid": "BAT-1147",
@@ -7028,7 +7616,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 208
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "HGLRC is a Chinese FPV brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1148",
@@ -7076,7 +7668,11 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1149",
@@ -7124,7 +7720,11 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 209
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Auline is a Chinese FPV battery brand. Cells manufactured by unnamed Chinese OEM. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1150",
@@ -7172,7 +7772,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 197
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1151",
@@ -7220,7 +7824,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 209
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1152",
@@ -7267,7 +7875,11 @@
     "approx_price": 60,
     "schema_data": {
       "weight_g": 196
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "GEPRC is a Chinese drone manufacturer. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1153",
@@ -7314,7 +7926,11 @@
     "approx_price": 56,
     "schema_data": {
       "weight_g": 208
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "ZOHD is a Chinese fixed-wing/FPV brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1154",
@@ -7361,7 +7977,11 @@
     "approx_price": 60,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "ZOHD is a Chinese fixed-wing/FPV brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1155",
@@ -7409,7 +8029,11 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 195
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "BETAFPV is a Chinese micro drone brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1156",
@@ -7457,7 +8081,11 @@
     "approx_price": 32,
     "schema_data": {
       "weight_g": 194
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "BETAFPV is a Chinese micro drone brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1157",
@@ -7505,7 +8133,11 @@
     "approx_price": 32,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Thunder Power RC (assembled USA, cells China/unspecified)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "medium",
+    "cell_manufacturer_notes": "Thunder Power RC markets packs as 'assembled in USA'. Founded 2011 in Taiwan; production plant in Guangzhou completed 2017; also has plants in Hangzhou, China and Catalonia, Spain. Cell chemistry is proprietary; underlying cells are from Chinese or unspecified OEM suppliers. Assembly in USA does not equal domestic cells. Source: thunderpowerrc.com, Wikipedia (Thunder Power), helifreak forum"
   },
   {
     "pid": "BAT-1158",
@@ -7553,7 +8185,11 @@
     "approx_price": 31,
     "schema_data": {
       "weight_g": 198
-    }
+    },
+    "cell_manufacturer": "Thunder Power RC (assembled USA, cells China/unspecified)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "medium",
+    "cell_manufacturer_notes": "Thunder Power RC markets packs as 'assembled in USA'. Founded 2011 in Taiwan; production plant in Guangzhou completed 2017; also has plants in Hangzhou, China and Catalonia, Spain. Cell chemistry is proprietary; underlying cells are from Chinese or unspecified OEM suppliers. Assembly in USA does not equal domestic cells. Source: thunderpowerrc.com, Wikipedia (Thunder Power), helifreak forum"
   },
   {
     "pid": "BAT-1159",
@@ -7600,7 +8236,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "Thunder Power RC (assembled USA, cells China/unspecified)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "medium",
+    "cell_manufacturer_notes": "Thunder Power RC markets packs as 'assembled in USA'. Founded 2011 in Taiwan; production plant in Guangzhou completed 2017; also has plants in Hangzhou, China and Catalonia, Spain. Cell chemistry is proprietary; underlying cells are from Chinese or unspecified OEM suppliers. Assembly in USA does not equal domestic cells. Source: thunderpowerrc.com, Wikipedia (Thunder Power), helifreak forum"
   },
   {
     "pid": "BAT-1160",
@@ -7647,7 +8287,11 @@
     "approx_price": 58,
     "schema_data": {
       "weight_g": 198
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "ZOHD is a Chinese fixed-wing/FPV brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1161",
@@ -7695,7 +8339,11 @@
     "approx_price": 34,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1162",
@@ -7743,7 +8391,11 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1163",
@@ -7791,7 +8443,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 207
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "AHTECH is a Chinese battery brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1164",
@@ -7839,7 +8495,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1165",
@@ -7887,7 +8547,11 @@
     "approx_price": 14,
     "schema_data": {
       "weight_g": 209
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1166",
@@ -7935,7 +8599,11 @@
     "approx_price": 24,
     "schema_data": {
       "weight_g": 196
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "AHTECH is a Chinese battery brand. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1167",
@@ -7983,7 +8651,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 205
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1168",
@@ -8031,7 +8703,11 @@
     "approx_price": 24,
     "schema_data": {
       "weight_g": 198
-    }
+    },
+    "cell_manufacturer": "Thunder Power RC (assembled USA, cells China/unspecified)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "medium",
+    "cell_manufacturer_notes": "Thunder Power RC markets packs as 'assembled in USA'. Founded 2011 in Taiwan; production plant in Guangzhou completed 2017; also has plants in Hangzhou, China and Catalonia, Spain. Cell chemistry is proprietary; underlying cells are from Chinese or unspecified OEM suppliers. Assembly in USA does not equal domestic cells. Source: thunderpowerrc.com, Wikipedia (Thunder Power), helifreak forum"
   },
   {
     "pid": "BAT-1169",
@@ -8079,7 +8755,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 208
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1170",
@@ -8127,7 +8807,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "XILO is a US-marketed FPV brand (sold via GetFPV/Lumenier ecosystem). LiPo cells sourced from unnamed Chinese OEM suppliers. No domestic or allied cell sourcing disclosed. Source: getfpv.com XILO product pages"
   },
   {
     "pid": "BAT-1171",
@@ -8152,7 +8836,11 @@
     "approx_price": 23,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "NewBeeDrone is a US-branded FPV brand. LiPo cells sourced from unnamed Chinese OEM suppliers. US brand does not equal domestic cell manufacturing."
   },
   {
     "pid": "BAT-1172",
@@ -8177,7 +8865,11 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "NewBeeDrone is a US-branded FPV brand. LiPo cells sourced from unnamed Chinese OEM suppliers. US brand does not equal domestic cell manufacturing."
   },
   {
     "pid": "BAT-1173",
@@ -8202,7 +8894,11 @@
     "approx_price": 34,
     "schema_data": {
       "weight_g": 201
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "NewBeeDrone is a US-branded FPV brand. LiPo cells sourced from unnamed Chinese OEM suppliers. US brand does not equal domestic cell manufacturing."
   },
   {
     "pid": "BAT-1174",
@@ -8227,7 +8923,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "NewBeeDrone is a US-branded FPV brand. LiPo cells sourced from unnamed Chinese OEM suppliers. US brand does not equal domestic cell manufacturing."
   },
   {
     "pid": "BAT-1175",
@@ -8275,7 +8975,11 @@
     "approx_price": 22,
     "schema_data": {
       "weight_g": 201
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1176",
@@ -8323,7 +9027,11 @@
     "approx_price": 15,
     "schema_data": {
       "weight_g": 208
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1177",
@@ -8371,7 +9079,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 203
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1178",
@@ -8418,7 +9130,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 191
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1179",
@@ -8466,7 +9182,11 @@
     "approx_price": 31,
     "schema_data": {
       "weight_g": 197
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1180",
@@ -8514,7 +9234,11 @@
     "approx_price": 23,
     "schema_data": {
       "weight_g": 204
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1181",
@@ -8562,7 +9286,11 @@
     "approx_price": 31,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1182",
@@ -8610,7 +9338,11 @@
     "approx_price": 34,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1183",
@@ -8658,7 +9390,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 201
-    }
+    },
+    "cell_manufacturer": "Thunder Power RC (assembled USA, cells China/unspecified)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "medium",
+    "cell_manufacturer_notes": "Thunder Power RC markets packs as 'assembled in USA'. Founded 2011 in Taiwan; production plant in Guangzhou completed 2017; also has plants in Hangzhou, China and Catalonia, Spain. Cell chemistry is proprietary; underlying cells are from Chinese or unspecified OEM suppliers. Assembly in USA does not equal domestic cells. Source: thunderpowerrc.com, Wikipedia (Thunder Power), helifreak forum"
   },
   {
     "pid": "BAT-1184",
@@ -8706,7 +9442,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 195
-    }
+    },
+    "cell_manufacturer": "Thunder Power RC (assembled USA, cells China/unspecified)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "medium",
+    "cell_manufacturer_notes": "Thunder Power RC markets packs as 'assembled in USA'. Founded 2011 in Taiwan; production plant in Guangzhou completed 2017; also has plants in Hangzhou, China and Catalonia, Spain. Cell chemistry is proprietary; underlying cells are from Chinese or unspecified OEM suppliers. Assembly in USA does not equal domestic cells. Source: thunderpowerrc.com, Wikipedia (Thunder Power), helifreak forum"
   },
   {
     "pid": "BAT-1185",
@@ -8754,7 +9494,11 @@
     "approx_price": 34,
     "schema_data": {
       "weight_g": 197
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1186",
@@ -8802,7 +9546,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 208
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1187",
@@ -8850,7 +9598,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1188",
@@ -8898,7 +9650,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 201
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1189",
@@ -8945,7 +9701,11 @@
     "approx_price": 59,
     "schema_data": {
       "weight_g": 198
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Auline is a Chinese FPV battery brand. Cells manufactured by unnamed Chinese OEM. No allied-nation cell sourcing disclosed."
   },
   {
     "pid": "BAT-1190",
@@ -8993,7 +9753,11 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 191
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1191",
@@ -9041,7 +9805,11 @@
     "approx_price": 22,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1192",
@@ -9089,7 +9857,11 @@
     "approx_price": 24,
     "schema_data": {
       "weight_g": 206
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1193",
@@ -9137,7 +9909,11 @@
     "approx_price": 31,
     "schema_data": {
       "weight_g": 195
-    }
+    },
+    "cell_manufacturer": "Thunder Power RC (assembled USA, cells China/unspecified)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "medium",
+    "cell_manufacturer_notes": "Thunder Power RC markets packs as 'assembled in USA'. Founded 2011 in Taiwan; production plant in Guangzhou completed 2017; also has plants in Hangzhou, China and Catalonia, Spain. Cell chemistry is proprietary; underlying cells are from Chinese or unspecified OEM suppliers. Assembly in USA does not equal domestic cells. Source: thunderpowerrc.com, Wikipedia (Thunder Power), helifreak forum"
   },
   {
     "pid": "BAT-1194",
@@ -9185,7 +9961,11 @@
     "approx_price": 28,
     "schema_data": {
       "weight_g": 195
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1195",
@@ -9233,7 +10013,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 198
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1196",
@@ -9281,7 +10065,11 @@
     "approx_price": 36,
     "schema_data": {
       "weight_g": 203
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1197",
@@ -9329,7 +10117,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1198",
@@ -9377,7 +10169,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 190
-    }
+    },
+    "cell_manufacturer": "Grepow (Shenzhen Grepow Battery Co., Ltd.)",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Tattu is a sub-brand of Grepow, founded 2012. Grepow manufactures cells and packs entirely in Shenzhen, China. Grepow annual revenue ~RMB 2.2B; drone power ~30% of revenue. No NDAA-compliant cell sourcing disclosed. Source: genstattu.com/about-us, grepow.com/brands/tattu.html"
   },
   {
     "pid": "BAT-1199",
@@ -9425,7 +10221,11 @@
     "approx_price": 21,
     "schema_data": {
       "weight_g": 192
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1200",
@@ -9473,7 +10273,11 @@
     "approx_price": 29,
     "schema_data": {
       "weight_g": 209
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1201",
@@ -9521,7 +10325,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 197
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "Lumenier LiPo packs (N2O, CineLifter, standard series) use cells from unnamed Chinese OEM suppliers. Lumenier is a US brand (GetFPV) but LiPo cell sourcing is not disclosed and is presumed Chinese OEM per industry-standard LiPo supply chain practices. Source: lumenier.com product descriptions (no cell mfr listed)"
   },
   {
     "pid": "BAT-1202",
@@ -9568,7 +10376,11 @@
     "approx_price": 64,
     "schema_data": {
       "weight_g": 206
-    }
+    },
+    "cell_manufacturer": "Unknown Chinese OEM",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "GEPRC is a Chinese drone manufacturer. Cells from unnamed Chinese OEM."
   },
   {
     "pid": "BAT-1300",
@@ -9611,7 +10423,11 @@
     "approx_price": 60,
     "schema_data": {
       "weight_g": 206
-    }
+    },
+    "cell_manufacturer": "Molicel (E-One Moli Energy Corp.)",
+    "cell_manufacturer_country": "Taiwan",
+    "cell_supply_chain_risk": "low",
+    "cell_manufacturer_notes": "Molicel cells (P42A, P50B, P45B) are manufactured by E-One Moli Energy Corp. in Taiwan. Allied nation — no NDAA exposure. P50B: 5000mAh, 60A continuous, 13.5mΩ impedance. P42A: 4200mAh, 45A continuous. Source: molicel.com product pages, becellenergy.com P50B spec"
   },
   {
     "pid": "BAT-1301",
@@ -9653,7 +10469,11 @@
     "approx_price": 60,
     "schema_data": {
       "weight_g": 206
-    }
+    },
+    "cell_manufacturer": "Molicel (E-One Moli Energy Corp.)",
+    "cell_manufacturer_country": "Taiwan",
+    "cell_supply_chain_risk": "low",
+    "cell_manufacturer_notes": "Molicel cells (P42A, P50B, P45B) are manufactured by E-One Moli Energy Corp. in Taiwan. Allied nation — no NDAA exposure. P50B: 5000mAh, 60A continuous, 13.5mΩ impedance. P42A: 4200mAh, 45A continuous. Source: molicel.com product pages, becellenergy.com P50B spec"
   },
   {
     "pid": "BAT-1302",
@@ -9692,7 +10512,11 @@
     "approx_price": 61,
     "schema_data": {
       "weight_g": 206
-    }
+    },
+    "cell_manufacturer": "Molicel (E-One Moli Energy Corp.)",
+    "cell_manufacturer_country": "Taiwan",
+    "cell_supply_chain_risk": "low",
+    "cell_manufacturer_notes": "Molicel cells (P42A, P50B, P45B) are manufactured by E-One Moli Energy Corp. in Taiwan. Allied nation — no NDAA exposure. P50B: 5000mAh, 60A continuous, 13.5mΩ impedance. P42A: 4200mAh, 45A continuous. Source: molicel.com product pages, becellenergy.com P50B spec"
   },
   {
     "pid": "BAT-1303",
@@ -9732,7 +10556,11 @@
     "approx_price": 52,
     "schema_data": {
       "weight_g": 199
-    }
+    },
+    "cell_manufacturer": "Samsung SDI Co., Ltd.",
+    "cell_manufacturer_country": "South Korea",
+    "cell_supply_chain_risk": "low",
+    "cell_manufacturer_notes": "Samsung SDI 21700 cells (50E, 50S) manufactured in South Korea. Some production also in China/Malaysia per spec sheet footnotes. South Korea is an allied nation; primary manufacturing is South Korea. Source: Samsung SDI INR21700-50E spec sheet, aboutenergy.io"
   },
   {
     "pid": "BAT-1304",
@@ -9772,7 +10600,11 @@
     "approx_price": 63,
     "schema_data": {
       "weight_g": 206
-    }
+    },
+    "cell_manufacturer": "Samsung SDI Co., Ltd.",
+    "cell_manufacturer_country": "South Korea",
+    "cell_supply_chain_risk": "low",
+    "cell_manufacturer_notes": "Samsung SDI 21700 cells (50E, 50S) manufactured in South Korea. Some production also in China/Malaysia per spec sheet footnotes. South Korea is an allied nation; primary manufacturing is South Korea. Source: Samsung SDI INR21700-50E spec sheet, aboutenergy.io"
   },
   {
     "pid": "BAT-1305",
@@ -9812,7 +10644,11 @@
     "approx_price": 58,
     "schema_data": {
       "weight_g": 197
-    }
+    },
+    "cell_manufacturer": "LG Energy Solution Ltd.",
+    "cell_manufacturer_country": "South Korea",
+    "cell_supply_chain_risk": "low",
+    "cell_manufacturer_notes": "LG Energy Solution is a South Korean cell manufacturer (spun off from LG Chem 2020). Allied nation — no NDAA exposure. Cylindrical cells used in EV and drone applications."
   },
   {
     "pid": "BAT-1306",
@@ -9844,7 +10680,7 @@
       "bae_systems",
       "un38.3"
     ],
-    "country": "United States",
+    "country": "USA",
     "compliance": {
       "blue_uas": false,
       "ndaa_compliant": true,
@@ -9854,7 +10690,11 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 197
-    }
+    },
+    "cell_manufacturer": "Amprius Technologies",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "Amprius manufactures silicon-anode Li-Ion cells (SiMaxx, SiCore). HQ and MWh-scale facility in Fremont, CA. GWh-scale Colorado facility in development. US domestic manufacturer — highest supply chain cleanliness. Source: amprius.com"
   },
   {
     "pid": "BAT-1307",
@@ -9884,7 +10724,7 @@
       "next_gen",
       "military_aerospace"
     ],
-    "country": "United States",
+    "country": "USA",
     "compliance": {
       "blue_uas": false,
       "ndaa_compliant": true,
@@ -9894,7 +10734,11 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 204
-    }
+    },
+    "cell_manufacturer": "Amprius Technologies",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "Amprius manufactures silicon-anode Li-Ion cells (SiMaxx, SiCore). HQ and MWh-scale facility in Fremont, CA. GWh-scale Colorado facility in development. US domestic manufacturer — highest supply chain cleanliness. Source: amprius.com"
   },
   {
     "pid": "BAT-1308",
@@ -9926,7 +10770,7 @@
       "molicel_p50b",
       "texas_mfg"
     ],
-    "country": "United States",
+    "country": "USA",
     "compliance": {
       "blue_uas": false,
       "ndaa_compliant": true,
@@ -9936,7 +10780,11 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 208
-    }
+    },
+    "cell_manufacturer": "KULR Technology Group / Samsung SDI",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "low",
+    "cell_manufacturer_notes": "KULR Technology is a US company (San Diego, CA) specializing in thermal management and battery safety solutions. KULR packs typically use Samsung SDI or other allied-nation cells. US integrator with non-Chinese cell sourcing."
   },
   {
     "pid": "BAT-1309",
@@ -9966,7 +10814,7 @@
       "global_hawk_first",
       "mil_spec"
     ],
-    "country": "United States",
+    "country": "USA",
     "compliance": {
       "blue_uas": false,
       "ndaa_compliant": true,
@@ -9976,7 +10824,11 @@
     "approx_price": 56,
     "schema_data": {
       "weight_g": 194
-    }
+    },
+    "cell_manufacturer": "EaglePicher Technologies, LLC",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "EaglePicher is a US defense battery manufacturer (Joplin, MO). Specializes in primary and rechargeable batteries for defense/aerospace. US domestic manufacturer — full NDAA compliance pathway."
   },
   {
     "pid": "BAT-1310",
@@ -10016,7 +10868,11 @@
     "approx_price": 30,
     "schema_data": {
       "weight_g": 193
-    }
+    },
+    "cell_manufacturer": "Epsilor-Electric Fuel Ltd.",
+    "cell_manufacturer_country": "Israel",
+    "cell_supply_chain_risk": "low",
+    "cell_manufacturer_notes": "Epsilor is an Israeli defense battery manufacturer. Allied nation supplier — no NDAA exposure. Specializes in military-grade LiPo and Li-Ion systems."
   },
   {
     "pid": "BAT-1311",
@@ -10056,7 +10912,11 @@
     "approx_price": 26,
     "schema_data": {
       "weight_g": 205
-    }
+    },
+    "cell_manufacturer": "Unknown OEM (Ukraine)",
+    "cell_manufacturer_country": "Ukraine",
+    "cell_supply_chain_risk": "low",
+    "cell_manufacturer_notes": "DP Battery is a Ukrainian battery manufacturer/assembler. Allied nation — no NDAA exposure. Cell origin not fully disclosed; likely European OEM sourcing."
   },
   {
     "pid": "BAT-1312",
@@ -10087,7 +10947,7 @@
       "northvolt_assets",
       "next_gen"
     ],
-    "country": "United States",
+    "country": "USA",
     "compliance": {
       "blue_uas": false,
       "ndaa_compliant": true,
@@ -10097,7 +10957,11 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 195
-    }
+    },
+    "cell_manufacturer": "Lyten, Inc.",
+    "cell_manufacturer_country": "United States",
+    "cell_supply_chain_risk": "clean",
+    "cell_manufacturer_notes": "Lyten manufactures Lithium-Sulfur cells in San Jose, CA. US domestic manufacturer — novel chemistry (Li-S), significantly higher energy density than LiPo at lower weight. Defense-focused; AFRL and DoD program participant."
   },
   {
     "pid": "BAT-1313",
@@ -10138,6 +11002,10 @@
     "approx_price": 59,
     "schema_data": {
       "weight_g": 198
-    }
+    },
+    "cell_manufacturer": "EVE Energy Co., Ltd.",
+    "cell_manufacturer_country": "China",
+    "cell_supply_chain_risk": "high",
+    "cell_manufacturer_notes": "EVE Energy is a Chinese cell manufacturer (Huizhou, China). Cylindrical Li-Ion cells for UAV and industrial applications. No NDAA-compliant sourcing pathway."
   }
 ]
