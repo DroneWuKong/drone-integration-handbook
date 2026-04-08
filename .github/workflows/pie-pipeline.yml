@@ -128,6 +128,12 @@ jobs:
           FORGE_SRC="DroneClear Components Visualizer"
           cp data/flags.json "/tmp/forge/${FORGE_SRC}/pie_flags.json"
           cp data/predictions.json "/tmp/forge/${FORGE_SRC}/pie_predictions.json"
+
+          # Sync solicitations data if it exists
+          if [ -f "data/procurement/solicitations.json" ]; then
+            cp data/procurement/solicitations.json "/tmp/forge/${FORGE_SRC}/solicitations.json"
+            echo "  ✓ solicitations.json synced"
+          fi
           
           # Merge followup flags with proper schema mapping
           if [ -f "data/grayzone/followup_flags.json" ]; then
@@ -147,7 +153,8 @@ jobs:
           else
             FLAGS=$(python3 -c "import json; print(len(json.load(open('${FORGE_SRC}/pie_flags.json'))))")
             PREDS=$(python3 -c "import json; print(len(json.load(open('${FORGE_SRC}/pie_predictions.json'))))")
-            git commit -m "🔍 PIE sync: ${FLAGS} flags, ${PREDS} predictions | $(date -u '+%Y-%m-%d %H:%M UTC')"
+            SOLS=$(python3 -c "import json,os; d='/tmp/forge/${FORGE_SRC}/solicitations.json'; print(json.load(open(d))['meta']['total_solicitations'] if os.path.exists(d) else 0)" 2>/dev/null || echo 0)
+            git commit -m "🔍 PIE sync: ${FLAGS} flags, ${PREDS} predictions, ${SOLS} solicitations | $(date -u '+%Y-%m-%d %H:%M UTC')"
             git pull --rebase origin main || git pull --rebase origin master
             git push
             echo "✓ Forge repo updated — Netlify will redeploy"
