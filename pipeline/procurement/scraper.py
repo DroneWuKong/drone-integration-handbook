@@ -658,28 +658,51 @@ def main():
         print(f"\n[4] Google News RSS — State/Local Procurement Signals")
         news_articles = NewsScraper().run()
 
+    # ── Cache fallback: if a live scraper returned 0 results, load from last cache ──
+    # This prevents solicitations.json from being built with missing sources
+    # when a scraper fails silently (network blip, API rate limit, missing key).
+    def _load_cache(filename, key):
+        path = PROCUREMENT_DIR / filename
+        if path.exists():
+            try:
+                with open(path) as f:
+                    data = json.load(f)
+                cached = data.get(key, [])
+                print(f"  ↩ {filename}: loaded {len(cached)} cached records (live returned 0)")
+                return cached
+            except Exception as e:
+                print(f"  ↩ {filename}: cache load failed — {e}")
+        return []
+
+    if not usa_awards and run_federal:
+        usa_awards = _load_cache("federal_awards.json", "awards")
+    if not sam_opps and run_sam:
+        sam_opps = _load_cache("sam_opportunities.json", "opportunities")
+    if not sbir_awards and run_sbir:
+        sbir_awards = _load_cache("sbir_awards.json", "awards")
+    if not news_articles and run_news:
+        news_articles = _load_cache("news_signals.json", "articles")
+
     print(f"\n[5] Building unified solicitations.json...")
     sol_data = build_solicitations_json(usa_awards, sam_opps, sbir_awards, news_articles)
     unified  = sol_data["solicitations"]
     gz_data  = build_gray_zone_matches(unified)
 
     if not args.dry_run:
+        # Always write solicitations.json and gray_zone_matches.json
         with open(PROCUREMENT_DIR / "solicitations.json", "w") as f:
             json.dump(sol_data, f, indent=2)
         with open(PROCUREMENT_DIR / "gray_zone_matches.json", "w") as f:
             json.dump(gz_data, f, indent=2)
-        if usa_awards:
-            with open(PROCUREMENT_DIR / "federal_awards.json", "w") as f:
-                json.dump({"awards": usa_awards, "scraped_at": now_iso, "count": len(usa_awards)}, f, indent=2)
-        if sam_opps:
-            with open(PROCUREMENT_DIR / "sam_opportunities.json", "w") as f:
-                json.dump({"opportunities": sam_opps, "scraped_at": now_iso}, f, indent=2)
-        if sbir_awards:
-            with open(PROCUREMENT_DIR / "sbir_awards.json", "w") as f:
-                json.dump({"awards": sbir_awards, "scraped_at": now_iso, "count": len(sbir_awards)}, f, indent=2)
-        if news_articles:
-            with open(PROCUREMENT_DIR / "news_signals.json", "w") as f:
-                json.dump({"articles": news_articles, "scraped_at": now_iso, "count": len(news_articles)}, f, indent=2)
+        # Write per-source caches — always, even if empty (so cache is current)
+        with open(PROCUREMENT_DIR / "federal_awards.json", "w") as f:
+            json.dump({"awards": usa_awards, "scraped_at": now_iso, "count": len(usa_awards)}, f, indent=2)
+        with open(PROCUREMENT_DIR / "sam_opportunities.json", "w") as f:
+            json.dump({"opportunities": sam_opps, "scraped_at": now_iso, "count": len(sam_opps)}, f, indent=2)
+        with open(PROCUREMENT_DIR / "sbir_awards.json", "w") as f:
+            json.dump({"awards": sbir_awards, "scraped_at": now_iso, "count": len(sbir_awards)}, f, indent=2)
+        with open(PROCUREMENT_DIR / "news_signals.json", "w") as f:
+            json.dump({"articles": news_articles, "scraped_at": now_iso, "count": len(news_articles)}, f, indent=2)
 
     m = sol_data["meta"]
     print(f"\n{'=' * 65}")
