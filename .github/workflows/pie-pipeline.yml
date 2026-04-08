@@ -169,10 +169,25 @@ jobs:
           
           if [ -f "data/briefs/$(date -u +%Y-%m-%d).json" ]; then
             echo "✓ Brief generated"
-            # Include brief in Forge sync
             BRIEF_DATE=$(date -u +%Y-%m-%d)
-            cp "data/briefs/${BRIEF_DATE}.json" /tmp/forge/"DroneClear Components Visualizer/pie_brief.json" 2>/dev/null || true
-            cp "data/briefs/${BRIEF_DATE}.md"   /tmp/forge/"DroneClear Components Visualizer/pie_brief.md"   2>/dev/null || true
+            # Copy brief to Forge and push
+            if [ -d "/tmp/forge" ]; then
+              cp "data/briefs/${BRIEF_DATE}.json" "/tmp/forge/DroneClear Components Visualizer/pie_brief.json"
+              cp "data/briefs/${BRIEF_DATE}.md"   "/tmp/forge/DroneClear Components Visualizer/pie_brief.md" 2>/dev/null || true
+              cd /tmp/forge
+              git add -A
+              if ! git diff --staged --quiet; then
+                git commit -m "📋 PIE Brief: ${BRIEF_DATE} | $(date -u '+%H:%M UTC')"
+                git pull --rebase origin main || git pull --rebase origin master
+                git push
+                echo "✓ Brief synced to Forge"
+              else
+                echo "Brief unchanged in Forge"
+              fi
+              cd -
+            else
+              echo "⚠ /tmp/forge not found — brief not synced to Forge"
+            fi
           else
             echo "⚠ Brief generation skipped (ANTHROPIC_API_KEY may not be set)"
           fi
