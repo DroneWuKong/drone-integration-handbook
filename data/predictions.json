@@ -46,14 +46,14 @@
       "AeroVironment Switchblade 600 production ramp",
       "Ukraine USAI packages \u2014 6-week lag correlation with Boson lead times"
     ],
-    "last_updated": "2026-04-08T19:13:16.298099+00:00"
+    "last_updated": "2026-04-08T20:19:09.895674+00:00"
   },
   {
     "id": "pred-a34e22bc2e",
     "timeframe": "Q3 2026",
     "event": "Jetson Orin NX goes allocation-only for defense (13 boards in Forge DB at risk)",
-    "probability": 0.8151030927835052,
-    "confidence": 0.7759999999999999,
+    "probability": 0.8150901287553649,
+    "confidence": 0.7766666666666667,
     "impact": "critical",
     "model": "ensemble:concentration_risk(0.45) + contract_signal(0.35) + cross_correlation(0.20)",
     "model_outputs": [
@@ -80,10 +80,10 @@
       {
         "model": "cross_correlation",
         "probability": 0.8,
-        "confidence": 0.863,
-        "signal_count": 169,
+        "confidence": 0.865,
+        "signal_count": 170,
         "drivers": [
-          "130 trigger \u00d7 39 outcome flags (lag ~8w)",
+          "131 trigger \u00d7 39 outcome flags (lag ~8w)",
           "Correlation score: 1.000"
         ]
       }
@@ -91,11 +91,11 @@
     "drivers": [
       "16/25 companion_computers use target vendor(s) (64% concentration)",
       "20 contract/procurement flags matched",
-      "130 trigger \u00d7 39 outcome flags (lag ~8w)",
+      "131 trigger \u00d7 39 outcome flags (lag ~8w)",
       "91 Blue UAS platforms scaling simultaneously",
       "13 companion boards depend on Jetson silicon"
     ],
-    "last_updated": "2026-04-08T19:13:16.298099+00:00"
+    "last_updated": "2026-04-08T20:19:09.895674+00:00"
   },
   {
     "id": "pred-f2c389bd49",
@@ -144,7 +144,58 @@
       "Only 5/29 mesh radios are NDAA-tagged in Forge DB",
       "Doodle Labs + Silvus dominate Blue UAS mesh \u2014 duopoly concentration risk"
     ],
-    "last_updated": "2026-04-08T19:13:16.298099+00:00"
+    "last_updated": "2026-04-08T20:19:09.895674+00:00"
+  },
+  {
+    "id": "pred-1ee66f74a7",
+    "timeframe": "Jan 2027",
+    "event": "FCC firmware cliff \u2014 3 simultaneous deadlines ground uncertified gray zone drones",
+    "probability": 0.8007220216606498,
+    "confidence": 0.9233333333333333,
+    "impact": "critical",
+    "model": "ensemble:regulatory_progression(0.45) + grayzone_escalation(0.30) + cross_correlation(0.25)",
+    "model_outputs": [
+      {
+        "model": "regulatory_progression",
+        "probability": 0.65,
+        "confidence": 0.875,
+        "signal_count": 8,
+        "drivers": [
+          "8 regulatory/compliance flags matched",
+          "Mean stage score: 0.25"
+        ]
+      },
+      {
+        "model": "grayzone_escalation",
+        "probability": 0.799,
+        "confidence": 1.0,
+        "signal_count": 39,
+        "drivers": [
+          "4 entity(ies): avg composite score 0.673",
+          "39 gray zone flags, 1 legal action flags",
+          "Risk levels: ['CRITICAL', 'HIGH', 'CRITICAL', 'HIGH']"
+        ]
+      },
+      {
+        "model": "cross_correlation",
+        "probability": 0.95,
+        "confidence": 0.895,
+        "signal_count": 37,
+        "drivers": [
+          "10 trigger \u00d7 27 outcome flags (lag ~0w)",
+          "Correlation score: 1.000"
+        ]
+      }
+    ],
+    "drivers": [
+      "8 regulatory/compliance flags matched",
+      "4 entity(ies): avg composite score 0.673",
+      "10 trigger \u00d7 27 outcome flags (lag ~0w)",
+      "FCC Conditional Approval: 3 deadlines converge Jan 1 2027",
+      "OR/NASAO: 467 drones grounded across 25 states \u2014 $50M\u2013$2B exposure",
+      "FAA ASSURE: DJI = 96% of detected US drone platforms"
+    ],
+    "last_updated": "2026-04-08T20:19:09.895674+00:00"
   },
   {
     "id": "pred-506c001479",
@@ -182,65 +233,14 @@
       "5 companion computers use QRB5165 in Forge DB",
       "ModalAI next-gen roadmap (VOXL 3 expected 2026\u20132027)"
     ],
-    "last_updated": "2026-04-08T19:13:16.298099+00:00"
-  },
-  {
-    "id": "pred-1ee66f74a7",
-    "timeframe": "Jan 2027",
-    "event": "FCC firmware cliff \u2014 3 simultaneous deadlines ground uncertified gray zone drones",
-    "probability": 0.7923133623819898,
-    "confidence": 0.918,
-    "impact": "critical",
-    "model": "ensemble:regulatory_progression(0.45) + grayzone_escalation(0.30) + cross_correlation(0.25)",
-    "model_outputs": [
-      {
-        "model": "regulatory_progression",
-        "probability": 0.621,
-        "confidence": 0.861,
-        "signal_count": 7,
-        "drivers": [
-          "7 regulatory/compliance flags matched",
-          "Mean stage score: 0.27"
-        ]
-      },
-      {
-        "model": "grayzone_escalation",
-        "probability": 0.799,
-        "confidence": 1.0,
-        "signal_count": 39,
-        "drivers": [
-          "4 entity(ies): avg composite score 0.673",
-          "39 gray zone flags, 1 legal action flags",
-          "Risk levels: ['CRITICAL', 'HIGH', 'CRITICAL', 'HIGH']"
-        ]
-      },
-      {
-        "model": "cross_correlation",
-        "probability": 0.95,
-        "confidence": 0.893,
-        "signal_count": 36,
-        "drivers": [
-          "10 trigger \u00d7 26 outcome flags (lag ~0w)",
-          "Correlation score: 1.000"
-        ]
-      }
-    ],
-    "drivers": [
-      "7 regulatory/compliance flags matched",
-      "4 entity(ies): avg composite score 0.673",
-      "10 trigger \u00d7 26 outcome flags (lag ~0w)",
-      "FCC Conditional Approval: 3 deadlines converge Jan 1 2027",
-      "OR/NASAO: 467 drones grounded across 25 states \u2014 $50M\u2013$2B exposure",
-      "FAA ASSURE: DJI = 96% of detected US drone platforms"
-    ],
-    "last_updated": "2026-04-08T19:13:16.298099+00:00"
+    "last_updated": "2026-04-08T20:19:09.895674+00:00"
   },
   {
     "id": "pred-ce0905094d",
     "timeframe": "H2 2026\u20132027",
     "event": "Gray zone enforcement event \u2014 federal action against Anzu/SkyRover operators or buyers",
-    "probability": 0.7719307450157399,
-    "confidence": 0.6353333333333333,
+    "probability": 0.7873141962421712,
+    "confidence": 0.6386666666666666,
     "impact": "critical",
     "model": "ensemble:grayzone_escalation(0.45) + regulatory_progression(0.35) + contract_signal(0.20)",
     "model_outputs": [
@@ -257,12 +257,12 @@
       },
       {
         "model": "regulatory_progression",
-        "probability": 0.775,
-        "confidence": 0.856,
-        "signal_count": 10,
+        "probability": 0.809,
+        "confidence": 0.866,
+        "signal_count": 11,
         "drivers": [
-          "10 regulatory/compliance flags matched",
-          "Mean stage score: 0.28"
+          "11 regulatory/compliance flags matched",
+          "Mean stage score: 0.26"
         ]
       },
       {
@@ -278,13 +278,13 @@
     ],
     "drivers": [
       "2 entity(ies): avg composite score 0.816",
-      "10 regulatory/compliance flags matched",
+      "11 regulatory/compliance flags matched",
       "0 contract/procurement flags matched",
       "TX AG lawsuit active (45+ days, no Anzu response)",
       "FCC Covered List expansion Dec 2025",
       "NDAA FY2025 \u00a71709 enforcement pipeline"
     ],
-    "last_updated": "2026-04-08T19:13:16.298099+00:00"
+    "last_updated": "2026-04-08T20:19:09.895674+00:00"
   },
   {
     "id": "pred-2809b1378d",
@@ -333,7 +333,7 @@
       "42/322 flight controllers in Forge DB use STM32",
       "Defense FPV programs scaling (Neros Archer 2,200+/mo)"
     ],
-    "last_updated": "2026-04-08T19:13:16.298099+00:00"
+    "last_updated": "2026-04-08T20:19:09.895674+00:00"
   },
   {
     "id": "pred-ec077545d2",
@@ -372,14 +372,14 @@
       "FIFA World Cup 2026 security procurement",
       "DroneShield + Epirus share RF/FPGA supply chain with UAS makers"
     ],
-    "last_updated": "2026-04-08T19:13:16.298099+00:00"
+    "last_updated": "2026-04-08T20:19:09.895674+00:00"
   },
   {
     "id": "pred-9a430ced98",
     "timeframe": "2026\u20132027",
     "event": "Blue UAS BOM cost index exceeds $5,000 (currently ~$4,348)",
-    "probability": 0.5814042897612303,
-    "confidence": 0.8236666666666667,
+    "probability": 0.5968097913322632,
+    "confidence": 0.8306666666666667,
     "impact": "high",
     "model": "ensemble:cross_correlation(0.40) + contract_signal(0.30) + regulatory_progression(0.30)",
     "model_outputs": [
@@ -387,9 +387,9 @@
         "model": "cross_correlation",
         "probability": 0.9,
         "confidence": 0.881,
-        "signal_count": 88,
+        "signal_count": 87,
         "drivers": [
-          "27 trigger \u00d7 61 outcome flags (lag ~12w)",
+          "27 trigger \u00d7 60 outcome flags (lag ~12w)",
           "Correlation score: 1.000"
         ]
       },
@@ -405,31 +405,31 @@
       },
       {
         "model": "regulatory_progression",
-        "probability": 0.3,
-        "confidence": 0.865,
-        "signal_count": 4,
+        "probability": 0.35,
+        "confidence": 0.886,
+        "signal_count": 5,
         "drivers": [
-          "4 regulatory/compliance flags matched",
+          "5 regulatory/compliance flags matched",
           "Mean stage score: 0.10"
         ]
       }
     ],
     "drivers": [
-      "27 trigger \u00d7 61 outcome flags (lag ~12w)",
+      "27 trigger \u00d7 60 outcome flags (lag ~12w)",
       "3 contract/procurement flags matched",
-      "4 regulatory/compliance flags matched",
+      "5 regulatory/compliance flags matched",
       "DRAM pricing +22% YoY",
       "Section 301 tariff escalation on Chinese components",
       "NDAA compliance premium \u2014 15\u201330% over commercial pricing"
     ],
-    "last_updated": "2026-04-08T19:13:16.298099+00:00"
+    "last_updated": "2026-04-08T20:19:09.895674+00:00"
   },
   {
     "id": "pred-ae89d2546e",
     "timeframe": "2026\u20132028",
     "event": "Taiwan tension: TSMC disruption cascades to all Jetson + QRB5165 Blue UAS platforms",
     "probability": 0.25,
-    "confidence": 0.9365,
+    "confidence": 0.937,
     "impact": "critical",
     "model": "ensemble:concentration_risk(0.50) + cross_correlation(0.50) [black swan cap: 0.25]",
     "model_outputs": [
@@ -446,21 +446,21 @@
       {
         "model": "cross_correlation",
         "probability": 0.48,
-        "confidence": 0.873,
-        "signal_count": 49,
+        "confidence": 0.874,
+        "signal_count": 50,
         "drivers": [
-          "11 trigger \u00d7 38 outcome flags (lag ~0w)",
+          "12 trigger \u00d7 38 outcome flags (lag ~0w)",
           "Correlation score: 1.000"
         ]
       }
     ],
     "drivers": [
       "21/25 companion_computers use target vendor(s) (84% concentration)",
-      "11 trigger \u00d7 38 outcome flags (lag ~0w)",
+      "12 trigger \u00d7 38 outcome flags (lag ~0w)",
       "TSMC concentration for advanced nodes (3nm, 5nm)",
       "All Blue UAS companion SoCs fabricated in Taiwan",
       "No alternative foundry at scale \u2014 hard cap applied at 0.25"
     ],
-    "last_updated": "2026-04-08T19:13:16.298099+00:00"
+    "last_updated": "2026-04-08T20:19:09.895674+00:00"
   }
 ]
