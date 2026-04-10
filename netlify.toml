@@ -5,6 +5,9 @@
 [build.environment]
   PYTHON_VERSION = "3.11"
 
+[functions]
+  node_bundler = "esbuild"
+
 [[redirects]]
   from = "/forge"
   to = "https://forgeprole.netlify.app"
