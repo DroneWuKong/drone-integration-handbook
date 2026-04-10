@@ -1,7 +1,6 @@
 [build]
   publish = "site"
   command = "pip3 install -r requirements.txt && python3 build.py"
-  functions = "netlify/functions"
 
 [build.environment]
   PYTHON_VERSION = "3.11"
@@ -27,5 +26,18 @@
 [[redirects]]
   from = "/patterns/"
   to = "https://forgeprole.netlify.app/patterns/"
+  status = 301
+  force = true
+
+# Analytics dashboard lives on Forge — redirect handbook visitors there
+[[redirects]]
+  from = "/analytics"
+  to = "https://forgeprole.netlify.app/analytics/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/analytics/"
+  to = "https://forgeprole.netlify.app/analytics/"
   status = 301
   force = true
