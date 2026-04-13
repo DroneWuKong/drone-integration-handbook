@@ -3,9 +3,20 @@
 Future chapters, sections, and improvements under consideration.
 Open an issue to suggest additions or volunteer to write one.
 
+## Recently Completed (2026-04-13)
+
+- [x] **NDAA Compliance doc updated** — `components/ndaa-compliance.md` — Fixed encoding corruption, updated covered entity list (Autel §1709 FY2025, Anzu Robotics gray zone, FCC Covered List), expanded Blue UAS table to 12 cleared platforms, added FCC exemption expiry Jan 1 2027 warning, ASDA/grant applicability, common mistakes section.
+- [x] **Platform database rebalanced** — Percepto Sparrow (MDL-2172, Israeli, NOT Blue UAS, inspection dock) and American Robotics Scout System (MDL-2173, US-made, Blue UAS, FAA Part 135) added. Inspired Flight IF1200A marked removed from Blue UAS list (March 2025). Total: 269 drone_models.
+- [x] **Parts DB deduped** — 3,629 → 3,495 (134 removed): 54 duplicate PIDs, 61 stack/combo cross-listings, 18 AIO FC boards in multiple categories, 7 colliding sequential PIDs.
+- [x] **Weekly DB audit automated** — `.github/workflows/weekly-db-audit.yml` in Ai-Project, runs Sundays 6AM CST.
+- [x] **Document Builder expanded** — Property Access Permission Letter (8-state law overlay), Subpart D over-people doc, Send to Client email button on all client-facing docs.
+- [x] **Forge manufacturer status audited** — BrainFPV, Draganfly, Yuneec, FrSky all verified (confidence: high). Brave FPV added as Unusual Machines subsidiary.
+- [x] **Hangar FC write-back** — `hangar/fc/` — FcTransport (jSerialComm), MspClient (MSP v1), FcWriteBack with armed check, verify-read, EEPROM save, Tooth audit. UI: port selector + Connect/Disconnect in HomeScreen, Apply to FC button in ParamsScreen.
+- [x] **Tooth SQLite Phase 1** — `hangar/db/ToothDb.kt` — tamper-evident SHA-256 event chain, airframes + events + flight_sessions tables, ASTM F3600-22 aligned.
+
 ## Recently Completed (2026-04-07 — continued)
 
-- [x] **Weight enrichment to 100%** — All 3,615 parts now have weight_g. FPV cameras, GPS, VTX, stacks, control link, thermal cameras, AI accelerators, companion computers, mesh radios, EW systems, ESAD, counter-UAS, swarm software, military firmware, and remaining hardware filled via form-factor/stator/wheelbase/class inference.
+- [x] **Weight enrichment to 100%** — All parts now have weight_g. FPV cameras, GPS, VTX, stacks, control link, thermal cameras, AI accelerators, companion computers, mesh radios, EW systems, ESAD, counter-UAS, swarm software, military firmware, and remaining hardware filled via form-factor/stator/wheelbase/class inference.
 - [x] **Mesh Radios** — `components/mesh-radios.md` — Rajant BreadCrumb, Silvus StreamCaster, Doodle Labs Mesh Rider, Elsight HALO; topology design, MAVLink-over-mesh, bandwidth planning.
 - [x] **Control Link TX** — `components/control-link-tx.md` — ELRS modules, TBS Crossfire/Tracer TX, Spektrum; JR/nano bay formats, power levels, NDAA (TBS Swiss ✓, all ELRS Chinese ✗).
 - [x] **FPV Detectors** — `components/fpv-detectors.md` — RF Explorer, ISDS204B, SDR-based detection; detection targets (analog/digital/FHSS), security monitoring deployment.
@@ -13,7 +24,7 @@ Open an issue to suggest additions or volunteer to write one.
 - [x] **Payload Droppers** — `components/payload-droppers.md` — servo/magnet/winch mechanisms, ArduPilot Gripper integration, MAV_CMD_DO_GRIPPER.
 - [x] **LiDAR Rangefinders** — `components/lidar-rangefinders.md` — LightWare, Benewake, Garmin LIDAR-Lite; terrain following, precision landing, NDAA table.
 - [x] **Survey Sensors & Multispectral** — `components/sensors.md` — MicaSense RedEdge-P/Altum-PT (AgEagle ✓), Sentera 6X (John Deere ✓), Sony ILX-LR1, Phase One; NDVI pipeline, radiometric calibration.
-- [x] **Weight: 100% coverage** — All 3,615 Forge parts now have weight_g values.
+- [x] **Weight: 100% coverage** — All Forge parts now have weight_g values.
 - [x] **Receivers** —  — 391 entries: ELRS/Crossfire/FrSky/Spektrum/FlySky protocols, NDAA landscape (TBS=Swiss NDAA-compliant, all ELRS brands Chinese), UART config, antenna placement, failsafe setup.
 - [x] **GPS & GNSS Modules** —  — 76 entries: u-blox M8N→M10 generations, NDAA table (ARK/Lumenier/CubePilot ✓), DroneCAN integration, compass calibration, dual GPS redundancy.
 - [x] **Antennas** —  — 394 entries: gain/polarization/radiation pattern, stub/cloverleaf/lollipop/patch/helical types, system design by use case, connector ecosystem (SMA/RP-SMA/U.FL/MMCX), NDAA (TrueRC/ImmersionRC ✓).
@@ -21,7 +32,7 @@ Open an issue to suggest additions or volunteer to write one.
 ## Recently Completed (2026-04-07)
 
 - [x] **Optical Flow & GPS-Denied Positioning** — `components/optical-flow.md` — 7 vetted entries: ARK Flow MR/Flow (USA NDAA), CubePilot HereFlow (Taiwan NDAA), Centeye neuromorphic (USA), Holybro H-Flow (unverified), Matek + DJI (China flagged). NDAA landscape table, PX4/ArduPilot integration, surface requirements. 48th component page.
-- [x] **DB NDAA enrichment sprint** — 3,571/3,615 parts resolved (98.8%). FC research pass (72✓ 218✗ 37?), thermal cameras (39✓), thermal/counter-UAS/C2/sensors/navigation/propulsion all classified. Manufacturers documented: Teledyne FLIR, L3Harris, Hensoldt, Rohde & Schwarz, Silvus, Shield AI, Rajant, infiniDome, Honeywell, Anello, MicaSense, Sentera, DeepX, Kinara, etc.
+- [x] **DB NDAA enrichment sprint** — 3,495 parts (post-dedup), 98.8% NDAA-resolved. FC research pass (72✓ 218✗ 37?), thermal cameras (39✓), thermal/counter-UAS/C2/sensors/navigation/propulsion all classified. Manufacturers documented: Teledyne FLIR, L3Harris, Hensoldt, Rohde & Schwarz, Silvus, Shield AI, Rajant, infiniDome, Honeywell, Anello, MicaSense, Sentera, DeepX, Kinara, etc.
 - [x] **DB field enrichment** — 1,271 interface fields inferred (FC/ESC/RX/GPS/VTX); 1,496 weight_g values from stator/form factor (97% props, 94% ESCs, 96% batteries); tag taxonomy normalized to 1,366 canonical tags; canonical ndaa/china/usa/ukraine/nato/israel/five-eyes/blue-uas tags on all 3,573 parts.
 - [x] **Browse modal overhaul** — NDAA shows ✓ green / ✗ red; weight, interface, firmware, price surfaced first; cyan tag chips; amber ndaa_note compliance warning box; links from new links[] field.
 - [x] **Browse NDAA filter pills** — `All / NDAA ✓ / Non-NDAA ✗ / China / USA` quick-filter chips on every category, instant filter, color-coded.
@@ -55,9 +66,9 @@ Open an issue to suggest additions or volunteer to write one.
 ## Planned Chapters
 
 - [ ] **Payload Integration Patterns** — Mapping cameras, multispectral sensors, LiDAR, delivery mechanisms. Wiring, power, data flow, and the companion computer as integration hub.
-- [ ] **Cellular / LTE for BVLOS** — When and how to use cellular modems for beyond-visual-line-of-sight. Hardware, SIM management, latency reality, regulatory considerations.
+- [x] **Cellular / LTE for BVLOS** — When and how to use cellular modems for beyond-visual-line-of-sight. Hardware, SIM management, latency reality, regulatory considerations.
 - [ ] **Fixed-Wing Specific** — Airspeed sensors, VTOL transitions, iNav vs ArduPilot for wings, long-range planning.
-- [ ] **Fleet Management** — Managing 5-50 platforms. Configuration management, firmware versioning, battery tracking, maintenance schedules.
+- [x] **Fleet Management** — Managing 5-50 platforms. Configuration management, firmware versioning, battery tracking, maintenance schedules.
 - [ ] **Power Systems Deep Dive** — Battery chemistry, BEC selection, power distribution boards, voltage sag under load, field charging.
 - [ ] **Pattern Intelligence Methodology** — How PIE works: flag types, correlation engine, gray zone detection, supply chain forecasting methodology. Public-facing explanation of the intelligence pipeline.
 
@@ -79,8 +90,8 @@ Operator-level quick references. Laminate-and-carry format. Each fills a gap whe
 
 - [ ] **Appendix A: Frequency Quick Reference Card** — One-page printable frequency plan template
 - [x] **Appendix B: UART Maps for Common FCs** — 416 FCs mapped
-- [ ] **Appendix C: MAVLink Message Quick Reference** — The 20 messages you actually use
-- [ ] **Appendix D: MSP Function Code Quick Reference** — The 15 function codes you actually use
+- [x] **Appendix C: MAVLink Message Quick Reference** — The 20 messages you actually use
+- [x] **Appendix D: MSP Function Code Quick Reference** — The 15 function codes you actually use
 - [ ] **Appendix E: CoT Type Code Reference** — Common MIL-STD-2525C codes for drone operations
 
 ## Planned Templates

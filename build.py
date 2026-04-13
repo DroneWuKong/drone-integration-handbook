@@ -75,6 +75,7 @@ _COMPONENT_GROUPS = [
     ("Platforms & Compliance", [
         "platforms-global", "ndaa-compliance", "remote-id", "bvlos",
         "utm-airspace", "uas-maintenance", "industry-intelligence",
+        "cellular-lte-bvlos", "fleet-management",
     ]),
     ("Manufacturer Guides", [
         "orqa-hardware", "openhd-implementation",

@@ -25,10 +25,15 @@ Full integration profiles for drone platforms across four categories. Each profi
 |----------|----------|----------|---------|-------------|---------|
 | [Skydio X10 / X10D](blue-uas/skydio-x10.md) | X10D | Proprietary | X10D only | 40 min | Boson+ 640 |
 | [Freefly Astro](blue-uas/freefly-astro.md) | YES | PX4 | Yes | 25 min | Via payload |
-| [Inspired Flight IF1200A](blue-uas/inspired-flight-if1200a.md) | YES | ArduPilot | Yes | 43 min | Via payload |
+| [Inspired Flight IF1200A](blue-uas/inspired-flight-if1200a.md) | ~~YES~~ REMOVED Mar 2025 | ArduPilot | Yes | 43 min | Via payload |
 | [Teal 2](blue-uas/teal-2.md) | YES | Proprietary | No | 30 min | Hadron 640R |
 | [Parrot ANAFI USA](blue-uas/parrot-anafi-usa.md) | YES | Proprietary | No | 32 min | Boson 320 |
 | [WingtraOne GEN II / WingtraRAY](blue-uas/wingtra-wingtraone.md) | YES | Proprietary | No | 59 min | Via sensor |
+| [Draganfly Apex](../../../platforms/tactical) | YES | ArduPilot | Yes | 45 min | Via payload |
+| [American Robotics Scout](../../../platforms/tactical) | YES | Proprietary | No | 30 min | Multispectral |
+| [AgEagle eBee VISION](../../../platforms/tactical) | YES | Proprietary | No | 90+ min | Survey |
+| [Ascent Aerosystems Spirit K257B](../../../platforms/tactical) | YES | ArduPilot | Yes | 35 min | Coaxial BVLOS |
+| [Red Cat Black Widow](../../../platforms/tactical) | YES | Proprietary | No | Classified | SRR T2 |
 
 ## Open-Source / Custom Build
 
@@ -64,7 +69,7 @@ Key NDAA-compliant components cleared under the Blue UAS Framework:
 
 Platforms with ATO from 2025 Blue UAS Challenge (29 Palms): Neros Archer (FPV), Hoverfly Spectre (tethered), Zone 5 Paladin.
 
-The Blue UAS program transitioned from DIU to DCMA in December 2025.
+The Blue UAS program transitioned from DIU to DCMA in December 2025. Current cleared list at bluelist.dcma.mil. **FCC Blue UAS Exemption for DJI/Autel fleets expires January 1, 2027.**
 
 ---
 
