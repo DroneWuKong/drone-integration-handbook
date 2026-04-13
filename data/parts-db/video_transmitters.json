@@ -21,7 +21,9 @@
     "approx_price": 19,
     "schema_data": {
       "weight_g": 7
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1001",
@@ -45,7 +47,9 @@
     "schema_data": {
       "weight_g": 13
     },
-    "max_power_mw": 1000
+    "max_power_mw": 1000,
+    "channels": "Digital",
+    "frequency_band": "2.4GHz"
   },
   {
     "pid": "VTX-1002",
@@ -69,7 +73,9 @@
     "schema_data": {
       "weight_g": 11
     },
-    "max_power_mw": 1000
+    "max_power_mw": 1000,
+    "channels": "Digital",
+    "frequency_band": "2.4GHz"
   },
   {
     "pid": "VTX-1003",
@@ -93,7 +99,9 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1004",
@@ -117,7 +125,9 @@
     "approx_price": 54,
     "schema_data": {
       "weight_g": 8
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1005",
@@ -141,7 +151,9 @@
     "approx_price": 53,
     "schema_data": {
       "weight_g": 6
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1006",
@@ -165,7 +177,9 @@
     "approx_price": 50,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1007",
@@ -189,7 +203,9 @@
     "approx_price": 48,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1008",
@@ -213,7 +229,9 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 8
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1009",
@@ -237,7 +255,9 @@
     "schema_data": {
       "weight_g": 15
     },
-    "max_power_mw": 100
+    "max_power_mw": 100,
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1010",
@@ -261,7 +281,9 @@
     "approx_price": 59.99,
     "schema_data": {
       "weight_g": 8
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1011",
@@ -285,7 +307,9 @@
     "approx_price": 54,
     "schema_data": {
       "weight_g": 9
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1012",
@@ -309,7 +333,9 @@
     "approx_price": 51,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1013",
@@ -333,7 +359,9 @@
     "approx_price": 47,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1014",
@@ -357,7 +385,9 @@
     "approx_price": 83,
     "schema_data": {
       "weight_g": 9
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1015",
@@ -381,7 +411,9 @@
     "approx_price": 46,
     "schema_data": {
       "weight_g": 9
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1016",
@@ -405,7 +437,9 @@
     "approx_price": 50,
     "schema_data": {
       "weight_g": 14
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1017",
@@ -429,7 +463,9 @@
     "approx_price": 49,
     "schema_data": {
       "weight_g": 3
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1018",
@@ -453,7 +489,9 @@
     "approx_price": 20,
     "schema_data": {
       "weight_g": 9
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1019",
@@ -477,7 +515,9 @@
     "approx_price": 45,
     "schema_data": {
       "weight_g": 13
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1020",
@@ -501,7 +541,9 @@
     "approx_price": 52,
     "schema_data": {
       "weight_g": 14
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1024",
@@ -525,7 +567,9 @@
     "approx_price": 52,
     "schema_data": {
       "weight_g": 7
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1025",
@@ -549,7 +593,9 @@
     "approx_price": 52,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1026",
@@ -573,7 +619,9 @@
     "schema_data": {
       "weight_g": 12
     },
-    "max_power_mw": 1000
+    "max_power_mw": 1000,
+    "channels": "Digital",
+    "frequency_band": "2.4GHz"
   },
   {
     "pid": "VTX-1027",
@@ -597,7 +645,9 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 13
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1028",
@@ -621,7 +671,9 @@
     "approx_price": 16.99,
     "schema_data": {
       "weight_g": 5
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1029",
@@ -645,7 +697,9 @@
     "approx_price": 19,
     "schema_data": {
       "weight_g": 3
-    }
+    },
+    "channels": 40,
+    "frequency_band": "2.4GHz"
   },
   {
     "pid": "VTX-1030",
@@ -669,7 +723,9 @@
     "approx_price": 19.99,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1033",
@@ -693,7 +749,9 @@
     "approx_price": 22,
     "schema_data": {
       "weight_g": 5
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1034",
@@ -717,7 +775,9 @@
     "approx_price": 18,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1035",
@@ -741,7 +801,9 @@
     "approx_price": 19,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1036",
@@ -765,7 +827,9 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1038",
@@ -789,7 +853,9 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1039",
@@ -813,7 +879,9 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1040",
@@ -837,7 +905,9 @@
     "schema_data": {
       "weight_g": 1
     },
-    "max_power_mw": 2000
+    "max_power_mw": 2000,
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1041",
@@ -861,7 +931,9 @@
     "approx_price": 21,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1042",
@@ -885,7 +957,9 @@
     "approx_price": 59,
     "schema_data": {
       "weight_g": 9
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1044",
@@ -909,7 +983,9 @@
     "approx_price": 52,
     "schema_data": {
       "weight_g": 7
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1045",
@@ -933,7 +1009,9 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 7
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1048",
@@ -957,7 +1035,9 @@
     "approx_price": 53,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1049",
@@ -981,7 +1061,9 @@
     "approx_price": 76,
     "schema_data": {
       "weight_g": 7
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1050",
@@ -1005,7 +1087,9 @@
     "approx_price": 83,
     "schema_data": {
       "weight_g": 7
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1051",
@@ -1029,7 +1113,9 @@
     "approx_price": 51,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1052",
@@ -1053,7 +1139,9 @@
     "approx_price": 23,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1053",
@@ -1077,7 +1165,9 @@
     "approx_price": 19,
     "schema_data": {
       "weight_g": 3
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1054",
@@ -1101,7 +1191,9 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1055",
@@ -1125,7 +1217,9 @@
     "approx_price": 54,
     "schema_data": {
       "weight_g": 8
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1057",
@@ -1149,7 +1243,9 @@
     "approx_price": 21,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1058",
@@ -1173,7 +1269,9 @@
     "approx_price": 50,
     "schema_data": {
       "weight_g": 8
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1059",
@@ -1197,7 +1295,9 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 5
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1060",
@@ -1221,7 +1321,9 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 10
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1061",
@@ -1245,7 +1347,9 @@
     "approx_price": 53,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1062",
@@ -1269,7 +1373,9 @@
     "approx_price": 54,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1063",
@@ -1293,7 +1399,9 @@
     "approx_price": 22,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1064",
@@ -1317,7 +1425,9 @@
     "approx_price": 81,
     "schema_data": {
       "weight_g": 5
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1065",
@@ -1341,7 +1451,9 @@
     "approx_price": 54,
     "schema_data": {
       "weight_g": 12
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1066",
@@ -1365,7 +1477,9 @@
     "approx_price": 53,
     "schema_data": {
       "weight_g": 15
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1067",
@@ -1389,7 +1503,9 @@
     "approx_price": 45,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1068",
@@ -1413,7 +1529,9 @@
     "approx_price": 76,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1069",
@@ -1437,7 +1555,9 @@
     "approx_price": 77,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1070",
@@ -1461,7 +1581,9 @@
     "approx_price": 82,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1071",
@@ -1485,7 +1607,9 @@
     "approx_price": 24,
     "schema_data": {
       "weight_g": 10
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1072",
@@ -1509,7 +1633,9 @@
     "approx_price": 45,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1073",
@@ -1533,7 +1659,9 @@
     "schema_data": {
       "weight_g": 4
     },
-    "max_power_mw": 1000
+    "max_power_mw": 1000,
+    "channels": "Digital",
+    "frequency_band": "2.4GHz"
   },
   {
     "pid": "VTX-1074",
@@ -1557,7 +1685,9 @@
     "approx_price": 15,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1075",
@@ -1581,7 +1711,9 @@
     "approx_price": 52,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1076",
@@ -1605,7 +1737,9 @@
     "approx_price": 45,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1077",
@@ -1629,7 +1763,9 @@
     "approx_price": 19,
     "schema_data": {
       "weight_g": 3
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1078",
@@ -1653,7 +1789,9 @@
     "approx_price": 83,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1079",
@@ -1677,7 +1815,9 @@
     "approx_price": 18,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "1.3GHz"
   },
   {
     "pid": "VTX-1080",
@@ -1701,7 +1841,9 @@
     "approx_price": 58,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1081",
@@ -1725,7 +1867,9 @@
     "approx_price": 44,
     "schema_data": {
       "weight_g": 13
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1082",
@@ -1749,7 +1893,9 @@
     "approx_price": 40,
     "schema_data": {
       "weight_g": 14
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1083",
@@ -1773,7 +1919,9 @@
     "schema_data": {
       "weight_g": 9
     },
-    "max_power_mw": 300
+    "max_power_mw": 300,
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1084",
@@ -1797,7 +1945,9 @@
     "approx_price": 18,
     "schema_data": {
       "weight_g": 6
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1085",
@@ -1821,7 +1971,9 @@
     "approx_price": 42,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1088",
@@ -1845,7 +1997,9 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1089",
@@ -1870,7 +2024,9 @@
     "approx_price": 23,
     "schema_data": {
       "weight_g": 7
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1090",
@@ -1895,7 +2051,9 @@
     "approx_price": 24,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1092",
@@ -1920,7 +2078,9 @@
     "approx_price": 22,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "channels": 40,
+    "frequency_band": "2.4GHz"
   },
   {
     "pid": "VTX-1093",
@@ -1945,7 +2105,9 @@
     "schema_data": {
       "weight_g": 7
     },
-    "max_power_mw": 400
+    "max_power_mw": 400,
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1094",
@@ -1969,7 +2131,9 @@
     "approx_price": 18,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1095",
@@ -1993,7 +2157,9 @@
     "schema_data": {
       "weight_g": 9
     },
-    "max_power_mw": 25
+    "max_power_mw": 25,
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1096",
@@ -2017,7 +2183,9 @@
     "approx_price": 12,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1097",
@@ -2041,7 +2209,9 @@
     "schema_data": {
       "weight_g": 10
     },
-    "max_power_mw": 400
+    "max_power_mw": 400,
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1098",
@@ -2065,7 +2235,9 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1099",
@@ -2089,7 +2261,9 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 8
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1100",
@@ -2114,7 +2288,9 @@
     "approx_price": 27,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1101",
@@ -2138,7 +2314,9 @@
     "approx_price": 14,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1102",
@@ -2162,7 +2340,9 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1103",
@@ -2186,7 +2366,9 @@
     "approx_price": 15,
     "schema_data": {
       "weight_g": 15
-    }
+    },
+    "channels": 48,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1104",
@@ -2210,7 +2392,9 @@
     "approx_price": 22,
     "schema_data": {
       "weight_g": 9
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1106",
@@ -2234,7 +2418,9 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 14
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1107",
@@ -2258,7 +2444,9 @@
     "approx_price": 7,
     "schema_data": {
       "weight_g": 3
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1109",
@@ -2282,7 +2470,9 @@
     "schema_data": {
       "weight_g": 15
     },
-    "max_power_mw": 25
+    "max_power_mw": 25,
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1110",
@@ -2306,7 +2496,9 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "1.3GHz"
   },
   {
     "pid": "VTX-1112",
@@ -2330,7 +2522,9 @@
     "approx_price": 47,
     "schema_data": {
       "weight_g": 13
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1113",
@@ -2354,7 +2548,9 @@
     "approx_price": 22,
     "schema_data": {
       "weight_g": 14
-    }
+    },
+    "channels": 40,
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1114",
@@ -2378,7 +2574,9 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 6
-    }
+    },
+    "channels": 40,
+    "frequency_band": "1.3GHz"
   },
   {
     "pid": "VTX-1115",
@@ -2402,7 +2600,9 @@
     "approx_price": 15,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": 40,
+    "frequency_band": "1.3GHz"
   },
   {
     "pid": "VTX-1117",
@@ -2426,7 +2626,9 @@
     "approx_price": 55,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1118",
@@ -2450,7 +2652,9 @@
     "approx_price": 56,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "channels": "Digital",
+    "frequency_band": "5.8GHz"
   },
   {
     "pid": "VTX-1119",
@@ -2474,7 +2678,9 @@
     "approx_price": 25,
     "schema_data": {
       "weight_g": 8
-    }
+    },
+    "channels": 40,
+    "frequency_band": "1.3GHz"
   },
   {
     "pid": "VTX-UA-DEC1-Spot",
@@ -2893,7 +3099,7 @@
     "power_w": "4W",
     "frequency_band": "6.1G, 7G +",
     "protocol": "",
-    "channels": "",
+    "channels": 40,
     "connector": "SMA",
     "approx_price_usd": null,
     "source": "vtx.in.ua",
