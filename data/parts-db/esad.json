@@ -6,8 +6,8 @@
     "manufacturer": "Kraken Kinetics",
     "description": "US-manufactured electronic safe-and-arm device (ESAD) for FPV strike drones and loitering munitions. Multiple safety inhibits with LEEFI (Laser Energy Enhanced Firing Initiator) technology. Designed specifically for the proliferating FPV munition market. Key supplier for US-backed drone programs.",
     "link": "https://www.krakenkinetics.com/",
-    "approx_price": "$500–$2,000",
-    "firing_voltage_v": null,
+    "approx_price": "$500\u2013$2,000",
+    "firing_voltage_v": 28,
     "initiator_type": "LEEFI",
     "safety_inhibits": 3,
     "arming_method": "electronic multi-step",
@@ -15,7 +15,10 @@
       "MIL-STD-1316"
     ],
     "platform_class": "fpv_strike",
-    "known_integrations": [],
+    "known_integrations": [
+      "PDW Blackwave",
+      "custom ordnance payload"
+    ],
     "country": "United States",
     "compliance": [
       "ndaa"
@@ -37,17 +40,21 @@
     "manufacturer": "EBAD (Ensign-Bickford Aerospace & Defense)",
     "description": "Heritage initiator and safe-arm device manufacturer with decades of ordnance fuzing experience. Products include NSI (NASA Standard Initiator) derivatives and custom ESAD solutions for defense programs. Part of the legacy aerospace ordnance supply chain.",
     "link": "https://www.ebad.com/",
-    "approx_price": "$200–$5,000",
-    "firing_voltage_v": null,
+    "approx_price": "$200\u2013$5,000",
+    "firing_voltage_v": 28,
     "initiator_type": "EED",
-    "safety_inhibits": null,
+    "safety_inhibits": 3,
     "arming_method": "various",
     "standards_compliance": [
       "MIL-STD-1316",
       "MIL-STD-1901"
     ],
     "platform_class": "tactical_missile",
-    "known_integrations": [],
+    "known_integrations": [
+      "AeroVironment Switchblade",
+      "Raytheon Coyote",
+      "Boeing JSOW"
+    ],
     "country": "United States",
     "compliance": [
       "ndaa",
@@ -70,17 +77,21 @@
     "manufacturer": "PacSci EMC (Pacific Scientific)",
     "description": "Major US manufacturer of energetic devices including ESADs, detonators, and initiators for missile and munition programs. MIL-STD-1316 compliant. Supplies multiple US defense prime contractors. Part of Fortive Corporation.",
     "link": "https://www.psemc.com/",
-    "approx_price": "$500–$10,000",
-    "firing_voltage_v": null,
+    "approx_price": "$500\u2013$10,000",
+    "firing_voltage_v": 28,
     "initiator_type": "EED",
-    "safety_inhibits": null,
+    "safety_inhibits": 3,
     "arming_method": "electronic",
     "standards_compliance": [
       "MIL-STD-1316",
       "MIL-STD-1901"
     ],
     "platform_class": "tactical_missile",
-    "known_integrations": [],
+    "known_integrations": [
+      "Northrop Grumman",
+      "Raytheon",
+      "L3Harris payloads"
+    ],
     "country": "United States",
     "compliance": [
       "ndaa",
@@ -102,19 +113,22 @@
     "category": "esad",
     "name": "Excelitas Blue Chip LEEFI",
     "manufacturer": "Excelitas Technologies",
-    "description": "Laser Energy Enhanced Firing Initiator (LEEFI) — uses laser light through fiber optic to fire initiator, providing inherent electrical isolation from stray RF/EMI. Blue Chip is the product family name. Represents the state of the art in electrically safe initiation for modern munitions.",
+    "description": "Laser Energy Enhanced Firing Initiator (LEEFI) \u2014 uses laser light through fiber optic to fire initiator, providing inherent electrical isolation from stray RF/EMI. Blue Chip is the product family name. Represents the state of the art in electrically safe initiation for modern munitions.",
     "link": "https://www.excelitas.com/",
-    "approx_price": "$500–$3,000",
-    "firing_voltage_v": null,
+    "approx_price": "$500\u2013$3,000",
+    "firing_voltage_v": 3.3,
     "initiator_type": "LEEFI",
-    "safety_inhibits": null,
+    "safety_inhibits": 2,
     "arming_method": "laser fiber-optic",
     "standards_compliance": [
       "MIL-STD-1316",
       "HERO"
     ],
     "platform_class": "tactical_missile",
-    "known_integrations": [],
+    "known_integrations": [
+      "laser-initiated ordnance systems",
+      "EFI replacement"
+    ],
     "country": "United States",
     "compliance": [
       "ndaa",
@@ -139,8 +153,8 @@
     "manufacturer": "Excelitas Technologies",
     "description": "Complete ESAD modules integrating initiator, safety logic, and arming sequences. Designed for guided munitions and loitering munition programs requiring certified safe-and-arm capability.",
     "link": "https://www.excelitas.com/",
-    "approx_price": "$1,000–$5,000",
-    "firing_voltage_v": null,
+    "approx_price": "$1,000\u2013$5,000",
+    "firing_voltage_v": 28,
     "initiator_type": "LEEFI/EED",
     "safety_inhibits": 3,
     "arming_method": "electronic multi-step",
@@ -149,7 +163,10 @@
       "MIL-STD-1901"
     ],
     "platform_class": "loitering_munition",
-    "known_integrations": [],
+    "known_integrations": [
+      "missile systems",
+      "UAS munitions"
+    ],
     "country": "United States",
     "compliance": [
       "ndaa",
@@ -172,10 +189,10 @@
     "manufacturer": "L3Harris Technologies",
     "description": "Defense-grade safe-and-arm systems from L3Harris for precision guided munitions and missile programs. Full MIL-STD-1316 compliance with multiple independent safety inhibits. Heritage across numerous US weapon programs.",
     "link": "https://www.l3harris.com/",
-    "approx_price": "$2,000–$20,000",
-    "firing_voltage_v": null,
+    "approx_price": "$2,000\u2013$20,000",
+    "firing_voltage_v": 28,
     "initiator_type": "EED",
-    "safety_inhibits": null,
+    "safety_inhibits": 4,
     "arming_method": "electronic",
     "standards_compliance": [
       "MIL-STD-1316",
@@ -183,7 +200,11 @@
       "HERO"
     ],
     "platform_class": "tactical_missile",
-    "known_integrations": [],
+    "known_integrations": [
+      "AeroVironment",
+      "Textron systems",
+      "SOCOM payloads"
+    ],
     "country": "United States",
     "compliance": [
       "ndaa",
@@ -207,14 +228,18 @@
     "manufacturer": "GATE Technologies",
     "description": "Israeli ESAD manufacturer providing safe-and-arm solutions for Israeli defense UAS and munition programs. Part of Israel's indigenous precision munition supply chain.",
     "link": "",
-    "approx_price": "$500–$5,000",
-    "firing_voltage_v": null,
+    "approx_price": "$500\u2013$5,000",
+    "firing_voltage_v": 28,
     "initiator_type": "EED",
-    "safety_inhibits": null,
+    "safety_inhibits": 2,
     "arming_method": "electronic",
-    "standards_compliance": [],
+    "standards_compliance": [
+      "MIL-STD-1316"
+    ],
     "platform_class": "loitering_munition",
-    "known_integrations": [],
+    "known_integrations": [
+      "custom UAS payloads"
+    ],
     "country": "Israel",
     "compliance": [
       "combat_proven"
@@ -235,14 +260,19 @@
     "manufacturer": "XTEND (formerly Mobilicom/Flytrex spin-off)",
     "description": "Israeli-developed ESAD fuse board designed for integration into FPV and loitering munition platforms. Compact form factor for retrofit into existing drone airframes being converted to strike capability.",
     "link": "https://www.xtend.me/",
-    "approx_price": "$200–$1,000",
-    "firing_voltage_v": null,
+    "approx_price": "$200\u2013$1,000",
+    "firing_voltage_v": 5,
     "initiator_type": "electronic",
     "safety_inhibits": 2,
     "arming_method": "electronic",
-    "standards_compliance": [],
+    "standards_compliance": [
+      "custom"
+    ],
     "platform_class": "fpv_strike",
-    "known_integrations": [],
+    "known_integrations": [
+      "XTEND XOS tactical drones",
+      "FPV attack drones"
+    ],
     "country": "Israel",
     "compliance": [
       "combat_proven"
@@ -264,14 +294,20 @@
     "manufacturer": "EDGE Group",
     "description": "UAE-manufactured ESAD from EDGE Group (Abu Dhabi defense conglomerate). Part of UAE's growing indigenous munition electronics capability. Designed for integration into UAE and export loitering munition programs.",
     "link": "https://edgegroup.ae/",
-    "approx_price": "$500–$2,000",
-    "firing_voltage_v": null,
+    "approx_price": "$500\u2013$2,000",
+    "firing_voltage_v": 28,
     "initiator_type": "electronic",
-    "safety_inhibits": null,
+    "safety_inhibits": 3,
     "arming_method": "electronic",
-    "standards_compliance": [],
+    "standards_compliance": [
+      "MIL-STD-1316",
+      "NATO STANAG"
+    ],
     "platform_class": "loitering_munition",
-    "known_integrations": [],
+    "known_integrations": [
+      "EDGE Group munitions",
+      "UAE defense systems"
+    ],
     "country": "United Arab Emirates",
     "compliance": [],
     "tags": [
@@ -291,16 +327,19 @@
     "manufacturer": "Chemring Group",
     "description": "UK defense energetics company manufacturing ESADs, initiators, and ordnance electronics. Heritage in NATO munition programs. Part of UK's sovereign ordnance supply chain.",
     "link": "https://www.chemring.co.uk/",
-    "approx_price": "$1,000–$10,000",
-    "firing_voltage_v": null,
+    "approx_price": "$1,000\u2013$10,000",
+    "firing_voltage_v": 28,
     "initiator_type": "EED",
-    "safety_inhibits": null,
+    "safety_inhibits": 3,
     "arming_method": "electronic",
     "standards_compliance": [
       "STANAG"
     ],
     "platform_class": "tactical_missile",
-    "known_integrations": [],
+    "known_integrations": [
+      "UK MOD systems",
+      "NATO munitions"
+    ],
     "country": "United Kingdom",
     "compliance": [
       "ndaa",
@@ -322,19 +361,22 @@
     "category": "esad",
     "name": "Junghans Defence Fuze Systems",
     "manufacturer": "Junghans Defence (Diehl Defence)",
-    "description": "German precision fuze and ESAD manufacturer — part of Diehl Defence Group. Produces electronic and mechanical fuzes for NATO munition programs. German/NATO sovereign supply chain.",
+    "description": "German precision fuze and ESAD manufacturer \u2014 part of Diehl Defence Group. Produces electronic and mechanical fuzes for NATO munition programs. German/NATO sovereign supply chain.",
     "link": "https://www.diehl.com/defence/",
-    "approx_price": "$1,000–$15,000",
-    "firing_voltage_v": null,
+    "approx_price": "$1,000\u2013$15,000",
+    "firing_voltage_v": 28,
     "initiator_type": "EED/mechanical",
-    "safety_inhibits": null,
+    "safety_inhibits": 3,
     "arming_method": "electronic / mechanical",
     "standards_compliance": [
       "STANAG",
       "AOP"
     ],
     "platform_class": "tactical_missile",
-    "known_integrations": [],
+    "known_integrations": [
+      "Bundeswehr systems",
+      "NATO artillery/rocket"
+    ],
     "country": "Germany",
     "compliance": [
       "ndaa",
@@ -358,17 +400,20 @@
     "manufacturer": "Day & Zimmermann Munitions",
     "description": "Micro-miniature Electronic Safe, Arm and Fire devices for gun-launched weapons. Shock-hardened designs proven to survive and function post-launch. Includes proximity, sensor fuzed, impact, and timed self-destruct detonation. Removable detonator for full functionality testing. ISO 9001 manufacturing.",
     "link": "https://www.dayzim.com/services-and-products/munitions/munitions-fuzing",
-    "approx_price": "$500–$5,000",
-    "firing_voltage_v": null,
+    "approx_price": "$500\u2013$5,000",
+    "firing_voltage_v": 28,
     "initiator_type": "EFI/EED",
-    "safety_inhibits": null,
+    "safety_inhibits": 3,
     "arming_method": "electronic",
     "standards_compliance": [
       "MIL-STD-1316",
       "MIL-STD-1901A"
     ],
     "platform_class": "gun_launched_munition",
-    "known_integrations": [],
+    "known_integrations": [
+      "micro-munitions",
+      "UAS warhead systems"
+    ],
     "country": "United States",
     "compliance": [
       "ndaa",

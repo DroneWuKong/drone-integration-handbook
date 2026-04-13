@@ -22,7 +22,7 @@
       "SPI",
       "I2C"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 18.0,
     "flight_controller_integration": "Integrated PX4 on DSP",
     "form_factor_mm": "70 x 36",
     "subcategory": "integrated_autopilot_companion",
@@ -45,7 +45,37 @@
     ],
     "schema_data": {
       "weight_g": 31
-    }
+    },
+    "storage_gb": 16,
+    "firmware_targets": [
+      "ROS2",
+      "PX4",
+      "QGC"
+    ],
+    "firmware_support": "VOXL SDK 1.x",
+    "use_cases": [
+      "Blue UAS",
+      "indoor autonomy",
+      "VIO"
+    ],
+    "platform_type": "SBC",
+    "features": [
+      "8x MIPI CSI",
+      "VIO",
+      "DFS"
+    ],
+    "interfaces": [
+      "USB3",
+      "MIPI CSI x8",
+      "UART",
+      "SPI",
+      "I2C",
+      "CAN"
+    ],
+    "supported_hardware": [
+      "VOXL Flight Deck",
+      "M500"
+    ]
   },
   {
     "pid": "COMP-0002",
@@ -68,7 +98,7 @@
       "USB",
       "UART"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 18.0,
     "flight_controller_integration": "Integrated PX4 on DSP",
     "form_factor_mm": "42 x 42 (30.5mm mount)",
     "subcategory": "integrated_autopilot_companion",
@@ -89,7 +119,37 @@
     ],
     "schema_data": {
       "weight_g": 32
-    }
+    },
+    "storage_gb": 16,
+    "firmware_targets": [
+      "ROS2",
+      "PX4",
+      "QGC"
+    ],
+    "firmware_support": "VOXL SDK 1.x",
+    "use_cases": [
+      "Blue UAS",
+      "indoor autonomy",
+      "VIO"
+    ],
+    "platform_type": "SBC",
+    "features": [
+      "8x MIPI CSI",
+      "VIO",
+      "DFS"
+    ],
+    "interfaces": [
+      "USB3",
+      "MIPI CSI x8",
+      "UART",
+      "SPI",
+      "I2C",
+      "CAN"
+    ],
+    "supported_hardware": [
+      "VOXL Flight Deck",
+      "M500"
+    ]
   },
   {
     "pid": "COMP-0003",
@@ -98,7 +158,7 @@
     "manufacturer": "ARK Electronics",
     "description": "NDAA-compliant Jetson Orin NX/Nano carrier board with 75V direct battery input and built-in IMU. Blue UAS Framework listed. Designed for direct integration into UAS power systems without voltage regulation overhead. Made in USA.",
     "link": "https://arkelectron.com/",
-    "approx_price": "$300–$500",
+    "approx_price": "$300\u2013$500",
     "processor": "NVIDIA Jetson Orin NX / Orin Nano",
     "ai_compute_tops": 100,
     "ram_gb": 16,
@@ -117,7 +177,7 @@
     ],
     "battery_input_v_max": 75,
     "flight_controller_integration": "PAB connector for ARKV6X",
-    "form_factor_mm": null,
+    "form_factor_mm": "100x100",
     "subcategory": "carrier_board",
     "country": "United States",
     "compliance": [
@@ -133,7 +193,30 @@
     ],
     "schema_data": {
       "weight_g": 40
-    }
+    },
+    "storage_gb": 16,
+    "firmware_targets": [
+      "ROS2",
+      "PX4",
+      "ArduPilot"
+    ],
+    "firmware_support": "JetPack 6.x",
+    "use_cases": [
+      "Blue UAS",
+      "NDAA autonomous flight"
+    ],
+    "platform_type": "Carrier Board",
+    "features": [
+      "DroneCAN",
+      "NDAA-compliant"
+    ],
+    "interfaces": [
+      "USB3",
+      "CAN",
+      "UART",
+      "I2C",
+      "MIPI CSI"
+    ]
   },
   {
     "pid": "COMP-0004",
@@ -158,7 +241,7 @@
       "SPI",
       "I2C"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 19.0,
     "flight_controller_integration": "PAB slot for ARKV6X (direct mount)",
     "form_factor_mm": null,
     "subcategory": "carrier_board",
@@ -179,7 +262,27 @@
     ],
     "schema_data": {
       "weight_g": 48
-    }
+    },
+    "storage_gb": 16,
+    "firmware_targets": [
+      "ROS2",
+      "PX4"
+    ],
+    "firmware_support": "JetPack 6.x",
+    "use_cases": [
+      "Pixhawk Autopilot Bus companion"
+    ],
+    "platform_type": "Carrier Board (PAB)",
+    "features": [
+      "PAB standard",
+      "DroneCAN"
+    ],
+    "interfaces": [
+      "USB3",
+      "CAN",
+      "UART",
+      "PAB connector"
+    ]
   },
   {
     "pid": "COMP-0005",
@@ -188,7 +291,7 @@
     "manufacturer": "ARK Electronics",
     "description": "ModalAI VOXL 2-based carrier board with built-in RTK GNSS, PAB flight controller slot, and full ARK ecosystem compatibility. Combines VOXL 2 AI compute with centimeter-level positioning and ARK PAB mechanical integration. Blue UAS Framework listed.",
     "link": "https://arkelectron.com/",
-    "approx_price": "$1,500–$2,000",
+    "approx_price": "$1,500\u2013$2,000",
     "processor": "Qualcomm QRB5165 (via VOXL 2)",
     "ai_compute_tops": 15,
     "ram_gb": 8,
@@ -203,7 +306,7 @@
       "CAN",
       "RTK GNSS"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 18.0,
     "flight_controller_integration": "PAB slot + integrated VOXL 2",
     "form_factor_mm": null,
     "subcategory": "carrier_board",
@@ -221,7 +324,29 @@
     ],
     "schema_data": {
       "weight_g": 42
-    }
+    },
+    "storage_gb": 16,
+    "firmware_targets": [
+      "ROS2",
+      "PX4",
+      "VOXL SDK"
+    ],
+    "firmware_support": "VOXL SDK / JetPack",
+    "use_cases": [
+      "precision RTK navigation",
+      "Blue UAS"
+    ],
+    "platform_type": "Carrier Board (PAB)",
+    "features": [
+      "RTK GPS integration",
+      "DroneCAN"
+    ],
+    "interfaces": [
+      "USB3",
+      "CAN",
+      "UART",
+      "MIPI CSI"
+    ]
   },
   {
     "pid": "COMP-0006",
@@ -247,7 +372,7 @@
       "SPI",
       "I2C"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 19.0,
     "flight_controller_integration": "Via carrier board (MAVLink/DroneCAN)",
     "form_factor_mm": "100 x 87 (module)",
     "subcategory": "standalone_companion",
@@ -265,16 +390,41 @@
     ],
     "schema_data": {
       "weight_g": 49
-    }
+    },
+    "storage_gb": 64,
+    "firmware_targets": [
+      "ROS2",
+      "PX4",
+      "Isaac ROS"
+    ],
+    "firmware_support": "JetPack 6.x",
+    "use_cases": [
+      "advanced autonomous UAS",
+      "AI robotics",
+      "L4/L5 autonomy"
+    ],
+    "platform_type": "SoM",
+    "features": [
+      "NVDLA 2x",
+      "MIPI CSI x16",
+      "10GbE"
+    ],
+    "interfaces": [
+      "USB3.2",
+      "PCIe Gen4",
+      "MIPI CSI x16",
+      "10GbE",
+      "CAN"
+    ]
   },
   {
     "pid": "COMP-0007",
     "category": "companion_computers",
     "name": "NVIDIA Jetson Orin NX 16GB",
     "manufacturer": "NVIDIA",
-    "description": "Mid-range edge AI module delivering 100-157 TOPS at 10-25W. 1024-core Ampere GPU, 8-core Arm Cortex-A78AE, 16 GB LPDDR5. Approximately 25g module weight. Sweet spot for UAS AI compute — balances performance and power. Supported by ARK Electronics and Forecr carrier boards.",
+    "description": "Mid-range edge AI module delivering 100-157 TOPS at 10-25W. 1024-core Ampere GPU, 8-core Arm Cortex-A78AE, 16 GB LPDDR5. Approximately 25g module weight. Sweet spot for UAS AI compute \u2014 balances performance and power. Supported by ARK Electronics and Forecr carrier boards.",
     "link": "https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/",
-    "approx_price": "$399–$499",
+    "approx_price": "$399\u2013$499",
     "processor": "NVIDIA Jetson Orin NX 16GB",
     "ai_compute_tops": 157,
     "ram_gb": 16,
@@ -291,7 +441,7 @@
       "SPI",
       "I2C"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 19.0,
     "flight_controller_integration": "Via carrier board (MAVLink/DroneCAN)",
     "form_factor_mm": "70 x 45 (SO-DIMM module)",
     "subcategory": "standalone_companion",
@@ -309,7 +459,39 @@
     ],
     "schema_data": {
       "weight_g": 44
-    }
+    },
+    "storage_gb": 0,
+    "firmware_targets": [
+      "ROS2",
+      "PX4",
+      "ArduPilot"
+    ],
+    "firmware_support": "JetPack 6.x",
+    "use_cases": [
+      "autonomous UAS",
+      "SLAM",
+      "AI inference"
+    ],
+    "platform_type": "SoM",
+    "features": [
+      "MIPI CSI",
+      "PCIe",
+      "USB3",
+      "NVENC/NVDEC"
+    ],
+    "interfaces": [
+      "USB3",
+      "PCIe",
+      "MIPI CSI",
+      "UART",
+      "I2C",
+      "SPI"
+    ],
+    "supported_hardware": [
+      "Jetson carrier boards",
+      "reComputer",
+      "Auvidea"
+    ]
   },
   {
     "pid": "COMP-0008",
@@ -334,7 +516,7 @@
       "SPI",
       "I2C"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 19.0,
     "flight_controller_integration": "Via carrier board (MAVLink/DroneCAN)",
     "form_factor_mm": "70 x 45 (SO-DIMM module)",
     "subcategory": "standalone_companion",
@@ -350,7 +532,31 @@
     ],
     "schema_data": {
       "weight_g": 35
-    }
+    },
+    "storage_gb": 0,
+    "firmware_targets": [
+      "ROS2",
+      "PX4",
+      "ArduPilot"
+    ],
+    "firmware_support": "JetPack 6.x",
+    "use_cases": [
+      "edge AI",
+      "UAS perception"
+    ],
+    "platform_type": "SoM",
+    "features": [
+      "MIPI CSI",
+      "PCIe",
+      "USB3"
+    ],
+    "interfaces": [
+      "USB3",
+      "PCIe",
+      "MIPI CSI",
+      "UART",
+      "I2C"
+    ]
   },
   {
     "pid": "COMP-0009",
@@ -373,9 +579,9 @@
       "PCIe Gen5",
       "CAN"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 19.0,
     "flight_controller_integration": "Via carrier board",
-    "form_factor_mm": null,
+    "form_factor_mm": "100x87",
     "subcategory": "standalone_companion",
     "country": "United States",
     "compliance": [
@@ -390,14 +596,35 @@
     ],
     "schema_data": {
       "weight_g": 31
-    }
+    },
+    "storage_gb": 64,
+    "firmware_targets": [
+      "ROS2",
+      "Isaac ROS"
+    ],
+    "firmware_support": "JetPack 7.x",
+    "use_cases": [
+      "humanoid robotics",
+      "next-gen autonomous UAS"
+    ],
+    "platform_type": "SoM",
+    "features": [
+      "2000 TOPS",
+      "functional safety"
+    ],
+    "interfaces": [
+      "USB4",
+      "PCIe Gen5",
+      "MIPI CSI",
+      "Ethernet"
+    ]
   },
   {
     "pid": "COMP-0010",
     "category": "companion_computers",
     "name": "Hailo-8",
     "manufacturer": "Hailo",
-    "description": "Compact AI accelerator delivering 26 TOPS at only 2.5W in M.2 form factor. Approximately 8g and $70. Integrated in Raspberry Pi AI HAT+. Designed for edge inference on existing compute platforms — adds neural network acceleration without replacing the host processor.",
+    "description": "Compact AI accelerator delivering 26 TOPS at only 2.5W in M.2 form factor. Approximately 8g and $70. Integrated in Raspberry Pi AI HAT+. Designed for edge inference on existing compute platforms \u2014 adds neural network acceleration without replacing the host processor.",
     "link": "https://hailo.ai/",
     "approx_price": "$70",
     "processor": "Hailo-8 AI Processor",
@@ -410,7 +637,7 @@
     "connectivity": [
       "M.2 (PCIe)"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 5.0,
     "flight_controller_integration": "Via host companion computer",
     "form_factor_mm": "M.2 2242",
     "subcategory": "ai_accelerator",
@@ -426,16 +653,35 @@
     ],
     "schema_data": {
       "weight_g": 48
-    }
+    },
+    "storage_gb": 0,
+    "firmware_targets": [
+      "ROS2",
+      "TensorFlow",
+      "PyTorch"
+    ],
+    "firmware_support": "HailoRT SDK",
+    "use_cases": [
+      "AI accelerator",
+      "edge inference add-on"
+    ],
+    "platform_type": "AI Accelerator Module",
+    "features": [
+      "26 TOPS",
+      "M.2/PCIe"
+    ],
+    "interfaces": [
+      "M.2 PCIe"
+    ]
   },
   {
     "pid": "COMP-0011",
     "category": "companion_computers",
     "name": "Hailo-10H",
     "manufacturer": "Hailo",
-    "description": "High-performance AI accelerator with 40 TOPS INT4 at only 2.5W (16 TOPS/W efficiency). M.2 2280 form factor at approximately 8g. Capable of on-device LLM inference (Llama 3.2 1B at ~10 tokens/sec). Represents a step-change in edge AI capability for autonomous UAS — LLM-grade AI at drone-compatible power budgets.",
+    "description": "High-performance AI accelerator with 40 TOPS INT4 at only 2.5W (16 TOPS/W efficiency). M.2 2280 form factor at approximately 8g. Capable of on-device LLM inference (Llama 3.2 1B at ~10 tokens/sec). Represents a step-change in edge AI capability for autonomous UAS \u2014 LLM-grade AI at drone-compatible power budgets.",
     "link": "https://hailo.ai/",
-    "approx_price": "$100–$130",
+    "approx_price": "$100\u2013$130",
     "processor": "Hailo-10H AI Processor",
     "ai_compute_tops": 40,
     "ram_gb": null,
@@ -446,7 +692,7 @@
     "connectivity": [
       "M.2 (PCIe)"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 5.0,
     "flight_controller_integration": "Via host companion computer",
     "form_factor_mm": "M.2 2280",
     "subcategory": "ai_accelerator",
@@ -463,7 +709,26 @@
     ],
     "schema_data": {
       "weight_g": 37
-    }
+    },
+    "storage_gb": 0,
+    "firmware_targets": [
+      "ROS2",
+      "TensorFlow",
+      "PyTorch"
+    ],
+    "firmware_support": "HailoRT SDK",
+    "use_cases": [
+      "GenAI edge accelerator",
+      "LLM inference"
+    ],
+    "platform_type": "AI Accelerator Module",
+    "features": [
+      "40 TOPS",
+      "GenAI support"
+    ],
+    "interfaces": [
+      "M.2 PCIe Gen4"
+    ]
   },
   {
     "pid": "COMP-0012",
@@ -472,7 +737,7 @@
     "manufacturer": "Neousys Technology",
     "description": "Rugged drone mission computer built around Jetson Orin NX (100 TOPS). 297g with 12-60V wide-range power input, 2x GMSL2 camera inputs, CAN bus, and military-grade temperature range. IP-rated enclosure designed for vibration and shock. Purpose-built for drone payload computing where ruggedization matters.",
     "link": "https://www.neousys-tech.com/",
-    "approx_price": "$1,000–$2,000",
+    "approx_price": "$1,000\u2013$2,000",
     "processor": "NVIDIA Jetson Orin NX",
     "ai_compute_tops": 100,
     "ram_gb": 16,
@@ -489,7 +754,7 @@
     ],
     "battery_input_v_max": 60,
     "flight_controller_integration": "CAN bus / MAVLink via serial",
-    "form_factor_mm": null,
+    "form_factor_mm": "85x85",
     "subcategory": "standalone_companion",
     "country": "Taiwan",
     "compliance": [
@@ -507,16 +772,40 @@
     ],
     "schema_data": {
       "weight_g": 32
-    }
+    },
+    "storage_gb": 256,
+    "firmware_targets": [
+      "ROS2",
+      "custom Linux",
+      "Windows"
+    ],
+    "firmware_support": "Ubuntu 22.04 / Windows 10 IoT",
+    "use_cases": [
+      "industrial UAS companion",
+      "high-reliability compute"
+    ],
+    "platform_type": "Rugged SBC",
+    "features": [
+      "MIL-spec vibration",
+      "PoE",
+      "PCIe"
+    ],
+    "interfaces": [
+      "USB3",
+      "PCIe",
+      "LAN",
+      "UART",
+      "CAN"
+    ]
   },
   {
     "pid": "COMP-0013",
     "category": "companion_computers",
     "name": "Forecr DSBoard-NX2",
     "manufacturer": "Forecr",
-    "description": "Jetson Orin NX carrier board from Turkish manufacturer designed for military temperature range (-40°C to +85°C). Compact form factor with multiple camera inputs, CAN, and Ethernet. Part of Forecr's range covering Orin Nano through AGX Thor modules.",
+    "description": "Jetson Orin NX carrier board from Turkish manufacturer designed for military temperature range (-40\u00b0C to +85\u00b0C). Compact form factor with multiple camera inputs, CAN, and Ethernet. Part of Forecr's range covering Orin Nano through AGX Thor modules.",
     "link": "https://www.forecr.io/",
-    "approx_price": "$200–$400",
+    "approx_price": "$200\u2013$400",
     "processor": "NVIDIA Jetson Orin NX",
     "ai_compute_tops": 100,
     "ram_gb": 16,
@@ -532,9 +821,9 @@
       "SPI",
       "I2C"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 19.0,
     "flight_controller_integration": "CAN / serial MAVLink",
-    "form_factor_mm": null,
+    "form_factor_mm": "87x50",
     "subcategory": "carrier_board",
     "country": "Turkey",
     "compliance": [
@@ -549,7 +838,30 @@
     ],
     "schema_data": {
       "weight_g": 42
-    }
+    },
+    "storage_gb": 16,
+    "firmware_targets": [
+      "ROS2",
+      "JetPack"
+    ],
+    "firmware_support": "JetPack 5.x",
+    "use_cases": [
+      "compact Jetson carrier",
+      "drone companion"
+    ],
+    "platform_type": "Carrier Board",
+    "features": [
+      "compact",
+      "USB3",
+      "MIPI CSI"
+    ],
+    "interfaces": [
+      "USB3",
+      "MIPI CSI",
+      "UART",
+      "I2C",
+      "GPIO"
+    ]
   },
   {
     "pid": "COMP-0014",
@@ -558,7 +870,7 @@
     "manufacturer": "Forecr",
     "description": "Feature-rich Jetson Orin NX carrier from Forecr with extended I/O including multiple Ethernet, USB 3.0, CAN, and RS-232/485 ports. Military temperature range. Designed for complex drone mission computing requiring diverse peripheral connectivity.",
     "link": "https://www.forecr.io/",
-    "approx_price": "$300–$600",
+    "approx_price": "$300\u2013$600",
     "processor": "NVIDIA Jetson Orin NX",
     "ai_compute_tops": 100,
     "ram_gb": 16,
@@ -577,9 +889,9 @@
       "I2C",
       "GPIO"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 19.0,
     "flight_controller_integration": "CAN / serial MAVLink",
-    "form_factor_mm": null,
+    "form_factor_mm": "87x50",
     "subcategory": "carrier_board",
     "country": "Turkey",
     "compliance": [
@@ -595,16 +907,36 @@
     ],
     "schema_data": {
       "weight_g": 33
-    }
+    },
+    "storage_gb": 16,
+    "firmware_targets": [
+      "ROS2",
+      "JetPack"
+    ],
+    "firmware_support": "JetPack 6.x",
+    "use_cases": [
+      "compact Orin NX carrier",
+      "drone companion"
+    ],
+    "platform_type": "Carrier Board",
+    "features": [
+      "compact form factor"
+    ],
+    "interfaces": [
+      "USB3",
+      "MIPI CSI",
+      "UART",
+      "I2C"
+    ]
   },
   {
     "pid": "COMP-0015",
     "category": "companion_computers",
     "name": "Qualcomm Flight RB5 Platform",
     "manufacturer": "Qualcomm",
-    "description": "Reference platform built around the QRB5165 processor — the same SoC in ModalAI VOXL 2. Provides 15 TOPS AI compute with integrated 5G modem capability. Qualcomm's drone-specific development platform enabling OEMs to build custom companion computer solutions on the same silicon as VOXL 2.",
+    "description": "Reference platform built around the QRB5165 processor \u2014 the same SoC in ModalAI VOXL 2. Provides 15 TOPS AI compute with integrated 5G modem capability. Qualcomm's drone-specific development platform enabling OEMs to build custom companion computer solutions on the same silicon as VOXL 2.",
     "link": "https://www.qualcomm.com/products/internet-of-things/industrial/drones/flight-rb5",
-    "approx_price": "$500–$800",
+    "approx_price": "$500\u2013$800",
     "processor": "Qualcomm QRB5165",
     "ai_compute_tops": 15,
     "ram_gb": 8,
@@ -620,9 +952,9 @@
       "SPI",
       "I2C"
     ],
-    "battery_input_v_max": null,
+    "battery_input_v_max": 19.0,
     "flight_controller_integration": "MAVLink / serial",
-    "form_factor_mm": null,
+    "form_factor_mm": "148x149",
     "subcategory": "standalone_companion",
     "country": "United States",
     "compliance": [
@@ -637,7 +969,31 @@
     ],
     "schema_data": {
       "weight_g": 36
-    }
+    },
+    "storage_gb": 64,
+    "firmware_targets": [
+      "ROS2",
+      "PX4",
+      "SNPE"
+    ],
+    "firmware_support": "Qualcomm Linux",
+    "use_cases": [
+      "5G UAS",
+      "AI autonomous flight"
+    ],
+    "platform_type": "Dev Kit",
+    "features": [
+      "5G modem",
+      "WiFi6",
+      "8-camera"
+    ],
+    "interfaces": [
+      "USB3",
+      "PCIe",
+      "5G",
+      "WiFi6",
+      "MIPI CSI x8"
+    ]
   },
   {
     "pid": "CC-0001",
@@ -678,7 +1034,8 @@
     "approx_price": 304,
     "schema_data": {
       "weight_g": 47
-    }
+    },
+    "storage_gb": 0
   },
   {
     "pid": "CC-0002",
@@ -707,7 +1064,8 @@
     "approx_price": 296,
     "schema_data": {
       "weight_g": 35
-    }
+    },
+    "storage_gb": 0
   },
   {
     "pid": "CC-0003",
@@ -736,7 +1094,8 @@
     "approx_price": 104,
     "schema_data": {
       "weight_g": 37
-    }
+    },
+    "storage_gb": 0
   },
   {
     "pid": "CC-0004",
@@ -765,7 +1124,8 @@
     "approx_price": 298,
     "schema_data": {
       "weight_g": 45
-    }
+    },
+    "storage_gb": 0
   },
   {
     "pid": "CC-1019",
@@ -777,7 +1137,7 @@
     "processor": "Qualcomm QRB5165",
     "ai_performance_tops": 15,
     "ram_gb": null,
-    "storage_gb": null,
+    "storage_gb": 32,
     "camera_inputs": 6,
     "interfaces": [
       "MIPI CSI",
@@ -805,19 +1165,33 @@
     "approx_price": 48,
     "schema_data": {
       "weight_g": 41
-    }
+    },
+    "firmware_targets": [
+      "ROS2",
+      "custom Linux"
+    ],
+    "use_cases": [
+      "defense UAS compute",
+      "5G connected"
+    ],
+    "platform_type": "Dev Kit",
+    "battery_input_v_max": 19.0,
+    "features": [
+      "QRB5165 SoC",
+      "defense-grade"
+    ]
   },
   {
     "pid": "CC-1020",
     "category": "companion_computers",
     "name": "UAV Navigation VECTOR-MCC",
-    "manufacturer": "UAV Navigation (Grupo Oesía)",
+    "manufacturer": "UAV Navigation (Grupo Oes\u00eda)",
     "description": "Mission control computer separate from autopilot. Payload and mission management with segregated architecture. MCC failure does not affect flight safety. STANAG 4586 compatible.",
     "link": "https://www.uavnavigation.com",
     "processor": null,
     "ai_performance_tops": null,
     "ram_gb": null,
-    "storage_gb": null,
+    "storage_gb": 8,
     "camera_inputs": null,
     "interfaces": [
       "Ethernet",
@@ -841,18 +1215,32 @@
     "approx_price": 49,
     "schema_data": {
       "weight_g": 33
-    }
+    },
+    "firmware_targets": [
+      "VECTOR proprietary",
+      "MAVLink"
+    ],
+    "use_cases": [
+      "mission computer",
+      "autopilot integration"
+    ],
+    "platform_type": "Mission Computer",
+    "battery_input_v_max": 28.0,
+    "features": [
+      "ITAR-controlled",
+      "MIL-grade"
+    ]
   },
   {
     "pid": "CC-1021",
     "category": "companion_computers",
     "subcategory": "software_platform",
-    "name": "DroneEngage — Cloud-Connected MAVLink Companion Platform",
+    "name": "DroneEngage \u2014 Cloud-Connected MAVLink Companion Platform",
     "manufacturer": "ArduPilot / Community (cloud.ardupilot.org)",
-    "description": "Open-source cellular-connected companion platform for ArduPilot and MAVLink drones. Runs on Raspberry Pi Zero W (42g complete with board, antenna, and power) through RPi 5. Connects drone to cloud GCS via cellular/WiFi — no dedicated RC hardware required for BVLOS ops. Supports swarm coordination, GPS injection, real-time telemetry forwarding, and air-gap server mode for sensitive operations. Andruav (Android) is the legacy variant. Active development by ArduPilot community.",
+    "description": "Open-source cellular-connected companion platform for ArduPilot and MAVLink drones. Runs on Raspberry Pi Zero W (42g complete with board, antenna, and power) through RPi 5. Connects drone to cloud GCS via cellular/WiFi \u2014 no dedicated RC hardware required for BVLOS ops. Supports swarm coordination, GPS injection, real-time telemetry forwarding, and air-gap server mode for sensitive operations. Andruav (Android) is the legacy variant. Active development by ArduPilot community.",
     "link": "https://cloud.ardupilot.org",
     "approx_price": 62,
-    "processor": "Software — runs on RPi Zero W / Zero 2W / 3 / 4 / 5 or any Linux SBC",
+    "processor": "Software \u2014 runs on RPi Zero W / Zero 2W / 3 / 4 / 5 or any Linux SBC",
     "ai_compute_tops": 0,
     "ram_gb": 0.5,
     "weight_g": 42,
@@ -867,7 +1255,7 @@
     ],
     "battery_input_v_max": 5.0,
     "flight_controller_integration": "MAVLink v2 (ArduPilot / PX4 / any MAVLink FC)",
-    "form_factor_mm": "Depends on SBC — RPi Zero W: 65 x 30 x 5",
+    "form_factor_mm": "Depends on SBC \u2014 RPi Zero W: 65 x 30 x 5",
     "country": "Australia / International (open source)",
     "compliance": {
       "ndaa_compliant": true,
@@ -894,7 +1282,7 @@
       "android_gcs": true,
       "web_gcs": true
     },
-    "andruav_legacy": "Andruav (Android app) is the predecessor — same protocol, phone-as-companion-computer",
+    "andruav_legacy": "Andruav (Android app) is the predecessor \u2014 same protocol, phone-as-companion-computer",
     "use_cases": [
       "BVLOS cellular telemetry",
       "Swarm ground control",
@@ -918,7 +1306,20 @@
     ],
     "schema_data": {
       "weight_g": 39
-    }
+    },
+    "storage_gb": 0,
+    "firmware_targets": [
+      "ArduPilot",
+      "PX4",
+      "MAVLink"
+    ],
+    "firmware_support": "Cloud service (agnostic)",
+    "interfaces": [
+      "MQTT",
+      "REST API",
+      "WebSocket",
+      "MAVLink"
+    ]
   },
   {
     "pid": "CMP-MFR-NVIDIA-Jetson-Orin-Nano",
@@ -940,7 +1341,33 @@
     "compliance": {
       "ndaa_compliant": true,
       "note": "US-designed (Santa Clara). Fab: TSMC (Taiwan)."
-    }
+    },
+    "storage_gb": 0,
+    "firmware_targets": [
+      "ROS2",
+      "PX4",
+      "ArduPilot"
+    ],
+    "firmware_support": "JetPack 6.x",
+    "use_cases": [
+      "edge AI",
+      "UAS perception"
+    ],
+    "platform_type": "SoM",
+    "battery_input_v_max": 19.0,
+    "form_factor_mm": "69.6x45",
+    "features": [
+      "MIPI CSI",
+      "PCIe",
+      "USB3"
+    ],
+    "interfaces": [
+      "USB3",
+      "PCIe",
+      "MIPI CSI",
+      "UART",
+      "I2C"
+    ]
   },
   {
     "pid": "CMP-MFR-NVIDIA-Jetson-Orin-NX",
@@ -961,7 +1388,41 @@
     "compliance": {
       "ndaa_compliant": true,
       "note": "US-designed (Santa Clara). Fab: TSMC (Taiwan)."
-    }
+    },
+    "storage_gb": 0,
+    "firmware_targets": [
+      "ROS2",
+      "PX4",
+      "ArduPilot"
+    ],
+    "firmware_support": "JetPack 6.x",
+    "use_cases": [
+      "autonomous UAS",
+      "SLAM",
+      "AI inference"
+    ],
+    "platform_type": "SoM",
+    "battery_input_v_max": 19.0,
+    "form_factor_mm": "69.6x45",
+    "features": [
+      "MIPI CSI",
+      "PCIe",
+      "USB3",
+      "NVENC/NVDEC"
+    ],
+    "interfaces": [
+      "USB3",
+      "PCIe",
+      "MIPI CSI",
+      "UART",
+      "I2C",
+      "SPI"
+    ],
+    "supported_hardware": [
+      "Jetson carrier boards",
+      "reComputer",
+      "Auvidea"
+    ]
   },
   {
     "pid": "CMP-MFR-NVIDIA-Jetson-AGX-Orin",
@@ -982,6 +1443,32 @@
     "compliance": {
       "ndaa_compliant": true,
       "note": "US-designed (Santa Clara). Fab: TSMC (Taiwan)."
-    }
+    },
+    "storage_gb": 64,
+    "firmware_targets": [
+      "ROS2",
+      "PX4",
+      "Isaac ROS"
+    ],
+    "firmware_support": "JetPack 6.x",
+    "use_cases": [
+      "advanced autonomous UAS",
+      "AI inference",
+      "robotics"
+    ],
+    "platform_type": "SoM",
+    "battery_input_v_max": 19.0,
+    "form_factor_mm": "100x87",
+    "features": [
+      "275 TOPS",
+      "NVDLA 2x"
+    ],
+    "interfaces": [
+      "USB3.2",
+      "PCIe Gen4",
+      "MIPI CSI",
+      "10GbE",
+      "CAN"
+    ]
   }
 ]

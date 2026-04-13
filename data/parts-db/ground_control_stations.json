@@ -2,7 +2,7 @@
   {
     "pid": "GCS-0001",
     "category": "ground_control_stations",
-    "name": "Inspired Flight GS-ONE — NDAA-Compliant Handheld GCS",
+    "name": "Inspired Flight GS-ONE \u2014 NDAA-Compliant Handheld GCS",
     "manufacturer": "Inspired Flight",
     "manufacturer_hq": "San Luis Obispo, CA, USA",
     "description": "Purpose-built NDAA-compliant Ground Control Station with 7-inch 2000-nit sunlight-readable touchscreen. Qualcomm QCS6490 processor with 8GB RAM running Android 14. Hot-swappable batteries for all-day operations. Up to 6 miles range. Runs QGroundControl, MissionPlanner, UgCS, and Inspired Ground Control. Compatible with IF800 Tomcat and IF1200A platforms. Designed for professionals in demanding field environments.",
@@ -41,12 +41,38 @@
     ],
     "schema_data": {
       "weight_g": 1200
-    }
+    },
+    "gcs_type": "Handheld",
+    "autopilot_compatibility": [
+      "ArduPilot",
+      "PX4"
+    ],
+    "bvlos_capable": true,
+    "adsb_integration": true,
+    "rugged": true,
+    "sunlight_readable": true,
+    "features": [
+      "integrated RC",
+      "LTE",
+      "NDAA-compliant",
+      "Mission Planner compatible"
+    ],
+    "certification_path": "Part 107",
+    "connectivity": "LTE / WiFi / RC",
+    "platforms_supported": [
+      "Blue UAS"
+    ],
+    "multi_drone": false,
+    "license": "Included",
+    "vehicle_types": [
+      "multirotor",
+      "fixed-wing"
+    ]
   },
   {
     "pid": "GCS-0002",
     "category": "ground_control_stations",
-    "name": "QGroundControl (QGC) — Open Source GCS Software",
+    "name": "QGroundControl (QGC) \u2014 Open Source GCS Software",
     "manufacturer": "MAVLink / Dronecode Foundation",
     "manufacturer_hq": "Open Source Community",
     "description": "Cross-platform open-source Ground Control Station providing full flight control and mission planning for any MAVLink-enabled drone. Runs on Windows, macOS, Linux, Android, and iOS. Supports PX4 and ArduPilot autopilots. Drag-and-drop mission planning, vehicle setup/configuration, real-time telemetry. Deployed in Vantis (North Dakota statewide BVLOS network) and numerous military/commercial programs.",
@@ -86,12 +112,26 @@
       "mission_planning",
       "free"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "os": "Windows / macOS / Linux / Android / iOS",
+    "bvlos_capable": true,
+    "adsb_integration": true,
+    "gcs_software": "QGroundControl",
+    "multi_drone": true,
+    "vehicle_types": [
+      "multirotor",
+      "fixed-wing",
+      "VTOL",
+      "rover",
+      "sub"
+    ],
+    "cloud_connected": false,
+    "language": "Multi-language"
   },
   {
     "pid": "GCS-0003",
     "category": "ground_control_stations",
-    "name": "Mission Planner — ArduPilot Full-Featured GCS",
+    "name": "Mission Planner \u2014 ArduPilot Full-Featured GCS",
     "manufacturer": "ArduPilot / Michael Oborne",
     "manufacturer_hq": "Open Source Community",
     "description": "Full-featured desktop GCS for ArduPilot-based vehicles. Windows primary with experimental Linux/macOS support. Advanced features include detailed vehicle configuration, log analysis, simulation, 3D visualization, DEM import, comprehensive parameter editor, and scripting support. The most feature-rich GCS for ArduPilot ecosystem. Preferred by DIY builders and developers who need deep access to autopilot configuration.",
@@ -127,12 +167,25 @@
       "parameter_editor",
       "advanced"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "os": "Windows",
+    "bvlos_capable": true,
+    "adsb_integration": true,
+    "gcs_software": "Mission Planner",
+    "multi_drone": false,
+    "vehicle_types": [
+      "multirotor",
+      "fixed-wing",
+      "VTOL",
+      "rover",
+      "sub"
+    ],
+    "cloud_connected": false
   },
   {
     "pid": "GCS-0004",
     "category": "ground_control_stations",
-    "name": "MotioNew M10 — Handheld All-in-One GCS",
+    "name": "MotioNew M10 \u2014 Handheld All-in-One GCS",
     "manufacturer": "MotioNew",
     "manufacturer_hq": "International",
     "description": "Portable all-in-one handheld GCS integrating computer, radio with joysticks, and datalink in a single device. 10.1-inch 1200-nit sunlight-readable touchscreen (1920x1200). Runs Linux or Windows with QGroundControl and MissionPlanner. Eliminates need for separate laptop, radio controller, and datalink. Supports multirotor, fixed-wing, VTOL, UGV, ROV, and USV control. 10-point capacitive touchscreen.",
@@ -175,12 +228,30 @@
     ],
     "schema_data": {
       "weight_g": 1800
-    }
+    },
+    "gcs_type": "Handheld",
+    "autopilot_compatibility": [
+      "ArduPilot",
+      "PX4",
+      "DJI"
+    ],
+    "bvlos_capable": true,
+    "rugged": true,
+    "sunlight_readable": true,
+    "connectivity": "LTE / WiFi / RC",
+    "multi_drone": true,
+    "features": [
+      "integrated RC",
+      "hot-swap battery",
+      "IP65"
+    ],
+    "hot_swap_battery": true,
+    "license": "Included"
   },
   {
     "pid": "GCS-0005",
     "category": "ground_control_stations",
-    "name": "UgCS — Enterprise Mission Planning GCS",
+    "name": "UgCS \u2014 Enterprise Mission Planning GCS",
     "manufacturer": "SPH Engineering",
     "manufacturer_hq": "Riga, Latvia",
     "description": "Universal enterprise-grade GCS with 3D interface supporting APM, Pixhawk, DJI, Mikrokopter, and more. Simultaneous control of multiple drones. Features include DEM import, ADS-B transponder/receiver support, Click & Go mode, joystick mode, image geotagging, and video recording. 3D view mode with binding to physical structures and built-in simulator for mission visualization.",
@@ -223,12 +294,22 @@
       "simulator",
       "geotagging"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "os": "Windows / macOS / Linux",
+    "bvlos_capable": true,
+    "adsb_integration": true,
+    "gcs_software": "UgCS Desktop",
+    "vehicle_types": [
+      "multirotor",
+      "fixed-wing",
+      "helicopter"
+    ],
+    "cloud_connected": true
   },
   {
     "pid": "GCS-0006",
     "category": "ground_control_stations",
-    "name": "Winmate Rugged GCS Platform — Industrial Tablet/Console",
+    "name": "Winmate Rugged GCS Platform \u2014 Industrial Tablet/Console",
     "manufacturer": "Winmate",
     "manufacturer_hq": "Taipei, Taiwan",
     "description": "Rugged outdoor computing platform for GCS applications available as tablets, dual-screen briefcase consoles, or rack-mount industrial PCs. IP-rated housings, high-brightness sunlight-readable touchscreens, reinforced frames, extended temperature operation. Supports AI acceleration modules and GPUs for real-time object tracking, thermal analysis, and intelligent mission automation. Software-agnostic: runs QGroundControl, MissionPlanner, UgCS, and custom OEM integrations. Supports RF, 4G/5G, and optional satellite links.",
@@ -269,7 +350,22 @@
       "24_7",
       "bvlos"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "autopilot_compatibility": [
+      "ArduPilot",
+      "PX4",
+      "custom"
+    ],
+    "os": "Windows 11 IoT",
+    "display": "12.1\" sunlight readable",
+    "bvlos_capable": true,
+    "features": [
+      "MIL-STD-810",
+      "hot-swap battery",
+      "vehicle-mount options"
+    ],
+    "hot_swap_battery": true,
+    "multi_drone": true
   },
   {
     "pid": "GCS-0007",
@@ -314,12 +410,36 @@
       "shelter",
       "combat_proven"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "autopilot_compatibility": [
+      "GA-ASI proprietary"
+    ],
+    "os": "Proprietary",
+    "bvlos_capable": true,
+    "adsb_integration": true,
+    "features": [
+      "dual-pilot capable",
+      "SATCOM",
+      "Link 16",
+      "datalink redundancy"
+    ],
+    "multi_drone": true,
+    "military_programs": [
+      "Predator",
+      "Reaper",
+      "Avenger"
+    ],
+    "redundant_architecture": true,
+    "satcom": true,
+    "vehicle_types": [
+      "MALE UCAV",
+      "ISR"
+    ]
   },
   {
     "pid": "GCS-0008",
     "category": "ground_control_stations",
-    "name": "MAVProxy — Command Line GCS for Developers",
+    "name": "MAVProxy \u2014 Command Line GCS for Developers",
     "manufacturer": "ArduPilot Community",
     "manufacturer_hq": "Open Source Community",
     "description": "Lightweight, extensible command-line GCS written in Python for Linux, primarily used by code developers. Provides graphical modules for map and mission editing alongside CLI interface. Extensible via Python modules for custom automation and scripting. Low resource footprint makes it ideal for companion computer integration on drones running ArduPilot.",
@@ -354,12 +474,19 @@
       "linux",
       "companion_computer"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "os": "Linux / Windows / macOS",
+    "bvlos_capable": true,
+    "gcs_software": "MAVProxy",
+    "multi_drone": false,
+    "vehicle_types": [
+      "all MAVLink vehicles"
+    ]
   },
   {
     "pid": "GCS-0009",
     "category": "ground_control_stations",
-    "name": "ARK Electronics Just a Jetson — NDAA-Compliant Carrier Board",
+    "name": "ARK Electronics Just a Jetson \u2014 NDAA-Compliant Carrier Board",
     "manufacturer": "ARK Electronics",
     "manufacturer_hq": "USA",
     "description": "NDAA-compliant carrier board for NVIDIA Jetson modules providing secure onboard AI compute for defense drone applications. Designed to bring Jetson Orin capabilities into Blue UAS and NDAA-compliant airframes. Supports PX4 and ArduPilot integration. Highlighted as a 2025 breakthrough in autonomous drone compute for defense.",
@@ -390,12 +517,24 @@
     ],
     "schema_data": {
       "weight_g": 50
-    }
+    },
+    "os": "Ubuntu / JetPack",
+    "bvlos_capable": true,
+    "features": [
+      "NDAA-compliant",
+      "DroneCAN",
+      "carrier board"
+    ],
+    "gcs_software": "ROS2 / QGC",
+    "license": "Open",
+    "vehicle_types": [
+      "multirotor"
+    ]
   },
   {
     "pid": "GCS-0010",
     "category": "ground_control_stations",
-    "name": "UAV Navigation VECTOR — Autopilot + Flight Control System",
+    "name": "UAV Navigation VECTOR \u2014 Autopilot + Flight Control System",
     "manufacturer": "UAV Navigation-Grupo Oesia",
     "manufacturer_hq": "Madrid, Spain",
     "description": "Professional autopilot and flight control system with integrated Iridium SATCOM for BVLOS operations. Validated integration with ATMOSPHERE SATCOM terminal for reliable, low-latency satellite connectivity. Supports fixed-wing, VTOL, and multirotor platforms. Part of the growing European autonomous drone ecosystem. Strengthens BVLOS autonomy through satellite-based C2 link.",
@@ -422,12 +561,26 @@
       "european",
       "professional"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "autopilot_compatibility": [
+      "VECTOR proprietary"
+    ],
+    "os": "Proprietary RTOS",
+    "adsb_integration": true,
+    "features": [
+      "DO-178C",
+      "MIL-grade",
+      "redundant",
+      "SATCOM"
+    ],
+    "gcs_software": "VECTOR GCS",
+    "redundant_architecture": true,
+    "certification_path": "DO-178C / EASA"
   },
   {
     "pid": "GCS-0011",
     "category": "ground_control_stations",
-    "name": "Veronte Autopilots — High-Reliability Avionics GCS Ecosystem",
+    "name": "Veronte Autopilots \u2014 High-Reliability Avionics GCS Ecosystem",
     "manufacturer": "Embention",
     "manufacturer_hq": "Alicante, Spain",
     "description": "Series of high-reliability avionics systems for real-time adaptive control of unmanned vehicles (UAV, USV, UGV). Provides both autopilot hardware and ground control software ecosystem. Features redundant architecture, DO-254/DO-178C certification path, and support for complex mission profiles. Used in military and civilian applications across Europe and globally.",
@@ -454,12 +607,24 @@
       "multi_vehicle",
       "european"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "autopilot_compatibility": [
+      "Veronte"
+    ],
+    "os": "Proprietary",
+    "bvlos_capable": true,
+    "adsb_integration": true,
+    "features": [
+      "DO-178C certified",
+      "redundant",
+      "BVLOS ready"
+    ],
+    "gcs_software": "Veronte Pipe"
   },
   {
     "pid": "GCS-0012",
     "category": "ground_control_stations",
-    "name": "Auterion Mission Control — Enterprise Drone Fleet GCS",
+    "name": "Auterion Mission Control \u2014 Enterprise Drone Fleet GCS",
     "manufacturer": "Auterion",
     "manufacturer_hq": "Zurich, Switzerland / Arlington, VA, USA",
     "description": "Enterprise-grade ground control and fleet management platform built on PX4 open-source autopilot. Cloud-connected for fleet-wide mission management, analytics, and over-the-air updates. Supports US Army SRR (Short Range Reconnaissance) program. NDAA-compliant. Provides standardized interface across multiple drone platforms for defense and commercial operators.",
@@ -489,12 +654,27 @@
       "ndaa",
       "ota"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "os": "iOS / Android / Web",
+    "bvlos_capable": true,
+    "features": [
+      "fleet management",
+      "cloud sync",
+      "Skynode integration"
+    ],
+    "gcs_software": "Auterion Mission Control",
+    "license": "Subscription",
+    "multi_drone": true,
+    "vehicle_types": [
+      "multirotor",
+      "fixed-wing",
+      "VTOL"
+    ]
   },
   {
     "pid": "GCS-0013",
     "category": "ground_control_stations",
-    "name": "VOTIX DroneOS — Autonomous Drone Operating System",
+    "name": "VOTIX DroneOS \u2014 Autonomous Drone Operating System",
     "manufacturer": "VOTIX",
     "manufacturer_hq": "Israel",
     "description": "Autonomous drone operating system providing DFR (Drone as First Responder) and AAM (Advanced Air Mobility) capabilities. Integrates uAvionix FlightLine ADS-B data for real-time Detect and Avoid situational awareness. Enables autonomous launch, mission execution, and landing without continuous human control. Designed for public safety, security, and infrastructure inspection deployments.",
@@ -520,6 +700,23 @@
       "first_responder",
       "public_safety"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "autopilot_compatibility": [
+      "PX4",
+      "ArduPilot",
+      "DJI"
+    ],
+    "os": "Web / iOS / Android",
+    "bvlos_capable": true,
+    "gcs_software": "VOTIX DroneOS",
+    "license": "Subscription",
+    "multi_drone": true,
+    "cloud_connected": true,
+    "fleet_management": true,
+    "ai_acceleration": true,
+    "vehicle_types": [
+      "multirotor",
+      "fixed-wing"
+    ]
   }
 ]
