@@ -201,7 +201,8 @@
       "weight_g": 1
     },
     "is_aio": false,
-    "imu": "N/A - not an FC"
+    "imu": "N/A - not an FC",
+    "mcu_family": "N/A"
   },
   {
     "pid": "FC-1006",
@@ -2301,7 +2302,9 @@
       "weight_g": 11
     },
     "is_aio": false,
-    "imu": "N/A - not an FC"
+    "imu": "N/A - not an FC",
+    "firmware_targets": "N/A",
+    "mcu_family": "N/A"
   },
   {
     "pid": "FC-1064",
@@ -2802,7 +2805,7 @@
     "description": "The CubePilot ADS-B Carrier Board allows the software to receive information about the location of manned aircraft in the area. Made to work well with the Cube Autopilot.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/cubepilot-ads-b-standard-carrier-board.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/d/ads-b-standard-carrier-board-3.jpg",
-    "mcu_family": "",
+    "mcu_family": "N/A",
     "size_class": "universal",
     "tags": [],
     "mounting_pattern_mm": 30.5,
@@ -2991,7 +2994,9 @@
     "schema_data": {
       "weight_g": 1
     },
-    "is_aio": false
+    "is_aio": false,
+    "firmware_targets": "N/A",
+    "mcu_family": "N/A"
   },
   {
     "pid": "FC-1088",
@@ -3453,7 +3458,9 @@
       "weight_g": 1
     },
     "is_aio": false,
-    "imu": "N/A - not an FC"
+    "imu": "N/A - not an FC",
+    "firmware_targets": "N/A",
+    "mcu_family": "N/A"
   },
   {
     "pid": "FC-1102",
@@ -7174,7 +7181,8 @@
       "weight_g": 13
     },
     "is_aio": false,
-    "imu": "N/A - not an FC"
+    "imu": "N/A - not an FC",
+    "mcu_family": "N/A"
   },
   {
     "pid": "FC-1211",
@@ -9439,7 +9447,7 @@
     "description": "The Happymodel Crazybeex FR V2.2 is a 4-in-1 flight controller that comes with the Onboard 5.8GHz 40CH VTX, Onboard 5A 4-in-1 ESC, and you can choose FrSky receiver option or PNP.",
     "link": "https://www.getfpv.com/electronics/flight-controllers/happymodel-crazybeex-v2-2-5a-1-2s-aio-flight-controller.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happy_2.jpg",
-    "mcu_family": "",
+    "mcu_family": "STM32F411",
     "cell_count_min": 1,
     "cell_count_max": 2,
     "esc_current_a": 5,
@@ -9478,7 +9486,8 @@
     "schema_data": {
       "weight_g": 10
     },
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1272",
@@ -11086,7 +11095,9 @@
     "approx_price": 33,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "mcu_family": "STM32F411",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1317",
@@ -12036,7 +12047,9 @@
     "schema_data": {
       "weight_g": 1
     },
-    "is_aio": false
+    "is_aio": false,
+    "mcu_family": "STM32F411",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-1342",
@@ -12627,7 +12640,8 @@
       "weight_g": 1
     },
     "is_aio": false,
-    "imu": "N/A - not an FC"
+    "imu": "N/A - not an FC",
+    "mcu_family": "N/A"
   },
   {
     "pid": "FC-1365",
@@ -13431,7 +13445,8 @@
     "schema_data": {
       "weight_g": 14
     },
-    "is_aio": false
+    "is_aio": false,
+    "mcu_family": "STM32F427"
   },
   {
     "pid": "FC-1397",
@@ -14371,7 +14386,8 @@
       "weight_g": 15
     },
     "is_aio": false,
-    "mcu_family": "H7"
+    "mcu_family": "H7",
+    "firmware_targets": "ArduPilot/PX4"
   },
   {
     "pid": "FC-1298",
@@ -14406,7 +14422,9 @@
     "schema_data": {
       "weight_g": 12
     },
-    "is_aio": false
+    "is_aio": false,
+    "firmware_targets": "N/A",
+    "mcu_family": "N/A"
   },
   {
     "pid": "FC-1299",
@@ -14439,7 +14457,9 @@
     "schema_data": {
       "weight_g": 14
     },
-    "is_aio": false
+    "is_aio": false,
+    "firmware_targets": "N/A",
+    "mcu_family": "N/A"
   },
   {
     "pid": "FC-UA-603700-\u0413\u0430\u043b\u0438\u0447\u0438\u043d\u0430-v2",
@@ -14468,7 +14488,9 @@
     "approx_price": 29.27,
     "description": "Flight controller by 603700. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-603700-\u0413\u0430\u043b\u0438\u0447\u0438\u043d\u0430-v3",
@@ -14497,7 +14519,9 @@
     "approx_price": 30.73,
     "description": "Flight controller by 603700. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-603700-\u0413\u0430\u043b\u0438\u0447\u0438\u043d\u0430-v4",
@@ -14526,7 +14550,9 @@
     "approx_price": 40.98,
     "description": "Flight controller by 603700. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-603700-\u0411\u043e\u0440\u0438\u0441\u043f\u0456\u043b\u044c-v1",
@@ -14555,7 +14581,9 @@
     "approx_price": 50.49,
     "description": "Flight controller by 603700. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-603700-\u0411\u043e\u0440\u0438\u0441\u043f\u0456\u043b\u044c+-v",
@@ -14584,7 +14612,9 @@
     "approx_price": 57.8,
     "description": "Flight controller by 603700. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-Stingbee-Stellar-F4V2",
@@ -14615,7 +14645,8 @@
     "is_aio": false,
     "mcu_family": "F4",
     "mcu": "STM32F405xx",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-Stingbee-Stellar-H7V2",
@@ -14646,7 +14677,8 @@
     "is_aio": false,
     "mcu_family": "H7",
     "mcu": "STM32H743xx",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-Flytex-Fuzia-F405",
@@ -14675,7 +14707,9 @@
     "approx_price": 24.39,
     "description": "Flight controller by Flytex. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-Flytex-Fuzia-F405-8",
@@ -14704,7 +14738,9 @@
     "approx_price": 24.39,
     "description": "Flight controller by Flytex. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-Flytex-CRASHDETECT-",
@@ -14733,7 +14769,9 @@
     "approx_price": 24.39,
     "description": "Flight controller by Flytex. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-Flytex-Fuzia-F722",
@@ -14762,7 +14800,9 @@
     "approx_price": 26.83,
     "description": "Flight controller by Flytex. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F722",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-Flytex-Furia-H743-S",
@@ -14791,7 +14831,9 @@
     "approx_price": 58.54,
     "description": "Flight controller by Flytex. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32H743",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-Flytex-Furia-H743-W",
@@ -14820,7 +14862,9 @@
     "approx_price": 41.46,
     "description": "Flight controller by Flytex. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32H743",
+    "firmware_targets": "Betaflight/iNav/ArduPilot"
   },
   {
     "pid": "FC-UA-DiFly-DF-F405-v3-R",
@@ -14849,7 +14893,9 @@
     "approx_price": 24.39,
     "description": "Flight controller by DiFly. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-DiFly-DF-F405-WING",
@@ -14878,7 +14924,9 @@
     "approx_price": 41.46,
     "description": "Flight controller by DiFly. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight/iNav"
   },
   {
     "pid": "FC-UA-Kiwi-F405-Flight-",
@@ -14907,7 +14955,9 @@
     "approx_price": 39.02,
     "description": "Flight controller by Kiwi. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-Kiwi-H743-FPV",
@@ -14936,7 +14986,9 @@
     "approx_price": 68.29,
     "description": "Flight controller by Kiwi. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32H743",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-Kiwi-F722-FPV-Air",
@@ -14965,7 +15017,9 @@
     "approx_price": 45.85,
     "description": "Flight controller by Kiwi. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F722",
+    "firmware_targets": "Betaflight/iNav"
   },
   {
     "pid": "FC-UA-Kiwi-F405-12S-Fli",
@@ -14994,7 +15048,9 @@
     "approx_price": 39.02,
     "description": "Flight controller by Kiwi. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-Bloomtec-\u041b\u0430\u0441\u0442\u0456\u0432\u043a\u0430",
@@ -15023,7 +15079,9 @@
     "approx_price": 107.12,
     "description": "Flight controller by Bloomtech. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F405",
+    "firmware_targets": "Betaflight"
   },
   {
     "pid": "FC-UA-FT-F722-PRO-HV-",
@@ -15052,7 +15110,9 @@
     "approx_price": 56.78,
     "description": "Flight controller by. MCU. mounting.",
     "is_aio": false,
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "mcu_family": "STM32F722",
+    "firmware_targets": "Betaflight/iNav"
   },
   {
     "pid": "FC-UA-FT-F722-V1-FC-3",
@@ -15081,6 +15141,8 @@
     "approx_price": 47.71,
     "description": "Flight controller by. MCU. mounting.",
     "is_aio": false,
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "mcu_family": "STM32F722",
+    "firmware_targets": "Betaflight"
   }
 ]
