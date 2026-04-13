@@ -49,7 +49,13 @@
     "schema_data": {
       "weight_g": 1
     },
-    "gnss_chipset": "u-blox M10"
+    "gnss_chipset": "u-blox M10",
+    "constellations": [
+      "GPS",
+      "GLONASS",
+      "Galileo",
+      "BeiDou"
+    ]
   },
   {
     "pid": "GPS-1002",
@@ -131,7 +137,13 @@
     "schema_data": {
       "weight_g": 11
     },
-    "gnss_chipset": "u-blox F9P"
+    "gnss_chipset": "u-blox F9P",
+    "constellations": [
+      "GPS",
+      "GLONASS",
+      "Galileo",
+      "BeiDou"
+    ]
   },
   {
     "pid": "GPS-1005",
@@ -154,7 +166,11 @@
     "schema_data": {
       "weight_g": 11
     },
-    "gnss_chipset": "PNI RM3100"
+    "gnss_chipset": "PNI RM3100",
+    "constellations": [
+      "GPS",
+      "GLONASS"
+    ]
   },
   {
     "pid": "GPS-1006",
@@ -385,7 +401,12 @@
     "schema_data": {
       "weight_g": 15
     },
-    "gnss_chipset": "u-blox M8N"
+    "gnss_chipset": "u-blox M8N",
+    "constellations": [
+      "GPS",
+      "GLONASS",
+      "BeiDou"
+    ]
   },
   {
     "pid": "GPS-1014",
@@ -498,7 +519,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "gnss_chipset": "N/A - compass/baro only"
+    "gnss_chipset": "N/A - compass/baro only",
+    "constellations": []
   },
   {
     "pid": "GPS-1018",
@@ -550,7 +572,12 @@
     "schema_data": {
       "weight_g": 12
     },
-    "gnss_chipset": "u-blox M8N"
+    "gnss_chipset": "u-blox M8N",
+    "constellations": [
+      "GPS",
+      "GLONASS",
+      "BeiDou"
+    ]
   },
   {
     "pid": "GPS-1020",
@@ -633,7 +660,12 @@
     "schema_data": {
       "weight_g": 9
     },
-    "gnss_chipset": "u-blox M8N"
+    "gnss_chipset": "u-blox M8N",
+    "constellations": [
+      "GPS",
+      "GLONASS",
+      "BeiDou"
+    ]
   },
   {
     "pid": "GPS-1023",
@@ -774,7 +806,8 @@
     "schema_data": {
       "weight_g": 13
     },
-    "gnss_chipset": "N/A - adapter"
+    "gnss_chipset": "N/A - adapter",
+    "constellations": []
   },
   {
     "pid": "GPS-1028",
@@ -797,7 +830,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "gnss_chipset": "N/A - cable"
+    "gnss_chipset": "N/A - cable",
+    "constellations": []
   },
   {
     "pid": "GPS-1029",
@@ -849,7 +883,8 @@
     "schema_data": {
       "weight_g": 14
     },
-    "gnss_chipset": "N/A - cable"
+    "gnss_chipset": "N/A - cable",
+    "constellations": []
   },
   {
     "pid": "GPS-1031",
@@ -872,7 +907,8 @@
     "schema_data": {
       "weight_g": 17
     },
-    "gnss_chipset": "N/A - cable"
+    "gnss_chipset": "N/A - cable",
+    "constellations": []
   },
   {
     "pid": "GPS-1032",
@@ -924,7 +960,8 @@
     "schema_data": {
       "weight_g": 8
     },
-    "gnss_chipset": "N/A - cable"
+    "gnss_chipset": "N/A - cable",
+    "constellations": []
   },
   {
     "pid": "GPS-1034",
@@ -1183,7 +1220,12 @@
     "schema_data": {
       "weight_g": 3
     },
-    "gnss_chipset": "u-blox M8N"
+    "gnss_chipset": "u-blox M8N",
+    "constellations": [
+      "GPS",
+      "GLONASS",
+      "BeiDou"
+    ]
   },
   {
     "pid": "GPS-1043",
@@ -1322,7 +1364,12 @@
     "schema_data": {
       "weight_g": 1
     },
-    "gnss_chipset": "u-blox M8N"
+    "gnss_chipset": "u-blox M8N",
+    "constellations": [
+      "GPS",
+      "GLONASS",
+      "BeiDou"
+    ]
   },
   {
     "pid": "GPS-1048",
@@ -1434,7 +1481,12 @@
     "schema_data": {
       "weight_g": 1
     },
-    "gnss_chipset": "u-blox M8N"
+    "gnss_chipset": "u-blox M8N",
+    "constellations": [
+      "GPS",
+      "GLONASS",
+      "BeiDou"
+    ]
   },
   {
     "pid": "GPS-1052",
@@ -1631,7 +1683,8 @@
     "schema_data": {
       "weight_g": 15
     },
-    "gnss_chipset": "N/A - Bluetooth module"
+    "gnss_chipset": "N/A - Bluetooth module",
+    "constellations": []
   },
   {
     "pid": "GPS-1059",
@@ -1654,7 +1707,8 @@
     "schema_data": {
       "weight_g": 4
     },
-    "gnss_chipset": "N/A - Bluetooth module"
+    "gnss_chipset": "N/A - Bluetooth module",
+    "constellations": []
   },
   {
     "pid": "GPS-1060",
@@ -1677,7 +1731,12 @@
     "schema_data": {
       "weight_g": 12
     },
-    "gnss_chipset": "u-blox M8N"
+    "gnss_chipset": "u-blox M8N",
+    "constellations": [
+      "GPS",
+      "GLONASS",
+      "BeiDou"
+    ]
   },
   {
     "pid": "GPS-1061",
@@ -1700,7 +1759,12 @@
     "schema_data": {
       "weight_g": 14
     },
-    "gnss_chipset": "u-blox M8N"
+    "gnss_chipset": "u-blox M8N",
+    "constellations": [
+      "GPS",
+      "GLONASS",
+      "BeiDou"
+    ]
   },
   {
     "pid": "GPS-1062",
@@ -2019,7 +2083,12 @@
     "schema_data": {
       "weight_g": 1
     },
-    "gnss_chipset": "u-blox M8N"
+    "gnss_chipset": "u-blox M8N",
+    "constellations": [
+      "GPS",
+      "GLONASS",
+      "BeiDou"
+    ]
   },
   {
     "pid": "GPS-1073",
@@ -2042,6 +2111,7 @@
     "schema_data": {
       "weight_g": 13
     },
-    "gnss_chipset": "N/A - adapter cable"
+    "gnss_chipset": "N/A - adapter cable",
+    "constellations": []
   }
 ]

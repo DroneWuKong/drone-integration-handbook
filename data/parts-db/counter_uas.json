@@ -2,11 +2,11 @@
   {
     "pid": "CUAS-0001",
     "category": "counter_uas",
-    "name": "Raytheon Coyote Block 2 — Jet Interceptor",
+    "name": "Raytheon Coyote Block 2 \u2014 Jet Interceptor",
     "manufacturer": "Raytheon (RTX)",
     "description": "Jet-powered kinetic interceptor drone at 345-370 mph with 10-15 km range and tungsten warhead. 6,000+ rounds ordered by US Army. Paired with KuRFS radar (16 km detection range). Block 3 variant features HPM (high-power microwave) warhead that defeated a 10-drone swarm in testing.",
     "link": "https://www.rtx.com/",
-    "approx_price": "$100,000–$200,000",
+    "approx_price": "$100,000\u2013$200,000",
     "detection_range_km": 16,
     "defeat_range_km": 15,
     "defeat_method": "kinetic (tungsten) / HPM (Block 3)",
@@ -34,11 +34,11 @@
   {
     "pid": "CUAS-0002",
     "category": "counter_uas",
-    "name": "Anduril Anvil — CV-Guided Interceptor",
+    "name": "Anduril Anvil \u2014 CV-Guided Interceptor",
     "manufacturer": "Anduril Industries",
     "description": "200 mph interceptor quadcopter using computer vision for terminal guidance. Autonomous target engagement. Part of Anduril's Lattice AI ecosystem for integrated air defense.",
     "link": "https://www.anduril.com/",
-    "approx_price": "$50,000–$100,000",
+    "approx_price": "$50,000\u2013$100,000",
     "detection_range_km": null,
     "defeat_range_km": 5,
     "defeat_method": "kinetic (CV-guided impact)",
@@ -63,11 +63,11 @@
   {
     "pid": "CUAS-0003",
     "category": "counter_uas",
-    "name": "Anduril Roadrunner-M — Reusable VTOL Interceptor",
+    "name": "Anduril Roadrunner-M \u2014 Reusable VTOL Interceptor",
     "manufacturer": "Anduril Industries",
     "description": "VTOL reusable interceptor with explosive warhead capable of engaging Group 1-5 UAS plus cruise missiles. Can be recovered and reused if target is not engaged. Represents next-gen C-UAS moving toward reusable autonomous interceptors.",
     "link": "https://www.anduril.com/",
-    "approx_price": "$200,000–$500,000",
+    "approx_price": "$200,000\u2013$500,000",
     "detection_range_km": null,
     "defeat_range_km": 10,
     "defeat_method": "kinetic (explosive warhead, reusable)",
@@ -93,11 +93,11 @@
   {
     "pid": "CUAS-0004",
     "category": "counter_uas",
-    "name": "CACI SkyTracker — RF Detection System",
+    "name": "CACI SkyTracker \u2014 RF Detection System",
     "manufacturer": "CACI International",
     "description": "World's largest signals intelligence library for drone detection with 700+ deployed systems. Passive RF detection identifies drone protocols without jamming. Paired with BEAM for defeat capability.",
     "link": "https://www.caci.com/",
-    "approx_price": "$100,000–$300,000",
+    "approx_price": "$100,000\u2013$300,000",
     "detection_range_km": 10,
     "defeat_range_km": null,
     "defeat_method": "detection only (passive RF)",
@@ -122,11 +122,11 @@
   {
     "pid": "CUAS-0005",
     "category": "counter_uas",
-    "name": "CACI BEAM 3.0 — Backpack Jammer",
+    "name": "CACI BEAM 3.0 \u2014 Backpack Jammer",
     "manufacturer": "CACI International",
     "description": "Ultra-portable C-UAS jammer at only 3 lbs (1.4 kg). 3 km range dismount, 5 km mobile, 10+ km fixed-site. Pairs with SkyTracker for detect-and-defeat chain.",
     "link": "https://www.caci.com/",
-    "approx_price": "$50,000–$100,000",
+    "approx_price": "$50,000\u2013$100,000",
     "detection_range_km": null,
     "defeat_range_km": 10,
     "defeat_method": "RF jamming",
@@ -152,11 +152,11 @@
   {
     "pid": "CUAS-0006",
     "category": "counter_uas",
-    "name": "D-Fend Solutions EnforceAir2 — Protocol Takeover",
+    "name": "D-Fend Solutions EnforceAir2 \u2014 Protocol Takeover",
     "manufacturer": "D-Fend Solutions",
-    "description": "Detects drones at 4.5 km (360° omni) and performs protocol takeover (not jamming) at 1.2-4 km range. Takes control of drone without disrupting surrounding RF environment. US JCO CaaS evaluation. Israeli technology.",
+    "description": "Detects drones at 4.5 km (360\u00b0 omni) and performs protocol takeover (not jamming) at 1.2-4 km range. Takes control of drone without disrupting surrounding RF environment. US JCO CaaS evaluation. Israeli technology.",
     "link": "https://d-fendsolutions.com/",
-    "approx_price": "$200,000–$500,000",
+    "approx_price": "$200,000\u2013$500,000",
     "detection_range_km": 4.5,
     "defeat_range_km": 4,
     "defeat_method": "protocol takeover (non-jamming)",
@@ -183,11 +183,11 @@
   {
     "pid": "CUAS-0007",
     "category": "counter_uas",
-    "name": "Sentrycs — Direct Protocol Manipulation",
+    "name": "Sentrycs \u2014 Direct Protocol Manipulation",
     "manufacturer": "Sentrycs",
     "description": "Direct protocol manipulation C-UAS system without requiring preloaded signal libraries. Identifies and takes over drone control links in real-time. Integrated into Rafael Drone Dome system. Israeli technology.",
     "link": "https://www.sentrycs.com/",
-    "approx_price": "$100,000–$300,000",
+    "approx_price": "$100,000\u2013$300,000",
     "detection_range_km": null,
     "defeat_range_km": 3,
     "defeat_method": "direct protocol manipulation",
@@ -211,11 +211,11 @@
   {
     "pid": "CUAS-0008",
     "category": "counter_uas",
-    "name": "Rafael Drone Dome — Integrated C-UAS System",
+    "name": "Rafael Drone Dome \u2014 Integrated C-UAS System",
     "manufacturer": "Rafael Advanced Defense Systems",
     "description": "Integrated C-UAS system combining RADA RPS-82 radar (5.6 km detection), RF detection (70 MHz-6 GHz), C-Guard jammer, and Lite Beam laser effector. Combat-proven with British Army and at G7 summits. Full detect-track-identify-defeat kill chain.",
     "link": "https://www.rafael.co.il/",
-    "approx_price": "$2,000,000–$10,000,000",
+    "approx_price": "$2,000,000\u2013$10,000,000",
     "detection_range_km": 5.6,
     "defeat_range_km": 3,
     "defeat_method": "RF jamming + laser + cyber takeover (via Sentrycs)",
@@ -242,11 +242,11 @@
   {
     "pid": "CUAS-0009",
     "category": "counter_uas",
-    "name": "DroneShield DroneGun Tactical — Rifle Jammer",
+    "name": "DroneShield DroneGun Tactical \u2014 Rifle Jammer",
     "manufacturer": "DroneShield",
     "description": "Handheld rifle-form jammer at 7.3 kg covering 5 frequency bands plus GNSS. 2.5 km effective range. Point-and-shoot operation. $61.6M contract value. A$2.9B market cap. Australian/US company.",
     "link": "https://www.droneshield.com/",
-    "approx_price": "$30,000–$60,000",
+    "approx_price": "$30,000\u2013$60,000",
     "detection_range_km": null,
     "defeat_range_km": 2.5,
     "defeat_method": "directional RF jamming (5 bands + GNSS)",
@@ -274,11 +274,11 @@
   {
     "pid": "CUAS-0010",
     "category": "counter_uas",
-    "name": "DroneShield RfPatrol Mk2 — Wearable Detector",
+    "name": "DroneShield RfPatrol Mk2 \u2014 Wearable Detector",
     "manufacturer": "DroneShield",
-    "description": "Wearable passive RF drone detector at only 2.6 lbs (1.2 kg). Alerts operator to drone presence via smartphone app. No emissions — purely passive detection. Ideal for dismounted troops and personal protection.",
+    "description": "Wearable passive RF drone detector at only 2.6 lbs (1.2 kg). Alerts operator to drone presence via smartphone app. No emissions \u2014 purely passive detection. Ideal for dismounted troops and personal protection.",
     "link": "https://www.droneshield.com/",
-    "approx_price": "$10,000–$20,000",
+    "approx_price": "$10,000\u2013$20,000",
     "detection_range_km": 2,
     "defeat_range_km": null,
     "defeat_method": "detection only (passive RF)",
@@ -304,11 +304,11 @@
   {
     "pid": "CUAS-0011",
     "category": "counter_uas",
-    "name": "DroneShield DroneSentry — Fixed-Site System",
+    "name": "DroneShield DroneSentry \u2014 Fixed-Site System",
     "manufacturer": "DroneShield",
     "description": "Fixed-site integrated C-UAS system combining RF detection, radar, camera tracking, and countermeasure deployment. Modular architecture for scalable perimeter protection.",
     "link": "https://www.droneshield.com/",
-    "approx_price": "$200,000–$500,000",
+    "approx_price": "$200,000\u2013$500,000",
     "detection_range_km": 5,
     "defeat_range_km": 3,
     "defeat_method": "RF detection + jamming + integration",
@@ -335,11 +335,11 @@
   {
     "pid": "CUAS-0012",
     "category": "counter_uas",
-    "name": "Hensoldt Spexer 2000 3D — AESA Radar",
+    "name": "Hensoldt Spexer 2000 3D \u2014 AESA Radar",
     "manufacturer": "Hensoldt",
     "description": "3D AESA (Active Electronically Scanned Array) radar tracking 300+ targets at 40 km range. Part of GUARDION integrated C-UAS system (ESG/Diehl + Hensoldt + R&S). 5 systems deployed with Bundeswehr. German defense-grade.",
     "link": "https://www.hensoldt.net/",
-    "approx_price": "$500,000–$2,000,000",
+    "approx_price": "$500,000\u2013$2,000,000",
     "detection_range_km": 40,
     "defeat_range_km": null,
     "defeat_method": "detection + tracking (radar)",
@@ -368,11 +368,11 @@
   {
     "pid": "CUAS-0013",
     "category": "counter_uas",
-    "name": "Rohde & Schwarz ARDRONIS Effect — Gapless Jammer",
+    "name": "Rohde & Schwarz ARDRONIS Effect \u2014 Gapless Jammer",
     "manufacturer": "Rohde & Schwarz",
     "description": "Gapless RF jammer covering 400 MHz to 6 GHz continuously at 250W. 24/7 operation capability. Part of GUARDION system with Hensoldt Spexer radar. No frequency gaps means no drone protocol can evade jamming.",
     "link": "https://www.rohde-schwarz.com/",
-    "approx_price": "$500,000–$1,500,000",
+    "approx_price": "$500,000\u2013$1,500,000",
     "detection_range_km": null,
     "defeat_range_km": 5,
     "defeat_method": "gapless RF jamming (400 MHz - 6 GHz)",
@@ -400,11 +400,11 @@
   {
     "pid": "CUAS-0014",
     "category": "counter_uas",
-    "name": "Robin Radar ELVIRA — Bird/Drone Classifier",
+    "name": "Robin Radar ELVIRA \u2014 Bird/Drone Classifier",
     "manufacturer": "Robin Radar Systems",
-    "description": "Micro-Doppler radar that classifies drones versus birds at 3-9 km range. Solves the critical false-alarm problem in C-UAS — most radar systems cannot distinguish birds from small drones. Dutch technology.",
+    "description": "Micro-Doppler radar that classifies drones versus birds at 3-9 km range. Solves the critical false-alarm problem in C-UAS \u2014 most radar systems cannot distinguish birds from small drones. Dutch technology.",
     "link": "https://www.robinradar.com/",
-    "approx_price": "$200,000–$500,000",
+    "approx_price": "$200,000\u2013$500,000",
     "detection_range_km": 9,
     "defeat_range_km": null,
     "defeat_method": "classification (micro-Doppler)",
@@ -430,11 +430,11 @@
   {
     "pid": "CUAS-0015",
     "category": "counter_uas",
-    "name": "Aselsan IHTAR — Integrated C-UAS",
+    "name": "Aselsan IHTAR \u2014 Integrated C-UAS",
     "manufacturer": "Aselsan",
-    "description": "Turkish integrated C-UAS system with radar detection, EO/IR tracking, RF jamming, and GNSS denial. Deployed with Turkish Armed Forces. Part of Aselsan's broader air defense product family alongside KORKUT and GÖKDENIZ.",
+    "description": "Turkish integrated C-UAS system with radar detection, EO/IR tracking, RF jamming, and GNSS denial. Deployed with Turkish Armed Forces. Part of Aselsan's broader air defense product family alongside KORKUT and G\u00d6KDENIZ.",
     "link": "https://www.aselsan.com.tr/",
-    "approx_price": "$1,000,000–$5,000,000",
+    "approx_price": "$1,000,000\u2013$5,000,000",
     "detection_range_km": 10,
     "defeat_range_km": 5,
     "defeat_method": "RF jamming + GNSS denial + EO tracking",
@@ -468,7 +468,7 @@
     "link": "https://www.d-fendsolutions.com",
     "type": "detection + mitigation",
     "method": "RF cyber takeover",
-    "detection_range_km": null,
+    "detection_range_km": 4.5,
     "mitigation_range_km": null,
     "form_factors": [
       "fixed",
@@ -491,6 +491,13 @@
       "swarm-capable",
       "no-LOS",
       "US-deployed"
+    ],
+    "defeat_method": "protocol takeover (non-jamming)",
+    "defeat_range_km": 4.0,
+    "form_factor": "fixed / vehicle / portable",
+    "compliance": [
+      "ndaa",
+      "combat_proven"
     ]
   },
   {
@@ -517,6 +524,12 @@
       "man-portable",
       "SDR-upgradeable",
       "GPS-denial"
+    ],
+    "defeat_method": "directional RF jamming (multi-band)",
+    "defeat_range_km": 3.0,
+    "form_factor": "rifle / handheld",
+    "compliance": [
+      "ndaa"
     ]
   },
   {
@@ -545,6 +558,12 @@
       "networked",
       "triangulation",
       "wearable"
+    ],
+    "defeat_method": "RF jamming + GNSS denial (wideband)",
+    "defeat_range_km": 5.0,
+    "form_factor": "vehicle / fixed-site",
+    "compliance": [
+      "ndaa"
     ]
   },
   {
@@ -571,6 +590,12 @@
       "ATAK-integration",
       "C2-disruption",
       "pilot-locating"
+    ],
+    "defeat_method": "RF jamming (covert audio-spectrum masking)",
+    "defeat_range_km": 2.0,
+    "form_factor": "portable / fixed",
+    "compliance": [
+      "ndaa"
     ]
   },
   {
@@ -583,7 +608,7 @@
     "link": "https://www.meteksan.com",
     "type": "detection (radar)",
     "method": "active radar",
-    "detection_range_km": null,
+    "detection_range_km": 20.0,
     "mitigation_range_km": null,
     "form_factors": [
       "fixed",
@@ -596,6 +621,11 @@
       "radar",
       "long-range-detection",
       "Turkish"
+    ],
+    "defeat_method": "AESA radar detection + tracking",
+    "form_factor": "vehicle-mounted / fixed-site radar",
+    "compliance": [
+      "nato_member"
     ]
   },
   {
@@ -608,7 +638,7 @@
     "link": "https://www.alpine-eagle.com",
     "type": "airborne C-UAS (kinetic/intercept)",
     "method": "air-to-air intercept + radar",
-    "detection_range_km": null,
+    "detection_range_km": 5.0,
     "mitigation_range_km": null,
     "form_factors": [
       "airborne fixed-wing swarm"
@@ -622,6 +652,12 @@
       "NATO-tested",
       "machine-learning",
       "air-to-air"
+    ],
+    "defeat_method": "RF detection + jamming + CV tracking",
+    "defeat_range_km": 3.0,
+    "form_factor": "portable integrated system",
+    "compliance": [
+      "ndaa"
     ]
   },
   {
@@ -634,7 +670,7 @@
     "link": null,
     "type": "airborne C-UAS (kinetic)",
     "method": "ballistic countermeasures",
-    "detection_range_km": null,
+    "detection_range_km": 3.0,
     "mitigation_range_km": null,
     "form_factors": [
       "airborne interceptor"
@@ -648,6 +684,12 @@
       "swarming",
       "HITL",
       "trajectory-prediction"
+    ],
+    "defeat_method": "kinetic interceptor (net capture)",
+    "defeat_range_km": 2.0,
+    "form_factor": "launcher / fixed-site",
+    "compliance": [
+      "ndaa"
     ]
   },
   {
@@ -660,7 +702,7 @@
     "link": "https://www.trakkasystems.com",
     "type": "detection + tracking (ISR)",
     "method": "EO/IR + RF",
-    "detection_range_km": null,
+    "detection_range_km": 5.0,
     "mitigation_range_km": null,
     "form_factors": [
       "mobile",
@@ -674,6 +716,11 @@
       "EO-IR",
       "Australian",
       "multi-sensor"
+    ],
+    "defeat_method": "EO/IR detection + tracking",
+    "form_factor": "turret / fixed-site EO/IR",
+    "compliance": [
+      "ndaa"
     ]
   }
 ]
