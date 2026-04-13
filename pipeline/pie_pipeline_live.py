@@ -2075,7 +2075,40 @@ def main():
     batt_partsdb_flags = analyze_battery_partsdb(db)
     all_flags.extend(batt_partsdb_flags)
 
-    print("\nChecking live component pricing (Mouser/DigiKey)...")
+    # ── Wire Mouser/DigiKey: enrich parts-db with live prices ──────────────
+    print("\nFetching live component pricing from Mouser/DigiKey...")
+    import os as _os, sys as _sys, json as _json
+    from pathlib import Path as _Path
+    _mouser_key = _os.environ.get("MOUSER_API_KEY", "")
+    _dk_id      = _os.environ.get("DIGIKEY_CLIENT_ID", "")
+    _dk_secret  = _os.environ.get("DIGIKEY_CLIENT_SECRET", "")
+    if _mouser_key or (_dk_id and _dk_secret):
+        try:
+            _sys.path.insert(0, str(_Path(__file__).resolve().parent))
+            from pricing import PricingClient
+            _parts_db_dir = _Path(__file__).resolve().parent.parent / "data" / "parts-db"
+            _pricing_client = PricingClient()
+            if _pricing_client.available:
+                for _cat in ["flight_controllers","escs","motors","batteries",
+                             "fpv_cameras","video_transmitters","receivers",
+                             "companion_computers","navigation_pnt"]:
+                    _fp = _parts_db_dir / f"{_cat}.json"
+                    if not _fp.exists():
+                        continue
+                    try:
+                        _parts = _json.loads(_fp.read_text())
+                        if isinstance(_parts, list):
+                            _enriched = _pricing_client.enrich_parts_db(_parts, max_queries=30)
+                            _fp.write_text(_json.dumps(_enriched, indent=2, ensure_ascii=False))
+                            print(f"  [Pricing] {_cat}: enriched")
+                    except Exception as _e:
+                        print(f"  [Pricing] {_cat} error: {_e}")
+        except Exception as _e:
+            print(f"  [Pricing] enrich error: {_e}")
+    else:
+        print("  [Pricing] MOUSER_API_KEY not set — skipping live price fetch")
+
+    print("\nChecking live component pricing signals (Mouser/DigiKey)...")
     pricing_flags = analyze_live_pricing(db)
     all_flags.extend(pricing_flags)
 
