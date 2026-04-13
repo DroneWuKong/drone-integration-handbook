@@ -4,7 +4,7 @@
     "category": "video_transmitters",
     "name": "WalleFPV Naked O4 Pro Air Unit",
     "manufacturer": "WalleFPV",
-    "description": "The WalleFPV Naked O4 Pro Air Unit is here to make your ultra-lightweight HD FPV drones even lighter.",
+    "description": "The\u00a0WalleFPV Naked O4 Pro Air Unit is here to make your ultra-lightweight HD FPV drones even lighter.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/wallefpv-naked-o4-pro-air-unit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/wallefpv_naked_o4_pro_air_unit-1.jpg",
     "size_class": "universal",
@@ -16,7 +16,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 19,
     "schema_data": {
@@ -44,7 +44,8 @@
     "approx_price": 18,
     "schema_data": {
       "weight_g": 13
-    }
+    },
+    "max_power_mw": 1000
   },
   {
     "pid": "VTX-1002",
@@ -67,7 +68,8 @@
     "approx_price": 21,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "max_power_mw": 1000
   },
   {
     "pid": "VTX-1003",
@@ -86,7 +88,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 16,
     "schema_data": {
@@ -110,7 +112,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 54,
     "schema_data": {
@@ -134,7 +136,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 53,
     "schema_data": {
@@ -158,7 +160,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 50,
     "schema_data": {
@@ -170,7 +172,7 @@
     "category": "video_transmitters",
     "name": "Walksnail Avatar VRX Bundle - HD Pro Kit 32GB + Gyro + Dual Antennas",
     "manufacturer": "Walksnail",
-    "description": "The Walksnail Avatar HD Pro VRX Bundle utilizes cutting-edge H.265 coding, ensuring top-tier 1080p FPV visuals while maintaining minimal latency. It supports 1080P at 60FPS and 720P at 120FPS, delivering exceptional image quality.",
+    "description": "The Walksnail Avatar HD Pro VRX Bundle\u00a0utilizes cutting-edge H.265 coding, ensuring top-tier 1080p FPV visuals while maintaining minimal latency. It supports 1080P at 60FPS and 720P at 120FPS, delivering exceptional image quality.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/walksnail-avatar-vrx-bundle-hd-pro-kit-32gb-gyro-dual-antennas.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-pro-kit---32gb-w-dual-antennas-bundle-_thumbnail_.jpg",
     "video_system": "Walksnail",
@@ -182,7 +184,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 48,
     "schema_data": {
@@ -194,7 +196,7 @@
     "category": "video_transmitters",
     "name": "EMAX Wyvern Link (Alpha) V2 800mW VTX w/ OpenIPC + Aluminum Case",
     "manufacturer": "EMAX",
-    "description": "Introducing the EMAX Wyvern Link (Alpha) 800mW VTX V2 + Case - a powerful, long-range FPV system built for smooth, stable HD video transmission.",
+    "description": "Introducing the EMAX Wyvern Link (Alpha) 800mW VTX V2\u00a0+ Case - a powerful, long-range FPV system built for smooth, stable HD video transmission.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/emax-wyvern-link-alpha-v2-800mw-vtx-w-openipc-aluminum-case.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/e/m/emax-wyvern-link-vtx_1_.jpg",
     "max_power_mw": 800,
@@ -206,7 +208,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 25,
     "schema_data": {
@@ -218,7 +220,7 @@
     "category": "video_transmitters",
     "name": "RunCam WifiLink 2-G w/ OpenIPC",
     "manufacturer": "RunCam",
-    "description": "Unlock the future of FPV with the RunCam WiFiLink 2-G w/ OpenIPC, a cutting-edge HD video system built on the powerful OpenIPC open-source platform.",
+    "description": "Unlock the future of FPV with the\u00a0RunCam WiFiLink 2-G w/ OpenIPC, a cutting-edge HD video system built on the powerful OpenIPC open-source platform.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/runcam-wifilink-2-g-w-openipc.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/i/wifilink-g_1.jpg",
     "size_class": "universal",
@@ -229,12 +231,13 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 16,
     "schema_data": {
       "weight_g": 15
-    }
+    },
+    "max_power_mw": 100
   },
   {
     "pid": "VTX-1010",
@@ -253,7 +256,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 59.99,
     "schema_data": {
@@ -265,7 +268,7 @@
     "category": "video_transmitters",
     "name": "Walksnail Avatar VRX Bundle - HD Kit V2 32GB + Gyro",
     "manufacturer": "Walksnail",
-    "description": "This Walksnail Avatar VRX Bundle features built-in 32GB storage and Gyroflow support. The 2K/120fps/4:3 native sensor camera allows you to capture more of the surrounding scenery while flying the drone, resulting in more comprehensive and visually appealing images.",
+    "description": "This Walksnail Avatar VRX Bundle\u00a0features built-in 32GB storage and Gyroflow support. The 2K/120fps/4:3 native sensor camera allows you to capture more of the surrounding scenery while flying the drone, resulting in more comprehensive and visually appealing images.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/walksnail-avatar-vrx-bundle-hd-kit-v2-32gb-gyro.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-32gb-single-antenna-_image-1_.jpg",
     "video_system": "Walksnail",
@@ -277,7 +280,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 54,
     "schema_data": {
@@ -301,7 +304,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 51,
     "schema_data": {
@@ -325,7 +328,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 47,
     "schema_data": {
@@ -349,7 +352,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 83,
     "schema_data": {
@@ -373,7 +376,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 46,
     "schema_data": {
@@ -421,7 +424,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 49,
     "schema_data": {
@@ -445,7 +448,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 20,
     "schema_data": {
@@ -469,7 +472,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 45,
     "schema_data": {
@@ -493,7 +496,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 52,
     "schema_data": {
@@ -517,7 +520,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 52,
     "schema_data": {
@@ -541,7 +544,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 52,
     "schema_data": {
@@ -553,7 +556,7 @@
     "category": "video_transmitters",
     "name": "CubePilot Herelink HD Air Unit V1.1",
     "manufacturer": "CubePilot",
-    "description": "The Herelink Air Unit Integrates a data link unit, remote control link, and video display unit into a single device, making a complex device system integrated and miniaturized.",
+    "description": "The Herelink Air Unit\u00a0Integrates a data link unit, remote control link, and video display unit into a single device, making a complex device system integrated and miniaturized.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/cubepilot-herelink-hd-air-unit-v1-1.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/e/herelink-hd-air-unit-v2-_1_.jpg",
     "size_class": "universal",
@@ -569,7 +572,8 @@
     "approx_price": 24,
     "schema_data": {
       "weight_g": 12
-    }
+    },
+    "max_power_mw": 1000
   },
   {
     "pid": "VTX-1027",
@@ -588,7 +592,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 17,
     "schema_data": {
@@ -612,7 +616,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 16.99,
     "schema_data": {
@@ -624,7 +628,7 @@
     "category": "video_transmitters",
     "name": "Happymodel ExpressLRS F4 5A 5-in-1 AIO FC w/ Built-in 2.4GHz Rx",
     "manufacturer": "Happymodel",
-    "description": "The Happymodel ExpressLRS F4 is the world's first AIO 5-in-1 whoop flight controller with a built-in high-performance 2.4GHz ELRS receiver. This F4 flight controller has a built-in 5A ESC, 5.8GHz VTX, and OSD. This AIO is made for 1S long-range and tiny whoops.",
+    "description": "The\u00a0Happymodel ExpressLRS F4\u00a0is the world's first AIO 5-in-1 whoop flight controller with a built-in high-performance 2.4GHz ELRS receiver. This F4 flight controller has a built-in 5A ESC, 5.8GHz VTX, and OSD. This AIO is made for 1S long-range and tiny whoops.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/happymodel-expresslrs-f4-5a-5-in-1-aio-fc-w-built-in-2-4ghz-rx.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/a/happymodel-expresslrs-f4-5a-5-in-1-aio-fc-w-built-in-2.4ghz-rx-front.jpg",
     "size_class": "universal",
@@ -636,7 +640,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 19,
     "schema_data": {
@@ -672,7 +676,7 @@
     "category": "video_transmitters",
     "name": "TBS Unify Pro32 Nano 5G8 V1.1 500mW Video Transmitter",
     "manufacturer": "Team BlackSheep",
-    "description": "With the TBS UNIFY PRO32 Nano we have boosted the output power, improved the robustness, decreased the power consumption, added capability for insane features and perfected the way it is installed in your multirotor. In a nutshell, it’s the most comprehensive, future proof, highest quality and overall best nano VTx ever made. V1.1",
+    "description": "With the TBS UNIFY PRO32 Nano we have boosted the output power, improved the robustness, decreased the power consumption, added capability for insane features and perfected the way it is installed in your multirotor. In a nutshell, it\u2019s the most comprehensive, future proof, highest quality and overall best nano VTx ever made. V1.1",
     "link": "https://www.getfpv.com/fpv/video-transmitters/tbs-unify-pro32-nano-5g8.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/t/b/tbs-unify-pro32-nano-5g8.jpg",
     "max_power_mw": 500,
@@ -827,7 +831,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 20,
     "schema_data": {
@@ -876,7 +880,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 59,
     "schema_data": {
@@ -900,7 +904,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 52,
     "schema_data": {
@@ -948,7 +952,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 53,
     "schema_data": {
@@ -972,7 +976,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 76,
     "schema_data": {
@@ -984,7 +988,7 @@
     "category": "video_transmitters",
     "name": "DJI O4 Air Unit Pro",
     "manufacturer": "DJI",
-    "description": "The DJI O4 Air Unit Pro redefines video transmission with improved resolution, lower latency, and extended range. At just 32 grams, it integrates a 1 1/3-inch image sensor that records 4K/120fps video, delivering an ideal combination of performance and portability.",
+    "description": "The\u00a0DJI O4 Air Unit Pro\u00a0redefines video transmission with improved resolution, lower latency, and extended range. At just 32 grams, it integrates a 1 1/3-inch image sensor that records 4K/120fps video, delivering an ideal combination of performance and portability.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/dji-o4-air-unit-pro.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-o4-air-unit-pro-_main-image_.jpg",
     "video_system": "DJI O4",
@@ -996,7 +1000,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 83,
     "schema_data": {
@@ -1020,7 +1024,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 51,
     "schema_data": {
@@ -1044,7 +1048,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 23,
     "schema_data": {
@@ -1068,7 +1072,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 19,
     "schema_data": {
@@ -1080,7 +1084,7 @@
     "category": "video_transmitters",
     "name": "RUSHFPV Max Solo 25-1000mW+ 5.8GHz VTX - MMCX",
     "manufacturer": "RUSHFPV",
-    "description": "RUSHFPV, the Max Solo VTX can output 1W+! Combined with its stylistic heat sync, you'll never run into any overheating issues. This is a beast of a VTX.",
+    "description": "RUSHFPV, the Max Solo VTX can output 1W+! Combined with its stylistic heat sync, you'll never run into any overheating issues.\u00a0This is a beast of a VTX.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/rushfpv-max-solo-25-1000mw-5-8ghz-vtx-mmcx.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/rushfpv_max_solo_25-1000mw_5.8ghz_vtx_-_mmcx_rush-da17-1_.jpg",
     "max_power_mw": 1000,
@@ -1092,7 +1096,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 33,
     "schema_data": {
@@ -1116,7 +1120,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 54,
     "schema_data": {
@@ -1140,7 +1144,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 21,
     "schema_data": {
@@ -1164,7 +1168,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 50,
     "schema_data": {
@@ -1188,7 +1192,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 16,
     "schema_data": {
@@ -1212,7 +1216,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 16,
     "schema_data": {
@@ -1236,7 +1240,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 53,
     "schema_data": {
@@ -1260,7 +1264,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 54,
     "schema_data": {
@@ -1284,7 +1288,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 22,
     "schema_data": {
@@ -1308,7 +1312,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 81,
     "schema_data": {
@@ -1332,7 +1336,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 54,
     "schema_data": {
@@ -1344,7 +1348,7 @@
     "category": "video_transmitters",
     "name": "Walksnail Avatar HD Kit V2 - 8GB - No Gyro",
     "manufacturer": "Walksnail",
-    "description": "This Walksnail Avatar HD Kit V2 features built-in 8GB storage.",
+    "description": "This\u00a0Walksnail Avatar HD Kit V2\u00a0features built-in 8GB storage.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/walksnail-avatar-hd-kit-v2-8gb-no-gyro.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-kit-v2---8g---no-gyro.jpg",
     "video_system": "Walksnail",
@@ -1356,7 +1360,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 53,
     "schema_data": {
@@ -1380,7 +1384,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 45,
     "schema_data": {
@@ -1404,7 +1408,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 76,
     "schema_data": {
@@ -1428,7 +1432,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 77,
     "schema_data": {
@@ -1452,7 +1456,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 82,
     "schema_data": {
@@ -1500,7 +1504,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 45,
     "schema_data": {
@@ -1528,7 +1532,8 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "max_power_mw": 1000
   },
   {
     "pid": "VTX-1074",
@@ -1547,7 +1552,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 15,
     "schema_data": {
@@ -1571,7 +1576,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 52,
     "schema_data": {
@@ -1583,7 +1588,7 @@
     "category": "video_transmitters",
     "name": "Walksnail Avatar HD Camera / VTX Kit",
     "manufacturer": "Walksnail",
-    "description": "The Walksnail Avatar HD Camera / VTX Kit features a digital camera and VTX that works with HD Goggles such as the Walksnail Avatar and Fat Shark HD Dominator.",
+    "description": "The Walksnail Avatar HD\u00a0Camera / VTX Kit features a digital camera and VTX that works with HD Goggles such as the Walksnail Avatar and Fat Shark HD Dominator.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/avatar-hd-camera-vtx-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/a/v/avatar-hd-camera-vtx-kit-main.jpg",
     "video_system": "Walksnail",
@@ -1595,7 +1600,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 45,
     "schema_data": {
@@ -1607,7 +1612,7 @@
     "category": "video_transmitters",
     "name": "RushFPV Rush Tank Race II 5.8GHz VTX w/ SmartAudio",
     "manufacturer": "RUSHFPV",
-    "description": "Introducing... the RushFPV Rush Tank Race II 5.8GHz Video Transmitter - now even smaller and lighter!",
+    "description": "Introducing... the\u00a0RushFPV Rush Tank Race II 5.8GHz Video Transmitter\u00a0- now even smaller and lighter!",
     "link": "https://www.getfpv.com/fpv/video-transmitters/rushfpv-rush-tank-race-ii-5-8ghz-vtx-w-smartaudio.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/rushfpv-rush-tank-race-ii-5_3_.jpg",
     "video_system": "Analog",
@@ -1619,7 +1624,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 19,
     "schema_data": {
@@ -1631,7 +1636,7 @@
     "category": "video_transmitters",
     "name": "DJI Digital HD FPV Air Unit Kit - Original Version",
     "manufacturer": "DJI",
-    "description": "The Original DJI Digital HD FPV Air Unit Kit is back - Limited Quantities Available! This is the original DJI Air Unit with 120fps HD camera.",
+    "description": "The Original DJI Digital HD FPV Air Unit Kit is back - Limited Quantities Available! This is\u00a0the original DJI Air Unit with 120fps HD camera.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/dji-digital-hd-fpv-air-unit-kit-original-version.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/j/dji-digital-hd-fpv-air-unit-kit---original-version-dji-main.jpg",
     "size_class": "universal",
@@ -1643,7 +1648,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 83,
     "schema_data": {
@@ -1655,7 +1660,7 @@
     "category": "video_transmitters",
     "name": "MATEKSYS VTX-1G3SE 2CH Video Transmitter - 1.2GHz/1.3GHz (U.S. Version)",
     "manufacturer": "MatekSys",
-    "description": "The MATEKSYS 1G3SE Video Transmitter works on both 1.2GHz and 1.3GHz frequencies. This VTX comes with a Dipole SMA Antenna and features 2 US channels, an SMA connector, button control, LED indicators, and more!",
+    "description": "The\u00a0MATEKSYS 1G3SE\u00a0Video Transmitter\u00a0works on both\u00a01.2GHz and 1.3GHz frequencies. This VTX\u00a0comes with a Dipole SMA Antenna and features 2 US channels, an SMA connector, button control, LED indicators, and more!",
     "link": "https://www.getfpv.com/fpv/video-transmitters/mateksys-vtx-1g3se-1-2-1-3ghz-video-transmitter.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/m/a/mateksys-vtx-1g3se-2-1.21.3ghz-video-transmitter-main.jpg",
     "size_class": "universal",
@@ -1667,7 +1672,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 18,
     "schema_data": {
@@ -1679,7 +1684,7 @@
     "category": "video_transmitters",
     "name": "HDZero Whoop HD FPV Divimath Video Transmitter ",
     "manufacturer": "HDZero",
-    "description": "The HDZero Whoop VTX is a digital HD 720p 60fps video transmitter capable of delivering up to 200mw on 5.8GHz. It works with the Shark Byte RX5.1 goggle module and a remote controller to transmit video and wirelessly control the parameters for the transmitter and camera.",
+    "description": "The HDZero Whoop VTX is a digital HD 720p 60fps video transmitter capable of delivering up to 200mw on 5.8GHz. It works with the\u00a0Shark Byte RX5.1\u00a0goggle module and a remote controller to transmit video and wirelessly control the parameters for the transmitter and camera.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/hdzero-whoop-hd-fpv-divimath-video-transmitter.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/d/hdzero-whoop-hd-fpv-divimath-video-transmitter-main.jpg",
     "video_system": "HDZero",
@@ -1691,7 +1696,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 58,
     "schema_data": {
@@ -1715,7 +1720,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 44,
     "schema_data": {
@@ -1739,7 +1744,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 40,
     "schema_data": {
@@ -1751,7 +1756,7 @@
     "category": "video_transmitters",
     "name": "RunCam Link Phoenix HD FPV Camera Kit",
     "manufacturer": "RunCam",
-    "description": "The new HD system from Runcam combines a digital HD transceiver, the Link Digital Air Unit, and the RunCam Phoenix HD Camera.",
+    "description": "The new HD system from Runcam combines a digital HD transceiver, the Link Digital Air Unit, and the\u00a0RunCam Phoenix HD Camera.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/runcam-link-phoenix-hd-fpv-camera-kit.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/runcam_link_phoenix_hd_fpv_vista_camera_kit_2.jpg",
     "size_class": "universal",
@@ -1762,12 +1767,13 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 22,
     "schema_data": {
       "weight_g": 9
-    }
+    },
+    "max_power_mw": 300
   },
   {
     "pid": "VTX-1084",
@@ -1786,7 +1792,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 18,
     "schema_data": {
@@ -1810,7 +1816,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 42,
     "schema_data": {
@@ -1834,7 +1840,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 25,
     "schema_data": {
@@ -1859,7 +1865,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 23,
     "schema_data": {
@@ -1871,7 +1877,7 @@
     "category": "video_transmitters",
     "name": "HGLRC Zeus 800mW Smart Mounting 20x20 / 30x30 VTX",
     "manufacturer": "HGLRC",
-    "description": "The HGLRC Zeus 800mW Smart Mounting VTX gives you rock-solid performance in a 20x20mm and 30x30 video transmitter.",
+    "description": "The\u00a0HGLRC Zeus 800mW Smart Mounting\u00a0VTX gives you rock-solid performance in a 20x20mm and 30x30 video transmitter.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/hglrc-zeus-800mw-smart-mounting-20x20-30x30-vtx.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/h/g/hglrc-zeus-800mw-smart-mounting-2020-3030-vtx-for-fpv-racing-drone-711148_590x.jpg",
     "max_power_mw": 800,
@@ -1884,7 +1890,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 24,
     "schema_data": {
@@ -1896,7 +1902,7 @@
     "category": "video_transmitters",
     "name": "ImmersionRC Ghost Proton 20x20 Pack ",
     "manufacturer": "ImmersionRC",
-    "description": "The ImmersionRC Ghost Proton 20x20 Pack is a printed circuit board (PCB) designed to dramatically simplify wiring, mounting, and cooling of Tramp Nano + Ghost combinations.",
+    "description": "The ImmersionRC Ghost Proton 20x20 Pack is a printed circuit board (PCB) designed to\u00a0dramatically simplify wiring, mounting, and cooling of\u00a0Tramp Nano\u00a0+\u00a0Ghost\u00a0combinations.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/immersionrc-ghost-proton-20x20-pack.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/i/m/immersionrc_ghost_proton_20x20_pack_.jpg",
     "mounting_pattern_mm": 20.0,
@@ -1919,9 +1925,9 @@
   {
     "pid": "VTX-1093",
     "category": "video_transmitters",
-    "name": "RushFPV RUSH BLADE F722 FC & 50A 30x30 & RUSH Tank Ⅱ VTX & RUSH PFB Stack/Combo",
+    "name": "RushFPV RUSH BLADE F722 FC & 50A 30x30 & RUSH Tank \u2161 VTX & RUSH PFB Stack/Combo",
     "manufacturer": "RUSHFPV",
-    "description": "The RUSH BLADE F722 Stack for analog by RUSHFPV features the RUSH TANK II 5.8GHz VTX, RUSH BLADE F722 Flight Controller, RUSH BLADE 50A 3-6S BLHeli_32 4-in-1 ESC (Sports Edition), and the RUSH Power Filter Board (PFB), which can handle up to 6S input voltage and push your FPV racer to the max.",
+    "description": "The RUSH BLADE F722 Stack for analog\u00a0by RUSHFPV features the\u00a0RUSH TANK II 5.8GHz VTX,\u00a0RUSH BLADE F722 Flight Controller,\u00a0RUSH BLADE 50A 3-6S BLHeli_32 4-in-1 ESC (Sports Edition), and the\u00a0RUSH Power Filter Board (PFB),\u00a0which can handle up to 6S input voltage and push your FPV racer to the max.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/rushfpv-rush-blade-f722-fc-50a-30x30-rush-tank-vtx-rush-pfb-stack-combo.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/r/u/rushfpv-rush-tank-ii-vtx-stack---blade-f722-flight-controller-_-50a-3-6s-blheli_32-4-in-1-esc-for-analog.jpg",
     "video_system": "Analog",
@@ -1933,12 +1939,13 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 14,
     "schema_data": {
       "weight_g": 7
-    }
+    },
+    "max_power_mw": 400
   },
   {
     "pid": "VTX-1094",
@@ -1957,7 +1964,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 18,
     "schema_data": {
@@ -1980,12 +1987,13 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 13,
     "schema_data": {
       "weight_g": 9
-    }
+    },
+    "max_power_mw": 25
   },
   {
     "pid": "VTX-1096",
@@ -2004,7 +2012,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 12,
     "schema_data": {
@@ -2027,12 +2035,13 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 19,
     "schema_data": {
       "weight_g": 10
-    }
+    },
+    "max_power_mw": 400
   },
   {
     "pid": "VTX-1098",
@@ -2063,7 +2072,7 @@
     "category": "video_transmitters",
     "name": "BETAFPV A01 25-200mW 5.8GHz VTX ",
     "manufacturer": "BETAFPV",
-    "description": "Tiny, light and durable A01 VTX, comes with a port to connect with FC and mounting holes to fix on the canopy, convenient for installation. Compatible with Beta75X FPV (3S), Beta75X HD (3S), Beta85X FPV (4S), Beta85X 4K and HX100.",
+    "description": "Tiny, light and durable A01 VTX, comes with a port to connect with FC and mounting holes to fix on the canopy, convenient for installation. Compatible with\u00a0Beta75X FPV (3S),\u00a0Beta75X HD (3S),\u00a0Beta85X FPV (4S),\u00a0Beta85X 4K\u00a0and\u00a0HX100.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/betafpv-a01-25-200mw-5-8ghz-vtx.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/d/s/dsc_0096.jpg",
     "max_power_mw": 200,
@@ -2075,7 +2084,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 17,
     "schema_data": {
@@ -2124,7 +2133,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 14,
     "schema_data": {
@@ -2148,7 +2157,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 16,
     "schema_data": {
@@ -2172,7 +2181,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 15,
     "schema_data": {
@@ -2267,12 +2276,13 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 23,
     "schema_data": {
       "weight_g": 15
-    }
+    },
+    "max_power_mw": 25
   },
   {
     "pid": "VTX-1110",
@@ -2291,7 +2301,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 16,
     "schema_data": {
@@ -2303,7 +2313,7 @@
     "category": "video_transmitters",
     "name": "Walksnail Avatar HD Nano Kit V3",
     "manufacturer": "Walksnail",
-    "description": "The Walksnail Avatar HD Nano Kit V3 features 32GB of built-in storage, and supports 1080P/60fps, with a 4:3 native sensor that provides smooth and stunning images.",
+    "description": "The\u00a0Walksnail Avatar HD Nano Kit V3\u00a0features 32GB of built-in storage, and supports 1080P/60fps, with a 4:3 native sensor that provides smooth and stunning images.",
     "link": "https://www.getfpv.com/fpv/video-transmitters/walksnail-avatar-nano-kit-v3.html",
     "image_file": "https://cdn-v2.getfpv.com/media/catalog/product/w/a/walksnail-avatar-hd-nano-kit-v3.jpg",
     "video_system": "Walksnail",
@@ -2315,7 +2325,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 47,
     "schema_data": {
@@ -2339,7 +2349,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 22,
     "schema_data": {
@@ -2363,7 +2373,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 25,
     "schema_data": {
@@ -2387,7 +2397,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 15,
     "schema_data": {
@@ -2411,7 +2421,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 55,
     "schema_data": {
@@ -2435,7 +2445,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 56,
     "schema_data": {
@@ -2459,7 +2469,7 @@
       "blue_uas": false,
       "ndaa_compliant": false,
       "combat_proven": false,
-      "note": "Chinese manufacture — NOT NDAA"
+      "note": "Chinese manufacture \u2014 NOT NDAA"
     },
     "approx_price": 25,
     "schema_data": {
@@ -2497,7 +2507,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "description": "Video transmitter by DEC1. mW output. band."
+    "description": "Video transmitter by DEC1. mW output. band.",
+    "max_power_mw": 200
   },
   {
     "pid": "VTX-UA-DEC1-Spot-SMA",
@@ -2530,7 +2541,8 @@
     "schema_data": {
       "weight_g": 10
     },
-    "description": "Video transmitter by DEC1. mW output. band."
+    "description": "Video transmitter by DEC1. mW output. band.",
+    "max_power_mw": 200
   },
   {
     "pid": "VTX-UA-Flytex-Fuzia",
@@ -2563,7 +2575,8 @@
     "schema_data": {
       "weight_g": 12
     },
-    "description": "Video transmitter by Flytex. mW output. band."
+    "description": "Video transmitter by Flytex. mW output. band.",
+    "max_power_mw": 200
   },
   {
     "pid": "VTX-UA-Stingbee-Stellar-VT",
@@ -2596,7 +2609,8 @@
     "schema_data": {
       "weight_g": 6
     },
-    "description": "Video transmitter by Stingbee. mW output. band."
+    "description": "Video transmitter by Stingbee. mW output. band.",
+    "max_power_mw": 200
   },
   {
     "pid": "VTX-UA-Pilotix-R1600",
@@ -2629,7 +2643,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "description": "Video transmitter by Pilotix. mW output. band."
+    "description": "Video transmitter by Pilotix. mW output. band.",
+    "max_power_mw": 1600
   },
   {
     "pid": "VTX-UA-Pilotix-R2500",
@@ -2662,7 +2677,8 @@
     "schema_data": {
       "weight_g": 9
     },
-    "description": "Video transmitter by Pilotix. mW output. band."
+    "description": "Video transmitter by Pilotix. mW output. band.",
+    "max_power_mw": 2500
   },
   {
     "pid": "VTX-UA-Pilotix-R2500-V1",
@@ -2695,7 +2711,8 @@
     "schema_data": {
       "weight_g": 5
     },
-    "description": "Video transmitter by Pilotix. mW output. band."
+    "description": "Video transmitter by Pilotix. mW output. band.",
+    "max_power_mw": 2500
   },
   {
     "pid": "VTX-UA-Pilotix-R2500-SE",
@@ -2728,7 +2745,8 @@
     "schema_data": {
       "weight_g": 11
     },
-    "description": "Video transmitter by Pilotix. mW output. band."
+    "description": "Video transmitter by Pilotix. mW output. band.",
+    "max_power_mw": 2500
   },
   {
     "pid": "VTX-UA-Pilotix-R3000",
@@ -2761,7 +2779,8 @@
     "schema_data": {
       "weight_g": 7
     },
-    "description": "Video transmitter by Pilotix. mW output. band."
+    "description": "Video transmitter by Pilotix. mW output. band.",
+    "max_power_mw": 3000
   },
   {
     "pid": "VTX-UA-Pilotix-R3000-(4.9",
@@ -2794,7 +2813,8 @@
     "schema_data": {
       "weight_g": 4
     },
-    "description": "Video transmitter by Pilotix. mW output. band."
+    "description": "Video transmitter by Pilotix. mW output. band.",
+    "max_power_mw": 3000
   },
   {
     "pid": "VTX-UA-Pilotix-R3000-(4.9",
@@ -2827,7 +2847,8 @@
     "schema_data": {
       "weight_g": 7
     },
-    "description": "Video transmitter by Pilotix. mW output. band."
+    "description": "Video transmitter by Pilotix. mW output. band.",
+    "max_power_mw": 3000
   },
   {
     "pid": "VTX-UA-FT-VTX-7.2G-S",
@@ -2860,7 +2881,8 @@
     "schema_data": {
       "weight_g": 9
     },
-    "description": "Video transmitter by. mW output. band."
+    "description": "Video transmitter by. mW output. band.",
+    "max_power_mw": 200
   },
   {
     "pid": "VTX-UA-KaraFPV-Teleport67",
@@ -2927,7 +2949,8 @@
     "schema_data": {
       "weight_g": 14
     },
-    "description": "Video transmitter by. mW output. band."
+    "description": "Video transmitter by. mW output. band.",
+    "max_power_mw": 200
   },
   {
     "pid": "VTX-UA-FT-VTX-SMA",
@@ -2960,6 +2983,7 @@
     "schema_data": {
       "weight_g": 13
     },
-    "description": "Video transmitter by. mW output. band."
+    "description": "Video transmitter by. mW output. band.",
+    "max_power_mw": 200
   }
 ]
