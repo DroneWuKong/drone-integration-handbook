@@ -2,7 +2,7 @@
   {
     "pid": "C2DL-0001",
     "category": "c2_datalinks",
-    "name": "uAvionix microLink — Aviation-Grade BVLOS C2 Radio",
+    "name": "uAvionix microLink \u2014 Aviation-Grade BVLOS C2 Radio",
     "manufacturer": "uAvionix",
     "manufacturer_hq": "Big Fork, MT, USA",
     "description": "FCC and IC approved aviation-grade BVLOS C2 datalink radio specifically designed for long-range mission-critical UAS operations. Provides CNPC (Control and Non-Payload Communication) with 2x2 MIMO diversity. Integrates with SkyLine cloud-managed C2 service for multi-aircraft fleet management, path/link diversity, and seamless roaming between ground stations. TSO-C213a compliant. ISM 902-928 MHz band.",
@@ -36,12 +36,28 @@
     ],
     "schema_data": {
       "weight_g": 85
-    }
+    },
+    "max_range_km": 100,
+    "max_throughput_mbps": 0.5,
+    "accreditation": "DO-362A",
+    "anti_jamming": true,
+    "architecture": "Point-to-point",
+    "autopilot_compatibility": [
+      "ArduPilot",
+      "PX4"
+    ],
+    "modulation": "OFDM",
+    "max_drones": 1,
+    "max_nodes": 2,
+    "gps_denied": false,
+    "comms_denied": false,
+    "decentralized": false,
+    "self_healing_mesh": false
   },
   {
     "pid": "C2DL-0002",
     "category": "c2_datalinks",
-    "name": "uAvionix muLTElink-5060 — Multi-Datalink ARS with LTE & C-Band",
+    "name": "uAvionix muLTElink-5060 \u2014 Multi-Datalink ARS with LTE & C-Band",
     "manufacturer": "uAvionix",
     "manufacturer_hq": "Big Fork, MT, USA",
     "description": "Multi-datalink Airborne Radio System (ARS) and Link Executive Manager providing simultaneous CNPC C2 over C-Band (5030-5091 MHz aviation protected spectrum), cellular LTE, and LEO satellite (Starlink compatible). Automatic link switching with 1-second evaluation cadence and double-hysteresis. Demonstrated in UK BVLOS trials with seamless handover across C-Band, cellular, and satcom in challenging coastal environments.",
@@ -80,12 +96,24 @@
     ],
     "schema_data": {
       "weight_g": 120
-    }
+    },
+    "max_range_km": 150,
+    "max_throughput_mbps": 50,
+    "encryption": "AES-256",
+    "accreditation": "DO-362A",
+    "anti_jamming": true,
+    "architecture": "Multi-link",
+    "autopilot_compatibility": [
+      "ArduPilot",
+      "PX4"
+    ],
+    "modulation": "LTE/NR",
+    "link_diversity": true
   },
   {
     "pid": "C2DL-0003",
     "category": "c2_datalinks",
-    "name": "Silvus StreamCaster SC4200EP — Tactical MANET C2 Datalink",
+    "name": "Silvus StreamCaster SC4200EP \u2014 Tactical MANET C2 Datalink",
     "manufacturer": "Silvus Technologies",
     "manufacturer_hq": "Los Angeles, CA, USA",
     "description": "2x2 MIMO tactical MANET radio delivering best-in-class C2, video, and telemetry in a single transceiver for unmanned systems. Proprietary MN-MIMO waveform provides self-healing, self-forming mesh networking with no operator involvement. Battle-proven across defense, law enforcement, and public safety deployments. Handles simultaneous video, C2, and health/telemetry data. NDAA and DoD cybersecurity compliant; approved for Blue UAS platforms.",
@@ -123,12 +151,26 @@
     ],
     "schema_data": {
       "weight_g": 340
-    }
+    },
+    "max_range_km": 10,
+    "accreditation": "MIL-STD-810",
+    "anti_jamming": true,
+    "architecture": "MANET mesh",
+    "autopilot_compatibility": [
+      "MAVLink",
+      "custom"
+    ],
+    "c2_standard": "STANAG 4677",
+    "max_nodes": 200,
+    "decentralized": true,
+    "gps_denied": true,
+    "comms_denied": false,
+    "video_latency_ms": 80
   },
   {
     "pid": "C2DL-0004",
     "category": "c2_datalinks",
-    "name": "Silvus StreamCaster Lite SL5200 — Ultra-Low SWaP MANET for Group 1 UAS",
+    "name": "Silvus StreamCaster Lite SL5200 \u2014 Ultra-Low SWaP MANET for Group 1 UAS",
     "manufacturer": "Silvus Technologies",
     "manufacturer_hq": "Los Angeles, CA, USA",
     "description": "Ultra-low SWaP OEM module delivering Group 2 UAV-level MANET radio performance in a form factor designed for Group 1 platforms. Powered by Silvus' proprietary MN-MIMO waveform for self-forming, self-healing mesh networking. Provides single-radio solution for simultaneous video, C2, and telemetry. Enables convoy, relay, and swarm capability between multiple manned and unmanned systems.",
@@ -157,12 +199,20 @@
     ],
     "schema_data": {
       "weight_g": 60
-    }
+    },
+    "max_range_km": 5,
+    "max_throughput_mbps": 40,
+    "encryption": "AES-256",
+    "accreditation": "MIL-STD-810",
+    "anti_jamming": true,
+    "architecture": "MANET mesh",
+    "max_nodes": 200,
+    "decentralized": true
   },
   {
     "pid": "C2DL-0005",
     "category": "c2_datalinks",
-    "name": "CubePilot Herelink V1.1 — HD Video + C2 Datalink System",
+    "name": "CubePilot Herelink V1.1 \u2014 HD Video + C2 Datalink System",
     "manufacturer": "CubePilot (Hex Technology)",
     "manufacturer_hq": "Xiamen, China",
     "description": "Integrated HD video transmission, data link, and ground control station system for drones. 2.4 GHz ISM band with up to 20 km range (FCC) / 12 km (CE). Dual HDMI inputs supporting 720p/1080p at 30/60fps with minimum 110ms latency. Android-based 5.46-inch 1080P touchscreen controller runs QGroundControl and MissionPlanner natively. Pinecone S1 processor (8-core). Widely adopted in ArduPilot/PX4 ecosystem.",
@@ -211,17 +261,24 @@
     ],
     "schema_data": {
       "weight_g": 750
-    }
+    },
+    "max_throughput_mbps": 20,
+    "anti_jamming": false,
+    "architecture": "Point-to-point",
+    "c2_standard": "MAVLink",
+    "mimo": false,
+    "max_drones": 1,
+    "gps_denied": false
   },
   {
     "pid": "C2DL-0006",
     "category": "c2_datalinks",
-    "name": "Ultra I&C ADSI — Multi-Domain C2 Gateway",
+    "name": "Ultra I&C ADSI \u2014 Multi-Domain C2 Gateway",
     "manufacturer": "Ultra Intelligence & Communications",
     "manufacturer_hq": "Austin, TX, USA",
     "description": "Multi-domain C2 gateway system communicating over dozens of tactical datalinks from Link 16 and NATO Link 1 to distributed systems datalinks. First CBC2 gateway to receive continuous Authority to Operate (cATO) from DoD, enabling autonomous software updates via DevSecOps pipeline. Supports Cursor on Target (CoT), JREAP-C translation, and rapid reconfiguration of tactical datalink interfaces. Cloud-enabled containerized architecture. Demonstrated NATO interoperability at CWIX 2024 in Poland.",
     "link": "https://www.ultra.group/",
-    "approx_price": "Contact vendor — military procurement",
+    "approx_price": "Contact vendor \u2014 military procurement",
     "datalink_type": "Multi-domain C2 Gateway",
     "supported_protocols": [
       "Link 16",
@@ -251,12 +308,19 @@
       "iamd",
       "cato"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "frequency_band": "Multi-band",
+    "max_throughput_mbps": 100,
+    "encryption": "NSA Suite B",
+    "anti_jamming": true,
+    "autonomous_teaming": true,
+    "navy_integration": true,
+    "single_operator_multi_platform": true
   },
   {
     "pid": "C2DL-0007",
     "category": "c2_datalinks",
-    "name": "Performance Drone Works Blackwave — Next-Gen UAS Radio System",
+    "name": "Performance Drone Works Blackwave \u2014 Next-Gen UAS Radio System",
     "manufacturer": "Performance Drone Works (PDW)",
     "manufacturer_hq": "USA",
     "description": "Next-generation radio system designed for critical UAS communications in contested and congested electromagnetic environments. Awarded a USSOCOM contract for development. Designed to provide resilient C2 links for tactical sUAS operations where standard datalinks are vulnerable to EW threats. AES-256 encrypted. Integrates with PDW's C100 Blue UAS platform.",
@@ -282,12 +346,22 @@
       "tactical",
       "blue_uas"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "frequency_band": "Multi-band SDR",
+    "max_range_km": 30,
+    "max_throughput_mbps": 25,
+    "anti_jamming": true,
+    "architecture": "Point-to-point / mesh",
+    "autopilot_compatibility": [
+      "MAVLink"
+    ],
+    "modulation": "SDR adaptive",
+    "gps_denied": true
   },
   {
     "pid": "C2DL-0008",
     "category": "c2_datalinks",
-    "name": "Kutta Technologies KGS — Tactical UAS C2 Software Suite",
+    "name": "Kutta Technologies KGS \u2014 Tactical UAS C2 Software Suite",
     "manufacturer": "Kutta Technologies",
     "manufacturer_hq": "Phoenix, AZ, USA",
     "description": "Mission-critical hardware and software solutions for tactical drone C2. Selected by leading clients including the US Department of Defense. Provides interoperability between multiple UAS types and ground stations through standardized data interfaces. Supports STANAG 4586 compliant control of unmanned systems.",
@@ -310,12 +384,29 @@
       "tactical",
       "multi_uas"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "frequency_band": "Agnostic",
+    "encryption": "AES-256",
+    "accreditation": "STANAG 4586",
+    "architecture": "Software C2 layer",
+    "autopilot_compatibility": [
+      "ArduPilot",
+      "PX4",
+      "custom"
+    ],
+    "c2_standard": "STANAG 4586",
+    "supported_links": [
+      "Link 16",
+      "SATCOM",
+      "RF"
+    ],
+    "fleet_management": true,
+    "gcs_software": "KGS GCS"
   },
   {
     "pid": "C2DL-0009",
     "category": "c2_datalinks",
-    "name": "DTC BluSDR-90-UL — Ultra-Light Long-Range SDR for UAS",
+    "name": "DTC BluSDR-90-UL \u2014 Ultra-Light Long-Range SDR for UAS",
     "manufacturer": "Domo Tactical Communications (DTC / Codan)",
     "manufacturer_hq": "Ashburn, VA, USA",
     "description": "Ultra-light software-defined radio offering long-range mission-critical connectivity with battlefield-proven MeshUltra MANET networking. COFDM IP Mesh waveforms support adaptive modulation up to 64QAM with data rates to 87 Mbps. Frequency coverage 320 MHz to 6 GHz with selectable channel bandwidths from 1.25 to 20 MHz. Integrated with Nordic-Wing Astero ISR UAV with high-end encryption and anti-jamming. US Army, DOJ, DHS, and DOD contracts. 250,000+ radios built.",
@@ -360,12 +451,18 @@
     ],
     "schema_data": {
       "weight_g": 90
-    }
+    },
+    "datalink_type": "SDR MANET",
+    "max_range_km": 20,
+    "architecture": "MANET mesh",
+    "mimo": false,
+    "max_nodes": 50,
+    "self_healing_mesh": true
   },
   {
     "pid": "C2DL-0010",
     "category": "c2_datalinks",
-    "name": "DTC SOL8SDR-M BluCore — Miniature SDR for Nano/sUAS",
+    "name": "DTC SOL8SDR-M BluCore \u2014 Miniature SDR for Nano/sUAS",
     "manufacturer": "Domo Tactical Communications (DTC / Codan)",
     "manufacturer_hq": "Ashburn, VA, USA",
     "description": "Miniature software-defined radio transceiver at just 54x50x11mm and 60g, designed for sub-250g nano UAS and swarming drones. Supports MeshUltra MANET with 80+ nodes on same frequency. Self-healing, self-forming mesh enables swarm and mother/daughter UAS architectures. RF LOS ranges up to 250 km with optimized antenna and amplifier. Supports all DTC COFDM IP Mesh and unidirectional waveforms.",
@@ -393,12 +490,18 @@
     ],
     "schema_data": {
       "weight_g": 60
-    }
+    },
+    "datalink_type": "Miniature SDR",
+    "max_throughput_mbps": 5,
+    "encryption": "AES-256",
+    "anti_jamming": true,
+    "architecture": "Point-to-point",
+    "modulation": "SDR"
   },
   {
     "pid": "C2DL-0011",
     "category": "c2_datalinks",
-    "name": "L3Harris AMORPHOUS — Decentralized Swarm C2 Software",
+    "name": "L3Harris AMORPHOUS \u2014 Decentralized Swarm C2 Software",
     "manufacturer": "L3Harris Technologies",
     "manufacturer_hq": "Melbourne, FL, USA",
     "description": "Software suite designed to control thousands of drones simultaneously through a decentralized system, eliminating reliance on a single mothership drone. Represents a significant leap in swarm technology where multiple drones operate in unison, autonomously adapting to battlefield conditions. Part of the broader L3Harris autonomous systems portfolio.",
@@ -421,12 +524,20 @@
       "autonomous",
       "l3harris"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "frequency_band": "Agnostic",
+    "encryption": "NSA Suite B",
+    "architecture": "Decentralized mesh AI",
+    "autonomous_teaming": true,
+    "max_nodes": 250,
+    "self_healing_mesh": true,
+    "gps_denied": true,
+    "comms_denied": true
   },
   {
     "pid": "C2DL-0012",
     "category": "c2_datalinks",
-    "name": "XTEND XOS — Tactical Drone Operating System for C2 Integration",
+    "name": "XTEND XOS \u2014 Tactical Drone Operating System for C2 Integration",
     "manufacturer": "XTEND",
     "manufacturer_hq": "Tel Aviv, Israel",
     "description": "Tactical drone operating system enabling intuitive control of small tactical drones in complex operational environments. Integrated into Lockheed Martin Skunk Works MDCX multi-domain C2 platform. Enables single operator to manage transitions between large carrier drone and small tactical drone within same mission context. Reduces cognitive burden and minimizes real-time points of failure. Demonstrated carrier-deployed drone operations with seamless C2 handoff.",
@@ -449,12 +560,23 @@
       "multi_platform",
       "mother_daughter"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "frequency_band": "Multi-band",
+    "max_range_km": 2,
+    "max_throughput_mbps": 20,
+    "encryption": "AES-256",
+    "architecture": "Software C2 / operating system",
+    "autopilot_compatibility": [
+      "custom"
+    ],
+    "fleet_management": true,
+    "gcs_software": "XOS GCS",
+    "video_inputs": 2
   },
   {
     "pid": "C2DL-0013",
     "category": "c2_datalinks",
-    "name": "Shield AI Hivemind — AI Pilot for Autonomous UAS C2",
+    "name": "Shield AI Hivemind \u2014 AI Pilot for Autonomous UAS C2",
     "manufacturer": "Shield AI",
     "manufacturer_hq": "San Diego, CA, USA",
     "description": "AI-powered autonomous pilot technology for unmanned systems providing GPS-denied, comms-denied autonomous flight capability. Being integrated onto Navy BQM-177A subsonic aerial targets under OTA agreement for autonomous flight foundation. Enables autonomous teaming and cooperative engagement without continuous C2 link. Core technology for CCA (Collaborative Combat Aircraft) programs.",
@@ -480,6 +602,14 @@
       "navy",
       "hivemind"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "frequency_band": "Agnostic",
+    "encryption": "AES-256",
+    "architecture": "AI-first swarm intelligence",
+    "decentralized": true,
+    "autonomous_adaptation": true,
+    "max_drones": 100,
+    "c2_standard": "Proprietary AI",
+    "path_diversity": true
   }
 ]

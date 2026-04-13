@@ -2,16 +2,16 @@
   {
     "pid": "PNT-0001",
     "category": "navigation_pnt",
-    "name": "SBG Systems Pulse-40 — Tactical Grade MEMS IMU",
+    "name": "SBG Systems Pulse-40 \u2014 Tactical Grade MEMS IMU",
     "manufacturer": "SBG Systems",
     "manufacturer_hq": "Rueil-Malmaison, France",
-    "description": "Tactical grade IMU with 0.08°/√h noise gyro and 6µg accelerometers. Individually calibrated with advanced MEMS technology. 12-gram weight at 0.3W power. ITAR-free. Designed for UAV navigation in GNSS-denied environments with sophisticated multi-sensor fusion algorithms including adaptive notch filtering and RAIM for jamming/spoofing mitigation. Combat-proven motion and navigation solutions.",
+    "description": "Tactical grade IMU with 0.08\u00b0/\u221ah noise gyro and 6\u00b5g accelerometers. Individually calibrated with advanced MEMS technology. 12-gram weight at 0.3W power. ITAR-free. Designed for UAV navigation in GNSS-denied environments with sophisticated multi-sensor fusion algorithms including adaptive notch filtering and RAIM for jamming/spoofing mitigation. Combat-proven motion and navigation solutions.",
     "link": "https://www.sbg-systems.com/defense/uav-unmanned-aerial-vehicles-navigation-defense/",
     "approx_price": 3000,
     "subcategory": "imu",
     "imu_grade": "tactical",
-    "gyro_noise": "0.08°/√h",
-    "accelerometer": "6µg",
+    "gyro_noise": "0.08\u00b0/\u221ah",
+    "accelerometer": "6\u00b5g",
     "weight_g": 12,
     "power_w": 0.3,
     "itar_free": true,
@@ -35,12 +35,32 @@
     ],
     "schema_data": {
       "weight_g": 12
-    }
+    },
+    "sensor_type": "MEMS IMU",
+    "technology": "MEMS",
+    "accuracy": "0.05\u00b0 roll/pitch",
+    "gyro_bias_stability_deg_hr": 0.5,
+    "accel_bias_stability_mg": 0.01,
+    "anti_spoof": false,
+    "gnss_receivers": 0,
+    "nav_modes": [
+      "IMU-only"
+    ],
+    "output_data": [
+      "roll",
+      "pitch",
+      "heading",
+      "angular rates",
+      "accelerations"
+    ],
+    "ros2_support": true,
+    "mil_std": "MIL-STD-810",
+    "solid_state": true
   },
   {
     "pid": "PNT-0002",
     "category": "navigation_pnt",
-    "name": "Inertial Labs VINS — Vision-Aided Inertial Navigation System",
+    "name": "Inertial Labs VINS \u2014 Vision-Aided Inertial Navigation System",
     "manufacturer": "Inertial Labs",
     "manufacturer_hq": "Paeonian Springs, VA, USA",
     "description": "Fully integrated Vision-Aided INS + AHRS + Air Data Computer (ADC) providing navigation in both GPS-enabled and GPS-denied environments. MIL-STD-810 and MIL-STD-461 compliant. Uses machine vision algorithms combined with 25+ years of INS development. Determines position, velocity, and absolute orientation (heading, pitch, roll) for fixed-wing, VTOL, and multirotor UAVs. Centimeter-level accuracy with VIO in GPS-denied conditions.",
@@ -88,12 +108,27 @@
     ],
     "schema_data": {
       "weight_g": 130
-    }
+    },
+    "sensor_type": "VIO Navigation",
+    "technology": "Vision + IMU fusion",
+    "accuracy": "0.1% distance traveled",
+    "imu_grade": "Industrial",
+    "power_w": 5.0,
+    "anti_jam": true,
+    "anti_spoof": false,
+    "gnss_receivers": 0,
+    "camera_inputs": 2,
+    "ros2_support": true,
+    "itar_free": true,
+    "tested_on": [
+      "multirotor",
+      "fixed-wing"
+    ]
   },
   {
     "pid": "PNT-0003",
     "category": "navigation_pnt",
-    "name": "Inertial Labs M-AJ-QUATRO — Multi-Element Anti-Jam Antenna",
+    "name": "Inertial Labs M-AJ-QUATRO \u2014 Multi-Element Anti-Jam Antenna",
     "manufacturer": "Inertial Labs",
     "manufacturer_hq": "Paeonian Springs, VA, USA",
     "description": "Multi-element anti-jamming advanced antenna system designed for Assured PNT across GNSS-jammed, spoofed, and denied environments. CRPA (Controlled Reception Pattern Antenna) architecture with multiple nulling elements to reject interference from multiple simultaneous jammers. Highlighted as a 2025 breakthrough technology for unmanned systems. Pairs with Inertial Labs INS family for resilient navigation.",
@@ -120,15 +155,30 @@
     ],
     "schema_data": {
       "weight_g": 250
-    }
+    },
+    "sensor_type": "CRPA Anti-Jam Antenna",
+    "technology": "Controlled Reception Pattern Antenna",
+    "gnss_bands": "L1/L2",
+    "power_w": 2.0,
+    "gnss_constellations": [
+      "GPS",
+      "GLONASS",
+      "Galileo",
+      "BeiDou"
+    ],
+    "continuous_beam": true,
+    "adaptive_nulling": true,
+    "interference_suppression_db": 45,
+    "gnss_receivers": 0,
+    "mil_std": "MIL-STD-810"
   },
   {
     "pid": "PNT-0004",
     "category": "navigation_pnt",
-    "name": "Advanced Navigation Boreas D90 — FOG INS",
+    "name": "Advanced Navigation Boreas D90 \u2014 FOG INS",
     "manufacturer": "Advanced Navigation",
     "manufacturer_hq": "Sydney, Australia",
-    "description": "High-performance fiber optic gyroscope (FOG) inertial navigation system with AI-powered sensor fusion. Achieved sub-0.1% distance accuracy during deep-mine field testing — proving reliable autonomy where GPS is completely unavailable. Revolutionary AI-powered fusion algorithm. Designed for defense, mining, and autonomous vehicle navigation in the most challenging GNSS-denied environments.",
+    "description": "High-performance fiber optic gyroscope (FOG) inertial navigation system with AI-powered sensor fusion. Achieved sub-0.1% distance accuracy during deep-mine field testing \u2014 proving reliable autonomy where GPS is completely unavailable. Revolutionary AI-powered fusion algorithm. Designed for defense, mining, and autonomous vehicle navigation in the most challenging GNSS-denied environments.",
     "link": "https://www.advancednavigation.com/",
     "approx_price": 25000,
     "subcategory": "fog_ins",
@@ -151,12 +201,44 @@
     ],
     "schema_data": {
       "weight_g": 450
-    }
+    },
+    "technology": "Fiber Optic Gyroscope",
+    "imu_grade": "Navigation",
+    "gyro_bias_stability_deg_hr": 0.05,
+    "accel_bias_stability_mg": 0.005,
+    "power_w": 25.0,
+    "anti_jam": true,
+    "anti_spoof": false,
+    "gnss_receivers": 1,
+    "nav_modes": [
+      "INS",
+      "GNSS/INS",
+      "gyrocompass"
+    ],
+    "output_data": [
+      "position",
+      "velocity",
+      "attitude",
+      "heave"
+    ],
+    "ros2_support": true,
+    "itar_free": true,
+    "gnss_constellations": [
+      "GPS",
+      "GLONASS",
+      "Galileo",
+      "BeiDou"
+    ],
+    "tested_on": [
+      "maritime",
+      "fixed-wing",
+      "ground vehicle"
+    ]
   },
   {
     "pid": "PNT-0005",
     "category": "navigation_pnt",
-    "name": "Honeywell HGuide o480 — Low-SWaP INS with Anti-Jam/Anti-Spoof",
+    "name": "Honeywell HGuide o480 \u2014 Low-SWaP INS with Anti-Jam/Anti-Spoof",
     "manufacturer": "Honeywell Aerospace",
     "manufacturer_hq": "Charlotte, NC, USA",
     "description": "Low-SWaP inertial navigation system featuring integrated anti-jamming and anti-spoofing capabilities. Available with single- or dual-antenna GNSS for enhanced resilience. Designed for UAS and autonomous vehicle applications requiring assured PNT in contested environments. Honeywell's heritage in aerospace-grade navigation brought to compact form factor.",
@@ -185,15 +267,42 @@
     ],
     "schema_data": {
       "weight_g": 200
-    }
+    },
+    "sensor_type": "MEMS INS",
+    "technology": "MEMS + GNSS",
+    "accuracy": "0.1\u00b0 roll/pitch, 0.3\u00b0 heading",
+    "imu_grade": "Industrial",
+    "gyro_bias_stability_deg_hr": 1.0,
+    "accel_bias_stability_mg": 0.03,
+    "power_w": 3.0,
+    "gnss_receivers": 1,
+    "nav_modes": [
+      "INS",
+      "GNSS/INS",
+      "GPS-denied"
+    ],
+    "output_data": [
+      "position",
+      "velocity",
+      "attitude"
+    ],
+    "ros2_support": false,
+    "itar_free": true,
+    "gnss_constellations": [
+      "GPS",
+      "GLONASS"
+    ],
+    "partners": [
+      "Honeywell Defense"
+    ]
   },
   {
     "pid": "PNT-0006",
     "category": "navigation_pnt",
-    "name": "Infleqtion Tiqker — Quantum Optical Atomic Clock",
+    "name": "Infleqtion Tiqker \u2014 Quantum Optical Atomic Clock",
     "manufacturer": "Infleqtion",
     "manufacturer_hq": "Boulder, CO, USA",
-    "description": "Quantum optical clock using infrared lasers tuned to rubidium electron transitions for ultra-precise timekeeping — loses one second every 2 million years. Passed tests on UK flight trials, US Army ground vehicles in New Mexico, and drone submarines. Provides the timing component of PNT when GPS timing is denied. Rack-mountable form factor. Part of emerging quantum PNT ecosystem alongside atom-interferometry inertial sensors.",
+    "description": "Quantum optical clock using infrared lasers tuned to rubidium electron transitions for ultra-precise timekeeping \u2014 loses one second every 2 million years. Passed tests on UK flight trials, US Army ground vehicles in New Mexico, and drone submarines. Provides the timing component of PNT when GPS timing is denied. Rack-mountable form factor. Part of emerging quantum PNT ecosystem alongside atom-interferometry inertial sensors.",
     "link": "https://www.infleqtion.com/",
     "approx_price": "Government/defense procurement",
     "subcategory": "quantum_timing",
@@ -221,12 +330,30 @@
       "gps_denied",
       "darpa"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "sensor_type": "Quantum Atomic Clock",
+    "imu_grade": "Strategic",
+    "power_w": 8.0,
+    "anti_jam": true,
+    "anti_spoof": true,
+    "gnss_receivers": 0,
+    "nav_modes": [
+      "timing",
+      "PNT holdover"
+    ],
+    "output_data": [
+      "timing signal",
+      "PPS"
+    ],
+    "gnss_denied_accuracy_pct_dt": 99.9,
+    "solid_state": true,
+    "darpa_contracts": true,
+    "itar_free": false
   },
   {
     "pid": "PNT-0007",
     "category": "navigation_pnt",
-    "name": "Q-CTRL Ironstone Opal — Quantum Magnetic Navigation",
+    "name": "Q-CTRL Ironstone Opal \u2014 Quantum Magnetic Navigation",
     "manufacturer": "Q-CTRL",
     "manufacturer_hq": "Sydney, Australia",
     "description": "Quantum-enhanced magnetic navigation system using machine learning to track aircraft location via Earth's magnetic field anomalies. Demonstrated 94x more accurate tracking than strategic-grade conventional INS in Cessna flight trials. Two DARPA contracts awarded. Being tested with Northrop Grumman, Lockheed Martin, and Airbus. Provides GPS-independent position fixing by matching measured magnetic signatures against pre-mapped databases.",
@@ -256,12 +383,31 @@
       "darpa",
       "94x_accuracy"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "sensor_type": "Quantum Magnetic Navigation",
+    "accuracy": "10m GPS-denied",
+    "imu_grade": "Strategic",
+    "power_w": 15.0,
+    "anti_jam": true,
+    "anti_spoof": true,
+    "gnss_receivers": 0,
+    "nav_modes": [
+      "magnetic nav",
+      "GPS-denied INS"
+    ],
+    "output_data": [
+      "position",
+      "heading"
+    ],
+    "darpa_funded": true,
+    "solid_state": true,
+    "ai_fusion": true,
+    "itar_free": false
   },
   {
     "pid": "PNT-0008",
     "category": "navigation_pnt",
-    "name": "ModalAI VOXL 2 VIO — Visual Inertial Odometry Navigation",
+    "name": "ModalAI VOXL 2 VIO \u2014 Visual Inertial Odometry Navigation",
     "manufacturer": "ModalAI",
     "manufacturer_hq": "San Diego, CA, USA",
     "description": "GPS-denied navigation via Visual Inertial Odometry (VIO) running on the VOXL 2 companion computer. Fuses camera image data with IMU data to estimate position and orientation in 3D space. Works both indoors and outdoors. Supports SLAM, VOA (Visual Obstacle Avoidance), ROS 2, and Docker. 7 concurrent camera inputs. Blue UAS Framework certified. Only 16g. Assembled in USA.",
@@ -298,15 +444,33 @@
     ],
     "schema_data": {
       "weight_g": 16
-    }
+    },
+    "sensor_type": "VIO Navigation",
+    "technology": "Visual Inertial Odometry",
+    "accuracy": "0.1m at 100m flight",
+    "imu_grade": "Industrial",
+    "anti_jam": true,
+    "anti_spoof": false,
+    "gnss_receivers": 0,
+    "output_data": [
+      "position",
+      "velocity",
+      "attitude"
+    ],
+    "vio_capability": true,
+    "itar_free": true,
+    "gnss_denied_accuracy_pct_dt": 95.0,
+    "tested_on": [
+      "multirotor"
+    ]
   },
   {
     "pid": "PNT-0009",
     "category": "navigation_pnt",
-    "name": "Infleqtion Quantum Inertial Sensor — Atom Interferometry IMU",
+    "name": "Infleqtion Quantum Inertial Sensor \u2014 Atom Interferometry IMU",
     "manufacturer": "Infleqtion",
     "manufacturer_hq": "Boulder, CO, USA",
-    "description": "Quantum inertial sensor using atom interferometry — splitting rubidium atoms with precise laser pulses to measure acceleration and rotation with extreme precision. New continuous-beam architecture (tested October 2025) eliminates dead times of pulsed systems for true continuous navigation. Trialed on customized aircraft at British military testing site. Part of DARPA-funded quantum PNT ecosystem alongside Tiqker atomic clock.",
+    "description": "Quantum inertial sensor using atom interferometry \u2014 splitting rubidium atoms with precise laser pulses to measure acceleration and rotation with extreme precision. New continuous-beam architecture (tested October 2025) eliminates dead times of pulsed systems for true continuous navigation. Trialed on customized aircraft at British military testing site. Part of DARPA-funded quantum PNT ecosystem alongside Tiqker atomic clock.",
     "link": "https://www.infleqtion.com/",
     "approx_price": "Government/defense R&D",
     "subcategory": "quantum_imu",
@@ -332,12 +496,30 @@
       "rubidium",
       "next_gen"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "sensor_type": "Quantum IMU",
+    "accuracy": "< 0.001\u00b0/hr gyro bias",
+    "imu_grade": "Strategic",
+    "power_w": 30.0,
+    "anti_jam": true,
+    "anti_spoof": true,
+    "gnss_receivers": 0,
+    "nav_modes": [
+      "inertial-only",
+      "GPS-denied"
+    ],
+    "output_data": [
+      "acceleration",
+      "angular rate"
+    ],
+    "solid_state": false,
+    "accelerometer": "Atom interferometry",
+    "itar_free": false
   },
   {
     "pid": "PNT-0010",
     "category": "navigation_pnt",
-    "name": "Advanced Navigation Certus Evo — MEMS INS/GNSS",
+    "name": "Advanced Navigation Certus Evo \u2014 MEMS INS/GNSS",
     "manufacturer": "Advanced Navigation",
     "manufacturer_hq": "Sydney, Australia",
     "description": "High-precision MEMS-based INS/GNSS with AI-powered sensor fusion delivering centimeter-level accuracy. Features RTK-enabled positioning with Auto-Adaptive Extended Kalman Filter for performance in challenging GNSS environments. Tightly coupled GNSS/INS architecture maintains navigation during partial signal loss. Multi-constellation, multi-frequency GNSS support. Ideal for drone survey, mapping, and precision agriculture.",
@@ -366,12 +548,41 @@
     ],
     "schema_data": {
       "weight_g": 45
-    }
+    },
+    "technology": "MEMS + GNSS + AI fusion",
+    "imu_grade": "Tactical",
+    "gyro_bias_stability_deg_hr": 0.3,
+    "accel_bias_stability_mg": 0.015,
+    "power_w": 2.5,
+    "anti_jam": false,
+    "anti_spoof": false,
+    "gnss_receivers": 1,
+    "nav_modes": [
+      "INS",
+      "GNSS/INS"
+    ],
+    "output_data": [
+      "position",
+      "velocity",
+      "attitude"
+    ],
+    "ros2_support": true,
+    "itar_free": true,
+    "gnss_constellations": [
+      "GPS",
+      "GLONASS",
+      "Galileo",
+      "BeiDou"
+    ],
+    "tested_on": [
+      "multirotor",
+      "fixed-wing"
+    ]
   },
   {
     "pid": "PNT-0011",
     "category": "navigation_pnt",
-    "name": "Teledyne Compact Navigator — DVL + INS for Maritime/Subsea UAS",
+    "name": "Teledyne Compact Navigator \u2014 DVL + INS for Maritime/Subsea UAS",
     "manufacturer": "Teledyne Marine",
     "manufacturer_hq": "Thousand Oaks, CA, USA",
     "description": "All-in-one Doppler Velocity Log (DVL) plus INS system optimized for AUVs and ROVs. Provides reliable heading, depth, and stabilization in dynamic sea conditions where GPS is unavailable. Highlighted as a 2025 breakthrough for underwater autonomous navigation. Compact form factor integrates multiple sensors that traditionally required separate units.",
@@ -404,12 +615,26 @@
     ],
     "schema_data": {
       "weight_g": 900
-    }
+    },
+    "technology": "Doppler Velocity Log + INS",
+    "accuracy": "0.05% distance traveled",
+    "imu_grade": "Navigation",
+    "power_w": 12.0,
+    "anti_jam": true,
+    "anti_spoof": false,
+    "gnss_receivers": 1,
+    "nav_modes": [
+      "DVL/INS",
+      "GPS-denied subsurface"
+    ],
+    "ros2_support": false,
+    "itar_free": true,
+    "coupling": "Tightly-coupled DVL/INS"
   },
   {
     "pid": "PNT-0012",
     "category": "navigation_pnt",
-    "name": "Anello Maritime INS — High-Grade Photonic INS",
+    "name": "Anello Maritime INS \u2014 High-Grade Photonic INS",
     "manufacturer": "Anello Photonics",
     "manufacturer_hq": "Santa Clara, CA, USA",
     "description": "High-grade inertial navigation system using silicon photonic optical gyroscope technology for maritime and autonomous vehicle applications. Provides tactical-to-navigation grade accuracy with no moving parts and solid-state construction. Offers significant cost and size advantages over traditional fiber optic and ring laser gyro systems while approaching their accuracy.",
@@ -435,6 +660,32 @@
     ],
     "schema_data": {
       "weight_g": 150
-    }
+    },
+    "technology": "Optical Gyroscope (MIOG)",
+    "accuracy": "0.003\u00b0/hr gyro bias",
+    "gyro_bias_stability_deg_hr": 0.003,
+    "accel_bias_stability_mg": 0.003,
+    "power_w": 8.0,
+    "anti_jam": true,
+    "anti_spoof": false,
+    "gnss_receivers": 1,
+    "nav_modes": [
+      "INS",
+      "GNSS/INS",
+      "GPS-denied"
+    ],
+    "output_data": [
+      "position",
+      "velocity",
+      "attitude"
+    ],
+    "ros2_support": true,
+    "itar_free": true,
+    "gnss_constellations": [
+      "GPS",
+      "GLONASS",
+      "Galileo",
+      "BeiDou"
+    ]
   }
 ]
