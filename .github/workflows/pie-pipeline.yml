@@ -1,18 +1,18 @@
-name: Pattern Intelligence Pipeline
-
+# RETIRED — PIE pipeline moved to DroneWuKong/Ai-Project
+# Workflow: pie-pipeline-full.yml
+# Schedule: Daily 8:30 AM CST (14:30 UTC)
+# Manual trigger: Actions → PIE Full Pipeline (Real Flags) → Run workflow
+#
+# This file kept as reference only. No jobs run.
+name: "[RETIRED] Pattern Intelligence Pipeline — see Ai-Project"
 on:
-  schedule:
-    - cron: '30 14 * * *'  # Daily at 14:30 UTC
   workflow_dispatch: {}
-
-# PIE pipeline has moved to Ai-Project repo.
-# This workflow triggers the canonical pipeline there.
 jobs:
-  trigger-ai-project-pipeline:
+  notice:
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger PIE Full Pipeline in Ai-Project
+      - name: Pipeline location notice
         run: |
-          echo "PIE pipeline has moved to DroneWuKong/Ai-Project"
-          echo "Trigger: Actions → PIE Full Pipeline (Real Flags) → Run workflow"
-          echo "Or it runs automatically daily at 14:30 UTC via pie-pipeline-full.yml"
+          echo "PIE pipeline runs in DroneWuKong/Ai-Project"
+          echo "Workflow: pie-pipeline-full.yml"
+          echo "Schedule: daily 8:30 AM CST"
