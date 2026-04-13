@@ -84,6 +84,12 @@ SOURCES = {
         "type": "derived",
     },
     # ── GUR / Ukraine Intelligence ──
+    "opensanctions_gur": {
+        "name": "OpenSanctions — Ukraine War & Sanctions (GUR)",
+        "url": "https://data.opensanctions.org/datasets/latest/ua_war_sanctions/targets.simple.csv",
+        "description": "OpenSanctions daily bulk export of GUR War & Sanctions portal data. Structured CSV/JSON, no auth required, free for non-commercial use. Updated daily.",
+        "validation": "OpenSanctions crawls war-sanctions.gur.gov.ua and publishes structured data daily. Cross-referenced with GUR portal primary sources.",
+    },
     "gur_war_sanctions": {
         "name": "GUR War & Sanctions Portal",
         "url": "https://war-sanctions.gur.gov.ua",
@@ -597,74 +603,126 @@ def analyze_fcs(db):
 
 def fetch_gur_live():
     """
-    Attempt live fetch from GUR War & Sanctions portal.
-    Falls back to verified static dataset if unavailable.
+    Fetch GUR War & Sanctions component diversion data.
+
+    Primary source: OpenSanctions ua_war_sanctions bulk download (free, no auth,
+    daily updated). URL: https://data.opensanctions.org/datasets/latest/ua_war_sanctions/
+    OpenSanctions crawls the GUR portal and publishes structured JSON/CSV daily.
+
+    Falls back to: cached data → verified static dataset.
     Returns list of {weapon, component, role, units, manufacturer, country} dicts.
     """
-    import urllib.request, urllib.error, ssl, json as _json
+    import urllib.request, urllib.error, ssl, json as _json, csv, io
 
     GUR_CACHE = REPO_ROOT / "data" / "procurement" / "gur_components_cache.json"
 
-    # Try the GUR portal's public search endpoint
+    # ── Primary: OpenSanctions ua_war_sanctions CSV (free, no auth, daily) ──
+    # CSV is lighter than the full FTM JSON and has the fields we need.
+    OPENSANCTIONS_URL = (
+        "https://data.opensanctions.org/datasets/latest"
+        "/ua_war_sanctions/targets.simple.csv"
+    )
+
     try:
         ctx = ssl.create_default_context()
-        # GUR portal has a public REST API for component search
-        url = "https://war-sanctions.gur.gov.ua/api/components?limit=100&category=UAS"
-        req = urllib.request.Request(url, headers={"User-Agent": "PIE-Intelligence/1.0"})
-        with urllib.request.urlopen(req, context=ctx, timeout=15) as r:
-            data = _json.loads(r.read())
-            components = data if isinstance(data, list) else data.get("items", data.get("results", []))
-            if components:
-                # Normalize to our schema
-                findings = []
-                for c in components:
-                    findings.append({
-                        "weapon": c.get("weapon_system", c.get("system", "Unknown")),
-                        "component": c.get("component_name", c.get("name", "Unknown")),
-                        "role": c.get("role", c.get("function", "")),
-                        "manufacturer": c.get("manufacturer", ""),
-                        "country": c.get("country", c.get("origin_country", "")),
-                        "units": c.get("quantity", ""),
-                        "source": "gur_live",
-                    })
-                print(f"  ✓ GUR live fetch: {len(findings)} components from war-sanctions.gur.gov.ua")
-                # Cache the live results
-                GUR_CACHE.parent.mkdir(parents=True, exist_ok=True)
-                GUR_CACHE.write_text(_json.dumps({
-                    "fetched_at": now,
-                    "count": len(findings),
-                    "components": findings,
-                }, indent=2))
-                return findings
-    except Exception as e:
-        print(f"  ⚠ GUR live fetch failed ({type(e).__name__}): {e} — using cache/static")
+        req = urllib.request.Request(
+            OPENSANCTIONS_URL,
+            headers={"User-Agent": "PIE-Intelligence/1.0 (non-commercial research)"},
+        )
+        with urllib.request.urlopen(req, context=ctx, timeout=30) as r:
+            raw = r.read().decode("utf-8")
 
-    # Try cache (from a previous successful fetch)
+        reader = csv.DictReader(io.StringIO(raw))
+        findings = []
+        uas_keywords = [
+            "uav", "drone", "shahed", "geran", "lancet", "orion",
+            "fpv", "unmanned", "loitering", "missile", "geranium",
+        ]
+        for row in reader:
+            # Filter to UAS/weapons-relevant entities
+            caption = (row.get("caption") or "").lower()
+            schema  = (row.get("schema") or "").lower()
+            topics  = (row.get("topics") or "").lower()
+            countries = row.get("countries") or ""
+
+            is_uas_relevant = (
+                any(kw in caption for kw in uas_keywords)
+                or "weapons.manufacture" in topics
+                or "sanction" in topics
+            )
+            if not is_uas_relevant:
+                continue
+
+            findings.append({
+                "weapon":       row.get("caption", "Unknown"),
+                "component":    row.get("name", row.get("caption", "")),
+                "role":         row.get("topics", ""),
+                "manufacturer": row.get("caption", ""),
+                "country":      countries.split(";")[0].strip() if countries else "",
+                "units":        "",
+                "source":       "opensanctions_gur",
+                "opensanctions_id": row.get("id", ""),
+                "datasets":     row.get("datasets", ""),
+            })
+
+        if findings:
+            print(f"  ✓ GUR/OpenSanctions: {len(findings)} UAS-relevant entities")
+            GUR_CACHE.parent.mkdir(parents=True, exist_ok=True)
+            GUR_CACHE.write_text(_json.dumps({
+                "fetched_at": now,
+                "source": "opensanctions_ua_war_sanctions",
+                "count": len(findings),
+                "components": findings,
+            }, indent=2))
+            return findings
+        else:
+            print("  ⚠ OpenSanctions returned data but no UAS-relevant entries — falling back")
+
+    except Exception as e:
+        print(f"  ⚠ GUR/OpenSanctions fetch failed ({type(e).__name__}): {e} — trying cache")
+
+    # ── Fallback 1: cached data from last successful fetch ──
     if GUR_CACHE.exists():
         try:
             cache = _json.loads(GUR_CACHE.read_text())
             findings = cache.get("components", [])
-            fetched = cache.get("fetched_at", "unknown")
-            print(f"  ℹ GUR using cached data ({len(findings)} components, fetched {fetched[:10]})")
+            fetched  = cache.get("fetched_at", "unknown")
+            source   = cache.get("source", "cache")
+            print(f"  ℹ GUR using cached data ({len(findings)} entries, {source}, fetched {fetched[:10]})")
             return findings
         except Exception:
             pass
 
-    # Fallback: verified static dataset from our GUR research session
-    print("  ℹ GUR using verified static dataset (portal unreachable)")
+    # ── Fallback 2: verified static dataset (hand-curated from GUR research) ──
+    print("  ℹ GUR using verified static dataset (all fetches failed)")
     return [
         {"weapon": "Geran-2/3 (Shahed-136/238)", "component": "Raspberry Pi 4B",
-         "role": "Borscht Tracker V3", "units": "40,000+", "manufacturer": "Raspberry Pi Ltd", "country": "UK"},
+         "role": "Borscht Tracker V3", "units": "40,000+",
+         "manufacturer": "Raspberry Pi Ltd", "country": "UK", "source": "static"},
         {"weapon": "Geran-5", "component": "Raspberry Pi",
-         "role": "Tracker + 3G/4G modem", "units": "", "manufacturer": "Raspberry Pi Ltd", "country": "UK"},
+         "role": "Tracker + 3G/4G modem", "units": "",
+         "manufacturer": "Raspberry Pi Ltd", "country": "UK", "source": "static"},
         {"weapon": "Molniya-2R", "component": "Raspberry Pi 5",
-         "role": "Reconnaissance computer", "units": "", "manufacturer": "Raspberry Pi Ltd", "country": "UK"},
+         "role": "Reconnaissance computer", "units": "",
+         "manufacturer": "Raspberry Pi Ltd", "country": "UK", "source": "static"},
         {"weapon": "FPV (various)", "component": "Allwinner H616",
-         "role": "Grape Pi 1 (machine vision)", "units": "", "manufacturer": "Allwinner Technology", "country": "China"},
+         "role": "Grape Pi 1 (machine vision)", "units": "",
+         "manufacturer": "Allwinner Technology", "country": "China", "source": "static"},
         {"weapon": "Shahed-136 (Geran-2)", "component": "STM32 MCU",
-         "role": "Flight controller", "units": "", "manufacturer": "STMicroelectronics", "country": "Switzerland"},
+         "role": "Flight controller", "units": "",
+         "manufacturer": "STMicroelectronics", "country": "Switzerland", "source": "static"},
         {"weapon": "Lancet-3", "component": "Sony IMX camera sensor",
-         "role": "Target acquisition", "units": "", "manufacturer": "Sony", "country": "Japan"},
+         "role": "Target acquisition", "units": "",
+         "manufacturer": "Sony", "country": "Japan", "source": "static"},
+        {"weapon": "Shahed-107", "component": "Chinese FPV motor (XV 540 KV)",
+         "role": "Propulsion", "units": "",
+         "manufacturer": "Telefly Telecommunications", "country": "China", "source": "static"},
+        {"weapon": "Feniks UAV", "component": "QIR50T gyro-stabilized system",
+         "role": "Stabilization/targeting", "units": "",
+         "manufacturer": "Unknown Chinese OEM", "country": "China", "source": "static"},
+        {"weapon": "Geran-3", "component": "Telefly JT80 turbojet engine",
+         "role": "Propulsion", "units": "",
+         "manufacturer": "Telefly Telecommunications Equipment Co.", "country": "China", "source": "static"},
     ]
 
 
