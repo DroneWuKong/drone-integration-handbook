@@ -65,12 +65,12 @@ Open an issue to suggest additions or volunteer to write one.
 
 ## Planned Chapters
 
-- [ ] **Payload Integration Patterns** — Mapping cameras, multispectral sensors, LiDAR, delivery mechanisms. Wiring, power, data flow, and the companion computer as integration hub.
+- [x] **Payload Integration Patterns** — Mapping cameras, multispectral sensors, LiDAR, delivery mechanisms. Wiring, power, data flow, and the companion computer as integration hub.
 - [x] **Cellular / LTE for BVLOS** — When and how to use cellular modems for beyond-visual-line-of-sight. Hardware, SIM management, latency reality, regulatory considerations.
-- [ ] **Fixed-Wing Specific** — Airspeed sensors, VTOL transitions, iNav vs ArduPilot for wings, long-range planning.
+- [x] **Fixed-Wing Specific** — Airspeed sensors, VTOL transitions, iNav vs ArduPilot for wings, long-range planning.
 - [x] **Fleet Management** — Managing 5-50 platforms. Configuration management, firmware versioning, battery tracking, maintenance schedules.
-- [ ] **Power Systems Deep Dive** — Battery chemistry, BEC selection, power distribution boards, voltage sag under load, field charging.
-- [ ] **Pattern Intelligence Methodology** — How PIE works: flag types, correlation engine, gray zone detection, supply chain forecasting methodology. Public-facing explanation of the intelligence pipeline.
+- [x] **Power Systems Deep Dive** — Battery chemistry, BEC selection, power distribution boards, voltage sag under load, field charging.
+- [x] **Pattern Intelligence Methodology** — How PIE works: flag types, correlation engine, gray zone detection, supply chain forecasting methodology. Public-facing explanation of the intelligence pipeline.
 
 ## Planned Field Guides — "Stuff Nobody Has Written"
 
@@ -88,11 +88,11 @@ Operator-level quick references. Laminate-and-carry format. Each fills a gap whe
 
 ## Planned Appendices
 
-- [ ] **Appendix A: Frequency Quick Reference Card** — One-page printable frequency plan template
+- [x] **Appendix A: Frequency Quick Reference Card** — One-page printable frequency plan template
 - [x] **Appendix B: UART Maps for Common FCs** — 416 FCs mapped
 - [x] **Appendix C: MAVLink Message Quick Reference** — The 20 messages you actually use
 - [x] **Appendix D: MSP Function Code Quick Reference** — The 15 function codes you actually use
-- [ ] **Appendix E: CoT Type Code Reference** — Common MIL-STD-2525C codes for drone operations
+- [x] **Appendix E: CoT Type Code Reference** — Common MIL-STD-2525C codes for drone operations
 
 ## Planned Templates
 

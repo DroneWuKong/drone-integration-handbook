@@ -76,6 +76,7 @@ _COMPONENT_GROUPS = [
         "platforms-global", "ndaa-compliance", "remote-id", "bvlos",
         "utm-airspace", "uas-maintenance", "industry-intelligence",
         "cellular-lte-bvlos", "fleet-management",
+        "payload-integration-patterns", "fixed-wing-specific", "power-systems-deep-dive",
     ]),
     ("Manufacturer Guides", [
         "orqa-hardware", "openhd-implementation",
