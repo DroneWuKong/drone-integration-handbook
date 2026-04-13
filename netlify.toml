@@ -10,37 +10,37 @@
 
 [[redirects]]
   from = "/forge"
-  to = "https://forgeprole.netlify.app"
+  to = "https://nvmillbuilditmyself.com"
   status = 301
   force = true
 
 [[redirects]]
   from = "/forge/*"
-  to = "https://forgeprole.netlify.app/:splat"
+  to = "https://nvmillbuilditmyself.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "/patterns"
-  to = "https://forgeprole.netlify.app/patterns/"
+  to = "https://nvmillbuilditmyself.com/patterns/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/patterns/"
-  to = "https://forgeprole.netlify.app/patterns/"
+  to = "https://nvmillbuilditmyself.com/patterns/"
   status = 301
   force = true
 
 # Analytics dashboard lives on Forge — redirect handbook visitors there
 [[redirects]]
   from = "/analytics"
-  to = "https://forgeprole.netlify.app/analytics/"
+  to = "https://nvmillbuilditmyself.com/analytics/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/analytics/"
-  to = "https://forgeprole.netlify.app/analytics/"
+  to = "https://nvmillbuilditmyself.com/analytics/"
   status = 301
   force = true
