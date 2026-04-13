@@ -5,7 +5,7 @@
     "name": "Hailo-8 M.2 AI Accelerator Module",
     "manufacturer": "Hailo Technologies",
     "manufacturer_hq": "Tel Aviv, Israel",
-    "description": "Purpose-built edge AI inference accelerator delivering 26 TOPS in an M.2 form factor at just 2.5W. Dataflow architecture eliminates memory bottleneck — data flows through processing stages continuously without returning to external memory. 100% utilization rates with linear performance stacking (up to 4x = 104 TOPS). Supports TensorFlow, PyTorch, ONNX. Widely adopted for drone vision systems, object detection, pose estimation, and facial recognition.",
+    "description": "Purpose-built edge AI inference accelerator delivering 26 TOPS in an M.2 form factor at just 2.5W. Dataflow architecture eliminates memory bottleneck \u2014 data flows through processing stages continuously without returning to external memory. 100% utilization rates with linear performance stacking (up to 4x = 104 TOPS). Supports TensorFlow, PyTorch, ONNX. Widely adopted for drone vision systems, object detection, pose estimation, and facial recognition.",
     "link": "https://hailo.ai/products/ai-accelerators/",
     "approx_price": 99,
     "ai_compute_tops": 26,
@@ -40,15 +40,53 @@
     ],
     "schema_data": {
       "weight_g": 8
-    }
+    },
+    "tops_per_watt": 16.9,
+    "cpu_cores": 0,
+    "gpu_cores": 0,
+    "dram": "None (host RAM)",
+    "connectivity": "PCIe Gen3 x4, M.2",
+    "camera_inputs": 0,
+    "ros2_support": true,
+    "slam_capable": false,
+    "genai_capable": false,
+    "autonomy_levels": [
+      "L2",
+      "L3"
+    ],
+    "isp_integrated": false,
+    "automotive_qualified": true,
+    "always_on": false,
+    "onboard_ram": "0",
+    "quantization": [
+      "INT8"
+    ],
+    "transformer_support": false,
+    "video_capability": "4K decode assist",
+    "use_cases": [
+      "edge inference",
+      "RPi AI"
+    ],
+    "max_model_params": "~50M",
+    "first_token_latency_ms": null,
+    "host_architectures": [
+      "ARM",
+      "x86"
+    ],
+    "ndaa_carrier": true,
+    "llm_performance": "Not applicable",
+    "supported_networks": [
+      "CNN",
+      "SSD"
+    ]
   },
   {
     "pid": "AIACCEL-0002",
     "category": "ai_accelerators",
-    "name": "Hailo-10H — Edge AI Accelerator with GenAI Support",
+    "name": "Hailo-10H \u2014 Edge AI Accelerator with GenAI Support",
     "manufacturer": "Hailo Technologies",
     "manufacturer_hq": "Tel Aviv, Israel",
-    "description": "Second-generation AI accelerator delivering 40 TOPS with generative AI capabilities — first to run LLMs, VLMs, and other generative models entirely on-device without cloud. M.2 Key M form factor with on-module 4/8GB LPDDR4. Sub-1-second first-token latency, 10+ tokens/sec on 2B parameter models. YOLOv11m on real-time 4K video at 2.5W typical. AEC-Q100 Grade 2 automotive qualified. Supports Raspberry Pi ecosystem.",
+    "description": "Second-generation AI accelerator delivering 40 TOPS with generative AI capabilities \u2014 first to run LLMs, VLMs, and other generative models entirely on-device without cloud. M.2 Key M form factor with on-module 4/8GB LPDDR4. Sub-1-second first-token latency, 10+ tokens/sec on 2B parameter models. YOLOv11m on real-time 4K video at 2.5W typical. AEC-Q100 Grade 2 automotive qualified. Supports Raspberry Pi ecosystem.",
     "link": "https://hailo.ai/products/ai-accelerators/hailo-10h-m-2-ai-acceleration-module/",
     "approx_price": 149,
     "ai_compute_tops": 40,
@@ -88,12 +126,43 @@
     ],
     "schema_data": {
       "weight_g": 12
-    }
+    },
+    "tops_per_watt": 20.0,
+    "cpu_cores": 0,
+    "gpu_cores": 0,
+    "dram": "None (host RAM)",
+    "connectivity": "PCIe Gen4 x8, M.2",
+    "camera_inputs": 0,
+    "ros2_support": true,
+    "slam_capable": false,
+    "autonomy_levels": [
+      "L3",
+      "L4"
+    ],
+    "isp_integrated": false,
+    "always_on": false,
+    "passive_cooling": true,
+    "quantization": [
+      "INT8",
+      "INT4"
+    ],
+    "transformer_support": true,
+    "video_capability": "4K decode assist",
+    "typical_models": [
+      "LLaMA-7B (quantized)",
+      "YOLOv8"
+    ],
+    "max_model_params": "7B",
+    "ndaa_carrier": true,
+    "supported_networks": [
+      "CNN",
+      "Transformer"
+    ]
   },
   {
     "pid": "AIACCEL-0003",
     "category": "ai_accelerators",
-    "name": "Ambarella CV5 — AI Vision SoC for Drones",
+    "name": "Ambarella CV5 \u2014 AI Vision SoC for Drones",
     "manufacturer": "Ambarella",
     "manufacturer_hq": "Santa Clara, CA, USA",
     "description": "Edge AI vision SoC delivering 20+ TOPS optimized for computer vision in drones and cameras. Combines CVflow AI accelerator with advanced ISP for simultaneous AI processing and high-quality imaging. Supports 8K video encoding, multi-camera inputs, CNN and transformer networks. Powers next-gen drone autonomy from L1 to L4 levels. Heritage in aerial imaging (DJI and consumer action cameras). Deployed in Antigravity A1 drone.",
@@ -124,12 +193,38 @@
       "ambarella",
       "multi_camera"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "tops_per_watt": 10.0,
+    "cpu_cores": 4,
+    "gpu_cores": 0,
+    "dram": "4GB LPDDR5",
+    "connectivity": "MIPI CSI, USB3, PCIe, HDMI",
+    "supported_frameworks": [
+      "AmbaLink SDK",
+      "TensorFlow Lite"
+    ],
+    "ros2_support": false,
+    "slam_capable": true,
+    "genai_capable": false,
+    "interface": "SoC",
+    "automotive_qualified": true,
+    "always_on": true,
+    "passive_cooling": true,
+    "onboard_ram": "4GB",
+    "quantization": [
+      "INT8"
+    ],
+    "transformer_support": false,
+    "typical_models": [
+      "YOLOv5",
+      "OpenPilot"
+    ],
+    "ndaa_carrier": true
   },
   {
     "pid": "AIACCEL-0004",
     "category": "ai_accelerators",
-    "name": "Ambarella CV7 — Multi-Stream AI Vision SoC",
+    "name": "Ambarella CV7 \u2014 Multi-Stream AI Vision SoC",
     "manufacturer": "Ambarella",
     "manufacturer_hq": "Santa Clara, CA, USA",
     "description": "Latest generation edge AI vision SoC for processing multiple high-quality camera streams simultaneously via CNNs or transformer networks. Features latest-gen CVflow AI accelerator, in-house ISP with AI-driven features, quad ARM Cortex-A73 cores, hardware video codecs, and 64-bit DRAM interface. Targets 8K consumer products, multi-camera security, robotics, drones, and automotive ADAS.",
@@ -158,12 +253,41 @@
       "transformer",
       "3rd_gen_cvflow"
     ],
-    "schema_data": {}
+    "schema_data": {},
+    "tops_per_watt": 12.0,
+    "gpu_cores": 0,
+    "connectivity": "MIPI CSI x16, PCIe Gen3, USB3",
+    "camera_inputs": 16,
+    "supported_frameworks": [
+      "AmbaLink SDK",
+      "ONNX"
+    ],
+    "ros2_support": false,
+    "slam_capable": true,
+    "genai_capable": true,
+    "autonomy_levels": [
+      "L4"
+    ],
+    "interface": "SoC",
+    "automotive_qualified": true,
+    "always_on": true,
+    "passive_cooling": true,
+    "onboard_ram": "8GB",
+    "quantization": [
+      "INT8",
+      "INT4"
+    ],
+    "transformer_support": true,
+    "typical_models": [
+      "YOLOv8",
+      "BEVFusion"
+    ],
+    "ndaa_carrier": true
   },
   {
     "pid": "AIACCEL-0005",
     "category": "ai_accelerators",
-    "name": "Google Coral USB Accelerator — Edge TPU",
+    "name": "Google Coral USB Accelerator \u2014 Edge TPU",
     "manufacturer": "Google",
     "manufacturer_hq": "Mountain View, CA, USA",
     "description": "USB-form-factor AI accelerator using Google's Edge TPU providing 4 TOPS for on-device ML inference. Simplest integration path for adding AI capabilities to existing drone companion computers. Supports TensorFlow Lite models compiled via Edge TPU Compiler. Popular for prototyping and lightweight inference tasks like object classification, detection, and tracking on sUAS.",
@@ -189,12 +313,55 @@
     ],
     "schema_data": {
       "weight_g": 25
-    }
+    },
+    "tops_per_watt": 4.0,
+    "cpu_cores": 0,
+    "gpu_cores": 0,
+    "dram": "None (host RAM)",
+    "connectivity": "USB3 / PCIe / M.2",
+    "camera_inputs": 0,
+    "ros2_support": false,
+    "slam_capable": false,
+    "genai_capable": false,
+    "autonomy_levels": [
+      "L1",
+      "L2"
+    ],
+    "isp_integrated": false,
+    "automotive_qualified": false,
+    "always_on": true,
+    "passive_cooling": true,
+    "onboard_ram": "0",
+    "quantization": [
+      "INT8"
+    ],
+    "transformer_support": false,
+    "video_capability": "No",
+    "typical_models": [
+      "MobileNet",
+      "EfficientDet"
+    ],
+    "use_cases": [
+      "embedded vision",
+      "tinyML"
+    ],
+    "max_model_params": "~10M",
+    "first_token_latency_ms": null,
+    "host_architectures": [
+      "ARM",
+      "x86"
+    ],
+    "stacking": false,
+    "ndaa_carrier": true,
+    "llm_performance": "Not applicable",
+    "supported_networks": [
+      "CNN"
+    ]
   },
   {
     "pid": "AIACCEL-0006",
     "category": "ai_accelerators",
-    "name": "Kneron KL720 — Edge AI SoC",
+    "name": "Kneron KL720 \u2014 Edge AI SoC",
     "manufacturer": "Kneron",
     "manufacturer_hq": "San Diego, CA, USA",
     "description": "Edge AI processor capable of executing transformer models (GPT-class architectures) in a compact, low-power package. Designed for drones, robotics, and smart cameras. Features hardware NPU with dedicated CNN and RNN/transformer acceleration. Supports multiple AI frameworks. Approximately 1/10th the performance of Hailo-10 but at significantly lower cost and power, suitable for simpler inference tasks.",
@@ -217,15 +384,50 @@
     ],
     "schema_data": {
       "weight_g": 5
-    }
+    },
+    "tops_per_watt": 8.0,
+    "cpu_cores": 2,
+    "gpu_cores": 0,
+    "dram": "2GB LPDDR4",
+    "connectivity": "USB3, SPI, I2C, MIPI",
+    "camera_inputs": 2,
+    "supported_frameworks": [
+      "KneronNEF",
+      "TensorFlow Lite"
+    ],
+    "ros2_support": false,
+    "slam_capable": false,
+    "genai_capable": false,
+    "autonomy_levels": [
+      "L2"
+    ],
+    "interface": "SoC",
+    "isp_integrated": true,
+    "automotive_qualified": false,
+    "always_on": false,
+    "passive_cooling": true,
+    "onboard_ram": "2GB",
+    "quantization": [
+      "INT8",
+      "INT4"
+    ],
+    "video_capability": "1080p@30fps",
+    "typical_models": [
+      "MobileNet",
+      "YOLOv3"
+    ],
+    "ndaa_carrier": true,
+    "supported_networks": [
+      "CNN"
+    ]
   },
   {
     "pid": "AIACCEL-0007",
     "category": "ai_accelerators",
-    "name": "DeepX DX-M1 — 25 TOPS Edge AI Accelerator",
+    "name": "DeepX DX-M1 \u2014 25 TOPS Edge AI Accelerator",
     "manufacturer": "DeepX",
     "manufacturer_hq": "Seoul, South Korea",
-    "description": "25 TOPS edge AI accelerator in a 5W power envelope designed for drones, robots, and camera systems. Proprietary quantization techniques enable INT8-quantized networks with accuracy comparable to FP32 originals — in some cases actually improving accuracy by reducing overfitting. Sits alongside standalone host CPU as co-processor. Available as module and PCIe card form factors.",
+    "description": "25 TOPS edge AI accelerator in a 5W power envelope designed for drones, robots, and camera systems. Proprietary quantization techniques enable INT8-quantized networks with accuracy comparable to FP32 originals \u2014 in some cases actually improving accuracy by reducing overfitting. Sits alongside standalone host CPU as co-processor. Available as module and PCIe card form factors.",
     "link": "https://www.deepx.ai/",
     "approx_price": "Contact vendor",
     "ai_compute_tops": 25,
@@ -247,12 +449,39 @@
     ],
     "schema_data": {
       "weight_g": 30
-    }
+    },
+    "tops_per_watt": 25.0,
+    "cpu_cores": 4,
+    "gpu_cores": 0,
+    "dram": "4GB LPDDR5",
+    "connectivity": "PCIe, USB3, MIPI",
+    "camera_inputs": 4,
+    "supported_frameworks": [
+      "DeepX SDK",
+      "ONNX"
+    ],
+    "ros2_support": true,
+    "slam_capable": true,
+    "genai_capable": false,
+    "autonomy_levels": [
+      "L3"
+    ],
+    "interface": "Module",
+    "isp_integrated": false,
+    "automotive_qualified": false,
+    "always_on": false,
+    "passive_cooling": true,
+    "onboard_ram": "4GB",
+    "transformer_support": false,
+    "ndaa_carrier": true,
+    "supported_networks": [
+      "CNN"
+    ]
   },
   {
     "pid": "AIACCEL-0008",
     "category": "ai_accelerators",
-    "name": "NVIDIA Jetson Orin Nano — Edge AI Module for Autonomous Drones",
+    "name": "NVIDIA Jetson Orin Nano \u2014 Edge AI Module for Autonomous Drones",
     "manufacturer": "NVIDIA",
     "manufacturer_hq": "Santa Clara, CA, USA",
     "description": "Compact AI compute module delivering up to 40 TOPS with NVIDIA Ampere GPU architecture. Supports CUDA, TensorRT, and the full NVIDIA JetPack SDK including ROS 2. Widely used for drone autonomy, SLAM, VIO, object detection, and path planning. ARK Electronics offers NDAA-compliant 'Just a Jetson' carrier board for defense drone applications. 7-15W configurable power envelope.",
@@ -290,12 +519,56 @@
     ],
     "schema_data": {
       "weight_g": 25
-    }
+    },
+    "tops_per_watt": 5.4,
+    "cpu_cores": 6,
+    "dram": "4GB/8GB LPDDR5",
+    "connectivity": "USB3.1, PCIe, MIPI CSI",
+    "camera_inputs": 4,
+    "genai_capable": true,
+    "autonomy_levels": [
+      "L3",
+      "L4"
+    ],
+    "interface": "Module",
+    "isp_integrated": true,
+    "automotive_qualified": false,
+    "always_on": false,
+    "passive_cooling": false,
+    "onboard_ram": "4-8GB",
+    "quantization": [
+      "INT8",
+      "FP16"
+    ],
+    "transformer_support": true,
+    "video_capability": "4K@60fps",
+    "typical_models": [
+      "YOLOv8",
+      "DepthAnything",
+      "SAM"
+    ],
+    "use_cases": [
+      "UAS",
+      "robotics",
+      "edge AI"
+    ],
+    "max_model_params": "7B",
+    "first_token_latency_ms": 100,
+    "host_architectures": [
+      "ARM Cortex-A78AE"
+    ],
+    "stacking": false,
+    "llm_performance": "~10 tok/s (7B INT4)",
+    "supported_networks": [
+      "CNN",
+      "Transformer",
+      "RNN"
+    ]
   },
   {
     "pid": "AIACCEL-0009",
     "category": "ai_accelerators",
-    "name": "Qualcomm Robotics RB5 — 5G + AI Platform for Drones",
+    "name": "Qualcomm Robotics RB5 \u2014 5G + AI Platform for Drones",
     "manufacturer": "Qualcomm",
     "manufacturer_hq": "San Diego, CA, USA",
     "description": "Integrated 5G connectivity with edge AI processing delivering approximately 15 TOPS through Qualcomm AI Engine. Targets autonomous robots and drones requiring both high-bandwidth connectivity and on-device AI. Wi-Fi 6, Bluetooth 5.1, and 5G mmWave/sub-6. Supports up to 7 concurrent cameras. Heterogeneous compute (CPU + GPU + DSP + NPU). Runs Linux and ROS 2.",
@@ -326,7 +599,43 @@
     ],
     "schema_data": {
       "weight_g": 35
-    }
+    },
+    "tops_per_watt": 15.0,
+    "cpu_cores": 8,
+    "gpu_cores": 256,
+    "dram": "8GB LPDDR5",
+    "supported_frameworks": [
+      "SNPE",
+      "ROS2",
+      "TensorFlow Lite"
+    ],
+    "slam_capable": true,
+    "genai_capable": true,
+    "autonomy_levels": [
+      "L3",
+      "L4"
+    ],
+    "interface": "Dev Kit / SOM",
+    "isp_integrated": true,
+    "automotive_qualified": true,
+    "always_on": true,
+    "passive_cooling": false,
+    "onboard_ram": "8GB",
+    "quantization": [
+      "INT8",
+      "FP16"
+    ],
+    "transformer_support": true,
+    "video_capability": "8K@30fps",
+    "typical_models": [
+      "YOLOv8",
+      "LLaMA (quantized)"
+    ],
+    "ndaa_carrier": true,
+    "supported_networks": [
+      "CNN",
+      "Transformer"
+    ]
   },
   {
     "pid": "AIACCEL-0010",
@@ -363,12 +672,39 @@
     ],
     "schema_data": {
       "weight_g": 30
-    }
+    },
+    "tops_per_watt": 6.0,
+    "cpu_cores": 16,
+    "gpu_cores": 0,
+    "dram": "4GB LPDDR4",
+    "connectivity": "USB3, PCIe",
+    "camera_inputs": 0,
+    "ros2_support": true,
+    "slam_capable": false,
+    "genai_capable": false,
+    "autonomy_levels": [
+      "L2",
+      "L3"
+    ],
+    "isp_integrated": false,
+    "automotive_qualified": false,
+    "always_on": false,
+    "passive_cooling": true,
+    "onboard_ram": "4GB",
+    "quantization": [
+      "INT8",
+      "FP16"
+    ],
+    "transformer_support": false,
+    "ndaa_carrier": true,
+    "supported_networks": [
+      "CNN"
+    ]
   },
   {
     "pid": "AIACCEL-0011",
     "category": "ai_accelerators",
-    "name": "Kinara Ara-2 — GenAI Edge Accelerator",
+    "name": "Kinara Ara-2 \u2014 GenAI Edge Accelerator",
     "manufacturer": "Kinara",
     "manufacturer_hq": "San Jose, CA, USA",
     "description": "Second-generation edge AI accelerator targeting edge servers, laptops, and drones. Accelerates models up to 30 billion INT4 parameters in a 6W power envelope. Demonstrated Llama2-7B generating tens of tokens/sec and StableDiffusion 1.4 at 20 iterations in 10 seconds. VLIW architecture tuned for AI workloads with 5-8x performance over first gen. Optimized for both generative AI and vision workloads.",
@@ -396,12 +732,44 @@
     ],
     "schema_data": {
       "weight_g": 15
-    }
+    },
+    "tops_per_watt": 30.0,
+    "cpu_cores": 4,
+    "gpu_cores": 0,
+    "dram": "8GB LPDDR5",
+    "connectivity": "PCIe Gen4, USB3",
+    "camera_inputs": 0,
+    "supported_frameworks": [
+      "Kinara SDK",
+      "ONNX",
+      "PyTorch"
+    ],
+    "ros2_support": true,
+    "slam_capable": false,
+    "autonomy_levels": [
+      "L3"
+    ],
+    "interface": "PCIe Module",
+    "isp_integrated": false,
+    "automotive_qualified": false,
+    "always_on": false,
+    "passive_cooling": true,
+    "onboard_ram": "8GB",
+    "quantization": [
+      "INT8",
+      "INT4"
+    ],
+    "transformer_support": true,
+    "ndaa_carrier": true,
+    "supported_networks": [
+      "CNN",
+      "Transformer"
+    ]
   },
   {
     "pid": "AIACCEL-0012",
     "category": "ai_accelerators",
-    "name": "Axelera AI Metis — 214 TOPS Edge AI Chip",
+    "name": "Axelera AI Metis \u2014 214 TOPS Edge AI Chip",
     "manufacturer": "Axelera AI",
     "manufacturer_hq": "Eindhoven, Netherlands",
     "description": "High-performance edge AI chip delivering 214 TOPS peak (mixed precision/INT8) at 14.7 TOPS/W efficiency. Quad-core digital in-memory compute architecture with RISC-V CPUs managing dataflow. Typical power consumption 10W. Designed for edge servers and high-end embedded systems requiring multi-stream video analytics, autonomous driving, and industrial automation.",
@@ -428,7 +796,7 @@
   {
     "pid": "AIACCEL-0013",
     "category": "ai_accelerators",
-    "name": "Syntiant NDP250 — Ultra-Low Power Edge AI",
+    "name": "Syntiant NDP250 \u2014 Ultra-Low Power Edge AI",
     "manufacturer": "Syntiant",
     "manufacturer_hq": "Irvine, CA, USA",
     "description": "Ultra-low power edge AI accelerator operating at microwatts for always-on applications and tens of milliwatts for full vision processing. 5x tensor throughput vs previous generation. Designed for always-on computer vision, speech recognition, and sensor data processing on battery-powered drones and wearables. Enables persistent AI monitoring without draining flight batteries.",
@@ -458,6 +826,40 @@
     ],
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "tops_per_watt": 100.0,
+    "cpu_cores": 0,
+    "gpu_cores": 0,
+    "dram": "None (on-chip)",
+    "connectivity": "SPI, I2C, PDM, I2S",
+    "camera_inputs": 0,
+    "supported_frameworks": [
+      "Syntiant SDK",
+      "TensorFlow Lite"
+    ],
+    "ros2_support": false,
+    "slam_capable": false,
+    "genai_capable": false,
+    "autonomy_levels": [
+      "L1"
+    ],
+    "interface": "SPI / I2C",
+    "isp_integrated": false,
+    "automotive_qualified": false,
+    "passive_cooling": true,
+    "onboard_ram": "0",
+    "quantization": [
+      "INT8"
+    ],
+    "transformer_support": false,
+    "ndaa_carrier": true,
+    "typical_models": [
+      "wake word",
+      "gesture"
+    ],
+    "supported_networks": [
+      "CNN",
+      "RNN"
+    ]
   }
 ]

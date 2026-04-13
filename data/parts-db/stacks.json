@@ -460,7 +460,8 @@
     "approx_price": 68,
     "schema_data": {
       "weight_g": 28
-    }
+    },
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-1009",
@@ -923,7 +924,8 @@
     "approx_price": 61,
     "schema_data": {
       "weight_g": 24
-    }
+    },
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-1017",
@@ -1792,7 +1794,8 @@
     "approx_price": 62,
     "schema_data": {
       "weight_g": 27
-    }
+    },
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-1033",
@@ -2426,7 +2429,8 @@
     "approx_price": 65,
     "schema_data": {
       "weight_g": 25
-    }
+    },
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-1044",
@@ -3410,7 +3414,9 @@
     "approx_price": 69,
     "schema_data": {
       "weight_g": 12
-    }
+    },
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "STK-1062",
@@ -3466,7 +3472,9 @@
     "approx_price": 66,
     "schema_data": {
       "weight_g": 10
-    }
+    },
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "STK-1063",
@@ -3522,7 +3530,9 @@
     "approx_price": 66,
     "schema_data": {
       "weight_g": 13
-    }
+    },
+    "cell_count_min": 2,
+    "cell_count_max": 6
   },
   {
     "pid": "STK-1064",
@@ -3809,7 +3819,10 @@
     "approx_price": 61,
     "schema_data": {
       "weight_g": 25
-    }
+    },
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-1069",
@@ -3864,7 +3877,10 @@
     "approx_price": 68,
     "schema_data": {
       "weight_g": 18
-    }
+    },
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-1070",
@@ -3920,7 +3936,8 @@
     "approx_price": 69,
     "schema_data": {
       "weight_g": 27
-    }
+    },
+    "esc_firmware": "BLHeli_S"
   },
   {
     "pid": "STK-1071",
@@ -4380,7 +4397,8 @@
     "approx_price": 62,
     "schema_data": {
       "weight_g": 24
-    }
+    },
+    "esc_firmware": "BLHeli_S"
   },
   {
     "pid": "STK-1079",
@@ -4553,7 +4571,8 @@
     "approx_price": 68,
     "schema_data": {
       "weight_g": 16
-    }
+    },
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-1082",
@@ -4610,7 +4629,8 @@
     "approx_price": 62,
     "schema_data": {
       "weight_g": 16
-    }
+    },
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-1083",
@@ -5131,7 +5151,8 @@
     "approx_price": 65,
     "schema_data": {
       "weight_g": 25
-    }
+    },
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-1092",
@@ -5362,7 +5383,8 @@
     "approx_price": 60,
     "schema_data": {
       "weight_g": 25
-    }
+    },
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-1096",
@@ -5738,7 +5760,10 @@
     ],
     "approx_price": 62.93,
     "description": "FC+ESC stack by 603700. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-603700-\u0413\u0430\u043b\u0438\u0447\u0438\u043d\u0430-v3",
@@ -5766,7 +5791,10 @@
     ],
     "approx_price": 65.12,
     "description": "FC+ESC stack by 603700. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-603700-\u0413\u0430\u043b\u0438\u0447\u0438\u043d\u0430-v1.",
@@ -5794,7 +5822,10 @@
     ],
     "approx_price": 53.66,
     "description": "FC+ESC stack by 603700. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-603700-\u0413\u0430\u043b\u0438\u0447\u0438\u043d\u0430-v1",
@@ -5822,7 +5853,10 @@
     ],
     "approx_price": 47.56,
     "description": "FC+ESC stack by 603700. FC + A ESC.",
-    "imu": "MPU6000"
+    "imu": "MPU6000",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-VYRIY-F405V2-50A",
@@ -5850,7 +5884,10 @@
     ],
     "approx_price": 56.51,
     "description": "FC+ESC stack by VYRIY. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-Flytex-Fuzia-F405-+",
@@ -5878,7 +5915,10 @@
     ],
     "approx_price": 58.54,
     "description": "FC+ESC stack by Flytex. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-Flytex-Furia-12S-H7",
@@ -5906,7 +5946,10 @@
     ],
     "approx_price": 78.05,
     "description": "FC+ESC stack by Flytex. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 12,
+    "cell_count_max": 12,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-Karma-Fl-F405-V1",
@@ -5934,7 +5977,10 @@
     ],
     "approx_price": 70.73,
     "description": "FC+ESC stack by Karma Flights. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-XRush4-F4V2",
@@ -5962,7 +6008,10 @@
     ],
     "approx_price": 54.88,
     "description": "FC+ESC stack by XRush4. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-XRush4-F4V3",
@@ -5990,7 +6039,10 @@
     ],
     "approx_price": 65.85,
     "description": "FC+ESC stack by XRush4. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-DiFly-DiFly-F405-+",
@@ -6018,7 +6070,10 @@
     ],
     "approx_price": 48.78,
     "description": "FC+ESC stack by DiFly. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-KaraFPV-Golden-F405-",
@@ -6046,7 +6101,10 @@
     ],
     "approx_price": 68.78,
     "description": "FC+ESC stack by KaraFPV. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-KaraFPV-Golden-F722-",
@@ -6074,7 +6132,10 @@
     ],
     "approx_price": 93.78,
     "description": "FC+ESC stack by KaraFPV. FC + A ESC.",
-    "imu": "BMI270"
+    "imu": "BMI270",
+    "cell_count_min": 3,
+    "cell_count_max": 8,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-Stingbee-Stellar-Stac",
@@ -6102,7 +6163,10 @@
     ],
     "approx_price": 64.63,
     "description": "FC+ESC stack by Stingbee. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 2,
+    "cell_count_max": 6,
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "STK-UA-SkyPulse-F405-+-ESC-A",
@@ -6130,7 +6194,10 @@
     ],
     "approx_price": 45.54,
     "description": "FC+ESC stack by SkyPulse. FC + A ESC.",
-    "imu": "ICM42688P"
+    "imu": "ICM42688P",
+    "cell_count_min": 8,
+    "cell_count_max": 8,
+    "esc_firmware": "AM32"
   },
   {
     "pid": "STK-1102",
@@ -6240,7 +6307,7 @@
     "cell_count_max": 8,
     "is_aio": false,
     "esc_current_a": null,
-    "esc_firmware": null,
+    "esc_firmware": "BLHeli_32",
     "motor_output_count": 8,
     "compatibility": {
       "cell_count_min": 2,

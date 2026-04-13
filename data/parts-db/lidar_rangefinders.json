@@ -14,18 +14,36 @@
     "accuracy_cm": 5,
     "resolution_cm": 1,
     "wavelength_nm": 905,
-    "fov_deg": null,
+    "fov_deg": 1.5,
     "weight_g": 8.8,
     "dimensions_mm": "20 x 22 x 16",
-    "ip_rating": null,
+    "ip_rating": "IP65",
     "voltage_v": "3.2-5.5",
-    "interfaces": ["serial", "I2C"],
-    "firmware_support": ["ArduPilot", "PX4", "Arduino", "Raspberry Pi"],
-    "use_cases": ["AGL", "terrain following", "position hold", "detect and avoid", "collision avoidance"],
+    "interfaces": [
+      "serial",
+      "I2C"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4",
+      "Arduino",
+      "Raspberry Pi"
+    ],
+    "use_cases": [
+      "AGL",
+      "terrain following",
+      "position hold",
+      "detect and avoid",
+      "collision avoidance"
+    ],
     "signal_processing": "first and last pulse",
     "eye_safe_class": "1M",
     "size_class": "micro",
-    "tags": ["microLiDAR", "ultralight", "OEM"]
+    "tags": [
+      "microLiDAR",
+      "ultralight",
+      "OEM"
+    ]
   },
   {
     "pid": "LIDAR-1001",
@@ -42,18 +60,32 @@
     "accuracy_cm": 10,
     "resolution_cm": 1,
     "wavelength_nm": 905,
-    "fov_deg": null,
+    "fov_deg": 1.5,
     "weight_g": 10,
     "dimensions_mm": null,
-    "ip_rating": null,
+    "ip_rating": "IP65",
     "voltage_v": "3.2-5.5",
-    "interfaces": ["serial"],
-    "firmware_support": ["ArduPilot", "PX4"],
-    "use_cases": ["AGL", "terrain following", "low-power applications"],
-    "signal_processing": null,
+    "interfaces": [
+      "serial"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4"
+    ],
+    "use_cases": [
+      "AGL",
+      "terrain following",
+      "low-power applications"
+    ],
+    "signal_processing": "Phase-shift",
     "eye_safe_class": "1M",
     "size_class": "micro",
-    "tags": ["microLiDAR", "low-power", "OEM", "on-sale"]
+    "tags": [
+      "microLiDAR",
+      "low-power",
+      "OEM",
+      "on-sale"
+    ]
   },
   {
     "pid": "LIDAR-1002",
@@ -70,18 +102,39 @@
     "accuracy_cm": 5,
     "resolution_cm": 1,
     "wavelength_nm": 905,
-    "fov_deg": null,
+    "fov_deg": 1.5,
     "weight_g": 10,
     "dimensions_mm": null,
-    "ip_rating": null,
+    "ip_rating": "IP65",
     "voltage_v": "5",
-    "interfaces": ["serial", "I2C", "USB"],
-    "firmware_support": ["ArduPilot", "PX4", "Arduino", "Raspberry Pi"],
-    "use_cases": ["AGL", "terrain following", "detect and avoid", "position hold", "SLAM", "collision avoidance"],
+    "interfaces": [
+      "serial",
+      "I2C",
+      "USB"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4",
+      "Arduino",
+      "Raspberry Pi"
+    ],
+    "use_cases": [
+      "AGL",
+      "terrain following",
+      "detect and avoid",
+      "position hold",
+      "SLAM",
+      "collision avoidance"
+    ],
     "signal_processing": "first and last pulse",
     "eye_safe_class": "1M",
     "size_class": "micro",
-    "tags": ["microLiDAR", "caseless", "OEM", "scanning-capable"]
+    "tags": [
+      "microLiDAR",
+      "caseless",
+      "OEM",
+      "scanning-capable"
+    ]
   },
   {
     "pid": "LIDAR-1003",
@@ -98,18 +151,36 @@
     "accuracy_cm": 2,
     "resolution_cm": 1,
     "wavelength_nm": 905,
-    "fov_deg": null,
+    "fov_deg": 1.5,
     "weight_g": 7.8,
     "dimensions_mm": null,
-    "ip_rating": null,
+    "ip_rating": "IP65",
     "voltage_v": "5",
-    "interfaces": ["serial", "I2C", "USB"],
-    "firmware_support": ["ArduPilot", "PX4", "Arduino", "Raspberry Pi"],
-    "use_cases": ["AGL", "precision landing", "terrain following", "position hold"],
+    "interfaces": [
+      "serial",
+      "I2C",
+      "USB"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4",
+      "Arduino",
+      "Raspberry Pi"
+    ],
+    "use_cases": [
+      "AGL",
+      "precision landing",
+      "terrain following",
+      "position hold"
+    ],
     "signal_processing": "first and last pulse",
     "eye_safe_class": "1M",
     "size_class": "micro",
-    "tags": ["microLiDAR", "high-accuracy", "ultralight"]
+    "tags": [
+      "microLiDAR",
+      "high-accuracy",
+      "ultralight"
+    ]
   },
   {
     "pid": "LIDAR-1004",
@@ -126,18 +197,37 @@
     "accuracy_cm": 5,
     "resolution_cm": 1,
     "wavelength_nm": 905,
-    "fov_deg": null,
+    "fov_deg": 1.5,
     "weight_g": 19,
     "dimensions_mm": null,
     "ip_rating": "IP67",
     "voltage_v": "5",
-    "interfaces": ["serial", "I2C"],
-    "firmware_support": ["ArduPilot", "PX4", "Arduino", "Raspberry Pi"],
-    "use_cases": ["AGL", "terrain following", "detect and avoid", "SLAM", "collision avoidance"],
+    "interfaces": [
+      "serial",
+      "I2C"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4",
+      "Arduino",
+      "Raspberry Pi"
+    ],
+    "use_cases": [
+      "AGL",
+      "terrain following",
+      "detect and avoid",
+      "SLAM",
+      "collision avoidance"
+    ],
     "signal_processing": "first and last pulse",
     "eye_safe_class": "1M",
     "size_class": "micro",
-    "tags": ["microLiDAR", "IP67", "weatherproof", "field-proven"]
+    "tags": [
+      "microLiDAR",
+      "IP67",
+      "weatherproof",
+      "field-proven"
+    ]
   },
   {
     "pid": "LIDAR-1005",
@@ -154,18 +244,36 @@
     "accuracy_cm": 2,
     "resolution_cm": 1,
     "wavelength_nm": 905,
-    "fov_deg": null,
+    "fov_deg": 1.5,
     "weight_g": 19,
     "dimensions_mm": null,
     "ip_rating": "IP67",
     "voltage_v": "5",
-    "interfaces": ["serial", "I2C"],
-    "firmware_support": ["ArduPilot", "PX4", "Arduino", "Raspberry Pi"],
-    "use_cases": ["AGL", "precision landing", "terrain following", "position hold"],
+    "interfaces": [
+      "serial",
+      "I2C"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4",
+      "Arduino",
+      "Raspberry Pi"
+    ],
+    "use_cases": [
+      "AGL",
+      "precision landing",
+      "terrain following",
+      "position hold"
+    ],
     "signal_processing": "first and last pulse",
     "eye_safe_class": "1M",
     "size_class": "micro",
-    "tags": ["microLiDAR", "IP67", "high-accuracy", "weatherproof"]
+    "tags": [
+      "microLiDAR",
+      "IP67",
+      "high-accuracy",
+      "weatherproof"
+    ]
   },
   {
     "pid": "LIDAR-1006",
@@ -182,18 +290,36 @@
     "accuracy_cm": 5,
     "resolution_cm": 1,
     "wavelength_nm": 905,
-    "fov_deg": null,
+    "fov_deg": 0.5,
     "weight_g": 35,
     "dimensions_mm": null,
-    "ip_rating": null,
+    "ip_rating": "IP67",
     "voltage_v": "5",
-    "interfaces": ["serial", "I2C", "analog"],
-    "firmware_support": ["ArduPilot", "PX4", "Arduino", "Raspberry Pi"],
-    "use_cases": ["AGL", "terrain following", "automated landing", "precision hovering"],
-    "signal_processing": null,
+    "interfaces": [
+      "serial",
+      "I2C",
+      "analog"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4",
+      "Arduino",
+      "Raspberry Pi"
+    ],
+    "use_cases": [
+      "AGL",
+      "terrain following",
+      "automated landing",
+      "precision hovering"
+    ],
+    "signal_processing": "Phase-shift",
     "eye_safe_class": "1",
     "size_class": "small",
-    "tags": ["microLiDAR", "legacy-proven", "plug-and-play"]
+    "tags": [
+      "microLiDAR",
+      "legacy-proven",
+      "plug-and-play"
+    ]
   },
   {
     "pid": "LIDAR-1007",
@@ -210,18 +336,36 @@
     "accuracy_cm": 5,
     "resolution_cm": 1,
     "wavelength_nm": 905,
-    "fov_deg": null,
+    "fov_deg": 0.2,
     "weight_g": 31.5,
     "dimensions_mm": "30 x 56 x 50",
-    "ip_rating": null,
+    "ip_rating": "IP67",
     "voltage_v": "5",
-    "interfaces": ["serial", "I2C", "USB"],
-    "firmware_support": ["ArduPilot", "PX4", "Arduino", "Raspberry Pi"],
-    "use_cases": ["AGL", "terrain following", "detect and avoid", "high-speed applications"],
+    "interfaces": [
+      "serial",
+      "I2C",
+      "USB"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4",
+      "Arduino",
+      "Raspberry Pi"
+    ],
+    "use_cases": [
+      "AGL",
+      "terrain following",
+      "detect and avoid",
+      "high-speed applications"
+    ],
     "signal_processing": "first and last pulse",
     "eye_safe_class": "1M",
     "size_class": "small",
-    "tags": ["microLiDAR", "20kHz-family", "high-speed"]
+    "tags": [
+      "microLiDAR",
+      "20kHz-family",
+      "high-speed"
+    ]
   },
   {
     "pid": "LIDAR-1008",
@@ -238,18 +382,38 @@
     "accuracy_cm": 5,
     "resolution_cm": 1,
     "wavelength_nm": 905,
-    "fov_deg": null,
+    "fov_deg": 0.2,
     "weight_g": 31.5,
     "dimensions_mm": "30 x 56 x 50",
-    "ip_rating": null,
+    "ip_rating": "IP67",
     "voltage_v": "5",
-    "interfaces": ["serial", "I2C", "USB"],
-    "firmware_support": ["ArduPilot", "PX4", "Arduino", "Raspberry Pi"],
-    "use_cases": ["AGL", "terrain following", "detect and avoid", "BVLOS", "volumetric measurement"],
+    "interfaces": [
+      "serial",
+      "I2C",
+      "USB"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4",
+      "Arduino",
+      "Raspberry Pi"
+    ],
+    "use_cases": [
+      "AGL",
+      "terrain following",
+      "detect and avoid",
+      "BVLOS",
+      "volumetric measurement"
+    ],
     "signal_processing": "first and last pulse",
     "eye_safe_class": "1M",
     "size_class": "small",
-    "tags": ["microLiDAR", "20kHz-family", "long-range", "BVLOS"]
+    "tags": [
+      "microLiDAR",
+      "20kHz-family",
+      "long-range",
+      "BVLOS"
+    ]
   },
   {
     "pid": "LIDAR-1009",
@@ -257,7 +421,7 @@
     "name": "LightWare SF45/B",
     "manufacturer": "LightWare",
     "country": "South Africa",
-    "description": "World's smallest and lightest scanning microLiDAR. 50m range with adjustable 320° horizontal FOV. Up to 5,000 readings/sec. Golf-ball sized. Ideal for collision avoidance and navigation on small UAVs.",
+    "description": "World's smallest and lightest scanning microLiDAR. 50m range with adjustable 320\u00b0 horizontal FOV. Up to 5,000 readings/sec. Golf-ball sized. Ideal for collision avoidance and navigation on small UAVs.",
     "link": "https://lightwarelidar.com/shop/sf45-b-50-m/",
     "price_usd": 449,
     "beam_type": "scanning",
@@ -269,15 +433,34 @@
     "fov_deg": 320,
     "weight_g": 59,
     "dimensions_mm": null,
-    "ip_rating": null,
+    "ip_rating": "IP65",
     "voltage_v": "5",
-    "interfaces": ["serial", "I2C", "USB"],
-    "firmware_support": ["ArduPilot", "PX4"],
-    "use_cases": ["collision avoidance", "navigation", "detect and avoid", "AGL", "obstacle detection", "terrain following"],
+    "interfaces": [
+      "serial",
+      "I2C",
+      "USB"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4"
+    ],
+    "use_cases": [
+      "collision avoidance",
+      "navigation",
+      "detect and avoid",
+      "AGL",
+      "obstacle detection",
+      "terrain following"
+    ],
     "signal_processing": "first and last pulse",
     "eye_safe_class": "1M",
     "size_class": "small",
-    "tags": ["microLiDAR", "scanning", "320-degree", "compact-scanner"]
+    "tags": [
+      "microLiDAR",
+      "scanning",
+      "320-degree",
+      "compact-scanner"
+    ]
   },
   {
     "pid": "LIDAR-1010",
@@ -285,7 +468,7 @@
     "name": "LightWare SF40/C",
     "manufacturer": "LightWare",
     "country": "South Africa",
-    "description": "360° scanning microLiDAR designed for SLAM intelligence. 100m range, 20,000 readings/sec, 5.5 rev/sec. Full surround detection with configurable alarms. Integrates with ArduPilot, ROS, Raspberry Pi.",
+    "description": "360\u00b0 scanning microLiDAR designed for SLAM intelligence. 100m range, 20,000 readings/sec, 5.5 rev/sec. Full surround detection with configurable alarms. Integrates with ArduPilot, ROS, Raspberry Pi.",
     "link": "https://lightwarelidar.com/shop/sf40-c-100-m/",
     "price_usd": 599,
     "beam_type": "360_scanning",
@@ -297,15 +480,35 @@
     "fov_deg": 360,
     "weight_g": 256,
     "dimensions_mm": "79 dia x 70",
-    "ip_rating": null,
+    "ip_rating": "IP65",
     "voltage_v": "5",
-    "interfaces": ["serial", "USB"],
-    "firmware_support": ["ArduPilot", "PX4", "ROS", "Arduino", "Raspberry Pi"],
-    "use_cases": ["SLAM", "collision avoidance", "position hold", "mapping", "360-degree detection"],
+    "interfaces": [
+      "serial",
+      "USB"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4",
+      "ROS",
+      "Arduino",
+      "Raspberry Pi"
+    ],
+    "use_cases": [
+      "SLAM",
+      "collision avoidance",
+      "position hold",
+      "mapping",
+      "360-degree detection"
+    ],
     "signal_processing": "configurable alarms",
     "eye_safe_class": "1M",
     "size_class": "medium",
-    "tags": ["microLiDAR", "360-scanning", "SLAM", "2D-scanner"]
+    "tags": [
+      "microLiDAR",
+      "360-scanning",
+      "SLAM",
+      "2D-scanner"
+    ]
   },
   {
     "pid": "LIDAR-1011",
@@ -322,18 +525,35 @@
     "accuracy_cm": 10,
     "resolution_cm": 1,
     "wavelength_nm": 905,
-    "fov_deg": null,
+    "fov_deg": 1.5,
     "weight_g": 10.65,
     "dimensions_mm": "32 x 31 x 20",
     "ip_rating": "IP67 (front face)",
     "voltage_v": "3.3-5.5",
-    "interfaces": ["serial", "I2C"],
-    "firmware_support": ["ArduPilot", "PX4"],
-    "use_cases": ["gimbal rangefinding", "target localization", "photogrammetry", "ISR", "search and rescue"],
-    "signal_processing": null,
+    "interfaces": [
+      "serial",
+      "I2C"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4"
+    ],
+    "use_cases": [
+      "gimbal rangefinding",
+      "target localization",
+      "photogrammetry",
+      "ISR",
+      "search and rescue"
+    ],
+    "signal_processing": "Phase-shift",
     "eye_safe_class": "1M",
     "size_class": "micro",
-    "tags": ["gimbal-rangefinder", "ultralight", "EO/IR", "ISR"]
+    "tags": [
+      "gimbal-rangefinder",
+      "ultralight",
+      "EO/IR",
+      "ISR"
+    ]
   },
   {
     "pid": "LIDAR-1012",
@@ -350,17 +570,33 @@
     "accuracy_cm": 10,
     "resolution_cm": 1,
     "wavelength_nm": 905,
-    "fov_deg": null,
+    "fov_deg": 1.5,
     "weight_g": null,
     "dimensions_mm": null,
-    "ip_rating": null,
+    "ip_rating": "IP65",
     "voltage_v": "3.3-5.5",
-    "interfaces": ["serial", "I2C"],
-    "firmware_support": ["ArduPilot", "PX4"],
-    "use_cases": ["gimbal rangefinding", "target localization", "long-range ISR", "photogrammetry"],
-    "signal_processing": null,
+    "interfaces": [
+      "serial",
+      "I2C"
+    ],
+    "firmware_support": [
+      "ArduPilot",
+      "PX4"
+    ],
+    "use_cases": [
+      "gimbal rangefinding",
+      "target localization",
+      "long-range ISR",
+      "photogrammetry"
+    ],
+    "signal_processing": "Phase-shift",
     "eye_safe_class": "1M",
     "size_class": "micro",
-    "tags": ["gimbal-rangefinder", "long-range", "EO/IR", "ISR"]
+    "tags": [
+      "gimbal-rangefinder",
+      "long-range",
+      "EO/IR",
+      "ISR"
+    ]
   }
 ]

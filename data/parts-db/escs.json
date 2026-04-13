@@ -163,7 +163,9 @@
       "weight_g": 15
     },
     "continuous_current_a": 65,
-    "mcu_family": "STM32G071"
+    "mcu_family": "STM32G071",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1003",
@@ -730,7 +732,8 @@
       "weight_g": 16
     },
     "continuous_current_a": 100,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1013",
@@ -1337,7 +1340,10 @@
     "approx_price": 44,
     "schema_data": {
       "weight_g": 5
-    }
+    },
+    "cell_count_min": 1,
+    "esc_firmware": "BLHeli_32",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1024",
@@ -1502,7 +1508,9 @@
       "weight_g": 19
     },
     "continuous_current_a": 80,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1027",
@@ -1641,7 +1649,8 @@
       "weight_g": 14
     },
     "continuous_current_a": 55,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 3
   },
   {
     "pid": "ESC-1030",
@@ -2086,7 +2095,9 @@
       "weight_g": 17
     },
     "continuous_current_a": 35,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1038",
@@ -2417,7 +2428,10 @@
       "weight_g": 4
     },
     "continuous_current_a": 50,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1044",
@@ -2581,7 +2595,8 @@
     "schema_data": {
       "weight_g": 18
     },
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1047",
@@ -3027,7 +3042,9 @@
       "weight_g": 5
     },
     "continuous_current_a": 65,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1055",
@@ -3247,7 +3264,10 @@
     "schema_data": {
       "weight_g": 17
     },
-    "continuous_current_a": 55
+    "continuous_current_a": 55,
+    "esc_firmware": "BLHeli_32",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1059",
@@ -3357,7 +3377,9 @@
       "weight_g": 10
     },
     "continuous_current_a": 40,
-    "mcu_family": "EFM8BB21"
+    "mcu_family": "EFM8BB21",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1061",
@@ -3579,7 +3601,9 @@
       "weight_g": 13
     },
     "continuous_current_a": 60,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1065",
@@ -4023,7 +4047,8 @@
       "weight_g": 6
     },
     "continuous_current_a": 45,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1073",
@@ -4412,7 +4437,8 @@
       "weight_g": 10
     },
     "continuous_current_a": 45,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1080",
@@ -4465,7 +4491,8 @@
     "schema_data": {
       "weight_g": 15
     },
-    "continuous_current_a": 35
+    "continuous_current_a": 35,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1081",
@@ -4686,7 +4713,9 @@
       "weight_g": 11
     },
     "continuous_current_a": 50,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1087",
@@ -4908,7 +4937,8 @@
       "weight_g": 12
     },
     "continuous_current_a": 25,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1091",
@@ -4962,7 +4992,8 @@
       "weight_g": 9
     },
     "continuous_current_a": 45,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1092",
@@ -5352,7 +5383,8 @@
       "weight_g": 3
     },
     "continuous_current_a": 60,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1099",
@@ -5405,7 +5437,9 @@
       "weight_g": 20
     },
     "continuous_current_a": 35,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1100",
@@ -5456,7 +5490,9 @@
     "approx_price": 31,
     "schema_data": {
       "weight_g": 15
-    }
+    },
+    "esc_firmware": "BLHeli_32",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1101",
@@ -5507,7 +5543,9 @@
     "approx_price": 39,
     "schema_data": {
       "weight_g": 13
-    }
+    },
+    "esc_firmware": "BLHeli_32",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1102",
@@ -5840,7 +5878,8 @@
       "weight_g": 2
     },
     "continuous_current_a": 50,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1109",
@@ -5950,7 +5989,8 @@
       "weight_g": 7
     },
     "continuous_current_a": 55,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1111",
@@ -6004,7 +6044,8 @@
       "weight_g": 15
     },
     "continuous_current_a": 45,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1112",
@@ -6058,7 +6099,8 @@
       "weight_g": 17
     },
     "continuous_current_a": 30,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1113",
@@ -6103,7 +6145,11 @@
     "schema_data": {
       "weight_g": 15
     },
-    "mcu_family": "EFM8BB21"
+    "mcu_family": "EFM8BB21",
+    "esc_firmware": "BLHeli_S",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1114",
@@ -6148,7 +6194,11 @@
     "schema_data": {
       "weight_g": 8
     },
-    "mcu_family": "EFM8BB21"
+    "mcu_family": "EFM8BB21",
+    "esc_firmware": "BLHeli_S",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1115",
@@ -6565,7 +6615,9 @@
       "weight_g": 6
     },
     "continuous_current_a": 35,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 2,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1123",
@@ -6618,7 +6670,9 @@
       "weight_g": 16
     },
     "continuous_current_a": 65,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1124",
@@ -6840,7 +6894,8 @@
       "weight_g": 21
     },
     "continuous_current_a": 45,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32"
   },
   {
     "pid": "ESC-1128",
@@ -6950,7 +7005,9 @@
       "weight_g": 21
     },
     "continuous_current_a": 35,
-    "mcu_family": "EFM8BB21"
+    "mcu_family": "EFM8BB21",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1130",
@@ -6996,7 +7053,10 @@
     "schema_data": {
       "weight_g": 2
     },
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1131",
@@ -7042,7 +7102,10 @@
     "schema_data": {
       "weight_g": 7
     },
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1132",
@@ -7152,7 +7215,9 @@
       "weight_g": 13
     },
     "continuous_current_a": 30,
-    "mcu_family": "EFM8BB21"
+    "mcu_family": "EFM8BB21",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1134",
@@ -7206,7 +7271,9 @@
       "weight_g": 14
     },
     "continuous_current_a": 35,
-    "mcu_family": "EFM8BB21"
+    "mcu_family": "EFM8BB21",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1135",
@@ -7229,7 +7296,11 @@
     "schema_data": {
       "weight_g": 7
     },
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "AM32",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1136",
@@ -7328,7 +7399,11 @@
     "schema_data": {
       "weight_g": 3
     },
-    "mcu_family": "STM32F303"
+    "mcu_family": "STM32F303",
+    "esc_firmware": "KISS",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1138",
@@ -7382,7 +7457,8 @@
       "weight_g": 6
     },
     "continuous_current_a": 25,
-    "mcu_family": "STM32F303"
+    "mcu_family": "STM32F303",
+    "esc_firmware": "KISS"
   },
   {
     "pid": "ESC-1139",
@@ -7572,7 +7648,11 @@
     "schema_data": {
       "weight_g": 5
     },
-    "mcu_family": "N/A - heatsink accessory"
+    "mcu_family": "N/A - heatsink accessory",
+    "esc_firmware": "BLHeli_32",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1143",
@@ -7626,7 +7706,9 @@
       "weight_g": 6
     },
     "continuous_current_a": 40,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1144",
@@ -7678,7 +7760,10 @@
       "weight_g": 7
     },
     "continuous_current_a": 50,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32",
+    "cell_count_min": 2,
+    "cell_count_max": 4
   },
   {
     "pid": "ESC-1145",
@@ -7950,7 +8035,8 @@
     "schema_data": {
       "weight_g": 2
     },
-    "mcu_family": "Proprietary FOC"
+    "mcu_family": "Proprietary FOC",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1151",
@@ -8019,7 +8105,8 @@
     "schema_data": {
       "weight_g": 8
     },
-    "mcu_family": "Proprietary FOC"
+    "mcu_family": "Proprietary FOC",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1153",
@@ -8053,7 +8140,8 @@
     "schema_data": {
       "weight_g": 17
     },
-    "mcu_family": "Proprietary FOC"
+    "mcu_family": "Proprietary FOC",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-1154",
@@ -8086,7 +8174,8 @@
     "schema_data": {
       "weight_g": 4
     },
-    "mcu_family": "Proprietary FOC"
+    "mcu_family": "Proprietary FOC",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-603700-\u0424\u0440\u0430\u043d\u043a\u0456\u0432\u0441\u044c\u043a-v",
@@ -8115,7 +8204,11 @@
     "approx_price": 36.59,
     "description": "ESC by 603700. A continuous. firmware. mounting.",
     "continuous_current_a": 55,
-    "mcu_family": "STM32G071"
+    "mcu_family": "STM32G071",
+    "esc_firmware": "AM32",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-603700-\u0424\u0440\u0430\u043d\u043a\u0456\u0432\u0441\u044c\u043a-v",
@@ -8144,7 +8237,11 @@
     "approx_price": 38.78,
     "description": "ESC by 603700. A continuous. firmware. mounting.",
     "continuous_current_a": 55,
-    "mcu_family": "STM32G071"
+    "mcu_family": "STM32G071",
+    "esc_firmware": "AM32",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-603700-\u0424\u0440\u0430\u043d\u043a\u0456\u0432\u0441\u044c\u043a-v",
@@ -8173,7 +8270,11 @@
     "approx_price": 38.78,
     "description": "ESC by 603700. A continuous. firmware. mounting.",
     "continuous_current_a": 60,
-    "mcu_family": "STM32G071"
+    "mcu_family": "STM32G071",
+    "esc_firmware": "AM32",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-603700-\u0421\u0422\u0420\u0418\u0419-v1-8S/",
@@ -8203,7 +8304,10 @@
     "description": "ESC by 603700. A continuous. firmware. mounting.",
     "continuous_current_a": 80,
     "cell_count_max": 8,
-    "mcu_family": "STM32G071"
+    "mcu_family": "STM32G071",
+    "esc_firmware": "AM32",
+    "cell_count_min": 8,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-Flytex-ESC-65A",
@@ -8232,7 +8336,11 @@
     "approx_price": 34.15,
     "description": "ESC by Flytex. A continuous. firmware. mounting.",
     "continuous_current_a": 65,
-    "mcu_family": "STM32G071"
+    "mcu_family": "STM32G071",
+    "esc_firmware": "AM32",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-DiFly-DF-ESC-50A-R",
@@ -8261,7 +8369,11 @@
     "approx_price": 24.39,
     "description": "ESC by DiFly. A continuous. firmware. mounting.",
     "continuous_current_a": 50,
-    "mcu_family": "STM32G071"
+    "mcu_family": "STM32G071",
+    "esc_firmware": "AM32",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-LEADER-T-BLS50A-RE-6S",
@@ -8291,7 +8403,10 @@
     "description": "ESC by LEADER Tech. A continuous. firmware. mounting.",
     "continuous_current_a": 50,
     "cell_count_max": 6,
-    "mcu_family": "EFM8BB21"
+    "mcu_family": "EFM8BB21",
+    "esc_firmware": "BLHeli_S",
+    "cell_count_min": 6,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-LEADER-T-BLS80A-RE-8S",
@@ -8321,7 +8436,10 @@
     "description": "ESC by LEADER Tech. A continuous. firmware. mounting.",
     "continuous_current_a": 80,
     "cell_count_max": 8,
-    "mcu_family": "EFM8BB21"
+    "mcu_family": "EFM8BB21",
+    "esc_firmware": "BLHeli_S",
+    "cell_count_min": 8,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-KaraFPV-Golden-4in1-",
@@ -8351,7 +8469,10 @@
     "description": "ESC by KaraFPV. A continuous. firmware. mounting.",
     "continuous_current_a": 80,
     "cell_count_max": 8,
-    "mcu_family": "STM32G071"
+    "mcu_family": "STM32G071",
+    "esc_firmware": "AM32",
+    "cell_count_min": 8,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-Stingbee-Stellar-8bit",
@@ -8380,7 +8501,11 @@
     "approx_price": 36.59,
     "description": "ESC by Stingbee. A continuous. firmware. mounting.",
     "continuous_current_a": 70,
-    "mcu_family": "EFM8BB21"
+    "mcu_family": "EFM8BB21",
+    "esc_firmware": "BLHeli_S",
+    "cell_count_min": 2,
+    "cell_count_max": 4,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-SkyPulse-6-in-1-AM32-",
@@ -8410,7 +8535,10 @@
     "description": "ESC by SkyPulse. A continuous. firmware. mounting.",
     "continuous_current_a": 80,
     "cell_count_max": 8,
-    "mcu_family": "STM32G071"
+    "mcu_family": "STM32G071",
+    "esc_firmware": "AM32",
+    "cell_count_min": 8,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-SkyPulse-GORO-AM32-12",
@@ -8439,7 +8567,11 @@
     "approx_price": 71.95,
     "description": "ESC by SkyPulse. A continuous. firmware. mounting.",
     "continuous_current_a": 120,
-    "mcu_family": "STM32G071"
+    "mcu_family": "STM32G071",
+    "esc_firmware": "AM32",
+    "cell_count_min": 12,
+    "cell_count_max": 12,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "ESC-UA-FT-65A-4\u04321-6S-3",
@@ -8469,6 +8601,9 @@
     "description": "ESC by. A continuous. firmware. mounting.",
     "continuous_current_a": 65,
     "cell_count_max": 6,
-    "mcu_family": "STM32F051"
+    "mcu_family": "STM32F051",
+    "esc_firmware": "BLHeli_32",
+    "cell_count_min": 6,
+    "mounting_pattern_mm": 20
   }
 ]

@@ -46,8 +46,11 @@
     "stabilization": "direct-drive",
     "weight_g": 400,
     "video_output": null,
-    "interfaces": [],
-    "ip_rating": null,
+    "interfaces": [
+      "USB",
+      "proprietary"
+    ],
+    "ip_rating": "IP43",
     "tags": [
       "expendable",
       "low-cost",
@@ -76,7 +79,7 @@
       "Ethernet",
       "serial"
     ],
-    "ip_rating": null,
+    "ip_rating": "IP43",
     "tags": [
       "30x-zoom",
       "NV-laser",
@@ -103,7 +106,7 @@
     "interfaces": [
       "Ethernet"
     ],
-    "ip_rating": null,
+    "ip_rating": "IP43",
     "tags": [
       "dual-thermal",
       "GD-Loc",
@@ -131,7 +134,7 @@
     "interfaces": [
       "Ethernet"
     ],
-    "ip_rating": null,
+    "ip_rating": "IP43",
     "tags": [
       "US-Army",
       "FVL",
@@ -190,7 +193,7 @@
     "interfaces": [
       "MAVLink"
     ],
-    "ip_rating": null,
+    "ip_rating": "IP43",
     "tags": [
       "piezoelectric",
       "430g",
@@ -217,8 +220,11 @@
     "stabilization": "stabilized",
     "weight_g": 330,
     "video_output": "4K",
-    "interfaces": [],
-    "ip_rating": null,
+    "interfaces": [
+      "USB",
+      "proprietary"
+    ],
+    "ip_rating": "IP43",
     "tags": [
       "330g",
       "4K",
@@ -243,8 +249,11 @@
     "stabilization": "stabilized",
     "weight_g": 550,
     "video_output": "4K",
-    "interfaces": [],
-    "ip_rating": null,
+    "interfaces": [
+      "USB",
+      "proprietary"
+    ],
+    "ip_rating": "IP43",
     "tags": [
       "550g",
       "50x-zoom",
@@ -271,8 +280,11 @@
     "stabilization": "stabilized",
     "weight_g": 3700,
     "video_output": "1080p",
-    "interfaces": [],
-    "ip_rating": null,
+    "interfaces": [
+      "USB",
+      "proprietary"
+    ],
+    "ip_rating": "IP43",
     "tags": [
       "4-sensor",
       "45x-zoom",
@@ -298,7 +310,10 @@
     "stabilization": "stabilized",
     "weight_g": null,
     "video_output": "HD",
-    "interfaces": [],
+    "interfaces": [
+      "USB",
+      "proprietary"
+    ],
     "ip_rating": "IP43",
     "tags": [
       "AI-6TOPS",
@@ -325,8 +340,11 @@
     "stabilization": "stabilized",
     "weight_g": null,
     "video_output": "HD",
-    "interfaces": [],
-    "ip_rating": null,
+    "interfaces": [
+      "USB",
+      "proprietary"
+    ],
+    "ip_rating": "IP43",
     "tags": [
       "4-spectrum",
       "60km-LRF",

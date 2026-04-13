@@ -23,7 +23,11 @@
       "weight_g": 7
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.6,
+    "protocol": "DJI O3/O4",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1001",
@@ -49,7 +53,11 @@
     },
     "max_power_mw": 1000,
     "channels": "Digital",
-    "frequency_band": "2.4GHz"
+    "frequency_band": "2.4GHz",
+    "connector": "U.FL",
+    "power_w": 1.0,
+    "protocol": "DJI Herelink",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1002",
@@ -75,7 +83,11 @@
     },
     "max_power_mw": 1000,
     "channels": "Digital",
-    "frequency_band": "2.4GHz"
+    "frequency_band": "2.4GHz",
+    "connector": "U.FL",
+    "power_w": 1.0,
+    "protocol": "DJI Herelink",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1003",
@@ -101,7 +113,11 @@
       "weight_g": 4
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.0,
+    "protocol": "Digital",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1004",
@@ -127,7 +143,11 @@
       "weight_g": 8
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.2,
+    "protocol": "HDZero",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1005",
@@ -153,7 +173,11 @@
       "weight_g": 6
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.2,
+    "protocol": "HDZero",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1006",
@@ -179,7 +203,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1007",
@@ -205,7 +233,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1008",
@@ -231,7 +263,11 @@
       "weight_g": 8
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "OpenIPC",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1009",
@@ -257,7 +293,11 @@
     },
     "max_power_mw": 100,
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.1,
+    "protocol": "OpenIPC",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1010",
@@ -283,7 +323,11 @@
       "weight_g": 8
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "HDZero",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1011",
@@ -309,7 +353,11 @@
       "weight_g": 9
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1012",
@@ -335,7 +383,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1013",
@@ -361,7 +413,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1014",
@@ -387,7 +443,11 @@
       "weight_g": 9
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.4,
+    "protocol": "DJI O3/O4",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1015",
@@ -413,7 +473,11 @@
       "weight_g": 9
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1016",
@@ -439,7 +503,11 @@
       "weight_g": 14
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "HDZero",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1017",
@@ -465,7 +533,11 @@
       "weight_g": 3
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1018",
@@ -491,7 +563,11 @@
       "weight_g": 9
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1019",
@@ -517,7 +593,11 @@
       "weight_g": 13
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1020",
@@ -543,7 +623,11 @@
       "weight_g": 14
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "HDZero",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1024",
@@ -569,7 +653,11 @@
       "weight_g": 7
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1025",
@@ -595,7 +683,11 @@
       "weight_g": 4
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1026",
@@ -621,7 +713,11 @@
     },
     "max_power_mw": 1000,
     "channels": "Digital",
-    "frequency_band": "2.4GHz"
+    "frequency_band": "2.4GHz",
+    "connector": "U.FL",
+    "power_w": 1.0,
+    "protocol": "DJI Herelink",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1027",
@@ -647,7 +743,11 @@
       "weight_g": 13
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1028",
@@ -673,7 +773,11 @@
       "weight_g": 5
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1029",
@@ -699,7 +803,11 @@
       "weight_g": 3
     },
     "channels": 40,
-    "frequency_band": "2.4GHz"
+    "frequency_band": "2.4GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1030",
@@ -725,7 +833,11 @@
       "weight_g": 4
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "SMA",
+    "power_w": 0.6,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1033",
@@ -751,7 +863,11 @@
       "weight_g": 5
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.5,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1034",
@@ -777,7 +893,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "SMA",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1035",
@@ -803,7 +923,11 @@
       "weight_g": 4
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "SMA",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1036",
@@ -829,7 +953,11 @@
       "weight_g": 11
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "RP-SMA",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1038",
@@ -855,7 +983,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "MMCX",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1039",
@@ -881,7 +1013,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1040",
@@ -907,7 +1043,11 @@
     },
     "max_power_mw": 2000,
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 2.0,
+    "protocol": "OpenIPC",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1041",
@@ -933,7 +1073,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "RP-SMA",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1042",
@@ -959,7 +1103,11 @@
       "weight_g": 9
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "HDZero",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1044",
@@ -985,7 +1133,11 @@
       "weight_g": 7
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1045",
@@ -1011,7 +1163,11 @@
       "weight_g": 7
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "SMA",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1048",
@@ -1037,7 +1193,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.7,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1049",
@@ -1063,7 +1223,11 @@
       "weight_g": 7
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.4,
+    "protocol": "DJI O3/O4",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1050",
@@ -1089,7 +1253,11 @@
       "weight_g": 7
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.4,
+    "protocol": "DJI O3/O4",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1051",
@@ -1115,7 +1283,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1052",
@@ -1141,7 +1313,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "OpenIPC",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1053",
@@ -1167,7 +1343,11 @@
       "weight_g": 3
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.1,
+    "protocol": "OpenIPC",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1054",
@@ -1193,7 +1373,11 @@
       "weight_g": 2
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "MMCX",
+    "power_w": 1.0,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1055",
@@ -1219,7 +1403,11 @@
       "weight_g": 8
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1057",
@@ -1245,7 +1433,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1058",
@@ -1271,7 +1463,11 @@
       "weight_g": 8
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1059",
@@ -1297,7 +1493,11 @@
       "weight_g": 5
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.7,
+    "protocol": "DJI O3/O4",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1060",
@@ -1323,7 +1523,11 @@
       "weight_g": 10
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "DJI O3/O4",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1061",
@@ -1349,7 +1553,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.2,
+    "protocol": "HDZero",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1062",
@@ -1375,7 +1583,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1063",
@@ -1401,7 +1613,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1064",
@@ -1427,7 +1643,11 @@
       "weight_g": 5
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.7,
+    "protocol": "DJI O3/O4",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1065",
@@ -1453,7 +1673,11 @@
       "weight_g": 12
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1066",
@@ -1479,7 +1703,11 @@
       "weight_g": 15
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1067",
@@ -1505,7 +1733,11 @@
       "weight_g": 4
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1068",
@@ -1531,7 +1763,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "DJI O3/O4",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1069",
@@ -1557,7 +1793,11 @@
       "weight_g": 2
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "DJI O3/O4",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1070",
@@ -1583,7 +1823,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.2,
+    "protocol": "DJI O3/O4",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1071",
@@ -1609,7 +1853,11 @@
       "weight_g": 10
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.6,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1072",
@@ -1635,7 +1883,11 @@
       "weight_g": 2
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.3,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1073",
@@ -1661,7 +1913,11 @@
     },
     "max_power_mw": 1000,
     "channels": "Digital",
-    "frequency_band": "2.4GHz"
+    "frequency_band": "2.4GHz",
+    "connector": "U.FL",
+    "power_w": 1.0,
+    "protocol": "DJI Herelink",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1074",
@@ -1687,7 +1943,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1075",
@@ -1713,7 +1973,11 @@
       "weight_g": 11
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.3,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1076",
@@ -1739,7 +2003,11 @@
       "weight_g": 2
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.0,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1077",
@@ -1765,7 +2033,11 @@
       "weight_g": 3
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "SMA",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1078",
@@ -1791,7 +2063,11 @@
       "weight_g": 11
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.7,
+    "protocol": "DJI O3/O4",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1079",
@@ -1817,7 +2093,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "1.3GHz"
+    "frequency_band": "1.3GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1080",
@@ -1843,7 +2123,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.2,
+    "protocol": "HDZero",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1081",
@@ -1869,7 +2153,11 @@
       "weight_g": 13
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.5,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1082",
@@ -1895,7 +2183,11 @@
       "weight_g": 14
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.5,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1083",
@@ -1921,7 +2213,11 @@
     },
     "max_power_mw": 300,
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.3,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1084",
@@ -1947,7 +2243,11 @@
       "weight_g": 6
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.5,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1085",
@@ -1973,7 +2273,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.5,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1088",
@@ -1999,7 +2303,11 @@
       "weight_g": 4
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 1.0,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1089",
@@ -2026,7 +2334,10 @@
       "weight_g": 7
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.3,
+    "protocol": "Analog"
   },
   {
     "pid": "VTX-1090",
@@ -2053,7 +2364,10 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "SMA",
+    "power_w": 0.8,
+    "protocol": "Analog"
   },
   {
     "pid": "VTX-1092",
@@ -2080,7 +2394,10 @@
       "weight_g": 11
     },
     "channels": 40,
-    "frequency_band": "2.4GHz"
+    "frequency_band": "2.4GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Analog"
   },
   {
     "pid": "VTX-1093",
@@ -2107,7 +2424,10 @@
     },
     "max_power_mw": 400,
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Analog"
   },
   {
     "pid": "VTX-1094",
@@ -2133,7 +2453,11 @@
       "weight_g": 2
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "SMA",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1095",
@@ -2159,7 +2483,11 @@
     },
     "max_power_mw": 25,
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "SMA",
+    "power_w": 0.0,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1096",
@@ -2185,7 +2513,11 @@
       "weight_g": 4
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.3,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1097",
@@ -2211,7 +2543,11 @@
     },
     "max_power_mw": 400,
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1098",
@@ -2237,7 +2573,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.5,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1099",
@@ -2263,7 +2603,11 @@
       "weight_g": 8
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.2,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1100",
@@ -2290,7 +2634,10 @@
       "weight_g": 11
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "Analog"
   },
   {
     "pid": "VTX-1101",
@@ -2316,7 +2663,11 @@
       "weight_g": 4
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "SMA",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1102",
@@ -2342,7 +2693,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "SMA",
+    "power_w": 1.0,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1103",
@@ -2368,7 +2723,11 @@
       "weight_g": 15
     },
     "channels": 48,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1104",
@@ -2394,7 +2753,11 @@
       "weight_g": 9
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1106",
@@ -2420,7 +2783,11 @@
       "weight_g": 14
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.0,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1107",
@@ -2446,7 +2813,11 @@
       "weight_g": 3
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.0,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1109",
@@ -2472,7 +2843,11 @@
     },
     "max_power_mw": 25,
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.0,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1110",
@@ -2498,7 +2873,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "1.3GHz"
+    "frequency_band": "1.3GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1112",
@@ -2524,7 +2903,11 @@
       "weight_g": 13
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.3,
+    "protocol": "Walksnail",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1113",
@@ -2550,7 +2933,11 @@
       "weight_g": 14
     },
     "channels": 40,
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.5,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1114",
@@ -2576,7 +2963,11 @@
       "weight_g": 6
     },
     "channels": 40,
-    "frequency_band": "1.3GHz"
+    "frequency_band": "1.3GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1115",
@@ -2602,7 +2993,11 @@
       "weight_g": 1
     },
     "channels": 40,
-    "frequency_band": "1.3GHz"
+    "frequency_band": "1.3GHz",
+    "connector": "U.FL",
+    "power_w": 0.4,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-1117",
@@ -2628,7 +3023,11 @@
       "weight_g": 1
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.2,
+    "protocol": "HDZero",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1118",
@@ -2654,7 +3053,11 @@
       "weight_g": 11
     },
     "channels": "Digital",
-    "frequency_band": "5.8GHz"
+    "frequency_band": "5.8GHz",
+    "connector": "U.FL",
+    "power_w": 0.2,
+    "protocol": "HDZero",
+    "mounting_pattern_mm": 16
   },
   {
     "pid": "VTX-1119",
@@ -2680,7 +3083,11 @@
       "weight_g": 8
     },
     "channels": 40,
-    "frequency_band": "1.3GHz"
+    "frequency_band": "1.3GHz",
+    "connector": "U.FL",
+    "power_w": 0.8,
+    "protocol": "Analog",
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-DEC1-Spot",
@@ -2714,7 +3121,8 @@
       "weight_g": 1
     },
     "description": "Video transmitter by DEC1. mW output. band.",
-    "max_power_mw": 200
+    "max_power_mw": 200,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-DEC1-Spot-SMA",
@@ -2748,7 +3156,8 @@
       "weight_g": 10
     },
     "description": "Video transmitter by DEC1. mW output. band.",
-    "max_power_mw": 200
+    "max_power_mw": 200,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-Flytex-Fuzia",
@@ -2782,7 +3191,8 @@
       "weight_g": 12
     },
     "description": "Video transmitter by Flytex. mW output. band.",
-    "max_power_mw": 200
+    "max_power_mw": 200,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-Stingbee-Stellar-VT",
@@ -2816,7 +3226,8 @@
       "weight_g": 6
     },
     "description": "Video transmitter by Stingbee. mW output. band.",
-    "max_power_mw": 200
+    "max_power_mw": 200,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-Pilotix-R1600",
@@ -2850,7 +3261,8 @@
       "weight_g": 1
     },
     "description": "Video transmitter by Pilotix. mW output. band.",
-    "max_power_mw": 1600
+    "max_power_mw": 1600,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-Pilotix-R2500",
@@ -2884,7 +3296,8 @@
       "weight_g": 9
     },
     "description": "Video transmitter by Pilotix. mW output. band.",
-    "max_power_mw": 2500
+    "max_power_mw": 2500,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-Pilotix-R2500-V1",
@@ -2918,7 +3331,8 @@
       "weight_g": 5
     },
     "description": "Video transmitter by Pilotix. mW output. band.",
-    "max_power_mw": 2500
+    "max_power_mw": 2500,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-Pilotix-R2500-SE",
@@ -2952,7 +3366,8 @@
       "weight_g": 11
     },
     "description": "Video transmitter by Pilotix. mW output. band.",
-    "max_power_mw": 2500
+    "max_power_mw": 2500,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-Pilotix-R3000",
@@ -2986,7 +3401,8 @@
       "weight_g": 7
     },
     "description": "Video transmitter by Pilotix. mW output. band.",
-    "max_power_mw": 3000
+    "max_power_mw": 3000,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-Pilotix-R3000-(4.9",
@@ -3020,7 +3436,8 @@
       "weight_g": 4
     },
     "description": "Video transmitter by Pilotix. mW output. band.",
-    "max_power_mw": 3000
+    "max_power_mw": 3000,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-Pilotix-R3000-(4.9",
@@ -3054,7 +3471,8 @@
       "weight_g": 7
     },
     "description": "Video transmitter by Pilotix. mW output. band.",
-    "max_power_mw": 3000
+    "max_power_mw": 3000,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-FT-VTX-7.2G-S",
@@ -3088,7 +3506,8 @@
       "weight_g": 9
     },
     "description": "Video transmitter by. mW output. band.",
-    "max_power_mw": 200
+    "max_power_mw": 200,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-KaraFPV-Teleport67",
@@ -3098,7 +3517,7 @@
     "country": "Ukraine",
     "power_w": "4W",
     "frequency_band": "6.1G, 7G +",
-    "protocol": "",
+    "protocol": "Analog",
     "channels": 40,
     "connector": "SMA",
     "approx_price_usd": null,
@@ -3122,7 +3541,8 @@
       "weight_g": 1
     },
     "description": "Video transmitter by KaraFPV. mW output. band.",
-    "max_power_mw": 4000
+    "max_power_mw": 4000,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-FT-VTX",
@@ -3156,7 +3576,8 @@
       "weight_g": 14
     },
     "description": "Video transmitter by. mW output. band.",
-    "max_power_mw": 200
+    "max_power_mw": 200,
+    "mounting_pattern_mm": 20
   },
   {
     "pid": "VTX-UA-FT-VTX-SMA",
@@ -3190,6 +3611,7 @@
       "weight_g": 13
     },
     "description": "Video transmitter by. mW output. band.",
-    "max_power_mw": 200
+    "max_power_mw": 200,
+    "mounting_pattern_mm": 20
   }
 ]

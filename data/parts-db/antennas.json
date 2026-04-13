@@ -23,7 +23,8 @@
     "approx_price": 14,
     "schema_data": {
       "weight_g": 9
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1001",
@@ -238,7 +239,8 @@
     "approx_price": 24.99,
     "schema_data": {
       "weight_g": 6
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1010",
@@ -291,7 +293,8 @@
     "approx_price": 6,
     "schema_data": {
       "weight_g": 8
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1012",
@@ -317,7 +320,8 @@
     "approx_price": 14,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1014",
@@ -532,7 +536,8 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1024",
@@ -558,7 +563,8 @@
     "approx_price": 12,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1025",
@@ -638,7 +644,8 @@
     "approx_price": 9,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1028",
@@ -690,7 +697,8 @@
     "approx_price": 23,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1030",
@@ -796,7 +804,8 @@
     "approx_price": 10,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1036",
@@ -903,7 +912,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "polarization": "RHCP"
+    "polarization": "RHCP",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1040",
@@ -956,7 +966,8 @@
     "approx_price": 13,
     "schema_data": {
       "weight_g": 9
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1042",
@@ -982,7 +993,8 @@
     "schema_data": {
       "weight_g": 3
     },
-    "polarization": "RHCP"
+    "polarization": "RHCP",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1043",
@@ -1008,7 +1020,8 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1044",
@@ -1142,7 +1155,8 @@
     "schema_data": {
       "weight_g": 8
     },
-    "polarization": "RHCP"
+    "polarization": "RHCP",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1050",
@@ -1168,7 +1182,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "polarization": "RHCP"
+    "polarization": "RHCP",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1051",
@@ -1491,7 +1506,8 @@
     "schema_data": {
       "weight_g": 2
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1064",
@@ -1948,7 +1964,8 @@
     "approx_price": 9,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1081",
@@ -1974,7 +1991,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "polarization": "RHCP"
+    "polarization": "RHCP",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1082",
@@ -2000,7 +2018,8 @@
     "approx_price": 12,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1083",
@@ -2107,7 +2126,8 @@
       "weight_g": 13
     },
     "connector": "SMA",
-    "polarization": "RHCP"
+    "polarization": "RHCP",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1087",
@@ -2213,7 +2233,8 @@
     "approx_price": 13,
     "schema_data": {
       "weight_g": 12
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1093",
@@ -2239,7 +2260,8 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 13
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1094",
@@ -2265,7 +2287,8 @@
     "approx_price": 18,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1095",
@@ -2669,7 +2692,8 @@
     "approx_price": 15,
     "schema_data": {
       "weight_g": 15
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1110",
@@ -2695,7 +2719,8 @@
     "approx_price": 18,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1111",
@@ -2802,7 +2827,8 @@
     "approx_price": 14,
     "schema_data": {
       "weight_g": 12
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1115",
@@ -2882,7 +2908,8 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 13
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1118",
@@ -2908,7 +2935,8 @@
     "approx_price": 10,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1121",
@@ -3015,7 +3043,8 @@
       "weight_g": 13
     },
     "connector": "SMA",
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1125",
@@ -3041,7 +3070,8 @@
     "approx_price": 10,
     "schema_data": {
       "weight_g": 5
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1126",
@@ -3094,7 +3124,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1128",
@@ -3120,7 +3151,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1129",
@@ -3227,7 +3259,8 @@
       "weight_g": 1
     },
     "connector": "SMA",
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1134",
@@ -3252,7 +3285,8 @@
     "approx_price": 12,
     "schema_data": {
       "weight_g": 8
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1135",
@@ -3683,7 +3717,8 @@
     "approx_price": 11,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1152",
@@ -3736,7 +3771,8 @@
     "approx_price": 12,
     "schema_data": {
       "weight_g": 13
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1154",
@@ -3896,7 +3932,8 @@
     "approx_price": 7,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1160",
@@ -3949,7 +3986,8 @@
     "approx_price": 15,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1162",
@@ -4002,7 +4040,8 @@
     "approx_price": 15,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1164",
@@ -4188,7 +4227,8 @@
     "approx_price": 11,
     "schema_data": {
       "weight_g": 14
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1176",
@@ -4267,7 +4307,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1181",
@@ -4319,7 +4360,8 @@
     },
     "connector": "MMCX",
     "polarization": "RHCP",
-    "antenna_type": "Patch"
+    "antenna_type": "Patch",
+    "gain_dbi": 9.0
   },
   {
     "pid": "ANT-1183",
@@ -4534,7 +4576,8 @@
     },
     "connector": "SMA",
     "polarization": "RHCP",
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1191",
@@ -4587,7 +4630,8 @@
     "schema_data": {
       "weight_g": 12
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1194",
@@ -4640,7 +4684,8 @@
     "schema_data": {
       "weight_g": 5
     },
-    "connector": "MMCX"
+    "connector": "MMCX",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1196",
@@ -4666,7 +4711,8 @@
       "weight_g": 1
     },
     "connector": "SMA",
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1197",
@@ -4746,7 +4792,8 @@
       "weight_g": 11
     },
     "connector": "SMA",
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1200",
@@ -5068,7 +5115,8 @@
     "approx_price": 11,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1212",
@@ -5283,7 +5331,8 @@
     "schema_data": {
       "weight_g": 7
     },
-    "polarization": "RHCP"
+    "polarization": "RHCP",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1220",
@@ -5362,7 +5411,8 @@
     "approx_price": 13,
     "schema_data": {
       "weight_g": 3
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1223",
@@ -5414,7 +5464,8 @@
       "weight_g": 4
     },
     "connector": "SMA",
-    "antenna_type": "Array"
+    "antenna_type": "Array",
+    "gain_dbi": 12.0
   },
   {
     "pid": "ANT-1225",
@@ -5493,7 +5544,8 @@
     "approx_price": 15,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1229",
@@ -5627,7 +5679,8 @@
     "schema_data": {
       "weight_g": 3
     },
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1234",
@@ -5787,7 +5840,8 @@
     "approx_price": 13,
     "schema_data": {
       "weight_g": 3
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1241",
@@ -5894,7 +5948,8 @@
     "schema_data": {
       "weight_g": 8
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1245",
@@ -6081,7 +6136,8 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1252",
@@ -6106,7 +6162,8 @@
     "approx_price": 14,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1253",
@@ -6186,7 +6243,8 @@
     "schema_data": {
       "weight_g": 10
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1256",
@@ -6481,7 +6539,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1268",
@@ -6588,7 +6647,8 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1272",
@@ -6749,7 +6809,8 @@
     "approx_price": 14,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1280",
@@ -6828,7 +6889,8 @@
       "weight_g": 5
     },
     "connector": "SMA",
-    "antenna_type": "MIMO"
+    "antenna_type": "MIMO",
+    "gain_dbi": 3.0
   },
   {
     "pid": "ANT-1283",
@@ -6853,7 +6915,8 @@
       "weight_g": 1
     },
     "connector": "SMA",
-    "antenna_type": "MIMO"
+    "antenna_type": "MIMO",
+    "gain_dbi": 3.0
   },
   {
     "pid": "ANT-1284",
@@ -6878,7 +6941,8 @@
     },
     "connector": "SMA",
     "polarization": "Linear",
-    "antenna_type": "MIMO"
+    "antenna_type": "MIMO",
+    "gain_dbi": 3.0
   },
   {
     "pid": "ANT-1285",
@@ -6904,7 +6968,8 @@
     "approx_price": 9,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1290",
@@ -6957,7 +7022,8 @@
       "weight_g": 3
     },
     "connector": "SMA",
-    "antenna_type": "Array"
+    "antenna_type": "Array",
+    "gain_dbi": 12.0
   },
   {
     "pid": "ANT-1292",
@@ -6983,7 +7049,8 @@
       "weight_g": 3
     },
     "connector": "SMA",
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1293",
@@ -7009,7 +7076,8 @@
     "schema_data": {
       "weight_g": 3
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1294",
@@ -7089,7 +7157,8 @@
     "schema_data": {
       "weight_g": 7
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1297",
@@ -7115,7 +7184,8 @@
     "schema_data": {
       "weight_g": 14
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1298",
@@ -7141,7 +7211,8 @@
     "approx_price": 12,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1299",
@@ -7167,7 +7238,8 @@
     "approx_price": 11,
     "schema_data": {
       "weight_g": 14
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1300",
@@ -7490,7 +7562,8 @@
     "approx_price": 12,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1312",
@@ -7516,7 +7589,8 @@
     "approx_price": 10,
     "schema_data": {
       "weight_g": 5
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1313",
@@ -7650,7 +7724,8 @@
       "weight_g": 13
     },
     "connector": "SMA",
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1324",
@@ -7676,7 +7751,8 @@
     "approx_price": 11,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1325",
@@ -7702,7 +7778,8 @@
     "approx_price": 15,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1326",
@@ -7728,7 +7805,8 @@
     "approx_price": 9,
     "schema_data": {
       "weight_g": 5
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1327",
@@ -7808,7 +7886,8 @@
     },
     "connector": "SMA",
     "polarization": "RHCP",
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1331",
@@ -7834,7 +7913,8 @@
     "schema_data": {
       "weight_g": 3
     },
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1332",
@@ -7968,7 +8048,8 @@
     "schema_data": {
       "weight_g": 1
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1338",
@@ -7993,7 +8074,8 @@
     "approx_price": 11,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1340",
@@ -8127,7 +8209,8 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 14
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1345",
@@ -8153,7 +8236,8 @@
     "approx_price": 14,
     "schema_data": {
       "weight_g": 2
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1346",
@@ -8260,7 +8344,8 @@
     "schema_data": {
       "weight_g": 2
     },
-    "polarization": "Circular"
+    "polarization": "Circular",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1350",
@@ -8393,7 +8478,8 @@
       "weight_g": 11
     },
     "connector": "SMA",
-    "antenna_type": "Biquad"
+    "antenna_type": "Biquad",
+    "gain_dbi": 11.0
   },
   {
     "pid": "ANT-1355",
@@ -8419,7 +8505,8 @@
       "weight_g": 15
     },
     "connector": "SMA",
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1356",
@@ -8551,7 +8638,8 @@
     "approx_price": 10,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1361",
@@ -8628,7 +8716,8 @@
     },
     "connector": "U.FL",
     "polarization": "Linear",
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1364",
@@ -8843,7 +8932,8 @@
     "approx_price": 17,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1372",
@@ -8896,7 +8986,8 @@
     "approx_price": 18,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1375",
@@ -9003,7 +9094,8 @@
     "schema_data": {
       "weight_g": 12
     },
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1379",
@@ -9028,7 +9120,8 @@
     },
     "connector": "SMA",
     "polarization": "Linear",
-    "antenna_type": "Whip"
+    "antenna_type": "Whip",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1380",
@@ -9351,7 +9444,8 @@
     "approx_price": 13,
     "schema_data": {
       "weight_g": 11
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1395",
@@ -9485,7 +9579,8 @@
       "weight_g": 1
     },
     "connector": "SMA",
-    "antenna_type": "Omni"
+    "antenna_type": "Omni",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1400",
@@ -9618,7 +9713,8 @@
     },
     "connector": "SMA",
     "polarization": "Linear",
-    "antenna_type": "Whip"
+    "antenna_type": "Whip",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1406",
@@ -9832,7 +9928,8 @@
     "approx_price": 12,
     "schema_data": {
       "weight_g": 4
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1414",
@@ -9885,7 +9982,8 @@
     "approx_price": 11,
     "schema_data": {
       "weight_g": 1
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1416",
@@ -9911,7 +10009,8 @@
     "schema_data": {
       "weight_g": 2
     },
-    "polarization": "Linear"
+    "polarization": "Linear",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1417",
@@ -9964,7 +10063,8 @@
     "approx_price": 16,
     "schema_data": {
       "weight_g": 6
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1419",
@@ -10178,7 +10278,8 @@
     },
     "connector": "SMA",
     "polarization": "Linear",
-    "antenna_type": "Whip"
+    "antenna_type": "Whip",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1427",
@@ -10204,7 +10305,8 @@
     "approx_price": 13,
     "schema_data": {
       "weight_g": 15
-    }
+    },
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1428",
@@ -10257,7 +10359,8 @@
     "schema_data": {
       "weight_g": 13
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1430",
@@ -10364,7 +10467,8 @@
     "schema_data": {
       "weight_g": 12
     },
-    "connector": "SMA"
+    "connector": "SMA",
+    "gain_dbi": 2.0
   },
   {
     "pid": "ANT-1434",

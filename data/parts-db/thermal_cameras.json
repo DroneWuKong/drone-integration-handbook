@@ -1112,7 +1112,7 @@
     "weight_g": null,
     "lens_fov_deg": 40,
     "interface": "Camera Link / GigE / MIPI",
-    "power_w": null,
+    "power_w": 20.0,
     "subcategory": "defense_isr",
     "country": "United States",
     "compliance": [
@@ -1239,7 +1239,11 @@
     "interface": "USB / Analog",
     "netd_mk": 50,
     "pixel_pitch_um": 17,
-    "lens_fov_deg": 35
+    "lens_fov_deg": 35,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 256,
+    "resolution_v": 192,
+    "power_w": 2.5
   },
   {
     "pid": "CAM-UA-Seek-UAV-\u0422\u0435\u043f\u043b\u043e\u0432\u0456\u0437\u043e\u0440-U",
@@ -1270,7 +1274,11 @@
     "interface": "USB / Analog",
     "netd_mk": 50,
     "pixel_pitch_um": 17,
-    "lens_fov_deg": 35
+    "lens_fov_deg": 35,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 256,
+    "resolution_v": 192,
+    "power_w": 2.5
   },
   {
     "pid": "CAM-UA-Seek-UAV-\u0422\u0435\u043f\u043b\u043e\u0432\u0456\u0437\u043e\u0440-S",
@@ -1301,7 +1309,11 @@
     "interface": "USB / Analog",
     "netd_mk": 40,
     "pixel_pitch_um": 12,
-    "lens_fov_deg": 32
+    "lens_fov_deg": 32,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 384,
+    "resolution_v": 288,
+    "power_w": 0.5
   },
   {
     "pid": "CAM-UA-Seek-UAV-\u0422\u0435\u043f\u043b\u043e\u0432\u0456\u0437\u043e\u0440-S",
@@ -1332,7 +1344,11 @@
     "frame_rate_hz": 25,
     "interface": "USB / Analog",
     "netd_mk": 40,
-    "pixel_pitch_um": 12
+    "pixel_pitch_um": 12,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 640,
+    "resolution_v": 480,
+    "power_w": 0.5
   },
   {
     "pid": "CAM-UA-Odd-Syst-\u041a\u0443\u0440\u0431\u0430\u0441-256",
@@ -1363,7 +1379,11 @@
     "interface": "USB / MIPI",
     "netd_mk": 50,
     "pixel_pitch_um": 17,
-    "lens_fov_deg": 35
+    "lens_fov_deg": 35,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 256,
+    "resolution_v": 192,
+    "power_w": 3.0
   },
   {
     "pid": "CAM-UA-Odd-Syst-\u041a\u0443\u0440\u0431\u0430\u0441-384\u1d45",
@@ -1394,7 +1414,11 @@
     "interface": "USB / MIPI",
     "netd_mk": 40,
     "pixel_pitch_um": 12,
-    "lens_fov_deg": 32
+    "lens_fov_deg": 32,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 384,
+    "resolution_v": 288,
+    "power_w": 3.0
   },
   {
     "pid": "THR-0032",
@@ -1541,7 +1565,11 @@
     "interface": "MIPI CSI / GMSL",
     "netd_mk": 40,
     "pixel_pitch_um": 12,
-    "lens_fov_deg": 45
+    "lens_fov_deg": 45,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "power_w": 4.0
   },
   {
     "pid": "THR-0033",
@@ -1592,7 +1620,11 @@
     "interface": "MIPI CSI / GMSL",
     "netd_mk": 40,
     "pixel_pitch_um": 12,
-    "lens_fov_deg": 45
+    "lens_fov_deg": 45,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "power_w": 4.0
   },
   {
     "pid": "THR-0034",
@@ -1639,7 +1671,11 @@
     "interface": "MIPI CSI",
     "netd_mk": 35,
     "pixel_pitch_um": 10,
-    "lens_fov_deg": 50
+    "lens_fov_deg": 50,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 800,
+    "resolution_v": 600,
+    "power_w": 4.0
   },
   {
     "pid": "THR-0035",
@@ -1684,7 +1720,11 @@
     "interface": "MIPI CSI",
     "netd_mk": 35,
     "pixel_pitch_um": 10,
-    "lens_fov_deg": 50
+    "lens_fov_deg": 50,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 1280,
+    "resolution_v": 1024,
+    "power_w": 4.0
   },
   {
     "pid": "THR-0036",
@@ -1733,7 +1773,11 @@
     "interface": "GMSL2",
     "netd_mk": 40,
     "pixel_pitch_um": 12,
-    "lens_fov_deg": 45
+    "lens_fov_deg": 45,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "power_w": 4.0
   },
   {
     "pid": "THR-0037",
@@ -1782,7 +1826,11 @@
     "interface": "MIPI CSI",
     "netd_mk": 25,
     "pixel_pitch_um": 10,
-    "lens_fov_deg": 40
+    "lens_fov_deg": 40,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 640,
+    "resolution_v": 512,
+    "power_w": 4.0
   },
   {
     "pid": "CAM-UA-Odd-Syst-\u041a\u0443\u0440\u0431\u0430\u0441-640\u1d45",
@@ -1811,6 +1859,10 @@
     "frame_rate_hz": 25,
     "interface": "USB / MIPI",
     "netd_mk": 35,
-    "pixel_pitch_um": 12
+    "pixel_pitch_um": 12,
+    "spectral_band": "LWIR (8-14\u03bcm)",
+    "resolution_h": 640,
+    "resolution_v": 480,
+    "power_w": 3.0
   }
 ]
