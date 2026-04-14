@@ -144,4 +144,4 @@ def msp_crc(size, cmd, payload):
 
 - [MSP Protocol Deep Dive](../firmware/msp-protocol.md)
 - [MAVLink Quick Reference](appendix-c-mavlink-quick-reference.md)
-- [Hangar FC Write-Back](../../../Ai-Project/hangar/src/main/kotlin/ai/wingman/hangar/fc/MspClient.kt)
+- Hangar FC Write-Back: [`hangar/src/main/kotlin/ai/wingman/hangar/fc/MspClient.kt`](https://github.com/DroneWuKong/Ai-Project/blob/main/hangar/src/main/kotlin/ai/wingman/hangar/fc/MspClient.kt) (private repo — DroneWuKong/Ai-Project)

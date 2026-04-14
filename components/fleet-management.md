@@ -204,5 +204,5 @@ specifically to satisfy the configuration record requirement.
 
 - [Crash Recovery & Field Repair](../field/crash-recovery.md)
 - [BVLOS Pathways](bvlos-pathways.md)
-- [Tooth SQLite Documentation](../../../Ai-Project/docs/specs/tooth-architecture.md)
-- [Wingman Hangar](../../../Ai-Project/hangar/)
+- Tooth SQLite Documentation: [`docs/specs/tooth-architecture.md`](https://github.com/DroneWuKong/Ai-Project/blob/main/docs/specs/tooth-architecture.md) (private repo — DroneWuKong/Ai-Project)
+- Wingman Hangar: [`hangar/`](https://github.com/DroneWuKong/Ai-Project/tree/main/hangar) (private repo — DroneWuKong/Ai-Project)
