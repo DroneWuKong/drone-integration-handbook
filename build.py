@@ -1745,7 +1745,7 @@ window.addEventListener('scroll', () => {{
 }})();
 </script>
 
-{__ANALYTICS__}
+{{__ANALYTICS__}}
 
 </body>
 </html>"""
