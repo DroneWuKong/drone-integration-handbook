@@ -68,35 +68,16 @@ jobs:
         run: |
           git config user.name "PIE Procurement Scanner"
           git config user.email "pie@drone-forge.dev"
-          
+
           if [ -n "$(git status --porcelain data/procurement/)" ]; then
             git add data/procurement/
-            
-            MATCHES=$(python3 -c "
-import json
-try:
-    with open('data/procurement/gray_zone_matches.json') as f:
-        data = json.load(f)
-    total = data.get('gray_zone_federal_matches', 0) + data.get('gray_zone_news_mentions', 0)
-    print(total)
-except:
-    print(0)
-")
-            SOLS=$(python3 -c "
-import json
-try:
-    with open('data/procurement/solicitations.json') as f:
-        data = json.load(f)
-    print(data.get('meta', {}).get('total_solicitations', 0))
-except:
-    print(0)
-")
-            
-            git commit -m "📡 Procurement scan: ${SOLS} solicitations · ${MATCHES} gray zone signals
 
-Automated daily scan — USAspending, SAM.gov, SBIR.gov, News RSS.
-NAICS: 336411/334515/334511/517410/541370/541519/541715/928110"
-            
+            MATCHES=$(python3 -c "import json; d=json.load(open('data/procurement/gray_zone_matches.json')); print(d.get('gray_zone_federal_matches',0)+d.get('gray_zone_news_mentions',0))" 2>/dev/null || echo 0)
+            SOLS=$(python3 -c "import json; d=json.load(open('data/procurement/solicitations.json')); print(d.get('meta',{}).get('total_solicitations',0))" 2>/dev/null || echo 0)
+
+            git commit -m "📡 Procurement scan: ${SOLS} solicitations · ${MATCHES} gray zone signals" \
+                       -m "Automated daily scan — USAspending, SAM.gov, SBIR.gov, News RSS. NAICS: 336411/334515/334511/517410/541370/541519/541715/928110"
+
             git push
           else
             echo "No new procurement data to commit"
