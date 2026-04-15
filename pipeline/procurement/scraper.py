@@ -142,24 +142,37 @@ class USASpendingScraper:
 
     BASE_URL = "https://api.usaspending.gov/api/v2"
 
+    # NAICS filter is contract-only on USAspending. Applying it to grant
+    # award_type_codes (02-05) returns 0 results (and recent API versions
+    # return 200+empty rather than 400, so the old keyword-only fallback
+    # never fired). Also: in-progress awards have Award Amount=null while
+    # Total Outlays is populated — request both and fall back in
+    # to_solicitation() so the dollar floor doesn't silently drop them.
+    NAICS_REQUIRE = ["336411", "334515", "334511", "517410", "541370", "541519", "541715"]
+    QUERY_GROUPS = [
+        # (label, award_type_codes, apply_naics_filter)
+        ("contracts", ["A", "B", "C", "D"],     True),
+        ("grants",    ["02", "03", "04", "05"], False),
+    ]
+
     def search_awards(self, keyword: str, start_date: str, limit: int = 50) -> list:
         end_date = now.strftime("%Y-%m-%d")
         url      = f"{self.BASE_URL}/search/spending_by_award/"
         results  = []
 
-        for award_types, label in [
-            (["A", "B", "C", "D"], "contracts"),
-            (["02", "03", "04", "05"], "grants"),
-        ]:
+        for label, award_types, apply_naics in self.QUERY_GROUPS:
+            filters = {
+                "keywords": [keyword],
+                "time_period": [{"start_date": start_date, "end_date": end_date}],
+                "award_type_codes": award_types,
+            }
+            if apply_naics:
+                filters["naics_codes"] = {"require": self.NAICS_REQUIRE}
+
             payload = {
-                "filters": {
-                    "keywords": [keyword],
-                    "time_period": [{"start_date": start_date, "end_date": end_date}],
-                    "award_type_codes": award_types,
-                    "naics_codes": {"require": ["336411", "334515", "334511", "517410", "541370", "541519", "541715"]},
-                },
+                "filters": filters,
                 "fields": [
-                    "Award ID", "Recipient Name", "Award Amount",
+                    "Award ID", "Recipient Name", "Award Amount", "Total Outlays",
                     "Description", "Start Date", "End Date",
                     "Awarding Agency", "Awarding Sub Agency", "Award Type",
                 ],
@@ -169,8 +182,8 @@ class USASpendingScraper:
             }
             try:
                 resp = requests.post(url, json=payload, timeout=30)
-                if resp.status_code == 400:
-                    # Fallback: retry without NAICS filter (keyword-only)
+                if resp.status_code == 400 and apply_naics:
+                    # Belt-and-braces: contract NAICS rejected → retry keyword-only
                     del payload["filters"]["naics_codes"]
                     resp = requests.post(url, json=payload, timeout=30)
                 resp.raise_for_status()
@@ -199,7 +212,9 @@ class USASpendingScraper:
     @staticmethod
     def to_solicitation(award: dict) -> dict:
         """Normalize to unified solicitation schema."""
-        amount = award.get("Award Amount") or 0
+        # Award Amount is null on in-progress awards; Total Outlays is populated.
+        # Without this fallback those rows are silently dropped by the dollar floor.
+        amount = award.get("Award Amount") or award.get("Total Outlays") or 0
         return {
             "id":           proc_id(f"usa-{award.get('Award ID', '')}"),
             "source":       "usaspending",

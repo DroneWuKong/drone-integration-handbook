@@ -300,6 +300,18 @@ def build_site(base_dir, output_dir):
     """Build the complete single-page HTML site."""
     print("Building The Drone Integration Handbook...")
 
+    # Validate that every CHAPTERS file exists. read_chapter() silently
+    # returned "" for missing files, which produced empty sections in the
+    # final HTML with no warning — a renamed/deleted chapter would just
+    # disappear from the published handbook. Fail the build instead so
+    # the breakage is visible.
+    missing = [fp for fp, _, _ in CHAPTERS if not os.path.exists(os.path.join(base_dir, fp))]
+    if missing:
+        print(f"\n  ERROR: {len(missing)} chapter file(s) referenced in CHAPTERS but missing on disk:")
+        for fp in missing:
+            print(f"    - {fp}")
+        raise SystemExit(f"build aborted — fix the CHAPTERS list or restore the missing files")
+
     platforms  = _build_platforms(base_dir)
     components = _build_components(base_dir)
     print(f"  Discovered {len(platforms)} platforms, {len(components)} component pages")
@@ -1733,7 +1745,7 @@ window.addEventListener('scroll', () => {{
 }})();
 </script>
 
-{__ANALYTICS__}
+{{__ANALYTICS__}}
 
 </body>
 </html>"""
