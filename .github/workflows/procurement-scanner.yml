@@ -82,3 +82,28 @@ jobs:
           else
             echo "No new procurement data to commit"
           fi
+
+      - name: Push federal_awards to Forge Blobs
+        env:
+          FORGE_BLOBS_ADMIN_KEY: ${{ secrets.FORGE_BLOBS_ADMIN_KEY }}
+        run: |
+          if [ -z "${FORGE_BLOBS_ADMIN_KEY}" ]; then
+            echo "FORGE_BLOBS_ADMIN_KEY not set — add to handbook repo secrets to enable Forge Blobs sync"
+            exit 0
+          fi
+          if [ ! -f data/procurement/federal_awards.json ]; then
+            echo "No federal_awards.json produced — skipping"
+            exit 0
+          fi
+          HTTP_CODE=$(curl -s -o /tmp/blobs_resp.json -w "%{http_code}" -X POST \
+            "https://nvmillbuilditmyself.com/.netlify/functions/forge-data?type=federal_awards" \
+            -H "Authorization: Bearer ${FORGE_BLOBS_ADMIN_KEY}" \
+            -H "Content-Type: application/json" \
+            --data @data/procurement/federal_awards.json)
+          if [ "$HTTP_CODE" = "200" ]; then
+            COUNT=$(python3 -c "import json; d=json.load(open('data/procurement/federal_awards.json')); print(d.get('count',len(d.get('awards',[]))))" 2>/dev/null || echo '?')
+            echo "✅ federal_awards pushed to Forge Blobs ($COUNT records)"
+          else
+            echo "⚠ Forge Blobs push returned HTTP $HTTP_CODE:"
+            cat /tmp/blobs_resp.json || true
+          fi
