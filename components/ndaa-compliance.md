@@ -152,5 +152,5 @@ for federal procurement without independent legal review.
 
 - [Orqa Hardware Guide](orqa-hardware-guide.md)
 - [RF Detection Hardware](rf-detection-hardware.md)
-- [Forge Compliance Dashboard](https://nvmillbuilditmyself.com/compliance/)
+- [Forge Compliance Dashboard](https://uas-forge.com/compliance/)
 - [DFR Regulatory Brief](../patterns/dfr-regulatory.md)

@@ -160,12 +160,42 @@ def fix_internal_links(html_content, ch_num):
     return html_content
 
 
+def rewrite_legacy_domains(html):
+    """Rewrite legacy nvmill*/illdoitmyself domains to new uas-* domains.
+    Runs at build time over rendered HTML so chapter markdown files don't
+    need to be individually edited. Phase 1 of the uas-* domain transition.
+    """
+    # Pro-specific paths first (more specific than bare-domain)
+    specific = [
+        ('https://nvmillbuilditmyself.com/patterns/', 'https://uas-patterns.pro/patterns/'),
+        ('https://nvmillbuilditmyself.com/pro/',      'https://uas-patterns.pro/pro/'),
+        ('https://nvmillfindoutmyself.com/patterns/', 'https://uas-patterns.pro/patterns/'),
+        ('https://nvmillfindoutmyself.com/pro/',      'https://uas-patterns.pro/pro/'),
+    ]
+    for old, new in specific:
+        html = html.replace(old, new)
+    # Bare-domain catch-all
+    bare = [
+        ('https://www.nvmillbuilditmyself.com', 'https://uas-forge.com'),
+        ('https://nvmillbuilditmyself.com',     'https://uas-forge.com'),
+        ('https://www.nvmillfindoutmyself.com', 'https://uas-patterns.com'),
+        ('https://nvmillfindoutmyself.com',     'https://uas-patterns.com'),
+        ('https://www.nvmilldoitmyself.com',    'https://uas-handbook.com'),
+        ('https://nvmilldoitmyself.com',        'https://uas-handbook.com'),
+        ('https://www.illdoitmyself.com',       'https://uas-handbook.com'),
+        ('https://illdoitmyself.com',           'https://uas-handbook.com'),
+    ]
+    for old, new in bare:
+        html = html.replace(old, new)
+    return html
+
+
 def md_to_html(md_text):
-    return markdown.markdown(
+    return rewrite_legacy_domains(markdown.markdown(
         md_text,
         extensions=["tables", "fenced_code", "codehilite", "toc"],
         extension_configs={"codehilite": {"css_class": "code"}},
-    )
+    ))
 
 
 # ── TOC ──────────────────────────────────────────────────────────────────────
@@ -1760,7 +1790,7 @@ window.addEventListener('scroll', () => {{
     # robots.txt
     robots_path = os.path.join(output_dir, "robots.txt")
     with open(robots_path, "w") as f:
-        f.write("User-agent: *\nDisallow:\nSitemap: https://nvmilldoitmyself.com/\n")
+        f.write("User-agent: *\nDisallow:\nSitemap: https://uas-handbook.com/\n")
 
     print(f"\n  Output: {output_path}")
     print(f"  Size: {os.path.getsize(output_path):,} bytes")

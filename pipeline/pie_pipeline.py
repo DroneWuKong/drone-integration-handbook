@@ -4,7 +4,7 @@ UAS Pattern Intelligence Engine — Integration Layer v0.2
 
 Connects to:
   - Forge DB (DroneWuKong/drone-integration-handbook → data/parts-db, platforms/)
-  - Forge Web (nvmillbuilditmyself.com → /platforms/, /compliance/, /industry/)
+  - Forge Web (uas-forge.com → /platforms/, /compliance/, /industry/)
   - Distributor APIs (Mouser, DigiKey, Arrow, Pimoroni)
   - GUR War & Sanctions OSINT (war-sanctions.gur.gov.ua)
   - FAA DroneZone (faa.gov registration data)
@@ -76,7 +76,7 @@ class FlagType(Enum):
 
 @dataclass
 class Platform:
-    """Maps to Forge Platforms DB (nvmillbuilditmyself.com/platforms/)"""
+    """Maps to Forge Platforms DB (uas-forge.com/platforms/)"""
     id: str
     name: str
     manufacturer: str
@@ -156,7 +156,7 @@ class ForgeDBConnector:
       - GitHub: DroneWuKong/drone-integration-handbook
         - data/parts-db/     → component JSON files
         - platforms/          → platform markdown files
-      - Web: nvmillbuilditmyself.com
+      - Web: uas-forge.com
         - /platforms/         → 219 platform database
         - /compliance/        → Blue UAS / NDAA tier data
         - /industry/          → contract & funding intel
@@ -164,8 +164,8 @@ class ForgeDBConnector:
     
     GITHUB_RAW = "https://raw.githubusercontent.com/DroneWuKong/drone-integration-handbook/main"
     GITHUB_API = "https://api.github.com/repos/DroneWuKong/drone-integration-handbook"
-    FORGE_WEB = "https://nvmillbuilditmyself.com"
-    HANDBOOK_WEB = "https://nvmilldoitmyself.com"
+    FORGE_WEB = "https://uas-forge.com"
+    HANDBOOK_WEB = "https://uas-handbook.com"
     
     def __init__(self, cache_dir: str = "/tmp/forge_cache"):
         self.cache_dir = Path(cache_dir)
@@ -213,7 +213,7 @@ class ForgeDBConnector:
           - cots/        → Commercial off-the-shelf
           - open-source/ → Custom build references
         
-        The web app (nvmillbuilditmyself.com/platforms/) renders
+        The web app (uas-forge.com/platforms/) renders
         all 219 platforms with compliance tiers.
         """
         log.info("Fetching Forge Platforms DB...")
@@ -237,7 +237,7 @@ class ForgeDBConnector:
     def fetch_compliance_data(self) -> dict:
         """
         Fetch compliance tier data from Forge Compliance Dashboard.
-        Source: nvmillbuilditmyself.com/compliance/
+        Source: uas-forge.com/compliance/
         
         Returns tier classification for all platforms:
           - Blue UAS + NDAA (cleared for US Gov procurement)
@@ -264,7 +264,7 @@ class ForgeDBConnector:
     def fetch_industry_intel(self) -> list[dict]:
         """
         Fetch industry intelligence from Forge Intel feed.
-        Source: nvmillbuilditmyself.com/industry/
+        Source: uas-forge.com/industry/
         
         Returns curated funding rounds, defense contracts,
         grants & market data from the Forge data pipeline.
@@ -819,13 +819,13 @@ class PatternIntelligencePipeline:
                     "forge_db": {
                         "platforms": 219,
                         "components": parts_meta["total_parts"],
-                        "url": "https://nvmillbuilditmyself.com",
+                        "url": "https://uas-forge.com",
                     },
                     "handbook": {
                         "chapters": 16,
                         "platform_profiles": 38,
                         "component_categories": 30,
-                        "url": "https://nvmilldoitmyself.com",
+                        "url": "https://uas-handbook.com",
                     },
                     "github": {
                         "repo": "DroneWuKong/drone-integration-handbook",

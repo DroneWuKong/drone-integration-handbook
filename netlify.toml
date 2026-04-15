@@ -3,44 +3,81 @@
   command = "pip3 install -r requirements.txt && python3 build.py"
 
 [build.environment]
-  PYTHON_VERSION = "3.11"
+  PYTHON_VERSION = "3.12"
 
 [functions]
   node_bundler = "esbuild"
 
+# ═══════════════════════════════════════════════════════════════════════════
+# Cross-site redirects — handbook routes → Forge / Patterns / Intel
+# ═══════════════════════════════════════════════════════════════════════════
+# The handbook Netlify site only serves written documentation. Any path
+# that would serve a Forge tool or a Patterns dashboard gets 301'd to the
+# canonical domain.
+
 [[redirects]]
   from = "/forge"
-  to = "https://nvmillbuilditmyself.com"
+  to = "https://uas-forge.com"
   status = 301
   force = true
 
 [[redirects]]
   from = "/forge/*"
-  to = "https://nvmillbuilditmyself.com/:splat"
+  to = "https://uas-forge.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
   from = "/patterns"
-  to = "https://nvmillbuilditmyself.com/patterns/"
+  to = "https://uas-patterns.pro/patterns/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/patterns/"
-  to = "https://nvmillbuilditmyself.com/patterns/"
+  to = "https://uas-patterns.pro/patterns/"
   status = 301
   force = true
 
 # Analytics dashboard lives on Forge — redirect handbook visitors there
 [[redirects]]
   from = "/analytics"
-  to = "https://nvmillbuilditmyself.com/analytics/"
+  to = "https://uas-forge.com/analytics/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/analytics/"
-  to = "https://nvmillbuilditmyself.com/analytics/"
+  to = "https://uas-forge.com/analytics/"
+  status = 301
+  force = true
+
+# ═══════════════════════════════════════════════════════════════════════════
+# Legacy handbook domain grandfather — nvmilldoitmyself.com → uas-handbook.com
+# ═══════════════════════════════════════════════════════════════════════════
+# Keep for the grace period (~6-12 months). Remove once organic traffic
+# from old domains drops to near-zero in analytics.
+
+[[redirects]]
+  from = "https://nvmilldoitmyself.com/*"
+  to = "https://uas-handbook.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.nvmilldoitmyself.com/*"
+  to = "https://uas-handbook.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://illdoitmyself.com/*"
+  to = "https://uas-handbook.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.illdoitmyself.com/*"
+  to = "https://uas-handbook.com/:splat"
   status = 301
   force = true
