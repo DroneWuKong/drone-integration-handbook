@@ -676,7 +676,7 @@ def analyze_sentiment_signals():
 ADVANCED_SOURCES = {
     "temporal_analysis": {
         "name": "Temporal Pattern Analysis",
-        "url": "https://nvmillbuilditmyself.com/patterns/",
+        "url": "https://uas-patterns.pro/patterns/",
         "description": "Cross-correlation and lag analysis between cause events (contract awards, USAI packages, EW demos) and effect signals (lead time changes, pricing spikes).",
         "validation": "Based on historical occurrence matching. Correlation coefficients calculated from available data points.",
         "type": "derived",

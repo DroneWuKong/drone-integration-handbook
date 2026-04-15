@@ -1,17 +1,23 @@
 /**
  * AI Wingman Analytics — Handbook Ingest
- * Endpoint: nvmilldoitmyself.com/.netlify/functions/analytics-ingest
+ * Endpoint: uas-handbook.com/.netlify/functions/analytics-ingest
  *
  * Receives events from handbook pages (same-origin).
  * Writes to thebluefairy's analytics-events Blobs store via cross-site access.
- * Requires on nvmilldoitmyself.com Netlify site:
+ * Requires on the handbook Netlify site:
  *   ANALYTICS_SITE_ID  — thebluefairy site ID
  *   NETLIFY_API_TOKEN  — Netlify personal access token
  */
 
 const ALLOWED_ORIGINS = [
+  // New canonical uas-* domain (primary going forward)
+  'https://uas-handbook.com',
+  'https://www.uas-handbook.com',
+  // Legacy domains — keep during transition window
   'https://nvmilldoitmyself.com',
   'https://www.nvmilldoitmyself.com',
+  'https://illdoitmyself.com',
+  'https://www.illdoitmyself.com',
   'http://localhost:8888',
   'http://localhost:3000',
 ];

@@ -57,28 +57,28 @@ SOURCES = {
     # ── Forge Ecosystem ──
     "forge_parts_db": {
         "name": "Forge Parts Database",
-        "url": "https://nvmillbuilditmyself.com/",
+        "url": "https://uas-forge.com/",
         "description": "3,008 vetted drone components across 20 categories. Curated by the Drone Integration Handbook project.",
         "validation": "Hand-verified specs. Pricing cross-referenced with distributors. Updated on each Forge release.",
         "type": "primary",
     },
     "forge_compliance": {
         "name": "Forge Compliance Dashboard",
-        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "url": "https://uas-forge.com/compliance/",
         "description": "Blue UAS, NDAA §848, ITAR, and country-of-origin status for 219 platforms.",
         "validation": "Compliance tiers verified against DIU Blue UAS Cleared List and NDAA text.",
         "type": "primary",
     },
     "forge_industry_intel": {
         "name": "Forge Industry Intelligence",
-        "url": "https://nvmillbuilditmyself.com/industry/",
+        "url": "https://uas-forge.com/industry/",
         "description": "Curated funding rounds, defense contracts, grants & market data from the Forge data pipeline.",
         "validation": "Hand-verified from primary sources (SAM.gov, SEC filings, press releases).",
         "type": "primary",
     },
     "forge_bom": {
         "name": "Forge BOM Graph",
-        "url": "https://nvmillbuilditmyself.com/builder/",
+        "url": "https://uas-forge.com/builder/",
         "description": "Bill of Materials mapping: which platforms use which components. Derived from platform profiles + parts-db.",
         "validation": "BOM data from manufacturer specs, teardowns, and Handbook platform profiles.",
         "type": "derived",
@@ -223,14 +223,14 @@ SOURCES = {
     # ── Supply Chain / Geopolitical ──
     "supply_chain_mapping": {
         "name": "Supply Chain Geographic Mapping",
-        "url": "https://nvmillbuilditmyself.com/compliance/",
+        "url": "https://uas-forge.com/compliance/",
         "description": "Component origin tracking mapped to allied nation risk levels. Based on manufacturer HQ and fab locations.",
         "validation": "Manufacturer data from Forge DB. Fab locations from public disclosures and industry reporting.",
         "type": "derived",
     },
     "geopolitical_risk": {
         "name": "Geopolitical Risk Assessment",
-        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "url": "https://uas-forge.com/platforms/",
         "description": "Allied nation stability and supply chain concentration risk. Taiwan/TSMC, S.Korea/DRAM focus.",
         "validation": "Based on published geopolitical analysis, TSMC concentration data, and DRAM market reports.",
         "type": "derived",
@@ -238,7 +238,7 @@ SOURCES = {
     # ── Software / Autonomy ──
     "software_ecosystem": {
         "name": "UAS Software Ecosystem Tracking",
-        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "url": "https://uas-forge.com/platforms/",
         "description": "Maps autonomy software (Hivemind, Gambit, Lattice, Swarmer) to hardware dependencies and contracts.",
         "validation": "Company announcements, partnership press releases, contract awards, and platform integration disclosures.",
         "type": "aggregated",
@@ -246,7 +246,7 @@ SOURCES = {
     # ── C-UAS ──
     "cuas_tracking": {
         "name": "Counter-UAS Industry Tracking",
-        "url": "https://nvmilldoitmyself.com/#c605",
+        "url": "https://uas-handbook.com/#c605",
         "description": "C-UAS companies, products, contracts. Tracks shared component demand between C-UAS and UAS.",
         "validation": "Company disclosures, contract awards, Handbook Ch. Counter-UAS reference.",
         "type": "aggregated",
@@ -254,14 +254,14 @@ SOURCES = {
     # ── Workforce ──
     "workforce_analysis": {
         "name": "Manufacturer Workforce & Capacity Estimates",
-        "url": "https://nvmillbuilditmyself.com/industry/",
+        "url": "https://uas-forge.com/industry/",
         "description": "Employee counts, facility locations, production rate estimates for UAS manufacturers.",
         "validation": "LinkedIn data, company disclosures, press releases, job posting analysis. Estimates marked as such.",
         "type": "estimated",
     },
     "capacity_estimate": {
         "name": "Production Capacity Estimates",
-        "url": "https://nvmillbuilditmyself.com/industry/",
+        "url": "https://uas-forge.com/industry/",
         "description": "Monthly production capacity estimates based on contract deliverables, company statements, and facility size.",
         "validation": "Derived from contract volumes, delivery timelines, and company disclosures. Marked as estimates.",
         "type": "estimated",
@@ -269,7 +269,7 @@ SOURCES = {
     # ── BOM ──
     "bom_analysis": {
         "name": "BOM Cost Index Analysis",
-        "url": "https://nvmillbuilditmyself.com/cost/",
+        "url": "https://uas-forge.com/cost/",
         "description": "Reference Blue UAS BOM costed from Forge parts-db pricing. Compared to non-compliant equivalent.",
         "validation": "Component prices from Forge DB (distributor-sourced). BOM composition from platform profiles.",
         "type": "derived",
@@ -277,7 +277,7 @@ SOURCES = {
     # ── Foreign Intel ──
     "foreign_intel": {
         "name": "Foreign UAS Program Intelligence",
-        "url": "https://nvmillbuilditmyself.com/platforms/",
+        "url": "https://uas-forge.com/platforms/",
         "description": "Tracks foreign drone programs (China, Turkey, Iran, Ukraine, EU, India, etc.) and their supply chain implications.",
         "validation": "Aggregated from defense reporting, Forge platform DB (42 countries), and open-source intelligence.",
         "type": "aggregated",
