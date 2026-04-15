@@ -1,5 +1,22 @@
 {
-  "opportunities": [],
-  "scraped_at": "2026-04-15T15:02:27.914429+00:00",
-  "count": 0
+  "opportunities": [
+    {
+      "noticeId": "f7e84283efb64dbfbf8436ea598fe3f0",
+      "title": "Manual add \u2014 2026-04-15",
+      "fullParentPathName": "",
+      "type": "Solicitation",
+      "solicitationNumber": "",
+      "naicsCode": "",
+      "postedDate": "2026-04-15",
+      "responseDeadLine": null,
+      "pointOfContact": [],
+      "award": {},
+      "_watchlisted": true,
+      "_watchlist_label": "Manual add \u2014 2026-04-15",
+      "_stub": true,
+      "_ingested_at": "2026-04-15T17:59:48.585473+00:00"
+    }
+  ],
+  "scraped_at": "2026-04-15T17:59:48.585473+00:00",
+  "count": 1
 }
