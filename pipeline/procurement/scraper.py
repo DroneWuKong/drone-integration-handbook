@@ -303,6 +303,86 @@ class SAMScraper:
             print(f"    [SAM NAICS={naics}] → ERROR: {e}")
             return []
 
+    def fetch_by_notice_id(self, notice_id: str):
+        """Fetch a single SAM opportunity by its exact notice ID."""
+        if not self.api_key:
+            return None
+        # Try search endpoint with noticeid param
+        try:
+            r = requests.get(self.OPP_URL,
+                             params={"api_key": self.api_key, "noticeid": notice_id, "limit": 1},
+                             timeout=30)
+            r.raise_for_status()
+            opps = r.json().get("opportunitiesData", [])
+            if opps:
+                return opps[0]
+        except requests.exceptions.RequestException:
+            pass
+        # Try detail endpoint fallback
+        try:
+            detail_url = f"https://api.sam.gov/prod/opportunities/v2/{notice_id}"
+            r2 = requests.get(detail_url, params={"api_key": self.api_key}, timeout=30)
+            if r2.status_code == 200:
+                d = r2.json()
+                if d.get("noticeId") or d.get("title"):
+                    return d
+        except requests.exceptions.RequestException:
+            pass
+        return None
+
+    def fetch_watchlist(self, watchlist_path) -> list:
+        """
+        Fetch all notice IDs in sam_watchlist.json.
+        Returns list of raw opportunity dicts.
+        Notices that 404 are retained as stubs so they still appear in the tab.
+        """
+        if not watchlist_path.exists():
+            return []
+        try:
+            data = json.load(open(watchlist_path))
+        except Exception:
+            return []
+
+        notices = data.get("notices", [])
+        if not notices:
+            return []
+
+        print(f"  [SAM watchlist] {len(notices)} pinned notice(s)")
+        results = []
+        for entry in notices:
+            nid = entry.get("notice_id", "")
+            if not nid:
+                continue
+            opp = self.fetch_by_notice_id(nid) if self.api_key else None
+            if opp:
+                opp["_watchlisted"] = True
+                opp["_watchlist_label"] = entry.get("label", "")
+                print(f"    + {nid[:12]}... {(opp.get('title') or '')[:60]}")
+                results.append(opp)
+            else:
+                # API miss — create a stub so it still appears in Procurement tab
+                stub = {
+                    "noticeId":           nid,
+                    "title":              entry.get("label") or f"SAM Notice {nid[:12]}...",
+                    "fullParentPathName": "",
+                    "type":               "Solicitation",
+                    "solicitationNumber": "",
+                    "naicsCode":          "",
+                    "postedDate":         entry.get("added", now_iso[:10]),
+                    "responseDeadLine":   None,
+                    "pointOfContact":     [],
+                    "award":              {},
+                    "_watchlisted":       True,
+                    "_watchlist_label":   entry.get("label", ""),
+                    "_stub":              True,
+                    "_ingested_at":       now_iso,
+                }
+                print(f"    ~ {nid[:12]}... API miss, stub retained")
+                results.append(stub)
+            time.sleep(REQUEST_DELAY)
+
+        return results
+
     def run(self, start_date: str, limit: int = 100) -> list:
         # Format date as MM/DD/YYYY for SAM API
         try:
@@ -312,6 +392,14 @@ class SAMScraper:
             posted_from = "01/01/2025"
 
         all_opps, seen = [], set()
+
+        # Watchlist: always fetch pinned notice IDs first
+        watchlist_path = PROCUREMENT_DIR / "sam_watchlist.json"
+        for opp in self.fetch_watchlist(watchlist_path):
+            nid = opp.get("noticeId", "")
+            if nid and nid not in seen:
+                seen.add(nid)
+                all_opps.append(opp)
 
         # Title searches
         for term in SAM_TITLE_TERMS:
@@ -336,7 +424,8 @@ class SAMScraper:
                         all_opps.append(opp)
             time.sleep(REQUEST_DELAY)
 
-        print(f"  SAM.gov: {len(all_opps)} unique opportunities")
+        wl_count = len([o for o in all_opps if o.get("_watchlisted")])
+        print(f"  SAM.gov: {len(all_opps)} unique opportunities ({wl_count} watchlisted)")
         return all_opps
 
     @staticmethod

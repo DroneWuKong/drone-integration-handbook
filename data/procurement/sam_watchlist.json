@@ -1,0 +1,11 @@
+{
+  "_comment": "SAM.gov notice IDs to fetch on every procurement pipeline run. Add any notice ID or URL here.",
+  "notices": [
+    {
+      "notice_id": "f7e84283efb64dbfbf8436ea598fe3f0",
+      "label": "Manual add \u2014 2026-04-15",
+      "url": "https://sam.gov/workspace/contract/opp/f7e84283efb64dbfbf8436ea598fe3f0/view",
+      "added": "2026-04-15"
+    }
+  ]
+}
