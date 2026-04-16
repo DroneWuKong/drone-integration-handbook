@@ -164,13 +164,16 @@ def rewrite_legacy_domains(html):
     """Rewrite legacy nvmill*/illdoitmyself domains to new uas-* domains.
     Runs at build time over rendered HTML so chapter markdown files don't
     need to be individually edited. Phase 1 of the uas-* domain transition.
+
+    Also catches retired uas-patterns.pro URLs and any /pro/ paths, which
+    collapse into uas-patterns.com (Patterns Pro was retired).
     """
-    # Pro-specific paths first (more specific than bare-domain)
+    # Path-specific redirects (legacy Pro URLs → unified Patterns)
     specific = [
-        ('https://nvmillbuilditmyself.com/patterns/', 'https://uas-patterns.pro/patterns/'),
-        ('https://nvmillbuilditmyself.com/pro/',      'https://uas-patterns.pro/pro/'),
-        ('https://nvmillfindoutmyself.com/patterns/', 'https://uas-patterns.pro/patterns/'),
-        ('https://nvmillfindoutmyself.com/pro/',      'https://uas-patterns.pro/pro/'),
+        ('https://nvmillbuilditmyself.com/patterns/', 'https://uas-patterns.com/patterns/'),
+        ('https://nvmillbuilditmyself.com/pro/',      'https://uas-patterns.com/patterns/'),
+        ('https://nvmillfindoutmyself.com/patterns/', 'https://uas-patterns.com/patterns/'),
+        ('https://nvmillfindoutmyself.com/pro/',      'https://uas-patterns.com/patterns/'),
     ]
     for old, new in specific:
         html = html.replace(old, new)
@@ -182,6 +185,9 @@ def rewrite_legacy_domains(html):
         ('https://nvmillfindoutmyself.com',     'https://uas-patterns.com'),
         ('https://www.nvmilldoitmyself.com',    'https://uas-handbook.com'),
         ('https://nvmilldoitmyself.com',        'https://uas-handbook.com'),
+        # Retired Patterns Pro → unified Patterns
+        ('https://www.uas-patterns.pro',        'https://uas-patterns.com'),
+        ('https://uas-patterns.pro',            'https://uas-patterns.com'),
         ('https://www.illdoitmyself.com',       'https://uas-handbook.com'),
         ('https://illdoitmyself.com',           'https://uas-handbook.com'),
     ]

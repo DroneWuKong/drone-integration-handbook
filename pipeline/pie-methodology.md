@@ -184,4 +184,4 @@ it may mean less information is available.
 - [Industry Intelligence](industry-intelligence.md)
 - [PIE Pipeline (technical)](../pipeline/)
 - [Forge Compliance Dashboard](https://uas-forge.com/compliance/)
-- [Patterns — Live Flags](https://uas-patterns.pro/patterns/)
+- [Patterns — Live Flags](https://uas-patterns.com/patterns/)
