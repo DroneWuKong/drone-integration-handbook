@@ -1,14 +1,14 @@
 {
   "meta": {
-    "generated_at": "2026-04-15T17:59:48.585473+00:00",
-    "total_solicitations": 312,
+    "generated_at": "2026-04-16T08:26:38.907948+00:00",
+    "total_solicitations": 315,
     "by_source": {
-      "usaspending": 225,
+      "usaspending": 228,
       "sam": 1,
       "sbir": 0,
       "news": 86
     },
-    "gray_zone_count": 11,
+    "gray_zone_count": 12,
     "blue_uas_count": 19,
     "open_solicitations": 0,
     "min_amount_filter": 25000
@@ -33,7 +33,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "public safety drone grant award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-0c565e5cb8",
@@ -54,28 +54,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Blue UAS cleared list contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-a1582c2e84",
-      "source": "news",
-      "source_label": "Stock Titan",
-      "type": "news_signal",
-      "title": "Ondas\u2019 24/7 \u2018drone-in-a-box\u2019 cleared for faster US defense buys - Stock Titan",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Wed, 28 Jan 2026 08:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxORUMxTlVUSk5rUVAzMVlhN1lTRGpaaU51UUpORllWSzRaTldvQjJ6YkJYUElUa3FZdlNRVTAzQXQ1aHRGb3JWWFFDcDZva0hMUVNrZ0hqLVhLRGtYcGdxWFFzWGNOTWNKN2twV1AzQUdnbjdXRDBnS2p0NUsxcDg2bWYzNEhYZzY5bWlZdVlFaWx2UXF6MTJTM0htclROY1NacjRwS05LRTdPblRPTEZ0OF9xNGJoVG9VT05v?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": false,
-      "query": "fire department UAS procurement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-2aa8442140",
@@ -96,7 +75,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b89da86cf6",
@@ -117,7 +96,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "fire department UAS procurement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-5debdfd08f",
+      "source": "news",
+      "source_label": "DefenseScoop",
+      "type": "news_signal",
+      "title": "Military marketplace for counter-drone tech makes its debut - DefenseScoop",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Wed, 25 Feb 2026 08:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPVXVKNGZfUXRBN2FKYWEwZHNabms0NXF4MFZjYnpfRllQLWxBcks3V044enp2Q0xDc1duNjNSWTFTM0Npd3hYcFJJZElkYUZxT3ctaHp3QmYyczRscVc2WW5VV1pQMkxiYWJOSXJ6U3htWkxXYlZtQi1FaUNRRUdJLXBzdFNBYThNb2Q0Q3NzQkRFS0FpSU9xTU5YcFpxVUNCZW95Nw?oc=5",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "query": "fire department UAS procurement",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-14227c14fe",
@@ -138,7 +138,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "police department drone RFP 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-7928c8cd31",
+      "source": "news",
+      "source_label": "Inside Unmanned Systems",
+      "type": "news_signal",
+      "title": "FEMA Launches $500 Million C-UAS Grant Program for State and Local Drone Defense - Inside Unmanned Systems",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Wed, 19 Nov 2025 08:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWEJOZDljNFl4U0dwYzRrMWZrVHBBdXQwWTdvNlhNQU9CRl9UZm1WQ2N6XzQzMU9HNkN0VnF3aHRKN1FmSnJuZ2xJUjhRQl80bG5HeHgzV18tM2loSWhSdjdWRjB0akNSYmxQb2R1Vy1FNFpQZGxVRXNveVJFSG5kU0F5eU5lZ181NlQ1NVhGc2JaMXk0VzdKOVgyQkxseHppRTlvWWxocFpKbzhCZmtPdmVZX2w?oc=5",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "query": "fire department UAS procurement",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-9e40092553",
@@ -159,7 +180,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Blue UAS cleared list contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-7e2bd57486",
@@ -180,7 +201,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "public safety drone grant award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-0f79e1f090",
@@ -201,7 +222,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Blue UAS cleared list contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-097553d85a",
@@ -222,28 +243,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "sheriff drone purchase contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-e09100394f",
-      "source": "news",
-      "source_label": "ArcGIS StoryMaps",
-      "type": "news_signal",
-      "title": "Shawnee County Kansas Newsletter - ArcGIS StoryMaps",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Wed, 04 Feb 2026 08:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE0zNkRtRjN1Z3k3N1ZReUdFcU54bGdlYkVBQWxteEcxd1VLY1dIQVRJMDdNejdFY0FXdUxNQTJHQ2I2dy1MajhHREdmTmdFQ3NmT1lrYTJTSjdmb2puazNZaEEtczBlUDl0UFYzS0d4cDhaUGpfaDF3VA?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": false,
-      "query": "public safety drone grant award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e9e5d9950b",
@@ -264,7 +264,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Blue UAS cleared list contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-3291819fc4",
+      "source": "news",
+      "source_label": "FedScoop",
+      "type": "news_signal",
+      "title": "Trump administration\u2019s embrace of drones picks up steam with DHS, FCC moves - FedScoop",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Wed, 01 Apr 2026 07:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9jZl9neEVZU2pxdVdGWmdSTW5BV1hHb0VoUFZ1ZWJzYl84MzVmMlJxX1BYUmJjVE1Nd1FRWHNtcGVnVVBIWVlsYW43NE5pSGp1UmUzclBFVEduUFg2RmdEWGRnM09UY2M?oc=5",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "query": "Drone Dominance Program contract",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-68995a8a0c",
@@ -285,7 +306,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "city county drone contract solicitation",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-3cdcd524a7",
@@ -306,7 +327,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "city county drone contract solicitation",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-0dff3a92bf",
@@ -327,7 +348,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "drone procurement RFP government agency 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e156a9708c",
@@ -348,7 +369,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "counter-UAS government contract award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-01b3a30640",
@@ -369,28 +390,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-1c19d4e95a",
-      "source": "news",
-      "source_label": "Phoenix New Times",
-      "type": "news_signal",
-      "title": "Why is an Arizona sheriff shilling for a private drone company? - Phoenix New Times",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Tue, 20 Jan 2026 08:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMzVNWlE5TDFZb2MxNjk1M01XNm5MYWg3MzBoc3I2b1Q5SlBoLVRwUG53bGxtLTVIRUtUNXloTTk5SjFwTG9aOUIwRk0tMUc4aDhDMUNNVWc4eWxhNmxYZVlxbTRzVGVULXZsSFZxcHdFTWgza1cwVmo4RzIxc1lHUl9wX3RtUS1hSzZFaWRCeHNtNGpQYV9USXN3am1HTjJ3YTE5YXZERQ?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": false,
-      "query": "sheriff drone purchase contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6995c26a08",
@@ -403,7 +403,7 @@
       "recipient": "",
       "amount": null,
       "award_id": null,
-      "posted_date": "Tue, 17 Mar 2026 20:49:46 GMT",
+      "posted_date": "Tue, 17 Mar 2026 07:00:00 GMT",
       "deadline": null,
       "naics": null,
       "set_aside": null,
@@ -411,7 +411,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "counter-UAS government contract award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-f906c7634e",
@@ -432,7 +432,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Blue UAS cleared list contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a3b6352d8f",
@@ -453,7 +453,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "sheriff drone purchase contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-5f392df1c9",
+      "source": "news",
+      "source_label": "Homeland Security Today",
+      "type": "news_signal",
+      "title": "DHS Establishes New Office to Combat Drone and Counter-Drone Threats - Homeland Security Today",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Tue, 13 Jan 2026 08:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVFZkTldWV3ZPNWtlVmVBS3IyVDcwOWhPcXYxYjdpdGp3aHo2MGlTTTAzMk1uOVJwc2YwLXV0X0FjUnktbTJYRXZEckUwVGllbHZZQ2NYekFManE1enFVTWFuUFNhYmFONlRIOG9ETDNUWk9YeTlaWWFad0pRZ0duLVFJSlhKUm1ybjNEUDIwNnlSZTZLTlAxNnBWb0tWa0l6a1gzUXRRdGloWm4ycGpRcERjZnhaNUxoY2NkVXhwZ0tBeFZOQUNVa1ZNRQ?oc=5",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "query": "public safety drone grant award",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-c56d9b1bde",
@@ -474,7 +495,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "sheriff drone purchase contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-034341481b",
@@ -495,7 +516,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "BRINC drone law enforcement contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6a4b6dade7",
@@ -516,28 +537,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "public safety drone grant award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-ef951a05ff",
-      "source": "news",
-      "source_label": "The Tech Buzz",
-      "type": "news_signal",
-      "title": "US Dronemakers Chase Pentagon Cash Over Consumer Market - The Tech Buzz",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Tue, 07 Apr 2026 14:12:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVGhYMFZhaXFKbE1nQ2NQWDVPWFlyYzZNenlHeUxScnVzcHZBcXlhZVRaNkNULTVZLVFGVHViRHFfSXM4cnN3OXhOV0VtcENBUjNVOGlNR3VhQV9SQ0NoM2lFaEd0QnhnU1RxbGhUMWQ4cE1ZMEhkQ2EtbkVDYmdwMVEzaWFoX0ZELTFGWFpCVFhkQQ?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": false,
-      "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b6fb7e4d14",
@@ -558,7 +558,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Skydio government contract award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-12f412b824",
+      "source": "news",
+      "source_label": "U.S. Department of War (.gov)",
+      "type": "news_signal",
+      "title": "Contracts for March 3, 2026 - U.S. Department of War (.gov)",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Tue, 03 Mar 2026 08:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNWW9MRmJNbHUtakQxZXhscWpFZWNUMU9uMXpma3RxLVZlQ2M0RUZ6Y1VlMnZDX1dHblZZeEFKQndULW1teU9CVm9XOXFtNWo5b3FYbkpxWGlja3l6a2I1aUdmMmZ3VUd5NVY2WUNybWZET3hwcmtDd1pCQ0w0OExlbmh2MFB2cjFiWW4wLVFNOWQ?oc=5",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "query": "drone procurement RFP government agency 2026",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-da1bb41913",
@@ -579,7 +600,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "fire department UAS procurement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-2e88b76599",
@@ -600,7 +621,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Drone Dominance Program contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-828402b672",
@@ -621,28 +642,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "police department drone RFP 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-2ba96dbce0",
-      "source": "news",
-      "source_label": "U.S. Department of War (.gov)",
-      "type": "news_signal",
-      "title": "Contracts for Feb. 26, 2026 - U.S. Department of War (.gov)",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Thu, 26 Feb 2026 08:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPRkFJY01CM0FyNU04eGh4TXRlV3MtbEdEQnc0Zll4dG9BZEw4UGdUM3VHc0Zjd0xKbERsUTYtR0dIM0pKS1RwMkcwLXVnaGFHTGw3b0hIOWJ0emE2SWxsYWFaM1VZTVdKemVrOFpiVXh1MWNoeUhJMUdWVHNVbHYtOHF5cTk4Z0x5OVJPa2xlZw?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": false,
-      "query": "drone procurement RFP government agency 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a3cfb1fd44",
@@ -663,7 +663,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "city county drone contract solicitation",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-24df0d9790",
@@ -684,7 +684,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "police department drone RFP 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-35217cfd51",
@@ -705,28 +705,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "public safety drone grant award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
-      "id": "sol-f21628ff1c",
+      "id": "sol-aa6037432c",
       "source": "news",
-      "source_label": "U.S. Department of War (.gov)",
+      "source_label": "The Globe and Mail",
       "type": "news_signal",
-      "title": "Contracts for March 12, 2026 - U.S. Department of War (.gov)",
+      "title": "Beam Global Reports Full Year 2025 Operating Results - The Globe and Mail",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
       "amount": null,
       "award_id": null,
-      "posted_date": "Thu, 12 Mar 2026 07:00:00 GMT",
+      "posted_date": "Thu, 09 Apr 2026 21:05:41 GMT",
       "deadline": null,
       "naics": null,
       "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZmVjc1Y5TGRTU0FHNTRSTE9pTDZxN0loMzBHbHB1NWsyUDVrVFhiek9EMkZQbTR4c3RacW9sRVVieFBiaUw4QkNuSkVzYzFaZ3N6bHdVUVlkOXBxd0JzY2NCVG9ZUXJsaExNSFFzYk5nV1FiN0NQYkFQRXZTaVp0RElwNGhoLXUtZTJxaGhtNVdwQQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNVC1yM2Q3RDQ2NktpbTJRQ3JUd01leDBSLUh3bVd0cHo0N0cxZlJoOTlrZ011UEFwYXU2ZF9qYXdPTTFzNW9RUlV2OC1IRTFrMjVpcGV5eUJnVllWRHRjeHp6Tmt2OFlzMXRpbmd0Y2pUM2ZscWFrT3hBazNwU3VCQmo3X1V1emh6bnpDTWRIaS1SZWJhUXdXYVBWV2ZjUnE4SVpMV0F4YWVULUJ4QkVRSEJnVUY1c05fQV85WEFpdUREQTk1TGtibzVhLW9pYVBQVFgyOQ?oc=5",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "query": "UAS government solicitation contract award 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "query": "drone procurement RFP government agency 2026",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-bbf8e5a5da",
@@ -747,7 +747,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "city county drone contract solicitation",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-913ad73126",
+      "source": "news",
+      "source_label": "Reuters",
+      "type": "news_signal",
+      "title": "US exempts some foreign-made drones from Trump import ban on new models - Reuters",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Thu, 08 Jan 2026 08:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPVjNibzJaVFdFR1B5Z3Jyd0I5Z0kzZVF3a3NXS0k0T0JyMlozNS1aYVpENnotMWlELUtFTE15QnE4ajdkQ1Fqbk5jWTdENmlHa3kzLXdXOHp4SnF3aXVEVGpZQmZ4bjY4eGx4UC1hYld2X3AxVFVSa2owaXktc1hULUk3RlpzeWw0VHh0Vnp3eUFjQXBqbHpMQ1dhTjBMdm9ZRkl0MS1QbE1ZV18wN3RFYjhzSjhWTkRhSTFyWVRYZ09pWV9N?oc=5",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "query": "Autel government purchase law enforcement",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-cfffa145a1",
@@ -768,7 +789,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "drone procurement RFP government agency 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-9db07a1719",
@@ -789,7 +810,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Drone Dominance Program contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4186d35d6a",
@@ -810,7 +831,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Blue UAS cleared list contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-7dfc35128a",
+      "source": "news",
+      "source_label": "Times Union",
+      "type": "news_signal",
+      "title": "U.S. lawmakers seek less reliance on Chinese drones - Times Union",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Sun, 28 Sep 2025 07:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWjhoQ2FPd1BvREF0aHVycGlnNDBHU01wV0hGV0Y1WXpudHZ6UEpyLVlLTGNVdDZ6VTZHUVB5d0RiOUxjdFFTNzYyS05QdGVLNVRtSUJzWkRKMHhWNlcxYUktNEdzSVdTbEtLQlgtSzJ0OE5uU1E5NnE0X1o3c0xVNmlkRHYzTFdzNlE?oc=5",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "query": "sheriff drone purchase contract",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-d89f0157be",
@@ -831,7 +873,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "city county drone contract solicitation",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-c065666aab",
@@ -852,7 +894,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "BRINC drone law enforcement contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-923246a312",
@@ -873,7 +915,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-856a23613d",
@@ -894,7 +936,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "counter-UAS government contract award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-017a64b00c",
@@ -915,7 +957,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-394a16cd71",
@@ -936,7 +978,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Drone Dominance Program contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-49822931d0",
@@ -957,7 +999,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "UAS government solicitation contract award 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-ff37f70f2d",
@@ -978,28 +1020,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "sheriff drone purchase contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-62c774cd48",
-      "source": "news",
-      "source_label": "National Defense Magazine",
-      "type": "news_signal",
-      "title": "Pentagon's Vetted Drone Program Moves to New Agency - National Defense Magazine",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Mon, 26 Jan 2026 08:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNY0MtTWN6MENZNDFWQzUtcFFJd1RzMHVTT2tfa0hTODE1VFBoaUxuVldVRzRDN0YxX1FnejlTTE5SS3V1R29YYUlqLUR4akxTZFVZS2luV2E1aTlFN0Z6YVR6SlVVc3U0b2J3QUZzQjQ4OUV3czJ1RTVGczFoTU1wVnlXU2FvUzloMUFPZ1dUNklVcDZFelJ6cnM2UWZzMjBmeEVwNU5mdG5Ca2Fxa2tj?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": false,
-      "query": "Drone Dominance Program contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-61d1940202",
@@ -1020,7 +1041,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "public safety drone grant award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-1e55c7e9ff",
@@ -1041,7 +1062,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Drone Dominance Program contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-f402be9e39",
+      "source": "news",
+      "source_label": "Unmanned airspace",
+      "type": "news_signal",
+      "title": "US defence department seeks C-UAS for Spring 2026 demonstration - Unmanned airspace",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Mon, 16 Feb 2026 08:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNZ3kyRmVOQUV6RU1WMEZJZ1VkZUtyNWNUNmZmYnJuTzJianBLcDBnU0c0Z19nYkJlT1VqYXZocEtMV1BMRDFLam1nQUJmWHVZSWZrazdrWFFscWwwU19MUXZpQlEzSmNNdmIxUUY4VlhDUEJPbWhLeGpSekdyUHBsY3V4TWRxNTRHazQtVUh5SGVpVUx5UVpaLWpieExRQmYyMkQ5R0U5ekJrczVoOGU1aGdueFlxQ296OHVSZngxQXN2SDhuaGs0andSaw?oc=5",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "query": "fire department UAS procurement",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e3008a77ad",
@@ -1062,49 +1104,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "fire department UAS procurement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-f0599a4a28",
-      "source": "news",
-      "source_label": "FedScoop",
-      "type": "news_signal",
-      "title": "DHS launches drone-focused office ahead of World Cup, America250 - FedScoop",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Mon, 12 Jan 2026 08:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9vQlF0SV85M3laZFNkV0tvOHZPMGJKTmdkMU9ZU3hmTlRTYllEVHlFM01jRWMzX2hYbnRMYzNZZlVhNEZVaHBMMzVSZzBXeVVCRnpnNzk5VGpyaW1rX3BsSU5yTmdueV9pakd3RmU4dXZiQQ?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": false,
-      "query": "drone procurement RFP government agency 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-577a70d28e",
-      "source": "news",
-      "source_label": "Reuters",
-      "type": "news_signal",
-      "title": "Exclusive: US nears deal to resume intelligence operations in Mali - Reuters",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Mon, 09 Mar 2026 07:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcEIxQVV1c3hCV3dVaDk3WndqM256eEJ3bjhxNEFsb2p5Y3JNYVhhOW5ybkFYblA2eE1jNWlzWjEzVkxkMTBpZ2txQTFDTzQyZEotMWJZSlU5dHZqTXNPSDltVndyc3VBeHBfZjVpUExESlpJWF92LTVHTndjX2NyUzVQT3htMFJBb2ZuSHlDSGVpLVpBUzk0Zy1MNmhCZlU?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": false,
-      "query": "police department drone RFP 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-cffd77557e",
@@ -1125,7 +1125,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "BRINC drone law enforcement contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-efe90d3725",
@@ -1146,7 +1146,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "UAS government solicitation contract award 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a7c63f9226",
@@ -1167,7 +1167,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "sheriff drone purchase contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-af5de303e4",
@@ -1188,7 +1188,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "UAS government solicitation contract award 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-ab6ad436ba",
@@ -1209,7 +1209,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "drone procurement RFP government agency 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-7692e16c09",
+      "source": "news",
+      "source_label": "VVNG",
+      "type": "news_signal",
+      "title": "City of Victorville to Launch Drones as First Responder Program in 2026 - VVNG",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Fri, 31 Oct 2025 07:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNURnR3VTdy13TzlZR1BfSkozN1ljNnVBZzNpN3VPam1ibVNOWW9OZUhzd2E0RjB0bzZiRjNDRzB4MnN4eWx6OUFBU2ticVAxQTBDdHJrNGtpNVFvYjJBd2tndjloUE50aFRVRjFITDFfdFFmcVFrM1dyUWVRdEdycXM1X1ZlVVFYeGVIWVB0SXZ0ZDNGckRZ?oc=5",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "query": "BRINC drone law enforcement contract",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-f4e93347c6",
@@ -1230,70 +1251,49 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "UAS government solicitation contract award 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
-      "id": "sol-7d956fd830",
+      "id": "sol-1d2aeff283",
       "source": "news",
-      "source_label": "Metro Detroit News",
+      "source_label": "U.S. Department of War (.gov)",
       "type": "news_signal",
-      "title": "Drone From $775,000 Taylor Police Program Drops From Sky, Crashes During Emergency Response - Metro Detroit News",
+      "title": "Contracts for Feb. 27, 2026 - U.S. Department of War (.gov)",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
       "amount": null,
       "award_id": null,
-      "posted_date": "Fri, 30 Jan 2026 08:00:00 GMT",
+      "posted_date": "Fri, 27 Feb 2026 08:00:00 GMT",
       "deadline": null,
       "naics": null,
       "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPVU43QWRMN1JmXzkxY3lLRHdFbERPUS04TklYLUtBeDJYaTZSR0FLTnY4cmNiNGxBOENZNGVYa0NEUUJ4VlNOVm1zUTU5aTlSQkVPNWNhanpCeEktMGZzUzZRbWpHSGo0TVBkLVZyZHVWWi1GdUM2bU05TU85N29Xb3FIak94YlpnZF9iU1ZLUzdKM2dMalRyQ1AyTGtFM25pTU9xYW81cTNEbm83QkxpSi13d3Z6YXBoc2d2YVh3?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOTk4xTUU1RkZ2aUpHUXVRTlpwZHNiX1BBVWlBN0UyWkdweUtldXhnZy1JSnBIVjZUTzJaTzJ6bW5qbkVXQzlCcXBoZUJ1UER6V3VPSTRjVnpkQ1ZoNmhYVHJjdklIWkhzS3RDY04wTzVmNUI5cGp2VWlDYl93WTVqQk9pLXJRWDl5anVRdTJuOA?oc=5",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "query": "BRINC drone law enforcement contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "query": "UAS government solicitation contract award 2026",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
-      "id": "sol-009a10ca30",
+      "id": "sol-064b274790",
       "source": "news",
-      "source_label": "Task & Purpose",
+      "source_label": "DefenseScoop",
       "type": "news_signal",
-      "title": "Pentagon looks for vendors to supply pre-made bunkers within 30 days - Task & Purpose",
+      "title": "Pentagon\u2019s counter-drone task force launches commercial solutions opening - DefenseScoop",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
       "amount": null,
       "award_id": null,
-      "posted_date": "Fri, 27 Mar 2026 07:00:00 GMT",
+      "posted_date": "Fri, 27 Feb 2026 08:00:00 GMT",
       "deadline": null,
       "naics": null,
       "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5OYWFRZGNrQTdQb0tiQ3hBZk5lRjB0OXdJSHY4YU1uTWlPN20zWnhPTWpuMWxhdnpvdEVpUnVZVXBWM3AxSDhYTHdPeDVzM1lQZGgwNDFtYzZHYWd5Z3FvZDZiX3N2dFZxaHRLSw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNRF9UNkdncFFqSHU5ZmdvTENIV25EaHltekczdGJwaC1sYXZ1MS1lcDVTRFRZajlJMGItMTZYY1JyaVBkTnJRVm54TExNc3V3blRXLWxET0ptSGRDeEFhZm5XU3dvZldPS0ZaaFM0aWJGbnpnUEVoWS1WcjNJSWJqMVlNRXFvOGNWNUhDLVMtTkxxQXkxLWc?oc=5",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "drone procurement RFP government agency 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-25fe42a4ee",
-      "source": "news",
-      "source_label": "gov1.com",
-      "type": "news_signal",
-      "title": "Va. launches grant program to incentivize police purchases of American-made drones - gov1.com",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Fri, 27 Jun 2025 07:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOamRNTHVTTkxXNWtXSTg5ZUJldlZmVDd4eDBJX245d0pXOHpXU2w2RWJSdzVhUjZpeW1Ib1F1VHNmNldWUGNCTGpDY2dQcFZmQU5FOFhCV3VBTXpra2RuTURlbUd3NUJucTQtOXV6Y1NxcnB4aC1ESmh3UlZOTU9HTUY4ZF9GMWlUeVhGMjhSMGFfdXRCVXZuZUpHZENLNEdNWDVPdzFvWUdaTGtsSEN0TkJZcC0teWRLc3c?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": false,
-      "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b1f9ea5ba5",
@@ -1314,7 +1314,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "BRINC drone law enforcement contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-68123f7deb",
@@ -1335,7 +1335,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "police department drone RFP 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-f6f9f10cdf",
@@ -1356,49 +1356,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "UAS government solicitation contract award 2026",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
-      "id": "sol-96e5c93d13",
+      "id": "sol-1cb009f549",
       "source": "news",
-      "source_label": "U.S. Department of War (.gov)",
+      "source_label": "Grandview Independent",
       "type": "news_signal",
-      "title": "Joint Interagency Task Force Spearheads Contract, Unifies Drone Defenses - U.S. Department of War (.gov)",
+      "title": "On the agenda: Hilltop Mall redevelopment and police communication overhaul - Grandview Independent",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
       "amount": null,
       "award_id": null,
-      "posted_date": "Fri, 13 Mar 2026 07:00:00 GMT",
+      "posted_date": "Fri, 12 Sep 2025 07:00:00 GMT",
       "deadline": null,
       "naics": null,
       "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVHU3MUdYRTkxVTVBNzZRSmZVS0psb21HNTNES0tHNllGU2RQVXRPTThqeDlOUUxVNjlpRWhITVF6Z1p6NEJ0T0JxT1lFTjdGLTFiN0lKZS1mRFd2WGpmbzRidk1XbkVsQUhJXzU1TE9MQWc1Z1dsdTRPN3E4cjg3Q0VWS19Vc0puaTNWNmJTZ2ZxSURBX2JMWDV2eVdSOFVvMm5HZ3dNWXZ4WjRoRzhBa0VSSnpLci1lLU9BMFJHYlA5NHh2cXY1ZURFS2dyMUE?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPXzFYMDZrTTJqZklQS184R1JZYkxwZHRibE9hcE4xMkppWGR4OS1QZF9qSVBjV3ItYk5OY2hpSnBiVDZBZzFtcXRhcTZYbGt5Wi1ZYXFVWG5QMTZoLVJIeTByVE41VUNDZWVIbnUySHdKMTUzZ0NPMzdnd2pReUJHeE5pdzlmanJ5TTQyZ1lUUHNRaWhTejBFUFZQbXM2WHVzWWFhN05SNVMya3NfNnU4eEJB?oc=5",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "query": "fire department UAS procurement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-e9521fbda6",
-      "source": "news",
-      "source_label": "DefenseScoop",
-      "type": "news_signal",
-      "title": "Army launches drone marketplace commercial solutions opening - DefenseScoop",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Fri, 13 Mar 2026 07:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORTFINU11eEhSeVlTNENSbXZqdk92X20zUklRZENPSzZCaWpDMlBVSS0zV3RNUEJHcTFzSWNxT1JBRWRfMWxxeExVbnJMMVdyb05zWEcyS2pOcmpnZHA2enlOYjhCblZaQ2UyVzBNaTlJV2FaYUs5REJzRlQ2M0pjXzF5ZjA4N2RHazJsa190ODRzT2drYWc?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": false,
-      "query": "fire department UAS procurement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "query": "police department drone RFP 2026",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b102f44adc",
@@ -1419,7 +1398,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": false,
       "query": "Drone Dominance Program contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-69a317f496",
@@ -1439,7 +1418,7 @@
       "url": "https://www.usaspending.gov/award/2542222",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-329e3dd688",
@@ -1461,7 +1440,7 @@
       "url": "https://sam.gov/opp/f7e84283efb64dbfbf8436ea598fe3f0/view",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-f054eccb57",
@@ -1481,7 +1460,7 @@
       "url": "https://www.usaspending.gov/award/140P6426P0020",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e00bee5979",
@@ -1501,7 +1480,7 @@
       "url": "https://www.usaspending.gov/award/1232SA26P0178",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-78e55e157e",
@@ -1521,7 +1500,7 @@
       "url": "https://www.usaspending.gov/award/R35GM162595",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-f69bb342a5",
@@ -1541,7 +1520,7 @@
       "url": "https://www.usaspending.gov/award/1305M226P0052",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e8ed601ba3",
@@ -1561,7 +1540,7 @@
       "url": "https://www.usaspending.gov/award/20266801846137",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-9d13939a47",
@@ -1581,7 +1560,7 @@
       "url": "https://www.usaspending.gov/award/20266703746150",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-3a0b875d96",
@@ -1601,7 +1580,7 @@
       "url": "https://www.usaspending.gov/award/20266701345987",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b6849949fd",
@@ -1621,7 +1600,7 @@
       "url": "https://www.usaspending.gov/award/2544127",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-8b48274085",
@@ -1641,7 +1620,7 @@
       "url": "https://www.usaspending.gov/award/R21AI188198",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-88fcc668fc",
@@ -1661,7 +1640,7 @@
       "url": "https://www.usaspending.gov/award/20266701345973",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4778d328f4",
@@ -1681,7 +1660,7 @@
       "url": "https://www.usaspending.gov/award/70Z02326F93130006",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-123a91cd16",
@@ -1701,7 +1680,7 @@
       "url": "https://www.usaspending.gov/award/70RSAT26FR0000009",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-7fd67d5ca3",
@@ -1721,7 +1700,7 @@
       "url": "https://www.usaspending.gov/award/W911NF262A030",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-2dfa4cc4ba",
@@ -1741,7 +1720,7 @@
       "url": "https://www.usaspending.gov/award/20266702146039",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b4cb654c8f",
@@ -1761,7 +1740,7 @@
       "url": "https://www.usaspending.gov/award/2533390",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e6548db027",
@@ -1781,7 +1760,7 @@
       "url": "https://www.usaspending.gov/award/IA-2026-002",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-79647b0805",
@@ -1801,7 +1780,7 @@
       "url": "https://www.usaspending.gov/award/1333MF26P0011",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-bda1716611",
@@ -1821,7 +1800,7 @@
       "url": "https://www.usaspending.gov/award/U01HG014137",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-2aac7a3fed",
@@ -1841,7 +1820,7 @@
       "url": "https://www.usaspending.gov/award/G26AC00058",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-9297892cc8",
@@ -1861,7 +1840,7 @@
       "url": "https://www.usaspending.gov/award/20266703746001",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-cf5745f775",
@@ -1881,7 +1860,7 @@
       "url": "https://www.usaspending.gov/award/20266703746011",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-434aa71e7a",
@@ -1901,7 +1880,7 @@
       "url": "https://www.usaspending.gov/award/20266703845999",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b3165c99c1",
@@ -1921,7 +1900,7 @@
       "url": "https://www.usaspending.gov/award/20266702145831",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6ab018114a",
@@ -1941,7 +1920,7 @@
       "url": "https://www.usaspending.gov/award/20266701345809",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-25541e7b11",
@@ -1961,7 +1940,7 @@
       "url": "https://www.usaspending.gov/award/1305M226F0084",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b6079f4b74",
@@ -1981,7 +1960,7 @@
       "url": "https://www.usaspending.gov/award/19AQMM26C0257",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e2483bd28d",
@@ -2001,7 +1980,7 @@
       "url": "https://www.usaspending.gov/award/19AQMM26C0264",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6a67bcb956",
@@ -2021,7 +2000,7 @@
       "url": "https://www.usaspending.gov/award/FA865022F2611",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4899e664f2",
@@ -2041,7 +2020,7 @@
       "url": "https://www.usaspending.gov/award/20266801745860",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-91c7da650c",
@@ -2061,7 +2040,7 @@
       "url": "https://www.usaspending.gov/award/2531196",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-78b2d703dc",
@@ -2081,7 +2060,7 @@
       "url": "https://www.usaspending.gov/award/70Z02326F93130004",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-584b16b32e",
@@ -2101,7 +2080,7 @@
       "url": "https://www.usaspending.gov/award/70Z02326F93130003",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-dcdeed5e9e",
@@ -2121,7 +2100,7 @@
       "url": "https://www.usaspending.gov/award/693KA926F00015",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-31ef3735ef",
@@ -2141,7 +2120,7 @@
       "url": "https://www.usaspending.gov/award/2536549",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-299c9a997c",
@@ -2161,7 +2140,7 @@
       "url": "https://www.usaspending.gov/award/20266702145764",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-fc8efda801",
@@ -2181,7 +2160,7 @@
       "url": "https://www.usaspending.gov/award/20266702145864",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-bae3f361dc",
@@ -2201,7 +2180,7 @@
       "url": "https://www.usaspending.gov/award/140F1G26P0007",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a54c6e0af0",
@@ -2221,7 +2200,7 @@
       "url": "https://www.usaspending.gov/award/75F40126F80012",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e15cc29f58",
@@ -2241,7 +2220,7 @@
       "url": "https://www.usaspending.gov/award/140G0126P0034",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-f70eeb9d92",
@@ -2261,7 +2240,7 @@
       "url": "https://www.usaspending.gov/award/140D0426F0107",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-137cb8a4d7",
@@ -2281,7 +2260,7 @@
       "url": "https://www.usaspending.gov/award/20236702145990",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-ca75f2c332",
@@ -2301,7 +2280,7 @@
       "url": "https://www.usaspending.gov/award/693JJ22630000Y560AKTPF5146",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e41df48cc4",
@@ -2321,7 +2300,7 @@
       "url": "https://www.usaspending.gov/award/HR001126FE019",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-8a19bbd4b1",
@@ -2341,7 +2320,7 @@
       "url": "https://www.usaspending.gov/award/HR001126FE016",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-7e1fb99b35",
@@ -2361,7 +2340,7 @@
       "url": "https://www.usaspending.gov/award/75F40126F80006",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6b1a559b7c",
@@ -2381,7 +2360,7 @@
       "url": "https://www.usaspending.gov/award/20266702245763",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-922e019486",
@@ -2401,7 +2380,7 @@
       "url": "https://www.usaspending.gov/award/2033H626F00038",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4b2828ab98",
@@ -2421,7 +2400,7 @@
       "url": "https://www.usaspending.gov/award/15F06726P0000116",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-7ba5c6f1e2",
@@ -2441,7 +2420,7 @@
       "url": "https://www.usaspending.gov/award/15BPCC26C00000013",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-d8b7d167fe",
@@ -2461,7 +2440,7 @@
       "url": "https://www.usaspending.gov/award/NI261445XXXXG012",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-3b55b45cec",
@@ -2481,7 +2460,7 @@
       "url": "https://www.usaspending.gov/award/NI26HFPXXXXXG025",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-144d2d2418",
@@ -2501,7 +2480,7 @@
       "url": "https://www.usaspending.gov/award/NI261445XXXXG009",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-987ed458e0",
@@ -2521,7 +2500,7 @@
       "url": "https://www.usaspending.gov/award/NI261444XXXXG019",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6f60f64915",
@@ -2541,7 +2520,7 @@
       "url": "https://www.usaspending.gov/award/NI261444XXXXG011",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-11f2a4497a",
@@ -2561,7 +2540,7 @@
       "url": "https://www.usaspending.gov/award/NI261444XXXXG018",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-fca7b0248f",
@@ -2581,7 +2560,7 @@
       "url": "https://www.usaspending.gov/award/NI261444XXXXG009",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a9e076dbec",
@@ -2601,7 +2580,7 @@
       "url": "https://www.usaspending.gov/award/NI26HFPXXXXXG049",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-7869a5466b",
@@ -2621,7 +2600,7 @@
       "url": "https://www.usaspending.gov/award/NI261445XXXXG018",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-34d25843c0",
@@ -2641,7 +2620,7 @@
       "url": "https://www.usaspending.gov/award/NI261445XXXXG008",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-171110d816",
@@ -2661,7 +2640,7 @@
       "url": "https://www.usaspending.gov/award/2500135",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-806b839557",
@@ -2681,7 +2660,7 @@
       "url": "https://www.usaspending.gov/award/NI26HMFPXXXXG011",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-c8a7e827f0",
@@ -2701,7 +2680,7 @@
       "url": "https://www.usaspending.gov/award/AP26PPQS&T00C001",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-76ab03ab50",
@@ -2721,7 +2700,7 @@
       "url": "https://www.usaspending.gov/award/NI26MSCFRXXXG069",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-f925024f40",
@@ -2741,7 +2720,7 @@
       "url": "https://www.usaspending.gov/award/NI26MSCFRXXXG061",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-af7bcf3125",
@@ -2761,7 +2740,7 @@
       "url": "https://www.usaspending.gov/award/2607464",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-72942902a0",
@@ -2781,7 +2760,7 @@
       "url": "https://www.usaspending.gov/award/NI26SLBCXXXXG019",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b88cd36dba",
@@ -2801,7 +2780,7 @@
       "url": "https://www.usaspending.gov/award/D25AC00377",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-9131865556",
@@ -2821,7 +2800,7 @@
       "url": "https://www.usaspending.gov/award/80NSSC25C0128",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-3ec0e3e6bf",
@@ -2841,7 +2820,7 @@
       "url": "https://www.usaspending.gov/award/693JJ22630000Y550IN26P6150",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-f659432931",
@@ -2861,7 +2840,7 @@
       "url": "https://www.usaspending.gov/award/W15QKN25CA020",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-1e17500f27",
@@ -2881,7 +2860,7 @@
       "url": "https://www.usaspending.gov/award/19AQMM25F1638",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-aeaad8d243",
@@ -2901,7 +2880,7 @@
       "url": "https://www.usaspending.gov/award/1305M225F0288",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a1ecca31ca",
@@ -2921,7 +2900,7 @@
       "url": "https://www.usaspending.gov/award/90CGNS0007",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-26ae4b01ac",
@@ -2941,7 +2920,7 @@
       "url": "https://www.usaspending.gov/award/FA864925P0432",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-da0765a518",
@@ -2961,7 +2940,7 @@
       "url": "https://www.usaspending.gov/award/80NSSC25C0467",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-59ad41f5a5",
@@ -2981,7 +2960,7 @@
       "url": "https://www.usaspending.gov/award/19AQMM25C1050",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6bf6286e81",
@@ -3001,7 +2980,7 @@
       "url": "https://www.usaspending.gov/award/N0001925F0032",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a88e07acff",
@@ -3021,7 +3000,7 @@
       "url": "https://www.usaspending.gov/award/15JPSS25F00000608",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e2416218e0",
@@ -3041,7 +3020,7 @@
       "url": "https://www.usaspending.gov/award/90ZU0641",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-78dbc52cc4",
@@ -3061,7 +3040,7 @@
       "url": "https://www.usaspending.gov/award/FA945125FX008",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-021f26e486",
@@ -3081,7 +3060,7 @@
       "url": "https://www.usaspending.gov/award/FA864925P0228",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e83278ba57",
@@ -3101,7 +3080,7 @@
       "url": "https://www.usaspending.gov/award/2421881",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-f58fe2a7f5",
@@ -3121,7 +3100,7 @@
       "url": "https://www.usaspending.gov/award/F30CA298183",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-099a250442",
@@ -3141,7 +3120,7 @@
       "url": "https://www.usaspending.gov/award/NA25NOSX469G0018",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-75e024fb74",
@@ -3161,7 +3140,7 @@
       "url": "https://www.usaspending.gov/award/NA25NOSX469C0016",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4ca30489a4",
@@ -3181,7 +3160,7 @@
       "url": "https://www.usaspending.gov/award/K99GM157498",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-3b537cf865",
@@ -3201,7 +3180,7 @@
       "url": "https://www.usaspending.gov/award/F31ES036884",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-518b72329f",
@@ -3221,7 +3200,7 @@
       "url": "https://www.usaspending.gov/award/693JJ22630000L23ETX2025341",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-9c16a7d017",
@@ -3241,7 +3220,7 @@
       "url": "https://www.usaspending.gov/award/CE154360",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-0cd8044184",
@@ -3261,7 +3240,7 @@
       "url": "https://www.usaspending.gov/award/L24AC00627",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-08ae5f5af7",
@@ -3281,7 +3260,7 @@
       "url": "https://www.usaspending.gov/award/R56AG089926",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-8a71008fd3",
@@ -3301,7 +3280,7 @@
       "url": "https://www.usaspending.gov/award/2411377",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-c56c02f505",
@@ -3321,7 +3300,7 @@
       "url": "https://www.usaspending.gov/award/W911NF2410251",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-864c58f004",
@@ -3341,7 +3320,7 @@
       "url": "https://www.usaspending.gov/award/N0001924F0006",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-ac5bde1ff6",
@@ -3361,7 +3340,7 @@
       "url": "https://www.usaspending.gov/award/15M10224FA4700328",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4dc60c5dc8",
@@ -3381,7 +3360,7 @@
       "url": "https://www.usaspending.gov/award/UG3TR004797",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-0301696947",
@@ -3401,7 +3380,7 @@
       "url": "https://www.usaspending.gov/award/N0017324F2019",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-52f65f745f",
@@ -3421,7 +3400,7 @@
       "url": "https://www.usaspending.gov/award/68HERC24F0416",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6b765d706c",
@@ -3441,7 +3420,7 @@
       "url": "https://www.usaspending.gov/award/00A01546",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-f7794b764e",
@@ -3461,7 +3440,7 @@
       "url": "https://www.usaspending.gov/award/NA24NOSX420C0038",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-67078c2c7e",
@@ -3481,7 +3460,7 @@
       "url": "https://www.usaspending.gov/award/12FPC324F0158",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-71a1828bf0",
@@ -3501,7 +3480,7 @@
       "url": "https://www.usaspending.gov/award/FA864924P0419",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-325439decb",
@@ -3521,7 +3500,7 @@
       "url": "https://www.usaspending.gov/award/68HE0B24F0105",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-3009500e3d",
@@ -3541,7 +3520,7 @@
       "url": "https://www.usaspending.gov/award/2032H524F00236",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-502c9ba810",
@@ -3561,7 +3540,7 @@
       "url": "https://www.usaspending.gov/award/N000142412302",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-be264a5fb8",
@@ -3581,7 +3560,7 @@
       "url": "https://www.usaspending.gov/award/R43AI184319",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4f3d86134f",
@@ -3601,7 +3580,27 @@
       "url": "https://www.usaspending.gov/award/P20GM152281",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-d7fe6a3a34",
+      "source": "usaspending",
+      "source_label": "USAspending.gov",
+      "type": "award",
+      "title": "OGI INSPECTOR PLUS PACKAGE MULTI-SENSOR UAV PAYLOAD MIRAGE HC OPTICAL GAS IMAGING CAMERA",
+      "agency": "Department of Energy",
+      "sub_agency": "Department of Energy",
+      "recipient": "INFRARED CAMERAS INC",
+      "amount": 101144.0,
+      "award_id": "89243324PFE000724",
+      "posted_date": "2024-02-27",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://www.usaspending.gov/award/89243324PFE000724",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-7ef6abcaa0",
@@ -3621,7 +3620,7 @@
       "url": "https://www.usaspending.gov/award/15JPSS24F00000206",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-8d69720583",
@@ -3641,7 +3640,7 @@
       "url": "https://www.usaspending.gov/award/70NANB24H009",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e50034becb",
@@ -3661,7 +3660,7 @@
       "url": "https://www.usaspending.gov/award/R21GM152950",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-ccfb6a7b3c",
@@ -3681,7 +3680,7 @@
       "url": "https://www.usaspending.gov/award/R01DK137844",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a855ac00c3",
@@ -3701,7 +3700,7 @@
       "url": "https://www.usaspending.gov/award/20226702141478",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a95d63872a",
@@ -3721,7 +3720,7 @@
       "url": "https://www.usaspending.gov/award/G23AC00599",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-5175f8a707",
@@ -3741,7 +3740,7 @@
       "url": "https://www.usaspending.gov/award/NU2GGH002506",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b5fd132090",
@@ -3761,7 +3760,7 @@
       "url": "https://www.usaspending.gov/award/H79SM089075",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-833e5ddee5",
@@ -3781,7 +3780,7 @@
       "url": "https://www.usaspending.gov/award/H79TI085850",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-cad2072ddb",
@@ -3801,7 +3800,7 @@
       "url": "https://www.usaspending.gov/award/70CTD023FR0000136",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-492118f544",
@@ -3821,7 +3820,7 @@
       "url": "https://www.usaspending.gov/award/75P00123F80218",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4a743ea2f9",
@@ -3841,7 +3840,7 @@
       "url": "https://www.usaspending.gov/award/H79TI086674",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-adadfa561c",
@@ -3861,7 +3860,7 @@
       "url": "https://www.usaspending.gov/award/W911NF2310293",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-cad3877f8c",
@@ -3881,7 +3880,7 @@
       "url": "https://www.usaspending.gov/award/69A3552341057",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-dbaaceef10",
@@ -3901,7 +3900,27 @@
       "url": "https://www.usaspending.gov/award/AP23WSNWRC00C128",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-c15398d735",
+      "source": "usaspending",
+      "source_label": "USAspending.gov",
+      "type": "award",
+      "title": "SMALL BUSINESS INNOVATION AND RESEARCH ADVANCING DRONE TECHNOLOGY FOR STRATFI SBIR PHASE II",
+      "agency": "Department of Defense",
+      "sub_agency": "Department of the Air Force",
+      "recipient": "ASYLON INC",
+      "amount": 4599818.86,
+      "award_id": "FA462523C0025",
+      "posted_date": "2023-09-01",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://www.usaspending.gov/award/FA462523C0025",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-283037e205",
@@ -3921,7 +3940,7 @@
       "url": "https://www.usaspending.gov/award/20236901841016",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-3ed5c9d7cd",
@@ -3941,7 +3960,7 @@
       "url": "https://www.usaspending.gov/award/AP23WSNWRC00C115",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-c0395f8da0",
@@ -3961,7 +3980,7 @@
       "url": "https://www.usaspending.gov/award/G23AC00437",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e5ce6bea30",
@@ -3981,7 +4000,7 @@
       "url": "https://www.usaspending.gov/award/L23AC00417",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-1c9f3c4ef2",
@@ -4001,7 +4020,7 @@
       "url": "https://www.usaspending.gov/award/20233882139924",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-31e73cfb1f",
@@ -4021,7 +4040,7 @@
       "url": "https://www.usaspending.gov/award/AP23PPQS&T00C106",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-1a269b0e54",
@@ -4041,7 +4060,7 @@
       "url": "https://www.usaspending.gov/award/80NSSC23CA163",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-3929399821",
@@ -4061,7 +4080,27 @@
       "url": "https://www.usaspending.gov/award/N000142312502",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-72285b2d03",
+      "source": "usaspending",
+      "source_label": "USAspending.gov",
+      "type": "award",
+      "title": "MQ-9 REAPER AFSOC RPA CONTROL SUITE (ARCS) - VEHICLE SPECIFIC MODULE (VSM)",
+      "agency": "Department of Defense",
+      "sub_agency": "Department of the Air Force",
+      "recipient": "GENERAL ATOMICS AERONAUTICAL SYSTEMS, INC.",
+      "amount": 15111617.0,
+      "award_id": "FA868923FB002",
+      "posted_date": "2023-05-25",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://www.usaspending.gov/award/FA868923FB002",
+      "gray_zone_flag": false,
+      "blue_uas_flag": false,
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-08d1ccbb13",
@@ -4081,7 +4120,7 @@
       "url": "https://www.usaspending.gov/award/DEAR0001655",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b90bcf6f1e",
@@ -4101,7 +4140,7 @@
       "url": "https://www.usaspending.gov/award/R01ES035072",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-142f09bbe4",
@@ -4121,7 +4160,7 @@
       "url": "https://www.usaspending.gov/award/20233882139960",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-bcf1d37302",
@@ -4141,7 +4180,7 @@
       "url": "https://www.usaspending.gov/award/R01EB034377",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-dd5a2b7735",
@@ -4161,7 +4200,7 @@
       "url": "https://www.usaspending.gov/award/20233882139970",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-16e7759781",
@@ -4181,7 +4220,7 @@
       "url": "https://www.usaspending.gov/award/NA23OAR4170174",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-61598cda5f",
@@ -4201,7 +4240,7 @@
       "url": "https://www.usaspending.gov/award/80NSSC23M0084",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e4d69dca74",
@@ -4221,7 +4260,7 @@
       "url": "https://www.usaspending.gov/award/S10OD032166",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-06b2e32e97",
@@ -4241,7 +4280,7 @@
       "url": "https://www.usaspending.gov/award/U01DK134966",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-1381a0193c",
@@ -4261,7 +4300,7 @@
       "url": "https://www.usaspending.gov/award/R01CA276683",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-8f99b50d21",
@@ -4281,7 +4320,7 @@
       "url": "https://www.usaspending.gov/award/80NSSC23K0717",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e5784353e9",
@@ -4301,7 +4340,7 @@
       "url": "https://www.usaspending.gov/award/80NSSC23K0716",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-d995b0cc93",
@@ -4321,7 +4360,7 @@
       "url": "https://www.usaspending.gov/award/80NSSC23K0577",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-8aacc64017",
@@ -4341,7 +4380,7 @@
       "url": "https://www.usaspending.gov/award/N0001923C0021",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-ec8b3237e1",
@@ -4361,7 +4400,7 @@
       "url": "https://www.usaspending.gov/award/2222426",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-0892bfac2b",
@@ -4381,7 +4420,7 @@
       "url": "https://www.usaspending.gov/award/HR001123C0050",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-cc6dc4dec1",
@@ -4401,7 +4440,7 @@
       "url": "https://www.usaspending.gov/award/2229562",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-2db6402959",
@@ -4421,7 +4460,7 @@
       "url": "https://www.usaspending.gov/award/D22AP00259",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-bff05f263a",
@@ -4441,7 +4480,7 @@
       "url": "https://www.usaspending.gov/award/U7A46846",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6f49ea24ea",
@@ -4461,7 +4500,7 @@
       "url": "https://www.usaspending.gov/award/U7A46847",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-2e0fd197c7",
@@ -4481,7 +4520,7 @@
       "url": "https://www.usaspending.gov/award/T2946740",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b2ee80e247",
@@ -4501,7 +4540,7 @@
       "url": "https://www.usaspending.gov/award/6982AF22P000032",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-55c9d6043b",
@@ -4521,7 +4560,7 @@
       "url": "https://www.usaspending.gov/award/U24HL157310",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-39d9e8ee0c",
@@ -4541,7 +4580,7 @@
       "url": "https://www.usaspending.gov/award/NA22OAR4170553",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-26eab7b307",
@@ -4561,7 +4600,7 @@
       "url": "https://www.usaspending.gov/award/NR223A750001G044",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-86a3fefe3d",
@@ -4581,7 +4620,7 @@
       "url": "https://www.usaspending.gov/award/AP388982260A42",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-fe83d927a9",
@@ -4601,7 +4640,7 @@
       "url": "https://www.usaspending.gov/award/70NANB22H070",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-0fbd715569",
@@ -4621,7 +4660,7 @@
       "url": "https://www.usaspending.gov/award/20223882137261",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-89adc3a6c6",
@@ -4641,7 +4680,7 @@
       "url": "https://www.usaspending.gov/award/20223882137338",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-29a89bcb3b",
@@ -4661,7 +4700,7 @@
       "url": "https://www.usaspending.gov/award/T34GM141009",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-87c8e667a6",
@@ -4681,7 +4720,7 @@
       "url": "https://www.usaspending.gov/award/20226702136856",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-ae04b0eeb3",
@@ -4701,7 +4740,7 @@
       "url": "https://www.usaspending.gov/award/2119689",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-854298fd8f",
@@ -4721,7 +4760,7 @@
       "url": "https://www.usaspending.gov/award/15JPSS22F00000171",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-0a7ea2aef0",
@@ -4741,7 +4780,7 @@
       "url": "https://www.usaspending.gov/award/R35GM144307",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-d29d6d6ea6",
@@ -4761,7 +4800,7 @@
       "url": "https://www.usaspending.gov/award/20226801336439",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-313c461772",
@@ -4781,7 +4820,7 @@
       "url": "https://www.usaspending.gov/award/20226702336150",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-d26b07dd63",
@@ -4801,7 +4840,7 @@
       "url": "https://www.usaspending.gov/award/FA807522F0011",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-8f8081c646",
@@ -4821,7 +4860,7 @@
       "url": "https://www.usaspending.gov/award/20226901836097",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-719d80449a",
@@ -4841,7 +4880,7 @@
       "url": "https://www.usaspending.gov/award/U01DA052174",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-9c26b9f7f4",
@@ -4861,7 +4900,7 @@
       "url": "https://www.usaspending.gov/award/H79TI084316",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b93e575d90",
@@ -4881,7 +4920,7 @@
       "url": "https://www.usaspending.gov/award/H79TI083571",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-58ad50602f",
@@ -4901,7 +4940,7 @@
       "url": "https://www.usaspending.gov/award/H79SM084847",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-52e539a7dd",
@@ -4921,7 +4960,7 @@
       "url": "https://www.usaspending.gov/award/FA875021F1012",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-2bc25502b2",
@@ -4941,7 +4980,7 @@
       "url": "https://www.usaspending.gov/award/1332KP21PNAAA0050",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-de5664f687",
@@ -4961,7 +5000,7 @@
       "url": "https://www.usaspending.gov/award/20213862435737",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-84d6c31c00",
@@ -4981,7 +5020,7 @@
       "url": "https://www.usaspending.gov/award/80GSFC21CA020",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-9a982cd079",
@@ -5001,7 +5040,7 @@
       "url": "https://www.usaspending.gov/award/R44AI157508",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-13788142ff",
@@ -5021,7 +5060,7 @@
       "url": "https://www.usaspending.gov/award/RF1MH126731",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-fc5d2f08de",
@@ -5041,7 +5080,7 @@
       "url": "https://www.usaspending.gov/award/K01AI163412",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-3c85df7589",
@@ -5061,7 +5100,7 @@
       "url": "https://www.usaspending.gov/award/2032H521F00495",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6e8952b27f",
@@ -5081,7 +5120,7 @@
       "url": "https://www.usaspending.gov/award/R24OD031447",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-5568ee1a30",
@@ -5101,7 +5140,7 @@
       "url": "https://www.usaspending.gov/award/R35GM140823",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-9515dcc3eb",
@@ -5121,7 +5160,7 @@
       "url": "https://www.usaspending.gov/award/20216702134251",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-03529f171a",
@@ -5141,7 +5180,7 @@
       "url": "https://www.usaspending.gov/award/R01AG071326",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-fb25d63c79",
@@ -5161,7 +5200,7 @@
       "url": "https://www.usaspending.gov/award/U54OD030167",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-82d530aa4c",
@@ -5181,7 +5220,7 @@
       "url": "https://www.usaspending.gov/award/20206801332371",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-90d757181d",
@@ -5201,7 +5240,7 @@
       "url": "https://www.usaspending.gov/award/20207001732737",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-918e886cc0",
@@ -5221,7 +5260,7 @@
       "url": "https://www.usaspending.gov/award/U54DK126087",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4916de234e",
@@ -5241,7 +5280,7 @@
       "url": "https://www.usaspending.gov/award/R01GM139274",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-c911da512f",
@@ -5261,7 +5300,7 @@
       "url": "https://www.usaspending.gov/award/NU58DP006775",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6f67bd218e",
@@ -5281,7 +5320,7 @@
       "url": "https://www.usaspending.gov/award/15-C-UAS-NCSU",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-9f63158c7c",
@@ -5301,7 +5340,7 @@
       "url": "https://www.usaspending.gov/award/15-C-UAS-ORSU",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-db07057f13",
@@ -5321,7 +5360,7 @@
       "url": "https://www.usaspending.gov/award/R01CA234266",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-6106029edc",
@@ -5341,7 +5380,7 @@
       "url": "https://www.usaspending.gov/award/R44OD026185",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-8bfaf02af8",
@@ -5361,7 +5400,7 @@
       "url": "https://www.usaspending.gov/award/20196800629330",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-cd9f146cfb",
@@ -5381,7 +5420,7 @@
       "url": "https://www.usaspending.gov/award/U01HL146192",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e8da708623",
@@ -5401,7 +5440,7 @@
       "url": "https://www.usaspending.gov/award/20194520029216",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-253eee542f",
@@ -5421,7 +5460,7 @@
       "url": "https://www.usaspending.gov/award/80NM0018F0795",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-862fbfca44",
@@ -5441,7 +5480,7 @@
       "url": "https://www.usaspending.gov/award/1824713",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-773dbacf77",
@@ -5461,7 +5500,7 @@
       "url": "https://www.usaspending.gov/award/70Z02318C2DAU0400",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b473771269",
@@ -5481,7 +5520,7 @@
       "url": "https://www.usaspending.gov/award/17VSAPR002",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-be8db0a36f",
@@ -5501,7 +5540,7 @@
       "url": "https://www.usaspending.gov/award/15-C-UAS-UAH",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-84abeeae8c",
@@ -5521,7 +5560,7 @@
       "url": "https://www.usaspending.gov/award/T32HL105349",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-bb07b44232",
@@ -5541,7 +5580,7 @@
       "url": "https://www.usaspending.gov/award/P30DK079626",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-bbd5c29679",
@@ -5561,7 +5600,7 @@
       "url": "https://www.usaspending.gov/award/T32DK062710",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4fd0fb1403",
@@ -5581,7 +5620,7 @@
       "url": "https://www.usaspending.gov/award/P30DK056336",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-40df37850d",
@@ -5601,7 +5640,7 @@
       "url": "https://www.usaspending.gov/award/693JJ22530000Y560IARE24010",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-10faef3289",
@@ -5621,7 +5660,7 @@
       "url": "https://www.usaspending.gov/award/181801845Z560",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-2ec0a17d36",
@@ -5641,7 +5680,7 @@
       "url": "https://www.usaspending.gov/award/693JJ22430000Y240TX2024079",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-65120b8e9c",
@@ -5661,7 +5700,7 @@
       "url": "https://www.usaspending.gov/award/693JJ22430000Y233TX2024508",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4bddeb857a",
@@ -5681,7 +5720,7 @@
       "url": "https://www.usaspending.gov/award/693JJ22430000Y550MAUPW2412",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4c6fc096d8",
@@ -5701,7 +5740,7 @@
       "url": "https://www.usaspending.gov/award/693JJ22430000Y550MAUPW2413",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a56a26ddc2",
@@ -5721,28 +5760,7 @@
       "url": "https://www.usaspending.gov/award/693JJ22430000Y550MAUPW2414",
       "gray_zone_flag": false,
       "blue_uas_flag": false,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-a6c7606bac",
-      "source": "news",
-      "source_label": "DroneXL.co",
-      "type": "news_signal",
-      "title": "BRINC Teases Next-gen DFR Drone With 'Command The Night' Reveal Set For March 24 - DroneXL.co",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Tue, 24 Feb 2026 08:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBIeTlxeGJmbXVCN3RsWl9fdS1XWlE4WEZ2NGRNVmJqbnlJVmtLOF9NZnJRVkZpYzBkdl9YdHhqbW9KQkpZeVJWQ1BRc3FxTzY5bnpVa3g0UkNhMk1HYkVQRXNzSDhWZW4xdjlXTXN3OWRSYWFTWmttSXloSQ?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": true,
-      "query": "BRINC drone law enforcement contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-0d13a69b13",
@@ -5763,28 +5781,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": true,
       "query": "Skydio government contract award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
-      "id": "sol-6085cabed5",
+      "id": "sol-db33d9627a",
       "source": "news",
       "source_label": "PR Newswire",
       "type": "news_signal",
-      "title": "U.S. Army Awards $7.9M Contract to Skydio for Short Range Reconnaissance Tranche 2 - PR Newswire",
+      "title": "U.S. Air Force Awards Skydio Initial Contracts to Bring Advanced Autonomy to Mission-Critical USAF Specialties - PR Newswire",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
       "amount": null,
       "award_id": null,
-      "posted_date": "Tue, 14 Oct 2025 07:00:00 GMT",
+      "posted_date": "Thu, 13 Nov 2025 08:00:00 GMT",
       "deadline": null,
       "naics": null,
       "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNd2hNOFRWd0pnYUpfSXlmUXR1eDI3dVdzY3V6M0Ezclg0OVplMUtEbkREanZObVBkbXdBZHZZdU1yTHVMRTl3bDRlbXpua0trUFkwdlZvMmp5akhVWUstWjBvakN4amNCaG5CckUtTktjeEdnSDExLWlyWVlUVHR3UnB0aTdRZkFza0N6LUtadzNiYVVaeDlWSUxIWDI1VVV4NFROMDNZU1ljdHo3M3lLOTgtU1NBYzFnb2MtOFl4Zk12Ym9yUk14THRNenJ3ems1b0E?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPd21pWUc3cm1uTnppeGE4cl9VQUxTUk1rVkxIbm9TS1k0ZmhSV21yR0FUTHJ4UUpkVjY1MjdtTDlOVm9VR0dvOWZjSUowUWM1MWpDa0NSemh0QktrVjhTWXFlMm1QejM3ay1hTGl5WFZlVHNEanRZeUQ2VU5LVW5MYm1LUk1yQl81Z2VnSjJmTlVUOC1vakNGTmpMVlQ5eHVvSXF6Ri1pbUxkVFlMajIyN1I4UGNVbm5RZEhhNUJmbGpSV0VQWjB5NWd3bTkxVENBMjlxSXpEZzRaekh3T2YzRVZ2QjJ3cHkyRUdINnltTnNhcW9Tazkw?oc=5",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
       "query": "Skydio government contract award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-641862628e",
@@ -5805,7 +5823,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": true,
       "query": "Skydio government contract award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-d762bcb8a7",
+      "source": "news",
+      "source_label": "The Defence Blog",
+      "type": "news_signal",
+      "title": "U.S. Army buys 2,500 reconnaissance drones from Skydio - The Defence Blog",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Sun, 22 Mar 2026 07:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeTFweUpLM2Y4aUJRMDk2VDhybU9qcDYteDZIZzA2VjRZTS0wVWFMUXpsZHF6QVo1YzVyZGFpTlZPcGhfdXVldkJOai1UMk5FU1lsVUpURHJtdjN0SEREbW5Kalk1WDJNZ01sUDR6dmNMNW1OaDdzb1czZ3l2TnZfWTV0NnbSAYoBQVVfeXFMTXBMZDhrbkkwaGRnc0xfaXptd05PSFA0bGlFNGFNb2g4SGFXR3IxQmdyd3dKVldYT2JGSHhPaDR1ekF6N3RQaUktYkEyT3JoR0NSYzNEeUVYWXg4bldSVXVtb21DS3F3X05GVVJsTWtFS052dkVzdTVGYTAwdThQQ1BTZS0wa2VOQVpR?oc=5",
+      "gray_zone_flag": false,
+      "blue_uas_flag": true,
+      "query": "Skydio government contract award",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-3c602dd886",
@@ -5826,7 +5865,28 @@
       "gray_zone_flag": false,
       "blue_uas_flag": true,
       "query": "counter-UAS government contract award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-596e8b4e1e",
+      "source": "news",
+      "source_label": "DroneXL.co",
+      "type": "news_signal",
+      "title": "Victorville Becomes First Contract City To Launch BRINC Drone First Responder Program With $832K State-Funded Deal - DroneXL.co",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Sat, 01 Nov 2025 07:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPTURnaDNicWRvTHllLTgyd25VUGloQlh1Zndza1FHQnd6YnlvMjlPeEV0OWdGRFVtZ2p5QW1PbzZ6MERveXdhaTk3ci1NUDRicTc2WnQ4WWlFMVJ0d1VfS0J4LU92cGc5eVdSbFJTbk1tRHhqdHRMemhtMWdkQmRsNDd5d2c?oc=5",
+      "gray_zone_flag": false,
+      "blue_uas_flag": true,
+      "query": "BRINC drone law enforcement contract",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-f748d16382",
@@ -5847,28 +5907,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": true,
       "query": "counter-UAS government contract award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
-    },
-    {
-      "id": "sol-a37f0ec707",
-      "source": "news",
-      "source_label": "ExecutiveBiz",
-      "type": "news_signal",
-      "title": "Skydio Secures $74M State Department Contract for Drones - ExecutiveBiz",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Mon, 16 Jun 2025 07:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQbW9ZTDFLdW53THdtSE1ZV3FFVnNacTl5Q05MX2FvYmVTQlJaUzJLOXZ3ZUl2TnZLT1BwS3Fka0tRODQ5Z2Q3d1lVaVN3NXlmNXpBZHQ2U2RiczVKQzNObVd6STNfMWdiU01GdUdvaldSWjhvZ1BNSG5FbzNSQjVFVi1ZT0Fob00?oc=5",
-      "gray_zone_flag": false,
-      "blue_uas_flag": true,
-      "query": "Skydio government contract award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-1994babe08",
@@ -5889,7 +5928,7 @@
       "gray_zone_flag": false,
       "blue_uas_flag": true,
       "query": "Skydio government contract award",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4946e68546",
@@ -5909,7 +5948,7 @@
       "url": "https://www.usaspending.gov/award/12639526F0393",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-7f06341f7b",
@@ -5929,7 +5968,7 @@
       "url": "https://www.usaspending.gov/award/140D0426F0365",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-309617428d",
@@ -5949,7 +5988,7 @@
       "url": "https://www.usaspending.gov/award/140D0426F0309",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b20da16167",
@@ -5969,7 +6008,7 @@
       "url": "https://www.usaspending.gov/award/140D0426F0169",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-237bc26fe9",
@@ -5989,7 +6028,7 @@
       "url": "https://www.usaspending.gov/award/140D0426F0140",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-d7604cbc8d",
@@ -6009,7 +6048,7 @@
       "url": "https://www.usaspending.gov/award/140D0426F0134",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-3e9439be88",
@@ -6029,7 +6068,7 @@
       "url": "https://www.usaspending.gov/award/140D0426F0062",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-b8ad7c6654",
@@ -6049,7 +6088,7 @@
       "url": "https://www.usaspending.gov/award/89233126FNA400748",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-8c63c4a7ef",
@@ -6069,7 +6108,7 @@
       "url": "https://www.usaspending.gov/award/W911S225FA252",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-be9952f72a",
@@ -6089,7 +6128,7 @@
       "url": "https://www.usaspending.gov/award/FA480924P0120",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-e3a872bc54",
@@ -6109,7 +6148,7 @@
       "url": "https://www.usaspending.gov/award/89233124PNA000189",
       "gray_zone_flag": false,
       "blue_uas_flag": true,
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4540d0240a",
@@ -6130,7 +6169,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-9bf3e3257e",
@@ -6151,7 +6190,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a5cfd02f1e",
@@ -6172,7 +6211,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-a82dd10c0c",
@@ -6193,7 +6232,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-584291afdf",
@@ -6214,7 +6253,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-4fe2f14368",
@@ -6235,7 +6274,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-1ccc75ae24",
@@ -6256,7 +6295,28 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
+    },
+    {
+      "id": "sol-4a989b3cf9",
+      "source": "news",
+      "source_label": "DroneXL.co",
+      "type": "news_signal",
+      "title": "Why The \"Pain\" Of A DJI Drone Ban Means Lives Lost, Not Just Lost Profits - DroneXL.co",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Sat, 22 Nov 2025 08:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1Ra1RBMlNaWm1nOHBsWWtMd2V3RVJtUE5ERjBaWXdJNG1DZjlwaFpTX1hQYkJpUDhfZkl5Si1EUnBpdlhmanBzbXIta0h5OGl2TWhYWU9mRjVpLVpBYjgwazE0WlQwUzFqcUdMeDhJNHRFbHFJd2lUd3kyc2E2Zw?oc=5",
+      "gray_zone_flag": true,
+      "blue_uas_flag": false,
+      "query": "DJI ban government procurement alternative",
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-ca661cc52a",
@@ -6277,7 +6337,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-52eecf0ec4",
@@ -6298,7 +6358,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-0947b3c182",
@@ -6319,7 +6379,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     },
     {
       "id": "sol-5c4685b5c6",
@@ -6340,7 +6400,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-04-15T17:59:48.585473+00:00"
+      "scraped_at": "2026-04-16T08:26:38.907948+00:00"
     }
   ]
 }

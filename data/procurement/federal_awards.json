@@ -2193,6 +2193,22 @@
       "generated_internal_id": "CONT_AWD_FA865022F2611_9700_FA865021D2602_9700"
     },
     {
+      "internal_id": 298121164,
+      "Award ID": "FA462523C0025",
+      "Recipient Name": "ASYLON INC",
+      "Award Amount": 4599818.86,
+      "Total Outlays": 0.0,
+      "Description": "SMALL BUSINESS INNOVATION AND RESEARCH ADVANCING DRONE TECHNOLOGY FOR STRATFI SBIR PHASE II",
+      "Start Date": "2023-09-01",
+      "End Date": "2027-08-31",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA462523C0025_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 307305313,
       "Award ID": "HR001123C0050",
       "Recipient Name": "TRITON SYSTEMS, INC.",
@@ -2367,6 +2383,22 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W911SD26FA006_9700_GS07F087BA_4732"
+    },
+    {
+      "internal_id": 357117827,
+      "Award ID": "15DD0A26P00000010",
+      "Recipient Name": "ATLANTIC DIVING SUPPLY, INC.",
+      "Award Amount": 19820.54,
+      "Total Outlays": null,
+      "Description": "TITLE: SKYDIO X10 NEW YORK REQUESTOR: DAVID D HAYUNGA ITJA#: ITJA0017213 DELIVERY DATE: 04/30/2026 SKYDIO X10 OUTDOOR DRONE USED FOR INVESTAGATION AND OFFICER/AGENT SAFETY.",
+      "Start Date": "2026-08-15",
+      "End Date": "2026-08-15",
+      "Awarding Agency": "Department of Justice",
+      "Awarding Sub Agency": "Drug Enforcement Administration",
+      "Award Type": null,
+      "awarding_agency_id": 252,
+      "agency_slug": "department-of-justice",
+      "generated_internal_id": "CONT_AWD_15DD0A26P00000010_1524_-NONE-_-NONE-"
     },
     {
       "internal_id": 355908307,
@@ -3169,6 +3201,22 @@
       "generated_internal_id": "ASST_NON_15-C-UAS-NCSU_069"
     },
     {
+      "internal_id": 292030178,
+      "Award ID": "89243324PFE000724",
+      "Recipient Name": "INFRARED CAMERAS INC",
+      "Award Amount": 101144.0,
+      "Total Outlays": 101144.0,
+      "Description": "OGI INSPECTOR PLUS PACKAGE MULTI-SENSOR UAV PAYLOAD MIRAGE HC OPTICAL GAS IMAGING CAMERA",
+      "Start Date": "2024-02-27",
+      "End Date": "2026-03-31",
+      "Awarding Agency": "Department of Energy",
+      "Awarding Sub Agency": "Department of Energy",
+      "Award Type": null,
+      "awarding_agency_id": 930,
+      "agency_slug": "department-of-energy",
+      "generated_internal_id": "CONT_AWD_89243324PFE000724_8900_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 354776484,
       "Award ID": "NI26SLBCXXXXG019",
       "Recipient Name": "PURDUE UNIVERSITY",
@@ -3535,6 +3583,22 @@
       "awarding_agency_id": 766,
       "agency_slug": "department-of-homeland-security",
       "generated_internal_id": "CONT_AWD_70CTD023FR0000136_7012_70CTD022D00000014_7012"
+    },
+    {
+      "internal_id": 298582628,
+      "Award ID": "FA868923FB002",
+      "Recipient Name": "GENERAL ATOMICS AERONAUTICAL SYSTEMS, INC.",
+      "Award Amount": 15111617.0,
+      "Total Outlays": null,
+      "Description": "MQ-9 REAPER AFSOC RPA CONTROL SUITE (ARCS) - VEHICLE SPECIFIC MODULE (VSM)",
+      "Start Date": "2023-05-25",
+      "End Date": "2026-03-31",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA868923FB002_9700_FA868920D2020_9700"
     },
     {
       "internal_id": 279026418,
@@ -4081,6 +4145,6 @@
       "generated_internal_id": "ASST_NON_693JJ22630000Y550COSW03737_069"
     }
   ],
-  "scraped_at": "2026-04-15T17:59:48.585473+00:00",
-  "count": 255
+  "scraped_at": "2026-04-16T08:26:38.907948+00:00",
+  "count": 259
 }
