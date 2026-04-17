@@ -12,12 +12,26 @@ Models:
   5. CrossCorrelation    — trigger/outcome flag co-occurrence → cascade probability
 """
 
-import json, math, hashlib
+import json, math, hashlib, os
 from pathlib import Path
 from datetime import datetime, timezone
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 now = datetime.now(timezone.utc).isoformat()
+
+# Production parameters loaded from PREDICTION_PARAMS env var
+_DEFAULT_PARAMS = {
+    "concentration_risk_baseline": 0.40,
+    "contract_signal_baseline": 0.40,
+    "contract_signal_critical_weight": 0.08,
+    "contract_signal_warning_weight": 0.04,
+    "regulatory_baseline": 0.30,
+    "grayzone_baseline": 0.30,
+    "cross_correlation_baseline": 0.35,
+    "cross_correlation_trigger_cap": 20,
+    "black_swan_cap": 0.25,
+}
+PARAMS = {**_DEFAULT_PARAMS, **json.loads(os.environ.get("PREDICTION_PARAMS", "{}"))}
 
 
 def pred_id(seed): return "pred-" + hashlib.md5(seed.encode()).hexdigest()[:10]
@@ -35,7 +49,9 @@ def weighted_ensemble(model_outputs):
 
 # ── Model 1: Concentration Risk ───────────────────────────────────
 
-def model_concentration_risk(db, target_component, target_vendors, baseline_prob=0.4):
+def model_concentration_risk(db, target_component, target_vendors, baseline_prob=None):
+    if baseline_prob is None:
+        baseline_prob = PARAMS["concentration_risk_baseline"]
     # Support both flat db (pipeline) and nested (forge_database.json)
     cat_items = db.get(target_component) or db.get("components", {}).get(target_component, [])
     models = db.get("drone_models", [])
@@ -74,7 +90,9 @@ def model_concentration_risk(db, target_component, target_vendors, baseline_prob
 
 # ── Model 2: Contract Signal ──────────────────────────────────────
 
-def model_contract_signal(flags, component_keywords, baseline_prob=0.4):
+def model_contract_signal(flags, component_keywords, baseline_prob=None):
+    if baseline_prob is None:
+        baseline_prob = PARAMS["contract_signal_baseline"]
     contract_flags = [f for f in flags
                       if f.get("flag_type") in ("contract_signal", "procurement_spike")
                       and any(kw.lower() in (f.get("title","") + f.get("detail","")).lower()
@@ -83,7 +101,7 @@ def model_contract_signal(flags, component_keywords, baseline_prob=0.4):
     critical = [f for f in contract_flags if f.get("severity") == "critical"]
     warning  = [f for f in contract_flags if f.get("severity") == "warning"]
 
-    signal_strength = len(critical) * 0.08 + len(warning) * 0.04
+    signal_strength = len(critical) * PARAMS["contract_signal_critical_weight"] + len(warning) * PARAMS["contract_signal_warning_weight"]
     prob = clamp(baseline_prob + signal_strength)
 
     # Dilute when keywords match too broadly (>8 flags = broad)
@@ -114,7 +132,9 @@ REGULATORY_STAGES = {
     "signed": 0.55, "effective": 0.75, "enforced": 0.90, "litigated": 0.65,
 }
 
-def model_regulatory_progression(flags, topic_keywords, baseline_prob=0.3):
+def model_regulatory_progression(flags, topic_keywords, baseline_prob=None):
+    if baseline_prob is None:
+        baseline_prob = PARAMS["regulatory_baseline"]
     reg_flags = [f for f in flags
                  if f.get("flag_type") in ("regulatory", "regulatory_deadline",
                                             "compliance", "legislation",
@@ -156,7 +176,9 @@ def model_regulatory_progression(flags, topic_keywords, baseline_prob=0.3):
 
 # ── Model 4: Gray Zone Escalation ────────────────────────────────
 
-def model_grayzone_escalation(entities, entity_names, flags, baseline_prob=0.3):
+def model_grayzone_escalation(entities, entity_names, flags, baseline_prob=None):
+    if baseline_prob is None:
+        baseline_prob = PARAMS["grayzone_baseline"]
     matched = [e for e in entities
                if any(n.lower() in e.get("name","").lower() for n in entity_names)]
 
@@ -194,7 +216,9 @@ def model_grayzone_escalation(entities, entity_names, flags, baseline_prob=0.3):
 # ── Model 5: Cross-Correlation ────────────────────────────────────
 
 def model_cross_correlation(flags, trigger_keywords, outcome_keywords,
-                             lag_weeks=6, baseline_prob=0.35):
+                             lag_weeks=6, baseline_prob=None):
+    if baseline_prob is None:
+        baseline_prob = PARAMS["cross_correlation_baseline"]
     trigger_flags = [f for f in flags
                      if any(kw.lower() in (f.get("title","") + f.get("detail","")).lower()
                             for kw in trigger_keywords)]
@@ -208,8 +232,8 @@ def model_cross_correlation(flags, trigger_keywords, outcome_keywords,
                 "confidence": conf, "signal_count": 0,
                 "drivers": [f"Trigger: {len(trigger_flags)}, outcome: {len(outcome_flags)}"]}
 
-    # Cap triggers at 20 to avoid broad-keyword inflation
-    effective_triggers = min(len(trigger_flags), 20)
+    # Cap triggers to avoid broad-keyword inflation
+    effective_triggers = min(len(trigger_flags), PARAMS["cross_correlation_trigger_cap"])
     trigger_strength = clamp(effective_triggers / 10)
     outcome_strength = clamp(len(outcome_flags) / 5)
     correlation_score = (trigger_strength * outcome_strength) ** 0.5
@@ -466,7 +490,7 @@ def build_predictions(db, flags, entities):
                                 ["Jetson","QRB5165","SoC","foundry","semiconductor"], 0, 0.08),
     ]
     p9_prob, p9_conf = weighted_ensemble(p9)
-    p9_prob = clamp(p9_prob, hi=0.25)  # hard cap — black swan
+    p9_prob = clamp(p9_prob, hi=PARAMS["black_swan_cap"])  # hard cap — black swan
     predictions.append({
         "id": pred_id("tsmc-disruption-cascade"),
         "timeframe": "2026–2028",

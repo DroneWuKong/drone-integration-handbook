@@ -1989,6 +1989,257 @@ def analyze_foreign(db):
 
 
 # ──────────────────────────────────────────
+# 14a. CO-OCCURRENCE PATTERN ANALYSIS
+# ──────────────────────────────────────────
+
+def analyze_cooccurrence_patterns(db):
+    """
+    Detect supply chain concentration risks from component co-occurrence patterns.
+
+    Three detection modes:
+    1. Manufacturer concentration — one manufacturer's parts across many platforms
+    2. Single-component dependency — one PID used by many platforms
+    3. Co-occurrence cluster risk — same component pair (FC+ESC, FC+motor) in many platforms
+    """
+    flags = []
+
+    models = db.get("drone_models", [])
+    total_platforms = len(models)
+    if total_platforms == 0:
+        return flags
+
+    # Load component_platform_map.json for curated high-level component → platform mapping
+    cpm_path = REPO_ROOT / "data" / "component_platform_map.json"
+    cpm = {}
+    if cpm_path.exists():
+        cpm = load_json(cpm_path)
+
+    # ── Build PID → component info lookup and platform → PID sets ──
+    COMPONENT_CATEGORIES = [
+        "flight_controllers", "escs", "motors", "batteries", "fpv_cameras",
+        "video_transmitters", "receivers", "antennas", "frames", "propellers",
+        "companion_computers", "gps_modules", "mesh_radios", "integrated_stacks",
+    ]
+    pid_info = {}  # pid → {name, manufacturer, category}
+    for cat in COMPONENT_CATEGORIES:
+        for comp in db.get(cat, []):
+            pid = comp.get("pid", "")
+            if pid:
+                pid_info[pid] = {
+                    "name": comp.get("name", pid),
+                    "manufacturer": comp.get("manufacturer", "Unknown"),
+                    "category": cat,
+                }
+
+    # Map each platform (by name) → set of PIDs it uses
+    platform_pids = {}   # platform_name → set of PIDs
+    pid_platforms = {}    # pid → list of platform names
+    for m in models:
+        pname = m.get("name", "")
+        relations = m.get("relations", {})
+        pids = set()
+        for cat, rel_list in relations.items():
+            if isinstance(rel_list, list):
+                for entry in rel_list:
+                    if isinstance(entry, dict) and entry.get("pid"):
+                        pids.add(entry["pid"])
+        platform_pids[pname] = pids
+        for pid in pids:
+            pid_platforms.setdefault(pid, []).append(pname)
+
+    print(f"  Platforms with BOM relations: {sum(1 for v in platform_pids.values() if v)}/{total_platforms}")
+    print(f"  Unique PIDs referenced: {len(pid_platforms)}")
+
+    # ── 1. Manufacturer concentration (from parts-db) ──
+    mfr_platforms = {}  # manufacturer → set of platform names
+    for pid, plats in pid_platforms.items():
+        info = pid_info.get(pid, {})
+        mfr = info.get("manufacturer", "Unknown")
+        if mfr and mfr != "Unknown":
+            mfr_platforms.setdefault(mfr, set()).update(plats)
+
+    for mfr, plats in sorted(mfr_platforms.items(), key=lambda x: -len(x[1])):
+        count = len(plats)
+        if count < 3:
+            continue
+        ratio = count / total_platforms if total_platforms else 0
+        confidence = min(0.95, 0.6 + ratio * 0.5)
+        if confidence > 0.8 and count > 5:
+            severity = "critical"
+        elif confidence > 0.5:
+            severity = "warning"
+        else:
+            severity = "info"
+        # Collect categories this manufacturer spans
+        mfr_cats = set()
+        for pid, info in pid_info.items():
+            if info.get("manufacturer") == mfr:
+                mfr_cats.add(info["category"].replace("_", " "))
+
+        flags.append({
+            "id": flag_id(f"cooccur-mfr-{mfr}"),
+            "timestamp": now,
+            "flag_type": "supply_chain_risk",
+            "severity": severity,
+            "title": f"Manufacturer concentration: {mfr} components in {count}/{total_platforms} platforms",
+            "detail": (
+                f"{mfr} supplies components used across {count} platforms "
+                f"({', '.join(sorted(plats)[:5])}{'…' if count > 5 else ''}). "
+                f"Categories: {', '.join(sorted(mfr_cats))}. "
+                f"Single-source dependency — disruption at {mfr} impacts "
+                f"{ratio * 100:.0f}% of tracked fleet."
+            ),
+            "confidence": round(confidence, 2),
+            "prediction": (
+                f"If {mfr} faces production disruption, supply shock propagates to "
+                f"{count} platforms simultaneously. Monitor {mfr} lead times and inventory."
+            ),
+            "platform_id": None,
+            "component_id": mfr.lower().replace(" ", "-"),
+            "data_sources": ["forge_parts_db", "forge_bom"],
+        })
+
+    # ── Also flag components from component_platform_map.json ──
+    for comp_name, plats in cpm.items():
+        real_plats = [p for p in plats if not p.startswith("ALL ")]
+        count = len(real_plats)
+        if count < 4:
+            continue
+        ratio = count / total_platforms if total_platforms else 0
+        confidence = min(0.95, 0.65 + ratio * 0.4)
+        if confidence > 0.8 and count > 5:
+            severity = "critical"
+        elif confidence > 0.5:
+            severity = "warning"
+        else:
+            severity = "info"
+        flags.append({
+            "id": flag_id(f"cooccur-cpm-{comp_name}"),
+            "timestamp": now,
+            "flag_type": "supply_chain_risk",
+            "severity": severity,
+            "title": f"Single-component dependency: {comp_name} used in {count} platforms",
+            "detail": (
+                f"{comp_name} is present in {count} platforms: "
+                f"{', '.join(real_plats[:6])}{'…' if count > 6 else ''}. "
+                f"Loss of supply for this component impacts {ratio * 100:.0f}% of tracked fleet."
+            ),
+            "confidence": round(confidence, 2),
+            "prediction": (
+                f"Supply disruption for {comp_name} cascades to {count} platforms. "
+                f"Identify qualified second-source alternatives."
+            ),
+            "platform_id": None,
+            "component_id": comp_name.lower().replace(" ", "-"),
+            "data_sources": ["forge_parts_db", "forge_bom", "component_platform_map"],
+        })
+
+    # ── 2. Single-component (PID) dependency ──
+    for pid, plats in sorted(pid_platforms.items(), key=lambda x: -len(x[1])):
+        count = len(plats)
+        if count < 3:
+            continue
+        info = pid_info.get(pid, {})
+        cname = info.get("name", pid)
+        mfr = info.get("manufacturer", "Unknown")
+        cat = info.get("category", "component").replace("_", " ")
+        ratio = count / total_platforms if total_platforms else 0
+        confidence = min(0.95, 0.6 + ratio * 0.5)
+        if confidence > 0.8 and count > 5:
+            severity = "critical"
+        elif confidence > 0.5:
+            severity = "warning"
+        else:
+            severity = "info"
+        flags.append({
+            "id": flag_id(f"cooccur-pid-{pid}"),
+            "timestamp": now,
+            "flag_type": "supply_chain_risk",
+            "severity": severity,
+            "title": f"{cname} ({pid}) in {count} platforms — loss of supply impacts {ratio * 100:.0f}% of fleet",
+            "detail": (
+                f"{cname} by {mfr} (category: {cat}) is used in {count} platforms: "
+                f"{', '.join(plats[:5])}{'…' if count > 5 else ''}. "
+                f"This single component is a shared dependency across {ratio * 100:.0f}% of the tracked fleet."
+            ),
+            "confidence": round(confidence, 2),
+            "prediction": (
+                f"Discontinuation or shortage of {pid} disrupts {count} platform BOMs. "
+                f"Cross-reference with alternative component mappings."
+            ),
+            "platform_id": None,
+            "component_id": pid.lower(),
+            "data_sources": ["forge_parts_db", "forge_bom"],
+        })
+
+    # ── 3. Co-occurrence cluster risk (FC+ESC, FC+motor pairs) ──
+    PAIR_CATEGORIES = [
+        ("flight_controllers", "escs"),
+        ("flight_controllers", "motors"),
+        ("escs", "motors"),
+    ]
+    pair_platforms = {}  # (pid_a, pid_b) → list of platform names
+
+    for pname, pids in platform_pids.items():
+        # Group PIDs by category
+        cat_pids = {}
+        for pid in pids:
+            info = pid_info.get(pid, {})
+            cat = info.get("category", "")
+            cat_pids.setdefault(cat, []).append(pid)
+
+        for cat_a, cat_b in PAIR_CATEGORIES:
+            pids_a = cat_pids.get(cat_a, [])
+            pids_b = cat_pids.get(cat_b, [])
+            for pa in pids_a:
+                for pb in pids_b:
+                    pair_key = (pa, pb) if pa < pb else (pb, pa)
+                    pair_platforms.setdefault(pair_key, []).append(pname)
+
+    for (pid_a, pid_b), plats in sorted(pair_platforms.items(), key=lambda x: -len(x[1])):
+        count = len(plats)
+        if count < 2:
+            continue
+        info_a = pid_info.get(pid_a, {})
+        info_b = pid_info.get(pid_b, {})
+        name_a = info_a.get("name", pid_a)
+        name_b = info_b.get("name", pid_b)
+        cat_a = info_a.get("category", "component").replace("_", " ")
+        cat_b = info_b.get("category", "component").replace("_", " ")
+        ratio = count / total_platforms if total_platforms else 0
+        confidence = min(0.93, 0.55 + ratio * 0.5)
+        if confidence > 0.8 and count > 5:
+            severity = "critical"
+        elif confidence > 0.5:
+            severity = "warning"
+        else:
+            severity = "info"
+        flags.append({
+            "id": flag_id(f"cooccur-pair-{pid_a}-{pid_b}"),
+            "timestamp": now,
+            "flag_type": "correlation",
+            "severity": severity,
+            "title": f"Co-occurrence cluster: {pid_a} + {pid_b} paired in {count} platforms",
+            "detail": (
+                f"{name_a} ({cat_a}) and {name_b} ({cat_b}) appear together in {count} platforms: "
+                f"{', '.join(plats[:5])}{'…' if count > 5 else ''}. "
+                f"A supply issue with either component disrupts all {count} platforms simultaneously."
+            ),
+            "confidence": round(confidence, 2),
+            "prediction": (
+                f"Correlated risk: shortage in either {pid_a} or {pid_b} halts {count} platform builds. "
+                f"Consider stockpiling or qualifying alternatives for both."
+            ),
+            "platform_id": None,
+            "component_id": f"{pid_a}+{pid_b}".lower(),
+            "data_sources": ["forge_parts_db", "forge_bom"],
+        })
+
+    print(f"  Co-occurrence flags: {len(flags)} (mfr concentration + single-component + pair clusters)")
+    return flags
+
+
+# ──────────────────────────────────────────
 # 14. MAIN
 # ──────────────────────────────────────────
 
@@ -2132,6 +2383,10 @@ def main():
     print("\nAnalyzing battery parts-db cell sourcing (NDAA ban timelines)...")
     batt_partsdb_flags = analyze_battery_partsdb(db)
     all_flags.extend(batt_partsdb_flags)
+
+    print("\nAnalyzing co-occurrence patterns...")
+    cooccur_flags = analyze_cooccurrence_patterns(db)
+    all_flags.extend(cooccur_flags)
 
     # ── Wire Mouser/DigiKey: enrich parts-db with live prices ──────────────
     print("\nFetching live component pricing from Mouser/DigiKey...")

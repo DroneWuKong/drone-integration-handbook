@@ -31,6 +31,7 @@ Outputs:
 """
 
 import json
+import os
 import hashlib
 from datetime import datetime, timezone
 from pathlib import Path
@@ -99,13 +100,15 @@ class GrayZoneScorer:
     Overall risk = weighted average.
     """
 
+    # Production weights loaded from GRAYZONE_WEIGHTS env var
+    _DEFAULT_WEIGHT = round(1.0 / 6, 6)
+    _DIMENSIONS = [
+        "identity_wash", "component_passthrough", "firmware_dependency",
+        "data_routing_risk", "regulatory_arbitrage", "supply_chain_fragility",
+    ]
     WEIGHTS = {
-        "identity_wash":        0.25,   # Rebranded adversary tech
-        "component_passthrough": 0.20,  # Adversary components present
-        "firmware_dependency":   0.20,  # Adversary crypto/SDK/OTA control
-        "data_routing_risk":     0.15,  # Data touches adversary infra
-        "regulatory_arbitrage":  0.10,  # Marketed as compliant w/o cert
-        "supply_chain_fragility": 0.10, # Single-source adversary BOM items
+        **{dim: _DEFAULT_WEIGHT for dim in _DIMENSIONS},
+        **json.loads(os.environ.get("GRAYZONE_WEIGHTS", "{}")),
     }
 
     ADVERSARY_NATIONS = {"china", "cn", "russia", "ru", "iran", "ir", "north korea", "kp"}
