@@ -207,9 +207,20 @@ def build_prompt(flags, predictions, entities, procurement, delta):
         for s in recent_news
     ) or "No recent news signals."
 
-    prompt = f"""You are PIE — the Pattern Intelligence Engine for DroneClear, a UAS supply chain intelligence platform.
+    # Default generic fallback prompt
+    DEFAULT_BRIEF_PROMPT = (
+        "You are an intelligence analysis assistant. "
+        "Given the raw intelligence data below, produce a structured JSON intelligence brief "
+        "covering: lead story, entity updates, supply chain signals, watch list, and predictions. "
+        "Be specific, cite numbers from the data, and include actionable recommendations."
+    )
 
-Today is {today_str}. Write the daily PIE Intelligence Brief for a professional audience: procurement officers, program managers, and policy analysts working in the Blue UAS / defense drone space.
+    # Production prompt loaded from PIE_BRIEF_PROMPT env var
+    prompt_template = os.environ.get("PIE_BRIEF_PROMPT", DEFAULT_BRIEF_PROMPT)
+
+    prompt = f"""{prompt_template}
+
+Today is {today_str}.
 
 Delta from yesterday: {delta_line}
 
@@ -287,7 +298,7 @@ Rules:
 - Be specific. Use actual numbers from the data.
 - No vague hedge language. If the data supports a conclusion, state it.
 - Actions must be concrete and time-bound.
-- Gray zone section: cover all 4 entities, ordered by risk score.
+- Gray zone section: cover all entities, ordered by risk score.
 - Supply chain: pick the 3 most actionable signals, not all of them.
 - Watch list: 3 items that are trending but not yet critical.
 - Predictions: top 3 only, with real hedges a procurement team could execute.
