@@ -189,12 +189,20 @@ Can connect via ribbon cable or direct solder.
 Single-board platform combining flight controller and companion computer. Eliminates the traditional FC + separate companion model.
 
 ### Specifications
-- **FC MCU:** STM32H7 (running PX4)
-- **Companion:** NXP i.MX8M Plus (running Linux)
-- **NPU:** 2.3 TOPS (onboard AI inference)
-- **Weight:** 13g
+- **FC MCU:** STM32H743 (Cortex-M7)
+- **Companion:** NXP i.MX8M Plus (4× Cortex-A53)
+- **NPU:** 2.25 TOPS (onboard AI inference)
+- **ML/Video:** H.265/H.264 1080p@60fps encode/decode, 3D/2D GPU
+- **Memory:** 4GB eMMC, 4GB LPDDR4, up to 512GB microSD
+- **Connectivity:** USB 3.0, USB 2.0, 2× 4-lane MIPI-CSI, AV-in/AV-out, UART, I2C, CAN, 8× PWM
+- **Power:** 2S–6S (12–24V recommended, 40V max) or USB-C PD up to 60W
+- **Dimensions:** 65 × 37.5 × 16.3 mm
+- **Weight:** 36g
+- **Temp Range:** 0°C – 70°C
+- **Firmware (FC):** ArduPilot / PX4 / iNav / Betaflight
+- **Firmware (Companion):** Orqa Yocto Linux BSP
 - **Connectors:** All JST-GH (Pixhawk standard)
-- **Features:** MAVLink bridge built-in, no separate companion wiring needed
+- **Networking:** USB-C RNDIS (192.168.75.1), USB-C ethernet (DHCP + 192.168.1.75 static)
 - **Country:** Croatia (EU) — NDAA compliant
 
 ### Why It Matters
