@@ -1620,7 +1620,7 @@
       "internal_id": 309498665,
       "Award ID": "N0001923C0021",
       "Recipient Name": "KRATOS UNMANNED AERIAL SYSTEMS, INC",
-      "Award Amount": 177729681.84,
+      "Award Amount": 177730018.0,
       "Total Outlays": null,
       "Description": "SUBSONIC AERIAL TARGET (SSAT) BQM-177A FULL RATE PRODUCTION",
       "Start Date": "2023-01-31",
@@ -4740,7 +4740,7 @@
       "internal_id": 353698296,
       "Award ID": "FA875025FB014",
       "Recipient Name": "BOOZ ALLEN HAMILTON INC",
-      "Award Amount": 14366587.0,
+      "Award Amount": 15758830.0,
       "Total Outlays": null,
       "Description": "MULTI MODAL C-SUAS INNOVATION (M2CI) THE SCOPE OF THIS EFFORT IS TO PERFORM RESEARCH ,DEVELOPMENT, TEST, AND EVALUATION OF ALL TECHNOLOGIES NEEDED TO ACCOMPLISH THE OBJECTIVE.",
       "Start Date": "2025-09-19",
@@ -6191,6 +6191,22 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA875125P0018_9700_-NONE-_-NONE-"
+    },
+    {
+      "internal_id": 357410700,
+      "Award ID": "FA485526P0006",
+      "Recipient Name": "OKSI VENTURES, INC.",
+      "Award Amount": 0.0,
+      "Total Outlays": null,
+      "Description": "THE 26TH SPECIAL TACTICS SQUADRON (STS) REQUIRES THE PURCHASE OF A SMALL UNMANNED AIRCRAFT SYSTEM (UAS) AND ASSOCIATED COMPONENTS TO SUPPORT OPERATIONAL TESTING AND VALIDATION DURING A GUIDEPOST EXERCISE.",
+      "Start Date": "2026-01-23",
+      "End Date": "2026-03-01",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA485526P0006_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 251572718,
@@ -9972,11 +9988,11 @@
       "internal_id": 355832304,
       "Award ID": "W912SR26PA001",
       "Recipient Name": "DRONIVO GMBH",
-      "Award Amount": 190963.17,
+      "Award Amount": 202170.17,
       "Total Outlays": null,
       "Description": "BRAND NAME RESTRICTION TO PROCURE PARROT AND EBEE PLATFORM UAS LISTED VIA BLUE UAS SELECT",
       "Start Date": "2025-12-03",
-      "End Date": "2025-12-19",
+      "End Date": "2026-01-27",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Army",
       "Award Type": null,
@@ -12145,6 +12161,6 @@
       "generated_internal_id": "ASST_NON_R21AI169225_075"
     }
   ],
-  "scraped_at": "2026-04-24T15:03:47.863293+00:00",
-  "count": 759
+  "scraped_at": "2026-04-25T14:38:03.838408+00:00",
+  "count": 760
 }
