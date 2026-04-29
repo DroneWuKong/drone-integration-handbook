@@ -5345,6 +5345,22 @@
       "generated_internal_id": "CONT_AWD_12305B24F0153_12H2_GS07F0426X_4732"
     },
     {
+      "internal_id": 357468748,
+      "Award ID": "FA441726P0012",
+      "Recipient Name": "NEROS, INC.",
+      "Award Amount": 223500.0,
+      "Total Outlays": null,
+      "Description": "THE CONTRACTOR SHALL PROVIDE ALL LABOR, EQUIPMENT, MATERIALS, TOOLS, PARTS, SHIPPING, AND ALL OTHER ITEMS NECESSARY TO DELIVER THE FOLLOWING ITEMS: 0001 - NEROS ARCHER QUADCOPTER (SUAS), SUPPORTING ACCESSORIES AND TRAINING. QTY: 1 LOT.",
+      "Start Date": "2026-01-27",
+      "End Date": "2026-03-20",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA441726P0012_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 353664887,
       "Award ID": "W50S8725PA005",
       "Recipient Name": "WS DARLEY & CO",
@@ -5359,22 +5375,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W50S8725PA005_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 353367796,
-      "Award ID": "FA446025P0075",
-      "Recipient Name": "FLEX FORCE ENTERPRISES, LLC",
-      "Award Amount": 184122.52,
-      "Total Outlays": null,
-      "Description": "19 SECURITY FORCE SQUADRON (SFS) IS LOOKING TO PURCHASE A HANDHELD SYSTEM TO COUNTER SMALL UNMANNED AIRCRAFT SYSTEMS (SUAS).",
-      "Start Date": "2025-09-09",
-      "End Date": "2025-10-09",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA446025P0075_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 253727612,
@@ -6065,6 +6065,22 @@
       "generated_internal_id": "CONT_AWD_15DDHQ25F00000570_1524_15A00020DAQA00604_1560"
     },
     {
+      "internal_id": 353367796,
+      "Award ID": "FA446025P0075",
+      "Recipient Name": "FLEX FORCE ENTERPRISES, LLC",
+      "Award Amount": 184122.52,
+      "Total Outlays": null,
+      "Description": "19 SECURITY FORCE SQUADRON (SFS) IS LOOKING TO PURCHASE A HANDHELD SYSTEM TO COUNTER SMALL UNMANNED AIRCRAFT SYSTEMS (SUAS).",
+      "Start Date": "2025-09-09",
+      "End Date": "2025-10-09",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA446025P0075_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 278026757,
       "Award ID": "15A00025FAQ000166",
       "Recipient Name": "ATLANTIC DIVING SUPPLY, INC.",
@@ -6319,6 +6335,22 @@
       "awarding_agency_id": 315,
       "agency_slug": "department-of-state",
       "generated_internal_id": "CONT_AWD_19AQMM25C1050_1900_-NONE-_-NONE-"
+    },
+    {
+      "internal_id": 357468540,
+      "Award ID": "80NM0026F7025",
+      "Recipient Name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "Award Amount": 28000000.0,
+      "Total Outlays": null,
+      "Description": "JPL LUNAR DRONES (54-232663)",
+      "Start Date": "2026-04-27",
+      "End Date": "2026-10-26",
+      "Awarding Agency": "National Aeronautics and Space Administration",
+      "Awarding Sub Agency": "National Aeronautics and Space Administration",
+      "Award Type": null,
+      "awarding_agency_id": 862,
+      "agency_slug": "national-aeronautics-and-space-administration",
+      "generated_internal_id": "CONT_AWD_80NM0026F7025_8000_80NM0018D0004_8000"
     },
     {
       "internal_id": 278755994,
@@ -7023,22 +7055,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA282325P0117_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 350266666,
-      "Award ID": "W9132V21C0003",
-      "Recipient Name": "3DEO INC",
-      "Award Amount": 1099941.0,
-      "Total Outlays": 0.0,
-      "Description": "SBIR PHASE II BASE YEAR FOR PRECISION TRACKING OF BIRDS AND DRONES USING FAST, EFFICIENT 3D LIDAR  U439320",
-      "Start Date": "2021-08-17",
-      "End Date": "2024-08-28",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W9132V21C0003_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 356590756,
@@ -7896,7 +7912,7 @@
       "Total Outlays": null,
       "Description": "COUNTER-UAS LONG BOW 2",
       "Start Date": "2024-08-19",
-      "End Date": "2026-01-19",
+      "End Date": "2027-01-19",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Air Force",
       "Award Type": null,
@@ -12161,6 +12177,6 @@
       "generated_internal_id": "ASST_NON_R43CA291315_075"
     }
   ],
-  "scraped_at": "2026-04-28T16:05:06.392705+00:00",
-  "count": 760
+  "scraped_at": "2026-04-29T15:53:44.120039+00:00",
+  "count": 761
 }
