@@ -145,6 +145,22 @@
       "generated_internal_id": "CONT_AWD_FA807519FA056_9700_FA807518D0011_9700"
     },
     {
+      "internal_id": 298377557,
+      "Award ID": "FA807522F0011",
+      "Recipient Name": "MANTECH TSG-2 JOINT VENTURE",
+      "Award Amount": 78541770.23,
+      "Total Outlays": 0.0,
+      "Description": "UNMANNED AIRCRAFT SYSTEMS ENGINEERING AND ANALYSIS FOR NAVAL AIR SYSTEMS COMMAND AND NAVAL SURFACE WARFARE CENTER, CRANE DIVISION",
+      "Start Date": "2021-12-09",
+      "End Date": "2026-12-12",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA807522F0011_9700_FA807518D0011_9700"
+    },
+    {
       "internal_id": 298377538,
       "Award ID": "FA807521F0077",
       "Recipient Name": "CACI, INC. - FEDERAL",
@@ -159,22 +175,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA807521F0077_9700_FA807518D0006_9700"
-    },
-    {
-      "internal_id": 298377557,
-      "Award ID": "FA807522F0011",
-      "Recipient Name": "MANTECH TSG-2 JOINT VENTURE",
-      "Award Amount": 77562825.8,
-      "Total Outlays": 0.0,
-      "Description": "UNMANNED AIRCRAFT SYSTEMS ENGINEERING AND ANALYSIS FOR NAVAL AIR SYSTEMS COMMAND AND NAVAL SURFACE WARFARE CENTER, CRANE DIVISION",
-      "Start Date": "2021-12-09",
-      "End Date": "2026-12-12",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA807522F0011_9700_FA807518D0011_9700"
     },
     {
       "internal_id": 298377521,
@@ -2052,7 +2052,7 @@
       "internal_id": 352938665,
       "Award ID": "N0001925F0068",
       "Recipient Name": "KRATOS UNMANNED AERIAL SYSTEMS, INC",
-      "Award Amount": 2929953.72,
+      "Award Amount": 2966891.76,
       "Total Outlays": null,
       "Description": "RADAR ALTIMETER",
       "Start Date": "2025-08-26",
@@ -4609,6 +4609,22 @@
       "generated_internal_id": "ASST_NON_15-C-UAS-UAF_069"
     },
     {
+      "internal_id": 230497260,
+      "Award ID": "15-C-UAS-WISU",
+      "Recipient Name": "WICHITA STATE UNIVERSITY",
+      "Award Amount": 7484353.68,
+      "Total Outlays": 5219883.34,
+      "Description": "TRAVEL FOR TWO-DAY PEER REVIEW OF THE UAS AIRBORNE COLLISION SEVERITY RESEARCH PROJECT.\"",
+      "Start Date": "2017-05-14",
+      "End Date": "2027-05-16",
+      "Awarding Agency": "Department of Transportation",
+      "Awarding Sub Agency": "Federal Aviation Administration",
+      "Award Type": "COOPERATIVE AGREEMENT (B)",
+      "awarding_agency_id": 731,
+      "agency_slug": "department-of-transportation",
+      "generated_internal_id": "ASST_NON_15-C-UAS-WISU_069"
+    },
+    {
       "internal_id": 266895252,
       "Award ID": "G22AC00137",
       "Recipient Name": "ALASKA DEPARTMENT OF NATURAL RESOURCES",
@@ -4623,22 +4639,6 @@
       "awarding_agency_id": 209,
       "agency_slug": "department-of-the-interior",
       "generated_internal_id": "ASST_NON_G22AC00137_014"
-    },
-    {
-      "internal_id": 353633020,
-      "Award ID": "693JJ22630000Y001TX2025341",
-      "Recipient Name": "TEXAS DEPARTMENT OF TRANSPORTATION",
-      "Award Amount": 7000000.0,
-      "Total Outlays": 7000000.0,
-      "Description": "PROJECT TITLE: INSTALL AND REPLACE SIGNS ON IH 610, IH 69, IH 10, IH 45, SH 146, UA 90, SS 330, US 90, SL 8 :::: PROJECT DESCRIPTION: MULTIPLE LOCATIONS DISTRICT WIDE TO INCLUDE  IH 610, IH 69, IH 10, IH 45, SH 146, UA 90, SS 330, US 90 AND SL 8. INSTALL AND REPLACE OVERHEAD SIGNS.",
-      "Start Date": "2024-10-29",
-      "End Date": "2033-12-02",
-      "Awarding Agency": "Department of Transportation",
-      "Awarding Sub Agency": "Federal Highway Administration",
-      "Award Type": "FORMULA GRANT (A)",
-      "awarding_agency_id": 731,
-      "agency_slug": "department-of-transportation",
-      "generated_internal_id": "ASST_NON_693JJ22630000Y001TX2025341_069"
     },
     {
       "internal_id": 298592679,
@@ -4673,6 +4673,22 @@
       "generated_internal_id": "CONT_AWD_FA875021F1012_9700_FA875021D1100_9700"
     },
     {
+      "internal_id": 354118996,
+      "Award ID": "FA862926FB002",
+      "Recipient Name": "AEROVIRONMENT, INC",
+      "Award Amount": 34841830.45,
+      "Total Outlays": null,
+      "Description": "SUAS HURRICANE DRONES",
+      "Start Date": "2025-10-03",
+      "End Date": "2026-10-03",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA862926FB002_9700_FA862926DB001_9700"
+    },
+    {
       "internal_id": 298576645,
       "Award ID": "FA865021C5023",
       "Recipient Name": "SI2 TECHNOLOGIES, INC",
@@ -4703,22 +4719,6 @@
       "awarding_agency_id": 252,
       "agency_slug": "department-of-justice",
       "generated_internal_id": "CONT_AWD_15F06722P0001119_1549_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 354118996,
-      "Award ID": "FA862926FB002",
-      "Recipient Name": "AEROVIRONMENT, INC",
-      "Award Amount": 23227886.96,
-      "Total Outlays": null,
-      "Description": "SUAS HURRICANE DRONES",
-      "Start Date": "2025-10-03",
-      "End Date": "2025-10-17",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA862926FB002_9700_FA862926DB001_9700"
     },
     {
       "internal_id": 352789518,
@@ -6065,6 +6065,22 @@
       "generated_internal_id": "CONT_AWD_15DDHQ25F00000570_1524_15A00020DAQA00604_1560"
     },
     {
+      "internal_id": 357634669,
+      "Award ID": "W912PB26FA158",
+      "Recipient Name": "DRONIVO GMBH",
+      "Award Amount": 210291.09,
+      "Total Outlays": null,
+      "Description": "SMALL UNMANNED AIRCRAFT SYSTEM ANCILLARY EQUIPMENT AND BATTERIES FOR 7TH ATC.",
+      "Start Date": "2026-01-30",
+      "End Date": "2026-03-13",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W912PB26FA158_9700_W912PB26AA002_9700"
+    },
+    {
       "internal_id": 353367796,
       "Award ID": "FA446025P0075",
       "Recipient Name": "FLEX FORCE ENTERPRISES, LLC",
@@ -6504,7 +6520,7 @@
       "Total Outlays": 0.0,
       "Description": "DRONE CORRIDOR",
       "Start Date": "2023-03-08",
-      "End Date": "2026-04-07",
+      "End Date": "2026-07-07",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Army",
       "Award Type": null,
@@ -8335,22 +8351,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_N0016424FP468_9700_N6600119A0051_9700"
-    },
-    {
-      "internal_id": 230497260,
-      "Award ID": "15-C-UAS-WISU",
-      "Recipient Name": "WICHITA STATE UNIVERSITY",
-      "Award Amount": 6835705.68,
-      "Total Outlays": 5219883.34,
-      "Description": "TRAVEL FOR TWO-DAY PEER REVIEW OF THE UAS AIRBORNE COLLISION SEVERITY RESEARCH PROJECT.\"",
-      "Start Date": "2017-05-14",
-      "End Date": "2024-12-31",
-      "Awarding Agency": "Department of Transportation",
-      "Awarding Sub Agency": "Federal Aviation Administration",
-      "Award Type": "COOPERATIVE AGREEMENT (B)",
-      "awarding_agency_id": 731,
-      "agency_slug": "department-of-transportation",
-      "generated_internal_id": "ASST_NON_15-C-UAS-WISU_069"
     },
     {
       "internal_id": 230497248,
@@ -12177,6 +12177,6 @@
       "generated_internal_id": "ASST_NON_R43CA291315_075"
     }
   ],
-  "scraped_at": "2026-04-30T15:44:59.342850+00:00",
+  "scraped_at": "2026-05-01T14:49:47.834753+00:00",
   "count": 761
 }
