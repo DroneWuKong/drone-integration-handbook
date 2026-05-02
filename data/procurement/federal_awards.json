@@ -1601,6 +1601,22 @@
       "generated_internal_id": "ASST_NON_02D20122_068"
     },
     {
+      "internal_id": 309498665,
+      "Award ID": "N0001923C0021",
+      "Recipient Name": "KRATOS UNMANNED AERIAL SYSTEMS, INC",
+      "Award Amount": 238798157.3,
+      "Total Outlays": null,
+      "Description": "SUBSONIC AERIAL TARGET (SSAT) BQM-177A FULL RATE PRODUCTION",
+      "Start Date": "2023-01-31",
+      "End Date": "2028-07-31",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_N0001923C0021_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 348948250,
       "Award ID": "W31P4Q19C0018",
       "Recipient Name": "RAYTHEON COMPANY",
@@ -1615,22 +1631,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W31P4Q19C0018_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 309498665,
-      "Award ID": "N0001923C0021",
-      "Recipient Name": "KRATOS UNMANNED AERIAL SYSTEMS, INC",
-      "Award Amount": 177730018.0,
-      "Total Outlays": null,
-      "Description": "SUBSONIC AERIAL TARGET (SSAT) BQM-177A FULL RATE PRODUCTION",
-      "Start Date": "2023-01-31",
-      "End Date": "2027-07-31",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Navy",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_N0001923C0021_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 298581111,
@@ -1668,7 +1668,7 @@
       "internal_id": 298649665,
       "Award ID": "FA945122C0002",
       "Recipient Name": "LEIDOS, INC.",
-      "Award Amount": 36231266.0,
+      "Award Amount": 36731266.0,
       "Total Outlays": 3526213.71,
       "Description": "THE OVERARCHING OBJECTIVE OF MJOLNIR IS TO DEVELOP, TEST AND DEMONSTRATE A MATURE PROTOTYPE BASED ON THE FIRST GENERATION TECHNOLOGY DEMONSTRATOR, HIGH-POWER MICROWAVE (HPM) COUNTER UNMANNED AERIAL SYSTEM (CUAS) PLATFORM.",
       "Start Date": "2022-02-24",
@@ -3761,6 +3761,22 @@
       "generated_internal_id": "CONT_AWD_FA228025F0014_9700_FA228025D0001_9700"
     },
     {
+      "internal_id": 298654728,
+      "Award ID": "FA955023F0002",
+      "Recipient Name": "HOWARD UNIVERSITY",
+      "Award Amount": 8387561.0,
+      "Total Outlays": null,
+      "Description": "TACTICAL AUTONOMY UNIVERSITY AFFILIATED RESEARCH CENTER (UARC) MANAGEMENT",
+      "Start Date": "2023-02-01",
+      "End Date": "2028-01-31",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA955023F0002_9700_FA955023D0001_9700"
+    },
+    {
       "internal_id": 279025157,
       "Award ID": "2032H519F00607",
       "Recipient Name": "FCN, INC.",
@@ -3855,22 +3871,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA460020F0090_9700_FA460018D9001_9700"
-    },
-    {
-      "internal_id": 298654728,
-      "Award ID": "FA955023F0002",
-      "Recipient Name": "HOWARD UNIVERSITY",
-      "Award Amount": 6387561.0,
-      "Total Outlays": null,
-      "Description": "TACTICAL AUTONOMY UNIVERSITY AFFILIATED RESEARCH CENTER (UARC) MANAGEMENT",
-      "Start Date": "2023-02-01",
-      "End Date": "2028-01-31",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA955023F0002_9700_FA955023D0001_9700"
     },
     {
       "internal_id": 253715211,
@@ -6223,6 +6223,22 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA875125P0018_9700_-NONE-_-NONE-"
+    },
+    {
+      "internal_id": 357659562,
+      "Award ID": "W912PB26FA188",
+      "Recipient Name": "ORQA D.O.O.",
+      "Award Amount": 24730.0,
+      "Total Outlays": null,
+      "Description": "SMALL UNMANNED AIRCRAFT SYSTEM-RECOVERABLE PLATFORMS FOR 7TH ATC CATC.",
+      "Start Date": "2026-01-30",
+      "End Date": "2026-04-01",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W912PB26FA188_9700_W912PB26AA004_9700"
     },
     {
       "internal_id": 357410700,
@@ -12177,6 +12193,6 @@
       "generated_internal_id": "ASST_NON_R43CA291315_075"
     }
   ],
-  "scraped_at": "2026-05-01T14:49:47.834753+00:00",
-  "count": 761
+  "scraped_at": "2026-05-02T14:41:39.823922+00:00",
+  "count": 762
 }
