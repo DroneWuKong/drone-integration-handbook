@@ -29,9 +29,9 @@ Primary use case: commercial BVLOS platforms that need both certified flight con
 
 ### Orqa DTK APB
 
-Combines an STM32H7 flight controller with an NXP i.MX8M Plus companion computer (2.3 TOPS NPU). Designed to collapse the FC + companion stack for FPV and tactical platforms. The NPU enables onboard AI inference without a separate accelerator module.
+Combines an STM32H743 flight controller with an NXP i.MX8M Plus companion computer (2.25 TOPS NPU). Designed to collapse the FC + companion stack for FPV and tactical platforms. The NPU enables onboard AI inference without a separate accelerator module. 36g, 65 × 37.5 × 16.3 mm, 0–70°C. Firmware: ArduPilot / PX4 / iNav / Betaflight.
 
-Primary use case: tactical FPV platforms where weight and wiring simplicity matter more than maximum AI compute. The 2.3 TOPS NPU handles basic detection and classification but is not sufficient for real-time SLAM or multi-camera processing.
+Primary use case: tactical FPV platforms where weight and wiring simplicity matter more than maximum AI compute. The 2.25 TOPS NPU handles basic detection and classification but is not sufficient for real-time SLAM or multi-camera processing.
 
 ### ARK Electronics ARK FPV Flight Controller
 
