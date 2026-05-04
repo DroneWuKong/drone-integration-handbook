@@ -100,7 +100,7 @@ jobs:
               return
             fi
             HTTP_CODE=$(curl -s -o /tmp/blob_resp.json -w "%{http_code}" -X POST \
-              "https://nvmillbuilditmyself.com/.netlify/functions/forge-data?type=${TYPE}" \
+              "https://uas-forge.com/api/data?type=${TYPE}" \
               -H "Authorization: Bearer ${FORGE_BLOBS_ADMIN_KEY}" \
               -H "Content-Type: application/json" \
               --data @"$FILE")
