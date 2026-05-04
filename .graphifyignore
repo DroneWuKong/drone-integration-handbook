@@ -1,0 +1,43 @@
+# drone-integration-handbook .graphifyignore
+
+# Python
+__pycache__/
+*.pyc
+
+# Build output
+site/
+
+# Vendored assets / minified JS
+vendor/
+assets/vendor/
+*.min.js
+*.min.css
+
+# Large data dumps (indexed via app logic)
+data/
+*.csv
+
+# Graphify internals
+graphify-out/cache/
+graphify-out/manifest.json
+graphify-out/cost.json
+graphify-out/graph.html
+graphify-out/graph.json
+
+# Secrets
+.env
+.env.*
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Lock files
+package-lock.json
+yarn.lock
+
+# Don't self-index Claude/AI instructions
+CLAUDE.md
+AGENTS.md
