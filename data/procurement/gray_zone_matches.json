@@ -1,10 +1,31 @@
 {
-  "generated_at": "2026-05-09T14:44:24.448199+00:00",
-  "federal_awards_total": 699,
+  "generated_at": "2026-05-10T14:46:39.508402+00:00",
+  "federal_awards_total": 757,
   "gray_zone_federal_matches": 0,
   "news_signals_total": 83,
-  "gray_zone_news_mentions": 8,
+  "gray_zone_news_mentions": 9,
   "all_gray_zone_signals": [
+    {
+      "id": "sol-9bf3e3257e",
+      "source": "news",
+      "source_label": "Click2Houston",
+      "type": "news_signal",
+      "title": "Texas AG Ken Paxton sues Anzu Robotics over alleged China-linked drones - Click2Houston",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Wed, 18 Feb 2026 08:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWUxGSUE5ZEpHZmtQZzE3Tkp5dlFSMmVJaXgxM292TjFyOElUaUtNVzFIWmJWa2I1SS1ZRlhOMjgzeTVXNUkwR1FYRXNuTnVfcHNtRVM4Y0YtRWpETk9WVFVlZVJqSlI4QWpiQVFxTW0zSjdyZExxcXFpNzZjOVhFMlZWUFg2UndZZm1OYTdHUDdjNEZfeU8xR2ktSDBuUjdHMTJfRjVZbXJvNXkwdDJIcGVwS2pUeGhDSTR3WkQ0LXNDZw?oc=5",
+      "gray_zone_flag": true,
+      "blue_uas_flag": false,
+      "query": "Anzu Robotics government contract",
+      "scraped_at": "2026-05-10T14:46:39.508402+00:00"
+    },
     {
       "id": "sol-a5cfd02f1e",
       "source": "news",
@@ -24,7 +45,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-05-09T14:44:24.448199+00:00"
+      "scraped_at": "2026-05-10T14:46:39.508402+00:00"
     },
     {
       "id": "sol-4fe2f14368",
@@ -45,14 +66,14 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-05-09T14:44:24.448199+00:00"
+      "scraped_at": "2026-05-10T14:46:39.508402+00:00"
     },
     {
       "id": "sol-e2b5768a90",
       "source": "news",
-      "source_label": "police1.com",
+      "source_label": "Police1",
       "type": "news_signal",
-      "title": "Leading beyond the DJI drone debate - police1.com",
+      "title": "Leading beyond the DJI drone debate - Police1",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
@@ -66,7 +87,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-05-09T14:44:24.448199+00:00"
+      "scraped_at": "2026-05-10T14:46:39.508402+00:00"
     },
     {
       "id": "sol-1ccc75ae24",
@@ -87,7 +108,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-05-09T14:44:24.448199+00:00"
+      "scraped_at": "2026-05-10T14:46:39.508402+00:00"
     },
     {
       "id": "sol-ca661cc52a",
@@ -108,7 +129,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-05-09T14:44:24.448199+00:00"
+      "scraped_at": "2026-05-10T14:46:39.508402+00:00"
     },
     {
       "id": "sol-52eecf0ec4",
@@ -129,7 +150,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-05-09T14:44:24.448199+00:00"
+      "scraped_at": "2026-05-10T14:46:39.508402+00:00"
     },
     {
       "id": "sol-a82dd10c0c",
@@ -150,7 +171,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-05-09T14:44:24.448199+00:00"
+      "scraped_at": "2026-05-10T14:46:39.508402+00:00"
     },
     {
       "id": "sol-0947b3c182",
@@ -171,13 +192,13 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-05-09T14:44:24.448199+00:00"
+      "scraped_at": "2026-05-10T14:46:39.508402+00:00"
     }
   ],
   "vendors_flagged": [
-    "anzu",
-    "dji",
+    "autel",
     "anzu robotics",
-    "autel"
+    "anzu",
+    "dji"
   ]
 }
