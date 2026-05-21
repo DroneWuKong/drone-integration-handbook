@@ -5832,7 +5832,7 @@
       "Total Outlays": 147118.91,
       "Description": "THIS PROJECT PROPOSES TO EVALUATE HOW THE COUPLED OCEAN-ATMOSPHERE SYSTEM INFLUENCES TROPICAL CYCLONE (TC) INTENSITY CHANGE WITH A TARGETED AIRCRAFT-BASED OBSERVATIONAL FIELD CAMPAIGN. THE PROJECT AIMS TO USE A VARIETY OF OBSERVING TOOLS TO BETTER UNDERSTAND THE OCEAN, ATMOSPHERIC BOUNDARY LAYER, AND THE ATMOSPHERE - ALL COMPRISING THE AIR-SEA TRANSITION ZONE. THE PROJECT PROPOSES TO DEPLOY EM-APEX FLOATS, AIRCRAFT EXPENDABLE BATHYTHERMOGRAPHS (AXBTS) AND DROPSONDES WITH INFRARED SEA SURFACE TEMPERATURE (SST) SENSORS (IRSONDES), SURFACE A-SIZED DIRECTIONAL WAVE SPECTRA BAROMETER DRIFTERS (A-DWSBD), AND SMALL UNCREWED AIRCRAFT SYSTEMS (SUAS). THESE OBSERVATIONAL SYSTEMS WILL DEPLOYED IN STRATEGIC AREAS AHEAD OF AND WITHIN A TC. THESE OBSERVATIONS WILL IMPROVE OUR UNDERSTANDING OF THE IMPORTANT PHYSICAL PROCESSES THAT IMPACT TC INTENSITY CHANGE, IMPROVE MODELS, AND ENABLE THE REAL-TIME TRANSMISSION OF CRITICAL OCEANIC DATA FOR FORECASTING AND MODEL INITIALIZATION PURPOSES.",
       "Start Date": "2022-10-01",
-      "End Date": "2026-09-30",
+      "End Date": "2027-09-30",
       "Awarding Agency": "Department of Commerce",
       "Awarding Sub Agency": "National Oceanic and Atmospheric Administration",
       "Award Type": "COOPERATIVE AGREEMENT (B)",
@@ -8625,6 +8625,22 @@
       "generated_internal_id": "CONT_AWD_N0001421C1078_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 353818060,
+      "Award ID": "N0001925P1000",
+      "Recipient Name": "EDGE AUTONOMY SLO, LLC",
+      "Award Amount": 2960820.0,
+      "Total Outlays": null,
+      "Description": "THE PURPOSE OF THIS PURCHASE ORDER IS TO PROCURE A VXE30 STALKER UNMANNED AERIAL VEHICLE (UAV), ASSOCIATED HARDWARE, AND TRAINING IN SUPPORT OF THE GUYANA DEFENCE FORCE, FOREIGN MILITARY SALES (FMS) CASE GU-P-LAG.",
+      "Start Date": "2025-09-22",
+      "End Date": "2026-12-31",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Defense Contract Management Agency",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_N0001925P1000_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 311100132,
       "Award ID": "N6833523C0168",
       "Recipient Name": "MARTIN UAV LLC",
@@ -8719,22 +8735,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_N0002421F8392_9700_N0002418D6401_9700"
-    },
-    {
-      "internal_id": 353818060,
-      "Award ID": "N0001925P1000",
-      "Recipient Name": "EDGE AUTONOMY SLO, LLC",
-      "Award Amount": 1480410.0,
-      "Total Outlays": null,
-      "Description": "THE PURPOSE OF THIS PURCHASE ORDER IS TO PROCURE A VXE30 STALKER UNMANNED AERIAL VEHICLE (UAV), ASSOCIATED HARDWARE, AND TRAINING IN SUPPORT OF THE GUYANA DEFENCE FORCE, FOREIGN MILITARY SALES (FMS) CASE GU-P-LAG.",
-      "Start Date": "2025-09-22",
-      "End Date": "2026-12-31",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Navy",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_N0001925P1000_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 297877977,
@@ -10052,7 +10052,7 @@
       "internal_id": 268742113,
       "Award ID": "NA25NMFX472C0161",
       "Recipient Name": "DUKE UNIVERSITY",
-      "Award Amount": 229089.0,
+      "Award Amount": 492836.0,
       "Total Outlays": 63318.82,
       "Description": "THIS PROJECT IS AN INTERDISCIPLINARY COLLABORATION BETWEEN MULTIPLE NOAA OFFICES AND DUKE UNIVERSITY MARINE ROBOTICS AND REMOTE SENSING LAB AND OCEAN ALLIANCE. GOALS ARE TO DEVELOP A CURRICULUM TO TRAIN NOAA EMPLOYEES IN BOTH FOUNDATIONAL AND SPECIALIZED UNOCCUPIED AIRCRAFT SYSTEMS (UAS) SKILLS AND INTEGRATE/ENGINEER A DEPLOYMENT MECHANISM WITH A COMMERCIALLY AVAILABLE AND MISSION PROVEN BLUE UAS-CERTIFIED MULTIROTOR UAS.",
       "Start Date": "2025-06-01",
@@ -10303,6 +10303,22 @@
       "awarding_agency_id": 862,
       "agency_slug": "national-aeronautics-and-space-administration",
       "generated_internal_id": "CONT_AWD_80NSSC25CA043_8000_-NONE-_-NONE-"
+    },
+    {
+      "internal_id": 358466282,
+      "Award ID": "1333ND26PNB670141",
+      "Recipient Name": "BRINC DRONES, INC",
+      "Award Amount": 29997.0,
+      "Total Outlays": null,
+      "Description": "OU67-FY26-020-NEW SMALL UNCREWED AIRCRAFT SYSTEM",
+      "Start Date": "2026-05-19",
+      "End Date": "2026-06-15",
+      "Awarding Agency": "Department of Commerce",
+      "Awarding Sub Agency": "National Institute of Standards and Technology",
+      "Award Type": null,
+      "awarding_agency_id": 183,
+      "agency_slug": "department-of-commerce",
+      "generated_internal_id": "CONT_AWD_1333ND26PNB670141_1341_-NONE-_-NONE-"
     },
     {
       "internal_id": 277650915,
@@ -12241,6 +12257,6 @@
       "generated_internal_id": "ASST_NON_R21EB034941_075"
     }
   ],
-  "scraped_at": "2026-05-20T16:49:09.491087+00:00",
-  "count": 765
+  "scraped_at": "2026-05-21T16:36:01.047926+00:00",
+  "count": 766
 }
