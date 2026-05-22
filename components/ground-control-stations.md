@@ -1,7 +1,7 @@
 # Ground Control Stations
 
 > **Forge cross-reference:** 13 entries in `ground_control_stations` category  
-> **Related handbook chapters:** TAK Integration, Companion Computers, C2 Datalinks  
+> **Related handbook chapters:** TAK Integration, Companion Computers, C2 Datalinks, [Handheld GCS Hardware Deep-Dive](./hand-controller-gcs-hardware.md)  
 > **Handbook Roadmap:** Aligns with planned Chapter 22 (Ground Control Stations)
 
 ## What a GCS Does
@@ -46,6 +46,12 @@ Software needs hardware to run on. For field operations, this means ruggedized d
 ### Companion Computer as GCS
 
 - **ARK Electronics "Just a Jetson"** — NDAA-compliant Jetson Orin carrier board that can function as both an onboard companion computer and a ground-side GCS depending on configuration. Running ROS 2 on the ground side enables custom GCS interfaces with direct access to the autonomy stack.
+
+### Build Your Own (Hardware Deep-Dive)
+
+For teams designing a handheld GCS from scratch — comparable to Herelink, DJI RC Pro, Freefly Pilot Pro, or Inspired Flight GS-ONE — see the dedicated build-oriented page:
+
+→ **[Handheld GCS Hardware Deep-Dive](./hand-controller-gcs-hardware.md)** — SoC selection, sunlight-readable display options, radio link tiers (ELRS/OpenHD through Silvus), Hall-effect gimbals, GNSS-on-controller, cellular/satcom failover, power architecture, thermals, enclosure, OS stack, regulatory checklist, and full BOMs for **minimum / mid / maximum** tiers (~$470 / ~$2,000 / ~$10–12k).
 
 ## Selection Criteria
 
