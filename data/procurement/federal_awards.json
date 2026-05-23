@@ -3633,6 +3633,22 @@
       "generated_internal_id": "CONT_AWD_W31P4Q23F0212_9700_W31P4Q18D0002_9700"
     },
     {
+      "internal_id": 353864688,
+      "Award ID": "N0002425F8709",
+      "Recipient Name": "UNIVERSITY OF WASHINGTON",
+      "Award Amount": 11822969.0,
+      "Total Outlays": null,
+      "Description": "FY26 RDT AND E ACOUSTIC SYSTEMS TD 5101026APL/UW FY2020 - FY2025 REQUIREMENTS IN SUPPORT OF CLIN 0001UNIVERSITY AFFILIATED RESEARCH CENTER (UARC) EFFORT IN ACCORDANCE WITH SECTION C.",
+      "Start Date": "2025-09-24",
+      "End Date": "2027-09-30",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_N0002425F8709_9700_N0002421D6400_9700"
+    },
+    {
       "internal_id": 291267135,
       "Award ID": "70Z02324F93130001",
       "Recipient Name": "SHIELD AI INC",
@@ -3711,22 +3727,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W31P4Q25F0023_9700_W31P4Q22D0025_9700"
-    },
-    {
-      "internal_id": 353864688,
-      "Award ID": "N0002425F8709",
-      "Recipient Name": "UNIVERSITY OF WASHINGTON",
-      "Award Amount": 9033469.0,
-      "Total Outlays": null,
-      "Description": "FY26 RDT AND E ACOUSTIC SYSTEMS TD 5101026APL/UW FY2020 - FY2025 REQUIREMENTS IN SUPPORT OF CLIN 0001UNIVERSITY AFFILIATED RESEARCH CENTER (UARC) EFFORT IN ACCORDANCE WITH SECTION C.",
-      "Start Date": "2025-09-24",
-      "End Date": "2027-09-30",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Navy",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_N0002425F8709_9700_N0002421D6400_9700"
     },
     {
       "internal_id": 278754627,
@@ -6436,7 +6436,7 @@
       "internal_id": 306338198,
       "Award ID": "H9240224F0028",
       "Recipient Name": "ANDURIL INDUSTRIES, INC.",
-      "Award Amount": 10770990.0,
+      "Award Amount": 10742187.0,
       "Total Outlays": null,
       "Description": "ROADRUNNER SUBASSEMBLY COMPONENTS AND DRONEGUN",
       "Start Date": "2024-02-29",
@@ -12257,6 +12257,6 @@
       "generated_internal_id": "ASST_NON_R56AG089926_075"
     }
   ],
-  "scraped_at": "2026-05-22T16:20:31.827652+00:00",
+  "scraped_at": "2026-05-23T14:55:54.671734+00:00",
   "count": 766
 }
