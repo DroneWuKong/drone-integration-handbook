@@ -109,7 +109,7 @@ Operator-level quick references. Laminate-and-carry format. Each fills a gap whe
 - [ ] Add mesh network topology diagrams (Ch 14)
 - [ ] Add CoT message flow diagrams (Ch 15)
 - [ ] Add blackbox trace screenshots with annotations (Ch 10)
-- [ ] Wire new component docs into `build.py` navigation so they render on nvmilldoitmyself.com
+- [ ] Wire new component docs into `build.py` navigation so they render on uas-handbook.com
 - [ ] Cross-reference PIE flags from component docs where supply chain constraints are relevant
 
 ## Community Requests

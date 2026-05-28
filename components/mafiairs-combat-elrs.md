@@ -54,4 +54,4 @@ MafiaLRS operates on frequencies not licensed for unlicensed use in many jurisdi
 
 - [ELRS Airport Mode](elrs-airport-mode.md)
 - [RF Detection Hardware](rf-detection-hardware.md)
-- [Forge MafiaLRS Generator](https://forgeprole.netlify.app/tools/)
+- [Forge MafiaLRS Generator](https://uas-forge.com/tools/)

@@ -2,7 +2,7 @@
 
 > Curated links to trusted sources across the commercial UAS ecosystem, defense programs, and financial activity. Updated regularly from the Forge data pipeline.
 >
-> **Live dashboard with filtering:** [forgeprole.netlify.app/intel/](https://forgeprole.netlify.app/intel/)
+> **Live dashboard with filtering:** [uas-patterns.com/intel/](https://uas-patterns.com/intel/)
 
 ---
 
@@ -135,4 +135,4 @@ Qualcomm Ventures, Andreessen Horowitz, Lux Capital, Lockheed Martin Ventures, B
 
 *Last updated: March 2026*
 *Source: Forge data pipeline + DRONELIFE, sUAS News, SBIR.gov, PitchBook, Crunchbase*
-*Live dashboard: [forgeprole.netlify.app/intel/](https://forgeprole.netlify.app/intel/)*
+*Live dashboard: [uas-patterns.com/intel/](https://uas-patterns.com/intel/)*

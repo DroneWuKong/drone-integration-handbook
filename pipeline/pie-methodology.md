@@ -27,42 +27,57 @@ PIE data is not opinion or analysis. It is derived from:
 
 ## Flag Types
 
-### `db_supply_constraint`
-Component has fewer than 5 NDAA-compliant alternatives in the Forge DB,
-or current price is >25% above 30-day average. Signal: supply chain risk.
+Each flag carries a `flag_type`. The live taxonomy is broader than the
+original planning-era `db_*` sketch; the types the pipeline actually emits,
+grouped by family, are below. (Type membership and relative volume shift as
+sources change — treat this as the current catalog, not a fixed contract.)
 
-### `db_landscape`
-Category has >60% Chinese-origin parts by count. Signal: dependency risk
-for operators needing NDAA compliance.
+### Supply chain & pricing
 
-### `db_supply_chain_risk`
-Component is single-source (one manufacturer) or has >16 weeks lead time.
-Derived from Forge DB `lead_time_weeks` and manufacturer count per model.
+- `supply_constraint` — component has few NDAA-compliant alternatives in the
+  Forge DB, or availability has tightened. Signal: supply chain risk.
+- `supply_chain_risk` — single-source component (one manufacturer) or long
+  lead time. Derived from Forge DB `lead_time_weeks` and manufacturer count.
+- `price_anomaly` — current price diverges sharply from the recent average.
+- `cost_impact` — a price/supply move with a quantified downstream cost effect.
+- `component_analysis` — a category- or part-level finding from the Forge DB
+  (e.g. country-of-origin concentration / dependency risk).
+- `market_data` / `market_dynamics` — supply, demand, funding, or pricing
+  signals extracted from intel sources.
 
-### `db_diversion`
-Component confirmed or suspected in Russian weapons systems (per open-source
-reporting). Forge DB `tags` field includes `diversion_risk`.
+### Diversion, gray zone & entities
 
-### `db_compliance`
-Component has a material NDAA/FCC compliance issue that affects
-procurement decisions. Includes FCC Covered List items.
+- `grayzone` — entity shows multiple gray-zone indicators (Chinese-derived
+  hardware, US corporate veneer, adversary connections). See Gray Zone scoring.
+- `grayzone_xref` — a gray-zone entity cross-referenced against another
+  dataset (procurement, parts, or corporate records).
+- `diversion_risk` — component confirmed or suspected in adversary weapons
+  systems per open-source reporting (Forge DB `tags` includes `diversion_risk`).
+- `corporate_structure` / `corporate_evasion` — ownership / shell-company
+  structure, or evidence of sanctions/export-control evasion.
+- `buyer_exposure` — a buyer/program exposed to a flagged supplier or entity.
 
-### `market_signal`
-Intel article contains a supply, acquisition, funding, or program signal
-scored above the relevance threshold. NLP-extracted from article content.
+### Procurement & contracts
 
-### `gray_zone`
-Entity shows multiple indicators of gray zone status: Chinese-derived
-hardware, US corporate veneer, or adversary connections. See Gray Zone
-scoring methodology below.
+- `procurement_spike` — unusual volume or value in federal solicitations/awards
+  (SAM.gov, USASpending) above the minimum contract value threshold.
+- `contract_signal` — an individual contract award/solicitation signal.
 
-### `regulatory`
-New regulation, rulemaking, enforcement action, or program change that
-affects Blue UAS, NDAA, or BVLOS operations.
+### Regulatory & legal
 
-### `procurement`
-Federal contract award, solicitation, or program signal from SAM.gov or
-USASpending above the minimum contract value threshold ($50K).
+- `regulatory` — new regulation, rulemaking, enforcement action, or program
+  change affecting Blue UAS, NDAA, or BVLOS operations.
+- `regulatory_deadline` — a time-sensitive regulatory date (comment window,
+  effective date, compliance deadline).
+- `legislation` — proposed or enacted legislation relevant to the ecosystem.
+- `legal_action` / `legal_precedent` — enforcement case / docket activity, or a
+  ruling that sets precedent.
+- `compliance` — a material NDAA/FCC compliance issue (incl. FCC Covered List).
+
+### Analysis & OSINT
+
+- `correlation` — a derived link found across multiple flags/sources.
+- `osint` — an open-source-intelligence signal not covered by the above.
 
 ---
 
