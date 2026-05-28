@@ -174,6 +174,10 @@ def rewrite_legacy_domains(html):
         ('https://nvmillbuilditmyself.com/pro/',      'https://uas-patterns.com/patterns/'),
         ('https://nvmillfindoutmyself.com/patterns/', 'https://uas-patterns.com/patterns/'),
         ('https://nvmillfindoutmyself.com/pro/',      'https://uas-patterns.com/patterns/'),
+        # Retired Netlify Forge host: intel merged into Patterns; rest → Forge
+        ('https://forgeprole.netlify.app/intel/',        'https://uas-patterns.com/intel/'),
+        ('https://forgeprole.netlify.app/patterns-home/','https://uas-patterns.com/patterns-home/'),
+        ('https://forgeprole.netlify.app/patterns/',     'https://uas-patterns.com/patterns/'),
     ]
     for old, new in specific:
         html = html.replace(old, new)
@@ -190,6 +194,12 @@ def rewrite_legacy_domains(html):
         ('https://uas-patterns.pro',            'https://uas-patterns.com'),
         ('https://www.illdoitmyself.com',       'https://uas-handbook.com'),
         ('https://illdoitmyself.com',           'https://uas-handbook.com'),
+        # uas-intel.com merged into uas-patterns.com
+        ('https://www.uas-intel.com',           'https://uas-patterns.com'),
+        ('https://uas-intel.com',               'https://uas-patterns.com'),
+        # Retired Netlify Forge host (bare) → Forge
+        ('https://www.forgeprole.netlify.app',  'https://uas-forge.com'),
+        ('https://forgeprole.netlify.app',      'https://uas-forge.com'),
     ]
     for old, new in bare:
         html = html.replace(old, new)
@@ -1388,11 +1398,11 @@ body {{
   </div>
   <div class="nav-drawer-section">
     <div class="nav-drawer-label">Forge Ecosystem</div>
-    <a href="https://forgeprole.netlify.app" class="nav-drawer-item"><i class="ph ph-database"></i> Forge</a>
-    <a href="https://forgeprole.netlify.app/tools-home/" class="nav-drawer-item"><i class="ph ph-wrench"></i> Tools</a>
-    <a href="https://forgeprole.netlify.app/patterns-home/" class="nav-drawer-item"><i class="ph ph-graph"></i> Patterns</a>
-    <a href="https://forgeprole.netlify.app/intel/" class="nav-drawer-item"><i class="ph ph-newspaper"></i> Intel</a>
-    <a href="https://forgeprole.netlify.app/wingman/" class="nav-drawer-item"><i class="ph ph-robot"></i> Wingman AI</a>
+    <a href="https://uas-forge.com" class="nav-drawer-item"><i class="ph ph-database"></i> Forge</a>
+    <a href="https://uas-forge.com/tools-home/" class="nav-drawer-item"><i class="ph ph-wrench"></i> Tools</a>
+    <a href="https://uas-patterns.com/patterns-home/" class="nav-drawer-item"><i class="ph ph-graph"></i> Patterns</a>
+    <a href="https://uas-patterns.com/intel/" class="nav-drawer-item"><i class="ph ph-newspaper"></i> Intel</a>
+    <a href="https://uas-forge.com/wingman/" class="nav-drawer-item"><i class="ph ph-robot"></i> Wingman AI</a>
   </div>
   <div class="nav-drawer-section">
     <div class="nav-drawer-label">Vendor Guides</div>
@@ -1422,10 +1432,10 @@ body {{
       <span>Search</span>
       <kbd>&#8984;K</kbd>
     </button>
-    <a href="https://forgeprole.netlify.app" class="topbar-pill">Forge</a>
-    <a href="https://forgeprole.netlify.app/intel/" class="topbar-pill hide-mobile">Intel</a>
-    <a href="https://forgeprole.netlify.app/patterns/" class="topbar-pill hide-mobile">Patterns</a>
-    <a href="https://forgeprole.netlify.app/wingman/" class="topbar-pill">Wingman</a>
+    <a href="https://uas-forge.com" class="topbar-pill">Forge</a>
+    <a href="https://uas-patterns.com/intel/" class="topbar-pill hide-mobile">Intel</a>
+    <a href="https://uas-patterns.com/patterns/" class="topbar-pill hide-mobile">Patterns</a>
+    <a href="https://uas-forge.com/wingman/" class="topbar-pill">Wingman</a>
   </div>
 </header>
 
