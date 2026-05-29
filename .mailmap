@@ -1,0 +1,10 @@
+# Author identity normalization (for handoff / accurate git shortlog).
+# Collapses one person's historical git identities into a single canonical name.
+# Automation identities (Claude, github-actions[bot], PIE Procurement Scanner,
+# Command Dev, Forge Audit Bot, Midwest Nice UAS) are intentionally left unmapped.
+
+Jeremiah Wong <jeremiah@midwestniceuas.com> <Jeremiah@midwestniceuas.com>
+Jeremiah Wong <jeremiah@midwestniceuas.com> Jeremiah <jeremiah@midwestniceuas.com>
+Jeremiah Wong <jeremiah@midwestniceuas.com> DroneWuKong <jeremiah@midwestniceuas.com>
+Jeremiah Wong <jeremiah@midwestniceuas.com> DroneWuKong <drone@wukong.dev>
+Jeremiah Wong <jeremiah@midwestniceuas.com> DroneWuKong <DroneWuKong@users.noreply.github.com>
