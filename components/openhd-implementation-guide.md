@@ -212,6 +212,45 @@ Buddy connects to the OpenHD ground station's MAVLink UDP stream (port 14550) as
 
 ---
 
+## MediaTek MT7915 / MT7916 Compatibility Notes
+
+People keep asking whether they can run OpenHD on the MediaTek **MT7915 / MT7916** WiFi-6 silicon instead of the usual Realtek RTL8812AU. Short answer: **not as a drop-in today.** The parts are fully mainline-supported, but they fail OpenHD's specific requirements in ways that matter. Here's the honest breakdown.
+
+### What these chips are
+
+MT7915 and MT7916 are MediaTek's 802.11ax (WiFi 6) 4T4R dual-band (2.4/5 GHz) parts, driven by the mainline `mt76` driver (specifically the `mt7915` sub-driver) since Linux **5.9+**. They're the radios inside a large fraction of modern OpenWRT routers and SBC mesh boards. Critically, they are almost always **PCIe/M.2** parts — not USB dongles. OpenHD's bench-and-airframe workflow (Step 3–4 above) assumes a USB adapter you solder to the SBC's USB pads; an M.2 MediaTek card needs a host with an M.2 slot (x86, CM4 on a PCIe-capable carrier, Rock5, etc.), which changes the whole air-unit build.
+
+### OpenHD's actual bar
+
+OpenHD ([FAQ](https://openhdfpv.org/general/faq/)) requires an adapter that is **stable in monitor mode** *and* can **inject packets at a sufficient (and ideally fixed) rate**. Its officially supported, proven adapters are all **Realtek**: RTL8812AU, RTL8814AU, RTL8812BU, RTL8811AU. MediaTek is **not** on that list — wifibroadcast's rate-control and injection path is written and tested against the Realtek drivers.
+
+### Where MT7915/7916 fall short for wifibroadcast
+
+| Requirement | MT7915/7916 (`mt76`) status | Impact on OpenHD |
+|---|---|---|
+| Monitor mode | Works at 20/40 MHz, but **firmware crashes at 80 MHz and above** ([mt76 #556](https://github.com/openwrt/mt76/issues/556)) | Caps you at narrow channels; loses the WiFi-6 throughput that was the whole point |
+| Active monitor mode | Family has instability reports (e.g. `mt7921u` active monitor breaks the driver — [mt76 #839](https://github.com/openwrt/mt76/issues/839)) | Risk of driver hangs mid-link |
+| Fixed-rate injection | Not a proven/documented path through OpenHD's injection layer | This is the real blocker — no validated wifibroadcast TX support |
+| Bus / form factor | PCIe/M.2, not USB | Doesn't fit the standard solder-to-USB-pads air build |
+
+### Where MT7915/7916 do fit
+
+These chips fit **infrastructure-style and OpenWRT mesh** roles rather than wifibroadcast video:
+
+- **802.11s / batman-adv mesh** on OpenWRT — solid on **2.4 GHz**. Note that **5 GHz 802.11s is flaky** on this family: multiple reports of nodes not meshing or trace errors on 5 GHz ([mt76 #675](https://github.com/openwrt/mt76/issues/675), [#707](https://github.com/openwrt/mt76/issues/707), [#259](https://github.com/openwrt/mt76/issues/259)). Plan your mesh backbone on 2.4 GHz and validate 5 GHz on your exact kernel/firmware before relying on it.
+- A separate **command/telemetry mesh layer** alongside an OpenHD video link (analogous to the [OpenHD + Meshtastic](#integration-patterns) backup-comms pattern), not as the video carrier itself.
+
+### If you still want to try it
+
+1. Use a recent kernel (6.6 LTS+) with the newest `mt76` you can get — the OpenWRT out-of-tree `mt76` moves faster than mainline for these parts.
+2. Keep monitor-mode channel width at **20/40 MHz** to dodge the ≥80 MHz firmware crash.
+3. Verify injection independently first: an `aireplay-ng --test` injection test on the monitor interface **before** wiring it into OpenHD. If fixed-rate injection doesn't work there, it won't work in wifibroadcast.
+4. Treat it as experimental and ask in the OpenHD [Telegram](https://t.me/OpenHD_User)/[Discord](https://discord.gg/NRRn5ugrxH) for the current state of MediaTek support — it changes release to release.
+
+**Bottom line:** for an OpenHD *video* link, stick with the proven Realtek RTL8812AU/8814AU. Reach for MT7915/MT7916 when you want an OpenWRT **mesh** node (2.4 GHz), not a wifibroadcast transmitter.
+
+---
+
 ## Resources
 
 - [openhdfpv.org](https://openhdfpv.org) — official docs (Evo and 2.0 legacy)
@@ -222,4 +261,4 @@ Buddy connects to the OpenHD ground station's MAVLink UDP stream (port 14550) as
 
 ---
 
-*Last updated: March 2026*
+*Last updated: May 2026*
