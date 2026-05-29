@@ -393,6 +393,35 @@ flight that keeps the topology quasi-static, or where you have already tuned
 the OGM/ELP intervals and validated it in the air. **When to move off it:**
 anything with genuinely fast, arbitrary topology change at scale — go Babel.
 
+### Radio chip by link role
+
+A drone with both an HD video downlink and a mesh carries two different
+radio problems, and no single chip is best at both. The video link
+(wifibroadcast/OpenHD — see the OpenHD Implementation Guide) wants a
+monitor-mode injection card; the mesh wants reliable IBSS/802.11s and,
+for a contested low-latency mode, raw injection. This table spans both.
+
+Ratings: **Best** / **Good** / **Limited** (works but constrained or needs
+validation) / **No** (don't).
+
+| Chip | HD video P2P (wifibroadcast) | Mesh — routed (IBSS/802.11s) | Mesh — barrage (raw inject) | Band | Bus | Production | Chip origin |
+|---|---|---|---|---|---|---|---|
+| **RTL8812AU** | **Best** — the standard | No — Realtek IBSS/802.11s is poor | Limited — injects, but not the usual barrage chip | 2.4/5, WiFi-5 | USB | Current | Realtek (Taiwan) |
+| **AR9271** (ath9k_htc) | Limited — the *original* wifibroadcast card; 2.4 GHz, low bitrate | Good — solid IBSS | Good — common barrage injector | 2.4, WiFi-4 | USB | EOL | Atheros/Qualcomm |
+| **AR9280** (ath9k) | Limited — WiFi-4 bitrate | **Best** — IBSS + 802.11s | Good | 2.4/5, WiFi-4 | mini-PCIe | EOL | Atheros/Qualcomm |
+| **MT7612U** (mt76x2) | Limited — experimental in wfb (Realtek-first) | Good — usable IBSS + 802.11s | Good — injects; validate per kernel | 2.4/5, WiFi-5 | USB / M.2 | Available | MediaTek (Taiwan) |
+| **MT7915/16** (mt76) | No — monitor-mode firmware crash ≥80 MHz, injection unproven | No — IBSS broken; 802.11s 2.4 GHz only | Limited — unvalidated | 2.4/5, WiFi-6 | PCIe / M.2 | Current | MediaTek (Taiwan) |
+
+**Read-out:** RTL8812AU owns the video link; ath9k (AR9271/AR9280) and
+MT7612U own the mesh. The only plausible *single-chip, both-jobs* part is
+**MT7612U** — it can run wifibroadcast video (experimentally) and mesh
+(IBSS/802.11s/barrage) on one current, embeddable radio, at the cost of
+inferior video versus a dedicated RTL8812AU. Note the reliability/longevity
+trap: the best mesh-IBSS chips (ath9k) are **end-of-life and dongle-centric**,
+which is a poor base for an integrated product — another reason to route the
+mesh with Babel over 802.11s (so you are not locked to a legacy IBSS chip) and
+choose a current, embeddable module.
+
 ### Sources and further reading
 
 - [MDPI Appl. Sci. 11:4363 — FANET routing comparison (real conditions)](https://www.mdpi.com/2076-3417/11/10/4363)
