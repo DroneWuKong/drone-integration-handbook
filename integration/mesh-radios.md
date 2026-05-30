@@ -406,7 +406,7 @@ validation) / **No** (don't).
 
 | Chip | HD video P2P (wifibroadcast) | Mesh — routed (IBSS/802.11s) | Mesh — barrage (raw inject) | Band | Bus | Production | Chip origin |
 |---|---|---|---|---|---|---|---|
-| **RTL8812AU** | **Best** — the standard | No — Realtek IBSS/802.11s is poor | Limited — injects, but not the usual barrage chip | 2.4/5, WiFi-5 | USB | Current | Realtek (Taiwan) |
+| **RTL8812AU** | **Best** — the standard | No — Realtek IBSS/802.11s is poor | Good — proven injector (the wfb-ng card); validate per stack | 2.4/5, WiFi-5 | USB | Current | Realtek (Taiwan) |
 | **AR9271** (ath9k_htc) | Limited — the *original* wifibroadcast card; 2.4 GHz, low bitrate | Good — solid IBSS | Good — common barrage injector | 2.4, WiFi-4 | USB | EOL | Atheros/Qualcomm |
 | **AR9280** (ath9k) | Limited — WiFi-4 bitrate | **Best** — IBSS + 802.11s | Good | 2.4/5, WiFi-4 | mini-PCIe | EOL | Atheros/Qualcomm |
 | **MT7612U** (mt76x2) | Limited — experimental in wfb (Realtek-first) | Good — usable IBSS + 802.11s | Good — injects; validate per kernel | 2.4/5, WiFi-5 | USB / M.2 | Available | MediaTek (Taiwan) |
