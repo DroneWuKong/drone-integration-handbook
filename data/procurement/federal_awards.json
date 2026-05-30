@@ -3457,6 +3457,22 @@
       "generated_internal_id": "CONT_AWD_N0016425FJ608_9700_N0016425GJR96_9700"
     },
     {
+      "internal_id": 309499810,
+      "Award ID": "N0001924F5002",
+      "Recipient Name": "TEXTRON SYSTEMS CORPORATION",
+      "Award Amount": 28137779.99,
+      "Total Outlays": null,
+      "Description": "UNMANNED AIR SYSTEMS (UAS) INTELLIGENCE, SURVEILLANCE, AND RECONNAISSANCE (ISR) SERVICES FOR THREE (3) SHIPS IN THE 5TH FLEET AREA OF RESPONSIBILITY",
+      "Start Date": "2024-09-26",
+      "End Date": "2029-09-26",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_N0001924F5002_9700_N0001921G0008_9700"
+    },
+    {
       "internal_id": 309499308,
       "Award ID": "N0001924C0029",
       "Recipient Name": "MSI DEFENSE SOLUTIONS LLC",
@@ -3487,22 +3503,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W31P4Q23F0256_9700_W31P4Q20D0032_9700"
-    },
-    {
-      "internal_id": 309499810,
-      "Award ID": "N0001924F5002",
-      "Recipient Name": "TEXTRON SYSTEMS CORPORATION",
-      "Award Amount": 23490080.15,
-      "Total Outlays": null,
-      "Description": "UNMANNED AIR SYSTEMS (UAS) INTELLIGENCE, SURVEILLANCE, AND RECONNAISSANCE (ISR) SERVICES FOR THREE (3) SHIPS IN THE 5TH FLEET AREA OF RESPONSIBILITY",
-      "Start Date": "2024-09-26",
-      "End Date": "2029-09-26",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Navy",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_N0001924F5002_9700_N0001921G0008_9700"
     },
     {
       "internal_id": 278314530,
@@ -3620,11 +3620,11 @@
       "internal_id": 348950729,
       "Award ID": "W31P4Q23F0212",
       "Recipient Name": "GEORGIA TECH APPLIED RESEARCH CORP",
-      "Award Amount": 11921903.73,
+      "Award Amount": 12213562.29,
       "Total Outlays": null,
       "Description": "UARC PWS ENTITLED, \"GROUND COMBAT SYSTEM RESEARCH  AND ENGINEERING\"",
       "Start Date": "2023-09-21",
-      "End Date": "2027-07-23",
+      "End Date": "2028-02-26",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Army",
       "Award Type": null,
@@ -12273,6 +12273,6 @@
       "generated_internal_id": "ASST_NON_R56AG089926_075"
     }
   ],
-  "scraped_at": "2026-05-29T17:30:24.937173+00:00",
+  "scraped_at": "2026-05-30T15:01:27.072655+00:00",
   "count": 767
 }
