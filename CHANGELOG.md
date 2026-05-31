@@ -1,5 +1,13 @@
 # Changelog
 
+## [Session] - 2026-05-31 — Appendix F: Regulatory & Open Resources
+
+### Added
+- **Appendix F — Regulatory & Open Resources** (`appendices/appendix-f-regulatory-resources.md`): curated, open-access regulatory/safety references (FAA Part 107 + policy library, NCSL state-law tracker, FAA ASIAS incident DB, Eurocontrol, UK CAA, AUVSI, ASSURE, UAS Magazine).
+- `data/erau_resources.json` — machine-readable backing data, tagged by consuming property.
+- Chapter 2 (Frequency Bands & Regulatory Reality) now links to Appendix F from a new "regulatory side of reality" section.
+
+
 ## [Session] - 2026-04-13 — Mass parts-db enrichment + duplicate PID removal
 
 ### Fixed

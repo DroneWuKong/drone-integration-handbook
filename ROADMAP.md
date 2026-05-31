@@ -93,6 +93,7 @@ Operator-level quick references. Laminate-and-carry format. Each fills a gap whe
 - [x] **Appendix C: MAVLink Message Quick Reference** — The 20 messages you actually use
 - [x] **Appendix D: MSP Function Code Quick Reference** — The 15 function codes you actually use
 - [x] **Appendix E: CoT Type Code Reference** — Common MIL-STD-2525C codes for drone operations
+- [x] **Appendix F: Regulatory & Open Resources** — FAA/NCSL/ASIAS + international regulators (open sources only)
 
 ## Planned Templates
 
