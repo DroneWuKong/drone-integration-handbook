@@ -77,7 +77,7 @@ manufacturer documentation.
 
 ### Part 3b — Component References
 
-- [Orqa Ecosystem](components/orqa-ecosystem.md)
+- [Orqa Hardware Guide](components/orqa-hardware-guide.md)
   Ghost RC link, F405/H7 flight controllers, 3030 ESC,
   FPV.One Pilot goggles — the complete EU-manufactured,
   NDAA-compliant FPV stack.
