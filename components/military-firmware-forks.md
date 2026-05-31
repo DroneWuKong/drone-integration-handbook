@@ -6,7 +6,7 @@
 > Both sides now operate custom firmware ecosystems that transform $300
 > commercial hardware into EW-resistant strike platforms.
 
-**Cross-references:** [Ch.2 RF Fundamentals](../fundamentals/rf-fundamentals.md) ·
+**Cross-references:** [Ch.2 RF Fundamentals](../fundamentals/five-link-types.md) ·
 [Ch.5–7 Firmware](../firmware/four-firmwares.md) ·
 [Ch.8 UART/Serial](../firmware/uart-layout.md) ·
 [MafiaLRS](mafiairs-combat-elrs.md) ·

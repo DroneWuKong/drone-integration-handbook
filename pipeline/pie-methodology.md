@@ -196,7 +196,7 @@ it may mean less information is available.
 
 ## Related
 
-- [Industry Intelligence](industry-intelligence.md)
+- [Industry Intelligence](../components/industry-intelligence.md)
 - [PIE Pipeline (technical)](../pipeline/)
 - [Forge Compliance Dashboard](https://uas-forge.com/compliance/)
 - [Patterns — Live Flags](https://uas-patterns.com/patterns/)
