@@ -3,6 +3,17 @@
 Future chapters, sections, and improvements under consideration.
 Open an issue to suggest additions or volunteer to write one.
 
+## Planned — Part 6: Autonomy (scoped)
+
+Cross-property section (Handbook chapters + Forge interactive browser). Full plan:
+[`docs/AUTONOMY_PAGE_PLAN.md`](docs/AUTONOMY_PAGE_PLAN.md). ~1-day effort.
+
+- [ ] **Ch. Datasets & Benchmarks** — catalog of VIO/SLAM, CV-detection, and RF datasets (from `forge-data` registry), with license/usage caveats
+- [ ] **Ch. Perception: VIO/SLAM/Depth** — state estimation + the benchmarks that test it (UZH-FPV, Mid-Air)
+- [ ] **Ch. Detection: RF + Visual** — DroneRF→detector hardware; visual drone/counter-UAS corpora
+- [ ] **Ch. Onboard AI & Control** — APB on-board AI, rl-pilot, detect-and-avoid, swarm
+- [ ] Register chapters 19–22 in `build.py` CHAPTERS + new PARTS entry; cross-link to Forge
+
 ## Recently Completed (2026-04-13)
 
 - [x] **NDAA Compliance doc updated** — `components/ndaa-compliance.md` — Fixed encoding corruption, updated covered entity list (Autel §1709 FY2025, Anzu Robotics gray zone, FCC Covered List), expanded Blue UAS table to 12 cleared platforms, added FCC exemption expiry Jan 1 2027 warning, ASDA/grant applicability, common mistakes section.
