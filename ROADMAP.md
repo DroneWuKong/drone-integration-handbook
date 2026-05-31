@@ -3,16 +3,17 @@
 Future chapters, sections, and improvements under consideration.
 Open an issue to suggest additions or volunteer to write one.
 
-## Planned — Part 6: Autonomy (scoped)
+## Part 6: Autonomy — chapters shipped (Phase 1)
 
 Cross-property section (Handbook chapters + Forge interactive browser). Full plan:
-[`docs/AUTONOMY_PAGE_PLAN.md`](docs/AUTONOMY_PAGE_PLAN.md). ~1-day effort.
+[`docs/AUTONOMY_PAGE_PLAN.md`](docs/AUTONOMY_PAGE_PLAN.md).
 
-- [ ] **Ch. Datasets & Benchmarks** — catalog of VIO/SLAM, CV-detection, and RF datasets (from `forge-data` registry), with license/usage caveats
-- [ ] **Ch. Perception: VIO/SLAM/Depth** — state estimation + the benchmarks that test it (UZH-FPV, Mid-Air)
-- [ ] **Ch. Detection: RF + Visual** — DroneRF→detector hardware; visual drone/counter-UAS corpora
-- [ ] **Ch. Onboard AI & Control** — APB on-board AI, rl-pilot, detect-and-avoid, swarm
-- [ ] Register chapters 19–22 in `build.py` CHAPTERS + new PARTS entry; cross-link to Forge
+- [x] **Ch. 19 Datasets & Benchmarks** — catalog of VIO/SLAM, CV-detection, and RF datasets with license/usage caveats
+- [x] **Ch. 20 Perception: VIO/SLAM/Depth** — relative vs absolute fixes, why VIO drifts, the failure modes
+- [x] **Ch. 21 Detection: RF + Visual** — passive RF + visual; bird false-positive; detection→navigation
+- [x] **Ch. 22 Onboard AI & Control** — confidence-driven authority, EW-aware/capability-aware autonomy
+- [x] Registered chapters 19–22 in `build.py` CHAPTERS + new "Part 6 — Autonomy" PARTS entry
+- [ ] **Phase 2:** Forge interactive dataset browser (`autonomy/datasets.json`) — tracked in droneclear_Forge FEAT-028
 
 ## Recently Completed (2026-04-13)
 

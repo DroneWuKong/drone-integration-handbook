@@ -23,6 +23,10 @@ CHAPTERS = [
     ("field/unsolved-problems.md",             16, "Unsolved Problems"),
     ("vendor/dow-uas-marketplace.md",          17, "How to Get Listed on the Army UAS Marketplace"),
     ("vendor/dow-uas-marketplace-buyer-access.md", 18, "Army UAS Marketplace — Buyer Account & Access"),
+    ("autonomy/datasets.md",                    19, "Datasets & Benchmarks for Drone Autonomy"),
+    ("autonomy/perception.md",                  20, "Perception: VIO, SLAM & GPS-Denied State Estimation"),
+    ("autonomy/detection.md",                   21, "Detection: RF and Visual"),
+    ("autonomy/onboard-ai-control.md",          22, "Onboard AI & Control"),
 ]
 
 PARTS = [
@@ -32,6 +36,7 @@ PARTS = [
     ("Part 4 — Integration",             [13, 14, 15]),
     ("What's Left to Solve",             [16]),
     ("Part 5 — Vendor Guides",           [17, 18]),
+    ("Part 6 — Autonomy",                [19, 20, 21, 22]),
 ]
 
 # Category display names for the platforms/ subdirectory names
