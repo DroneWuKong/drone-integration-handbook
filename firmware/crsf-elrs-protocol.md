@@ -9,9 +9,9 @@
 **Cross-references:** [UART Layout](../firmware/uart-layout.md) ·
 [Five Link Types](../fundamentals/five-link-types.md) ·
 [ELRS Airport Mode](../field/elrs-airport-mode.md) ·
-[MafiaLRS](mafiairs-combat-elrs.md) ·
-[Military Firmware Forks](military-firmware-forks.md) ·
-[Comms & Datalinks](comms-datalinks.md)
+[MafiaLRS](../components/mafiairs-combat-elrs.md) ·
+[Military Firmware Forks](../components/military-firmware-forks.md) ·
+[Comms & Datalinks](../components/comms-datalinks.md)
 
 ---
 
