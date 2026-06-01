@@ -20,18 +20,19 @@ CHAPTERS = [
     ("integration/companion.md",               13, "Adding a Companion Computer"),
     ("integration/mesh-radios.md",             14, "Mesh Radios for Multi-Vehicle"),
     ("integration/tak.md",                     15, "TAK Integration"),
-    ("field/unsolved-problems.md",             16, "Unsolved Problems"),
-    ("vendor/dow-uas-marketplace.md",          17, "How to Get Listed on the Army UAS Marketplace"),
-    ("vendor/dow-uas-marketplace-buyer-access.md", 18, "Army UAS Marketplace — Buyer Account & Access"),
+    ("integration/mesh-rider-usb-setup.md",    16, "Mesh Rider over the i.MX USB Port"),
+    ("field/unsolved-problems.md",             17, "Unsolved Problems"),
+    ("vendor/dow-uas-marketplace.md",          18, "How to Get Listed on the Army UAS Marketplace"),
+    ("vendor/dow-uas-marketplace-buyer-access.md", 19, "Army UAS Marketplace — Buyer Account & Access"),
 ]
 
 PARTS = [
     ("Part 1 — RF Fundamentals",         [1, 2, 3, 4]),
     ("Part 2 — Flight Controller Firmware", [5, 6, 7, 8]),
     ("Part 3 — Field Operations",        [9, 10, 11, 12]),
-    ("Part 4 — Integration",             [13, 14, 15]),
-    ("What's Left to Solve",             [16]),
-    ("Part 5 — Vendor Guides",           [17, 18]),
+    ("Part 4 — Integration",             [13, 14, 15, 16]),
+    ("What's Left to Solve",             [17]),
+    ("Part 5 — Vendor Guides",           [18, 19]),
 ]
 
 # Category display names for the platforms/ subdirectory names
