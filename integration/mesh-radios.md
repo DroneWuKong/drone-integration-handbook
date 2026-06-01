@@ -202,6 +202,237 @@ This aligns with typical tactical swarm sizes.
 
 ---
 
+## Choosing a Mesh Routing Protocol
+
+The "Mesh Networking Fundamentals" section above describes how batman-adv
+works. The harder question is whether batman-adv is the *right* protocol for
+a fast-moving drone swarm. The honest answer, backed by the one published
+real-flight comparison, is: usually not.
+
+### batman-adv is a community-mesh protocol, not a mobility protocol
+
+batman-adv was built by the German Freifunk community to replace OLSR in
+large, mostly-static rooftop mesh networks. The "Mobile" in the name means
+"infrastructure-less," not "high-velocity." Its known weaknesses bite exactly
+where a swarm lives:
+
+- **Slow reaction.** The default OGM interval is 1000 ms; in a FANET the
+  topology can change completely inside that window. BATMAN V's throughput
+  metric uses a heavily-smoothed average (EWMA, α≈0.125), so a link dropping
+  from 50→5 Mbps can take **~10 seconds** to register, and the protocol will
+  keep routing over an already-dead link until a 30–60 s timeout
+  ([EWSN 2024 measurement](https://ewsn.org/file-repository/ewsn2024/ewsn2024posters-final14.pdf)).
+- **Broadcast flooding.** batman-adv floods broadcast/multicast across the
+  whole mesh. Fine for small control traffic; past ~50 nodes it needs
+  multicast filtering, and it "fails for multicast streaming."
+- **The field result.** In a real outdoor multi-UAV test (two quadcopters
+  plus a relay, 802.11 ad-hoc), batman-adv delivered the **lowest throughput
+  and highest packet loss of the three protocols tested** — worse than both
+  OLSR and Babel — explicitly because "its routing-update period was
+  originally not intended for FANETs"
+  ([MDPI Appl. Sci. 11:4363](https://www.mdpi.com/2076-3417/11/10/4363)).
+
+It can be made to work — lower the OGM/ELP interval to ~500 ms, run it over a
+stable link mode, and accept that positive published UAV results lean on
+either *connectivity-aware flight* (the swarm maneuvers to hold links) or
+*custom GPS-predictive metrics that are not in the mainline kernel*. For a
+swarm with genuinely fast, arbitrary topology change, that is a lot of
+tuning to land in third place.
+
+### The open-source alternatives
+
+A useful distinction: **layer-2** protocols (batman-adv, 802.11s/HWMP) route
+on MAC addresses and present a transparent bridge; **layer-3** protocols
+(Babel, OLSR, BMX) route on IP. Layer-3 protocols run over *any* link —
+IBSS ad-hoc, 802.11s mesh-point, or wired — which decouples your routing
+choice from the chipset's mesh-mode quirks. HWMP is the exception: it only
+runs over 802.11s.
+
+| Protocol | L2/L3 | Link mode | Mobility | Scale (10s–100s) | Maturity | Verdict |
+|---|---|---|---|---|---|---|
+| **Babel** | L3 | any | **Strong** — built for wireless mobility, loop-free reconverge | Good | High — [RFC 8966](https://www.rfc-editor.org/rfc/rfc8966.html), in FRR/BIRD | **Primary choice** |
+| OLSRv2 (OONF) | L3 | any | Moderate — MPR favors *dense*, not sparse | Good in dense | [RFC 7181](https://datatracker.ietf.org/doc/rfc7181/) | Standardized fallback |
+| batman-adv IV/V | L2 | any | Weak for fast FANET | Good (community) | High — mainline kernel | Only with heavy tuning |
+| 802.11s + HWMP | L2 | 802.11s only | Weak — "does not consider mobility" | Limited | In mac80211 | Avoid for mobile |
+| BMX7 | L3 | any | Little evidence | "100s" claimed | Inactive since 2019 | Skip |
+| AODV / DSR / AODVv2 | L3 | any | Fast reaction, high discovery latency | Churn-sensitive | No production Linux build | Research only |
+
+**Recommendation:** prototype on **Babel** — it is the one protocol that beat
+both OLSR and batman-adv in the real UAV test, it is IETF-standardized
+(RFC 8966), it is mobility-designed, and it runs over any link mode so you
+are not married to IBSS or 802.11s. Keep **OLSRv2** as the standardized
+fallback. Note that long-range/sparse topologies specifically *disfavor*
+OLSR's MPR flooding optimization, which is tuned for dense networks — another
+point for Babel. If pure topology routing still struggles at speed, add
+geographic / mobility-predictive forwarding (P-OLSR-style, GPS-fed).
+
+---
+
+## The MAC Layer: Why CSMA/CA Limits You
+
+Above the routing protocol and below it lies the part you usually cannot
+change on commodity WiFi: the medium-access layer. Standard 802.11 uses
+CSMA/CA — listen, contend, back off — and it degrades structurally in
+multi-hop, mobile meshes:
+
+- **Per-hop collapse.** In a multi-hop chain, per-hop throughput falls roughly
+  as 1/n; the hidden-node problem and exponential backoff make it worse as the
+  chain lengthens. This is a property of contention-based access, not a
+  tuning bug.
+- **The rate anomaly.** Because DCF gives every station equal *transmission
+  opportunity* rather than equal *airtime*, a single slow or fading link drags
+  the whole cell's aggregate throughput down toward the slow rate
+  ([Heusse et al., INFOCOM 2003](https://www.researchgate.net/publication/4021079_Performance_Anomaly_of_80211b)).
+  In a mobile mesh, somebody is always the slow link.
+
+What you *can* fix on COTS WiFi, without an SDR, is real but bounded:
+
+- **Airtime fairness.** The mac80211 airtime-fairness scheduler largely
+  neutralizes the rate anomaly — in testing it raised aggregate throughput of
+  three mixed-rate stations from ~20 Mbps to >100 Mbps and cut latency from
+  ~300 ms (high variance) to ~10 ms. It has been in mainline Linux since
+  **4.11** and was moved into mac80211 in 2019
+  ([USENIX ATC '17](https://www.usenix.org/system/files/conference/atc17/atc17-hoiland-jorgensen.pdf)).
+  This is the single biggest free win, and it favors the ath9k driver.
+- **Long-range tuning.** `iw`/OpenWRT `distance` (coverage class) widens the
+  ACK timeout for long propagation delays; fixing the MCS and disabling rate
+  adaptation stabilizes marginal links. These help sparse long links and fast
+  movers — but they do not change the contention behavior.
+
+What you **cannot** do on COTS WiFi: replace CSMA/CA with a scheduled MAC. The
+access method lives in chip firmware. Mainline 802.11s gives you only EDCA
+(still CSMA); the standard's contention-free reservation scheme, MCCA, is
+[not implemented](https://github.com/o11s/open80211s/wiki/Status) in the
+mainline Linux mesh stack. Driver-level TDMA overlays exist on specific
+Atheros chips (the WiLDNet/RCP lineage, hMAC, Det-WiFi/RT-WiFi) and have shown
+2–5× gains, but they are research-grade, chipset-locked, and brittle under
+mobility. A real time-slotted MAC across a fast swarm means an SDR or a
+purpose-built radio — which is precisely why the tactical radios below run
+proprietary non-802.11 MACs.
+
+---
+
+## Open-Source Waveforms and the SDR Question
+
+If the MAC ceiling on commodity WiFi frustrates you, the next instinct is to
+build your own physical-layer waveform on a software-defined radio. Be honest
+with yourself about the effort before you spend the money. The realistic
+open-source paths are mostly *not* custom PHY work.
+
+| Stack | Data rate | Latency | Hardware | Maturity | Use it for |
+|---|---|---|---|---|---|
+| **Meshtastic / LoRa** | <10 kbps | seconds | SX126x + MCU (cheap, no SDR) | Deployable | Robust long-range backup C2 / telemetry |
+| **wfb-ng / DroneBridge** | Mbps | low | Commodity WiFi (monitor mode) | Deployable | Video + telemetry — rides 802.11, not a new PHY |
+| **openwifi** | 802.11a/g/n | real 10 µs SIFS (FPGA MAC) | Zynq SoC SDR | Usable, niche | The *only* credible open custom PHY+MAC |
+| GNU Radio custom MAC | tens of Mbps PHY | ~30 ms RTT | USRP + host PC | Research | Demonstrators — can't meet real-time MAC timing |
+| OAI LTE/5G NR sidelink | LTE/NR | 10s ms | multi-USRP | Lab-grade / incomplete | Not a fieldable swarm link yet |
+| FreeDV / Codec2 modems | 58–980 bps (20 kbps 4FSK) | seconds | SDR / sound card | Mature lib | Beacon-class robust data, down to −4 dB SNR |
+
+The pattern: for genuinely long-range, low-rate, resilient command traffic,
+**Meshtastic/LoRa** ships today on cheap hardware. For higher-rate telemetry
+and video, **wfb-ng** rides the existing 802.11 PHY rather than inventing one.
+If you truly need a custom SDR PHY with deterministic MAC timing, **openwifi**
+is the only credible open option, because it puts the time-critical MAC in the
+FPGA (the 10 µs SIFS that pure GNU Radio cannot hit) — but you inherit Zynq
+SDR hardware cost and still have to build the mesh layer on top. Building a
+MANET waveform in pure GNU Radio is a research-grade money pit: the
+host-software architecture cannot meet real-time MAC timing (~30 ms
+round-trip, unsynchronized clocks, packets marked "late"). Open 5G NR sidelink
+is the deepest pit of all — only two of the four sidelink physical channels
+exist in open implementations, and it is scoped for automotive V2X, not swarm
+MANET.
+
+---
+
+## What the Professionals Actually Run
+
+The tactical radios in the "Major Players" table are valuable precisely
+because their waveform and MAC are closed — that is the part you are paying
+for. They split into two design philosophies, and both are instructive:
+
+- **Routed mesh:** Silvus (MN-MIMO waveform, proven to 550+ nodes) and
+  Persistent Wave Relay use proprietary mesh-routing over custom MIMO radios.
+- **Routing-free flooding:** TrellisWare's **TSM (Tactical Scalable MANET)**
+  uses "Barrage Relay" — it *eliminates routing entirely* and floods through
+  cooperative relays, proven with 800+ radios and 26 mi/hop. Counter-intuitive
+  but powerful: under fast topology change, well-managed flooding can beat a
+  routing protocol that can't reconverge in time. (If you are experimenting
+  with barrage-style flood relays on your own nodes, this is the precedent.)
+
+The strategic lesson for an open-source builder: **ATAK and even DARPA's
+OFFSET swarm program sit *on top* of these radios as radio-agnostic IP** —
+they do not define their own link. You cannot legally or practically clone
+MN-MIMO or TSM. So the honest options are (1) run open routing (Babel/OLSR)
+over commodity WiFi and accept its limits, or (2) buy a COTS MANET radio whose
+waveform you treat as a black box. **Doodle Labs Mesh Rider is the bridge
+between those worlds** — it is OpenWRT-based, so you SSH in and run your own
+open IP stack (Babel, MAVLink, ROS 2/DDS) on top of a tactical-grade waveform
+you didn't have to build. It is also a documented-compliance NDAA path, unlike
+a commodity card whose chip lineage tells you nothing about where the board
+was made.
+
+---
+
+## Decision Matrix: Routing / MAC / Waveform
+
+For a command-and-telemetry swarm mesh (not video) optimizing for **swarm
+scale + high mobility + long range** on open-source COTS-or-SDR hardware:
+
+| Layer | Choose | Why |
+|---|---|---|
+| **Routing** | **Babel** (OLSRv2 fallback) | Won the real UAV test; mobility-designed; link-agnostic; standardized |
+| **Link mode** | 802.11s mesh-point *or* IBSS | Babel runs over either; 802.11s sidesteps fragile IBSS support on newer chips |
+| **MAC** | CSMA/CA + airtime fairness on + long-range ACK tuning + fixed MCS | The only real COTS wins — do not chase TDMA on WiFi |
+| **Radio (COTS)** | ath9k-class (AR9271 USB / AR9280 mini-PCIe) | Best COTS ad-hoc/802.11s reliability and injection; clean chip lineage |
+| **Backup C2** | Meshtastic / LoRa as a second link | Robust long-range telemetry when the WiFi mesh degrades |
+| **If you outgrow COTS** | Doodle Labs Mesh Rider; run your open stack on its OpenWRT | Tactical range without building a waveform |
+| **Only if you must build PHY** | openwifi on a Zynq SDR | The sole credible open custom MAC; budget real effort |
+
+**When batman-adv is still fine:** small or slow swarms, connectivity-aware
+flight that keeps the topology quasi-static, or where you have already tuned
+the OGM/ELP intervals and validated it in the air. **When to move off it:**
+anything with genuinely fast, arbitrary topology change at scale — go Babel.
+
+### Radio chip by link role
+
+A drone with both an HD video downlink and a mesh carries two different
+radio problems, and no single chip is best at both. The video link
+(wifibroadcast/OpenHD — see the OpenHD Implementation Guide) wants a
+monitor-mode injection card; the mesh wants reliable IBSS/802.11s and,
+for a contested low-latency mode, raw injection. This table spans both.
+
+Ratings: **Best** / **Good** / **Limited** (works but constrained or needs
+validation) / **No** (don't).
+
+| Chip | HD video P2P (wifibroadcast) | Mesh — routed (IBSS/802.11s) | Mesh — barrage (raw inject) | Band | Bus | Production | Chip origin |
+|---|---|---|---|---|---|---|---|
+| **RTL8812AU** | **Best** — the standard | No — Realtek IBSS/802.11s is poor | Good — proven injector (the wfb-ng card); validate per stack | 2.4/5, WiFi-5 | USB | Current | Realtek (Taiwan) |
+| **AR9271** (ath9k_htc) | Limited — the *original* wifibroadcast card; 2.4 GHz, low bitrate | Good — solid IBSS | Good — common barrage injector | 2.4, WiFi-4 | USB | EOL | Atheros/Qualcomm |
+| **AR9280** (ath9k) | Limited — WiFi-4 bitrate | **Best** — IBSS + 802.11s | Good | 2.4/5, WiFi-4 | mini-PCIe | EOL | Atheros/Qualcomm |
+| **MT7612U** (mt76x2) | Limited — experimental in wfb (Realtek-first) | Good — usable IBSS + 802.11s | Good — injects; validate per kernel | 2.4/5, WiFi-5 | USB / M.2 | Available | MediaTek (Taiwan) |
+| **MT7915/16** (mt76) | No — monitor-mode firmware crash ≥80 MHz, injection unproven | No — IBSS broken; 802.11s 2.4 GHz only | Limited — unvalidated | 2.4/5, WiFi-6 | PCIe / M.2 | Current | MediaTek (Taiwan) |
+
+**Read-out:** RTL8812AU owns the video link; ath9k (AR9271/AR9280) and
+MT7612U own the mesh. The only plausible *single-chip, both-jobs* part is
+**MT7612U** — it can run wifibroadcast video (experimentally) and mesh
+(IBSS/802.11s/barrage) on one current, embeddable radio, at the cost of
+inferior video versus a dedicated RTL8812AU. Note the reliability/longevity
+trap: the best mesh-IBSS chips (ath9k) are **end-of-life and dongle-centric**,
+which is a poor base for an integrated product — another reason to route the
+mesh with Babel over 802.11s (so you are not locked to a legacy IBSS chip) and
+choose a current, embeddable module.
+
+### Sources and further reading
+
+- [MDPI Appl. Sci. 11:4363 — FANET routing comparison (real conditions)](https://www.mdpi.com/2076-3417/11/10/4363)
+- [BATMAN V mobility measurement (EWSN 2024)](https://ewsn.org/file-repository/ewsn2024/ewsn2024posters-final14.pdf) · [UAV/V2X BATMAN V study (arXiv 1901.02298)](https://arxiv.org/pdf/1901.02298)
+- [RFC 8966 — Babel](https://www.rfc-editor.org/rfc/rfc8966.html) · [RFC 7181 — OLSRv2](https://datatracker.ietf.org/doc/rfc7181/)
+- [Airtime fairness on ath9k (USENIX ATC '17)](https://www.usenix.org/system/files/conference/atc17/atc17-hoiland-jorgensen.pdf) · [open80211s MCCA status](https://github.com/o11s/open80211s/wiki/Status)
+- [openwifi (open-source 802.11 SDR)](https://github.com/open-sdr/openwifi) · [Meshtastic mesh algorithm](https://meshtastic.org/docs/overview/mesh-algo/) · [wfb-ng](https://github.com/svpcom/wfb-ng)
+- [TrellisWare TSM / Barrage Relay](https://www.trellisware.com/waveforms/tsm-waveform/) · [Silvus MN-MIMO](https://silvustechnologies.com/products/streamcaster-mini-5200/) · [Doodle Labs technology](https://doodlelabs.com/technology/)
+
+---
+
 ## Practical Setup: Doodle Labs on a Drone
 
 This section covers the most common drone mesh setup — a Doodle Labs

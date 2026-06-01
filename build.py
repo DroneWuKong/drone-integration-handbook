@@ -3,7 +3,7 @@ import re
 import markdown
 from collections import defaultdict
 
-# ── CHAPTERS: kept ordered — narrative flow matters ────────────────────────────
+# ── CHAPTERS: kept ordered — narrative flow matters ──────────────────────────
 CHAPTERS = [
     ("fundamentals/five-link-types.md",       1,  "The Five Link Types"),
     ("fundamentals/frequency-bands.md",        2,  "Frequency Bands & Regulatory Reality"),
@@ -90,7 +90,7 @@ _COMPONENT_GROUPS = [
 ]
 
 
-# ── AUTO-DISCOVERY ────────────────────────────────────────────────────────────────────────────────
+# ── AUTO-DISCOVERY ───────────────────────────────────────────────────────────
 
 def _title_from_file(filepath):
     """Read first H1 from a markdown file, fall back to filename."""
@@ -148,7 +148,7 @@ def _build_components(base_dir):
     return _discover_dir(base_dir, "components", 600)
 
 
-# ── HELPERS ──────────────────────────────────────────────────────────────────────────
+# ── HELPERS ──────────────────────────────────────────────────────────────────
 
 def read_chapter(filepath):
     if not os.path.exists(filepath):
@@ -220,7 +220,7 @@ def md_to_html(md_text):
     ))
 
 
-# ── TOC ───────────────────────────────────────────────────────────────────────────────────
+# ── TOC ──────────────────────────────────────────────────────────────────────
 
 def build_toc(platforms, components):
     toc = ""
@@ -298,7 +298,7 @@ def build_toc(platforms, components):
     return toc
 
 
-# ── SECTION BUILDERS ─────────────────────────────────────────────────────────────────────────
+# ── SECTION BUILDERS ─────────────────────────────────────────────────────────
 
 def build_chapters(base_dir):
     out = ""
@@ -1412,8 +1412,8 @@ body {{
   </div>
   <div class="nav-drawer-section">
     <div class="nav-drawer-label">Vendor Guides</div>
-    <a href="#ch18" class="nav-drawer-item"><i class="ph ph-storefront"></i> Army UAS Marketplace — Vendor</a>
-    <a href="#ch19" class="nav-drawer-item"><i class="ph ph-user-circle"></i> Army UAS Marketplace — Buyer Access</a>
+    <a href="#ch17" class="nav-drawer-item"><i class="ph ph-storefront"></i> Army UAS Marketplace — Vendor</a>
+    <a href="#ch18" class="nav-drawer-item"><i class="ph ph-user-circle"></i> Army UAS Marketplace — Buyer Access</a>
   </div>
   <div class="nav-drawer-section">
     <div class="nav-drawer-label">Project</div>
@@ -1462,13 +1462,13 @@ body {{
 </div>
 
 <div class="toc" id="toc">
-{{toc}}
+{toc}
 </div>
 
 <div class="content">
-{{chapters}}
-{{plat_html}}
-{{comp_html}}
+{chapters}
+{plat_html}
+{comp_html}
 </div>
 
 <footer class="site-footer">
@@ -1812,7 +1812,7 @@ window.addEventListener('scroll', () => {{
     # robots.txt
     robots_path = os.path.join(output_dir, "robots.txt")
     with open(robots_path, "w") as f:
-        f.write("User-agent: *\nDisallow:\nSitemap: https://uas-handbook.com/\n")
+        f.write("User-agent: *\nDisallow:\n")
 
     # _redirects (Cloudflare Pages reads this from the publish dir)
     redirects_src = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_redirects")

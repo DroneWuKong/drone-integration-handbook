@@ -67,7 +67,7 @@ jobs:
       - name: Commit procurement data
         run: |
           git config user.name "PIE Procurement Scanner"
-          git config user.email "pie@drone-forge.dev"
+          git config user.email "pie@uas-forge.com"
 
           if [ -n "$(git status --porcelain data/procurement/)" ]; then
             git add data/procurement/

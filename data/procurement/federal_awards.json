@@ -337,6 +337,22 @@
       "generated_internal_id": "CONT_AWD_W31P4Q25F0208_9700_W31P4Q20D0032_9700"
     },
     {
+      "internal_id": 356597639,
+      "Award ID": "70RSAT26FR0000009",
+      "Recipient Name": "THE MITRE CORPORATION",
+      "Award Amount": 3676836.0,
+      "Total Outlays": 0.0,
+      "Description": "THE PURPOSE OF THIS REQUISITION IS TO COMMIT $750,000.00 FOR A NEW TASK ORDER UNDER 70RSAT20D00000001 FOR UNMANNED AIRCRAFT SYSTEMS (UAS) AND COUNTER-UNMANNED AIRCRAFT SYSTEMS (C-UAS), PROVIDES DHS WITH DATA-DRIVEN INSIGHTS, OPERATIONAL RECOMMENDATIO",
+      "Start Date": "2026-03-24",
+      "End Date": "2027-03-23",
+      "Awarding Agency": "Department of Homeland Security",
+      "Awarding Sub Agency": "Office of Procurement Operations",
+      "Award Type": null,
+      "awarding_agency_id": 766,
+      "agency_slug": "department-of-homeland-security",
+      "generated_internal_id": "CONT_AWD_70RSAT26FR0000009_7001_70RSAT26D00000001_7001"
+    },
+    {
       "internal_id": 298564925,
       "Award ID": "FA864923P0536",
       "Recipient Name": "PTERODYNAMICS INC.",
@@ -783,22 +799,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA864925P0235_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 298565917,
-      "Award ID": "FA864924P0419",
-      "Recipient Name": "HIDDEN LEVEL INC",
-      "Award Amount": 1225207.0,
-      "Total Outlays": null,
-      "Description": "SCALABLE STREAMING DETECTION SERVICES TO SUPPORT UNMANNED AIRCRAFT SYSTEM TRAFFIC MANAGEMENT (UTM) ECOSYSTEM",
-      "Start Date": "2024-05-30",
-      "End Date": "2026-05-29",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA864924P0419_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 354631492,
@@ -8241,22 +8241,6 @@
       "generated_internal_id": "CONT_AWD_15DDHQ25P00000818_1524_-NONE-_-NONE-"
     },
     {
-      "internal_id": 356597639,
-      "Award ID": "70RSAT26FR0000009",
-      "Recipient Name": "THE MITRE CORPORATION",
-      "Award Amount": 750000.0,
-      "Total Outlays": 0.0,
-      "Description": "THE PURPOSE OF THIS REQUISITION IS TO COMMIT $750,000.00 FOR A NEW TASK ORDER UNDER 70RSAT20D00000001 FOR UNMANNED AIRCRAFT SYSTEMS (UAS) AND COUNTER-UNMANNED AIRCRAFT SYSTEMS (C-UAS), PROVIDES DHS WITH DATA-DRIVEN INSIGHTS, OPERATIONAL RECOMMENDATIO",
-      "Start Date": "2026-03-24",
-      "End Date": "2026-05-31",
-      "Awarding Agency": "Department of Homeland Security",
-      "Awarding Sub Agency": "Office of Procurement Operations",
-      "Award Type": null,
-      "awarding_agency_id": 766,
-      "agency_slug": "department-of-homeland-security",
-      "generated_internal_id": "CONT_AWD_70RSAT26FR0000009_7001_70RSAT26D00000001_7001"
-    },
-    {
       "internal_id": 309182657,
       "Award ID": "M0026425F0157",
       "Recipient Name": "GROUP W INC",
@@ -12273,6 +12257,6 @@
       "generated_internal_id": "ASST_NON_R56AG089926_075"
     }
   ],
-  "scraped_at": "2026-05-30T15:01:27.072655+00:00",
-  "count": 767
+  "scraped_at": "2026-05-31T15:14:51.542867+00:00",
+  "count": 766
 }
