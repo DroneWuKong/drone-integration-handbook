@@ -1806,7 +1806,7 @@ window.addEventListener('scroll', () => {{
     # robots.txt
     robots_path = os.path.join(output_dir, "robots.txt")
     with open(robots_path, "w") as f:
-        f.write("User-agent: *\nDisallow:\nSitemap: https://uas-handbook.com/\n")
+        f.write("User-agent: *\nDisallow:\n")
 
     # _redirects (Cloudflare Pages reads this from the publish dir)
     redirects_src = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_redirects")
