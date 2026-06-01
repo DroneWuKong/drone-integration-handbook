@@ -242,6 +242,39 @@ is a version of this trade-off.
 
 ---
 
+## The regulatory side of "reality"
+
+Spectrum is licensed and operations are regulated. The rules sit with the
+regulator, not with a vendor or a forum post. These are the canonical,
+publicly accessible sources — go to them, not to a summary.
+
+**United States**
+
+| Resource | What it is | URL |
+|----------|-----------|-----|
+| FAA UAS Portal | Part 107, registration, B4UFLY, Remote ID | https://www.faa.gov/uas |
+| FAA UAS Policy Library | CFRs, advisory circulars, orders | https://www.faa.gov/uas/resources/policy_library/ |
+| NCSL State Law Landscape | State-by-state UAS legislation tracker | https://www.ncsl.org/research/transportation/current-unmanned-aircraft-state-law-landscape.aspx |
+| FAA ASIAS UAS Reports | Queryable accident/incident database, 2010– | https://www.asias.faa.gov/apex/f?p=100:446:::NO:446:: |
+
+**International**
+
+| Resource | Jurisdiction | URL |
+|----------|-------------|-----|
+| Eurocontrol UAS | Europe — airspace integration | https://www.eurocontrol.int/unmanned-aircraft-systems |
+| UK Civil Aviation Authority | United Kingdom | https://www.caa.co.uk/drones/ |
+
+Two operator habits worth keeping: **Part 107 is the floor, not the ceiling**
+— state and local law (see NCSL) add restrictions the FAA does not; and the
+**ASIAS incident reports are a real corpus** — the failure modes repeat, so
+read them before flying an unfamiliar profile.
+
+The full list, including industry/research sources (AUVSI, ASSURE, UAS
+Magazine) and a machine-readable copy, is in `appendices/appendix-f-regulatory-resources.md`
+and `data/erau_resources.json`.
+
+---
+
 ## Next
 
 - **Chapter 3: Antennas for People Who Aren't RF Engineers** — how to

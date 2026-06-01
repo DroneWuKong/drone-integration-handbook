@@ -1,0 +1,134 @@
+{
+  "source": "Embry-Riddle Aeronautical University — UAS Research Guide",
+  "source_url": "https://guides.erau.edu/uas",
+  "generated": "2026-05-30",
+  "description": "Open / publicly accessible UAS resources mined from the ERAU guide's Websites and Journals tabs (the Databases tab is cataloged separately in erau_databases.json). Each entry is tagged with the ecosystem repos that could consume it. Only non-paywalled resources are included here.",
+  "resources": [
+    {
+      "name": "FAA UAS Accident & Incident Reports (ASIAS)",
+      "url": "https://www.asias.faa.gov/apex/f?p=100:446:::NO:446::",
+      "category": "safety_data",
+      "access": "public",
+      "mineable": true,
+      "ecosystem_use": ["drone-integration-handbook", "Command"],
+      "notes": "Queryable database of UAS accidents/incidents from 2010 on. Mineable for a safety/incident corpus in the handbook's grayzone/field sections."
+    },
+    {
+      "name": "FAA Drones Portal",
+      "url": "https://www.faa.gov/uas",
+      "category": "regulatory",
+      "access": "public",
+      "mineable": true,
+      "ecosystem_use": ["drone-integration-handbook", "droneclear_Forge"],
+      "notes": "Authoritative US UAS rules hub (Part 107, registration, B4UFLY). Anchor reference for compliance/regulatory pages."
+    },
+    {
+      "name": "FAA UAS Regulations & Policy Library",
+      "url": "https://www.faa.gov/uas/resources/policy_library/",
+      "category": "regulatory",
+      "access": "public",
+      "mineable": true,
+      "ecosystem_use": ["drone-integration-handbook"],
+      "notes": "CFRs, advisory circulars, orders. Mineable for a citable regulatory index."
+    },
+    {
+      "name": "FAA Small UAS Rule (Part 107 rulemaking)",
+      "url": "https://www.federalregister.gov/articles/2015/02/23/2015-03544/operation-and-certification-of-small-unmanned-aircraft-systems",
+      "category": "regulatory",
+      "access": "public",
+      "mineable": true,
+      "ecosystem_use": ["drone-integration-handbook"],
+      "notes": "Federal Register provides a public JSON/API for documents — directly mineable."
+    },
+    {
+      "name": "NCSL — Current Unmanned Aircraft State Law Landscape",
+      "url": "https://www.ncsl.org/research/transportation/current-unmanned-aircraft-state-law-landscape.aspx",
+      "category": "regulatory",
+      "access": "public",
+      "mineable": true,
+      "ecosystem_use": ["drone-integration-handbook"],
+      "notes": "State-by-state UAS legislation tracker. Useful for a US state-law matrix."
+    },
+    {
+      "name": "AUVSI",
+      "url": "https://www.auvsi.org/",
+      "category": "association",
+      "access": "public",
+      "mineable": false,
+      "ecosystem_use": ["drone-integration-handbook", "Hangar"],
+      "notes": "Primary unmanned-systems industry association. Reference + Blue UAS/Green UAS cross-links."
+    },
+    {
+      "name": "ASSURE (Alliance for System Safety of UAS through Research Excellence)",
+      "url": "http://www.assureuas.org/",
+      "category": "research",
+      "access": "public",
+      "mineable": false,
+      "ecosystem_use": ["drone-integration-handbook"],
+      "notes": "FAA UAS Center of Excellence; 23 universities. Source of public research reports."
+    },
+    {
+      "name": "SKYbrary — Unmanned Aerial Systems",
+      "url": "https://www.skybrary.aero/index.php/Unmanned_Aerial_Systems_(UAS)",
+      "category": "safety_reference",
+      "access": "public",
+      "mineable": true,
+      "ecosystem_use": ["drone-integration-handbook"],
+      "notes": "Wiki-style safety reference with policy links; structured enough to mine for definitions/policy."
+    },
+    {
+      "name": "Eurocontrol UAS",
+      "url": "https://www.eurocontrol.int/unmanned-aircraft-systems",
+      "category": "regulatory_intl",
+      "access": "public",
+      "mineable": false,
+      "ecosystem_use": ["drone-integration-handbook"],
+      "notes": "European airspace integration. International regulatory context."
+    },
+    {
+      "name": "UK Civil Aviation Authority — Drones",
+      "url": "https://www.caa.co.uk/drones/",
+      "category": "regulatory_intl",
+      "access": "public",
+      "mineable": false,
+      "ecosystem_use": ["drone-integration-handbook"],
+      "notes": "UK regulatory guidance. International compliance reference."
+    },
+    {
+      "name": "European Cockpit Association — Drone Integration",
+      "url": "https://www.eurocockpit.be/campaign/integrating-drones-safely",
+      "category": "safety_reference",
+      "access": "public",
+      "mineable": false,
+      "ecosystem_use": ["drone-integration-handbook"],
+      "notes": "Incident-focused campaign on safe drone integration."
+    },
+    {
+      "name": "UAS Magazine (archives)",
+      "url": "http://uasmagazine.com/issues/archives/",
+      "category": "publication",
+      "access": "open",
+      "mineable": true,
+      "ecosystem_use": ["drone-integration-handbook", "droneclear_Forge"],
+      "notes": "Open-access trade publication (civil/ag/defense/commercial). Mineable for news/trends feed."
+    },
+    {
+      "name": "International Journal of Intelligent Unmanned Systems",
+      "url": "https://www.emerald.com/insight/publication/issn/2049-6427",
+      "category": "journal",
+      "access": "subscription",
+      "mineable": false,
+      "ecosystem_use": ["drone-integration-handbook"],
+      "notes": "Emerald. Citation reference only (paywalled)."
+    },
+    {
+      "name": "Journal of Unmanned Vehicle Systems",
+      "url": "https://cdnsciencepub.com/loi/juvs",
+      "category": "journal",
+      "access": "subscription",
+      "mineable": false,
+      "ecosystem_use": ["drone-integration-handbook"],
+      "notes": "Canadian Science Publishing. Citation reference only (paywalled)."
+    }
+  ]
+}

@@ -3,6 +3,18 @@
 Future chapters, sections, and improvements under consideration.
 Open an issue to suggest additions or volunteer to write one.
 
+## Part 6: Autonomy — chapters shipped (Phase 1)
+
+Cross-property section (Handbook chapters + Forge interactive browser). Full plan:
+[`docs/AUTONOMY_PAGE_PLAN.md`](docs/AUTONOMY_PAGE_PLAN.md).
+
+- [x] **Ch. 19 Datasets & Benchmarks** — catalog of VIO/SLAM, CV-detection, and RF datasets with license/usage caveats
+- [x] **Ch. 20 Perception: VIO/SLAM/Depth** — relative vs absolute fixes, why VIO drifts, the failure modes
+- [x] **Ch. 21 Detection: RF + Visual** — passive RF + visual; bird false-positive; detection→navigation
+- [x] **Ch. 22 Onboard AI & Control** — confidence-driven authority, EW-aware/capability-aware autonomy
+- [x] Registered chapters 19–22 in `build.py` CHAPTERS + new "Part 6 — Autonomy" PARTS entry
+- [ ] **Phase 2:** Forge interactive dataset browser (`autonomy/datasets.json`) — tracked in droneclear_Forge FEAT-028
+
 ## Recently Completed (2026-04-13)
 
 - [x] **NDAA Compliance doc updated** — `components/ndaa-compliance.md` — Fixed encoding corruption, updated covered entity list (Autel §1709 FY2025, Anzu Robotics gray zone, FCC Covered List), expanded Blue UAS table to 12 cleared platforms, added FCC exemption expiry Jan 1 2027 warning, ASDA/grant applicability, common mistakes section.
@@ -93,6 +105,7 @@ Operator-level quick references. Laminate-and-carry format. Each fills a gap whe
 - [x] **Appendix C: MAVLink Message Quick Reference** — The 20 messages you actually use
 - [x] **Appendix D: MSP Function Code Quick Reference** — The 15 function codes you actually use
 - [x] **Appendix E: CoT Type Code Reference** — Common MIL-STD-2525C codes for drone operations
+- [x] **Appendix F: Regulatory & Open Resources** — FAA/NCSL/ASIAS + international regulators (open sources only)
 
 ## Planned Templates
 

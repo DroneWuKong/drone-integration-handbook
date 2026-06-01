@@ -1,5 +1,21 @@
 # Changelog
 
+## [Session] - 2026-05-31 — Part 6: Autonomy (4 chapters)
+
+### Added
+- **Part 6 — Autonomy** (chapters 19–22): `autonomy/datasets.md` (datasets & benchmarks + the license trap), `autonomy/perception.md` (VIO/SLAM, relative vs absolute fixes, GPS-denied failure modes), `autonomy/detection.md` (RF + visual, bird false-positives, detection→navigation), `autonomy/onboard-ai-control.md` (confidence-driven authority, EW/capability-aware autonomy).
+- Registered in `build.py` CHAPTERS (19–22) + new "Part 6 — Autonomy" PARTS entry. Build verified.
+- Backed by the forge-data autonomy dataset registry (`autonomy/datasets.json`); Forge interactive browser is Phase 2 (droneclear_Forge FEAT-028).
+
+
+## [Session] - 2026-05-31 — Appendix F: Regulatory & Open Resources
+
+### Added
+- **Appendix F — Regulatory & Open Resources** (`appendices/appendix-f-regulatory-resources.md`): curated, open-access regulatory/safety references (FAA Part 107 + policy library, NCSL state-law tracker, FAA ASIAS incident DB, Eurocontrol, UK CAA, AUVSI, ASSURE, UAS Magazine).
+- `data/erau_resources.json` — machine-readable backing data, tagged by consuming property.
+- Chapter 2 (Frequency Bands & Regulatory Reality) now links to Appendix F from a new "regulatory side of reality" section.
+
+
 ## [Session] - 2026-04-13 — Mass parts-db enrichment + duplicate PID removal
 
 ### Fixed
