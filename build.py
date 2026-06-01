@@ -3,7 +3,7 @@ import re
 import markdown
 from collections import defaultdict
 
-# ── CHAPTERS: kept ordered — narrative flow matters ──────────────────────────
+# ── CHAPTERS: kept ordered — narrative flow matters ────────────────────────────
 CHAPTERS = [
     ("fundamentals/five-link-types.md",       1,  "The Five Link Types"),
     ("fundamentals/frequency-bands.md",        2,  "Frequency Bands & Regulatory Reality"),
@@ -20,23 +20,24 @@ CHAPTERS = [
     ("integration/companion.md",               13, "Adding a Companion Computer"),
     ("integration/mesh-radios.md",             14, "Mesh Radios for Multi-Vehicle"),
     ("integration/tak.md",                     15, "TAK Integration"),
-    ("field/unsolved-problems.md",             16, "Unsolved Problems"),
-    ("vendor/dow-uas-marketplace.md",          17, "How to Get Listed on the Army UAS Marketplace"),
-    ("vendor/dow-uas-marketplace-buyer-access.md", 18, "Army UAS Marketplace — Buyer Account & Access"),
-    ("autonomy/datasets.md",                    19, "Datasets & Benchmarks for Drone Autonomy"),
-    ("autonomy/perception.md",                  20, "Perception: VIO, SLAM & GPS-Denied State Estimation"),
-    ("autonomy/detection.md",                   21, "Detection: RF and Visual"),
-    ("autonomy/onboard-ai-control.md",          22, "Onboard AI & Control"),
+    ("integration/mesh-rider-usb-setup.md",    16, "Mesh Rider over the i.MX USB Port"),
+    ("field/unsolved-problems.md",             17, "Unsolved Problems"),
+    ("vendor/dow-uas-marketplace.md",          18, "How to Get Listed on the Army UAS Marketplace"),
+    ("vendor/dow-uas-marketplace-buyer-access.md", 19, "Army UAS Marketplace — Buyer Account & Access"),
+    ("autonomy/datasets.md",                    20, "Datasets & Benchmarks for Drone Autonomy"),
+    ("autonomy/perception.md",                  21, "Perception: VIO, SLAM & GPS-Denied State Estimation"),
+    ("autonomy/detection.md",                   22, "Detection: RF and Visual"),
+    ("autonomy/onboard-ai-control.md",          23, "Onboard AI & Control"),
 ]
 
 PARTS = [
     ("Part 1 — RF Fundamentals",         [1, 2, 3, 4]),
     ("Part 2 — Flight Controller Firmware", [5, 6, 7, 8]),
     ("Part 3 — Field Operations",        [9, 10, 11, 12]),
-    ("Part 4 — Integration",             [13, 14, 15]),
-    ("What's Left to Solve",             [16]),
-    ("Part 5 — Vendor Guides",           [17, 18]),
-    ("Part 6 — Autonomy",                [19, 20, 21, 22]),
+    ("Part 4 — Integration",             [13, 14, 15, 16]),
+    ("What's Left to Solve",             [17]),
+    ("Part 5 — Vendor Guides",           [18, 19]),
+    ("Part 6 — Autonomy",                [20, 21, 22, 23]),
 ]
 
 # Category display names for the platforms/ subdirectory names
@@ -89,7 +90,7 @@ _COMPONENT_GROUPS = [
 ]
 
 
-# ── AUTO-DISCOVERY ───────────────────────────────────────────────────────────
+# ── AUTO-DISCOVERY ────────────────────────────────────────────────────────────────────────────────
 
 def _title_from_file(filepath):
     """Read first H1 from a markdown file, fall back to filename."""
@@ -147,7 +148,7 @@ def _build_components(base_dir):
     return _discover_dir(base_dir, "components", 600)
 
 
-# ── HELPERS ──────────────────────────────────────────────────────────────────
+# ── HELPERS ──────────────────────────────────────────────────────────────────────────
 
 def read_chapter(filepath):
     if not os.path.exists(filepath):
@@ -219,7 +220,7 @@ def md_to_html(md_text):
     ))
 
 
-# ── TOC ──────────────────────────────────────────────────────────────────────
+# ── TOC ───────────────────────────────────────────────────────────────────────────────────
 
 def build_toc(platforms, components):
     toc = ""
@@ -297,7 +298,7 @@ def build_toc(platforms, components):
     return toc
 
 
-# ── SECTION BUILDERS ─────────────────────────────────────────────────────────
+# ── SECTION BUILDERS ─────────────────────────────────────────────────────────────────────────
 
 def build_chapters(base_dir):
     out = ""
@@ -1411,8 +1412,8 @@ body {{
   </div>
   <div class="nav-drawer-section">
     <div class="nav-drawer-label">Vendor Guides</div>
-    <a href="#ch17" class="nav-drawer-item"><i class="ph ph-storefront"></i> Army UAS Marketplace — Vendor</a>
-    <a href="#ch18" class="nav-drawer-item"><i class="ph ph-user-circle"></i> Army UAS Marketplace — Buyer Access</a>
+    <a href="#ch18" class="nav-drawer-item"><i class="ph ph-storefront"></i> Army UAS Marketplace — Vendor</a>
+    <a href="#ch19" class="nav-drawer-item"><i class="ph ph-user-circle"></i> Army UAS Marketplace — Buyer Access</a>
   </div>
   <div class="nav-drawer-section">
     <div class="nav-drawer-label">Project</div>
@@ -1461,13 +1462,13 @@ body {{
 </div>
 
 <div class="toc" id="toc">
-{toc}
+{{toc}}
 </div>
 
 <div class="content">
-{chapters}
-{plat_html}
-{comp_html}
+{{chapters}}
+{{plat_html}}
+{{comp_html}}
 </div>
 
 <footer class="site-footer">
