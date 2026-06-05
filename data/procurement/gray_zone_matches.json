@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-04T16:50:07.811475+00:00",
+  "generated_at": "2026-06-05T16:27:10.186779+00:00",
   "federal_awards_total": 760,
   "gray_zone_federal_matches": 0,
   "news_signals_total": 84,
-  "gray_zone_news_mentions": 13,
+  "gray_zone_news_mentions": 12,
   "all_gray_zone_signals": [
     {
       "id": "sol-4540d0240a",
@@ -24,7 +24,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
     },
     {
       "id": "sol-0947b3c182",
@@ -45,28 +45,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
-    },
-    {
-      "id": "sol-531ad63c61",
-      "source": "news",
-      "source_label": "The Washington Post",
-      "type": "news_signal",
-      "title": "Lawmakers call for crackdown on DJI drone clones as ban looms - The Washington Post",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Tue, 27 Aug 2024 07:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMEd6WVZjRjZTUWdpOXdfUWZlYTMzUEZPMFIxY08zeUMybzY0cERiV2FMMUJTZWJjdGVIdThhc1FPZzZnSEg3Wmk4R1U3QjlqS0E1YllfSTZqOVMwU3B0Q29ROEpjNXFPc0Jxb3EtM19OM20wUWJlWXh0ZHBCNy1jRFBiR3RYV0syenAyTEFUOFlhQVlKakFZMmpB?oc=5",
-      "gray_zone_flag": true,
-      "blue_uas_flag": false,
-      "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
     },
     {
       "id": "sol-a5cfd02f1e",
@@ -87,7 +66,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
     },
     {
       "id": "sol-4fe2f14368",
@@ -108,7 +87,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
     },
     {
       "id": "sol-e2b5768a90",
@@ -129,7 +108,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
     },
     {
       "id": "sol-1ccc75ae24",
@@ -150,7 +129,28 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
+    },
+    {
+      "id": "sol-c3e9cb32aa",
+      "source": "news",
+      "source_label": "Dronelife",
+      "type": "news_signal",
+      "title": "Trojan Horse or Trade Dispute? Texas Attorney General Targets Anzu in High-Stakes Drone Lawsuit - Dronelife",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Thu, 19 Feb 2026 08:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOT3NPelFZMEVVaWpVbkY0eE0xbjNxN0VPcXQ0NUJHeU1VeERoUnJvZWZqRHozZk1PeGdGUU52VWc2RC02bFRZRm1zODlwWUFCVVVQNGk5bE9UZzctOGpWRUZJOUttQjc2VzUwalVYblNzbWplM0lUZEd1VmFvcGY0WGpMbHZSdw?oc=5",
+      "gray_zone_flag": true,
+      "blue_uas_flag": false,
+      "query": "Anzu Robotics government contract",
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
     },
     {
       "id": "sol-6f3a8bb4a7",
@@ -171,49 +171,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
-    },
-    {
-      "id": "sol-4a989b3cf9",
-      "source": "news",
-      "source_label": "DroneXL.co",
-      "type": "news_signal",
-      "title": "Why The \"Pain\" Of A DJI Drone Ban Means Lives Lost, Not Just Lost Profits - DroneXL.co",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Sat, 22 Nov 2025 08:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1Ra1RBMlNaWm1nOHBsWWtMd2V3RVJtUE5ERjBaWXdJNG1DZjlwaFpTX1hQYkJpUDhfZkl5Si1EUnBpdlhmanBzbXIta0h5OGl2TWhYWU9mRjVpLVpBYjgwazE0WlQwUzFqcUdMeDhJNHRFbHFJd2lUd3kyc2E2Zw?oc=5",
-      "gray_zone_flag": true,
-      "blue_uas_flag": false,
-      "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
-    },
-    {
-      "id": "sol-52634d8864",
-      "source": "news",
-      "source_label": "KESQ",
-      "type": "news_signal",
-      "title": "Local police concerned about impacts of DJI drone ban - KESQ",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Mon, 29 Dec 2025 08:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOanAxRUg4dlNFUjRLUWFlbmFVRHY1YmwzSEJzRFIwRWg3SXJmc1RVaVBnTUIyMDJiMHhFeHk5eEhGTHVVeXM3UUNqV1pCbXg0Y241UzNFTjNkbUJwZW1UWnM0TnF3TFNJYnB3bmExc0JTOHF2WlZUSFBVd0FqMlNVVFF0RWZQSk5pclc1V3dvd3N3ZkFrX3hLNXJsdXBXUE5D?oc=5",
-      "gray_zone_flag": true,
-      "blue_uas_flag": false,
-      "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
     },
     {
       "id": "sol-ca661cc52a",
@@ -234,7 +192,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
     },
     {
       "id": "sol-52eecf0ec4",
@@ -255,7 +213,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
     },
     {
       "id": "sol-a82dd10c0c",
@@ -276,13 +234,34 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-06-04T16:50:07.811475+00:00"
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
+    },
+    {
+      "id": "sol-5c4685b5c6",
+      "source": "news",
+      "source_label": "DroneDJ",
+      "type": "news_signal",
+      "title": "DJI makes last-ditch plea to US security chiefs as ban deadline nears - DroneDJ",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Mon, 08 Dec 2025 08:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9IbXZKaWNlb1I2a3ZBOGIzcVVOLU1sX1lQb0lJS0ZzVzA2Zm8wcWdoMTVpUFM1UGZzTnJfbXpFMDZjeXdGeTdNXzNmTmlxenlOZHNhdnBjZ2lDRmc4RGo0VTk4OG03YjA?oc=5",
+      "gray_zone_flag": true,
+      "blue_uas_flag": false,
+      "query": "Autel government purchase law enforcement",
+      "scraped_at": "2026-06-05T16:27:10.186779+00:00"
     }
   ],
   "vendors_flagged": [
-    "anzu robotics",
-    "dji",
     "autel",
-    "anzu"
+    "dji",
+    "anzu",
+    "anzu robotics"
   ]
 }
