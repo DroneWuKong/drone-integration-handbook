@@ -17,7 +17,7 @@ The FANG (Fierce, Agile, Nimble, Guerrilla) F7 is Red Cat's entry into the tacti
 | Spec | Value |
 |------|-------|
 | Frame Size | 7" class |
-| Flight Controller | BrainFPV RADIX2 (F7 processor, BMI270 IMU) |
+| Flight Controller | F7-class, Bosch BMI270 IMU. Sources conflict on the board: BrainFPV RADIX2 vs Rotor Riot Brave F7 (STM32F722RET6, 16 MB blackbox, US-made/Blue UAS). The Brave F7 is the likelier fit — Red Cat owns ~47% of Unusual Machines, parent of Rotor Riot and source of the FANG's UMAC motors. |
 | Motors | UMAC 2807 (28×7mm stator, N552SH magnets, 3-8S) |
 | Battery | 3-8S LiPo |
 | NDAA | Compliant |
