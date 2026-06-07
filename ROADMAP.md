@@ -8,11 +8,11 @@ Open an issue to suggest additions or volunteer to write one.
 Cross-property section (Handbook chapters + Forge interactive browser). Full plan:
 [`docs/AUTONOMY_PAGE_PLAN.md`](docs/AUTONOMY_PAGE_PLAN.md).
 
-- [x] **Ch. 19 Datasets & Benchmarks** — catalog of VIO/SLAM, CV-detection, and RF datasets with license/usage caveats
-- [x] **Ch. 20 Perception: VIO/SLAM/Depth** — relative vs absolute fixes, why VIO drifts, the failure modes
-- [x] **Ch. 21 Detection: RF + Visual** — passive RF + visual; bird false-positive; detection→navigation
-- [x] **Ch. 22 Onboard AI & Control** — confidence-driven authority, EW-aware/capability-aware autonomy
-- [x] Registered chapters 19–22 in `build.py` CHAPTERS + new "Part 6 — Autonomy" PARTS entry
+- [x] **Ch. 20 Datasets & Benchmarks** — catalog of VIO/SLAM, CV-detection, and RF datasets with license/usage caveats
+- [x] **Ch. 21 Perception: VIO/SLAM/Depth** — relative vs absolute fixes, why VIO drifts, the failure modes
+- [x] **Ch. 22 Detection: RF + Visual** — passive RF + visual; bird false-positive; detection→navigation
+- [x] **Ch. 23 Onboard AI & Control** — confidence-driven authority, EW-aware/capability-aware autonomy
+- [x] Registered chapters 20–23 in `build.py` CHAPTERS (vendor guides own 18–19) + new "Part 6 — Autonomy" PARTS entry
 - [ ] **Phase 2:** Forge interactive dataset browser (`autonomy/datasets.json`) — tracked in droneclear_Forge FEAT-028
 
 ## Recently Completed (2026-04-13)

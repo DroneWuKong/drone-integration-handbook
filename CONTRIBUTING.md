@@ -36,13 +36,21 @@ This handbook is built by operators, for operators. Contributions are welcome.
 ```
 fundamentals/    — Part 1: RF Fundamentals (Chapters 1-4)
 firmware/        — Part 2: Flight Controller Firmware (Chapters 5-8)
-field/           — Part 3: Field Operations (Chapters 9-12)
-integration/     — Part 4: Integration (Chapters 13-15)
-platforms/       — Part 5: Platform-specific references
+field/           — Part 3: Field Operations (Chapters 9-12, 17)
+integration/     — Part 4: Integration (Chapters 13-16)
+vendor/          — Part 5: Vendor Guides (Chapters 18-19)
+autonomy/        — Part 6: Autonomy (Chapters 20-23)
+components/      — Component references (Orqa ecosystem, control links, etc.)
+platforms/       — Platform-specific references (cots/, blue-uas/, open-source/, tactical/)
 appendices/      — Quick reference cards and lookup tables
 templates/       — Printable field cards and worksheets
 assets/          — Diagrams, images, and media
 ```
+
+The authoritative chapter order and numbering is the `CHAPTERS` list at the
+top of `build.py` — not alphabetical, and not inferable from the directory
+tree alone. Adding a chapter requires editing that list, or it won't appear
+in the rendered table of contents.
 
 ## Formatting
 

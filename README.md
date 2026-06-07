@@ -101,7 +101,42 @@ manufacturer documentation.
     Cursor-on-Target, ATAK, WinTAK — how to get your drone onto
     the common operating picture without a defense contractor.
 
-### Part 5 — [Platform References](platforms/README.md)
+16. [Mesh Rider over the i.MX USB Port](integration/mesh-rider-usb-setup.md)
+    Wiring and configuring a Doodle Labs Mesh Rider over the i.MX
+    USB port — the cabling, the OpenWRT side, and the failure modes.
+
+### What's Left to Solve
+
+17. [Unsolved Problems](field/unsolved-problems.md)
+    The hard problems nobody has cleanly solved yet — open gaps,
+    partial workarounds, and where the field knowledge runs out.
+
+### Part 5 — Vendor Guides
+
+18. [How to Get Listed on the Army UAS Marketplace](vendor/dow-uas-marketplace.md)
+    The seller path onto the DoW/Army UAS Marketplace — eligibility,
+    listing requirements, and the process.
+
+19. [Army UAS Marketplace — Buyer Account & Access](vendor/dow-uas-marketplace-buyer-access.md)
+    The buyer side — account setup, access tiers, and procurement workflow.
+
+### Part 6 — Autonomy
+
+20. [Datasets & Benchmarks for Drone Autonomy](autonomy/datasets.md)
+    Catalog of VIO/SLAM, CV-detection, and RF datasets, with the
+    license/usage caveats that bite you later.
+
+21. [Perception: VIO, SLAM & GPS-Denied State Estimation](autonomy/perception.md)
+    Relative vs. absolute fixes, why VIO drifts, and the failure modes.
+
+22. [Detection: RF and Visual](autonomy/detection.md)
+    Passive RF + visual detection, the bird false-positive problem,
+    and getting from detection to navigation.
+
+23. [Onboard AI & Control](autonomy/onboard-ai-control.md)
+    Confidence-driven authority, EW-aware and capability-aware autonomy.
+
+### [Platform References](platforms/README.md)
 
 Full integration profiles — RF links, firmware, payloads, SDKs, and gotchas.
 
@@ -118,7 +153,7 @@ Full integration profiles — RF links, firmware, payloads, SDKs, and gotchas.
 **NDAA / Blue UAS / Green UAS:**
 - [Skydio X10 / X10D](platforms/blue-uas/skydio-x10.md) — Best-in-class autonomy. X10D is Blue UAS.
 - [Freefly Astro](platforms/blue-uas/freefly-astro.md) — PX4, MAVLink, Blue UAS. Open architecture.
-- [Inspired Flight IF1200A](platforms/blue-uas/inspired-flight-if1200a.md) — Heavy-lift hex, ArduPilot, Blue UAS.
+- [Inspired Flight IF1200A](platforms/blue-uas/inspired-flight-if1200a.md) — Heavy-lift hex, ArduPilot, Made in USA. Removed from the Blue UAS list (March 2025) — verify current status before procurement.
 - [Teal 2](platforms/blue-uas/teal-2.md) — Night ISR, FLIR Hadron 640R, Blue UAS.
 - [Parrot ANAFI USA](platforms/blue-uas/parrot-anafi-usa.md) — Ultra-light, Blue UAS.
 - [WingtraOne / WingtraRAY](platforms/blue-uas/wingtra-wingtraone.md) — Fixed-wing VTOL mapping, 59 min, Blue UAS.
