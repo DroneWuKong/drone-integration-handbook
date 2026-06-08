@@ -77,6 +77,13 @@ Match both ends.
 without level shifting. If your FC has 5V serial outputs (rare),
 use a level shifter or resistor divider.
 
+Mapping which companion pin lands on which FC UART — and catching a
+5V pad before it reaches a 3.3V input — is the kind of layout the
+[Circuit Forge](/forge/circuit-forge/) wiring tool will diagram from a
+one-line description and run an electrical-rule check over. Treat its
+output as a starting schematic, not gospel: confirm pad voltages and
+UART assignments against your specific board before you solder.
+
 ### The Protocol
 
 **ArduPilot / PX4:** MAVLink v2. The companion runs mavproxy,
