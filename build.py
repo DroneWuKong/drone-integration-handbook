@@ -28,6 +28,7 @@ CHAPTERS = [
     ("autonomy/perception.md",                  21, "Perception: VIO, SLAM & GPS-Denied State Estimation"),
     ("autonomy/detection.md",                   22, "Detection: RF and Visual"),
     ("autonomy/onboard-ai-control.md",          23, "Onboard AI & Control"),
+    ("firmware/mavlink-military-extensions.md", 24, "MAVLink Military Dialect — Gap Analysis (EN/HR)"),
 ]
 
 PARTS = [
@@ -38,6 +39,7 @@ PARTS = [
     ("What's Left to Solve",             [17]),
     ("Part 5 — Vendor Guides",           [18, 19]),
     ("Part 6 — Autonomy",                [20, 21, 22, 23]),
+    ("Part 7 — MAVLink Military Extensions", [24]),
 ]
 
 # Category display names for the platforms/ subdirectory names
