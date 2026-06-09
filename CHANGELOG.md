@@ -1,5 +1,14 @@
 # Changelog
 
+## [Session] - 2026-06-01 — Levels of Drone Autonomy (Part 6 lead chapter)
+
+### Added
+- **Ch. 20 — Levels of Drone Autonomy** (`autonomy/autonomy-levels.md`): our own 0–5 (+4A/4B/4C) autonomy ladder, derived from SAE J3016 and the Exyn aerial-autonomy levels. Adds the two rows those charts omit — **ODD** (where each level is valid) and **fallback / minimal-risk** — plus a **hardware-minimum row** naming real 2026 parts per level (Betaflight FC → Pixhawk + flow/GPS → Jetson Orin + 3-D LiDAR/FAST-LIO2 → AGX Orin + thermal). Maps every level to the **Prismo stack** (Prime GCS + APB on-board) and cross-links Perception/Detection/Onboard-AI/Datasets.
+- **Self-contained SVG chart** `assets/aerial-autonomy-levels.svg` (dark theme matching the site), embedded inline in the chapter so it renders on the single-page build; canonical generator `assets/aerial-autonomy-levels.svg.py`.
+
+### Changed
+- Part 6 renumbered: levels chapter inserted as **Ch. 20** (lead-in); Datasets/Perception/Detection/Onboard-AI shifted to **21–24**. `build.py` CHAPTERS + PARTS updated; build verified. Cross-links resolve by filename, so no internal links broke.
+
 ## [Session] - 2026-05-31 — Part 6: Autonomy (4 chapters)
 
 ### Added

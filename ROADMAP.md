@@ -8,11 +8,13 @@ Open an issue to suggest additions or volunteer to write one.
 Cross-property section (Handbook chapters + Forge interactive browser). Full plan:
 [`docs/AUTONOMY_PAGE_PLAN.md`](docs/AUTONOMY_PAGE_PLAN.md).
 
-- [x] **Ch. 20 Datasets & Benchmarks** — catalog of VIO/SLAM, CV-detection, and RF datasets with license/usage caveats
-- [x] **Ch. 21 Perception: VIO/SLAM/Depth** — relative vs absolute fixes, why VIO drifts, the failure modes
-- [x] **Ch. 22 Detection: RF + Visual** — passive RF + visual; bird false-positive; detection→navigation
-- [x] **Ch. 23 Onboard AI & Control** — confidence-driven authority, EW-aware/capability-aware autonomy
-- [x] Registered chapters 20–23 in `build.py` CHAPTERS (vendor guides own 18–19) + new "Part 6 — Autonomy" PARTS entry
+- [x] **Ch. 20 Levels of Drone Autonomy** — SAE J3016 / Exyn-derived 0–5 (+4A/B/C) ladder; adds ODD + fallback rows and a hardware-minimum row (real 2026 parts per level); inline SVG chart (`assets/aerial-autonomy-levels.svg`); maps each level to the Prismo stack
+- [x] **Ch. 21 Datasets & Benchmarks** — catalog of VIO/SLAM, CV-detection, and RF datasets with license/usage caveats
+- [x] **Ch. 22 Perception: VIO/SLAM/Depth** — relative vs absolute fixes, why VIO drifts, the failure modes
+- [x] **Ch. 23 Detection: RF + Visual** — passive RF + visual; bird false-positive; detection→navigation
+- [x] **Ch. 24 Onboard AI & Control** — confidence-driven authority, EW-aware/capability-aware autonomy
+- [x] **Ch. 25 MAVLink Military Dialect — Gap Analysis (EN/HR)** — Auterion dialect analysis + proposed extensions
+- [x] Registered chapters 20–25 in `build.py` CHAPTERS; Part 6 = Autonomy (20–24), Part 7 = MAVLink Military (25)
 - [ ] **Phase 2:** Forge interactive dataset browser (`autonomy/datasets.json`) — tracked in droneclear_Forge FEAT-028
 
 ## Recently Completed (2026-04-13)
