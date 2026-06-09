@@ -13,7 +13,8 @@ Cross-property section (Handbook chapters + Forge interactive browser). Full pla
 - [x] **Ch. 22 Perception: VIO/SLAM/Depth** — relative vs absolute fixes, why VIO drifts, the failure modes
 - [x] **Ch. 23 Detection: RF + Visual** — passive RF + visual; bird false-positive; detection→navigation
 - [x] **Ch. 24 Onboard AI & Control** — confidence-driven authority, EW-aware/capability-aware autonomy
-- [x] Registered chapters 20–24 in `build.py` CHAPTERS + "Part 6 — Autonomy" PARTS entry (levels chapter leads the part)
+- [x] **Ch. 25 MAVLink Military Dialect — Gap Analysis (EN/HR)** — Auterion dialect analysis + proposed extensions
+- [x] Registered chapters 20–25 in `build.py` CHAPTERS; Part 6 = Autonomy (20–24), Part 7 = MAVLink Military (25)
 - [ ] **Phase 2:** Forge interactive dataset browser (`autonomy/datasets.json`) — tracked in droneclear_Forge FEAT-028
 
 ## Recently Completed (2026-04-13)

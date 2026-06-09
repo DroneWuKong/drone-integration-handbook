@@ -1,8 +1,10 @@
 # Inspired Flight IF1200A
 
 > **Category:** NDAA-Compliant / Blue UAS
-> **NDAA Status:** Blue UAS certified, NDAA compliant, Green UAS certified
+> **NDAA Status:** NDAA compliant, Green UAS certified
 > **Manufacturer:** Inspired Flight Technologies (San Luis Obispo, CA) — Made in USA
+
+> **Note:** The IF1200A was removed from the DIU Blue UAS list in March 2025. NDAA compliance and Made-in-USA status are unaffected, but verify current Blue UAS / approved-list standing with DIU before procurement.
 
 ---
 
@@ -72,7 +74,7 @@ Universal payload interface supports:
 
 ## When to Use This Platform
 
-The IF1200A is the platform when you need to carry heavy sensors (LiDAR, Phase One, EO/IR) with NDAA/Blue UAS compliance. Nothing else in the Blue UAS ecosystem comes close on payload capacity. ArduPilot firmware means full MAVLink access and Mission Planner compatibility.
+The IF1200A is the platform when you need to carry heavy sensors (LiDAR, Phase One, EO/IR) on an NDAA-compliant airframe. Few US-made platforms come close on payload capacity. ArduPilot firmware means full MAVLink access and Mission Planner compatibility. If a contract specifically requires Blue UAS list membership, confirm current standing first (see the note above).
 
 ---
 

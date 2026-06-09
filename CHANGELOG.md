@@ -12,8 +12,8 @@
 ## [Session] - 2026-05-31 — Part 6: Autonomy (4 chapters)
 
 ### Added
-- **Part 6 — Autonomy** (chapters 19–22): `autonomy/datasets.md` (datasets & benchmarks + the license trap), `autonomy/perception.md` (VIO/SLAM, relative vs absolute fixes, GPS-denied failure modes), `autonomy/detection.md` (RF + visual, bird false-positives, detection→navigation), `autonomy/onboard-ai-control.md` (confidence-driven authority, EW/capability-aware autonomy).
-- Registered in `build.py` CHAPTERS (19–22) + new "Part 6 — Autonomy" PARTS entry. Build verified.
+- **Part 6 — Autonomy** (chapters 20–23): `autonomy/datasets.md` (datasets & benchmarks + the license trap), `autonomy/perception.md` (VIO/SLAM, relative vs absolute fixes, GPS-denied failure modes), `autonomy/detection.md` (RF + visual, bird false-positives, detection→navigation), `autonomy/onboard-ai-control.md` (confidence-driven authority, EW/capability-aware autonomy).
+- Registered in `build.py` CHAPTERS (chapters 20–23; vendor guides own 18–19) + new "Part 6 — Autonomy" PARTS entry. Build verified.
 - Backed by the forge-data autonomy dataset registry (`autonomy/datasets.json`); Forge interactive browser is Phase 2 (droneclear_Forge FEAT-028).
 
 
