@@ -6,7 +6,7 @@
 > In contested environments, the VTX is also the most vulnerable component:
 > video jamming is now the primary counter-drone tactic.
 
-**Forge DB:** 116 video transmitters
+**Forge DB:** 131 video transmitters
 **Cross-references:** [FPV Cameras](fpv-cameras.md) ·
 [Antennas](../fundamentals/antennas.md) ·
 [Frequency Bands](../fundamentals/frequency-bands.md) ·
@@ -251,7 +251,7 @@ fiber-optic FPV drones.
 
 ## Sources
 
-- Forge parts database (116 video transmitters)
+- Forge parts database (131 video transmitters)
 - Oscar Liang, VTX and video system guides
 - Armada International, "Jamming UAV Video Signals" (Feb 2026)
 - Cybershafarat, MILBETA VTX frequency unlock documentation
