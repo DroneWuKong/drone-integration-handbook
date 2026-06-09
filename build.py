@@ -1420,6 +1420,7 @@ body {{
     <a href="https://github.com/DroneWuKong/drone-integration-handbook" class="nav-drawer-item"><i class="ph ph-github-logo"></i> GitHub</a>
     <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md" class="nav-drawer-item"><i class="ph ph-map-trifold"></i> Roadmap</a>
     <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md" class="nav-drawer-item"><i class="ph ph-git-pull-request"></i> Contribute</a>
+    <a href="https://uas-forge.com/donate/" class="nav-drawer-item"><i class="ph ph-heart"></i> Support</a>
   </div>
   <div class="nav-drawer-footer">v1.0 &middot; CC BY-SA 4.0</div>
 </nav>
@@ -1442,6 +1443,7 @@ body {{
     <a href="https://uas-patterns.com/intel/" class="topbar-pill hide-mobile">Intel</a>
     <a href="https://uas-patterns.com/patterns/" class="topbar-pill hide-mobile">Patterns</a>
     <a href="https://uas-forge.com/wingman/" class="topbar-pill">Wingman</a>
+    <a href="https://uas-forge.com/donate/" class="topbar-pill">Support</a>
   </div>
 </header>
 
@@ -1476,8 +1478,10 @@ body {{
   <p>
     <a href="https://github.com/DroneWuKong/drone-integration-handbook">GitHub</a> &middot;
     <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/CONTRIBUTING.md">Contribute</a> &middot;
-    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md">Roadmap</a>
+    <a href="https://github.com/DroneWuKong/drone-integration-handbook/blob/main/ROADMAP.md">Roadmap</a> &middot;
+    <a href="https://uas-forge.com/donate/">Support</a>
   </p>
+  <p>Free and open. If it has earned its place on your bench, you can help cover hosting at <a href="https://uas-forge.com/donate/">uas-forge.com/donate</a>.</p>
   <p>The Drone Integration Handbook &copy; 2025-2026 &middot; CC BY-SA 4.0</p>
 </footer>
 
