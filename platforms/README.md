@@ -50,6 +50,7 @@ Full integration profiles for drone platforms across four categories. Each profi
 | [Teal Black Widow](tactical/teal-black-widow.md) | YES | Govt/Mil only | Classified | SRR Tranche 2 winner |
 | [Skyfish Osprey](tactical/skyfish-osprey.md) | NDAA | Commercial | 45 min | Precision mapping/ISR |
 | [SiFly Q12](tactical/sifly-q12.md) | NDAA | Commercial | Extended | Endurance-focused |
+| [Brecourt iDFR](tactical/brecourt-idfr.md) | Claimed | Commercial | 20+ min | Indoor DFR, GPS-denied, SOC-integrated (early-stage) |
 
 ---
 

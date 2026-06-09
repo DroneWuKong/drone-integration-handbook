@@ -1,5 +1,11 @@
 # Changelog
 
+## [Session] - 2026-06-09 — Platform profile: Brecourt iDFR (indoor DFR)
+
+### Added
+- **Brecourt Solutions iDFR** (`platforms/tactical/brecourt-idfr.md`): indoor Drone-as-First-Responder profile mined from brecourtsolutions.com. Dock-resident, SOC-integrated, GPS-denied indoor security drone with one-tap autonomous threat-tracking (ThreatLock™). Documented as **vendor claims vs. verified** — spec sheet is gated, no airframe model/SDK/protocol published, not on the Blue UAS Cleared List. Flags the cloud-relayed-control vs. "edge AI" split, the unsubstantiated weapon-jamming claim, and early-stage maturity. Cross-linked to Shield AI Nova 2 as the mature analog.
+- Registered in `platforms/README.md` tactical table (auto-discovered by `build.py`; no CHAPTERS edit needed).
+
 ## [Session] - 2026-06-01 — Levels of Drone Autonomy (Part 6 lead chapter)
 
 ### Added
