@@ -1,3 +1,11 @@
+/compliance     https://uas-forge.com/compliance/     301
+/compliance/    https://uas-forge.com/compliance/     301
+/pid-tuning     https://uas-forge.com/pid-tuning/     301
+/pid-tuning/    https://uas-forge.com/pid-tuning/     301
+/tools          https://uas-forge.com/tools/          301
+/tools/         https://uas-forge.com/tools/          301
+/intel          https://uas-patterns.com/intel/       301
+/intel/         https://uas-patterns.com/intel/       301
 /forge          https://uas-forge.com                 301
 /forge/*        https://uas-forge.com/:splat          301
 /patterns       https://uas-patterns.com/patterns/    301

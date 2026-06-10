@@ -36,7 +36,7 @@ Developed in response to active RF jamming of standard drone control frequencies
 
 ## Identifying Your Target
 
-The [Forge MafiaLRS tool](https://uas-forge.com/tools/#mafialrs) is a **target
+The [Forge MafiaLRS tool](/tools/#mafialrs) is a **target
 selector, not a compiler**. It does not produce a firmware binary — a static
 site cannot run the build toolchain. What it does:
 
@@ -109,4 +109,4 @@ MafiaLRS operates on frequencies not licensed for unlicensed use in many jurisdi
 
 - [ELRS Airport Mode](../field/elrs-airport-mode.md)
 - [RF Detection Hardware](rf-detection-hardware.md)
-- [Forge MafiaLRS Generator](https://uas-forge.com/tools/)
+- [Forge MafiaLRS Generator](/tools/)

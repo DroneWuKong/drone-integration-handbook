@@ -6,7 +6,7 @@
 > Frame choice affects vibration, durability, repairability, and ultimately
 > flight feel more than most pilots realize.
 
-**Forge DB:** 349 frames across 15+ manufacturers
+**Forge DB:** 632 frames across 80 manufacturers
 **Cross-references:** [Propulsion Matching](propulsion-system-matching.md) ·
 [ESCs](escs.md) · [Flight Controllers](flight-controllers.md) ·
 [PID Tuning](../field/pid-tuning.md) · [Preflight](../field/preflight.md)
@@ -232,7 +232,7 @@ carbon plates. The antenna must have a clear path to the sky/receiver.
 
 ## Sources
 
-- Forge parts database (349 frames)
+- Forge parts database (632 frames)
 - Oscar Liang, frame selection guides
 - Manufacturer specifications and DXF files
 - Ukrainian FPV production documentation

@@ -5,7 +5,7 @@
 > coupled to your video system — analog cameras don't work with digital VTX
 > systems and vice versa. Getting this wrong means a black screen.
 
-**Forge DB:** 193 FPV cameras
+**Forge DB:** 387 FPV cameras
 **Cross-references:** [Video Transmitters](video-transmitters-vtx.md) ·
 [Antennas](../fundamentals/antennas.md) ·
 [Frames](frames-airframe-selection.md) ·
@@ -224,7 +224,7 @@ strategies.
 
 ## Sources
 
-- Forge parts database (193 FPV cameras)
+- Forge parts database (387 FPV cameras)
 - Oscar Liang, FPV camera guides and reviews
 - Manufacturer specifications (Foxeer, Caddx, RunCam, HDZero, Walksnail, DJI)
 - Armada International, "Jamming UAV Video Signals" (Feb 2026)

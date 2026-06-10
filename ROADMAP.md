@@ -55,9 +55,9 @@ Cross-property section (Handbook chapters + Forge interactive browser). Full pla
 ## Recently Completed (2026-04-05)
 
 - [x] **Military Firmware Forks** — `components/military-firmware-forks.md` — MILELRS, MILBETA, FPV_VYZOV, BarvinokLRS/Barvinok-5, "1001" DJI mod, CIAJeepDoors, mLRS, DroneBridge ESP32. Full landscape of combat-adapted open-source firmware.
-- [x] **Frames & Airframe Selection** — `components/frames-airframe-selection.md` — 349 frames: sizing, geometry, materials, stack mounting, arm design, durability, antenna routing
-- [x] **FPV Cameras** — `components/fpv-cameras.md` — 193 cameras: analog vs digital (DJI/Walksnail/HDZero/OpenHD), sensor specs, contested environment considerations
-- [x] **Video Transmitters (VTX)** — `components/video-transmitters-vtx.md` — 116 VTX: all systems compared, frequency bands, non-standard operation, 5-layer contested environment strategy
+- [x] **Frames & Airframe Selection** — `components/frames-airframe-selection.md` — 632 frames: sizing, geometry, materials, stack mounting, arm design, durability, antenna routing
+- [x] **FPV Cameras** — `components/fpv-cameras.md` — 387 cameras: analog vs digital (DJI/Walksnail/HDZero/OpenHD), sensor specs, contested environment considerations
+- [x] **Video Transmitters (VTX)** — `components/video-transmitters-vtx.md` — 131 VTX: all systems compared, frequency bands, non-standard operation, 5-layer contested environment strategy
 - [x] **Propellers** — `components/propellers.md` — 484 props: sizing, pitch, blade count, materials, balance, military considerations
 - [x] **CRSF & ELRS Protocol** — `firmware/crsf-elrs-protocol.md` — Packet structure, ELRS rates, telemetry, binding, MILELRS encrypted binding context
 - [x] **DShot & ESC Protocols** — `firmware/dshot-esc-protocols.md` — DShot packet format, bidirectional DShot, RPM filtering, BLHeli_32/AM32/Bluejay

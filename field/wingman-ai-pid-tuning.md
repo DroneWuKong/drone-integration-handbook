@@ -76,4 +76,4 @@ Anonymized session data (filename hash, sample count, FFT peaks, PIDs, quad clas
 - [Blackbox Logs](blackbox.md)
 - [The Four Firmwares](../firmware/four-firmwares.md)
 - [Orqa Hardware Guide](../components/orqa-hardware-guide.md)
-- [Forge PID Tuning Tool](https://uas-forge.com/pid-tuning/)
+- [Forge PID Tuning Tool](/pid-tuning/)
