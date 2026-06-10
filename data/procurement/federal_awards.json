@@ -6241,6 +6241,22 @@
       "generated_internal_id": "CONT_AWD_W912PB26FA188_9700_W912PB26AA004_9700"
     },
     {
+      "internal_id": 359092670,
+      "Award ID": "W912PF26PA022",
+      "Recipient Name": "WILD WEST SYSTEMS, INC.",
+      "Award Amount": 0.0,
+      "Total Outlays": null,
+      "Description": "TALON SYSTEM - COUNTER SMALL UNMANNED AIRCRAFT SYSTEM (C-SUAS)",
+      "Start Date": "2026-04-20",
+      "End Date": "2026-05-08",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W912PF26PA022_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 357410700,
       "Award ID": "FA485526P0006",
       "Recipient Name": "OKSI VENTURES, INC.",
@@ -6337,6 +6353,22 @@
       "generated_internal_id": "CONT_AWD_W31P4Q06C0292_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 357468540,
+      "Award ID": "80NM0026F7025",
+      "Recipient Name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "Award Amount": 43200000.0,
+      "Total Outlays": 0.0,
+      "Description": "JPL LUNAR DRONES (54-232663)",
+      "Start Date": "2026-04-27",
+      "End Date": "2026-10-26",
+      "Awarding Agency": "National Aeronautics and Space Administration",
+      "Awarding Sub Agency": "National Aeronautics and Space Administration",
+      "Award Type": null,
+      "awarding_agency_id": 862,
+      "agency_slug": "national-aeronautics-and-space-administration",
+      "generated_internal_id": "CONT_AWD_80NM0026F7025_8000_80NM0018D0004_8000"
+    },
+    {
       "internal_id": 278754626,
       "Award ID": "19AQMM25C1050",
       "Recipient Name": "ECHODYNE CORP",
@@ -6351,22 +6383,6 @@
       "awarding_agency_id": 315,
       "agency_slug": "department-of-state",
       "generated_internal_id": "CONT_AWD_19AQMM25C1050_1900_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 357468540,
-      "Award ID": "80NM0026F7025",
-      "Recipient Name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
-      "Award Amount": 28000000.0,
-      "Total Outlays": null,
-      "Description": "JPL LUNAR DRONES (54-232663)",
-      "Start Date": "2026-04-27",
-      "End Date": "2026-10-26",
-      "Awarding Agency": "National Aeronautics and Space Administration",
-      "Awarding Sub Agency": "National Aeronautics and Space Administration",
-      "Award Type": null,
-      "awarding_agency_id": 862,
-      "agency_slug": "national-aeronautics-and-space-administration",
-      "generated_internal_id": "CONT_AWD_80NM0026F7025_8000_80NM0018D0004_8000"
     },
     {
       "internal_id": 278755994,
@@ -7912,7 +7928,7 @@
       "Total Outlays": null,
       "Description": "STTR PHASE II PROPOSAL NO. F2-17528 - INNOVATIVE DIRECTED ENERGY COUNTER UAS SOLUTION INTEGRATED INTO PROVEN DETECTION, TRACKING, AND TARGETING SYSTEM",
       "Start Date": "2024-04-05",
-      "End Date": "2026-03-02",
+      "End Date": "2026-05-04",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Air Force",
       "Award Type": null,
@@ -12273,6 +12289,6 @@
       "generated_internal_id": "ASST_NON_R15HL177798_075"
     }
   ],
-  "scraped_at": "2026-06-09T16:28:02.450967+00:00",
-  "count": 767
+  "scraped_at": "2026-06-10T16:55:01.840033+00:00",
+  "count": 768
 }
