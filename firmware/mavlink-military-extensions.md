@@ -1,4 +1,4 @@
-# Chapter 24: MAVLink Military Dialect — Gap Analysis and Proposed Extensions
+# Chapter 25: MAVLink Military Dialect — Gap Analysis and Proposed Extensions
 
 > Auterion's `mavlink-military` dialect (the `military.xml` file,
 > `Auterion/mavlink-military`) adds a fires/targeting layer on top

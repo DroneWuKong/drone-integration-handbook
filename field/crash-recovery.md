@@ -104,16 +104,16 @@ Inspect the LiPo:
 
 | Damage | Field Fix | Bench Required |
 |--------|-----------|---------------|
-| Broken prop | ✅ Swap prop (carry spares) | — |
-| Loose arm bolts | ✅ Retorque with field tool | — |
-| Bent motor bell | — | ✅ Motor replacement |
-| Snapped antenna | ✅ Swap if carrying spare | ✅ Re-solder pigtail |
-| Cracked arm | ✅ Zip tie splint (temporary) | ✅ Arm replacement |
-| Loose FC connector | ✅ Re-seat and press | ✅ Re-solder if broken |
-| Dented LiPo | — | ✅ Retire pack |
-| Cracked camera lens | — | ✅ Replace camera/lens |
-| ESC magic smoke | — | ✅ Replace ESC |
-| GPS mast snapped | ✅ Tape/zip-tie temporary | ✅ Reprint mount |
+| Broken prop | Swap prop (carry spares) | — |
+| Loose arm bolts | Retorque with field tool | — |
+| Bent motor bell | — | Motor replacement |
+| Snapped antenna | Swap if carrying spare | Re-solder pigtail |
+| Cracked arm | Zip tie splint (temporary) | Arm replacement |
+| Loose FC connector | Re-seat and press | Re-solder if broken |
+| Dented LiPo | — | Retire pack |
+| Cracked camera lens | — | Replace camera/lens |
+| ESC magic smoke | — | Replace ESC |
+| GPS mast snapped | Tape/zip-tie temporary | Reprint mount |
 
 ---
 

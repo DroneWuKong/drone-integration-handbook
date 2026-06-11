@@ -30,12 +30,26 @@ CHAPTERS = [
     ("autonomy/detection.md",                   23, "Detection: RF and Visual"),
     ("autonomy/onboard-ai-control.md",          24, "Onboard AI & Control"),
     ("firmware/mavlink-military-extensions.md", 25, "MAVLink Military Dialect — Gap Analysis (EN/HR)"),
+    # ── Reference chapters previously authored but never listed in the TOC.
+    #    Surfaced as stable IDs 26–35 (appended rather than renumbered, so the
+    #    existing #chN anchors and in-file "Chapter N:" headings stay valid);
+    #    slotted into the right Parts below for logical discovery.
+    ("firmware/appendix-b-uart-maps.md",       26, "UART Maps for Common Flight Controllers"),
+    ("firmware/crsf-elrs-protocol.md",         27, "CRSF & ELRS Protocol"),
+    ("firmware/dshot-esc-protocols.md",        28, "DShot & ESC Protocols"),
+    ("field/ghost-config.md",                  29, "Ghost RC Link Configuration"),
+    ("field/elrs-airport-mode.md",             30, "ELRS Airport Mode"),
+    ("field/frequency-planning.md",            31, "Frequency Planning Worksheet"),
+    ("field/crash-recovery.md",                32, "Crash Recovery & Field Repair"),
+    ("field/night-ops.md",                     33, "Thermal & Night FPV Operations"),
+    ("field/repeater-relay.md",                34, "Repeater & Relay Deployment"),
+    ("field/substitution-guide.md",            35, "Supply Chain Substitution Guide"),
 ]
 
 PARTS = [
-    ("Part 1 — RF Fundamentals",         [1, 2, 3, 4]),
-    ("Part 2 — Flight Controller Firmware", [5, 6, 7, 8]),
-    ("Part 3 — Field Operations",        [9, 10, 11, 12]),
+    ("Part 1 — RF Fundamentals",         [1, 2, 3, 4, 31]),
+    ("Part 2 — Flight Controller Firmware", [5, 6, 7, 8, 26, 27, 28, 29, 30]),
+    ("Part 3 — Field Operations",        [9, 10, 11, 12, 32, 33, 34, 35]),
     ("Part 4 — Integration",             [13, 14, 15, 16]),
     ("What's Left to Solve",             [17]),
     ("Part 5 — Vendor Guides",           [18, 19]),
@@ -386,6 +400,8 @@ def build_site(base_dir, output_dir):
 <meta property="og:title" content="The Drone Integration Handbook">
 <meta property="og:description" content="Free. Open. No login required. An industry reference for drone RF, integration, and field operations.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://uas-handbook.com/">
+<link rel="canonical" href="https://uas-handbook.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
