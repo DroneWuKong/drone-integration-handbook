@@ -2,7 +2,7 @@ name: "📋 Procurement Scanner — SAM.gov/USASpending (Daily 2PM UTC)"
 
 on:
   schedule:
-    - cron: '0 14 * * *'  # Daily at 14:00 UTC — runs alongside intel miner
+    - cron: '30 10 * * *'  # Daily at 10:30 UTC — before Ai-Project pie-daily (11:30 UTC) consumes the output
   workflow_dispatch:       # Manual trigger
     inputs:
       start_date:
