@@ -39,7 +39,7 @@ firmware/        — Part 2: Flight Controller Firmware (Chapters 5-8)
 field/           — Part 3: Field Operations (Chapters 9-12, 17)
 integration/     — Part 4: Integration (Chapters 13-16)
 vendor/          — Part 5: Vendor Guides (Chapters 18-19)
-autonomy/        — Part 6: Autonomy (Chapters 20-23)
+autonomy/        — Part 6: Autonomy (Chapters 20-24; Ch. 25 MAVLink military lives in firmware/)
 components/      — Component references (Orqa ecosystem, control links, etc.)
 platforms/       — Platform-specific references (cots/, blue-uas/, open-source/, tactical/)
 appendices/      — Quick reference cards and lookup tables
