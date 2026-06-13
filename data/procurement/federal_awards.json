@@ -225,6 +225,22 @@
       "generated_internal_id": "CONT_AWD_W911QX24C0004_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 359155816,
+      "Award ID": "FA875026FB005",
+      "Recipient Name": "BOOZ ALLEN HAMILTON INC",
+      "Award Amount": 14468891.0,
+      "Total Outlays": null,
+      "Description": "THE OBJECTIVE OF THIS EFFORT IS TO PROCURE, INTEGRATE, DEPLOY, AND SUSTAIN PROTOTYPE AND LOW-RATE INITIAL PRODUCTION (LRIP) UNMANNED AIRCRAFT SYSTEM (UAS) AND COUNTER UAS SOLUTIONS SUCH AS THE SMALL UNCREWED AIR DEFENSE SYSTEM (SUADS).",
+      "Start Date": "2026-03-13",
+      "End Date": "2027-03-12",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA875026FB005_9700_FA875021D1100_9700"
+    },
+    {
       "internal_id": 278750744,
       "Award ID": "19AQMM24F0217",
       "Recipient Name": "RRDS INC",
@@ -783,22 +799,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA864923P1033_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 298566784,
-      "Award ID": "FA864925P0235",
-      "Recipient Name": "NANOSPERSE LLC",
-      "Award Amount": 1228986.0,
-      "Total Outlays": null,
-      "Description": "INNOVATIVE DEGASSED, DENSIFIED, PRE-CHARGED MOLDING COMPOUND FOR RAPID UNMANNED AIRCRAFT SYSTEM PARTS MANUFACTURING",
-      "Start Date": "2025-06-25",
-      "End Date": "2027-03-01",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA864925P0235_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 354631492,
@@ -2004,11 +2004,11 @@
       "internal_id": 349058955,
       "Award ID": "W56KGU25F0012",
       "Recipient Name": "QINETIQ INC.",
-      "Award Amount": 3176800.0,
+      "Award Amount": 3271912.1,
       "Total Outlays": 0.0,
       "Description": "DIGITAL NIGHT VISION TECHNOLOGY (DNVT)FOR DIGITAL COUNTER UNMANNED AERIAL SYSTEM (C-UAS) TECHNOLOGY AND SOFTWARE INTEGRATION.  TASK ORDER REQUEST (TOR) 0003",
       "Start Date": "2025-03-31",
-      "End Date": "2026-03-30",
+      "End Date": "2027-04-01",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Army",
       "Award Type": null,
@@ -3425,22 +3425,6 @@
       "generated_internal_id": "CONT_AWD_N0001424C1515_9700_-NONE-_-NONE-"
     },
     {
-      "internal_id": 309849494,
-      "Award ID": "N0017324F2019",
-      "Recipient Name": "UTAH STATE UNIVERSITY SPACE DYNAMICS LABORATORY",
-      "Award Amount": 29998351.47,
-      "Total Outlays": null,
-      "Description": "SDL UARC 22D2005 TASK ORDER #2.",
-      "Start Date": "2024-07-22",
-      "End Date": "2026-07-21",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Navy",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_N0017324F2019_9700_N0017322D2005_9700"
-    },
-    {
       "internal_id": 309486741,
       "Award ID": "N0001422C1030",
       "Recipient Name": "GEORGIA TECH APPLIED RESEARCH CORP",
@@ -3471,6 +3455,22 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_N0016425FJ608_9700_N0016425GJR96_9700"
+    },
+    {
+      "internal_id": 309849494,
+      "Award ID": "N0017324F2019",
+      "Recipient Name": "UTAH STATE UNIVERSITY SPACE DYNAMICS LABORATORY",
+      "Award Amount": 29198351.47,
+      "Total Outlays": null,
+      "Description": "SDL UARC 22D2005 TASK ORDER #2.",
+      "Start Date": "2024-07-22",
+      "End Date": "2026-07-21",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_N0017324F2019_9700_N0017322D2005_9700"
     },
     {
       "internal_id": 309499810,
@@ -3855,22 +3855,6 @@
       "awarding_agency_id": 252,
       "agency_slug": "department-of-justice",
       "generated_internal_id": "CONT_AWD_15F06726P0000116_1549_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 278750737,
-      "Award ID": "19AQMM24F0210",
-      "Recipient Name": "RRDS INC",
-      "Award Amount": 6573199.75,
-      "Total Outlays": 0.0,
-      "Description": "MID-RANGE UAS IDIQ CONTRACT DELIVERY ORDER INL BOGOTA",
-      "Start Date": "2024-01-16",
-      "End Date": "2025-12-16",
-      "Awarding Agency": "Department of State",
-      "Awarding Sub Agency": "Department of State",
-      "Award Type": null,
-      "awarding_agency_id": 315,
-      "agency_slug": "department-of-state",
-      "generated_internal_id": "CONT_AWD_19AQMM24F0210_1900_19AQMM23D0091_1900"
     },
     {
       "internal_id": 260370054,
@@ -5359,22 +5343,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA441726P0012_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 353664887,
-      "Award ID": "W50S8725PA005",
-      "Recipient Name": "WS DARLEY & CO",
-      "Award Amount": 209116.94,
-      "Total Outlays": null,
-      "Description": "(7) SUAS: NDAA COMPLIANT, SO MUST BE ON THE DEFENSE INNOVATION UNIT BLUE UAS LIST OR A SUCCESSFULLY WAIVERED SYSTEM; MAXIMUM GROSS TAKEOFF WEIGHT OF UP TO 4 POUNDS; ABILITY TO OPERATE ON 2.4GHZ OR 1.8GHZ FREQUENCY TO COMPLY WITH SPECTRUM MANAGEMENT",
-      "Start Date": "2025-09-03",
-      "End Date": "2025-11-01",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W50S8725PA005_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 253727612,
@@ -6929,6 +6897,22 @@
       "generated_internal_id": "CONT_AWD_H9240325F0025_9700_H9240324D0003_9700"
     },
     {
+      "internal_id": 359168772,
+      "Award ID": "W58RGZ26F0221",
+      "Recipient Name": "JOVIAN SOFTWARE CONSULTING LLC",
+      "Award Amount": 1375724.66,
+      "Total Outlays": null,
+      "Description": "IN ACCORDANCE WITH THE DIRECTIVES ESTABLISHED IN THE DEPARTMENT OF WAR MEMORANDUM DATED 10 JULY 2025, IN SUPPORT OF EXECUTIVE ORDER 14307 - UNLEASHING U.S. MILITARY DRONE DOMINANCE.",
+      "Start Date": "2026-03-12",
+      "End Date": "2027-03-12",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W58RGZ26F0221_9700_W58RGZ26G0018_9700"
+    },
+    {
       "internal_id": 348989708,
       "Award ID": "W51AA125P0058",
       "Recipient Name": "ORQA INC",
@@ -7071,22 +7055,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA864925P0242_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 298566435,
-      "Award ID": "FA864924P0992",
-      "Recipient Name": "J3 INITIATIVES INC.",
-      "Award Amount": 1245670.0,
-      "Total Outlays": null,
-      "Description": "ENHANCED CLOSE AIR SUPPORT AND INTELLIGENCE SURVEILLANCE TARGET ACQUISITION RECONNAISSANCE CAPABILITY FOR AIR FORCE SMALL UNMANNED AERIAL SYSTEMS AND DRONES",
-      "Start Date": "2024-08-16",
-      "End Date": "2026-02-17",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA864924P0992_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 356590756,
@@ -10065,6 +10033,22 @@
       "generated_internal_id": "ASST_NON_2323189_049"
     },
     {
+      "internal_id": 353664887,
+      "Award ID": "W50S8725PA005",
+      "Recipient Name": "WS DARLEY & CO",
+      "Award Amount": 209116.94,
+      "Total Outlays": null,
+      "Description": "(7) SUAS: NDAA COMPLIANT, SO MUST BE ON THE DEFENSE INNOVATION UNIT BLUE UAS LIST OR A SUCCESSFULLY WAIVERED SYSTEM; MAXIMUM GROSS TAKEOFF WEIGHT OF UP TO 4 POUNDS; ABILITY TO OPERATE ON 2.4GHZ OR 1.8GHZ FREQUENCY TO COMPLY WITH SPECTRUM MANAGEMENT",
+      "Start Date": "2025-09-03",
+      "End Date": "2025-11-01",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W50S8725PA005_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 355832304,
       "Award ID": "W912SR26PA001",
       "Recipient Name": "DRONIVO GMBH",
@@ -12305,6 +12289,6 @@
       "generated_internal_id": "ASST_NON_R15HL177798_075"
     }
   ],
-  "scraped_at": "2026-06-12T13:47:17.387104+00:00",
-  "count": 769
+  "scraped_at": "2026-06-13T11:18:30.153985+00:00",
+  "count": 768
 }
