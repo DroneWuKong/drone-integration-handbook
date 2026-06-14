@@ -34,6 +34,14 @@
   .metrics span{font-size:12px;background:#1b2230;border:1px solid var(--line);border-radius:6px;padding:3px 7px}
   canvas{width:100%;height:150px;display:block}
   .hint{color:var(--warn)}
+  .advice{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+  .advice .item{background:var(--panel);border:1px solid var(--line);border-left-width:3px;border-radius:8px;padding:10px 12px}
+  .advice .item.WARN{border-left-color:var(--bad)}
+  .advice .item.SUGGEST{border-left-color:var(--warn)}
+  .advice .item.INFO{border-left-color:var(--accent)}
+  .advice .t{font-weight:600;font-size:14px}
+  .advice .t .tag{font-size:11px;color:var(--muted);font-weight:400;margin-left:6px}
+  .advice .d{color:var(--muted);font-size:13px;margin-top:2px}
   footer{border-top:1px solid var(--line);color:var(--muted);font-size:12px;padding:18px 20px;margin-top:30px}
   .dot{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px;vertical-align:middle}
 </style>
@@ -103,6 +111,18 @@
       + (m.craftName? chip('Craft', m.craftName):'')
       + chip('Log rate', (m.logRateKhz? m.logRateKhz+' kHz':'?'))
       + chip('Samples', m.sampleCount) + '</div>';
+
+    // Tune Advisor — plain-English recommendations
+    if(res.advice && res.advice.length){
+      html += '<section><h2>Recommendations</h2><div class="advice">';
+      res.advice.forEach(function(adv){
+        var tag = adv.axis ? '<span class="tag">'+escapeHtml(adv.axis)+'</span>' : '';
+        html += '<div class="item '+escapeHtml(adv.severity||'INFO')+'">'
+              + '<div class="t">'+escapeHtml(adv.title)+tag+'</div>'
+              + '<div class="d">'+escapeHtml(adv.detail)+'</div></div>';
+      });
+      html += '</div></section>';
+    }
 
     // Step response
     html += '<section><h2>Step response</h2><div class="legend">'+axisLegend()+'</div><div class="grid" id="step"></div></section>';
