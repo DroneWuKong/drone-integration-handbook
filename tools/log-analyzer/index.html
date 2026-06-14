@@ -57,6 +57,7 @@
     <small>.bbl · .bfl · .csv · .bin · .json — analyzed locally</small>
     <input type="file" id="file" accept=".bbl,.bfl,.csv,.bin,.json,.txt">
   </label>
+  <p style="text-align:center;margin:12px 0 0"><button id="sample" type="button" style="background:#1b2230;color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 14px;cursor:pointer">No log handy? Load a sample</button></p>
   <div id="status"></div>
   <div id="out"></div>
 </main>
@@ -90,19 +91,29 @@
   function handle(file){
     out.innerHTML=''; statusEl.innerHTML = '<p>Analyzing <b>'+escapeHtml(file.name)+'</b> ('+(file.size/1024|0)+' KB)…</p>';
     var reader = new FileReader();
-    reader.onload = function(){
-      try{
-        var bytes = new Int8Array(reader.result);
-        var t0 = performance.now();
-        var res = JSON.parse(api.analyzeLogJson(bytes, file.name));
-        var ms = (performance.now()-t0)|0;
-        if(!res.ok){ statusEl.innerHTML = '<div class="err">'+escapeHtml(res.error||'Could not analyze this file.')+'</div>'; return; }
-        statusEl.innerHTML = '<p style="color:var(--muted)">Analyzed locally in '+ms+' ms.</p>';
-        render(res);
-      }catch(err){ statusEl.innerHTML = '<div class="err">'+escapeHtml(String(err))+'</div>'; }
-    };
+    reader.onload = function(){ analyzeBytes(new Int8Array(reader.result), file.name); };
     reader.readAsArrayBuffer(file);
   }
+
+  function analyzeBytes(bytes, name){
+    out.innerHTML='';
+    try{
+      var t0 = performance.now();
+      var res = JSON.parse(api.analyzeLogJson(bytes, name));
+      var ms = (performance.now()-t0)|0;
+      if(!res.ok){ statusEl.innerHTML = '<div class="err">'+escapeHtml(res.error||'Could not analyze this file.')+'</div>'; return; }
+      statusEl.innerHTML = '<p style="color:var(--muted)">Analyzed <b>'+escapeHtml(name)+'</b> locally in '+ms+' ms.</p>';
+      render(res);
+    }catch(err){ statusEl.innerHTML = '<div class="err">'+escapeHtml(String(err))+'</div>'; }
+  }
+
+  var sampleBtn = document.getElementById('sample');
+  if(sampleBtn) sampleBtn.addEventListener('click', function(){
+    statusEl.innerHTML = '<p>Loading sample log…</p>'; out.innerHTML='';
+    fetch('./sample-betaflight.csv').then(function(r){ return r.arrayBuffer(); })
+      .then(function(buf){ analyzeBytes(new Int8Array(buf), 'sample-betaflight.csv'); })
+      .catch(function(e){ statusEl.innerHTML = '<div class="err">Could not load sample: '+escapeHtml(String(e))+'</div>'; });
+  });
 
   function render(res){
     var m = res.metadata||{};
