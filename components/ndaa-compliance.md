@@ -153,4 +153,4 @@ for federal procurement without independent legal review.
 - [Orqa Hardware Guide](orqa-hardware-guide.md)
 - [RF Detection Hardware](rf-detection-hardware.md)
 - [Forge Compliance Dashboard](/compliance/)
-- [DFR Regulatory Brief](../patterns/dfr-regulatory.md)
+- [DFR Regulatory Brief](/patterns/)

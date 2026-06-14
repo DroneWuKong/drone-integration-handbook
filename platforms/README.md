@@ -29,11 +29,11 @@ Full integration profiles for drone platforms across four categories. Each profi
 | [Teal 2](blue-uas/teal-2.md) | YES | Proprietary | No | 30 min | Hadron 640R |
 | [Parrot ANAFI USA](blue-uas/parrot-anafi-usa.md) | YES | Proprietary | No | 32 min | Boson 320 |
 | [WingtraOne GEN II / WingtraRAY](blue-uas/wingtra-wingtraone.md) | YES | Proprietary | No | 59 min | Via sensor |
-| [Draganfly Apex](../../../platforms/tactical) | YES | ArduPilot | Yes | 45 min | Via payload |
-| [American Robotics Scout](../../../platforms/tactical) | YES | Proprietary | No | 30 min | Multispectral |
-| [AgEagle eBee VISION](../../../platforms/tactical) | YES | Proprietary | No | 90+ min | Survey |
-| [Ascent Aerosystems Spirit K257B](../../../platforms/tactical) | YES | ArduPilot | Yes | 35 min | Coaxial BVLOS |
-| [Red Cat Black Widow](../../../platforms/tactical) | YES | Proprietary | No | Classified | SRR T2 |
+| Draganfly Apex | YES | ArduPilot | Yes | 45 min | Via payload |
+| American Robotics Scout | YES | Proprietary | No | 30 min | Multispectral |
+| AgEagle eBee VISION | YES | Proprietary | No | 90+ min | Survey |
+| [Ascent Aerosystems Spirit K257B](blue-uas/ascent-aerosystems.md) | YES | ArduPilot | Yes | 35 min | Coaxial BVLOS |
+| [Red Cat Black Widow](tactical/teal-black-widow.md) | YES | Proprietary | No | Classified | SRR T2 |
 
 ## Open-Source / Custom Build
 
