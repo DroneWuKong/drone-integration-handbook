@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blackbox Log Analyzer — Drone Integration Handbook</title>
+<meta name="description" content="Drop a Betaflight/iNav/ArduPilot/QuickSilver blackbox log and get step-response, PID-error-by-throttle, and noise-spectrum analysis. Runs entirely in your browser — nothing is uploaded.">
+<style>
+  :root{ --bg:#0d1117; --panel:#161b22; --line:#30363d; --fg:#e6edf3; --muted:#8b949e;
+         --roll:#4493f8; --pitch:#3fb950; --yaw:#e3922a; --accent:#4493f8; --bad:#f85149; --warn:#e3b341; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  header{padding:24px 20px;border-bottom:1px solid var(--line)}
+  header h1{margin:0 0 4px;font-size:22px}
+  header p{margin:0;color:var(--muted);max-width:70ch}
+  main{max-width:1000px;margin:0 auto;padding:20px}
+  a{color:var(--accent)}
+  .drop{border:2px dashed var(--line);border-radius:12px;padding:40px 20px;text-align:center;cursor:pointer;transition:.15s;background:var(--panel)}
+  .drop.hover{border-color:var(--accent);background:#1b2230}
+  .drop strong{color:var(--fg)}
+  .drop small{color:var(--muted)}
+  input[type=file]{display:none}
+  .err{background:#2b1416;border:1px solid var(--bad);color:#ffb4ae;padding:12px 14px;border-radius:8px;margin-top:16px}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+  .chip{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px;color:var(--muted)}
+  .chip b{color:var(--fg)}
+  section{margin:26px 0}
+  section h2{font-size:16px;border-bottom:1px solid var(--line);padding-bottom:6px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px}
+  .card h3{margin:0 0 8px;font-size:14px}
+  .card .legend{font-size:12px;color:var(--muted);margin-bottom:6px}
+  .metrics{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .metrics span{font-size:12px;background:#1b2230;border:1px solid var(--line);border-radius:6px;padding:3px 7px}
+  canvas{width:100%;height:150px;display:block}
+  .hint{color:var(--warn)}
+  footer{border-top:1px solid var(--line);color:var(--muted);font-size:12px;padding:18px 20px;margin-top:30px}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:4px;vertical-align:middle}
+</style>
+</head>
+<body>
+<header>
+  <h1>Blackbox Log Analyzer</h1>
+  <p>Drop a flight log — Betaflight/iNav <code>.bbl</code>/<code>.csv</code>, ArduPilot <code>.bin</code>, or QuickSilver <code>.json</code> — to see step response, PID error vs throttle, and gyro noise. <strong>It runs entirely in your browser; the log never leaves your device.</strong></p>
+</header>
+<main>
+  <label class="drop" id="drop">
+    <strong>Choose a log file</strong> or drag it here<br>
+    <small>.bbl · .bfl · .csv · .bin · .json — analyzed locally</small>
+    <input type="file" id="file" accept=".bbl,.bfl,.csv,.bin,.json,.txt">
+  </label>
+  <div id="status"></div>
+  <div id="out"></div>
+</main>
+<footer>
+  Analysis engine: <strong>AI Wingman</strong> — a Kotlin/JS port of
+  <a href="https://github.com/ianrmurphy/PIDtoolbox">PIDtoolbox</a> /
+  <a href="https://github.com/dzikus/PIDscope">PIDscope</a>, licensed <strong>GPL-3.0</strong>.
+  Corresponding source for <code>wingman-analysis.js</code> is available on request.
+  Handbook content is CC BY-SA 4.0.
+</footer>
+
+<script src="./wingman-analysis.js"></script>
+<script>
+(function(){
+  var bundle = window["wingman-analysis"];
+  var api = bundle && bundle.ai && bundle.ai.wingman && bundle.ai.wingman.analysis && bundle.ai.wingman.analysis.web;
+  var drop = document.getElementById('drop');
+  var fileInput = document.getElementById('file');
+  var statusEl = document.getElementById('status');
+  var out = document.getElementById('out');
+  var AXES = ['ROLL','PITCH','YAW'];
+  var AXIS_COLOR = {ROLL:'#4493f8',PITCH:'#3fb950',YAW:'#e3922a'};
+
+  if(!api){ statusEl.innerHTML = '<div class="err">Analysis engine failed to load (wingman-analysis.js).</div>'; }
+
+  ['dragenter','dragover'].forEach(function(e){ drop.addEventListener(e,function(ev){ev.preventDefault();drop.classList.add('hover');}); });
+  ['dragleave','drop'].forEach(function(e){ drop.addEventListener(e,function(ev){ev.preventDefault();drop.classList.remove('hover');}); });
+  drop.addEventListener('drop', function(ev){ if(ev.dataTransfer.files.length) handle(ev.dataTransfer.files[0]); });
+  fileInput.addEventListener('change', function(){ if(fileInput.files.length) handle(fileInput.files[0]); });
+
+  function handle(file){
+    out.innerHTML=''; statusEl.innerHTML = '<p>Analyzing <b>'+escapeHtml(file.name)+'</b> ('+(file.size/1024|0)+' KB)…</p>';
+    var reader = new FileReader();
+    reader.onload = function(){
+      try{
+        var bytes = new Int8Array(reader.result);
+        var t0 = performance.now();
+        var res = JSON.parse(api.analyzeLogJson(bytes, file.name));
+        var ms = (performance.now()-t0)|0;
+        if(!res.ok){ statusEl.innerHTML = '<div class="err">'+escapeHtml(res.error||'Could not analyze this file.')+'</div>'; return; }
+        statusEl.innerHTML = '<p style="color:var(--muted)">Analyzed locally in '+ms+' ms.</p>';
+        render(res);
+      }catch(err){ statusEl.innerHTML = '<div class="err">'+escapeHtml(String(err))+'</div>'; }
+    };
+    reader.readAsArrayBuffer(file);
+  }
+
+  function render(res){
+    var m = res.metadata||{};
+    var html = '<div class="meta">'
+      + chip('Firmware', m.firmware) + chip('Version', m.firmwareVersion)
+      + (m.craftName? chip('Craft', m.craftName):'')
+      + chip('Log rate', (m.logRateKhz? m.logRateKhz+' kHz':'?'))
+      + chip('Samples', m.sampleCount) + '</div>';
+
+    // Step response
+    html += '<section><h2>Step response</h2><div class="legend">'+axisLegend()+'</div><div class="grid" id="step"></div></section>';
+    // PID error by throttle
+    html += '<section><h2>PID error vs throttle</h2><div class="legend">Lower is better. A rise in the mid-throttle band points to mid-throttle oscillation; a spike on descent points to propwash.</div><div class="grid" id="pe"></div></section>';
+    // Spectra
+    if(res.spectra && Object.keys(res.spectra).length){
+      html += '<section><h2>Gyro noise spectrum</h2><div class="legend">Peaks indicate motor/frame noise the filters must reject.</div><div class="grid" id="sp"></div></section>';
+    }
+    out.innerHTML = html;
+
+    AXES.forEach(function(ax){
+      var a = (res.axes||{})[ax]; if(!a) return;
+      if(a.step){
+        var card = makeCard('step', ax, '');
+        drawLine(card.canvas, a.step.timeMs, a.step.meanResponse, AXIS_COLOR[ax], {hline:1.0});
+        card.metrics.innerHTML =
+            metric('overshoot', fmt(a.step.overshoot,2), a.step.overshoot>1.15)
+          + metric('rise', fmt(a.step.riseTimeMs,1)+'ms')
+          + metric('settle', fmt(a.step.settlingTimeMs,1)+'ms')
+          + metric('delay50%', fmt(a.step.latencyHalfHeightMs,1)+'ms');
+      }
+      if(a.pidErr){
+        var c2 = makeCard('pe', ax, '');
+        drawBars(c2.canvas, a.pidErr.bins, a.pidErr.meanAbsError, AXIS_COLOR[ax]);
+      }
+    });
+
+    if(res.spectra){
+      Object.keys(res.spectra).forEach(function(k){
+        var s = res.spectra[k];
+        var c = makeCard('sp', k.replace(/_/g,' '), '');
+        drawLine(c.canvas, s.frequencies, s.amplitudes, '#4493f8', {});
+      });
+    }
+  }
+
+  // ── tiny canvas charting (no deps) ───────────────────────────────
+  function makeCard(parentId, title, legend){
+    var wrap = document.createElement('div'); wrap.className='card';
+    wrap.innerHTML = '<h3>'+escapeHtml(title)+'</h3>'+(legend?'<div class="legend">'+legend+'</div>':'');
+    var canvas = document.createElement('canvas'); canvas.width=560; canvas.height=150;
+    wrap.appendChild(canvas);
+    var metrics = document.createElement('div'); metrics.className='metrics'; wrap.appendChild(metrics);
+    document.getElementById(parentId).appendChild(wrap);
+    return {canvas:canvas, metrics:metrics};
+  }
+  function bounds(arr){ var lo=Infinity,hi=-Infinity; for(var i=0;i<arr.length;i++){var v=arr[i]; if(v==null||!isFinite(v))continue; if(v<lo)lo=v; if(v>hi)hi=v;} if(lo===Infinity){lo=0;hi=1;} if(lo===hi){hi=lo+1;} return [lo,hi]; }
+  function drawLine(cv,xs,ys,color,opt){
+    var ctx=cv.getContext('2d'),W=cv.width,H=cv.height,pad=6; ctx.clearRect(0,0,W,H);
+    if(!xs||!ys||!xs.length){return;}
+    var xb=bounds(xs), yb=bounds(ys);
+    if(opt&&opt.hline!=null){ yb[0]=Math.min(yb[0],opt.hline-0.05); yb[1]=Math.max(yb[1],opt.hline+0.05);
+      var hy=H-pad-(opt.hline-yb[0])/(yb[1]-yb[0])*(H-2*pad);
+      ctx.strokeStyle='#30363d'; ctx.setLineDash([4,4]); ctx.beginPath(); ctx.moveTo(pad,hy); ctx.lineTo(W-pad,hy); ctx.stroke(); ctx.setLineDash([]); }
+    ctx.strokeStyle=color; ctx.lineWidth=1.5; ctx.beginPath();
+    for(var i=0;i<xs.length;i++){ var x=pad+(xs[i]-xb[0])/(xb[1]-xb[0])*(W-2*pad); var y=H-pad-(ys[i]-yb[0])/(yb[1]-yb[0])*(H-2*pad); if(i===0)ctx.moveTo(x,y); else ctx.lineTo(x,y); }
+    ctx.stroke();
+  }
+  function drawBars(cv,xs,ys,color){
+    var ctx=cv.getContext('2d'),W=cv.width,H=cv.height,pad=6; ctx.clearRect(0,0,W,H);
+    if(!ys||!ys.length)return; var yb=[0,bounds(ys)[1]]; var bw=(W-2*pad)/ys.length;
+    for(var i=0;i<ys.length;i++){ var h=(ys[i]-yb[0])/(yb[1]-yb[0])*(H-2*pad); if(!isFinite(h)||h<0)h=0;
+      ctx.fillStyle=color; ctx.globalAlpha=.85; ctx.fillRect(pad+i*bw+1, H-pad-h, Math.max(1,bw-2), h); }
+    ctx.globalAlpha=1;
+  }
+
+  // ── helpers ──────────────────────────────────────────────────────
+  function chip(k,v){ return '<span class="chip">'+escapeHtml(k)+': <b>'+escapeHtml(v==null?'?':String(v))+'</b></span>'; }
+  function metric(k,v,bad){ return '<span'+(bad?' class="hint"':'')+'>'+escapeHtml(k)+': '+escapeHtml(v)+'</span>'; }
+  function axisLegend(){ return AXES.map(function(a){ return '<span class="dot" style="background:'+AXIS_COLOR[a]+'"></span>'+a; }).join('&nbsp;&nbsp;'); }
+  function fmt(n,d){ return (n==null||!isFinite(n))? '—' : Number(n).toFixed(d); }
+  function escapeHtml(s){ return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+})();
+</script>
+</body>
+</html>

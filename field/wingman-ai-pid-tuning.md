@@ -4,6 +4,11 @@
 > AI-assisted tuning compresses that cycle by reading your blackbox data
 > and generating specific recommendations before you fly.
 
+> **Try it now:** the [Blackbox Log Analyzer](/tools/log-analyzer/) runs the
+> Wingman analysis engine entirely in your browser. Drop a `.bbl`, `.csv`,
+> `.bin`, or `.json` log and get step response, PID error vs throttle, and
+> gyro noise spectra. The log never leaves your device - nothing is uploaded.
+
 ---
 
 ## The Workflow
