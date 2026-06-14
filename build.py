@@ -1827,6 +1827,13 @@ window.addEventListener('scroll', () => {{
         with open(redirects_src, "r") as src, open(os.path.join(output_dir, "_redirects"), "w") as dst:
             dst.write(src.read())
 
+    # Static interactive tool pages (e.g. tools/log-analyzer/) — copied verbatim
+    # so Cloudflare Pages serves them at /tools/... alongside the single-page site.
+    import shutil
+    tools_src = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools")
+    if os.path.isdir(tools_src):
+        shutil.copytree(tools_src, os.path.join(output_dir, "tools"), dirs_exist_ok=True)
+
     print(f"\n  Output: {output_path}")
     print(f"  Size: {os.path.getsize(output_path):,} bytes")
     print("  Done.")
