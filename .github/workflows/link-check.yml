@@ -1,0 +1,24 @@
+name: link-check
+
+# The directory tree IS the URL tree (see CLAUDE.md), so a moved/renamed file
+# silently breaks every relative link to it. This gate catches that at PR time.
+# Cloudflare Pages still owns the build/deploy; this only validates links.
+
+on:
+  push:
+  pull_request:
+
+concurrency:
+  group: link-check-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check internal links
+        run: python3 scripts/check_links.py
