@@ -1,4 +1,4 @@
-# Chapter 2: Frequency Bands and Regulatory Reality
+# Chapter 2: Frequency Bands & Regulatory Reality
 
 > The regulations tell you what you're allowed to do.
 > The physics tell you what will actually work.

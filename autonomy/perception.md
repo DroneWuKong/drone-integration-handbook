@@ -1,4 +1,4 @@
-# Perception: VIO, SLAM, and GPS-Denied State Estimation
+# Perception: VIO, SLAM & GPS-Denied State Estimation
 
 GPS denial is the operational baseline in contested airspace — jammed,
 spoofed, or simply unavailable. When it happens, the drone still has to know
