@@ -122,19 +122,27 @@ manufacturer documentation.
 
 ### Part 6 — Autonomy
 
-20. [Datasets & Benchmarks for Drone Autonomy](autonomy/datasets.md)
+20. [Levels of Drone Autonomy](autonomy/autonomy-levels.md)
+    The SAE J3016 / Exyn-derived autonomy ladder, with the conditions,
+    fallback behaviour, and minimum hardware each level honestly requires.
+
+21. [Datasets & Benchmarks for Drone Autonomy](autonomy/datasets.md)
     Catalog of VIO/SLAM, CV-detection, and RF datasets, with the
     license/usage caveats that bite you later.
 
-21. [Perception: VIO, SLAM & GPS-Denied State Estimation](autonomy/perception.md)
+22. [Perception: VIO, SLAM & GPS-Denied State Estimation](autonomy/perception.md)
     Relative vs. absolute fixes, why VIO drifts, and the failure modes.
 
-22. [Detection: RF and Visual](autonomy/detection.md)
+23. [Detection: RF and Visual](autonomy/detection.md)
     Passive RF + visual detection, the bird false-positive problem,
     and getting from detection to navigation.
 
-23. [Onboard AI & Control](autonomy/onboard-ai-control.md)
+24. [Onboard AI & Control](autonomy/onboard-ai-control.md)
     Confidence-driven authority, EW-aware and capability-aware autonomy.
+
+25. [MAVLink Military Dialect — Gap Analysis (EN/HR)](firmware/mavlink-military-extensions.md)
+    Where the standard dialect falls short for military/contested
+    operations, and proposed extensions. Bilingual EN/HR.
 
 ### [Platform References](platforms/README.md)
 
