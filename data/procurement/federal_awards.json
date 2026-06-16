@@ -132,7 +132,7 @@
       "internal_id": 298377557,
       "Award ID": "FA807522F0011",
       "Recipient Name": "MANTECH TSG-2 JOINT VENTURE",
-      "Award Amount": 84308872.08,
+      "Award Amount": 84817520.83,
       "Total Outlays": 0.0,
       "Description": "UNMANNED AIRCRAFT SYSTEMS ENGINEERING AND ANALYSIS FOR NAVAL AIR SYSTEMS COMMAND AND NAVAL SURFACE WARFARE CENTER, CRANE DIVISION",
       "Start Date": "2021-12-09",
@@ -6321,6 +6321,22 @@
       "generated_internal_id": "CONT_AWD_W31P4Q06C0292_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 359204810,
+      "Award ID": "W58RGZ26F0211",
+      "Recipient Name": "GRIFFON AEROSPACE, INC.",
+      "Award Amount": 77729006.0,
+      "Total Outlays": null,
+      "Description": "IN SUPPORT OF EXECUTIVE ORDER- UNLEASHING AMERICA DRONE DOMINANCE, THE ARMY CONTRACTING COMMAND-REDSTONE ARSENAL ESTABLISHES THIS BASIC ORDERING AGREEMENT TO PROCURE DRONES AND DRONE DOMINANT COMPONENTS.",
+      "Start Date": "2026-03-16",
+      "End Date": "2026-11-30",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W58RGZ26F0211_9700_W58RGZ26G0061_9700"
+    },
+    {
       "internal_id": 357468540,
       "Award ID": "80NM0026F7025",
       "Recipient Name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
@@ -7039,22 +7055,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA864924P0998_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 298566791,
-      "Award ID": "FA864925P0242",
-      "Recipient Name": "MAZER INTEL LLC",
-      "Award Amount": 1247078.0,
-      "Total Outlays": null,
-      "Description": "SENTINEL SWARMS: DRONE DEFENSE FOR AUSTERE AIRFIELDS",
-      "Start Date": "2025-05-23",
-      "End Date": "2027-02-23",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA864925P0242_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 356590756,
@@ -12289,6 +12289,6 @@
       "generated_internal_id": "ASST_NON_R15HL177798_075"
     }
   ],
-  "scraped_at": "2026-06-15T12:42:39.258358+00:00",
+  "scraped_at": "2026-06-16T12:18:13.780019+00:00",
   "count": 768
 }
