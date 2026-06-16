@@ -163,6 +163,134 @@ and high retransmits with no obvious culprit — every node looks busy
 because the loop is flooding broadcast. Turn BLA on before you
 double-home any node, not after you're debugging it in the field.
 
+### Choosing the routing algorithm: BATMAN_IV vs BATMAN_V
+
+`batman-adv` ships two routing algorithms, and which one you pick
+changes the meaning of half the table above.
+
+| | BATMAN_IV (default) | BATMAN_V |
+|---|---|---|
+| Topology gossip | OGM flooding | ELP (per-neighbour probes) + OGMv2 |
+| Path metric | hop count + packet loss (TQ, 0–255) | estimated **throughput** |
+| Your levers | `orig_interval`, `hop_penalty` | mostly automatic |
+| Heterogeneous rates | hand-tuned | self-optimising |
+
+- **BATMAN_IV** ranks paths by a transmit-quality (TQ) score that
+  degrades per hop — so the `hop_penalty` / `orig_interval` knobs in
+  the table are IV's levers. Simple, deterministic, easy to debug.
+- **BATMAN_V** ranks paths by **measured throughput**, so it
+  naturally avoids a marginal link or a slow relay without you
+  hand-tuning `hop_penalty`. On a mixed-rate mesh (some nodes close,
+  one obscured) V usually gives steadier telemetry with less fiddling.
+- Set it **before** `bat0` exists — the algorithm can't change while
+  interfaces are attached:
+
+  ```bash
+  batctl routing_algo BATMAN_V   # then bring up bat0 as before
+  ```
+
+- **Every node must run the same algorithm.** IV and V do **not**
+  interoperate. The failure mode is silent: a node left on default IV
+  joining a V mesh shows an **empty originator table** (`batctl o`)
+  even though the radio link is perfectly fine. If `batctl n` lists
+  neighbours but `batctl o` is empty, suspect an algorithm mismatch
+  before you suspect RF.
+
+Rule of thumb: reach for **V** on a heterogeneous or moving mesh and
+drop the `hop_penalty` tuning; keep **IV** when you want simple,
+predictable, hand-reasoned behaviour on uniform hardware.
+
+### 2.4 GHz vs 5 GHz for the telemetry mesh
+
+| | 2.4 GHz | 5 GHz |
+|---|---|---|
+| Range / penetration | **better** (longer, through foliage/walls) | shorter, line-of-sight-ish |
+| Clean spectrum | crowded (Wi-Fi, BT, analog video) | mostly clean, many non-overlapping channels |
+| Channel width | narrow, few clear channels | wide channels available |
+| Gotcha | co-channel interference | **DFS radar-avoidance blackouts** |
+
+- For **C2 / telemetry**, robustness beats bandwidth — 2.4 GHz's
+  range and penetration usually win, *if* you can find a clean
+  channel away from the site's Wi-Fi and the analog FPV video.
+- **Never put C2 telemetry on a DFS channel.** If the radio detects
+  (or thinks it detects) radar, it must vacate the channel for
+  seconds to minutes — a hard, non-negotiable link blackout while the
+  aircraft is flying. DFS is acceptable for bulk video you can lose;
+  it is not acceptable for the control link.
+- If video shares the mesh, **split the bands**: high-rate video on
+  its own 5 GHz wide channel, low-rate telemetry on a robust 2.4 GHz
+  channel. Mixing a saturating video stream and C2 on one radio is
+  the most common cause of "telemetry gets choppy whenever I'm
+  streaming."
+
+### MTU and fragmentation
+
+`batman-adv` prepends its own header to every frame. If `bat0` keeps
+the standard 1500-byte MTU on top of a 1500-byte radio, every full
+packet **fragments** — a throughput and latency tax.
+
+- The clean fix: raise the *underlying* interface MTU to ~1560
+  (1500 + batman-adv overhead) so `bat0` can present a full 1500
+  without fragmenting. Many Wi-Fi drivers support this; some don't.
+- If you can't, leave fragmentation on (`batctl fragmentation enable`,
+  the default). For **telemetry** this is mostly moot — MAVLink
+  packets are tiny and rarely fragment. It bites **video** (large
+  RTSP packets), so this knob matters most on a mesh that also carries
+  the stream.
+
+### Gateway mode — electing the uplink node
+
+When more than one node can reach the cloud (e.g. two vehicles within
+LTE coverage), let `batman-adv` elect the uplink instead of static
+routes:
+
+```bash
+# on the node holding the backhaul:
+batctl gw_mode server 10000/2000     # advertised up/down kbit/s
+# on every other node:
+batctl gw_mode client
+```
+
+Clients then auto-select the best-announced gateway and default-route
+through it, with automatic failover if that node drops off. This pairs
+directly with store-and-forward: the vmagent node simply follows the
+elected gateway to reach the cloud. **Failure mode:** multiple
+`server` nodes plus a loose client selection class can cause clients
+to flap between gateways mid-flight — pin a single server, or set a
+stable selection class, when determinism matters more than failover.
+
+### DAT and multicast
+
+- **Distributed ARP Table** (`batctl distributed_arp_table`, on by
+  default): caches ARP mesh-wide so an ARP lookup doesn't broadcast-
+  flood every hop. Keep it on for any multi-node mesh.
+- **Multicast** (`batctl multicast_mode`, on by default): converts
+  multicast to targeted unicast when there are few listeners — good,
+  keep it. But note a **MAVLink UDP broadcast** (to `…255`) is still
+  treated as broadcast and floods every hop. For high-rate streams,
+  send **directed UDP to the node's `bat0` IP** (as the edge node's
+  `:14550` ingest does) and reserve broadcast for low-rate discovery.
+
+### Test before you fly (`batctl`)
+
+A 60-second pre-flight from the edge node catches a bad link while you
+can still fix it (re-aim an antenna, drop the rate, reposition a
+relay) instead of discovering it as a telemetry stall at altitude:
+
+| Command | What it tells you |
+|---------|-------------------|
+| `batctl ping <mac>` | L2 round-trip to a neighbour, bypassing IP — raw link latency |
+| `batctl tp <mac>` | **measured** throughput to that node — trust this before routing video over a hop |
+| `batctl o` | originator table: who's reachable, via which next-hop, with TQ (IV) / throughput (V) |
+| `batctl n` | direct neighbours + last-seen age |
+| `batctl tg` | translation table — confirms the FC/companion's MAC is visible mesh-wide |
+
+The go/no-go: every airframe-side node should answer `batctl ping`,
+post healthy `batctl tp`, and show in `batctl o` with **TQ ≥ ~200**
+(BATMAN_IV) or solid throughput (BATMAN_V). A link sitting at
+**TQ < ~150** will produce intermittent telemetry stalls under load —
+treat it as a fail and fix the RF before launch, not after.
+
 ---
 
 ## Store-and-Forward: Surviving the Uplink
