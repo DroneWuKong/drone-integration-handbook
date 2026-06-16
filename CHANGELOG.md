@@ -1,5 +1,12 @@
 # Changelog
 
+## [Session] - 2026-06-16 — Portable Telemetry Edge Node (K3s)
+
+### Added
+- **Ch. 36 — Portable Telemetry Edge Node (K3s)** (`integration/edge-node-k3s.md`, Part 4): field-deployable K3s ground node that aggregates multi-vehicle MAVLink off a mesh, stores it locally (VictoriaMetrics), and store-and-forwards a refined copy to the cloud over a flaky uplink. Covers when an edge node beats a GCS/companion, why K3s for austere edge, the MQTT-bus data path, **B.A.T.M.A.N. adv tuning for telemetry** (OGM interval, hop penalty, bridge-loop-avoidance, fixed-rate links — with field jitter numbers), the **match-payload-to-pipe** rule (LoRaWAN = distilled status only), and the store-and-forward queue design + sizing. Cross-links companion (Ch. 13), mesh radios (Ch. 14), and CoT/TAK (Ch. 15).
+- Registered in `build.py` CHAPTERS (36) and added to "Part 4 — Integration" PARTS. Build verified (`#ch36` renders).
+- The runnable reference deployment (manifests, MAVLink→MQTT decoder, vmagent store-and-forward config) lives in `Ai-Project` at `infra/edge-node/`; this chapter is the field-facing companion.
+
 ## [Session] - 2026-06-01 — Levels of Drone Autonomy (Part 6 lead chapter)
 
 ### Added

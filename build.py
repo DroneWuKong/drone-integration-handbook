@@ -44,13 +44,14 @@ CHAPTERS = [
     ("field/night-ops.md",                     33, "Thermal & Night FPV Operations"),
     ("field/repeater-relay.md",                34, "Repeater & Relay Deployment"),
     ("field/substitution-guide.md",            35, "Supply Chain Substitution Guide"),
+    ("integration/edge-node-k3s.md",           36, "Portable Telemetry Edge Node (K3s)"),
 ]
 
 PARTS = [
     ("Part 1 — RF Fundamentals",         [1, 2, 3, 4, 31]),
     ("Part 2 — Flight Controller Firmware", [5, 6, 7, 8, 26, 27, 28, 29, 30]),
     ("Part 3 — Field Operations",        [9, 10, 11, 12, 32, 33, 34, 35]),
-    ("Part 4 — Integration",             [13, 14, 15, 16]),
+    ("Part 4 — Integration",             [13, 14, 15, 16, 36]),
     ("What's Left to Solve",             [17]),
     ("Part 5 — Vendor Guides",           [18, 19]),
     ("Part 6 — Autonomy",                [20, 21, 22, 23, 24]),
