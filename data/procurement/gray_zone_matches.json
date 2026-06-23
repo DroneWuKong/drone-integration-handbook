@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-06-22T12:33:59.422903+00:00",
+  "generated_at": "2026-06-23T11:36:02.987062+00:00",
   "federal_awards_total": 761,
   "gray_zone_federal_matches": 0,
   "news_signals_total": 83,
-  "gray_zone_news_mentions": 13,
+  "gray_zone_news_mentions": 12,
   "all_gray_zone_signals": [
     {
       "id": "sol-4540d0240a",
@@ -24,7 +24,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     },
     {
       "id": "sol-87a7693adb",
@@ -45,7 +45,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     },
     {
       "id": "sol-531ad63c61",
@@ -66,7 +66,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     },
     {
       "id": "sol-a5cfd02f1e",
@@ -87,7 +87,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     },
     {
       "id": "sol-1ccc75ae24",
@@ -108,7 +108,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     },
     {
       "id": "sol-6f3a8bb4a7",
@@ -129,7 +129,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     },
     {
       "id": "sol-4a989b3cf9",
@@ -150,7 +150,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     },
     {
       "id": "sol-0947b3c182",
@@ -171,7 +171,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     },
     {
       "id": "sol-2155a67f61",
@@ -192,28 +192,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
-    },
-    {
-      "id": "sol-52634d8864",
-      "source": "news",
-      "source_label": "KESQ",
-      "type": "news_signal",
-      "title": "Local police concerned about impacts of DJI drone ban - KESQ",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Mon, 29 Dec 2025 08:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOanAxRUg4dlNFUjRLUWFlbmFVRHY1YmwzSEJzRFIwRWg3SXJmc1RVaVBnTUIyMDJiMHhFeHk5eEhGTHVVeXM3UUNqV1pCbXg0Y241UzNFTjNkbUJwZW1UWnM0TnF3TFNJYnB3bmExc0JTOHF2WlZUSFBVd0FqMlNVVFF0RWZQSk5pclc1V3dvd3N3ZkFrX3hLNXJsdXBXUE5D?oc=5",
-      "gray_zone_flag": true,
-      "blue_uas_flag": false,
-      "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     },
     {
       "id": "sol-ca661cc52a",
@@ -234,7 +213,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     },
     {
       "id": "sol-a82dd10c0c",
@@ -255,7 +234,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     },
     {
       "id": "sol-c55fb6b8cd",
@@ -276,12 +255,12 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-06-22T12:33:59.422903+00:00"
+      "scraped_at": "2026-06-23T11:36:02.987062+00:00"
     }
   ],
   "vendors_flagged": [
-    "anzu",
     "dji",
+    "anzu",
     "autel"
   ]
 }
