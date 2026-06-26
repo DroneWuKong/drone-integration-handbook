@@ -10724,11 +10724,11 @@
       "internal_id": 298582628,
       "Award ID": "FA868923FB002",
       "Recipient Name": "GENERAL ATOMICS AERONAUTICAL SYSTEMS, INC.",
-      "Award Amount": 15111617.0,
+      "Award Amount": 15183795.22,
       "Total Outlays": null,
       "Description": "MQ-9 REAPER AFSOC RPA CONTROL SUITE (ARCS) - VEHICLE SPECIFIC MODULE (VSM)",
       "Start Date": "2023-05-25",
-      "End Date": "2026-03-31",
+      "End Date": "2026-08-31",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Air Force",
       "Award Type": null,
@@ -11153,6 +11153,22 @@
       "generated_internal_id": "CONT_AWD_1605TB23F00053_1605_NNG15SD23B_8000"
     },
     {
+      "internal_id": 359675944,
+      "Award ID": "140D0426F0691",
+      "Recipient Name": "GOVSMART, INC.",
+      "Award Amount": 297370.0,
+      "Total Outlays": null,
+      "Description": "DEPARTMENT OF INTERIOR, BUSINESS INTEGRATION OFFICE, UIPATH RPA FEDRAMP SUBSCRIPTION LICENSES AND SUPPORT RENEWAL",
+      "Start Date": "2026-07-01",
+      "End Date": "2027-06-30",
+      "Awarding Agency": "Department of the Interior",
+      "Awarding Sub Agency": "Departmental Offices",
+      "Award Type": null,
+      "awarding_agency_id": 209,
+      "agency_slug": "department-of-the-interior",
+      "generated_internal_id": "CONT_AWD_140D0426F0691_1406_NNG15SD11B_8000"
+    },
+    {
       "internal_id": 277626355,
       "Award ID": "1331L525F0282",
       "Recipient Name": "GOVERNMENT ACQUISITIONS INC",
@@ -11487,22 +11503,6 @@
       "awarding_agency_id": 315,
       "agency_slug": "department-of-state",
       "generated_internal_id": "CONT_AWD_19AQMM24F2435_1900_NNG15SD23B_8000"
-    },
-    {
-      "internal_id": 277625323,
-      "Award ID": "1331L524F13ES0187",
-      "Recipient Name": "GOVERNMENT ACQUISITIONS INC",
-      "Award Amount": 98673.75,
-      "Total Outlays": 0.0,
-      "Description": "RPA UIPATH SOFTWARE- TASK ORDER 0005",
-      "Start Date": "2024-03-26",
-      "End Date": "2025-03-25",
-      "Awarding Agency": "Department of Commerce",
-      "Awarding Sub Agency": "Office of the Secretary",
-      "Award Type": null,
-      "awarding_agency_id": 183,
-      "agency_slug": "department-of-commerce",
-      "generated_internal_id": "CONT_AWD_1331L524F13ES0187_1301_1331L521A13ES0015_1301"
     },
     {
       "internal_id": 260007578,
@@ -12305,6 +12305,6 @@
       "generated_internal_id": "ASST_NON_R15HL177798_075"
     }
   ],
-  "scraped_at": "2026-06-25T11:25:40.507440+00:00",
+  "scraped_at": "2026-06-26T11:29:36.610214+00:00",
   "count": 769
 }
