@@ -45,10 +45,11 @@ CHAPTERS = [
     ("field/repeater-relay.md",                34, "Repeater & Relay Deployment"),
     ("field/substitution-guide.md",            35, "Supply Chain Substitution Guide"),
     ("integration/edge-node-k3s.md",           36, "Portable Telemetry Edge Node (K3s)"),
+    ("fundamentals/packable-antennas.md",       37, "Packable Antennas — Range You Can Carry"),
 ]
 
 PARTS = [
-    ("Part 1 — RF Fundamentals",         [1, 2, 3, 4, 31]),
+    ("Part 1 — RF Fundamentals",         [1, 2, 3, 4, 31, 37]),
     ("Part 2 — Flight Controller Firmware", [5, 6, 7, 8, 26, 27, 28, 29, 30]),
     ("Part 3 — Field Operations",        [9, 10, 11, 12, 32, 33, 34, 35]),
     ("Part 4 — Integration",             [13, 14, 15, 16, 36]),
