@@ -177,6 +177,39 @@ Three things move these numbers more than anything else:
 
 ---
 
+## Anatomy of a Range Record
+
+The packable setup above lands in single-digit kilometres. WiFi-broadcast
+systems like OpenHD have flown **60–75 km** on the same physics. The
+record is not one exotic component — it is the discipline of stacking
+every lever at once. Free-space loss at 60 km on 5.8 GHz is **~143 dB**;
+closing that with margin takes roughly **58 dB of TX power + antenna gain
+combined**. Here is where that comes from, in order of contribution:
+
+| Lever | Buys you | How |
+|---|---|---|
+| Tracked directional ground antenna | **~30 dB** | 20–30 dBi panel/dish on a GPS antenna tracker. The beam is ~10–15° wide — a human can't hold it, so the tracker is the enabling piece, not an accessory. |
+| Altitude + terrain | Makes 60 km *exist* | Ground station on a ridge, aircraft at altitude. Radio horizon ≈ 4.12·(√h_tx + √h_rx) km — a 500 m ridge + 1500 m aircraft reaches ~250 km of horizon. Mountain-to-air, never a field. |
+| Narrow channel (5/10 MHz) | **~3–6 dB** | Halving bandwidth halves integrated noise: ~3 dB per halving of receiver sensitivity. Trades video bitrate for reach. |
+| Lowest MCS + FEC | Graceful edge | MCS0 (BPSK) is the most robust rate; WFB-NG forward error correction softens loss instead of cliff-diving, so you can operate at the ragged edge of the budget. |
+| Card + (last) power | A few dB | RTL8812AU/EU over MT7612U — proven injection, 5/10 MHz support, and it *honors* higher power settings. A PA to ~30 dBm is the least efficient lever: 6 dB (4× power) only doubles range, versus 30 dB from an antenna. |
+| RX diversity + clean spectrum | Protects the margin | Multiple ground RX cards combined per-packet; flown in rural terrain where the noise floor sits near −100 dBm. An urban −85 dBm floor would erase 15 dB instantly. |
+
+The air side stays **omni** through all of this — the aircraft banks and
+turns and can't point anything. Every one of these knobs lives on the
+**ground** or in the **flight profile**. That is the whole lesson of this
+chapter at its extreme: put the gain on the end that isn't moving, give
+the signal a clean path to fly across, and never rely on a single trick.
+
+**The failure mode of chasing records:** each lever narrows your
+operating envelope. A 15° beam that loses tracking lock drops the link.
+A 5 MHz channel gives you a slideshow, not video. MCS0 at the margin
+means one terrain intrusion is a dropout, not a blur. Records are flown
+by people who accept those constraints deliberately — they are not a
+config you leave on for everyday flying.
+
+---
+
 ## Recommendations
 
 **If you keep CP (your air antenna is CP):**
