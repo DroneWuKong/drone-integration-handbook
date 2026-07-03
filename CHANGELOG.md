@@ -1,5 +1,12 @@
 # Changelog
 
+## [Session] - 2026-07-02 — Packable Antennas — Range You Can Carry
+
+### Added
+- **Ch. 37 — Packable Antennas — Range You Can Carry** (`fundamentals/packable-antennas.md`, Part 1): field-portable antenna selection framed as a three-way trade (gain vs beamwidth vs pack size/deploy time), for WiFi-broadcast/mesh links on cards like the MT7612U. Covers the **polarization trap** (the antenna sets polarization, not the WiFi card; matched-hand CP-CP = 0 dB, opposite-hand CP = -20 to -30 dB, CP↔linear = a consistent -3 dB), **mesh-topology antenna choice** (Babel/RFC 8966 needs omni on moving/peer nodes, gain only on the fixed sector-facing end, and a healthy return path), a **packable antenna menu** (air-side omni + ground-side directional tables with gain/beamwidth/pack size — TrueRC X-Air ~10 dBic flat CP patch, X²-Air ~13 dBic, Alfa APA-M25 dual-band linear panel), and a **worked link budget** for a 3 dBic CP omni air + X-Air ground + MT7612U setup (real ~18 dBm output, not the box's 23 dBm): ~3.5 km expected / ~11 km theoretical on 2.4 GHz, ~1.5 km / ~4.5 km on 5.8 GHz. Cross-links Antennas (Ch. 3), Link Budgets (Ch. 4), Frequency Bands (Ch. 2).
+- Registered in `build.py` CHAPTERS (37) and added to "Part 1 — RF Fundamentals" PARTS. Build verified (`#ch37` renders, TOC entry present).
+- Added an **"Anatomy of a Range Record"** callout to Ch. 37: how WiFi-broadcast systems (OpenHD) reach 60–75 km on the same physics — a lever-by-lever table (tracked 20–30 dBi ground antenna ≈ 30 dB, altitude/terrain to make the horizon exist, 5/10 MHz narrow channel ≈ 3–6 dB, MCS0 + FEC, RTL8812AU/EU over MT7612U, RX diversity + clean spectrum), the ~143 dB / ~58 dB budget for 60 km on 5.8 GHz, and the envelope-narrowing failure mode of chasing records.
+
 ## [Session] - 2026-06-16 — Portable Telemetry Edge Node (K3s)
 
 ### Added
