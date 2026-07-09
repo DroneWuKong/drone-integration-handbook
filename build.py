@@ -29,7 +29,6 @@ CHAPTERS = [
     ("autonomy/perception.md",                  22, "Perception: VIO, SLAM & GPS-Denied State Estimation"),
     ("autonomy/detection.md",                   23, "Detection: RF and Visual"),
     ("autonomy/onboard-ai-control.md",          24, "Onboard AI & Control"),
-    ("firmware/mavlink-military-extensions.md", 25, "MAVLink Military Dialect — Gap Analysis (EN/HR)"),
     # ── Reference chapters previously authored but never listed in the TOC.
     #    Surfaced as stable IDs 26–35 (appended rather than renumbered, so the
     #    existing #chN anchors and in-file "Chapter N:" headings stay valid);
@@ -56,7 +55,6 @@ PARTS = [
     ("What's Left to Solve",             [17]),
     ("Part 5 — Vendor Guides",           [18, 19]),
     ("Part 6 — Autonomy",                [20, 21, 22, 23, 24]),
-    ("Part 7 — MAVLink Military Extensions", [25]),
 ]
 
 # Category display names for the platforms/ subdirectory names
