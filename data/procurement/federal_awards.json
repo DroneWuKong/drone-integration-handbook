@@ -1624,7 +1624,7 @@
       "Total Outlays": 2044489.18,
       "Description": "PROCUREMENT OF 50 ADDITIONAL AIR DEFENSE RADARS AND ASSOCIATED SPARES IN SUPPORT OF THE EUROPEAN DETERRENCE INITIATIVE AND FUTURE INITIAL MANEUVER-SHORT RANGE AIR DEFENSE BATTALIONS INCLUDING AIR AND MISSILE DEFENSE PROTECTION TO THE MANEUVERING FORMATIONS, TO COUNTER A WIDE RANGE OF THREATS: UNMANNED AERIAL SYSTEMS, ROTARY WING AIRCRAFT AND FIXED WING AIRCRAFT. THIS PROCUREMENT WILL MAINTAIN A COMMON CONFIGURATION ACROSS THE ARMY DEFENSE SENSOR PORTFOLIO WHILE MAXIMIZING WAR FIGHTER CAPABILITY.",
       "Start Date": "2018-12-28",
-      "End Date": "2025-12-31",
+      "End Date": "2026-12-31",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Army",
       "Award Type": null,
@@ -3713,6 +3713,22 @@
       "generated_internal_id": "CONT_AWD_19AQMM25C1051_1900_-NONE-_-NONE-"
     },
     {
+      "internal_id": 360657750,
+      "Award ID": "70Z02326F93130008",
+      "Recipient Name": "SHIELD AI INC",
+      "Award Amount": 8440414.45,
+      "Total Outlays": null,
+      "Description": "TASK ORDER FOR MR-UAS GUAM SHORE EXPANSION.",
+      "Start Date": "2026-05-27",
+      "End Date": "2026-12-31",
+      "Awarding Agency": "Department of Homeland Security",
+      "Awarding Sub Agency": "U.S. Coast Guard",
+      "Award Type": null,
+      "awarding_agency_id": 766,
+      "agency_slug": "department-of-homeland-security",
+      "generated_internal_id": "CONT_AWD_70Z02326F93130008_7008_70Z02324D93130001_7008"
+    },
+    {
       "internal_id": 297877573,
       "Award ID": "FA228025F0027",
       "Recipient Name": "ANDURIL INDUSTRIES, INC.",
@@ -3839,22 +3855,6 @@
       "awarding_agency_id": 315,
       "agency_slug": "department-of-state",
       "generated_internal_id": "CONT_AWD_19AQMM24F0210_1900_19AQMM23D0091_1900"
-    },
-    {
-      "internal_id": 298090545,
-      "Award ID": "FA460020F0090",
-      "Recipient Name": "NATIONAL STRATEGIC RESEARCH INSTITUTE",
-      "Award Amount": 6461734.72,
-      "Total Outlays": 4093537.34,
-      "Description": "UARC II TOPR 0032.",
-      "Start Date": "2020-08-04",
-      "End Date": "2024-09-30",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA460020F0090_9700_FA460018D9001_9700"
     },
     {
       "internal_id": 253715211,
@@ -10149,7 +10149,7 @@
       "Award ID": "NA25NMFX472C0161",
       "Recipient Name": "DUKE UNIVERSITY",
       "Award Amount": 492836.0,
-      "Total Outlays": 67768.51,
+      "Total Outlays": 98052.1,
       "Description": "THIS PROJECT IS AN INTERDISCIPLINARY COLLABORATION BETWEEN MULTIPLE NOAA OFFICES AND DUKE UNIVERSITY MARINE ROBOTICS AND REMOTE SENSING LAB AND OCEAN ALLIANCE. GOALS ARE TO DEVELOP A CURRICULUM TO TRAIN NOAA EMPLOYEES IN BOTH FOUNDATIONAL AND SPECIALIZED UNOCCUPIED AIRCRAFT SYSTEMS (UAS) SKILLS AND INTEGRATE/ENGINEER A DEPLOYMENT MECHANISM WITH A COMMERCIALLY AVAILABLE AND MISSION PROVEN BLUE UAS-CERTIFIED MULTIROTOR UAS.",
       "Start Date": "2025-06-01",
       "End Date": "2027-09-30",
@@ -10549,10 +10549,10 @@
       "Award ID": "NA23OAR4590399",
       "Recipient Name": "UNIVERSITY CORPORATION FOR ATMOSPHERIC RESEARCH",
       "Award Amount": 526562.0,
-      "Total Outlays": 319851.45,
+      "Total Outlays": 325355.76,
       "Description": "THE PROPOSED EFFORT FOR THIS AWARD WILL DEMONSTRATE THE POTENTIAL OF A NATIONWIDE NETWORK OF PROFILING SYSTEMS USING THE NEW YORK STATE MESONET AS A TESTBED. THE OBJECTIVES OF THIS WORK ARE TO CONDUCT A SERIES OF OBSERVING SYSTEM EXPERIMENTS AND OBSERVING SYSTEM SIMULATION EXPERIMENTS TO EVALUATE HOW THE CURRENT NEW YORK STATE MESONET IMPACTS THE SKILL OF HIGH IMPACT WEATHER PREDICTION AND TO EXPLORE THE POTENTIAL BENEFITS OF ADDING NEW PROFILING CAPABILITIES (E.G., MICROPULSE DIFFERENTIAL ABSORPTION LIDAR AND UNCREWED AIRCRAFT SYSTEMS) AND/OR NEW STATIONS TO THE EXISTING NEW YORK STATE MESONET PROFILER NETWORK. THIS PROJECT IS VITAL AS IT WILL DEMONSTRATE A POSSIBLE SOLUTION TO FILL CRITICAL GAPS IN OBSERVATIONAL CAPABILITIES, SPECIFICALLY FOR THE LOWER ATMOSPHERE, FOR HIGH IMPACT WEATHER FORECASTING, WHICH WILL BENEFIT OPERATIONAL FORECASTERS, AS WELL AS DATA ASSIMILATION FOR THE FORECAST MODELS.",
       "Start Date": "2023-08-01",
-      "End Date": "2026-07-31",
+      "End Date": "2027-07-31",
       "Awarding Agency": "Department of Commerce",
       "Awarding Sub Agency": "National Oceanic and Atmospheric Administration",
       "Award Type": "COOPERATIVE AGREEMENT (B)",
@@ -12369,6 +12369,6 @@
       "generated_internal_id": "ASST_NON_R21AI164081_075"
     }
   ],
-  "scraped_at": "2026-07-22T11:15:54.095571+00:00",
+  "scraped_at": "2026-07-23T11:17:01.376023+00:00",
   "count": 773
 }
