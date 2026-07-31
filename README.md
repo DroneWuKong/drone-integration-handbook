@@ -3,7 +3,7 @@
 > **Free. Open. No login required.**
 >
 > A practical bench and field reference for drone RF, firmware, integration,
-> diagnostics, platforms, components, and autonomy.
+> diagnostics, platforms, components, autonomy, and austere operations.
 
 **Live handbook:** [uas-handbook.com](https://uas-handbook.com/)
 
@@ -18,10 +18,12 @@ the field, how to diagnose it, and where the public evidence runs out.
 | Learn the system from the beginning | [The Five Link Types](fundamentals/five-link-types.md) |
 | Diagnose a failure | [When Things Go Wrong](field/troubleshooting.md) |
 | Configure an FC or serial link | [The Four Firmwares](firmware/four-firmwares.md) and [UART Layout](firmware/uart-layout.md) |
-| Add companion compute, mesh, or TAK | [Integration](integration/companion.md) |
+| Add companion compute, mesh, or TAK | [Adding a Companion Computer](integration/companion.md) |
+| Operate with degraded or contested links | [EW Countermeasures Field Card](field/ew-countermeasures.md) |
 | Compare airframes | [Platform References](platforms/README.md) |
 | Review hardware ecosystems | [Orqa Ecosystem](components/orqa-hardware-guide.md) |
 | Understand autonomy requirements | [Levels of Drone Autonomy](autonomy/autonomy-levels.md) |
+| Open a printable field reference | [Frequency Quick Reference Card](appendices/appendix-a-frequency-quick-reference.md) |
 
 The generated site adds a grouped reading rail, mobile navigation, exact-heading
 search, active-section tracking, previous/next controls, and stable chapter
@@ -47,6 +49,8 @@ anchors. Use `Ctrl/Command+K` on the live site to search the entire reference.
 5. [UART Maps for Common Flight Controllers](firmware/appendix-b-uart-maps.md)
 6. [CRSF and ELRS Protocol](firmware/crsf-elrs-protocol.md)
 7. [DShot and ESC Protocols](firmware/dshot-esc-protocols.md)
+8. [Ghost RC Link Configuration](field/ghost-config.md)
+9. [ELRS Airport Mode](field/elrs-airport-mode.md)
 
 ### Part 3 — Field Operations
 
@@ -58,6 +62,14 @@ anchors. Use `Ctrl/Command+K` on the live site to search the entire reference.
 6. [Thermal and Night FPV Operations](field/night-ops.md)
 7. [Repeater and Relay Deployment](field/repeater-relay.md)
 8. [Supply Chain Substitution Guide](field/substitution-guide.md)
+
+### Field Guides — Contested and Austere Operations
+
+1. [EW Countermeasures Field Card](field/ew-countermeasures.md)
+2. [Fiber-Optic FPV Integration](field/fiber-optic-fpv.md)
+3. [Drone-to-Drone Intercept Playbook](field/intercept-ops.md)
+4. [Attritable Drone Production Handbook](field/attritable-production.md)
+5. [ELINT for Drone Operators](field/elint-operators.md)
 
 ### Part 4 — Integration
 
@@ -75,6 +87,15 @@ anchors. Use `Ctrl/Command+K` on the live site to search the entire reference.
 - [Platform References](platforms/README.md)
 - Component references under [`components/`](components/)
 
+### Appendices — Quick Reference
+
+- [Appendix A — Frequency Quick Reference Card](appendices/appendix-a-frequency-quick-reference.md)
+- [Appendix B — UART Maps for Common Flight Controllers](firmware/appendix-b-uart-maps.md)
+- [Appendix C — MAVLink Message Quick Reference](appendices/appendix-c-mavlink-quick-reference.md)
+- [Appendix D — MSP Function Code Quick Reference](appendices/appendix-d-msp-quick-reference.md)
+- [Appendix E — CoT Type Code Reference](appendices/appendix-e-cot-type-codes.md)
+- [Appendix F — Regulatory and Open Resources](appendices/appendix-f-regulatory-resources.md)
+
 ## Build the site
 
 Python 3.12 is the supported runtime.
@@ -90,12 +111,16 @@ configuration in [`wrangler.jsonc`](wrangler.jsonc).
 ### Validate a change
 
 ```bash
-python3 -m compileall -q build.py handbook_builder tests
+python3 -m compileall -q build.py handbook_builder scripts tests
 node --check assets/handbook.js
 python3 -m unittest discover -s tests
 python3 scripts/check_links.py
 python3 build.py
+python3 scripts/check_generated_site.py site/index.html
 ```
+
+The GitHub `handbook-check` workflow runs this production build and uploads the
+resulting `site/` directory as a short-lived review artifact.
 
 ## Site architecture
 
@@ -109,7 +134,8 @@ The build is intentionally split by responsibility:
 | `templates/handbook.html` | Semantic page structure |
 | `assets/handbook.css` | Forge/Patterns-aligned visual system and responsive layout |
 | `assets/handbook.js` | Search, drawer, scrollspy, progress, keyboard, and copy-link behavior |
-| `tests/test_builder.py` | Builder and stable-anchor tests |
+| `scripts/check_generated_site.py` | Generated-ID, anchor, metadata, source-link, and asset validation |
+| `tests/` | Builder, stable-anchor, and generated-site tests |
 
 See [Site Architecture](docs/SITE_ARCHITECTURE.md) for the extension and
 compatibility rules.
@@ -119,7 +145,7 @@ compatibility rules.
 Published core chapter anchors such as `#ch12` are compatibility identifiers.
 Do not renumber an existing core chapter. New chapters receive a new number in
 `handbook_builder/config.py`, while the Part registry controls reader-facing
-order.
+order. Chapter ID 25 remains reserved after its public source was withdrawn.
 
 Platform and component references are auto-discovered. Renaming one of those
 Markdown files can change its generated ordering and anchor, so use explicit
