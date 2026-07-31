@@ -10,6 +10,7 @@ from unittest.mock import patch
 
 from handbook_builder.config import CHAPTERS
 from handbook_builder.site import (
+    _decorate_headings,
     build_site,
     discover_entries,
     rewrite_internal_markdown_links,
@@ -96,11 +97,24 @@ class BuilderTestCase(unittest.TestCase):
         self.assertIn("[the next chapter](#ch2)", rewritten)
         self.assertIn("[outside](https://example.com)", rewritten)
 
+    def test_heading_scoping_preserves_local_fragment_links(self) -> None:
+        rendered = (
+            '<h2 id="failure-driver">Failure Driver</h2>'
+            '<p><a href="#failure-driver">Jump to failure driver</a></p>'
+        )
+        decorated = _decorate_headings(rendered, "ch12")
+        self.assertIn('id="ch12-failure-driver"', decorated)
+        self.assertIn('href="#ch12-failure-driver"', decorated)
+
     def test_discovery_uses_reader_facing_part_order_and_stable_ids(self) -> None:
         entries = discover_entries(self.root)
         chapters = [entry for entry in entries if entry.kind == "chapter"]
         self.assertEqual([entry.number for entry in chapters[:6]], [1, 2, 3, 4, 31, 37])
         self.assertEqual([entry.number for entry in chapters[-5:]], [43, 44, 45, 46, 47])
+        self.assertLess(
+            next(index for index, entry in enumerate(chapters) if entry.number == 48),
+            next(index for index, entry in enumerate(chapters) if entry.number == 17),
+        )
         self.assertEqual(next(entry.anchor for entry in entries if entry.kind == "platform"), "p101")
         self.assertEqual(next(entry.anchor for entry in entries if entry.kind == "component"), "c600")
         self.assertEqual(next(entry.group for entry in entries if entry.kind == "component"), "Flight Controllers & Firmware")
@@ -115,6 +129,7 @@ class BuilderTestCase(unittest.TestCase):
         self.assertIn('src="assets/handbook.js"', document)
         self.assertIn('id="ch37"', document)
         self.assertIn('id="ch47"', document)
+        self.assertIn('id="ch48"', document)
         self.assertIn('id="platforms"', document)
         self.assertIn('data-nav-target="ch12"', document)
         self.assertIn('data-nav-target="ch38"', document)
