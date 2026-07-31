@@ -67,7 +67,7 @@ CHAPTERS: Final[tuple[ChapterSpec, ...]] = (
     ChapterSpec("autonomy/perception.md", 22, "Perception: VIO, SLAM & GPS-Denied State Estimation"),
     ChapterSpec("autonomy/detection.md", 23, "Detection: RF and Visual"),
     ChapterSpec("autonomy/onboard-ai-control.md", 24, "Onboard AI & Control"),
-    # IDs 26–37 were added after publication. Keep the gap and existing anchors.
+    # ID 25 is intentionally reserved after the public chapter was withdrawn.
     ChapterSpec("firmware/appendix-b-uart-maps.md", 26, "UART Maps for Common Flight Controllers"),
     ChapterSpec("firmware/crsf-elrs-protocol.md", 27, "CRSF & ELRS Protocol"),
     ChapterSpec("firmware/dshot-esc-protocols.md", 28, "DShot & ESC Protocols"),
@@ -80,6 +80,16 @@ CHAPTERS: Final[tuple[ChapterSpec, ...]] = (
     ChapterSpec("field/substitution-guide.md", 35, "Supply Chain Substitution Guide"),
     ChapterSpec("integration/edge-node-k3s.md", 36, "Portable Telemetry Edge Node (K3s)"),
     ChapterSpec("fundamentals/packable-antennas.md", 37, "Packable Antennas — Range You Can Carry"),
+    ChapterSpec("field/ew-countermeasures.md", 38, "EW Countermeasures Field Card"),
+    ChapterSpec("field/fiber-optic-fpv.md", 39, "Fiber-Optic FPV Integration"),
+    ChapterSpec("field/intercept-ops.md", 40, "Drone-to-Drone Intercept Playbook"),
+    ChapterSpec("field/attritable-production.md", 41, "Attritable Drone Production Handbook"),
+    ChapterSpec("field/elint-operators.md", 42, "ELINT for Drone Operators"),
+    ChapterSpec("appendices/appendix-a-frequency-quick-reference.md", 43, "Appendix A — Frequency Quick Reference Card"),
+    ChapterSpec("appendices/appendix-c-mavlink-quick-reference.md", 44, "Appendix C — MAVLink Message Quick Reference"),
+    ChapterSpec("appendices/appendix-d-msp-quick-reference.md", 45, "Appendix D — MSP Function Code Quick Reference"),
+    ChapterSpec("appendices/appendix-e-cot-type-codes.md", 46, "Appendix E — CoT Type Code Reference"),
+    ChapterSpec("appendices/appendix-f-regulatory-resources.md", 47, "Appendix F — Regulatory & Open Resources"),
 )
 
 
@@ -101,6 +111,12 @@ PARTS: Final[tuple[PartSpec, ...]] = (
         "Part 3 — Field Operations",
         (9, 10, 11, 12, 32, 33, 34, 35),
         "Preflight, diagnostics, tuning, recovery, night operations, and substitutions.",
+    ),
+    PartSpec(
+        "advanced-field",
+        "Field Guides — Contested & Austere Operations",
+        (38, 39, 40, 41, 42),
+        "Operator-facing references for degraded links, fiber systems, intercept missions, production, and spectrum awareness.",
     ),
     PartSpec(
         "integration",
@@ -125,6 +141,12 @@ PARTS: Final[tuple[PartSpec, ...]] = (
         "Part 6 — Autonomy",
         (20, 21, 22, 23, 24),
         "Autonomy levels, datasets, state estimation, detection, and onboard control.",
+    ),
+    PartSpec(
+        "appendices",
+        "Appendices — Quick Reference",
+        (43, 44, 45, 46, 47),
+        "Printable and fast-lookup references for spectrum, MAVLink, MSP, CoT, and public regulatory sources.",
     ),
 )
 
