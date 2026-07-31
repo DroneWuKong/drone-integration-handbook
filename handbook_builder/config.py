@@ -80,17 +80,22 @@ CHAPTERS: Final[tuple[ChapterSpec, ...]] = (
     ChapterSpec("field/substitution-guide.md", 35, "Supply Chain Substitution Guide"),
     ChapterSpec("integration/edge-node-k3s.md", 36, "Portable Telemetry Edge Node (K3s)"),
     ChapterSpec("fundamentals/packable-antennas.md", 37, "Packable Antennas — Range You Can Carry"),
-    ChapterSpec("field/ew-countermeasures.md", 38, "EW Countermeasures Field Card"),
+    ChapterSpec("field/ew-countermeasures.md", 38, "EW Countermeasures — Publication Hold"),
     ChapterSpec("field/fiber-optic-fpv.md", 39, "Fiber-Optic FPV Integration"),
-    ChapterSpec("field/intercept-ops.md", 40, "Drone-to-Drone Intercept Playbook"),
+    ChapterSpec("field/intercept-ops.md", 40, "Drone-to-Drone Intercept — Publication Hold"),
     ChapterSpec("field/attritable-production.md", 41, "Attritable Drone Production Handbook"),
-    ChapterSpec("field/elint-operators.md", 42, "ELINT for Drone Operators"),
+    ChapterSpec("field/elint-operators.md", 42, "ELINT for Drone Operators — Publication Hold"),
     ChapterSpec("appendices/appendix-a-frequency-quick-reference.md", 43, "Appendix A — Frequency Quick Reference Card"),
     ChapterSpec("appendices/appendix-c-mavlink-quick-reference.md", 44, "Appendix C — MAVLink Message Quick Reference"),
     ChapterSpec("appendices/appendix-d-msp-quick-reference.md", 45, "Appendix D — MSP Function Code Quick Reference"),
     ChapterSpec("appendices/appendix-e-cot-type-codes.md", 46, "Appendix E — CoT Type Code Reference"),
     ChapterSpec("appendices/appendix-f-regulatory-resources.md", 47, "Appendix F — Regulatory & Open Resources"),
-    ChapterSpec("integration/wingman-apb.md", 48, "AI Wingman on the Orqa DTK APB"),
+    ChapterSpec("integration/wingman-apb.md", 48, "AI Wingman on the Orqa DTK APB — Review Hold"),
+    ChapterSpec("legal/publisher-and-affiliations.md", 49, "Publisher, Affiliations & Editorial Independence"),
+    ChapterSpec("legal/editorial-and-corrections-policy.md", 50, "Editorial, Corrections & Right of Reply"),
+    ChapterSpec("legal/privacy.md", 51, "Privacy Notice"),
+    ChapterSpec("legal/terms-and-disclaimer.md", 52, "Terms of Use & Safety Disclaimer"),
+    ChapterSpec("legal/ip-and-takedown.md", 53, "Intellectual Property & Takedown Policy"),
 )
 
 
@@ -117,7 +122,7 @@ PARTS: Final[tuple[PartSpec, ...]] = (
         "advanced-field",
         "Field Guides — Contested & Austere Operations",
         (38, 39, 40, 41, 42),
-        "Operator-facing references for degraded links, fiber systems, intercept missions, production, and spectrum awareness.",
+        "Reviewed field references and visible publication holds for material awaiting legal, safety, export-control, or technical review.",
     ),
     PartSpec(
         "integration",
@@ -148,6 +153,12 @@ PARTS: Final[tuple[PartSpec, ...]] = (
         "Appendices — Quick Reference",
         (43, 44, 45, 46, 47),
         "Printable and fast-lookup references for spectrum, MAVLink, MSP, CoT, and public regulatory sources.",
+    ),
+    PartSpec(
+        "legal",
+        "Publisher & Legal",
+        (49, 50, 51, 52, 53),
+        "Publisher identity, material relationships, corrections, privacy, reliance limits, licensing, and rights procedures.",
     ),
 )
 
@@ -208,7 +219,7 @@ COMPONENT_GROUPS: Final[tuple[ComponentGroupSpec, ...]] = (
     ComponentGroupSpec(
         "Defense & Tactical",
         (
-            "electronic-warfare",
+            "electronic-warffare",
             "counter-uas",
             "esad-safe",
             "tactical-accessories",
@@ -243,7 +254,7 @@ COMPONENT_GROUPS: Final[tuple[ComponentGroupSpec, ...]] = (
 SITE_TITLE: Final = "The Drone Integration Handbook"
 SITE_DESCRIPTION: Final = (
     "An open field reference for drone RF, integration, firmware, platform, "
-    "component, autonomy, and field operations work."
+    "component, autonomy, field operations, and publisher policies."
 )
 SITE_URL: Final = "https://uas-handbook.com/"
 REPOSITORY_URL: Final = "https://github.com/DroneWuKong/drone-integration-handbook"
