@@ -1,132 +1,103 @@
-# Roadmap
+# Drone Integration Handbook Roadmap
 
-Future chapters, sections, and improvements under consideration.
-Open an issue to suggest additions or volunteer to write one.
+This file tracks **current handbook work only**. Completed historical work remains available in Git history and in [`CHANGELOG.md`](CHANGELOG.md).
 
-## Part 6: Autonomy — chapters shipped (Phase 1)
+Last reconciled: **July 31, 2026**
 
-Cross-property section (Handbook chapters + Forge interactive browser). Full plan:
-[`docs/AUTONOMY_PAGE_PLAN.md`](docs/AUTONOMY_PAGE_PLAN.md).
+## Current published baseline
 
-- [x] **Ch. 20 Levels of Drone Autonomy** — SAE J3016 / Exyn-derived 0–5 (+4A/B/C) ladder; adds ODD + fallback rows and a hardware-minimum row (real 2026 parts per level); inline SVG chart (`assets/aerial-autonomy-levels.svg`); maps each level to the Prismo stack
-- [x] **Ch. 21 Datasets & Benchmarks** — catalog of VIO/SLAM, CV-detection, and RF datasets with license/usage caveats
-- [x] **Ch. 22 Perception: VIO/SLAM/Depth** — relative vs absolute fixes, why VIO drifts, the failure modes
-- [x] **Ch. 23 Detection: RF + Visual** — passive RF + visual; bird false-positive; detection→navigation
-- [x] **Ch. 24 Onboard AI & Control** — confidence-driven authority, EW-aware/capability-aware autonomy
-- [x] **Ch. 25 MAVLink Military Dialect — Gap Analysis (EN/HR)** — Auterion dialect analysis + proposed extensions
-- [x] Registered chapters 20–25 in `build.py` CHAPTERS; Part 6 = Autonomy (20–24), Part 7 = MAVLink Military (25)
-- [ ] **Phase 2:** Forge interactive dataset browser (`autonomy/datasets.json`) — tracked in droneclear_Forge FEAT-028
+The production builder currently publishes:
 
-## Recently Completed (2026-04-13)
+- **47 numbered chapters and guides**
+- **39 platform profiles**
+- **61 component references**
+- **147 total searchable references**
 
-- [x] **NDAA Compliance doc updated** — `components/ndaa-compliance.md` — Fixed encoding corruption, updated covered entity list (Autel §1709 FY2025, Anzu Robotics gray zone, FCC Covered List), expanded Blue UAS table to 12 cleared platforms, added FCC exemption expiry Jan 1 2027 warning, ASDA/grant applicability, common mistakes section.
-- [x] **Platform database rebalanced** — Percepto Sparrow (MDL-2172, Israeli, NOT Blue UAS, inspection dock) and American Robotics Scout System (MDL-2173, US-made, Blue UAS, FAA Part 135) added. Inspired Flight IF1200A marked removed from Blue UAS list (March 2025). Total: 269 drone_models.
-- [x] **Parts DB deduped** — 3,629 → 3,495 (134 removed): 54 duplicate PIDs, 61 stack/combo cross-listings, 18 AIO FC boards in multiple categories, 7 colliding sequential PIDs.
-- [x] **Weekly DB audit automated** — `.github/workflows/weekly-db-audit.yml` in Ai-Project, runs Sundays 6AM CST.
-- [x] **Document Builder expanded** — Property Access Permission Letter (8-state law overlay), Subpart D over-people doc, Send to Client email button on all client-facing docs.
-- [x] **Forge manufacturer status audited** — BrainFPV, Draganfly, Yuneec, FrSky all verified (confidence: high). Brave FPV added as Unusual Machines subsidiary.
-- [x] **Hangar FC write-back** — `hangar/fc/` — FcTransport (jSerialComm), MspClient (MSP v1), FcWriteBack with armed check, verify-read, EEPROM save, Tooth audit. UI: port selector + Connect/Disconnect in HomeScreen, Apply to FC button in ParamsScreen.
-- [x] **Tooth SQLite Phase 1** — `hangar/db/ToothDb.kt` — tamper-evident SHA-256 event chain, airframes + events + flight_sessions tables, ASTM F3600-22 aligned.
+The content registry and reader-facing order live in [`handbook_builder/config.py`](handbook_builder/config.py). The deployable artifact is produced by `python3 build.py` and validated by the `handbook-check` GitHub workflow before Cloudflare Pages deployment.
 
-## Recently Completed (2026-04-07 — continued)
+Chapter ID **25 is reserved** after its public source was withdrawn. Do not reuse or recreate that public anchor without an explicit content-release decision.
 
-- [x] **Weight enrichment to 100%** — All parts now have weight_g. FPV cameras, GPS, VTX, stacks, control link, thermal cameras, AI accelerators, companion computers, mesh radios, EW systems, ESAD, counter-UAS, swarm software, military firmware, and remaining hardware filled via form-factor/stator/wheelbase/class inference.
-- [x] **Mesh Radios** — `components/mesh-radios.md` — Rajant BreadCrumb, Silvus StreamCaster, Doodle Labs Mesh Rider, Elsight HALO; topology design, MAVLink-over-mesh, bandwidth planning.
-- [x] **Control Link TX** — `components/control-link-tx.md` — ELRS modules, TBS Crossfire/Tracer TX, Spektrum; JR/nano bay formats, power levels, NDAA (TBS Swiss ✓, all ELRS Chinese ✗).
-- [x] **FPV Detectors** — `components/fpv-detectors.md` — RF Explorer, ISDS204B, SDR-based detection; detection targets (analog/digital/FHSS), security monitoring deployment.
-- [x] **Video Scramblers** — `components/video-scramblers.md` — Ukrainian-origin anti-detection systems, MAFIA system context, export controls.
-- [x] **Payload Droppers** — `components/payload-droppers.md` — servo/magnet/winch mechanisms, ArduPilot Gripper integration, MAV_CMD_DO_GRIPPER.
-- [x] **LiDAR Rangefinders** — `components/lidar-rangefinders.md` — LightWare, Benewake, Garmin LIDAR-Lite; terrain following, precision landing, NDAA table.
-- [x] **Survey Sensors & Multispectral** — `components/sensors.md` — MicaSense RedEdge-P/Altum-PT (AgEagle ✓), Sentera 6X (John Deere ✓), Sony ILX-LR1, Phase One; NDVI pipeline, radiometric calibration.
-- [x] **Weight: 100% coverage** — All Forge parts now have weight_g values.
-- [x] **Receivers** —  — 391 entries: ELRS/Crossfire/FrSky/Spektrum/FlySky protocols, NDAA landscape (TBS=Swiss NDAA-compliant, all ELRS brands Chinese), UART config, antenna placement, failsafe setup.
-- [x] **GPS & GNSS Modules** —  — 76 entries: u-blox M8N→M10 generations, NDAA table (ARK/Lumenier/CubePilot ✓), DroneCAN integration, compass calibration, dual GPS redundancy.
-- [x] **Antennas** —  — 394 entries: gain/polarization/radiation pattern, stub/cloverleaf/lollipop/patch/helical types, system design by use case, connector ecosystem (SMA/RP-SMA/U.FL/MMCX), NDAA (TrueRC/ImmersionRC ✓).
+## Shipped July 31, 2026
 
-## Recently Completed (2026-04-07)
+- [x] Refactored the monolithic site generator into configuration, build logic, HTML template, CSS, JavaScript, and tests.
+- [x] Aligned the handbook interface with Forge and Patterns while retaining cyan handbook identity.
+- [x] Added grouped desktop navigation, a mobile drawer, current-location tracking, reading progress, previous/next controls, stable-link copying, and exact-heading search.
+- [x] Published five contested/austere field guides that previously existed only as repository files.
+- [x] Published Appendices A, C, D, E, and F; Appendix B remains grouped with firmware.
+- [x] Published the AI Wingman on Orqa DTK APB integration guide.
+- [x] Added the Brecourt Solutions iDFR profile and reconciled the tactical platform index.
+- [x] Added a production artifact validator for duplicate IDs, missing fragments, leaked Markdown links, bad search metadata, unresolved template tokens, and missing local assets.
+- [x] Upgraded GitHub Actions to compile, test, link-check, build, validate, and upload the exact review artifact.
 
-- [x] **Optical Flow & GPS-Denied Positioning** — `components/optical-flow.md` — 7 vetted entries: ARK Flow MR/Flow (USA NDAA), CubePilot HereFlow (Taiwan NDAA), Centeye neuromorphic (USA), Holybro H-Flow (unverified), Matek + DJI (China flagged). NDAA landscape table, PX4/ArduPilot integration, surface requirements. 48th component page.
-- [x] **DB NDAA enrichment sprint** — 3,495 parts (post-dedup), 98.8% NDAA-resolved. FC research pass (72✓ 218✗ 37?), thermal cameras (39✓), thermal/counter-UAS/C2/sensors/navigation/propulsion all classified. Manufacturers documented: Teledyne FLIR, L3Harris, Hensoldt, Rohde & Schwarz, Silvus, Shield AI, Rajant, infiniDome, Honeywell, Anello, MicaSense, Sentera, DeepX, Kinara, etc.
-- [x] **DB field enrichment** — 1,271 interface fields inferred (FC/ESC/RX/GPS/VTX); 1,496 weight_g values from stator/form factor (97% props, 94% ESCs, 96% batteries); tag taxonomy normalized to 1,366 canonical tags; canonical ndaa/china/usa/ukraine/nato/israel/five-eyes/blue-uas tags on all 3,573 parts.
-- [x] **Browse modal overhaul** — NDAA shows ✓ green / ✗ red; weight, interface, firmware, price surfaced first; cyan tag chips; amber ndaa_note compliance warning box; links from new links[] field.
-- [x] **Browse NDAA filter pills** — `All / NDAA ✓ / Non-NDAA ✗ / China / USA` quick-filter chips on every category, instant filter, color-coded.
-- [x] **PIE DB integration** — generate_pie_from_db.py scans all 34 categories; 103 db_-prefixed auto-flags (landscape/supply_constraint/supply_chain_risk/diversion/compliance); wired into weekly GitHub Actions pipeline; supply_constraint flags 12→1 (documentation gaps resolved).
+See [`docs/releases/2026-07-31-site-refactor-and-hardening.md`](docs/releases/2026-07-31-site-refactor-and-hardening.md) for the release record.
 
-## Recently Completed (2026-04-05)
+## Next priorities
 
-- [x] **Military Firmware Forks** — `components/military-firmware-forks.md` — MILELRS, MILBETA, FPV_VYZOV, BarvinokLRS/Barvinok-5, "1001" DJI mod, CIAJeepDoors, mLRS, DroneBridge ESP32. Full landscape of combat-adapted open-source firmware.
-- [x] **Frames & Airframe Selection** — `components/frames-airframe-selection.md` — 632 frames: sizing, geometry, materials, stack mounting, arm design, durability, antenna routing
-- [x] **FPV Cameras** — `components/fpv-cameras.md` — 387 cameras: analog vs digital (DJI/Walksnail/HDZero/OpenHD), sensor specs, contested environment considerations
-- [x] **Video Transmitters (VTX)** — `components/video-transmitters-vtx.md` — 131 VTX: all systems compared, frequency bands, non-standard operation, 5-layer contested environment strategy
-- [x] **Propellers** — `components/propellers.md` — 484 props: sizing, pitch, blade count, materials, balance, military considerations
-- [x] **CRSF & ELRS Protocol** — `firmware/crsf-elrs-protocol.md` — Packet structure, ELRS rates, telemetry, binding, MILELRS encrypted binding context
-- [x] **DShot & ESC Protocols** — `firmware/dshot-esc-protocols.md` — DShot packet format, bidirectional DShot, RPM filtering, BLHeli_32/AM32/Bluejay
-- [x] **Crash Recovery & Field Repair** — `field/crash-recovery.md` — Post-crash assessment checklist, field repair matrix, field kit, Tooth integration
+### 1. Stable platform and component URLs
 
-## Recently Completed (2026-04-04)
+Platform and component profiles are currently auto-numbered (`#p...` and `#c...`) from sorted filenames. Renaming or inserting files can move those anchors.
 
-- [x] **Electronic Warfare Awareness** — `components/electronic-warfare.md` — 14 EW systems, operator-perspective coverage of jammers, GNSS protection, and operating in contested RF environments
-- [x] **Ground Control Stations** — `components/ground-control-stations.md` — 13 GCS entries covering open-source software (QGC, Mission Planner), enterprise (UgCS, Auterion MC), hardware (GS-ONE, Herelink), and field considerations
-- [x] **AI Accelerators** — `components/ai-accelerators.md` — 13 edge AI entries from Syntiant (10mW) to Axelera (214 TOPS), integration patterns, NDAA compliance
-- [x] **C2 Datalinks** — `components/c2-datalinks.md` — 13 entries covering aviation-grade BVLOS (uAvionix), tactical MANET (Silvus), and integrated systems (Herelink)
-- [x] **Navigation & PNT** — `components/navigation-pnt.md` — 12 entries across 6 technology tiers from MEMS IMU to quantum PNT, selection framework by threat environment
-- [x] **Integrated Flight Stacks** — `components/integrated-stacks.md` — 5 entries (VOXL 2, Skynode, DTK APB, ARK FPV), when to use integrated vs modular
-- [x] **Swarm Software** — `components/swarm-software.md` — 10 entries covering drone show (Skybrush) and tactical swarm (Crazyswarm2, ORCUS) platforms
-- [x] **ESAD Safe-and-Arm** — `components/esad-safe-arm.md` — 12 entries from US and allied manufacturers, MIL-STD-1316 architecture
-- [x] **Tactical Accessories** — `components/tactical-accessories.md` — Video scramblers (5) and payload droppers (4), Ukrainian-origin field equipment
-- [x] **Appendix B: UART Maps** — `firmware/appendix-b-uart-maps.md` — 416 common FCs
-- [x] **Pattern Intelligence Engine (PIE)** — `pipeline/` directory — Supply chain, regulatory, and competitive intelligence pipeline with 207 flags, 14 predictions, gray zone detection
+- [ ] Introduce slug-based canonical anchors such as `#platform-shield-ai-nova-2` and `#component-mesh-radios`.
+- [ ] Preserve existing numeric anchors as compatibility aliases.
+- [ ] Add tests proving old numeric links and new canonical links resolve to the same reference.
 
-## Planned Chapters
+### 2. Offline and field use
 
-- [x] **Payload Integration Patterns** — Mapping cameras, multispectral sensors, LiDAR, delivery mechanisms. Wiring, power, data flow, and the companion computer as integration hub.
-- [x] **Cellular / LTE for BVLOS** — When and how to use cellular modems for beyond-visual-line-of-sight. Hardware, SIM management, latency reality, regulatory considerations.
-- [x] **Fixed-Wing Specific** — Airspeed sensors, VTOL transitions, iNav vs ArduPilot for wings, long-range planning.
-- [x] **Fleet Management** — Managing 5-50 platforms. Configuration management, firmware versioning, battery tracking, maintenance schedules.
-- [x] **Power Systems Deep Dive** — Battery chemistry, BEC selection, power distribution boards, voltage sag under load, field charging.
-- [x] **Pattern Intelligence Methodology** — How PIE works: flag types, correlation engine, gray zone detection, supply chain forecasting methodology. Public-facing explanation of the intelligence pipeline.
+The handbook is a single large static document, which is useful for complete local search but increasingly expensive to load.
 
-## Planned Field Guides — "Stuff Nobody Has Written"
+- [ ] Add a service worker and offline cache manifest.
+- [ ] Provide an explicit “save for field use” state rather than relying on incidental browser caching.
+- [ ] Cache the HTML, CSS, JavaScript, fonts, and local images with a versioned release key.
+- [ ] Define update behavior so an operator can see whether a cached handbook is stale before disconnecting.
 
-Operator-level quick references. Laminate-and-carry format. Each fills a gap where the knowledge exists only as tribal knowledge, scattered forum posts, or classified TTPs — nothing consolidated and public.
+### 3. Page weight and delivery architecture
 
-- [x] **EW Countermeasures Field Card** — `field/ew-countermeasures.md` — "I'm being jammed, now what?" Decision tree by symptom: video freeze, LQ drop, GPS drift, total blackout. Pre-configured firmware settings, band-switching procedures, abort criteria. The operator-level companion to `components/electronic-warfare.md`.
-- [x] **Frequency Planning Worksheet** — `field/frequency-planning.md` — Multi-drone frequency deconfliction. Control link, video link, GPS across a 6-drone flight. Channel assignment templates, self-interference avoidance, band planning for contested environments.
-- [x] **Supply Chain Substitution Guide** — `field/substitution-guide.md` — Drop-in component replacements mapped by pinout, protocol, mounting, and firmware compatibility. "My EP2 is out of stock — what fits?" Consolidated from scattered forum knowledge.
-- [x] **Fiber-Optic FPV Integration** — `field/fiber-optic-fpv.md` — Spool integration, FC compatibility, cable management, spool motor wiring, weight/range tradeoffs. Both sides mass-producing, near-zero public documentation.
-- [x] **Thermal / Night FPV Operations** — `field/night-ops.md` — Low-lux camera selection, IR illuminator integration, OSD config for night, cold-weather battery behavior, operational patterns. Pioneered by Wild Hornets, knowledge currently internal.
-- [x] **Drone-to-Drone Intercept Playbook** — `field/intercept-ops.md` — FPV interceptor requirements (speed, approach angles, prop selection), video settings for tracking airborne targets. Wild Hornets Werewolf/Sting class. Zero public documentation exists.
-- [x] **Repeater / Relay Deployment** — `field/repeater-relay.md` — Mother drones and fixed repeaters for FPV range extension. Antenna placement, link budget for relay hop, latency impact, when to relay vs fly closer. Generic guide for what TAF Kolibri 13 FR1 does.
-- [x] **Attritable Drone Production Handbook** — `field/attritable-production.md` — Decentralized manufacturing at scale. Component sourcing, QC checklist for volume production, firmware flashing at scale, pre-flight batch testing for 50+ units. Process knowledge from 160+ Ukrainian manufacturers, currently tribal.
-- [x] **ELINT for Drone Operators** — `field/elint-operators.md` — Reading spectrum analyzer output, identifying enemy video/control frequencies from SIGINT, correlating ELINT to threat assessment. Taught informally by Flash (Serhii Beskrestnov), never written down.
+- [ ] Establish performance budgets for generated HTML, CSS, JavaScript, and local media.
+- [ ] Measure cold-load and repeat-load behavior on low-bandwidth mobile connections.
+- [ ] Decide whether to retain one-page delivery, split references into static detail pages, or produce both from the same registry.
+- [ ] If split pages are added, keep the complete local search index and stable legacy anchors.
 
-## Planned Appendices
+### 4. Visual field aids
 
-- [x] **Appendix A: Frequency Quick Reference Card** — One-page printable frequency plan template
-- [x] **Appendix B: UART Maps for Common FCs** — 416 FCs mapped
-- [x] **Appendix C: MAVLink Message Quick Reference** — The 20 messages you actually use
-- [x] **Appendix D: MSP Function Code Quick Reference** — The 15 function codes you actually use
-- [x] **Appendix E: CoT Type Code Reference** — Common MIL-STD-2525C codes for drone operations
-- [x] **Appendix F: Regulatory & Open Resources** — FAA/NCSL/ASIAS + international regulators (open sources only)
+- [ ] Add antenna radiation-pattern diagrams to the antenna fundamentals chapter.
+- [ ] Add common FC-to-companion wiring diagrams.
+- [ ] Add mesh topology and relay diagrams.
+- [ ] Add CoT message-flow diagrams.
+- [ ] Add annotated blackbox traces and failure examples.
+- [ ] Produce printable field-card layouts for the advanced guides and appendices.
 
-## Planned Templates
+### 5. Content provenance and maintenance
 
-- [ ] Frequency plan worksheet (printable)
-- [ ] UART allocation worksheet (printable)
-- [ ] Pre-flight checklist card (laminated field card format)
-- [ ] Link budget calculator (spreadsheet)
-- [ ] Mesh network planning template
+- [ ] Add visible “last verified” and evidence-strength metadata to platform and compliance profiles.
+- [ ] Flag claims that are vendor-reported, independently verified, inferred, or field-observed.
+- [ ] Add a scheduled stale-source report for regulations, Blue UAS status, manufacturer ownership, prices, and availability.
+- [ ] Add a review queue for documents whose source links or verification dates exceed their maintenance window.
 
-## Improvements to Existing Content
+### 6. Platform coverage
 
-- [ ] Add diagrams for antenna radiation patterns (Ch 3)
-- [ ] Add wiring diagrams for common FC-to-companion connections (Ch 13)
-- [ ] Add mesh network topology diagrams (Ch 14)
-- [ ] Add CoT message flow diagrams (Ch 15)
-- [ ] Add blackbox trace screenshots with annotations (Ch 10)
-- [ ] Wire new component docs into `build.py` navigation so they render on uas-handbook.com
-- [ ] Cross-reference PIE flags from component docs where supply chain constraints are relevant
+Profiles worth prioritizing when sufficient public integration detail is available:
 
-## Community Requests
+- [ ] DJI Matrice 400 and FlyCart 100
+- [ ] Watts Innovations Prism and Harris Aerial H6
+- [ ] JOUAV CW-25E and comparable VTOL fixed-wing platforms
+- [ ] AeroVironment Puma family
+- [ ] L3Harris FVR-90
+- [ ] Additional less-known NDAA-compliant and allied fixed-wing platforms
 
-*Open an issue to suggest additions to this roadmap.*
+### 7. Cross-property work
+
+- [ ] Confirm the current status of the Forge autonomy dataset browser before rescheduling it here.
+- [ ] Keep handbook references linked to Forge and Patterns without duplicating application-specific content.
+- [ ] Define a shared release/version marker across Handbook, Forge, and Patterns so cross-property links can be regression-tested together.
+
+## Contribution rules for roadmap work
+
+A roadmap item is complete only when:
+
+1. The source content or implementation is merged.
+2. The production handbook build includes it.
+3. Source and generated-site validation pass.
+4. Public navigation and search expose it where appropriate.
+5. Documentation and release notes describe the shipped state.
+
+Open an issue or pull request to propose additions. New numbered chapters must receive an unused stable ID in `handbook_builder/config.py`; never renumber an existing published chapter.
