@@ -78,6 +78,7 @@ anchors. Use `Ctrl/Command+K` on the live site to search the entire reference.
 3. [TAK Integration](integration/tak.md)
 4. [Mesh Rider over the i.MX USB Port](integration/mesh-rider-usb-setup.md)
 5. [Portable Telemetry Edge Node](integration/edge-node-k3s.md)
+6. [AI Wingman on the Orqa DTK APB](integration/wingman-apb.md)
 
 ### Additional tracks
 
