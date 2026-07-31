@@ -1,216 +1,151 @@
 # The Drone Integration Handbook
 
 > **Free. Open. No login required.**
-> An industry reference for drone RF, integration, and field operations.
-> Built by operators, for operators.
+>
+> A practical bench and field reference for drone RF, firmware, integration,
+> diagnostics, platforms, components, and autonomy.
 
----
+**Live handbook:** [uas-handbook.com](https://uas-handbook.com/)
 
-## What This Is
+The handbook is built by operators for operators. It is not a product manual
+or a sales pitch. The goal is to document what connects to what, what fails in
+the field, how to diagnose it, and where the public evidence runs out.
 
-A practical reference for anyone integrating, operating, or troubleshooting
-multi-platform drone systems. Not a product manual. Not a sales pitch.
-A handbook you keep open on your bench.
+## Start here
 
-Covers RF communications, flight controller firmware, field diagnostics,
-fleet operations, and the real-world problems that don't show up in
-manufacturer documentation.
+| Need | Recommended starting point |
+|---|---|
+| Learn the system from the beginning | [The Five Link Types](fundamentals/five-link-types.md) |
+| Diagnose a failure | [When Things Go Wrong](field/troubleshooting.md) |
+| Configure an FC or serial link | [The Four Firmwares](firmware/four-firmwares.md) and [UART Layout](firmware/uart-layout.md) |
+| Add companion compute, mesh, or TAK | [Integration](integration/companion.md) |
+| Compare airframes | [Platform References](platforms/README.md) |
+| Review hardware ecosystems | [Orqa Ecosystem](components/orqa-hardware-guide.md) |
+| Understand autonomy requirements | [Levels of Drone Autonomy](autonomy/autonomy-levels.md) |
 
----
+The generated site adds a grouped reading rail, mobile navigation, exact-heading
+search, active-section tracking, previous/next controls, and stable chapter
+anchors. Use `Ctrl/Command+K` on the live site to search the entire reference.
 
-## Table of Contents
+## Content map
 
 ### Part 1 — RF Fundamentals
 
 1. [The Five Link Types](fundamentals/five-link-types.md)
-   Every drone has up to five simultaneous RF links. What they are,
-   why they exist, how they interact, and what happens when they fight.
-
 2. [Frequency Bands and Regulatory Reality](fundamentals/frequency-bands.md)
-   2.4 GHz, 900 MHz, 5.8 GHz, sub-GHz — what lives where, what the
-   regulations actually say, and what the regulations don't cover.
-
 3. [Antennas for People Who Aren't RF Engineers](fundamentals/antennas.md)
-   Omni vs. directional, polarization, gain, and the one rule that
-   matters: match your antenna to your link, not to your ego.
-
 4. [Link Budgets Without the Math](fundamentals/link-budgets.md)
-   How to estimate range, why your range is always less than advertised,
-   and the three things that actually kill links in the field.
+5. [Frequency Planning Worksheet](field/frequency-planning.md)
+6. [Packable Antennas](fundamentals/packable-antennas.md)
 
 ### Part 2 — Flight Controller Firmware
 
-5. [The Four Firmwares](firmware/four-firmwares.md)
-   Betaflight, iNav, ArduPilot, PX4 — what each does well, what each
-   does poorly, and when to use which. No religious wars.
-
-6. [MSP Protocol — The Betaflight/iNav Language](firmware/msp-protocol.md)
-   How MSP works, the messages that matter, and how to talk to an FC
-   from anything with a serial port.
-
-7. [MAVLink Protocol — The ArduPilot/PX4 Language](firmware/mavlink-protocol.md)
-   MAVLink v2, system/component IDs, heartbeats, parameter pull,
-   and the difference between ArduPilot and PX4's MAVLink dialects.
-
-8. [UART Layout and Why It Matters](firmware/uart-layout.md)
-   Every FC has a finite number of UARTs. How to allocate them,
-   what happens when you run out, and the common mistakes.
+1. [The Four Firmwares](firmware/four-firmwares.md)
+2. [MSP Protocol](firmware/msp-protocol.md)
+3. [MAVLink Protocol](firmware/mavlink-protocol.md)
+4. [UART Layout and Why It Matters](firmware/uart-layout.md)
+5. [UART Maps for Common Flight Controllers](firmware/appendix-b-uart-maps.md)
+6. [CRSF and ELRS Protocol](firmware/crsf-elrs-protocol.md)
+7. [DShot and ESC Protocols](firmware/dshot-esc-protocols.md)
 
 ### Part 3 — Field Operations
 
-9. [Pre-Flight Checklist That Actually Works](field/preflight.md)
-   Not the manufacturer's marketing checklist. The one that catches
-   the problems that ground you.
-
-10. [Blackbox Logs — What They Tell You](field/blackbox.md)
-    How to pull logs, what the traces mean, and the five patterns
-    that indicate real problems vs. normal noise.
-
-11. [PID Tuning for People Who Fly, Not Simulate](field/pid-tuning.md)
-    What P, I, and D actually do to your quad, how to read the
-    symptoms, and a tuning workflow that works at the field.
-
-12. [When Things Go Wrong](field/troubleshooting.md)
-    The diagnostic tree. Start here when something breaks.
-    Covers: no arm, flyaway, oscillation, video loss, failsafe,
-    motor desync, GPS glitch, compass interference.
-
-### Part 3b — Component References
-
-- [Orqa Ecosystem](components/orqa-hardware-guide.md)
-  Ghost RC link, F405/H7 flight controllers, 3030 ESC,
-  FPV.One Pilot goggles — the complete EU-manufactured,
-  NDAA-compliant FPV stack.
-
-- [Ghost RC Link — Config Reference](field/ghost-config.md)
-  Binding, firmware updates, VOXL/Betaflight/ArduPilot
-  integration, RF mode selection, and troubleshooting.
+1. [Pre-Flight Checklist That Actually Works](field/preflight.md)
+2. [Blackbox Logs](field/blackbox.md)
+3. [PID Tuning for People Who Fly](field/pid-tuning.md)
+4. [When Things Go Wrong](field/troubleshooting.md)
+5. [Crash Recovery and Field Repair](field/crash-recovery.md)
+6. [Thermal and Night FPV Operations](field/night-ops.md)
+7. [Repeater and Relay Deployment](field/repeater-relay.md)
+8. [Supply Chain Substitution Guide](field/substitution-guide.md)
 
 ### Part 4 — Integration
 
-13. [Adding a Companion Computer](integration/companion.md)
-    When you need more than an FC. VOXL 2, Jetson, Pi — what
-    connects where, what protocols to use, and power budgeting.
+1. [Adding a Companion Computer](integration/companion.md)
+2. [Mesh Radios for Multi-Vehicle](integration/mesh-radios.md)
+3. [TAK Integration](integration/tak.md)
+4. [Mesh Rider over the i.MX USB Port](integration/mesh-rider-usb-setup.md)
+5. [Portable Telemetry Edge Node](integration/edge-node-k3s.md)
 
-14. [Mesh Radios for Multi-Vehicle](integration/mesh-radios.md)
-    Doodle Labs, Silvus, Persistent Systems — what they actually are
-    (hint: OpenWRT + batman-adv), how to configure them, and the
-    real-world range you'll get.
+### Additional tracks
 
-15. [TAK Integration](integration/tak.md)
-    Cursor-on-Target, ATAK, WinTAK — how to get your drone onto
-    the common operating picture without a defense contractor.
+- [Unsolved Problems](field/unsolved-problems.md)
+- [Vendor Guides](vendor/dow-uas-marketplace.md)
+- [Autonomy](autonomy/autonomy-levels.md)
+- [Platform References](platforms/README.md)
+- Component references under [`components/`](components/)
 
-16. [Mesh Rider over the i.MX USB Port](integration/mesh-rider-usb-setup.md)
-    Wiring and configuring a Doodle Labs Mesh Rider over the i.MX
-    USB port — the cabling, the OpenWRT side, and the failure modes.
+## Build the site
 
-### What's Left to Solve
+Python 3.12 is the supported runtime.
 
-17. [Unsolved Problems](field/unsolved-problems.md)
-    The hard problems nobody has cleanly solved yet — open gaps,
-    partial workarounds, and where the field knowledge runs out.
+```bash
+pip install -r requirements.txt
+python3 build.py
+```
 
-### Part 5 — Vendor Guides
+The deployable static site is written to `site/`, matching the Cloudflare Pages
+configuration in [`wrangler.jsonc`](wrangler.jsonc).
 
-18. [How to Get Listed on the Army UAS Marketplace](vendor/dow-uas-marketplace.md)
-    The seller path onto the DoW/Army UAS Marketplace — eligibility,
-    listing requirements, and the process.
+### Validate a change
 
-19. [Army UAS Marketplace — Buyer Account & Access](vendor/dow-uas-marketplace-buyer-access.md)
-    The buyer side — account setup, access tiers, and procurement workflow.
+```bash
+python3 -m compileall -q build.py handbook_builder tests
+node --check assets/handbook.js
+python3 -m unittest discover -s tests
+python3 scripts/check_links.py
+python3 build.py
+```
 
-### Part 6 — Autonomy
+## Site architecture
 
-20. [Levels of Drone Autonomy](autonomy/autonomy-levels.md)
-    The SAE J3016 / Exyn-derived autonomy ladder, with the conditions,
-    fallback behaviour, and minimum hardware each level honestly requires.
+The build is intentionally split by responsibility:
 
-21. [Datasets & Benchmarks for Drone Autonomy](autonomy/datasets.md)
-    Catalog of VIO/SLAM, CV-detection, and RF datasets, with the
-    license/usage caveats that bite you later.
+| Path | Responsibility |
+|---|---|
+| `build.py` | Stable command-line entrypoint |
+| `handbook_builder/config.py` | Stable chapter IDs and navigation taxonomy |
+| `handbook_builder/site.py` | Discovery, Markdown rendering, link rewriting, and output assembly |
+| `templates/handbook.html` | Semantic page structure |
+| `assets/handbook.css` | Forge/Patterns-aligned visual system and responsive layout |
+| `assets/handbook.js` | Search, drawer, scrollspy, progress, keyboard, and copy-link behavior |
+| `tests/test_builder.py` | Builder and stable-anchor tests |
 
-22. [Perception: VIO, SLAM & GPS-Denied State Estimation](autonomy/perception.md)
-    Relative vs. absolute fixes, why VIO drifts, and the failure modes.
+See [Site Architecture](docs/SITE_ARCHITECTURE.md) for the extension and
+compatibility rules.
 
-23. [Detection: RF and Visual](autonomy/detection.md)
-    Passive RF + visual detection, the bird false-positive problem,
-    and getting from detection to navigation.
+## Stable links
 
-24. [Onboard AI & Control](autonomy/onboard-ai-control.md)
-    Confidence-driven authority, EW-aware and capability-aware autonomy.
+Published core chapter anchors such as `#ch12` are compatibility identifiers.
+Do not renumber an existing core chapter. New chapters receive a new number in
+`handbook_builder/config.py`, while the Part registry controls reader-facing
+order.
 
-25. [MAVLink Military Dialect — Gap Analysis (EN/HR)](firmware/mavlink-military-extensions.md)
-    Where the standard dialect falls short for military/contested
-    operations, and proposed extensions. Bilingual EN/HR.
-
-### [Platform References](platforms/README.md)
-
-Full integration profiles — RF links, firmware, payloads, SDKs, and gotchas.
-
-**Commercial Off-the-Shelf:**
-- [DJI Matrice 350 RTK](platforms/cots/dji-m350-rtk.md) — Enterprise flagship. 55 min, triple gimbal. Not NDAA.
-- [DJI Matrice 30T](platforms/cots/dji-m30t.md) — Mid-tier enterprise, integrated quad-sensor. Not NDAA.
-- [DJI Mavic 4 Pro](platforms/cots/dji-mavic4-pro.md) — Prosumer/light commercial. Not NDAA.
-- [Autel EVO MAX 4T V2](platforms/cots/autel-evo-max-4t.md) — Quad-sensor, GPS-denied, A-Mesh. XE is NDAA.
-- [Autel EVO II Enterprise V3](platforms/cots/autel-evo2-enterprise.md) — Dual-sensor workhorse.
-- [DJI Agras T50](platforms/cots/dji-agras-t50.md) — Ag spraying/spreading, 40 kg payload, 52 acres/hr.
-- [DJI FlyCart 30](platforms/cots/dji-flycart-30.md) — Heavy-lift delivery, 30–40 kg payload.
-- [Flyability Elios 3](platforms/cots/flyability-elios-3.md) — Confined space, collision-tolerant cage, LiDAR SLAM.
-
-**NDAA / Blue UAS / Green UAS:**
-- [Skydio X10 / X10D](platforms/blue-uas/skydio-x10.md) — Best-in-class autonomy. X10D is Blue UAS.
-- [Freefly Astro](platforms/blue-uas/freefly-astro.md) — PX4, MAVLink, Blue UAS. Open architecture.
-- [Inspired Flight IF1200A](platforms/blue-uas/inspired-flight-if1200a.md) — Heavy-lift hex, ArduPilot, Made in USA. Removed from the Blue UAS list (March 2025) — verify current status before procurement.
-- [Teal 2](platforms/blue-uas/teal-2.md) — Night ISR, FLIR Hadron 640R, Blue UAS.
-- [Parrot ANAFI USA](platforms/blue-uas/parrot-anafi-usa.md) — Ultra-light, Blue UAS.
-- [WingtraOne / WingtraRAY](platforms/blue-uas/wingtra-wingtraone.md) — Fixed-wing VTOL mapping, 59 min, Blue UAS.
-
-**Open-Source / Custom Build:**
-- [Holybro X500 V2 + Pixhawk 6X](platforms/open-source/holybro-x500-pixhawk6x.md) — Reference PX4 dev kit.
-- [ArduPilot / PX4 General Reference](platforms/open-source/ardupilot-px4-reference.md) — Integration guide for custom builds.
-
-**Tactical / Defense:**
-- [Anduril Ghost X](platforms/tactical/anduril-ghost-x.md) — 80-min endurance, Lattice AI. Govt/mil only.
-- [Teal Black Widow](platforms/tactical/teal-black-widow.md) — SRR Tranche 2 winner. Army procurement.
-- [Skyfish Osprey](platforms/tactical/skyfish-osprey.md) — Precision mapping, NDAA.
-- [SiFly Q12](platforms/tactical/sifly-q12.md) — Endurance-focused, NDAA.
-
----
-
-## How to Use This Handbook
-
-**At the bench:** Look up the specific topic. Each chapter is self-contained.
-Cross-references point to related chapters when context helps.
-
-**In the field:** The troubleshooting chapter (12) is your starting point.
-The pre-flight checklist (9) is your ending point.
-
-**Learning:** Read Part 1 first. Then pick the firmware chapter (Part 2)
-that matches your platform. Then read the field chapters (Part 3) in
-any order.
-
----
+Platform and component references are auto-discovered. Renaming one of those
+Markdown files can change its generated ordering and anchor, so use explicit
+core chapter IDs for links that must remain stable outside the repository.
 
 ## Contributing
 
-This handbook is open. If you have platform experience, field data,
-or corrections, contributions are welcome. File an issue or PR on the
-GitHub repo.
+Corrections, field data, platform experience, diagrams, and failure reports are
+welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-The only rules:
-- Be accurate. If you're not sure, say so.
-- Be practical. Theory is fine, but show how it applies in the field.
-- No marketing. This is a reference, not a product pitch.
-- "Safety" is in quotes. Systems mitigate danger. They don't eliminate it.
+The core rules are:
 
----
+- Be accurate. State uncertainty explicitly.
+- Be practical. Explain the field consequence, not only the theory.
+- Show the failure mode, not only the nominal procedure.
+- Do not write marketing copy.
+- Systems mitigate danger; they do not eliminate it.
+
+Planning and shipped changes are tracked in [ROADMAP.md](ROADMAP.md) and
+[CHANGELOG.md](CHANGELOG.md).
 
 ## License
 
-Content is released under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-unless otherwise noted. Platform-specific content may have additional
-restrictions from the platform manufacturer.
+Handbook content is released under CC BY-SA 4.0 unless a file states otherwise.
+Platform-specific material may retain additional restrictions from its source
+or manufacturer.
 
 ---
 

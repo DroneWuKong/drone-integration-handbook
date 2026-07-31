@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{SITE_TITLE}}</title>
+  <meta name="description" content="{{SITE_DESCRIPTION}}">
+  <meta name="theme-color" content="#0c0c0a">
+  <meta property="og:title" content="{{SITE_TITLE}}">
+  <meta property="og:description" content="{{SITE_DESCRIPTION}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{SITE_URL}}">
+  <link rel="canonical" href="{{SITE_URL}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/handbook.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to handbook content</a>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+
+  <header class="topbar">
+    <div class="topbar-start">
+      <button class="icon-button menu-button" id="menuButton" type="button" aria-label="Open handbook navigation" aria-controls="navDrawer" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <a class="brand" href="#top" aria-label="Drone Integration Handbook home">
+        <strong>UAS Handbook</strong>
+        <span>field reference</span>
+      </a>
+    </div>
+
+    <div class="current-location" aria-live="polite">
+      <span class="current-prefix">//</span>
+      <span id="currentSection">Overview</span>
+    </div>
+
+    <div class="topbar-actions">
+      <button class="search-button" id="searchButton" type="button" aria-label="Search the handbook">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        <span>Search</span>
+        <kbd>⌘K</kbd>
+      </button>
+      <a class="ecosystem-link forge" href="https://uas-forge.com/">Forge</a>
+      <a class="ecosystem-link patterns" href="https://uas-patterns.com/">Patterns</a>
+      <a class="icon-button github-link" href="{{REPOSITORY_URL}}" aria-label="Handbook source on GitHub">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7a9.4 9.4 0 0 0-3 18.3c.5.1.6-.2.6-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1a9.7 9.7 0 0 1 5.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.7.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.7 1 .7 2v3c0 .3.2.6.7.5A9.4 9.4 0 0 0 12 2.7Z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
+  <aside class="nav-drawer" id="navDrawer" aria-label="Handbook navigation" aria-hidden="true">
+    <header class="drawer-header">
+      <div>
+        <strong>UAS Handbook</strong>
+        <span>{{TOTAL_COUNT}} field references</span>
+      </div>
+      <button class="icon-button" id="drawerClose" type="button" aria-label="Close handbook navigation">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+    <nav class="drawer-scroll">
+      {{NAV_MOBILE}}
+    </nav>
+    <footer class="drawer-footer">
+      <a href="{{REPOSITORY_URL}}/blob/main/CONTRIBUTING.md">Contribute</a>
+      <a href="{{REPOSITORY_URL}}/blob/main/ROADMAP.md">Roadmap</a>
+    </footer>
+  </aside>
+
+  <div class="site-shell" id="top">
+    <aside class="reading-rail" aria-label="Handbook table of contents">
+      <div class="rail-heading">
+        <p>Field index</p>
+        <span>{{TOTAL_COUNT}} references</span>
+      </div>
+      <nav class="rail-scroll">
+        {{NAV_DESKTOP}}
+      </nav>
+      <footer class="rail-footer">
+        <p>Free and open. CC BY-SA 4.0.</p>
+        <a href="{{REPOSITORY_URL}}/blob/main/CONTRIBUTING.md">Improve this handbook ↗</a>
+      </footer>
+    </aside>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Operator-built integration reference</p>
+          <h1 id="hero-title">The Drone Integration Handbook</h1>
+          <p class="hero-lead">A practical bench and field reference for RF, firmware, diagnostics, platforms, components, integration, and autonomy. No login. No product pitch.</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#ch1">Start with fundamentals</a>
+            <button class="secondary-action" type="button" data-open-search>Search all references</button>
+          </div>
+        </div>
+
+        <aside class="inventory-panel" aria-label="Handbook coverage">
+          <div class="inventory-head">
+            <span>Reference inventory</span>
+            <span class="status-chip"><i></i> Open access</span>
+          </div>
+          <div class="inventory-grid">
+            <a href="#part-rf"><strong>{{CHAPTER_COUNT}}</strong><span>Core chapters</span></a>
+            <a href="#platforms"><strong>{{PLATFORM_COUNT}}</strong><span>Platforms</span></a>
+            <a href="#components"><strong>{{COMPONENT_COUNT}}</strong><span>Components</span></a>
+            <a href="#ch12"><strong>1</strong><span>Failure tree</span></a>
+          </div>
+          <p>Stable chapter anchors are retained so old field links continue to work.</p>
+        </aside>
+      </section>
+
+      <section class="route-grid" aria-label="Common handbook routes">
+        <a class="route-card" href="#ch9" data-tone="cyan">
+          <span class="route-code">01</span>
+          <div><strong>At the bench</strong><p>Configure links, protocols, firmware, UARTs, and companion systems.</p></div>
+          <span class="route-arrow">→</span>
+        </a>
+        <a class="route-card" href="#ch12" data-tone="amber">
+          <span class="route-code">02</span>
+          <div><strong>In the field</strong><p>Start with the diagnostic tree, then move into logs, recovery, and substitutions.</p></div>
+          <span class="route-arrow">→</span>
+        </a>
+        <a class="route-card" href="#platforms" data-tone="green">
+          <span class="route-code">03</span>
+          <div><strong>Select a system</strong><p>Compare platform and component references without losing the integration context.</p></div>
+          <span class="route-arrow">→</span>
+        </a>
+      </section>
+
+      <div class="content-stream">
+        {{CONTENT}}
+      </div>
+
+      <footer class="site-footer">
+        <div>
+          <strong>Built in the field. With real data. On real hardware.</strong>
+          <p>The Drone Integration Handbook · CC BY-SA 4.0</p>
+        </div>
+        <nav aria-label="Footer links">
+          <a href="{{REPOSITORY_URL}}">GitHub</a>
+          <a href="{{REPOSITORY_URL}}/blob/main/CONTRIBUTING.md">Contribute</a>
+          <a href="{{REPOSITORY_URL}}/blob/main/ROADMAP.md">Roadmap</a>
+          <a href="https://uas-forge.com/donate/">Support</a>
+        </nav>
+      </footer>
+    </main>
+  </div>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="search-overlay" id="searchOverlay" role="dialog" aria-modal="true" aria-labelledby="searchTitle" hidden>
+    <section class="search-dialog">
+      <header class="search-head">
+        <div>
+          <p class="eyebrow">Handbook search</p>
+          <h2 id="searchTitle">Find the exact reference</h2>
+        </div>
+        <button class="icon-button" id="searchClose" type="button" aria-label="Close search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+      </header>
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        <input id="searchInput" type="search" autocomplete="off" spellcheck="false" placeholder="Search protocols, pinouts, platforms, failure modes…" aria-controls="searchResults">
+        <kbd>Esc</kbd>
+      </div>
+      <div class="search-filters" role="group" aria-label="Filter search results">
+        <button class="active" type="button" data-search-filter="all">All <span>{{TOTAL_COUNT}}</span></button>
+        <button type="button" data-search-filter="chapter">Chapters <span>{{CHAPTER_COUNT}}</span></button>
+        <button type="button" data-search-filter="platform">Platforms <span>{{PLATFORM_COUNT}}</span></button>
+        <button type="button" data-search-filter="component">Components <span>{{COMPONENT_COUNT}}</span></button>
+      </div>
+      <div class="search-results" id="searchResults" role="listbox" aria-label="Search results">
+        <div class="search-empty"><strong>Search the whole handbook.</strong><span>Use two or more characters. Results include headings and nearby field text.</span></div>
+      </div>
+      <footer class="search-footer">
+        <span><kbd>↑</kbd><kbd>↓</kbd> navigate</span>
+        <span><kbd>Enter</kbd> open</span>
+        <span><kbd>Esc</kbd> close</span>
+      </footer>
+    </section>
+  </div>
+
+  <script id="handbookMetadata" type="application/json">{{SEARCH_METADATA}}</script>
+  <script src="assets/handbook.js" defer></script>
+</body>
+</html>
