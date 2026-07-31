@@ -1,72 +1,113 @@
 # Contributing to The Drone Integration Handbook
 
-This handbook is built by operators, for operators. Contributions are welcome.
+The handbook is built by operators for operators. Corrections, field observations, primary-source research, diagrams, and carefully scoped technical references are welcome.
 
-## What We're Looking For
+## Before contributing
 
-- **Corrections:** Found an error in a frequency, protocol detail, or procedure? File an issue or submit a PR.
-- **Clarifications:** If something is confusing, it's worth fixing. "I didn't understand this" is valid feedback.
-- **New content:** Chapters, sections, diagrams, tables, or examples that fill gaps.
-- **Field experience:** Real-world war stories that illustrate a concept better than theory.
-- **Platform-specific details:** UART maps for specific FCs, antenna placement photos, mesh radio configs.
+By submitting a pull request, issue attachment, image, dataset, code change, or other contribution, you represent that:
 
-## How to Contribute
+1. you created the contribution or have authority to submit and license it;
+2. it does not contain confidential, proprietary, classified, export-controlled, privacy-restricted, or employer/customer-owned information you are not authorized to disclose;
+3. third-party text, code, images, screenshots, diagrams, tables, datasets, and specifications are identified with their source and license or written permission;
+4. factual claims are supported and material uncertainty is stated;
+5. any employment, consulting, advisory, sponsorship, ownership, free-equipment, reseller, or other material relationship relevant to the contribution is disclosed;
+6. you understand the contribution will be public and preserved in repository history.
 
-### Small fixes (typos, corrections)
-1. Fork the repo
-2. Edit the relevant chapter file
-3. Submit a PR with a clear description of what changed and why
+Do not submit secrets, credentials, personal data, nonpublic vulnerabilities, controlled technical data, or operational material intended to facilitate unlawful interference, surveillance, weapons use, or harm.
+
+## What we are looking for
+
+- **Corrections:** frequencies, pinouts, protocol details, commands, regulatory statements, product status, and citations.
+- **Clarifications:** material that is technically accurate but ambiguous or easy to misuse.
+- **Primary-source updates:** regulator guidance, accepted declarations, official lists, manufacturer manuals, standards, and public records.
+- **Field observations:** configuration, date, conditions, result, failure mode, and limits.
+- **New content:** chapters, diagrams, tables, or examples that fill a documented gap and pass the publication-risk review.
+- **Right of reply:** documented corrections or responses from a company or identifiable person discussed in the handbook.
+
+## Evidence labels
+
+Use one of these labels when the distinction matters:
+
+| Label | Meaning |
+|---|---|
+| Official-source verified | Current primary government, standards, accepted-declaration, or official-list evidence |
+| Manufacturer-reported | Supplied or published by the company and not independently verified |
+| Field-observed | Recorded from a stated configuration, date, and test or deployment |
+| Inference / opinion | Editorial interpretation based on disclosed facts |
+| Unknown / program-specific | Insufficient evidence or a result dependent on configuration, contract, agency, or jurisdiction |
+
+Do not state that something is “compliant,” “safe,” “cleared,” “certified,” “legal,” “EAR99,” or “FOCI clean” without identifying the authority, exact item or configuration, source, verification date, and limits of the conclusion.
+
+## How to contribute
+
+### Small corrections
+
+1. Fork the repository.
+2. Edit the relevant file.
+3. Cite the supporting source or test record.
+4. Submit a pull request explaining what was wrong and why the change is supported.
 
 ### New sections or chapters
-1. Open an issue first describing what you want to add
-2. Discuss scope and placement
-3. Fork, write, submit PR
 
-## Style Guide
+1. Open an issue describing the proposed scope, sources, intended audience, and foreseeable misuse or safety concerns.
+2. Resolve placement, stable numbering, and publication-risk questions before drafting extensive content.
+3. Submit the article with claim-level sources and any required third-party notices.
+4. Update the public content map, tests, and release documentation.
 
-- **Write for the bench.** The reader has a soldering iron in one hand and this doc on their phone in the other.
-- **Be specific.** "Use the right baud rate" is useless. "CRSF requires 420000 baud" is useful.
-- **No marketing.** This isn't a product pitch. If a product is good, say why. If it's bad, say why. Name names.
-- **Tables over paragraphs** for reference data. Prose for explanations.
-- **Show the failure mode.** Don't just say what to do — say what happens when you don't.
-- **Cite your experience.** "In my testing with RFD900x at 5 km..." is more credible than "range is approximately..."
+### Sensitive corrections
 
-## Directory Structure
+Do not open a public issue containing confidential, security-sensitive, personal, or controlled information. Email [jeremiah@midwestniceuas.com](mailto:jeremiah@midwestniceuas.com). Security vulnerabilities follow [`SECURITY.md`](SECURITY.md).
+
+## Style guide
+
+- **Write for the bench, but not past the evidence.** Be specific enough to be useful without inventing certainty.
+- **Show the failure mode.** Explain what happens when a configuration is wrong.
+- **Separate facts from claims and opinion.** Manufacturer marketing is not independent verification.
+- **Use tables for reference data and prose for explanation.**
+- **Use primary sources where available.** Preserve access dates for changing claims.
+- **No marketing copy, personal attacks, or irrelevant biographies.**
+- **No emojis or filler.**
+- **Do not imply authorization.** Historical or technical description is not permission to violate aviation, spectrum, export, safety, privacy, or criminal law.
+
+## Content that requires heightened review
+
+The following may be declined, narrowed, or placed on publication hold:
+
+- operational weapons, interception, targeting, electronic attack, ELINT, surveillance, or identification-defeat instructions;
+- ordnance, explosive, safe-and-arm, or payload-injury procedures;
+- export-controlled, military-intelligence, proprietary, or access-controlled material;
+- safety-critical autonomous control or failure behavior without test evidence;
+- regulatory compliance instructions without current primary authority;
+- materially adverse claims about named companies or people without an evidence archive and fair framing;
+- copied or adapted material without clear rights.
+
+## Directory structure
 
 ```
-fundamentals/    — Part 1: RF Fundamentals (Chapters 1-4)
-firmware/        — Part 2: Flight Controller Firmware (Chapters 5-8)
-field/           — Part 3: Field Operations (Chapters 9-12, 17)
-integration/     — Part 4: Integration (Chapters 13-16)
-vendor/          — Part 5: Vendor Guides (Chapters 18-19)
-autonomy/        — Part 6: Autonomy (Chapters 20-24; Ch. 25 MAVLink military lives in firmware/)
-components/      — Component references (Orqa ecosystem, control links, etc.)
-platforms/       — Platform-specific references (cots/, blue-uas/, open-source/, tactical/)
-appendices/      — Quick reference cards and lookup tables
-templates/       — Printable field cards and worksheets
-assets/          — Diagrams, images, and media
+fundamentals/    — RF fundamentals and spectrum context
+firmware/        — Flight-controller firmware and protocols
+field/           — Field operations and reviewed field guides
+integration/     — Companion compute, mesh, TAK, and system integration
+vendor/          — Procurement and marketplace guides
+autonomy/        — Autonomy levels, datasets, perception, and control
+components/      — Component and ecosystem references
+platforms/       — Platform profiles by category
+appendices/      — Quick-reference cards and lookup tables
+legal/           — Publisher, privacy, correction, terms, and rights policies
+templates/       — Site templates and printable material
+assets/          — Styles, scripts, diagrams, and media
 ```
 
-The authoritative chapter order and numbering is the `CHAPTERS` list at the
-top of `build.py` — not alphabetical, and not inferable from the directory
-tree alone. Adding a chapter requires editing that list, or it won't appear
-in the rendered table of contents.
+The authoritative published order is the `CHAPTERS` and `PARTS` registry in `handbook_builder/config.py`. Adding a Markdown file alone does not publish it.
 
-## Formatting
+## Licensing
 
-- Standard Markdown
-- Tables for reference data
-- Code blocks for commands, packet formats, and configuration
-- Bold for emphasis on key terms on first use
-- No emojis, no fluff
+- Original prose, diagrams, and reference data are generally submitted under CC BY-SA 4.0.
+- Original code and build tooling are submitted under the MIT License.
+- Third-party material retains its own license and must be documented.
 
-## What We Don't Want
+See [`LICENSING.md`](LICENSING.md), [`LICENSE`](LICENSE), [`LICENSE-CODE`](LICENSE-CODE), and [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
 
-- Product placement or affiliate content
-- Unverified claims without field data
-- Content that encourages illegal operation (but we acknowledge regulatory reality — see Chapter 2)
-- AI-generated filler
+## Corrections and editorial policy
 
-## License
-
-By contributing, you agree that your contributions are licensed under CC BY-SA 4.0, consistent with the rest of the handbook.
+See [`legal/editorial-and-corrections-policy.md`](legal/editorial-and-corrections-policy.md). Payment, sponsorship, consulting, equipment access, or commercial pressure do not purchase favorable coverage or prevent correction.
