@@ -50,6 +50,9 @@ Full integration profiles for drone platforms across four categories. Each profi
 | [Teal Black Widow](tactical/teal-black-widow.md) | YES | Govt/Mil only | Classified | SRR Tranche 2 winner |
 | [Skyfish Osprey](tactical/skyfish-osprey.md) | NDAA | Commercial | 45 min | Precision mapping/ISR |
 | [SiFly Q12](tactical/sifly-q12.md) | NDAA | Commercial | Extended | Endurance-focused |
+| [Shield AI Nova 2](tactical/shield-ai-nova-2.md) | NDAA | Govt/Mil only | Not published | Autonomous GPS-denied indoor ISR |
+| [Neros Archer](tactical/neros-archer.md) | YES | Govt/Mil | Not published | Blue UAS FPV, US-made, EW-aware |
+| [Brecourt iDFR](tactical/brecourt-idfr.md) | Claimed | Commercial | 20+ min | Indoor DFR, GPS-denied, SOC-integrated; early-stage |
 
 ---
 
@@ -79,14 +82,9 @@ Worth investigating for future additions:
 
 - DJI Matrice 400, DJI FlyCart 100 (heavy-lift delivery)
 - Watts Innovations Prism, Harris Aerial H6
-- Ascent Aerosystems (coaxial platforms)
-- Flyability ELIOS (confined space)
 - Hoverfly LiveSky (tethered)
 - AgEagle/senseFly eBee X (fixed-wing mapping)
-- Wingtra WingtraOne (VTOL mapping)
 - JOUAV CW-25E (VTOL hybrid)
-- Shield AI Nova 2 (autonomous indoor ISR)
-- Neros Archer (Blue UAS FPV)
 - AeroVironment Puma / Switchblade family
 - L3Harris FVR-90 (VTOL fixed-wing)
 

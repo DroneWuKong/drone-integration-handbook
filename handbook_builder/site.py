@@ -50,10 +50,22 @@ _STATIC_ASSET_SUFFIXES = {
     ".ico",
 }
 
+_SPECIAL_MARKDOWN_ANCHORS = {
+    "platforms/README.md": "platforms",
+}
+
 _LINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\n]+)\)")
 _HEADING_RE = re.compile(r"<h([23])([^>]*)>(.*?)</h\1>", re.IGNORECASE | re.DOTALL)
 _TAG_RE = re.compile(r"<[^>]+>")
 _ID_ATTR_RE = re.compile(r"\s+id=(?:\"[^\"]*\"|'[^']*')", re.IGNORECASE)
+_ID_VALUE_RE = re.compile(
+    r"\s+id=(?P<quote>[\"'])(?P<value>.*?)(?P=quote)",
+    re.IGNORECASE | re.DOTALL,
+)
+_HREF_FRAGMENT_RE = re.compile(
+    r"href=(?P<quote>[\"'])#(?P<fragment>[^\"']+)(?P=quote)",
+    re.IGNORECASE,
+)
 
 
 @dataclass(slots=True)
@@ -100,9 +112,10 @@ def _slugify(value: str) -> str:
 
 
 def _decorate_headings(rendered_html: str, section_anchor: str) -> str:
-    """Give every H2/H3 a section-scoped ID for exact search navigation."""
+    """Scope heading IDs and preserve links to headings inside the entry."""
 
     seen: dict[str, int] = {}
+    fragment_map: dict[str, str] = {}
 
     def replace(match: re.Match[str]) -> str:
         level, attrs, body = match.groups()
@@ -111,10 +124,29 @@ def _decorate_headings(rendered_html: str, section_anchor: str) -> str:
         occurrence = seen.get(base, 0) + 1
         seen[base] = occurrence
         heading_id = base if occurrence == 1 else f"{base}-{occurrence}"
+
+        old_id_match = _ID_VALUE_RE.search(attrs)
+        if old_id_match:
+            old_id = html.unescape(old_id_match.group("value"))
+            fragment_map[old_id] = heading_id
+
         clean_attrs = _ID_ATTR_RE.sub("", attrs)
         return f'<h{level}{clean_attrs} id="{heading_id}">{body}</h{level}>'
 
-    return _HEADING_RE.sub(replace, rendered_html)
+    decorated = _HEADING_RE.sub(replace, rendered_html)
+
+    if fragment_map:
+        def rewrite_fragment(match: re.Match[str]) -> str:
+            fragment = html.unescape(match.group("fragment"))
+            target = fragment_map.get(fragment)
+            if target is None:
+                return match.group(0)
+            quote = match.group("quote")
+            return f"href={quote}#{target}{quote}"
+
+        decorated = _HREF_FRAGMENT_RE.sub(rewrite_fragment, decorated)
+
+    return decorated
 
 
 def _read_first_h1(path: Path) -> str:
@@ -252,7 +284,7 @@ def discover_entries(base_dir: Path) -> list[ContentEntry]:
 
 
 def _path_anchor_maps(entries: Sequence[ContentEntry]) -> tuple[dict[str, str], dict[str, str]]:
-    direct: dict[str, str] = {}
+    direct: dict[str, str] = dict(_SPECIAL_MARKDOWN_ANCHORS)
     basenames: dict[str, list[str]] = {}
     for entry in entries:
         normalized = posixpath.normpath(entry.relative_path)

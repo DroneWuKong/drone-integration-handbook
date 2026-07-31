@@ -155,7 +155,7 @@ route the mesh — it just sends IP to a peer and the radios handle delivery.
 
 ## Failure modes worth knowing before you're in the field
 
-<a name="failure-driver"></a>
+<a id="failure-driver"></a>
 **Radio enumerates but no `eth*`/`usb*` appears.** The BSP kernel is missing
 the USB-Ethernet driver. You need `CONFIG_USB_NET_SMSC95XX=y` (and its
 parent `CONFIG_USB_USBNET`). On a stock desktop distro this is built in; on
