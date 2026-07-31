@@ -100,6 +100,7 @@ class BuilderTestCase(unittest.TestCase):
         entries = discover_entries(self.root)
         chapters = [entry for entry in entries if entry.kind == "chapter"]
         self.assertEqual([entry.number for entry in chapters[:6]], [1, 2, 3, 4, 31, 37])
+        self.assertEqual([entry.number for entry in chapters[-5:]], [43, 44, 45, 46, 47])
         self.assertEqual(next(entry.anchor for entry in entries if entry.kind == "platform"), "p101")
         self.assertEqual(next(entry.anchor for entry in entries if entry.kind == "component"), "c600")
         self.assertEqual(next(entry.group for entry in entries if entry.kind == "component"), "Flight Controllers & Firmware")
@@ -113,8 +114,10 @@ class BuilderTestCase(unittest.TestCase):
         self.assertIn('href="assets/handbook.css"', document)
         self.assertIn('src="assets/handbook.js"', document)
         self.assertIn('id="ch37"', document)
+        self.assertIn('id="ch47"', document)
         self.assertIn('id="platforms"', document)
         self.assertIn('data-nav-target="ch12"', document)
+        self.assertIn('data-nav-target="ch38"', document)
         self.assertIn('href="#ch2"', document)
         self.assertTrue((output / "assets" / "handbook.css").is_file())
         self.assertTrue((output / "assets" / "handbook.js").is_file())
