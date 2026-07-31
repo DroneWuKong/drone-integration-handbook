@@ -24,7 +24,7 @@
   let toastTimer = 0;
 
   function syncBodyLock() {
-    const drawerOpen = drawer && drawer.classList.contains("open");
+    const drawerOpen = drawer?.classList.contains("open");
     const searchOpen = searchOverlay && !searchOverlay.hidden;
     document.body.classList.toggle("modal-open", Boolean(drawerOpen || searchOpen));
   }
@@ -97,7 +97,6 @@
     }
   });
 
-  // Navigation state and reading progress.
   const trackedSections = $$(".part-divider, .chapter");
   const navLinks = $$("[data-nav-target]");
   let scrollScheduled = false;
@@ -133,12 +132,14 @@
 
   function updateScrollState() {
     scrollScheduled = false;
-    const threshold = (parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--topbar-height")) || 52) + 92;
+    const threshold =
+      (parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--topbar-height")) || 52) + 92;
     let selected = null;
     for (const section of trackedSections) {
       if (section.getBoundingClientRect().top <= threshold) selected = section;
       else break;
     }
+
     if (selected) {
       setActiveSection(selected);
     } else {
@@ -170,13 +171,13 @@
     window.scrollTo({ top: 0, behavior: reducedMotion ? "auto" : "smooth" });
   });
 
-  // Search.
   let metadata = [];
   try {
     metadata = JSON.parse($("#handbookMetadata")?.textContent || "[]");
   } catch (error) {
     console.warn("Handbook search metadata could not be read", error);
   }
+
   const metadataByAnchor = new Map(metadata.map((entry) => [entry.anchor, entry]));
   let searchIndex = null;
   let searchFilter = "all";
@@ -326,7 +327,8 @@
     if (query.length < 2) {
       currentResults = [];
       activeResultIndex = -1;
-      searchResults.innerHTML = '<div class="search-empty"><strong>Search the whole handbook.</strong><span>Use two or more characters. Results include headings and nearby field text.</span></div>';
+      searchResults.innerHTML =
+        '<div class="search-empty"><strong>Search the whole handbook.</strong><span>Use two or more characters. Search stays in this browser tab and is not transmitted.</span></div>';
       return;
     }
 
@@ -338,23 +340,24 @@
       .slice(0, 30)
       .map((candidate) => candidate.entry);
 
-    window.__hbAnalytics?.search(queryValue.trim(), currentResults.length);
-
     if (!currentResults.length) {
       activeResultIndex = -1;
-      searchResults.innerHTML = `<div class="search-empty"><strong>No matching references.</strong><span>Try a protocol, platform, component, symptom, or shorter phrase.</span></div>`;
+      searchResults.innerHTML =
+        '<div class="search-empty"><strong>No matching references.</strong><span>Try a protocol, platform, component, symptom, or shorter phrase.</span></div>';
       return;
     }
 
-    const rows = currentResults.map((entry, index) => {
-      const snippet = snippetFor(entry.text, terms);
-      return `<a class="search-result" role="option" aria-selected="false" data-result-index="${index}" href="#${escapeHtml(entry.targetId)}">
-        <span class="search-result-context">${escapeHtml(entry.group)} · ${escapeHtml(entry.title)}</span>
-        <span class="search-result-heading">${highlight(entry.heading, terms)}</span>
-        <span class="search-result-kind">${escapeHtml(entry.kind)}</span>
-        <span class="search-result-snippet">${highlight(snippet, terms)}</span>
-      </a>`;
-    }).join("");
+    const rows = currentResults
+      .map((entry, index) => {
+        const snippet = snippetFor(entry.text, terms);
+        return `<a class="search-result" role="option" aria-selected="false" data-result-index="${index}" href="#${escapeHtml(entry.targetId)}">
+          <span class="search-result-context">${escapeHtml(entry.group)} · ${escapeHtml(entry.title)}</span>
+          <span class="search-result-heading">${highlight(entry.heading, terms)}</span>
+          <span class="search-result-kind">${escapeHtml(entry.kind)}</span>
+          <span class="search-result-snippet">${highlight(snippet, terms)}</span>
+        </a>`;
+      })
+      .join("");
     searchResults.innerHTML = `<div class="search-count">${currentResults.length} result${currentResults.length === 1 ? "" : "s"}</div>${rows}`;
     setActiveResult(0);
   }
@@ -414,7 +417,9 @@
   $$("[data-search-filter]").forEach((button) => {
     button.addEventListener("click", () => {
       searchFilter = button.dataset.searchFilter || "all";
-      $$("[data-search-filter]").forEach((candidate) => candidate.classList.toggle("active", candidate === button));
+      $$("[data-search-filter]").forEach((candidate) => {
+        candidate.classList.toggle("active", candidate === button);
+      });
       renderSearchResults(searchInput?.value || "");
     });
   });
@@ -433,8 +438,10 @@
 
   function trapFocus(event, container) {
     if (event.key !== "Tab") return;
-    const focusable = $$('button:not([disabled]), input:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])', container)
-      .filter((element) => element.offsetParent !== null);
+    const focusable = $$(
+      'button:not([disabled]), input:not([disabled]), a[href], [tabindex]:not([tabindex="-1"])',
+      container,
+    ).filter((element) => element.offsetParent !== null);
     if (!focusable.length) return;
     const first = focusable[0];
     const last = focusable[focusable.length - 1];
@@ -480,137 +487,8 @@
     }
   });
 
-  // External source links are explicit and safe when opened in a new tab.
   $$('.chapter-body a[href^="http"], .chapter-tools a[href^="http"]').forEach((link) => {
     link.target = "_blank";
     link.rel = "noopener noreferrer";
   });
-
-  // Anonymous, first-party usage telemetry retained from the previous build.
-  (() => {
-    const endpoint = "https://uas-forge.com/api/analytics/ingest";
-    const makeId = () => {
-      if (crypto.randomUUID) return crypto.randomUUID();
-      return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
-    };
-    const sessionId = `sess_${makeId().replaceAll("-", "").slice(0, 16)}`;
-    const startedAt = Date.now();
-    const queue = [];
-    let flushTimer = 0;
-
-    function region() {
-      try {
-        const zone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
-        if (zone.includes("America")) return "Americas";
-        if (zone.includes("Europe")) return "Europe";
-        if (zone.includes("Asia") || zone.includes("Australia") || zone.includes("Pacific")) return "Asia-Pacific";
-        if (zone.includes("Africa")) return "Africa";
-      } catch {
-        // Use the coarse fallback below.
-      }
-      return "Unknown";
-    }
-
-    function flush() {
-      window.clearTimeout(flushTimer);
-      flushTimer = 0;
-      if (!queue.length) return;
-      const events = queue.splice(0);
-      fetch(endpoint, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ events }),
-        keepalive: true,
-      }).catch(() => {});
-    }
-
-    function event(eventType, action, payload) {
-      queue.push({
-        event_id: makeId(),
-        timestamp: new Date().toISOString(),
-        surface: "handbook",
-        event_type: eventType,
-        event_action: action,
-        context: {
-          session_id: sessionId,
-          geo_region: region(),
-          platform: /Android|iPhone|iPad/i.test(navigator.userAgent) ? "mobile" : "web",
-          viewport: `${window.innerWidth}x${window.innerHeight}`,
-          path: window.location.pathname,
-        },
-        payload,
-        data_policy: {
-          collection_tier: "anonymous",
-          retention_days: 90,
-          anonymized: true,
-        },
-      });
-      if (queue.length >= 20) flush();
-      else if (!flushTimer) flushTimer = window.setTimeout(flush, 5000);
-    }
-
-    let referrer = "direct";
-    try {
-      if (document.referrer) referrer = new URL(document.referrer).hostname;
-    } catch {
-      referrer = "unknown";
-    }
-    event("page_view", "view", { path: window.location.pathname, title: document.title, referrer });
-
-    const depthMarks = [25, 50, 75, 100];
-    const reached = new Set();
-    window.addEventListener("scroll", () => {
-      const scrollable = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1);
-      const depth = Math.round((window.scrollY / scrollable) * 100);
-      for (const mark of depthMarks) {
-        if (depth >= mark && !reached.has(mark)) {
-          reached.add(mark);
-          event("engagement", "scroll_depth", {
-            path: window.location.pathname,
-            depth_pct: mark,
-            time_sec: Math.round((Date.now() - startedAt) / 1000),
-          });
-        }
-      }
-    }, { passive: true });
-
-    document.addEventListener("click", (clickEvent) => {
-      const link = clickEvent.target.closest("a[href]");
-      if (!link) return;
-      try {
-        const target = new URL(link.href);
-        if (target.hostname !== window.location.hostname) {
-          event("click", "outbound_link", {
-            from: window.location.pathname,
-            to: target.hostname,
-            text: link.textContent.trim().slice(0, 80),
-          });
-        }
-      } catch {
-        // Ignore malformed or non-HTTP links.
-      }
-    });
-
-    document.addEventListener("visibilitychange", () => {
-      if (document.visibilityState !== "hidden") return;
-      event("engagement", "time_on_page", {
-        path: window.location.pathname,
-        duration_sec: Math.round((Date.now() - startedAt) / 1000),
-        deep_read: Date.now() - startedAt > 120000,
-      });
-      flush();
-    });
-    window.addEventListener("pagehide", flush);
-
-    window.__hbAnalytics = {
-      search(query, resultCount) {
-        event("search", "search", {
-          query: String(query || "").slice(0, 200),
-          result_count: resultCount,
-          had_results: resultCount > 0,
-        });
-      },
-      flush,
-    };
-  })();
 })();
