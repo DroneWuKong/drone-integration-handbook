@@ -90,6 +90,7 @@ CHAPTERS: Final[tuple[ChapterSpec, ...]] = (
     ChapterSpec("appendices/appendix-d-msp-quick-reference.md", 45, "Appendix D — MSP Function Code Quick Reference"),
     ChapterSpec("appendices/appendix-e-cot-type-codes.md", 46, "Appendix E — CoT Type Code Reference"),
     ChapterSpec("appendices/appendix-f-regulatory-resources.md", 47, "Appendix F — Regulatory & Open Resources"),
+    ChapterSpec("integration/wingman-apb.md", 48, "AI Wingman on the Orqa DTK APB"),
 )
 
 
@@ -121,8 +122,8 @@ PARTS: Final[tuple[PartSpec, ...]] = (
     PartSpec(
         "integration",
         "Part 4 — Integration",
-        (13, 14, 15, 16, 36),
-        "Companion compute, mesh, TAK, edge nodes, and system-level wiring.",
+        (13, 14, 15, 16, 36, 48),
+        "Companion compute, mesh, TAK, edge nodes, onboard analysis, and system-level wiring.",
     ),
     PartSpec(
         "open-problems",
