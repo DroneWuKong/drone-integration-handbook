@@ -1,24 +1,61 @@
-name: link-check
+name: handbook-check
 
-# The directory tree IS the URL tree (see CLAUDE.md), so a moved/renamed file
-# silently breaks every relative link to it. This gate catches that at PR time.
-# Cloudflare Pages still owns the build/deploy; this only validates links.
+# Validate both source Markdown and the deployable static site. Cloudflare Pages
+# still owns deployment; this workflow proves that the exact site/ artifact is
+# structurally safe to publish.
 
 on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 concurrency:
-  group: link-check-${{ github.ref }}
+  group: handbook-check-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  links:
+  validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Check internal links
+          cache: pip
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install build dependencies
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Compile Python sources
+        run: python3 -m compileall -q build.py handbook_builder scripts tests
+
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Check browser JavaScript syntax
+        run: node --check assets/handbook.js
+
+      - name: Check source Markdown links
         run: python3 scripts/check_links.py
+
+      - name: Build deployable handbook
+        run: python3 build.py
+
+      - name: Validate generated site
+        run: python3 scripts/check_generated_site.py site/index.html
+
+      - name: Upload generated site
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: handbook-site-${{ github.sha }}
+          path: site/
+          if-no-files-found: error
+          retention-days: 7
