@@ -21,7 +21,27 @@ The compatibility entrypoint still writes the deployable site to `site/`, which 
 | `templates/handbook.html` | Semantic page structure and build tokens |
 | `assets/handbook.css` | Shared Forge/Patterns-aligned visual system and responsive/print layout |
 | `assets/handbook.js` | Drawer, search, scrollspy, reading progress, copy-link, keyboard, and analytics behavior |
-| `tests/test_builder.py` | Stable-anchor, ordering, link-rewrite, and output smoke tests |
+| `scripts/check_links.py` | Source Markdown target validation |
+| `scripts/check_generated_site.py` | Generated-ID, in-page target, metadata, source-link, and asset validation |
+| `tests/` | Stable-anchor, ordering, link-rewrite, generated-site, and output smoke tests |
+
+## Published content registry
+
+Core chapters, advanced field guides, and appendices use explicit `ChapterSpec` entries. This prevents completed Markdown from existing in the repository without appearing in the generated reading rail and search index.
+
+The reader-facing groups are defined by `PARTS`:
+
+- RF fundamentals;
+- flight-controller firmware;
+- field operations;
+- contested and austere field guides;
+- integration;
+- open problems;
+- vendor guides;
+- autonomy;
+- appendices and quick references.
+
+Chapter ID 25 is intentionally reserved after its public source was withdrawn. Do not reuse it.
 
 ## Stable anchors
 
@@ -34,14 +54,15 @@ Platform and component references remain auto-discovered:
 
 Renaming auto-discovered files can still change their generated order and anchor. Use explicit core chapter IDs for references that need long-lived external links.
 
-## Adding a core chapter
+## Adding a published chapter, guide, or appendix
 
 1. Add the Markdown file under the correct content directory.
 2. Add a `ChapterSpec` to `CHAPTERS` with a new, unused number.
-3. Add that number to the relevant `PartSpec.chapter_numbers` tuple.
-4. Run the build and tests.
+3. Add that number to exactly one `PartSpec.chapter_numbers` tuple.
+4. Add the reference to the repository README when it belongs in the public content map.
+5. Run the complete validation sequence.
 
-The build fails if a registered core chapter is missing or if a Part references an unknown or duplicate chapter number.
+The build fails if a registered entry is missing or if a Part references an unknown, duplicate, or unassigned chapter number.
 
 ## Navigation behavior
 
@@ -69,10 +90,16 @@ Keep shared structural tokens in `:root` and avoid copying page-specific Forge o
 ## Validation
 
 ```bash
-python3 -m compileall -q build.py handbook_builder tests
+python3 -m compileall -q build.py handbook_builder scripts tests
 node --check assets/handbook.js
 python3 -m unittest discover -s tests
+python3 scripts/check_links.py
 python3 build.py
+python3 scripts/check_generated_site.py site/index.html
 ```
 
-The test suite uses a small Markdown renderer stub for orchestration tests, so it can verify the builder independently of Python-Markdown internals. The real build still requires `markdown>=3.4` from `requirements.txt`.
+`check_links.py` validates the source tree. `check_generated_site.py` validates the deployable artifact and fails on duplicate IDs, missing fragment targets, unpublished relative `.md` links, invalid search metadata, unresolved template tokens, or missing local UI assets.
+
+The `handbook-check` GitHub workflow runs the full sequence with Python 3.12 and Node 22, then uploads `site/` as a seven-day review artifact. Cloudflare Pages remains the deployment authority.
+
+The builder test suite uses a small Markdown renderer stub for orchestration tests, so it can verify the builder independently of Python-Markdown internals. The production CI build installs and uses `markdown>=3.4` from `requirements.txt`.
