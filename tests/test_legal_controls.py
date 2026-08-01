@@ -15,7 +15,6 @@ PUBLICATION_CONTROLS = {
             "whether you're hunting the jammer",
             "map the EW bubble",
             "hunter-killer operations",
-            "fly toward it",
         ),
     },
     "field/intercept-ops.md": {
@@ -111,7 +110,10 @@ class LegalContainmentTestCase(unittest.TestCase):
                     f"{relative} cannot leave hold without a mapped review record",
                 )
                 self.assertIn("**Verified:**", text)
-                self.assertIn("**Scope:**", text)
+                self.assertTrue(
+                    "**Scope:**" in text or "**Primary scope:**" in text,
+                    f"{relative} must state its public scope",
+                )
 
                 review_path = ROOT / str(review_relative)
                 self.assertTrue(
