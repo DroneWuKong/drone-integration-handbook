@@ -82,7 +82,7 @@ CHAPTERS: Final[tuple[ChapterSpec, ...]] = (
     ChapterSpec("fundamentals/packable-antennas.md", 37, "Packable Antennas — Range You Can Carry"),
     ChapterSpec("field/ew-countermeasures.md", 38, "EW Countermeasures — Publication Hold"),
     ChapterSpec("field/fiber-optic-fpv.md", 39, "Fiber-Optic FPV Integration"),
-    ChapterSpec("field/intercept-ops.md", 40, "Drone-to-Drone Intercept — Publication Hold"),
+    ChapterSpec("field/intercept-ops.md", 40, "Drone Encounters & Counter-UAS Safety"),
     ChapterSpec("field/attritable-production.md", 41, "Attritable Drone Production Handbook"),
     ChapterSpec("field/elint-operators.md", 42, "ELINT for Drone Operators — Publication Hold"),
     ChapterSpec("appendices/appendix-a-frequency-quick-reference.md", 43, "Appendix A — Frequency Quick Reference Card"),
