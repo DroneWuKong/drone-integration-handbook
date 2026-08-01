@@ -3,7 +3,8 @@
 **Article:** `components/remote-id-custom-builds.md`  
 **Stable component reference:** Generated from the component registry  
 **Draft prepared:** July 31, 2026  
-**Publication status:** Draft replacement prepared; qualified review and publisher release decision remain required.
+**Publication status:** Draft replacement prepared; qualified review and publisher release decision remain required.  
+**Automated gate:** Reviewed-replacement validation introduced in PR #51.
 
 ## Review objective
 
