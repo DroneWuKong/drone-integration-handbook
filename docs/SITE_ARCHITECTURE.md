@@ -24,8 +24,31 @@ The compatibility entrypoint writes the deployable site to `site/`, matching the
 | `assets/handbook.js` | Local-only search, drawer, scrollspy, progress, keyboard, copy-link, and adjacent Orqa disclosure behavior |
 | `scripts/check_links.py` | Source Markdown target validation |
 | `scripts/check_generated_site.py` | Generated IDs, targets, metadata, assets, required legal pages, and analytics-removal validation |
-| `tests/test_legal_controls.py` | Review-hold, material-relationship, and privacy regression controls |
+| `tests/test_legal_controls.py` | Review-hold, material-relationship, privacy, and reviewed-publication regression controls |
 | `legal/` | Publisher, corrections, privacy, terms, and intellectual-property policies |
+| `docs/PRIVATE_SOURCE_OF_RECORD.md` | Public/private repository boundary and export-state model |
+| `docs/LEGAL_REVIEW_HOLDS.md` | Public hold and draft-replacement register |
+
+## Private source of record
+
+This repository is the canonical source for the **public** Handbook revision. It is not the complete internal evidence or review system.
+
+The private `DroneWuKong/Ai-Project` repository is the source of record for:
+
+- the private handbook mirror/extensions;
+- research and evidence;
+- proprietary configurations;
+- claim ledgers and source snapshots;
+- rights and permission records;
+- detailed qualified-review dispositions;
+- publisher release decisions;
+- the immutable article-to-blob archive register.
+
+Public PRs may carry a nonprivileged summary, review checklist, internal record ID, and approved public scope. They should not contain privileged advice, controlled technical data, customer-restricted information, raw restricted-portal manuals, private reviewer notes, or proprietary configurations.
+
+The boundary is documented in [`docs/PRIVATE_SOURCE_OF_RECORD.md`](PRIVATE_SOURCE_OF_RECORD.md).
+
+`DroneWuKong/droneclear_Forge` is a separate public application and implementation-guide hub. It is not the canonical source for the long-form public Handbook.
 
 ## Published content registry
 
@@ -50,7 +73,9 @@ Chapter ID 25 remains reserved after its public source was withdrawn. Do not reu
 
 A review hold replaces the current article text while preserving its repository path and stable anchor. This keeps old links from exposing withdrawn material or failing without explanation.
 
-The public hold register is [`docs/LEGAL_REVIEW_HOLDS.md`](LEGAL_REVIEW_HOLDS.md). A held article returns only after the applicable technical, safety, legal, export-control, relationship, and evidence conditions are documented.
+The public hold register is [`docs/LEGAL_REVIEW_HOLDS.md`](LEGAL_REVIEW_HOLDS.md). A held article returns only after the applicable technical, safety, legal, export-control, relationship, provenance, and evidence conditions are documented.
+
+CI validates publication-state metadata and known regression markers. It does not provide legal, export, regulatory, safety, technical, provenance, independent-review, or publisher approval.
 
 ## Stable anchors
 
@@ -65,14 +90,17 @@ Renaming auto-discovered files can still change their generated order and numeri
 
 ## Adding a published reference
 
-1. Add the Markdown file in the correct directory.
-2. Assign a new, unused `ChapterSpec` number when it is an explicit reference.
-3. Assign that number to exactly one Part.
-4. Identify primary sources, evidence status, rights, material relationships, and foreseeable misuse.
-5. Update the README, release record, and third-party notices when applicable.
-6. Run the complete validation sequence.
+1. Prepare or identify the private source/evidence record when the article has an internal basis.
+2. Add the Markdown file in the correct public directory.
+3. Assign a new, unused `ChapterSpec` number when it is an explicit reference.
+4. Assign that number to exactly one Part.
+5. Identify primary sources, evidence status, rights, material relationships, foreseeable misuse, and approved public scope.
+6. Complete the applicable qualified review and record Jeremiah Wong's publisher decision for the exact revision.
+7. Update the README, release record, private manifest/register, and third-party notices when applicable.
+8. Run the complete validation sequence.
+9. Verify the custom domain after merge.
 
-Adding a file alone does not publish it.
+Adding a file alone does not publish it. Passing CI alone does not approve it.
 
 ## Browser behavior and privacy
 
