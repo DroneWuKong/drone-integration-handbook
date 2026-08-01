@@ -1,0 +1,63 @@
+name: deploy-containment-now
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/deploy-containment-now.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-containment-now
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.repository == 'DroneWuKong/drone-integration-handbook' && github.head_ref == 'agent/deploy-containment-now'
+    name: Validate and deploy containment release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install build dependencies
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Compile Python sources
+        run: python3 -m compileall -q build.py handbook_builder scripts tests
+
+      - name: Run unit and legal-regression tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Check browser JavaScript syntax
+        run: node --check assets/handbook.js
+
+      - name: Check source Markdown links
+        run: python3 scripts/check_links.py
+
+      - name: Build deployable handbook
+        run: python3 build.py
+
+      - name: Validate generated site
+        run: python3 scripts/check_generated_site.py site/index.html
+
+      - name: Deploy containment artifact to Cloudflare Pages production
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: 173a0fd61e052799c3a6f2a63ebbb164
+          command: pages deploy site --project-name=uas-handbook --branch=main
