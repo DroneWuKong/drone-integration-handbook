@@ -219,7 +219,7 @@ COMPONENT_GROUPS: Final[tuple[ComponentGroupSpec, ...]] = (
     ComponentGroupSpec(
         "Defense & Tactical",
         (
-            "electronic-warffare",
+            "electronic-warfare",
             "counter-uas",
             "esad-safe",
             "tactical-accessories",
