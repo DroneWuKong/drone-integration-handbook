@@ -3,13 +3,15 @@
 > **Free. Open. No login required.**
 >
 > A practical bench and field reference for drone RF, firmware, integration,
-> diagnostics, platforms, components, autonomy, and austere operations.
+> diagnostics, platforms, components, autonomy, and field operations.
 
 **Live handbook:** [uas-handbook.com](https://uas-handbook.com/)
 
-The handbook is built by operators for operators. It is not a product manual
-or a sales pitch. The goal is to document what connects to what, what fails in
-the field, how to diagnose it, and where the public evidence runs out.
+The handbook is published by **Jeremiah Wong through Midwest Nice UAS LLC**. It is an informational and editorial reference, not a product manual, legal opinion, procurement certification, aviation authorization, or substitute for manufacturer documentation and qualified professional review.
+
+## Material relationship disclosure
+
+Jeremiah Wong also provides technical advisory and systems-integration services to **Orqa Inc.** through **Midwest Nice Advisory LLC**. Readers should consider that relationship when evaluating Orqa-related coverage. See [Publisher, Affiliations, and Editorial Independence](legal/publisher-and-affiliations.md).
 
 ## Start here
 
@@ -19,15 +21,16 @@ the field, how to diagnose it, and where the public evidence runs out.
 | Diagnose a failure | [When Things Go Wrong](field/troubleshooting.md) |
 | Configure an FC or serial link | [The Four Firmwares](firmware/four-firmwares.md) and [UART Layout](firmware/uart-layout.md) |
 | Add companion compute, mesh, or TAK | [Adding a Companion Computer](integration/companion.md) |
-| Operate with degraded or contested links | [EW Countermeasures Field Card](field/ew-countermeasures.md) |
 | Compare airframes | [Platform References](platforms/README.md) |
-| Review hardware ecosystems | [Orqa Ecosystem](components/orqa-hardware-guide.md) |
 | Understand autonomy requirements | [Levels of Drone Autonomy](autonomy/autonomy-levels.md) |
 | Open a printable field reference | [Frequency Quick Reference Card](appendices/appendix-a-frequency-quick-reference.md) |
+| Report an error or request a reply | [Editorial and Corrections Policy](legal/editorial-and-corrections-policy.md) |
 
-The generated site adds a grouped reading rail, mobile navigation, exact-heading
-search, active-section tracking, previous/next controls, and stable chapter
-anchors. Use `Ctrl/Command+K` on the live site to search the entire reference.
+The live site adds grouped navigation, local exact-heading search, active-section tracking, previous/next controls, stable anchors, and visible publisher/legal policies. Search is performed in the browser and is not sent to the publisher.
+
+## Important use limitation
+
+The handbook does not authorize unlawful spectrum use, interference, jamming, spoofing, Remote ID defeat, weapons use, offensive operations, surveillance, export-controlled transfers, or unsafe aircraft or payload modification. See the [Terms of Use and Safety Disclaimer](legal/terms-and-disclaimer.md).
 
 ## Content map
 
@@ -63,13 +66,15 @@ anchors. Use `Ctrl/Command+K` on the live site to search the entire reference.
 7. [Repeater and Relay Deployment](field/repeater-relay.md)
 8. [Supply Chain Substitution Guide](field/substitution-guide.md)
 
-### Field Guides — Contested and Austere Operations
+### Contested and Austere Operations
 
-1. [EW Countermeasures Field Card](field/ew-countermeasures.md)
-2. [Fiber-Optic FPV Integration](field/fiber-optic-fpv.md)
-3. [Drone-to-Drone Intercept Playbook](field/intercept-ops.md)
-4. [Attritable Drone Production Handbook](field/attritable-production.md)
-5. [ELINT for Drone Operators](field/elint-operators.md)
+Some material is currently represented by visible review notices rather than operational instructions:
+
+- [EW Countermeasures — publication hold](field/ew-countermeasures.md)
+- [Fiber-Optic FPV Integration](field/fiber-optic-fpv.md)
+- [Drone-to-Drone Intercept — publication hold](field/intercept-ops.md)
+- [Attritable Drone Production Handbook](field/attritable-production.md)
+- [ELINT for Drone Operators — publication hold](field/elint-operators.md)
 
 ### Part 4 — Integration
 
@@ -78,7 +83,7 @@ anchors. Use `Ctrl/Command+K` on the live site to search the entire reference.
 3. [TAK Integration](integration/tak.md)
 4. [Mesh Rider over the i.MX USB Port](integration/mesh-rider-usb-setup.md)
 5. [Portable Telemetry Edge Node](integration/edge-node-k3s.md)
-6. [AI Wingman on the Orqa DTK APB](integration/wingman-apb.md)
+6. [AI Wingman on the Orqa DTK APB — review hold](integration/wingman-apb.md)
 
 ### Additional tracks
 
@@ -97,6 +102,14 @@ anchors. Use `Ctrl/Command+K` on the live site to search the entire reference.
 - [Appendix E — CoT Type Code Reference](appendices/appendix-e-cot-type-codes.md)
 - [Appendix F — Regulatory and Open Resources](appendices/appendix-f-regulatory-resources.md)
 
+### Publisher and legal policies
+
+- [Publisher, Affiliations, and Editorial Independence](legal/publisher-and-affiliations.md)
+- [Editorial, Corrections, and Right-of-Reply Policy](legal/editorial-and-corrections-policy.md)
+- [Privacy Notice](legal/privacy.md)
+- [Terms of Use and Safety Disclaimer](legal/terms-and-disclaimer.md)
+- [Intellectual Property and Takedown Policy](legal/ip-and-takedown.md)
+
 ## Build the site
 
 Python 3.12 is the supported runtime.
@@ -106,8 +119,7 @@ pip install -r requirements.txt
 python3 build.py
 ```
 
-The deployable static site is written to `site/`, matching the Cloudflare Pages
-configuration in [`wrangler.jsonc`](wrangler.jsonc).
+The deployable static site is written to `site/`, matching [`wrangler.jsonc`](wrangler.jsonc).
 
 ### Validate a change
 
@@ -120,59 +132,41 @@ python3 build.py
 python3 scripts/check_generated_site.py site/index.html
 ```
 
-The GitHub `handbook-check` workflow runs this production build and uploads the
-resulting `site/` directory as a short-lived review artifact.
+The GitHub `handbook-check` workflow builds and validates the production artifact, including required legal pages and the absence of handbook behavioral analytics.
 
 ## Site architecture
-
-The build is intentionally split by responsibility:
 
 | Path | Responsibility |
 |---|---|
 | `build.py` | Stable command-line entrypoint |
 | `handbook_builder/config.py` | Stable chapter IDs and navigation taxonomy |
 | `handbook_builder/site.py` | Discovery, Markdown rendering, link rewriting, and output assembly |
-| `templates/handbook.html` | Semantic page structure |
-| `assets/handbook.css` | Forge/Patterns-aligned visual system and responsive layout |
-| `assets/handbook.js` | Search, drawer, scrollspy, progress, keyboard, and copy-link behavior |
-| `scripts/check_generated_site.py` | Generated-ID, anchor, metadata, source-link, and asset validation |
-| `tests/` | Builder, stable-anchor, and generated-site tests |
+| `templates/handbook.html` | Semantic page structure and visible disclosures |
+| `assets/handbook.css` | Core visual system and responsive layout |
+| `assets/legal.css` | Publisher, privacy, disclaimer, and publication-hold presentation |
+| `assets/handbook.js` | Local search, drawer, scrollspy, progress, keyboard, and copy-link behavior |
+| `scripts/check_generated_site.py` | Generated-ID, anchor, metadata, legal-control, privacy, and asset validation |
+| `tests/` | Builder, stable-anchor, legal-control, and generated-site tests |
 
-See [Site Architecture](docs/SITE_ARCHITECTURE.md) for the extension and
-compatibility rules.
+See [Site Architecture](docs/SITE_ARCHITECTURE.md).
 
-## Stable links
+## Stable links and publication holds
 
-Published core chapter anchors such as `#ch12` are compatibility identifiers.
-Do not renumber an existing core chapter. New chapters receive a new number in
-`handbook_builder/config.py`, while the Part registry controls reader-facing
-order. Chapter ID 25 remains reserved after its public source was withdrawn.
+Published chapter anchors such as `#ch12` are compatibility identifiers. Do not renumber them. A page under review may be replaced with a hold notice while retaining its path and anchor, so old links do not silently expose withdrawn material or break without explanation.
 
-Platform and component references are auto-discovered. Renaming one of those
-Markdown files can change its generated ordering and anchor, so use explicit
-core chapter IDs for links that must remain stable outside the repository.
+Chapter ID 25 remains reserved after its public source was withdrawn. Platform and component references remain auto-discovered and currently use order-dependent numeric anchors.
 
-## Contributing
+## Contributing and corrections
 
-Corrections, field data, platform experience, diagrams, and failure reports are
-welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md). Contributions require rights, source, confidentiality, relationship, and publication-risk representations. Sensitive legal, security, privacy, or rights concerns should be sent privately to [jeremiah@midwestniceuas.com](mailto:jeremiah@midwestniceuas.com).
 
-The core rules are:
+## Licensing
 
-- Be accurate. State uncertainty explicitly.
-- Be practical. Explain the field consequence, not only the theory.
-- Show the failure mode, not only the nominal procedure.
-- Do not write marketing copy.
-- Systems mitigate danger; they do not eliminate it.
+- Original editorial content: CC BY-SA 4.0, subject to file-specific notices.
+- Original code and build tooling: MIT.
+- Third-party material: its original rights and licenses.
 
-Planning and shipped changes are tracked in [ROADMAP.md](ROADMAP.md) and
-[CHANGELOG.md](CHANGELOG.md).
-
-## License
-
-Handbook content is released under CC BY-SA 4.0 unless a file states otherwise.
-Platform-specific material may retain additional restrictions from its source
-or manufacturer.
+See [LICENSING.md](LICENSING.md), [LICENSE](LICENSE), [LICENSE-CODE](LICENSE-CODE), and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ---
 

@@ -4,8 +4,8 @@
 The source-level link checker proves that Markdown targets exist in the
 repository. This check covers the second half of the contract: every published
 in-page link must resolve in ``site/index.html``, no source Markdown link may
-leak into the static output, IDs must be unique, and required UI assets must be
-present.
+leak into the static output, IDs must be unique, required legal/publication
+controls must remain visible, and required UI assets must be present.
 """
 
 from __future__ import annotations
@@ -21,7 +21,30 @@ from urllib.parse import unquote, urlsplit
 
 
 _TEMPLATE_TOKEN_RE = re.compile(r"\{\{[A-Z0-9_]+\}\}")
-_REQUIRED_IDS = {"ch1", "ch38", "ch47", "platforms", "components"}
+_REQUIRED_IDS = {
+    "ch1",
+    "ch38",
+    "ch47",
+    "ch49",
+    "ch50",
+    "ch51",
+    "ch52",
+    "ch53",
+    "platforms",
+    "components",
+}
+_REQUIRED_TEXT = {
+    "Publisher disclosure:",
+    "jeremiah@midwestniceuas.com",
+    "Search is performed locally in this browser tab",
+}
+_FORBIDDEN_CLIENT_MARKERS = {
+    "uas-forge.com/api/analytics/ingest",
+    "__hbAnalytics",
+    "session_id",
+    "scroll_depth",
+    "outbound_link",
+}
 
 
 class _SiteParser(HTMLParser):
@@ -124,6 +147,10 @@ def validate_site(index_path: Path) -> list[str]:
     if missing_required:
         errors.append(f"required published IDs are missing: {', '.join(missing_required)}")
 
+    missing_text = sorted(marker for marker in _REQUIRED_TEXT if marker not in document)
+    if missing_text:
+        errors.append("required legal/privacy text is missing: " + ", ".join(missing_text))
+
     missing_fragments = sorted(set(parser.fragment_links) - id_set)
     if missing_fragments:
         errors.append(
@@ -149,6 +176,18 @@ def validate_site(index_path: Path) -> list[str]:
         errors.append("asset paths escape the site directory: " + ", ".join(escaping_assets))
     if missing_assets:
         errors.append("referenced UI assets are missing: " + ", ".join(missing_assets))
+
+    handbook_js = site_root / "assets" / "handbook.js"
+    if not handbook_js.is_file():
+        errors.append("handbook browser script is missing")
+    else:
+        script = handbook_js.read_text(encoding="utf-8")
+        forbidden = sorted(marker for marker in _FORBIDDEN_CLIENT_MARKERS if marker in script)
+        if forbidden:
+            errors.append(
+                "behavioral analytics markers remain in handbook.js: "
+                + ", ".join(forbidden)
+            )
 
     metadata_text = "".join(parser.metadata_parts).strip()
     if not metadata_text:

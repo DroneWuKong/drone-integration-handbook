@@ -13,7 +13,7 @@ class GeneratedSiteValidationTestCase(unittest.TestCase):
         self.root = Path(self.tempdir.name)
         (self.root / "assets").mkdir()
         (self.root / "assets" / "site.css").write_text("body{}", encoding="utf-8")
-        (self.root / "assets" / "site.js").write_text("'use strict';", encoding="utf-8")
+        (self.root / "assets" / "handbook.js").write_text("'use strict';", encoding="utf-8")
 
     def tearDown(self) -> None:
         self.tempdir.cleanup()
@@ -29,22 +29,36 @@ class GeneratedSiteValidationTestCase(unittest.TestCase):
 <html>
 <head><link rel="stylesheet" href="assets/site.css"></head>
 <body>
+  <div>Publisher disclosure:</div>
+  <div>jeremiah@midwestniceuas.com</div>
+  <div>Search is performed locally in this browser tab</div>
   <div id="platforms"></div>
   <div id="components"></div>
   <article class="chapter" id="ch1"></article>
   <article class="chapter" id="ch38"></article>
   <article class="chapter" id="ch47"></article>
+  <article class="chapter" id="ch49"></article>
+  <article class="chapter" id="ch50"></article>
+  <article class="chapter" id="ch51"></article>
+  <article class="chapter" id="ch52"></article>
+  <article class="chapter" id="ch53"></article>
   <a href="#ch38">field guide</a>
   <script id="handbookMetadata" type="application/json">[
-    {"anchor":"ch1"},{"anchor":"ch38"},{"anchor":"ch47"}
+    {"anchor":"ch1"},{"anchor":"ch38"},{"anchor":"ch47"},
+    {"anchor":"ch49"},{"anchor":"ch50"},{"anchor":"ch51"},
+    {"anchor":"ch52"},{"anchor":"ch53"}
   ]</script>
-  <script src="assets/site.js"></script>
+  <script src="assets/handbook.js"></script>
 </body>
 </html>"""
         )
         self.assertEqual(validate_site(index), [])
 
-    def test_invalid_generated_site_reports_structural_failures(self) -> None:
+    def test_invalid_generated_site_reports_structural_and_privacy_failures(self) -> None:
+        (self.root / "assets" / "handbook.js").write_text(
+            "const endpoint='https://uas-forge.com/api/analytics/ingest'; const session_id='x';",
+            encoding="utf-8",
+        )
         index = self.write_index(
             """<!doctype html>
 <html>
@@ -55,15 +69,18 @@ class GeneratedSiteValidationTestCase(unittest.TestCase):
   <a href="#missing-target">broken anchor</a>
   <a href="../field/orphan.md">orphan source</a>
   <script id="handbookMetadata" type="application/json">not-json</script>
+  <script src="assets/handbook.js"></script>
 </body>
 </html>"""
         )
         errors = "\n".join(validate_site(index))
         self.assertIn("duplicate element IDs", errors)
         self.assertIn("required published IDs are missing", errors)
+        self.assertIn("required legal/privacy text is missing", errors)
         self.assertIn("in-page links target missing IDs", errors)
         self.assertIn("source Markdown links leaked", errors)
         self.assertIn("referenced UI assets are missing", errors)
+        self.assertIn("behavioral analytics markers remain", errors)
         self.assertIn("search metadata is invalid JSON", errors)
 
 
