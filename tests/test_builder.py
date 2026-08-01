@@ -66,6 +66,7 @@ class BuilderTestCase(unittest.TestCase):
         (self.root / "assets").mkdir()
         shutil.copy2(project_root / "templates" / "handbook.html", self.root / "templates" / "handbook.html")
         shutil.copy2(project_root / "assets" / "handbook.css", self.root / "assets" / "handbook.css")
+        shutil.copy2(project_root / "assets" / "legal.css", self.root / "assets" / "legal.css")
         shutil.copy2(project_root / "assets" / "handbook.js", self.root / "assets" / "handbook.js")
 
         for chapter in CHAPTERS:
@@ -110,7 +111,7 @@ class BuilderTestCase(unittest.TestCase):
         entries = discover_entries(self.root)
         chapters = [entry for entry in entries if entry.kind == "chapter"]
         self.assertEqual([entry.number for entry in chapters[:6]], [1, 2, 3, 4, 31, 37])
-        self.assertEqual([entry.number for entry in chapters[-5:]], [43, 44, 45, 46, 47])
+        self.assertEqual([entry.number for entry in chapters[-5:]], [49, 50, 51, 52, 53])
         self.assertLess(
             next(index for index, entry in enumerate(chapters) if entry.number == 48),
             next(index for index, entry in enumerate(chapters) if entry.number == 17),
@@ -119,22 +120,30 @@ class BuilderTestCase(unittest.TestCase):
         self.assertEqual(next(entry.anchor for entry in entries if entry.kind == "component"), "c600")
         self.assertEqual(next(entry.group for entry in entries if entry.kind == "component"), "Flight Controllers & Firmware")
 
-    def test_full_build_writes_external_ui_assets_and_navigation(self) -> None:
+    def test_full_build_writes_legal_assets_disclosures_and_navigation(self) -> None:
         output = self.root / "site"
         with patch("handbook_builder.site._markdown_module", return_value=_FakeMarkdown):
             index_path = build_site(self.root, output)
 
         document = index_path.read_text(encoding="utf-8")
         self.assertIn('href="assets/handbook.css"', document)
+        self.assertIn('href="assets/legal.css"', document)
         self.assertIn('src="assets/handbook.js"', document)
-        self.assertIn('id="ch37"', document)
+        self.assertIn('id="ch38"', document)
         self.assertIn('id="ch47"', document)
         self.assertIn('id="ch48"', document)
+        self.assertIn('id="ch49"', document)
+        self.assertIn('id="ch53"', document)
         self.assertIn('id="platforms"', document)
         self.assertIn('data-nav-target="ch12"', document)
         self.assertIn('data-nav-target="ch38"', document)
+        self.assertIn('data-nav-target="ch51"', document)
         self.assertIn('href="#ch2"', document)
+        self.assertIn("Publisher disclosure:", document)
+        self.assertIn("Search is performed locally in this browser tab", document)
+        self.assertNotIn("uas-forge.com/api/analytics/ingest", (output / "assets" / "handbook.js").read_text())
         self.assertTrue((output / "assets" / "handbook.css").is_file())
+        self.assertTrue((output / "assets" / "legal.css").is_file())
         self.assertTrue((output / "assets" / "handbook.js").is_file())
 
 
