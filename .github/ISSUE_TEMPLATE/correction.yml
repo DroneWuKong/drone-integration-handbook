@@ -1,0 +1,66 @@
+name: Factual correction or right of reply
+description: Challenge a statement, provide current evidence, or request a documented reply.
+title: "correction: "
+labels:
+  - correction
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this public form only for non-sensitive information. Do not post confidential, proprietary, classified, export-controlled, personal, security-sensitive, or authentication information. Send sensitive material privately to jeremiah@midwestniceuas.com.
+  - type: input
+    id: article
+    attributes:
+      label: Article or repository path
+      description: Provide the stable handbook link or repository path.
+      placeholder: "components/example.md or https://uas-handbook.com/#c600"
+    validations:
+      required: true
+  - type: textarea
+    id: challenged_statement
+    attributes:
+      label: Statement being challenged
+      description: Quote or identify the exact statement and explain why it is inaccurate, misleading, stale, or incomplete.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Provide primary documents, official sources, test records, archived pages, or other verifiable evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: requested_change
+    attributes:
+      label: Requested correction or reply
+      description: State the change or response you believe would fairly resolve the issue.
+    validations:
+      required: true
+  - type: input
+    id: relationship
+    attributes:
+      label: Relationship to the subject
+      description: State whether you are the subject, a representative, manufacturer, customer, contributor, independent researcher, or other party.
+    validations:
+      required: true
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      options:
+        - Ordinary factual correction
+        - Time-sensitive current-status correction
+        - Safety concern
+        - Identity, privacy, or rights concern
+    validations:
+      required: true
+  - type: checkboxes
+    id: certifications
+    attributes:
+      label: Submission checks
+      options:
+        - label: I have not included confidential, controlled, personal, or security-sensitive information in this public issue.
+          required: true
+        - label: I believe the submission is accurate and made in good faith.
+          required: true
