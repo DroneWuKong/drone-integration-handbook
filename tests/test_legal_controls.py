@@ -7,25 +7,121 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-class LegalContainmentTestCase(unittest.TestCase):
-    def test_review_hold_pages_do_not_republish_withdrawn_operational_text(self) -> None:
-        held = {
-            "field/ew-countermeasures.md": ("Publication Hold", "hunter-killer"),
-            "field/intercept-ops.md": ("Publication Hold", "full throttle through impact"),
-            "field/elint-operators.md": ("Publication Hold", "vector an interceptor"),
-            "components/military-firmware-forks.md": ("Publication Hold", "CIAJeepDoors"),
-            "components/remote-id-custom-builds.md": ("Accuracy Hold", "set drone_serial"),
-            "components/ndaa-compliance.md": ("Accuracy Hold", "FOCI test clean"),
-            "components/orqa-hardware-guide.md": ("Review Hold", "Standard EAR99 classification"),
-            "integration/wingman-apb.md": ("Review Hold", "2.3 TOPS NPU"),
-        }
+PUBLICATION_CONTROLS = {
+    "field/ew-countermeasures.md": {
+        "hold_markers": ("Publication Hold",),
+        "review_record": "docs/reviews/rf-interference-and-spectrum-survey-2026-07-31.md",
+        "forbidden": (
+            "whether you're hunting the jammer",
+            "map the EW bubble",
+            "hunter-killer operations",
+            "fly toward it",
+        ),
+    },
+    "field/intercept-ops.md": {
+        "hold_markers": ("Publication Hold",),
+        "review_record": "docs/reviews/civil-drone-encounter-safety-2026-07-31.md",
+        "forbidden": (
+            "full throttle through impact",
+            "aim for the propellers",
+            "recommended for beginners: stern chase",
+            "use the entire drone as the weapon",
+        ),
+    },
+    "field/elint-operators.md": {
+        "hold_markers": ("Publication Hold",),
+        "review_record": "docs/reviews/rf-interference-and-spectrum-survey-2026-07-31.md",
+        "forbidden": (
+            "vector an interceptor",
+            "build a target package",
+            "jammer triangulation",
+            "allocate jamming resources",
+        ),
+    },
+    "components/military-firmware-forks.md": {
+        "hold_markers": ("Publication Hold",),
+        "review_record": "docs/reviews/conflict-firmware-overview-2026-07-31.md",
+        "forbidden": (
+            "ciajeepdoors",
+            "unique tx binding key required",
+            "ew hunter-killer drones",
+            "vtx frequency unlock",
+        ),
+    },
+    "components/remote-id-custom-builds.md": {
+        "hold_markers": ("Accuracy Hold", "Publication Hold"),
+        "review_record": "docs/reviews/remote-id-custom-builds-2026-07-31.md",
+        "forbidden": (
+            "set drone_serial",
+            "serial_passthrough",
+            "bluemark db202",
+            "multiple aircraft on one registration",
+        ),
+    },
+    "components/ndaa-compliance.md": {
+        "hold_markers": ("Accuracy Hold", "Publication Hold"),
+        "review_record": "docs/reviews/federal-uas-procurement-2026-07-31.md",
+        "forbidden": (
+            "foci test clean",
+            "non-covered origins (generally safe)",
+            "chinese-born founders",
+            "standard ear99 classification",
+        ),
+    },
+    "components/orqa-hardware-guide.md": {
+        "hold_markers": ("Review Hold", "Publication Hold"),
+        "review_record": None,
+        "forbidden": (
+            "standard ear99 classification",
+            "country: croatia (eu) — ndaa compliant",
+        ),
+    },
+    "integration/wingman-apb.md": {
+        "hold_markers": ("Review Hold", "Publication Hold"),
+        "review_record": None,
+        "forbidden": (
+            "2.3 tops npu",
+            "full autonomous control",
+        ),
+    },
+}
 
-        for relative, (required, forbidden) in held.items():
+
+class LegalContainmentTestCase(unittest.TestCase):
+    def test_held_or_reviewed_pages_enforce_publication_state_and_regressions(self) -> None:
+        """A page may stay held or enter review, but withdrawn text may not return."""
+
+        for relative, controls in PUBLICATION_CONTROLS.items():
             with self.subTest(path=relative):
                 text = (ROOT / relative).read_text(encoding="utf-8")
-                self.assertIn(required, text)
-                self.assertNotIn(forbidden, text)
+                folded = text.casefold()
+
+                for forbidden in controls["forbidden"]:
+                    self.assertNotIn(forbidden.casefold(), folded)
+
                 self.assertIn("jeremiah@midwestniceuas.com", text)
+                is_held = any(marker in text for marker in controls["hold_markers"])
+
+                if is_held:
+                    continue
+
+                review_relative = controls["review_record"]
+                self.assertIsNotNone(
+                    review_relative,
+                    f"{relative} cannot leave hold without a mapped review record",
+                )
+                self.assertIn("**Verified:**", text)
+                self.assertIn("**Scope:**", text)
+
+                review_path = ROOT / str(review_relative)
+                self.assertTrue(
+                    review_path.is_file(),
+                    f"reviewed replacement is missing {review_relative}",
+                )
+                review = review_path.read_text(encoding="utf-8")
+                self.assertIn("Publication status", review)
+                self.assertIn("Reviewer disposition", review)
+                self.assertIn("Publisher release decision", review)
 
     def test_legal_pages_and_material_relationship_disclosure_exist(self) -> None:
         required_pages = [
