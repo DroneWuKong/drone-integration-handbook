@@ -2,7 +2,8 @@
 
 **Article:** `field/intercept-ops.md`  
 **Draft prepared:** July 31, 2026  
-**Publication status:** Operational intercept content retired. Civil safety replacement prepared; aviation, criminal/counter-UAS, privacy, public-safety, and publisher review remain required.
+**Publication status:** Operational intercept content retired. Civil safety replacement prepared; aviation, criminal/counter-UAS, privacy, public-safety, and publisher review remain required.  
+**Automated gate:** Reviewed-replacement validation introduced in PR #51.
 
 ## Review objective
 
