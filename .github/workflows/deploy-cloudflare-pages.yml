@@ -1,0 +1,85 @@
+name: deploy-cloudflare-pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'build.py'
+      - 'handbook_builder/**'
+      - 'templates/**'
+      - 'assets/**'
+      - 'fundamentals/**'
+      - 'firmware/**'
+      - 'field/**'
+      - 'integration/**'
+      - 'autonomy/**'
+      - 'appendices/**'
+      - 'vendor/**'
+      - 'legal/**'
+      - 'platforms/**'
+      - 'components/**'
+      - '_redirects'
+      - 'requirements.txt'
+      - 'wrangler.jsonc'
+      - '.github/workflows/deploy-cloudflare-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  deployments: write
+
+concurrency:
+  group: cloudflare-pages-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Validate and deploy production
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://uas-handbook.com/
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install build dependencies
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Compile Python sources
+        run: python3 -m compileall -q build.py handbook_builder scripts tests
+
+      - name: Run unit and legal-regression tests
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Check browser JavaScript syntax
+        run: node --check assets/handbook.js
+
+      - name: Check source Markdown links
+        run: python3 scripts/check_links.py
+
+      - name: Build deployable handbook
+        run: python3 build.py
+
+      - name: Validate generated site
+        run: python3 scripts/check_generated_site.py site/index.html
+
+      - name: Deploy to Cloudflare Pages production
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: 173a0fd61e052799c3a6f2a63ebbb164
+          command: pages deploy site --project-name=uas-handbook --branch=main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
