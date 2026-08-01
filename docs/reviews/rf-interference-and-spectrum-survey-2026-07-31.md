@@ -6,7 +6,8 @@
 - `field/elint-operators.md` — Lawful Spectrum Survey for UAS Operations
 
 **Draft prepared:** July 31, 2026  
-**Publication status:** Draft replacements prepared; spectrum-law, privacy, flight-safety, export-control, and publisher review remain required.
+**Publication status:** Draft replacements prepared; spectrum-law, privacy, flight-safety, export-control, and publisher review remain required.  
+**Automated gate:** Reviewed-replacement validation introduced in PR #51.
 
 ## Review objective
 
