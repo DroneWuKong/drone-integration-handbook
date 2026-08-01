@@ -2,7 +2,8 @@
 
 **Article:** `components/ndaa-compliance.md`  
 **Draft prepared:** July 31, 2026  
-**Publication status:** Draft replacement prepared; federal procurement review and publisher release decision remain required.
+**Publication status:** Draft replacement prepared; federal procurement review and publisher release decision remain required.  
+**Automated gate:** Reviewed-replacement validation introduced in PR #51.
 
 ## Review objective
 
