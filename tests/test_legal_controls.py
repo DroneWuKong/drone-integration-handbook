@@ -17,7 +17,7 @@ class LegalContainmentTestCase(unittest.TestCase):
             "components/remote-id-custom-builds.md": ("Accuracy Hold", "set drone_serial"),
             "components/ndaa-compliance.md": ("Accuracy Hold", "FOCI test clean"),
             "components/orqa-hardware-guide.md": ("Review Hold", "Standard EAR99 classification"),
-            "integration/wingman-apb.md": ("Review Hold", "target detection"),
+            "integration/wingman-apb.md": ("Review Hold", "2.3 TOPS NPU"),
         }
 
         for relative, (required, forbidden) in held.items():
