@@ -487,6 +487,19 @@
     }
   });
 
+  // Keep material-relationship disclosure adjacent to every Orqa-related reference.
+  $$(".chapter").forEach((section) => {
+    const haystack = `${section.dataset.title || ""} ${section.dataset.source || ""} ${section.textContent || ""}`;
+    if (!/\borqa\b/i.test(haystack)) return;
+    const body = $(".chapter-body", section);
+    if (!body || $(".article-disclosure", body)) return;
+    const disclosure = document.createElement("div");
+    disclosure.className = "article-disclosure";
+    disclosure.innerHTML =
+      '<strong>Material relationship:</strong> Jeremiah Wong provides technical advisory and systems-integration services to Orqa Inc. through Midwest Nice Advisory LLC. <a href="#ch49">Disclosure and editorial policy</a>.';
+    body.prepend(disclosure);
+  });
+
   $$('.chapter-body a[href^="http"], .chapter-tools a[href^="http"]').forEach((link) => {
     link.target = "_blank";
     link.rel = "noopener noreferrer";
