@@ -2,7 +2,8 @@
 
 **Article:** `components/military-firmware-forks.md`  
 **Draft prepared:** July 31, 2026  
-**Publication status:** Draft replacement prepared; export-control, provenance, and publisher review remain required.
+**Publication status:** Draft replacement prepared; export-control, provenance, and publisher review remain required.  
+**Automated gate:** Reviewed-replacement validation introduced in PR #51.
 
 ## Review objective
 
