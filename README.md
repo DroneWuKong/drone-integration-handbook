@@ -9,9 +9,7 @@
 
 The handbook is published by **Jeremiah Wong through Midwest Nice UAS LLC**. It is an informational and editorial reference, not a product manual, legal opinion, procurement certification, aviation authorization, or substitute for manufacturer documentation and qualified professional review.
 
-## Material relationship disclosure
-
-Jeremiah Wong also provides technical advisory and systems-integration services to **Orqa Inc.** through **Midwest Nice Advisory LLC**. Readers should consider that relationship when evaluating Orqa-related coverage. See [Publisher, Affiliations, and Editorial Independence](legal/publisher-and-affiliations.md).
+The handbook is independently published. Product and company names are used for identification and analysis; their appearance does not imply sponsorship, partnership, endorsement, or approval. See [Publisher and Editorial Independence](legal/publisher-and-affiliations.md).
 
 ## Start here
 
@@ -104,7 +102,7 @@ Some material is currently represented by visible review notices rather than ope
 
 ### Publisher and legal policies
 
-- [Publisher, Affiliations, and Editorial Independence](legal/publisher-and-affiliations.md)
+- [Publisher and Editorial Independence](legal/publisher-and-affiliations.md)
 - [Editorial, Corrections, and Right-of-Reply Policy](legal/editorial-and-corrections-policy.md)
 - [Privacy Notice](legal/privacy.md)
 - [Terms of Use and Safety Disclaimer](legal/terms-and-disclaimer.md)
@@ -141,7 +139,7 @@ The GitHub `handbook-check` workflow builds and validates the production artifac
 | `build.py` | Stable command-line entrypoint |
 | `handbook_builder/config.py` | Stable chapter IDs and navigation taxonomy |
 | `handbook_builder/site.py` | Discovery, Markdown rendering, link rewriting, and output assembly |
-| `templates/handbook.html` | Semantic page structure and visible disclosures |
+| `templates/handbook.html` | Semantic page structure and legal notices |
 | `assets/handbook.css` | Core visual system and responsive layout |
 | `assets/legal.css` | Publisher, privacy, disclaimer, and publication-hold presentation |
 | `assets/handbook.js` | Local search, drawer, scrollspy, progress, keyboard, and copy-link behavior |
