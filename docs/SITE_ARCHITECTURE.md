@@ -18,13 +18,13 @@ The compatibility entrypoint writes the deployable site to `site/`, matching the
 | `build.py` | Stable command-line entrypoint |
 | `handbook_builder/config.py` | Stable chapter IDs, Part order, legal pages, platform categories, and component groups |
 | `handbook_builder/site.py` | Discovery, Markdown rendering, link rewriting, navigation rendering, and output assembly |
-| `templates/handbook.html` | Semantic page structure, publisher identity, disclosures, and build tokens |
+| `templates/handbook.html` | Semantic page structure, publisher identity, legal notices, and build tokens |
 | `assets/handbook.css` | Core Forge/Patterns-aligned visual system and responsive/print layout |
-| `assets/legal.css` | Publisher disclosure, safety notice, publication-hold, and legal-page presentation |
-| `assets/handbook.js` | Local-only search, drawer, scrollspy, progress, keyboard, copy-link, and adjacent Orqa disclosure behavior |
+| `assets/legal.css` | Safety notice, publication-hold, privacy, and legal-page presentation |
+| `assets/handbook.js` | Local-only search, drawer, scrollspy, progress, keyboard, and copy-link behavior |
 | `scripts/check_links.py` | Source Markdown target validation |
 | `scripts/check_generated_site.py` | Generated IDs, targets, metadata, assets, required legal pages, and analytics-removal validation |
-| `tests/test_legal_controls.py` | Review-hold, material-relationship, privacy, and reviewed-publication regression controls |
+| `tests/test_legal_controls.py` | Review-hold, public-association, privacy, and reviewed-publication regression controls |
 | `legal/` | Publisher, corrections, privacy, terms, and intellectual-property policies |
 | `docs/PRIVATE_SOURCE_OF_RECORD.md` | Public/private repository boundary and export-state model |
 | `docs/LEGAL_REVIEW_HOLDS.md` | Public hold and draft-replacement register |
@@ -73,7 +73,7 @@ Chapter ID 25 remains reserved after its public source was withdrawn. Do not reu
 
 A review hold replaces the current article text while preserving its repository path and stable anchor. This keeps old links from exposing withdrawn material or failing without explanation.
 
-The public hold register is [`docs/LEGAL_REVIEW_HOLDS.md`](LEGAL_REVIEW_HOLDS.md). A held article returns only after the applicable technical, safety, legal, export-control, relationship, provenance, and evidence conditions are documented.
+The public hold register is [`docs/LEGAL_REVIEW_HOLDS.md`](LEGAL_REVIEW_HOLDS.md). A held article returns only after the applicable technical, safety, legal, export-control, editorial-independence, provenance, and evidence conditions are documented.
 
 CI validates publication-state metadata and known regression markers. It does not provide legal, export, regulatory, safety, technical, provenance, independent-review, or publisher approval.
 
@@ -94,7 +94,7 @@ Renaming auto-discovered files can still change their generated order and numeri
 2. Add the Markdown file in the correct public directory.
 3. Assign a new, unused `ChapterSpec` number when it is an explicit reference.
 4. Assign that number to exactly one Part.
-5. Identify primary sources, evidence status, rights, material relationships, foreseeable misuse, and approved public scope.
+5. Identify primary sources, evidence status, rights, relevant external relationships, foreseeable misuse, and approved public scope.
 6. Complete the applicable qualified review and record Jeremiah Wong's publisher decision for the exact revision.
 7. Update the README, release record, private manifest/register, and third-party notices when applicable.
 8. Run the complete validation sequence.
@@ -104,7 +104,7 @@ Adding a file alone does not publish it. Passing CI alone does not approve it.
 
 ## Browser behavior and privacy
 
-The desktop rail and mobile drawer share one generated taxonomy. Browser JavaScript adds active-reference highlighting, automatic group expansion, exact-heading search, filters, reading progress, current location, copy-link controls, and adjacent disclosure on Orqa-related references.
+The desktop rail and mobile drawer share one generated taxonomy. Browser JavaScript adds active-reference highlighting, automatic group expansion, exact-heading search, filters, reading progress, current location, and copy-link controls.
 
 Search is performed locally against content already loaded in the browser tab. The handbook client does not transmit search queries, session identifiers, scroll depth, time-on-page events, outbound-link text, or behavioral analytics events. CI fails if the removed analytics markers return.
 
@@ -118,7 +118,7 @@ The handbook uses the same warm near-black surfaces, cream text, compact mono la
 - Forge: red;
 - Patterns: green.
 
-Publisher disclosures and review holds use distinct cyan and amber treatments defined in `assets/legal.css`.
+Safety notices and review holds use distinct cyan and amber treatments defined in `assets/legal.css`.
 
 ## Validation
 

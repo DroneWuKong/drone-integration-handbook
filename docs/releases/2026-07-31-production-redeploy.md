@@ -12,7 +12,7 @@ This documentation-only commit intentionally creates a fresh push to the configu
 - Containment merge commit: `a6ea10771d40926e036f847374e774e694148dde`
 - Expected production build: 52 chapters/guides/legal pages, 39 platform profiles, 61 component references, 152 searchable references
 - Expected privacy state: no handbook behavioral-analytics endpoint, exact-query transmission, generated session identifiers, scroll-depth events, or outbound-link text collection
-- Expected legal controls: publisher identity, Orqa material-relationship disclosure, Privacy Notice, Terms and Safety Limitations, Corrections and Right of Reply, IP/Takedown policy, and publication-review holds
+- Expected legal controls at that release: publisher identity, editorial-independence policy, Privacy Notice, Terms and Safety Limitations, Corrections and Right of Reply, IP/Takedown policy, and publication-review holds
 
 ## Verification markers
 
@@ -24,6 +24,10 @@ A successful production promotion must satisfy all of the following on `https://
 4. The Privacy Notice states that handbook search is local to the loaded browser tab.
 5. Held operational and compliance articles display publication-review notices rather than the withdrawn text.
 6. The generated client does not contain `uas-forge.com/api/analytics/ingest`.
+
+## Later editorial change
+
+On August 2, 2026, the site-wide relationship banner and automatic vendor-adjacent relationship notices were removed at the publisher's direction. Private relationship, provenance, and review records remain in the Ai-Project source-of-record; the public site retains publisher identity, independent-publication language, article holds, and non-affiliation statements.
 
 ## Deployment model
 

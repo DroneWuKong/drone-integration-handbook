@@ -5,7 +5,8 @@ The source-level link checker proves that Markdown targets exist in the
 repository. This check covers the second half of the contract: every published
 in-page link must resolve in ``site/index.html``, no source Markdown link may
 leak into the static output, IDs must be unique, required legal/publication
-controls must remain visible, and required UI assets must be present.
+controls must remain visible, prohibited public association markers must remain
+absent, and required UI assets must be present.
 """
 
 from __future__ import annotations
@@ -34,9 +35,16 @@ _REQUIRED_IDS = {
     "components",
 }
 _REQUIRED_TEXT = {
-    "Publisher disclosure:",
+    "Publisher: Jeremiah Wong / Midwest Nice UAS LLC.",
     "jeremiah@midwestniceuas.com",
     "Search is performed locally in this browser tab",
+}
+_FORBIDDEN_PUBLIC_ASSOCIATION_MARKERS = {
+    "Midwest Nice Advisory LLC",
+    "provides technical advisory and systems-integration services to Orqa Inc.",
+    "Material relationship involving Orqa",
+    "Publisher disclosure:",
+    'class="publisher-disclosure"',
 }
 _FORBIDDEN_CLIENT_MARKERS = {
     "uas-forge.com/api/analytics/ingest",
@@ -151,6 +159,15 @@ def validate_site(index_path: Path) -> list[str]:
     if missing_text:
         errors.append("required legal/privacy text is missing: " + ", ".join(missing_text))
 
+    public_association_markers = sorted(
+        marker for marker in _FORBIDDEN_PUBLIC_ASSOCIATION_MARKERS if marker in document
+    )
+    if public_association_markers:
+        errors.append(
+            "public relationship-association markers remain: "
+            + ", ".join(public_association_markers)
+        )
+
     missing_fragments = sorted(set(parser.fragment_links) - id_set)
     if missing_fragments:
         errors.append(
@@ -187,6 +204,16 @@ def validate_site(index_path: Path) -> list[str]:
             errors.append(
                 "behavioral analytics markers remain in handbook.js: "
                 + ", ".join(forbidden)
+            )
+        script_association_markers = sorted(
+            marker
+            for marker in _FORBIDDEN_PUBLIC_ASSOCIATION_MARKERS
+            if marker in script
+        )
+        if script_association_markers:
+            errors.append(
+                "public relationship-association markers remain in handbook.js: "
+                + ", ".join(script_association_markers)
             )
 
     metadata_text = "".join(parser.metadata_parts).strip()

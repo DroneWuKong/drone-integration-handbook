@@ -2,7 +2,7 @@
 
 This file tracks **current handbook work only**. Completed historical work remains available in Git history and in [`CHANGELOG.md`](CHANGELOG.md).
 
-Last reconciled: **July 31, 2026**
+Last reconciled: **August 2, 2026**
 
 ## Current published baseline
 
@@ -20,20 +20,21 @@ Chapter ID **25 is reserved** after its public source was withdrawn. Do not reus
 ## Legal and editorial remediation — active priority
 
 - [x] Disable handbook behavioral analytics and exact search-query transmission.
-- [x] Publish visible publisher identity, material-relationship, privacy, terms, corrections, and IP/takedown pages.
+- [x] Publish visible publisher identity, editorial-independence, privacy, terms, corrections, and IP/takedown pages.
 - [x] Separate editorial-content and software licensing.
 - [x] Add contributor ownership, confidentiality, provenance, relationship, and export-control representations.
 - [x] Place EW countermeasures, drone interception, ELINT, military firmware, Remote ID, NDAA compliance, Orqa hardware, and Wingman/APB pages on visible review hold while preserving stable paths.
 - [x] Add CI tests that fail if behavioral analytics or withdrawn operational markers return.
+- [x] Remove the site-wide relationship banner and automatic vendor-adjacent relationship notices; retain private relationship/provenance records and article-level holds.
 - [ ] Obtain qualified export-controls review for held defense-adjacent material.
-- [ ] Rebuild Remote ID guidance from current FAA sources and accepted Declarations of Compliance.
+- [ ] Complete and verify the Remote ID release record against current FAA sources and the exact released revision.
 - [ ] Rebuild government-procurement compliance guidance as a dated, source-specific decision aid.
-- [ ] Rebuild Orqa coverage with claim-level sources, independent review, and close material-relationship disclosure.
+- [ ] Rebuild Orqa coverage with claim-level sources, independent review, editorial-independence controls, and no unsupported legal classifications.
 - [ ] Create a claim-level evidence ledger and right-of-reply record for named-company profiles.
 - [ ] Audit remaining articles for copied media, standards excerpts, unverified specifications, stale legal claims, and third-party licenses.
 - [ ] Decide whether a registered DMCA agent or other formal notice process is appropriate with counsel.
 
-## Shipped July 31, 2026
+## Shipped July 31–August 2, 2026
 
 - [x] Refactored the monolithic site generator into configuration, build logic, HTML template, CSS, JavaScript, and tests.
 - [x] Aligned the handbook interface with Forge and Patterns while retaining cyan handbook identity.
@@ -43,6 +44,7 @@ Chapter ID **25 is reserved** after its public source was withdrawn. Do not reus
 - [x] Added the Brecourt Solutions iDFR profile and reconciled the tactical platform index.
 - [x] Added a production artifact validator for duplicate IDs, missing fragments, leaked Markdown links, bad search metadata, unresolved template tokens, missing local assets, required legal pages, and analytics regression.
 - [x] Upgraded GitHub Actions to compile, test, link-check, build, validate, and upload the exact review artifact.
+- [x] Formalized Ai-Project as the private handbook source of record and linked the public repository to its private evidence/review system.
 
 See [`docs/releases/2026-07-31-site-refactor-and-hardening.md`](docs/releases/2026-07-31-site-refactor-and-hardening.md) for the original site release record.
 
@@ -111,7 +113,7 @@ A roadmap item is complete only when:
 2. The production handbook build includes it.
 3. Source and generated-site validation pass.
 4. Public navigation and search expose it where appropriate.
-5. Material relationships, rights, and evidence status are documented.
+5. Relevant relationships, rights, and evidence status are documented in the private source-of-record.
 6. Release notes describe the shipped state.
 
 Open an issue or pull request to propose additions. New numbered chapters must receive an unused stable ID in `handbook_builder/config.py`; never renumber an existing published chapter.

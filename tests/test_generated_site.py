@@ -29,7 +29,7 @@ class GeneratedSiteValidationTestCase(unittest.TestCase):
 <html>
 <head><link rel="stylesheet" href="assets/site.css"></head>
 <body>
-  <div>Publisher disclosure:</div>
+  <div>Publisher: Jeremiah Wong / Midwest Nice UAS LLC.</div>
   <div>jeremiah@midwestniceuas.com</div>
   <div>Search is performed locally in this browser tab</div>
   <div id="platforms"></div>
@@ -54,9 +54,11 @@ class GeneratedSiteValidationTestCase(unittest.TestCase):
         )
         self.assertEqual(validate_site(index), [])
 
-    def test_invalid_generated_site_reports_structural_and_privacy_failures(self) -> None:
+    def test_invalid_generated_site_reports_structural_privacy_and_association_failures(self) -> None:
         (self.root / "assets" / "handbook.js").write_text(
-            "const endpoint='https://uas-forge.com/api/analytics/ingest'; const session_id='x';",
+            "const endpoint='https://uas-forge.com/api/analytics/ingest'; "
+            "const session_id='x'; "
+            "const disclosure='Midwest Nice Advisory LLC';",
             encoding="utf-8",
         )
         index = self.write_index(
@@ -64,6 +66,7 @@ class GeneratedSiteValidationTestCase(unittest.TestCase):
 <html>
 <head><link rel="stylesheet" href="assets/missing.css"></head>
 <body>
+  <div>Publisher disclosure:</div>
   <article class="chapter" id="ch1"></article>
   <div id="ch1"></div>
   <a href="#missing-target">broken anchor</a>
@@ -77,10 +80,12 @@ class GeneratedSiteValidationTestCase(unittest.TestCase):
         self.assertIn("duplicate element IDs", errors)
         self.assertIn("required published IDs are missing", errors)
         self.assertIn("required legal/privacy text is missing", errors)
+        self.assertIn("public relationship-association markers remain", errors)
         self.assertIn("in-page links target missing IDs", errors)
         self.assertIn("source Markdown links leaked", errors)
         self.assertIn("referenced UI assets are missing", errors)
         self.assertIn("behavioral analytics markers remain", errors)
+        self.assertIn("public relationship-association markers remain in handbook.js", errors)
         self.assertIn("search metadata is invalid JSON", errors)
 
 
