@@ -86,6 +86,15 @@ PUBLICATION_CONTROLS = {
 }
 
 
+PUBLIC_ASSOCIATION_MARKERS = (
+    "Midwest Nice Advisory LLC",
+    "provides technical advisory and systems-integration services to Orqa Inc.",
+    "Material relationship involving Orqa",
+    "Keep material-relationship disclosure adjacent",
+    'class="publisher-disclosure"',
+)
+
+
 class LegalContainmentTestCase(unittest.TestCase):
     def test_held_or_reviewed_pages_enforce_publication_state_and_regressions(self) -> None:
         """A page may stay held or enter review, but withdrawn text may not return."""
@@ -125,7 +134,7 @@ class LegalContainmentTestCase(unittest.TestCase):
                 self.assertIn("Reviewer disposition", review)
                 self.assertIn("Publisher release decision", review)
 
-    def test_legal_pages_and_material_relationship_disclosure_exist(self) -> None:
+    def test_legal_pages_publisher_identity_and_no_sitewide_vendor_association(self) -> None:
         required_pages = [
             "legal/publisher-and-affiliations.md",
             "legal/editorial-and-corrections-policy.md",
@@ -137,11 +146,25 @@ class LegalContainmentTestCase(unittest.TestCase):
             with self.subTest(path=relative):
                 self.assertTrue((ROOT / relative).is_file())
 
-        template = (ROOT / "templates/handbook.html").read_text(encoding="utf-8")
-        self.assertIn("Jeremiah Wong", template)
-        self.assertIn("Orqa Inc.", template)
-        self.assertIn("Midwest Nice Advisory LLC", template)
-        self.assertIn("jeremiah@midwestniceuas.com", template)
+        public_files = [
+            "README.md",
+            "templates/handbook.html",
+            "assets/handbook.js",
+            "legal/publisher-and-affiliations.md",
+            "components/orqa-hardware-guide.md",
+            "integration/wingman-apb.md",
+        ]
+        public_text = "\n".join(
+            (ROOT / relative).read_text(encoding="utf-8") for relative in public_files
+        )
+
+        self.assertIn("Jeremiah Wong", public_text)
+        self.assertIn("jeremiah@midwestniceuas.com", public_text)
+        self.assertIn("independent", public_text.casefold())
+
+        for marker in PUBLIC_ASSOCIATION_MARKERS:
+            with self.subTest(marker=marker):
+                self.assertNotIn(marker, public_text)
 
     def test_behavioral_analytics_are_not_present_in_handbook_client(self) -> None:
         script = (ROOT / "assets/handbook.js").read_text(encoding="utf-8")
