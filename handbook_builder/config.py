@@ -91,7 +91,7 @@ CHAPTERS: Final[tuple[ChapterSpec, ...]] = (
     ChapterSpec("appendices/appendix-e-cot-type-codes.md", 46, "Appendix E — CoT Type Code Reference"),
     ChapterSpec("appendices/appendix-f-regulatory-resources.md", 47, "Appendix F — Regulatory & Open Resources"),
     ChapterSpec("integration/wingman-apb.md", 48, "AI Wingman on the Orqa DTK APB — Review Hold"),
-    ChapterSpec("legal/publisher-and-affiliations.md", 49, "Publisher, Affiliations & Editorial Independence"),
+    ChapterSpec("legal/publisher-and-affiliations.md", 49, "Publisher & Editorial Independence"),
     ChapterSpec("legal/editorial-and-corrections-policy.md", 50, "Editorial, Corrections & Right of Reply"),
     ChapterSpec("legal/privacy.md", 51, "Privacy Notice"),
     ChapterSpec("legal/terms-and-disclaimer.md", 52, "Terms of Use & Safety Disclaimer"),
@@ -158,7 +158,7 @@ PARTS: Final[tuple[PartSpec, ...]] = (
         "legal",
         "Publisher & Legal",
         (49, 50, 51, 52, 53),
-        "Publisher identity, material relationships, corrections, privacy, reliance limits, licensing, and rights procedures.",
+        "Publisher identity, editorial independence, corrections, privacy, reliance limits, licensing, and rights procedures.",
     ),
 )
 
