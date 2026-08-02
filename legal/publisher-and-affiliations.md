@@ -1,34 +1,26 @@
-# Publisher, Affiliations, and Editorial Independence
+# Publisher and Editorial Independence
 
-**Effective date:** July 31, 2026  
+**Effective date:** August 2, 2026  
 **Publisher:** Jeremiah Wong / Midwest Nice UAS LLC  
 **Repository operator:** DroneWuKong
 
 ## Publisher identity
 
-The Drone Integration Handbook is published and maintained by **Jeremiah Wong through Midwest Nice UAS LLC**. Product names, company names, trademarks, and government-program names are used for identification, commentary, comparison, and documentation. Their appearance does not by itself mean sponsorship, certification, partnership, or endorsement.
+The Drone Integration Handbook is published and maintained by **Jeremiah Wong through Midwest Nice UAS LLC**. Product names, company names, trademarks, and government-program names are used for identification, commentary, comparison, and documentation. Their appearance does not by itself mean sponsorship, certification, partnership, endorsement, or approval.
 
-## Material relationship involving Orqa
+## Independent publication
 
-<div class="article-disclosure">
-<strong>Disclosure:</strong> Jeremiah Wong also provides technical advisory and systems-integration services to <strong>Orqa Inc.</strong> through <strong>Midwest Nice Advisory LLC</strong>. That relationship may affect the weight or credibility readers assign to Orqa-related descriptions, recommendations, comparisons, or compliance discussions.
-</div>
+The handbook is an independent editorial and technical reference. Unless an article expressly states otherwise:
 
-Unless an article expressly says otherwise:
-
-- the handbook is not presented as an official Orqa publication;
-- Orqa is not represented as having reviewed or approved the article;
+- no manufacturer, supplier, customer, government program, standards body, or other third party is represented as the publisher;
+- no third party is represented as having reviewed or approved the article;
 - manufacturer-provided information must be labeled as such;
-- procurement, export, legal, compliance, and safety conclusions require independent support;
+- procurement, export, legal, compliance, and safety conclusions require appropriate independent support;
 - favorable or unfavorable editorial conclusions remain subject to the handbook's evidence and corrections policy.
 
-Orqa-specific technical and compliance pages may be placed on review hold until source records and independent review are complete.
+Material that depends on nonpublic access, client work, vendor-provided information, proprietary configurations, or another relationship that could affect how a reader weighs the article is handled through article-specific review, source labeling, independent verification, narrowing of public scope, or a publication hold.
 
-## Other relationships
-
-A relationship that a reasonable reader could consider material should be disclosed close to the affected content. Relevant relationships may include employment, consulting, advisory work, ownership, sponsorship, free or discounted equipment, travel, paid testing, referral compensation, reseller status, or access to nonpublic information.
-
-Absence of a disclosure should not be read as a representation that no relationship could exist. Report a missing or inaccurate disclosure to [jeremiah@midwestniceuas.com](mailto:jeremiah@midwestniceuas.com).
+Relationship details that are not necessary to understand the released public text are maintained in the private source-of-record and review system rather than displayed as a site-wide banner.
 
 ## Editorial separation
 
@@ -40,8 +32,14 @@ The handbook aims to distinguish:
 4. **Inference or opinion** — an interpretation based on disclosed facts.
 5. **Unknown or configuration-specific** — insufficient evidence for a reliable conclusion.
 
-A commercial relationship does not convert a manufacturer statement into an independently verified fact.
+A commercial or professional relationship does not convert a manufacturer statement into an independently verified fact.
+
+## Nonpublic and relationship-derived information
+
+Nonpublic information should not be published unless its provenance, rights, confidentiality constraints, technical accuracy, and public-release scope have been documented. Content that cannot satisfy those conditions remains private or on public review hold.
+
+The private evidence and review record is maintained separately from the public Handbook. The public repository contains the approved public text and nonprivileged review summaries, not the complete internal record.
 
 ## Contact
 
-For disclosure questions, right of reply, or documentary evidence, email [jeremiah@midwestniceuas.com](mailto:jeremiah@midwestniceuas.com).
+For editorial-independence questions, right of reply, corrections, or documentary evidence, email [jeremiah@midwestniceuas.com](mailto:jeremiah@midwestniceuas.com).
