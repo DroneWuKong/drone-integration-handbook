@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-04T11:19:59.184990+00:00",
-  "federal_awards_total": 765,
+  "generated_at": "2026-08-05T11:19:12.693321+00:00",
+  "federal_awards_total": 766,
   "gray_zone_federal_matches": 0,
-  "news_signals_total": 83,
-  "gray_zone_news_mentions": 12,
+  "news_signals_total": 85,
+  "gray_zone_news_mentions": 11,
   "all_gray_zone_signals": [
     {
       "id": "sol-68da702fc2",
       "source": "news",
-      "source_label": "DroneXL",
+      "source_label": "dronexl.co",
       "type": "news_signal",
-      "title": "Drone Detective Bot Tracks DJI-Linked Companies Through Wireless Frequency Fingerprints - DroneXL",
+      "title": "Drone Detective Bot Tracks DJI-Linked Companies Through Wireless Frequency Fingerprints - dronexl.co",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
@@ -24,7 +24,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
+      "scraped_at": "2026-08-05T11:19:12.693321+00:00"
     },
     {
       "id": "sol-4540d0240a",
@@ -45,28 +45,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
-    },
-    {
-      "id": "sol-531ad63c61",
-      "source": "news",
-      "source_label": "The Washington Post",
-      "type": "news_signal",
-      "title": "Lawmakers call for crackdown on DJI drone clones as ban looms - The Washington Post",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Tue, 27 Aug 2024 07:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNMEd6WVZjRjZTUWdpOXdfUWZlYTMzUEZPMFIxY08zeUMybzY0cERiV2FMMUJTZWJjdGVIdThhc1FPZzZnSEg3Wmk4R1U3QjlqS0E1YllfSTZqOVMwU3B0Q29ROEpjNXFPc0Jxb3EtM19OM20wUWJlWXh0ZHBCNy1jRFBiR3RYV0syenAyTEFUOFlhQVlKakFZMmpB?oc=5",
-      "gray_zone_flag": true,
-      "blue_uas_flag": false,
-      "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
+      "scraped_at": "2026-08-05T11:19:12.693321+00:00"
     },
     {
       "id": "sol-a5cfd02f1e",
@@ -87,7 +66,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
+      "scraped_at": "2026-08-05T11:19:12.693321+00:00"
     },
     {
       "id": "sol-1ccc75ae24",
@@ -108,28 +87,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
-    },
-    {
-      "id": "sol-66078cf025",
-      "source": "news",
-      "source_label": "Digital Camera World",
-      "type": "news_signal",
-      "title": "DJI\u2019s days in the US are numbered. Could American-made flight apps be the solution? - Digital Camera World",
-      "agency": "",
-      "sub_agency": "",
-      "recipient": "",
-      "amount": null,
-      "award_id": null,
-      "posted_date": "Thu, 04 Dec 2025 08:00:00 GMT",
-      "deadline": null,
-      "naics": null,
-      "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOeXkxSFNySk43ZDRjY1RFaG04dUpBdGJ0dWx5Sklld25yVGRnRS1BOGVZWERLLXRjRTNlTGV4dHRuVF9za3VHLWlRcFlmaGNyUmN0TjBiWmlsZi04TzJxV2VoOGNaT09BNkg3M0UzVWxfX1dTaldiYkJTdHRwS29MM2VTbFJ5S0VheFlEbTFNVUVqMHlKdEFlOEdleFpyWEpVSkllalJIWmRFS3ZZd1VON2JidW9mM0xpaXNQek1DMUxKNUhfanBzZTAyMGtSUnNHTi1BOUxXOF83MkVIU0Z3TE5pVWx6NnFSYzdKZi1JdmRVdmxMZmZtM1hET0p1SjM1Smg0cEdQbzU?oc=5",
-      "gray_zone_flag": true,
-      "blue_uas_flag": false,
-      "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
+      "scraped_at": "2026-08-05T11:19:12.693321+00:00"
     },
     {
       "id": "sol-e26bd9c983",
@@ -150,7 +108,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
+      "scraped_at": "2026-08-05T11:19:12.693321+00:00"
     },
     {
       "id": "sol-0947b3c182",
@@ -171,14 +129,14 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
+      "scraped_at": "2026-08-05T11:19:12.693321+00:00"
     },
     {
       "id": "sol-2155a67f61",
       "source": "news",
-      "source_label": "DroneXL",
+      "source_label": "dronexl.co",
       "type": "news_signal",
-      "title": "DJI Faces December Ban Deadline as Political Pressure Spawns Proxy Company Network - DroneXL",
+      "title": "DJI Faces December Ban Deadline as Political Pressure Spawns Proxy Company Network - dronexl.co",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
@@ -192,7 +150,28 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
+      "scraped_at": "2026-08-05T11:19:12.693321+00:00"
+    },
+    {
+      "id": "sol-52634d8864",
+      "source": "news",
+      "source_label": "KESQ",
+      "type": "news_signal",
+      "title": "Local police concerned about impacts of DJI drone ban - KESQ",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Mon, 29 Dec 2025 08:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOanAxRUg4dlNFUjRLUWFlbmFVRHY1YmwzSEJzRFIwRWg3SXJmc1RVaVBnTUIyMDJiMHhFeHk5eEhGTHVVeXM3UUNqV1pCbXg0Y241UzNFTjNkbUJwZW1UWnM0TnF3TFNJYnB3bmExc0JTOHF2WlZUSFBVd0FqMlNVVFF0RWZQSk5pclc1V3dvd3N3ZkFrX3hLNXJsdXBXUE5D?oc=5",
+      "gray_zone_flag": true,
+      "blue_uas_flag": false,
+      "query": "Autel government purchase law enforcement",
+      "scraped_at": "2026-08-05T11:19:12.693321+00:00"
     },
     {
       "id": "sol-ca661cc52a",
@@ -213,7 +192,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
+      "scraped_at": "2026-08-05T11:19:12.693321+00:00"
     },
     {
       "id": "sol-a82dd10c0c",
@@ -234,14 +213,14 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
+      "scraped_at": "2026-08-05T11:19:12.693321+00:00"
     },
     {
       "id": "sol-72c3c819fe",
       "source": "news",
-      "source_label": "DroneXL",
+      "source_label": "dronexl.co",
       "type": "news_signal",
-      "title": "Ocean County's DJI M300 Dropped a Rescue Tube Into a Rip Current, and the FCC Wants That Drone Class Off the Shelf - DroneXL",
+      "title": "Ocean County's DJI M300 Dropped a Rescue Tube Into a Rip Current, and the FCC Wants That Drone Class Off the Shelf - dronexl.co",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
@@ -255,7 +234,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "sheriff drone purchase contract",
-      "scraped_at": "2026-08-04T11:19:59.184990+00:00"
+      "scraped_at": "2026-08-05T11:19:12.693321+00:00"
     }
   ],
   "vendors_flagged": [

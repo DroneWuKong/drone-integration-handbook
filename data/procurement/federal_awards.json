@@ -3393,6 +3393,22 @@
       "generated_internal_id": "CONT_AWD_N0001424C1515_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 309499810,
+      "Award ID": "N0001924F5002",
+      "Recipient Name": "TEXTRON SYSTEMS CORPORATION",
+      "Award Amount": 30468283.31,
+      "Total Outlays": null,
+      "Description": "UNMANNED AIR SYSTEMS (UAS) INTELLIGENCE, SURVEILLANCE, AND RECONNAISSANCE (ISR) SERVICES FOR THREE (3) SHIPS IN THE 5TH FLEET AREA OF RESPONSIBILITY",
+      "Start Date": "2024-09-26",
+      "End Date": "2029-09-26",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_N0001924F5002_9700_N0001921G0008_9700"
+    },
+    {
       "internal_id": 309486741,
       "Award ID": "N0001422C1030",
       "Recipient Name": "GEORGIA TECH APPLIED RESEARCH CORP",
@@ -3407,22 +3423,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_N0001422C1030_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 309499810,
-      "Award ID": "N0001924F5002",
-      "Recipient Name": "TEXTRON SYSTEMS CORPORATION",
-      "Award Amount": 28137779.99,
-      "Total Outlays": null,
-      "Description": "UNMANNED AIR SYSTEMS (UAS) INTELLIGENCE, SURVEILLANCE, AND RECONNAISSANCE (ISR) SERVICES FOR THREE (3) SHIPS IN THE 5TH FLEET AREA OF RESPONSIBILITY",
-      "Start Date": "2024-09-26",
-      "End Date": "2029-09-26",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Navy",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_N0001924F5002_9700_N0001921G0008_9700"
     },
     {
       "internal_id": 309499308,
@@ -4545,6 +4545,22 @@
       "generated_internal_id": "ASST_NON_15-C-UAS-NMSU_069"
     },
     {
+      "internal_id": 268758316,
+      "Award ID": "NC-2023-040",
+      "Recipient Name": "CAPE FEAR PUBLIC TRANSPORTATION AUTHORITY",
+      "Award Amount": 7867541.0,
+      "Total Outlays": 7867541.0,
+      "Description": "APPLICATION PURPOSE: AWARD WILL FUND THE OPERATING OF FIXED ROUTE AND PARATRANSIT SERVICES AND MAINTAIN THE REVENUE VEHICLES AND FACILITIES USED TO PROVIDE THE SERVICES TO THE GREATER WILMINGTON NC REGION (NC DISTRICT 7 UACE 95833 FORMERLY UZA 161).; ACTIVITIES PERFORMED: PROVIDE FOR PREVENTIVE MAINTENANCE AND OPERATING COSTS FOR FIXED ROUTE BUS AND PARATRANSIT SERVICES IN THE GREATER WILMINGTON NC AREA.; EXPECTED OUTCOMES: BENEFITS INCLUDE REDUCED TRAFFIC CONGESTION IMPROVED AIR QUALITY PROVIDING EQUITABLE ACCESS TO TRANSPORTATION FOR DISADVANTAGED ELDERLY AND DISABLED COMMUNITIES AND PROVIDING EMPLOYEES WITH ACCESS TO JOBS.; INTENDED BENEFICIARIES: COMMUTERS VISITORS DISADVANTAGED ELDERLY AND DISABLE COMMUNITIES WILL BENEFIT FROM ACCESS TO PUBLIC TRANSPORTATION. NON-RIDERS WILL BENEFIT FROM REDUCED TRAFFIC CONGESTION AND IMPROVED AIR QUALITY. WORKERS WILL HAVE IMPROVED ACCESS TO JOBS.; SUBRECIPIENT ACTIVITIES: NONE",
+      "Start Date": "2023-07-10",
+      "End Date": "2032-03-30",
+      "Awarding Agency": "Department of Transportation",
+      "Awarding Sub Agency": "Federal Transit Administration",
+      "Award Type": "FORMULA GRANT (A)",
+      "awarding_agency_id": 731,
+      "agency_slug": "department-of-transportation",
+      "generated_internal_id": "ASST_NON_NC-2023-040_069"
+    },
+    {
       "internal_id": 251157147,
       "Award ID": "693JJ22430000Y233TX2024508",
       "Recipient Name": "TEXAS DEPARTMENT OF TRANSPORTATION",
@@ -4607,22 +4623,6 @@
       "awarding_agency_id": 806,
       "agency_slug": "department-of-health-and-human-services",
       "generated_internal_id": "ASST_NON_R01AG079554_075"
-    },
-    {
-      "internal_id": 230497246,
-      "Award ID": "15-C-UAS-UAF",
-      "Recipient Name": "UNIVERSITY OF ALASKA FAIRBANKS",
-      "Award Amount": 7521976.99,
-      "Total Outlays": 4646526.4,
-      "Description": "PROVIDE RECOMMENDATIONS ON DEVELOPMENT OF NEW REGULATORY AND GUIDANCE MATERIALS RELATED TO UAS CONTROL STATION DESIGN AND ERGONOMICS.",
-      "Start Date": "2017-04-12",
-      "End Date": "2029-01-01",
-      "Awarding Agency": "Department of Transportation",
-      "Awarding Sub Agency": "Federal Aviation Administration",
-      "Award Type": "COOPERATIVE AGREEMENT (B)",
-      "awarding_agency_id": 731,
-      "agency_slug": "department-of-transportation",
-      "generated_internal_id": "ASST_NON_15-C-UAS-UAF_069"
     },
     {
       "internal_id": 298592679,
@@ -6500,7 +6500,7 @@
       "internal_id": 298577256,
       "Award ID": "FA865022F2611",
       "Recipient Name": "DCS CORPORATION",
-      "Award Amount": 11133965.76,
+      "Award Amount": 11460965.76,
       "Total Outlays": null,
       "Description": "TEAMING OF HUMANS AND UNMANNED NETWORKED DRONE RESEARCH",
       "Start Date": "2026-02-16",
@@ -8431,6 +8431,22 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W912PF26CA004_9700_-NONE-_-NONE-"
+    },
+    {
+      "internal_id": 230497246,
+      "Award ID": "15-C-UAS-UAF",
+      "Recipient Name": "UNIVERSITY OF ALASKA FAIRBANKS",
+      "Award Amount": 7521976.99,
+      "Total Outlays": 4646526.4,
+      "Description": "PROVIDE RECOMMENDATIONS ON DEVELOPMENT OF NEW REGULATORY AND GUIDANCE MATERIALS RELATED TO UAS CONTROL STATION DESIGN AND ERGONOMICS.",
+      "Start Date": "2017-04-12",
+      "End Date": "2029-01-01",
+      "Awarding Agency": "Department of Transportation",
+      "Awarding Sub Agency": "Federal Aviation Administration",
+      "Award Type": "COOPERATIVE AGREEMENT (B)",
+      "awarding_agency_id": 731,
+      "agency_slug": "department-of-transportation",
+      "generated_internal_id": "ASST_NON_15-C-UAS-UAF_069"
     },
     {
       "internal_id": 230497248,
@@ -12385,6 +12401,6 @@
       "generated_internal_id": "ASST_NON_693JJ22430000Y550MAUPW2412_069"
     }
   ],
-  "scraped_at": "2026-08-04T11:19:59.184990+00:00",
-  "count": 774
+  "scraped_at": "2026-08-05T11:19:12.693321+00:00",
+  "count": 775
 }
