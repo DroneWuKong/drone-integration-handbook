@@ -10,9 +10,9 @@ Search runs locally against content already loaded in the browser tab. The handb
 
 ## Google Analytics
 
-The handbook uses Google Analytics 4 to measure website traffic and aggregate use. Google may process technical usage data such as pages visited, device and browser information, referral source, approximate location derived from IP address, and cookie or similar-identifier data under [Google's Privacy Policy](https://policies.google.com/privacy).
+The handbook offers optional Google Analytics 4 to measure aggregate website traffic and help prioritize which references need work. Analytics is off until you choose **Allow analytics** in the small privacy card. Choosing **No thanks** does not limit the handbook or its features, and you can change the choice later through the **Privacy choices** control on every page.
 
-The handbook does not intentionally send Google Analytics search queries, names, email addresses, or other direct identifiers. It does not sell personal data or use handbook activity for targeted advertising.
+If you opt in, Google may process technical usage data such as pages visited, device and browser information, referral source, approximate location derived from IP address, and cookie or similar-identifier data under [Google's Privacy Policy](https://policies.google.com/privacy). The handbook does not intentionally send Google Analytics search queries, names, email addresses, or other direct identifiers. It does not sell personal data or use handbook activity for targeted advertising.
 
 ## Infrastructure data
 
