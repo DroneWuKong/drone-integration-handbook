@@ -1,21 +1,18 @@
 # Privacy Notice
 
-**Effective date:** July 31, 2026
+**Effective date:** August 5, 2026
 
-This notice describes the handbook website operated by Jeremiah Wong / Midwest Nice UAS LLC. It does not govern GitHub, Cloudflare, Google Fonts, linked manufacturers, regulators, or other external services.
+This notice describes the handbook website operated by Jeremiah Wong / Midwest Nice UAS LLC. It does not govern GitHub, Cloudflare, Google Fonts, Google Analytics, linked manufacturers, regulators, or other external services.
 
 ## Handbook search and browser behavior
 
-As of the effective date, the handbook's browser JavaScript does **not** transmit:
+Search runs locally against content already loaded in the browser tab. The handbook search feature does **not** transmit search queries, generated session identifiers, scroll-depth or time-on-page events, outbound-link text, coarse region inferred from time zone, or other handbook behavioral analytics events.
 
-- search queries;
-- generated session identifiers;
-- scroll depth or time-on-page events;
-- outbound-link text;
-- coarse region inferred from time zone;
-- behavioral analytics events.
+## Google Analytics
 
-Search runs locally against content already loaded in the browser tab. The handbook does not use analytics cookies or browser local storage for behavioral tracking.
+The handbook uses Google Analytics 4 to measure website traffic and aggregate use. Google may process technical usage data such as pages visited, device and browser information, referral source, approximate location derived from IP address, and cookie or similar-identifier data under [Google's Privacy Policy](https://policies.google.com/privacy).
+
+The handbook does not intentionally send Google Analytics search queries, names, email addresses, or other direct identifiers. It does not sell personal data or use handbook activity for targeted advertising.
 
 ## Infrastructure data
 
