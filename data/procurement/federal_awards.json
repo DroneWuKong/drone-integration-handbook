@@ -2097,6 +2097,22 @@
       "generated_internal_id": "CONT_AWD_N0001925F0068_9700_N0001922G0004_9700"
     },
     {
+      "internal_id": 361182591,
+      "Award ID": "W900KK26FA066",
+      "Recipient Name": "KRATOS UNMANNED AERIAL SYSTEMS, INC",
+      "Award Amount": 2786709.68,
+      "Total Outlays": null,
+      "Description": "TO PROVIDE ACCREDITED, THREAT REPRESENTATIVE UNMANNED AERIAL TARGET SYSTEMS FOR USE IN SENSOR PRESENTATIONS OR LIVE FIRE TRACKING AND ENGAGEMENT FOR WEAPONS SYSTEMS TESTING.",
+      "Start Date": "2026-04-14",
+      "End Date": "2028-01-14",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W900KK26FA066_9700_W900KK23D0015_9700"
+    },
+    {
       "internal_id": 353122963,
       "Award ID": "15BPCC26C00000013",
       "Recipient Name": "SENECA FEDERAL SOLUTIONS, LLC",
@@ -2383,22 +2399,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA864925P0302_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 298566566,
-      "Award ID": "FA864925P0010",
-      "Recipient Name": "LATENTAI INC.",
-      "Award Amount": 1249987.0,
-      "Total Outlays": null,
-      "Description": "ARTIFICIAL INTELLIGENCE (AI) ENHANCED BATTLE DAMAGE ASSESSMENT AND BALLISTIC PREDICTION FOR MEDIUM RANGE UNMANNED AERIAL SYSTEM (UAS)",
-      "Start Date": "2024-12-16",
-      "End Date": "2026-09-16",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA864925P0010_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 251351237,
@@ -4545,6 +4545,22 @@
       "generated_internal_id": "ASST_NON_15-C-UAS-NMSU_069"
     },
     {
+      "internal_id": 268758316,
+      "Award ID": "NC-2023-040",
+      "Recipient Name": "CAPE FEAR PUBLIC TRANSPORTATION AUTHORITY",
+      "Award Amount": 7867541.0,
+      "Total Outlays": 7867541.0,
+      "Description": "APPLICATION PURPOSE: AWARD WILL FUND THE OPERATING OF FIXED ROUTE AND PARATRANSIT SERVICES AND MAINTAIN THE REVENUE VEHICLES AND FACILITIES USED TO PROVIDE THE SERVICES TO THE GREATER WILMINGTON NC REGION (NC DISTRICT 7 UACE 95833 FORMERLY UZA 161).; ACTIVITIES PERFORMED: PROVIDE FOR PREVENTIVE MAINTENANCE AND OPERATING COSTS FOR FIXED ROUTE BUS AND PARATRANSIT SERVICES IN THE GREATER WILMINGTON NC AREA.; EXPECTED OUTCOMES: BENEFITS INCLUDE REDUCED TRAFFIC CONGESTION IMPROVED AIR QUALITY PROVIDING EQUITABLE ACCESS TO TRANSPORTATION FOR DISADVANTAGED ELDERLY AND DISABLED COMMUNITIES AND PROVIDING EMPLOYEES WITH ACCESS TO JOBS.; INTENDED BENEFICIARIES: COMMUTERS VISITORS DISADVANTAGED ELDERLY AND DISABLE COMMUNITIES WILL BENEFIT FROM ACCESS TO PUBLIC TRANSPORTATION. NON-RIDERS WILL BENEFIT FROM REDUCED TRAFFIC CONGESTION AND IMPROVED AIR QUALITY. WORKERS WILL HAVE IMPROVED ACCESS TO JOBS.; SUBRECIPIENT ACTIVITIES: NONE",
+      "Start Date": "2023-07-10",
+      "End Date": "2032-03-30",
+      "Awarding Agency": "Department of Transportation",
+      "Awarding Sub Agency": "Federal Transit Administration",
+      "Award Type": "FORMULA GRANT (A)",
+      "awarding_agency_id": 731,
+      "agency_slug": "department-of-transportation",
+      "generated_internal_id": "ASST_NON_NC-2023-040_069"
+    },
+    {
       "internal_id": 251157147,
       "Award ID": "693JJ22430000Y233TX2024508",
       "Recipient Name": "TEXAS DEPARTMENT OF TRANSPORTATION",
@@ -4607,22 +4623,6 @@
       "awarding_agency_id": 806,
       "agency_slug": "department-of-health-and-human-services",
       "generated_internal_id": "ASST_NON_R01AG079554_075"
-    },
-    {
-      "internal_id": 230497246,
-      "Award ID": "15-C-UAS-UAF",
-      "Recipient Name": "UNIVERSITY OF ALASKA FAIRBANKS",
-      "Award Amount": 7521976.99,
-      "Total Outlays": 4646526.4,
-      "Description": "PROVIDE RECOMMENDATIONS ON DEVELOPMENT OF NEW REGULATORY AND GUIDANCE MATERIALS RELATED TO UAS CONTROL STATION DESIGN AND ERGONOMICS.",
-      "Start Date": "2017-04-12",
-      "End Date": "2029-01-01",
-      "Awarding Agency": "Department of Transportation",
-      "Awarding Sub Agency": "Federal Aviation Administration",
-      "Award Type": "COOPERATIVE AGREEMENT (B)",
-      "awarding_agency_id": 731,
-      "agency_slug": "department-of-transportation",
-      "generated_internal_id": "ASST_NON_15-C-UAS-UAF_069"
     },
     {
       "internal_id": 298592679,
@@ -5153,6 +5153,22 @@
       "generated_internal_id": "CONT_AWD_FA701424P0039_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 360777433,
+      "Award ID": "1305M226F0344",
+      "Recipient Name": "BLACK SWIFT TECHNOLOGIES LLC",
+      "Award Amount": 612000.0,
+      "Total Outlays": null,
+      "Description": "NOAA/OMAO/PIAD, BLACK SWIFT SUAS PLATFORM, OPERATIONAL AND TECHNICAL SUPPORT SERVICES",
+      "Start Date": "2026-07-24",
+      "End Date": "2027-07-23",
+      "Awarding Agency": "Department of Commerce",
+      "Awarding Sub Agency": "National Oceanic and Atmospheric Administration",
+      "Award Type": null,
+      "awarding_agency_id": 183,
+      "agency_slug": "department-of-commerce",
+      "generated_internal_id": "CONT_AWD_1305M226F0344_1330_1305M226D0012_1330"
+    },
+    {
       "internal_id": 352873204,
       "Award ID": "FA239625PB103",
       "Recipient Name": "LIGHTHOUSE AVIONICS INC.",
@@ -5311,22 +5327,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA491324P0020_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 350176907,
-      "Award ID": "W912PB25PA034",
-      "Recipient Name": "MISCELLANEOUS FOREIGN AWARDEES",
-      "Award Amount": 249526.0,
-      "Total Outlays": null,
-      "Description": "THIS REQUIREMENT IS FOR 160 KITS OF NDAA-COMPLIANT SMALL UNMANNED AERIAL SYSTEM (SUAS) COMPONENTS IN DIRECT SUPPORT OF THE 2D CAVALRY REGIMENTS (2CR) PURPOSE-BUILT ATTRITABLE SYSTEM (PBAS) SUAS PROGRAM.",
-      "Start Date": "2025-06-04",
-      "End Date": "2025-06-26",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W912PB25PA034_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 253727612,
@@ -8433,6 +8433,22 @@
       "generated_internal_id": "CONT_AWD_W912PF26CA004_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 230497246,
+      "Award ID": "15-C-UAS-UAF",
+      "Recipient Name": "UNIVERSITY OF ALASKA FAIRBANKS",
+      "Award Amount": 7521976.99,
+      "Total Outlays": 4646526.4,
+      "Description": "PROVIDE RECOMMENDATIONS ON DEVELOPMENT OF NEW REGULATORY AND GUIDANCE MATERIALS RELATED TO UAS CONTROL STATION DESIGN AND ERGONOMICS.",
+      "Start Date": "2017-04-12",
+      "End Date": "2029-01-01",
+      "Awarding Agency": "Department of Transportation",
+      "Awarding Sub Agency": "Federal Aviation Administration",
+      "Award Type": "COOPERATIVE AGREEMENT (B)",
+      "awarding_agency_id": 731,
+      "agency_slug": "department-of-transportation",
+      "generated_internal_id": "ASST_NON_15-C-UAS-UAF_069"
+    },
+    {
       "internal_id": 230497248,
       "Award ID": "15-C-UAS-UAH",
       "Recipient Name": "THE UNIVERSITY OF ALABAMA IN HUNTSVILLE",
@@ -10820,7 +10836,7 @@
       "internal_id": 298582628,
       "Award ID": "FA868923FB002",
       "Recipient Name": "GENERAL ATOMICS AERONAUTICAL SYSTEMS, INC.",
-      "Award Amount": 15183795.22,
+      "Award Amount": 15614441.44,
       "Total Outlays": null,
       "Description": "MQ-9 REAPER AFSOC RPA CONTROL SUITE (ARCS) - VEHICLE SPECIFIC MODULE (VSM)",
       "Start Date": "2023-05-25",
@@ -12385,6 +12401,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-08-07T10:49:26.028172+00:00",
-  "count": 774
+  "scraped_at": "2026-08-08T10:45:15.744918+00:00",
+  "count": 775
 }
