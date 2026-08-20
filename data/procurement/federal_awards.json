@@ -1873,6 +1873,22 @@
       "generated_internal_id": "CONT_AWD_19AQMR24C5003_1900_-NONE-_-NONE-"
     },
     {
+      "internal_id": 361484796,
+      "Award ID": "W900KK26FA104",
+      "Recipient Name": "KRATOS UNMANNED AERIAL SYSTEMS, INC",
+      "Award Amount": 6279408.0,
+      "Total Outlays": null,
+      "Description": "DELIVERY ORDER FOR BQM-167 AND MQM-178 TARGET PLATFORMS. TO PROVIDE ACCREDITED, THREAT REPRESENTATIVE UNMANNED AERIAL TARGET SYSTEMS FOR USE IN SENSOR PRESENTATIONS OR LIVE FIRE TRACKING AND ENGAGEMENT FOR WEAPONS SYSTEMS TESTING.",
+      "Start Date": "2026-05-20",
+      "End Date": "2027-11-19",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W900KK26FA104_9700_W900KK23D0015_9700"
+    },
+    {
       "internal_id": 349162508,
       "Award ID": "W900KK25FA096",
       "Recipient Name": "KRATOS UNMANNED AERIAL SYSTEMS, INC",
@@ -2383,22 +2399,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA864925P0226_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 298566847,
-      "Award ID": "FA864925P0302",
-      "Recipient Name": "FLYBY ROBOTICS, INC",
-      "Award Amount": 1249988.0,
-      "Total Outlays": null,
-      "Description": "NON-EMITTING AUTONOMOUS ISR MISSION CAPABILITY WITH AI OBJECT IDENTIFICATION ONBOARD UNMANNED AERIAL SYSTEM",
-      "Start Date": "2025-05-21",
-      "End Date": "2027-02-23",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA864925P0302_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 251351237,
@@ -4545,22 +4545,6 @@
       "generated_internal_id": "ASST_NON_15-C-UAS-NMSU_069"
     },
     {
-      "internal_id": 268758316,
-      "Award ID": "NC-2023-040",
-      "Recipient Name": "CAPE FEAR PUBLIC TRANSPORTATION AUTHORITY",
-      "Award Amount": 7867541.0,
-      "Total Outlays": 7867541.0,
-      "Description": "APPLICATION PURPOSE: AWARD WILL FUND THE OPERATING OF FIXED ROUTE AND PARATRANSIT SERVICES AND MAINTAIN THE REVENUE VEHICLES AND FACILITIES USED TO PROVIDE THE SERVICES TO THE GREATER WILMINGTON NC REGION (NC DISTRICT 7 UACE 95833 FORMERLY UZA 161).; ACTIVITIES PERFORMED: PROVIDE FOR PREVENTIVE MAINTENANCE AND OPERATING COSTS FOR FIXED ROUTE BUS AND PARATRANSIT SERVICES IN THE GREATER WILMINGTON NC AREA.; EXPECTED OUTCOMES: BENEFITS INCLUDE REDUCED TRAFFIC CONGESTION IMPROVED AIR QUALITY PROVIDING EQUITABLE ACCESS TO TRANSPORTATION FOR DISADVANTAGED ELDERLY AND DISABLED COMMUNITIES AND PROVIDING EMPLOYEES WITH ACCESS TO JOBS.; INTENDED BENEFICIARIES: COMMUTERS VISITORS DISADVANTAGED ELDERLY AND DISABLE COMMUNITIES WILL BENEFIT FROM ACCESS TO PUBLIC TRANSPORTATION. NON-RIDERS WILL BENEFIT FROM REDUCED TRAFFIC CONGESTION AND IMPROVED AIR QUALITY. WORKERS WILL HAVE IMPROVED ACCESS TO JOBS.; SUBRECIPIENT ACTIVITIES: NONE",
-      "Start Date": "2023-07-10",
-      "End Date": "2032-03-30",
-      "Awarding Agency": "Department of Transportation",
-      "Awarding Sub Agency": "Federal Transit Administration",
-      "Award Type": "FORMULA GRANT (A)",
-      "awarding_agency_id": 731,
-      "agency_slug": "department-of-transportation",
-      "generated_internal_id": "ASST_NON_NC-2023-040_069"
-    },
-    {
       "internal_id": 251157147,
       "Award ID": "693JJ22430000Y233TX2024508",
       "Recipient Name": "TEXAS DEPARTMENT OF TRANSPORTATION",
@@ -4623,6 +4607,22 @@
       "awarding_agency_id": 806,
       "agency_slug": "department-of-health-and-human-services",
       "generated_internal_id": "ASST_NON_R01AG079554_075"
+    },
+    {
+      "internal_id": 230497246,
+      "Award ID": "15-C-UAS-UAF",
+      "Recipient Name": "UNIVERSITY OF ALASKA FAIRBANKS",
+      "Award Amount": 7521976.99,
+      "Total Outlays": 4646526.4,
+      "Description": "PROVIDE RECOMMENDATIONS ON DEVELOPMENT OF NEW REGULATORY AND GUIDANCE MATERIALS RELATED TO UAS CONTROL STATION DESIGN AND ERGONOMICS.",
+      "Start Date": "2017-04-12",
+      "End Date": "2029-01-01",
+      "Awarding Agency": "Department of Transportation",
+      "Awarding Sub Agency": "Federal Aviation Administration",
+      "Award Type": "COOPERATIVE AGREEMENT (B)",
+      "awarding_agency_id": 731,
+      "agency_slug": "department-of-transportation",
+      "generated_internal_id": "ASST_NON_15-C-UAS-UAF_069"
     },
     {
       "internal_id": 298592679,
@@ -6356,7 +6356,7 @@
       "internal_id": 357468540,
       "Award ID": "80NM0026F7025",
       "Recipient Name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
-      "Award Amount": 51700000.0,
+      "Award Amount": 54200000.0,
       "Total Outlays": 4768375.8,
       "Description": "JPL LUNAR DRONES (54-232663)",
       "Start Date": "2026-04-27",
@@ -8433,22 +8433,6 @@
       "generated_internal_id": "CONT_AWD_W912PF26CA004_9700_-NONE-_-NONE-"
     },
     {
-      "internal_id": 230497246,
-      "Award ID": "15-C-UAS-UAF",
-      "Recipient Name": "UNIVERSITY OF ALASKA FAIRBANKS",
-      "Award Amount": 7521976.99,
-      "Total Outlays": 4646526.4,
-      "Description": "PROVIDE RECOMMENDATIONS ON DEVELOPMENT OF NEW REGULATORY AND GUIDANCE MATERIALS RELATED TO UAS CONTROL STATION DESIGN AND ERGONOMICS.",
-      "Start Date": "2017-04-12",
-      "End Date": "2029-01-01",
-      "Awarding Agency": "Department of Transportation",
-      "Awarding Sub Agency": "Federal Aviation Administration",
-      "Award Type": "COOPERATIVE AGREEMENT (B)",
-      "awarding_agency_id": 731,
-      "agency_slug": "department-of-transportation",
-      "generated_internal_id": "ASST_NON_15-C-UAS-UAF_069"
-    },
-    {
       "internal_id": 230497248,
       "Award ID": "15-C-UAS-UAH",
       "Recipient Name": "THE UNIVERSITY OF ALABAMA IN HUNTSVILLE",
@@ -10216,7 +10200,7 @@
       "Total Outlays": 0.0,
       "Description": "PROCURE THE BASE YEAR COSTS WITH BASE YEAR OPERATIONS AND SUSTAINMENT, AND 5-YEAR OPERATIONS AND SUSTAINMENT SUPPORT WITH OPTIONS. PANTEX SITE. PROVIDING A COUNTER UNCREWED AIRCRAFT SYSTEM (CUAS) PLATFORM FOR THE NATIONAL NUCLEAR SECURITY ADMINISTRAT",
       "Start Date": "2025-11-18",
-      "End Date": "2026-11-17",
+      "End Date": "2027-07-08",
       "Awarding Agency": "Department of Energy",
       "Awarding Sub Agency": "Department of Energy",
       "Award Type": null,
@@ -10929,6 +10913,22 @@
       "generated_internal_id": "CONT_AWD_28321325FDX030223_2800_NNG15SD23B_8000"
     },
     {
+      "internal_id": 361462902,
+      "Award ID": "28321326FDX030131",
+      "Recipient Name": "AUGUST SCHELL ENTERPRISES, INC.",
+      "Award Amount": 5797337.43,
+      "Total Outlays": null,
+      "Description": "UIPATH ROBOTIC PROCESS AUTOMATION (RPA) SOFTWARE SUBSCRIPTION RENEWAL DELIVERY ORDER. PERIOD OF PERFORMANCE 7/23/2026 - 7/22/2027. PRIOR AWARD 28321325FDX030223.",
+      "Start Date": "2026-08-18",
+      "End Date": "2027-07-22",
+      "Awarding Agency": "Social Security Administration",
+      "Awarding Sub Agency": "Social Security Administration",
+      "Award Type": null,
+      "awarding_agency_id": 539,
+      "agency_slug": "social-security-administration",
+      "generated_internal_id": "CONT_AWD_28321326FDX030131_2800_NNG15SD80B_8000"
+    },
+    {
       "internal_id": 359714161,
       "Award ID": "FA489026C0006",
       "Recipient Name": "KONIAG IT SYSTEMS, LLC",
@@ -11583,22 +11583,6 @@
       "awarding_agency_id": 801,
       "agency_slug": "agency-for-international-development",
       "generated_internal_id": "CONT_AWD_72MC1021C00001_7200_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 278337852,
-      "Award ID": "15M10325FA4700033",
-      "Recipient Name": "AUGUST SCHELL ENTERPRISES, INC.",
-      "Award Amount": 112524.47,
-      "Total Outlays": 112524.47,
-      "Description": "REQUEST TO RENEW THE LICENSES OF UIPATH STUDIO RPA WITH FLEX PLAN SOFTWARE FOR ONE YEAR TO START AFTER THE EXPIRATION OF OUR CURRENT SUBSCRIPTION. THE NEW PERIOD OF PERFORMANCE WILL BE 11/30/2024 TO 11/29/2025.",
-      "Start Date": "2024-11-30",
-      "End Date": "2025-11-29",
-      "Awarding Agency": "Department of Justice",
-      "Awarding Sub Agency": "U.S. Marshals Service",
-      "Award Type": null,
-      "awarding_agency_id": 252,
-      "agency_slug": "department-of-justice",
-      "generated_internal_id": "CONT_AWD_15M10325FA4700033_1544_NNG15SD80B_8000"
     },
     {
       "internal_id": 260007578,
@@ -12401,6 +12385,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-08-19T10:43:11.103367+00:00",
-  "count": 775
+  "scraped_at": "2026-08-20T10:43:49.478094+00:00",
+  "count": 774
 }
