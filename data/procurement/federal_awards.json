@@ -4305,22 +4305,6 @@
       "generated_internal_id": "ASST_NON_UG1CA242596_075"
     },
     {
-      "internal_id": 359391074,
-      "Award ID": "693JJ22630000Y001TX2026953",
-      "Recipient Name": "TEXAS DEPARTMENT OF TRANSPORTATION",
-      "Award Amount": 10355263.93,
-      "Total Outlays": 0.0,
-      "Description": "PROJECT TITLE: DRAINAGE IMPROVEMENTS ON IH 45 AND SH 99. :::: PROJECT DESCRIPTION: IH 45 AT SL 336S; SH 99 AT FM 1093 AND AT UA 90; REHABILITATE PUMP STATION.",
-      "Start Date": "2026-06-02",
-      "End Date": "2035-06-29",
-      "Awarding Agency": "Department of Transportation",
-      "Awarding Sub Agency": "Federal Highway Administration",
-      "Award Type": "FORMULA GRANT (A)",
-      "awarding_agency_id": 731,
-      "agency_slug": "department-of-transportation",
-      "generated_internal_id": "ASST_NON_693JJ22630000Y001TX2026953_069"
-    },
-    {
       "internal_id": 260517666,
       "Award ID": "ED25HDQ0G0013",
       "Recipient Name": "FLEXSYS AMERICA L.P.",
@@ -4623,6 +4607,22 @@
       "awarding_agency_id": 731,
       "agency_slug": "department-of-transportation",
       "generated_internal_id": "ASST_NON_15-C-UAS-UAF_069"
+    },
+    {
+      "internal_id": 359391074,
+      "Award ID": "693JJ22630000Y001TX2026953",
+      "Recipient Name": "TEXAS DEPARTMENT OF TRANSPORTATION",
+      "Award Amount": 7457102.01,
+      "Total Outlays": 0.0,
+      "Description": "PROJECT TITLE: DRAINAGE IMPROVEMENTS ON IH 45 AND SH 99. :::: PROJECT DESCRIPTION: IH 45 AT SL 336S; SH 99 AT FM 1093 AND AT UA 90; REHABILITATE PUMP STATION.",
+      "Start Date": "2026-06-02",
+      "End Date": "2035-06-29",
+      "Awarding Agency": "Department of Transportation",
+      "Awarding Sub Agency": "Federal Highway Administration",
+      "Award Type": "FORMULA GRANT (A)",
+      "awarding_agency_id": 731,
+      "agency_slug": "department-of-transportation",
+      "generated_internal_id": "ASST_NON_693JJ22630000Y001TX2026953_069"
     },
     {
       "internal_id": 298592679,
@@ -8113,6 +8113,22 @@
       "generated_internal_id": "CONT_AWD_FA864925P0102_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 361776075,
+      "Award ID": "FA875026FB004",
+      "Recipient Name": "TRUST AUTOMATION INC",
+      "Award Amount": 50000.0,
+      "Total Outlays": null,
+      "Description": "RESEARCH, DEVELOPMENT, PROTOTYPING, DEMONSTRATION, EVALUATION, AND TRANSITION OF UNMANNED AIRCRAFT SYSTEM (UAS) AND COUNTER-UAS (C-UAS) CAPABILITIES.",
+      "Start Date": "2026-05-27",
+      "End Date": "2029-07-27",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA875026FB004_9700_FA875025DB002_9700"
+    },
+    {
       "internal_id": 360180338,
       "Award ID": "M6700126P0028",
       "Recipient Name": "GHOST LABS LLC",
@@ -8328,7 +8344,7 @@
       "Total Outlays": null,
       "Description": "THE CONTRACTOR SHALL PROVIDE THE RESOURCES AND CAPABILITIES TO EXECUTE THE AFSIM C-UAS STUDIES MODELING TO SUPPORT UNITED STATES CENTRAL COMMAND (USCENTCOM)IAW MASTER IDIQ M0026424D0001.",
       "Start Date": "2025-07-09",
-      "End Date": "2026-07-08",
+      "End Date": "2026-08-17",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Navy",
       "Award Type": null,
@@ -9089,6 +9105,22 @@
       "generated_internal_id": "CONT_AWD_FA864920C0034_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 361775706,
+      "Award ID": "FA254126FB062",
+      "Recipient Name": "SIMBA ENTERPRISES LLC",
+      "Award Amount": 893880.0,
+      "Total Outlays": null,
+      "Description": "THIS ACQUISITION IS FOR NON-PRE-EMPTIBLE CONTIGUOUS KU-BAND SATELLITE BANDWIDTH FOR USE DURING UNMANNED AERIAL VEHICLE (UAV) OPERATIONS THAT WILL PRIMARILY COVER THE UNITED STATES (US) NORTHERN COMMAND (NORTHCOM) AREA OF RESPONSIBILITY (AOR).",
+      "Start Date": "2026-05-30",
+      "End Date": "2027-05-29",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA254126FB062_9700_GS35F517AA_4732"
+    },
+    {
       "internal_id": 297878245,
       "Award ID": "FA239124CB002",
       "Recipient Name": "HEPBURN AND SONS LLC",
@@ -9343,22 +9375,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA864924P0872_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 310688220,
-      "Award ID": "N6133125P0028",
-      "Recipient Name": "LYME COMPUTER SYSTEMS, INC.",
-      "Award Amount": 108275.76,
-      "Total Outlays": null,
-      "Description": "INSPIRED FLIGHT 1200 HEXACOPTER UNMANNED AERIAL VEHICLE (UAV)",
-      "Start Date": "2024-12-19",
-      "End Date": "2025-03-31",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Navy",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_N6133125P0028_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 268898747,
@@ -12449,6 +12465,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-08-26T10:45:54.033557+00:00",
-  "count": 778
+  "scraped_at": "2026-08-27T14:11:09.090627+00:00",
+  "count": 779
 }
