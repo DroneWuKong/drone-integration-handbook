@@ -3656,7 +3656,7 @@
       "Total Outlays": null,
       "Description": "THIS REQUIREMENT IS TO PROVIDE A NEW TASK ORDER FOR THE PURCHASE OF C-UAS FS-LIDS HARDWARE SYSTEMS IN SUPPORT OF THE C-UAS FIXED SITE LOW, SLOW, SMALL UNMANNED AERIAL VEHICLE INTEGRATED DEFEAT SYSTEM (FS-LIDS) CONTRACT W31P4Q-20-D-0032.",
       "Start Date": "2024-02-09",
-      "End Date": "2026-05-31",
+      "End Date": "2026-10-31",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Army",
       "Award Type": null,
@@ -5201,6 +5201,22 @@
       "generated_internal_id": "CONT_AWD_15A00025FAQ000043_1560_15A00020DAQA00604_1560"
     },
     {
+      "internal_id": 361794511,
+      "Award ID": "1305M226F0419",
+      "Recipient Name": "BLACK SWIFT TECHNOLOGIES LLC",
+      "Award Amount": 540000.0,
+      "Total Outlays": null,
+      "Description": "NOAA/OMAO/PIAD, BLACK SWIFT SUAS PLATFORM, OPERATIONAL AND TECHNICAL SUPPORT SERVICES",
+      "Start Date": "2026-08-26",
+      "End Date": "2027-06-30",
+      "Awarding Agency": "Department of Commerce",
+      "Awarding Sub Agency": "National Oceanic and Atmospheric Administration",
+      "Award Type": null,
+      "awarding_agency_id": 183,
+      "agency_slug": "department-of-commerce",
+      "generated_internal_id": "CONT_AWD_1305M226F0419_1330_1305M226D0012_1330"
+    },
+    {
       "internal_id": 291194818,
       "Award ID": "70CMSD25P00000095",
       "Recipient Name": "EDGESOURCE CORPORATION",
@@ -5311,22 +5327,6 @@
       "awarding_agency_id": 183,
       "agency_slug": "department-of-commerce",
       "generated_internal_id": "CONT_AWD_1305M226F0141_1330_1305M226D0013_1330"
-    },
-    {
-      "internal_id": 359787648,
-      "Award ID": "W912PB26FA349",
-      "Recipient Name": "ORQA D.O.O.",
-      "Award Amount": 280711.54,
-      "Total Outlays": null,
-      "Description": "FLYTRAP 5.0 (SB26) PBAS SUAS ISO 2D CALVARY DIVISION",
-      "Start Date": "2026-04-21",
-      "End Date": "2026-05-30",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W912PB26FA349_9700_W912PB26AA004_9700"
     },
     {
       "internal_id": 253727612,
@@ -11281,6 +11281,22 @@
       "generated_internal_id": "CONT_AWD_36C24226F0061_3600_NNG15SC42B_8000"
     },
     {
+      "internal_id": 291663581,
+      "Award ID": "75P00121F80121",
+      "Recipient Name": "RED RIVER TECHNOLOGY LLC",
+      "Award Amount": 566118.12,
+      "Total Outlays": 129053.68,
+      "Description": "RPA LICENSES, TRAINING, AND SERVICES IN ONE PACKAGE THAT WILL CREATE AN RPA PILOT PROGRAM TO ENABLE DEVELOPMENT OF AUTOMATED ROBOTS FOR HHS.",
+      "Start Date": "2021-06-10",
+      "End Date": "2023-06-09",
+      "Awarding Agency": "Department of Health and Human Services",
+      "Awarding Sub Agency": "Office of the Assistant Secretary for Administration",
+      "Award Type": null,
+      "awarding_agency_id": 806,
+      "agency_slug": "department-of-health-and-human-services",
+      "generated_internal_id": "CONT_AWD_75P00121F80121_7570_NNG15SC46B_8000"
+    },
+    {
       "internal_id": 279034929,
       "Award ID": "20340923F00023",
       "Recipient Name": "GOVERNMENT ACQUISITIONS INC",
@@ -11647,22 +11663,6 @@
       "awarding_agency_id": 766,
       "agency_slug": "department-of-homeland-security",
       "generated_internal_id": "CONT_AWD_70US0924F1DHS2104_7009_HSHQDC13D00019_7001"
-    },
-    {
-      "internal_id": 291423135,
-      "Award ID": "72MC1021C00001",
-      "Recipient Name": "ANIKA SYSTEMS INCORPORATED",
-      "Award Amount": 113400.0,
-      "Total Outlays": 113400.0,
-      "Description": "THIS ACTION IS FOR THE NEW ACQUISITION OF UIPATH SOFTWARE LICENSES FOR THE M/OAA RPA PILOT.  THIS IS TO BE COMPETED ON GSA IT70. *PLEASE SEE ATTACHMENT*",
-      "Start Date": "2020-12-20",
-      "End Date": "2023-12-17",
-      "Awarding Agency": "Agency for International Development",
-      "Awarding Sub Agency": "Agency for International Development",
-      "Award Type": null,
-      "awarding_agency_id": 801,
-      "agency_slug": "agency-for-international-development",
-      "generated_internal_id": "CONT_AWD_72MC1021C00001_7200_-NONE-_-NONE-"
     },
     {
       "internal_id": 260007578,
@@ -12465,6 +12465,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-08-27T14:11:09.090627+00:00",
+  "scraped_at": "2026-08-28T14:32:10.854106+00:00",
   "count": 779
 }
