@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-28T14:32:10.854106+00:00",
-  "federal_awards_total": 770,
+  "generated_at": "2026-08-29T10:36:29.580599+00:00",
+  "federal_awards_total": 763,
   "gray_zone_federal_matches": 0,
-  "news_signals_total": 85,
+  "news_signals_total": 83,
   "gray_zone_news_mentions": 12,
   "all_gray_zone_signals": [
     {
@@ -24,7 +24,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     },
     {
       "id": "sol-aae7505b65",
@@ -45,7 +45,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     },
     {
       "id": "sol-31a0a60827",
@@ -66,7 +66,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     },
     {
       "id": "sol-1ccc75ae24",
@@ -87,7 +87,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     },
     {
       "id": "sol-66078cf025",
@@ -108,7 +108,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     },
     {
       "id": "sol-e26bd9c983",
@@ -129,7 +129,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     },
     {
       "id": "sol-0947b3c182",
@@ -150,7 +150,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     },
     {
       "id": "sol-2155a67f61",
@@ -171,7 +171,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     },
     {
       "id": "sol-ca661cc52a",
@@ -192,7 +192,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     },
     {
       "id": "sol-a82dd10c0c",
@@ -213,7 +213,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     },
     {
       "id": "sol-b017d20464",
@@ -234,7 +234,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     },
     {
       "id": "sol-cc79a1d468",
@@ -255,12 +255,12 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-08-28T14:32:10.854106+00:00"
+      "scraped_at": "2026-08-29T10:36:29.580599+00:00"
     }
   ],
   "vendors_flagged": [
-    "anzu robotics",
     "dji",
-    "anzu"
+    "anzu",
+    "anzu robotics"
   ]
 }
