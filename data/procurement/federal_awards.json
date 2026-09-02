@@ -2001,6 +2001,22 @@
       "generated_internal_id": "CONT_AWD_W56KGU25F0012_9700_W909MY23D0002_9700"
     },
     {
+      "internal_id": 361904698,
+      "Award ID": "15BPCC26P00000076",
+      "Recipient Name": "SENECA FEDERAL SOLUTIONS, LLC",
+      "Award Amount": 3500000.0,
+      "Total Outlays": null,
+      "Description": "FY26 COUNTER UNMANNED AERIAL SYSTEMS (CUAS) SYSTEM PHASE 4 PERIOD OF PERFORMANCE: 9/07/2026 - 9/06/2027",
+      "Start Date": "2026-09-07",
+      "End Date": "2027-09-06",
+      "Awarding Agency": "Department of Justice",
+      "Awarding Sub Agency": "Federal Prison System / Bureau of Prisons",
+      "Award Type": null,
+      "awarding_agency_id": 252,
+      "agency_slug": "department-of-justice",
+      "generated_internal_id": "CONT_AWD_15BPCC26P00000076_1540_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 298565459,
       "Award ID": "FA864923P1143",
       "Recipient Name": "PTERODYNAMICS INC.",
@@ -2319,22 +2335,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W911QY25CA066_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 309500116,
-      "Award ID": "N0001925F0970",
-      "Recipient Name": "KRATOS UNMANNED AERIAL SYSTEMS, INC",
-      "Award Amount": 1359883.0,
-      "Total Outlays": null,
-      "Description": "SOFTWARE UPGRADES",
-      "Start Date": "2025-07-10",
-      "End Date": "2026-05-31",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Navy",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_N0001925F0970_9700_N0001922D0022_9700"
     },
     {
       "internal_id": 251351237,
@@ -3569,6 +3569,22 @@
       "generated_internal_id": "CONT_AWD_70Z02324F93130001_7008_70Z02324D93130001_7008"
     },
     {
+      "internal_id": 273440668,
+      "Award ID": "0025",
+      "Recipient Name": "THE BOEING COMPANY",
+      "Award Amount": 9944383.46,
+      "Total Outlays": null,
+      "Description": "UAV - AIR VEHICLES, PROGRAM MANAGEMENT SUPPORT, SPARES",
+      "Start Date": "2017-12-08",
+      "End Date": "2019-06-03",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "U.S. Special Operations Command",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_0025_9700_H9222216D0028_9700"
+    },
+    {
       "internal_id": 278819060,
       "Award ID": "19GE5023P0063",
       "Recipient Name": "MISCELLANEOUS FOREIGN AWARDEES",
@@ -3679,22 +3695,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA228025F0027_9700_FA228025D0001_9700"
-    },
-    {
-      "internal_id": 297877564,
-      "Award ID": "FA228025F0014",
-      "Recipient Name": "ANDURIL INDUSTRIES, INC.",
-      "Award Amount": 8400000.0,
-      "Total Outlays": null,
-      "Description": "THIS TASK ORDER LEVERAGES THE THUNDERDOME DIGITAL ENGINEERING AND SIMULATION ENVIRONMENTS TO RAPIDLY DEVELOP MODULAR AUTONOMOUS UAV CAPABILITIES FOR A VARIETY OF USE CASES.",
-      "Start Date": "2025-02-20",
-      "End Date": "2025-08-20",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA228025F0014_9700_FA228025D0001_9700"
     },
     {
       "internal_id": 253715211,
@@ -4673,6 +4673,22 @@
       "generated_internal_id": "CONT_AWD_W912PB26FA285_9700_W912PB26AA002_9700"
     },
     {
+      "internal_id": 291853444,
+      "Award ID": "80TECH25FA463",
+      "Recipient Name": "NEW TECH SOLUTIONS, INC.",
+      "Award Amount": 1305838.8,
+      "Total Outlays": 491626.31,
+      "Description": "MOTOROLA WAVE ARUS SYSTEM MAINTENANCE AND SYSTEM UPGRADE AGREEMENT (SUA II) FOR KENNEDY SPACE CENTER (KSC)",
+      "Start Date": "2025-09-05",
+      "End Date": "2027-08-31",
+      "Awarding Agency": "National Aeronautics and Space Administration",
+      "Awarding Sub Agency": "National Aeronautics and Space Administration",
+      "Award Type": null,
+      "awarding_agency_id": 862,
+      "agency_slug": "national-aeronautics-and-space-administration",
+      "generated_internal_id": "CONT_AWD_80TECH25FA463_8000_NNG15SC82B_8000"
+    },
+    {
       "internal_id": 291095263,
       "Award ID": "697DCK24F01110",
       "Recipient Name": "EMBRY-RIDDLE AERONAUTICAL UNIVERSITY, INC.",
@@ -5007,22 +5023,6 @@
       "awarding_agency_id": 766,
       "agency_slug": "department-of-homeland-security",
       "generated_internal_id": "CONT_AWD_70RSAT21FR0000028_7001_70RSAT20D00000001_7001"
-    },
-    {
-      "internal_id": 291853444,
-      "Award ID": "80TECH25FA463",
-      "Recipient Name": "NEW TECH SOLUTIONS, INC.",
-      "Award Amount": 640374.65,
-      "Total Outlays": 491626.31,
-      "Description": "MOTOROLA WAVE ARUS SYSTEM MAINTENANCE AND SYSTEM UPGRADE AGREEMENT (SUA II) FOR KENNEDY SPACE CENTER (KSC)",
-      "Start Date": "2025-09-05",
-      "End Date": "2026-08-31",
-      "Awarding Agency": "National Aeronautics and Space Administration",
-      "Awarding Sub Agency": "National Aeronautics and Space Administration",
-      "Award Type": null,
-      "awarding_agency_id": 862,
-      "agency_slug": "national-aeronautics-and-space-administration",
-      "generated_internal_id": "CONT_AWD_80TECH25FA463_8000_NNG15SC82B_8000"
     },
     {
       "internal_id": 298365467,
@@ -6225,22 +6225,6 @@
       "generated_internal_id": "ASST_NON_AP24VSSP0000C055_012"
     },
     {
-      "internal_id": 359068850,
-      "Award ID": "W912CH26CA009",
-      "Recipient Name": "NAPATREE TECHNOLOGY LLC",
-      "Award Amount": 265382200.0,
-      "Total Outlays": null,
-      "Description": "PROCUREMENT OF SUPPLIES AND SERVICES FOR AS3 SURVEYOR DRONES, BUMBLEBEE V1, BUMBLEBEE V2, AND HORNETS.",
-      "Start Date": "2026-03-10",
-      "End Date": "2026-10-01",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W912CH26CA009_9700_-NONE-_-NONE-"
-    },
-    {
       "internal_id": 348939554,
       "Award ID": "W31P4Q06C0292",
       "Recipient Name": "TEXTRON SYSTEMS CORPORATION",
@@ -6255,6 +6239,22 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W31P4Q06C0292_9700_-NONE-_-NONE-"
+    },
+    {
+      "internal_id": 359068850,
+      "Award ID": "W912CH26CA009",
+      "Recipient Name": "NAPATREE TECHNOLOGY LLC",
+      "Award Amount": 217574700.0,
+      "Total Outlays": null,
+      "Description": "PROCUREMENT OF SUPPLIES AND SERVICES FOR AS3 SURVEYOR DRONES, BUMBLEBEE V1, BUMBLEBEE V2, AND HORNETS.",
+      "Start Date": "2026-03-10",
+      "End Date": "2026-10-01",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W912CH26CA009_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 359204810,
@@ -8641,6 +8641,22 @@
       "generated_internal_id": "CONT_AWD_80NM0018F0795_8000_80NM0018D0004_8000"
     },
     {
+      "internal_id": 297877564,
+      "Award ID": "FA228025F0014",
+      "Recipient Name": "ANDURIL INDUSTRIES, INC.",
+      "Award Amount": 8400000.0,
+      "Total Outlays": null,
+      "Description": "THIS TASK ORDER LEVERAGES THE THUNDERDOME DIGITAL ENGINEERING AND SIMULATION ENVIRONMENTS TO RAPIDLY DEVELOP MODULAR AUTONOMOUS UAV CAPABILITIES FOR A VARIETY OF USE CASES.",
+      "Start Date": "2025-02-20",
+      "End Date": "2025-08-20",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA228025F0014_9700_FA228025D0001_9700"
+    },
+    {
       "internal_id": 361852916,
       "Award ID": "W58RGZ25C0026",
       "Recipient Name": "AEROVIRONMENT, INC",
@@ -8737,6 +8753,22 @@
       "generated_internal_id": "CONT_AWD_FA486124P0086_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 309513643,
+      "Award ID": "N0002423F8402",
+      "Recipient Name": "THE PENNSYLVANIA STATE UNIVERSITY",
+      "Award Amount": 1622575.0,
+      "Total Outlays": null,
+      "Description": "UNMANNED AERIAL VEHICLE (UAV) OPERATIONS IN LITTORAL ENVIRONMENTS II",
+      "Start Date": "2023-08-24",
+      "End Date": "2026-09-30",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_N0002423F8402_9700_N0002418D6401_9700"
+    },
+    {
       "internal_id": 297877467,
       "Award ID": "FA228023C0006",
       "Recipient Name": "NEAR EARTH AUTONOMY, INC",
@@ -8799,22 +8831,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA237725CB009_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 309513643,
-      "Award ID": "N0002423F8402",
-      "Recipient Name": "THE PENNSYLVANIA STATE UNIVERSITY",
-      "Award Amount": 1362575.0,
-      "Total Outlays": null,
-      "Description": "UNMANNED AERIAL VEHICLE (UAV) OPERATIONS IN LITTORAL ENVIRONMENTS II",
-      "Start Date": "2023-08-24",
-      "End Date": "2026-09-30",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Navy",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_N0002423F8402_9700_N0002418D6401_9700"
     },
     {
       "internal_id": 298564904,
@@ -9231,22 +9247,6 @@
       "awarding_agency_id": 862,
       "agency_slug": "national-aeronautics-and-space-administration",
       "generated_internal_id": "CONT_AWD_80NSSC25C0165_8000_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 343175505,
-      "Award ID": "SPMYM424P0154",
-      "Recipient Name": "RAPID SCAN 3D, INC.",
-      "Award Amount": 154108.0,
-      "Total Outlays": 0.0,
-      "Description": "RS 3D SCANNER",
-      "Start Date": "2024-02-07",
-      "End Date": "2024-02-14",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Defense Logistics Agency",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_SPMYM424P0154_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 268898747,
@@ -10867,7 +10867,7 @@
     {
       "internal_id": 279524306,
       "Award ID": "28321325FDX030223",
-      "Recipient Name": "GOVERNMENT ACQUISITIONS INC",
+      "Recipient Name": "GOVERNMENT ACQUISITIONS LLC",
       "Award Amount": 5798403.0,
       "Total Outlays": 5798403.0,
       "Description": "DELIVERY ORDER FOR UIPATH RPA SUBSCRIPTIONS FOR 12 MONTHS.",
@@ -12353,6 +12353,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-09-01T10:39:57.091508+00:00",
+  "scraped_at": "2026-09-02T10:39:13.385472+00:00",
   "count": 772
 }
