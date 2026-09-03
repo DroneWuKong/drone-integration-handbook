@@ -3844,11 +3844,11 @@
       "internal_id": 230497222,
       "Award ID": "15-C-UAS-MSU",
       "Recipient Name": "MISSISSIPPI STATE UNIVERSITY",
-      "Award Amount": 22903459.6,
+      "Award Amount": 23623082.6,
       "Total Outlays": 15880667.47,
       "Description": "POST-ANALYSIS OF UAS DETECTION TECHNOLOGIES TO ASSESS WHICH DEMONSTRATE APPLICABILITY AND/OR PROMISE FOR USE IN AND AROUND AIRPORTS.",
       "Start Date": "2017-04-03",
-      "End Date": "2027-06-30",
+      "End Date": "2029-08-31",
       "Awarding Agency": "Department of Transportation",
       "Awarding Sub Agency": "Federal Aviation Administration",
       "Award Type": "COOPERATIVE AGREEMENT (B)",
@@ -6273,6 +6273,22 @@
       "generated_internal_id": "CONT_AWD_W58RGZ26F0211_9700_W58RGZ26G0061_9700"
     },
     {
+      "internal_id": 361963710,
+      "Award ID": "W58RGZ26F0332",
+      "Recipient Name": "GRIFFON AEROSPACE, INC.",
+      "Award Amount": 67940895.16,
+      "Total Outlays": null,
+      "Description": "IN ACCORDANCE WITH THE DIRECTIVES ESTABLISHED IN THE DEPARTMENT OF WAR MEMORANDUM DATED 10 JULY 2025, IN SUPPORT OF EXECUTIVE ORDER 14307-UNLEASHING U.S. MILITARY DRONE DOMINANCE",
+      "Start Date": "2026-06-03",
+      "End Date": "2027-03-30",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W58RGZ26F0332_9700_W58RGZ26G0061_9700"
+    },
+    {
       "internal_id": 357468540,
       "Award ID": "80NM0026F7025",
       "Recipient Name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
@@ -6927,22 +6943,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W51AA125P0058_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 359976115,
-      "Award ID": "W5170126CA076",
-      "Recipient Name": "R-DEX SYSTEMS, INC.",
-      "Award Amount": 1362986.26,
-      "Total Outlays": null,
-      "Description": "SMALL BUSINESS TECHNOLOGY TRANSFER (STTR) PHASE II, TOPIC A24B-T020, DRONE SWARM DETECTION USING ARTIFICIAL INTELLIGENCE BASED ON ULTRAFAST NEURAL NETWORKS. THIS CONTINUES THE EFFORT CONDUCTED UNDER PHASE I STTR W912CH-25-C-0043.",
-      "Start Date": "2026-04-20",
-      "End Date": "2028-04-20",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W5170126CA076_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 356590756,
@@ -8145,6 +8145,22 @@
       "generated_internal_id": "CONT_AWD_FA873022FB002_9700_FA873022DB001_9700"
     },
     {
+      "internal_id": 361948960,
+      "Award ID": "FA487726P0062",
+      "Recipient Name": "ROGUE INDUSTRIES LLC",
+      "Award Amount": 1326337.88,
+      "Total Outlays": null,
+      "Description": "PROCUREMENT OF TWO (2) INTEGRATED C-UAS EW DEFEAT SYSTEMS WITH INTERCEPTOR CAPABILITIES",
+      "Start Date": "2026-06-05",
+      "End Date": "2026-06-19",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA487726P0062_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 298566793,
       "Award ID": "FA864925P0244",
       "Recipient Name": "BLUE AETHER INC",
@@ -8465,6 +8481,22 @@
       "generated_internal_id": "ASST_NON_15-C-UAS-ORSU_069"
     },
     {
+      "internal_id": 230497228,
+      "Award ID": "15-C-UAS-NCSU",
+      "Recipient Name": "NORTH CAROLINA STATE UNIVERSITY",
+      "Award Amount": 2201567.91,
+      "Total Outlays": 1487703.31,
+      "Description": "EXAMINE HOW SAFE INTEGRATION OF UAS CAN AID IN DISASTER PREPAREDNESS AND RESPONSE TO DIFFERENT NATURAL AND HUMAN-MADE DISASTERS.",
+      "Start Date": "2020-06-01",
+      "End Date": "2029-08-31",
+      "Awarding Agency": "Department of Transportation",
+      "Awarding Sub Agency": "Federal Aviation Administration",
+      "Award Type": "COOPERATIVE AGREEMENT (B)",
+      "awarding_agency_id": 731,
+      "agency_slug": "department-of-transportation",
+      "generated_internal_id": "ASST_NON_15-C-UAS-NCSU_069"
+    },
+    {
       "internal_id": 231634039,
       "Award ID": "15PNIJ22GK00247BRND",
       "Recipient Name": "UNIVERSITY OF ALASKA FAIRBANKS",
@@ -8513,20 +8545,20 @@
       "generated_internal_id": "ASST_NON_15-C-UAS-UVM_069"
     },
     {
-      "internal_id": 230497228,
-      "Award ID": "15-C-UAS-NCSU",
-      "Recipient Name": "NORTH CAROLINA STATE UNIVERSITY",
-      "Award Amount": 1594831.91,
-      "Total Outlays": 1463314.78,
-      "Description": "EXAMINE HOW SAFE INTEGRATION OF UAS CAN AID IN DISASTER PREPAREDNESS AND RESPONSE TO DIFFERENT NATURAL AND HUMAN-MADE DISASTERS.",
-      "Start Date": "2020-06-01",
-      "End Date": "2025-06-30",
+      "internal_id": 361925126,
+      "Award ID": "15-C-UAS-OKSU",
+      "Recipient Name": "OKLAHOMA STATE UNIVERSITY",
+      "Award Amount": 772698.0,
+      "Total Outlays": null,
+      "Description": "EFFECT OF TURBULENCE ON AIRCRAFT STRUCTURAL LOADING OF AAM VTOL VEHICLES - A94",
+      "Start Date": "2026-09-01",
+      "End Date": "2029-08-31",
       "Awarding Agency": "Department of Transportation",
       "Awarding Sub Agency": "Federal Aviation Administration",
       "Award Type": "COOPERATIVE AGREEMENT (B)",
       "awarding_agency_id": 731,
       "agency_slug": "department-of-transportation",
-      "generated_internal_id": "ASST_NON_15-C-UAS-NCSU_069"
+      "generated_internal_id": "ASST_NON_15-C-UAS-OKSU_069"
     },
     {
       "internal_id": 235783350,
@@ -8607,6 +8639,22 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W58RGZ06C0190_9700_-NONE-_-NONE-"
+    },
+    {
+      "internal_id": 361963712,
+      "Award ID": "W58RGZ26F0334",
+      "Recipient Name": "AEROVIRONMENT, INC",
+      "Award Amount": 117306231.51,
+      "Total Outlays": null,
+      "Description": "AWARD IN SUPPORT OF TUAS BATTALION RECONNAISSANCE UAV REQUIREMENT.",
+      "Start Date": "2026-06-03",
+      "End Date": "2026-07-23",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W58RGZ26F0334_9700_W58RGZ26G0005_9700"
     },
     {
       "internal_id": 311086004,
@@ -9231,22 +9279,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W911NF24P0010_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 291848488,
-      "Award ID": "80NSSC25C0165",
-      "Recipient Name": "CIRCLE OPTICS INC",
-      "Award Amount": 154817.0,
-      "Total Outlays": 154817.0,
-      "Description": "SBIR I ENHANCED PANOPTIC IMAGING FOR CLASS 1 UAVS",
-      "Start Date": "2025-09-29",
-      "End Date": "2026-03-27",
-      "Awarding Agency": "National Aeronautics and Space Administration",
-      "Awarding Sub Agency": "National Aeronautics and Space Administration",
-      "Award Type": null,
-      "awarding_agency_id": 862,
-      "agency_slug": "national-aeronautics-and-space-administration",
-      "generated_internal_id": "CONT_AWD_80NSSC25C0165_8000_-NONE-_-NONE-"
     },
     {
       "internal_id": 268898747,
@@ -10111,6 +10143,22 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W58RGZ25F0201_9700_W58RGZ24D0038_9700"
+    },
+    {
+      "internal_id": 361963711,
+      "Award ID": "W58RGZ26F0333",
+      "Recipient Name": "REDWIRE DEFENSE TECH OPERATIONS, LLC",
+      "Award Amount": 15857020.0,
+      "Total Outlays": null,
+      "Description": "TACTICAL UNCREWED AIRCRAFT SYSTEMS (TUAS) LONG RANGE RECONNAISSANCE (LRR) PROGRAM",
+      "Start Date": "2026-06-03",
+      "End Date": "2026-08-30",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W58RGZ26F0333_9700_W58RGZ26G0006_9700"
     },
     {
       "internal_id": 352788978,
@@ -12353,6 +12401,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-09-02T10:39:13.385472+00:00",
-  "count": 772
+  "scraped_at": "2026-09-03T10:38:16.625831+00:00",
+  "count": 775
 }
