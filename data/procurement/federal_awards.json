@@ -3188,7 +3188,7 @@
       "internal_id": 349074812,
       "Award ID": "W58RGZ20F0012",
       "Recipient Name": "SCIENCE AND ENGINEERING SERVICES, LLC",
-      "Award Amount": 83601520.14,
+      "Award Amount": 83504052.0,
       "Total Outlays": null,
       "Description": "EFFORT REQUIRED FOR INSTALLATION, VALIDATION/ VERIFICATION, AND MAINTENANCE OF THE CH-47F/ICH-47F MODIFICATION AND UPGRADE PROGRAM TO INCLUDE 17 UAE AIRCRAFT.",
       "Start Date": "2020-08-04",
@@ -6225,6 +6225,22 @@
       "generated_internal_id": "ASST_NON_AP24VSSP0000C055_012"
     },
     {
+      "internal_id": 359068850,
+      "Award ID": "W912CH26CA009",
+      "Recipient Name": "NAPATREE TECHNOLOGY LLC",
+      "Award Amount": 265382200.0,
+      "Total Outlays": null,
+      "Description": "PROCUREMENT OF SUPPLIES AND SERVICES FOR AS3 SURVEYOR DRONES, BUMBLEBEE V1, BUMBLEBEE V2, AND HORNETS.",
+      "Start Date": "2026-03-10",
+      "End Date": "2026-10-01",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W912CH26CA009_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 348939554,
       "Award ID": "W31P4Q06C0292",
       "Recipient Name": "TEXTRON SYSTEMS CORPORATION",
@@ -6239,22 +6255,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W31P4Q06C0292_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 359068850,
-      "Award ID": "W912CH26CA009",
-      "Recipient Name": "NAPATREE TECHNOLOGY LLC",
-      "Award Amount": 217574700.0,
-      "Total Outlays": null,
-      "Description": "PROCUREMENT OF SUPPLIES AND SERVICES FOR AS3 SURVEYOR DRONES, BUMBLEBEE V1, BUMBLEBEE V2, AND HORNETS.",
-      "Start Date": "2026-03-10",
-      "End Date": "2026-10-01",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W912CH26CA009_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 359204810,
@@ -10129,6 +10129,22 @@
       "generated_internal_id": "CONT_AWD_W911SD24P0131_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 362056789,
+      "Award ID": "FA441726P0046",
+      "Recipient Name": "ATLANTIC DIVING SUPPLY, INC.",
+      "Award Amount": 0.0,
+      "Total Outlays": null,
+      "Description": "TWO (2) LIGHTWEIGHT, MODULAR SKYDIO X10D SUAS KITS WITH THERMAL/GPS CAPABILITIES, NIGHTSENSE, MOLLE POUCHES, CHARGERS, AND 3+ SPARE BATTERIES PER SYSTEM. MUST DELIVER 30+ MIN FLIGHT TIME AND BE DIU BLUE UAS/DAFMAN 11-501 COMPLIANT.",
+      "Start Date": "2026-06-09",
+      "End Date": "2026-11-02",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA441726P0046_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 268742113,
       "Award ID": "NA25NMFX472C0161",
       "Recipient Name": "DUKE UNIVERSITY",
@@ -12417,6 +12433,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-09-07T10:38:48.234370+00:00",
-  "count": 776
+  "scraped_at": "2026-09-08T10:38:35.645718+00:00",
+  "count": 777
 }
