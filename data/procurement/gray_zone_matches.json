@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-09-10T10:38:45.173488+00:00",
-  "federal_awards_total": 767,
+  "generated_at": "2026-09-11T10:38:38.835907+00:00",
+  "federal_awards_total": 768,
   "gray_zone_federal_matches": 0,
   "news_signals_total": 83,
-  "gray_zone_news_mentions": 6,
+  "gray_zone_news_mentions": 7,
   "all_gray_zone_signals": [
     {
       "id": "sol-4540d0240a",
       "source": "news",
-      "source_label": "uavcoach.com",
+      "source_label": "UAV Coach",
       "type": "news_signal",
-      "title": "Loophole Could Allow Sale of DJI Drones Even If They Get Banned - uavcoach.com",
+      "title": "Loophole Could Allow Sale of DJI Drones Even If They Get Banned - UAV Coach",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
@@ -24,35 +24,35 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-09-10T10:38:45.173488+00:00"
+      "scraped_at": "2026-09-11T10:38:38.835907+00:00"
     },
     {
-      "id": "sol-1dad3d3825",
+      "id": "sol-434e63c1eb",
       "source": "news",
-      "source_label": "Rest of World",
+      "source_label": "The Drone Girl",
       "type": "news_signal",
-      "title": "DJI drones are everywhere. The U.S. may still ban them - Rest of World",
+      "title": "The best alternatives to DJI drones - The Drone Girl",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
       "amount": null,
       "award_id": null,
-      "posted_date": "Thu, 22 May 2025 07:00:00 GMT",
+      "posted_date": "Tue, 16 Jun 2026 07:00:00 GMT",
       "deadline": null,
       "naics": null,
       "set_aside": null,
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1vazdtVjc5T2FXVHVrNTFObHZpRDhlRXdTWGJtREp6OHllc3UwT2dIZE9WZlhaZEF3UkFfS1hGQU9SLU03WUEzcU9NajVLSEZyN25aeG1FWkRZUTVFSGtBWERhZw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQU196RlpkNHhqUXh5LUlCcFFJNVV0WnFHVVdzRXc5RU5iLXRJVzg2cmsxTFBUZ3pEdjNNMzBPMTZTcl9NSEx4eklXRGdmajBPQTFxNUxUT3JJWkZaaEhmUjQ1cXhkbkFQUzJIZHVRMUVaTVJFb3RZaGF2ZWZTQ2F4U0Z30gGHAUFVX3lxTFBxOWN0X2YzbDVGbHpvZXdBRVFHdElTY25udFB6OEgtOWpiUnhFeFBYaDlGMTQ4YzM1R3FCbXZFVTE4dDlXSFNMREpYNGYtdTN6R1ltRFY2eV85T2swaFE3UEdWZWJqRkpBajQwajByajZRblhPWTFaT3VDclJIN0ctUTdYUHRCYw?oc=5",
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-09-10T10:38:45.173488+00:00"
+      "scraped_at": "2026-09-11T10:38:38.835907+00:00"
     },
     {
       "id": "sol-1ccc75ae24",
       "source": "news",
-      "source_label": "DroneDJ",
+      "source_label": "dronedj.com",
       "type": "news_signal",
-      "title": "Texas sues Anzu over alleged DJI drone deception - DroneDJ",
+      "title": "Texas sues Anzu over alleged DJI drone deception - dronedj.com",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
@@ -66,14 +66,14 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Anzu Robotics government contract",
-      "scraped_at": "2026-09-10T10:38:45.173488+00:00"
+      "scraped_at": "2026-09-11T10:38:38.835907+00:00"
     },
     {
       "id": "sol-0947b3c182",
       "source": "news",
-      "source_label": "uavcoach.com",
+      "source_label": "UAV Coach",
       "type": "news_signal",
-      "title": "DJI Alternatives: An In-Depth Guide [New for 2026] - uavcoach.com",
+      "title": "DJI Alternatives: An In-Depth Guide [New for 2026] - UAV Coach",
       "agency": "",
       "sub_agency": "",
       "recipient": "",
@@ -87,7 +87,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-09-10T10:38:45.173488+00:00"
+      "scraped_at": "2026-09-11T10:38:38.835907+00:00"
     },
     {
       "id": "sol-ca661cc52a",
@@ -108,7 +108,7 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "DJI ban government procurement alternative",
-      "scraped_at": "2026-09-10T10:38:45.173488+00:00"
+      "scraped_at": "2026-09-11T10:38:38.835907+00:00"
     },
     {
       "id": "sol-a82dd10c0c",
@@ -129,11 +129,33 @@
       "gray_zone_flag": true,
       "blue_uas_flag": false,
       "query": "Autel government purchase law enforcement",
-      "scraped_at": "2026-09-10T10:38:45.173488+00:00"
+      "scraped_at": "2026-09-11T10:38:38.835907+00:00"
+    },
+    {
+      "id": "sol-bd15e585c7",
+      "source": "news",
+      "source_label": "DroneXL",
+      "type": "news_signal",
+      "title": "Anzu Robotics\u2019 Strategy to Outsmart Skydio and Brinc Drones - DroneXL",
+      "agency": "",
+      "sub_agency": "",
+      "recipient": "",
+      "amount": null,
+      "award_id": null,
+      "posted_date": "Wed, 17 Apr 2024 07:00:00 GMT",
+      "deadline": null,
+      "naics": null,
+      "set_aside": null,
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE02cGxjYUtPdzZINkVaR29pMzRwb1Z4SFdiOTJuSldfMnc4cUdDTERTeDBhWTgwUTFheHFVRldVUUMxOHBGMDIwM01CbFRoREFmamNualN6QThvU3g1R3JwdUo1akZIa0VOUktXRFlITHpJWXhKc1hpNUY1QnNVUQ?oc=5",
+      "gray_zone_flag": true,
+      "blue_uas_flag": true,
+      "query": "Anzu Robotics government contract",
+      "scraped_at": "2026-09-11T10:38:38.835907+00:00"
     }
   ],
   "vendors_flagged": [
-    "anzu",
-    "dji"
+    "dji",
+    "anzu robotics",
+    "anzu"
   ]
 }
