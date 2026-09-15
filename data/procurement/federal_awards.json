@@ -2241,6 +2241,22 @@
       "generated_internal_id": "CONT_AWD_FA864922P0790_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 309487514,
+      "Award ID": "N0001425C1131",
+      "Recipient Name": "LEIDOS, INC.",
+      "Award Amount": 1957164.0,
+      "Total Outlays": null,
+      "Description": "PIXELHAWK WILL USE THE COMMUNICATION, SENSORS, AND PROCESSING POWER OF AN ANDROID CELLPHONE TO INSTRUMENT AND CONTROL UNMANNED AERIAL SYSTEMS (UAS) AS THEY EXECUTE AUTONOMOUS NAVAL MISSIONS.",
+      "Start Date": "2025-07-16",
+      "End Date": "2028-07-16",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_N0001425C1131_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 352830383,
       "Award ID": "FA864925P0490",
       "Recipient Name": "EXCLAIM IP, LLC",
@@ -2319,22 +2335,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W900KK20C0011_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 349155995,
-      "Award ID": "W81XWH20C0062",
-      "Recipient Name": "NEAR EARTH AUTONOMY, INC",
-      "Award Amount": 1386050.74,
-      "Total Outlays": 222114.11,
-      "Description": "ARMY 2018.2 SBIR PHASE III MEDICAL R&D CONTRACT PROPOSAL TITLED \"EMERGENCY JUST-IN-TIME DELIVERY AND RECOVERY OF WHOLE BLOOD VIA UNMANNED AERIAL SYSTEMS (UAS) - PARACHUTE DELIVERY AND OPERATIONAL DEMONSTRATION\" LOG 20000057",
-      "Start Date": "2020-09-15",
-      "End Date": "2023-01-31",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W81XWH20C0062_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 251351237,
@@ -10280,7 +10280,7 @@
       "Total Outlays": null,
       "Description": "GRAY EAGLE TECHNICAL SERVICES (GETS) FY 24-28 FOLLOW-ON CONTRACT FOR GRAY EAGLE UNCREWED AIRCRAFT SYSTEM.",
       "Start Date": "2024-06-11",
-      "End Date": "2026-06-16",
+      "End Date": "2026-12-16",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Army",
       "Award Type": null,
@@ -12465,6 +12465,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-09-14T10:39:03.136055+00:00",
+  "scraped_at": "2026-09-15T10:39:59.036253+00:00",
   "count": 779
 }
