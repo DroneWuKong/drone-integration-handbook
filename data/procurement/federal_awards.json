@@ -7492,7 +7492,7 @@
       "internal_id": 253726578,
       "Award ID": "80NSSC23K0606",
       "Recipient Name": "MINGO COUNTY REDEVELOPMENT AUTHORITY",
-      "Award Amount": 2900000.0,
+      "Award Amount": 2892156.81,
       "Total Outlays": 2892156.81,
       "Description": "THIS MCRA AAM EDUCATION PROGRAM WILL INSPIRE  ENGAGE  EDUCATE  AND EMPLOY THE  NEXT GENERATION OF EXPLORERS  IN WEST VIRGINIA AND APPALACHIA FOR THE FUTURE JOBS IN THE AAM MARKETPLACE. TODAY  MANY INDUSTRIES ARE NOW DEVELOPING AND LEVERAGING DRONE TECHNOLOGIES TO ADVANCE THE DELIVERY OF GOODS AND SERVICES FROM HEALTHCARE USE CASES TO INFRASTRUCTURE INSPECTION USE CASES  TO FIRST RESPONDER AND NATURAL DISASTER DEPLOYMENT USE CASES  AND WITH MORE APPLICATIONS OF THESE TECHNOLOGIES YET TO BE DISCOVERED. ALL THESE UNCREWED AERIAL SYSTEMS (UAS) ACTIVITIES AND OPERATIONS WILL CREATE SIGNIFICANT JOB OPPORTUNITIES FOR THOSE WHO ARE PREPARED AS THIS MARKET REALIZES SIGNIFICANT GROWTH OVER THE NEXT DECADE. MINGO COUNTY  WHERE COAL MINING ONCE PROVIDED SUFFICIENT ECONOMIC OPPORTUNITY FOR FAMILIES  IS NOW AN UNDERREPRESENTED GROUP WITHOUT EQUAL OPPORTUNITY WITHIN OUR SCHOOL SYSTEMS AND WITH SIGNIFICANT CHALLENGES IN ACHIEVING ECONOMIC DEVELOPMENT FOR THE JOBS OF THE FUTURE.",
       "Start Date": "2023-07-01",
@@ -9633,6 +9633,22 @@
       "generated_internal_id": "ASST_NON_1531330_049"
     },
     {
+      "internal_id": 253725769,
+      "Award ID": "80NSSC22M0036",
+      "Recipient Name": "UNIVERSITY OF HAWAII",
+      "Award Amount": 1585000.0,
+      "Total Outlays": 794311.83,
+      "Description": "THE OBJECTIVES OF HAWAII NASA EPSCOR RESEARCH INFRASTRUCTURE DEVELOPMENT (RID) PROPOSAL ARE THREE-FOLD: (1) WE WILL ASSIST AND LEAD THE DEVELOPMENT OF A NEW AEROSPACE ECONOMY IN HAWAII THAT IS CENTERED ON SMALL SATELLITES AND UAVS. (1A) DEDICATED SMA",
+      "Start Date": "2022-09-01",
+      "End Date": "2028-08-31",
+      "Awarding Agency": "National Aeronautics and Space Administration",
+      "Awarding Sub Agency": "National Aeronautics and Space Administration",
+      "Award Type": "COOPERATIVE AGREEMENT (B)",
+      "awarding_agency_id": 862,
+      "agency_slug": "national-aeronautics-and-space-administration",
+      "generated_internal_id": "ASST_NON_80NSSC22M0036_080"
+    },
+    {
       "internal_id": 235251340,
       "Award ID": "2136737",
       "Recipient Name": "CIRCLE OPTICS INC",
@@ -9711,22 +9727,6 @@
       "awarding_agency_id": 655,
       "agency_slug": "national-science-foundation",
       "generated_internal_id": "ASST_NON_2148178_049"
-    },
-    {
-      "internal_id": 253725769,
-      "Award ID": "80NSSC22M0036",
-      "Recipient Name": "UNIVERSITY OF HAWAII",
-      "Award Amount": 1060000.0,
-      "Total Outlays": 794311.83,
-      "Description": "THE OBJECTIVES OF HAWAII NASA EPSCOR RESEARCH INFRASTRUCTURE DEVELOPMENT (RID) PROPOSAL ARE THREE-FOLD: (1) WE WILL ASSIST AND LEAD THE DEVELOPMENT OF A NEW AEROSPACE ECONOMY IN HAWAII THAT IS CENTERED ON SMALL SATELLITES AND UAVS. (1A) DEDICATED SMA",
-      "Start Date": "2022-09-01",
-      "End Date": "2027-08-31",
-      "Awarding Agency": "National Aeronautics and Space Administration",
-      "Awarding Sub Agency": "National Aeronautics and Space Administration",
-      "Award Type": "COOPERATIVE AGREEMENT (B)",
-      "awarding_agency_id": 862,
-      "agency_slug": "national-aeronautics-and-space-administration",
-      "generated_internal_id": "ASST_NON_80NSSC22M0036_080"
     },
     {
       "internal_id": 254627363,
@@ -12513,6 +12513,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-09-20T10:36:28.409995+00:00",
+  "scraped_at": "2026-09-21T10:39:44.402757+00:00",
   "count": 782
 }
