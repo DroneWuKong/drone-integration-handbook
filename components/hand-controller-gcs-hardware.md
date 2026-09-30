@@ -421,7 +421,7 @@ From that working baseline, fork into:
 - **NDAA SKU:** swap to **i.MX 8M Plus** + **Doodle Labs RM-2455** — unlocks Blue UAS adjacent customers.
 - **Tactical SKU:** swap to **Jetson Orin NX** + **Silvus SL4200** — unlocks 50 km MIMO mesh + onboard CV / target tracking.
 
-The controller is a platform; design the carrier board and enclosure so the radio modem, SoC SoM, and battery are **module-swappable** at the cable level. That is the lesson Inspired Flight learned with GS-ONE: every defense customer wants a different radio, and if you can drop in Microhard / Silvus / Doodle without re-doing the housing, you win 80 % more deals.
+The controller is a platform; design the carrier board and enclosure so the radio modem, SoC SoM, and battery are **module-swappable** at the cable level. Document the supported electrical, mechanical, thermal, and software interfaces before describing a replacement as interchangeable. A reusable enclosure can reduce redesign work for compatible modules; no measured sales increase is established here.
 
 ## See also
 
