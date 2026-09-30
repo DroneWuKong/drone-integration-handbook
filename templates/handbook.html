@@ -179,17 +179,18 @@
       </header>
       <div class="search-input-wrap">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
-        <input id="searchInput" type="search" autocomplete="off" spellcheck="false" placeholder="Search protocols, pinouts, platforms, failure modes…" aria-controls="searchResults">
+        <input id="searchInput" type="search" autocomplete="off" spellcheck="false" placeholder="Search protocols, pinouts, platforms, failure modes…" aria-label="Search handbook references" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="searchResults" aria-describedby="searchStatus">
         <kbd>Esc</kbd>
       </div>
       <p class="search-privacy">Search is performed locally in this browser tab. Search text is not sent to the publisher.</p>
       <div class="search-filters" role="group" aria-label="Filter search results">
-        <button class="active" type="button" data-search-filter="all">All <span>{{TOTAL_COUNT}}</span></button>
-        <button type="button" data-search-filter="chapter">Chapters <span>{{CHAPTER_COUNT}}</span></button>
-        <button type="button" data-search-filter="platform">Platforms <span>{{PLATFORM_COUNT}}</span></button>
-        <button type="button" data-search-filter="component">Components <span>{{COMPONENT_COUNT}}</span></button>
+        <button class="active" type="button" data-search-filter="all" aria-pressed="true">All <span>{{TOTAL_COUNT}}</span></button>
+        <button type="button" data-search-filter="chapter" aria-pressed="false">Chapters <span>{{CHAPTER_COUNT}}</span></button>
+        <button type="button" data-search-filter="platform" aria-pressed="false">Platforms <span>{{PLATFORM_COUNT}}</span></button>
+        <button type="button" data-search-filter="component" aria-pressed="false">Components <span>{{COMPONENT_COUNT}}</span></button>
       </div>
-      <div class="search-results" id="searchResults" role="listbox" aria-label="Search results">
+      <p class="search-count" id="searchStatus" role="status" aria-live="polite" aria-atomic="true"></p>
+      <div class="search-results" id="searchResults">
         <div class="search-empty"><strong>Search the whole handbook.</strong><span>Use two or more characters. Search stays in this browser tab and is not transmitted.</span></div>
       </div>
       <footer class="search-footer">

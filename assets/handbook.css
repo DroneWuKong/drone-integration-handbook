@@ -10,8 +10,8 @@
   --text: #f5f0e8;
   --text-soft: #d2ccbe;
   --muted: #a69e8f;
-  --dim: #81796c;
-  --faint: #625c52;
+  --dim: #a69e8f;
+  --faint: #a69e8f;
   --cyan: #00d4ff;
   --cyan-soft: rgba(0, 212, 255, 0.1);
   --red: #ff3b5c;
@@ -1204,7 +1204,7 @@ main {
   z-index: 301;
   display: grid;
   grid-template-rows: auto minmax(0, 1fr) auto;
-  width: min(340px, 90vw);
+  width: min(340px, calc(90vw / var(--uas-text-scale, 1)));
   border-right: 1px solid var(--border);
   background: var(--surface);
   box-shadow: 20px 0 70px rgba(0, 0, 0, 0.45);

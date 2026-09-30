@@ -14,6 +14,7 @@
   const searchClose = $("#searchClose");
   const searchInput = $("#searchInput");
   const searchResults = $("#searchResults");
+  const searchStatus = $("#searchStatus");
   const currentSection = $("#currentSection");
   const readingProgress = $("#readingProgress");
   const backToTop = $("#backToTop");
@@ -288,7 +289,7 @@
     if (context.includes(query)) score += 20;
     if (body.includes(query)) score += 12;
 
-    let allPresent = true;
+    let allPresent = terms.length > 0;
     for (const term of terms) {
       let termScore = 0;
       if (title.includes(term)) termScore += 18;
@@ -300,7 +301,7 @@
       score += termScore;
     }
     if (allPresent) score += 24;
-    if (entry.heading === entry.title) score += 2;
+    if (score > 0 && entry.heading === entry.title) score += 2;
     return score;
   }
 
@@ -312,23 +313,30 @@
     });
     if (!items.length) {
       activeResultIndex = -1;
+      searchInput?.removeAttribute("aria-activedescendant");
       return;
     }
     activeResultIndex = Math.max(0, Math.min(index, items.length - 1));
     const active = items[activeResultIndex];
     active.classList.add("active");
     active.setAttribute("aria-selected", "true");
+    searchInput?.setAttribute("aria-activedescendant", active.id);
     active.scrollIntoView({ block: "nearest" });
   }
 
   function renderSearchResults(queryValue) {
     if (!searchResults) return;
     const query = normalize(queryValue.trim());
+    searchInput?.removeAttribute("aria-activedescendant");
+    searchInput?.setAttribute("aria-expanded", "false");
+    searchResults.removeAttribute("role");
+    searchResults.removeAttribute("aria-label");
     if (query.length < 2) {
       currentResults = [];
       activeResultIndex = -1;
       searchResults.innerHTML =
         '<div class="search-empty"><strong>Search the whole handbook.</strong><span>Use two or more characters. Search stays in this browser tab and is not transmitted.</span></div>';
+      if (searchStatus) searchStatus.textContent = "Enter two or more characters to search.";
       return;
     }
 
@@ -344,13 +352,14 @@
       activeResultIndex = -1;
       searchResults.innerHTML =
         '<div class="search-empty"><strong>No matching references.</strong><span>Try a protocol, platform, component, symptom, or shorter phrase.</span></div>';
+      if (searchStatus) searchStatus.textContent = "No matching references.";
       return;
     }
 
     const rows = currentResults
       .map((entry, index) => {
         const snippet = snippetFor(entry.text, terms);
-        return `<a class="search-result" role="option" aria-selected="false" data-result-index="${index}" href="#${escapeHtml(entry.targetId)}">
+        return `<a class="search-result" id="search-result-${index}" role="option" tabindex="-1" aria-selected="false" data-result-index="${index}" href="#${escapeHtml(entry.targetId)}">
           <span class="search-result-context">${escapeHtml(entry.group)} · ${escapeHtml(entry.title)}</span>
           <span class="search-result-heading">${highlight(entry.heading, terms)}</span>
           <span class="search-result-kind">${escapeHtml(entry.kind)}</span>
@@ -358,7 +367,11 @@
         </a>`;
       })
       .join("");
-    searchResults.innerHTML = `<div class="search-count">${currentResults.length} result${currentResults.length === 1 ? "" : "s"}</div>${rows}`;
+    searchResults.setAttribute("role", "listbox");
+    searchResults.setAttribute("aria-label", "Search results");
+    searchInput?.setAttribute("aria-expanded", "true");
+    searchResults.innerHTML = rows;
+    if (searchStatus) searchStatus.textContent = `${currentResults.length} result${currentResults.length === 1 ? "" : "s"} shown${currentResults.length === 30 ? "; refine your query to narrow the results" : ""}.`;
     setActiveResult(0);
   }
 
@@ -376,6 +389,9 @@
     if (!entry) return;
     closeSearch({ restoreFocus: false });
     if (entry.targetId) history.pushState(null, "", `#${entry.targetId}`);
+    const destination = entry.target.matches("h1,h2,h3,h4,h5,h6") ? entry.target : $("h1,h2,h3,h4,h5,h6", entry.target) || entry.target;
+    destination.setAttribute("tabindex", "-1");
+    destination.focus({ preventScroll: true });
     entry.target.scrollIntoView({ behavior: reducedMotion ? "auto" : "smooth", block: "start" });
     flashTarget(entry.target);
   }
@@ -390,6 +406,7 @@
     searchFilter = "all";
     $$("[data-search-filter]").forEach((button) => {
       button.classList.toggle("active", button.dataset.searchFilter === "all");
+      button.setAttribute("aria-pressed", String(button.dataset.searchFilter === "all"));
     });
     renderSearchResults("");
     requestAnimationFrame(() => searchInput.focus());
@@ -398,6 +415,8 @@
   function closeSearch({ restoreFocus = true } = {}) {
     if (!searchOverlay || searchOverlay.hidden) return;
     searchOverlay.hidden = true;
+    searchInput?.setAttribute("aria-expanded", "false");
+    searchInput?.removeAttribute("aria-activedescendant");
     syncBodyLock();
     if (restoreFocus && lastSearchFocus instanceof HTMLElement) lastSearchFocus.focus();
   }
@@ -419,6 +438,7 @@
       searchFilter = button.dataset.searchFilter || "all";
       $$("[data-search-filter]").forEach((candidate) => {
         candidate.classList.toggle("active", candidate === button);
+        candidate.setAttribute("aria-pressed", String(candidate === button));
       });
       renderSearchResults(searchInput?.value || "");
     });
@@ -491,4 +511,36 @@
     link.target = "_blank";
     link.rel = "noopener noreferrer";
   });
+
+  // Only genuinely overflowing reference content adds a keyboard tab stop.
+  const scrollRegions = $$(".chapter-body table, .chapter-body pre, .chapter-body .codehilite");
+  function updateScrollRegions() {
+    scrollRegions.forEach((region) => {
+      const overflowing = region.scrollWidth > region.clientWidth + 1 || region.scrollHeight > region.clientHeight + 1;
+      const nestedScroller = region.parentElement?.closest("[data-keyboard-scroll]");
+      if (overflowing && !nestedScroller) {
+        region.tabIndex = 0;
+        region.dataset.keyboardScroll = "true";
+        if (!region.matches("table")) region.setAttribute("role", "group");
+        const chapter = region.closest(".chapter");
+        region.setAttribute("aria-label", `${region.matches("table") ? "Table" : "Code"} in ${chapter?.dataset.title || "reference"}; scroll to read all content`);
+      } else if (region.dataset.keyboardScroll) {
+        region.removeAttribute("tabindex");
+        region.removeAttribute("data-keyboard-scroll");
+        region.removeAttribute("aria-label");
+        if (!region.matches("table")) region.removeAttribute("role");
+      }
+    });
+  }
+  let scrollRegionsScheduled = false;
+  function scheduleScrollRegions() {
+    if (scrollRegionsScheduled) return;
+    scrollRegionsScheduled = true;
+    requestAnimationFrame(() => { scrollRegionsScheduled = false; updateScrollRegions(); });
+  }
+  scheduleScrollRegions();
+  window.addEventListener("resize", scheduleScrollRegions);
+  window.addEventListener("load", scheduleScrollRegions);
+  document.fonts?.ready.then(scheduleScrollRegions);
+  new MutationObserver(scheduleScrollRegions).observe(document.documentElement, { attributes: true, attributeFilter: ["data-uas-text-size"] });
 })();
