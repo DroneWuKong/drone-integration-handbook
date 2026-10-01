@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "itu-p525",
+      "title": "ITU-R P.525-5 (November 2024)",
+      "url": "https://www.itu.int/rec/R-REC-P.525-5-202411-I/en",
+      "passage": "Annex section 2.3, equations 5 and 6; MHz and km",
+      "accessed": "2026-10-01",
+      "review_days": 365
+    },
+    {
+      "id": "nist-si",
+      "title": "NIST SP 811 unit conversions",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
+      "passage": "Ampere hour and watt hour entries",
+      "accessed": "2026-10-01",
+      "review_days": 365
+    },
+    {
+      "id": "nist-power",
+      "title": "NIST SP 811 derived units",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "passage": "Table 3: watt = J/s and volt = W/A",
+      "accessed": "2026-10-01",
+      "review_days": 365
+    },
+    {
+      "id": "bipm-si",
+      "title": "BIPM CIPM Recommendation 1 (2002)",
+      "url": "https://www.bipm.org/en/committees/ci/cipm/91-2002/resolution-1",
+      "passage": "Realisation of the metre: vacuum wavelength = c/f and c = 299792458 m/s",
+      "accessed": "2026-10-01",
+      "review_days": 365
+    },
+    {
+      "id": "rs-decibels",
+      "title": "Rohde & Schwarz dB Calculator application note 1GP77",
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/dl_application/application_notes/1gp77/1GP77_8e_dB_Calculator.pdf",
+      "passage": "Sections 4.2 and 6.2; dBm relative to 1 mW",
+      "accessed": "2026-10-01",
+      "review_days": 365
+    }
+  ],
+  "claims": [
+    {
+      "id": "rf-power-1",
+      "statement": "1 mW = 0.00 dBm",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-power-10",
+      "statement": "10 mW = 10.00 dBm",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-power-25",
+      "statement": "25 mW = 13.98 dBm",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-power-100",
+      "statement": "100 mW = 20.00 dBm",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-power-250",
+      "statement": "250 mW = 23.98 dBm",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-power-500",
+      "statement": "500 mW = 26.99 dBm",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-power-1000",
+      "statement": "1000 mW = 30.00 dBm",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-0p1-900",
+      "statement": "900 MHz at 0.1 km: 71.48 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-0p1-2400",
+      "statement": "2400 MHz at 0.1 km: 80.00 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-0p1-5800",
+      "statement": "5800 MHz at 0.1 km: 87.67 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-0p5-900",
+      "statement": "900 MHz at 0.5 km: 85.46 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-0p5-2400",
+      "statement": "2400 MHz at 0.5 km: 93.98 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-0p5-5800",
+      "statement": "5800 MHz at 0.5 km: 101.65 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-1-900",
+      "statement": "900 MHz at 1 km: 91.48 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-1-2400",
+      "statement": "2400 MHz at 1 km: 100.00 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-1-5800",
+      "statement": "5800 MHz at 1 km: 107.67 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-5-900",
+      "statement": "900 MHz at 5 km: 105.46 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-5-2400",
+      "statement": "2400 MHz at 5 km: 113.98 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-5-5800",
+      "statement": "5800 MHz at 5 km: 121.65 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-10-900",
+      "statement": "900 MHz at 10 km: 111.48 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-10-2400",
+      "statement": "2400 MHz at 10 km: 120.00 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-fspl-10-5800",
+      "statement": "5800 MHz at 10 km: 127.67 dB free-space loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-distance-double",
+      "statement": "Doubling free-space distance adds 6.0206 dB path loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived as 20 log10(2); other inputs unchanged.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-budget-example",
+      "statement": "Illustrative 2400 MHz, 1 km, 20 dBm TX, zero gains/losses and -100 dBm assumed receiver threshold: 100.00 dB path loss, -80.00 dBm predicted power and 20.00 dB margin",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "All configuration inputs are hypothetical; no radio has been tested by this example.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    }
+  ]
+}

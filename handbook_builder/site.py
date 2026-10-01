@@ -12,6 +12,7 @@ separate files:
 from __future__ import annotations
 
 import html
+import hashlib
 import importlib
 import json
 import os
@@ -23,6 +24,8 @@ from html.parser import HTMLParser
 from pathlib import Path, PurePosixPath
 from typing import Iterable, Sequence
 from urllib.parse import unquote, urlsplit
+
+from .evidence import load_evidence, expand_markers, decorate_and_inventory, snapshot
 
 from .config import (
     CHAPTERS,
@@ -83,6 +86,9 @@ class ContentEntry:
     group_key: str = ""
     html: str = ""
     plain_text: str = ""
+    identity: str = ""
+    canonical: str = ""
+    publication_state: str = "published"
 
 
 class _TextExtractor(HTMLParser):
@@ -280,6 +286,19 @@ def discover_entries(base_dir: Path) -> list[ContentEntry]:
         component_number += 1
         next_order += 1
 
+    registry_path = base_dir / "data/reference-identities.json"
+    registry = json.loads(registry_path.read_text()) if registry_path.exists() else {}
+    identities, anchors = set(), set()
+    for entry in entries:
+        registered = registry.get(entry.relative_path)
+        if registry_path.exists() and registered is None:
+            raise ValueError("Register a permanent reference identity before publishing " + entry.relative_path)
+        entry.identity = registered["id"] if registered else entry.kind + "-" + _slugify(entry.relative_path)
+        entry.anchor = registered["anchor"] if registered else entry.anchor
+        entry.canonical = "ref-" + entry.identity
+        if entry.identity in identities or entry.anchor in anchors:
+            raise ValueError("Duplicate permanent reference identity")
+        identities.add(entry.identity); anchors.add(entry.anchor)
     return entries
 
 
@@ -400,6 +419,9 @@ def render_entries(entries: Sequence[ContentEntry]) -> None:
 
     for entry in entries:
         source = entry.source_path.read_text(encoding="utf-8")
+        base = entry.source_path.parents[len(PurePosixPath(entry.relative_path).parts)-1]
+        evidence_sources, evidence_claims = load_evidence(base)
+        source = expand_markers(source, evidence_sources, evidence_claims)
         source = rewrite_internal_markdown_links(
             source,
             entry.relative_path,
@@ -632,6 +654,7 @@ def _render_entry(
 ) -> str:
     source_url = f"{REPOSITORY_URL}/blob/main/{entry.relative_path}"
     return (
+        f'<span class="reference-alias" id="{html.escape(entry.canonical)}"></span>'
         f'<article class="chapter content-card" id="{html.escape(entry.anchor)}" '
         f'data-kind="{html.escape(entry.kind)}" '
         f'data-group="{html.escape(entry.group)}" '
@@ -642,6 +665,7 @@ def _render_entry(
         '<div class="chapter-tools">'
         f'<button class="copy-link" type="button" data-copy-anchor="{html.escape(entry.anchor)}">Copy link</button>'
         f'<a href="{html.escape(source_url)}">Source</a>'
+        f'<button type="button" class="report-claim" data-report-claim="{html.escape(entry.identity)}">Report / add field evidence</button>'
         "</div></header>"
         f'<div class="chapter-body">{entry.html}</div>'
         f'{_entry_footer(previous_by_anchor[entry.anchor], next_by_anchor[entry.anchor])}'
@@ -740,11 +764,37 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
     try:
         entries = discover_entries(base)
         render_entries(entries)
+        evidence_sources, evidence_claims = load_evidence(base)
+        records, tables = [], []
+        for entry in entries:
+            entry.html, rows, entry_tables, entry.publication_state = decorate_and_inventory(entry, evidence_sources, evidence_claims)
+            records.extend(rows); tables.extend(entry_tables)
+        inputs = [(e.relative_path, e.source_path) for e in entries]
+        for directory in ("assets", "data", "handbook_builder", "templates"):
+            inputs.extend((p.relative_to(base).as_posix(), p) for p in (base / directory).rglob("*") if p.is_file() and p.suffix in {".json", ".js", ".css", ".py", ".html"})
+        digest = hashlib.sha256()
+        for path, file in sorted(inputs):
+            digest.update(path.encode()); digest.update(file.read_bytes())
+        release = digest.hexdigest()[:20]
         document = render_site(base, entries)
 
         (staging / "index.html").write_text(document, encoding="utf-8")
         _copy_static_assets(base / "assets", staging / "assets")
         _write_support_files(base, staging)
+        payload = snapshot(entries, evidence_sources, records, tables, release)
+        (staging / "assets/reference-data.json").write_text(json.dumps(payload, ensure_ascii=False, separators=(",",":")))
+        (staging / "assets/release-marker.json").write_text(json.dumps({"release":release,"references":len(entries),"schema_version":1,"coverage":payload["coverage"]},indent=2))
+        (staging / "release.json").write_text(json.dumps({"release":release,"schema_version":1}))
+        for name in ("reference-tools", "review"):
+            page = base / ("templates/" + name + ".html")
+            if page.is_file():
+                shutil.copy2(page, staging / ("reference.html" if name=="reference-tools" else "review.html"))
+        worker = base / "assets/offline-worker.js"
+        if worker.is_file():
+            (staging / "sw.js").write_text(worker.read_text().replace("__RELEASE__",release))
+        cache_files = ["/"] + ["/"+p.relative_to(staging).as_posix() for p in staging.rglob("*") if p.is_file() and p.name not in {"sw.js","_redirects","robots.txt","offline-manifest.json"} and "tools/log-analyzer" not in p.as_posix()]
+        hashes = {url:hashlib.sha256((staging/("index.html" if url=="/" else url.lstrip("/"))).read_bytes()).hexdigest() for url in cache_files}
+        (staging / "offline-manifest.json").write_text(json.dumps({"release":release,"files":cache_files,"hashes":hashes}))
 
         if output.exists():
             shutil.rmtree(output)
