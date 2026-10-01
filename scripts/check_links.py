@@ -22,7 +22,6 @@ Exit code is non-zero if any broken internal link is found.
 
 from __future__ import annotations
 
-import glob
 import os
 import re
 import sys
@@ -33,10 +32,12 @@ SKIP_PREFIXES = ("http://", "https://", "mailto:", "tel:", "//", "#", "/")
 
 
 def iter_markdown(root: str):
-    for path in glob.glob(os.path.join(root, "**", "*.md"), recursive=True):
-        if "/.git/" in path:
-            continue
-        yield path
+    excluded = {".git", "node_modules", "site", "_site", ".local", ".wrangler", "__pycache__", ".venv"}
+    for directory, subdirs, files in os.walk(root):
+        subdirs[:] = [name for name in subdirs if name not in excluded]
+        for name in files:
+            if name.endswith(".md"):
+                yield os.path.join(directory, name)
 
 
 def check(root: str = ".") -> int:

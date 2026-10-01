@@ -1,5 +1,15 @@
 # Changelog
 
+## Candidate — October 1, 2026 — Evidence and reference tools
+
+- Add permanent article/profile identities with frozen legacy URLs, a public evidence/query snapshot and visible unresolved-evidence controls.
+- Rewrite link budgets around primary-source formulas; generate mathematical tables from managed claim values and remove unsupported generic range/sensitivity shortcuts.
+- Add search/filter/comparison/export tools and software-only power conversion, RF, energy/runtime, electrical headroom, wavelength and interface declaration aids.
+- Add private report storage, receipts, optional private evidence files, authenticated review history, draft correction proposals and source monitoring.
+- Add explicit coherent offline saving and meaningful engine, SQLite API and browser checks.
+- Pending: complete semantic citation/table review, isolated Cloudflare resource setup/preview acceptance, applicable exact-revision review and verified custom-domain publication. Goal #57 remains open; existing held-content review #40 is separate.
+
+
 ## [Session] - 2026-07-02 — Packable Antennas — Range You Can Carry
 
 ### Added

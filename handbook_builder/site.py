@@ -666,7 +666,7 @@ def _render_entry(
         f'<button class="copy-link" type="button" data-copy-anchor="{html.escape(entry.anchor)}">Copy link</button>'
         f'<a href="{html.escape(source_url)}">Source</a>'
         f'<button type="button" class="report-claim" data-report-claim="{html.escape(entry.identity)}">Report / add field evidence</button>'
-        "</div></header>"
+        '</div><p class="evidence-migration">Evidence migration is in progress. Numerical and categorical statements remain unreviewed unless an evidence control gives a scoped source check. Extraction does not verify performance.</p></header>'
         f'<div class="chapter-body">{entry.html}</div>'
         f'{_entry_footer(previous_by_anchor[entry.anchor], next_by_anchor[entry.anchor])}'
         "</article>"
@@ -770,13 +770,14 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
             entry.html, rows, entry_tables, entry.publication_state = decorate_and_inventory(entry, evidence_sources, evidence_claims)
             records.extend(rows); tables.extend(entry_tables)
         inputs = [(e.relative_path, e.source_path) for e in entries]
-        for directory in ("assets", "data", "handbook_builder", "templates"):
-            inputs.extend((p.relative_to(base).as_posix(), p) for p in (base / directory).rglob("*") if p.is_file() and p.suffix in {".json", ".js", ".css", ".py", ".html"})
+        for directory in ("assets", "data", "handbook_builder", "templates", "server", "functions", "migrations"):
+            inputs.extend((p.relative_to(base).as_posix(), p) for p in (base / directory).rglob("*") if p.is_file() and p.suffix in {".json", ".js", ".css", ".py", ".html", ".mjs", ".sql"})
+        inputs.extend((name, base/name) for name in ("build.py", "wrangler.jsonc", "package.json", "package-lock.json") if (base/name).is_file())
         digest = hashlib.sha256()
         for path, file in sorted(inputs):
             digest.update(path.encode()); digest.update(file.read_bytes())
         release = digest.hexdigest()[:20]
-        document = render_site(base, entries)
+        document = render_site(base, entries).replace("</head>", f'<meta name="handbook-release" content="{release}"></head>')
 
         (staging / "index.html").write_text(document, encoding="utf-8")
         _copy_static_assets(base / "assets", staging / "assets")
@@ -788,7 +789,7 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
         for name in ("reference-tools", "review"):
             page = base / ("templates/" + name + ".html")
             if page.is_file():
-                shutil.copy2(page, staging / ("reference.html" if name=="reference-tools" else "review.html"))
+                (staging / ("reference.html" if name=="reference-tools" else "review.html")).write_text(page.read_text().replace("</head>", f'<meta name="handbook-release" content="{release}"></head>'))
         worker = base / "assets/offline-worker.js"
         if worker.is_file():
             (staging / "sw.js").write_text(worker.read_text().replace("__RELEASE__",release))

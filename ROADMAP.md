@@ -117,3 +117,7 @@ A roadmap item is complete only when:
 6. Release notes describe the shipped state.
 
 Open an issue or pull request to propose additions. New numbered chapters must receive an unused stable ID in `handbook_builder/config.py`; never renumber an existing published chapter.
+
+## Complete evidence and usability overhaul — active
+
+Goal [#57](https://github.com/DroneWuKong/drone-integration-handbook/issues/57) stays open through the complete citation/table audit and verified production release. The implementation candidate provides evidence identities, generated mathematical claims, calculators, structured search/exports, private contribution/review services, correction tooling and offline releases. Legacy evidence remains explicitly unresolved. Complete the semantic audit in reviewed batches, provision isolated Cloudflare storage, validate preview persistence and private boundaries, record applicable exact-revision review/publisher decision, then verify the custom-domain release. Existing publication holds and #40 remain separate dependencies.

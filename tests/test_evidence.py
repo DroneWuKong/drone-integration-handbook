@@ -41,3 +41,12 @@ class EvidenceTests(unittest.TestCase):
         result=inspect(source,{"digest":"old"},date(2026,10,1),unavailable)
         self.assertEqual(result[1]["digest"],"old")
         self.assertIn("source-unavailable",{t["reason"] for t in result[2]})
+
+    def test_correction_is_draft_deduplicable_and_preserves_old_version(self):
+        from prepare_correction import prepare
+        data=json.loads((ROOT/"data/evidence.json").read_text());old=json.dumps(data,sort_keys=True);claim=data["claims"][0]
+        proposal=prepare(data,claim["id"],"Updated public wording",claim["sources"],"Explicit scope","Evidence correction","nonsecret-report-id")
+        again=prepare(data,claim["id"],"Updated public wording",claim["sources"],"Explicit scope","Evidence correction","nonsecret-report-id")
+        self.assertEqual(proposal["id"],again["id"]);self.assertEqual(proposal["before"],claim)
+        self.assertIsNone(proposal["proposed"]["verified"]);self.assertEqual(proposal["publication_state"],"draft")
+        self.assertEqual(json.dumps(data,sort_keys=True),old)

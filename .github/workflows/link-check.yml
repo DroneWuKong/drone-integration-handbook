@@ -28,10 +28,12 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
+          node-version: "24"
 
       - name: Install build dependencies
-        run: python3 -m pip install -r requirements.txt
+        run: |
+          python3 -m pip install -r requirements.txt
+          npm ci
 
       - name: Compile Python sources
         run: python3 -m compileall -q build.py handbook_builder scripts tests
@@ -39,8 +41,12 @@ jobs:
       - name: Run unit tests
         run: python3 -m unittest discover -s tests -v
 
+      - name: Run calculation and private API tests with real SQLite
+        run: npm test
+
       - name: Check browser JavaScript syntax
-        run: node --check assets/handbook.js
+        run: |
+          for file in assets/*.js server/*.mjs functions/api/*.js; do node --check "$file"; done
 
       - name: Check source Markdown links
         run: python3 scripts/check_links.py
@@ -50,6 +56,29 @@ jobs:
 
       - name: Validate generated site
         run: python3 scripts/check_generated_site.py site/index.html
+
+      - name: Validate public evidence, holds, and offline boundaries
+        run: python3 scripts/check_evidence.py
+
+      - name: Compile Pages Functions
+        run: npm run build:functions
+
+      - name: Install test browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Check mobile reporting, review, offline recovery and no-JavaScript access
+        run: npm run test:browser
+
+      - name: Upload public browser verification
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: handbook-browser-${{ github.sha }}
+          path: |
+            .local/browser-check/*.png
+            .local/browser-check/results.json
+          if-no-files-found: warn
+          retention-days: 7
 
       - name: Upload generated site
         if: always()

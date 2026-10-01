@@ -45,7 +45,6 @@
   "claims": [
     {
       "id": "rf-power-1",
-      "statement": "1 mW = 0.00 dBm",
       "sources": [
         "rs-decibels"
       ],
@@ -54,11 +53,20 @@
       "scope": "Conversion only; no device-use or regulatory claim.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 0,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 1
+        },
+        "output": "dbm"
+      },
+      "statement_template": "1 mW = {value:.2f} dBm"
     },
     {
       "id": "rf-power-10",
-      "statement": "10 mW = 10.00 dBm",
       "sources": [
         "rs-decibels"
       ],
@@ -67,11 +75,20 @@
       "scope": "Conversion only; no device-use or regulatory claim.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 10,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 10
+        },
+        "output": "dbm"
+      },
+      "statement_template": "10 mW = {value:.2f} dBm"
     },
     {
       "id": "rf-power-25",
-      "statement": "25 mW = 13.98 dBm",
       "sources": [
         "rs-decibels"
       ],
@@ -80,11 +97,20 @@
       "scope": "Conversion only; no device-use or regulatory claim.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 13.979400086720377,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 25
+        },
+        "output": "dbm"
+      },
+      "statement_template": "25 mW = {value:.2f} dBm"
     },
     {
       "id": "rf-power-100",
-      "statement": "100 mW = 20.00 dBm",
       "sources": [
         "rs-decibels"
       ],
@@ -93,11 +119,20 @@
       "scope": "Conversion only; no device-use or regulatory claim.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 20,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 100
+        },
+        "output": "dbm"
+      },
+      "statement_template": "100 mW = {value:.2f} dBm"
     },
     {
       "id": "rf-power-250",
-      "statement": "250 mW = 23.98 dBm",
       "sources": [
         "rs-decibels"
       ],
@@ -106,11 +141,20 @@
       "scope": "Conversion only; no device-use or regulatory claim.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 23.979400086720375,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 250
+        },
+        "output": "dbm"
+      },
+      "statement_template": "250 mW = {value:.2f} dBm"
     },
     {
       "id": "rf-power-500",
-      "statement": "500 mW = 26.99 dBm",
       "sources": [
         "rs-decibels"
       ],
@@ -119,11 +163,20 @@
       "scope": "Conversion only; no device-use or regulatory claim.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 26.989700043360187,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 500
+        },
+        "output": "dbm"
+      },
+      "statement_template": "500 mW = {value:.2f} dBm"
     },
     {
       "id": "rf-power-1000",
-      "statement": "1000 mW = 30.00 dBm",
       "sources": [
         "rs-decibels"
       ],
@@ -132,11 +185,20 @@
       "scope": "Conversion only; no device-use or regulatory claim.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 30,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 1000
+        },
+        "output": "dbm"
+      },
+      "statement_template": "1000 mW = {value:.2f} dBm"
     },
     {
       "id": "rf-fspl-0p1-900",
-      "statement": "900 MHz at 0.1 km: 71.48 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -145,11 +207,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 71.4848501887865,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 900,
+          "distanceKm": 0.1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 900 MHz and 0.1 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-0p1-2400",
-      "statement": "2400 MHz at 0.1 km: 80.00 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -158,11 +235,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 80.0042248342321,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 0.1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 2400 MHz and 0.1 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-0p1-5800",
-      "statement": "5800 MHz at 0.1 km: 87.67 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -171,11 +263,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 87.66855987125874,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 5800,
+          "distanceKm": 0.1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 5800 MHz and 0.1 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-0p5-900",
-      "statement": "900 MHz at 0.5 km: 85.46 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -184,11 +291,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 85.46425027550687,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 900,
+          "distanceKm": 0.5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 900 MHz and 0.5 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-0p5-2400",
-      "statement": "2400 MHz at 0.5 km: 93.98 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -197,11 +319,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 93.98362492095248,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 0.5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 2400 MHz and 0.5 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-0p5-5800",
-      "statement": "5800 MHz at 0.5 km: 101.65 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -210,11 +347,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 101.64795995797911,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 5800,
+          "distanceKm": 0.5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 5800 MHz and 0.5 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-1-900",
-      "statement": "900 MHz at 1 km: 91.48 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -223,11 +375,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 91.4848501887865,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 900,
+          "distanceKm": 1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 900 MHz and 1 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-1-2400",
-      "statement": "2400 MHz at 1 km: 100.00 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -236,11 +403,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 100.0042248342321,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 2400 MHz and 1 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-1-5800",
-      "statement": "5800 MHz at 1 km: 107.67 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -249,11 +431,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 107.66855987125874,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 5800,
+          "distanceKm": 1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 5800 MHz and 1 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-5-900",
-      "statement": "900 MHz at 5 km: 105.46 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -262,11 +459,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 105.46425027550687,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 900,
+          "distanceKm": 5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 900 MHz and 5 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-5-2400",
-      "statement": "2400 MHz at 5 km: 113.98 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -275,11 +487,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 113.98362492095248,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 2400 MHz and 5 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-5-5800",
-      "statement": "5800 MHz at 5 km: 121.65 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -288,11 +515,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 121.64795995797911,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 5800,
+          "distanceKm": 5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 5800 MHz and 5 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-10-900",
-      "statement": "900 MHz at 10 km: 111.48 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -301,11 +543,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 111.4848501887865,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 900,
+          "distanceKm": 10,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 900 MHz and 10 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-10-2400",
-      "statement": "2400 MHz at 10 km: 120.00 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -314,11 +571,26 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 120.0042248342321,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 10,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 2400 MHz and 10 km is {value:.2f} dB"
     },
     {
       "id": "rf-fspl-10-5800",
-      "statement": "5800 MHz at 10 km: 127.67 dB free-space loss",
       "sources": [
         "itu-p525"
       ],
@@ -327,7 +599,23 @@
       "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 127.66855987125874,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 5800,
+          "distanceKm": 10,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 5800 MHz and 10 km is {value:.2f} dB"
     },
     {
       "id": "rf-distance-double",
@@ -346,14 +634,30 @@
       "id": "rf-budget-example",
       "statement": "Illustrative 2400 MHz, 1 km, 20 dBm TX, zero gains/losses and -100 dBm assumed receiver threshold: 100.00 dB path loss, -80.00 dBm predicted power and 20.00 dB margin",
       "sources": [
-        "itu-p525"
+        "itu-p525",
+        "rs-decibels"
       ],
       "status": "derived",
       "verified": "2026-10-01",
       "scope": "All configuration inputs are hypothetical; no radio has been tested by this example.",
       "revision": 1,
       "history": [],
-      "reviewer": "Software derivation checked against cited formula; no physical device test"
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "marginDb"
+      },
+      "value": 19.995775165767895,
+      "unit": "dB"
     }
   ]
 }

@@ -26,6 +26,7 @@ def load_evidence(base):
         if u.scheme!="https" or not u.hostname: raise ValueError("HTTPS source required")
         date.fromisoformat(s["accessed"])
     for c in claims.values():
+        if c.get("statement_template"): c["statement"] = c["statement_template"].format(value=c["value"])
         if c["status"] not in {"derived","official-source","manufacturer-reported","field-observed","unreviewed"}: raise ValueError("Invalid evidence category")
         if c["status"]!="unreviewed" and not c.get("sources"): raise ValueError("Supported claims require sources")
         if set(c.get("sources",[]))-sources.keys(): raise ValueError("Missing claim source")
@@ -35,11 +36,20 @@ def load_evidence(base):
 def control(c,sources):
     esc=html.escape
     links="".join('<li><a href="'+esc(sources[s]["url"])+'">'+esc(sources[s]["title"])+"</a>: "+esc(sources[s]["passage"])+"; accessed "+esc(sources[s]["accessed"])+"</li>" for s in c.get("sources",[]))
-    return '<details class="claim-evidence" id="'+esc(c["id"])+'"><summary>'+esc(c["status"])+' · evidence</summary><p>'+esc(c["statement"])+"</p><p>"+esc(c["scope"])+"</p><p>Verified "+esc(c["verified"])+'</p><ul>'+links+'</ul><button type="button" class="report-claim" data-report-claim="'+esc(c["id"])+'">Report a discrepancy</button></details>'
+    return '<details class="claim-evidence" id="'+esc(c["id"])+'"><summary>'+esc(c["status"])+' · evidence</summary><p>'+esc(c["statement"])+"</p><p>"+esc(c["scope"])+"</p><p>Software/source check "+esc(c["verified"])+'</p><ul>'+links+'</ul><button type="button" class="report-claim" data-report-claim="'+esc(c["id"])+'">Report a discrepancy</button></details>'
 def expand_markers(source,sources,claims):
     def replace(m):
         if m[1] not in claims: raise ValueError("Unknown claim "+m[1])
         return control(claims[m[1]],sources)
+    def claim_table(m):
+        prefix=m[1]
+        rows=["| Power | dBm | Evidence |","|---|---|---|"] if prefix=="rf-power" else ["| Distance | Frequency | Calculated loss | Evidence |","|---|---|---|---|"]
+        for c in claims.values():
+            if not c["id"].startswith(prefix+"-"):continue
+            if prefix=="rf-power": rows.append(f'| {c["calculation"]["inputs"]["powerMw"]:g} mW | {c["value"]:.2f} | [claim:{c["id"]}] |')
+            else: rows.append(f'| {c["calculation"]["inputs"]["distanceKm"]:g} km | {c["calculation"]["inputs"]["frequencyMHz"]:g} MHz | {c["value"]:.2f} dB | [claim:{c["id"]}] |')
+        return "\n".join(rows)
+    source=re.sub(r"\[table:(rf-power|rf-fspl)\]",claim_table,source)
     return MARKER.sub(replace,source)
 def decorate_and_inventory(entry,sources,claims):
     rendered=entry.html
@@ -64,6 +74,8 @@ def decorate_and_inventory(entry,sources,claims):
         headers=[text(v) for v in CELL.findall(rows[0])]
         tid="table-"+hashlib.sha256((entry.identity+text(m[0])).encode()).hexdigest()[:20]
         tables.append({"id":tid,"article_id":entry.identity,"path":entry.relative_path,"headers":headers,"disposition":"queryable-lookup" if len(headers)==2 else "comparison","review":"unreviewed","rows":max(0,len(rows)-1)})
+        if entry.relative_path=="fundamentals/link-budgets.md":
+            tables[-1].update(disposition="calculator",review="software-checked",tool="dbPower" if "dBm" in headers else "rf")
         pos=0
         def row(r):
             nonlocal pos
@@ -83,7 +95,7 @@ def decorate_and_inventory(entry,sources,claims):
         return m[0][:-len(end)]+" "+unknown(rid)+end
     rendered=re.sub(r"<(p|li)(?:\s[^>]*)?>.*?</\1>",block,rendered,flags=re.S)
     for i,v in enumerate(protected):rendered=rendered.replace("@@PROTECTED"+str(i)+"@@",v)
-    for cid in sorted(set(MARKER.findall(entry.source_path.read_text()))):
+    for cid in sorted(set(MARKER.findall(entry.source_path.read_text())) | {c["id"] for c in claims.values() if any("[table:"+prefix+"]" in entry.source_path.read_text() and c["id"].startswith(prefix+"-") for prefix in ("rf-power","rf-fspl"))}):
         records.append({**claims[cid],"article_id":entry.identity,"title":entry.title,"anchor":entry.anchor,"canonical":entry.canonical,"path":entry.relative_path,"revision":revision,"kind":entry.kind,"group":entry.group,"record_type":"managed-claim","fields":{}})
     seen=set()
     def unique(m):
