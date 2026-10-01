@@ -28,7 +28,7 @@ A single release digest covers public article sources, assets, identity/evidence
 
 Pages Functions route `/api/*` to `server/reports.mjs`. Bind a private D1 database as `REPORTS`, a strong secret as `REVIEW_TOKEN`, and optionally a private R2 bucket as `EVIDENCE`. Neither report data nor attachment storage is read by the public builder.
 
-No-login submissions require consent, carry claim/release context, and support optional contact information. Field observations require declared configuration, observation date, conditions and measurement/method. Draft saving is explicit and local. Stored-report acknowledgment follows a database read-back. Exact retries share a client-generated UUID and private receipt token; altered content using the same identity is rejected. Server storage retains only the token hash. A lost response retries the exact original content.
+No-login submissions require consent, carry the target wording, claim/release, exact deployment commit and available source-file revision, and support optional contact information. Field observations require declared configuration, observation date, conditions and measurement/method. Draft saving is explicit and local. Stored-report acknowledgment follows a database read-back. Exact retries share a client-generated UUID and private receipt token; altered content using the same identity is rejected. Server storage retains only the token hash. A lost response retries the exact original content.
 
 Receipt status reveals state/timestamps only, with a bearer token. Review requires the reviewer secret and sends no-store responses. The queue supports pagination, state counts, reasons, duplicate targets, optimistic versions and append-only review history:
 

@@ -49,6 +49,7 @@ class EvidenceTests(unittest.TestCase):
         again=prepare(data,claim["id"],"Updated public wording",claim["sources"],"Explicit scope","Evidence correction","nonsecret-report-id")
         self.assertEqual(proposal["id"],again["id"]);self.assertEqual(proposal["before"],claim)
         self.assertIsNone(proposal["proposed"]["verified"]);self.assertEqual(proposal["publication_state"],"draft")
+        self.assertNotIn("statement_template",proposal["proposed"]);self.assertEqual(proposal["proposed"]["statement"],"Updated public wording")
         self.assertEqual(json.dumps(data,sort_keys=True),old)
 
     def test_two_column_specs_are_queryable_without_losing_original_fields(self):

@@ -66,7 +66,7 @@ def decorate_and_inventory(entry,sources,claims):
     def record(body,kind,fields=None):
         plain=text(body)
         rid="legacy-"+hashlib.sha256((entry.identity+kind+plain).encode()).hexdigest()[:20]
-        records.append({"id":rid,"article_id":entry.identity,"title":entry.title,"anchor":entry.anchor,"canonical":entry.canonical,"path":entry.relative_path,"revision":revision,"kind":entry.kind,"group":entry.group,"record_type":kind,"statement":plain,"fields":fields or {},"status":"unreviewed","verified":None,"sources":[],"source_candidates":re.findall(r'href="(https://[^"]+)"',body)})
+        records.append({"id":rid,"article_id":entry.identity,"title":entry.title,"anchor":entry.anchor,"canonical":entry.canonical,"path":entry.relative_path,"source_revision":revision,"revision":revision,"kind":entry.kind,"group":entry.group,"record_type":kind,"statement":plain,"fields":fields or {},"status":"unreviewed","verified":None,"sources":[],"source_candidates":re.findall(r'href="(https://[^"]+)"',body)})
         return rid
     def unknown(rid):
         return '<span class="unreviewed-claim" id="'+rid+'">Evidence not yet reviewed <button type="button" class="report-claim" data-report-claim="'+rid+'">Flag this</button></span>'

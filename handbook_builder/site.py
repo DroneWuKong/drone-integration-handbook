@@ -662,7 +662,7 @@ def _render_entry(
         f'data-kind="{html.escape(entry.kind)}" '
         f'data-group="{html.escape(entry.group)}" '
         f'data-title="{html.escape(entry.title)}" '
-        f'data-source="{html.escape(entry.relative_path)}">'
+        f'data-source="{html.escape(entry.relative_path)}" data-source-revision="{hashlib.sha256(entry.source_path.read_bytes()).hexdigest()}">'
         '<header class="chapter-meta">'
         f'<p class="section-kicker">{html.escape(_entry_kicker(entry))}</p>'
         '<div class="chapter-tools">'

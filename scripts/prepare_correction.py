@@ -11,6 +11,7 @@ def prepare(data,claim_id,statement,source_ids,scope,reason,report_id=None):
     if not source_ids or set(source_ids)-sources.keys():raise ValueError("Known primary source identities required")
     if not statement.strip() or not scope.strip() or not reason.strip():raise ValueError("Statement, scope and review reason required")
     before=copy.deepcopy(claims[claim_id]);after=copy.deepcopy(before)
+    after.pop("statement_template",None)
     after.update(statement=statement,sources=source_ids,scope=scope,revision=before.get("revision",1)+1)
     proposal_id=hashlib.sha256(json.dumps({"before":before,"statement":statement,"sources":source_ids,"scope":scope},sort_keys=True).encode()).hexdigest()[:24]
     event={"proposal_id":proposal_id,"from_revision":before.get("revision",1),"reason":reason,"report_id":report_id,"publication_state":"draft"}
