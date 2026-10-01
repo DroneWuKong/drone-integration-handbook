@@ -20,6 +20,8 @@ def check(site):
         assert {t["id"] for t in registered}=={t["id"] for t in data["tables"]}, "Reconcile changed table dispositions before publication"
     assert set(claims)=={r["id"] for r in data["records"] if r["record_type"]=="managed-claim"}
     for r in data["records"]:
+        assert len(r["source_revision"])==64
+        if r["record_type"]=="managed-claim":assert r["revision"]==claims[r["id"]]["revision"]
         if r["status"]!="unreviewed": assert r["sources"] and r["verified"] and r["scope"]
         else: assert not r["sources"] and r["verified"] is None
     marker=json.loads((site/"release.json").read_text())

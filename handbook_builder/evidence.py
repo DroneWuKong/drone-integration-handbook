@@ -105,7 +105,7 @@ def decorate_and_inventory(entry,sources,claims):
     rendered=re.sub(r"<(p|li)(?:\s[^>]*)?>.*?</\1>",block,rendered,flags=re.S)
     for i,v in enumerate(protected):rendered=rendered.replace("@@PROTECTED"+str(i)+"@@",v)
     for cid in sorted(set(MARKER.findall(entry.source_path.read_text())) | {c["id"] for c in claims.values() if any("[table:"+prefix+"]" in entry.source_path.read_text() and c["id"].startswith(prefix+"-") for prefix in ("rf-power","rf-fspl"))}):
-        records.append({**claims[cid],"article_id":entry.identity,"title":entry.title,"anchor":entry.anchor,"canonical":entry.canonical,"path":entry.relative_path,"revision":revision,"kind":entry.kind,"group":entry.group,"record_type":"managed-claim","fields":{}})
+        records.append({**claims[cid],"article_id":entry.identity,"title":entry.title,"anchor":entry.anchor,"canonical":entry.canonical,"path":entry.relative_path,"source_revision":revision,"kind":entry.kind,"group":entry.group,"record_type":"managed-claim","fields":{}})
     seen=set()
     def unique(m):
         if m[1] in seen:return ""
