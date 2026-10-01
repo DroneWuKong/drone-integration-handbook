@@ -20,7 +20,7 @@ Ordinary hosting, content-delivery, DNS, security, and network systems may proce
 
 ## Information you choose to send
 
-When you submit a discrepancy or field observation, the service stores its claim/article ID, public release, your description, optional proposed correction and public source URL, configuration, date, conditions, measurement method, optional contact email, and consent in a private editorial database. Optional evidence files are stored privately when the attachment service is configured. Submission returns a receipt; its private token permits status checks and is not stored in plaintext. Reports and attachments do not enter the public build, search exports, analytics, or offline cache. A reviewer may prepare public correction wording after evidence and publication review.
+When you submit a discrepancy or field observation, the service stores its claim/article ID, public release, your description, optional proposed correction and public source URL, configuration, date, conditions, measurement method, optional contact email, relationship disclosure, and consent in a private editorial database. Optional evidence files are stored privately when the attachment service is configured. Submission returns a receipt; its private token permits status checks and is not stored in plaintext. Reports and attachments do not enter the public build, search exports, analytics, or offline cache. A reviewer may prepare public correction wording after evidence and publication review.
 
 To limit abuse, the service temporarily records a hash of the request IP address combined with an hourly window and a request count; those rate-limit rows expire after one day. Hosting systems may separately process infrastructure data as described above.
 

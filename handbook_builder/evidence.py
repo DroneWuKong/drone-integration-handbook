@@ -2,6 +2,7 @@
 import hashlib
 import html
 import json
+import math
 import re
 from datetime import date
 from pathlib import Path
@@ -30,7 +31,10 @@ def load_evidence(base):
         if c["status"] not in {"derived","official-source","manufacturer-reported","field-observed","unreviewed"}: raise ValueError("Invalid evidence category")
         if c["status"]!="unreviewed" and not c.get("sources"): raise ValueError("Supported claims require sources")
         if set(c.get("sources",[]))-sources.keys(): raise ValueError("Missing claim source")
-        date.fromisoformat(c["verified"])
+        if c.get("verified"): date.fromisoformat(c["verified"])
+        elif c["status"]!="unreviewed":raise ValueError("Supported claim check date required")
+        if "value" in c and (not isinstance(c["value"],(int,float)) or isinstance(c["value"],bool) or not math.isfinite(c["value"])):raise ValueError("Finite numerical claim value required")
+        if "calculation" in c and (not c.get("unit") or not c["calculation"].get("inputs") or not c["calculation"].get("output")):raise ValueError("Calculation units, inputs and output required")
         if not c.get("scope") or not c.get("statement"): raise ValueError("Claim scope and statement required")
     return sources,claims
 def control(c,sources):

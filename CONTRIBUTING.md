@@ -40,6 +40,15 @@ Do not state that something is “compliant,” “safe,” “cleared,” “ce
 
 ## How to contribute
 
+### From a phone, without a GitHub account
+
+Use **Report / add field evidence** or **Flag this** beside the relevant article or datum. The form prefills the exact reference/claim and release. Describe the issue and, when available, provide a public primary source or proposed wording. For field observations, include configuration/revisions/mode, observation date, conditions and measurement/method with units and uncertainty. Disclose a relevant relationship in the optional relationship field. A software test must be described as software, not field observation or manufacturer certification.
+
+Save a local draft if the connection is unreliable. Submission is confirmed only when a private receipt is returned. Keep its token private. Optional evidence files are available after a confirmed report if private file storage is configured. If submission is unavailable, save the draft and email the publisher.
+
+Web-form reports and attachments enter a private queue; they are not automatically public repository contributions. Public correction wording is reviewed separately. The rights, confidentiality, attribution and relationship requirements above still apply to what you share.
+
+
 ### Small corrections
 
 1. Fork the repository.
@@ -111,3 +120,9 @@ See [`LICENSING.md`](LICENSING.md), [`LICENSE`](LICENSE), [`LICENSE-CODE`](LICEN
 ## Corrections and editorial policy
 
 See [`legal/editorial-and-corrections-policy.md`](legal/editorial-and-corrections-policy.md). Payment, sponsorship, consulting, equipment access, or commercial pressure do not purchase favorable coverage or prevent correction.
+
+## Managed public evidence and software checks
+
+For a supported public claim, add a permanent source ID with its exact primary URL, passage, access date and review interval, then add a permanent claim ID with evidence category, statement or generated template, scope, source IDs, check date, revision/history and applicable units/calculation inputs. Preserve unknown configuration values. Use `[claim:<id>]` in prose and promote legacy hashed passages after review. Profiles need a permanent identity/unused alias in `data/reference-identities.json`. Reconcile changed table IDs in `data/table-dispositions.json`; an automatic treatment is not a semantic approval.
+
+Run the checks in [docs/REFERENCE_TOOLS.md](docs/REFERENCE_TOOLS.md). Use the draft correction command there to preserve the old claim and prior dispositions. Existing evidence/qualified-review and publisher decisions remain required where applicable; software checks alone do not release held material.
