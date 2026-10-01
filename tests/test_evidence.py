@@ -1,0 +1,43 @@
+import hashlib
+import json
+import sys
+import tempfile
+import unittest
+from datetime import date
+from pathlib import Path
+from unittest.mock import patch
+from handbook_builder.evidence import load_evidence,decorate_and_inventory
+from handbook_builder.site import discover_entries
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
+from check_sources import inspect
+ROOT=Path(__file__).resolve().parents[1]
+class EvidenceTests(unittest.TestCase):
+    def test_frozen_profile_urls_do_not_follow_directory_order(self):
+        current={e.relative_path:(e.identity,e.anchor) for e in discover_entries(ROOT)}
+        original=Path.iterdir
+        def reverse(path):return iter(reversed(list(original(path))))
+        with patch.object(Path,"iterdir",reverse):
+            reordered={e.relative_path:(e.identity,e.anchor) for e in discover_entries(ROOT)}
+        self.assertEqual(current,reordered)
+        self.assertEqual(len(current),152)
+    def test_missing_and_duplicate_sources_fail_closed(self):
+        data=json.loads((ROOT/"data/evidence.json").read_text())
+        with tempfile.TemporaryDirectory() as td:
+            root=Path(td);(root/"data").mkdir()
+            data["claims"][0]["sources"]=["does-not-exist"]
+            (root/"data/evidence.json").write_text(json.dumps(data))
+            with self.assertRaises(ValueError):load_evidence(root)
+    def test_held_text_has_no_data_records(self):
+        entry=discover_entries(ROOT)[0];entry.html='<aside class="publication-hold">Hidden specs 999 W</aside><table><tr><th>Power</th></tr><tr><td>999 W</td></tr></table>'
+        _,records,tables,state=decorate_and_inventory(entry,{}, {})
+        self.assertEqual((records,tables,state),([],[],"hold"))
+    def test_monitor_change_failure_and_due_tasks_are_deduplicable(self):
+        source={"id":"test","url":"https://example.test","accessed":"2020-01-01","review_days":365}
+        a=inspect(source,{"digest":"old"},date(2026,10,1),lambda u:"new")
+        b=inspect(source,{"digest":"old"},date(2026,10,1),lambda u:"new")
+        self.assertEqual([t["id"] for t in a[2]],[t["id"] for t in b[2]])
+        self.assertEqual({t["reason"] for t in a[2]},{"source-content-changed","verification-due"})
+        def unavailable(url):raise OSError("network")
+        result=inspect(source,{"digest":"old"},date(2026,10,1),unavailable)
+        self.assertEqual(result[1]["digest"],"old")
+        self.assertIn("source-unavailable",{t["reason"] for t in result[2]})

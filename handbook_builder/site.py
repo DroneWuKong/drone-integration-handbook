@@ -792,7 +792,7 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
         worker = base / "assets/offline-worker.js"
         if worker.is_file():
             (staging / "sw.js").write_text(worker.read_text().replace("__RELEASE__",release))
-        cache_files = ["/"] + ["/"+p.relative_to(staging).as_posix() for p in staging.rglob("*") if p.is_file() and p.name not in {"sw.js","_redirects","robots.txt","offline-manifest.json"} and "tools/log-analyzer" not in p.as_posix()]
+        cache_files = ["/"] + ["/"+p.relative_to(staging).as_posix() for p in staging.rglob("*") if p.is_file() and p.name not in {"sw.js","_redirects","robots.txt","offline-manifest.json","review.html","review.js"} and "tools/log-analyzer" not in p.as_posix()]
         hashes = {url:hashlib.sha256((staging/("index.html" if url=="/" else url.lstrip("/"))).read_bytes()).hexdigest() for url in cache_files}
         (staging / "offline-manifest.json").write_text(json.dumps({"release":release,"files":cache_files,"hashes":hashes}))
 
