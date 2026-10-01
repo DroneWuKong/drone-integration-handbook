@@ -220,7 +220,7 @@ This is how most professionals actually encounter RTX in daily use — not as th
 
 **xFill (free, 5 minutes):** Built into Trimble Access. When the RTK radio or NTRIP cellular connection drops, xFill automatically engages Trimble RTX satellite corrections as a bridging solution. Accuracy is maintained at RTK-level (±2cm) for up to 5 minutes, offset to the local coordinate system of the RTK job. You keep working through the dead zone.
 
-**xFillx (with CenterPoint RTX subscription, unlimited):** Same as xFill but without the 5-minute limit. For surveying in areas with intermittent cellular coverage or radio range issues, xFillx turns what would be interruptions into seamless continues. The satellite signal is always there.
+**xFillx (with CenterPoint RTX subscription, unlimited):** Same as xFill but without the 5-minute limit. It can bridge an interruption in the terrestrial correction link while the receiver can receive the required satellite corrections and remains within the service and receiver conditions. Buildings, terrain, vegetation, receiver state, and service availability can interrupt reception; satellite corrections are not guaranteed at every location.
 
 This is the context behind the survey professional's quote: *"Don't mess around with RTK, go straight to CenterPoint RTX and be done with it."* For a specific class of remote, large-area work, they're right — the logistics of base station setup, radio range management, and cellular coverage simply aren't worth it when RTX can deliver 2cm accuracy globally with less setup overhead.
 

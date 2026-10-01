@@ -1,14 +1,15 @@
 # Chapter 4: Link Budgets Without the Math
 
-> A link budget tells you whether your radio link will work at a
-> given distance. You don't need a calculator. You need to understand
+> A link budget estimates received power at a given distance under
+> stated assumptions. You need to understand
 > three numbers and three things that kill them.
 
 ---
 
 ## The Three Numbers
 
-Every radio link has three numbers that determine whether it works:
+These three inputs help estimate whether received power meets the assumed
+receiver threshold:
 
 ### 1. Transmit Power (How loud you're shouting)
 
@@ -53,14 +54,19 @@ why long-range modes exist — they trade update rate for range.
 
 Link margin = (transmit power + antenna gains) - (path loss) - (receiver sensitivity)
 
-If the margin is positive, the link works. If it's negative, it doesn't.
-The bigger the positive margin, the more resilient the link is to
-fading, interference, and obstacles.
+A positive calculated margin means predicted received power exceeds the
+assumed receiver sensitivity. It does not guarantee a working link: fading,
+interference, antenna alignment, obstacles, losses, and the selected data rate
+can change the result. A negative margin means this model predicts insufficient
+received power under its stated assumptions.
 
-**Comfortable margins:**
-- 10 dB: Works in clean conditions, fragile in the real world
-- 20 dB: Handles moderate interference and some obstacles
-- 30 dB+: Robust link, will survive urban environments and bad days
+**Illustrative planning margins, not validated operating limits:**
+- 10 dB: Some allowance above the modeled receiver threshold
+- 20 dB: More allowance for losses not captured in the simple model
+- 30 dB+: A larger allowance; still no guarantee in an urban or obstructed path
+
+Validate the complete configuration and its intended environment rather than
+using any one margin as permission to extend the operating range.
 
 ---
 
