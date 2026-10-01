@@ -42,7 +42,7 @@ See [current D1 migration commands](https://developers.cloudflare.com/d1/wrangle
 
 1. Run all candidate checks in `REFERENCE_TOOLS.md`.
 2. Deploy the exact reviewed branch to an isolated Pages preview.
-3. Verify `/release.json`, embedded page release and `assets/reference-data.json` agree.
+3. Verify `/release.json`, embedded page release and `assets/reference-data.json` agree, and their commit marker matches the deployed exact commit (Cloudflare `CF_PAGES_COMMIT_SHA`).
 4. Verify `/api/capabilities` enables submission/review and optional attachments as configured.
 5. Submit a clearly labeled software-only test discrepancy. Download its receipt; verify persistence through a fresh browser session and exact retry.
 6. Confirm unauthorized review/download access fails. Review the report through correction-prepared with evidence and reason; test duplicate and conflicting edits.

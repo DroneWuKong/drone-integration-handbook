@@ -36,7 +36,9 @@ def load_evidence(base):
 def control(c,sources):
     esc=html.escape
     links="".join('<li><a href="'+esc(sources[s]["url"])+'">'+esc(sources[s]["title"])+"</a>: "+esc(sources[s]["passage"])+"; accessed "+esc(sources[s]["accessed"])+"</li>" for s in c.get("sources",[]))
-    return '<details class="claim-evidence" id="'+esc(c["id"])+'"><summary>'+esc(c["status"])+' · evidence</summary><p>'+esc(c["statement"])+"</p><p>"+esc(c["scope"])+"</p><p>Software/source check "+esc(c["verified"])+'</p><ul>'+links+'</ul><button type="button" class="report-claim" data-report-claim="'+esc(c["id"])+'">Report a discrepancy</button></details>'
+    history="".join("<li>"+esc(str(e.get("at",e.get("date","date not recorded"))))+" · "+esc(str(e.get("reason",e.get("summary",""))))+"</li>" for e in c.get("history",[]))
+    history="<p>Revision "+esc(str(c.get("revision",1)))+"</p>"+("<ol>"+history+"</ol>" if history else "<p>No published correction history.</p>")
+    return '<details class="claim-evidence" id="'+esc(c["id"])+'"><summary>'+esc(c["status"])+' · evidence</summary><p>'+esc(c["statement"])+"</p><p>"+esc(c["scope"])+"</p><p>Software/source check "+esc(c["verified"])+'</p><ul>'+links+'</ul>'+history+'<button type="button" class="report-claim" data-report-claim="'+esc(c["id"])+'">Report a discrepancy</button></details>'
 def expand_markers(source,sources,claims):
     def replace(m):
         if m[1] not in claims: raise ValueError("Unknown claim "+m[1])
@@ -83,7 +85,10 @@ def decorate_and_inventory(entry,sources,claims):
             if pos==1:return r[0].replace("</tr>","<th>Evidence</th></tr>")
             vals=CELL.findall(r[1])
             if any("@@PROTECTED" in v for v in vals):return r[0].replace("</tr>","<td>See cited evidence</td></tr>")
-            rid=record(r[1],"table-row",dict(zip(headers,[text(v) for v in vals])))
+            fields=dict(zip(headers,[text(v) for v in vals]))
+            if len(vals)==2 and text(vals[0]): fields[text(vals[0])]=text(vals[1])
+            rid=record(r[1],"table-row",fields)
+            if len(vals)==2 and text(vals[0]): records[-1].update(attribute=text(vals[0]),attribute_value=text(vals[1]))
             return r[0].replace("</tr>","<td>"+unknown(rid)+"</td></tr>")
         return ROW.sub(row,m[0])
     rendered=TABLE.sub(table,rendered)
@@ -105,4 +110,12 @@ def decorate_and_inventory(entry,sources,claims):
     return rendered,list({r["id"]:r for r in records}.values()),tables,"published"
 def snapshot(entries,sources,records,tables,release):
     refs=[{"id":e.identity,"title":e.title,"kind":e.kind,"group":e.group,"anchor":e.anchor,"canonical":e.canonical,"path":e.relative_path,"status":"hold" if e.publication_state=="hold" else "unreviewed","publication_state":e.publication_state,"verified":None,"sources":[],"revision":hashlib.sha256(e.source_path.read_bytes()).hexdigest(),"statement":e.plain_text if e.publication_state!="hold" else "Publication hold; substantive guidance excluded","fields":{}} for e in entries]
+    by_article={}
+    for record in records:
+        if record.get("attribute"):
+            values=by_article.setdefault(record["article_id"],{}).setdefault(record["attribute"],[])
+            if record["attribute_value"] not in values:values.append(record["attribute_value"])
+    for ref in refs:
+        if ref["publication_state"]!="hold":
+            ref["fields"]={key:values[0] if len(values)==1 else values for key,values in by_article.get(ref["id"],{}).items()}
     return {"schema_version":1,"release":release,"license":"CC BY-SA 4.0; third-party sources retain their rights","references":refs,"records":records,"sources":list(sources.values()),"tables":tables,"coverage":{"references":len(refs),"holds":sum(r["status"]=="hold" for r in refs),"tracked_records":len(records),"supported_records":sum(r["status"]!="unreviewed" for r in records),"unreviewed_records":sum(r["status"]=="unreviewed" for r in records),"tables":len(tables),"scope":"Tracked table rows and digit-bearing paragraphs/list items; not a completed semantic claim audit"}}

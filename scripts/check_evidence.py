@@ -14,11 +14,17 @@ def check(site):
     holds={r["id"] for r in data["references"] if r.get("publication_state",r["status"])=="hold"}
     assert not any(r["article_id"] in holds for r in data["records"])
     assert not any(t["article_id"] in holds for t in data["tables"])
+    disposition_file=ROOT/"data/table-dispositions.json"
+    if disposition_file.exists():
+        registered=json.loads(disposition_file.read_text())["tables"]
+        assert {t["id"] for t in registered}=={t["id"] for t in data["tables"]}, "Reconcile changed table dispositions before publication"
     assert set(claims)=={r["id"] for r in data["records"] if r["record_type"]=="managed-claim"}
     for r in data["records"]:
         if r["status"]!="unreviewed": assert r["sources"] and r["verified"] and r["scope"]
         else: assert not r["sources"] and r["verified"] is None
-    release=json.loads((site/"release.json").read_text())["release"]
+    marker=json.loads((site/"release.json").read_text())
+    release=marker["release"]
+    assert data.get("commit")==marker.get("commit")
     assert data["release"]==release
     manifest=json.loads((site/"offline-manifest.json").read_text())
     assert manifest["release"]==release

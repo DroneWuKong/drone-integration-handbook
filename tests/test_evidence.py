@@ -50,3 +50,21 @@ class EvidenceTests(unittest.TestCase):
         self.assertEqual(proposal["id"],again["id"]);self.assertEqual(proposal["before"],claim)
         self.assertIsNone(proposal["proposed"]["verified"]);self.assertEqual(proposal["publication_state"],"draft")
         self.assertEqual(json.dumps(data,sort_keys=True),old)
+
+    def test_two_column_specs_are_queryable_without_losing_original_fields(self):
+        from handbook_builder.evidence import snapshot
+        entry=discover_entries(ROOT)[0]
+        entry.html='<table><tr><th>Property</th><th>Value</th></tr><tr><td>Voltage</td><td>5 V</td></tr><tr><td>Voltage</td><td>3.3 V</td></tr></table>'
+        _,records,tables,state=decorate_and_inventory(entry,{}, {})
+        self.assertEqual(records[0]["fields"]["Voltage"],"5 V")
+        self.assertEqual(records[0]["fields"]["Property"],"Voltage")
+        self.assertEqual(records[0]["status"],"unreviewed")
+        entry.publication_state=state
+        exported=snapshot([entry],{},records,tables,"test")
+        self.assertEqual(exported["references"][0]["fields"]["Voltage"],["5 V","3.3 V"])
+
+    def test_deployment_commit_is_validated_and_not_invented_locally(self):
+        from handbook_builder.site import _source_commit
+        with patch.dict("os.environ",{},clear=True):self.assertIsNone(_source_commit())
+        with patch.dict("os.environ",{"CF_PAGES_COMMIT_SHA":"a"*40},clear=True):self.assertEqual(_source_commit(),"a"*40)
+        with patch.dict("os.environ",{"GITHUB_SHA":"invalid"},clear=True):self.assertIsNone(_source_commit())

@@ -652,7 +652,8 @@ def _render_entry(
     previous_by_anchor: dict[str, ContentEntry | None],
     next_by_anchor: dict[str, ContentEntry | None],
 ) -> str:
-    source_url = f"{REPOSITORY_URL}/blob/main/{entry.relative_path}"
+    source_revision = _source_commit() or "main"
+    source_url = f"{REPOSITORY_URL}/blob/{source_revision}/{entry.relative_path}"
     return (
         f'<span class="reference-alias" id="{html.escape(entry.canonical)}"></span>'
         f'<article class="chapter content-card" id="{html.escape(entry.anchor)}" '
@@ -671,6 +672,11 @@ def _render_entry(
         f'{_entry_footer(previous_by_anchor[entry.anchor], next_by_anchor[entry.anchor])}'
         "</article>"
     )
+
+
+def _source_commit() -> str | None:
+    value = os.environ.get("CF_PAGES_COMMIT_SHA") or os.environ.get("GITHUB_SHA") or ""
+    return value if re.fullmatch(r"[0-9a-f]{40}",value) else None
 
 
 def _search_metadata(entries: Sequence[ContentEntry]) -> str:
@@ -783,9 +789,10 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
         _copy_static_assets(base / "assets", staging / "assets")
         _write_support_files(base, staging)
         payload = snapshot(entries, evidence_sources, records, tables, release)
+        payload["commit"] = _source_commit()
         (staging / "assets/reference-data.json").write_text(json.dumps(payload, ensure_ascii=False, separators=(",",":")))
-        (staging / "assets/release-marker.json").write_text(json.dumps({"release":release,"references":len(entries),"schema_version":1,"coverage":payload["coverage"]},indent=2))
-        (staging / "release.json").write_text(json.dumps({"release":release,"schema_version":1}))
+        (staging / "assets/release-marker.json").write_text(json.dumps({"release":release,"commit":_source_commit(),"references":len(entries),"schema_version":1,"coverage":payload["coverage"]},indent=2))
+        (staging / "release.json").write_text(json.dumps({"release":release,"commit":_source_commit(),"schema_version":1}))
         for name in ("reference-tools", "review"):
             page = base / ("templates/" + name + ".html")
             if page.is_file():

@@ -10,7 +10,7 @@ Tracking goal: [#57](https://github.com/DroneWuKong/drone-integration-handbook/i
 
 The link-budget mathematical tables are generated from this registry. Article prose, query records, CSV/JSON exports and sourced calculator examples use the same values. Every stored calculator claim is checked against the shared engine. No named-device presets or simulated field observations are invented.
 
-Legacy table rows and digit-bearing paragraphs/list items are indexed with explicit **unreviewed** status, unknown verification dates, original field strings, candidate links and source-file revisions. They are not silently promoted into verified specifications. Every article also carries the migration notice for unresolved categorical statements. Their IDs hash article identity, passage type and text: edits create a new legacy passage ID. Promote a reviewed passage to a permanent managed claim ID and link the previous revision; legacy hashes are not immutable claim identities.
+Legacy table rows and digit-bearing paragraphs/list items are indexed with explicit **unreviewed** status, unknown verification dates, original field strings, candidate links and source-file revisions. Two-column rows also expose their original property/value as a named attribute, and reference-level filters aggregate distinct values without guessing a single value when contexts differ. They are not silently promoted into verified specifications. Every article also carries the migration notice for unresolved categorical statements. Their IDs hash article identity, passage type and text: edits create a new legacy passage ID. Promote a reviewed passage to a permanent managed claim ID and link the previous revision; legacy hashes are not immutable claim identities.
 
 The automated inventory does **not** replace the remaining semantic citation audit, particularly statements in headings, graphics, code, comparative adjectives and linked documents. Existing visible citations in legacy prose remain visible but are not automatically treated as validated claim support.
 
@@ -22,7 +22,7 @@ Publication-hold bodies have no exported records or table rows. Their reference 
 
 `assets/reference-engine.js` is a pure software engine for power-unit conversion, free-space RF loss/budget, battery energy/ideal runtime, electrical load/rating headroom, wavelength and interface declarations. Units, formulas, limitations, sources, engine version and public release accompany results. Hypothetical inputs are labeled. Interface declarations are a planning prompt, not a compatibility approval. No tool requires hardware.
 
-A single release digest covers public article sources, assets, identity/evidence data, templates, builder, function code, migrations and configuration. The article and tools pages embed it; the data loader rejects a mismatched snapshot. One public release can still have unresolved evidence—version coherence does not certify accuracy.
+A single release digest covers public article sources, assets, identity/evidence data, templates, builder, function code, migrations and configuration. The article and tools pages embed it; deployment/CI commit markers come from the validated Cloudflare/GitHub commit environment, and source links use that exact revision when available. Local uncommitted candidates have a null commit marker.  the data loader rejects a mismatched snapshot. One public release can still have unresolved evidence—version coherence does not certify accuracy.
 
 ## Private reporting and review
 
