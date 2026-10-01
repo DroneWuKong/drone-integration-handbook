@@ -22,7 +22,7 @@ Publication-hold bodies have no exported records or table rows. Their reference 
 
 `assets/reference-engine.js` is a pure software engine for power-unit conversion, free-space RF loss/budget, battery energy/ideal runtime, electrical load/rating headroom, wavelength and interface declarations. Units, formulas, limitations, sources, engine version and public release accompany results. Hypothetical inputs are labeled. Interface declarations are a planning prompt, not a compatibility approval. No tool requires hardware.
 
-A single release digest covers public article sources, assets, identity/evidence data, templates, builder, function code, migrations and configuration. The article and tools pages embed it; deployment/CI commit markers come from the validated Cloudflare/GitHub commit environment, and source links use that exact revision when available. Local uncommitted candidates have a null commit marker.  the data loader rejects a mismatched snapshot. One public release can still have unresolved evidence—version coherence does not certify accuracy.
+A single release digest covers public article sources, assets, identity/evidence data, templates, builder, function code, migrations and configuration. The article and tools pages embed it; deployment/CI commit markers come from the validated Cloudflare/GitHub commit environment, and source links use that exact revision when available. Local uncommitted candidates have a null commit marker. The deployment commit and all public asset bytes affect the release; unrelated raw collection snapshots do not.  the data loader rejects a mismatched snapshot. One public release can still have unresolved evidence—version coherence does not certify accuracy.
 
 ## Private reporting and review
 

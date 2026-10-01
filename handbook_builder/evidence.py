@@ -42,7 +42,7 @@ def control(c,sources):
     links="".join('<li><a href="'+esc(sources[s]["url"])+'">'+esc(sources[s]["title"])+"</a>: "+esc(sources[s]["passage"])+"; accessed "+esc(sources[s]["accessed"])+"</li>" for s in c.get("sources",[]))
     history="".join("<li>"+esc(str(e.get("at",e.get("date","date not recorded"))))+" · "+esc(str(e.get("reason",e.get("summary",""))))+"</li>" for e in c.get("history",[]))
     history="<p>Revision "+esc(str(c.get("revision",1)))+"</p>"+("<ol>"+history+"</ol>" if history else "<p>No published correction history.</p>")
-    return '<details class="claim-evidence" id="'+esc(c["id"])+'"><summary>'+esc(c["status"])+' · evidence</summary><p>'+esc(c["statement"])+"</p><p>"+esc(c["scope"])+"</p><p>Software/source check "+esc(c["verified"])+'</p><ul>'+links+'</ul>'+history+'<button type="button" class="report-claim" data-report-claim="'+esc(c["id"])+'">Report a discrepancy</button></details>'
+    return '<details class="claim-evidence" id="'+esc(c["id"])+'"><summary>'+esc(c["status"])+' · evidence</summary><p>'+esc(c["statement"])+"</p><p>"+esc(c["scope"])+"</p><p>Software/source check "+esc(c.get("verified") or "unknown")+'</p><ul>'+links+'</ul>'+history+'<button type="button" class="report-claim" data-report-claim="'+esc(c["id"])+'">Report a discrepancy</button></details>'
 def expand_markers(source,sources,claims):
     def replace(m):
         if m[1] not in claims: raise ValueError("Unknown claim "+m[1])
@@ -59,7 +59,7 @@ def expand_markers(source,sources,claims):
     return MARKER.sub(replace,source)
 def decorate_and_inventory(entry,sources,claims):
     rendered=entry.html
-    if 'class="publication-hold"' in rendered:
+    if re.search(r'class=["\'][^"\']*\bpublication-hold\b[^"\']*["\']',rendered):
         return rendered,[],[],"hold"
     revision=hashlib.sha256(entry.source_path.read_bytes()).hexdigest()
     records,tables=[],[]

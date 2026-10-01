@@ -25,9 +25,9 @@ Every published platform and component is discoverable under a frozen identity. 
 
 ## Software evidence
 
-- 16 Python tests: existing builder/legal/privacy checks plus frozen identities, missing-source rejection, held-content export exclusion, monitor deduplication, nonpublishing correction proposals and preservation of distinct property values.
+- 17 Python tests: existing builder/legal/privacy checks plus frozen identities, missing-source rejection, held-content export exclusion, monitor deduplication, nonpublishing correction proposals and preservation of distinct property values.
 - 15 Node tests: independent RF/energy/power/wavelength examples, invalid/nonfinite inputs, query/CSV handling, registry-to-engine agreement, real SQLite storage/retries/receipts, authorization, review transitions/history, duplicate/concurrent edits, abuse limits, field-observation context, private attachments and database reopening.
-- Source links: 282 internal relative links resolve after excluding dependencies/generated/private scratch folders.
+- Source links: 283 internal relative links resolve after excluding dependencies/generated/private scratch folders.
 - Compile/build and generated-site/evidence validation pass. Pages Functions compile with Wrangler 4.146.0.
 - Actual headless Chromium mobile workflow passes: query, comparison, export, calculation, recoverable draft, receipt, private attachment, review history, logout, offline download, failed-update recovery, offline fallback, old anchor and article access with JavaScript disabled. No page script errors.
 - Browser provider: software-only SQLite/private-object adapter. No hardware or Cloudflare validation is represented.

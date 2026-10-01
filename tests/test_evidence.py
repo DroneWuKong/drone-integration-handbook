@@ -28,7 +28,7 @@ class EvidenceTests(unittest.TestCase):
             (root/"data/evidence.json").write_text(json.dumps(data))
             with self.assertRaises(ValueError):load_evidence(root)
     def test_held_text_has_no_data_records(self):
-        entry=discover_entries(ROOT)[0];entry.html='<aside class="publication-hold">Hidden specs 999 W</aside><table><tr><th>Power</th></tr><tr><td>999 W</td></tr></table>'
+        entry=discover_entries(ROOT)[0];entry.html='<aside class="notice publication-hold urgent">Hidden specs 999 W</aside><table><tr><th>Power</th></tr><tr><td>999 W</td></tr></table>'
         _,records,tables,state=decorate_and_inventory(entry,{}, {})
         self.assertEqual((records,tables,state),([],[],"hold"))
     def test_monitor_change_failure_and_due_tasks_are_deduplicable(self):
@@ -68,3 +68,22 @@ class EvidenceTests(unittest.TestCase):
         with patch.dict("os.environ",{},clear=True):self.assertIsNone(_source_commit())
         with patch.dict("os.environ",{"CF_PAGES_COMMIT_SHA":"a"*40},clear=True):self.assertEqual(_source_commit(),"a"*40)
         with patch.dict("os.environ",{"GITHUB_SHA":"invalid"},clear=True):self.assertIsNone(_source_commit())
+
+    def test_asset_bytes_and_commit_change_release_but_unused_raw_data_does_not(self):
+        from test_builder import BuilderTestCase
+        from handbook_builder.site import build_site
+        fixture=BuilderTestCase();fixture.setUp()
+        try:
+            root=fixture.root;image=root/"assets/example.svg";image.write_text("<svg>first</svg>")
+            build_site(root,root/"site")
+            first=json.loads((root/"site/release.json").read_text())["release"]
+            (root/"data").mkdir();(root/"data/unused-collection.json").write_text('{"counter":1}')
+            build_site(root,root/"site")
+            self.assertEqual(first,json.loads((root/"site/release.json").read_text())["release"])
+            image.write_text("<svg>second</svg>");build_site(root,root/"site")
+            second=json.loads((root/"site/release.json").read_text())["release"];self.assertNotEqual(first,second)
+            with patch.dict("os.environ",{"CF_PAGES_COMMIT_SHA":"b"*40},clear=True):build_site(root,root/"site")
+            self.assertNotEqual(second,json.loads((root/"site/release.json").read_text())["release"])
+            (root/"data/evidence.json").write_text('{"sources":[],"claims":[]}')
+            with self.assertRaisesRegex(ValueError,"permanent identity"):discover_entries(root)
+        finally:fixture.tearDown()

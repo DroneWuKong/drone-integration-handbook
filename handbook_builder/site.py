@@ -287,6 +287,8 @@ def discover_entries(base_dir: Path) -> list[ContentEntry]:
         next_order += 1
 
     registry_path = base_dir / "data/reference-identities.json"
+    if (base_dir / "data/evidence.json").is_file() and not registry_path.is_file():
+        raise ValueError("Evidence publication requires its permanent identity registry")
     registry = json.loads(registry_path.read_text()) if registry_path.exists() else {}
     identities, anchors = set(), set()
     for entry in entries:
@@ -777,9 +779,10 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
             records.extend(rows); tables.extend(entry_tables)
         inputs = [(e.relative_path, e.source_path) for e in entries]
         for directory in ("assets", "data", "handbook_builder", "templates", "server", "functions", "migrations"):
-            inputs.extend((p.relative_to(base).as_posix(), p) for p in (base / directory).rglob("*") if p.is_file() and p.suffix in {".json", ".js", ".css", ".py", ".html", ".mjs", ".sql"})
-        inputs.extend((name, base/name) for name in ("build.py", "wrangler.jsonc", "package.json", "package-lock.json") if (base/name).is_file())
+            inputs.extend((p.relative_to(base).as_posix(), p) for p in (base / directory).rglob("*") if p.is_file() and (directory=="assets" or p.suffix in {".json", ".js", ".css", ".py", ".html", ".mjs", ".sql"}) and (directory!="data" or p.name in {"evidence.json","reference-identities.json","table-dispositions.json"}))
+        inputs.extend((name, base/name) for name in ("build.py", "wrangler.jsonc", "package.json", "package-lock.json", "_redirects", "runtime.txt") if (base/name).is_file())
         digest = hashlib.sha256()
+        digest.update((_source_commit() or "local-uncommitted").encode())
         for path, file in sorted(inputs):
             digest.update(path.encode()); digest.update(file.read_bytes())
         release = digest.hexdigest()[:20]
