@@ -1,0 +1,781 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "itu-p525",
+      "title": "ITU-R P.525-5 (November 2024)",
+      "url": "https://www.itu.int/rec/R-REC-P.525-5-202411-I/en",
+      "passage": "Annex section 2.3, equations 5 and 6; MHz and km",
+      "accessed": "2026-10-01",
+      "review_days": 365
+    },
+    {
+      "id": "nist-si",
+      "title": "NIST SP 811 unit conversions",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
+      "passage": "Ampere hour and watt hour entries",
+      "accessed": "2026-10-01",
+      "review_days": 365
+    },
+    {
+      "id": "nist-power",
+      "title": "NIST SP 811 derived units",
+      "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
+      "passage": "Table 3: watt = J/s and volt = W/A",
+      "accessed": "2026-10-01",
+      "review_days": 365
+    },
+    {
+      "id": "bipm-si",
+      "title": "BIPM CIPM Recommendation 1 (2002)",
+      "url": "https://www.bipm.org/en/committees/ci/cipm/91-2002/resolution-1",
+      "passage": "Realisation of the metre: vacuum wavelength = c/f and c = 299792458 m/s",
+      "accessed": "2026-10-01",
+      "review_days": 365
+    },
+    {
+      "id": "rs-decibels",
+      "title": "Rohde & Schwarz dB Calculator application note 1GP77",
+      "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/dl_application/application_notes/1gp77/1GP77_8e_dB_Calculator.pdf",
+      "passage": "Sections 4.2 and 6.2; dBm relative to 1 mW",
+      "accessed": "2026-10-01",
+      "review_days": 365
+    },
+    {
+      "id": "fr-part108-status-2026",
+      "title": "Federal Register: TSA Part 108 security roundtables notice (September 4, 2026)",
+      "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18124/notice-soliciting-representatives-for-technical-roundtables-on-security-of-unmanned-aircraft-systems",
+      "passage": "Summary and background refer to the Part 108 provisions as proposed requirements",
+      "accessed": "2026-10-02",
+      "review_days": 90
+    },
+    {
+      "id": "faa-part107-waivers",
+      "title": "FAA Part 107 Waivers",
+      "url": "https://www.faa.gov/uas/commercial_operators/part_107_waivers",
+      "passage": "Application channel, waiver purpose, \u00a7 107.31 BVLOS row, and current process notice",
+      "accessed": "2026-10-02",
+      "review_days": 90
+    },
+    {
+      "id": "faa-part107-overview",
+      "title": "FAA Small Unmanned Aircraft Systems Regulations (Part 107)",
+      "url": "https://www.faa.gov/newsroom/small-unmanned-aircraft-systems-uas-regulations-part-107",
+      "passage": "Waiver section states FAA generally responds within 90 days depending on complexity",
+      "accessed": "2026-10-02",
+      "review_days": 90
+    },
+    {
+      "id": "faa-part91-public-safety-faq",
+      "title": "FAA Part 91 Public Aircraft/Public Safety CoW/A FAQ v9",
+      "url": "https://www.faa.gov/uas/public_safety_gov/public_safety_toolkit/Public_Aircraft-Public_Safety_Operation_CoW-COA_FAQ.pdf",
+      "passage": "Overview and question 1: Part 91.113 expedited waiver eligibility for statutory PAO and PSO entities",
+      "accessed": "2026-10-02",
+      "review_days": 90
+    },
+    {
+      "id": "faa-laanc",
+      "title": "FAA UAS Data Exchange (LAANC)",
+      "url": "https://www.faa.gov/uas/getting_started/laanc",
+      "passage": "Near-real-time authorization and Part 107 further-coordination timing and altitude scope",
+      "accessed": "2026-10-02",
+      "review_days": 90
+    }
+  ],
+  "claims": [
+    {
+      "id": "rf-power-1",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 0,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 1
+        },
+        "output": "dbm"
+      },
+      "statement_template": "1 mW = {value:.2f} dBm"
+    },
+    {
+      "id": "rf-power-10",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 10,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 10
+        },
+        "output": "dbm"
+      },
+      "statement_template": "10 mW = {value:.2f} dBm"
+    },
+    {
+      "id": "rf-power-25",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 13.979400086720377,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 25
+        },
+        "output": "dbm"
+      },
+      "statement_template": "25 mW = {value:.2f} dBm"
+    },
+    {
+      "id": "rf-power-100",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 20,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 100
+        },
+        "output": "dbm"
+      },
+      "statement_template": "100 mW = {value:.2f} dBm"
+    },
+    {
+      "id": "rf-power-250",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 23.979400086720375,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 250
+        },
+        "output": "dbm"
+      },
+      "statement_template": "250 mW = {value:.2f} dBm"
+    },
+    {
+      "id": "rf-power-500",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 26.989700043360187,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 500
+        },
+        "output": "dbm"
+      },
+      "statement_template": "500 mW = {value:.2f} dBm"
+    },
+    {
+      "id": "rf-power-1000",
+      "sources": [
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Conversion only; no device-use or regulatory claim.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 30,
+      "unit": "dBm",
+      "calculation": {
+        "tool": "dbPower",
+        "inputs": {
+          "powerMw": 1000
+        },
+        "output": "dbm"
+      },
+      "statement_template": "1000 mW = {value:.2f} dBm"
+    },
+    {
+      "id": "rf-fspl-0p1-900",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 71.4848501887865,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 900,
+          "distanceKm": 0.1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 900 MHz and 0.1 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-0p1-2400",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 80.0042248342321,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 0.1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 2400 MHz and 0.1 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-0p1-5800",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 87.66855987125874,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 5800,
+          "distanceKm": 0.1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 5800 MHz and 0.1 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-0p5-900",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 85.46425027550687,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 900,
+          "distanceKm": 0.5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 900 MHz and 0.5 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-0p5-2400",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 93.98362492095248,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 0.5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 2400 MHz and 0.5 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-0p5-5800",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 101.64795995797911,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 5800,
+          "distanceKm": 0.5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 5800 MHz and 0.5 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-1-900",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 91.4848501887865,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 900,
+          "distanceKm": 1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 900 MHz and 1 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-1-2400",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 100.0042248342321,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 2400 MHz and 1 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-1-5800",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 107.66855987125874,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 5800,
+          "distanceKm": 1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 5800 MHz and 1 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-5-900",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 105.46425027550687,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 900,
+          "distanceKm": 5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 900 MHz and 5 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-5-2400",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 113.98362492095248,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 2400 MHz and 5 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-5-5800",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 121.64795995797911,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 5800,
+          "distanceKm": 5,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 5800 MHz and 5 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-10-900",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 111.4848501887865,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 900,
+          "distanceKm": 10,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 900 MHz and 10 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-10-2400",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 120.0042248342321,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 10,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 2400 MHz and 10 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-fspl-10-5800",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived using equation 6 and its rounded 32.4 constant; not measured radio range.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "value": 127.66855987125874,
+      "unit": "dB",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 5800,
+          "distanceKm": 10,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "fsplDb"
+      },
+      "statement_template": "Free-space loss at 5800 MHz and 10 km is {value:.2f} dB"
+    },
+    {
+      "id": "rf-distance-double",
+      "statement": "Doubling free-space distance adds 6.0206 dB path loss",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "Derived as 20 log10(2); other inputs unchanged.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test"
+    },
+    {
+      "id": "rf-budget-example",
+      "statement": "Illustrative 2400 MHz, 1 km, 20 dBm TX, zero gains/losses and -100 dBm assumed receiver threshold: 100.00 dB path loss, -80.00 dBm predicted power and 20.00 dB margin",
+      "sources": [
+        "itu-p525",
+        "rs-decibels"
+      ],
+      "status": "derived",
+      "verified": "2026-10-01",
+      "scope": "All configuration inputs are hypothetical; no radio has been tested by this example.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Software derivation checked against cited formula; no physical device test",
+      "calculation": {
+        "tool": "rf",
+        "inputs": {
+          "frequencyMHz": 2400,
+          "distanceKm": 1,
+          "txDbm": 20,
+          "txGainDbi": 0,
+          "rxGainDbi": 0,
+          "lossDb": 0,
+          "sensitivityDbm": -100
+        },
+        "output": "marginDb"
+      },
+      "value": 19.995775165767895,
+      "unit": "dB"
+    },
+    {
+      "id": "reg-part108-proposed",
+      "statement": "As of October 2, 2026, Part 108 remains proposed rulemaking and does not itself authorize BVLOS operations.",
+      "sources": [
+        "fr-part108-status-2026"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "Current-status statement for United States civil UAS regulation; recheck the Federal Register before operational use.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA/Federal Register source check; not legal advice or an operating authorization"
+    },
+    {
+      "id": "reg-part107-bvlos-waiver",
+      "statement": "A Part 107 operator may request a waiver from \u00a7 107.31 by showing an equivalent level of safety; new operational-waiver applications use the Aviation Safety Hub.",
+      "sources": [
+        "faa-part107-waivers"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "United States Part 107 process overview; the actual waiver and current FAA application system control.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA source check; not legal advice or an approval"
+    },
+    {
+      "id": "reg-part107-waiver-timing",
+      "statement": "FAA states it will do its best to act on Part 107 waiver requests within 90 days, with timing varying by complexity and completeness.",
+      "sources": [
+        "faa-part107-overview"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "Agency service statement, not a guaranteed processing time.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA source check; no application timing independently measured"
+    },
+    {
+      "id": "reg-part91-public-safety",
+      "statement": "FAA describes Part 91 COAs for qualifying public-aircraft operations and an expedited \u00a7 91.113 waiver path limited to entities meeting both PAO and PSO statutory definitions.",
+      "sources": [
+        "faa-part91-public-safety-faq"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "United States public-aircraft/public-safety overview; exact eligibility and issued conditions control.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA source check; not an eligibility determination"
+    },
+    {
+      "id": "reg-laanc-scope",
+      "statement": "LAANC supports near-real-time requests and Part 107 further coordination above mapped values and at or below 400 feet; further-coordination requests require at least 72 hours and may be filed up to 90 days ahead.",
+      "sources": [
+        "faa-laanc"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "United States LAANC process as published by FAA; availability and authorization conditions remain controlling.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA source check; no authorization requested"
+    },
+    {
+      "id": "reg-part107-application-channel",
+      "statement": "FAA currently routes new Part 107 operational-waiver applications through the Aviation Safety Hub while Part 107 airspace-authorization applications remain in FAADroneZone.",
+      "sources": [
+        "faa-part107-waivers"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "United States application-channel status on October 2, 2026; recheck before filing.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA source check; no application submitted"
+    }
+  ]
+}

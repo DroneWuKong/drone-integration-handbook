@@ -134,3 +134,7 @@ python3 scripts/check_generated_site.py site/index.html
 `check_links.py` validates source targets. `check_generated_site.py` validates the deployable artifact and fails on duplicate IDs, missing fragments, relative `.md` links leaking into production, invalid search metadata, unresolved tokens, missing assets, missing publisher/legal controls, or behavioral analytics markers.
 
 The `handbook-check` workflow runs the full sequence with Python 3.12 and Node 22, then uploads `site/` as a seven-day review artifact. Cloudflare Pages remains the deployment authority.
+
+## Candidate reference and reporting services
+
+The existing Python single-page publication remains the handbook. The builder now adds permanent reference aliases, a filtered public evidence snapshot, release markers and a versioned offline manifest. `reference.html` uses the same snapshot for search, comparisons, exports and mathematical presets; a pure browser engine calculates without hardware. `/api/*` Pages Functions handle separately bound private report/attachment storage and authenticated review. Neither private storage nor draft correction proposals feed the public builder. See [REFERENCE_TOOLS.md](REFERENCE_TOOLS.md) and [REPORTING_DEPLOYMENT.md](REPORTING_DEPLOYMENT.md); the candidate is not a completed production release.

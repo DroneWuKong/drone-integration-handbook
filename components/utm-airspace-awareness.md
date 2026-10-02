@@ -11,7 +11,7 @@ Not all airspace requires the same process. The FAA classifies airspace into cla
 | Airspace Class | What It Is | Drone Authorization |
 |---|---|---|
 | Class G (uncontrolled) | Below 700ft AGL in most rural areas | No authorization needed (under 400ft AGL) |
-| Class E (controlled) | Most of the NAS above 1,200ft; some areas from surface | No authorization at surface E; LAANC or DroneZone above |
+| Class E (controlled) | Most of the NAS above 1,200ft; some areas begin at the surface | Authorization is required within the lateral boundaries of Class E airspace designated for an airport; use an available FAA authorization channel |
 | Class D | Airspace around smaller towered airports (typically 5nm, SFC–2,500ft) | LAANC authorization required |
 | Class C | Airspace around medium airports (typically 5–10nm, SFC–4,000ft) | LAANC authorization required |
 | Class B | Airspace around major airports (multi-layer, 0–10,000ft) | LAANC authorization required; more restrictive |
@@ -33,23 +33,14 @@ Authorization is near-instant (typically under 2 minutes), tied to your FAA regi
 
 ### LAANC Access
 
-LAANC is available through FAA-approved USS providers via their apps:
-- **AiRHub** — popular in commercial sector; web + mobile
-- **Aloft (formerly Kittyhawk)** — popular with enterprise operators
-- **Skydio Cloud** — integrated with Skydio aircraft
-- **DroneDeploy** — primarily for mapping workflows
-- **Wing Pilot** — Wing Aviation's app, includes free airspace awareness
-- **Garmin Pilot** — for pilots who use Garmin EFB already
-- **ForeFlight** — integrated with EFB workflows
-
-All of these connect to the FAA's LAANC backend. Authorization from any of these is equally valid.
+LAANC is available through FAA-approved UAS Service Suppliers. Use the FAA's current provider list rather than relying on a static vendor list in this handbook. Near-real-time requests can be made on the flight date; Part 107 further-coordination requests above the mapped altitude and below 400 feet must be submitted at least 72 hours before the requested start time and may be submitted up to 90 days in advance. [claim:reg-laanc-scope]
 
 ### What LAANC Doesn't Cover
 
-- **Above UASFM altitude:** If the UASFM shows 100ft and you need 200ft, you must use DroneZone manual authorization (5-day minimum wait).
+- **Above UASFM altitude:** Part 107 pilots may use LAANC further coordination for requests above the mapped value and at or below 400 feet where the service is available; other requests use the FAA's applicable manual authorization channel.
 - **Class B airspace with 0ft UASFM altitude:** This means automated authorization is not available at all altitudes in that cell — you need a manual DroneZone authorization.
 - **TFRs:** LAANC does not override active TFRs. Even with LAANC authorization, a TFR in effect makes flight unlawful.
-- **BVLOS:** LAANC is for VLOS Part 107 operations only. BVLOS requires a waiver or Part 108 Permit.
+- **BVLOS:** LAANC airspace authorization does not itself authorize BVLOS. Use a currently available waiver, certificate, exemption, or other FAA approval applicable to the operation; the proposed Part 108 framework is not current operating authority.
 
 ---
 
@@ -69,7 +60,7 @@ All of these connect to the FAA's LAANC backend. Authorization from any of these
 
 **For BVLOS operations, additionally:**
 6. File a UAS NOTAM via DroneZone
-7. Coordinate with the ADSP (once Part 108 infrastructure is in place)
+7. Follow any third-party-service conditions in the actual operating approval; ADSP requirements remain part of the proposed Part 108 framework
 8. Confirm C2 link coverage for the planned corridor
 
 ---
@@ -130,10 +121,10 @@ The core UTM services:
 | **Dynamic airspace configuration** | Respond to TFRs, emergencies, airspace changes |
 
 **Current state (2026):**
-The FAA's LAANC covers airspace authorization. Remote ID provides identification. But the deconfliction and conformance monitoring services — the ones that enable multiple BVLOS operators in the same airspace — are still being built. The Part 108 ADSP (Automated Data Service Provider) framework is the regulatory foundation; the technical standards and certified providers are in development.
+The FAA's LAANC covers certain airspace authorizations, and Remote ID provides identification information. Broader deconfliction and conformance-monitoring services are still developing. The proposed Part 108 ADSP (Automated Data Service Provider) framework describes one possible regulatory structure; it is not current operating authority.
 
 **Near-term expectation:**
-Part 108 Permits will require filing flight intent with an FAA-approved ADSP before BVLOS operations. This filing will:
+The Part 108 proposal describes filing flight intent through an approved ADSP for covered operations. A future final rule and approved service would determine the actual workflow. Proposed functions include:
 - Register your planned flight path and time window
 - Check for conflicts with other filed flights
 - Return a "de-conflicted corridor" or flag conflicts for resolution
@@ -146,15 +137,9 @@ The EU has a more structured UTM framework (U-space, under EASA Regulations EU 2
 
 ## Digital Notice to Airmen (NOTAM) and DroneZone
 
-For any operation that requires manual FAA authorization (above UASFM altitude, BVLOS, Class B full coverage), use the FAA DroneZone portal (droneconnect.faa.gov).
+Use the FAA's current application channel for the authority requested. Part 107 operational waivers now begin in the Aviation Safety Hub; Part 107 airspace authorizations remain in FAADroneZone until the FAA announces otherwise. [claim:reg-part107-application-channel]
 
-**Authorization types available via DroneZone:**
-- **Part 107 Airspace Authorization** — manual review, 90-day processing time, for operations not covered by LAANC
-- **Part 107 Waivers** — for BVLOS, night (pre-2021), operation over people; 6–18 month review
-- **UAS NOTAM filing** — file a voluntary NOTAM for any UAS operation; required for BVLOS operations and useful for public safety coordination
-
-**UAS NOTAM best practice:**
-File a UAS NOTAM for any operation over 400ft AGL, any BVLOS operation, and any operation near an airport even if LAANC-authorized. A filed NOTAM ensures ATC is aware of your operation and protects you in an airspace conflict investigation.
+An authorization, waiver, and NOTAM serve different purposes. Follow the conditions in the actual authorization, waiver, COA, or exemption and check current NOTAMs and TFRs. Do not assume filing a notice grants operating authority or changes a regulatory limit.
 
 ---
 
@@ -183,4 +168,4 @@ await drone.param.set_param_int('FENCE_ENABLE', 1)
 # type = MAV_CMD_NAV_FENCE_POLYGON_VERTEX_EXCLUSION
 ```
 
-This integration pattern — dynamic airspace to dynamic fence — is the technical foundation for automated Part 108-compliant BVLOS operations. The regulatory infrastructure (ADSPs, certified APIs) is still maturing, but the aircraft-side implementation can be built now.
+This integration pattern—dynamic airspace to dynamic fence—is a useful engineering concept for a future BVLOS approval. It is not evidence of Part 108 compliance, and any aircraft-side implementation must remain a test feature until accepted data services and an operating authorization define its role.

@@ -1,0 +1,14 @@
+{
+  "name": "drone-integration-handbook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs tests/*.test.mjs",
+    "test:browser": "node scripts/check_browser.mjs",
+    "build:functions": "wrangler pages functions build --outdir=.local/functions"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0",
+    "wrangler": "4.146.0"
+  }
+}

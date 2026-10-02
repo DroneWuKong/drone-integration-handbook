@@ -1,6 +1,6 @@
 # Privacy Notice
 
-**Effective date:** August 5, 2026
+**Proposed feature update:** October 1, 2026; pending publication.
 
 This notice describes the handbook website operated by Jeremiah Wong / Midwest Nice UAS LLC. It does not govern GitHub, Cloudflare, Google Fonts, Google Analytics, linked manufacturers, regulators, or other external services.
 
@@ -19,6 +19,12 @@ If you opt in, Google may process technical usage data such as pages visited, de
 Ordinary hosting, content-delivery, DNS, security, and network systems may process technical request information such as IP address, date and time, requested path, user agent, referral information, and security signals. The exact records depend on provider configuration and operational needs. This notice does not promise that infrastructure providers create no logs.
 
 ## Information you choose to send
+
+When you submit a discrepancy or field observation, the service stores its claim/article ID, target wording, public release, deployment commit and available source-file revision/path, your description, optional proposed correction and public source URL, configuration, date, conditions, measurement method, optional contact email, relationship disclosure, and consent in a private editorial database. Optional evidence files are stored privately when the attachment service is configured. Submission returns a receipt; its private token permits status checks and is not stored in plaintext. Reports and attachments do not enter the public build, search exports, analytics, or offline cache. A reviewer may prepare public correction wording after evidence and publication review.
+
+To limit abuse, the service temporarily records a hash of the request IP address combined with an hourly window and a request count; those rate-limit rows expire after one day. Hosting systems may separately process infrastructure data as described above.
+
+**Save draft** stores report text in local browser storage only when you choose it. **Clear draft** removes the saved draft. Downloaded receipts remain on your device until you delete them. **Save offline release** stores public articles, data and calculators together in your browser. Submission and private review require a connection. Reports and optional attachments are retained under the editorial-record principles below; the rate-limit cleanup does not delete evidence.
 
 When you email or submit a GitHub issue, the publisher receives the information you provide. It may be used to:
 

@@ -6,6 +6,7 @@ Open reference for drone RF, firmware, field operations, and integration. **CC B
 - **Generator:** `build.py` is the stable Python 3.12 entrypoint (pinned by `runtime.txt`). The implementation lives in `handbook_builder/`: `config.py` owns stable chapter IDs and reader-facing Part order; `site.py` discovers and renders Markdown, rewrites internal links, and assembles `site/`.
 - **Presentation:** `templates/handbook.html` owns semantic page structure. `assets/handbook.css` and `assets/handbook.js` own the shared Forge/Patterns-aligned UI, responsive navigation, search, scrollspy, and browser behavior.
 - **Local build:** `pip install -r requirements.txt && python3 build.py` → output in `site/`.
+- **Reference tools:** `docs/REFERENCE_TOOLS.md` covers evidence, queries, calculators, private reporting, correction proposals and offline checks. `docs/REPORTING_DEPLOYMENT.md` covers isolated storage bindings and exact production acceptance.
 - **Validation:** `python3 -m compileall -q build.py handbook_builder scripts tests && node --check assets/handbook.js && python3 -m unittest discover -s tests && python3 scripts/check_links.py && python3 build.py && python3 scripts/check_generated_site.py site/index.html`.
 - **CI:** `.github/workflows/link-check.yml` runs the complete production build and validation sequence, then uploads `site/` as a seven-day review artifact.
 - **Deploy:** Cloudflare Pages, configured via `wrangler.jsonc` (project `uas-handbook`, `pages_build_output_dir: site`). Auto-deploys on push to default branch. GitHub Actions validates the artifact but does not deploy it.
@@ -44,7 +45,7 @@ The directory tree is the source/content tree. Rename a file → break GitHub li
 - Chapter ID 25 is intentionally reserved after its public source was withdrawn. Do not reuse it or reintroduce the removed file through an indirect link.
 - `PARTS` controls both navigation and reader-facing chapter order. The build fails if a chapter is missing, unknown, duplicated across Parts, or unassigned.
 - Existing Markdown is not automatically public just because it is in `field/`, `integration/`, or `appendices/`. Register reader-facing material explicitly so internal links become stable in-page anchors.
-- Platform and component files are auto-discovered. Their generated `#p...` / `#c...` anchors depend on sorted file order, so renaming a file can change those anchors.
+- Platform and component files are auto-discovered, but published identities and `#p...` / `#c...` aliases are frozen in `data/reference-identities.json`. Register new paths/identities before publishing; preserve an identity when moving its path.
 - `scripts/check_links.py` verifies source targets. `scripts/check_generated_site.py` verifies the deployable artifact and catches unpublished relative `.md` links, duplicate/missing IDs, bad search metadata, unresolved template tokens, and missing local assets.
 - `_redirects` ordering matters on CF Pages (first-match wins). New redirects go at the **top** unless they're a more specific prefix of an existing rule.
 - Don't hardcode `uas-intel.com` anywhere — it was an old vanity domain and has been replaced by `uas-patterns.com` (see `_redirects` for the canonical destination).

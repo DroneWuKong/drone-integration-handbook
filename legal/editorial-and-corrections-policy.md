@@ -1,6 +1,6 @@
 # Editorial, Corrections, and Right-of-Reply Policy
 
-**Effective date:** July 31, 2026
+**Proposed feature update:** October 1, 2026; pending publication.
 
 The handbook covers technical systems, named companies, public officials, regulations, procurement programs, safety-critical configuration, and defense-adjacent subjects. Accuracy, source preservation, and prompt correction are therefore part of the publication process.
 
@@ -10,6 +10,8 @@ Material claims should identify their evidentiary status:
 
 | Label | Meaning |
 |---|---|
+| Derived | Formula-based result with stated units, assumptions and source; software checking is not a field observation |
+| Unreviewed | Visible claim whose supporting evidence has not yet been linked and checked |
 | Official-source verified | Supported by a current primary government, standards, or accepted compliance source |
 | Manufacturer-reported | Published or supplied by the manufacturer; not independently verified |
 | Field-observed | Recorded from a defined configuration, test, or deployment |
@@ -19,6 +21,8 @@ Material claims should identify their evidentiary status:
 Statements such as “compliant,” “safe,” “cleared,” “certified,” “legal,” “EAR99,” or “FOCI clean” should not appear without identifying the authority, item or configuration, source, verification date, and limits of the conclusion.
 
 ## Corrections
+
+Use a **Report / add field evidence** or **Flag this** control beside the relevant article or datum. The form carries the claim and release, supports a saved draft, and returns a private receipt only after storage succeeds. Optional files are private when attachment storage is configured. Reports enter a private review queue and are not automatically published. If submission is unavailable, save the draft and use the contact route below.
 
 Send correction requests to [jeremiah@midwestniceuas.com](mailto:jeremiah@midwestniceuas.com) with:
 

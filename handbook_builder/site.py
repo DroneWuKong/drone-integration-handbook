@@ -12,6 +12,7 @@ separate files:
 from __future__ import annotations
 
 import html
+import hashlib
 import importlib
 import json
 import os
@@ -24,6 +25,8 @@ from html.parser import HTMLParser
 from pathlib import Path, PurePosixPath
 from typing import Iterable, Sequence
 from urllib.parse import quote, unquote, urlsplit
+
+from .evidence import load_evidence, expand_markers, decorate_and_inventory, snapshot
 
 from .config import (
     CHAPTERS,
@@ -84,6 +87,9 @@ class ContentEntry:
     group_key: str = ""
     html: str = ""
     plain_text: str = ""
+    identity: str = ""
+    canonical: str = ""
+    publication_state: str = "published"
 
 
 class _TextExtractor(HTMLParser):
@@ -281,6 +287,21 @@ def discover_entries(base_dir: Path) -> list[ContentEntry]:
         component_number += 1
         next_order += 1
 
+    registry_path = base_dir / "data/reference-identities.json"
+    if (base_dir / "data/evidence.json").is_file() and not registry_path.is_file():
+        raise ValueError("Evidence publication requires its permanent identity registry")
+    registry = json.loads(registry_path.read_text()) if registry_path.exists() else {}
+    identities, anchors = set(), set()
+    for entry in entries:
+        registered = registry.get(entry.relative_path)
+        if registry_path.exists() and registered is None:
+            raise ValueError("Register a permanent reference identity before publishing " + entry.relative_path)
+        entry.identity = registered["id"] if registered else entry.kind + "-" + _slugify(entry.relative_path)
+        entry.anchor = registered["anchor"] if registered else entry.anchor
+        entry.canonical = "ref-" + entry.identity
+        if entry.identity in identities or entry.anchor in anchors:
+            raise ValueError("Duplicate permanent reference identity")
+        identities.add(entry.identity); anchors.add(entry.anchor)
     return entries
 
 
@@ -401,6 +422,9 @@ def render_entries(entries: Sequence[ContentEntry]) -> None:
 
     for entry in entries:
         source = entry.source_path.read_text(encoding="utf-8")
+        base = entry.source_path.parents[len(PurePosixPath(entry.relative_path).parts)-1]
+        evidence_sources, evidence_claims = load_evidence(base)
+        source = expand_markers(source, evidence_sources, evidence_claims)
         source = rewrite_internal_markdown_links(
             source,
             entry.relative_path,
@@ -631,23 +655,31 @@ def _render_entry(
     previous_by_anchor: dict[str, ContentEntry | None],
     next_by_anchor: dict[str, ContentEntry | None],
 ) -> str:
-    source_url = f"{REPOSITORY_URL}/blob/main/{entry.relative_path}"
+    source_revision = _source_commit() or "main"
+    source_url = f"{REPOSITORY_URL}/blob/{source_revision}/{entry.relative_path}"
     return (
+        f'<span class="reference-alias" id="{html.escape(entry.canonical)}"></span>'
         f'<article class="chapter content-card" id="{html.escape(entry.anchor)}" '
         f'data-kind="{html.escape(entry.kind)}" '
         f'data-group="{html.escape(entry.group)}" '
         f'data-title="{html.escape(entry.title)}" '
-        f'data-source="{html.escape(entry.relative_path)}">'
+        f'data-source="{html.escape(entry.relative_path)}" data-source-revision="{hashlib.sha256(entry.source_path.read_bytes()).hexdigest()}">'
         '<header class="chapter-meta">'
         f'<p class="section-kicker">{html.escape(_entry_kicker(entry))}</p>'
         '<div class="chapter-tools">'
         f'<button class="copy-link" type="button" data-copy-anchor="{html.escape(entry.anchor)}">Copy link</button>'
         f'<a href="{html.escape(source_url)}">Source</a>'
-        "</div></header>"
+        f'<button type="button" class="report-claim" data-report-claim="{html.escape(entry.identity)}">Report / add field evidence</button>'
+        '</div><p class="evidence-migration">Evidence migration is in progress. Numerical and categorical statements remain unreviewed unless an evidence control gives a scoped source check. Extraction does not verify performance.</p></header>'
         f'<div class="chapter-body">{entry.html}</div>'
         f'{_entry_footer(previous_by_anchor[entry.anchor], next_by_anchor[entry.anchor])}'
         "</article>"
     )
+
+
+def _source_commit() -> str | None:
+    value = os.environ.get("CF_PAGES_COMMIT_SHA") or os.environ.get("GITHUB_SHA") or ""
+    return value if re.fullmatch(r"[0-9a-f]{40}",value) else None
 
 
 def _search_metadata(entries: Sequence[ContentEntry]) -> str:
@@ -775,12 +807,40 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
     try:
         entries = discover_entries(base)
         render_entries(entries)
-        document = render_site(base, entries)
+        evidence_sources, evidence_claims = load_evidence(base)
+        records, tables = [], []
+        for entry in entries:
+            entry.html, rows, entry_tables, entry.publication_state = decorate_and_inventory(entry, evidence_sources, evidence_claims)
+            records.extend(rows); tables.extend(entry_tables)
+        inputs = [(e.relative_path, e.source_path) for e in entries]
+        for directory in ("assets", "data", "handbook_builder", "templates", "server", "functions", "migrations"):
+            inputs.extend((p.relative_to(base).as_posix(), p) for p in (base / directory).rglob("*") if p.is_file() and (directory=="assets" or p.suffix in {".json", ".js", ".css", ".py", ".html", ".mjs", ".sql"}) and (directory!="data" or p.name in {"evidence.json","reference-identities.json","table-dispositions.json"}))
+        inputs.extend((name, base/name) for name in ("build.py", "wrangler.jsonc", "package.json", "package-lock.json", "_redirects", "runtime.txt") if (base/name).is_file())
+        digest = hashlib.sha256()
+        digest.update((_source_commit() or "local-uncommitted").encode())
+        for path, file in sorted(inputs):
+            digest.update(path.encode()); digest.update(file.read_bytes())
+        release = digest.hexdigest()[:20]
+        document = render_site(base, entries).replace("</head>", f'<meta name="handbook-release" content="{release}"></head>')
 
         (staging / "index.html").write_text(document, encoding="utf-8")
         _copy_static_assets(base / "assets", staging / "assets")
         _write_support_files(base, staging, entries)
-
+        payload = snapshot(entries, evidence_sources, records, tables, release)
+        payload["commit"] = _source_commit()
+        (staging / "assets/reference-data.json").write_text(json.dumps(payload, ensure_ascii=False, separators=(",",":")))
+        (staging / "assets/release-marker.json").write_text(json.dumps({"release":release,"commit":_source_commit(),"references":len(entries),"schema_version":1,"coverage":payload["coverage"]},indent=2))
+        (staging / "release.json").write_text(json.dumps({"release":release,"commit":_source_commit(),"schema_version":1}))
+        for name in ("reference-tools", "review"):
+            page = base / ("templates/" + name + ".html")
+            if page.is_file():
+                (staging / ("reference.html" if name=="reference-tools" else "review.html")).write_text(page.read_text().replace("</head>", f'<meta name="handbook-release" content="{release}"></head>'))
+        worker = base / "assets/offline-worker.js"
+        if worker.is_file():
+            (staging / "sw.js").write_text(worker.read_text().replace("__RELEASE__",release))
+        cache_files = ["/"] + ["/"+p.relative_to(staging).as_posix() for p in staging.rglob("*") if p.is_file() and p.name not in {"sw.js","_redirects","robots.txt","offline-manifest.json","review.html","review.js"} and "tools/log-analyzer" not in p.as_posix()]
+        hashes = {url:hashlib.sha256((staging/("index.html" if url=="/" else url.lstrip("/"))).read_bytes()).hexdigest() for url in cache_files}
+        (staging / "offline-manifest.json").write_text(json.dumps({"release":release,"files":cache_files,"hashes":hashes}))
         if output.exists():
             shutil.rmtree(output)
         os.replace(staging, output)

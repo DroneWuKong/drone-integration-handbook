@@ -1,8 +1,8 @@
 # BVLOS Pathways
 
-Beyond Visual Line of Sight operations entered a new phase in August 2025 when the FAA published its long-awaited Part 108 Notice of Proposed Rulemaking. For the first time, there's a clear statutory framework for routine BVLOS operations — not just individual waivers. This guide covers the current compliance paths and what's changing.
+The FAA published a proposed Part 108 framework for routine Beyond Visual Line of Sight operations in August 2025. As of October 2, 2026, it remains proposed rulemaking and does not itself authorize an operation. Current authority still comes through an applicable existing certificate, exemption, waiver, or authorization. [claim:reg-part108-proposed]
 
-> **Note:** Part 108 is still proposed rulemaking as of early 2026. The FAA is reviewing public comments. What exists today are the Part 107 waiver and COA pathways. Part 108 is described here as the expected near-term framework.
+> **Current-status boundary:** Every Part 108 item below describes the proposal, not an effective operating rule. Check the current Federal Register docket and FAA operating-authority pages before planning an operation.
 
 ---
 
@@ -20,7 +20,7 @@ The regulatory difficulty is that VLOS is also the primary safety mechanism. Wit
 
 The existing mechanism. You apply to the FAA for a waiver to § 107.31 (visual line of sight requirement), demonstrating that your specific operation can be conducted safely without VLOS.
 
-**Reality check:** BVLOS waivers increased from ~1,200 in 2020 to ~27,000 by 2023, but the vast majority of approved operations still use visual observers. Of 44,000+ BVLOS flights logged under the FAA's BEYOND program through 2025, fewer than 800 (~2%) were flown without a visual observer. The safety case for VO-less operations remains the hardest part of any waiver application.
+Part 107 operators that cannot comply with § 107.31 may request an operational waiver by showing an equivalent level of safety. The FAA now directs new Part 107 operational-waiver applications through the Aviation Safety Hub. [claim:reg-part107-bvlos-waiver]
 
 **What the application requires:**
 - Detailed operational description (location, altitude, corridor, timing)
@@ -29,11 +29,11 @@ The existing mechanism. You apply to the FAA for a waiver to § 107.31 (visual l
 - Risk mitigation narrative addressing ground risk and air risk
 - Proof of operational safety (flight test data, simulation, comparable operations)
 
-**Timeline:** 90 days minimum. In practice 6–18 months. Applies only to the specific described operation — a new location or aircraft requires a new application.
+**Timing:** The FAA says it will do its best to approve or disapprove a Part 107 waiver request within 90 days, while warning that timing varies with complexity and application completeness. Treat 90 days as an agency service target, not a guaranteed minimum or maximum. [claim:reg-part107-waiver-timing]
 
 ### Path 2: Certificate of Authorization (COA)
 
-COAs are issued to public agencies (law enforcement, fire, government entities) under 14 CFR § 91.203. They allow more flexible operations than Part 107, including BVLOS, at the cost of ongoing reporting and oversight requirements.
+Public-aircraft authority is not created by § 91.203. FAA materials describe COAs for qualifying public-aircraft operations under Part 91, and a separate expedited § 91.113 waiver path for organizations that meet both the statutory Public Aircraft Operator and Public Safety Organization definitions. The exact COA or waiver conditions control the operation. [claim:reg-part91-public-safety]
 
 Public safety agencies often find COA amendments faster to process than commercial waivers because there's an established relationship with the FAA and a clear public benefit case.
 
@@ -68,21 +68,21 @@ Part 108 proposes to replace the waiver-by-waiver approach with a risk-tiered au
 
 ### Airworthiness
 
-Under Part 108, aircraft up to 1,320 lbs including payload do not need traditional FAA type certification. Instead, manufacturers self-certify compliance with consensus standards (ASTM F3003, F2909, etc.) — the same approach used for Light Sport Aircraft. This is a significant reduction in friction for UAS manufacturers.
+The NPRM proposes an airworthiness-acceptance path based on consensus standards for covered aircraft rather than applying traditional type certification to every design. The eligibility details, accepted standards and final requirements remain proposal-dependent.
 
 ### Detect-and-Avoid Requirements
 
-Part 108 requires UAS to detect and yield right-of-way to any aircraft broadcasting ADS-B Out or other electronic conspicuity technology. The practical implication:
+The NPRM proposes right-of-way and detect-and-avoid rules that use ADS-B Out or other approved electronic-conspicuity information in defined circumstances. The practical design questions include:
 
-- Your aircraft needs **ADS-B In** (receiver) to detect manned traffic
+- The aircraft needs an approved way to receive the relevant cooperative-traffic information
 - You need a DAA algorithm that can command avoidance maneuvers or alert the operator
-- ADS-B Out is not required for UAS under 1,320 lbs but is strongly encouraged (and may be required in controlled airspace)
+- Equipage and operating limitations must follow the eventual rule and the specific authorization
 
 **For DIY BVLOS platforms:** uAvionix Ping (ADS-B transceiver, ~$800), Sagetech MXS, and mRo ACSP7 are the common hardware options. ArduPilot 4.4+ has native ADS-B In support with avoidance action.
 
 ### UTM and ADSP Integration
 
-For Permit-level operations, Part 108 requires coordination with an FAA-approved Automated Data Service Provider (ADSP) for airspace deconfliction. ADSPs are the commercial entities (currently in development / early certification) that will handle:
+For some proposed operations, the NPRM would require coordination with an FAA-approved Automated Data Service Provider (ADSP) for services such as deconfliction. The proposal describes services including:
 
 - Pre-flight airspace reservation
 - Real-time conflict detection with other BVLOS operators
@@ -94,7 +94,7 @@ In practice, this means most BVLOS Permit operators will need to subscribe to a 
 
 ## Practical BVLOS Stack for a Custom Platform
 
-Assuming a DIY ArduPilot fixed-wing or VTOL targeting Part 108 Permit operations:
+For early engineering exploration of a custom ArduPilot fixed-wing or VTOL that might later seek an applicable BVLOS approval:
 
 ### Command & Control Link
 
@@ -112,7 +112,9 @@ The most practical setup for low-cost BVLOS: **primary C2 via LTE (DroneEngage)*
 
 ### ADS-B In
 
-Required under Part 108. ArduPilot configuration:
+The proposed framework includes Remote ID requirements. Current Remote ID rules and any issued operating approval control today.
+
+Illustrative ArduPilot configuration to evaluate in a non-operational test environment:
 ```
 ADSB_ENABLE = 1
 ADSB_TYPE = 1 (MAVLink) or 2 (uAvionix Ping)
@@ -132,18 +134,18 @@ For cellular BVLOS via DroneEngage: the DroneEngage companion computer (Raspberr
 
 ---
 
-## Operational Requirements Under Part 108 Permit
+## Proposed Part 108 Permit Concepts
 
-The operational requirements for a Permit are manageable for a serious operator:
+The NPRM proposes requirements in these areas. This list is an orientation to the proposal and must not be used as a current compliance checklist:
 
-1. **Pre-flight NOTAM:** File a UAS-specific NOTAM via DroneZone for the planned operating area. Required before each BVLOS operation.
-2. **Remote ID active:** Broadcast module powered and transmitting from the moment of departure.
-3. **ADSP coordination:** File flight intent with an approved ADSP (once the infrastructure is in place; currently in development).
-4. **C2 link monitoring:** Maintain and log C2 link quality throughout the flight. Lost link action (defined in operations manual) must execute automatically.
-5. **ADS-B monitoring:** Active ADS-B In monitoring with DAA capability operative.
-6. **Post-flight reporting:** Log flight data including any conflicts detected, C2 link outages, or operational deviations.
+1. **Operating authorization and airspace conditions** appropriate to the operation.
+2. **Remote identification and aircraft conspicuity** as specified by any final rule and the operating approval.
+3. **Third-party service coordination** where an approved service is required.
+4. **C2 monitoring and lost-link response** defined by the approved operating concept.
+5. **Detect-and-avoid performance** appropriate to the airspace and operation.
+6. **Records and reports** required by the final rule and operating approval.
 
-The reporting and logging requirements directly motivate Tooth's audit trail design — a complete Tooth record satisfies most of the Part 108 recordkeeping burden automatically.
+The proposed reporting and logging concepts can inform Tooth's audit-trail design. A Tooth record has not been evaluated or approved as satisfying FAA recordkeeping requirements.
 
 ---
 
@@ -155,6 +157,6 @@ The realistic near-term DAA stack for a Group 1 UAS (under 25kg):
 
 - **ADS-B In** (~50–200g, ~$300–800): detects all manned aircraft broadcasting ADS-B Out. Covers most commercial and general aviation traffic.
 - **Traffic Advisory System integration**: ArduPilot's native avoidance will command a climb maneuver when an ADS-B target approaches within a configurable range.
-- **Gap**: Low-altitude, non-ADS-B aircraft (gliders, ultralights, non-equipped helicopters, other drones). No affordable solution yet. The FAA acknowledges this gap and Part 108 does not require detection of non-equipped aircraft — the risk mitigation is procedural (fly at appropriate times and locations).
+- **Gap**: Low-altitude, non-ADS-B aircraft (gliders, ultralights, non-equipped helicopters, other drones). Cooperative receivers do not detect every traffic threat. Do not assume ADS-B In alone satisfies an eventual DAA requirement or an issued authorization.
 
 This gap is the core reason VO-less BVLOS at scale remains difficult. The ADS-B → avoidance system handles the manned aviation threat; the unequipped aircraft threat is still mostly managed by procedural deconfliction (fly at night, fly in low-activity airspace, coordinate with ATC).

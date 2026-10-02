@@ -20,3 +20,8 @@ __pycache__/
 
 # Graphify
 graphify-out/
+
+.local/
+.wrangler/
+.dev.vars*
+site.__building__/

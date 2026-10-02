@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0c0a">
+  <title>Reference tools · UAS Handbook</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/reference-tools.css">
+  <script defer src="assets/reference-engine.js"></script>
+  <script defer src="assets/reporting.js"></script>
+  <script defer src="assets/reference-tools.js"></script>
+</head>
+<body class="reference-page">
+  <a class="skip-link" href="#main">Skip to reference tools</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Drone Integration Handbook home"><strong>UAS Handbook</strong><span>field reference</span></a>
+    <div class="current-location"><span>//</span> Data tools</div>
+    <nav class="topbar-actions" aria-label="Site links">
+      <a class="nav-pill active" href="reference.html" aria-current="page">Tools</a><a class="nav-pill" href="index.html">Handbook</a>
+      <a class="ecosystem-link forge" href="https://uas-forge.com/">Forge</a><a class="ecosystem-link patterns" href="https://uas-patterns.com/">Patterns</a>
+      <a class="icon-button" href="https://github.com/DroneWuKong/drone-integration-handbook" aria-label="Handbook source on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7a9.4 9.4 0 0 0-3 18.3c.5.1.6-.2.6-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1a9.7 9.7 0 0 1 5.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.7.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.7 1 .7 2v3c0 .3.2.6.7.5A9.4 9.4 0 0 0 12 2.7Z"/></svg></a>
+    </nav>
+  </header>
+  <div class="utility-shell">
+    <aside class="tool-rail" aria-label="Reference tool navigation">
+      <div class="rail-heading"><p>Reference tools</p><span>Public</span></div>
+      <nav><a href="#find"><strong>Find &amp; compare</strong><span>Filter, inspect, and export data</span></a><a href="#calculate"><strong>Calculate</strong><span>Run transparent engineering models</span></a><a href="#offline"><strong>Offline release</strong><span>Save a complete verified snapshot</span></a></nav>
+      <footer><p>Built from the same versioned release as the handbook.</p><a href="index.html#ch50">Report an error or correction ↗</a></footer>
+    </aside>
+    <main id="main" class="tool-main">
+      <header class="tool-hero"><p class="eyebrow">Queryable field reference</p><h1>Search data and calculate</h1><p>Turn the handbook’s source-backed records into answers you can filter, compare, export, and reproduce.</p><a class="back-link" href="index.html">← Return to the handbook</a></header>
+      <section class="release-panel" aria-label="Release and evidence status"><div class="release-label"><span class="status-dot"></span><strong id="load-status" role="status">Loading public release…</strong></div><p id="coverage"></p><p class="release-note">“Unreviewed” means the handbook has not yet linked and checked the supporting evidence. Manufacturer claims and derived results do not establish field performance. Missing values remain unknown.</p></section>
+      <section class="tool-card" aria-labelledby="find">
+        <div class="section-heading"><p class="section-code">01 / QUERY</p><h2 id="find">Find and compare</h2></div>
+        <form id="search"><label>Dataset<select name="dataset"><option value="references">Articles and profiles</option><option value="records">Individual data and claims</option></select></label><label>Search all terms<input name="text" type="search" placeholder="e.g. voltage or model"></label><label>Kind<select name="kind"><option value="">All kinds</option></select></label><label>Group<select name="group"><option value="">All groups</option></select></label><label>Evidence<select name="status"><option value="">All statuses</option><option>unreviewed</option><option>derived</option><option>official-source</option><option>manufacturer-reported</option><option>field-observed</option><option>hold</option></select></label><label>Exact field name<input name="field" placeholder="e.g. Voltage"></label><label>Field contains<input name="value" placeholder="e.g. 5 V"></label><button>Apply filters</button><button type="reset" class="secondary">Reset</button></form>
+        <p id="result-count" class="result-count" aria-live="polite"></p><div class="actions"><button id="share">Copy query link</button><button id="csv">Export matching CSV</button><button id="json">Export matching JSON</button><button id="compare">Compare selected</button></div><div id="comparison"></div><div id="results"></div><button id="more" hidden>Show next 40</button>
+      </section>
+      <section class="tool-card" aria-labelledby="calculate"><div class="section-heading"><p class="section-code">02 / MODEL</p><h2 id="calculate">Calculate with explicit assumptions</h2></div><p>Defaults below are hypothetical inputs for software examples. Enter your documented configuration. No calculator requires hardware or labels a simulation as a field test.</p><div id="calculators"></div></section>
+      <section class="tool-card" aria-labelledby="offline"><div class="section-heading"><p class="section-code">03 / FIELD KIT</p><h2 id="offline">Use a complete public release offline</h2></div><p>Save the articles, data, and calculators together. Submission and private review need a connection. Private reports and reviewer responses are never cached. If an update fails, the previous complete download remains available.</p><button id="save-offline">Save / update offline release</button><p id="offline-status" role="status"></p></section>
+      <noscript><p class="tool-card">Search and calculators require JavaScript. All handbook articles remain readable <a href="index.html">here</a>. Send corrections to <a href="mailto:jeremiah@midwestniceuas.com">jeremiah@midwestniceuas.com</a>.</p></noscript>
+      <footer class="site-footer"><div><strong>Built in the field. With real data. On real hardware.</strong><p>Published by Jeremiah Wong / Midwest Nice UAS LLC</p></div><nav aria-label="Footer links"><a href="index.html#ch51">Privacy</a><a href="index.html#ch50">Corrections</a><a href="index.html#ch52">Terms</a></nav></footer>
+    </main>
+  </div>
+</body>
+</html>

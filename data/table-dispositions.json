@@ -1,0 +1,3518 @@
+{
+  "schema_version": 1,
+  "scope": "Public candidate table inventory; deterministic treatment is recorded separately from factual/source review",
+  "tables": [
+    {
+      "id": "table-8c5cef71ca623e89f368",
+      "article_id": "article-1",
+      "path": "fundamentals/five-link-types.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-72f5da4d4847deb7b569",
+      "article_id": "article-1",
+      "path": "fundamentals/five-link-types.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-39af9ccc4a6d247cf313",
+      "article_id": "article-1",
+      "path": "fundamentals/five-link-types.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-3fc79ee44782f6909a86",
+      "article_id": "article-2",
+      "path": "fundamentals/frequency-bands.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-e5769912ce9eea061d7d",
+      "article_id": "article-2",
+      "path": "fundamentals/frequency-bands.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-d32ead632dd9fa09215d",
+      "article_id": "article-2",
+      "path": "fundamentals/frequency-bands.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-2faa26656ffffe7cae5e",
+      "article_id": "article-3",
+      "path": "fundamentals/antennas.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-d306db5dffa4331ad151",
+      "article_id": "article-3",
+      "path": "fundamentals/antennas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-8db74621dc3295c2ec60",
+      "article_id": "article-3",
+      "path": "fundamentals/antennas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-54220a5449167a10f975",
+      "article_id": "article-3",
+      "path": "fundamentals/antennas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-d4061b7ccd7da3ccd513",
+      "article_id": "article-3",
+      "path": "fundamentals/antennas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-7a73c1c7b4205be9024d",
+      "article_id": "article-4",
+      "path": "fundamentals/link-budgets.md",
+      "disposition": "calculator",
+      "classification_basis": "managed-claim-generated",
+      "review": "software-checked",
+      "rows": 7,
+      "tool": "dbPower"
+    },
+    {
+      "id": "table-3dac0ec46223828fa4c0",
+      "article_id": "article-4",
+      "path": "fundamentals/link-budgets.md",
+      "disposition": "calculator",
+      "classification_basis": "managed-claim-generated",
+      "review": "software-checked",
+      "rows": 15,
+      "tool": "rf"
+    },
+    {
+      "id": "table-b4ad1c5b609af00a13b1",
+      "article_id": "article-31",
+      "path": "field/frequency-planning.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-c3362ab5ce82cd5612d3",
+      "article_id": "article-31",
+      "path": "field/frequency-planning.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-ab84e3782951f9451819",
+      "article_id": "article-31",
+      "path": "field/frequency-planning.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-599e3905b567fb05a4a3",
+      "article_id": "article-31",
+      "path": "field/frequency-planning.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-b7ecee09a912f2f1ad09",
+      "article_id": "article-31",
+      "path": "field/frequency-planning.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-4d71176c210321776ab3",
+      "article_id": "article-31",
+      "path": "field/frequency-planning.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-cc0ae8e488b9a7ace626",
+      "article_id": "article-37",
+      "path": "fundamentals/packable-antennas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-d88e4b2e0056aabf7685",
+      "article_id": "article-37",
+      "path": "fundamentals/packable-antennas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-54b111f78ff9efd935e6",
+      "article_id": "article-37",
+      "path": "fundamentals/packable-antennas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-05a9c476e903e2d4f36b",
+      "article_id": "article-37",
+      "path": "fundamentals/packable-antennas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-0cd1f83e560fa1ab3447",
+      "article_id": "article-37",
+      "path": "fundamentals/packable-antennas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-9866c1699b11dc7e1f5a",
+      "article_id": "article-37",
+      "path": "fundamentals/packable-antennas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-53f2e25bef5ca357d0bf",
+      "article_id": "article-5",
+      "path": "firmware/four-firmwares.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-0ff1aabf6a71d4dab86c",
+      "article_id": "article-5",
+      "path": "firmware/four-firmwares.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 12
+    },
+    {
+      "id": "table-da1ae54e190fa932f93c",
+      "article_id": "article-6",
+      "path": "firmware/msp-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-437143f0e86e840ddc87",
+      "article_id": "article-6",
+      "path": "firmware/msp-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-ca2b92cc6a54639418a4",
+      "article_id": "article-6",
+      "path": "firmware/msp-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-372832aa76f67c065772",
+      "article_id": "article-6",
+      "path": "firmware/msp-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-546a854165fdfcacf81c",
+      "article_id": "article-6",
+      "path": "firmware/msp-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-5de1f09d0f88c16f47f8",
+      "article_id": "article-6",
+      "path": "firmware/msp-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-c6b9e611db468dc4f17c",
+      "article_id": "article-6",
+      "path": "firmware/msp-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-2aacfba1febedab3eb24",
+      "article_id": "article-6",
+      "path": "firmware/msp-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-9815cdbf01d555a4d6e0",
+      "article_id": "article-6",
+      "path": "firmware/msp-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 1
+    },
+    {
+      "id": "table-f9c085ad2c5218758dd0",
+      "article_id": "article-7",
+      "path": "firmware/mavlink-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-46c8af51fda8c442a45a",
+      "article_id": "article-7",
+      "path": "firmware/mavlink-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-bd5516f979ea49fc322c",
+      "article_id": "article-7",
+      "path": "firmware/mavlink-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-b49691a508cc7b334a1f",
+      "article_id": "article-7",
+      "path": "firmware/mavlink-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-39f1425cdcf8b2fcb851",
+      "article_id": "article-7",
+      "path": "firmware/mavlink-protocol.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-aa12f2301194b70b45df",
+      "article_id": "article-8",
+      "path": "firmware/uart-layout.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-f7b1a9474493f180a650",
+      "article_id": "article-8",
+      "path": "firmware/uart-layout.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-4f9b4a9aa8a9cbb36b42",
+      "article_id": "article-8",
+      "path": "firmware/uart-layout.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-e79c4ae9ab0893bad9c4",
+      "article_id": "article-26",
+      "path": "firmware/appendix-b-uart-maps.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 187
+    },
+    {
+      "id": "table-ce3d41899a379818f4e1",
+      "article_id": "article-26",
+      "path": "firmware/appendix-b-uart-maps.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 94
+    },
+    {
+      "id": "table-a23a6a07b6c11ceb5a57",
+      "article_id": "article-26",
+      "path": "firmware/appendix-b-uart-maps.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 130
+    },
+    {
+      "id": "table-c5cc751e5952f22e3fb1",
+      "article_id": "article-26",
+      "path": "firmware/appendix-b-uart-maps.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-4e1282855e45058a67df",
+      "article_id": "article-27",
+      "path": "firmware/crsf-elrs-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-674bdaa046c910efdd7c",
+      "article_id": "article-27",
+      "path": "firmware/crsf-elrs-protocol.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-1707d6cb73762635c7df",
+      "article_id": "article-27",
+      "path": "firmware/crsf-elrs-protocol.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-22f662aa5e0667d6704c",
+      "article_id": "article-27",
+      "path": "firmware/crsf-elrs-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-ca0d3d8aa39cc44e5a32",
+      "article_id": "article-27",
+      "path": "firmware/crsf-elrs-protocol.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-acc60ba8b7446d2b36dd",
+      "article_id": "article-27",
+      "path": "firmware/crsf-elrs-protocol.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-abc7ee11ba2824fef369",
+      "article_id": "article-28",
+      "path": "firmware/dshot-esc-protocols.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-3cec82a68c7d9e30efaa",
+      "article_id": "article-28",
+      "path": "firmware/dshot-esc-protocols.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-57f7b39fbecacc5d7909",
+      "article_id": "article-28",
+      "path": "firmware/dshot-esc-protocols.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-d8f69a4b864aaa5c40b7",
+      "article_id": "article-28",
+      "path": "firmware/dshot-esc-protocols.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-cfe9648201444cb25619",
+      "article_id": "article-28",
+      "path": "firmware/dshot-esc-protocols.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-2e550807fc1e5ae7451f",
+      "article_id": "article-29",
+      "path": "field/ghost-config.md",
+      "disposition": "guided-explanation",
+      "classification_basis": "header-pattern:method/task",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-adf151b65a4f1b5e6feb",
+      "article_id": "article-29",
+      "path": "field/ghost-config.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-a2b1dedea43fb837f286",
+      "article_id": "article-29",
+      "path": "field/ghost-config.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-24aa70298577888ad4f7",
+      "article_id": "article-29",
+      "path": "field/ghost-config.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-14d487b0b0e7546ebc68",
+      "article_id": "article-29",
+      "path": "field/ghost-config.md",
+      "disposition": "guided-explanation",
+      "classification_basis": "header-pattern:recommended mode/scenario/why",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-36173c546a90549d5f28",
+      "article_id": "article-29",
+      "path": "field/ghost-config.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-888935a03f0313b6fe09",
+      "article_id": "article-29",
+      "path": "field/ghost-config.md",
+      "disposition": "guided-explanation",
+      "classification_basis": "header-pattern:fix/likely cause/symptom",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-1212aaf170153c666fe7",
+      "article_id": "article-30",
+      "path": "field/elrs-airport-mode.md",
+      "disposition": "guided-explanation",
+      "classification_basis": "header-pattern:approach/why it fails",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-b95a19d518a6e38d9d13",
+      "article_id": "article-10",
+      "path": "field/blackbox.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-6d625513ccb8f0c5ca39",
+      "article_id": "article-12",
+      "path": "field/troubleshooting.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-fed803d5176d5bb88527",
+      "article_id": "article-32",
+      "path": "field/crash-recovery.md",
+      "disposition": "guided-explanation",
+      "classification_basis": "header-pattern:bench required/damage/field fix",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-37c6f0f5bba37c7c52d0",
+      "article_id": "article-33",
+      "path": "field/night-ops.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-da35a2ded6e9ec696e08",
+      "article_id": "article-33",
+      "path": "field/night-ops.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-4228cda02cfaeb26e772",
+      "article_id": "article-33",
+      "path": "field/night-ops.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-6a752541f01bbc1f95bb",
+      "article_id": "article-33",
+      "path": "field/night-ops.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-68d0d352f9ef1494c1dc",
+      "article_id": "article-33",
+      "path": "field/night-ops.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-882d32fa1738fe6de236",
+      "article_id": "article-34",
+      "path": "field/repeater-relay.md",
+      "disposition": "guided-explanation",
+      "classification_basis": "header-pattern:effect/failure/response",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-1a6d5e7ea0fd32433b92",
+      "article_id": "article-34",
+      "path": "field/repeater-relay.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-d17f72d698d68bb6ad0d",
+      "article_id": "article-35",
+      "path": "field/substitution-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-ce16b1eb8877a1d2b829",
+      "article_id": "article-35",
+      "path": "field/substitution-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-1b01581d5258fcac15a8",
+      "article_id": "article-35",
+      "path": "field/substitution-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-d65b5cf969889daa74d3",
+      "article_id": "article-35",
+      "path": "field/substitution-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-43c0769e0ec6aae6d709",
+      "article_id": "article-35",
+      "path": "field/substitution-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-736d32488e6ae5fe36d9",
+      "article_id": "article-35",
+      "path": "field/substitution-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-1da5758bffdfc7f71107",
+      "article_id": "article-35",
+      "path": "field/substitution-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-4d6f71df0158319c7c47",
+      "article_id": "article-35",
+      "path": "field/substitution-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-703e897b00f86d3820c0",
+      "article_id": "article-35",
+      "path": "field/substitution-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-96fa022e050c7732d135",
+      "article_id": "article-38",
+      "path": "field/ew-countermeasures.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-341533bc9abc6ff91d15",
+      "article_id": "article-38",
+      "path": "field/ew-countermeasures.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-b67b4fc4cf372ceef60e",
+      "article_id": "article-39",
+      "path": "field/fiber-optic-fpv.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-d551698223e782fa9619",
+      "article_id": "article-39",
+      "path": "field/fiber-optic-fpv.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-ca2cb37d2f2287954239",
+      "article_id": "article-39",
+      "path": "field/fiber-optic-fpv.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-76c68a3f00e4ec437fd8",
+      "article_id": "article-39",
+      "path": "field/fiber-optic-fpv.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-b799eab47bf7305af7f6",
+      "article_id": "article-39",
+      "path": "field/fiber-optic-fpv.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-1c390f830d65a2306959",
+      "article_id": "article-40",
+      "path": "field/intercept-ops.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-b523d226ee5869810b87",
+      "article_id": "article-40",
+      "path": "field/intercept-ops.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-4c61545e08075b0f69b5",
+      "article_id": "article-41",
+      "path": "field/attritable-production.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-463939bacf29e64cf678",
+      "article_id": "article-41",
+      "path": "field/attritable-production.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-409bcc41a58415c1db98",
+      "article_id": "article-42",
+      "path": "field/elint-operators.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 15
+    },
+    {
+      "id": "table-ffe2044cd2e36370d24e",
+      "article_id": "article-42",
+      "path": "field/elint-operators.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-b7c89b65f7ba3119dc1b",
+      "article_id": "article-42",
+      "path": "field/elint-operators.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-43d672fa570dd88feacf",
+      "article_id": "article-42",
+      "path": "field/elint-operators.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-cb901de8a6ca22cfc67d",
+      "article_id": "article-13",
+      "path": "integration/companion.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-49dcc304a9c48a5f6cb3",
+      "article_id": "article-14",
+      "path": "integration/mesh-radios.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-af09a5b53a993b75ce2a",
+      "article_id": "article-14",
+      "path": "integration/mesh-radios.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-224b01504de14e8f25a8",
+      "article_id": "article-14",
+      "path": "integration/mesh-radios.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-cf5ad95e66cfc0e95c07",
+      "article_id": "article-14",
+      "path": "integration/mesh-radios.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-3253cffcc7ac79bdab6c",
+      "article_id": "article-14",
+      "path": "integration/mesh-radios.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-bf4eec55dcde2da172b6",
+      "article_id": "article-15",
+      "path": "integration/tak.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-2296f96cf394e1b2148f",
+      "article_id": "article-16",
+      "path": "integration/mesh-rider-usb-setup.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-930c41b1ce286e89bbe2",
+      "article_id": "article-16",
+      "path": "integration/mesh-rider-usb-setup.md",
+      "disposition": "guided-explanation",
+      "classification_basis": "header-pattern:answer/question",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-6c95b3b81ca284c980fb",
+      "article_id": "article-36",
+      "path": "integration/edge-node-k3s.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-197f82a2a2830e4cee07",
+      "article_id": "article-36",
+      "path": "integration/edge-node-k3s.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-f38b029c90fdd0964a46",
+      "article_id": "article-36",
+      "path": "integration/edge-node-k3s.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-44398cb8a8f951597572",
+      "article_id": "article-36",
+      "path": "integration/edge-node-k3s.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-6b69b657dc3f3b705c90",
+      "article_id": "article-36",
+      "path": "integration/edge-node-k3s.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-53c18a0d430bd7534d4e",
+      "article_id": "article-36",
+      "path": "integration/edge-node-k3s.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-264553d68753a774fffc",
+      "article_id": "article-17",
+      "path": "field/unsolved-problems.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-fe58d09985ec3926c35a",
+      "article_id": "article-17",
+      "path": "field/unsolved-problems.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-84f041ab59e91ca407d4",
+      "article_id": "article-17",
+      "path": "field/unsolved-problems.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-195961c5b3b7e4463d33",
+      "article_id": "article-17",
+      "path": "field/unsolved-problems.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-3bb0d33a262a982ca23a",
+      "article_id": "article-17",
+      "path": "field/unsolved-problems.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-3c9a88e95aa8f1eaace8",
+      "article_id": "article-17",
+      "path": "field/unsolved-problems.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-1dee459dc38aef2a385a",
+      "article_id": "article-18",
+      "path": "vendor/dow-uas-marketplace.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-8eec3e881d7a80e46e33",
+      "article_id": "article-19",
+      "path": "vendor/dow-uas-marketplace-buyer-access.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-1ec74d62c30452bd18a6",
+      "article_id": "article-19",
+      "path": "vendor/dow-uas-marketplace-buyer-access.md",
+      "disposition": "guided-explanation",
+      "classification_basis": "header-pattern:action/need",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-de389c1136bfb7988e94",
+      "article_id": "article-20",
+      "path": "autonomy/autonomy-levels.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-17d204c109600f8bfc63",
+      "article_id": "article-20",
+      "path": "autonomy/autonomy-levels.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-2c10039c7c40e1691c54",
+      "article_id": "article-21",
+      "path": "autonomy/datasets.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-fe2b4d99acbe6addfdf2",
+      "article_id": "article-21",
+      "path": "autonomy/datasets.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-cc975bb2dafd7e0f7278",
+      "article_id": "article-21",
+      "path": "autonomy/datasets.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-3283e528c96ef0822722",
+      "article_id": "article-21",
+      "path": "autonomy/datasets.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 1
+    },
+    {
+      "id": "table-15b0606b55f6884fcd9d",
+      "article_id": "article-21",
+      "path": "autonomy/datasets.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 1
+    },
+    {
+      "id": "table-ecfb01875220f8d88cc5",
+      "article_id": "article-22",
+      "path": "autonomy/perception.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-3fbadc1809047602b7d1",
+      "article_id": "article-23",
+      "path": "autonomy/detection.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-26fb361f7c9a806d4a7e",
+      "article_id": "article-23",
+      "path": "autonomy/detection.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-d61a4d93f811678e57fa",
+      "article_id": "article-24",
+      "path": "autonomy/onboard-ai-control.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-49faf956faba2c5610ca",
+      "article_id": "article-24",
+      "path": "autonomy/onboard-ai-control.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-a41f31a453fb17a17959",
+      "article_id": "article-43",
+      "path": "appendices/appendix-a-frequency-quick-reference.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-947ccf3ff713bb30d847",
+      "article_id": "article-43",
+      "path": "appendices/appendix-a-frequency-quick-reference.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-45cae5e55e418a08d2ab",
+      "article_id": "article-43",
+      "path": "appendices/appendix-a-frequency-quick-reference.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-3e37cc1b759ff9a2a248",
+      "article_id": "article-43",
+      "path": "appendices/appendix-a-frequency-quick-reference.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-4e22f9252e2ca11c1850",
+      "article_id": "article-43",
+      "path": "appendices/appendix-a-frequency-quick-reference.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-7b51ca01b76c750c8212",
+      "article_id": "article-45",
+      "path": "appendices/appendix-d-msp-quick-reference.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-9b7e3ce66564b5a233ea",
+      "article_id": "article-45",
+      "path": "appendices/appendix-d-msp-quick-reference.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-e1b65e51ade5083e7834",
+      "article_id": "article-45",
+      "path": "appendices/appendix-d-msp-quick-reference.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-82ed9792355b908699c6",
+      "article_id": "article-45",
+      "path": "appendices/appendix-d-msp-quick-reference.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-ca56e434a30ee8927e7b",
+      "article_id": "article-45",
+      "path": "appendices/appendix-d-msp-quick-reference.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-e54458cd93ab0326aa42",
+      "article_id": "article-45",
+      "path": "appendices/appendix-d-msp-quick-reference.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-298f3cadb342ec86fa8d",
+      "article_id": "article-45",
+      "path": "appendices/appendix-d-msp-quick-reference.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 1
+    },
+    {
+      "id": "table-4e1deee62172f581fc97",
+      "article_id": "article-46",
+      "path": "appendices/appendix-e-cot-type-codes.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-18036b306e293ae796c2",
+      "article_id": "article-46",
+      "path": "appendices/appendix-e-cot-type-codes.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-e8cd4465f7e8ce2d6228",
+      "article_id": "article-46",
+      "path": "appendices/appendix-e-cot-type-codes.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-474e1baac82d43c2af26",
+      "article_id": "article-46",
+      "path": "appendices/appendix-e-cot-type-codes.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-88917518a6f100e07b0b",
+      "article_id": "article-46",
+      "path": "appendices/appendix-e-cot-type-codes.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-89860a5f9e754fd240bc",
+      "article_id": "article-46",
+      "path": "appendices/appendix-e-cot-type-codes.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-bf173cd2861c10cbd222",
+      "article_id": "article-47",
+      "path": "appendices/appendix-f-regulatory-resources.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-7ce85c8ce48de6a35427",
+      "article_id": "article-47",
+      "path": "appendices/appendix-f-regulatory-resources.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-74d1f4464c151a90999a",
+      "article_id": "article-47",
+      "path": "appendices/appendix-f-regulatory-resources.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-11fc2bb2caead41dea7d",
+      "article_id": "article-47",
+      "path": "appendices/appendix-f-regulatory-resources.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-f913fdc88b995c479fdb",
+      "article_id": "article-50",
+      "path": "legal/editorial-and-corrections-policy.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-72a120fa091fb104e336",
+      "article_id": "platform-autel-evo-max-4t",
+      "path": "platforms/cots/autel-evo-max-4t.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-3ad2fac1bc3957294433",
+      "article_id": "platform-autel-evo-max-4t",
+      "path": "platforms/cots/autel-evo-max-4t.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-6f4569a2aca4dbf88534",
+      "article_id": "platform-autel-evo2-enterprise",
+      "path": "platforms/cots/autel-evo2-enterprise.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-5147d1c1b42ebdefe8cc",
+      "article_id": "platform-dji-agras-t50",
+      "path": "platforms/cots/dji-agras-t50.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 12
+    },
+    {
+      "id": "table-fa5d5642097c57f09c80",
+      "article_id": "platform-dji-flycart-30",
+      "path": "platforms/cots/dji-flycart-30.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 12
+    },
+    {
+      "id": "table-b7cdbd75401afb248189",
+      "article_id": "platform-dji-m30t",
+      "path": "platforms/cots/dji-m30t.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-da4e28a41dc9b65aa472",
+      "article_id": "platform-dji-m350-rtk",
+      "path": "platforms/cots/dji-m350-rtk.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-6a98df2c448da0ab8f77",
+      "article_id": "platform-dji-mavic3-enterprise",
+      "path": "platforms/cots/dji-mavic3-enterprise.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-ec881117558baba2b2c6",
+      "article_id": "platform-dji-mavic4-pro",
+      "path": "platforms/cots/dji-mavic4-pro.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-931091a3684ed607bafa",
+      "article_id": "platform-flyability-elios-3",
+      "path": "platforms/cots/flyability-elios-3.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-35f8a736d4a9785ca4da",
+      "article_id": "platform-hylio-ag-272",
+      "path": "platforms/cots/hylio-ag-272.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 15
+    },
+    {
+      "id": "table-4f142c4acbd63ed378f2",
+      "article_id": "platform-hylio-ag-272",
+      "path": "platforms/cots/hylio-ag-272.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-392c19ff1d728a886474",
+      "article_id": "platform-quantum-trinity-pro",
+      "path": "platforms/cots/quantum-trinity-pro.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-df4717f719309a40a336",
+      "article_id": "platform-sensefly-ebee-x",
+      "path": "platforms/cots/sensefly-ebee-x.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-68795e5166247b534800",
+      "article_id": "platform-xag-p100-p150",
+      "path": "platforms/cots/xag-p100-p150.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 12
+    },
+    {
+      "id": "table-c0717e99ba43d3b2390f",
+      "article_id": "platform-xag-p100-p150",
+      "path": "platforms/cots/xag-p100-p150.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-c35a7676916d276189ba",
+      "article_id": "platform-freefly-astro",
+      "path": "platforms/blue-uas/freefly-astro.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-21557337b0723d36497e",
+      "article_id": "platform-inspired-flight-if1200a",
+      "path": "platforms/blue-uas/inspired-flight-if1200a.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-19b873383212696c6d25",
+      "article_id": "platform-parrot-anafi-usa",
+      "path": "platforms/blue-uas/parrot-anafi-usa.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-86a97fb082b5724de857",
+      "article_id": "platform-skydio-x10",
+      "path": "platforms/blue-uas/skydio-x10.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-6459ce43afd1f1d34c46",
+      "article_id": "platform-skydio-x10",
+      "path": "platforms/blue-uas/skydio-x10.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-bcb6157f1397e236d379",
+      "article_id": "platform-teal-2",
+      "path": "platforms/blue-uas/teal-2.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-cee08959d59e987acced",
+      "article_id": "platform-teal-2",
+      "path": "platforms/blue-uas/teal-2.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-1af8cf1f5a0685463992",
+      "article_id": "platform-wingtra-wingtraone",
+      "path": "platforms/blue-uas/wingtra-wingtraone.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-575c517e026a8470c21d",
+      "article_id": "platform-wingtra-wingtraone",
+      "path": "platforms/blue-uas/wingtra-wingtraone.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-e3aa5d2375240fca47e0",
+      "article_id": "platform-ardupilot-px4-reference",
+      "path": "platforms/open-source/ardupilot-px4-reference.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-b68b44b80095c1f231a1",
+      "article_id": "platform-ardupilot-px4-reference",
+      "path": "platforms/open-source/ardupilot-px4-reference.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-9988089c613582ad0e53",
+      "article_id": "platform-ardupilot-px4-reference",
+      "path": "platforms/open-source/ardupilot-px4-reference.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-0f0f1f072cede784af06",
+      "article_id": "platform-ardupilot-px4-reference",
+      "path": "platforms/open-source/ardupilot-px4-reference.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-8f16d5418447379edf9b",
+      "article_id": "platform-holybro-x500-pixhawk6x",
+      "path": "platforms/open-source/holybro-x500-pixhawk6x.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-b97687d92e5265f2cd45",
+      "article_id": "platform-holybro-x500-pixhawk6x",
+      "path": "platforms/open-source/holybro-x500-pixhawk6x.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-21a7de8fb1ad85cca43a",
+      "article_id": "platform-anduril-ghost-x",
+      "path": "platforms/tactical/anduril-ghost-x.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-c95757b486673a2bf557",
+      "article_id": "platform-brecourt-idfr",
+      "path": "platforms/tactical/brecourt-idfr.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-ab1664ebc8af13dea6d4",
+      "article_id": "platform-brecourt-idfr",
+      "path": "platforms/tactical/brecourt-idfr.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-a06e1e36845a78c11b85",
+      "article_id": "platform-modalai-fpv",
+      "path": "platforms/tactical/modalai-fpv.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-7b805d6cfd5edd488bed",
+      "article_id": "platform-neros-archer",
+      "path": "platforms/tactical/neros-archer.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-b2f94908dd5b2df6c0e8",
+      "article_id": "platform-orqa-mrm1-5",
+      "path": "platforms/tactical/orqa-mrm1-5.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 21
+    },
+    {
+      "id": "table-a19054f5dcc177de0a80",
+      "article_id": "platform-orqa-mrm1-5",
+      "path": "platforms/tactical/orqa-mrm1-5.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-929af3cbaa4fb35d0b02",
+      "article_id": "platform-orqa-mrm1-5",
+      "path": "platforms/tactical/orqa-mrm1-5.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-6ea7b03e76026bf0155c",
+      "article_id": "platform-orqa-mrm2-10",
+      "path": "platforms/tactical/orqa-mrm2-10.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 15
+    },
+    {
+      "id": "table-96a20fa2ecda753440b5",
+      "article_id": "platform-orqa-mrm2-10",
+      "path": "platforms/tactical/orqa-mrm2-10.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-bbe160a3171506477a47",
+      "article_id": "platform-orqa-mrm2-10",
+      "path": "platforms/tactical/orqa-mrm2-10.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-c57f93dc1e46bf699551",
+      "article_id": "platform-orqa-mrm2-10",
+      "path": "platforms/tactical/orqa-mrm2-10.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-015ff0e6225780e298a3",
+      "article_id": "platform-orqa-mrm2-10f",
+      "path": "platforms/tactical/orqa-mrm2-10f.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 13
+    },
+    {
+      "id": "table-723063596789efc7c3ff",
+      "article_id": "platform-orqa-mrm2-10f",
+      "path": "platforms/tactical/orqa-mrm2-10f.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-30960744a6082f9bd4cc",
+      "article_id": "platform-orqa-mrm2-10f",
+      "path": "platforms/tactical/orqa-mrm2-10f.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-e78f4464596f4d9e3cff",
+      "article_id": "platform-red-cat-fang",
+      "path": "platforms/tactical/red-cat-fang.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-208500eb2217750a4f5f",
+      "article_id": "platform-red-cat-fang",
+      "path": "platforms/tactical/red-cat-fang.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-7ac19dcfd8183567cf07",
+      "article_id": "platform-skyfish-osprey",
+      "path": "platforms/tactical/skyfish-osprey.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-7aa5b2f0d1109489da99",
+      "article_id": "platform-uas-nexus-platform-one",
+      "path": "platforms/tactical/uas-nexus-platform-one.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-4f0393a3306923af5c05",
+      "article_id": "platform-uas-nexus-platform-one",
+      "path": "platforms/tactical/uas-nexus-platform-one.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-4568c94fe4726924e089",
+      "article_id": "platform-uas-nexus-platform-one",
+      "path": "platforms/tactical/uas-nexus-platform-one.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-109da4f08448f54ee6ed",
+      "article_id": "platform-uas-nexus-platform-one",
+      "path": "platforms/tactical/uas-nexus-platform-one.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-3a45cb3fe14c3a6950e4",
+      "article_id": "platform-vantage-robotics",
+      "path": "platforms/tactical/vantage-robotics.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-71e40e27a6a5e2364ec7",
+      "article_id": "component-batteries",
+      "path": "components/batteries.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 13
+    },
+    {
+      "id": "table-e25f9f01851ee5921d39",
+      "article_id": "component-batteries",
+      "path": "components/batteries.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-4afc24a19169322f4a52",
+      "article_id": "component-batteries",
+      "path": "components/batteries.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-76abebd941aaa9a8ce3d",
+      "article_id": "component-batteries",
+      "path": "components/batteries.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-43ebff60cac228a2023e",
+      "article_id": "component-batteries",
+      "path": "components/batteries.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-093b708d03af8161b081",
+      "article_id": "component-batteries",
+      "path": "components/batteries.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-fb1e9a6940378affff5e",
+      "article_id": "component-batteries",
+      "path": "components/batteries.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-b68c0b3c23acf878b35e",
+      "article_id": "component-batteries",
+      "path": "components/batteries.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-f1d5115a359cdd4354bc",
+      "article_id": "component-batteries",
+      "path": "components/batteries.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-299dedfaee609ae2efbf",
+      "article_id": "component-bvlos-pathways",
+      "path": "components/bvlos-pathways.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-9abe732303ed76a14a58",
+      "article_id": "component-cellular-lte-bvlos",
+      "path": "components/cellular-lte-bvlos.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-17a4111a611e0f5c5a10",
+      "article_id": "component-cellular-lte-bvlos",
+      "path": "components/cellular-lte-bvlos.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-69831321047cd83dcf6a",
+      "article_id": "component-cellular-lte-bvlos",
+      "path": "components/cellular-lte-bvlos.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-9062096a024e78d15c49",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-35f3c5d9c40237171e59",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-c238ac78855064e4ba62",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-71e70f6224b755e869cb",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-700fc2a91b92eae69c7a",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-2d5154c3f0315c41526f",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-3ca2eb76a107a67076cf",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-a7080773ef38b7e6218d",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-786d71667cd037d7327c",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-16947366f9ace9d87e25",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-4a6e131cb491ba4a15b3",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-54400332001c31699a4a",
+      "article_id": "component-comms-datalinks",
+      "path": "components/comms-datalinks.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-401e5815160012de2cbf",
+      "article_id": "component-companion-computers",
+      "path": "components/companion-computers.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-a985908ed46688a45b26",
+      "article_id": "component-companion-computers",
+      "path": "components/companion-computers.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-2109e7728978c2cfa0a0",
+      "article_id": "component-companion-computers",
+      "path": "components/companion-computers.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-2bf8170983689e21da67",
+      "article_id": "component-companion-computers",
+      "path": "components/companion-computers.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-608bd9b8bade470f8d3d",
+      "article_id": "component-companion-computers",
+      "path": "components/companion-computers.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-8322ca2e3f14c67fef4a",
+      "article_id": "component-companion-computers",
+      "path": "components/companion-computers.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-263015f8e4871d5aa80d",
+      "article_id": "component-companion-computers",
+      "path": "components/companion-computers.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-96e42a46db0356c3d581",
+      "article_id": "component-control-link-tx",
+      "path": "components/control-link-tx.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-e8e5266de062bcd894a0",
+      "article_id": "component-control-link-tx",
+      "path": "components/control-link-tx.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-e234bc8e4c69ba5d381c",
+      "article_id": "component-counter-uas",
+      "path": "components/counter-uas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-52d5872bbf25ce685830",
+      "article_id": "component-counter-uas",
+      "path": "components/counter-uas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-dfa221e6f2455b8cd4b3",
+      "article_id": "component-counter-uas",
+      "path": "components/counter-uas.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-86f6a641f4c4ecd3ecb8",
+      "article_id": "component-counter-uas",
+      "path": "components/counter-uas.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-11de9316d3748db6e3c1",
+      "article_id": "component-counter-uas",
+      "path": "components/counter-uas.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-d3da03d48f6612ac85cf",
+      "article_id": "component-counter-uas",
+      "path": "components/counter-uas.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-b1fcbdb8c4ddbdfd1433",
+      "article_id": "component-counter-uas",
+      "path": "components/counter-uas.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-e472fc550040462565f0",
+      "article_id": "component-counter-uas",
+      "path": "components/counter-uas.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-a5c687e90ec608b3ba0e",
+      "article_id": "component-detect-and-avoid-integration",
+      "path": "components/detect-and-avoid-integration.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-a7660bc4e1aea4556ac2",
+      "article_id": "component-detect-and-avoid-integration",
+      "path": "components/detect-and-avoid-integration.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-c1b529c6f8e45b78a4ec",
+      "article_id": "component-escs",
+      "path": "components/escs.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-83236ff2ed29f9299115",
+      "article_id": "component-escs",
+      "path": "components/escs.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-90f0b819df279fb6d6f8",
+      "article_id": "component-escs",
+      "path": "components/escs.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-862069f1c66ff5a15980",
+      "article_id": "component-escs",
+      "path": "components/escs.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-a4a37a1a2a7f14c5e16d",
+      "article_id": "component-escs",
+      "path": "components/escs.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-8f583b240cec1dbb5355",
+      "article_id": "component-escs",
+      "path": "components/escs.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-4a55f6e17cf151d54809",
+      "article_id": "component-escs",
+      "path": "components/escs.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-c61d1b0f11d89d0c9661",
+      "article_id": "component-fixed-wing-specific",
+      "path": "components/fixed-wing-specific.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-47ef32af32bd96753062",
+      "article_id": "component-fixed-wing-specific",
+      "path": "components/fixed-wing-specific.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-2e20e80256ad423a70da",
+      "article_id": "component-fixed-wing-specific",
+      "path": "components/fixed-wing-specific.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-213b18730dd59f83fa32",
+      "article_id": "component-fleet-management",
+      "path": "components/fleet-management.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-9708b7c4dfafec0bc368",
+      "article_id": "component-fleet-management",
+      "path": "components/fleet-management.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-2aed33a8a7109a99783c",
+      "article_id": "component-fleet-management",
+      "path": "components/fleet-management.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-039ac69af9b39f45e1f2",
+      "article_id": "component-fleet-management",
+      "path": "components/fleet-management.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-b2f6ce62e3f4c4d4ea4e",
+      "article_id": "component-flight-controller-selection",
+      "path": "components/flight-controller-selection.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-35e18338e16d43a4fb52",
+      "article_id": "component-flight-controller-selection",
+      "path": "components/flight-controller-selection.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 14
+    },
+    {
+      "id": "table-1ec419790523c5a3394c",
+      "article_id": "component-flight-controllers",
+      "path": "components/flight-controllers.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-e33561addd387e1d33e7",
+      "article_id": "component-flight-controllers",
+      "path": "components/flight-controllers.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-218d2801cb6957711fbf",
+      "article_id": "component-flight-controllers",
+      "path": "components/flight-controllers.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-acdb44e39dda7dc4ceda",
+      "article_id": "component-flight-controllers",
+      "path": "components/flight-controllers.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-7fa5f3382f36d9937d37",
+      "article_id": "component-flight-controllers",
+      "path": "components/flight-controllers.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-fa53e1a3b560cfff5c4b",
+      "article_id": "component-flight-controllers",
+      "path": "components/flight-controllers.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-2c61a1ab876b24b833f4",
+      "article_id": "component-fpv-cameras",
+      "path": "components/fpv-cameras.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-60b87b82ca7929d8a3c2",
+      "article_id": "component-frames-airframe-selection",
+      "path": "components/frames-airframe-selection.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-6313f053bdf9309bddb5",
+      "article_id": "component-frames-airframe-selection",
+      "path": "components/frames-airframe-selection.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-ef1c2f2e534bed3ae238",
+      "article_id": "component-frames-airframe-selection",
+      "path": "components/frames-airframe-selection.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-2293c34fa422194f81d9",
+      "article_id": "component-gnss-receiver-quality-ecosystem",
+      "path": "components/gnss-receiver-quality-ecosystem.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-41767d8a3ce1fffadb48",
+      "article_id": "component-gnss-receiver-quality-ecosystem",
+      "path": "components/gnss-receiver-quality-ecosystem.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-85c32244de27ced618fb",
+      "article_id": "component-gnss-receiver-quality-ecosystem",
+      "path": "components/gnss-receiver-quality-ecosystem.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-8e257fdbd5257f284bbf",
+      "article_id": "component-gps-modules",
+      "path": "components/gps-modules.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-1809d438c940cce55398",
+      "article_id": "component-ground-control-stations",
+      "path": "components/ground-control-stations.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-e597beadc63ce5b6be74",
+      "article_id": "component-hand-controller-gcs-hardware",
+      "path": "components/hand-controller-gcs-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-1022f75ed027edb22e05",
+      "article_id": "component-hand-controller-gcs-hardware",
+      "path": "components/hand-controller-gcs-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-2fd927f86aad287bb449",
+      "article_id": "component-hand-controller-gcs-hardware",
+      "path": "components/hand-controller-gcs-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-99f9845990e87bfb0cf8",
+      "article_id": "component-hand-controller-gcs-hardware",
+      "path": "components/hand-controller-gcs-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-337ba5399a2ef72973ef",
+      "article_id": "component-hand-controller-gcs-hardware",
+      "path": "components/hand-controller-gcs-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-d34d8afaf8f0ab8b2592",
+      "article_id": "component-hand-controller-gcs-hardware",
+      "path": "components/hand-controller-gcs-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-199802ea983475a91e29",
+      "article_id": "component-hand-controller-gcs-hardware",
+      "path": "components/hand-controller-gcs-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 16
+    },
+    {
+      "id": "table-691e7599541e19d959e2",
+      "article_id": "component-hand-controller-gcs-hardware",
+      "path": "components/hand-controller-gcs-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 19
+    },
+    {
+      "id": "table-ebca8b7b04451957e5b5",
+      "article_id": "component-hand-controller-gcs-hardware",
+      "path": "components/hand-controller-gcs-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 23
+    },
+    {
+      "id": "table-a080b6d96b01ca8309d5",
+      "article_id": "component-industry-intelligence",
+      "path": "components/industry-intelligence.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-599538835bc13eb6db4f",
+      "article_id": "component-industry-intelligence",
+      "path": "components/industry-intelligence.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-5a9eebc4baecffb9690f",
+      "article_id": "component-industry-intelligence",
+      "path": "components/industry-intelligence.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-a1a5f037457ea080b7f7",
+      "article_id": "component-industry-intelligence",
+      "path": "components/industry-intelligence.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 12
+    },
+    {
+      "id": "table-1bb7a0bae4cf2c82ee40",
+      "article_id": "component-industry-intelligence",
+      "path": "components/industry-intelligence.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-16f09a62f28f5af4007c",
+      "article_id": "component-industry-intelligence",
+      "path": "components/industry-intelligence.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-40bb74939227c182a1d4",
+      "article_id": "component-industry-intelligence",
+      "path": "components/industry-intelligence.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-8acf4bf63f375e7c2266",
+      "article_id": "component-industry-intelligence",
+      "path": "components/industry-intelligence.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-8617f11bad01afe6d781",
+      "article_id": "component-lidar-mapping-payloads",
+      "path": "components/lidar-mapping-payloads.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-1efa0fa4422881fef528",
+      "article_id": "component-mafiairs-combat-elrs",
+      "path": "components/mafiairs-combat-elrs.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-531c8c2f8aee1d60dff3",
+      "article_id": "component-mafiairs-combat-elrs",
+      "path": "components/mafiairs-combat-elrs.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-fb1869cb594f1c5cfc97",
+      "article_id": "component-mesh-radios",
+      "path": "components/mesh-radios.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-dd0763086ed71b03a24a",
+      "article_id": "component-military-firmware-forks",
+      "path": "components/military-firmware-forks.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-a3ec2c67864e8b495d90",
+      "article_id": "component-military-firmware-forks",
+      "path": "components/military-firmware-forks.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-148a4b38de61a678677f",
+      "article_id": "component-military-firmware-forks",
+      "path": "components/military-firmware-forks.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-a695e6482635d7ea0cbf",
+      "article_id": "component-motors",
+      "path": "components/motors.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-6dff31c32ef8d535ec46",
+      "article_id": "component-motors",
+      "path": "components/motors.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-9d2dd0f5e01fe5d3f1db",
+      "article_id": "component-motors",
+      "path": "components/motors.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-fb495b83c059875dade8",
+      "article_id": "component-motors",
+      "path": "components/motors.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-a1c0b985b0d0ac4a141e",
+      "article_id": "component-motors",
+      "path": "components/motors.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-46060b033daf356192be",
+      "article_id": "component-motors",
+      "path": "components/motors.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-6225dd3889837d7830f6",
+      "article_id": "component-motors",
+      "path": "components/motors.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-c7a59683286f9b79363f",
+      "article_id": "component-navigation-pnt",
+      "path": "components/navigation-pnt.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-2443a39f9c3965e5a8ca",
+      "article_id": "component-ndaa-compliance",
+      "path": "components/ndaa-compliance.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-6864692fbde981278c62",
+      "article_id": "component-ndaa-compliance",
+      "path": "components/ndaa-compliance.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-e04d7494320002bee2ae",
+      "article_id": "component-ndaa-compliance",
+      "path": "components/ndaa-compliance.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-377b51dee4b8810567f6",
+      "article_id": "component-openhd-implementation-guide",
+      "path": "components/openhd-implementation-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-f931a8127d6822569ae0",
+      "article_id": "component-openhd-implementation-guide",
+      "path": "components/openhd-implementation-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-8e1fba22d03cb182114f",
+      "article_id": "component-openhd-implementation-guide",
+      "path": "components/openhd-implementation-guide.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-c633f665cacc7bcc251f",
+      "article_id": "component-openhd-implementation-guide",
+      "path": "components/openhd-implementation-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-6e4a43a177526f4e4d05",
+      "article_id": "component-openhd-implementation-guide",
+      "path": "components/openhd-implementation-guide.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-9ff747f5a74d0e66196d",
+      "article_id": "component-optical-flow",
+      "path": "components/optical-flow.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-b1243097da47952bd277",
+      "article_id": "component-payload-integration-patterns",
+      "path": "components/payload-integration-patterns.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-0a1c5e5fb3b3a019100c",
+      "article_id": "component-platforms-global",
+      "path": "components/platforms-global.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 13
+    },
+    {
+      "id": "table-1bddd2dcb5595ad8d630",
+      "article_id": "component-platforms-global",
+      "path": "components/platforms-global.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-a433cdcfbc1b7f9492e6",
+      "article_id": "component-platforms-global",
+      "path": "components/platforms-global.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-96854f142c54463c7758",
+      "article_id": "component-power-architecture-emi",
+      "path": "components/power-architecture-emi.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-29511e31672f2f1b64d1",
+      "article_id": "component-power-architecture-emi",
+      "path": "components/power-architecture-emi.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-4d670751e1e0a4323542",
+      "article_id": "component-power-architecture-emi",
+      "path": "components/power-architecture-emi.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-138cb77c316929bda71c",
+      "article_id": "component-power-systems-deep-dive",
+      "path": "components/power-systems-deep-dive.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-c4a0cee6e9e5b035209a",
+      "article_id": "component-power-systems-deep-dive",
+      "path": "components/power-systems-deep-dive.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-584c3ba09929aa6cd824",
+      "article_id": "component-power-systems-deep-dive",
+      "path": "components/power-systems-deep-dive.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-ca9abbeb7743573c4f70",
+      "article_id": "component-power-systems-deep-dive",
+      "path": "components/power-systems-deep-dive.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-aea51285318d89c28001",
+      "article_id": "component-power-systems-deep-dive",
+      "path": "components/power-systems-deep-dive.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-20ea1f49e1d44be666c8",
+      "article_id": "component-propellers",
+      "path": "components/propellers.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-e8888e81f0c6eb1db3c8",
+      "article_id": "component-propellers",
+      "path": "components/propellers.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-466bcd1b41e788232826",
+      "article_id": "component-propellers",
+      "path": "components/propellers.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-4ff6f72c314a0b7bcaa1",
+      "article_id": "component-propellers",
+      "path": "components/propellers.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-fa231f37da741625d3bb",
+      "article_id": "component-propulsion-non-electric",
+      "path": "components/propulsion-non-electric.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 12
+    },
+    {
+      "id": "table-41c0a99658251cec3a7e",
+      "article_id": "component-propulsion-non-electric",
+      "path": "components/propulsion-non-electric.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-bf989cb02356c0ec8de5",
+      "article_id": "component-propulsion-non-electric",
+      "path": "components/propulsion-non-electric.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-db222502dc57e6050a1b",
+      "article_id": "component-propulsion-non-electric",
+      "path": "components/propulsion-non-electric.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-205b33c3a0e80b998454",
+      "article_id": "component-propulsion-system-matching",
+      "path": "components/propulsion-system-matching.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-100c6f9cb3c887a50655",
+      "article_id": "component-propulsion-system-matching",
+      "path": "components/propulsion-system-matching.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-68e54a6de737f4957a45",
+      "article_id": "component-propulsion-system-matching",
+      "path": "components/propulsion-system-matching.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-e0681567a355744d3b48",
+      "article_id": "component-propulsion-system-matching",
+      "path": "components/propulsion-system-matching.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-0f526b68032063b02877",
+      "article_id": "component-propulsion-system-matching",
+      "path": "components/propulsion-system-matching.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-fa3462cc1a77e591d40a",
+      "article_id": "component-propulsion-system-matching",
+      "path": "components/propulsion-system-matching.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-b1747e34a779c2f66a85",
+      "article_id": "component-propulsion-system-matching",
+      "path": "components/propulsion-system-matching.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-ed7330e95076bfd6aac8",
+      "article_id": "component-propulsion-system-matching",
+      "path": "components/propulsion-system-matching.md",
+      "disposition": "guided-explanation",
+      "classification_basis": "header-pattern:fix/likely cause/symptom",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-b1fec4c985718801113e",
+      "article_id": "component-receivers",
+      "path": "components/receivers.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-9fb93cbb3ca677d48a79",
+      "article_id": "component-remote-id-custom-builds",
+      "path": "components/remote-id-custom-builds.md",
+      "disposition": "guided-explanation",
+      "classification_basis": "header-pattern:operation/starting point",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-bc3cf7e19d65e960ac24",
+      "article_id": "component-remote-id-custom-builds",
+      "path": "components/remote-id-custom-builds.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-b9489e51995eaffa4d55",
+      "article_id": "component-remote-id-custom-builds",
+      "path": "components/remote-id-custom-builds.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-80c425f91cd55fd0d00b",
+      "article_id": "component-rf-detection-hardware",
+      "path": "components/rf-detection-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-191ac4041408a36a44f8",
+      "article_id": "component-rf-detection-hardware",
+      "path": "components/rf-detection-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-a67e93f3082ff135763a",
+      "article_id": "component-rf-detection-hardware",
+      "path": "components/rf-detection-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-db0fc2ce3c0aea526101",
+      "article_id": "component-rf-detection-hardware",
+      "path": "components/rf-detection-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-5c64b38d37982991bc92",
+      "article_id": "component-rf-detection-hardware",
+      "path": "components/rf-detection-hardware.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-c83115307ad3e390df65",
+      "article_id": "component-rtk-ppk-gps-integration",
+      "path": "components/rtk-ppk-gps-integration.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-04dc8e52a328ab17a62e",
+      "article_id": "component-rtk-ppk-the-real-story",
+      "path": "components/rtk-ppk-the-real-story.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 9
+    },
+    {
+      "id": "table-3c1b57c4edad92e148ac",
+      "article_id": "component-rtk-ppk-the-real-story",
+      "path": "components/rtk-ppk-the-real-story.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-9143866fa7afcf6ceb0e",
+      "article_id": "component-sensor-payload-integration",
+      "path": "components/sensor-payload-integration.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-b4e7890674b64debf109",
+      "article_id": "component-sensor-payload-integration",
+      "path": "components/sensor-payload-integration.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-d1852376c19c20cc7013",
+      "article_id": "component-sensor-payload-integration",
+      "path": "components/sensor-payload-integration.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-e0f50b943464e82a9968",
+      "article_id": "component-sensors",
+      "path": "components/sensors.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-67e700b093f7aaa5b6d8",
+      "article_id": "component-thermal-cameras",
+      "path": "components/thermal-cameras.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 2
+    },
+    {
+      "id": "table-803889bcb55b5a2af3ee",
+      "article_id": "component-thermal-cameras",
+      "path": "components/thermal-cameras.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 3
+    },
+    {
+      "id": "table-dea0d5ffa5450855119f",
+      "article_id": "component-thermal-cameras",
+      "path": "components/thermal-cameras.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-d3d93deb7698c4c2afe1",
+      "article_id": "component-thermal-cameras",
+      "path": "components/thermal-cameras.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-ceda41d9323fffa954d0",
+      "article_id": "component-thermal-cameras",
+      "path": "components/thermal-cameras.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-aff3a145ae0592e679ae",
+      "article_id": "component-thermal-cameras",
+      "path": "components/thermal-cameras.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4
+    },
+    {
+      "id": "table-8029fb473486a472bccd",
+      "article_id": "component-uas-maintenance-standards",
+      "path": "components/uas-maintenance-standards.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-29f29b392fbd33e83a03",
+      "article_id": "component-uas-maintenance-standards",
+      "path": "components/uas-maintenance-standards.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 10
+    },
+    {
+      "id": "table-49be62a75eb87a5b97ac",
+      "article_id": "component-uas-maintenance-standards",
+      "path": "components/uas-maintenance-standards.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 11
+    },
+    {
+      "id": "table-0fb6152ed30627cfb0ae",
+      "article_id": "component-uas-maintenance-standards",
+      "path": "components/uas-maintenance-standards.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7
+    },
+    {
+      "id": "table-307dd8b70e50df3249c1",
+      "article_id": "component-utm-airspace-awareness",
+      "path": "components/utm-airspace-awareness.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8
+    },
+    {
+      "id": "table-c8ab887b9de64b4481aa",
+      "article_id": "component-utm-airspace-awareness",
+      "path": "components/utm-airspace-awareness.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-769591bb623e11b60eac",
+      "article_id": "component-video-transmitters-vtx",
+      "path": "components/video-transmitters-vtx.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5
+    },
+    {
+      "id": "table-6deb5e3d15fa604eb7ae",
+      "article_id": "component-video-transmitters-vtx",
+      "path": "components/video-transmitters-vtx.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-b2478aaec3a234c1c58c",
+      "article_id": "component-video-transmitters-vtx",
+      "path": "components/video-transmitters-vtx.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    },
+    {
+      "id": "table-3168a95e0be35cfcacf9",
+      "article_id": "component-video-transmitters-vtx",
+      "path": "components/video-transmitters-vtx.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 6
+    }
+  ]
+}
