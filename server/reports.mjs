@@ -17,7 +17,7 @@ const hexBytes=bytes=>Array.from(bytes).map(x=>x.toString(16).padStart(2,"0")).j
 const idPattern=/^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
 export async function handle(request,env){
  const url=new URL(request.url),path=url.pathname.replace(/^\/api\/?/,""),db=env.REPORTS;
- if(path==="capabilities"&&request.method==="GET")return respond(200,{submission:!!db,review:!!(db&&env.REVIEW_TOKEN),attachments:!!(db&&env.EVIDENCE),attachment_max_bytes:2097152,attachment_max_count:3,schema_version:1});
+ if(path==="capabilities"&&request.method==="GET")return respond(200,{submission:!!db,review:!!(db&&env.REVIEW_TOKEN),attachments:!!(db&&env.EVIDENCE),autonomous_evidence:!!(db&&env.OPENAI_API_KEY&&env.OPENAI_WEBHOOK_SECRET),software_only_evidence:true,attachment_max_bytes:2097152,attachment_max_count:3,schema_version:1});
  if(!db)return respond(503,{error:"Private report storage is not configured. Use the publisher contact route."});
  const origin=request.headers.get("origin");if(origin&&origin!==url.origin)return respond(403,{error:"Origin not allowed"});
  try{

@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import tempfile
+import json
 import unittest
 from pathlib import Path
 
@@ -15,6 +16,15 @@ class GeneratedSiteValidationTestCase(unittest.TestCase):
         (self.root / "assets").mkdir()
         (self.root / "assets" / "site.css").write_text("body{}", encoding="utf-8")
         (self.root / "assets" / "handbook.js").write_text("'use strict';", encoding="utf-8")
+        (self.root / "assets" / "autonomy-status.json").write_text(
+            json.dumps({"release": "fixture-release"}), encoding="utf-8"
+        )
+        (self.root / "release.json").write_text(
+            json.dumps({"release": "fixture-release"}), encoding="utf-8"
+        )
+        (self.root / "evidence-lab.html").write_text(
+            "<!doctype html><title>Evidence lab</title>", encoding="utf-8"
+        )
         (self.root / "favicon.ico").write_bytes(favicon_bytes())
         (self.root / "404.html").write_text('<!doctype html><title>404</title><a href="/">Home</a>', encoding="utf-8")
         (self.root / "_redirects").write_text("# No legacy references in this fixture\n", encoding="utf-8")

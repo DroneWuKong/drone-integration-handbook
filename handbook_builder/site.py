@@ -28,6 +28,7 @@ from urllib.parse import quote, unquote, urlsplit
 
 from .evidence import load_evidence, expand_markers, decorate_and_inventory, snapshot
 from .review import build_review_queue, extract_article_sources
+from .autonomous import public_status
 
 from .config import (
     CHAPTERS,
@@ -815,7 +816,7 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
             records.extend(rows); tables.extend(entry_tables)
         inputs = [(e.relative_path, e.source_path) for e in entries]
         for directory in ("assets", "data", "handbook_builder", "templates", "server", "functions", "migrations"):
-            inputs.extend((p.relative_to(base).as_posix(), p) for p in (base / directory).rglob("*") if p.is_file() and (directory=="assets" or p.suffix in {".json", ".js", ".css", ".py", ".html", ".mjs", ".sql"}) and (directory!="data" or p.name in {"evidence.json","reference-identities.json","table-dispositions.json"}))
+            inputs.extend((p.relative_to(base).as_posix(), p) for p in (base / directory).rglob("*") if p.is_file() and (directory=="assets" or p.suffix in {".json", ".js", ".css", ".py", ".html", ".mjs", ".sql"}) and (directory!="data" or p.name in {"evidence.json","reference-identities.json","table-dispositions.json","prediction-ledger.json"}))
         inputs.extend((name, base/name) for name in ("build.py", "wrangler.jsonc", "package.json", "package-lock.json", "_redirects", "runtime.txt") if (base/name).is_file())
         digest = hashlib.sha256()
         digest.update((_source_commit() or "local-uncommitted").encode())
@@ -834,12 +835,18 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
         (staging / "assets/citation-review-queue.json").write_text(
             json.dumps(review_queue, ensure_ascii=False, separators=(",", ":"))
         )
+        prediction_path = base / "data/prediction-ledger.json"
+        predictions = json.loads(prediction_path.read_text()) if prediction_path.is_file() else {"schema_version":1,"predictions":[]}
+        (staging / "assets/autonomy-status.json").write_text(
+            json.dumps(public_status(review_queue, predictions), ensure_ascii=False, separators=(",", ":"))
+        )
         (staging / "assets/release-marker.json").write_text(json.dumps({"release":release,"commit":_source_commit(),"references":len(entries),"schema_version":1,"coverage":payload["coverage"]},indent=2))
         (staging / "release.json").write_text(json.dumps({"release":release,"commit":_source_commit(),"schema_version":1}))
         pages = {
             "reference-tools": "reference.html",
             "review": "review.html",
             "citation-review": "citation-review.html",
+            "evidence-lab": "evidence-lab.html",
         }
         for name, destination in pages.items():
             page = base / ("templates/" + name + ".html")

@@ -23,6 +23,8 @@ The build also creates `citation-review.html`. It turns the queue into a focused
 
 The workbench cannot publish evidence. Selecting `source-supported` requires a source URL, exact passage or locator, scope/configuration, and check date. Validate an exported file before using it in editorial work:
 
+Routine research is now intended to enter the autonomous researcher/verifier pipeline first. This workbench remains the exception console for independent disagreement, ambiguous authority, field-dependent facts and critical-risk recommendations. Weak or missing evidence is automatically marked `abstained`; it does not create a routine approval task. See [Autonomous evidence and prediction](AUTONOMOUS_EVIDENCE.md).
+
 ```sh
 python3 scripts/validate_review_decisions.py citation-review-<release>.json --check
 ```

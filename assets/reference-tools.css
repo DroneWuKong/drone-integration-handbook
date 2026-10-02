@@ -102,11 +102,16 @@ td, th { padding: 9px; border: 1px solid var(--border); text-align: left; vertic
 .review-page #queue h2 { color: var(--text); font-size: 18px; overflow-wrap: anywhere; }
 .review-page #queue pre { max-height: 480px; padding: 14px; overflow: auto; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface-inset); color: var(--text-soft); font: 11px/1.6 var(--mono); }
 .review-page #queue form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 14px; }
+.autonomy-exception { margin-top: 14px; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); }
+.autonomy-exception h3 { margin-top: 0; color: var(--text); overflow-wrap: anywhere; }.autonomy-exception blockquote { margin: 12px 0; padding-left: 12px; border-left: 3px solid var(--amber); overflow-wrap: anywhere; }.autonomy-exception form { display: grid; grid-template-columns: minmax(180px, .5fr) minmax(260px, 1.5fr) auto; align-items: end; gap: 10px; margin-top: 14px; }.autonomy-exception textarea { min-height: 72px; resize: vertical; }
 
 .review-summary { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; margin-bottom: 18px !important; }
 .review-summary div { min-width: 0; padding: 15px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); }
 .review-summary span { display: block; color: var(--muted); font: 600 9px var(--mono); text-transform: uppercase; letter-spacing: .06em; }
 .review-summary strong { display: block; margin-top: 6px; color: var(--text); font: 700 24px var(--mono); }
+.lab-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.lab-stage { display: grid; gap: 5px; min-width: 0; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); }
+.lab-stage > span { color: var(--cyan); font: 700 9px var(--mono); }.lab-stage strong { color: var(--text); }.lab-stage small { color: var(--muted); font: 600 9px var(--mono); text-transform: uppercase; }
 .workbench-controls #filters { display: grid; grid-template-columns: minmax(260px, 2fr) repeat(3, minmax(145px, 1fr)); gap: 10px; }
 .file-button { display: inline-flex; align-items: center; justify-content: center; min-height: 42px; padding: 9px 13px; border: 1px solid var(--border-high); border-radius: var(--radius-sm); background: var(--surface); color: var(--text-soft); font-size: 12px; cursor: pointer; }
 .file-button input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
@@ -137,9 +142,9 @@ td, th { padding: 9px; border: 1px solid var(--border); text-align: left; vertic
   :root { --topbar-height: 48px; } .topbar { padding: 6px 10px; } .brand span, .ecosystem-link, .nav-pill.active { display: none; } .nav-pill { padding-inline: 9px; }
   .tool-main > :not(.site-footer), .review-main > :not(.site-footer), .citation-main > :not(.site-footer), .review-page #queue > section { width: min(100% - 24px, 680px); }
   .tool-hero { padding-top: 42px; } .tool-hero h1 { font-size: clamp(34px, 12vw, 52px); } .tool-card { padding: 17px; }
-  #search, .calc-inputs { grid-template-columns: minmax(0, 1fr); } .auth-card #auth, .review-page #queue form { grid-template-columns: 1fr; }
+  #search, .calc-inputs { grid-template-columns: minmax(0, 1fr); } .auth-card #auth, .review-page #queue form, .autonomy-exception form { grid-template-columns: 1fr; }
   .record dl { grid-template-columns: 1fr; } .site-footer { align-items: flex-start; flex-direction: column; width: min(100% - 24px, 680px); } .site-footer nav { justify-content: flex-start; }
-  .review-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }.review-summary div:last-child { grid-column: 1 / -1; }.workbench-controls #filters, .source-grid, .decision-grid { grid-template-columns: 1fr; }.decision-grid .wide { grid-column: auto; }.proposal { flex-direction: column; gap: 6px; }
+  .review-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); }.review-summary div:last-child { grid-column: 1 / -1; }.workbench-controls #filters, .source-grid, .decision-grid, .lab-grid { grid-template-columns: 1fr; }.decision-grid .wide { grid-column: auto; }.proposal { flex-direction: column; gap: 6px; }
 }
 @media (max-width: 460px) { .nav-pill { display: none; } .topbar { grid-template-columns: 1fr auto; } .actions button { width: 100%; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition-duration: .01ms !important; } }

@@ -37,6 +37,12 @@ def check(site):
     manifest=json.loads((site/"offline-manifest.json").read_text())
     assert manifest["release"]==release
     assert not any(p.startswith("/api/") or "review" in p for p in manifest["files"])
+    assert "/evidence-lab.html" in manifest["files"]
+    assert "/assets/autonomy-status.json" in manifest["files"]
+    status=json.loads((site/"assets/autonomy-status.json").read_text())
+    assert status["release"]==release
+    assert status["scope"].startswith("Public aggregate only.")
+    assert (site/"evidence-lab.html").is_file()
     queue=json.loads((site/"assets/citation-review-queue.json").read_text())
     assert queue["release"]==release
     assert queue["summary"]["records"]==data["coverage"]["unreviewed_records"]

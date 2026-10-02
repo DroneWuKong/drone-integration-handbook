@@ -16,6 +16,8 @@ The automated inventory does **not** replace the remaining semantic citation aud
 
 `scripts/build_review_queue.py` turns the unresolved inventory into prioritized article/table batches and spreadsheet-safe JSON/CSV. It groups repeated wording, distinguishes links inside a statement from article-level research leads, and records a recommended review action. `citation-review.html` is the matching review workbench: safe metadata dispositions are preselected, source leads are prefilled, repeated wording can be handled as a checked group, and human decisions can be exported/imported without publishing. The risk score and automation proposal are workflow metadata, not factual review. See `docs/CITATION_REVIEW_WORKFLOW.md`.
 
+`evidence-lab.html` exposes only release-bound aggregate status, publication thresholds and prediction scores. Private research packets, source snapshots, field submissions and exceptions never enter the static build. The autonomous engine and its software-only/live-provider boundaries are documented in `docs/AUTONOMOUS_EVIDENCE.md`.
+
 Publication-hold bodies have no exported records or table rows. Their reference entries contain a hold notice only. Search and offline exports use that same filtered snapshot.
 
 ## Search and calculations
@@ -46,7 +48,7 @@ With no private database binding, the service explicitly reports unavailable sto
 
 ## Correction and maintenance
 
-The weekly `evidence-review-queue` workflow runs `scripts/check_sources.py`, preserves source fingerprints between runs, rebuilds the prioritized queue, writes a concise intervention summary, and uploads a 30-day reviewer artifact. It can also be run on demand. Fetch failure preserves the last good fingerprint. A reachable or unchanged source is not renewed fact verification. Work P0/P1 article and table batches first, then validate the workbench export. Reconcile tasks and past dispositions with the private Ai-Project evidence/review register before reopening or exporting a correction. The automation creates review work; it never edits published claims or sends private data.
+The nightly `evidence-review-queue` workflow runs `scripts/check_sources.py`, preserves source fingerprints and its bounded research cursor between runs, rebuilds the prioritized queue, starts independent background research when configured, writes a concise intervention summary, and uploads a 30-day reviewer artifact. It can also be run on demand with a 1–50-record batch size. Fetch failure preserves the last good fingerprint. A reachable or unchanged source is not renewed fact verification. Work only the exceptions surfaced in the private editorial console; routine insufficient evidence abstains automatically. Reconcile accepted proposals and past dispositions with the private Ai-Project evidence/review register before exporting a correction. The automation records release proposals; it never edits published claims or sends private data.
 
 Use `scripts/prepare_correction.py` with a managed claim, public statement, known sources, scope, review reason and optional nonsecret report ID. It creates an explicitly **draft** proposal, preserves the old claim, increments the proposed revision and refuses an existing output path. It does not edit published claims, import private report wording or copy attachments. Review public wording, source passages, exact commit and prior dispositions before applying it. Add a public nonprivileged correction summary and reviewed history; rebuild all surfaces, then record live verification in the private queue/register.
 
