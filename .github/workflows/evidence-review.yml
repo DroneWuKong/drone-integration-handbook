@@ -49,7 +49,9 @@ jobs:
         run: python3 build.py
 
       - name: Check managed source changes and review dates
-        run: python3 scripts/check_sources.py | tee .local/source-monitor-summary.json
+        run: |
+          mkdir -p .local
+          python3 scripts/check_sources.py | tee .local/source-monitor-summary.json
 
       - name: Prepare prioritized citation queue
         run: python3 scripts/build_review_queue.py | tee .local/citation-queue-summary.json
