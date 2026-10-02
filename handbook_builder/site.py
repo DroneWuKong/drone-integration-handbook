@@ -27,6 +27,7 @@ from typing import Iterable, Sequence
 from urllib.parse import quote, unquote, urlsplit
 
 from .evidence import load_evidence, expand_markers, decorate_and_inventory, snapshot
+from .review import build_review_queue, extract_article_sources
 
 from .config import (
     CHAPTERS,
@@ -829,16 +830,26 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
         payload = snapshot(entries, evidence_sources, records, tables, release)
         payload["commit"] = _source_commit()
         (staging / "assets/reference-data.json").write_text(json.dumps(payload, ensure_ascii=False, separators=(",",":")))
+        review_queue = build_review_queue(payload, extract_article_sources(base, records))
+        (staging / "assets/citation-review-queue.json").write_text(
+            json.dumps(review_queue, ensure_ascii=False, separators=(",", ":"))
+        )
         (staging / "assets/release-marker.json").write_text(json.dumps({"release":release,"commit":_source_commit(),"references":len(entries),"schema_version":1,"coverage":payload["coverage"]},indent=2))
         (staging / "release.json").write_text(json.dumps({"release":release,"commit":_source_commit(),"schema_version":1}))
-        for name in ("reference-tools", "review"):
+        pages = {
+            "reference-tools": "reference.html",
+            "review": "review.html",
+            "citation-review": "citation-review.html",
+        }
+        for name, destination in pages.items():
             page = base / ("templates/" + name + ".html")
             if page.is_file():
-                (staging / ("reference.html" if name=="reference-tools" else "review.html")).write_text(page.read_text().replace("</head>", f'<meta name="handbook-release" content="{release}"></head>'))
+                (staging / destination).write_text(page.read_text().replace("</head>", f'<meta name="handbook-release" content="{release}"></head>'))
         worker = base / "assets/offline-worker.js"
         if worker.is_file():
             (staging / "sw.js").write_text(worker.read_text().replace("__RELEASE__",release))
-        cache_files = ["/"] + ["/"+p.relative_to(staging).as_posix() for p in staging.rglob("*") if p.is_file() and p.name not in {"sw.js","_redirects","robots.txt","offline-manifest.json","review.html","review.js"} and "tools/log-analyzer" not in p.as_posix()]
+        private_review_files = {"review.html", "review.js", "citation-review.html", "citation-review.js", "citation-review-queue.json"}
+        cache_files = ["/"] + ["/"+p.relative_to(staging).as_posix() for p in staging.rglob("*") if p.is_file() and p.name not in {"sw.js","_redirects","robots.txt","offline-manifest.json",*private_review_files} and "tools/log-analyzer" not in p.as_posix()]
         hashes = {url:hashlib.sha256((staging/("index.html" if url=="/" else url.lstrip("/"))).read_bytes()).hexdigest() for url in cache_files}
         (staging / "offline-manifest.json").write_text(json.dumps({"release":release,"files":cache_files,"hashes":hashes}))
         if output.exists():

@@ -3,8 +3,9 @@ import unittest
 from pathlib import Path
 
 from handbook_builder.evidence import classify_table
-from handbook_builder.review import build_review_queue, triage
+from handbook_builder.review import build_review_queue, propose, triage
 from scripts.check_deployment import verify
+from scripts.validate_review_decisions import validate
 
 
 class ReviewQueueTests(unittest.TestCase):
@@ -24,6 +25,21 @@ class ReviewQueueTests(unittest.TestCase):
         self.assertEqual(queue["summary"]["records"],1)
         snapshot["references"][0]["publication_state"]="hold"
         with self.assertRaises(ValueError):build_review_queue(snapshot)
+
+    def test_proposals_automate_only_obvious_nonclaims(self):
+        metadata={"risk_reasons":["source-directory-entry"],"source_candidates":["https://example.test"],"article_source_candidates":[],"table_id":None}
+        self.assertFalse(propose(metadata,1)["human_intervention"])
+        claim={"risk_reasons":["performance"],"source_candidates":["https://example.test"],"article_source_candidates":[],"table_id":None}
+        self.assertTrue(propose(claim,1)["human_intervention"])
+        self.assertEqual(propose(claim,1)["decision"],"needs-source-check")
+
+    def test_supported_decisions_require_exact_review_context(self):
+        queue={"release":"r1","records":[{"id":"one","statement":"Range 10 km","path":"a.md"}]}
+        payload={"schema_version":1,"kind":"uas-handbook-citation-review","release":"r1","decisions":{"one":{"decision":"source-supported","source_url":"https://example.test"}}}
+        with self.assertRaisesRegex(ValueError,"source_passage"):validate(payload,queue)
+        payload["decisions"]["one"].update({"source_passage":"Section 2, p. 4","scope":"Model A","checked_at":"2026-10-02"})
+        result=validate(payload,queue)
+        self.assertEqual(result["summary"]["source_supported"],1)
 
     def test_proposed_part108_is_not_presented_as_current_authority(self):
         root=Path(__file__).resolve().parents[1]

@@ -14,7 +14,7 @@ Legacy table rows and digit-bearing paragraphs/list items are indexed with expli
 
 The automated inventory does **not** replace the remaining semantic citation audit, particularly statements in headings, graphics, code, comparative adjectives and linked documents. Existing visible citations in legacy prose remain visible but are not automatically treated as validated claim support.
 
-`scripts/build_review_queue.py` turns the unresolved inventory into prioritized article/table batches and spreadsheet-safe JSON/CSV. It groups repeated wording, distinguishes links inside a statement from article-level research leads, and records a recommended review action. The risk score is workflow metadata, not factual review. See `docs/CITATION_REVIEW_WORKFLOW.md`.
+`scripts/build_review_queue.py` turns the unresolved inventory into prioritized article/table batches and spreadsheet-safe JSON/CSV. It groups repeated wording, distinguishes links inside a statement from article-level research leads, and records a recommended review action. `citation-review.html` is the matching review workbench: safe metadata dispositions are preselected, source leads are prefilled, repeated wording can be handled as a checked group, and human decisions can be exported/imported without publishing. The risk score and automation proposal are workflow metadata, not factual review. See `docs/CITATION_REVIEW_WORKFLOW.md`.
 
 Publication-hold bodies have no exported records or table rows. Their reference entries contain a hold notice only. Search and offline exports use that same filtered snapshot.
 
@@ -46,7 +46,7 @@ With no private database binding, the service explicitly reports unavailable sto
 
 ## Correction and maintenance
 
-Run `python3 scripts/check_sources.py` manually. Its private/local state stores source fingerprints and deduplicated content-change, unavailable-source and review-due tasks. Fetch failure preserves the last good fingerprint. A reachable or unchanged source is not renewed fact verification. Generate the work queue with `python3 scripts/build_review_queue.py`; work P0/P1 article and table batches first. Reconcile tasks and past dispositions with the private Ai-Project evidence/review register before reopening or exporting a correction. No schedule or outbound notification is activated by this change.
+The weekly `evidence-review-queue` workflow runs `scripts/check_sources.py`, preserves source fingerprints between runs, rebuilds the prioritized queue, writes a concise intervention summary, and uploads a 30-day reviewer artifact. It can also be run on demand. Fetch failure preserves the last good fingerprint. A reachable or unchanged source is not renewed fact verification. Work P0/P1 article and table batches first, then validate the workbench export. Reconcile tasks and past dispositions with the private Ai-Project evidence/review register before reopening or exporting a correction. The automation creates review work; it never edits published claims or sends private data.
 
 Use `scripts/prepare_correction.py` with a managed claim, public statement, known sources, scope, review reason and optional nonsecret report ID. It creates an explicitly **draft** proposal, preserves the old claim, increments the proposed revision and refuses an existing output path. It does not edit published claims, import private report wording or copy attachments. Review public wording, source passages, exact commit and prior dispositions before applying it. Add a public nonprivileged correction summary and reviewed history; rebuild all surfaces, then record live verification in the private queue/register.
 
@@ -73,4 +73,4 @@ npx playwright install --with-deps chromium
 npm run test:browser
 ```
 
-The browser check uses the actual API with a software-only SQLite/private-object adapter. It verifies mobile layout, query/compare/export, calculations, drafts, receipts, private attachments, review transitions, logout, complete offline saving, failed-update recovery, offline submission fallback, legacy links and article access with JavaScript disabled. Its results explicitly say production is unverified; it is not a Cloudflare or hardware test.
+The browser check uses the actual API with a software-only SQLite/private-object adapter. It verifies mobile layout, query/compare/export, calculations, drafts, receipts, private attachments, review transitions, citation-review safeguards/export, logout, complete offline saving, failed-update recovery, offline submission fallback, legacy links and article access with JavaScript disabled. Its results explicitly say production is unverified; it is not a Cloudflare or hardware test.

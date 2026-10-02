@@ -11,7 +11,23 @@ python3 build.py
 python3 scripts/build_review_queue.py
 ```
 
-The files are written under `.local/` and are also included in the seven-day `handbook-browser-<commit>` CI artifact. The CSV neutralizes spreadsheet formula prefixes. The JSON includes article batches, table membership, normalized duplicate clusters, exact in-passage links, and clearly separate article-level research links.
+The files are written under `.local/` and are also included in the seven-day `handbook-browser-<commit>` CI artifact. The CSV neutralizes spreadsheet formula prefixes. The JSON includes article batches, table membership, normalized duplicate clusters, exact in-passage links, clearly separate article-level research links, and a reversible automation proposal.
+
+The build also creates `citation-review.html`. It turns the queue into a focused workbench instead of requiring reviewers to edit thousands of spreadsheet rows:
+
+- obvious administrative and source-directory metadata is preselected as `not-a-claim`;
+- exact links and article-level research leads are prefilled but never accepted automatically;
+- repeated wording is grouped so one disposition can be applied to a cluster after context is checked;
+- filters default to unfinished work, with P0/P1 counts kept visible;
+- decisions persist only in the current browser and can be exported/imported as release-bound JSON.
+
+The workbench cannot publish evidence. Selecting `source-supported` requires a source URL, exact passage or locator, scope/configuration, and check date. Validate an exported file before using it in editorial work:
+
+```sh
+python3 scripts/validate_review_decisions.py citation-review-<release>.json --check
+```
+
+Omit `--check` to write normalized, nonpublishing actions to `.local/citation-review-actions.json`. Promotion into `data/evidence.json` remains an explicit reviewed change.
 
 ## Work order
 

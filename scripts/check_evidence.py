@@ -37,6 +37,10 @@ def check(site):
     manifest=json.loads((site/"offline-manifest.json").read_text())
     assert manifest["release"]==release
     assert not any(p.startswith("/api/") or "review" in p for p in manifest["files"])
+    queue=json.loads((site/"assets/citation-review-queue.json").read_text())
+    assert queue["release"]==release
+    assert queue["summary"]["records"]==data["coverage"]["unreviewed_records"]
+    assert queue["summary"]["automated_low_risk_decisions"]+queue["summary"]["human_intervention_records"]==queue["summary"]["records"]
     assert not any("token_hash" in r or "receipt_token" in r for r in data["records"])
     print(json.dumps(data["coverage"],indent=2))
     return data

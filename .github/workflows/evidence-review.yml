@@ -1,0 +1,82 @@
+name: evidence-review-queue
+
+on:
+  schedule:
+    - cron: "0 14 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: evidence-review-queue
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Restore source fingerprints and open tasks
+        uses: actions/cache/restore@v4
+        with:
+          path: .local/source-review.json
+          key: evidence-source-state-${{ github.run_id }}
+          restore-keys: evidence-source-state-
+
+      - name: Install builder
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Build the exact public snapshot
+        run: python3 build.py
+
+      - name: Check managed source changes and review dates
+        run: python3 scripts/check_sources.py | tee .local/source-monitor-summary.json
+
+      - name: Prepare prioritized citation queue
+        run: python3 scripts/build_review_queue.py | tee .local/citation-queue-summary.json
+
+      - name: Add an intervention summary
+        run: |
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          source=json.loads(Path('.local/source-monitor-summary.json').read_text())
+          queue=json.loads(Path('.local/citation-queue-summary.json').read_text())
+          print('## Evidence review handoff')
+          print()
+          print(f"- Managed sources checked: {source['sources']}")
+          print(f"- Source tasks needing review: {source['pending_review_tasks']}")
+          print(f"- Safe metadata decisions preselected: {queue['automated_low_risk_decisions']}")
+          print(f"- Human review units remaining: {queue['human_intervention_records']}")
+          print(f"- Urgent P0/P1 units: {queue['priorities'].get('P0',0)+queue['priorities'].get('P1',0)}")
+          print()
+          print('Download the artifact and open the deployed citation-review workbench for the judgment calls.')
+          PY
+
+      - name: Preserve source fingerprints for the next run
+        if: always() && hashFiles('.local/source-review.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .local/source-review.json
+          key: evidence-source-state-${{ github.run_id }}
+
+      - name: Upload the reviewer handoff
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidence-review-${{ github.run_id }}
+          path: |
+            .local/source-review.json
+            .local/source-monitor-summary.json
+            .local/citation-queue-summary.json
+            .local/citation-review-queue.json
+            .local/citation-review-queue.csv
+          if-no-files-found: warn
+          retention-days: 30
