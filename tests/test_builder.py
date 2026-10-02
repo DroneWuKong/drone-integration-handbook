@@ -65,6 +65,7 @@ class BuilderTestCase(unittest.TestCase):
         (self.root / "templates").mkdir()
         (self.root / "assets").mkdir()
         shutil.copy2(project_root / "templates" / "handbook.html", self.root / "templates" / "handbook.html")
+        shutil.copy2(project_root / "templates" / "404.html", self.root / "templates" / "404.html")
         shutil.copy2(project_root / "assets" / "handbook.css", self.root / "assets" / "handbook.css")
         shutil.copy2(project_root / "assets" / "legal.css", self.root / "assets" / "legal.css")
         shutil.copy2(project_root / "assets" / "handbook.js", self.root / "assets" / "handbook.js")
@@ -121,6 +122,7 @@ class BuilderTestCase(unittest.TestCase):
         self.assertEqual(next(entry.group for entry in entries if entry.kind == "component"), "Flight Controllers & Firmware")
 
     def test_full_build_writes_legal_assets_publisher_identity_and_navigation(self) -> None:
+        (self.root / '_redirects').write_text('/forge/* https://uas-forge.com/:splat 301\n/tools https://uas-forge.com/tools/ 301\n', encoding='utf-8')
         output = self.root / "site"
         with patch("handbook_builder.site._markdown_module", return_value=_FakeMarkdown):
             index_path = build_site(self.root, output)
@@ -148,6 +150,16 @@ class BuilderTestCase(unittest.TestCase):
         self.assertTrue((output / "assets" / "handbook.css").is_file())
         self.assertTrue((output / "assets" / "legal.css").is_file())
         self.assertTrue((output / "assets" / "handbook.js").is_file())
+        self.assertTrue((output / "404.html").is_file())
+        self.assertLess((output / "404.html").stat().st_size, 4096)
+        self.assertEqual((output / "favicon.ico").read_bytes()[:6], b'\x00\x00\x01\x00\x01\x00')
+        redirects = (output / "_redirects").read_text()
+        self.assertIn('/integration/companion.md /#ch13 301', redirects)
+        self.assertIn('/companion.md /#ch13 301', redirects)
+        self.assertNotIn('/wp-admin/install.php', redirects)
+        self.assertNotIn('\n/* ', redirects)
+        self.assertLess(redirects.index('/integration/companion.md'), redirects.index('/forge/*'))
+        self.assertLess(redirects.index('/tools '), redirects.index('/forge/*'))
 
 
 if __name__ == "__main__":
