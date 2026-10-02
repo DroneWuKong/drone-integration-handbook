@@ -1,6 +1,8 @@
 # Reporting deployment and production acceptance
 
-Candidate for goal [#57](https://github.com/DroneWuKong/drone-integration-handbook/issues/57). Cloudflare authentication was unavailable in the implementation session, so no private production database, bucket, secret, migrations or live contribution service is claimed.
+Candidate for goal [#57](https://github.com/DroneWuKong/drone-integration-handbook/issues/57). Cloudflare authentication was unavailable in the original implementation session. On 2026-10-02, authenticated setup created separate `uas-handbook-reports-preview` and `uas-handbook-reports-production` D1 databases and successfully applied migrations 0001 through 0003 to both. Their distinct bindings are recorded in `wrangler.jsonc`.
+
+This is resource/schema evidence only: it does not establish live contribution, reviewer, attachment, or AI-research acceptance. At provisioning time the production capabilities endpoint still reported all four disabled, and the Pages project had no production secrets. Complete reviewer authorization and isolated preview acceptance before merging/deploying these bindings to production. OpenAI project selection, spending limits, provider/webhook credentials, and workflow dispatcher configuration remain required before live research. The production-only `uas-handbook-evidence-production` R2 bucket is bound as `EVIDENCE`; its public access is disabled, and preview intentionally has no R2 binding.
 
 ## Provision isolated resources
 
@@ -11,7 +13,7 @@ Bind:
 - `EVIDENCE`: the optional environment's private R2 bucket.
 - `REVIEW_TOKEN`: the environment's secret.
 
-The checked-in Wrangler file presently has no resource IDs. Complete real bindings in that file before deploying this feature; do not assume dashboard values override a source-controlled deployment configuration. Use current [Pages configuration](https://developers.cloudflare.com/pages/functions/wrangler-configuration/) and [binding documentation](https://developers.cloudflare.com/pages/functions/bindings/) for the actual account. Preview must not share production reports, files or reviewer authorization.
+The checked-in Wrangler file records distinct production and preview D1 resource IDs. Keep real bindings in that file; do not assume dashboard values override a source-controlled deployment configuration. Use current [Pages configuration](https://developers.cloudflare.com/pages/functions/wrangler-configuration/) and [binding documentation](https://developers.cloudflare.com/pages/functions/bindings/) for the actual account. Preview must not share production reports, files or reviewer authorization.
 
 D1 binding shape:
 
