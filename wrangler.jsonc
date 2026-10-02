@@ -11,6 +11,12 @@
       "migrations_dir": "migrations"
     }
   ],
+  "r2_buckets": [
+    {
+      "binding": "EVIDENCE",
+      "bucket_name": "uas-handbook-evidence-production"
+    }
+  ],
   "env": {
     "preview": {
       "d1_databases": [
@@ -20,7 +26,8 @@
           "database_id": "9c846ae3-3046-41e4-93e4-b46618717901",
           "migrations_dir": "migrations"
         }
-      ]
+      ],
+      "r2_buckets": []
     }
   }
 }

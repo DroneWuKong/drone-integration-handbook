@@ -2,7 +2,7 @@
 
 Candidate for goal [#57](https://github.com/DroneWuKong/drone-integration-handbook/issues/57). Cloudflare authentication was unavailable in the original implementation session. On 2026-10-02, authenticated setup created separate `uas-handbook-reports-preview` and `uas-handbook-reports-production` D1 databases and successfully applied migrations 0001 through 0003 to both. Their distinct bindings are recorded in `wrangler.jsonc`.
 
-This is resource/schema evidence only: it does not establish live contribution, reviewer, attachment, or AI-research acceptance. At provisioning time the production capabilities endpoint still reported all four disabled, and the Pages project had no production secrets. Complete reviewer authorization and isolated preview acceptance before merging/deploying these bindings to production. OpenAI project selection, spending limits, provider/webhook credentials, and workflow dispatcher configuration remain required before live research. No R2 bucket is provisioned by this change.
+This is resource/schema evidence only: it does not establish live contribution, reviewer, attachment, or AI-research acceptance. At provisioning time the production capabilities endpoint still reported all four disabled, and the Pages project had no production secrets. Complete reviewer authorization and isolated preview acceptance before merging/deploying these bindings to production. OpenAI project selection, spending limits, provider/webhook credentials, and workflow dispatcher configuration remain required before live research. The production-only `uas-handbook-evidence-production` R2 bucket is bound as `EVIDENCE`; its public access is disabled, and preview intentionally has no R2 binding.
 
 ## Provision isolated resources
 
