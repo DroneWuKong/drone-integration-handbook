@@ -2,6 +2,14 @@
   "schema_version": 1,
   "sources": [
     {
+      "id": "reboot-hub-parts-evidence-guide",
+      "title": "Reboot Hub: DJI Drone Parts — OEM-Pulled Parts and Compatibility",
+      "url": "https://reboot-hub.com/blogs/the-reboot-hub-chronicle/dji-drone-parts-oem-pulled-replacements-compatibility",
+      "passage": "What to do before buying DJI drone parts; How should buyers match DJI part compatibility?; What is the difference between OEM-pulled and aftermarket parts?",
+      "accessed": "2026-10-03",
+      "review_days": 90
+    },
+    {
       "id": "itu-p525",
       "title": "ITU-R P.525-5 (November 2024)",
       "url": "https://www.itu.int/rec/R-REC-P.525-5-202411-I/en",
@@ -83,6 +91,17 @@
     }
   ],
   "claims": [
+    {
+      "id": "reboot-hub-parts-evidence-scope",
+      "sources": ["reboot-hub-parts-evidence-guide"],
+      "status": "manufacturer-reported",
+      "verified": "2026-10-03",
+      "scope": "Company-published source wording only. Reboot Hub is an independent parts/service supplier, not DJI or a manufacturer-authorized reviewer. No hardware compatibility, safety, authenticity, availability or compliance conclusion is verified here.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public source text read on the access date; no hardware or supplier audit",
+      "statement": "Reboot Hub's supplier-published guide describes OEM-pulled as a parts-source description rather than a blanket guarantee, and asks buyers to match the exact model, variant, position, connector and board revision."
+    },
     {
       "id": "rf-power-1",
       "sources": [
