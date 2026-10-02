@@ -27,6 +27,7 @@ page.on("pageerror",error=>errors.push(error.message));
 await context.route("**/*",route=>route.request().url().startsWith(base)?route.continue():route.abort());
 try{
 const started=performance.now();await page.goto(base+"/reference.html");await page.waitForFunction(()=>document.querySelector("#load-status").textContent.startsWith("Public release"));
+assert.equal(await page.locator(".topbar .brand").textContent(),"UAS Handbookfield reference");assert.equal(await page.locator(".tool-rail").count(),1);assert.equal(await page.evaluate(()=>getComputedStyle(document.body).color),"rgb(210, 204, 190)");
 await page.screenshot({path:resolve(OUTPUT,"reference-mobile.png"),fullPage:false});
 const overflow=await page.evaluate(()=>[...document.querySelectorAll("body *")].filter(n=>n.getBoundingClientRect().right>innerWidth+1).slice(0,10).map(n=>({tag:n.tagName,cls:n.className,width:n.getBoundingClientRect().width,text:n.textContent.slice(0,80)})));assert.deepEqual(overflow,[]);
 await page.screenshot({path:resolve(OUTPUT,"reference-mobile.png"),fullPage:false});
@@ -44,7 +45,7 @@ const r=JSON.parse(await readFile(resolve(OUTPUT,"private-test-receipt.json"),"u
 await page.locator('#report-status input[type=file]').setInputFiles({name:"measurement.txt",mimeType:"text/plain",buffer:Buffer.from("Deterministic software derivation; no field measurement.")});await page.getByRole("button",{name:"Attach evidence privately"}).click();await page.waitForFunction(()=>document.querySelector("#report-status").textContent.includes("Evidence stored privately"));
 await page.getByRole("button",{name:"Check receipt status"}).click();await page.waitForFunction(()=>document.querySelector("#report-status").textContent.includes("updated"));
 await page.screenshot({path:resolve(OUTPUT,"receipt-mobile.png")});await page.click("#report-close");assert.equal(await page.evaluate(()=>document.activeElement.hasAttribute("data-report-claim")),true);
-await page.goto(base+"/review.html");await page.fill("#token",env.REVIEW_TOKEN);await page.locator("#auth").evaluate(f=>f.requestSubmit());await page.waitForFunction(()=>document.querySelector("#status").textContent.includes("1 private reports"));
+await page.goto(base+"/review.html");assert.equal(await page.locator(".topbar .brand").textContent(),"UAS Handbookfield reference");await page.fill("#token",env.REVIEW_TOKEN);await page.locator("#auth").evaluate(f=>f.requestSubmit());await page.waitForFunction(()=>document.querySelector("#status").textContent.includes("1 private reports"));
 assert.equal(await page.inputValue("#token"),"");assert.equal(await page.locator("#queue button").filter({hasText:"Download private evidence"}).count(),1);
 for(const state of ["triaged","accepted","correction-prepared"]){await page.selectOption('#queue [name=state]',state);await page.fill('#queue [name=reason]',"Evidence and proposed correction checked in software; no production publication");await page.locator("#queue form").evaluate(f=>f.requestSubmit());await page.waitForFunction(s=>document.querySelector("#queue h2")?.textContent.includes(s),state);}
 await page.click("#logout");assert.equal(await page.locator("#queue section").count(),0);
@@ -53,8 +54,7 @@ const cacheAudit=await page.evaluate(async()=>{const keys=await caches.keys();co
 brokenUpdate=true;await page.click("#save-offline");await page.waitForFunction(()=>!/Downloading/.test(document.querySelector("#offline-status").textContent),null,{timeout:120000});assert.equal(await page.evaluate(async()=> (await caches.keys()).includes("handbook-public-failed-update")),false);brokenUpdate=false;
 await context.setOffline(true);await page.goto(base+"/reference.html");await page.waitForFunction(()=>document.querySelector("#load-status").textContent.startsWith("Public release"));await page.locator(".calc").nth(1).locator('button:not([type=button])').click();assert.match(await page.locator(".calc-output").nth(1).innerText(),/fsplDb/);
 await page.locator(".record button[data-report-claim]").first().click();await page.waitForFunction(()=>document.querySelector("#report-status").textContent.includes("Save a draft"));assert.equal(await page.locator("#report-form [type=submit]").isDisabled(),true);await page.keyboard.press("Escape");
-await page.goto(base+"/index.html#p101");assert.equal(await page.locator("#p101").count(),1);const plain=await browser.newContext({javaScriptEnabled:false});const readable=await plain.newPage();await readable.goto(base+"/index.html#p101");assert.equal(await readable.locator("#p101").isVisible(),true);await plain.close();
-await context.setOffline(false);
+await page.goto(base+"/index.html#p101");assert.equal(await page.locator("#p101").count(),1);await context.close();const plainBrowser=await chromium.launch(launch),plain=await plainBrowser.newContext({javaScriptEnabled:false}),readable=await plain.newPage();await readable.goto(base+"/index.html#p101");assert.equal(await readable.locator("#p101").isVisible(),true);await plainBrowser.close();
 assert.deepEqual(errors,[]);
 const bytes=(await readFile(resolve(SITE,"assets/reference-data.json"))).length,gzipBytes=gzipSync(await readFile(resolve(SITE,"assets/reference-data.json"))).length;
 assert.ok(bytes<6*1024*1024);assert.ok(gzipBytes<1024*1024);

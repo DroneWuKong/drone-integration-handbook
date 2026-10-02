@@ -1,1 +1,25 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Private editorial queue</title><link rel="stylesheet" href="assets/reference-tools.css"><script src="assets/review.js" defer></script></head><body><main><a href="index.html">Handbook</a><h1>Private editorial queue</h1><p>Only approved reviewers may access reports. Authorization stays in tab memory. No report content enters the public build or offline cache.</p><form id="auth"><label>Reviewer token<input id="token" type="password" autocomplete="off" required></label><button>Load queue</button><button type="button" id="logout">Clear session</button></form><p id="status" role="status"></p><div id="metrics"></div><div id="queue"></div><button id="next" hidden>Next 100</button></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#0c0c0a">
+  <title>Editorial queue · UAS Handbook</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/reference-tools.css"><script src="assets/review.js" defer></script>
+</head>
+<body class="review-page">
+  <a class="skip-link" href="#main">Skip to editorial queue</a>
+  <header class="topbar"><a class="brand" href="index.html" aria-label="Drone Integration Handbook home"><strong>UAS Handbook</strong><span>field reference</span></a><div class="current-location"><span>//</span> Editorial queue</div><nav class="topbar-actions" aria-label="Site links"><a class="nav-pill" href="reference.html">Tools</a><a class="nav-pill" href="index.html">Handbook</a><a class="icon-button" href="https://github.com/DroneWuKong/drone-integration-handbook" aria-label="Handbook source on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7a9.4 9.4 0 0 0-3 18.3c.5.1.6-.2.6-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1a9.7 9.7 0 0 1 5.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.7.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.7 1 .7 2v3c0 .3.2.6.7.5A9.4 9.4 0 0 0 12 2.7Z"/></svg></a></nav></header>
+  <main id="main" class="review-main">
+    <header class="tool-hero"><p class="eyebrow">Restricted workflow</p><h1>Private editorial queue</h1><p>Review field reports and corrections without mixing private submissions into the public handbook release.</p><a class="back-link" href="index.html">← Return to the handbook</a></header>
+    <section class="release-panel review-notice"><div class="release-label"><span class="status-dot amber"></span><strong>Reviewer access only</strong></div><p>Authorization stays in tab memory. No report content enters the public build or offline cache.</p></section>
+    <section class="tool-card auth-card" aria-labelledby="access-title"><div class="section-heading"><p class="section-code">AUTH / SESSION</p><h2 id="access-title">Open the queue</h2></div><form id="auth"><label>Reviewer token<input id="token" type="password" autocomplete="off" required></label><button>Load queue</button><button type="button" id="logout" class="secondary">Clear session</button></form><p id="status" role="status"></p></section>
+    <div id="metrics" class="queue-metrics"></div><div id="queue"></div><button id="next" hidden>Next 100</button>
+    <footer class="site-footer"><div><strong>Private editorial workflow</strong><p>Publisher access is required.</p></div><nav aria-label="Footer links"><a href="reference.html">Reference tools</a><a href="index.html#ch51">Privacy</a><a href="index.html#ch50">Corrections</a></nav></footer>
+  </main>
+</body>
+</html>
