@@ -5,7 +5,7 @@
 # so `pipeline/pie_pipeline_live.py` runs against fresh data.
 #
 # What this script syncs:
-#   data/forge_database.json           ← droneclear_Forge/DroneClear Components Visualizer/
+#   data/forge_database.json           ← droneclear_Forge/forge-source/
 #   data/parts-db/*.json               ← Ai-Project/data/parts-db/
 #
 # Why:
@@ -32,7 +32,7 @@ HANDBOOK_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 FORGE_ROOT="${FORGE_ROOT:-${HANDBOOK_ROOT}/../droneclear_Forge}"
 AI_ROOT="${AI_ROOT:-${HANDBOOK_ROOT}/../Ai-Project}"
 
-FORGE_DB_SRC="${FORGE_ROOT}/DroneClear Components Visualizer/forge_database.json"
+FORGE_DB_SRC="${FORGE_ROOT}/forge-source/forge_database.json"
 PARTS_DB_SRC="${AI_ROOT}/data/parts-db"
 
 FORGE_DB_DEST="${HANDBOOK_ROOT}/data/forge_database.json"

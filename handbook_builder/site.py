@@ -19,11 +19,12 @@ import os
 import posixpath
 import re
 import shutil
+import struct
 from dataclasses import dataclass
 from html.parser import HTMLParser
 from pathlib import Path, PurePosixPath
 from typing import Iterable, Sequence
-from urllib.parse import unquote, urlsplit
+from urllib.parse import quote, unquote, urlsplit
 
 from .evidence import load_evidence, expand_markers, decorate_and_inventory, snapshot
 
@@ -746,12 +747,46 @@ def _copy_static_assets(source_dir: Path, destination_dir: Path) -> None:
         shutil.copy2(source, destination)
 
 
-def _write_support_files(base_dir: Path, output_dir: Path) -> None:
-    (output_dir / "robots.txt").write_text("User-agent: *\nDisallow:\n", encoding="utf-8")
+def favicon_bytes() -> bytes:
+    """Build a small, real ICO without an imaging dependency."""
+    size = 32
+    pixels = bytearray()
+    for y in range(size - 1, -1, -1):
+        for x in range(size):
+            ink = 7 <= y <= 24 and (7 <= x <= 11 or 20 <= x <= 24 or 14 <= y <= 17)
+            red, green, blue = (224, 179, 76) if ink else (12, 12, 10)
+            pixels.extend((blue, green, red, 255))
+    mask = bytes(4 * size)
+    bitmap = struct.pack('<IIIHHIIIIII', 40, size, size * 2, 1, 32, 0,
+                         len(pixels) + len(mask), 0, 0, 0, 0) + pixels + mask
+    return (struct.pack('<HHH', 0, 1, 1)
+            + struct.pack('<BBBBHHII', size, size, 0, 0, 1, 32, len(bitmap), 22)
+            + bitmap)
 
+
+def _write_support_files(base_dir: Path, output_dir: Path, entries: Sequence[ContentEntry]) -> None:
+    (output_dir / "robots.txt").write_text("User-agent: *\nDisallow:\n", encoding="utf-8")
+    (output_dir / "favicon.ico").write_bytes(favicon_bytes())
+    # A top-level 404.html disables Pages' implicit homepage fallback.
+    shutil.copy2(base_dir / "templates" / "404.html", output_dir / "404.html")
     redirects = base_dir / "_redirects"
-    if redirects.is_file():
-        shutil.copy2(redirects, output_dir / "_redirects")
+    existing = redirects.read_text(encoding="utf-8") if redirects.is_file() else ""
+    reserved = {line.split()[0] for line in existing.splitlines()
+                if line.strip() and not line.lstrip().startswith('#')}
+    direct, basenames = _path_anchor_maps(entries)
+    routes = {**direct, **{name: anchor for name, anchor in basenames.items() if name not in direct}}
+    generated = [f"/{quote(path, safe='/')} /#{anchor} 301"
+                 for path, anchor in sorted(routes.items())
+                 if f"/{quote(path, safe='/')}" not in reserved]
+    # Pages treats rules after the first dynamic rule as dynamic too. Keep all
+    # literals first so the 100 dynamic-rule limit cannot drop later chapters.
+    manual = [line for line in existing.splitlines() if line.strip() and not line.lstrip().startswith('#')]
+    dynamic = [line for line in manual if '*' in line.split()[0] or ':' in line.split()[0]]
+    static = [line for line in manual if line not in dynamic]
+    (output_dir / "_redirects").write_text(
+        "\n".join(static) + "\n\n# Known legacy references; unrelated paths remain 404.\n"
+        + "\n".join(generated) + "\n\n# Dynamic ecosystem routes must stay last.\n"
+        + "\n".join(dynamic) + "\n", encoding="utf-8")
 
     tools = base_dir / "tools"
     if tools.is_dir():
@@ -790,7 +825,7 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
 
         (staging / "index.html").write_text(document, encoding="utf-8")
         _copy_static_assets(base / "assets", staging / "assets")
-        _write_support_files(base, staging)
+        _write_support_files(base, staging, entries)
         payload = snapshot(entries, evidence_sources, records, tables, release)
         payload["commit"] = _source_commit()
         (staging / "assets/reference-data.json").write_text(json.dumps(payload, ensure_ascii=False, separators=(",",":")))
@@ -806,7 +841,6 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
         cache_files = ["/"] + ["/"+p.relative_to(staging).as_posix() for p in staging.rglob("*") if p.is_file() and p.name not in {"sw.js","_redirects","robots.txt","offline-manifest.json","review.html","review.js"} and "tools/log-analyzer" not in p.as_posix()]
         hashes = {url:hashlib.sha256((staging/("index.html" if url=="/" else url.lstrip("/"))).read_bytes()).hexdigest() for url in cache_files}
         (staging / "offline-manifest.json").write_text(json.dumps({"release":release,"files":cache_files,"hashes":hashes}))
-
         if output.exists():
             shutil.rmtree(output)
         os.replace(staging, output)
