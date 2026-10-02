@@ -1,0 +1,138 @@
+name: evidence-review-queue
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: "Records to research in this bounded run (1–50)"
+        required: false
+        default: "10"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: evidence-review-queue
+  cancel-in-progress: false
+
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Restore source fingerprints and open tasks
+        uses: actions/cache/restore@v4
+        with:
+          path: .local/source-review.json
+          key: evidence-source-state-${{ github.run_id }}
+          restore-keys: evidence-source-state-
+
+      - name: Restore autonomous evidence cursor
+        uses: actions/cache/restore@v4
+        with:
+          path: .local/autonomy/cursor.json
+          key: autonomous-evidence-cursor-${{ github.run_id }}
+          restore-keys: autonomous-evidence-cursor-
+
+      - name: Install builder
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Build the exact public snapshot
+        run: python3 build.py
+
+      - name: Check managed source changes and review dates
+        run: python3 scripts/check_sources.py | tee .local/source-monitor-summary.json
+
+      - name: Prepare prioritized citation queue
+        run: python3 scripts/build_review_queue.py | tee .local/citation-queue-summary.json
+
+      - name: Run the next autonomous evidence batch
+        env:
+          AUTONOMY_DISPATCH_URL: ${{ secrets.AUTONOMY_DISPATCH_URL }}
+          AUTONOMY_REVIEW_TOKEN: ${{ secrets.AUTONOMY_REVIEW_TOKEN }}
+          OPENAI_RESEARCH_MODEL: ${{ vars.OPENAI_RESEARCH_MODEL || 'gpt-5.5' }}
+          AUTONOMY_BATCH_SIZE: ${{ inputs.batch_size || vars.AUTONOMY_BATCH_SIZE || '10' }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          state_path=Path('.local/autonomy/cursor.json')
+          state=json.loads(state_path.read_text()) if state_path.exists() else {'offset':0}
+          release=json.loads(Path('site/release.json').read_text())['release']
+          queue=json.loads(Path('.local/citation-review-queue.json').read_text())
+          if state.get('release') not in (None,release) or state.get('offset',0)>=len(queue.get('records',[])):
+              state={'offset':0,'release':release}
+          batch=max(1,min(50,int(os.environ['AUTONOMY_BATCH_SIZE'])))
+          subprocess.run([
+              'python3','scripts/run_autonomous_evidence.py','--provider','auto',
+              '--maximum',str(batch),'--start-limit',str(batch*2),'--request-limit',str(batch*2),
+              '--offset',str(state.get('offset',0))
+          ],check=True)
+          plan=json.loads(Path('.local/autonomy/plan.json').read_text())
+          if plan['summary']['started_background_jobs']==plan['summary']['background_jobs'] and plan['summary']['background_jobs']:
+              state={'offset':plan['offset']+plan['summary']['records'],'release':plan['release']}
+              state_path.parent.mkdir(parents=True,exist_ok=True)
+              state_path.write_text(json.dumps(state,indent=2)+'\n')
+          PY
+
+      - name: Add an intervention summary
+        run: |
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json
+          from pathlib import Path
+          source=json.loads(Path('.local/source-monitor-summary.json').read_text())
+          queue=json.loads(Path('.local/citation-queue-summary.json').read_text())
+          print('## Evidence review handoff')
+          print()
+          print(f"- Managed sources checked: {source['sources']}")
+          print(f"- Source tasks needing review: {source['pending_review_tasks']}")
+          print(f"- Safe metadata decisions preselected: {queue['automated_low_risk_decisions']}")
+          print(f"- Human review units remaining: {queue['human_intervention_records']}")
+          print(f"- Urgent P0/P1 units: {queue['priorities'].get('P0',0)+queue['priorities'].get('P1',0)}")
+          plan_path=Path('.local/autonomy/plan.json')
+          if plan_path.exists():
+              plan=json.loads(plan_path.read_text())
+              print(f"- Autonomous provider: {plan['provider']}")
+              print(f"- Independent research jobs started: {plan['summary']['started_background_jobs']}")
+              print(f"- Deterministic automatic decisions: {plan['summary']['automatic_decisions']}")
+          print()
+          print('Download the artifact and open the deployed citation-review workbench for the judgment calls.')
+          PY
+
+      - name: Preserve source fingerprints for the next run
+        if: always() && hashFiles('.local/source-review.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .local/source-review.json
+          key: evidence-source-state-${{ github.run_id }}
+
+      - name: Preserve autonomous evidence cursor
+        if: always() && hashFiles('.local/autonomy/cursor.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: .local/autonomy/cursor.json
+          key: autonomous-evidence-cursor-${{ github.run_id }}
+
+      - name: Upload the reviewer handoff
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidence-review-${{ github.run_id }}
+          path: |
+            .local/source-review.json
+            .local/source-monitor-summary.json
+            .local/citation-queue-summary.json
+            .local/citation-review-queue.json
+            .local/citation-review-queue.csv
+            .local/autonomy/plan.json
+            .local/autonomy/requests/*.json
+          if-no-files-found: warn
+          retention-days: 30

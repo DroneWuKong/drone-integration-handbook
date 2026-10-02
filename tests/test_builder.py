@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import json
 import re
 import shutil
 import tempfile
@@ -65,10 +66,13 @@ class BuilderTestCase(unittest.TestCase):
         (self.root / "templates").mkdir()
         (self.root / "assets").mkdir()
         shutil.copy2(project_root / "templates" / "handbook.html", self.root / "templates" / "handbook.html")
+        shutil.copy2(project_root / "templates" / "evidence-lab.html", self.root / "templates" / "evidence-lab.html")
         shutil.copy2(project_root / "templates" / "404.html", self.root / "templates" / "404.html")
         shutil.copy2(project_root / "assets" / "handbook.css", self.root / "assets" / "handbook.css")
         shutil.copy2(project_root / "assets" / "legal.css", self.root / "assets" / "legal.css")
         shutil.copy2(project_root / "assets" / "handbook.js", self.root / "assets" / "handbook.js")
+        shutil.copy2(project_root / "assets" / "reference-tools.css", self.root / "assets" / "reference-tools.css")
+        shutil.copy2(project_root / "assets" / "evidence-lab.js", self.root / "assets" / "evidence-lab.js")
 
         for chapter in CHAPTERS:
             path = self.root / chapter.source
@@ -150,6 +154,14 @@ class BuilderTestCase(unittest.TestCase):
         self.assertTrue((output / "assets" / "handbook.css").is_file())
         self.assertTrue((output / "assets" / "legal.css").is_file())
         self.assertTrue((output / "assets" / "handbook.js").is_file())
+        self.assertTrue((output / "evidence-lab.html").is_file())
+        autonomy = json.loads((output / "assets" / "autonomy-status.json").read_text())
+        release = json.loads((output / "release.json").read_text())["release"]
+        self.assertEqual(autonomy["release"], release)
+        manifest = json.loads((output / "offline-manifest.json").read_text())
+        self.assertIn("/evidence-lab.html", manifest["files"])
+        self.assertIn("/assets/autonomy-status.json", manifest["files"])
+        self.assertNotIn("/citation-review.html", manifest["files"])
         self.assertTrue((output / "404.html").is_file())
         self.assertLess((output / "404.html").stat().st_size, 4096)
         self.assertEqual((output / "favicon.ico").read_bytes()[:6], b'\x00\x00\x01\x00\x01\x00')

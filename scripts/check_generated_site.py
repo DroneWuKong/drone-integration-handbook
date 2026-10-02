@@ -181,6 +181,22 @@ def validate_site(index_path: Path) -> list[str]:
         )
 
     site_root = index_path.parent
+    evidence_lab = site_root / "evidence-lab.html"
+    autonomy_status = site_root / "assets" / "autonomy-status.json"
+    if not evidence_lab.is_file():
+        errors.append("public evidence lab is missing")
+    if not autonomy_status.is_file():
+        errors.append("public autonomy status is missing")
+    else:
+        try:
+            status = json.loads(autonomy_status.read_text(encoding="utf-8"))
+            release_marker = json.loads(
+                (site_root / "release.json").read_text(encoding="utf-8")
+            )
+            if status.get("release") != release_marker.get("release"):
+                errors.append("autonomy status and site release do not match")
+        except (OSError, json.JSONDecodeError) as exc:
+            errors.append(f"public autonomy status is invalid: {exc}")
     icon = site_root / "favicon.ico"
     if not icon.is_file() or not icon.read_bytes().startswith(b"\x00\x00\x01\x00\x01\x00") or icon.stat().st_size < 100:
         errors.append("favicon.ico is missing or is not a real ICO image")
