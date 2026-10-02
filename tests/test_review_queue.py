@@ -19,10 +19,11 @@ class ReviewQueueTests(unittest.TestCase):
         low={"record_type":"table-row","statement":"Blue","source_candidates":[]}
         self.assertLess(int(triage(high)["priority"][1]),int(triage(low)["priority"][1]))
         snapshot={"release":"test","references":[{"id":"a","publication_state":"published"}],"records":[
-            {"id":"r","article_id":"a","title":"A","path":"a.md","record_type":"numerical-passage","statement":"Range 10 km","source_candidates":[],"status":"unreviewed"}
+            {"id":"r","article_id":"a","title":"A","path":"a.md","anchor":"ch1","canonical":"ref-a","record_type":"numerical-passage","statement":"Range 10 km","source_candidates":[],"status":"unreviewed"}
         ]}
         queue=build_review_queue(snapshot)
         self.assertEqual(queue["summary"]["records"],1)
+        self.assertEqual(queue["records"][0]["anchor"],"ch1")
         snapshot["references"][0]["publication_state"]="hold"
         with self.assertRaises(ValueError):build_review_queue(snapshot)
 

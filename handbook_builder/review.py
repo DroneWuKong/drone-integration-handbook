@@ -118,7 +118,8 @@ def build_review_queue(snapshot,article_sources=None):
             raise ValueError("Held content entered the review queue")
         records.append({
             "id":record["id"],"article_id":record["article_id"],"title":record["title"],
-            "path":record["path"],"record_type":record["record_type"],
+            "path":record["path"],"anchor":record.get("anchor",references[record["article_id"]].get("anchor")),
+            "canonical":record.get("canonical",references[record["article_id"]].get("canonical")),"record_type":record["record_type"],
             "table_id":record.get("table_id"),"statement":record["statement"],
             "source_candidates":record.get("source_candidates",[]),
             "article_source_candidates":article_sources.get(record["path"],[]),**triage(record),

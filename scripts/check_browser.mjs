@@ -51,6 +51,7 @@ for(const state of ["triaged","accepted","correction-prepared"]){await page.sele
 await page.click("#logout");assert.equal(await page.locator("#queue section").count(),0);
 await page.goto(base+"/citation-review.html");await page.waitForFunction(()=>document.querySelector("#load-status").textContent.includes("review units loaded"));
 assert.equal(await page.locator(".topbar .brand").textContent(),"UAS Handbookfield reference");assert.match(await page.locator("#metric-total").innerText(),/4,809/);assert.ok(await page.locator("#review-card blockquote").isVisible());
+assert.match(await page.locator("#review-card a",{hasText:"Open in handbook"}).getAttribute("href"),/^index\.html#[a-z0-9-]+$/);
 const citationOverflow=await page.evaluate(()=>[...document.querySelectorAll("body *")].filter(n=>n.getBoundingClientRect().right>innerWidth+1).slice(0,10).map(n=>({tag:n.tagName,cls:n.className,width:n.getBoundingClientRect().width})));assert.deepEqual(citationOverflow,[]);
 await page.selectOption('#decision-form [name=decision]',"source-supported");await page.locator("#decision-form").evaluate(f=>f.requestSubmit());assert.match(await page.locator("#decision-error").innerText(),/exact passage/);
 await page.selectOption('#decision-form [name=decision]',"needs-research");await page.locator("#decision-form").evaluate(f=>f.requestSubmit());assert.match(await page.locator("#metric-reviewed").innerText(),/107/);
