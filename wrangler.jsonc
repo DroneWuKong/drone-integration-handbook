@@ -2,5 +2,25 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "uas-handbook",
   "compatibility_date": "2026-05-04",
-  "pages_build_output_dir": "site"
+  "pages_build_output_dir": "site",
+  "d1_databases": [
+    {
+      "binding": "REPORTS",
+      "database_name": "uas-handbook-reports-production",
+      "database_id": "2d832937-4295-41dc-b899-da862c42673c",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "env": {
+    "preview": {
+      "d1_databases": [
+        {
+          "binding": "REPORTS",
+          "database_name": "uas-handbook-reports-preview",
+          "database_id": "9c846ae3-3046-41e4-93e4-b46618717901",
+          "migrations_dir": "migrations"
+        }
+      ]
+    }
+  }
 }
