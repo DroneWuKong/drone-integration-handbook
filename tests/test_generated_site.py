@@ -60,12 +60,13 @@ class GeneratedSiteValidationTestCase(unittest.TestCase):
 
         (self.root / "favicon.ico").write_text('<!doctype html><title>wrong resource</title>', encoding="utf-8")
         (self.root / "404.html").unlink()
-        (self.root / "_redirects").write_text('/orphan.md /#absent 301\n/* / 200\n', encoding="utf-8")
+        (self.root / "_redirects").write_text('/* / 200\n/orphan.md /#absent 301\n', encoding="utf-8")
         errors = '\n'.join(validate_site(index))
         self.assertIn('not a real ICO', errors)
         self.assertIn('top-level 404.html is missing', errors)
         self.assertIn('redirect targets missing ID', errors)
         self.assertIn('catch-all redirect', errors)
+        self.assertIn('static redirect appears after a dynamic rule', errors)
 
     def test_invalid_generated_site_reports_structural_privacy_and_association_failures(self) -> None:
         (self.root / "assets" / "handbook.js").write_text(

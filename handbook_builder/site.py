@@ -746,9 +746,15 @@ def _write_support_files(base_dir: Path, output_dir: Path, entries: Sequence[Con
     generated = [f"/{quote(path, safe='/')} /#{anchor} 301"
                  for path, anchor in sorted(routes.items())
                  if f"/{quote(path, safe='/')}" not in reserved]
+    # Pages treats rules after the first dynamic rule as dynamic too. Keep all
+    # literals first so the 100 dynamic-rule limit cannot drop later chapters.
+    manual = [line for line in existing.splitlines() if line.strip() and not line.lstrip().startswith('#')]
+    dynamic = [line for line in manual if '*' in line.split()[0] or ':' in line.split()[0]]
+    static = [line for line in manual if line not in dynamic]
     (output_dir / "_redirects").write_text(
-        existing.rstrip() + "\n\n# Known legacy references; unrelated paths remain 404.\n"
-        + "\n".join(generated) + "\n", encoding="utf-8")
+        "\n".join(static) + "\n\n# Known legacy references; unrelated paths remain 404.\n"
+        + "\n".join(generated) + "\n\n# Dynamic ecosystem routes must stay last.\n"
+        + "\n".join(dynamic) + "\n", encoding="utf-8")
 
     tools = base_dir / "tools"
     if tools.is_dir():

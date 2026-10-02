@@ -195,6 +195,8 @@ def validate_site(index_path: Path) -> list[str]:
     if not redirects.is_file():
         errors.append("legacy redirect map is missing")
     else:
+        seen_dynamic = False
+        static_count = dynamic_count = 0
         for line in redirects.read_text(encoding="utf-8").splitlines():
             if not line.strip() or line.lstrip().startswith("#"):
                 continue
@@ -203,10 +205,20 @@ def validate_site(index_path: Path) -> list[str]:
                 errors.append("malformed redirect: " + line)
                 continue
             source, target, status = fields
+            dynamic = '*' in source or ':' in source
+            if dynamic:
+                seen_dynamic = True
+                dynamic_count += 1
+            else:
+                static_count += 1
+                if seen_dynamic:
+                    errors.append("static redirect appears after a dynamic rule: " + source)
             if source == "/*":
                 errors.append("catch-all redirect would hide missing paths")
             if target.startswith("/#") and unquote(target[2:]) not in id_set:
                 errors.append("redirect targets missing ID: " + target)
+        if static_count > 2000 or dynamic_count > 100:
+            errors.append("redirect map exceeds Cloudflare Pages rule limits")
     missing_assets: list[str] = []
     escaping_assets: list[str] = []
     for asset_path in sorted(set(parser.asset_paths)):
