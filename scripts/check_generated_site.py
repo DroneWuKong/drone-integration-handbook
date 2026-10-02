@@ -82,7 +82,7 @@ class _SiteParser(HTMLParser):
         href = attributes.get("href", "").strip()
         if href:
             self._record_href(href)
-            if tag == "link" and "stylesheet" in attributes.get("rel", "").split():
+            if tag == "link" and {"stylesheet", "icon"}.intersection(attributes.get("rel", "").split()):
                 self._record_asset(href)
 
         source = attributes.get("src", "").strip()
@@ -181,6 +181,32 @@ def validate_site(index_path: Path) -> list[str]:
         )
 
     site_root = index_path.parent
+    icon = site_root / "favicon.ico"
+    if not icon.is_file() or not icon.read_bytes().startswith(b"\x00\x00\x01\x00\x01\x00") or icon.stat().st_size < 100:
+        errors.append("favicon.ico is missing or is not a real ICO image")
+    not_found = site_root / "404.html"
+    if not not_found.is_file():
+        errors.append("top-level 404.html is missing; Pages would fall back to the homepage")
+    else:
+        not_found_text = not_found.read_text(encoding="utf-8")
+        if len(not_found_text.encode("utf-8")) > 8192 or "404" not in not_found_text or 'href="/"' not in not_found_text:
+            errors.append("404.html must be a small recovery page with a homepage link")
+    redirects = site_root / "_redirects"
+    if not redirects.is_file():
+        errors.append("legacy redirect map is missing")
+    else:
+        for line in redirects.read_text(encoding="utf-8").splitlines():
+            if not line.strip() or line.lstrip().startswith("#"):
+                continue
+            fields = line.split()
+            if len(fields) != 3:
+                errors.append("malformed redirect: " + line)
+                continue
+            source, target, status = fields
+            if source == "/*":
+                errors.append("catch-all redirect would hide missing paths")
+            if target.startswith("/#") and unquote(target[2:]) not in id_set:
+                errors.append("redirect targets missing ID: " + target)
     missing_assets: list[str] = []
     escaping_assets: list[str] = []
     for asset_path in sorted(set(parser.asset_paths)):

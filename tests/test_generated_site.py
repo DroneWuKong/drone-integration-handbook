@@ -5,6 +5,7 @@ import unittest
 from pathlib import Path
 
 from scripts.check_generated_site import validate_site
+from handbook_builder.site import favicon_bytes
 
 
 class GeneratedSiteValidationTestCase(unittest.TestCase):
@@ -14,6 +15,9 @@ class GeneratedSiteValidationTestCase(unittest.TestCase):
         (self.root / "assets").mkdir()
         (self.root / "assets" / "site.css").write_text("body{}", encoding="utf-8")
         (self.root / "assets" / "handbook.js").write_text("'use strict';", encoding="utf-8")
+        (self.root / "favicon.ico").write_bytes(favicon_bytes())
+        (self.root / "404.html").write_text('<!doctype html><title>404</title><a href="/">Home</a>', encoding="utf-8")
+        (self.root / "_redirects").write_text("# No legacy references in this fixture\n", encoding="utf-8")
 
     def tearDown(self) -> None:
         self.tempdir.cleanup()
@@ -53,6 +57,15 @@ class GeneratedSiteValidationTestCase(unittest.TestCase):
 </html>"""
         )
         self.assertEqual(validate_site(index), [])
+
+        (self.root / "favicon.ico").write_text('<!doctype html><title>wrong resource</title>', encoding="utf-8")
+        (self.root / "404.html").unlink()
+        (self.root / "_redirects").write_text('/orphan.md /#absent 301\n/* / 200\n', encoding="utf-8")
+        errors = '\n'.join(validate_site(index))
+        self.assertIn('not a real ICO', errors)
+        self.assertIn('top-level 404.html is missing', errors)
+        self.assertIn('redirect targets missing ID', errors)
+        self.assertIn('catch-all redirect', errors)
 
     def test_invalid_generated_site_reports_structural_privacy_and_association_failures(self) -> None:
         (self.root / "assets" / "handbook.js").write_text(
