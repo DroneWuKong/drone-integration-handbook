@@ -60,6 +60,9 @@ jobs:
       - name: Validate public evidence, holds, and offline boundaries
         run: python3 scripts/check_evidence.py
 
+      - name: Validate unresolved-record review queue
+        run: python3 scripts/build_review_queue.py
+
       - name: Compile Pages Functions
         run: npm run build:functions
 
@@ -77,6 +80,8 @@ jobs:
           path: |
             .local/browser-check/*.png
             .local/browser-check/results.json
+            .local/citation-review-queue.json
+            .local/citation-review-queue.csv
           if-no-files-found: warn
           retention-days: 7
 

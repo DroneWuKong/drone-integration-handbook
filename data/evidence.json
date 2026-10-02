@@ -40,6 +40,46 @@
       "passage": "Sections 4.2 and 6.2; dBm relative to 1 mW",
       "accessed": "2026-10-01",
       "review_days": 365
+    },
+    {
+      "id": "fr-part108-status-2026",
+      "title": "Federal Register: TSA Part 108 security roundtables notice (September 4, 2026)",
+      "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18124/notice-soliciting-representatives-for-technical-roundtables-on-security-of-unmanned-aircraft-systems",
+      "passage": "Summary and background refer to the Part 108 provisions as proposed requirements",
+      "accessed": "2026-10-02",
+      "review_days": 90
+    },
+    {
+      "id": "faa-part107-waivers",
+      "title": "FAA Part 107 Waivers",
+      "url": "https://www.faa.gov/uas/commercial_operators/part_107_waivers",
+      "passage": "Application channel, waiver purpose, \u00a7 107.31 BVLOS row, and current process notice",
+      "accessed": "2026-10-02",
+      "review_days": 90
+    },
+    {
+      "id": "faa-part107-overview",
+      "title": "FAA Small Unmanned Aircraft Systems Regulations (Part 107)",
+      "url": "https://www.faa.gov/newsroom/small-unmanned-aircraft-systems-uas-regulations-part-107",
+      "passage": "Waiver section states FAA generally responds within 90 days depending on complexity",
+      "accessed": "2026-10-02",
+      "review_days": 90
+    },
+    {
+      "id": "faa-part91-public-safety-faq",
+      "title": "FAA Part 91 Public Aircraft/Public Safety CoW/A FAQ v9",
+      "url": "https://www.faa.gov/uas/public_safety_gov/public_safety_toolkit/Public_Aircraft-Public_Safety_Operation_CoW-COA_FAQ.pdf",
+      "passage": "Overview and question 1: Part 91.113 expedited waiver eligibility for statutory PAO and PSO entities",
+      "accessed": "2026-10-02",
+      "review_days": 90
+    },
+    {
+      "id": "faa-laanc",
+      "title": "FAA UAS Data Exchange (LAANC)",
+      "url": "https://www.faa.gov/uas/getting_started/laanc",
+      "passage": "Near-real-time authorization and Part 107 further-coordination timing and altitude scope",
+      "accessed": "2026-10-02",
+      "review_days": 90
     }
   ],
   "claims": [
@@ -658,6 +698,84 @@
       },
       "value": 19.995775165767895,
       "unit": "dB"
+    },
+    {
+      "id": "reg-part108-proposed",
+      "statement": "As of October 2, 2026, Part 108 remains proposed rulemaking and does not itself authorize BVLOS operations.",
+      "sources": [
+        "fr-part108-status-2026"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "Current-status statement for United States civil UAS regulation; recheck the Federal Register before operational use.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA/Federal Register source check; not legal advice or an operating authorization"
+    },
+    {
+      "id": "reg-part107-bvlos-waiver",
+      "statement": "A Part 107 operator may request a waiver from \u00a7 107.31 by showing an equivalent level of safety; new operational-waiver applications use the Aviation Safety Hub.",
+      "sources": [
+        "faa-part107-waivers"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "United States Part 107 process overview; the actual waiver and current FAA application system control.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA source check; not legal advice or an approval"
+    },
+    {
+      "id": "reg-part107-waiver-timing",
+      "statement": "FAA states it will do its best to act on Part 107 waiver requests within 90 days, with timing varying by complexity and completeness.",
+      "sources": [
+        "faa-part107-overview"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "Agency service statement, not a guaranteed processing time.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA source check; no application timing independently measured"
+    },
+    {
+      "id": "reg-part91-public-safety",
+      "statement": "FAA describes Part 91 COAs for qualifying public-aircraft operations and an expedited \u00a7 91.113 waiver path limited to entities meeting both PAO and PSO statutory definitions.",
+      "sources": [
+        "faa-part91-public-safety-faq"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "United States public-aircraft/public-safety overview; exact eligibility and issued conditions control.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA source check; not an eligibility determination"
+    },
+    {
+      "id": "reg-laanc-scope",
+      "statement": "LAANC supports near-real-time requests and Part 107 further coordination above mapped values and at or below 400 feet; further-coordination requests require at least 72 hours and may be filed up to 90 days ahead.",
+      "sources": [
+        "faa-laanc"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "United States LAANC process as published by FAA; availability and authorization conditions remain controlling.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA source check; no authorization requested"
+    },
+    {
+      "id": "reg-part107-application-channel",
+      "statement": "FAA currently routes new Part 107 operational-waiver applications through the Aviation Safety Hub while Part 107 airspace-authorization applications remain in FAADroneZone.",
+      "sources": [
+        "faa-part107-waivers"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-02",
+      "scope": "United States application-channel status on October 2, 2026; recheck before filing.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public FAA source check; no application submitted"
     }
   ]
 }

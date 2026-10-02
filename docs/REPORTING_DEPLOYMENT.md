@@ -50,6 +50,15 @@ See [current D1 migration commands](https://developers.cloudflare.com/d1/wrangle
 8. Test the full mobile, keyboard and offline flow on the actual preview. SQLite adapter results are necessary but do not replace platform validation.
 9. Obtain applicable qualified review and Jeremiah Wong's decision for the exact candidate commit; keep detailed evidence private and publish only a nonprivileged summary.
 
+Automate the public portion of steps 3 and 4:
+
+```sh
+python3 scripts/check_deployment.py https://<preview-host> \
+  --expected-commit <40-character-lowercase-git-sha>
+```
+
+After D1 and reviewer authorization are configured, add `--require-storage`. Add `--require-attachments` only when the private R2 binding is part of that environment. The command fails on a mixed release, wrong commit, malformed capability response, or missing required capability. It does not submit a report or expose a reviewer secret.
+
 ## Exact production acceptance
 
 After authorized review and isolated preview acceptance, deploy that exact release. The completion goal stays open until the remaining citation/table audit and feature acceptance also pass.

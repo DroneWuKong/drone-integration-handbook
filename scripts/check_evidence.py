@@ -17,13 +17,19 @@ def check(site):
     disposition_file=ROOT/"data/table-dispositions.json"
     if disposition_file.exists():
         registered=json.loads(disposition_file.read_text())["tables"]
-        assert {t["id"] for t in registered}=={t["id"] for t in data["tables"]}, "Reconcile changed table dispositions before publication"
+        fields=("id","article_id","path","disposition","classification_basis","review","rows","tool")
+        normalized=lambda rows: {r["id"]:{k:r.get(k) for k in fields} for r in rows}
+        assert normalized(registered)==normalized(data["tables"]), "Reconcile changed table dispositions before publication"
+    table_ids={t["id"] for t in data["tables"]}
+    assert all(t["disposition"] in {"comparison","queryable-lookup","calculator","guided-explanation","removed/held"} for t in data["tables"])
+    assert all(t.get("classification_basis") for t in data["tables"])
     assert set(claims)=={r["id"] for r in data["records"] if r["record_type"]=="managed-claim"}
     for r in data["records"]:
         assert len(r["source_revision"])==64
         if r["record_type"]=="managed-claim":assert r["revision"]==claims[r["id"]]["revision"]
         if r["status"]!="unreviewed": assert r["sources"] and r["verified"] and r["scope"]
         else: assert not r["sources"] and r["verified"] is None
+        if r["record_type"]=="table-row":assert r.get("table_id") in table_ids
     marker=json.loads((site/"release.json").read_text())
     release=marker["release"]
     assert data.get("commit")==marker.get("commit")

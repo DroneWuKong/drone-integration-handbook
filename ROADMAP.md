@@ -2,7 +2,7 @@
 
 This file tracks **current handbook work only**. Completed historical work remains available in Git history and in [`CHANGELOG.md`](CHANGELOG.md).
 
-Last reconciled: **August 2, 2026**
+Last reconciled: **October 2, 2026**
 
 ## Current published baseline
 
@@ -121,3 +121,5 @@ Open an issue or pull request to propose additions. New numbered chapters must r
 ## Complete evidence and usability overhaul — active
 
 Goal [#57](https://github.com/DroneWuKong/drone-integration-handbook/issues/57) stays open through the complete citation/table audit and verified production release. The implementation candidate provides evidence identities, generated mathematical claims, calculators, structured search/exports, private contribution/review services, correction tooling and offline releases. Legacy evidence remains explicitly unresolved. Complete the semantic audit in reviewed batches, provision isolated Cloudflare storage, validate preview persistence and private boundaries, record applicable exact-revision review/publisher decision, then verify the custom-domain release. Existing publication holds and #40 remain separate dependencies.
+
+The candidate now generates JSON/CSV review batches with deterministic P0–P3 priorities and records explainable treatments for all 390 public tables. The first regulatory batch corrected stale or unsupported passages and promoted six current FAA/Federal Register statements to managed claims. Continue with the remaining 4,809 unresolved records, starting with 106 P0 and 266 P1 items; see [`docs/CITATION_REVIEW_WORKFLOW.md`](docs/CITATION_REVIEW_WORKFLOW.md).

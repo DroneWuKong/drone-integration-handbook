@@ -13,6 +13,36 @@ TABLE=re.compile(r"<table>.*?</table>",re.S)
 ROW=re.compile(r"<tr>(.*?)</tr>",re.S)
 CELL=re.compile(r"<t[dh][^>]*>(.*?)</t[dh]>",re.S)
 TAG=re.compile(r"<[^>]*>")
+
+GUIDED_TABLE_PATTERNS=(
+    {"symptom","likely cause","fix"},
+    {"failure","effect","response"},
+    {"question","answer"},
+    {"need","action"},
+    {"task","method"},
+    {"approach","why it fails"},
+    {"scenario","recommended mode","why"},
+    {"damage","field fix","bench required"},
+    {"operation","starting point"},
+)
+LOOKUP_FIRST_COLUMNS={
+    "authority","code","command","connector","data","field","flag","function",
+    "label","message","parameter","resource","setting","signal","source","type code",
+    "uart","value","wire",
+}
+
+def classify_table(headers):
+    """Assign a usable presentation treatment without asserting factual review."""
+    normalized=[re.sub(r"\s+"," ",h.strip().lower()) for h in headers]
+    keys=set(normalized)
+    for pattern in GUIDED_TABLE_PATTERNS:
+        if pattern <= keys:
+            return "guided-explanation", "header-pattern:"+"/".join(sorted(pattern))
+    if len(normalized)==2:
+        return "queryable-lookup", "two-column-property-map"
+    if normalized and normalized[0] in LOOKUP_FIRST_COLUMNS:
+        return "queryable-lookup", "identifier-led-reference"
+    return "comparison", "multi-attribute-comparison"
 def text(s):
     return re.sub(r"\s+"," ",html.unescape(TAG.sub(" ",s))).strip()
 def load_evidence(base):
@@ -79,9 +109,10 @@ def decorate_and_inventory(entry,sources,claims):
         if not rows:return m[0]
         headers=[text(v) for v in CELL.findall(rows[0])]
         tid="table-"+hashlib.sha256((entry.identity+text(m[0])).encode()).hexdigest()[:20]
-        tables.append({"id":tid,"article_id":entry.identity,"path":entry.relative_path,"headers":headers,"disposition":"queryable-lookup" if len(headers)==2 else "comparison","review":"unreviewed","rows":max(0,len(rows)-1)})
+        disposition,basis=classify_table(headers)
+        tables.append({"id":tid,"article_id":entry.identity,"path":entry.relative_path,"headers":headers,"disposition":disposition,"classification_basis":basis,"review":"machine-classified","rows":max(0,len(rows)-1)})
         if entry.relative_path=="fundamentals/link-budgets.md":
-            tables[-1].update(disposition="calculator",review="software-checked",tool="dbPower" if "dBm" in headers else "rf")
+            tables[-1].update(disposition="calculator",classification_basis="managed-claim-generated",review="software-checked",tool="dbPower" if "dBm" in headers else "rf")
         pos=0
         def row(r):
             nonlocal pos
@@ -92,6 +123,7 @@ def decorate_and_inventory(entry,sources,claims):
             fields=dict(zip(headers,[text(v) for v in vals]))
             if len(vals)==2 and text(vals[0]): fields[text(vals[0])]=text(vals[1])
             rid=record(r[1],"table-row",fields)
+            records[-1]["table_id"]=tid
             if len(vals)==2 and text(vals[0]): records[-1].update(attribute=text(vals[0]),attribute_value=text(vals[1]))
             return r[0].replace("</tr>","<td>"+unknown(rid)+"</td></tr>")
         return ROW.sub(row,m[0])

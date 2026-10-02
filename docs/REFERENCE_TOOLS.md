@@ -14,6 +14,8 @@ Legacy table rows and digit-bearing paragraphs/list items are indexed with expli
 
 The automated inventory does **not** replace the remaining semantic citation audit, particularly statements in headings, graphics, code, comparative adjectives and linked documents. Existing visible citations in legacy prose remain visible but are not automatically treated as validated claim support.
 
+`scripts/build_review_queue.py` turns the unresolved inventory into prioritized article/table batches and spreadsheet-safe JSON/CSV. It groups repeated wording, distinguishes links inside a statement from article-level research leads, and records a recommended review action. The risk score is workflow metadata, not factual review. See `docs/CITATION_REVIEW_WORKFLOW.md`.
+
 Publication-hold bodies have no exported records or table rows. Their reference entries contain a hold notice only. Search and offline exports use that same filtered snapshot.
 
 ## Search and calculations
@@ -44,7 +46,7 @@ With no private database binding, the service explicitly reports unavailable sto
 
 ## Correction and maintenance
 
-Run `python3 scripts/check_sources.py` manually. Its private/local state stores source fingerprints and deduplicated content-change, unavailable-source and review-due tasks. Fetch failure preserves the last good fingerprint. A reachable or unchanged source is not renewed fact verification. Reconcile tasks and past dispositions with the private Ai-Project evidence/review register before reopening or exporting a correction. No schedule or outbound notification is activated by this change.
+Run `python3 scripts/check_sources.py` manually. Its private/local state stores source fingerprints and deduplicated content-change, unavailable-source and review-due tasks. Fetch failure preserves the last good fingerprint. A reachable or unchanged source is not renewed fact verification. Generate the work queue with `python3 scripts/build_review_queue.py`; work P0/P1 article and table batches first. Reconcile tasks and past dispositions with the private Ai-Project evidence/review register before reopening or exporting a correction. No schedule or outbound notification is activated by this change.
 
 Use `scripts/prepare_correction.py` with a managed claim, public statement, known sources, scope, review reason and optional nonsecret report ID. It creates an explicitly **draft** proposal, preserves the old claim, increments the proposed revision and refuses an existing output path. It does not edit published claims, import private report wording or copy attachments. Review public wording, source passages, exact commit and prior dispositions before applying it. Add a public nonprivileged correction summary and reviewed history; rebuild all surfaces, then record live verification in the private queue/register.
 
@@ -64,6 +66,8 @@ python3 scripts/check_links.py
 python3 build.py
 python3 scripts/check_generated_site.py site/index.html
 python3 scripts/check_evidence.py
+python3 scripts/build_review_queue.py --check
+python3 scripts/check_deployment.py https://<deployed-host> --expected-commit <full-git-sha>
 npm run build:functions
 npx playwright install --with-deps chromium
 npm run test:browser
