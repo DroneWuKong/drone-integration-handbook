@@ -44,7 +44,7 @@
     menuButton?.setAttribute("aria-expanded", "true");
     drawer.classList.add("open");
     syncBodyLock();
-    drawerClose?.focus();
+    requestAnimationFrame(() => { if(drawer.classList.contains("open")) drawerClose?.focus(); });
   }
 
   function closeDrawer({ restoreFocus = true } = {}) {

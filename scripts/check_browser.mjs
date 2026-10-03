@@ -30,7 +30,7 @@ try{
 const started=performance.now();
 await page.goto(base+"/index.html");
 assert.deepEqual(await page.locator('.ecosystem-nav a').allTextContents(),['Research','Build','Learn']);
-await page.click('#menuButton');await page.waitForFunction(()=>document.activeElement?.id==='drawerClose',null,{timeout:5000});
+await page.click('#menuButton');try{await page.waitForFunction(()=>document.activeElement?.id==='drawerClose',null,{timeout:5000});}catch(error){console.log(await page.evaluate(()=>({active:document.activeElement?.outerHTML,drawer:document.querySelector('#navDrawer')?.getAttribute('class'),inert:document.querySelector('#navDrawer')?.inert,visibility:getComputedStyle(document.querySelector('#navDrawer')).visibility})));console.log(errors);throw error;}
 assert.equal(await page.locator('#drawerClose').evaluate(e=>document.activeElement===e),true);
 assert.equal(await page.locator('main').evaluate(e=>Boolean(e.closest('[inert]'))),true);
 assert.equal(await page.locator('#navDrawer details[open]').count(),1);
