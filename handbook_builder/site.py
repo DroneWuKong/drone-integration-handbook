@@ -473,7 +473,7 @@ def render_navigation(entries: Sequence[ContentEntry], *, mobile: bool = False) 
     platform_groups = _grouped(platforms, "group_key")
     component_groups = _grouped(components, "group")
 
-    open_attr = " open" if mobile else ""
+    open_attr = ""
     sections: list[str] = [
         '<div class="rail-shortcuts">',
         '<a href="#ch1"><span>Learn</span><small>Start with RF fundamentals</small></a>',
@@ -486,7 +486,7 @@ def render_navigation(entries: Sequence[ContentEntry], *, mobile: bool = False) 
         part_entries = chapter_groups.get(part.key, [])
         if not part_entries:
             continue
-        should_open = " open" if part_index == 0 or mobile else ""
+        should_open = " open" if part_index == 0 else ""
         sections.append(
             f'<details class="rail-group" data-group="{html.escape(part.key)}"{should_open}>'
             f'<summary><span>{html.escape(part.label)}</span>'

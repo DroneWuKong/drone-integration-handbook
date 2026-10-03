@@ -49,8 +49,7 @@
         <kbd>⌘K</kbd>
       </button>
       <button class="icon-button" type="button" data-text-size-control aria-label="Text size" title="Text size">Aᴬ</button>
-      <a class="ecosystem-link forge" href="https://uas-forge.com/">Forge</a>
-      <a class="ecosystem-link patterns" href="https://uas-patterns.com/">Patterns</a>
+      <nav class="ecosystem-nav" aria-label="UAS areas"><a href="https://uas-patterns.com/patterns-home/">Research</a><a href="https://uas-forge.com/">Build</a><a href="#top" aria-current="page">Learn</a></nav>
       <a class="icon-button github-link" href="{{REPOSITORY_URL}}" aria-label="Handbook source on GitHub">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7a9.4 9.4 0 0 0-3 18.3c.5.1.6-.2.6-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1a9.7 9.7 0 0 1 5.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.7.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.7 1 .7 2v3c0 .3.2.6.7.5A9.4 9.4 0 0 0 12 2.7Z"/></svg>
       </a>
@@ -58,7 +57,7 @@
   </header>
 
   <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
-  <aside class="nav-drawer" id="navDrawer" aria-label="Handbook navigation" aria-hidden="true">
+  <aside class="nav-drawer" id="navDrawer" role="dialog" aria-modal="true" aria-label="Handbook navigation" aria-hidden="true" inert hidden>
     <header class="drawer-header">
       <div>
         <strong>UAS Handbook</strong>
@@ -105,15 +104,11 @@
             Verify current law, official regulator guidance, manufacturer documentation, and qualified professional review before acting. The handbook does not authorize unlawful spectrum use, interference, Remote ID defeat, offensive operations, or unsafe modification of aircraft or payloads.
             <a href="#ch52">Read the terms and safety disclaimer</a>
           </div>
-          <div class="hero-actions">
-            <a class="button primary" href="reference.html">Search data and calculators</a>
-            <a class="primary-action" href="evidence-lab.html">Evidence lab</a>
-            <a class="primary-action" href="#ch1">Start with fundamentals</a>
-            <button class="secondary-action" type="button" data-open-search>Search all references</button>
-          </div>
+          <div class="hero-actions"><button class="primary-action" type="button" data-open-search>Find a reference</button><a class="secondary-action" href="#ch1">Start with fundamentals</a></div>
+          <p class="search-starters">Try: <button type="button" data-open-search data-search-query="troubleshooting">Fix a problem</button> · <button type="button" data-open-search data-search-query="UART">Understand connections</button> · <a href="reference.html">Data & calculators</a></p>
         </div>
 
-        <aside class="inventory-panel" aria-label="Handbook coverage">
+        <details class="inventory-panel"><summary>Handbook coverage</summary>
           <div class="inventory-head">
             <span>Reference inventory</span>
             <span class="status-chip"><i></i> Open access</span>
@@ -125,7 +120,7 @@
             <a href="#ch12"><strong>1</strong><span>Failure tree</span></a>
           </div>
           <p>Stable chapter anchors are retained so old field links continue to work.</p>
-        </aside>
+        </details>
       </section>
 
       <section class="route-grid" aria-label="Common handbook routes">

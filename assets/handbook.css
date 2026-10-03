@@ -1209,13 +1209,13 @@ main {
   background: var(--surface);
   box-shadow: 20px 0 70px rgba(0, 0, 0, 0.45);
   transform: translateX(-102%);
-  visibility: hidden;
-  transition: transform 0.22s ease, visibility 0.22s;
+  transition: transform 0.22s ease;
 }
+
+.nav-drawer[hidden] { display: none; }
 
 .nav-drawer.open {
   transform: translateX(0);
-  visibility: visible;
 }
 
 .drawer-header,
@@ -1860,3 +1860,7 @@ main {
   0%, 100% { background-color: transparent; }
   18%, 58% { background-color: rgba(0, 212, 255, 0.13); }
 }
+
+/* Task navigation stays legible when reading size is enlarged. */
+.ecosystem-nav{display:flex;gap:12px;font-size:12px;white-space:nowrap}.ecosystem-nav a{text-decoration:none;color:var(--text)}.ecosystem-nav [aria-current]{color:#f4c56a;text-decoration:underline;text-underline-offset:4px}.search-starters{font-size:13px}.search-starters button{font:inherit;background:none;border:0;color:#f4c56a;text-decoration:underline;cursor:pointer;padding:6px}.inventory-panel>summary{cursor:pointer;font-weight:650}.inventory-panel:not([open]){align-self:start}.hero{padding-top:28px}.hero h1{font-size:clamp(28px,4vw,46px)}
+@media(max-width:760px){.topbar{flex-wrap:wrap;height:auto;min-height:var(--topbar-height)}.topbar-actions{flex-wrap:wrap;gap:8px}.ecosystem-nav{gap:8px}.topbar .github-link{display:none}.topbar .brand strong{font-size:11px}.topbar .current-location{display:none}}

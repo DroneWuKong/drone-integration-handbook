@@ -23,11 +23,28 @@ await new Promise(resolve=>server.listen(0,"127.0.0.1",resolve));const base="htt
 let launch={headless:true,args:["--no-sandbox","--disable-dev-shm-usage"]};
 if(process.env.CHROMIUM_EXECUTABLE_PATH)launch.executablePath=process.env.CHROMIUM_EXECUTABLE_PATH;
 else if(existsSync(resolve(ROOT,".local/browser/node_modules/@sparticuz/chromium"))){const mod=await import(resolve(ROOT,".local/browser/node_modules/@sparticuz/chromium/build/index.js")),binary=mod.default||mod;launch={...launch,executablePath:await binary.executablePath(),args:binary.args};}
-const browser=await chromium.launch(launch),context=await browser.newContext({viewport:{width:390,height:844}}),page=await context.newPage(),errors=[];
+const browser=await chromium.launch(launch),context=await browser.newContext({viewport:{width:390,height:844},reducedMotion:"reduce"}),page=await context.newPage(),errors=[];
 page.on("pageerror",error=>errors.push(error.message));
 await context.route("**/*",route=>route.request().url().startsWith(base)?route.continue():route.abort());
 try{
-const started=performance.now();await page.goto(base+"/reference.html");await page.waitForFunction(()=>document.querySelector("#load-status").textContent.startsWith("Public release"));
+const started=performance.now();
+await page.goto(base+"/index.html");
+assert.deepEqual(await page.locator('.ecosystem-nav a').allTextContents(),['Research','Build','Learn']);
+await page.click('#menuButton');try{await page.waitForFunction(()=>document.activeElement?.id==='drawerClose',null,{timeout:5000});}catch(error){console.log(await page.evaluate(()=>({active:document.activeElement?.id||document.activeElement?.tagName,drawer:document.querySelector('#navDrawer')?.getAttribute('class'),inert:document.querySelector('#navDrawer')?.inert,visibility:getComputedStyle(document.querySelector('#navDrawer')).visibility})));console.log(errors);throw error;}
+assert.equal(await page.locator('#drawerClose').evaluate(e=>document.activeElement===e),true);
+assert.equal(await page.locator('main').evaluate(e=>Boolean(e.closest('[inert]'))),true);
+assert.equal(await page.locator('#navDrawer details[open]').count(),1);
+await page.keyboard.press('Shift+Tab');assert.equal(await page.locator('#navDrawer').evaluate(e=>e.contains(document.activeElement)),true);
+await page.keyboard.press('Escape');assert.equal(await page.locator('#menuButton').evaluate(e=>document.activeElement===e),true);
+assert.equal(await page.locator('main').evaluate(e=>Boolean(e.closest('[inert]'))),false);
+await page.locator('[data-search-query="UART"]').click();await page.waitForFunction(()=>document.activeElement?.id==='searchInput');
+assert.equal(await page.locator('#searchInput').inputValue(),'UART');assert.ok(await page.locator('#searchResults a').count()>0);
+await page.keyboard.press('Escape');assert.equal(await page.locator('[data-search-query="UART"]').evaluate(e=>document.activeElement===e),true);
+await page.goto(base+'/index.html#ch12');assert.equal(await page.locator('#ch12').isVisible(),true);
+assert.ok(await page.locator('#navDrawer a[data-nav-target="ch12"]').count());
+for(const width of [390,1440]){await page.setViewportSize({width,height:844});await page.goto(base+'/index.html');await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));await page.waitForFunction(()=>window.scrollY===0);await page.locator('.hero-actions').waitFor({state:'visible'});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:resolve(OUTPUT,'handbook-'+width+'.png')});}
+await page.setViewportSize({width:390,height:844});
+await page.goto(base+"/reference.html");await page.waitForFunction(()=>document.querySelector("#load-status").textContent.startsWith("Public release"));
 assert.equal(await page.locator(".topbar .brand").textContent(),"UAS Handbookfield reference");assert.equal(await page.locator(".tool-rail").count(),1);assert.equal(await page.evaluate(()=>getComputedStyle(document.body).color),"rgb(210, 204, 190)");
 await page.screenshot({path:resolve(OUTPUT,"reference-mobile.png"),fullPage:false});
 const overflow=await page.evaluate(()=>[...document.querySelectorAll("body *")].filter(n=>n.getBoundingClientRect().right>innerWidth+1).slice(0,10).map(n=>({tag:n.tagName,cls:n.className,width:n.getBoundingClientRect().width,text:n.textContent.slice(0,80)})));assert.deepEqual(overflow,[]);

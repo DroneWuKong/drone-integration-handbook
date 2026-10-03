@@ -14,6 +14,7 @@ from handbook_builder.site import (
     _decorate_headings,
     build_site,
     discover_entries,
+    render_navigation,
     rewrite_internal_markdown_links,
 )
 
@@ -125,6 +126,13 @@ class BuilderTestCase(unittest.TestCase):
         self.assertEqual(next(entry.anchor for entry in entries if entry.kind == "component"), "c600")
         self.assertEqual(next(entry.group for entry in entries if entry.kind == "component"), "Flight Controllers & Firmware")
 
+    def test_mobile_navigation_starts_compact_and_preserves_every_target(self) -> None:
+        entries = discover_entries(self.root)
+        desktop = render_navigation(entries)
+        mobile = render_navigation(entries, mobile=True)
+        self.assertEqual(re.findall(r'data-nav-target="([^"]+)"', desktop), re.findall(r'data-nav-target="([^"]+)"', mobile))
+        self.assertEqual(len(re.findall(r'<details[^>]* open>', mobile)), 1)
+
     def test_full_build_writes_legal_assets_publisher_identity_and_navigation(self) -> None:
         (self.root / '_redirects').write_text('/forge/* https://uas-forge.com/:splat 301\n/tools https://uas-forge.com/tools/ 301\n', encoding='utf-8')
         output = self.root / "site"
@@ -132,6 +140,10 @@ class BuilderTestCase(unittest.TestCase):
             index_path = build_site(self.root, output)
 
         document = index_path.read_text(encoding="utf-8")
+        self.assertIn('aria-label="UAS areas"', document)
+        self.assertIn('href="https://uas-patterns.com/patterns-home/">Research</a>', document)
+        self.assertIn('href="https://uas-forge.com/">Build</a>', document)
+        self.assertIn('data-search-query="troubleshooting"', document)
         self.assertIn('href="assets/handbook.css"', document)
         self.assertIn('href="assets/legal.css"', document)
         self.assertIn('src="assets/handbook.js"', document)
