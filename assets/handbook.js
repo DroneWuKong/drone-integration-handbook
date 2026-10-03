@@ -24,26 +24,33 @@
   let lastSearchFocus = null;
   let toastTimer = 0;
 
+  let inertBackground=[];
   function syncBodyLock() {
+    inertBackground.forEach(([element,previous])=>{element.inert=previous;});inertBackground=[];
     const drawerOpen = drawer?.classList.contains("open");
     const searchOpen = searchOverlay && !searchOverlay.hidden;
     document.body.classList.toggle("modal-open", Boolean(drawerOpen || searchOpen));
+    const modal=searchOpen?searchOverlay:drawerOpen?drawer:null;
+    if(modal)inertBackground=Array.from(document.body.children).filter(element=>element!==modal&&element!==drawerBackdrop&&!['SCRIPT','STYLE','LINK'].includes(element.tagName)).map(element=>{const previous=element.inert;element.inert=true;return [element,previous];});
   }
 
   function openDrawer() {
     if (!drawer || !drawerBackdrop) return;
+    if(searchOverlay&&!searchOverlay.hidden)closeSearch({restoreFocus:false});
     lastDrawerFocus = document.activeElement;
+    drawer.inert=false;
     drawerBackdrop.hidden = false;
     drawer.setAttribute("aria-hidden", "false");
     menuButton?.setAttribute("aria-expanded", "true");
-    requestAnimationFrame(() => drawer.classList.add("open"));
+    drawer.classList.add("open");
     syncBodyLock();
-    window.setTimeout(() => drawerClose?.focus(), 30);
+    drawerClose?.focus();
   }
 
   function closeDrawer({ restoreFocus = true } = {}) {
     if (!drawer || !drawerBackdrop) return;
     drawer.classList.remove("open");
+    drawer.inert=true;
     drawer.setAttribute("aria-hidden", "true");
     menuButton?.setAttribute("aria-expanded", "false");
     window.setTimeout(() => {
@@ -396,20 +403,21 @@
     flashTarget(entry.target);
   }
 
-  function openSearch() {
+  function openSearch(event) {
     if (!searchOverlay || !searchInput) return;
+    if(drawer?.classList.contains("open"))closeDrawer({restoreFocus:false});
     lastSearchFocus = document.activeElement;
     buildSearchIndex();
     searchOverlay.hidden = false;
     syncBodyLock();
-    searchInput.value = "";
+    searchInput.value = event?.currentTarget?.dataset?.searchQuery || "";
     searchFilter = "all";
     $$("[data-search-filter]").forEach((button) => {
       button.classList.toggle("active", button.dataset.searchFilter === "all");
       button.setAttribute("aria-pressed", String(button.dataset.searchFilter === "all"));
     });
-    renderSearchResults("");
-    requestAnimationFrame(() => searchInput.focus());
+    renderSearchResults(searchInput.value);
+    requestAnimationFrame(() => {if(!searchOverlay.hidden)searchInput.focus();});
   }
 
   function closeSearch({ restoreFocus = true } = {}) {
