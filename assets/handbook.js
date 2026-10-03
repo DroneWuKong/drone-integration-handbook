@@ -38,6 +38,7 @@
     if (!drawer || !drawerBackdrop) return;
     if(searchOverlay&&!searchOverlay.hidden)closeSearch({restoreFocus:false});
     lastDrawerFocus = document.activeElement;
+    drawer.hidden=false;
     drawer.inert=false;
     drawerBackdrop.hidden = false;
     drawer.setAttribute("aria-hidden", "false");
@@ -51,6 +52,7 @@
     if (!drawer || !drawerBackdrop) return;
     drawer.classList.remove("open");
     drawer.inert=true;
+    drawer.hidden=true;
     drawer.setAttribute("aria-hidden", "true");
     menuButton?.setAttribute("aria-expanded", "false");
     window.setTimeout(() => {

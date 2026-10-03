@@ -1209,14 +1209,13 @@ main {
   background: var(--surface);
   box-shadow: 20px 0 70px rgba(0, 0, 0, 0.45);
   transform: translateX(-102%);
-  visibility: hidden;
-  transition: transform 0.22s ease, visibility 0.22s;
+  transition: transform 0.22s ease;
 }
 
+.nav-drawer[hidden] { display: none; }
+
 .nav-drawer.open {
-  transition-property: transform;
   transform: translateX(0);
-  visibility: visible;
 }
 
 .drawer-header,
