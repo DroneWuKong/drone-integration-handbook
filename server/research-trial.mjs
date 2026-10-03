@@ -22,7 +22,7 @@ export function boundedRequest(request) {
     tools: [{ type: "web_search", search_context_size: "low",
       external_web_access: true, ...(request.tools[0].filters ? { filters: request.tools[0].filters } : {}) }],
     tool_choice: "required", include: ["web_search_call.action.sources"],
-    input: request.input, text: request.text, metadata: request.metadata,
+    input: request.input, text: { format: request.text.format, verbosity: "low" }, metadata: request.metadata,
   };
 }
 

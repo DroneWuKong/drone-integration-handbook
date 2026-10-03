@@ -34,7 +34,7 @@ D1 binding shape:
 
 Apply all migrations to each intended remote database using its environment/configuration, then verify them. The existing tables contain private data; future destructive migrations require their own data-preservation review.
 
-`0003_autonomous_evidence.sql` enables autonomous research. Set `OPENAI_API_KEY` and `OPENAI_WEBHOOK_SECRET` only as Cloudflare secrets. Register the exact `/api/autonomy/webhooks/openai` URL for `response.completed` events, and configure the scheduled workflow's `AUTONOMY_DISPATCH_URL` and environment-matched `AUTONOMY_REVIEW_TOKEN`. See [Autonomous evidence and prediction](AUTONOMOUS_EVIDENCE.md) for the full trust boundary and software-only fallback.
+`0003_autonomous_evidence.sql` enables autonomous research. Set `OPENAI_API_KEY` and `OPENAI_WEBHOOK_SECRET` only as Cloudflare secrets. Register the exact `/api/autonomy/webhooks/openai` URL for `response.completed`, `response.incomplete`, `response.failed`, and `response.cancelled` events, and configure the scheduled workflow's `AUTONOMY_DISPATCH_URL` and environment-matched `AUTONOMY_REVIEW_TOKEN`. See [Autonomous evidence and prediction](AUTONOMOUS_EVIDENCE.md) for the full trust boundary and software-only fallback.
 
 ```sh
 npx wrangler d1 migrations apply REPORTS --remote --config <environment configuration>

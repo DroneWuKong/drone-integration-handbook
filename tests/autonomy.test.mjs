@@ -36,7 +36,7 @@ test("trial fails closed when absent, disabled, future, expired, or malformed",a
 
 test("trial strips cost-expanding options and pins output, tools and tier",()=>{
  const value=boundedRequest({...researchRequest("researcher"),max_output_tokens:100000,max_tool_calls:99,service_tier:"priority",previous_response_id:"old",conversation:"old"});
- assert.equal(value.max_output_tokens,4096);assert.equal(value.max_tool_calls,2);assert.equal(value.service_tier,"default");assert.equal(value.previous_response_id,undefined);assert.equal(value.conversation,undefined);
+ assert.equal(value.max_output_tokens,4096);assert.equal(value.max_tool_calls,2);assert.equal(value.service_tier,"default");assert.equal(value.text.verbosity,"low");assert.equal(value.previous_response_id,undefined);assert.equal(value.conversation,undefined);
  assert.throws(()=>boundedRequest({...researchRequest("researcher"),model:"other"}));
  assert.throws(()=>boundedRequest({...researchRequest("researcher"),input:"x".repeat(24001)}));
  assert.throws(()=>boundedRequest({...researchRequest("researcher"),tools:[{type:"web_search"},{type:"code_interpreter"}]}));
@@ -98,5 +98,23 @@ test("dispatched background jobs complete through signed webhooks and determinis
   for(const id of ["resp_job_1","resp_job_2"]){const raw=JSON.stringify({object:"event",id:"evt_"+id,type:"response.completed",created_at:Date.now()/1000,data:{id}}),headers=await webhookHeaders(raw);assert.equal((await handleAutonomy(req("webhooks/openai","POST",raw,undefined,headers),env)).status,202);}
   const decision=sql.prepare("select publication_state,publish,human_intervention from evidence_decisions").get();assert.equal(decision.publication_state,"corroborated");assert.equal(decision.publish,1);assert.equal(decision.human_intervention,0);
   assert.equal(sql.prepare("select state from research_specs").get().state,"complete");
+ }finally{globalThis.fetch=original;sql.close();}
+});
+test("incomplete provider work is terminal and deterministically abstains",async()=>{
+ const {env,sql}=setup(),original=globalThis.fetch;let starts=0;
+ globalThis.fetch=async(url)=>String(url).endsWith("/v1/responses")
+  ?new Response(JSON.stringify({id:`resp_incomplete_${++starts}`,status:"queued"}),{status:200})
+  :new Response(JSON.stringify({id:String(url).split("/").at(-1),status:"completed",output:[{type:"message",content:[{type:"output_text",text:JSON.stringify(evidencePacket("researcher"))}]}]}),{status:200});
+ try{
+  assert.equal((await handleAutonomy(req("runs","POST",{spec,requests:{researcher:researchRequest("researcher"),verifier:researchRequest("verifier")}},"review"),env)).status,202);
+  const completed=JSON.stringify({object:"event",id:"evt_completed",type:"response.completed",created_at:Date.now()/1000,data:{id:"resp_incomplete_1"}});
+  assert.equal((await handleAutonomy(req("webhooks/openai","POST",completed,undefined,await webhookHeaders(completed)),env)).status,202);
+  const incomplete=JSON.stringify({object:"event",id:"evt_incomplete",type:"response.incomplete",created_at:Date.now()/1000,data:{id:"resp_incomplete_2"}});
+  assert.equal((await handleAutonomy(req("webhooks/openai","POST",incomplete,undefined,await webhookHeaders(incomplete)),env)).status,202);
+  assert.equal(sql.prepare("SELECT state FROM research_jobs WHERE role='verifier'").get().state,"failed");
+  assert.equal(sql.prepare("SELECT state FROM webhook_events WHERE id='evt_incomplete'").get().state,"processed");
+  const decision=sql.prepare("SELECT publication_state,publish,human_intervention FROM evidence_decisions").get();
+  assert.equal(decision.publication_state,"abstained");assert.equal(decision.publish,0);assert.equal(decision.human_intervention,0);
+  assert.equal(sql.prepare("SELECT state FROM research_specs").get().state,"abstained");
  }finally{globalThis.fetch=original;sql.close();}
 });
