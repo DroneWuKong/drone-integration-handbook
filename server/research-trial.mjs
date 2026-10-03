@@ -36,10 +36,13 @@ export async function reserveTrialJob(db, jobId, specId, now = Date.now()) {
       AND starts_ms<=?3 AND ends_ms>?3 AND ends_ms>starts_ms
       AND ends_ms-starts_ms<=1209600000
       AND (SELECT count(*) FROM research_trial_dispatches)<56
-      AND ((SELECT count(DISTINCT spec_id) FROM research_trial_dispatches
-              WHERE started_ms>?3-86400000)<2
-           OR EXISTS(SELECT 1 FROM research_trial_dispatches
-              WHERE spec_id=?2 AND started_ms>?3-86400000))
+      AND ((SELECT count(DISTINCT s.claim_id) FROM research_trial_dispatches d
+              JOIN research_specs s ON s.id=d.spec_id
+              WHERE d.started_ms>?3-86400000)<2
+           OR EXISTS(SELECT 1 FROM research_trial_dispatches d
+              JOIN research_specs prior ON prior.id=d.spec_id
+              JOIN research_specs requested ON requested.id=?2
+              WHERE prior.claim_id=requested.claim_id AND d.started_ms>?3-86400000))
       AND (SELECT count(*) FROM research_trial_dispatches WHERE spec_id=?2)<2`
   ).bind(jobId, specId, now).run();
   if (result.meta.changes !== 1) throw Error("Trial stopped: expired, disabled, workload limit, or dispatch already reserved");

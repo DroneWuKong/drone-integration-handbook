@@ -56,6 +56,20 @@ test("trial atomic reservations bound daily claims and prevent ambiguous paid re
  }finally{globalThis.fetch=original;sql.close();}
 });
 
+test("daily trial limit counts claims rather than release-specific spec ids",async()=>{
+ const {env,sql}=setup(),now=Date.now();
+ const insert=sql.prepare("INSERT INTO research_specs(id,claim_id,release,claim_type,risk,data,state,created,updated) VALUES(?,?,'release','factual','medium','{}','planned','now','now')");
+ const insertJob=sql.prepare("INSERT INTO research_jobs(id,spec_id,role,provider,state,created,updated) VALUES(?,?,'researcher','openai','planned','now','now')");
+ const prior="1".repeat(24),current="2".repeat(24),other="3".repeat(24),blocked="4".repeat(24);
+ insert.run(prior,"same-claim");insert.run(current,"same-claim");insert.run(other,"other-claim");insert.run(blocked,"third-claim");
+ insertJob.run("prior-job",prior);insertJob.run("current-job",current);insertJob.run("other-job",other);insertJob.run("blocked-job",blocked);
+ sql.prepare("INSERT INTO research_trial_dispatches VALUES(?,?,?)").run("prior-job",prior,now-1000);
+ await reserveTrialJob(env.REPORTS,"current-job",current,now);
+ await reserveTrialJob(env.REPORTS,"other-job",other,now);
+ await assert.rejects(reserveTrialJob(env.REPORTS,"blocked-job",blocked,now));
+ assert.equal(sql.prepare("SELECT count(*) n FROM research_trial_dispatches").get().n,3);sql.close();
+});
+
 test("provider timeout consumes reservation and a retry cannot bill twice",async()=>{
  const {env,sql}=setup(),original=globalThis.fetch;let starts=0;
  globalThis.fetch=async()=>{starts++;throw Error("timeout after possible acceptance");};
