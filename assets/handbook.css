@@ -1864,3 +1864,9 @@ main {
 /* Task navigation stays legible when reading size is enlarged. */
 .ecosystem-nav{display:flex;gap:12px;font-size:12px;white-space:nowrap}.ecosystem-nav a{text-decoration:none;color:var(--text)}.ecosystem-nav [aria-current]{color:#f4c56a;text-decoration:underline;text-underline-offset:4px}.search-starters{font-size:13px}.search-starters button{font:inherit;background:none;border:0;color:#f4c56a;text-decoration:underline;cursor:pointer;padding:6px}.inventory-panel>summary{cursor:pointer;font-weight:650}.inventory-panel:not([open]){align-self:start}.hero{padding-top:28px}.hero h1{font-size:clamp(28px,4vw,46px)}
 @media(max-width:760px){.topbar{flex-wrap:wrap;height:auto;min-height:var(--topbar-height)}.topbar-actions{flex-wrap:wrap;gap:8px}.ecosystem-nav{gap:8px}.topbar .github-link{display:none}.topbar .brand strong{font-size:11px}.topbar .current-location{display:none}}
+
+/* Reader-specific layout uses the shared family scale without dashboard styling. */
+.uas-home .hero { width:min(1120px,calc(100% - 48px)); }
+.uas-home .inventory-panel { margin-top:24px; border-radius:12px; box-shadow:none; }
+.uas-home .hero .use-notice { margin-top:24px; }
+@media(max-width:760px) { .uas-home .hero { width:calc(100% - 32px); } }

@@ -71,6 +71,7 @@ class BuilderTestCase(unittest.TestCase):
         shutil.copy2(project_root / "templates" / "evidence-lab.html", self.root / "templates" / "evidence-lab.html")
         shutil.copy2(project_root / "templates" / "404.html", self.root / "templates" / "404.html")
         shutil.copy2(project_root / "assets" / "handbook.css", self.root / "assets" / "handbook.css")
+        shutil.copy2(project_root / "assets" / "uas-design.css", self.root / "assets" / "uas-design.css")
         shutil.copy2(project_root / "assets" / "legal.css", self.root / "assets" / "legal.css")
         shutil.copy2(project_root / "assets" / "handbook.js", self.root / "assets" / "handbook.js")
         shutil.copy2(project_root / "assets" / "reference-tools.css", self.root / "assets" / "reference-tools.css")

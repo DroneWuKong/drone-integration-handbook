@@ -42,7 +42,18 @@ assert.equal(await page.locator('#searchInput').inputValue(),'UART');assert.ok(a
 await page.keyboard.press('Escape');assert.equal(await page.locator('[data-search-query="UART"]').evaluate(e=>document.activeElement===e),true);
 await page.goto(base+'/index.html#ch12');assert.equal(await page.locator('#ch12').isVisible(),true);
 assert.ok(await page.locator('#navDrawer a[data-nav-target="ch12"]').count());
-for(const width of [390,1440]){await page.setViewportSize({width,height:844});await page.goto(base+'/index.html');await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));await page.waitForFunction(()=>window.scrollY===0);await page.locator('.hero-actions').waitFor({state:'visible'});assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));await page.screenshot({path:resolve(OUTPUT,'handbook-'+width+'.png')});}
+for(const width of [320,390,1440]){
+ await page.setViewportSize({width,height:844});await page.goto(base+'/index.html');
+ await page.evaluate(()=>window.scrollTo({top:0,behavior:'instant'}));await page.waitForFunction(()=>window.scrollY===0);
+ for(const size of ['default','xlarge']){
+  await page.locator('[data-text-size-control]').click();await page.locator('.uas-text-size-panel:not([hidden]) input[value="'+size+'"]').check();await page.keyboard.press('Escape');
+  const geometry=await page.locator('.uas-header').evaluate(header=>[...header.querySelectorAll('a,button')].filter(e=>e.getClientRects().length).map(e=>{const b=e.getBoundingClientRect();const top=document.elementFromPoint(b.x+b.width/2,b.y+b.height/2);return {text:e.textContent.trim(),inside:b.x>=0&&b.right<=innerWidth+1,hit:e===top||e.contains(top),height:b.height};}));
+  assert.ok(geometry.every(b=>b.inside&&b.hit&&b.height>=24),JSON.stringify({width,size,geometry}));
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+  await page.screenshot({path:resolve(OUTPUT,'handbook-'+width+'-'+size+'.png')});
+ }
+ await page.locator('[data-text-size-control]').click();await page.locator('.uas-text-size-panel:not([hidden]) input[value="default"]').check();await page.keyboard.press('Escape');
+}
 await page.setViewportSize({width:390,height:844});
 await page.goto(base+"/reference.html");await page.waitForFunction(()=>document.querySelector("#load-status").textContent.startsWith("Public release"));
 assert.equal(await page.locator(".topbar .brand").textContent(),"UAS Handbookfield reference");assert.equal(await page.locator(".tool-rail").count(),1);assert.equal(await page.evaluate(()=>getComputedStyle(document.body).color),"rgb(210, 204, 190)");

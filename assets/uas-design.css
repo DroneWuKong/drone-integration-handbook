@@ -1,0 +1,129 @@
+/* UAS family design contract v1. Keep this file identical in both repositories.
+   Research = green, Build = amber, Learn = cyan. Status colors stay semantic. */
+:root {
+  --uas-bg:#0c0c0a; --uas-surface:#151512; --uas-border:#34342c;
+  --uas-text:#f5f0e8; --uas-muted:#b8b0a0;
+  --uas-accent:#f4c56a; --uas-tint:#241e12;
+  --uas-font:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --uas-mono:ui-monospace,monospace;
+  --uas-header-height:61px;
+}
+html[data-uas-area="research"] { --uas-accent:#86dfab; --uas-tint:#11251a; }
+html[data-uas-area="learn"] { --uas-accent:#83dded; --uas-tint:#10242a; }
+:root { --topbar-height:var(--uas-header-height); }
+:is(#dc-nav,.topbar).uas-header {
+  display:grid; grid-template-columns:minmax(0,1fr) auto auto;
+  grid-template-areas:"identity areas utilities"; gap:12px;
+  align-items:center; min-height:60px; height:auto; padding:8px 24px;
+  background:var(--uas-bg); border-bottom:1px solid var(--uas-border);
+  font-family:var(--uas-font); line-height:1.4;
+}
+.uas-header :is(#dc-nav-left,.topbar-start) {
+  grid-area:identity; display:flex; align-items:center; gap:10px; min-width:0;
+  flex-wrap:nowrap;
+}
+.uas-header :is(#dc-nav-brand,.brand) {
+  color:var(--uas-accent); font:700 14px/1.4 var(--uas-mono);
+  letter-spacing:-.025em; text-decoration:none!important; white-space:nowrap;
+}
+.uas-header .brand strong { color:inherit; font:inherit; }
+.uas-header :is(.brand span,.current-location,#dc-nav-page,#dc-nav-sep) { display:none; }
+.uas-header :is(#dc-hamburger,.icon-button,.search-button,[data-text-size-control]) {
+  display:inline-flex; align-items:center; justify-content:center; flex:none;
+  width:44px; min-width:44px; height:44px; min-height:44px; padding:0;
+  color:var(--uas-muted); background:transparent; border:1px solid var(--uas-border);
+  border-radius:8px; font:600 16px/1 var(--uas-font); cursor:pointer;
+}
+.uas-header .search-button :is(span,kbd) { display:none; }
+.uas-header .uas-utilities { grid-area:utilities; display:flex; gap:8px; align-items:center; }
+.uas-header :is(#dc-nav-right,.ecosystem-nav) {
+  grid-area:areas; display:flex; align-items:center; flex-wrap:nowrap; gap:4px;
+}
+.uas-header .uas-areas a {
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:44px; padding:8px 16px; border:1px solid transparent; border-radius:8px;
+  color:var(--uas-muted); background:transparent; font:600 13px/1.4 var(--uas-font);
+  text-decoration:none!important; white-space:nowrap;
+}
+.uas-header .uas-areas a[aria-current] {
+  color:var(--uas-accent); background:var(--uas-tint);
+  border-color:var(--uas-accent); box-shadow:inset 0 -2px var(--uas-accent);
+}
+.uas-header :is(a,button):hover { color:var(--uas-text); background:var(--uas-surface); }
+.uas-header :is(a,button):focus-visible,
+.uas-home :is(a,button,input,select,summary):focus-visible {
+  outline:2px solid var(--uas-accent); outline-offset:3px;
+}
+.uas-home { font-family:var(--uas-font); color:var(--uas-text); }
+.uas-home.uas-container { width:min(1120px,calc(100% - 48px)); margin:auto; padding:0 0 80px; }
+.uas-home .uas-hero { display:block; padding:32px 0 24px; }
+.uas-home .uas-eyebrow {
+  margin:0 0 12px; color:var(--uas-accent);
+  font:700 11px/1.5 var(--uas-mono); letter-spacing:.12em; text-transform:uppercase;
+}
+.uas-home .uas-title {
+  margin:0; max-width:800px; color:var(--uas-text);
+  font:700 clamp(30px,4vw,46px)/1.12 var(--uas-font); letter-spacing:-.04em;
+}
+.uas-home .uas-lead {
+  margin:16px 0 0; max-width:65ch; color:var(--uas-muted);
+  font:400 16px/1.65 var(--uas-font);
+}
+.uas-home .uas-actions { display:flex; flex-wrap:wrap; gap:10px; margin:20px 0 0; }
+.uas-home .uas-button {
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:44px; padding:10px 16px; max-width:100%; white-space:normal;
+  border:1px solid var(--uas-border); border-radius:8px;
+  background:var(--uas-surface); color:var(--uas-text);
+  font:600 14px/1.5 var(--uas-font); text-decoration:none; cursor:pointer;
+}
+.uas-home .uas-button.uas-primary {
+  background:var(--uas-accent); color:#101410; border-color:var(--uas-accent);
+}
+.uas-home .uas-button:hover { filter:brightness(1.1); border-color:var(--uas-accent); }
+.uas-home .uas-card {
+  margin:0 0 24px; padding:24px; border:1px solid var(--uas-border);
+  border-radius:12px; background:var(--uas-surface); box-shadow:none;
+}
+.uas-home .uas-section-title { margin:0 0 12px; font:700 24px/1.25 var(--uas-font); letter-spacing:-.025em; }
+.uas-home .uas-card p { font-size:15px; line-height:1.65; }
+.uas-home .uas-card .uas-note { margin:16px 0 0; font-size:13px; color:var(--uas-muted); }
+.uas-home .search-starters { margin:16px 0 0; font-size:13px; }
+.uas-home .search-starters :is(a,button) { color:var(--uas-accent); }
+.uas-home #daily-workspace { margin:0 auto 24px; }
+.uas-home .daily-heading h2 { font-size:24px; line-height:1.25; }
+.uas-home .daily-eyebrow { margin:0 0 8px; }
+.uas-home #daily-workspace a { color:var(--uas-accent); }
+.uas-home #daily-workspace :is(button,input,select) { min-height:44px; border-radius:8px; }
+.uas-home .daily-filters label:first-child { min-width:0; }
+.uas-home .daily-filters input { width:100%; }
+.uas-home .daily-filters label { font-size:12px; }
+@media(max-width:760px) {
+  :root { --uas-header-height:113px; }
+  :is(#dc-nav,.topbar).uas-header {
+    grid-template-columns:minmax(0,1fr) auto; grid-template-areas:"identity utilities" "areas areas";
+    padding:8px 16px; gap:8px;
+  }
+  .uas-header :is(#dc-nav-left,.topbar-start) { gap:8px; }
+  .uas-header :is(#dc-nav-brand,.brand) { font-size:13px; }
+  .uas-header :is(#dc-nav-right,.ecosystem-nav) { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px; width:100%; }
+  .uas-header .uas-areas a { padding:8px; }
+  .uas-home.uas-container { width:calc(100% - 32px); }
+  .uas-home .uas-hero { padding:28px 0 24px; }
+  .uas-home .uas-card { padding:20px; }
+}
+@media(max-width:480px) {
+  .uas-home .uas-actions { flex-direction:column; align-items:stretch; }
+  .uas-home .uas-button { width:100%; }
+  .uas-home .daily-filters { display:grid; grid-template-columns:1fr 1fr; }
+  .uas-home .daily-filters label:first-child { grid-column:1/-1; }
+  .uas-home .daily-filters label:nth-child(2) { grid-column:1/-1; }
+  .uas-home .daily-filters select { width:100%; }
+}
+/* Zoom can leave less than 300 CSS px inside a mobile viewport. */
+@media(max-width:380px) {
+  :is(#dc-nav,.topbar).uas-header { padding-inline:10px; }
+  .uas-header .uas-utilities { gap:4px; }
+  html[data-uas-text-size="xlarge"] .uas-header :is(#dc-nav-brand,.brand) { font-size:11px; }
+}
+@media print { .uas-header { display:none!important; } }

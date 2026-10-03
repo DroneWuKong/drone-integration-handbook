@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-analytics-privacy-url="#ch51">
+<html lang="en" data-uas-area="learn" data-analytics-privacy-url="#ch51">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,13 +26,13 @@
   <a class="skip-link" href="#main">Skip to handbook content</a>
   <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
 
-  <header class="topbar">
+  <header class="topbar uas-header">
     <div class="topbar-start">
       <button class="icon-button menu-button" id="menuButton" type="button" aria-label="Open handbook navigation" aria-controls="navDrawer" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
       <a class="brand" href="#top" aria-label="Drone Integration Handbook home">
-        <strong>UAS Handbook</strong>
+        <strong>Handbook</strong>
         <span>field reference</span>
       </a>
     </div>
@@ -42,17 +42,15 @@
       <span id="currentSection">Overview</span>
     </div>
 
-    <div class="topbar-actions">
+    <nav class="ecosystem-nav uas-areas" aria-label="UAS areas"><a href="https://uas-patterns.com/patterns-home/">Research</a><a href="https://uas-forge.com/">Build</a><a href="#top" aria-current="page">Learn</a></nav>
+    <div class="topbar-actions uas-utilities">
       <button class="search-button" id="searchButton" type="button" aria-label="Search the handbook">
         <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
         <span>Search</span>
         <kbd>⌘K</kbd>
       </button>
       <button class="icon-button" type="button" data-text-size-control aria-label="Text size" title="Text size">Aᴬ</button>
-      <nav class="ecosystem-nav" aria-label="UAS areas"><a href="https://uas-patterns.com/patterns-home/">Research</a><a href="https://uas-forge.com/">Build</a><a href="#top" aria-current="page">Learn</a></nav>
-      <a class="icon-button github-link" href="{{REPOSITORY_URL}}" aria-label="Handbook source on GitHub">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.7a9.4 9.4 0 0 0-3 18.3c.5.1.6-.2.6-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.7-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .9-.3 2.8 1a9.7 9.7 0 0 1 5.1 0c2-1.3 2.8-1 2.8-1 .6 1.4.2 2.4.1 2.7.7.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.7 1 .7 2v3c0 .3.2.6.7.5A9.4 9.4 0 0 0 12 2.7Z"/></svg>
-      </a>
+
     </div>
   </header>
 
@@ -93,19 +91,19 @@
       </footer>
     </aside>
 
-    <main id="main">
-      <section class="hero" aria-labelledby="hero-title">
+    <main id="main" class="uas-home">
+      <section class="hero uas-hero" aria-labelledby="hero-title">
         <div class="hero-copy">
-          <p class="eyebrow">Operator-built integration reference</p>
-          <h1 id="hero-title">The Drone Integration Handbook</h1>
-          <p class="hero-lead">A practical bench and field reference for RF, firmware, diagnostics, platforms, components, integration, and autonomy. No login. No product pitch.</p>
+          <p class="eyebrow uas-eyebrow">Handbook · Learn</p>
+          <h1 class="uas-title" id="hero-title">The Drone Integration Handbook</h1>
+          <p class="hero-lead uas-lead">A practical bench and field reference for RF, firmware, diagnostics, platforms, components, integration, and autonomy. No login. No product pitch.</p>
+          <div class="hero-actions uas-actions"><button class="primary-action uas-button uas-primary" type="button" data-open-search>Find a reference</button><a class="secondary-action uas-button" href="#ch1">Start with fundamentals</a></div>
+          <p class="search-starters">Try: <button type="button" data-open-search data-search-query="troubleshooting">Fix a problem</button> · <button type="button" data-open-search data-search-query="UART">Understand connections</button> · <a href="reference.html">Data & calculators</a></p>
           <div class="use-notice" role="note">
             <strong>Informational reference only.</strong>
             Verify current law, official regulator guidance, manufacturer documentation, and qualified professional review before acting. The handbook does not authorize unlawful spectrum use, interference, Remote ID defeat, offensive operations, or unsafe modification of aircraft or payloads.
             <a href="#ch52">Read the terms and safety disclaimer</a>
           </div>
-          <div class="hero-actions"><button class="primary-action" type="button" data-open-search>Find a reference</button><a class="secondary-action" href="#ch1">Start with fundamentals</a></div>
-          <p class="search-starters">Try: <button type="button" data-open-search data-search-query="troubleshooting">Fix a problem</button> · <button type="button" data-open-search data-search-query="UART">Understand connections</button> · <a href="reference.html">Data & calculators</a></p>
         </div>
 
         <details class="inventory-panel"><summary>Handbook coverage</summary>
@@ -201,6 +199,7 @@
     </section>
   </div>
 
+  <link rel="stylesheet" href="assets/uas-design.css">
   <script id="handbookMetadata" type="application/json">{{SEARCH_METADATA}}</script>
   <script src="assets/handbook.js" defer></script>
 </body>
