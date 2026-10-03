@@ -19,14 +19,21 @@ concurrency:
 
 jobs:
   prepare:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, prismo]
+    timeout-minutes: 15
     steps:
+      - name: Require the Octo self-hosted research pool
+        run: |
+          test "${RUNNER_ENVIRONMENT:-}" = "self-hosted" || {
+            echo "::error::Autonomous evidence must run on the Octo self-hosted cluster"
+            exit 1
+          }
+          echo "- Orchestration runner: self-hosted cluster (${RUNNER_NAME})" >> "$GITHUB_STEP_SUMMARY"
+
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-          cache: pip
+      - name: Create an isolated Python environment
+        run: python3 -m venv .venv
 
       - name: Restore source fingerprints and open tasks
         uses: actions/cache/restore@v4
@@ -43,18 +50,18 @@ jobs:
           restore-keys: autonomous-evidence-cursor-
 
       - name: Install builder
-        run: python3 -m pip install -r requirements.txt
+        run: .venv/bin/python -m pip install -r requirements.txt
 
       - name: Build the exact public snapshot
-        run: python3 build.py
+        run: .venv/bin/python build.py
 
       - name: Check managed source changes and review dates
         run: |
           mkdir -p .local
-          python3 scripts/check_sources.py | tee .local/source-monitor-summary.json
+          .venv/bin/python scripts/check_sources.py | tee .local/source-monitor-summary.json
 
       - name: Prepare prioritized citation queue
-        run: python3 scripts/build_review_queue.py | tee .local/citation-queue-summary.json
+        run: .venv/bin/python scripts/build_review_queue.py | tee .local/citation-queue-summary.json
 
       - name: Run the next autonomous evidence batch
         env:
@@ -63,8 +70,8 @@ jobs:
           OPENAI_RESEARCH_MODEL: ${{ vars.OPENAI_RESEARCH_MODEL || 'gpt-5.5' }}
           AUTONOMY_BATCH_SIZE: ${{ inputs.batch_size || vars.AUTONOMY_BATCH_SIZE || '2' }}
         run: |
-          python3 - <<'PY'
-          import json, os, subprocess
+          .venv/bin/python - <<'PY'
+          import json, os, subprocess, sys
           from pathlib import Path
           state_path=Path('.local/autonomy/cursor.json')
           state=json.loads(state_path.read_text()) if state_path.exists() else {'offset':0}
@@ -74,7 +81,7 @@ jobs:
               state={'offset':0,'release':release}
           batch=max(1,min(50,int(os.environ['AUTONOMY_BATCH_SIZE'])))
           subprocess.run([
-              'python3','scripts/run_autonomous_evidence.py','--provider','auto',
+              sys.executable,'scripts/run_autonomous_evidence.py','--provider','auto',
               '--maximum',str(batch),'--start-limit',str(batch*2),'--request-limit',str(batch*2),
               '--offset',str(state.get('offset',0))
           ],check=True)
@@ -87,7 +94,7 @@ jobs:
 
       - name: Add an intervention summary
         run: |
-          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          .venv/bin/python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json
           from pathlib import Path
           source=json.loads(Path('.local/source-monitor-summary.json').read_text())
