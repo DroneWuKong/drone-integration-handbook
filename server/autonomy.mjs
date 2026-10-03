@@ -1,4 +1,5 @@
 /* Autonomous evidence API. Models collect evidence; deterministic code adjudicates it. */
+import {trialStatus,boundedRequest,reserveTrialJob} from "./research-trial.mjs";
 const jsonHeaders={"content-type":"application/json","cache-control":"no-store","x-content-type-options":"nosniff"};
 const respond=(status,data)=>new Response(JSON.stringify(data),{status,headers:jsonHeaders});
 const enc=new TextEncoder();
@@ -30,12 +31,15 @@ function cleanResearchRequest(input,spec,role){
 }
 async function startResearchRun(env,spec,requests){
  const now=new Date().toISOString(),result=[];
+ const bounded=Object.fromEntries(["researcher","verifier"].map(role=>[role,boundedRequest(cleanResearchRequest(requests?.[role],spec,role))]));
+ if(!(await trialStatus(env.REPORTS)).active)throw Error("Trial is not active");
  await env.REPORTS.prepare("INSERT INTO research_specs(id,claim_id,release,claim_type,risk,data,state,created,updated) VALUES(?1,?2,?3,?4,?5,?6,'planned',?7,?7) ON CONFLICT(id) DO NOTHING").bind(spec.id,spec.claim_id,spec.release,spec.claim_type,spec.risk,JSON.stringify(spec),now).run();
  for(const role of ["researcher","verifier"]){
   const id=(await sha(`${spec.id}\x1f${role}`)).slice(0,24),existing=await env.REPORTS.prepare("SELECT response_id,state FROM research_jobs WHERE id=?1").bind(id).first();
   if(existing?.response_id){result.push({id,role,...existing,replayed:true});continue;}
-  const request=cleanResearchRequest(requests?.[role],spec,role);
+  const request=bounded[role];
   await env.REPORTS.prepare("INSERT OR IGNORE INTO research_jobs(id,spec_id,role,provider,state,created,updated) VALUES(?1,?2,?3,'openai','planned',?4,?4)").bind(id,spec.id,role,now).run();
+  await reserveTrialJob(env.REPORTS,id,spec.id);
   const remote=await fetch("https://api.openai.com/v1/responses",{method:"POST",headers:{authorization:`Bearer ${env.OPENAI_API_KEY}`,"content-type":"application/json"},body:JSON.stringify(request)});
   if(!remote.ok){const detail=(await remote.text()).slice(0,1000);await env.REPORTS.prepare("UPDATE research_jobs SET state='failed',attempts=attempts+1,last_error=?1,updated=?2 WHERE id=?3").bind(`HTTP ${remote.status}: ${detail}`,now,id).run();throw Error("Research provider rejected a background request");}
   const response=await remote.json();if(!response.id||!["queued","in_progress","completed"].includes(response.status))throw Error("Research provider did not acknowledge background work");
@@ -110,7 +114,8 @@ export async function handleAutonomy(request,env,context){
  if(path==="status"&&request.method==="GET"){
   if(!db)return respond(200,{enabled:false,schema_version:1});
   const specs=await db.prepare("SELECT state,count(*) count FROM research_specs GROUP BY state").all();const decisions=await db.prepare("SELECT publication_state,count(*) count FROM evidence_decisions GROUP BY publication_state").all();
-  return respond(200,{enabled:true,live_research:!!(env.OPENAI_API_KEY&&env.OPENAI_WEBHOOK_SECRET),specs:specs.results,decisions:decisions.results,schema_version:1});
+  let active=false;try{active=(await trialStatus(db)).active;}catch{/* An unapplied migration must not claim live readiness. */}
+  return respond(200,{enabled:true,live_research:!!(env.OPENAI_API_KEY&&env.OPENAI_WEBHOOK_SECRET&&active),specs:specs.results,decisions:decisions.results,schema_version:1});
  }
  if(!db)return respond(503,{error:"Autonomous evidence storage is not configured"});
  try{
@@ -124,7 +129,7 @@ export async function handleAutonomy(request,env,context){
   }
   if(path==="runs"&&request.method==="POST"){
    if(!await reviewer(request,env.REVIEW_TOKEN))return respond(401,{error:"Reviewer authorization required"});
-   if(!env.OPENAI_API_KEY)return respond(503,{error:"Live research provider is not configured"});
+   if(!env.OPENAI_API_KEY||!env.OPENAI_WEBHOOK_SECRET)return respond(503,{error:"Live research provider is not configured"});
    const input=(await body(request,220000)).data,spec=cleanSpec(input.spec),jobs=await startResearchRun(env,spec,input.requests);
    return respond(202,{id:spec.id,state:"researching",jobs});
   }

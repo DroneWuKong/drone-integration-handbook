@@ -8,7 +8,7 @@ on:
       batch_size:
         description: "Records to research in this bounded run (1–50)"
         required: false
-        default: "10"
+        default: "2"
 
 permissions:
   contents: read
@@ -61,7 +61,7 @@ jobs:
           AUTONOMY_DISPATCH_URL: ${{ secrets.AUTONOMY_DISPATCH_URL }}
           AUTONOMY_REVIEW_TOKEN: ${{ secrets.AUTONOMY_REVIEW_TOKEN }}
           OPENAI_RESEARCH_MODEL: ${{ vars.OPENAI_RESEARCH_MODEL || 'gpt-5.5' }}
-          AUTONOMY_BATCH_SIZE: ${{ inputs.batch_size || vars.AUTONOMY_BATCH_SIZE || '10' }}
+          AUTONOMY_BATCH_SIZE: ${{ inputs.batch_size || vars.AUTONOMY_BATCH_SIZE || '2' }}
         run: |
           python3 - <<'PY'
           import json, os, subprocess
