@@ -1214,6 +1214,7 @@ main {
 }
 
 .nav-drawer.open {
+  transition-property: transform;
   transform: translateX(0);
   visibility: visible;
 }
