@@ -749,6 +749,23 @@ def _copy_static_assets(source_dir: Path, destination_dir: Path) -> None:
         shutil.copy2(source, destination)
 
 
+
+def _version_page_assets(page: Path, site_root: Path) -> None:
+    """Give CSS/JS requests a content identity while retaining offline cache paths."""
+    def replace(match: re.Match[str]) -> str:
+        relative = match.group(2)
+        asset = site_root / relative.lstrip("/")
+        if not asset.is_file():
+            return match.group(0)
+        version = hashlib.sha256(asset.read_bytes()).hexdigest()[:20]
+        return f'{match.group(1)}{relative}?v={version}{match.group(3)}'
+
+    page.write_text(re.sub(
+        r'((?:href|src)=["\'])(/?assets/[^"\'?]+\.(?:css|js))(["\'])',
+        replace, page.read_text(encoding="utf-8"),
+    ), encoding="utf-8")
+
+
 def favicon_bytes() -> bytes:
     """Build a small, real ICO without an imaging dependency."""
     size = 32
@@ -852,6 +869,8 @@ def build_site(base_dir: Path | str, output_dir: Path | str) -> Path:
             page = base / ("templates/" + name + ".html")
             if page.is_file():
                 (staging / destination).write_text(page.read_text().replace("</head>", f'<meta name="handbook-release" content="{release}"></head>'))
+        for page in staging.glob("*.html"):
+            _version_page_assets(page, staging)
         worker = base / "assets/offline-worker.js"
         if worker.is_file():
             (staging / "sw.js").write_text(worker.read_text().replace("__RELEASE__",release))
