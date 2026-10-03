@@ -8,6 +8,7 @@ from handbook_builder.autonomous import (
     adjudicate,
     brier_score,
     claim_type,
+    evidence_packet_schema,
     openai_request,
     plan_jobs,
     register_prediction,
@@ -58,6 +59,9 @@ class AutonomousEvidenceTests(unittest.TestCase):
         self.assertEqual(request["tool_choice"], "required")
         self.assertTrue(request["text"]["format"]["strict"])
         self.assertEqual(request["metadata"]["role"], "verifier")
+        schema = evidence_packet_schema()
+        self.assertEqual(schema["properties"]["sources"]["maxItems"], 3)
+        self.assertEqual(schema["properties"]["notes"]["maxLength"], 800)
 
     def test_independent_runs_and_source_threshold_are_enforced(self):
         record = {"id": "range", "statement": "Range 10 km", "risk_reasons": ["performance"],

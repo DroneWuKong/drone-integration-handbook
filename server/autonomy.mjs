@@ -105,8 +105,19 @@ async function processResponse(env,event){
  await env.REPORTS.prepare("INSERT OR IGNORE INTO evidence_packets(id,job_id,claim_id,role,data,digest,created) VALUES(?1,?2,?3,?4,?5,?6,?7)").bind(packetId.slice(0,24),job.id,packet.claim_id,packet.role,data,digest,now).run();
  await recordEvent(env,"job",job.id,"packet-stored",{packet_id:packetId.slice(0,24),digest,role:packet.role});
  await env.REPORTS.prepare("UPDATE research_jobs SET state='completed',updated=?1 WHERE id=?2").bind(now,job.id).run();
- const pending=await env.REPORTS.prepare("SELECT count(*) count FROM research_jobs WHERE spec_id=?1 AND state!='completed'").bind(job.spec_id).first();
+ const pending=await env.REPORTS.prepare("SELECT count(*) count FROM research_jobs WHERE spec_id=?1 AND state IN ('planned','queued','in_progress')").bind(job.spec_id).first();
  await env.REPORTS.prepare("UPDATE research_specs SET state=?1,updated=?2 WHERE id=?3").bind(pending.count===0?"adjudicating":"researching",now,job.spec_id).run();if(pending.count===0)await adjudicateStored(env,spec);
+ await env.REPORTS.prepare("UPDATE webhook_events SET state='processed',updated=?1 WHERE id=?2").bind(now,event.id).run();
+}
+async function processTerminalResponse(env,event){
+ const now=new Date().toISOString(),responseId=event.data.id;
+ const job=await env.REPORTS.prepare("SELECT id,spec_id,role FROM research_jobs WHERE response_id=?1").bind(responseId).first();
+ if(!job){await env.REPORTS.prepare("UPDATE webhook_events SET state='ignored',updated=?1 WHERE id=?2").bind(now,event.id).run();return;}
+ const state=event.type==="response.cancelled"?"cancelled":"failed";
+ await env.REPORTS.prepare("UPDATE research_jobs SET state=?1,last_error=?2,updated=?3 WHERE id=?4 AND state!='completed'").bind(state,`Provider terminal event: ${event.type}`,now,job.id).run();
+ await recordEvent(env,"job",job.id,"provider-terminal",{event_type:event.type,state,role:job.role});
+ const pending=await env.REPORTS.prepare("SELECT count(*) count FROM research_jobs WHERE spec_id=?1 AND state IN ('planned','queued','in_progress')").bind(job.spec_id).first();
+ if(pending.count===0){const spec=await env.REPORTS.prepare("SELECT data FROM research_specs WHERE id=?1").bind(job.spec_id).first();if(spec){await env.REPORTS.prepare("UPDATE research_specs SET state='adjudicating',updated=?1 WHERE id=?2").bind(now,job.spec_id).run();await adjudicateStored(env,spec);}}
  await env.REPORTS.prepare("UPDATE webhook_events SET state='processed',updated=?1 WHERE id=?2").bind(now,event.id).run();
 }
 export async function handleAutonomy(request,env,context){
@@ -138,8 +149,9 @@ export async function handleAutonomy(request,env,context){
    const event=JSON.parse(raw),now=new Date().toISOString();if(!event.id||!event.type||!event.data?.id)throw Error("Invalid webhook event");
    const saved=await db.prepare("INSERT OR IGNORE INTO webhook_events(id,event_type,response_id,state,created,updated) VALUES(?1,?2,?3,'received',?4,?4)").bind(event.id,event.type,event.data.id,now).run();
    if(saved.meta.changes===0)return respond(200,{received:true,replayed:true});
-   if(event.type!=="response.completed"){await db.prepare("UPDATE webhook_events SET state='ignored',updated=?1 WHERE id=?2").bind(now,event.id).run();return respond(202,{received:true,ignored:true});}
-   const work=processResponse(env,event).catch(async error=>{await db.prepare("UPDATE webhook_events SET state='failed',updated=?1 WHERE id=?2").bind(new Date().toISOString(),event.id).run();});
+   const terminalEvents=new Set(["response.incomplete","response.failed","response.cancelled"]);
+   if(event.type!=="response.completed"&&!terminalEvents.has(event.type)){await db.prepare("UPDATE webhook_events SET state='ignored',updated=?1 WHERE id=?2").bind(now,event.id).run();return respond(202,{received:true,ignored:true});}
+   const work=(event.type==="response.completed"?processResponse(env,event):processTerminalResponse(env,event)).catch(async error=>{await db.prepare("UPDATE webhook_events SET state='failed',updated=?1 WHERE id=?2").bind(new Date().toISOString(),event.id).run();});
    if(context?.waitUntil)context.waitUntil(work);else await work;
    return respond(202,{received:true});
   }

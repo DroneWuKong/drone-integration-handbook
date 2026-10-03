@@ -54,7 +54,9 @@ The server:
 1. validates the research spec and both strict background requests;
 2. starts the bounded Responses API jobs;
 3. stores response IDs in D1 before acknowledging the run;
-4. accepts `response.completed` events only at `/api/autonomy/webhooks/openai`;
+4. accepts signed `response.completed`, `response.incomplete`, `response.failed`, and
+   `response.cancelled` events at `/api/autonomy/webhooks/openai`; incomplete or failed
+   provider work is recorded and deterministically abstains rather than remaining queued;
 5. verifies the raw request with the OpenAI webhook signing secret and a five-minute replay window;
 6. deduplicates webhook IDs;
 7. retrieves the completed response server-side;
@@ -113,7 +115,8 @@ Apply migrations `0001` through `0004`, then configure:
 | GitHub variable | `OPENAI_RESEARCH_MODEL` | Optional evaluated model selection |
 | GitHub variable | `AUTONOMY_BATCH_SIZE` | Optional nightly record limit, clamped to 1–50 |
 
-Create an OpenAI project webhook for `response.completed` pointing at:
+Create an OpenAI project webhook for `response.completed`, `response.incomplete`,
+`response.failed`, and `response.cancelled` pointing at:
 
 ```text
 https://<handbook-origin>/api/autonomy/webhooks/openai

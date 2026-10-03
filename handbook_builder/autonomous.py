@@ -92,13 +92,16 @@ def evidence_packet_schema() -> dict[str, Any]:
     source = {
         "type": "object", "additionalProperties": False,
         "properties": {
-            "url": {"type": "string"}, "title": {"type": "string"},
-            "publisher": {"type": "string"},
+            "url": {"type": "string", "maxLength": 2048},
+            "title": {"type": "string", "maxLength": 200},
+            "publisher": {"type": "string", "maxLength": 160},
             "source_class": {"type": "string", "enum": sorted(SOURCE_CLASSES)},
-            "passage": {"type": "string"}, "locator": {"type": "string"},
+            "passage": {"type": "string", "maxLength": 600},
+            "locator": {"type": "string", "maxLength": 200},
             "retrieved_at": {"type": "string", "format": "date"},
-            "content_sha256": {"type": "string"},
-            "supports": {"type": "string"}, "version": {"type": "string"},
+            "content_sha256": {"type": "string", "maxLength": 64},
+            "supports": {"type": "string", "maxLength": 400},
+            "version": {"type": "string", "maxLength": 100},
         },
         "required": ["url", "title", "publisher", "source_class", "passage", "locator",
                      "retrieved_at", "content_sha256", "supports", "version"],
@@ -106,9 +109,12 @@ def evidence_packet_schema() -> dict[str, Any]:
     calculation = {
         "type": "object", "additionalProperties": False,
         "properties": {
-            "method": {"type": "string"}, "inputs": {"type": "string"},
-            "units": {"type": "string"}, "result": {"type": "string"},
-            "reproduced": {"type": "boolean"}, "code": {"type": "string"},
+            "method": {"type": "string", "maxLength": 300},
+            "inputs": {"type": "string", "maxLength": 400},
+            "units": {"type": "string", "maxLength": 100},
+            "result": {"type": "string", "maxLength": 300},
+            "reproduced": {"type": "boolean"},
+            "code": {"type": "string", "maxLength": 1000},
         },
         "required": ["method", "inputs", "units", "result", "reproduced", "code"],
     }
@@ -118,15 +124,20 @@ def evidence_packet_schema() -> dict[str, Any]:
             "claim_id": {"type": "string"},
             "role": {"type": "string", "enum": list(ROLES)},
             "conclusion": {"type": "string", "enum": sorted(CONCLUSIONS)},
-            "proposed_statement": {"type": "string"}, "scope": {"type": "string"},
-            "jurisdiction": {"type": "string"}, "effective_date": {"type": "string"},
-            "sources": {"type": "array", "items": source},
-            "contradictions": {"type": "array", "items": {"type": "string"}},
-            "calculations": {"type": "array", "items": calculation},
-            "alternatives": {"type": "array", "items": {"type": "string"}},
+            "proposed_statement": {"type": "string", "maxLength": 800},
+            "scope": {"type": "string", "maxLength": 500},
+            "jurisdiction": {"type": "string", "maxLength": 200},
+            "effective_date": {"type": "string", "maxLength": 40},
+            "sources": {"type": "array", "maxItems": 3, "items": source},
+            "contradictions": {"type": "array", "maxItems": 3,
+                               "items": {"type": "string", "maxLength": 400}},
+            "calculations": {"type": "array", "maxItems": 3, "items": calculation},
+            "alternatives": {"type": "array", "maxItems": 3,
+                             "items": {"type": "string", "maxLength": 400}},
             "confidence": {"type": "number", "minimum": 0, "maximum": 1},
-            "limitations": {"type": "array", "items": {"type": "string"}},
-            "notes": {"type": "string"},
+            "limitations": {"type": "array", "maxItems": 3,
+                            "items": {"type": "string", "maxLength": 400}},
+            "notes": {"type": "string", "maxLength": 800},
         },
         "required": ["claim_id", "role", "conclusion", "proposed_statement", "scope",
                      "jurisdiction", "effective_date", "sources", "contradictions",
@@ -174,6 +185,7 @@ Rules:
 - A page title, search snippet, retailer listing, or marketing summary is not adequate support by itself.
 - If evidence is insufficient, return insufficient. Never fill missing facts with assumptions.
 - For calculations, record inputs, units, method, result, and whether independently reproduced.
+- Keep the packet concise: at most three sources and three items in each supporting list.
 - Return only the required structured object. The role field must be {role!r} and claim_id must be {spec['claim_id']!r}.
 """
 
