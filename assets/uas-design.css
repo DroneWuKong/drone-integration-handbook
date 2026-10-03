@@ -25,6 +25,7 @@ html[data-uas-area="learn"] { --uas-accent:#83dded; --uas-tint:#10242a; }
 .uas-header :is(#dc-nav-brand,.brand) {
   color:var(--uas-accent); font:700 14px/1.4 var(--uas-mono);
   letter-spacing:-.025em; text-decoration:none!important; white-space:nowrap;
+  display:inline-flex; align-items:center; min-height:44px;
 }
 .uas-header .brand strong { color:inherit; font:inherit; }
 .uas-header :is(.brand span,.current-location,#dc-nav-page,#dc-nav-sep) { display:none; }
