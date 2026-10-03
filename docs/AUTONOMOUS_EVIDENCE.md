@@ -61,7 +61,7 @@ The server:
 8. retrieves and hashes cited source bytes;
 9. stores evidence packets and applies deterministic adjudication once both roles finish.
 
-The scheduled workflow runs nightly, processes ten records/twenty jobs by default, and advances its cached cursor only when every job in the batch was acknowledged. Set the `AUTONOMY_BATCH_SIZE` repository variable, or choose a batch size from 1–50 on a manual run, to change the cost/rate envelope without editing code. Without both dispatcher secrets, it remains in software mode and does not advance or claim live research occurred.
+The scheduled workflow runs nightly, processes two records/four jobs by default, and advances its cached cursor only when every job in the batch was acknowledged. The backend enforces the trial limits regardless of `AUTONOMY_BATCH_SIZE` or manual inputs. Without both dispatcher secrets, it remains in software mode and does not advance or claim live research occurred.
 
 Direct developer execution is also available:
 
@@ -74,7 +74,32 @@ The model is configurable through `OPENAI_RESEARCH_MODEL`; the default is `gpt-5
 
 ## Required production configuration
 
-Apply migrations `0001` through `0003`, then configure:
+### Non-renewing research trial
+
+Migration `0004_research_trial.sql` adds a disabled-by-default dispatch gate.
+An operator must explicitly insert the single `research_trial` row, with
+`enabled=1` and fixed millisecond start/end timestamps at most 14 days apart.
+No migration, deployment, monthly billing reset, or scheduler run activates or
+renews this row. Stop immediately by setting `enabled=0`.
+
+The backend permits two distinct claims in a rolling 24-hour window, two roles
+per claim, and 56 lifetime dispatch reservations. Reservations are atomic and
+never automatically refunded, including uncertain provider failures. Investigate
+an ambiguous timeout instead of deleting a reservation and retrying paid work.
+The scheduler defaults to two records. Backend limits also apply to manual runs.
+Requests are pinned to GPT-5.5 standard tier, 4,096 output/reasoning tokens,
+two hosted search calls, low search context, and bounded text-only prompts.
+
+These are workload limits, **not an exact dollar guarantee**: hosted search
+input tokens vary. Before activation, verify a dedicated provider project with
+a $20 hard limit (not merely an alert), leaving headroom within the user's $25
+authorization, and a key expiring within 14 days. OpenAI states that hard-limit
+enforcement is not instantaneous and spend may slightly exceed the configured
+amount: https://developers.openai.com/api/docs/guides/spend-limits.
+Do not activate until a satisfactory overall cost safeguard is established.
+No API key or webhook secret belongs in this document or source control.
+
+Apply migrations `0001` through `0004`, then configure:
 
 | Location | Name | Purpose |
 |---|---|---|
