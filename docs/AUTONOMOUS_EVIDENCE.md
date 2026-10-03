@@ -63,6 +63,10 @@ The server:
 8. retrieves and hashes cited source bytes;
 9. stores evidence packets and applies deterministic adjudication once both roles finish.
 
+A completed provider response that fails packet or trusted-source validation is recorded as
+a failed role. Once the paired role is also terminal, deterministic adjudication stores an
+abstention instead of leaving the spec queued or accepting unverifiable model output.
+
 The scheduled workflow runs nightly, processes two records/four jobs by default, and advances its cached cursor only when every job in the batch was acknowledged. The backend enforces the trial limits regardless of `AUTONOMY_BATCH_SIZE` or manual inputs. Without both dispatcher secrets, it remains in software mode and does not advance or claim live research occurred.
 
 Direct developer execution is also available:

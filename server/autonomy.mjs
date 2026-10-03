@@ -93,6 +93,11 @@ async function adjudicateStored(env,specRow){
  await recordEvent(env,"decision",decision.id,"adjudicated",{publication_state:decision.publication_state,publish:decision.publish,human_intervention:decision.human_intervention,reasons:decision.reasons});
  const state=decision.human_intervention?"exception":decision.publish?"complete":"abstained";await env.REPORTS.prepare("UPDATE research_specs SET state=?1,updated=?2 WHERE id=?3").bind(state,new Date().toISOString(),spec.id).run();return decision;
 }
+async function adjudicateIfTerminal(env,specId,now){
+ const pending=await env.REPORTS.prepare("SELECT count(*) count FROM research_jobs WHERE spec_id=?1 AND state IN ('planned','queued','in_progress')").bind(specId).first();
+ await env.REPORTS.prepare("UPDATE research_specs SET state=?1,updated=?2 WHERE id=?3").bind(pending.count===0?"adjudicating":"researching",now,specId).run();
+ if(pending.count===0){const spec=await env.REPORTS.prepare("SELECT data FROM research_specs WHERE id=?1").bind(specId).first();if(spec)await adjudicateStored(env,spec);}
+}
 async function processResponse(env,event){
  const now=new Date().toISOString(),responseId=event.data.id;
  const job=await env.REPORTS.prepare("SELECT id,spec_id,role FROM research_jobs WHERE response_id=?1").bind(responseId).first();
@@ -105,9 +110,13 @@ async function processResponse(env,event){
  await env.REPORTS.prepare("INSERT OR IGNORE INTO evidence_packets(id,job_id,claim_id,role,data,digest,created) VALUES(?1,?2,?3,?4,?5,?6,?7)").bind(packetId.slice(0,24),job.id,packet.claim_id,packet.role,data,digest,now).run();
  await recordEvent(env,"job",job.id,"packet-stored",{packet_id:packetId.slice(0,24),digest,role:packet.role});
  await env.REPORTS.prepare("UPDATE research_jobs SET state='completed',updated=?1 WHERE id=?2").bind(now,job.id).run();
- const pending=await env.REPORTS.prepare("SELECT count(*) count FROM research_jobs WHERE spec_id=?1 AND state IN ('planned','queued','in_progress')").bind(job.spec_id).first();
- await env.REPORTS.prepare("UPDATE research_specs SET state=?1,updated=?2 WHERE id=?3").bind(pending.count===0?"adjudicating":"researching",now,job.spec_id).run();if(pending.count===0)await adjudicateStored(env,spec);
+ await adjudicateIfTerminal(env,job.spec_id,now);
  await env.REPORTS.prepare("UPDATE webhook_events SET state='processed',updated=?1 WHERE id=?2").bind(now,event.id).run();
+}
+async function failResponseProcessing(env,event,error){
+ const now=new Date().toISOString(),job=await env.REPORTS.prepare("SELECT id,spec_id,role FROM research_jobs WHERE response_id=?1").bind(event.data.id).first();
+ if(job){const reason=String(error?.message||"Evidence response processing failed").slice(0,500);await env.REPORTS.prepare("UPDATE research_jobs SET state='failed',last_error=?1,updated=?2 WHERE id=?3 AND state!='completed'").bind(reason,now,job.id).run();await recordEvent(env,"job",job.id,"packet-rejected",{reason,role:job.role});await adjudicateIfTerminal(env,job.spec_id,now);}
+ await env.REPORTS.prepare("UPDATE webhook_events SET state='failed',updated=?1 WHERE id=?2").bind(now,event.id).run();
 }
 async function processTerminalResponse(env,event){
  const now=new Date().toISOString(),responseId=event.data.id;
@@ -116,8 +125,7 @@ async function processTerminalResponse(env,event){
  const state=event.type==="response.cancelled"?"cancelled":"failed";
  await env.REPORTS.prepare("UPDATE research_jobs SET state=?1,last_error=?2,updated=?3 WHERE id=?4 AND state!='completed'").bind(state,`Provider terminal event: ${event.type}`,now,job.id).run();
  await recordEvent(env,"job",job.id,"provider-terminal",{event_type:event.type,state,role:job.role});
- const pending=await env.REPORTS.prepare("SELECT count(*) count FROM research_jobs WHERE spec_id=?1 AND state IN ('planned','queued','in_progress')").bind(job.spec_id).first();
- if(pending.count===0){const spec=await env.REPORTS.prepare("SELECT data FROM research_specs WHERE id=?1").bind(job.spec_id).first();if(spec){await env.REPORTS.prepare("UPDATE research_specs SET state='adjudicating',updated=?1 WHERE id=?2").bind(now,job.spec_id).run();await adjudicateStored(env,spec);}}
+ await adjudicateIfTerminal(env,job.spec_id,now);
  await env.REPORTS.prepare("UPDATE webhook_events SET state='processed',updated=?1 WHERE id=?2").bind(now,event.id).run();
 }
 export async function handleAutonomy(request,env,context){
@@ -151,7 +159,9 @@ export async function handleAutonomy(request,env,context){
    if(saved.meta.changes===0)return respond(200,{received:true,replayed:true});
    const terminalEvents=new Set(["response.incomplete","response.failed","response.cancelled"]);
    if(event.type!=="response.completed"&&!terminalEvents.has(event.type)){await db.prepare("UPDATE webhook_events SET state='ignored',updated=?1 WHERE id=?2").bind(now,event.id).run();return respond(202,{received:true,ignored:true});}
-   const work=(event.type==="response.completed"?processResponse(env,event):processTerminalResponse(env,event)).catch(async error=>{await db.prepare("UPDATE webhook_events SET state='failed',updated=?1 WHERE id=?2").bind(new Date().toISOString(),event.id).run();});
+   const work=event.type==="response.completed"
+    ?processResponse(env,event).catch(error=>failResponseProcessing(env,event,error))
+    :processTerminalResponse(env,event).catch(async error=>{await db.prepare("UPDATE webhook_events SET state='failed',updated=?1 WHERE id=?2").bind(new Date().toISOString(),event.id).run();});
    if(context?.waitUntil)context.waitUntil(work);else await work;
    return respond(202,{received:true});
   }

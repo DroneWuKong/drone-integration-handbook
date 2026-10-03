@@ -132,3 +132,22 @@ test("incomplete provider work is terminal and deterministically abstains",async
   assert.equal(sql.prepare("SELECT state FROM research_specs").get().state,"abstained");
  }finally{globalThis.fetch=original;sql.close();}
 });
+test("completed output rejected by trusted validation is terminal and abstains",async()=>{
+ const {env,sql}=setup(),original=globalThis.fetch;let starts=0;
+ globalThis.fetch=async(url)=>{
+  const value=String(url);
+  if(value.endsWith("/v1/responses"))return new Response(JSON.stringify({id:`resp_rejected_${++starts}`,status:"queued"}),{status:200});
+  if(value.includes("/v1/responses/")){const role=value.endsWith("_1")?"researcher":"verifier",packet=evidencePacket(role);if(role==="researcher")packet.sources[0].url="https://example.test/oversized.pdf";return new Response(JSON.stringify({id:value.split("/").at(-1),status:"completed",output:[{type:"message",content:[{type:"output_text",text:JSON.stringify(packet)}]}]}),{status:200});}
+  if(value.endsWith("/oversized.pdf"))return new Response("too large",{status:200,headers:{"content-length":"5000000"}});
+  return new Response("trusted source bytes",{status:200});
+ };
+ try{
+  assert.equal((await handleAutonomy(req("runs","POST",{spec,requests:{researcher:researchRequest("researcher"),verifier:researchRequest("verifier")}},"review"),env)).status,202);
+  for(const [suffix,eventId] of [["1","evt_rejected"],["2","evt_verified"]]){const raw=JSON.stringify({object:"event",id:eventId,type:"response.completed",created_at:Date.now()/1000,data:{id:`resp_rejected_${suffix}`}});assert.equal((await handleAutonomy(req("webhooks/openai","POST",raw,undefined,await webhookHeaders(raw)),env)).status,202);}
+  assert.equal(sql.prepare("SELECT state FROM research_jobs WHERE role='researcher'").get().state,"failed");
+  assert.equal(sql.prepare("SELECT state FROM webhook_events WHERE id='evt_rejected'").get().state,"failed");
+  assert.equal(sql.prepare("SELECT state FROM research_jobs WHERE role='verifier'").get().state,"completed");
+  const decision=sql.prepare("SELECT publication_state,publish FROM evidence_decisions").get();assert.equal(decision.publication_state,"abstained");assert.equal(decision.publish,0);
+  assert.equal(sql.prepare("SELECT state FROM research_specs").get().state,"abstained");
+ }finally{globalThis.fetch=original;sql.close();}
+});
