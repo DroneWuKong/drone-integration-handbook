@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import hashlib
 import html
 import json
 import re
@@ -133,6 +134,24 @@ class BuilderTestCase(unittest.TestCase):
         self.assertEqual(re.findall(r'data-nav-target="([^"]+)"', desktop), re.findall(r'data-nav-target="([^"]+)"', mobile))
         self.assertEqual(len(re.findall(r'<details[^>]* open>', mobile)), 1)
 
+    def test_asset_change_invalidates_browser_url_and_preserves_offline_hashes(self) -> None:
+        output = self.root / "site"
+        with patch("handbook_builder.site._markdown_module", return_value=_FakeMarkdown):
+            first = build_site(self.root, output).read_text()
+            asset = self.root / "assets/handbook.css"
+            asset.write_text(asset.read_text() + "\n/* new release */\n")
+            second = build_site(self.root, output).read_text()
+        pattern = r'assets/handbook\.css\?v=([0-9a-f]{20})'
+        self.assertNotEqual(re.search(pattern, first)[1], re.search(pattern, second)[1])
+        self.assertEqual(re.search(pattern, second)[1], hashlib.sha256(asset.read_bytes()).hexdigest()[:20])
+        script = r'assets/handbook\.js\?v=[0-9a-f]{20}'
+        self.assertEqual(re.search(script, first)[0], re.search(script, second)[0])
+        manifest = json.loads((output / "offline-manifest.json").read_text())
+        for url in ["/", "/assets/handbook.css"]:
+            path = output / ("index.html" if url == "/" else url.lstrip("/"))
+            self.assertEqual(manifest["hashes"][url], hashlib.sha256(path.read_bytes()).hexdigest())
+        self.assertRegex((output / "evidence-lab.html").read_text(), r'assets/evidence-lab\.js\?v=[0-9a-f]{20}')
+
     def test_full_build_writes_legal_assets_publisher_identity_and_navigation(self) -> None:
         (self.root / '_redirects').write_text('/forge/* https://uas-forge.com/:splat 301\n/tools https://uas-forge.com/tools/ 301\n', encoding='utf-8')
         output = self.root / "site"
@@ -144,9 +163,9 @@ class BuilderTestCase(unittest.TestCase):
         self.assertIn('href="https://uas-patterns.com/patterns-home/">Research</a>', document)
         self.assertIn('href="https://uas-forge.com/">Build</a>', document)
         self.assertIn('data-search-query="troubleshooting"', document)
-        self.assertIn('href="assets/handbook.css"', document)
-        self.assertIn('href="assets/legal.css"', document)
-        self.assertIn('src="assets/handbook.js"', document)
+        self.assertRegex(document, r'href="assets/handbook\.css\?v=[0-9a-f]{20}"')
+        self.assertRegex(document, r'href="assets/legal\.css\?v=[0-9a-f]{20}"')
+        self.assertRegex(document, r'src="assets/handbook\.js\?v=[0-9a-f]{20}"')
         self.assertIn('id="ch38"', document)
         self.assertIn('id="ch47"', document)
         self.assertIn('id="ch48"', document)
