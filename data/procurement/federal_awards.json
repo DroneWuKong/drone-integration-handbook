@@ -132,7 +132,7 @@
       "internal_id": 298377557,
       "Award ID": "FA807522F0011",
       "Recipient Name": "MANTECH TSG-2 JOINT VENTURE",
-      "Award Amount": 99604975.97,
+      "Award Amount": 99662764.01,
       "Total Outlays": 0.0,
       "Description": "UNMANNED AIRCRAFT SYSTEMS ENGINEERING AND ANALYSIS FOR NAVAL AIR SYSTEMS COMMAND AND NAVAL SURFACE WARFARE CENTER, CRANE DIVISION",
       "Start Date": "2021-12-09",
@@ -2072,7 +2072,7 @@
       "Total Outlays": null,
       "Description": "DEVELOPING THE X-P5 TRANSWING UNMANNED AERIAL SYSTEM FOR AUTONOMOUS AGILE COMBAT LOGISTICS",
       "Start Date": "2023-07-23",
-      "End Date": "2028-04-01",
+      "End Date": "2025-05-23",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Air Force",
       "Award Type": null,
@@ -3265,6 +3265,22 @@
       "generated_internal_id": "CONT_AWD_W58RGZ20F0012_9700_W58RGZ19D0045_9700"
     },
     {
+      "internal_id": 363169693,
+      "Award ID": "W912CH26FA117",
+      "Recipient Name": "AEROVIRONMENT, INC",
+      "Award Amount": 80564538.0,
+      "Total Outlays": null,
+      "Description": "THIS EFFORT IS FOCUSED ON PROVIDING OPERATIONAL UTILITY OF THESE SYSTEMS FOR USE BY DEPARTMENT OF WAR (DOW) PERSONNEL FOR FORCE PROTECTION, BASE DEFENSE, AND COUNTER-UAS OPERATIONS.",
+      "Start Date": "2026-07-02",
+      "End Date": "2027-07-01",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W912CH26FA117_9700_W912CH26DA073_9700"
+    },
+    {
       "internal_id": 311086004,
       "Award ID": "N6833513C0125",
       "Recipient Name": "NAVMAR APPLIED SCIENCES CORP",
@@ -3855,22 +3871,6 @@
       "awarding_agency_id": 456,
       "agency_slug": "department-of-the-treasury",
       "generated_internal_id": "CONT_AWD_2032H519F00607_2050_NNG15SC71B_8000"
-    },
-    {
-      "internal_id": 298507296,
-      "Award ID": "FA852625FB002",
-      "Recipient Name": "THE BOEING COMPANY",
-      "Award Amount": 7901553.0,
-      "Total Outlays": null,
-      "Description": "UAE - LAIRCM PHASE I TECHNICAL ORDERS AND NON-RECURRING ENGINEERING",
-      "Start Date": "2025-05-01",
-      "End Date": "2029-03-30",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA852625FB002_9700_FA852621D0001_9700"
     },
     {
       "internal_id": 260370054,
@@ -5112,7 +5112,7 @@
       "Total Outlays": null,
       "Description": "SPECTRAL SCIENCES INC (SSI) IS DEVELOPING A LWIR HSI APPROACH THAT PROMISES THE LOW C-SWAP EQUIVALENT TO STANDARD ISR THERMAL IMAGING CAMERAS REQUIRED FOR ATTRITABLE SUAS OPERATION.",
       "Start Date": "2024-05-30",
-      "End Date": "2026-08-30",
+      "End Date": "2027-03-01",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Air Force",
       "Award Type": null,
@@ -8113,6 +8113,22 @@
       "generated_internal_id": "CONT_AWD_HY023325PE022_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 363156337,
+      "Award ID": "70T05026F6116N006",
+      "Recipient Name": "DEDRONE DEFENSE LLC",
+      "Award Amount": 1412398.64,
+      "Total Outlays": null,
+      "Description": "THIS SPLIT AWARD IS ISSUED UNDER THE EXISTING INDEFINITE DELIVERY, INDEFINITE QUANTITY (IDIQ) 70RDA226D00000001 CONTRACT TO OBTAIN FIXED-SITE AND PORTABLE COUNTER-UAS CAPABILITY CONSISTING OF A D-FEND ENFORCEAIR2 MITIGATION SYSTEM INTEGRATE.",
+      "Start Date": "2026-09-30",
+      "End Date": "2027-09-29",
+      "Awarding Agency": "Department of Homeland Security",
+      "Awarding Sub Agency": "Transportation Security Administration",
+      "Award Type": null,
+      "awarding_agency_id": 766,
+      "agency_slug": "department-of-homeland-security",
+      "generated_internal_id": "CONT_AWD_70T05026F6116N006_7013_70RDA226D00000001_7001"
+    },
+    {
       "internal_id": 298168097,
       "Award ID": "FA480924P0014",
       "Recipient Name": "KINETIC CONCEPTS LLC",
@@ -8543,6 +8559,22 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_M0026425F0157_9700_M0026424D0001_9700"
+    },
+    {
+      "internal_id": 363156010,
+      "Award ID": "70FA5026F00000138",
+      "Recipient Name": "DEDRONE DEFENSE LLC",
+      "Award Amount": 200000.0,
+      "Total Outlays": null,
+      "Description": "THE PURPOSE OF THIS TASK ORDER IS FOR CONTRACTOR SERVICES TO SURVEY, PHYSICALLY INSTALL, CABLE, INTEGRATE, CALIBRATE, TEST, AND PROVIDE ONGOING OPERATIONAL SUPPORT FOR THE C-UAS SENSOR SUITE.",
+      "Start Date": "2026-09-29",
+      "End Date": "2027-03-28",
+      "Awarding Agency": "Department of Homeland Security",
+      "Awarding Sub Agency": "Federal Emergency Management Agency",
+      "Award Type": null,
+      "awarding_agency_id": 766,
+      "agency_slug": "department-of-homeland-security",
+      "generated_internal_id": "CONT_AWD_70FA5026F00000138_7022_70RDA226D00000001_7001"
     },
     {
       "internal_id": 291254985,
@@ -12769,6 +12801,6 @@
       "generated_internal_id": "ASST_NON_R21GM152950_075"
     }
   ],
-  "scraped_at": "2026-10-02T10:41:43.093101+00:00",
-  "count": 798
+  "scraped_at": "2026-10-03T10:48:48.465936+00:00",
+  "count": 800
 }
