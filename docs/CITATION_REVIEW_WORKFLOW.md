@@ -42,6 +42,8 @@ Omit `--check` to write normalized, nonpublishing actions to `.local/citation-re
 
 Scores prioritize work only. They never approve, reject, or publish a claim. An in-passage source candidate may support the statement, may support only part of it, or may be stale. Article-level links are research leads and must not be cited without checking an exact passage.
 
+Reader presentation is deliberately narrower than the review inventory. The handbook shows one site-level migration notice, then adds an inline review flag only to unresolved P0/P1 records or records with a safety or regulatory signal. P2/P3 records and obvious metadata remain in this queue even when they do not interrupt the prose. Hiding a routine inline warning is not a review decision, source check, or evidence promotion.
+
 ## Review a batch
 
 1. Open one article batch, starting with P0 and P1 records.

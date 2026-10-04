@@ -11,6 +11,16 @@ NUMBER=re.compile(r"(?<![a-z])[-+]?\d+(?:[.,]\d+)*(?:e[-+]?\d+)?",re.I)
 URL=re.compile(r"https?://\S+",re.I)
 SPACE=re.compile(r"\s+")
 SOURCE_FIELDS={"source","url","authority","verified","what it supports"}
+NONCLAIM_REASONS={"source-directory-entry","administrative-date"}
+INLINE_REVIEW_REASONS={"regulatory","safety"}
+PUBLIC_RISK_LABELS={
+    "regulatory":"regulatory",
+    "safety":"safety",
+    "performance":"performance",
+    "commercial":"commercial",
+    "configuration":"configuration",
+    "failure":"failure mode",
+}
 
 RISK_RULES=(
     (5,"regulatory",re.compile(r"\b(faa|fcc|itar|ndaa|remote id|bvlos|regulat|legal|compliance)\b",re.I)),
@@ -50,6 +60,27 @@ def triage(record):
     else:
         action="Locate a primary source, scope the statement, then support, correct, or remove it."
     return {"score":score,"priority":priority,"risk_reasons":reasons or ["general"],"cluster":cluster,"recommended_action":action}
+
+def inline_review_alert(record):
+    """Return a reader-facing alert only for material unresolved claims.
+
+    The complete unresolved inventory remains available to the review queue.
+    This presentation decision prevents routine catalog data, administrative
+    dates and source-directory rows from repeating the same warning throughout
+    the public handbook.
+    """
+    result=triage(record)
+    reasons=set(result["risk_reasons"])
+    if reasons & NONCLAIM_REASONS:
+        return {"show":False,"priority":result["priority"],"reasons":[],"label":""}
+    material=result["priority"] in {"P0","P1"} or bool(reasons & INLINE_REVIEW_REASONS)
+    public=[PUBLIC_RISK_LABELS[name] for name in PUBLIC_RISK_LABELS if name in reasons]
+    return {
+        "show":material,
+        "priority":result["priority"],
+        "reasons":public,
+        "label":" / ".join(public) if public else "material claim",
+    }
 
 def extract_article_sources(base,records):
     """Collect existing public links as research leads, never as verification."""

@@ -672,7 +672,7 @@ def _render_entry(
         f'<button class="copy-link" type="button" data-copy-anchor="{html.escape(entry.anchor)}">Copy link</button>'
         f'<a href="{html.escape(source_url)}">Source</a>'
         f'<button type="button" class="report-claim" data-report-claim="{html.escape(entry.identity)}">Report / add field evidence</button>'
-        '</div><p class="evidence-migration">Evidence migration is in progress. Numerical and categorical statements remain unreviewed unless an evidence control gives a scoped source check. Extraction does not verify performance.</p></header>'
+        '</div></header>'
         f'<div class="chapter-body">{entry.html}</div>'
         f'{_entry_footer(previous_by_anchor[entry.anchor], next_by_anchor[entry.anchor])}'
         "</article>"

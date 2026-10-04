@@ -8,6 +8,7 @@
 - Add private report storage, receipts, optional private evidence files, authenticated review history, draft correction proposals and source monitoring.
 - Add explicit coherent offline saving and meaningful engine, SQLite API and browser checks.
 - Add a deterministic citation-review queue with risk priorities, article/table batches, repeated-text clusters and separate in-passage versus article-level source leads; publish JSON/CSV as CI artifacts.
+- Replace repeated inline warnings on routine specifications with one site-level migration notice; retain every review unit in the queue and show scoped inline flags only for P0/P1, safety, or regulatory claims.
 - Replace shape-only table categorization with explainable comparison, queryable lookup and guided-explanation treatments; keep factual review state separate.
 - Correct the first high-priority regulatory batch using current FAA/Federal Register sources, including Part 108 proposal status, Part 107/Part 91 pathways, waiver timing and LAANC scope.
 - Pending: complete semantic citation/table review, isolated Cloudflare resource setup/preview acceptance, applicable exact-revision review and verified custom-domain publication. Goal #57 remains open; existing held-content review #40 is separate.
