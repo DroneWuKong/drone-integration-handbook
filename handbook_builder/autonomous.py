@@ -412,7 +412,7 @@ def public_status(queue: dict[str, Any], prediction_ledger: dict[str, Any] | Non
         "mode": "software-ready-live-optional",
         "scope": "Public aggregate only. Research packets, field submissions, exceptions and credentials remain private.",
         "pipeline": [
-            {"id": "inventory", "label": "Claim inventory", "state": "implemented"},
+            {"id": "inventory", "label": "Review-unit inventory", "state": "implemented"},
             {"id": "research", "label": "Independent research", "state": "implemented"},
             {"id": "verification", "label": "Adversarial verification", "state": "implemented"},
             {"id": "policy", "label": "Deterministic policy", "state": "implemented"},

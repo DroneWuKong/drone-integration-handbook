@@ -5,7 +5,7 @@ import {readFile,writeFile,mkdir} from "node:fs/promises";
 import {readFileSync,existsSync} from "node:fs";
 import {DatabaseSync} from "node:sqlite";
 import {gzipSync} from "node:zlib";
-import {resolve,extname} from "node:path";
+import {resolve,extname,relative,isAbsolute} from "node:path";
 import {fileURLToPath} from "node:url";
 import {createRequire} from "node:module";
 import {chromium} from "playwright";
@@ -18,7 +18,7 @@ const objects=new Map(),env={REVIEW_TOKEN:"software-only-review-token",REPORTS:{
 let brokenUpdate=false;
 const types={".html":"text/html",".css":"text/css",".js":"application/javascript",".json":"application/json",".svg":"image/svg+xml"};
 const server=createServer(async(req,res)=>{try{const url=new URL(req.url,"http://localhost"),host="http://"+req.headers.host;if(url.pathname.startsWith("/api/")){const chunks=[];for await(const chunk of req)chunks.push(chunk);const body=Buffer.concat(chunks),request=new Request(host+req.url,{method:req.method,headers:req.headers,...(["GET","HEAD"].includes(req.method)?{}:{body})}),r=url.pathname.startsWith("/api/autonomy/")?await handleAutonomy(request,env):await handle(request,env);res.writeHead(r.status,Object.fromEntries(r.headers));res.end(Buffer.from(await r.arrayBuffer()));return;}
-const path=resolve(SITE,"."+decodeURIComponent(url.pathname==="/"||url.pathname==="/index.html"?"/index.html":url.pathname));if(!path.startsWith(SITE+"/")){res.writeHead(403);res.end();return;}let body=await readFile(path);if(brokenUpdate&&url.pathname==="/sw.js")body=Buffer.from(body.toString().replace(/const RELEASE="([^"]+)"/,'const RELEASE="failed-update"'));if(brokenUpdate&&url.pathname==="/offline-manifest.json"){const d=JSON.parse(body);d.release="failed-update";d.hashes["/"]="0".repeat(64);body=Buffer.from(JSON.stringify(d));}const contentType=types[extname(path)]||"application/octet-stream";const compressed=contentType.startsWith("text/")||contentType.includes("json")||contentType.includes("javascript");res.writeHead(200,{"content-type":contentType,"cache-control":"no-store",...(compressed?{"content-encoding":"gzip"}:{})});res.end(compressed?gzipSync(body):body);}catch{res.writeHead(404);res.end("Unavailable");}});
+const path=resolve(SITE,"."+decodeURIComponent(url.pathname==="/"||url.pathname==="/index.html"?"/index.html":url.pathname)),within=relative(SITE,path);if(within.startsWith("..")||isAbsolute(within)){res.writeHead(403);res.end();return;}let body=await readFile(path);if(brokenUpdate&&url.pathname==="/sw.js")body=Buffer.from(body.toString().replace(/const RELEASE="([^"]+)"/,'const RELEASE="failed-update"'));if(brokenUpdate&&url.pathname==="/offline-manifest.json"){const d=JSON.parse(body);d.release="failed-update";d.hashes["/"]="0".repeat(64);body=Buffer.from(JSON.stringify(d));}const contentType=types[extname(path)]||"application/octet-stream";const compressed=contentType.startsWith("text/")||contentType.includes("json")||contentType.includes("javascript");res.writeHead(200,{"content-type":contentType,"cache-control":"no-store",...(compressed?{"content-encoding":"gzip"}:{})});res.end(compressed?gzipSync(body):body);}catch{res.writeHead(404);res.end("Unavailable");}});
 await new Promise(resolve=>server.listen(0,"127.0.0.1",resolve));const base="http://127.0.0.1:"+server.address().port;
 let launch={headless:true,args:["--no-sandbox","--disable-dev-shm-usage"]};
 if(process.env.CHROMIUM_EXECUTABLE_PATH)launch.executablePath=process.env.CHROMIUM_EXECUTABLE_PATH;

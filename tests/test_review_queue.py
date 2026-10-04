@@ -3,7 +3,7 @@ import unittest
 from pathlib import Path
 
 from handbook_builder.evidence import classify_table
-from handbook_builder.review import build_review_queue, propose, triage
+from handbook_builder.review import build_review_queue, inline_review_alert, propose, triage
 from scripts.check_deployment import verify
 from scripts.validate_review_decisions import validate
 
@@ -33,6 +33,15 @@ class ReviewQueueTests(unittest.TestCase):
         claim={"risk_reasons":["performance"],"source_candidates":["https://example.test"],"article_source_candidates":[],"table_id":None}
         self.assertTrue(propose(claim,1)["human_intervention"])
         self.assertEqual(propose(claim,1)["decision"],"needs-source-check")
+
+    def test_inline_alerts_are_reserved_for_material_claims(self):
+        routine={"record_type":"numerical-passage","statement":"Flight time is 25 minutes","source_candidates":[]}
+        material={"record_type":"numerical-passage","statement":"FAA compliance requires a 10 V safety limit","source_candidates":[]}
+        metadata={"record_type":"table-row","statement":"FAA source 2026","source_candidates":["https://faa.gov/test"],"fields":{"Authority":"FAA"}}
+        self.assertFalse(inline_review_alert(routine)["show"])
+        self.assertTrue(inline_review_alert(material)["show"])
+        self.assertEqual(inline_review_alert(material)["label"],"regulatory / safety")
+        self.assertFalse(inline_review_alert(metadata)["show"])
 
     def test_supported_decisions_require_exact_review_context(self):
         queue={"release":"r1","records":[{"id":"one","statement":"Range 10 km","path":"a.md"}]}

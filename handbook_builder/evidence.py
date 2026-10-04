@@ -8,6 +8,8 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from .review import inline_review_alert
+
 MARKER=re.compile(r"\[claim:([a-z0-9-]+)\]")
 TABLE=re.compile(r"<table>.*?</table>",re.S)
 ROW=re.compile(r"<tr>(.*?)</tr>",re.S)
@@ -98,8 +100,15 @@ def decorate_and_inventory(entry,sources,claims):
         rid="legacy-"+hashlib.sha256((entry.identity+kind+plain).encode()).hexdigest()[:20]
         records.append({"id":rid,"article_id":entry.identity,"title":entry.title,"anchor":entry.anchor,"canonical":entry.canonical,"path":entry.relative_path,"source_revision":revision,"revision":revision,"kind":entry.kind,"group":entry.group,"record_type":kind,"statement":plain,"fields":fields or {},"status":"unreviewed","verified":None,"sources":[],"source_candidates":re.findall(r'href="(https://[^"]+)"',body)})
         return rid
-    def unknown(rid):
-        return '<span class="unreviewed-claim" id="'+rid+'">Evidence not yet reviewed <button type="button" class="report-claim" data-report-claim="'+rid+'">Flag this</button></span>'
+    def review_alert(record):
+        alert=inline_review_alert(record)
+        record["reader_alert"]=alert["show"]
+        record["reader_alert_priority"]=alert["priority"] if alert["show"] else None
+        if not alert["show"]:
+            return ""
+        rid=record["id"]
+        label=html.escape(alert["label"])
+        return '<span class="material-review-flag" id="'+rid+'">Review needed: '+label+' <button type="button" class="report-claim" data-report-claim="'+rid+'">Flag this</button></span>'
     protected=[]
     def protect(m):
         protected.append(m[0]);return "@@PROTECTED"+str(len(protected)-1)+"@@"
@@ -113,27 +122,43 @@ def decorate_and_inventory(entry,sources,claims):
         tables.append({"id":tid,"article_id":entry.identity,"path":entry.relative_path,"headers":headers,"disposition":disposition,"classification_basis":basis,"review":"machine-classified","rows":max(0,len(rows)-1)})
         if entry.relative_path=="fundamentals/link-budgets.md":
             tables[-1].update(disposition="calculator",classification_basis="managed-claim-generated",review="software-checked",tool="dbPower" if "dBm" in headers else "rf")
+        rendered_rows=[]
+        for body in rows[1:]:
+            raw="<tr>"+body+"</tr>"
+            vals=CELL.findall(body)
+            if any("@@PROTECTED" in v for v in vals):
+                rendered_rows.append((raw,"protected"))
+                continue
+            fields=dict(zip(headers,[text(v) for v in vals]))
+            if len(vals)==2 and text(vals[0]): fields[text(vals[0])]=text(vals[1])
+            record(body,"table-row",fields)
+            records[-1]["table_id"]=tid
+            if len(vals)==2 and text(vals[0]): records[-1].update(attribute=text(vals[0]),attribute_value=text(vals[1]))
+            rendered_rows.append((raw,review_alert(records[-1])))
+        show_evidence=any(value for _,value in rendered_rows)
+        if not show_evidence:
+            return m[0]
         pos=0
         def row(r):
             nonlocal pos
+            if pos==0:
+                pos+=1
+                return r[0].replace("</tr>","<th>Evidence</th></tr>")
+            raw,value=rendered_rows[pos-1]
             pos+=1
-            if pos==1:return r[0].replace("</tr>","<th>Evidence</th></tr>")
-            vals=CELL.findall(r[1])
-            if any("@@PROTECTED" in v for v in vals):return r[0].replace("</tr>","<td>See cited evidence</td></tr>")
-            fields=dict(zip(headers,[text(v) for v in vals]))
-            if len(vals)==2 and text(vals[0]): fields[text(vals[0])]=text(vals[1])
-            rid=record(r[1],"table-row",fields)
-            records[-1]["table_id"]=tid
-            if len(vals)==2 and text(vals[0]): records[-1].update(attribute=text(vals[0]),attribute_value=text(vals[1]))
-            return r[0].replace("</tr>","<td>"+unknown(rid)+"</td></tr>")
+            if value=="protected":return raw.replace("</tr>","<td>See cited evidence</td></tr>")
+            if value:return raw.replace("</tr>","<td>"+value+"</td></tr>")
+            return raw.replace("</tr>",'<td class="evidence-cell-muted" aria-label="No inline material-claim alert">—</td></tr>')
         return ROW.sub(row,m[0])
     rendered=TABLE.sub(table,rendered)
     rendered=TABLE.sub(protect,rendered)
     def block(m):
         if not re.search(r"\d",text(m[0])) or "@@PROTECTED" in m[0]:return m[0]
-        rid=record(m[0],"numerical-passage")
+        record(m[0],"numerical-passage")
+        alert=review_alert(records[-1])
+        if not alert:return m[0]
         end="</"+m[1]+">"
-        return m[0][:-len(end)]+" "+unknown(rid)+end
+        return m[0][:-len(end)]+" "+alert+end
     rendered=re.sub(r"<(p|li)(?:\s[^>]*)?>.*?</\1>",block,rendered,flags=re.S)
     for i,v in enumerate(protected):rendered=rendered.replace("@@PROTECTED"+str(i)+"@@",v)
     for cid in sorted(set(MARKER.findall(entry.source_path.read_text())) | {c["id"] for c in claims.values() if any("[table:"+prefix+"]" in entry.source_path.read_text() and c["id"].startswith(prefix+"-") for prefix in ("rf-power","rf-fspl"))}):

@@ -56,13 +56,28 @@ class EvidenceTests(unittest.TestCase):
         from handbook_builder.evidence import snapshot
         entry=discover_entries(ROOT)[0]
         entry.html='<table><tr><th>Property</th><th>Value</th></tr><tr><td>Voltage</td><td>5 V</td></tr><tr><td>Voltage</td><td>3.3 V</td></tr></table>'
-        _,records,tables,state=decorate_and_inventory(entry,{}, {})
+        rendered,records,tables,state=decorate_and_inventory(entry,{}, {})
         self.assertEqual(records[0]["fields"]["Voltage"],"5 V")
         self.assertEqual(records[0]["fields"]["Property"],"Voltage")
         self.assertEqual(records[0]["status"],"unreviewed")
+        self.assertFalse(records[0]["reader_alert"])
+        self.assertNotIn("Evidence</th>",rendered)
+        self.assertNotIn("material-review-flag",rendered)
         entry.publication_state=state
         exported=snapshot([entry],{},records,tables,"test")
         self.assertEqual(exported["references"][0]["fields"]["Voltage"],["5 V","3.3 V"])
+
+    def test_only_material_unresolved_claims_get_reader_alerts(self):
+        entry=discover_entries(ROOT)[0]
+        entry.html='<p>Flight time is 25 minutes.</p><p>FAA compliance requires a 10 V safety limit.</p>'
+        rendered,records,_,_=decorate_and_inventory(entry,{}, {})
+        self.assertEqual(len(records),2)
+        self.assertFalse(records[0]["reader_alert"])
+        self.assertTrue(records[1]["reader_alert"])
+        self.assertEqual(records[1]["reader_alert_priority"],"P0")
+        self.assertEqual(rendered.count("material-review-flag"),1)
+        self.assertIn("Review needed: regulatory / safety",rendered)
+        self.assertNotIn("Evidence not yet reviewed",rendered)
 
     def test_deployment_commit_is_validated_and_not_invented_locally(self):
         from handbook_builder.site import _source_commit
