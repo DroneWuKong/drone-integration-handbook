@@ -25,6 +25,17 @@
 in place of the old part and it works. **"Near-drop-in"** means one thing
 differs (usually a wire swap or a firmware setting change).
 
+**Scope boundary (editorial guidance):** do not carry these FPV substitution
+labels over to proprietary aircraft or controller assemblies as blanket
+compatibility approval. Keep the exact model, module position, connector,
+board revision, supplied-item condition, and unresolved calibration or pairing
+requirements in the replacement record. A matching-looking connector or an
+OEM-pulled label does not resolve those unknowns.
+
+**Supplier-published illustration:** the source below is a commercial
+supplier's parts-evidence guide, not a manufacturer approval, field test,
+endorsement, or verified substitute matrix. [claim:reboot-hub-parts-evidence-scope]
+
 ---
 
 ## ELRS Receivers (900 MHz)
