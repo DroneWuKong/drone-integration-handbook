@@ -1,138 +1,21 @@
-# Chapter 14: Mesh Radios for Multi-Vehicle Operations
+# Chapter 14: Mesh Radios for Multi-Vehicle Integration
 
-> The expensive tactical mesh radio in your kit bag is running
-> the same open-source software as a $15 router. Knowing this
-> changes how you think about mesh networking.
+Integrate at the documented IP/Ethernet interface, and establish the radio/mesh implementation separately. A ruggedized MANET device is not necessarily ordinary WiFi with batman-adv.
 
----
+## Public implementation boundaries
 
-## What Mesh Radios Actually Are
+| System | Publicly described technology | What this establishes |
+|---|---|---|
+| Linux batman-adv | Layer-2 mesh module | A Linux implementation, not a claim about every vendor radio |
+| Silvus StreamCaster | Vendor MN-MIMO technology | Vendor-described waveform/product family; exact model documentation required |
+| Persistent Systems | Wave Relay | Vendor-described system; no inference of batman-adv internals |
+| Doodle Labs Mesh Rider | Vendor mesh/networking interfaces | Inspect the exact documented model/release; do not generalize a shell observation to every radio |
 
-A mesh radio is a WiFi radio in a ruggedized enclosure with custom
-firmware that routes traffic between nodes without infrastructure.
-No access point, no router, no internet connection. Nodes find each
-other, establish links, and route packets through intermediate
-nodes to reach destinations.
+Primary sources checked 2026-10-07: [Linux batman-adv](https://www.kernel.org/doc/html/latest/networking/batman-adv.html), [Silvus products](https://silvustechnologies.com/products/), [Persistent Systems](https://www.persistentsystems.com/), [Doodle Labs](https://doodlelabs.com/).
 
-That's it. Everything else is implementation detail.
+Record exact hardware/firmware, addressing, traffic prioritization and measured topology recovery. Ethernet packets prove an integration interface, not the implementation of the RF waveform. The former universal vendor-internals, range, price and deterministic-latency claims are withdrawn.
 
-### The Software Stack (What They Won't Tell You in the Datasheet)
-
-| Vendor | Operating System | Mesh Protocol | Radio Hardware |
-|--------|-----------------|---------------|----------------|
-| Doodle Labs | OpenWRT (Linux) | batman-adv (layer 2 mesh) | Qualcomm/Atheros WiFi |
-| Silvus | Custom Linux | Custom MAC + TDMA | Custom MIMO radio |
-| Persistent Systems | Custom Linux | Wave Relay (proprietary) | Custom wideband |
-| Rajant | Custom Linux | InstaMesh (proprietary) | Dual-radio Atheros |
-
-Doodle Labs is the most transparent about this — their radios run
-OpenWRT, and if you SSH into one (which you can), you'll see
-batman-adv kernel modules, standard Linux networking, and iptables
-rules. The "mesh intelligence" that costs $3,000 per radio is
-largely batman-adv with custom antenna design and RF front-end
-optimization.
-
-This isn't a criticism. Antenna design, RF front-end engineering,
-thermal management, and ruggedization are real engineering. The
-software is well-integrated and tuned. But understanding that
-the foundation is open-source Linux networking demystifies mesh
-radios and helps you troubleshoot them.
-
----
-
-## The Major Players
-
-### Doodle Labs
-
-**What they sell:** Compact mesh radios from 200 MHz to 6 GHz.
-The Mini series (Mini900, Mini2400, etc.) are small enough to
-mount on a drone. The MR series are larger with better RF performance.
-The Helix series covers L/S/C bands for defense.
-
-**What's good:**
-- Open platform (OpenWRT) — you can SSH in and configure anything
-- Small form factor (Mini series fits on a 5-inch quad)
-- Wide frequency range across the product line
-- batman-adv mesh is well-understood and debuggable
-- Active development, responsive technical support
-
-**What's not:**
-- batman-adv mesh has convergence delays when topology changes
-  (a drone moving fast can outrun the routing table)
-- Power consumption is significant (2-5W depending on model)
-- At the low end (Mini series), RF performance is limited by
-  the tiny antenna and low TX power
-
-**Typical use:** Commercial drone fleets, tactical ISR,
-research platforms, any application where you want mesh
-but also want to understand and customize the network.
-
-### Silvus Technologies
-
-**What they sell:** StreamCaster mesh radios. Higher-end than
-Doodle Labs, with custom MIMO radio hardware and their own
-MAC-layer protocol. The SC4200/4400 series are the workhorses.
-
-**What's good:**
-- Custom MIMO gives better spectral efficiency than commodity WiFi
-- TDMA-based MAC layer provides deterministic latency
-- High throughput (up to 100 Mbps per radio)
-- Strong defense/government customer base
-- Good video streaming support (multicast-aware mesh)
-
-**What's not:**
-- Closed platform — you can't SSH in and debug the way you can
-  with Doodle Labs
-- Expensive ($5,000-15,000 per node)
-- Configuration is through their web GUI, which is functional
-  but not scriptable
-- Larger and heavier than Doodle Labs Mini series
-
-**Typical use:** Defense ISR, government operations, commercial
-applications where budget supports the higher cost.
-
-### Persistent Systems
-
-**What they sell:** MPU5 (manpack), Wave Relay ecosystem. The most
-mature tactical mesh network product. Used extensively by US SOF
-and allied forces.
-
-**What's good:**
-- Wave Relay protocol is the most resilient mesh available —
-  handles high mobility, rapid topology changes, and contested
-  spectrum better than batman-adv
-- Proven in combat
-- Ecosystem includes vehicle mounts, body-worn units, drone-specific
-  form factors
-- Integrated MANET management tools
-
-**What's not:**
-- Most expensive option ($10,000-50,000 per node)
-- Heaviest option (MPU5 is not going on a 5-inch quad)
-- Closed ecosystem — Wave Relay doesn't interoperate with
-  batman-adv or other mesh protocols
-- Long procurement cycles for military variants
-
-**Typical use:** Military operations, high-end defense ISR,
-applications where proven combat performance justifies the cost.
-
-### Rajant
-
-**What they sell:** BreadCrumb mesh radios. Dual-radio architecture
-(each node has two radios on different bands for simultaneous
-transmit and receive on different frequencies).
-
-**What's good:**
-- Dual-radio avoids the half-duplex penalty of single-radio mesh
-- InstaMesh protocol handles mobility well
-- Good industrial track record (mining, oil & gas)
-
-**What's not:**
-- Larger form factor than Doodle Labs
-- Less drone-specific than Silvus or Persistent
-
-**Typical use:** Industrial applications, infrastructure monitoring,
-some defense applications.
+The following Linux/research discussion concerns those named implementations and cited experiments. It does not transfer their measured results to proprietary MANET products or authorize a particular operating band.
 
 ---
 

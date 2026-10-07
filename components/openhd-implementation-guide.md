@@ -1,264 +1,30 @@
-# OpenHD Implementation Guide
+# OpenHD Implementation Reference
 
-OpenHD is an open-source digital HD video link built on wifibroadcast — commodity WiFi adapters repurposed as a broadcast video transmitter. Video is one-way broadcast (no association, no ACK — degrades gracefully like analog). Telemetry, settings, and RC control are bidirectional. The link supports encryption with verification. This guide takes you from an empty bench to a working long-range video link with MAVLink telemetry passthrough.
+OpenHD uses an air/ground video and telemetry architecture. Select a matched software image, camera/codec pipeline and exact adapter revision. A chipset family name alone does not establish driver or image compatibility.
 
-**Difficulty:** Moderate — requires Linux comfort, soldering, and MAVLink configuration  
-**Time to first link:** 2–4 hours  
-**BOM cost:** $30–80 depending on hardware tier  
-**Repository:** [github.com/OpenHD/OpenHD](https://github.com/OpenHD/OpenHD) (GPL-3.0, 2.3k stars)  
-**Docs:** [openhdfpv.org](https://openhdfpv.org)
+## Adapter support — checked 2026-10-07
 
----
+The project's [WiFi adapter page](https://openhdfpv.org/hardware/wifi-adapters/) lists **RTL8812AU, RTL8814AU, RTL8811AU, RTL8812BU and RTL8812EU** as supported since **2.6.3**. Its dongle list includes **BLM8812EU**. The project also maintains an [RTL88x2EU driver repository](https://github.com/OpenHD/rtl88x2eu). The earlier suggestion that EU support was absent is withdrawn.
 
-## What You're Building
+| Record | Establish before integration |
+|---|---|
+| Adapter | Manufacturer/model/revision, actual chipset, USB IDs and antennas |
+| Image | Exact OpenHD release/image/hash, air/ground role and SBC target |
+| Driver | Kernel, driver revision and injection/receive support in that image |
+| Camera | Interface, driver, encoder, codec/profile and tested mode |
+| Ground | Supported hardware decoding and display path |
+| Power | Adapter and SBC rail demand, transients, cooling and connectors |
 
-Two nodes — Air and Ground — each running the OpenHD software stack on a Linux SBC or x86 computer. Both nodes have a WiFi adapter running in monitor/injection mode. The air node captures video from a CSI camera, encodes it, wraps it in wifibroadcast frames, and injects it into the air. The ground node captures all frames promiscuously, decodes the video, and displays it in the QOpenHD app — which also shows MAVLink telemetry forwarded from your flight controller.
+The adapter page warns about certification status for BLM8812EU. Technical support is separate from authorization or equipment approval; verify the exact module and intended jurisdiction against current authority. No import/use permission is implied here.
 
-```
-[FC] ──UART── [Air SBC] ──wifibroadcast──▶ [Ground SBC/PC] ──UDP── [QOpenHD / Mission Planner]
-                │                                                     │
-             [CSI Cam]                                           [Live Video]
-```
+## Software-first checks
 
-No network router. No association. No ACK. Video is one-way broadcast with FEC. Telemetry and settings are bidirectional. OpenHD also supports dual cameras with picture-in-picture, low-latency RC control via USB joystick, and link encryption.
+Start with the [official setup documentation](https://openhdfpv.org/introduction/first-time-setup/) and image for the exact host. Preserve a known-good image before changes. Confirm both nodes' software versions, device discovery and configuration readback. A generic MediaTek issue report is evidence about that reported setup, not proof that every adapter in that family fails or succeeds.
 
----
+Replay local media through the intended encoder/decoder pipeline, then test a controlled transport fixture. Track video frame freshness separately from MAVLink telemetry. On the ground, the receiving pipeline **decodes** video; air-side encoding and ground-side decoding must not be conflated.
 
-## Hardware BOM
+## Latency and failures
 
-### Tier 1 — Minimum (RPi Zero 2 + laptop)
+Report the complete measurement boundary: camera exposure/capture, codec/profile, resolution/frame rate, buffering/FEC, RF mode, decoder and display. Packet timing or a decoder benchmark is not glass-to-glass latency. Generic claims that a particular SBC halves latency or guarantees a numerical range are withdrawn.
 
-| Item | Notes | ~Cost |
-|------|-------|-------|
-| Raspberry Pi Zero 2 W | Air unit. **Not** Zero 1 — not supported | $15 |
-| 2× ASUS USB-AC56 or ALFA AWUS036ACH | One for air, one for ground (RTL8812AU, 500mW). For best performance: BLM8812EU (800mW+, no FCC/CE cert). | $20–30 each |
-| Arducam or RPi HQ Camera | CSI, supported by OpenHD drivers | $25–50 |
-| 22-pin type B CSI cable | Pi Zero uses this, not standard 15-pin | $3 |
-| 5V/3A BEC for WiFi adapter | Dedicated power — mandatory | $5 |
-| 5V/3A BEC for RPi | Separate rail from the WiFi adapter | $5 |
-| Laptop (x86) | Ground station — modern CPU, SecureBoot off | — |
-| USB stick (fast) | Ground station image boot (if not native) | $10 |
-
-**Total air unit: ~$80**  
-**Total ground (excluding laptop): ~$30**
-
-### Tier 2 — Recommended (CM4 + Rock5)
-
-| Item | Notes | ~Cost |
-|------|-------|-------|
-| Raspberry Pi CM4 (4GB, eMMC) | Better thermal, dual camera, lower latency | $60 |
-| Ochin CM4 carrier board | Designed for OpenHD, compact form factor | $35 |
-| Radxa Rock 5B | Ground station — H.265 hardware decode, lowest latency | $80 |
-| 2× ALFA AWUS036ACH | One for air, one for ground | $30 each |
-| Arducam Skymaster or IMX477 | Best IQ for OpenHD | $40–80 |
-
-### Tier 3 — Lowest Latency
-
-OpenHD custom hardware (purpose-built SBC + camera combination). Check the project Discord for current availability. Cuts latency roughly in half vs. RPi builds.
-
----
-
-## Step 1: Flash Air Image
-
-1. Download the latest OpenHD Evo image from [openhdfpv.org/downloads](https://openhdfpv.org/downloads). Select the image matching your SBC (Pi Zero 2, CM4, Rock5, or x86).
-2. Flash to SD card (Pi Zero 2) or eMMC (CM4 via Ochin) using the **OpenHD ImageWriter** (recommended — available at openhdfpv.org/downloads) or Balena Etcher.
-   - CM4/Ochin: enter flash mode by holding the button while connecting USB-C power. Flash is slow — do not disconnect.
-3. First boot takes several minutes. The SBC reboots multiple times during initial config. This is normal.
-
----
-
-## Step 2: Flash Ground Image
-
-For x86 (laptop):
-1. Flash the x86 OpenHD image to a fast USB stick.
-2. Disable SecureBoot in BIOS/UEFI.
-3. Set boot priority to USB.
-4. Boot from the stick — QOpenHD will start automatically. If not, launch OpenHD and QOpenHD from the desktop shortcuts.
-
-For Rock5 ground station:
-1. Flash the Rock5 image to SD or eMMC per the Radxa standard process.
-2. OpenHD starts automatically on boot.
-
----
-
-## Step 3: Wire the Air Unit
-
-**Power — critical:**  
-The WiFi adapter draws more current than most SBCs can supply via USB. You need a dedicated BEC wired directly to the WiFi adapter, bypassing the SBC's USB port. Most builds solder the WiFi adapter directly to the SBC's USB power and data pads — remove the USB connector entirely to eliminate vibration disconnects. Two separate BECs: one for the SBC, one for the WiFi adapter.
-
-**Camera:**  
-Connect the CSI camera to the SBC using the correct cable (22-pin type B for Pi Zero 2, standard 15-pin for CM4/Ochin). Mount the camera with a solid connection — no flex cable vibration.
-
-**Flight Controller:**  
-Connect the FC's MAVLink UART to the SBC's UART. The SBC serial port and FC baud rate must match. Default is 115200; configure the same value in OpenHD's AIR → FC_UART_BAUD and in your FC's telemetry port settings.
-
-```
-FC UART TX ──► SBC RX
-FC UART RX ◄── SBC TX
-FC GND ──────── SBC GND   ← common ground required
-```
-
----
-
-## Step 4: WiFi Adapter — Air Side
-
-The adapter should appear automatically if using a supported chipset. If you have connection but no video, check:
-1. Camera is recognized — in QOpenHD go to AIR CAM 1 → CAMERA_TYPE and select the correct overlay.
-2. The SBC reboots after camera type change — this is normal.
-
-Solder the adapter to the SBC USB pads rather than using a plug. Mark the cable with a zip tie so you can identify which antenna connector is which later.
-
----
-
-## Step 5: Configure the Link
-
-Open QOpenHD on the ground station. The OpenHD logo opens the main menu; the red circle opens the sidebar.
-
-**Frequency:**  
-Go to OPENHD → LINK/QUICK. Set frequency to 5.8GHz (recommended — cleaner than 2.4GHz and compatible with 2.4GHz RC transmitters). You can use ANALYZE to see which channels are cleanest in your environment.
-
-Do not change frequency while armed — it will interrupt the link.
-
-**STBC/LDPC:**  
-Enable both on air and ground if your adapters support it (RTL8812AU and 8814AU do; RTL8811AU does not — single antenna). These use both antennas for receive diversity and significantly improve range. Both must be enabled or disabled on both ends — mismatched settings break the link.
-
-**TX Power:**  
-Set per local regulations. Higher power = longer range. Configure in SOFTWARE SETUP → TX POWER.
-
-**RX Diversity (ground):**  
-You can connect multiple WiFi adapters to the ground station for receive diversity — OpenHD picks the best signal per packet. Keep adapters same chipset and same manufacturer. Do not mix RTL8812AU with RTL8812BU or different brands. Not recommended for new users — start with a single adapter.
-
----
-
-## Step 6: Verify Link
-
-In QOpenHD → STATUS tab, you should see both AIR and GROUND showing as LIVE. If only one shows, check:
-- WiFi adapter is powered and seated
-- Both nodes are on the same frequency
-- STBC/LDPC match between air and ground
-
-**Video troubleshooting:**  
-- Black image with "rebooting camera" → wrong CAMERA_TYPE setting. Fix in AIR CAM 1 menu, then wait for reboot.
-- Video but no telemetry → UART baud rate mismatch or wiring error. Check FC_UART_BAUD in AIR settings and match it in your FC configurator.
-
----
-
-## Step 7: MAVLink Forwarding
-
-OpenHD automatically forwards the MAVLink stream from the FC over UDP on the ground station's local network. Default port is 14550. To connect Mission Planner or QGroundControl:
-
-1. Connect your laptop to the same network as the ground station (or use the ground station directly).
-2. In Mission Planner: Connection → UDP → port 14550.
-3. In QGroundControl: Application Settings → Comm Links → UDP → 14550.
-
-Both QOpenHD and your GCS can receive the MAVLink stream simultaneously — OpenHD broadcasts it to all connected clients.
-
-For Buddy/Wingman: Buddy can connect as a second MAVLink UDP client on port 14550 alongside QOpenHD. No configuration change needed on the OpenHD side.
-
----
-
-## Step 8: Key Settings Reference
-
-| Setting | Location | Notes |
-|---------|----------|-------|
-| Frequency | LINK/QUICK | 5.8GHz recommended. Cannot change while armed. |
-| Channel width | Sidebar → LINK | 20/40MHz. Wider = more throughput, less range. |
-| STBC/LDPC | LINK/QUICK | Enable both if adapter supports. Must match air/ground. |
-| TX power | SOFTWARE SETUP → TX POWER | Obey local regs |
-| Camera type | AIR CAM 1 → CAMERA_TYPE | Must match physical camera. Reboot required. |
-| Video resolution | Sidebar → VIDEO | Also sets air recording resolution |
-| Camera exposure | Sidebar → CAMERA | Adjustable in flight, no reboot needed |
-| Air recording | Sidebar → AIR RECORDING | OFF / ON / AUTO (arms trigger). Air-side storage only |
-| FC baud rate | AIR → FC_UART_BAUD | Must match FC telemetry port config |
-
----
-
-## Frequency Selection Guide
-
-| Band | Pros | Cons | Use when |
-|------|------|------|----------|
-| 5.8GHz | Clean spectrum, coexists with 2.4GHz RC | Less obstacle penetration | Most builds — open terrain, line of sight |
-| 2.4GHz | Better penetration, slightly more range through obstacles | Heavy interference in populated areas, conflicts with 2.4GHz RC | Remote/rural ops where 5.8GHz is congested |
-| 6GHz | Coming soon in OpenHD Evo — even cleaner spectrum | Newer hardware required | Future builds |
-
----
-
-## Integration Patterns
-
-**OpenHD + GHST/ELRS (dual-link):**  
-Run OpenHD for video and MAVLink telemetry (long range, high latency acceptable). Run GHST or ELRS as the primary RC control link (low latency, high reliability, shorter range). The FC connects to both simultaneously — telemetry over OpenHD UART, RC input from the RC receiver. This is the recommended pattern for FPV/survey builds where video quality matters but you don't want to bet RC control on wifibroadcast.
-
-**OpenHD + Meshtastic (backup comms):**  
-OpenHD as primary video + telemetry. Meshtastic LoRa node as backup telemetry mesh for emergency commands when the OpenHD link degrades. See the [Meshtastic section](/components/comms-datalinks#meshtastic--lora-mesh-as-a-telemetry-backbone) for the dual-link architecture pattern.
-
-**OpenHD + Wingman/Buddy:**  
-Buddy connects to the OpenHD ground station's MAVLink UDP stream (port 14550) as a second client alongside QOpenHD. No changes to the OpenHD side. Buddy's Kalman telemetry estimator smooths the MAVLink stream normally regardless of source. The video stream can be displayed in Buddy via RTSP if the ground station exposes one.
-
----
-
-## Gotchas
-
-**Soldering is not optional on the air side.** Any plug-in USB connection to the WiFi adapter will eventually vibrate loose mid-flight. Solder it.
-
-**Dedicated BECs are not optional.** Powering the WiFi adapter from the SBC's USB rail will cause brownouts under TX load. Two separate BECs — one per component.
-
-**STBC/LDPC must match on both ends.** If one end has it enabled and the other doesn't, you get no link, not a degraded link. Easy to forget when flashing a replacement ground unit.
-
-**Camera type must match physical hardware.** OpenHD cannot auto-detect the camera model. Wrong CAMERA_TYPE gives a black screen. Set it in QOpenHD, wait for the reboot, then test.
-
-**Don't change frequency while armed.** The link drops during frequency change. Plan your frequency before takeoff.
-
-**The first CM4/Ochin flash is slow.** This is a known limitation of the CM4 eMMC interface. Do not disconnect during flash — it will brick the device.
-
----
-
-## MediaTek MT7915 / MT7916 Compatibility Notes
-
-People keep asking whether they can run OpenHD on the MediaTek **MT7915 / MT7916** WiFi-6 silicon instead of the usual Realtek RTL8812AU. Short answer: **not as a drop-in today.** The parts are fully mainline-supported, but they fail OpenHD's specific requirements in ways that matter. Here's the honest breakdown.
-
-### What these chips are
-
-MT7915 and MT7916 are MediaTek's 802.11ax (WiFi 6) 4T4R dual-band (2.4/5 GHz) parts, driven by the mainline `mt76` driver (specifically the `mt7915` sub-driver) since Linux **5.9+**. They're the radios inside a large fraction of modern OpenWRT routers and SBC mesh boards. Critically, they are almost always **PCIe/M.2** parts — not USB dongles. OpenHD's bench-and-airframe workflow (Step 3–4 above) assumes a USB adapter you solder to the SBC's USB pads; an M.2 MediaTek card needs a host with an M.2 slot (x86, CM4 on a PCIe-capable carrier, Rock5, etc.), which changes the whole air-unit build.
-
-### OpenHD's actual bar
-
-OpenHD ([FAQ](https://openhdfpv.org/general/faq/)) requires an adapter that is **stable in monitor mode** *and* can **inject packets at a sufficient (and ideally fixed) rate**. Its officially supported, proven adapters are all **Realtek**: RTL8812AU, RTL8814AU, RTL8812BU, RTL8811AU. MediaTek is **not** on that list — wifibroadcast's rate-control and injection path is written and tested against the Realtek drivers.
-
-### Where MT7915/7916 fall short for wifibroadcast
-
-| Requirement | MT7915/7916 (`mt76`) status | Impact on OpenHD |
-|---|---|---|
-| Monitor mode | Works at 20/40 MHz, but **firmware crashes at 80 MHz and above** ([mt76 #556](https://github.com/openwrt/mt76/issues/556)) | Caps you at narrow channels; loses the WiFi-6 throughput that was the whole point |
-| Active monitor mode | Family has instability reports (e.g. `mt7921u` active monitor breaks the driver — [mt76 #839](https://github.com/openwrt/mt76/issues/839)) | Risk of driver hangs mid-link |
-| Fixed-rate injection | Not a proven/documented path through OpenHD's injection layer | This is the real blocker — no validated wifibroadcast TX support |
-| Bus / form factor | PCIe/M.2, not USB | Doesn't fit the standard solder-to-USB-pads air build |
-
-### Where MT7915/7916 do fit
-
-These chips fit **infrastructure-style and OpenWRT mesh** roles rather than wifibroadcast video:
-
-- **802.11s / batman-adv mesh** on OpenWRT — solid on **2.4 GHz**. Note that **5 GHz 802.11s is flaky** on this family: multiple reports of nodes not meshing or trace errors on 5 GHz ([mt76 #675](https://github.com/openwrt/mt76/issues/675), [#707](https://github.com/openwrt/mt76/issues/707), [#259](https://github.com/openwrt/mt76/issues/259)). Plan your mesh backbone on 2.4 GHz and validate 5 GHz on your exact kernel/firmware before relying on it.
-- A separate **command/telemetry mesh layer** alongside an OpenHD video link (analogous to the [OpenHD + Meshtastic](#integration-patterns) backup-comms pattern), not as the video carrier itself.
-
-### If you still want to try it
-
-1. Use a recent kernel (6.6 LTS+) with the newest `mt76` you can get — the OpenWRT out-of-tree `mt76` moves faster than mainline for these parts.
-2. Keep monitor-mode channel width at **20/40 MHz** to dodge the ≥80 MHz firmware crash.
-3. Verify injection independently first: an `aireplay-ng --test` injection test on the monitor interface **before** wiring it into OpenHD. If fixed-rate injection doesn't work there, it won't work in wifibroadcast.
-4. Treat it as experimental and ask in the OpenHD [Telegram](https://t.me/OpenHD_User)/[Discord](https://discord.gg/NRRn5ugrxH) for the current state of MediaTek support — it changes release to release.
-
-**Bottom line:** for an OpenHD *video* link, stick with the proven Realtek RTL8812AU/8814AU. Reach for MT7915/MT7916 when you want an OpenWRT **mesh** node (2.4 GHz), not a wifibroadcast transmitter.
-
----
-
-## Resources
-
-- [openhdfpv.org](https://openhdfpv.org) — official docs (Evo and 2.0 legacy)
-- [github.com/OpenHD/OpenHD](https://github.com/OpenHD/OpenHD) — source code, GPL-3.0
-- [QOpenHD Android app](https://github.com/OpenHD/QOpenHD/releases) — ground station app
-- Telegram: [t.me/OpenHD_User](https://t.me/OpenHD_User) — active community, fastest support
-- Discord: [discord.gg/NRRn5ugrxH](https://discord.gg/NRRn5ugrxH)
-
----
-
-*Last updated: May 2026*
+Inspect device enumeration, driver logs, video frame/caps errors, link/FEC counters, frame age and power/thermal state before changing parameters. Keep the exact original settings and test result. See [video pipeline troubleshooting](../integration/video-pipeline-troubleshooting.md), [software failure tests](../integration/software-failure-testing.md) and [field evidence](../field/evidence-record.md).

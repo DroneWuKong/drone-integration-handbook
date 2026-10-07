@@ -69,27 +69,9 @@ DSM2/DSMX protocol common in fixed-wing, sailplane, and RC helicopter applicatio
 
 FlySky's AFHDS 2A protocol is common on budget platforms (Eachine, some Hubsan, budget quads). IBUS serial protocol. Not used in serious builds.
 
-## NDAA Landscape
+## Procurement status
 
-Receivers are predominantly Chinese-manufactured, which creates significant procurement issues for federal programs.
-
-| Manufacturer | Origin | NDAA |
-|---|---|---|
-| Team BlackSheep | Switzerland (EU) | ✓ Allied |
-| RadioMaster (ELRS) | China | ✗ |
-| BetaFPV (ELRS) | China | ✗ |
-| Happymodel (ELRS) | China | ✗ |
-| GEPRC (ELRS) | China | ✗ |
-| iFlight (ELRS) | China | ✗ |
-| Matek (ELRS) | China | ✗ |
-| FrSky | China | ✗ |
-| FlySky | China | ✗ |
-| Spektrum/Horizon Hobby | USA | ✓ |
-| Futaba | Japan | ✓ Allied |
-
-**The problem:** ELRS hardware is nearly entirely manufactured in China. TBS Crossfire/Tracer (Swiss) is the primary NDAA-compliant option for ELRS-class performance. Spektrum provides NDAA-compliant receivers but is not competitive with ELRS on range/latency.
-
-**For federal procurement:** TBS Crossfire Nano or TBS Tracer Nano are the primary options that combine NDAA compliance with competitive performance. Verify per SKU — TBS manufactures in Switzerland but some accessories vary.
+Country/headquarters is an origin attribute, not a compliance determination. Check the exact SKU, assembled configuration, buyer and applicable authority using [federal procurement screening](ndaa-compliance.md).
 
 ## Form Factor Guide
 
@@ -149,4 +131,4 @@ For ArduPilot/PX4, set `FS_THR_ENABLE` and `FS_THR_VALUE` and test in SITL befor
 
 ## Forge Cross-Reference
 
-The 391 receiver entries span every protocol tier. Use the NDAA ✓ filter in the Forge parts browser to immediately isolate the ~8 NDAA-compliant entries from the ~380+ Chinese-manufactured receivers. For contested-environment builds, see `components/military-firmware-forks.md` for MILELRS encrypted binding.
+Use the current source catalog for discovery; independently verify exact hardware, release, availability and procurement evidence.

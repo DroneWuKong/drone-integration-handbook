@@ -31,7 +31,7 @@ u-blox's high-precision receiver used in RTK systems like the Here4, CubePilot, 
 
 ### Other Chipsets
 
-**UBLOX SAM-M10Q** — Module-level integration of M10 core from u-blox, used by Lumenier and ARK Electronics in their NDAA-compliant modules. Same chip, different PCB integration.
+**UBLOX SAM-M10Q** — Module-level integration of M10 core from u-blox, used by Lumenier and ARK Electronics in their procurement status unverified modules. Same chip, different PCB integration.
 
 **SkyTraq** — Taiwan-based GNSS chip used in some budget modules. Not common in professional applications.
 
@@ -39,22 +39,7 @@ u-blox's high-precision receiver used in RTK systems like the Here4, CubePilot, 
 
 ## NDAA Compliance
 
-GPS modules are one of the cleaner categories for NDAA compliance because the dominant chipset supplier (u-blox) is Swiss, and several US manufacturers produce NDAA-verified modules around Swiss/allied-nation chips.
-
-| Product | Manufacturer | Origin | NDAA |
-|---|---|---|---|
-| CubePilot Here4 | CubePilot | Australia | ✓ |
-| CubePilot Here3+ | CubePilot | Australia | ✓ |
-| ARK GPS (M9N) | ARK Electronics | USA | ✓ |
-| ARK GPS (M10) | ARK Electronics | USA | ✓ |
-| Lumenier SAM-M10Q | Lumenier | USA | ✓ |
-| mRo GPS u-Blox Neo-M9N | mRobotics | USA | ✓ |
-| Holybro Micro M10 | Holybro | China | ✗ |
-| Holybro M9N Standard | Holybro | China | ✗ |
-| Matek SAM-M10Q | Mateksys | China | ✗ |
-| HGLRC M100 | HGLRC | China | ✗ |
-
-The u-blox chip itself is Swiss — the NDAA status depends on where the PCB is assembled and who manufactures the final module. ARK and Lumenier do final assembly in the USA around the Swiss chipset, which qualifies them.
+Country of headquarters or assembly does not establish eligibility. Check the exact item, revision, bill of materials, applicable contracting authority and dated supporting documentation using [federal procurement screening](ndaa-compliance.md). This reference does not certify the listed products.
 
 ## Form Factors
 
@@ -116,4 +101,4 @@ For any operation where GPS loss is a critical failure:
 
 ## Forge Cross-Reference
 
-76 GPS modules across the full range from $8 HGLRC M100 to the $400 CubePilot Here4. The NDAA ✓ filter in the Forge parts browser shows ~12 compliant options concentrated around ARK Electronics, Lumenier, CubePilot, and mRobotics. All are u-blox M9N/M10-based.
+Use the current catalog as a discovery index. Counts, prices and origin filters do not establish availability, compatibility or federal procurement eligibility.

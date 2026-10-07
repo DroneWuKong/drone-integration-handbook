@@ -19,7 +19,7 @@ class EvidenceTests(unittest.TestCase):
         with patch.object(Path,"iterdir",reverse):
             reordered={e.relative_path:(e.identity,e.anchor) for e in discover_entries(ROOT)}
         self.assertEqual(current,reordered)
-        self.assertEqual(len(current),152)
+        self.assertEqual(len(current),163)
     def test_missing_and_duplicate_sources_fail_closed(self):
         data=json.loads((ROOT/"data/evidence.json").read_text())
         with tempfile.TemporaryDirectory() as td:

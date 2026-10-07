@@ -1,211 +1,42 @@
-# Chapter 9: Pre-Flight Checklist That Actually Works
+# Chapter 9: Preflight, Bench Checks and Flight Readiness
 
-> The manufacturer's checklist is marketing. This one catches
-> the problems that actually ground you.
+Use the aircraft and firmware manufacturer's checklist alongside this integration checklist. Record the exact airframe, battery chemistry, firmware and configuration. A short check cannot establish readiness after a repair or software change.
 
----
+## Props-off bench checks
 
-## The 60-Second Field Check
+Remove **every propeller** before motor-output, receiver-loss or arming tests. Keep the aircraft secured, disconnect propulsion power before touching it, and follow the board/ESC manufacturer's test procedure. Never tilt an armed aircraft by hand or use a throttle blip as a ground control-direction test.
 
-This is the minimum check before every flight. Takes 60 seconds
-once you've done it a few times. Skipping it takes longer when
-you have to walk 500 meters to recover a crashed drone.
+- Confirm board orientation and sensor directions in the configuration tool while disarmed.
+- Verify receiver channels, mode assignments, arming switch and command ownership.
+- Verify motor numbering and rotation using the firmware's documented props-off test facility.
+- Save/read back the configuration and check battery monitoring against a reference instrument.
+- Exercise documented link-loss and recovery behavior with props removed. Record receiver output on loss, firmware failsafe stage, selected action, timeout and reconnection behavior.
 
-### Visual (15 seconds)
+A bench test can establish output/state transitions. It cannot prove airborne landing, return, GPS rescue or obstacle clearance. Validate those separately through the aircraft's approved test procedure and suitable operating conditions. See [software failure testing](../integration/software-failure-testing.md) and [firmware recovery](../firmware/backup-upgrade-recovery.md).
 
-1. **Props:** All four present, correct rotation, no nicks, nuts tight.
-   Spin each by hand — should rotate freely with no catch.
+## Before each flight
 
-2. **Frame:** No cracks on arms. No loose standoffs. Antenna mounts
-   intact. Nothing rattling when you shake it.
+| Check | Evidence to look for |
+|---|---|
+| Structure and propulsion | Correct propeller variant/rotation, intact mounts and fasteners checked to manufacturer requirements; inspect while unpowered |
+| Battery and power | Correct chemistry/cell count, condition, secure mounting, connector integrity, expected state of charge and monitor readings |
+| Wiring and antennas | Strain relief, protected balance lead, intact connectors, correct radio antennas and sensor visibility |
+| Configuration | Expected firmware/target, saved parameters, correct modes and documented failsafe action |
+| Navigation | Required sensor/estimator health, fix quality, fresh home/origin and required mode prerequisites |
+| RC/telemetry/video | Correct vehicle identity, current telemetry and a genuinely live image; advancing OSD alone does not prove live video |
+| Operating area | People, clearance, weather, airspace/spectrum permissions and aircraft-specific operating limits |
+| Logs and recovery | Storage available, emergency controls understood and recorded configuration available |
 
-3. **Battery:** Strapped tight. Will not shift under acceleration.
-   Balance lead tucked, not dangling near props.
+Satellite count alone is not a navigation quality test. Use the installed firmware's fix, estimator and arming requirements. Battery internal resistance depends on pack construction, temperature, state of charge and measurement method; trend like-for-like measurements and use manufacturer retirement criteria. The former universal resistance thresholds and satellite minimum are withdrawn.
 
-4. **Antenna position:** RC antenna elements deployed (not folded
-   under the frame). VTX antenna pointed up/back, not blocked by
-   battery. GPS antenna has clear sky view.
+## Failsafe is a configuration-specific choice
 
-### Power-On (30 seconds)
+Betaflight documents different Stage 2 procedures, including Drop, Landing and GPS Rescue. ArduPilot and PX4 have different mode, sensor and link prerequisites. A failsafe action appropriate for one aircraft or location may be unsuitable for another. Read the exact release's documentation; do not substitute a universal action from this handbook.
 
-5. **Voltage check:** Battery voltage matches expected full charge.
-   4S = 16.4–16.8V. 6S = 24.6–25.2V. If significantly low,
-   the battery wasn't fully charged or a cell is bad. Don't fly it.
+[Betaflight failsafe documentation](https://betaflight.com/docs/wiki/guides/current/Failsafe), checked 2026-10-07. This reference explains firmware behavior; it does not validate a particular installation.
 
-6. **Gyro cal:** Wait for the FC to finish gyro calibration (usually
-   1-2 seconds after power on). Don't move the quad during this time.
-   On Betaflight the OSD shows "CALIBRATING" then clears.
+## After flight or repair
 
-7. **RC link:** Confirm connected. Move sticks — verify response on
-   OSD or in the video feed (stick position overlay if enabled).
-   Check that arming switch is in disarmed position.
+Disarm and disconnect propulsion power before handling. Inspect damage, unusual heating, connectors and battery condition using manufacturer limits. Preserve logs before they are overwritten, note configuration changes, and return to bench validation after repairs, receiver changes, firmware upgrades or altered failsafe settings. Charge and store batteries using the exact chemistry manufacturer's guidance.
 
-8. **GPS (if equipped):** Check satellite count. Wait for 3D fix.
-   Most firmwares show sat count on OSD. Minimum 8 sats for any
-   GPS-dependent mode. More is better. If you need GPS return-to-home,
-   confirm the home point is set (some firmwares set home on arm,
-   others on first GPS lock).
-
-9. **Video feed:** Confirm you see a live image in your goggles or
-   monitor. Correct channel. No interference patterns. If analog,
-   check that nobody else is on your channel.
-
-### Arm Check (15 seconds)
-
-10. **Clear the area.** Nobody within 3 meters of the drone. Nothing
-    the drone could hit if it does something unexpected on arm.
-
-11. **Arm.** Motors should spin at idle (or not, if "Motor Stop" is
-    enabled). Listen for any unusual sounds — grinding, clicking,
-    uneven RPM.
-
-12. **Control check (optional but recommended on new builds):**
-    With the drone on the ground, briefly blip throttle and check
-    that it tries to lift evenly. Tilt the quad by hand — motors
-    should speed up on the low side to self-level (in angle/level mode)
-    or resist the tilt (in acro/rate mode).
-
-**Go fly.**
-
----
-
-## The Deep Check (Pre-Session or New Build)
-
-Do this once per session (before the first flight of the day) or
-after any change to the build (new props, firmware update, parameter
-change, crash repair).
-
-### Electrical
-
-- [ ] Battery internal resistance: check with charger. Per-cell IR
-      above 15 mΩ on LiPo or above 30 mΩ on Li-Ion means the pack
-      is aging. Above 25 mΩ (LiPo) or 50 mΩ (Li-Ion), retire it.
-- [ ] Cell balance: all cells within 0.02V of each other at full charge.
-      Imbalance > 0.05V = failing cell. Don't fly it.
-- [ ] ESC temperature after a flight: warm is normal. Hot to touch
-      = something is wrong (motor issue, prop drag, ESC undersized).
-- [ ] Motor temperature: same. Warm = normal. Hot = mechanical issue,
-      PID/filter problem, or motor failing.
-- [ ] Wiring: no frayed wires, no exposed copper, solder joints intact.
-      Pay special attention to battery pigtail and motor phase wires.
-
-### Mechanical
-
-- [ ] Prop adapters / prop nuts: torqued properly. A prop coming off
-      in flight is not recoverable.
-- [ ] Motor bell screws: C-clip or set screws tight. Bell should not
-      wobble on the shaft.
-- [ ] Camera mount: secure. Camera angle correct. Tilt hasn't shifted.
-- [ ] FC mounting: soft mount grommets intact, FC not contacting frame.
-- [ ] Antenna connectors: U.FL/IPEX connectors seated. SMA connectors
-      finger-tight (do not overtorque SMA — you'll break the connector
-      on the board).
-
-### Software
-
-- [ ] Firmware version: matches what you expect. Verify in configurator
-      before flying after any work session where USB was connected.
-      Accidental firmware flash happens.
-- [ ] Modes: verify arm switch, flight mode switches, and any other
-      switches are assigned correctly. A mode switch that accidentally
-      triggers GPS rescue at 2 meters altitude is a bad day.
-- [ ] Failsafe: configured and tested. The only way to know failsafe
-      works is to test it. Turn off the transmitter with the drone
-      armed on the ground and verify the FC does what you expect
-      (motors stop, or enters land mode, or whatever you configured).
-- [ ] Blackbox: enabled, flash has space. If you want logs from this
-      session, verify logging is on and the flash isn't full.
-- [ ] OSD: shows what you need. Minimum: battery voltage, flight time,
-      RSSI (or LQ for ELRS). Recommended: sat count, altitude, warnings.
-
----
-
-## Post-Flight Check
-
-After each flight, before the next:
-
-1. **Battery voltage:** Check remaining voltage. If below 3.5V/cell
-   under resting conditions, you pushed too hard. Adjust your timer.
-
-2. **Temperature sweep:** Touch each motor, each ESC, the FC, the VTX.
-   Anything unusually hot compared to normal? Investigate before
-   flying again.
-
-3. **Visual scan:** Any new damage? Props nicked? Antenna bent?
-   Camera mount shifted?
-
-4. **Log pull (if analyzing this session):** Pull blackbox now.
-   Flash will be overwritten by the next flight.
-
----
-
-## Post-Session
-
-After the last flight of the day:
-
-1. **Storage charge batteries.** LiPo storage voltage is 3.8V/cell
-   (22.8V for 6S). Do not leave batteries at full charge or fully
-   depleted. Storage charge the same day.
-
-2. **Clean the quad.** Grass, dirt, and moisture accelerate corrosion
-   on exposed electronics. Compressed air for motor bells.
-
-3. **Note anything that needs attention.** A prop you noticed was
-   slightly nicked. A motor that felt warm. A GPS that took too long
-   to lock. Write it down or you'll forget by next session.
-
----
-
-## The Checks That Catch Real Problems
-
-In order of how often they prevent incidents:
-
-1. **Props** — wrong rotation, damaged, or loose. The most common
-   cause of unexpected behavior on arm or immediately after takeoff.
-
-2. **Battery strap** — a battery that shifts forward on a punch-out
-   changes the CG and the drone flips. Cinch it tight.
-
-3. **RC link** — flying on a dead receiver because you forgot to
-   check the link. Especially after changing receiver firmware or
-   binding phrase.
-
-4. **Failsafe** — having the wrong failsafe behavior configured.
-   "Drop" is almost never what you want. Test it before you need it.
-
-5. **GPS home point** — flying 2 km out, triggering RTH, and having
-   the drone return to a GPS position from three flights ago because
-   you didn't wait for a fresh fix.
-
-6. **Antenna** — a U.FL connector that popped off a receiver during
-   a battery change. Video or RC works at 5 meters, fails at 50.
-
----
-
-## The One Check Nobody Does (But Should)
-
-**Turn off your transmitter with the drone armed on the ground.**
-
-This tests your failsafe. Every time you change firmware, change
-receivers, or change failsafe settings, do this test. It takes
-10 seconds and it's the only way to know what will actually happen
-when you lose signal in the air.
-
-If the motors keep spinning at the last throttle position: your
-failsafe is misconfigured and your drone will fly away on signal loss.
-Fix it before flying.
-
----
-
-## Next
-
-- **Chapter 12: When Things Go Wrong** — when something slips past
-  the checklist.
-- **Chapter 10: Blackbox Logs** — analyzing what happened after
-  the flight.
-
----
-
-*The checklist is boring. Walking half a kilometer to pick up a
-crashed drone because you didn't check the prop nuts is also boring,
-and takes longer.*
+Use the [evidence record](evidence-record.md) to retain what was actually checked and what remains open.

@@ -24,7 +24,7 @@ from handbook_builder.review import build_review_queue, extract_article_sources
 
 def load_queue(path: Path) -> dict:
     snapshot = json.loads(path.read_text())
-    return build_review_queue(snapshot, extract_article_sources(ROOT, snapshot["records"]))
+    return snapshot if "references" not in snapshot else build_review_queue(snapshot, extract_article_sources(ROOT, snapshot["records"]))
 
 
 def main() -> None:
@@ -58,12 +58,13 @@ def main() -> None:
     dispatch_url=os.environ.get("AUTONOMY_DISPATCH_URL","").strip().rstrip("/")
     review_token=os.environ.get("AUTONOMY_REVIEW_TOKEN","").strip()
     use_dispatch=args.provider=="dispatch" or (args.provider=="auto" and bool(dispatch_url and review_token))
-    use_openai = args.provider == "openai" or (args.provider == "auto" and not use_dispatch and bool(os.environ.get("OPENAI_API_KEY")))
+    use_openai = args.provider == "openai"
     if args.provider == "openai" and not os.environ.get("OPENAI_API_KEY"):
         raise SystemExit("OPENAI_API_KEY is required for --provider openai; software planning completed but no request was sent")
     if args.provider == "dispatch" and not (dispatch_url and review_token):
         raise SystemExit("AUTONOMY_DISPATCH_URL and AUTONOMY_REVIEW_TOKEN are required for --provider dispatch")
     started = 0
+    deferred = None
     if use_dispatch:
         spec_jobs={}
         for job in plan["jobs"][:args.start_limit]:spec_jobs.setdefault(job["spec_id"],[]).append(job)
@@ -73,7 +74,12 @@ def main() -> None:
             request=urllib.request.Request(dispatch_url+"/api/autonomy/runs",data=json.dumps(payload).encode(),method="POST",headers={"authorization":"Bearer "+review_token,"content-type":"application/json","user-agent":"UAS-Handbook-Evidence/1.0"})
             try:
                 with urllib.request.urlopen(request,timeout=90) as response:ack=json.loads(response.read())
-            except urllib.error.HTTPError as error:raise SystemExit(f"Autonomy dispatcher failed ({error.code}): {error.read(1000).decode(errors='replace')}") from error
+            except urllib.error.HTTPError as error:
+                message=error.read(1000).decode(errors='replace')
+                if 'Trial stopped:' in message or 'trial is not active' in message.lower():
+                    deferred='Existing research trial expired, disabled or at its workload limit'
+                    break
+                raise SystemExit(f"Autonomy dispatcher failed ({error.code}): {message}") from error
             acknowledgements={row["role"]:row for row in ack.get("jobs",[])}
             for job in jobs:
                 remote=acknowledgements[job["role"]];job.update(state=remote["state"],response_id=remote["response_id"],attempts=1);started+=1
@@ -89,6 +95,7 @@ def main() -> None:
     plan["summary"]["started_background_jobs"] = started
     plan["summary"]["queued_for_future_cycles"] = len(plan["jobs"]) - started
     plan["summary"]["publication_changed"] = False
+    plan['summary']['deferred_reason'] = deferred
     write_plan(args.output, plan)
     print(json.dumps(plan["summary"], indent=2))
 

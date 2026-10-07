@@ -2,18 +2,18 @@
 
 This file tracks **current handbook work only**. Completed historical work remains available in Git history and in [`CHANGELOG.md`](CHANGELOG.md).
 
-Last reconciled: **October 2, 2026**
+Last reconciled: **October 7, 2026**
 
 ## Current published baseline
 
 The production builder currently publishes:
 
-- **52 numbered chapters, guides, and publisher/legal pages**
+- **63 numbered chapters, guides, and publisher/legal pages**
 - **39 platform profiles**
 - **61 component references**
-- **152 total searchable references**
+- **163 total searchable references**
 
-Eight previously published operational, compliance, or relationship-sensitive references currently resolve to visible review-hold notices instead of their former text. The content registry and reader-facing order live in [`handbook_builder/config.py`](handbook_builder/config.py). The deployable artifact is produced by `python3 build.py` and validated by the `handbook-check` GitHub workflow before Cloudflare Pages deployment.
+Two references remain held: Orqa hardware and Wingman/APB. Other formerly held references were replaced with scoped public guides. The content registry and reader-facing order live in [`handbook_builder/config.py`](handbook_builder/config.py). The deployable artifact is produced by `python3 build.py` and validated by the `handbook-check` GitHub workflow before Cloudflare Pages deployment.
 
 Chapter ID **25 is reserved** after its public source was withdrawn. Do not reuse or recreate that public anchor without an explicit content-release decision.
 
@@ -27,8 +27,8 @@ Chapter ID **25 is reserved** after its public source was withdrawn. Do not reus
 - [x] Add CI tests that fail if behavioral analytics or withdrawn operational markers return.
 - [x] Remove the site-wide relationship banner and automatic vendor-adjacent relationship notices; retain private relationship/provenance records and article-level holds.
 - [ ] Obtain qualified export-controls review for held defense-adjacent material.
-- [ ] Complete and verify the Remote ID release record against current FAA sources and the exact released revision.
-- [ ] Rebuild government-procurement compliance guidance as a dated, source-specific decision aid.
+- [x] Complete and verify the Remote ID release record against current FAA sources and the exact released revision.
+- [x] Rebuild government-procurement compliance guidance as a dated, source-specific decision aid.
 - [ ] Rebuild Orqa coverage with claim-level sources, independent review, editorial-independence controls, and no unsupported legal classifications.
 - [ ] Create a claim-level evidence ledger and right-of-reply record for named-company profiles.
 - [ ] Audit remaining articles for copied media, standards excerpts, unverified specifications, stale legal claims, and third-party licenses.
@@ -52,18 +52,18 @@ See [`docs/releases/2026-07-31-site-refactor-and-hardening.md`](docs/releases/20
 
 ### 1. Stable platform and component URLs
 
-Platform and component profiles are currently auto-numbered (`#p...` and `#c...`) from sorted filenames. Renaming or inserting files can move those anchors.
+Published identities and numeric anchors are frozen in `data/reference-identities.json`; reordering directories cannot move them.
 
 - [ ] Introduce slug-based canonical anchors such as `#platform-shield-ai-nova-2` and `#component-mesh-radios`.
-- [ ] Preserve existing numeric anchors as compatibility aliases.
-- [ ] Add tests proving old numeric links and new canonical links resolve to the same reference.
+- [x] Preserve existing numeric anchors as compatibility aliases.
+- [x] Add tests proving old numeric links and new canonical links resolve to the same reference.
 
 ### 2. Offline and field use
 
-- [ ] Add a service worker and offline cache manifest.
-- [ ] Provide an explicit “save for field use” state rather than relying on incidental browser caching.
-- [ ] Cache the HTML, CSS, JavaScript, fonts, and local images with a versioned release key.
-- [ ] Define update behavior so an operator can see whether a cached handbook is stale before disconnecting.
+- [x] Add a service worker and offline cache manifest.
+- [x] Provide an explicit “save for field use” state rather than relying on incidental browser caching.
+- [x] Cache the HTML, CSS, JavaScript, fonts, and local images with a versioned release key.
+- [x] Define update behavior so an operator can see whether a cached handbook is stale before disconnecting.
 
 ### 3. Page weight and delivery architecture
 
@@ -120,6 +120,10 @@ Open an issue or pull request to propose additions. New numbered chapters must r
 
 ## Complete evidence and usability overhaul — active
 
-Goal [#57](https://github.com/DroneWuKong/drone-integration-handbook/issues/57) stays open through the complete citation/table audit and verified production release. The implementation candidate provides evidence identities, generated mathematical claims, calculators, structured search/exports, private contribution/review services, correction tooling and offline releases. Legacy evidence remains explicitly unresolved. Complete the semantic audit in reviewed batches, provision isolated Cloudflare storage, validate preview persistence and private boundaries, record applicable exact-revision review/publisher decision, then verify the custom-domain release. Existing publication holds and #40 remain separate dependencies.
+Goal [#57](https://github.com/DroneWuKong/drone-integration-handbook/issues/57) stays open through the complete citation/table audit and verified production release. Production provides evidence identities, generated mathematical claims, calculators, structured search/exports, private contribution/review services, correction tooling and coherent offline releases. Storage and private attachments are deployed. Legacy evidence remains explicitly unresolved. Continue source-grounded semantic review through the independent factual maintenance gate and verify each published revision. Existing publication holds and #40 remain separate dependencies.
 
-The candidate now generates JSON/CSV review batches with deterministic P0–P3 priorities and records explainable treatments for all 390 public tables. The first regulatory batch corrected stale or unsupported passages and promoted six current FAA/Federal Register statements to managed claims. Continue with the remaining 4,809 unresolved records, starting with 106 P0 and 266 P1 items; see [`docs/CITATION_REVIEW_WORKFLOW.md`](docs/CITATION_REVIEW_WORKFLOW.md).
+The builder generates JSON/CSV review batches with deterministic P0–P3 priorities and records explainable table treatments. The 7 October audit snapshot contains 386 public tables and 5,156 unresolved records (126 P0 and 332 P1); these counts describe that dated snapshot. Use the current generated queue for live counts. The first regulatory batch promoted six FAA/Federal Register statements to managed claims; see [`docs/CITATION_REVIEW_WORKFLOW.md`](docs/CITATION_REVIEW_WORKFLOW.md).
+
+## October audit and ongoing maintenance
+
+The [implementation plan](docs/reviews/handbook-audit-implementation-20261007.md) tracks this release. Eleven new chapters are registered. Nightly release/source checks and GitHub discovery feed an independent exact-statement publication gate, with durable progress and correction history. Remaining work: resolve legacy claims as evidence permits, complete both held references through their established review routes, and investigate watched projects before making capability recommendations. The paid trial is not renewed by this release.

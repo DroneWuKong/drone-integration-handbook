@@ -14,6 +14,25 @@ function setup(){
 }
 const req=(path,method="GET",payload,token,headers={})=>new Request("https://uas-handbook.com/api/autonomy/"+path,{method,headers:{"content-type":"application/json",...(token?{authorization:"Bearer "+token}:{}),...headers},...(payload===undefined?{}:{body:typeof payload==="string"?payload:JSON.stringify(payload)})});
 const spec={schema_version:1,id:"a".repeat(24),claim_id:"claim-1",release:"release-1",claim_type:"factual",risk:"medium",statement:"Example",anchor:"ch1",candidate_sources:["https://example.test/manual"],requirements:{},created_at:"2026-10-02T00:00:00Z"};
+test('durable ledger and decision bundles require authorization and page without losing records',async()=>{
+ const {env,sql}=setup();
+ for(const route of ['ledger','decisions'])assert.equal((await handleAutonomy(req(route),env)).status,401);
+ for(let n=1;n<=101;n++){
+  const row={...spec,id:n.toString(16).padStart(24,'0'),claim_id:'claim-'+n};
+  assert.equal((await handleAutonomy(req('specs','POST',row,'review'),env)).status,201);
+ }
+ const first=await (await handleAutonomy(req('ledger','GET',undefined,'review'),env)).json();
+ assert.equal(first.rows.length,100);assert.ok(first.next_cursor);
+ const second=await (await handleAutonomy(req('ledger?cursor='+first.next_cursor,'GET',undefined,'review'),env)).json();
+ assert.equal(second.rows.length,1);assert.equal(second.next_cursor,null);
+ assert.equal(new Set([...first.rows,...second.rows].map(r=>r.id)).size,101);
+ assert.equal((await handleAutonomy(req('ledger?cursor=invalid','GET',undefined,'review'),env)).status,400);
+ const row=first.rows[0];const decision={id:'d'.repeat(24),created_at:'2026-10-07T00:00:00Z',publish:false};
+ sql.prepare("INSERT INTO evidence_decisions VALUES(?,?,?,'abstained',0,0,?,?)").run(decision.id,row.id,row.spec.claim_id,JSON.stringify(decision),decision.created_at);
+ const bundles=await (await handleAutonomy(req('decisions','GET',undefined,'review'),env)).json();
+ assert.equal(bundles.rows[0].spec.id,row.id);assert.equal(bundles.rows[0].decision.id,decision.id);
+ assert.deepEqual(bundles.rows[0].packets,[]);sql.close();
+});
 const researchRequest=role=>({model:"gpt-5.5",input:"Check this claim against public sources.",background:true,tool_choice:"required",tools:[{type:"web_search"}],text:{format:{type:"json_schema",strict:true,schema:{}}},metadata:{research_spec_id:spec.id,claim_id:spec.claim_id,role}});
 const evidencePacket=role=>({claim_id:spec.claim_id,role,conclusion:"supports",proposed_statement:"Scoped statement",scope:"Example scope",jurisdiction:"",effective_date:"2026-10-02",sources:[{url:"https://example.test/manual",title:"Manual",publisher:"Example",source_class:"manufacturer",passage:"Exact passage",locator:"Section 1",retrieved_at:"2026-10-02",content_sha256:"a".repeat(64),supports:"Exact claim",version:"1"}],contradictions:[],calculations:[],alternatives:[],confidence:.9,limitations:[],notes:""});
 async function webhookHeaders(raw,secret="whsec_ZXhhbXBsZS1zZWNyZXQ="){const id="wh_"+crypto.randomUUID(),timestamp=String(Math.floor(Date.now()/1000)),key=await crypto.subtle.importKey("raw",Buffer.from("example-secret"),{name:"HMAC",hash:"SHA-256"},false,["sign"]),signed=Buffer.from(await crypto.subtle.sign("HMAC",key,new TextEncoder().encode(`${id}.${timestamp}.${raw}`))).toString("base64");return{"webhook-id":id,"webhook-timestamp":timestamp,"webhook-signature":"v1,"+signed};}
@@ -150,4 +169,31 @@ test("completed output rejected by trusted validation is terminal and abstains",
   const decision=sql.prepare("SELECT publication_state,publish FROM evidence_decisions").get();assert.equal(decision.publication_state,"abstained");assert.equal(decision.publish,0);
   assert.equal(sql.prepare("SELECT state FROM research_specs").get().state,"abstained");
  }finally{globalThis.fetch=original;sql.close();}
+});
+test('exact-statement protocol checks retrieved passages and canonical scope before allowing publication',async()=>{
+ const originalFetch=globalThis.fetch;
+ for(const failure of [null,'scope','passage']){
+  const {env,sql}=setup();let starts=0;
+  const exact={...spec,statement:'Scoped statement',scope:'Example scope',verification_protocol:'exact-statement-v2'};
+  globalThis.fetch=async(url)=>{
+   const value=String(url);
+   if(value.endsWith('/v1/responses'))return new Response(JSON.stringify({id:`resp_exact_${++starts}`,status:'queued'}));
+   if(value.includes('/v1/responses/')){
+    const role=value.endsWith('_1')?'researcher':'verifier',packet=evidencePacket(role);
+    if(role==='verifier'&&failure==='scope')packet.scope='A different version';
+    if(role==='verifier'&&failure==='passage')packet.sources[0].passage='An invented supporting passage';
+    return new Response(JSON.stringify({status:'completed',output:[{type:'message',content:[{type:'output_text',text:JSON.stringify(packet)}]}]}));
+   }
+   return new Response('<p>Exact passage</p>');
+  };
+  try{
+   assert.equal((await handleAutonomy(req('runs','POST',{spec:exact,requests:{researcher:researchRequest('researcher'),verifier:researchRequest('verifier')}},'review'),env)).status,202);
+   for(const n of [1,2]){
+    const raw=JSON.stringify({id:`evt_${failure||'valid'}_${n}`,type:'response.completed',data:{id:`resp_exact_${n}`}});
+    assert.equal((await handleAutonomy(req('webhooks/openai','POST',raw,undefined,await webhookHeaders(raw)),env)).status,202);
+   }
+   const decision=sql.prepare('SELECT publish,publication_state FROM evidence_decisions').get();
+   assert.equal(decision.publish,failure?0:1);assert.equal(decision.publication_state,failure?'abstained':'corroborated');
+  }finally{sql.close();globalThis.fetch=originalFetch;}
+ }
 });

@@ -153,8 +153,10 @@ def decorate_and_inventory(entry,sources,claims):
     rendered=TABLE.sub(table,rendered)
     rendered=TABLE.sub(protect,rendered)
     def block(m):
-        if not re.search(r"\d",text(m[0])) or "@@PROTECTED" in m[0]:return m[0]
-        record(m[0],"numerical-passage")
+        plain=text(m[0])
+        qualitative=re.search(r"\b(requires?|supports?|compatible|cannot|always|never|compliant|certified|proprietary|latency|failsafe|accuracy|firmware|protocol|encryption)\b",plain,re.I)
+        if not (re.search(r"\d",plain) or qualitative) or "@@PROTECTED" in m[0]:return m[0]
+        record(m[0],"numerical-passage" if re.search(r"\d",plain) else "qualitative-passage")
         alert=review_alert(records[-1])
         if not alert:return m[0]
         end="</"+m[1]+">"
@@ -179,4 +181,4 @@ def snapshot(entries,sources,records,tables,release):
     for ref in refs:
         if ref["publication_state"]!="hold":
             ref["fields"]={key:values[0] if len(values)==1 else values for key,values in by_article.get(ref["id"],{}).items()}
-    return {"schema_version":1,"release":release,"license":"CC BY-SA 4.0; third-party sources retain their rights","references":refs,"records":records,"sources":list(sources.values()),"tables":tables,"coverage":{"references":len(refs),"holds":sum(r["status"]=="hold" for r in refs),"tracked_records":len(records),"supported_records":sum(r["status"]!="unreviewed" for r in records),"unreviewed_records":sum(r["status"]=="unreviewed" for r in records),"tables":len(tables),"scope":"Tracked table rows and digit-bearing paragraphs/list items; not a completed semantic claim audit"}}
+    return {"schema_version":1,"release":release,"license":"CC BY-SA 4.0; third-party sources retain their rights","references":refs,"records":records,"sources":list(sources.values()),"tables":tables,"coverage":{"references":len(refs),"holds":sum(r["status"]=="hold" for r in refs),"tracked_records":len(records),"supported_records":sum(r["status"]!="unreviewed" for r in records),"unreviewed_records":sum(r["status"]=="unreviewed" for r in records),"tables":len(tables),"scope":"Tracked table rows, numerical passages and selected material qualitative passages; not a completed semantic claim audit"}}

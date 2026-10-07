@@ -39,9 +39,7 @@ SBUS (FrSky), IBUS (FlySky), PPM (legacy).
 - Sub-GHz proprietary — tactical (IRONghost dual-band)
 
 **What you need to know:**
-- This is the only link where latency matters in milliseconds.
-  ELRS at 500 Hz has ~2 ms latency. SBUS is ~6 ms. At 250 Hz
-  freestyle, you won't feel the difference. In a racing final, you might.
+- Latency and freshness matter across RC, video, telemetry and sensor/control pipelines. A 500 Hz update interval is 2 ms; it is not a measured stick-to-actuator delay. Record protocol/mode and the complete measurement boundary.
 - Loss of this link triggers failsafe. Every FC firmware handles
   failsafe differently. Know yours before you need it.
 - ELRS and Crossfire use serial protocols (CRSF wire format) that
@@ -88,8 +86,7 @@ LTM (Lightweight Telemetry), FrSky S.Port/F.Port.
 
 **Common problems:**
 - MAVLink stream rate misconfigured — too high floods the link,
-  too low makes the GCS look frozen. Start with `SR0_POSITION=2`,
-  `SR0_EXTRA1=4`, adjust from there.
+  too low makes the GCS look frozen. Use the exact firmware's stream-rate interface; `SRx` is not universally a physical serial-port number.
 - SiK radio firmware mismatch between air and ground units.
 - UART conflict — telemetry and GPS both assigned to the same UART.
 
@@ -101,18 +98,11 @@ LTM (Lightweight Telemetry), FrSky S.Port/F.Port.
 goggles or ground station monitor. The link that lets you see.
 
 **Technologies:**
-- **Analog 5.8 GHz** — lowest latency (~1 ms glass-to-glass),
-  degrades gracefully (static, then snow, then nothing). Still
-  dominant in FPV racing and tactical ops where latency kills.
-- **DJI digital** — DJI O3, O4, Vista, Air Unit. Low latency (~20-28 ms),
-  good image quality, locked ecosystem. No third-party interop.
-- **HDZero** — digital, ultra-low latency (~15 ms), open ecosystem,
-  lower resolution than DJI. Popular with racers going digital.
-- **OpenHD / WFB-ng / OpenIPC** — open-source digital video over
-  commodity WiFi hardware (RTL8812AU/EU). Higher latency (~80-120 ms),
-  fully open, hackable, configurable. The platform for custom builds.
-- **Walksnail (Avatar)** — Caddx/Walksnail digital system. Competes
-  with DJI on image quality, runs on Artosyn AR8030 chip.
+- **Analog video** — composite capture, RF modulation and receiver/display processing; measure the complete path.
+- **DJI digital / Walksnail / HDZero** — product-specific camera, radio and display ecosystems; supported modes and latency depend on the exact hardware/release.
+- **OpenHD / WFB-ng / OpenIPC** — open software stacks with specific adapter/image/camera requirements. RTL8812EU is included in OpenHD's published adapter support since 2.6.3; see the [OpenHD reference](../components/openhd-implementation-guide.md).
+
+A glass-to-glass result includes camera and display. The previous generic numerical comparisons mixed measurement boundaries and are withdrawn.
 
 **What you need to know:**
 - Video is almost always 5.8 GHz. This means it's on the same band
@@ -192,41 +182,16 @@ relay. The link that turns individuals into a team.
 - **ESP-NOW** — Espressif peer-to-peer, 2.4 GHz, ~250 byte packets,
   no infrastructure needed. Good for ground operations (Tooth mesh,
   pre-flight sync). Not suitable for in-flight swarm at range.
-- **WiFi mesh (batman-adv / 802.11s)** — Linux-based mesh networking.
-  Doodle Labs, Silvus, and Persistent Systems all use this under
-  the hood (yes, your $5,000 Silvus StreamCaster is running
-  OpenWRT with batman-adv). Range 1-50 km depending on radio
-  and power.
-- **MANET (Mobile Ad-hoc Network)** — military-grade mesh with
-  frequency hopping, anti-jam, encryption. Persistent Systems MPU5,
-  Silvus at higher tiers, Harris/L3Harris. $10,000-50,000 per node.
-- **MAVLink over mesh** — any of the above carrying MAVLink messages
-  between platforms. Each drone gets a unique system ID (1-254).
-  Standard MAVLink messages (GLOBAL_POSITION_INT, HEARTBEAT)
-  become the swarm awareness layer.
+- **Linux WiFi mesh** — batman-adv or 802.11s on an explicitly supported Linux/network stack.
+- **Vendor MANET** — model-specific waveforms and management interfaces. IP/Ethernet compatibility does not establish an open WiFi air interface. Silvus identifies its technology as MN-MIMO; do not infer batman-adv from a Linux management environment.
+- **MAVLink over a network** — addressing/routing/freshness remain application concerns independent of the radio waveform.
 
-**What you need to know:**
-- Most drones don't have Link 5. It's the last link to be added
-  and the first to be cut when budget or weight is tight.
-- Mesh radios that claim "50 km range" are telling you the radio
-  range, not the mesh range. Mesh adds overhead. Real throughput
-  across 3 hops is typically 30-50% of single-hop throughput.
-- The dirty secret of tactical mesh: Doodle Labs is OpenWRT on
-  Atheros/Qualcomm WiFi silicon running batman-adv. Silvus is
-  similar with their own MAC layer. Persistent Systems MPU5 is
-  the most custom but still builds on standard radio architectures.
-  They're not magic. They're well-engineered WiFi radios in
-  ruggedized enclosures with good antenna design and custom firmware.
-- Mesh network planning is its own discipline. Node placement,
-  antenna orientation, channel assignment, traffic prioritization —
-  these matter more than the radio's datasheet specs.
+**What you need to know:** Measure throughput, delay and recovery using the exact node topology, traffic, radio mode and conditions. There is no universal three-hop throughput percentage. [Mesh integration](../integration/mesh-radios.md) distinguishes IP integration from waveform implementation.
 
 **Common problems:**
 - Mesh radio on 2.4 GHz interfering with 2.4 GHz RC link.
   Solution: different bands (mesh on 900 MHz or 5 GHz).
-- batman-adv OGM (Originator Message) interval too high, causing
-  stale routing. Default 1 second is fine for slow-moving platforms.
-  Fast-moving drones may need 250 ms.
+- Routing convergence depends on implementation, traffic and topology. Use documented settings and a measured recovery test rather than a universal OGM interval.
 - IP address conflicts in the mesh. Use a consistent addressing
   scheme: `10.0.0.{system_id}` with system_id matching MAVLink ID.
 

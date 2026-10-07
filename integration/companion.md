@@ -45,9 +45,11 @@ natively on ArduPilot and PX4. Don't add complexity you don't need.
 a significant percentage of all-up weight. A Pi Zero 2W at 10g
 is much more practical for small platforms.
 
-**Power:** A companion drawing 10W from a 1300 mAh 6S battery
-is consuming roughly 30% of your total energy budget. Flight time
-drops proportionally. Budget the power before choosing the hardware.
+**Power:** Energy depends on duration. An illustrative 1.3 Ah pack at nominal 22.2 V stores 28.86 Wh. A 10 W companion over ten minutes consumes 1.67 Wh, about 5.8% of that nominal energy before conversion losses. Actual usable energy, added mass, propulsion demand and reserves determine endurance; watts and amp-hours alone cannot establish a flight-time percentage.
+
+[claim:companion-energy-example]
+
+See [workload selection](compute-workload-selection.md) for complete board, rail, video and thermal budgets.
 
 **I/O:** The companion needs to connect to the FC (UART or USB),
 to the network (WiFi, Ethernet for mesh radio, USB for cellular),

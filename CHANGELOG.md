@@ -1,5 +1,12 @@
 # Changelog
 
+## October 7, 2026 — Audit and living reference
+
+- Correct bench/preflight instructions, MAVLink serialization/enums/flags, GNSS parameters, free-space loss, companion energy and exact-device specifications. Remove unsupported universal range, video latency, autonomy threshold and nationality-based procurement conclusions.
+- Add eight source-grounded firmware/integration/evidence guides and three living-reference chapters for verified repository notes, release/source checklists and emerging GitHub projects. Preserve existing anchors and both publication holds.
+- Add durable content-based research identity, private paginated ledger access, retrieved-passage checks, bounded automatic factual publication and history. Replace the deployment-reset cursor; preserve the non-renewing paid trial and workload limits.
+- Add meaningful replay, maintenance and private API checks. The full legacy inventory remains queued; this release does not certify every historical claim.
+
 ## Candidate — October 1, 2026 — Evidence and reference tools
 
 - Add permanent article/profile identities with frozen legacy URLs, a public evidence/query snapshot and visible unresolved-evidence controls.

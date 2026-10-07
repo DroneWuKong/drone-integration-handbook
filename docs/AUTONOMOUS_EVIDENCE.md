@@ -23,7 +23,7 @@ The policy engine automatically:
 
 The private `review.html` console combines field reports with the small exception queue. It shows the exact claim and handbook location and offers four explicit dispositions: accept a release proposal, reject it, require field evidence, or defer. The reviewer supplies one concise reason; retries are idempotent and the disposition is appended to the immutable event ledger. A disposition still does not publish content.
 
-`publish: true` means the evidence packet qualifies for a release proposal. It does not bypass the versioned build, tests, deployment verification or correction history.
+`publish: true` qualifies a packet for deterministic exact-statement maintenance. The publisher has authorized routine factual updates. The maintenance runner re-retrieves the cited passages, confirms unchanged source digests, checks exact statement/scope agreement and claim-type policy, applies only bounded managed blocks or exact standalone paragraphs, preserves correction history, and runs the versioned build/tests before committing. Critical safety/recommendation exceptions and existing publication holds remain separate.
 
 ## Software-only operation
 
@@ -67,7 +67,7 @@ A completed provider response that fails packet or trusted-source validation is 
 a failed role. Once the paired role is also terminal, deterministic adjudication stores an
 abstention instead of leaving the spec queued or accepting unverifiable model output.
 
-The scheduled workflow runs nightly, processes two records/four jobs by default, and advances its cached cursor only when every job in the batch was acknowledged. The backend enforces the trial limits regardless of `AUTONOMY_BATCH_SIZE` or manual inputs. Without both dispatcher secrets, it remains in software mode and does not advance or claim live research occurred.
+The scheduled workflow runs nightly and processes at most two records/four isolated jobs. Content-based research identities and the authenticated private D1 ledger replace the cached positional cursor. A deployment change does not restart research; changed evidence or a due review creates a new cycle. One batch slot is reserved for repository discovery when candidates are available. The backend enforces the trial limits regardless of `AUTONOMY_BATCH_SIZE` or manual inputs. Without both dispatcher secrets, it remains in software mode and does not advance or claim live research occurred.
 
 Direct developer execution is also available:
 
@@ -159,3 +159,13 @@ python3 build.py
 ```
 
 The Node test runs the complete dispatch → signed webhook → source snapshot → independent-packet → deterministic-decision sequence with software adapters.
+
+## Release, source and emerging-project upkeep
+
+`data/maintenance-config.json` declares release projects, related public repositories and focused GitHub searches. `scripts/maintain_handbook.py --refresh --apply` refreshes chapters 63/64, checks stable versus preview releases and dates, collects public README candidates for chapter 62, and consumes authenticated decisions through `/api/autonomy/ledger` and `/api/autonomy/decisions`. Both endpoints require the reviewer token and use bounded cursor pagination. No private packets or reviewer credentials enter public artifacts.
+
+Source checks retain prior fingerprints when unavailable. Release publication dates are distinguished from code pushes, future/draft releases are excluded, and unknown license or capability remains explicit. Project descriptions are metadata claims, not verified implementation or hardware performance. The existing sanitized `forge-data` export is the discovery route for private Ai-Project data. Discovered code is never executed.
+
+The two isolated roles must support the same exact statement and canonical scope. Cited short passages must exist in software-retrieved bytes. Changed sources, ambiguous paragraphs, tables, paths outside the allowed content roots, symlinks outside the checkout, held articles and generated watchlist prose cannot receive model patches. Performance/compatibility promotion additionally requires different source hosts. A proposed correction becomes a fresh research specification before it can publish. The first suggestion cannot directly change prose.
+
+The workflow validates Python, JavaScript, SQLite APIs, source links, replay behavior, generated structure, evidence, table classifications, Pages Functions and browser behavior before pushing a fast-forward main commit. A concurrent main change aborts the push. Cloudflare deployment is checked against the exact published commit. The current paid trial remains non-renewing and bounded; when stopped, metadata upkeep continues and new paid research is deferred. A separate weekly ChatGPT upkeep task audits workflow health and unresolved checks without renewing the trial.

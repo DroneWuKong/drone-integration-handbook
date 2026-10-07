@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "checked": "2026-10-07",
+  "next_check": "2026-10-14",
+  "projects": [
+    {
+      "repository": "teklot/MavlinkSharp",
+      "url": "https://github.com/teklot/MavlinkSharp",
+      "description": "MavlinkSharp is a lightweight .NET library for parsing MAVLink v1/v2 raw messages using standard or custom dialects. It is extremely fast, flexible, and easy to use, and also provides tools for constructing and encoding MAVLink packets for transmission over any communication protocol.",
+      "created": "2025-12-02T14:22:26Z",
+      "pushed": "2026-10-07T14:00:27Z",
+      "license": "MIT",
+      "stars": 4,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": null,
+      "released": null,
+      "preview": null
+    },
+    {
+      "repository": "rsasaki0109/visloc-rs",
+      "url": "https://github.com/rsasaki0109/visloc-rs",
+      "description": "SfM, visual-inertial SLAM, 3D Gaussian Splatting and localization in pure Rust",
+      "created": "2026-05-05T02:35:57Z",
+      "pushed": "2026-10-07T13:27:13Z",
+      "license": "NOASSERTION",
+      "stars": 77,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": "v0.2.0",
+      "released": "2026-09-15",
+      "preview": null
+    },
+    {
+      "repository": "rubenCodeforges/ardudeck",
+      "url": "https://github.com/rubenCodeforges/ardudeck",
+      "description": "One GCS to rule them all. ArduPilot, Betaflight, iNav - all in one app. Mission planning, PID tuning, OSD simulator, SITL with FlightGear. Cross-platform (Win/Mac/Linux)",
+      "created": "2025-12-28T23:40:20Z",
+      "pushed": "2026-10-07T13:14:21Z",
+      "license": "GPL-3.0",
+      "stars": 156,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": "v0.1.1",
+      "released": "2026-09-07",
+      "preview": "v0.1.2-rc8"
+    },
+    {
+      "repository": "saad-rafeque/drone-swarm-failover",
+      "url": "https://github.com/saad-rafeque/drone-swarm-failover",
+      "description": "Leader-failover drone swarm: V formation, leader election and obstacle avoidance, built and tested in PX4 SIH simulation with ROS 2 and MAVROS (simulation only).",
+      "created": "2026-09-27T10:22:40Z",
+      "pushed": "2026-10-07T10:55:05Z",
+      "license": "Apache-2.0",
+      "stars": 0,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": null,
+      "released": null,
+      "release_status": "unavailable"
+    },
+    {
+      "repository": "RMANOV/strix",
+      "url": "https://github.com/RMANOV/strix",
+      "description": "Drone swarm orchestration: combinatorial auctions, particle filters, fear meta-parameter, glass-box XAI — 23K lines of Rust",
+      "created": "2026-03-14T10:09:15Z",
+      "pushed": "2026-10-07T08:35:49Z",
+      "license": "NOASSERTION",
+      "stars": 7,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": "v0.7.0",
+      "released": "2026-04-10",
+      "preview": null
+    },
+    {
+      "repository": "hayatPMT/Autonomous-UAV-Navigation-System",
+      "url": "https://github.com/hayatPMT/Autonomous-UAV-Navigation-System",
+      "description": "🛸 Navigate urban environments with this autonomous UAV system using real-time occupancy grid mapping and dynamic obstacle avoidance for safe and efficient flights.",
+      "created": "2025-12-30T11:18:44Z",
+      "pushed": "2026-10-07T04:44:25Z",
+      "license": "unknown",
+      "stars": 9,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": null,
+      "released": null,
+      "preview": null
+    },
+    {
+      "repository": "alireza787b/PixEagle",
+      "url": "https://github.com/alireza787b/PixEagle",
+      "description": "Computer vision, object tracking, and target following for PX4 drones using OpenCV, YOLO, MAVSDK, MAVLink, and a real-time web dashboard",
+      "created": "2024-02-16T09:43:16Z",
+      "pushed": "2026-10-07T03:44:22Z",
+      "license": "Apache-2.0",
+      "stars": 71,
+      "matched_queries": [
+        "topic:gstreamer topic:robotics"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": "v7.2.0",
+      "released": "2026-08-30",
+      "preview": "v7.0.0-beta.29"
+    },
+    {
+      "repository": "FERBIN12/visual-slam-vio-ros2",
+      "url": "https://github.com/FERBIN12/visual-slam-vio-ros2",
+      "description": "Deterministic experiments with known answers and broken controls: camera geometry, feature-based visual odometry, IMU models and first steps of visual-inertial estimation. Synthetic data only.",
+      "created": "2026-08-30T23:39:23Z",
+      "pushed": "2026-10-07T01:30:22Z",
+      "license": "MIT",
+      "stars": 0,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": null,
+      "released": null,
+      "preview": null
+    },
+    {
+      "repository": "500ft/multirotor-recovery-dynamics",
+      "url": "https://github.com/500ft/multirotor-recovery-dynamics",
+      "description": "Crazyflie dynamics replay and tumble-recovery modeling using public flight data and firmware. Simulation-first study; hardware recovery validation pending.",
+      "created": "2026-08-31T14:55:25Z",
+      "pushed": "2026-10-07T00:25:30Z",
+      "license": "MIT",
+      "stars": 1,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": null,
+      "released": null,
+      "preview": null
+    },
+    {
+      "repository": "PonomarevDA/libdcnode",
+      "url": "https://github.com/PonomarevDA/libdcnode",
+      "description": "Lightweight DroneCAN node toolkit built on top of libcanard, platform_specific and libparams",
+      "created": "2023-12-21T15:40:36Z",
+      "pushed": "2026-10-06T21:46:52Z",
+      "license": "MPL-2.0",
+      "stars": 5,
+      "matched_queries": [
+        "topic:dronecan"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": null,
+      "released": null,
+      "preview": null
+    }
+  ],
+  "errors": []
+}

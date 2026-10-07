@@ -14,16 +14,16 @@ The tradeoff: complexity, weight, cost. A serious mesh radio node costs $2,000�
 ## Technology Approaches
 
 ### Kinetic Mesh (Rajant BreadCrumb)
-Rajant Corporation (Malvern PA, USA — NDAA ✓) invented the "Kinetic Mesh" concept — a fully mobile, peer-to-peer radio network where nodes move at speed without handoff latency. Every BreadCrumb node simultaneously operates multiple radios on different frequencies, creating redundant simultaneous paths.
+Rajant Corporation (Malvern PA, USA — procurement status unverified) invented the "Kinetic Mesh" concept — a fully mobile, peer-to-peer radio network where nodes move at speed without handoff latency. Every BreadCrumb node simultaneously operates multiple radios on different frequencies, creating redundant simultaneous paths.
 
 **Key differentiator:** InstaMesh protocol makes topology decisions in microseconds. Traditional WiFi mesh has handoff latency of hundreds of milliseconds — unacceptable for moving vehicles. Rajant's InstaMesh is effectively zero-latency for the application layer.
 
 **Drone applications:** Multi-drone swarm coordination, mining/industrial autonomous vehicle fleets, military multi-platform operations. Extensively deployed in DoD programs.
 
-**Specs (LX5):** 5 radio interfaces, 900MHz + 2.4GHz + 4.9GHz + 5.8GHz options. 1W max per radio. ~120g. Ethernet + serial interfaces. IP67. NDAA compliant.
+**Specs (LX5):** 5 radio interfaces, 900MHz + 2.4GHz + 4.9GHz + 5.8GHz options. 1W max per radio. ~120g. Ethernet + serial interfaces. IP67. Exact variant specifications and procurement status require current primary evidence.
 
 ### Silvus StreamCaster
-Silvus Technologies (Los Angeles CA, USA — NDAA ✓) produces the MANET (Mobile Ad-hoc Network) radios used extensively in DoD programs. StreamCaster uses MIMO (Multiple Input Multiple Output) OFDM to maximize throughput and range in multipath environments.
+Silvus Technologies (Los Angeles CA, USA — procurement status unverified) produces the MANET (Mobile Ad-hoc Network) radios used extensively in DoD programs. StreamCaster uses MIMO (Multiple Input Multiple Output) OFDM to maximize throughput and range in multipath environments.
 
 **Technical differentiator:** 4×4 MIMO provides spatial multiplexing — effectively 4 parallel data streams on the same frequency. This dramatically increases throughput in the 5–30km range band compared to single-antenna designs.
 
@@ -43,33 +43,23 @@ Doodle Labs (USA/Singapore — verify per contract) produces compact mesh radios
 **Why it matters:** Most mesh radios require a companion computer for protocol translation. Mesh Rider handles MAVLink natively, which simplifies integration dramatically for small drones.
 
 ### Elsight HALO
-Elsight (Petah Tikva, Israel — allied nation ✓) produces the HALO multi-link connectivity platform. HALO differs from pure mesh radios — it's a multi-WAN bonding device that aggregates cellular (4G/5G), satellite, and RF links simultaneously.
+Elsight (Petah Tikva, Israel — procurement status unverified) produces the HALO multi-link connectivity platform. HALO differs from pure mesh radios — it's a multi-WAN bonding device that aggregates cellular (4G/5G), satellite, and RF links simultaneously.
 
 **Use case:** BVLOS operations where no single link is reliable. HALO bonds 4G + satellite + RF into a single virtual connection, automatically routing traffic over the best-available path. Latency and bandwidth are load-balanced across all active links.
 
 **Weight:** 115g (HALO Pro). Integrates via Ethernet with companion computer.
 
 ### Horizon31 MobileMesh
-Horizon31 (USA — NDAA ✓) produces compact mesh radios for small UAS. The RM-1900 operates at 900MHz for superior range and obstacle penetration. Designed for Group 1-2 drones as a relay node for extending LTE/cellular connectivity.
+Horizon31 (USA — procurement status unverified) produces compact mesh radios for small UAS. The RM-1900 operates at 900MHz for superior range and obstacle penetration. Designed for Group 1-2 drones as a relay node for extending LTE/cellular connectivity.
 
 ### Software-Defined Mesh (Meshmerize, Silvus SmartEdge)
-A growing category of mesh software that runs on commodity hardware (Raspberry Pi, Intel NUC, Nvidia Jetson) with off-the-shelf SDR radios. Meshmerize (Germany — EU/NATO ✓) provides a software stack that turns Linux hardware into a MANET node.
+A growing category of mesh software that runs on commodity hardware (Raspberry Pi, Intel NUC, Nvidia Jetson) with off-the-shelf SDR radios. Meshmerize (Germany — origin only; procurement unverified) provides a software stack that turns Linux hardware into a MANET node.
 
 **Advantage:** Flexibility, upgradability, cost. **Disadvantage:** Integration complexity, no hardened RF front end, regulatory compliance varies.
 
-## NDAA Landscape
+## Procurement evidence
 
-| Product | Manufacturer | Origin | NDAA |
-|---|---|---|---|
-| BreadCrumb (all variants) | Rajant | USA | ✓ |
-| StreamCaster 4200/4400 | Silvus | USA | ✓ |
-| Mesh Rider | Doodle Labs | USA | ✓ |
-| HALO | Elsight | Israel | ✓ Allied |
-| MobileMesh | Horizon31 | USA | ✓ |
-| Meshmerize | Meshmerize | Germany | ✓ EU/NATO |
-| CreoAir | Creomagic | Israel | ✓ Allied |
-
-Mesh radios are one of the cleanest NDAA categories — the serious players are all US, Israeli, or European. No Chinese-manufactured mesh radio has established a foothold in this market segment.
+Country of headquarters or assembly does not establish eligibility. Check the exact item, revision, bill of materials, applicable contracting authority and dated supporting documentation using [federal procurement screening](ndaa-compliance.md). This reference does not certify the listed products.
 
 ## Integration Patterns
 

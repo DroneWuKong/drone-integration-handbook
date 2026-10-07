@@ -98,10 +98,8 @@ The FPV antenna connector ecosystem is fragmented and a source of real frustrati
 
 ## NDAA
 
-Antennas themselves are passive RF devices — the NDAA concern is manufacturing origin. Most high-performance FPV antennas come from: TrueRC (Canada ✓), ImmersionRC (Ireland ✓), AKK (China ✗), Foxeer antennas (China ✗), GEPRC (China ✗).
-
-For non-critical use, Chinese-made antennas are functionally adequate. For federated procurement, TrueRC and ImmersionRC are the primary NDAA-compliant high-performance options.
+Country of headquarters or assembly does not establish eligibility. Check the exact item, revision, bill of materials, applicable contracting authority and dated supporting documentation using [federal procurement screening](ndaa-compliance.md). This reference does not certify the listed products.
 
 ## Forge Cross-Reference
 
-394 antenna entries spanning every category above. Use the `USA` and `NDAA ✓` filter pills to narrow to compliant options. The antennas category currently shows manufacturer_country as the primary compliance indicator — sort by price to find budget omni options vs. premium directional systems.
+Origin/catalog attributes are discovery leads. Verify exact item and authority using [federal procurement screening](ndaa-compliance.md).

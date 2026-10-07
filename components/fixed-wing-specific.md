@@ -58,7 +58,7 @@ distinguish low groundspeed (safe landing) from stall (crash).
 
 | Sensor | Interface | Accuracy | Notes |
 |--------|-----------|----------|-------|
-| Matek ASPD-7002 | I2C (DroneCAN) | ±0.5 m/s | Good value, NDAA ✓ |
+| Matek ASPD-7002 | I2C (DroneCAN) | ±0.5 m/s | Good value, procurement status unverified |
 | mRo i2c Airspeed | I2C | ±1 m/s | Common on Pixhawk builds |
 | Sensirion SDP3x | I2C | ±0.3 m/s | Highest accuracy, requires calibration |
 | Foxtech pitot | Analog | ±2 m/s | Budget option |
@@ -202,16 +202,9 @@ Configure a glide ratio parameter so the autopilot plans for engine-out:
 
 ---
 
-## NDAA-Compliant Fixed-Wing Options
+## Procurement evidence
 
-| Platform | Blue UAS | Endurance | Range | Notes |
-|----------|----------|-----------|-------|-------|
-| WingtraOne GEN II | YES | 59 min | 30km | Mapping specialist |
-| AgEagle eBee VISION | YES | 90+ min | 40km | Long-endurance survey |
-| AgEagle eBee TAC | YES | 90+ min | 40km | Defense variant |
-| Censys Sentaero | YES | 70 min | 20km | BVLOS certified |
-
----
+Country of headquarters or assembly does not establish eligibility. Check the exact item, revision, bill of materials, applicable contracting authority and dated supporting documentation using [federal procurement screening](ndaa-compliance.md). This reference does not certify the listed products.
 
 ## Related
 

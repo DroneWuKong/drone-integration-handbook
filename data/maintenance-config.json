@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "releases": [
+    {
+      "id": "ArduCopter",
+      "repository": "ArduPilot/ardupilot",
+      "tag_prefix": "Copter-",
+      "covered": "Copter-4.7.1",
+      "check_days": 7,
+      "sections": [
+        "components/rtk-ppk-gps-integration.md",
+        "firmware/mavlink-protocol.md",
+        "components/lidar-rangefinders.md"
+      ]
+    },
+    {
+      "id": "Betaflight",
+      "repository": "betaflight/betaflight",
+      "covered": "2025.12.0",
+      "check_days": 7,
+      "sections": [
+        "firmware/four-firmwares.md",
+        "field/preflight.md"
+      ]
+    },
+    {
+      "id": "Betaflight App",
+      "repository": "betaflight/betaflight-configurator",
+      "covered": "2025.12.1",
+      "check_days": 7,
+      "sections": [
+        "firmware/four-firmwares.md",
+        "firmware/backup-upgrade-recovery.md"
+      ]
+    },
+    {
+      "id": "PX4",
+      "repository": "PX4/PX4-Autopilot",
+      "covered": "v1.17.0",
+      "check_days": 7,
+      "sections": [
+        "autonomy/onboard-ai-control.md",
+        "integration/secure-multiclient-telemetry.md"
+      ]
+    },
+    {
+      "id": "INAV",
+      "repository": "iNavFlight/inav",
+      "covered": null,
+      "check_days": 7,
+      "sections": [
+        "firmware/four-firmwares.md",
+        "firmware/msp-protocol.md"
+      ]
+    },
+    {
+      "id": "OpenHD",
+      "repository": "OpenHD/OpenHD",
+      "covered": null,
+      "check_days": 7,
+      "sections": [
+        "components/openhd-implementation-guide.md",
+        "components/comms-datalinks.md"
+      ]
+    },
+    {
+      "id": "MAVLink",
+      "repository": "mavlink/mavlink",
+      "covered": null,
+      "check_days": 7,
+      "sections": [
+        "firmware/mavlink-protocol.md",
+        "appendices/appendix-c-mavlink-quick-reference.md"
+      ]
+    },
+    {
+      "id": "DroneCAN",
+      "repository": "DroneCAN/libcanard",
+      "covered": null,
+      "check_days": 7,
+      "sections": [
+        "firmware/can-dronecan-cyphal.md"
+      ]
+    }
+  ],
+  "repositories": [
+    {
+      "repository": "DroneWuKong/droneclear_Forge",
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "repository": "DroneWuKong/forge-data",
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "repository": "DroneWuKong/MultiProtocol-UAS-TAK-Bridge",
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "repository": "DroneWuKong/Orqa_H7_PX4_Ports",
+      "paths": [
+        "README.md"
+      ]
+    },
+    {
+      "repository": "DroneWuKong/Field-Kit",
+      "paths": [
+        "README.md"
+      ]
+    }
+  ],
+  "private_discovery_route": "Ai-Project sanitized public data via DroneWuKong/forge-data; raw private content is excluded",
+  "emerging_queries": [
+    "topic:mavlink created:>={created_after}",
+    "topic:drone topic:simulation created:>={created_after}",
+    "topic:visual-inertial-odometry",
+    "topic:dronecan",
+    "topic:gstreamer topic:robotics"
+  ]
+}

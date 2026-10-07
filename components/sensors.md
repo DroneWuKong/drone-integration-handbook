@@ -16,7 +16,7 @@ Multispectral cameras capture light across multiple discrete wavelength bands be
 **Why bands matter:** Healthy vegetation absorbs red light and strongly reflects NIR. Dead or stressed vegetation reflects red and absorbs NIR. The NDVI (Normalized Difference Vegetation Index) formula `(NIR - Red) / (NIR + Red)` produces a health map from those two bands. You can't calculate NDVI with a standard camera.
 
 ### MicaSense RedEdge-P (AgEagle)
-MicaSense (acquired by AgEagle Aerial Systems, Wichita KS, USA — NDAA ✓) produces the industry-standard multispectral cameras for precision agriculture. The RedEdge-P captures 5 bands: Blue, Green, Red, Red Edge, NIR. 21MP panchromatic band for RGB reference. Integrates with DJI Zenmuse X7 gimbal or standard payload mounts.
+MicaSense (acquired by AgEagle Aerial Systems, Wichita KS, USA — procurement status unverified) produces the industry-standard multispectral cameras for precision agriculture. The RedEdge-P captures 5 bands: Blue, Green, Red, Red Edge, NIR. 21MP panchromatic band for RGB reference. Integrates with DJI Zenmuse X7 gimbal or standard payload mounts.
 
 **Why RedEdge dominates:** 10+ years of field deployment, industry-standard data format, integration with Pix4D/DroneDeploy/Agisoft Metashape, and a large agronomist/researcher community built around its output. If you need multispectral data that downstream customers can process, RedEdge is the safest choice.
 
@@ -26,7 +26,7 @@ The premium offering. Adds a FLIR Lepton 3.5 thermal band to the 5-band multispe
 **Use case:** Irrigation stress mapping, disease detection, precision variable-rate application requiring thermal anomaly correlation with spectral data.
 
 ### Sentera 6X (John Deere)
-Sentera (Minneapolis MN, USA — acquired by John Deere 2025, NDAA ✓) produces multi-sensor cameras positioned as a MicaSense alternative. The 6X captures 6 bands including NDRE (Normalized Difference Red Edge) support. Native John Deere Operations Center integration post-acquisition.
+Sentera (Minneapolis MN, USA — acquired by John Deere 2025, procurement status unverified) produces multi-sensor cameras positioned as a MicaSense alternative. The 6X captures 6 bands including NDRE (Normalized Difference Red Edge) support. Native John Deere Operations Center integration post-acquisition.
 
 **Competitive position:** Sentera offers some price advantage over MicaSense, with comparable data quality. John Deere acquisition provides integration into the largest precision agriculture platform ecosystem.
 
@@ -40,22 +40,13 @@ Sony's 61MP full-frame sensor in a drone-optimized body (248g, no LCD, single in
 **Use case:** Large-area survey where flight time is limited and resolution matters. 61MP full-frame at 100m AGL produces 0.5cm/pixel GSD — comparable to RTK drone surveys at much lower altitude.
 
 ### Phase One Industrial Cameras
-Phase One (Denmark — NDAA ✓) produces the highest-resolution commercially available drone cameras (iXM-100, iXM-50). 100MP medium format. Primary use in large-area survey, corridor mapping, and precision industrial inspection where single-pass resolution requirements exceed what smaller sensors can provide.
+Phase One (Denmark — procurement status unverified) produces the highest-resolution commercially available drone cameras (iXM-100, iXM-50). 100MP medium format. Primary use in large-area survey, corridor mapping, and precision industrial inspection where single-pass resolution requirements exceed what smaller sensors can provide.
 
 **Price point:** $30,000+. Enterprise/government procurement only.
 
-## NDAA Summary
+## Procurement evidence
 
-| Product | Manufacturer | Origin | NDAA |
-|---|---|---|---|
-| RedEdge-P / Altum-PT | AgEagle (MicaSense) | USA | ✓ |
-| Sentera 6X | John Deere | USA | ✓ |
-| Sony ILX-LR1 | Sony | Japan | ✓ Allied |
-| Phase One iXM | Phase One | Denmark | ✓ EU/NATO |
-| DJI Zenmuse P1/L3 | DJI | China | ✗ |
-| RoboSense RS-Helios | RoboSense | China | ✗ |
-
-Survey sensors are a cleaner NDAA category than consumer FPV hardware. The professional precision agriculture camera market is dominated by US manufacturers (AgEagle, John Deere). The main NDAA risk is in the integrated platform — a NDAA-compliant sensor on a DJI Matrice 300 still creates a procurement problem for federal programs due to the FCC Covered List status of DJI platforms.
+Country of headquarters or assembly does not establish eligibility. Check the exact item, revision, bill of materials, applicable contracting authority and dated supporting documentation using [federal procurement screening](ndaa-compliance.md). This reference does not certify the listed products.
 
 ## Processing Pipeline
 

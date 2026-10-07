@@ -17,15 +17,19 @@
 
 ---
 
+## Latency measurement scope
+
+Camera exposure, encoding, radio transport, buffering, decoding and display contribute separately. Specify exact products, firmware, mode, resolution/frame rate, display and sample distribution. Analog, HDZero and other digital families cannot be assigned one universal glass-to-glass number. See [video diagnostics](../integration/video-pipeline-troubleshooting.md).
+
 ## VTX Systems Overview
 
-| System | Type | Resolution | Latency | Encryption | Ecosystem |
-|--------|------|-----------|---------|------------|-----------|
-| Analog 5.8 GHz | Analog | ~700 TVL | <1 ms | None | Open (any goggles) |
-| DJI O3 / O4 Pro | Digital | 1080p+ | ~30–50 ms | Yes | DJI goggles only |
-| Walksnail Avatar | Digital | 1080p | ~30–50 ms | Yes | Walksnail/compatible |
-| HDZero | Digital | 720p | <4 ms | No | Multi-goggle |
-| OpenHD / OpenIPC | Digital | Variable | 80–150 ms | Configurable | Open source |
+| System | Type | Resolution | Encryption | Ecosystem |
+|--------|------|-----------|------------|-----------|
+| Analog 5.8 GHz | Analog | ~700 TVL | None | Open (any goggles) |
+| DJI O3 / O4 Pro | Digital | 1080p+ | Yes | DJI goggles only |
+| Walksnail Avatar | Digital | 1080p | Yes | Walksnail/compatible |
+| HDZero | Digital | 720p | No | Multi-goggle |
+| OpenHD / OpenIPC | Digital | Variable | Configurable | Open source |
 
 ---
 
@@ -120,10 +124,9 @@ The racer's digital system. Fundamentally different architecture from
 DJI/Walksnail.
 
 **Architecture:** digital transmission optimized for minimum latency rather
-than maximum resolution. Sub-4ms glass-to-glass latency — comparable to
-analog.
+than maximum resolution. Latency must name camera/mode and receiver/display. Transport latency alone is not glass-to-glass.
 
-**Strengths:** lowest latency of any digital system, lightweight modules
+**Selection considerations:** measure the exact camera, mode, receiver and display; compare module mass
 (Whoop VTX is extremely compact), open protocol supporting multiple goggle
 brands, community-driven development.
 **Weaknesses:** 720p maximum resolution (lower than competitors), smaller
@@ -131,18 +134,7 @@ ecosystem.
 
 ### OpenHD / OpenIPC
 
-Open-source digital video. Two approaches:
-
-**OpenHD** — runs on Raspberry Pi hardware. Uses WiFi chipsets for
-wifibroadcast-style unidirectional streaming. Higher latency (100–150ms)
-but fully configurable frequencies and parameters.
-
-**OpenIPC** — reflashes IP camera board firmware. The camera SoC's hardware
-video encoder provides 1080p60 at ~80ms latency and only 1.7W power draw.
-Cheaper and lower power than OpenHD but harder to set up. License explicitly
-prohibits military use.
-
-**See:** [OpenHD Implementation Guide](openhd-implementation-guide.md)
+These projects have different supported images, boards, drivers and video pipelines. Check exact-version documentation and measure camera-to-display timing and complete rail power. The former universal latency/power/price comparison and project-wide license claim are withdrawn pending component-specific evidence. See [OpenHD](openhd-implementation-guide.md) and [video troubleshooting](../integration/video-pipeline-troubleshooting.md).
 
 ---
 
