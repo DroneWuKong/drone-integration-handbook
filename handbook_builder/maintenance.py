@@ -158,7 +158,7 @@ def emerging_watch(config, reader, today, previous=None):
     return {"schema_version": 1, "checked": today.isoformat(), "next_check": (today + timedelta(days=7)).isoformat(), "projects": projects, "errors": errors}
 
 def render_watch(status):
-    lines = ["# Release and Information Update Watchlist", "", f"Last checked: **{status['checked']}**. Version matches establish metadata only; they do not verify every claim in a chapter. A changed release opens a section check. Preview releases remain separate from published stable releases.", "", "| Project | Version covered | Latest stable / release date | Preview | Status | Check these sections | Next check |", "|---|---|---|---|---|---|---|"]
+    lines = ["# Release and Information Update Watchlist", "", f"Last checked: **{status['checked']}**. Version matches establish metadata only; they do not verify every claim in a chapter. A changed release opens a section check. Preview releases remain separate from published stable releases. This table observes GitHub releases; projects may also distribute builds through other channels. A tag or code push is not a published release.", "", "| Project | Version covered | Latest stable GitHub release / date | Preview | Status | Check these sections | Next check |", "|---|---|---|---|---|---|---|"]
     for row in status["items"]:
         links = ", ".join(f"[{Path(p).stem}]({Path('..') / p})" for p in row["sections"])
         url = row.get("url") or "https://github.com/" + row["repository"] + "/releases"
@@ -175,7 +175,7 @@ def render_watch(status):
     return "\n".join(lines) + "\n"
 
 def render_emerging(status):
-    lines = ["# Emerging Technology Watch", "", f"Observed **{status['checked']}**; next scheduled check by **{status['next_check']}**. This automatically maintained list uses GitHub search metadata. Selection is an editorial inference from topic relevance and recent activity, not a performance endorsement or hardware acceptance.", "", "| Project | Project description (unverified) | Latest stable / release date | Last code push | License | Evidence status |", "|---|---|---|---|---|---|"]
+    lines = ["# Emerging Technology Watch", "", f"Observed **{status['checked']}**; next scheduled check by **{status['next_check']}**. This automatically maintained list uses GitHub search metadata. Selection is an editorial inference from topic relevance and recent activity, not a performance endorsement or hardware acceptance.", "", "| Project | Project description (unverified) | Latest stable GitHub release / date | Last code push | License | Evidence status |", "|---|---|---|---|---|---|"]
     for p in status["projects"]:
         lines.append(f"| [{cell(p['repository'])}]({p['url']}) | {cell(p['description'][:220])} | {cell(p.get('release') or 'none observed')} / {cell(p.get('released') or 'unknown')} | {cell((p.get('pushed') or 'unknown')[:10])} | {cell(p['license'])} | {cell(p['status'])} |")
     if not status["projects"]: lines.append("| No results available | Search will retry; no capability inferred | unknown | unknown | unknown | unverified |")

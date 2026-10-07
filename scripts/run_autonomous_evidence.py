@@ -58,7 +58,7 @@ def main() -> None:
     dispatch_url=os.environ.get("AUTONOMY_DISPATCH_URL","").strip().rstrip("/")
     review_token=os.environ.get("AUTONOMY_REVIEW_TOKEN","").strip()
     use_dispatch=args.provider=="dispatch" or (args.provider=="auto" and bool(dispatch_url and review_token))
-    use_openai = args.provider == "openai" or (args.provider == "auto" and not use_dispatch and bool(os.environ.get("OPENAI_API_KEY")))
+    use_openai = args.provider == "openai"
     if args.provider == "openai" and not os.environ.get("OPENAI_API_KEY"):
         raise SystemExit("OPENAI_API_KEY is required for --provider openai; software planning completed but no request was sent")
     if args.provider == "dispatch" and not (dispatch_url and review_token):

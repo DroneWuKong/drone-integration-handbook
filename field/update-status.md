@@ -1,8 +1,8 @@
 # Release and Information Update Watchlist
 
-Last checked: **2026-10-07**. Version matches establish metadata only; they do not verify every claim in a chapter. A changed release opens a section check. Preview releases remain separate from published stable releases.
+Last checked: **2026-10-07**. Version matches establish metadata only; they do not verify every claim in a chapter. A changed release opens a section check. Preview releases remain separate from published stable releases. This table observes GitHub releases; projects may also distribute builds through other channels. A tag or code push is not a published release.
 
-| Project | Version covered | Latest stable / release date | Preview | Status | Check these sections | Next check |
+| Project | Version covered | Latest stable GitHub release / date | Preview | Status | Check these sections | Next check |
 |---|---|---|---|---|---|---|
 | [ArduCopter](https://github.com/ArduPilot/ardupilot/releases/tag/Copter-4.7.1) | Copter-4.7.1 | Copter-4.7.1 / 2026-09-03 | none observed | version-matches | [rtk-ppk-gps-integration](../components/rtk-ppk-gps-integration.md), [mavlink-protocol](../firmware/mavlink-protocol.md), [lidar-rangefinders](../components/lidar-rangefinders.md) | 2026-10-14 |
 | [Betaflight](https://github.com/betaflight/betaflight/releases/tag/2026.6.2) | 2025.12.0 | 2026.6.2 / 2026-09-16 | 2026.6.0-rc3 | check-section | [four-firmwares](../firmware/four-firmwares.md), [preflight](../field/preflight.md) | 2026-10-14 |

@@ -2,7 +2,7 @@
 
 Observed **2026-10-07**; next scheduled check by **2026-10-14**. This automatically maintained list uses GitHub search metadata. Selection is an editorial inference from topic relevance and recent activity, not a performance endorsement or hardware acceptance.
 
-| Project | Project description (unverified) | Latest stable / release date | Last code push | License | Evidence status |
+| Project | Project description (unverified) | Latest stable GitHub release / date | Last code push | License | Evidence status |
 |---|---|---|---|---|---|
 | [teklot/MavlinkSharp](https://github.com/teklot/MavlinkSharp) | MavlinkSharp is a lightweight .NET library for parsing MAVLink v1/v2 raw messages using standard or custom dialects. It is extremely fast, flexible, and easy to use, and also provides tools for constructing and encoding | none observed / unknown | 2026-10-07 | MIT | watch-only; capability unverified |
 | [rsasaki0109/visloc-rs](https://github.com/rsasaki0109/visloc-rs) | SfM, visual-inertial SLAM, 3D Gaussian Splatting and localization in pure Rust | v0.2.0 / 2026-09-15 | 2026-10-07 | NOASSERTION | watch-only; capability unverified |
