@@ -78,10 +78,11 @@ class MaintenanceTests(unittest.TestCase):
             root=Path(td);(root/'data').mkdir();(root/'integration').mkdir()
             (root/'data/evidence.json').write_text('{"claims":[],"sources":[]}')
             target=root/'integration/repository-updates.md';target.write_text('# Notes\n')
-            for failure in ['source','scope','hold','path']:
+            for failure in ['source','scope','hold','path','future']:
                 value=bundle();target.write_text('# Notes\n'+('publication-hold' if failure=='hold' else ''))
                 if failure=='scope':value['packets'][1]['scope']='Other version'
                 if failure=='path':value['spec']['path']='../secret.md'
+                if failure=='future':value['packets'][1]['effective_date']='2027-01-01'
                 fetch=lambda u,a:BODY+(b' changed' if failure=='source' else b'')
                 changed,outcomes=apply_verified(root,[value],today=TODAY,fetch=fetch)
                 self.assertEqual(changed,[],failure);self.assertEqual(outcomes[0]['state'],'abstained',failure)

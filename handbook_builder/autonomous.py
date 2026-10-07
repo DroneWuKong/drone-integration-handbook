@@ -186,6 +186,7 @@ def _role_prompt(spec: dict[str, Any], role: str) -> str:
 Claim ID: {spec['claim_id']}
 Claim type: {spec['claim_type']}
 Risk: {spec['risk']}
+As-of date: {spec['created_at'][:10]}
 Exact statement: {spec['statement']}
 Canonical scope when supplied: {spec.get('scope', '')}
 Existing leads (leads are not proof):

@@ -196,7 +196,7 @@ def scheduled_records(snapshot, sources, source_state, today, watched=None):
             release_changed = any(record.get('path') in row['sections'] and row.get('status') == 'check-section' for row in (watched or []))
             if (today - verified).days < days and not changes and not release_changed: continue
             cycle = max(1, (today - verified).days // days)
-        else: cycle = 0
+        else: cycle = today.toordinal() // 30
         fingerprints = {s: source_state.get("sources", {}).get(s, {}).get("digest", "") for s in record.get("sources", [])}
         item = {**record, "review_cycle": cycle, "evidence_revision": stable_id(json.dumps(fingerprints, sort_keys=True)) if fingerprints else ""}
         item.update(triage(item)); records.append(item)
@@ -209,7 +209,7 @@ def pending(records, ledger, release):
         spec = research_spec(record, release)
         if spec["id"] in known: continue
         # Migrate old deploy-bound jobs without restarting active/completed work.
-        if any(row.get("spec", {}).get("verification_protocol") is None and row.get("spec", {}).get("claim_id") == spec["claim_id"] and row.get("spec", {}).get("statement") == spec["statement"] and row.get("state") in {"researching", "adjudicating", "complete", "exception", "abstained"} for row in ledger): continue
+        if any(row.get("spec", {}).get("verification_protocol") is None and row.get("spec", {}).get("claim_id") == spec["claim_id"] and row.get("spec", {}).get("statement") == spec["statement"] and row.get("state") in {"researching", "adjudicating", "complete", "exception", "abstained"} and (row.get('state') in {'researching','adjudicating'} or (date.today()-date.fromisoformat(row['spec'].get('created_at','1970-01-01')[:10])).days<30) for row in ledger): continue
         result.append(record)
         known.add(spec['id'])
     ordered=sorted(result, key=lambda x: ({"P0":0,"P1":1,"P2":2,"P3":3}.get(x.get("priority"),3), -x.get("score",0), x["id"]))
@@ -235,6 +235,7 @@ def apply_verified(root, bundles, *, today, fetch=None):
             classified = claim_type({"statement": statement, **triage({"statement":statement})})
             if classified in {"safety", "recommendation"} or spec["claim_type"] in {"safety", "recommendation", "calculation"}: raise ValueError("exception-policy")
             if {p.get("role") for p in packets} != {"researcher", "verifier"} or len(packets) != 2: raise ValueError("two-isolated-roles-required")
+            if any(p.get('effective_date') and date.fromisoformat(p['effective_date'])>today for p in packets):raise ValueError('future-effective-date')
             if any(p["proposed_statement"] != statement for p in packets) or packets[0]["scope"] != packets[1]["scope"] or not packets[0]["scope"].strip(): raise ValueError("exact-statement-and-scope-required")
             if any(s["source_class"] in {"other", "field-observation"} for p in packets for s in p["sources"]): raise ValueError("primary-source-required")
             if classified in {'performance','compatibility'} or spec['claim_type'] in {'performance','compatibility'}:
