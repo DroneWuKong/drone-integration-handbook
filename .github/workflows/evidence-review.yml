@@ -9,25 +9,33 @@ on:
     paths:
       - .github/workflows/evidence-review.yml
       - scripts/maintain_handbook.py
+      - scripts/package_maintenance.py
       - handbook_builder/maintenance.py
       - data/maintenance-config.json
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: evidence-review-queue
+  # Isolate the split pipeline from a stalled legacy all-in-one runner.
+  # Both generations reject a push if main moved since their checkout.
+  group: evidence-review-queue-v2
   cancel-in-progress: false
 
 jobs:
-  maintain:
+  prepare:
     runs-on: [self-hosted, prismo]
-    timeout-minutes: 30
+    timeout-minutes: 15
+    outputs:
+      base_sha: ${{ steps.base.outputs.sha }}
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
           fetch-depth: 0
+      - name: Record the source revision
+        id: base
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v4
         with:
           node-version: "24"
@@ -67,50 +75,15 @@ jobs:
           AUTONOMY_DISPATCH_URL: ${{ secrets.AUTONOMY_DISPATCH_URL }}
           AUTONOMY_REVIEW_TOKEN: ${{ secrets.AUTONOMY_REVIEW_TOKEN }}
         run: |
-          .venv/bin/python scripts/run_autonomous_evidence.py --input .local/autonomy/maintenance-queue.json --provider auto --maximum 2 --start-limit 4 --request-limit 4
-      - name: Validate the proposed public revision
-        run: |
-          .venv/bin/python -m compileall -q build.py handbook_builder scripts tests
-          .venv/bin/python -m unittest discover -s tests
-          npm test
-          for file in assets/*.js server/*.mjs functions/api/*.js; do node --check "$file"; done
-          .venv/bin/python scripts/check_links.py
-          .venv/bin/python scripts/check_integration_replay.py
-          .venv/bin/python build.py
-          .venv/bin/python scripts/reconcile_tables.py
-          .venv/bin/python scripts/check_generated_site.py site/index.html
-          .venv/bin/python scripts/check_evidence.py
-          .venv/bin/python scripts/build_review_queue.py
-          npm run build:functions
-          npx playwright install chromium
-          npm run test:browser
-      - name: Publish the validated public changes
-        run: |
-          .venv/bin/python - <<'PY'
-          import json, subprocess
-          from pathlib import Path
-          paths=json.loads(Path('.local/autonomy/changed-files.json').read_text())+['data/table-dispositions.json']
-          allowed={'data/evidence.json','data/table-dispositions.json','data/update-status.json','data/emerging-watch.json'}
-          roots={'fundamentals','firmware','field','integration','components','platforms','autonomy','appendices'}
-          for value in paths:
-              path=Path(value)
-              assert not path.is_absolute() and '..' not in path.parts
-              assert value in allowed or (path.parts[0] in roots and path.suffix=='.md')
-          subprocess.run(['git','add','--',*sorted(set(paths))],check=True)
-          PY
-          if git diff --cached --quiet; then exit 0; fi
-          git config user.name "handbook-maintenance[bot]"
-          git config user.email "handbook-maintenance[bot]@users.noreply.github.com"
-          git commit -m "Maintain dated release watchlists and independently verified facts"
-          # A concurrent main change aborts this push; never force or overwrite it.
-          git push origin HEAD:main
-      - name: Verify the published revision
-        run: |
-          for attempt in $(seq 1 12); do
-            if .venv/bin/python scripts/check_deployment.py https://uas-handbook.com --expected-commit "$(git rev-parse HEAD)" --require-storage --require-attachments; then exit 0; fi
-            sleep 15
-          done
-          exit 1
+          .venv/bin/python scripts/run_autonomous_evidence.py --input .local/autonomy/maintenance-queue.json --provider auto --maximum 2 --start-limit 4 --request-limit 4 --model gpt-5.5
+      - name: Package public candidate files
+        run: .venv/bin/python scripts/package_maintenance.py --output .local/maintenance-candidate
+      - uses: actions/upload-artifact@v4
+        with:
+          name: handbook-candidate-${{ github.run_id }}
+          path: .local/maintenance-candidate/
+          include-hidden-files: true
+          retention-days: 2
       - name: Summarize maintenance
         if: always()
         run: |
@@ -144,3 +117,93 @@ jobs:
             data/emerging-watch.json
           if-no-files-found: warn
           retention-days: 30
+
+  validate:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.base_sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - uses: actions/download-artifact@v4
+        with:
+          name: handbook-candidate-${{ github.run_id }}
+          path: .
+      - name: Install public build dependencies
+        run: |
+          python3 -m pip install -r requirements.txt
+          npm ci
+      - name: Validate the proposed public revision
+        run: |
+          python3 -m compileall -q build.py handbook_builder scripts tests
+          python3 -m unittest discover -s tests
+          npm test
+          for file in assets/*.js server/*.mjs functions/api/*.js; do node --check "$file"; done
+          python3 scripts/check_links.py
+          python3 scripts/check_integration_replay.py
+          python3 build.py
+          python3 scripts/reconcile_tables.py
+          python3 scripts/check_generated_site.py site/index.html
+          python3 scripts/check_evidence.py
+          python3 scripts/build_review_queue.py
+          npm run build:functions
+          npx playwright install --with-deps chromium
+          npm run test:browser
+      - name: Package the validated public revision
+        run: python3 scripts/package_maintenance.py --output .local/maintenance-validated --include-tables
+      - uses: actions/upload-artifact@v4
+        with:
+          name: handbook-validated-${{ github.run_id }}
+          path: .local/maintenance-validated/
+          include-hidden-files: true
+          retention-days: 2
+
+  publish:
+    needs: [prepare, validate]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.prepare.outputs.base_sha }}
+      - uses: actions/download-artifact@v4
+        with:
+          name: handbook-validated-${{ github.run_id }}
+          path: .
+      - name: Publish the validated public changes
+        run: |
+          python3 - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          paths=json.loads(Path('.local/autonomy/changed-files.json').read_text())+['data/table-dispositions.json']
+          allowed={'data/evidence.json','data/table-dispositions.json','data/update-status.json','data/emerging-watch.json'}
+          roots={'fundamentals','firmware','field','integration','components','platforms','autonomy','appendices'}
+          for value in paths:
+              path=Path(value)
+              assert not path.is_absolute() and '..' not in path.parts
+              assert value in allowed or (path.parts[0] in roots and path.suffix=='.md')
+          subprocess.run(['git','add','--',*sorted(set(paths))],check=True)
+          PY
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "handbook-maintenance[bot]"
+          git config user.email "handbook-maintenance[bot]@users.noreply.github.com"
+          git commit -m "Maintain dated release watchlists and independently verified facts"
+          # A concurrent main change aborts this push; never force or overwrite it.
+          git push origin HEAD:main
+      - name: Verify the published revision
+        run: |
+          for attempt in $(seq 1 12); do
+            if python3 scripts/check_deployment.py https://uas-handbook.com --expected-commit "$(git rev-parse HEAD)" --require-storage --require-attachments; then exit 0; fi
+            sleep 15
+          done
+          exit 1
