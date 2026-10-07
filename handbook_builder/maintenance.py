@@ -117,6 +117,8 @@ def discover(config, reader, today):
                     record = {"id": rid, "article_id": "article-62", "title": "Repository Integration Notes", "anchor": "ch62", "path": ADDITIONS_PATH,
                         "record_type": "repository-candidate", "statement": statement, "source_candidates": [url], "article_source_candidates": [],
                         "evidence_revision": obj["sha"], "discovery_repository": repo, "source_release_date": None}
+                    record['scope']=f"Repository declaration in {path}, source blob {obj['sha']}; documentation only, no hardware acceptance or procurement certification."
+                    record['review_cycle']=today.toordinal()//30
                     record.update(triage(record)); records.append(record)
                     if sum(x.get("discovery_repository") == repo for x in records) >= 3: break
         except Exception as error:
@@ -256,6 +258,7 @@ def apply_verified(root, bundles, *, today, fetch=None):
             if "publication-hold" in original or path.as_posix() in {WATCH_PATH,EMERGING_PATH}: raise ValueError("protected-target")
             cid = spec["claim_id"] if spec["claim_id"] in claims else "auto-" + stable_id(spec["claim_id"])
             old = claims.get(cid)
+            if old and (old.get('calculation') or old.get('derivation') or old.get('status')=='derived'):raise ValueError('calculation-reproduction-required')
             if old and old.get("maintenance_decision") == bundle["decision"]["id"]: continue
             expected = spec.get("target_statement", statement)
             if old and old["statement"] != expected: raise ValueError("claim-changed-since-plan")
