@@ -17,7 +17,9 @@ permissions:
   contents: read
 
 concurrency:
-  group: evidence-review-queue
+  # Isolate the split pipeline from a stalled legacy all-in-one runner.
+  # Both generations reject a push if main moved since their checkout.
+  group: evidence-review-queue-v2
   cancel-in-progress: false
 
 jobs:
