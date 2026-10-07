@@ -5,10 +5,10 @@ Last checked: **2026-10-07**. Version matches establish metadata only; they do n
 | Project | Version covered | Latest stable GitHub release / date | Preview | Status | Check these sections | Next check |
 |---|---|---|---|---|---|---|
 | [ArduCopter](https://github.com/ArduPilot/ardupilot/releases/tag/Copter-4.7.1) | Copter-4.7.1 | Copter-4.7.1 / 2026-09-03 | none observed | version-matches | [rtk-ppk-gps-integration](../components/rtk-ppk-gps-integration.md), [mavlink-protocol](../firmware/mavlink-protocol.md), [lidar-rangefinders](../components/lidar-rangefinders.md) | 2026-10-14 |
-| [Betaflight](https://github.com/betaflight/betaflight/releases/tag/2026.6.2) | 2025.12.0 | 2026.6.2 / 2026-09-16 | 2026.6.0-rc3 | check-section | [four-firmwares](../firmware/four-firmwares.md), [preflight](../field/preflight.md) | 2026-10-14 |
+| [Betaflight](https://github.com/betaflight/betaflight/releases/tag/2026.6.2) | 2025.12.0 | 2026.6.2 / 2026-09-16 | 2026.6.0-rc3 | unavailable | [four-firmwares](../firmware/four-firmwares.md), [preflight](../field/preflight.md) | 2026-10-14 |
 | [Betaflight App](https://github.com/betaflight/betaflight-configurator/releases/tag/2026.6.2) | 2025.12.1 | 2026.6.2 / 2026-09-16 | 2026.6.0-RC3 | check-section | [four-firmwares](../firmware/four-firmwares.md), [backup-upgrade-recovery](../firmware/backup-upgrade-recovery.md) | 2026-10-14 |
-| [PX4](https://github.com/PX4/PX4-Autopilot/releases/tag/v1.17.0) | v1.17.0 | v1.17.0 / 2026-05-13 | v1.18.0-rc1 | version-matches | [onboard-ai-control](../autonomy/onboard-ai-control.md), [secure-multiclient-telemetry](../integration/secure-multiclient-telemetry.md) | 2026-10-14 |
-| [INAV](https://github.com/iNavFlight/inav/releases/tag/9.1.0) | not version-pinned | 9.1.0 / 2026-07-09 | 10.0.0-rc2 | check-section | [four-firmwares](../firmware/four-firmwares.md), [msp-protocol](../firmware/msp-protocol.md) | 2026-10-14 |
+| [PX4](https://github.com/PX4/PX4-Autopilot/releases/tag/v1.17.0) | v1.17.0 | v1.17.0 / 2026-05-13 | v1.18.0-rc1 | unavailable | [onboard-ai-control](../autonomy/onboard-ai-control.md), [secure-multiclient-telemetry](../integration/secure-multiclient-telemetry.md) | 2026-10-14 |
+| [INAV](https://github.com/iNavFlight/inav/releases/tag/9.1.0) | not version-pinned | 9.1.0 / 2026-07-09 | 10.0.0-rc2 | unavailable | [four-firmwares](../firmware/four-firmwares.md), [msp-protocol](../firmware/msp-protocol.md) | 2026-10-14 |
 | [OpenHD](https://github.com/OpenHD/OpenHD/releases/tag/v2.6.0) | not version-pinned | v2.6.0 / 2024-05-24 | v2.5.0-beta3 | check-section | [openhd-implementation-guide](../components/openhd-implementation-guide.md), [comms-datalinks](../components/comms-datalinks.md) | 2026-10-14 |
 | [MAVLink](https://github.com/mavlink/mavlink/releases) | not version-pinned | unknown / unknown | none observed | no-published-release | [mavlink-protocol](../firmware/mavlink-protocol.md), [appendix-c-mavlink-quick-reference](../appendices/appendix-c-mavlink-quick-reference.md) | 2026-10-14 |
 | [DroneCAN](https://github.com/DroneCAN/libcanard/releases) | not version-pinned | unknown / unknown | none observed | no-published-release | [can-dronecan-cyphal](../firmware/can-dronecan-cyphal.md) | 2026-10-14 |
@@ -31,13 +31,12 @@ See [emerging projects](../integration/emerging-technology-watch.md) and [reposi
 |---|---|---|---|---|
 | [DroneWuKong/droneclear_Forge](https://github.com/DroneWuKong/droneclear_Forge) | f34ab8162ae6 | 2026-10-07 | 2026-10-07 | observed |
 | [DroneWuKong/forge-data](https://github.com/DroneWuKong/forge-data) | 3041642fdca3 | 2026-10-04 | 2026-10-07 | observed |
-| [DroneWuKong/forge-data](https://github.com/DroneWuKong/forge-data) | unknown | unknown | 2026-10-07 | unavailable |
-| [DroneWuKong/MultiProtocol-UAS-TAK-Bridge](https://github.com/DroneWuKong/MultiProtocol-UAS-TAK-Bridge) | unknown | unknown | 2026-10-07 | unavailable |
-| [DroneWuKong/Orqa_H7_PX4_Ports](https://github.com/DroneWuKong/Orqa_H7_PX4_Ports) | unknown | unknown | 2026-10-07 | unavailable |
-| [DroneWuKong/Field-Kit](https://github.com/DroneWuKong/Field-Kit) | unknown | unknown | 2026-10-07 | unavailable |
-| [Tripop123/apexware-software-hub](https://github.com/Tripop123/apexware-software-hub) | unknown | unknown | 2026-10-07 | unavailable |
-| [teklot/MavlinkSharp](https://github.com/teklot/MavlinkSharp) | unknown | unknown | 2026-10-07 | unavailable |
-| [rsasaki0109/visloc-rs](https://github.com/rsasaki0109/visloc-rs) | unknown | unknown | 2026-10-07 | unavailable |
+| [DroneWuKong/MultiProtocol-UAS-TAK-Bridge](https://github.com/DroneWuKong/MultiProtocol-UAS-TAK-Bridge) | 3177a1ffdf91 | 2026-10-04 | 2026-10-07 | observed |
+| [DroneWuKong/Orqa_H7_PX4_Ports](https://github.com/DroneWuKong/Orqa_H7_PX4_Ports) | 5dca93e099f4 | 2026-10-04 | 2026-10-07 | observed |
+| [DroneWuKong/Field-Kit](https://github.com/DroneWuKong/Field-Kit) | 784d74a0f9b9 | 2026-10-02 | 2026-10-07 | observed |
+| [forgetheworlds/metal-drone-nav](https://github.com/forgetheworlds/metal-drone-nav) | 95b739a1a508 | 2026-10-07 | 2026-10-07 | observed |
+| [alireza787b/PixEagle](https://github.com/alireza787b/PixEagle) | 5fcd76ec81b6 | 2026-10-07 | 2026-10-07 | observed |
+| [kolabuzlu/MavGCS](https://github.com/kolabuzlu/MavGCS) | 1da5d681487f | 2026-10-07 | 2026-10-07 | observed |
 
 ## Source checks and review dates
 
@@ -64,5 +63,5 @@ Reachability is a check; the verification date below is the last factual review.
 | [Betaflight 2025.12 position hold](https://betaflight.com/docs/wiki/guides/current/Position-Hold-2025-12) | 2026-10-07 | 2026-10-07 | reachable | 2026-11-06 |
 | [OpenHD adapter compatibility](https://openhdfpv.org/hardware/wifi-adapters/) | 2026-10-07 | 2026-10-07 | reachable | 2026-11-06 |
 | [PX4 v1.17 Offboard](https://docs.px4.io/v1.17/en/flight_modes/offboard) | 2026-10-07 | 2026-10-07 | reachable | 2026-11-06 |
-| [STM32N6 manufacturer series page](https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html) | 2026-10-07 | 2026-10-07 | reachable | 2026-11-06 |
-| [NXP i.MX 95 manufacturer page](https://www.nxp.com/products/i.MX95) | 2026-10-07 | 2026-10-07 | reachable | 2026-11-06 |
+| [STM32N6 manufacturer series page](https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html) | 2026-10-07 | 2026-10-07 | unavailable | 2026-11-06 |
+| [NXP i.MX 95 manufacturer page](https://www.nxp.com/products/i.MX95) | 2026-10-07 | 2026-10-07 | unavailable | 2026-11-06 |

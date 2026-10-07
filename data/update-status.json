@@ -38,7 +38,8 @@
       "url": "https://github.com/betaflight/betaflight/releases/tag/2026.6.2",
       "preview": "2026.6.0-rc3",
       "preview_released": "2026-07-23",
-      "status": "check-section"
+      "status": "unavailable",
+      "error": "ValueError"
     },
     {
       "id": "Betaflight App",
@@ -74,7 +75,8 @@
       "url": "https://github.com/PX4/PX4-Autopilot/releases/tag/v1.17.0",
       "preview": "v1.18.0-rc1",
       "preview_released": "2026-09-10",
-      "status": "version-matches"
+      "status": "unavailable",
+      "error": "ValueError"
     },
     {
       "id": "INAV",
@@ -92,7 +94,8 @@
       "url": "https://github.com/iNavFlight/inav/releases/tag/9.1.0",
       "preview": "10.0.0-rc2",
       "preview_released": "2026-09-29",
-      "status": "check-section"
+      "status": "unavailable",
+      "error": "ValueError"
     },
     {
       "id": "OpenHD",
@@ -148,9 +151,67 @@
       "status": "no-published-release"
     }
   ],
+  "repositories": [
+    {
+      "repository": "DroneWuKong/droneclear_Forge",
+      "revision": "f34ab8162ae6a92fa27e8afefef3ea0700ad5b64",
+      "pushed": "2026-10-07T14:28:24Z",
+      "checked": "2026-10-07",
+      "status": "observed"
+    },
+    {
+      "repository": "DroneWuKong/forge-data",
+      "revision": "3041642fdca338e550670af01b09a9c886a195f9",
+      "pushed": "2026-10-04T05:41:15Z",
+      "checked": "2026-10-07",
+      "status": "observed"
+    },
+    {
+      "repository": "DroneWuKong/MultiProtocol-UAS-TAK-Bridge",
+      "revision": "3177a1ffdf918b549f360081a5f53ff37e42f73a",
+      "pushed": "2026-10-04T05:30:27Z",
+      "checked": "2026-10-07",
+      "status": "observed"
+    },
+    {
+      "repository": "DroneWuKong/Orqa_H7_PX4_Ports",
+      "revision": "5dca93e099f47ec8a35575c52accccaba9f7c6af",
+      "pushed": "2026-10-04T05:31:41Z",
+      "checked": "2026-10-07",
+      "status": "observed"
+    },
+    {
+      "repository": "DroneWuKong/Field-Kit",
+      "revision": "784d74a0f9b90213f4cadabc384d9bc33ce389fb",
+      "pushed": "2026-10-02T13:45:37Z",
+      "checked": "2026-10-07",
+      "status": "observed"
+    },
+    {
+      "repository": "forgetheworlds/metal-drone-nav",
+      "revision": "95b739a1a508f6ed155271ac8d865a8a1fc4ef9e",
+      "pushed": "2026-10-07T18:54:41Z",
+      "checked": "2026-10-07",
+      "status": "observed"
+    },
+    {
+      "repository": "alireza787b/PixEagle",
+      "revision": "5fcd76ec81b6053a9874f02265f261e88ff7753f",
+      "pushed": "2026-10-07T18:48:50Z",
+      "checked": "2026-10-07",
+      "status": "observed"
+    },
+    {
+      "repository": "kolabuzlu/MavGCS",
+      "revision": "1da5d681487fb1c16d839a02ab18151b5a956c34",
+      "pushed": "2026-10-07T18:10:39Z",
+      "checked": "2026-10-07",
+      "status": "observed"
+    }
+  ],
   "sources": [
     {
-      "title": "Reboot Hub: DJI Drone Parts \u2014 OEM-Pulled Parts and Compatibility",
+      "title": "Reboot Hub: DJI Drone Parts — OEM-Pulled Parts and Compatibility",
       "url": "https://reboot-hub.com/blogs/the-reboot-hub-chronicle/dji-drone-parts-oem-pulled-replacements-compatibility",
       "accessed": "2026-10-03",
       "checked": "2026-10-07",
@@ -306,7 +367,7 @@
       "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html",
       "accessed": "2026-10-07",
       "checked": "2026-10-07",
-      "status": "reachable",
+      "status": "unavailable",
       "due": "2026-11-06"
     },
     {
@@ -314,66 +375,8 @@
       "url": "https://www.nxp.com/products/i.MX95",
       "accessed": "2026-10-07",
       "checked": "2026-10-07",
-      "status": "reachable",
+      "status": "unavailable",
       "due": "2026-11-06"
-    }
-  ],
-  "repositories": [
-    {
-      "repository": "DroneWuKong/droneclear_Forge",
-      "revision": "f34ab8162ae6a92fa27e8afefef3ea0700ad5b64",
-      "pushed": "2026-10-07T14:28:24Z",
-      "checked": "2026-10-07",
-      "status": "observed"
-    },
-    {
-      "repository": "DroneWuKong/forge-data",
-      "revision": "3041642fdca338e550670af01b09a9c886a195f9",
-      "pushed": "2026-10-04T05:41:15Z",
-      "checked": "2026-10-07",
-      "status": "observed"
-    },
-    {
-      "repository": "DroneWuKong/forge-data",
-      "checked": "2026-10-07",
-      "status": "unavailable",
-      "error": "URLError"
-    },
-    {
-      "repository": "DroneWuKong/MultiProtocol-UAS-TAK-Bridge",
-      "checked": "2026-10-07",
-      "status": "unavailable",
-      "error": "URLError"
-    },
-    {
-      "repository": "DroneWuKong/Orqa_H7_PX4_Ports",
-      "checked": "2026-10-07",
-      "status": "unavailable",
-      "error": "URLError"
-    },
-    {
-      "repository": "DroneWuKong/Field-Kit",
-      "checked": "2026-10-07",
-      "status": "unavailable",
-      "error": "URLError"
-    },
-    {
-      "repository": "Tripop123/apexware-software-hub",
-      "checked": "2026-10-07",
-      "status": "unavailable",
-      "error": "URLError"
-    },
-    {
-      "repository": "teklot/MavlinkSharp",
-      "checked": "2026-10-07",
-      "status": "unavailable",
-      "error": "URLError"
-    },
-    {
-      "repository": "rsasaki0109/visloc-rs",
-      "checked": "2026-10-07",
-      "status": "unavailable",
-      "error": "URLError"
     }
   ]
 }

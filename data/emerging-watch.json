@@ -4,6 +4,57 @@
   "next_check": "2026-10-14",
   "projects": [
     {
+      "repository": "forgetheworlds/metal-drone-nav",
+      "url": "https://github.com/forgetheworlds/metal-drone-nav",
+      "description": "Metal-native RL for local drone navigation with RAPTOR, reproducible experiments, and independent Webots evaluation.",
+      "created": "2026-10-01T13:10:23Z",
+      "pushed": "2026-10-07T18:54:41Z",
+      "license": "NOASSERTION",
+      "stars": 0,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": null,
+      "released": null,
+      "preview": null
+    },
+    {
+      "repository": "alireza787b/PixEagle",
+      "url": "https://github.com/alireza787b/PixEagle",
+      "description": "Computer vision, object tracking, and target following for PX4 drones using OpenCV, YOLO, MAVSDK, MAVLink, and a real-time web dashboard",
+      "created": "2024-02-16T09:43:16Z",
+      "pushed": "2026-10-07T18:48:50Z",
+      "license": "Apache-2.0",
+      "stars": 71,
+      "matched_queries": [
+        "topic:gstreamer topic:robotics"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": "v7.2.0",
+      "released": "2026-08-30",
+      "preview": "v7.0.0-beta.29"
+    },
+    {
+      "repository": "kolabuzlu/MavGCS",
+      "url": "https://github.com/kolabuzlu/MavGCS",
+      "description": "MavGCS - Ground Control Station for MAVLink",
+      "created": "2026-08-28T08:39:32Z",
+      "pushed": "2026-10-07T18:10:39Z",
+      "license": "GPL-3.0",
+      "stars": 5,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": "V2.4.0",
+      "released": "2026-10-07",
+      "preview": null
+    },
+    {
       "repository": "teklot/MavlinkSharp",
       "url": "https://github.com/teklot/MavlinkSharp",
       "description": "MavlinkSharp is a lightweight .NET library for parsing MAVLink v1/v2 raw messages using standard or custom dialects. It is extremely fast, flexible, and easy to use, and also provides tools for constructing and encoding MAVLink packets for transmission over any communication protocol.",
@@ -67,60 +118,9 @@
       ],
       "status": "watch-only; capability unverified",
       "checked": "2026-10-07",
-      "release": null,
-      "released": null,
-      "release_status": "unavailable"
-    },
-    {
-      "repository": "RMANOV/strix",
-      "url": "https://github.com/RMANOV/strix",
-      "description": "Drone swarm orchestration: combinatorial auctions, particle filters, fear meta-parameter, glass-box XAI — 23K lines of Rust",
-      "created": "2026-03-14T10:09:15Z",
-      "pushed": "2026-10-07T08:35:49Z",
-      "license": "NOASSERTION",
-      "stars": 7,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
-      "release": "v0.7.0",
-      "released": "2026-04-10",
+      "release": "v1.0.0",
+      "released": "2026-10-07",
       "preview": null
-    },
-    {
-      "repository": "hayatPMT/Autonomous-UAV-Navigation-System",
-      "url": "https://github.com/hayatPMT/Autonomous-UAV-Navigation-System",
-      "description": "🛸 Navigate urban environments with this autonomous UAV system using real-time occupancy grid mapping and dynamic obstacle avoidance for safe and efficient flights.",
-      "created": "2025-12-30T11:18:44Z",
-      "pushed": "2026-10-07T04:44:25Z",
-      "license": "unknown",
-      "stars": 9,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
-      "release": null,
-      "released": null,
-      "preview": null
-    },
-    {
-      "repository": "alireza787b/PixEagle",
-      "url": "https://github.com/alireza787b/PixEagle",
-      "description": "Computer vision, object tracking, and target following for PX4 drones using OpenCV, YOLO, MAVSDK, MAVLink, and a real-time web dashboard",
-      "created": "2024-02-16T09:43:16Z",
-      "pushed": "2026-10-07T03:44:22Z",
-      "license": "Apache-2.0",
-      "stars": 71,
-      "matched_queries": [
-        "topic:gstreamer topic:robotics"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
-      "release": "v7.2.0",
-      "released": "2026-08-30",
-      "preview": "v7.0.0-beta.29"
     },
     {
       "repository": "FERBIN12/visual-slam-vio-ros2",
@@ -171,6 +171,40 @@
       "checked": "2026-10-07",
       "release": null,
       "released": null,
+      "preview": null
+    },
+    {
+      "repository": "eforus-overseer/propwash",
+      "url": "https://github.com/eforus-overseer/propwash",
+      "description": "FPV drone simulator on real satellite terrain + a Gymnasium RL environment. Single HTML file to fly, Python package to train.",
+      "created": "2026-08-07T10:21:57Z",
+      "pushed": "2026-10-06T21:01:46Z",
+      "license": "unknown",
+      "stars": 0,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": null,
+      "released": null,
+      "preview": null
+    },
+    {
+      "repository": "BeyondRobotix/AUAV-DroneCAN",
+      "url": "https://github.com/BeyondRobotix/AUAV-DroneCAN",
+      "description": "Combined airspeed and barometric sensor using DroneCAN for Ardupilot and PX4",
+      "created": "2025-03-22T12:23:13Z",
+      "pushed": "2026-10-06T16:33:37Z",
+      "license": "BSD-3-Clause",
+      "stars": 3,
+      "matched_queries": [
+        "topic:dronecan"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": "V1.1",
+      "released": "2025-07-22",
       "preview": null
     }
   ],
