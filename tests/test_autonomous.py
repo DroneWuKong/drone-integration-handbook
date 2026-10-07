@@ -64,7 +64,7 @@ class AutonomousEvidenceTests(unittest.TestCase):
         self.assertEqual(schema["properties"]["notes"]["maxLength"], 800)
 
     def test_independent_runs_and_source_threshold_are_enforced(self):
-        record = {"id": "range", "statement": "Range 10 km", "risk_reasons": ["performance"],
+        record = {"id": "range", "statement": "Model A range is manufacturer-reported as 10 km.", "scope":"Model A, manual version 1.0, stated conditions", "risk_reasons": ["performance"],
                   "source_candidates": [], "article_source_candidates": []}
         spec = research_spec(record, "r1")
         one = packet("range", "researcher")

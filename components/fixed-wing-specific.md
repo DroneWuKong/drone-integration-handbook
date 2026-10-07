@@ -58,7 +58,7 @@ distinguish low groundspeed (safe landing) from stall (crash).
 
 | Sensor | Interface | Accuracy | Notes |
 |--------|-----------|----------|-------|
-| Matek ASPD-7002 | I2C (DroneCAN) | ±0.5 m/s | Good value, NDAA ✓ |
+| Matek ASPD-7002 | I2C (DroneCAN) | ±0.5 m/s | Good value, procurement status unverified |
 | mRo i2c Airspeed | I2C | ±1 m/s | Common on Pixhawk builds |
 | Sensirion SDP3x | I2C | ±0.3 m/s | Highest accuracy, requires calibration |
 | Foxtech pitot | Analog | ±2 m/s | Budget option |

@@ -95,18 +95,15 @@ supplying the Pentagon.
 | Detail | Value |
 |--------|-------|
 | HQ | USA / Singapore |
-| Blue UAS | Framework component (Mesh Rider Radios) |
-| Technology | OpenWRT + batman-adv mesh networking |
+| Listing status | Check the current authority listing and exact configuration |
+| Technology | Model/release-specific Mesh Rider networking; see primary documentation |
 | Products | Mesh Rider series in Helix configuration |
 | Key Feature | Wi-Fi-based mesh with ruggedized form factor |
-| NDAA | Compliant (Blue UAS Framework listed) |
+| Procurement status | Unverified; exact item and applicable authority required |
 
 Doodle Labs Mesh Rider radios are the most commonly integrated
 mesh networking solution in commercial and defense small UAS.
-Under the hood, they run OpenWRT Linux with batman-adv mesh
-protocol — which means they're configurable Linux devices, not
-black boxes. This is both a strength (flexible, hackable) and
-a vulnerability (software complexity increases attack surface).
+The documented IP and management interfaces support integration. Do not infer the implementation of every waveform from a management operating system.
 
 See the Handbook's mesh radios chapter (Chapter 14) for
 configuration details and real-world range expectations.
@@ -121,7 +118,7 @@ configuration details and real-world range expectations.
 | Products | SC-4200, SC-4400 series |
 | Weight | 100–300g depending on model |
 | Power | 5–15W |
-| NDAA | US manufacturer — compliant |
+| Procurement status | Unverified; exact item and applicable authority required |
 
 Silvus provides the highest-throughput mesh radios in the market.
 Their MN-MIMO technology uses multiple-input multiple-output
@@ -137,7 +134,7 @@ high-value platforms where bandwidth justifies the SWaP cost.
 | Technology | MPU5 MANET radio |
 | Key Feature | Android-based radio with integrated compute |
 | Products | MPU5 series |
-| NDAA | US manufacturer — compliant |
+| Procurement status | Unverified; exact item and applicable authority required |
 
 Persistent Systems MPU5 is unique in running Android OS natively
 on the radio, enabling onboard application hosting. Wave Relay
@@ -153,7 +150,7 @@ MANET protocol. Used extensively by US SOF and DoD.
 | Waveforms | TSM (wideband MANET), Katana (anti-jam ECCM), NB LOS |
 | Encryption | AES-256 built-in |
 | Bands | UHF + L-band + S-band (225–2600 MHz) in single radio |
-| NDAA | US manufacturer — compliant |
+| Procurement status | Unverified; exact item and applicable authority required |
 | New (2025) | Anti-jam C2 waveform for uncrewed systems, Barrage Beamforming |
 
 **Product Line:**
@@ -175,7 +172,7 @@ with 800+ nodes. Network formation in under 5 seconds.
 
 **Anti-jam C2 for UAS (2025):** New waveform specifically for
 drone command and control with anti-jam uplink alongside high-
-throughput video/sensor downlink. Lowest latency in the industry.
+throughput video/sensor downlink. Latency requires a stated mode and measurement boundary.
 This directly addresses the DDG Phase II EW requirement.
 
 ### Mobilicom
@@ -183,11 +180,11 @@ This directly addresses the DDG Phase II EW requirement.
 | Detail | Value |
 |--------|-------|
 | HQ | Israel / USA |
-| Blue UAS | Framework component (SkyHopper) |
+| Listing status | Check the current authority listing and exact configuration |
 | Products | SkyHopper PRO, PRO Lite, PRO Micro |
 | Key Feature | Encrypted, cybersecure drone datalinks |
 | Partnership | ARK Electronics — affordable AI drone solutions |
-| NDAA | Blue UAS Framework listed |
+| Procurement status | Unverified; exact item and applicable authority required |
 
 ---
 
@@ -221,7 +218,7 @@ to electronic warfare jamming.
 **Key players:**
 - **Kela Technologies** (Israel, In-Q-Tel backed) — fiber-optic
   technology partner for Neros Archer Fiber. World's first
-  NDAA-compliant fiber-optic FPV.
+  procurement status unverified fiber-optic FPV.
 - **SkyFall** (Ukraine) — Fiber-optic FPV drones. Partnered with
   Skycutter for DDG Phase I (Shrike 10 Fiber won with 99.3 points).
 - **3DTech** (Ukraine) — 3D-prints their own fiber spool casings.
@@ -241,11 +238,11 @@ further advantage fiber-optic platforms.
 ## NDAA RC & C2 Links
 
 Most consumer RC links (ELRS, CRSF, FrSky) are Chinese-manufactured.
-For NDAA-compliant builds, the options narrow significantly.
+For procurement status unverified builds, the options narrow significantly.
 
 ### Orqa Ghost — 2.4 GHz RC Link
 
-EU-manufactured, NDAA-compliant 2.4 GHz RC link using LoRa-based
+EU-manufactured, procurement status unverified 2.4 GHz RC link using LoRa-based
 chirp spread spectrum with adaptive FHSS. One of very few
 non-Chinese RC link options with both race and long-range performance.
 
@@ -264,7 +261,7 @@ Betaflight 4.3+, iNav, and ArduPilot. OpenTX 2.3.13+ recommended.
 ### Orqa IRONghost — Licensed-Band C2
 
 Defense-grade C2 link operating on licensed bands. Dual-radio
-architecture. Manufactured in EU, NDAA compliant.
+architecture. Procurement eligibility requires current exact-item evidence.
 
 | Parameter | Value |
 |-----------|-------|
@@ -299,7 +296,7 @@ reflected back into amplifiers causes permanent damage.
    UHF+L+S in one device) are harder to deny.
 
 4. **Non-routing mesh > traditional routing.** TrellisWare's
-   Barrage Relay and batman-adv (Doodle Labs) both eliminate
+   Barrage Relay and a configured mesh routing implementation both eliminate
    single-point-of-failure routing tables. The network heals
    when nodes die.
 
@@ -412,7 +409,7 @@ The suite transmits HD video, two-way UAV telemetry, two-way OpenHD telemetry (s
 
 ### Why It Matters
 
-Commercial HD video links (DJI O3, HDZero, Walksnail) cost $150–400 for the air unit alone, lock you into specific cameras, and ship from China. OpenHD costs $15–30 for the air unit, works with any CSI camera your SBC supports, and is open source down to the driver level. For teams that need HD video over ranges where commercial links won't reach, or who can't use Chinese-manufactured hardware, OpenHD is the practical path.
+Commercial HD video links (DJI O3, HDZero, Walksnail) cost $150–400 for the air unit alone, lock you into specific cameras, and ship from China. OpenHD costs $15–30 for the air unit, works with any CSI camera your SBC supports, and is open source down to the driver level. Hardware origin, usable range and procurement status require separate exact-configuration evidence.
 
 It's also the only digital FPV link where you can inspect and modify every layer of the stack — from the WiFi driver to the video codec to the OSD renderer.
 
@@ -429,23 +426,21 @@ Raspberry Pi Zero 2 (not the original Zero 1 — not supported), a dedicated BEC
 Raspberry Pi CM4 with Ochin CM4 carrier board, plus a supported WiFi card. The CM4 enables dual camera, better thermal performance, and lower latency.
 
 **Ground station:**
-A laptop with SecureBoot disabled, plus a supported WiFi adapter. X86 performance matters — faster hardware means lower decode latency. For lowest latency ground decode, a Radxa Rock 5 is the current recommendation — it hardware-encodes H.265 in real time.
+A laptop with SecureBoot disabled, plus a supported WiFi adapter. X86 performance matters — faster hardware means lower decode latency. For lowest latency ground decode, a Radxa Rock 5 is the current recommendation — the ground pipeline must decode the selected codec. Confirm exact image/decoder/display support; a codec feature is not an end-to-end latency measurement.
 
 **WiFi adapters:**
 
 Supported chipsets: RTL8812AU, RTL8814AU, RTL8811AU, RTL8812BU, RTL8812EU. Top picks: ALFA AWUS036ACH (500mW, 8812AU, 2× RP-SMA), ASUS USB-AC56 (500mW, 8812AU, widely available), "Taobao card" (generic 8812AU, 500mW, 2× u.fl). Most users prefer 5.8GHz — cleaner spectrum than 2.4GHz and no interference with 2.4GHz RC transmitters. 5.8GHz does not offer better penetration but has cleaner channels in most operating environments.
 
-The BLM8812EU is the newest and most capable chipset — higher sensitivity and better power output — but has no FCC/CE certification so import and use are at the operator's discretion.
+The BLM8812EU is the newest and most capable chipset — higher sensitivity and better power output — and the project publishes an equipment-certification warning. Verify exact equipment authorization before purchase/use; technical support is not permission.
 
 ### Latency
 
-Lowest latency requires OpenHD custom hardware (purpose-built SBC + camera combination), which can cut latency roughly in half compared to standard configurations. Second-lowest is achievable with the Radxa Rock5 on both air and ground. RPi Zero 2 builds have higher latency — usable for FPV but not competitive with commercial HD systems on this metric.
-
-Practical glass-to-glass latency numbers for RPi-based builds: 100–150ms depending on resolution, codec, and SBC (OpenHD states "100ms glass-to-glass, most setups in the 125ms range"). Custom hardware targets sub-40ms. Rock5 sits between the two — hardware H.265 encode gives meaningfully lower latency than RPi.
+Measure exposure-to-display on the exact camera/SBC/codec/image/adapter/mode. Air encoding and ground decoding are different stages. The former generic RPi/Rock5/custom-hardware ranking and numbers are withdrawn; see [video pipeline diagnostics](../integration/video-pipeline-troubleshooting.md).
 
 ### Security
 
-OpenHD provides link encryption with verification, ensuring the link cannot be overtaken by external signals. This is configurable through QOpenHD settings.
+OpenHD provides link encryption with verification, which must be assessed with the exact key-management and acceptance configuration; encryption does not guarantee availability or eliminate interference. This is configurable through QOpenHD settings.
 
 ### Dual Camera + Picture-in-Picture
 
@@ -485,40 +480,6 @@ OpenHD supports RX diversity — two WiFi adapters on the ground, one omni + one
 
 ## OpenIPC — IP Camera Firmware for FPV
 
-OpenIPC is the other major open-source digital FPV system, taking a fundamentally different approach from OpenHD. Instead of using a Raspberry Pi as the air unit, OpenIPC reflashes cheap IP camera boards ($15–30) and turns them into FPV video transmitters directly. The IP camera's SoC has a dedicated hardware video encoder, so you get lower latency (80ms at 1080p60) and dramatically lower power consumption (1.7W vs RPi's 5–10W) without a separate encoding step.
+OpenIPC provides firmware and video tooling for supported camera SoCs. Support must be checked for the exact SoC, sensor, board, image and wireless driver. Compare actual capture-to-display timing, whole-system rail power and image recovery under loss using [video pipeline troubleshooting](../integration/video-pipeline-troubleshooting.md). The former universal latency, power, price and platform ranking is withdrawn because its configurations and measurement boundaries were not documented.
 
-### How It Differs from OpenHD
-
-| | OpenIPC | OpenHD |
-|---|---|---|
-| Air unit | IP camera board ($15–30) | RPi Zero 2 / CM4 ($30–80) |
-| Video encoder | SoC hardware H.265 | RPi GPU / software |
-| Latency (1080p60) | ~80ms | 100–150ms |
-| Power draw | 1.7W | 5–10W |
-| Setup difficulty | Harder (SPI flash, UART, SoC-specific) | Easier (SD card) |
-| Camera | IP camera sensors (IMX307, IMX335) | CSI cameras (Arducam, RPi HQ) |
-| Transport | WFB-NG (wifibroadcast next gen) | wifibroadcast (original) |
-
-### Supported Hardware
-
-The firmware runs on SoCs from HiSilicon, Goke (GK7205V200 — most common for FPV), SigmaStar (SSC338Q — recommended for new builds), Ingenic (T31), and several others. WiFi adapters: RTL8812AU and RTL8812EU (same as OpenHD). The community recommends buying adapters from the same batch in pairs.
-
-For ground stations, OpenIPC supports SBC-based receivers (RunCam WiFiLink-RX, Emax Wyvern Link, Radxa Zero3) and PixelPilot — an Android app for Snapdragon devices that also works on Meta Quest VR headsets.
-
-### Key Software
-
-- **Majestic** — the primary video streamer (replaces GStreamer on the IP camera SoC)
-- **WFB-NG** — wifibroadcast next generation, the RF transport layer
-- **divinus** — open-source multi-platform streamer alternative (MIT, 62★)
-- **smolrtsp** — lightweight RTSP server library (MIT, 427★) — useful for any embedded video streaming
-- **ipctool** — identifies unknown IP camera hardware (SoC, sensor, flash chip)
-
-### When to Choose OpenIPC over OpenHD
-
-Choose OpenIPC when weight and power are critical (sub-250g builds, long-endurance fixed wings), when you want the lowest possible latency for FPV racing/freestyle, or when you need night vision on a budget (IMX307 sensor with F0.95 lens). Choose OpenHD when you want easier setup, broader ecosystem support, or need features like dual camera PiP and RC control over the same link.
-
-### Important: Military Use Prohibited
-
-OpenIPC's license (MIT) includes an explicit restriction: "The use of the OpenIPC project and its components for military purposes is not permitted." This is not a standard MIT clause — it's a project-specific addition. If your use case involves military or defense applications, OpenHD (GPL-3.0, no military restriction) or a commercial solution is the appropriate path.
-
-*Repository: [github.com/OpenIPC](https://github.com/OpenIPC) (1.9K★, 120 repos, MIT)*
+[OpenIPC project documentation](https://github.com/OpenIPC/firmware) is a discovery source; check each component's license and stated use restrictions before selecting a build.

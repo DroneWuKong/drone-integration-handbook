@@ -38,7 +38,7 @@ discharge current, but 3–5× the cycle life and lower fire risk.
 | Storage voltage | 3.6V/cell | Less sensitive than LiPo |
 | Charge rate | 0.5–1C | Slow charging extends life |
 
-Best cells: Molicel P42A (NDAA ✓, Canadian brand), Samsung 50S
+Best cells: Molicel P42A (procurement status unverified, Canadian brand), Samsung 50S
 (South Korean), Panasonic NCR21700A (Japanese).
 
 ### LiFePO4 (Lithium Iron Phosphate)
@@ -72,7 +72,7 @@ Add GPS + compass: +0.5A
 Add telemetry radio: +1A
 Add companion computer: +3–8A (use dedicated BEC)
 
-**Total typical avionics draw:** 5–12A. Use a 15A switching BEC minimum.
+**Size by voltage rail and measured load.** A current figure without its voltage cannot be added to currents on other rails. List each load's rail voltage, steady/peak/inrush demand, permitted supply range and converter efficiency/thermal derating. For example, an illustrative 10 W load on 5 V draws 2 A at that rail before losses. Select a regulator using its exact data sheet and validated transients, wiring and cooling; there is no universal 15 A minimum for every aircraft. The table above is illustrative, not an installation acceptance test.
 
 ### Separate BECs for FC vs Payload
 

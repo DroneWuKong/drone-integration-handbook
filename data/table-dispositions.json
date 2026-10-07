@@ -9,7 +9,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-72f5da4d4847deb7b569",
@@ -18,7 +19,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-39af9ccc4a6d247cf313",
@@ -27,7 +29,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-3fc79ee44782f6909a86",
@@ -36,7 +39,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-e5769912ce9eea061d7d",
@@ -45,7 +49,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-d32ead632dd9fa09215d",
@@ -54,7 +59,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-2faa26656ffffe7cae5e",
@@ -63,7 +69,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-d306db5dffa4331ad151",
@@ -72,7 +79,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-8db74621dc3295c2ec60",
@@ -81,7 +89,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-54220a5449167a10f975",
@@ -90,7 +99,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-d4061b7ccd7da3ccd513",
@@ -99,7 +109,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-7a73c1c7b4205be9024d",
@@ -128,7 +139,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-c3362ab5ce82cd5612d3",
@@ -137,7 +149,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-ab84e3782951f9451819",
@@ -146,7 +159,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-599e3905b567fb05a4a3",
@@ -155,7 +169,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-b7ecee09a912f2f1ad09",
@@ -164,7 +179,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-4d71176c210321776ab3",
@@ -173,7 +189,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-cc0ae8e488b9a7ace626",
@@ -182,7 +199,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-d88e4b2e0056aabf7685",
@@ -191,7 +209,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-54b111f78ff9efd935e6",
@@ -200,7 +219,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-05a9c476e903e2d4f36b",
@@ -209,7 +229,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-0cd1f83e560fa1ab3447",
@@ -218,7 +239,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-9866c1699b11dc7e1f5a",
@@ -227,25 +249,18 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
-      "id": "table-53f2e25bef5ca357d0bf",
+      "id": "table-3186338ab385cfd501b2",
       "article_id": "article-5",
       "path": "firmware/four-firmwares.md",
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
-    },
-    {
-      "id": "table-0ff1aabf6a71d4dab86c",
-      "article_id": "article-5",
-      "path": "firmware/four-firmwares.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 12
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-da1ae54e190fa932f93c",
@@ -254,7 +269,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-437143f0e86e840ddc87",
@@ -263,7 +279,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-ca2b92cc6a54639418a4",
@@ -272,7 +289,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-372832aa76f67c065772",
@@ -281,7 +299,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-546a854165fdfcacf81c",
@@ -290,7 +309,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-5de1f09d0f88c16f47f8",
@@ -299,7 +319,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-c6b9e611db468dc4f17c",
@@ -308,7 +329,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-2aacfba1febedab3eb24",
@@ -317,7 +339,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-9815cdbf01d555a4d6e0",
@@ -326,16 +349,18 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 1
+      "rows": 1,
+      "tool": null
     },
     {
-      "id": "table-f9c085ad2c5218758dd0",
+      "id": "table-62feebaa189c3d9781cd",
       "article_id": "article-7",
       "path": "firmware/mavlink-protocol.md",
       "disposition": "queryable-lookup",
-      "classification_basis": "identifier-led-reference",
+      "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-46c8af51fda8c442a45a",
@@ -344,7 +369,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-bd5516f979ea49fc322c",
@@ -353,16 +379,18 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
-      "id": "table-b49691a508cc7b334a1f",
+      "id": "table-7cd5a27cda318b41e9db",
       "article_id": "article-7",
       "path": "firmware/mavlink-protocol.md",
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-39f1425cdcf8b2fcb851",
@@ -371,7 +399,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-aa12f2301194b70b45df",
@@ -380,7 +409,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-f7b1a9474493f180a650",
@@ -389,7 +419,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-4f9b4a9aa8a9cbb36b42",
@@ -398,7 +429,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-e79c4ae9ab0893bad9c4",
@@ -407,7 +439,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 187
+      "rows": 187,
+      "tool": null
     },
     {
       "id": "table-ce3d41899a379818f4e1",
@@ -416,7 +449,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 94
+      "rows": 94,
+      "tool": null
     },
     {
       "id": "table-a23a6a07b6c11ceb5a57",
@@ -425,7 +459,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 130
+      "rows": 130,
+      "tool": null
     },
     {
       "id": "table-c5cc751e5952f22e3fb1",
@@ -434,7 +469,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-4e1282855e45058a67df",
@@ -443,7 +479,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-674bdaa046c910efdd7c",
@@ -452,7 +489,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 9
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-1707d6cb73762635c7df",
@@ -461,7 +499,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-22f662aa5e0667d6704c",
@@ -470,7 +509,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-ca0d3d8aa39cc44e5a32",
@@ -479,7 +519,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-acc60ba8b7446d2b36dd",
@@ -488,7 +529,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-abc7ee11ba2824fef369",
@@ -497,7 +539,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-3cec82a68c7d9e30efaa",
@@ -506,7 +549,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-57f7b39fbecacc5d7909",
@@ -515,7 +559,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-d8f69a4b864aaa5c40b7",
@@ -524,7 +569,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-cfe9648201444cb25619",
@@ -533,7 +579,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 9
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-2e550807fc1e5ae7451f",
@@ -542,7 +589,8 @@
       "disposition": "guided-explanation",
       "classification_basis": "header-pattern:method/task",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-adf151b65a4f1b5e6feb",
@@ -551,7 +599,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-a2b1dedea43fb837f286",
@@ -560,7 +609,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-24aa70298577888ad4f7",
@@ -569,7 +619,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-14d487b0b0e7546ebc68",
@@ -578,7 +629,8 @@
       "disposition": "guided-explanation",
       "classification_basis": "header-pattern:recommended mode/scenario/why",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-36173c546a90549d5f28",
@@ -587,7 +639,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-888935a03f0313b6fe09",
@@ -596,7 +649,8 @@
       "disposition": "guided-explanation",
       "classification_basis": "header-pattern:fix/likely cause/symptom",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-1212aaf170153c666fe7",
@@ -605,7 +659,38 @@
       "disposition": "guided-explanation",
       "classification_basis": "header-pattern:approach/why it fails",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
+    },
+    {
+      "id": "table-3525f43ec37b1745baf1",
+      "article_id": "article-54",
+      "path": "firmware/backup-upgrade-recovery.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5,
+      "tool": null
+    },
+    {
+      "id": "table-f20a5aac67fe83af08af",
+      "article_id": "article-56",
+      "path": "firmware/can-dronecan-cyphal.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 5,
+      "tool": null
+    },
+    {
+      "id": "table-c99c53620e4165137b34",
+      "article_id": "article-9",
+      "path": "field/preflight.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-b95a19d518a6e38d9d13",
@@ -614,7 +699,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-6d625513ccb8f0c5ca39",
@@ -623,7 +709,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 9
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-fed803d5176d5bb88527",
@@ -632,7 +719,8 @@
       "disposition": "guided-explanation",
       "classification_basis": "header-pattern:bench required/damage/field fix",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-37c6f0f5bba37c7c52d0",
@@ -641,7 +729,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-da35a2ded6e9ec696e08",
@@ -650,7 +739,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-4228cda02cfaeb26e772",
@@ -659,7 +749,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-6a752541f01bbc1f95bb",
@@ -668,7 +759,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-68d0d352f9ef1494c1dc",
@@ -677,7 +769,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-882d32fa1738fe6de236",
@@ -686,7 +779,8 @@
       "disposition": "guided-explanation",
       "classification_basis": "header-pattern:effect/failure/response",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-1a6d5e7ea0fd32433b92",
@@ -695,7 +789,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-d17f72d698d68bb6ad0d",
@@ -704,7 +799,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-ce16b1eb8877a1d2b829",
@@ -713,7 +809,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-1b01581d5258fcac15a8",
@@ -722,7 +819,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-d65b5cf969889daa74d3",
@@ -731,7 +829,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-43c0769e0ec6aae6d709",
@@ -740,7 +839,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-736d32488e6ae5fe36d9",
@@ -749,7 +849,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-1da5758bffdfc7f71107",
@@ -758,7 +859,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-4d6f71df0158319c7c47",
@@ -767,7 +869,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-703e897b00f86d3820c0",
@@ -776,7 +879,18 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
+    },
+    {
+      "id": "table-0b1f4dad9c7318ac5186",
+      "article_id": "article-61",
+      "path": "field/evidence-record.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-96fa022e050c7732d135",
@@ -785,7 +899,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-341533bc9abc6ff91d15",
@@ -794,7 +909,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-b67b4fc4cf372ceef60e",
@@ -803,7 +919,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-d551698223e782fa9619",
@@ -812,7 +929,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-ca2cb37d2f2287954239",
@@ -821,7 +939,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-76c68a3f00e4ec437fd8",
@@ -830,7 +949,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-b799eab47bf7305af7f6",
@@ -839,7 +959,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-1c390f830d65a2306959",
@@ -848,7 +969,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-b523d226ee5869810b87",
@@ -857,7 +979,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-4c61545e08075b0f69b5",
@@ -866,7 +989,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-463939bacf29e64cf678",
@@ -875,7 +999,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 9
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-409bcc41a58415c1db98",
@@ -884,7 +1009,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 15
+      "rows": 15,
+      "tool": null
     },
     {
       "id": "table-ffe2044cd2e36370d24e",
@@ -893,7 +1019,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-b7c89b65f7ba3119dc1b",
@@ -902,7 +1029,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-43d672fa570dd88feacf",
@@ -911,7 +1039,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-cb901de8a6ca22cfc67d",
@@ -920,16 +1049,18 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
-      "id": "table-49dcc304a9c48a5f6cb3",
+      "id": "table-a8af9b837cc2ef9fb5ac",
       "article_id": "article-14",
       "path": "integration/mesh-radios.md",
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-af09a5b53a993b75ce2a",
@@ -938,7 +1069,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-224b01504de14e8f25a8",
@@ -947,7 +1079,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-cf5ad95e66cfc0e95c07",
@@ -956,7 +1089,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-3253cffcc7ac79bdab6c",
@@ -965,7 +1099,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-bf4eec55dcde2da172b6",
@@ -974,7 +1109,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-2296f96cf394e1b2148f",
@@ -983,7 +1119,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-930c41b1ce286e89bbe2",
@@ -992,7 +1129,8 @@
       "disposition": "guided-explanation",
       "classification_basis": "header-pattern:answer/question",
       "review": "machine-classified",
-      "rows": 9
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-6c95b3b81ca284c980fb",
@@ -1001,7 +1139,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-197f82a2a2830e4cee07",
@@ -1010,7 +1149,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-f38b029c90fdd0964a46",
@@ -1019,7 +1159,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-44398cb8a8f951597572",
@@ -1028,7 +1169,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-6b69b657dc3f3b705c90",
@@ -1037,7 +1179,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-53c18a0d430bd7534d4e",
@@ -1046,7 +1189,58 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
+    },
+    {
+      "id": "table-0b7a0e6bc7a29823b8cf",
+      "article_id": "article-55",
+      "path": "integration/software-failure-testing.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7,
+      "tool": null
+    },
+    {
+      "id": "table-08a0bdd676154d214df8",
+      "article_id": "article-57",
+      "path": "integration/video-pipeline-troubleshooting.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6,
+      "tool": null
+    },
+    {
+      "id": "table-02aec6c0c23f07b896d0",
+      "article_id": "article-58",
+      "path": "integration/time-and-coordinate-provenance.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6,
+      "tool": null
+    },
+    {
+      "id": "table-6e6313d162d4a8f941fc",
+      "article_id": "article-59",
+      "path": "integration/secure-multiclient-telemetry.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6,
+      "tool": null
+    },
+    {
+      "id": "table-023d15a3c3c35bfa6e71",
+      "article_id": "article-60",
+      "path": "integration/compute-workload-selection.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-264553d68753a774fffc",
@@ -1055,7 +1249,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-fe58d09985ec3926c35a",
@@ -1064,7 +1259,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-84f041ab59e91ca407d4",
@@ -1073,7 +1269,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-195961c5b3b7e4463d33",
@@ -1082,7 +1279,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-3bb0d33a262a982ca23a",
@@ -1091,7 +1289,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-3c9a88e95aa8f1eaace8",
@@ -1100,7 +1299,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-1dee459dc38aef2a385a",
@@ -1109,7 +1309,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-8eec3e881d7a80e46e33",
@@ -1118,7 +1319,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-1ec74d62c30452bd18a6",
@@ -1127,7 +1329,8 @@
       "disposition": "guided-explanation",
       "classification_basis": "header-pattern:action/need",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-de389c1136bfb7988e94",
@@ -1136,7 +1339,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-17d204c109600f8bfc63",
@@ -1145,7 +1349,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-2c10039c7c40e1691c54",
@@ -1154,7 +1359,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-fe2b4d99acbe6addfdf2",
@@ -1163,7 +1369,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-cc975bb2dafd7e0f7278",
@@ -1172,7 +1379,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-3283e528c96ef0822722",
@@ -1181,7 +1389,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 1
+      "rows": 1,
+      "tool": null
     },
     {
       "id": "table-15b0606b55f6884fcd9d",
@@ -1190,7 +1399,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 1
+      "rows": 1,
+      "tool": null
     },
     {
       "id": "table-ecfb01875220f8d88cc5",
@@ -1199,7 +1409,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-3fbadc1809047602b7d1",
@@ -1208,7 +1419,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-26fb361f7c9a806d4a7e",
@@ -1217,70 +1429,28 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
-      "id": "table-d61a4d93f811678e57fa",
+      "id": "table-960d1cceec1801bbaaef",
       "article_id": "article-24",
       "path": "autonomy/onboard-ai-control.md",
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
-      "id": "table-49faf956faba2c5610ca",
-      "article_id": "article-24",
-      "path": "autonomy/onboard-ai-control.md",
-      "disposition": "queryable-lookup",
-      "classification_basis": "two-column-property-map",
-      "review": "machine-classified",
-      "rows": 4
-    },
-    {
-      "id": "table-a41f31a453fb17a17959",
-      "article_id": "article-43",
-      "path": "appendices/appendix-a-frequency-quick-reference.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 8
-    },
-    {
-      "id": "table-947ccf3ff713bb30d847",
-      "article_id": "article-43",
-      "path": "appendices/appendix-a-frequency-quick-reference.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 4
-    },
-    {
-      "id": "table-45cae5e55e418a08d2ab",
-      "article_id": "article-43",
-      "path": "appendices/appendix-a-frequency-quick-reference.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 7
-    },
-    {
-      "id": "table-3e37cc1b759ff9a2a248",
-      "article_id": "article-43",
-      "path": "appendices/appendix-a-frequency-quick-reference.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 5
-    },
-    {
-      "id": "table-4e22f9252e2ca11c1850",
+      "id": "table-56c3a33296fdd9f2a9a0",
       "article_id": "article-43",
       "path": "appendices/appendix-a-frequency-quick-reference.md",
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-7b51ca01b76c750c8212",
@@ -1289,7 +1459,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-9b7e3ce66564b5a233ea",
@@ -1298,7 +1469,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-e1b65e51ade5083e7834",
@@ -1307,7 +1479,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-82ed9792355b908699c6",
@@ -1316,7 +1489,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-ca56e434a30ee8927e7b",
@@ -1325,7 +1499,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-e54458cd93ab0326aa42",
@@ -1334,7 +1509,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-298f3cadb342ec86fa8d",
@@ -1343,7 +1519,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 1
+      "rows": 1,
+      "tool": null
     },
     {
       "id": "table-4e1deee62172f581fc97",
@@ -1352,7 +1529,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-18036b306e293ae796c2",
@@ -1361,7 +1539,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-e8cd4465f7e8ce2d6228",
@@ -1370,7 +1549,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-474e1baac82d43c2af26",
@@ -1379,7 +1559,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-88917518a6f100e07b0b",
@@ -1388,7 +1569,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-89860a5f9e754fd240bc",
@@ -1397,7 +1579,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-bf173cd2861c10cbd222",
@@ -1406,7 +1589,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-7ce85c8ce48de6a35427",
@@ -1415,7 +1599,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-74d1f4464c151a90999a",
@@ -1424,7 +1609,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-11fc2bb2caead41dea7d",
@@ -1433,7 +1619,48 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
+    },
+    {
+      "id": "table-b5772facc45686d13ede",
+      "article_id": "article-63",
+      "path": "field/update-status.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8,
+      "tool": null
+    },
+    {
+      "id": "table-e03e4cc875426f749106",
+      "article_id": "article-63",
+      "path": "field/update-status.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 9,
+      "tool": null
+    },
+    {
+      "id": "table-4223d2d4899b592d1a43",
+      "article_id": "article-63",
+      "path": "field/update-status.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "identifier-led-reference",
+      "review": "machine-classified",
+      "rows": 21,
+      "tool": null
+    },
+    {
+      "id": "table-92ac0937572dcfbd9030",
+      "article_id": "article-64",
+      "path": "integration/emerging-technology-watch.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-f913fdc88b995c479fdb",
@@ -1442,7 +1669,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-72a120fa091fb104e336",
@@ -1451,7 +1679,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-3ad2fac1bc3957294433",
@@ -1460,7 +1689,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-6f4569a2aca4dbf88534",
@@ -1469,7 +1699,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-5147d1c1b42ebdefe8cc",
@@ -1478,7 +1709,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 12
+      "rows": 12,
+      "tool": null
     },
     {
       "id": "table-fa5d5642097c57f09c80",
@@ -1487,7 +1719,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 12
+      "rows": 12,
+      "tool": null
     },
     {
       "id": "table-b7cdbd75401afb248189",
@@ -1496,7 +1729,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-da4e28a41dc9b65aa472",
@@ -1505,7 +1739,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 9
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-6a98df2c448da0ab8f77",
@@ -1514,7 +1749,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-ec881117558baba2b2c6",
@@ -1523,7 +1759,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-931091a3684ed607bafa",
@@ -1532,7 +1769,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-35f8a736d4a9785ca4da",
@@ -1541,7 +1779,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 15
+      "rows": 15,
+      "tool": null
     },
     {
       "id": "table-4f142c4acbd63ed378f2",
@@ -1550,7 +1789,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-392c19ff1d728a886474",
@@ -1559,7 +1799,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 9
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-df4717f719309a40a336",
@@ -1568,7 +1809,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-68795e5166247b534800",
@@ -1577,7 +1819,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 12
+      "rows": 12,
+      "tool": null
     },
     {
       "id": "table-c0717e99ba43d3b2390f",
@@ -1586,7 +1829,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-c35a7676916d276189ba",
@@ -1595,7 +1839,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-21557337b0723d36497e",
@@ -1604,7 +1849,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-19b873383212696c6d25",
@@ -1613,7 +1859,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-86a97fb082b5724de857",
@@ -1622,7 +1869,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-6459ce43afd1f1d34c46",
@@ -1631,7 +1879,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-bcb6157f1397e236d379",
@@ -1640,7 +1889,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-cee08959d59e987acced",
@@ -1649,7 +1899,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-1af8cf1f5a0685463992",
@@ -1658,7 +1909,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-575c517e026a8470c21d",
@@ -1667,7 +1919,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-e3aa5d2375240fca47e0",
@@ -1676,7 +1929,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-b68b44b80095c1f231a1",
@@ -1685,7 +1939,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-9988089c613582ad0e53",
@@ -1694,7 +1949,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-0f0f1f072cede784af06",
@@ -1703,7 +1959,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-8f16d5418447379edf9b",
@@ -1712,7 +1969,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 9
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-b97687d92e5265f2cd45",
@@ -1721,7 +1979,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 9
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-21a7de8fb1ad85cca43a",
@@ -1730,7 +1989,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-c95757b486673a2bf557",
@@ -1739,7 +1999,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-ab1664ebc8af13dea6d4",
@@ -1748,7 +2009,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-a06e1e36845a78c11b85",
@@ -1757,7 +2019,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-7b805d6cfd5edd488bed",
@@ -1766,7 +2029,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-b2f94908dd5b2df6c0e8",
@@ -1775,7 +2039,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 21
+      "rows": 21,
+      "tool": null
     },
     {
       "id": "table-a19054f5dcc177de0a80",
@@ -1784,7 +2049,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-929af3cbaa4fb35d0b02",
@@ -1793,7 +2059,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-6ea7b03e76026bf0155c",
@@ -1802,7 +2069,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 15
+      "rows": 15,
+      "tool": null
     },
     {
       "id": "table-96a20fa2ecda753440b5",
@@ -1811,7 +2079,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-bbe160a3171506477a47",
@@ -1820,7 +2089,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-c57f93dc1e46bf699551",
@@ -1829,7 +2099,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-015ff0e6225780e298a3",
@@ -1838,7 +2109,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 13
+      "rows": 13,
+      "tool": null
     },
     {
       "id": "table-723063596789efc7c3ff",
@@ -1847,7 +2119,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-30960744a6082f9bd4cc",
@@ -1856,7 +2129,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-e78f4464596f4d9e3cff",
@@ -1865,7 +2139,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-208500eb2217750a4f5f",
@@ -1874,7 +2149,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-7ac19dcfd8183567cf07",
@@ -1883,7 +2159,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-7aa5b2f0d1109489da99",
@@ -1892,7 +2169,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-4f0393a3306923af5c05",
@@ -1901,7 +2179,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-4568c94fe4726924e089",
@@ -1910,7 +2189,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-109da4f08448f54ee6ed",
@@ -1919,7 +2199,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-3a45cb3fe14c3a6950e4",
@@ -1928,7 +2209,18 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
+    },
+    {
+      "id": "table-a469e54db883c836ef08",
+      "article_id": "component-ai-accelerators",
+      "path": "components/ai-accelerators.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-71e40e27a6a5e2364ec7",
@@ -1937,7 +2229,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 13
+      "rows": 13,
+      "tool": null
     },
     {
       "id": "table-e25f9f01851ee5921d39",
@@ -1946,7 +2239,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-4afc24a19169322f4a52",
@@ -1955,7 +2249,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-76abebd941aaa9a8ce3d",
@@ -1964,7 +2259,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-43ebff60cac228a2023e",
@@ -1973,7 +2269,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-093b708d03af8161b081",
@@ -1982,7 +2279,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-fb1e9a6940378affff5e",
@@ -1991,7 +2289,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-b68c0b3c23acf878b35e",
@@ -2000,7 +2299,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-f1d5115a359cdd4354bc",
@@ -2009,7 +2309,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-299dedfaee609ae2efbf",
@@ -2018,7 +2319,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-9abe732303ed76a14a58",
@@ -2027,7 +2329,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-17a4111a611e0f5c5a10",
@@ -2036,7 +2339,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-69831321047cd83dcf6a",
@@ -2045,7 +2349,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-9062096a024e78d15c49",
@@ -2054,43 +2359,48 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
-      "id": "table-35f3c5d9c40237171e59",
+      "id": "table-1bec201bcfb92a4f71fa",
       "article_id": "component-comms-datalinks",
       "path": "components/comms-datalinks.md",
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
-      "id": "table-c238ac78855064e4ba62",
+      "id": "table-70d3f8344136dbb49545",
       "article_id": "component-comms-datalinks",
       "path": "components/comms-datalinks.md",
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
-      "id": "table-71e70f6224b755e869cb",
+      "id": "table-fb6c4426300e2e8aa14f",
       "article_id": "component-comms-datalinks",
       "path": "components/comms-datalinks.md",
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
-      "id": "table-700fc2a91b92eae69c7a",
+      "id": "table-46f3eaf54454995806b3",
       "article_id": "component-comms-datalinks",
       "path": "components/comms-datalinks.md",
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-2d5154c3f0315c41526f",
@@ -2099,16 +2409,18 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
-      "id": "table-3ca2eb76a107a67076cf",
+      "id": "table-9601e594d8f6f1f79526",
       "article_id": "component-comms-datalinks",
       "path": "components/comms-datalinks.md",
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-a7080773ef38b7e6218d",
@@ -2117,7 +2429,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-786d71667cd037d7327c",
@@ -2126,7 +2439,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-16947366f9ace9d87e25",
@@ -2135,7 +2449,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-4a6e131cb491ba4a15b3",
@@ -2144,16 +2459,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
-    },
-    {
-      "id": "table-54400332001c31699a4a",
-      "article_id": "component-comms-datalinks",
-      "path": "components/comms-datalinks.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 7
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-401e5815160012de2cbf",
@@ -2162,7 +2469,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-a985908ed46688a45b26",
@@ -2171,7 +2479,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-2109e7728978c2cfa0a0",
@@ -2180,7 +2489,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-2bf8170983689e21da67",
@@ -2189,7 +2499,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-608bd9b8bade470f8d3d",
@@ -2198,7 +2509,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-8322ca2e3f14c67fef4a",
@@ -2207,7 +2519,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-263015f8e4871d5aa80d",
@@ -2216,25 +2529,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
-    },
-    {
-      "id": "table-96e42a46db0356c3d581",
-      "article_id": "component-control-link-tx",
-      "path": "components/control-link-tx.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 3
-    },
-    {
-      "id": "table-e8e5266de062bcd894a0",
-      "article_id": "component-control-link-tx",
-      "path": "components/control-link-tx.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 9
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-e234bc8e4c69ba5d381c",
@@ -2243,7 +2539,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-52d5872bbf25ce685830",
@@ -2252,7 +2549,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-dfa221e6f2455b8cd4b3",
@@ -2261,7 +2559,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-86f6a641f4c4ecd3ecb8",
@@ -2270,7 +2569,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-11de9316d3748db6e3c1",
@@ -2279,7 +2579,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-d3da03d48f6612ac85cf",
@@ -2288,7 +2589,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-b1fcbdb8c4ddbdfd1433",
@@ -2297,7 +2599,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-e472fc550040462565f0",
@@ -2306,7 +2609,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-a5c687e90ec608b3ba0e",
@@ -2315,7 +2619,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-a7660bc4e1aea4556ac2",
@@ -2324,7 +2629,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-c1b529c6f8e45b78a4ec",
@@ -2333,7 +2639,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-83236ff2ed29f9299115",
@@ -2342,7 +2649,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-90f0b819df279fb6d6f8",
@@ -2351,7 +2659,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-862069f1c66ff5a15980",
@@ -2360,7 +2669,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 9
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-a4a37a1a2a7f14c5e16d",
@@ -2369,7 +2679,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-8f583b240cec1dbb5355",
@@ -2378,7 +2689,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-4a55f6e17cf151d54809",
@@ -2387,7 +2699,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-c61d1b0f11d89d0c9661",
@@ -2396,16 +2709,18 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
-      "id": "table-47ef32af32bd96753062",
+      "id": "table-6f61f618b55ae451c755",
       "article_id": "component-fixed-wing-specific",
       "path": "components/fixed-wing-specific.md",
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-2e20e80256ad423a70da",
@@ -2414,7 +2729,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-213b18730dd59f83fa32",
@@ -2423,7 +2739,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-9708b7c4dfafec0bc368",
@@ -2432,7 +2749,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-2aed33a8a7109a99783c",
@@ -2441,7 +2759,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-039ac69af9b39f45e1f2",
@@ -2450,7 +2769,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-b2f6ce62e3f4c4d4ea4e",
@@ -2459,7 +2779,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-35e18338e16d43a4fb52",
@@ -2468,7 +2789,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 14
+      "rows": 14,
+      "tool": null
     },
     {
       "id": "table-1ec419790523c5a3394c",
@@ -2477,7 +2799,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-e33561addd387e1d33e7",
@@ -2486,7 +2809,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-218d2801cb6957711fbf",
@@ -2495,7 +2819,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-acdb44e39dda7dc4ceda",
@@ -2504,7 +2829,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-7fa5f3382f36d9937d37",
@@ -2513,7 +2839,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-fa53e1a3b560cfff5c4b",
@@ -2522,7 +2849,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-2c61a1ab876b24b833f4",
@@ -2531,7 +2859,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-60b87b82ca7929d8a3c2",
@@ -2540,7 +2869,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-6313f053bdf9309bddb5",
@@ -2549,7 +2879,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-ef1c2f2e534bed3ae238",
@@ -2558,7 +2889,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-2293c34fa422194f81d9",
@@ -2567,7 +2899,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-41767d8a3ce1fffadb48",
@@ -2576,7 +2909,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-85c32244de27ced618fb",
@@ -2585,16 +2919,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
-    },
-    {
-      "id": "table-8e257fdbd5257f284bbf",
-      "article_id": "component-gps-modules",
-      "path": "components/gps-modules.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 10
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-1809d438c940cce55398",
@@ -2603,7 +2929,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-e597beadc63ce5b6be74",
@@ -2612,7 +2939,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-1022f75ed027edb22e05",
@@ -2621,7 +2949,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-2fd927f86aad287bb449",
@@ -2630,7 +2959,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-99f9845990e87bfb0cf8",
@@ -2639,7 +2969,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-337ba5399a2ef72973ef",
@@ -2648,7 +2979,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-d34d8afaf8f0ab8b2592",
@@ -2657,7 +2989,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-199802ea983475a91e29",
@@ -2666,7 +2999,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 16
+      "rows": 16,
+      "tool": null
     },
     {
       "id": "table-691e7599541e19d959e2",
@@ -2675,7 +3009,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 19
+      "rows": 19,
+      "tool": null
     },
     {
       "id": "table-ebca8b7b04451957e5b5",
@@ -2684,7 +3019,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 23
+      "rows": 23,
+      "tool": null
     },
     {
       "id": "table-a080b6d96b01ca8309d5",
@@ -2693,7 +3029,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-599538835bc13eb6db4f",
@@ -2702,7 +3039,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-5a9eebc4baecffb9690f",
@@ -2711,7 +3049,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-a1a5f037457ea080b7f7",
@@ -2720,7 +3059,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 12
+      "rows": 12,
+      "tool": null
     },
     {
       "id": "table-1bb7a0bae4cf2c82ee40",
@@ -2729,7 +3069,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-16f09a62f28f5af4007c",
@@ -2738,7 +3079,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-40bb74939227c182a1d4",
@@ -2747,7 +3089,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-8acf4bf63f375e7c2266",
@@ -2756,7 +3099,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-8617f11bad01afe6d781",
@@ -2765,7 +3109,18 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
+    },
+    {
+      "id": "table-b824b8f208ec20809b57",
+      "article_id": "component-lidar-rangefinders",
+      "path": "components/lidar-rangefinders.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-1efa0fa4422881fef528",
@@ -2774,7 +3129,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-531c8c2f8aee1d60dff3",
@@ -2783,7 +3139,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-fb1869cb594f1c5cfc97",
@@ -2792,7 +3149,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-dd0763086ed71b03a24a",
@@ -2801,7 +3159,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-a3ec2c67864e8b495d90",
@@ -2810,7 +3169,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-148a4b38de61a678677f",
@@ -2819,7 +3179,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-a695e6482635d7ea0cbf",
@@ -2828,7 +3189,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 9
+      "rows": 9,
+      "tool": null
     },
     {
       "id": "table-6dff31c32ef8d535ec46",
@@ -2837,7 +3199,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-9d2dd0f5e01fe5d3f1db",
@@ -2846,7 +3209,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-fb495b83c059875dade8",
@@ -2855,7 +3219,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-a1c0b985b0d0ac4a141e",
@@ -2864,7 +3229,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-46060b033daf356192be",
@@ -2873,7 +3239,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-6225dd3889837d7830f6",
@@ -2882,7 +3249,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-c7a59683286f9b79363f",
@@ -2891,7 +3259,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-2443a39f9c3965e5a8ca",
@@ -2900,7 +3269,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-6864692fbde981278c62",
@@ -2909,7 +3279,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-e04d7494320002bee2ae",
@@ -2918,52 +3289,18 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
-      "id": "table-377b51dee4b8810567f6",
-      "article_id": "component-openhd-implementation-guide",
-      "path": "components/openhd-implementation-guide.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 8
-    },
-    {
-      "id": "table-f931a8127d6822569ae0",
-      "article_id": "component-openhd-implementation-guide",
-      "path": "components/openhd-implementation-guide.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 5
-    },
-    {
-      "id": "table-8e1fba22d03cb182114f",
+      "id": "table-1ff25c5d766bbad87097",
       "article_id": "component-openhd-implementation-guide",
       "path": "components/openhd-implementation-guide.md",
       "disposition": "queryable-lookup",
-      "classification_basis": "identifier-led-reference",
+      "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 9
-    },
-    {
-      "id": "table-c633f665cacc7bcc251f",
-      "article_id": "component-openhd-implementation-guide",
-      "path": "components/openhd-implementation-guide.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 3
-    },
-    {
-      "id": "table-6e4a43a177526f4e4d05",
-      "article_id": "component-openhd-implementation-guide",
-      "path": "components/openhd-implementation-guide.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 4
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-9ff747f5a74d0e66196d",
@@ -2972,7 +3309,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-b1243097da47952bd277",
@@ -2981,7 +3319,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-0a1c5e5fb3b3a019100c",
@@ -2990,7 +3329,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 13
+      "rows": 13,
+      "tool": null
     },
     {
       "id": "table-1bddd2dcb5595ad8d630",
@@ -2999,7 +3339,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-a433cdcfbc1b7f9492e6",
@@ -3008,7 +3349,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-96854f142c54463c7758",
@@ -3017,7 +3359,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-29511e31672f2f1b64d1",
@@ -3026,7 +3369,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-4d670751e1e0a4323542",
@@ -3035,7 +3379,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-138cb77c316929bda71c",
@@ -3044,7 +3389,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-c4a0cee6e9e5b035209a",
@@ -3053,7 +3399,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-584c3ba09929aa6cd824",
@@ -3062,7 +3409,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-ca9abbeb7743573c4f70",
@@ -3071,7 +3419,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-aea51285318d89c28001",
@@ -3080,7 +3429,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-20ea1f49e1d44be666c8",
@@ -3089,7 +3439,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-e8888e81f0c6eb1db3c8",
@@ -3098,7 +3449,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-466bcd1b41e788232826",
@@ -3107,7 +3459,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-4ff6f72c314a0b7bcaa1",
@@ -3116,7 +3469,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-fa231f37da741625d3bb",
@@ -3125,7 +3479,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 12
+      "rows": 12,
+      "tool": null
     },
     {
       "id": "table-41c0a99658251cec3a7e",
@@ -3134,7 +3489,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-bf989cb02356c0ec8de5",
@@ -3143,7 +3499,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-db222502dc57e6050a1b",
@@ -3152,7 +3509,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-205b33c3a0e80b998454",
@@ -3161,7 +3519,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-100c6f9cb3c887a50655",
@@ -3170,7 +3529,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-68e54a6de737f4957a45",
@@ -3179,7 +3539,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-e0681567a355744d3b48",
@@ -3188,7 +3549,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-0f526b68032063b02877",
@@ -3197,7 +3559,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-fa3462cc1a77e591d40a",
@@ -3206,7 +3569,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-b1747e34a779c2f66a85",
@@ -3215,7 +3579,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-ed7330e95076bfd6aac8",
@@ -3224,16 +3589,8 @@
       "disposition": "guided-explanation",
       "classification_basis": "header-pattern:fix/likely cause/symptom",
       "review": "machine-classified",
-      "rows": 8
-    },
-    {
-      "id": "table-b1fec4c985718801113e",
-      "article_id": "component-receivers",
-      "path": "components/receivers.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 11
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-9fb93cbb3ca677d48a79",
@@ -3242,7 +3599,8 @@
       "disposition": "guided-explanation",
       "classification_basis": "header-pattern:operation/starting point",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-bc3cf7e19d65e960ac24",
@@ -3251,7 +3609,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-b9489e51995eaffa4d55",
@@ -3260,7 +3619,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-80c425f91cd55fd0d00b",
@@ -3269,7 +3629,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-191ac4041408a36a44f8",
@@ -3278,7 +3639,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-a67e93f3082ff135763a",
@@ -3287,7 +3649,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-db0fc2ce3c0aea526101",
@@ -3296,7 +3659,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-5c64b38d37982991bc92",
@@ -3305,34 +3669,28 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
-      "id": "table-c83115307ad3e390df65",
+      "id": "table-6b0e9c3bc409b018b906",
       "article_id": "component-rtk-ppk-gps-integration",
       "path": "components/rtk-ppk-gps-integration.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 8,
+      "tool": null
     },
     {
-      "id": "table-04dc8e52a328ab17a62e",
+      "id": "table-16ea0c98c2c8b6b1bb83",
       "article_id": "component-rtk-ppk-the-real-story",
       "path": "components/rtk-ppk-the-real-story.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 9
-    },
-    {
-      "id": "table-3c1b57c4edad92e148ac",
-      "article_id": "component-rtk-ppk-the-real-story",
-      "path": "components/rtk-ppk-the-real-story.md",
-      "disposition": "comparison",
-      "classification_basis": "multi-attribute-comparison",
-      "review": "machine-classified",
-      "rows": 7
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-9143866fa7afcf6ceb0e",
@@ -3341,7 +3699,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-b4e7890674b64debf109",
@@ -3350,7 +3709,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-d1852376c19c20cc7013",
@@ -3359,7 +3719,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-e0f50b943464e82a9968",
@@ -3368,7 +3729,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-67e700b093f7aaa5b6d8",
@@ -3377,7 +3739,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 2
+      "rows": 2,
+      "tool": null
     },
     {
       "id": "table-803889bcb55b5a2af3ee",
@@ -3386,7 +3749,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 3
+      "rows": 3,
+      "tool": null
     },
     {
       "id": "table-dea0d5ffa5450855119f",
@@ -3395,7 +3759,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-d3d93deb7698c4c2afe1",
@@ -3404,7 +3769,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-ceda41d9323fffa954d0",
@@ -3413,7 +3779,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-aff3a145ae0592e679ae",
@@ -3422,7 +3789,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 4
+      "rows": 4,
+      "tool": null
     },
     {
       "id": "table-8029fb473486a472bccd",
@@ -3431,7 +3799,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-29f29b392fbd33e83a03",
@@ -3440,7 +3809,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 10
+      "rows": 10,
+      "tool": null
     },
     {
       "id": "table-49be62a75eb87a5b97ac",
@@ -3449,7 +3819,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 11
+      "rows": 11,
+      "tool": null
     },
     {
       "id": "table-0fb6152ed30627cfb0ae",
@@ -3458,7 +3829,8 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 7
+      "rows": 7,
+      "tool": null
     },
     {
       "id": "table-307dd8b70e50df3249c1",
@@ -3467,7 +3839,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 8
+      "rows": 8,
+      "tool": null
     },
     {
       "id": "table-c8ab887b9de64b4481aa",
@@ -3476,16 +3849,18 @@
       "disposition": "queryable-lookup",
       "classification_basis": "two-column-property-map",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
-      "id": "table-769591bb623e11b60eac",
+      "id": "table-07eebb68bee932d8d95c",
       "article_id": "component-video-transmitters-vtx",
       "path": "components/video-transmitters-vtx.md",
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 5
+      "rows": 5,
+      "tool": null
     },
     {
       "id": "table-6deb5e3d15fa604eb7ae",
@@ -3494,7 +3869,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-b2478aaec3a234c1c58c",
@@ -3503,7 +3879,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     },
     {
       "id": "table-3168a95e0be35cfcacf9",
@@ -3512,7 +3889,8 @@
       "disposition": "comparison",
       "classification_basis": "multi-attribute-comparison",
       "review": "machine-classified",
-      "rows": 6
+      "rows": 6,
+      "tool": null
     }
   ]
 }

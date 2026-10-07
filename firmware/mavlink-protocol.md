@@ -26,24 +26,25 @@ development.
 
 ## Packet Format (MAVLink v2)
 
-```
-Byte:  0     1     2     3     4       5       6       7-9       10..N    N+1..N+2
-       0xFD  len   seq   sys   comp    msg_id  msg_id  msg_id    payload  crc16
-       magic             id    id      [24-bit LE]               [data]   [checksum]
-```
+A MAVLink v2 packet has a 10-byte header. With payload length `L`, the CRC occupies bytes `10+L` and `11+L`; a signed packet then adds a 13-byte signing trailer.
 
-| Field | Size | Description |
-|-------|------|-------------|
-| Magic | 1 | 0xFD (v2) or 0xFE (v1) |
-| Payload length | 1 | 0-255 bytes |
-| Incompatible flags | 1 | Feature flags (signing, etc.) |
-| Compatible flags | 1 | Backward-compatible flags |
-| Sequence | 1 | Incrementing counter per link |
-| System ID | 1 | Which vehicle (1-254) |
-| Component ID | 1 | Which subsystem (1=autopilot, 191=companion) |
-| Message ID | 3 | 24-bit, little-endian |
-| Payload | variable | Message-specific data |
-| Checksum | 2 | CRC-16/MCRF4XX with seed byte |
+| Byte offset | Field |
+|---|---|
+| 0 | Magic `0xFD` |
+| 1 | Payload length `L` |
+| 2 | Incompatibility flags |
+| 3 | Compatibility flags |
+| 4 | Sequence |
+| 5 | System ID |
+| 6 | Component ID |
+| 7–9 | Message ID, little-endian 24-bit |
+| 10 through 9+L | Payload, when L is nonzero |
+| 10+L through 11+L | CRC-16/MCRF4XX |
+| 12+L through 24+L | Optional signing trailer: link ID, timestamp and signature |
+
+The checksum accumulates the message-specific `CRC_EXTRA` after the packet bytes covered by the CRC. `CRC_EXTRA` is not the checksum's initial seed. Signing authenticates messages; it does not encrypt the payload.
+
+Primary references: [serialization](https://mavlink.io/en/guide/serialization.html), [signing](https://mavlink.io/en/guide/message_signing.html) and [common definitions](https://mavlink.io/en/messages/common.html), checked 2026-10-07.
 
 ---
 
@@ -78,7 +79,7 @@ common mistakes in multi-vehicle setups.
 
 ### HEARTBEAT (msg_id = 0) — The Keepalive
 
-Every MAVLink device sends HEARTBEAT at 1 Hz. It's how devices
+HEARTBEAT rates and timeout rules are implementation-specific; 1 Hz is common. It's how devices
 discover each other and know the connection is alive.
 
 ```
@@ -95,9 +96,7 @@ Fields:
 3 = ArduPilot, 12 = PX4. This is the equivalent of MSP_FC_VARIANT
 for the MAVLink world.
 
-**No heartbeat = dead link.** If you stop receiving heartbeats
-from a drone for > 5 seconds, the link is lost. ATAK and QGC
-both use this to mark connections as stale.
+A missed heartbeat can indicate congestion, a stopped process or a transport fault. Configure and document a timeout for the application; a five-second rule is not part of the universal wire format.
 
 ---
 
@@ -149,20 +148,7 @@ Key telemetry messages:
 | GPS_RAW_INT | 24 | 2-5 Hz | GPS fix type, satellites, HDOP, raw position |
 | RC_CHANNELS | 65 | 5-10 Hz | All RC channel values (for monitoring stick input) |
 
-**Setting stream rates (ArduPilot):**
-```
-SR0_POSITION=2      # GLOBAL_POSITION_INT at 2 Hz
-SR0_EXTRA1=4         # ATTITUDE at 4 Hz
-SR0_EXTRA2=2         # VFR_HUD at 2 Hz
-SR0_RAW_SENS=1       # RAW sensor data at 1 Hz
-SR0_RC_CHAN=5         # RC channels at 5 Hz
-```
-
-`SR0_*` parameters control stream rates for serial port 0 (usually
-TELEM1). Replace `0` with the port number for other connections.
-
-**Setting stream rates (PX4):**
-PX4 uses SET_MESSAGE_INTERVAL command to set per-message rates.
+**Setting stream rates:** Prefer `MAV_CMD_SET_MESSAGE_INTERVAL` where the exact firmware supports it. ArduPilot `SRx_*` indices identify MAVLink instances; they do not universally equal physical `SERIALx` port numbers. Multiple clients can overwrite each other's rate requests. [ArduPilot stream-rate documentation](https://ardupilot.org/dev/docs/mavlink-requesting-data.html), checked 2026-10-07.
 
 ---
 
@@ -178,7 +164,7 @@ acknowledged via COMMAND_ACK.
 | MAV_CMD_NAV_TAKEOFF | 22 | Takeoff to specified altitude |
 | MAV_CMD_NAV_LAND | 21 | Land at current position |
 | MAV_CMD_NAV_RETURN_TO_LAUNCH | 20 | Return to home |
-| MAV_CMD_DO_REBOOT | 246 | Reboot FC |
+| MAV_CMD_PREFLIGHT_REBOOT_SHUTDOWN | 246 | Reboot FC |
 
 **Arm command:**
 ```
@@ -186,11 +172,10 @@ COMMAND_LONG:
   target_system = 1    (drone's system ID)
   command = 400         (ARM_DISARM)
   param1 = 1.0          (1=arm, 0=disarm)
-  param2 = 0.0          (0=normal, 21196=force arm — dangerous)
+  param2 = 0.0          (0=normal, force variants are excluded from this example)
 ```
 
-**Wait for COMMAND_ACK.** Result 0 = accepted. Result 4 = denied
-(pre-arm checks failed). Result 5 = in progress.
+**Wait for COMMAND_ACK.** `MAV_RESULT`: 0 ACCEPTED, 1 TEMPORARILY_REJECTED, 2 DENIED, 3 UNSUPPORTED, 4 FAILED, 5 IN_PROGRESS. Acceptance is a command-protocol result; confirm the resulting vehicle state separately.
 
 ---
 

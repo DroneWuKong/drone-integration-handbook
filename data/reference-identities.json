@@ -606,5 +606,49 @@
   "components/video-transmitters-vtx.md": {
     "id": "component-video-transmitters-vtx",
     "anchor": "c660"
+  },
+  "firmware/backup-upgrade-recovery.md": {
+    "id": "article-54",
+    "anchor": "ch54"
+  },
+  "integration/software-failure-testing.md": {
+    "id": "article-55",
+    "anchor": "ch55"
+  },
+  "firmware/can-dronecan-cyphal.md": {
+    "id": "article-56",
+    "anchor": "ch56"
+  },
+  "integration/video-pipeline-troubleshooting.md": {
+    "id": "article-57",
+    "anchor": "ch57"
+  },
+  "integration/time-and-coordinate-provenance.md": {
+    "id": "article-58",
+    "anchor": "ch58"
+  },
+  "integration/secure-multiclient-telemetry.md": {
+    "id": "article-59",
+    "anchor": "ch59"
+  },
+  "integration/compute-workload-selection.md": {
+    "id": "article-60",
+    "anchor": "ch60"
+  },
+  "field/evidence-record.md": {
+    "id": "article-61",
+    "anchor": "ch61"
+  },
+  "integration/repository-updates.md": {
+    "id": "article-62",
+    "anchor": "ch62"
+  },
+  "field/update-status.md": {
+    "id": "article-63",
+    "anchor": "ch63"
+  },
+  "integration/emerging-technology-watch.md": {
+    "id": "article-64",
+    "anchor": "ch64"
   }
 }

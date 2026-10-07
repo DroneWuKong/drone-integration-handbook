@@ -22,6 +22,8 @@ The handbook is independently published. Product and company names are used for 
 | Compare airframes | [Platform References](platforms/README.md) |
 | Understand autonomy requirements | [Levels of Drone Autonomy](autonomy/autonomy-levels.md) |
 | Open a printable field reference | [Frequency Quick Reference Card](appendices/appendix-a-frequency-quick-reference.md) |
+| Check releases and source-review dates | [Update Watchlist](field/update-status.md) |
+| Discover emerging software | [Emerging Technology Watch](integration/emerging-technology-watch.md) |
 | Report an error or request a reply | [Editorial and Corrections Policy](legal/editorial-and-corrections-policy.md) |
 
 The live site adds grouped navigation, local exact-heading search, active-section tracking, previous/next controls, stable anchors, and visible publisher/legal policies. Search is performed in the browser and is not sent to the publisher.
@@ -174,3 +176,9 @@ See [LICENSING.md](LICENSING.md), [LICENSE](LICENSE), [LICENSE-CODE](LICENSE-COD
 Goal [#57](https://github.com/DroneWuKong/drone-integration-handbook/issues/57) tracks the complete overhaul. The candidate adds a public query snapshot, transparent calculation tools, sourced link-budget and current regulatory claims, discrepancy controls, a private report/review API, correction proposals, a prioritized citation-review queue and coherent offline releases. Legacy evidence is explicitly unreviewed; extraction and triage do not verify a claim. See [reference tools](docs/REFERENCE_TOOLS.md), the [citation review workflow](docs/CITATION_REVIEW_WORKFLOW.md), and [production setup](docs/REPORTING_DEPLOYMENT.md).
 
 The autonomous evidence layer adds independent researcher/verifier jobs, strict evidence packets, trusted source-byte hashing, deterministic publication policy, automatic abstention, a private exception console, immutable prediction registration and Brier scoring. It has a complete software-only execution path, a nightly bounded scheduler and an optional live Responses API provider. See [autonomous evidence and prediction system](docs/AUTONOMOUS_EVIDENCE.md).
+
+## Living reference and integration additions
+
+The nightly maintenance cycle checks release dates, source availability and factual-review due dates, searches GitHub for relevant emerging projects, and discovers related public repository content. Independently verified exact facts can publish automatically with source/version scope and revision history. Failed or conflicting evidence remains unresolved; metadata does not certify capability. See [maintenance architecture](docs/AUTONOMOUS_EVIDENCE.md).
+
+New guides cover [firmware recovery](firmware/backup-upgrade-recovery.md), [software failure replay](integration/software-failure-testing.md), [CAN/DroneCAN/Cyphal](firmware/can-dronecan-cyphal.md), [video troubleshooting](integration/video-pipeline-troubleshooting.md), [time and coordinate provenance](integration/time-and-coordinate-provenance.md), [multiclient telemetry](integration/secure-multiclient-telemetry.md), [compute selection](integration/compute-workload-selection.md), and an [evidence record](field/evidence-record.md).

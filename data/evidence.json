@@ -3,7 +3,7 @@
   "sources": [
     {
       "id": "reboot-hub-parts-evidence-guide",
-      "title": "Reboot Hub: DJI Drone Parts — OEM-Pulled Parts and Compatibility",
+      "title": "Reboot Hub: DJI Drone Parts \u2014 OEM-Pulled Parts and Compatibility",
       "url": "https://reboot-hub.com/blogs/the-reboot-hub-chronicle/dji-drone-parts-oem-pulled-replacements-compatibility",
       "passage": "What to do before buying DJI drone parts; How should buyers match DJI part compatibility?; What is the difference between OEM-pulled and aftermarket parts?",
       "accessed": "2026-10-03",
@@ -88,12 +88,94 @@
       "passage": "Near-real-time authorization and Part 107 further-coordination timing and altitude scope",
       "accessed": "2026-10-02",
       "review_days": 90
+    },
+    {
+      "id": "hailo8-spec",
+      "title": "Hailo-8 specifications",
+      "url": "https://hailo.ai/products/ai-accelerators/hailo-8-ai-accelerator/",
+      "passage": "Up to 26 TOPS and typical chip power",
+      "accessed": "2026-10-07",
+      "review_days": 30
+    },
+    {
+      "id": "benewake-tfmini-s",
+      "title": "Benewake TFmini-S specifications",
+      "url": "https://en.benewake.com/TFminiS/index.html",
+      "passage": "Weight entries for TFmini-S and TFmini Plus",
+      "accessed": "2026-10-07",
+      "review_days": 30
+    },
+    {
+      "id": "mavlink-serialization",
+      "title": "MAVLink packet serialization",
+      "url": "https://mavlink.io/en/guide/serialization.html",
+      "passage": "MAVLink 2 packet layout",
+      "accessed": "2026-10-07",
+      "review_days": 30
+    },
+    {
+      "id": "mavlink-common",
+      "title": "MAVLink common dialect",
+      "url": "https://mavlink.io/en/messages/common.html",
+      "passage": "MAV_STATE, MAV_MODE_FLAG, MAV_RESULT and GLOBAL_POSITION_INT",
+      "accessed": "2026-10-07",
+      "review_days": 30
+    },
+    {
+      "id": "mavlink-signing",
+      "title": "MAVLink signing",
+      "url": "https://mavlink.io/en/guide/message_signing.html",
+      "passage": "Signature block and authentication",
+      "accessed": "2026-10-07",
+      "review_days": 30
+    },
+    {
+      "id": "betaflight-position-hold",
+      "title": "Betaflight 2025.12 position hold",
+      "url": "https://betaflight.com/docs/wiki/guides/current/Position-Hold-2025-12",
+      "passage": "Requirements and build options",
+      "accessed": "2026-10-07",
+      "review_days": 30
+    },
+    {
+      "id": "openhdfpv-adapters",
+      "title": "OpenHD adapter compatibility",
+      "url": "https://openhdfpv.org/hardware/wifi-adapters/",
+      "passage": "Supported families since 2.6.3",
+      "accessed": "2026-10-07",
+      "review_days": 30
+    },
+    {
+      "id": "px4-v117-offboard",
+      "title": "PX4 v1.17 Offboard",
+      "url": "https://docs.px4.io/v1.17/en/flight_modes/offboard",
+      "passage": "Supported modes and prerequisites",
+      "accessed": "2026-10-07",
+      "review_days": 30
+    },
+    {
+      "id": "st-stm32n6",
+      "title": "STM32N6 manufacturer series page",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html",
+      "passage": "N6x7 AI and N6x5 general purpose variants",
+      "accessed": "2026-10-07",
+      "review_days": 30
+    },
+    {
+      "id": "nxp-imx95",
+      "title": "NXP i.MX 95 manufacturer page",
+      "url": "https://www.nxp.com/products/i.MX95",
+      "passage": "eIQ Neutron and device variants",
+      "accessed": "2026-10-07",
+      "review_days": 30
     }
   ],
   "claims": [
     {
       "id": "reboot-hub-parts-evidence-scope",
-      "sources": ["reboot-hub-parts-evidence-guide"],
+      "sources": [
+        "reboot-hub-parts-evidence-guide"
+      ],
       "status": "manufacturer-reported",
       "verified": "2026-10-03",
       "scope": "Company-published source wording only. Reboot Hub is an independent parts/service supplier, not DJI or a manufacturer-authorized reviewer. No hardware compatibility, safety, authenticity, availability or compliance conclusion is verified here.",
@@ -795,6 +877,105 @@
       "revision": 1,
       "history": [],
       "reviewer": "Public FAA source check; no application submitted"
+    },
+    {
+      "id": "rf-card-fspl-915-10",
+      "sources": [
+        "itu-p525"
+      ],
+      "status": "derived",
+      "verified": "2026-10-07",
+      "scope": "Exact cited specification or dimensional example only; no hardware acceptance.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Primary source text and arithmetic checked during the October audit",
+      "statement": "32.45 + 20 log10(915 MHz) + 20 log10(10 km) = 111.68 dB. Free-space calculation only; no field-range or regulatory conclusion.",
+      "value": 111.67842188132897,
+      "unit": "dB",
+      "derivation": {
+        "formula": "constant + 20*log10(frequency_MHz) + 20*log10(distance_km)",
+        "inputs": {
+          "constant": 32.45,
+          "frequency_MHz": 915,
+          "distance_km": 10
+        },
+        "output_unit": "dB"
+      }
+    },
+    {
+      "id": "companion-energy-example",
+      "sources": [
+        "nist-si",
+        "nist-power"
+      ],
+      "status": "derived",
+      "verified": "2026-10-07",
+      "scope": "Exact cited specification or dimensional example only; no hardware acceptance.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Primary source text and arithmetic checked during the October audit",
+      "statement": "At nominal 22.2 V, 1.3 Ah is 28.86 Wh. A constant 10 W load for ten minutes consumes 1.67 Wh, approximately 5.8% of that nominal energy before losses. This example does not establish aircraft endurance.",
+      "value": 5.775005775005774,
+      "unit": "%",
+      "derivation": {
+        "formula": "100 * load_W * duration_minutes/60 / (capacity_Ah * nominal_V)",
+        "inputs": {
+          "load_W": 10,
+          "duration_minutes": 10,
+          "capacity_Ah": 1.3,
+          "nominal_V": 22.2
+        },
+        "output_unit": "% of nominal pack energy"
+      }
+    },
+    {
+      "id": "survey-timing-example",
+      "sources": [
+        "nist-si"
+      ],
+      "status": "derived",
+      "verified": "2026-10-07",
+      "scope": "Exact cited specification or dimensional example only; no hardware acceptance.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Primary source text and arithmetic checked during the October audit",
+      "statement": "The dimensional example 10 m/s \u00d7 0.050 s gives 0.5 m of along-track displacement. It is not a measured camera timing error.",
+      "value": 0.5,
+      "unit": "m",
+      "derivation": {
+        "formula": "speed_m_per_s * timing_error_s",
+        "inputs": {
+          "speed_m_per_s": 10,
+          "timing_error_s": 0.05
+        },
+        "output_unit": "m"
+      }
+    },
+    {
+      "id": "hailo8-spec-scope",
+      "sources": [
+        "hailo8-spec"
+      ],
+      "status": "manufacturer-reported",
+      "verified": "2026-10-07",
+      "scope": "Exact cited specification or dimensional example only; no hardware acceptance.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Primary source text and arithmetic checked during the October audit",
+      "statement": "Hailo reports up to 26 TOPS and typical chip power of 2.5 W for Hailo-8. These are chip specifications; they do not establish module/whole-board power or application performance."
+    },
+    {
+      "id": "tfmini-s-mass",
+      "sources": [
+        "benewake-tfmini-s"
+      ],
+      "status": "manufacturer-reported",
+      "verified": "2026-10-07",
+      "scope": "Exact cited specification or dimensional example only; no hardware acceptance.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Primary source text and arithmetic checked during the October audit",
+      "statement": "Benewake lists TFmini-S mass as 5 \u00b1 0.3 g and TFmini Plus as 12 \u00b1 1 g. Exact variant specifications only."
     }
   ]
 }

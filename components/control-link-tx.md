@@ -26,36 +26,36 @@ The reference ELRS TX module at each power tier. Ranger Micro (500mW, 2.4GHz) fi
 
 **Why RadioMaster dominates:** RadioMaster co-developed ELRS hardware reference designs and ships the most popular ELRS handsets. Their modules are widely used, well-documented, and firmware stays current.
 
-**NDAA:** RadioMaster is Chinese (Shenzhen). Hardware manufactured in China. Non-compliant for federal procurement.
+Country of headquarters or assembly does not establish eligibility. Check the exact item, revision, bill of materials, applicable contracting authority and dated supporting documentation using [federal procurement screening](ndaa-compliance.md). This reference does not certify the listed products.
 
 ### ELRS Backpack
 The ELRS Backpack concept allows a WiFi module to receive VTX control commands via ELRS telemetry, enabling VTX channel/power changes from the transmitter without a separate channel. Minor but useful for competition setup.
 
 ### BetaFPV ELRS Micro TX
-Compact ELRS TX module. 100mW / 250mW / 1W variants. USB-C charging, hall-effect gimbals on some handsets. Non-NDAA (Chinese).
+Compact ELRS TX module. 100mW / 250mW / 1W variants. USB-C charging, hall-effect gimbals on some handsets. Procurement status requires exact-item screening.
 
 ## Crossfire / Tracer TX Hardware
 
 ### TBS Tango 2
 Team BlackSheep's dedicated long-range RC transmitter. Crossfire protocol, 1W output, folding design, 12-hour battery. The benchmark for long-range wing and fixed-wing BVLOS operations.
 
-**NDAA ✓** — TBS is headquartered in Switzerland. The Tango 2 is the primary NDAA-compliant dedicated handset option for performance RC control.
+Procurement status is configuration- and authority-specific; headquarters does not establish it.
 
 ### TBS Crossfire TX / TX Lite
 The JR-bay and nano-bay Crossfire TX modules respectively. Pair with any JR-compatible handset. 1W output (TX), 250mW (TX Lite).
 
-**NDAA ✓** — Swiss manufacture. The highest-performing NDAA-compliant TX module option.
+Procurement status is configuration- and authority-specific; headquarters does not establish it.
 
 ### TBS Tracer TX
 2.4GHz variant of Crossfire TX. Faster packet rates, slightly less range than Crossfire 900MHz. Nano bay form factor.
 
 ## FrSky TX Modules
 
-FrSky (Chinese — NDAA ✗) produces the ACCESS-protocol TX modules used with FrSky receivers. R9M (900MHz, long range) and XJT (2.4GHz) are common in legacy setups. Not recommended for new builds — ELRS and Crossfire have surpassed FrSky on every performance metric while being cheaper.
+FrSky (Chinese — procurement status unverified) produces the ACCESS-protocol TX modules used with FrSky receivers. R9M (900MHz, long range) and XJT (2.4GHz) are common in legacy setups. Not recommended for new builds — ELRS and Crossfire have surpassed FrSky on every performance metric while being cheaper.
 
 ## Spektrum (Horizon Hobby)
 
-Spektrum DSM2/DSMX transmitters are the legacy standard for RC aircraft, helicopters, and some fixed-wing drones. Horizon Hobby is US-based (NDAA ✓). Performatively inferior to ELRS for FPV applications but maintains market share in the RC aircraft community.
+Spektrum DSM2/DSMX transmitters are the legacy standard for RC aircraft, helicopters, and some fixed-wing drones. Horizon Hobby is US-based (procurement status unverified). Performatively inferior to ELRS for FPV applications but maintains market share in the RC aircraft community.
 
 Key Spektrum TX products relevant to drone integration:
 - **NX8/NX10:** 8-10 channel transmitters for conventional RC aircraft
@@ -63,32 +63,8 @@ Key Spektrum TX products relevant to drone integration:
 
 ## Power Levels and Legal Considerations
 
-TX module output power is regulated by frequency and jurisdiction:
-
-| Band | US Legal Max | Common Module Max |
-|---|---|---|
-| 2.4GHz | 1W EIRP (30 dBm) | 1W |
-| 900MHz | 4W EIRP | 1W (modules) / 2W (dedicated TX) |
-| 5.8GHz | 200mW EIRP | Varies |
-
-**Note:** ELRS modules operating at 1W in 915MHz band are technically legal under FCC Part 15 for most uses, but operators should verify their specific application. Contest and hobby use vs. commercial UAS operations may have different requirements.
-
-**For contested/military environments:** Standard output powers are deliberately low — 100mW at 2.4GHz is trivially jammed. For operations where link resilience matters, use 900MHz at maximum legal power, add frequency hopping (ELRS does this), and consider encrypted binding (MILELRS).
+Record the exact equipment authorization, operating mode, band, antenna and EIRP limit for the applicable jurisdiction. A band-wide power table cannot establish permission for a particular transmitter. See [regulatory resources](../appendices/appendix-f-regulatory-resources.md).
 
 ## NDAA Summary
 
-The control link TX category is almost entirely Chinese-manufactured at the consumer level. NDAA-compliant options:
-
-| Product | Origin | NDAA |
-|---|---|---|
-| TBS Crossfire TX / TX Lite | Switzerland | ✓ |
-| TBS Tracer TX | Switzerland | ✓ |
-| TBS Tango 2 | Switzerland | ✓ |
-| Spektrum NX/iX series | USA (Horizon Hobby) | ✓ |
-| RadioMaster (all) | China | ✗ |
-| BetaFPV (all) | China | ✗ |
-| FrSky (all) | China | ✗ |
-| Jumper (all) | China | ✗ |
-| Happymodel ELRS | China | ✗ |
-
-For federal procurement: TBS Crossfire ecosystem is the primary option combining NDAA compliance with competitive performance. Spektrum covers the legacy/fixed-wing procurement market.
+Country of headquarters or assembly does not establish eligibility. Check the exact item, revision, bill of materials, applicable contracting authority and dated supporting documentation using [federal procurement screening](ndaa-compliance.md). This reference does not certify the listed products.

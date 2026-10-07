@@ -91,6 +91,17 @@ CHAPTERS: Final[tuple[ChapterSpec, ...]] = (
     ChapterSpec("appendices/appendix-e-cot-type-codes.md", 46, "Appendix E — CoT Type Code Reference"),
     ChapterSpec("appendices/appendix-f-regulatory-resources.md", 47, "Appendix F — Regulatory & Open Resources"),
     ChapterSpec("integration/wingman-apb.md", 48, "AI Wingman on the Orqa DTK APB — Review Hold"),
+    ChapterSpec("firmware/backup-upgrade-recovery.md", 54, "Firmware Backup, Upgrade and Recovery"),
+    ChapterSpec("integration/software-failure-testing.md", 55, "Software Failure Testing and Replay"),
+    ChapterSpec("firmware/can-dronecan-cyphal.md", 56, "CAN, DroneCAN and Cyphal"),
+    ChapterSpec("integration/video-pipeline-troubleshooting.md", 57, "Video Pipeline Troubleshooting"),
+    ChapterSpec("integration/time-and-coordinate-provenance.md", 58, "Time and Coordinate Provenance"),
+    ChapterSpec("integration/secure-multiclient-telemetry.md", 59, "Secure Multiclient Telemetry"),
+    ChapterSpec("integration/compute-workload-selection.md", 60, "Compute Workload Selection"),
+    ChapterSpec("field/evidence-record.md", 61, "Integration Evidence Record"),
+    ChapterSpec("integration/repository-updates.md", 62, "Verified Repository Integration Notes"),
+    ChapterSpec("field/update-status.md", 63, "Release and Information Update Watchlist"),
+    ChapterSpec("integration/emerging-technology-watch.md", 64, "Emerging Technology Watch"),
     ChapterSpec("legal/publisher-and-affiliations.md", 49, "Publisher & Editorial Independence"),
     ChapterSpec("legal/editorial-and-corrections-policy.md", 50, "Editorial, Corrections & Right of Reply"),
     ChapterSpec("legal/privacy.md", 51, "Privacy Notice"),
@@ -109,13 +120,13 @@ PARTS: Final[tuple[PartSpec, ...]] = (
     PartSpec(
         "firmware",
         "Part 2 — Flight Controller Firmware",
-        (5, 6, 7, 8, 26, 27, 28, 29, 30),
+        (5, 6, 7, 8, 26, 27, 28, 29, 30, 54, 56),
         "Firmware choices, serial protocols, UART maps, RC links, and ESC control.",
     ),
     PartSpec(
         "field",
         "Part 3 — Field Operations",
-        (9, 10, 11, 12, 32, 33, 34, 35),
+        (9, 10, 11, 12, 32, 33, 34, 35, 61),
         "Preflight, diagnostics, tuning, recovery, night operations, and substitutions.",
     ),
     PartSpec(
@@ -127,7 +138,7 @@ PARTS: Final[tuple[PartSpec, ...]] = (
     PartSpec(
         "integration",
         "Part 4 — Integration",
-        (13, 14, 15, 16, 36, 48),
+        (13, 14, 15, 16, 36, 48, 55, 57, 58, 59, 60),
         "Companion compute, mesh, TAK, edge nodes, onboard analysis, and system-level wiring.",
     ),
     PartSpec(
@@ -154,6 +165,8 @@ PARTS: Final[tuple[PartSpec, ...]] = (
         (43, 44, 45, 46, 47),
         "Printable and fast-lookup references for spectrum, MAVLink, MSP, CoT, and public regulatory sources.",
     ),
+    PartSpec("updates", "Living Reference — Updates & Emerging Technology", (62, 63, 64),
+        "Verified repository notes, dated release checks and emerging software discovery."),
     PartSpec(
         "legal",
         "Publisher & Legal",

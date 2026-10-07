@@ -7,13 +7,13 @@ The 20 MAVLink messages you actually use in field operations.
 ## Connection & Heartbeat
 
 ### HEARTBEAT (ID: 0)
-Sent every 1s by every MAVLink node. If you stop receiving it, the link is dead.
+Commonly sent at 1 Hz; the application defines its loss/freshness timeout. A missed heartbeat alone does not identify the failed component.
 
 ```
 type          — vehicle type (1=fixed-wing, 2=quad, 6=GCS)
 autopilot     — firmware (3=ArduPilot, 12=PX4)
-base_mode     — bitmask (128=armed, 4=guided, 8=stabilized)
-system_status — 4=standby, 5=active, 6=critical
+base_mode     — bitmask (128=armed, 4=auto, 8=guided, 16=stabilized)
+system_status — 3=standby, 4=active, 5=critical
 ```
 
 ---
@@ -35,15 +35,15 @@ VTOL state, landed state. `landed_state` 1=on ground, 2=in air, 3=takeoff, 4=lan
 ## Position & Navigation
 
 ### GLOBAL_POSITION_INT (ID: 33)
-Primary position message. `lat`/`lon` in degE7, `alt` in mm AMSL, `relative_alt` in mm AGL.
+Primary position message. `lat`/`lon` in degE7, `alt` in mm AMSL, `relative_alt` in mm above home (not terrain AGL).
 `vx`/`vy`/`vz` in cm/s. `hdg` in cdeg.
 
 ### LOCAL_POSITION_NED (ID: 32)
-Local frame position in meters. Origin is arming location. `vx`/`vy`/`vz` in m/s.
+Local frame position in meters. Origin is the local estimator reference; it is not universally the arming location. `vx`/`vy`/`vz` in m/s.
 
 ### GPS_RAW_INT (ID: 24)
 Raw GPS data. `fix_type` 0=no GPS, 3=3D fix, 4=DGPS, 5=RTK float, 6=RTK fixed.
-`satellites_visible`. Check `eph` (horizontal dilution) — below 200 is good.
+`satellites_visible`. Interpret `eph` and its unknown-value sentinel using the exact message/firmware; no universal dilution threshold establishes navigation readiness.
 
 ### HOME_POSITION (ID: 242)
 GPS coordinates of the home/RTL point. Request with MAV_CMD_GET_HOME_POSITION.
@@ -53,7 +53,7 @@ GPS coordinates of the home/RTL point. Request with MAV_CMD_GET_HOME_POSITION.
 ## Attitude
 
 ### ATTITUDE (ID: 30)
-Roll, pitch, yaw in radians. Rates in rad/s. 100Hz on most FCs.
+Roll, pitch, yaw in radians. Rates in rad/s. The emitted rate is configurable and implementation-specific.
 
 ### VFR_HUD (ID: 74)
 Human-readable: airspeed (m/s), groundspeed (m/s), heading (deg), throttle (%), altitude (m), climb (m/s).
@@ -66,13 +66,13 @@ Commands sent via COMMAND_LONG (ID: 76) or COMMAND_INT (ID: 75).
 FC replies with COMMAND_ACK (ID: 77): `result` 0=accepted, 1=temp rejected, 2=denied, 3=unsupported, 4=failed.
 
 ### MAV_CMD_NAV_TAKEOFF (22)
-Arm and takeoff to altitude. `param7` = target altitude in meters.
+Request takeoff; arming and mode prerequisites depend on firmware. `param7` = target altitude in meters.
 
 ### MAV_CMD_NAV_LAND (21)
 Land at current position. FC handles descent and motor cutoff.
 
 ### MAV_CMD_NAV_RETURN_TO_LAUNCH (20)
-RTL. Returns to home position and lands.
+Request return-to-launch; destination, flight behavior and landing settings are firmware/configuration-specific.
 
 ### MAV_CMD_NAV_WAYPOINT (16)
 Navigate to waypoint. `param5`=lat, `param6`=lon, `param7`=alt.
@@ -82,7 +82,7 @@ Change flight mode. `param1`=base_mode (1=custom), `param2`=custom_mode.
 ArduCopter custom modes: 0=Stabilize, 2=AltHold, 3=Auto, 4=Guided, 5=Loiter, 6=RTL, 9=Land.
 
 ### MAV_CMD_COMPONENT_ARM_DISARM (400)
-Arm: `param1`=1. Disarm: `param1`=0. Force disarm: `param2`=21196.
+Arm: `param1`=1. Disarm: `param1`=0. Use the normal documented path; forced variants are excluded from this card.
 
 ### MAV_CMD_DO_GRIPPER (211)
 Payload dropper/gripper. `param1`=instance, `param2`=action (0=release, 1=grab).
@@ -156,3 +156,5 @@ then COMMAND_LONG MAV_CMD_COMPONENT_ARM_DISARM param1=0
 - [MAVLink Protocol Overview](../firmware/mavlink-protocol.md)
 - [Companion Computer Integration](../integration/companion.md)
 - [MSP Quick Reference](appendix-d-msp-quick-reference.md)
+
+Primary definitions checked 2026-10-07: [MAVLink common messages/enums](https://mavlink.io/en/messages/common.html). See [time and coordinates](../integration/time-and-coordinate-provenance.md) and [multi-client telemetry](../integration/secure-multiclient-telemetry.md).

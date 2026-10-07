@@ -63,7 +63,12 @@ async function verifyPacketSources(packet,spec,env){
  if(packet.sources.length>10)throw Error("Evidence packet contains too many sources");const domains=[...new Set([...defaultDomains,...(spec.candidate_sources||[]).map(value=>{try{return new URL(value).hostname.toLowerCase();}catch{return "";}}).filter(Boolean)])];
  for(const source of packet.sources){let url;try{url=new URL(source.url);}catch{throw Error("Invalid evidence source URL");}if(url.protocol!=="https:"||!allowedHost(url.hostname,domains))throw Error("Evidence source outside allowlist");
   let remote;for(let redirects=0;redirects<=5;redirects++){remote=await fetch(url,{headers:{"user-agent":"UAS-Handbook-Evidence/1.0"},redirect:"manual"});if(![301,302,303,307,308].includes(remote.status))break;const location=remote.headers.get("location");if(!location)throw Error("Evidence source redirect is missing a target");url=new URL(location,url);if(url.protocol!=="https:"||!allowedHost(url.hostname,domains))throw Error("Evidence source redirect left allowlist");if(redirects===5)throw Error("Evidence source redirect limit exceeded");}
-  if(!remote.ok)throw Error("Evidence source snapshot failed");const declared=Number(remote.headers.get("content-length")||0);if(declared>4194304)throw Error("Evidence source snapshot too large");const bytes=new Uint8Array(await remote.arrayBuffer());if(!bytes.length||bytes.length>4194304)throw Error("Evidence source snapshot invalid");const digest=hex(new Uint8Array(await crypto.subtle.digest("SHA-256",bytes)));source.content_sha256=digest;if(env.EVIDENCE)await env.EVIDENCE.put(`source-snapshots/${digest}`,bytes,{customMetadata:{source_url:source.url,retrieved_at:new Date().toISOString()}});
+  if(!remote.ok)throw Error("Evidence source snapshot failed");const declared=Number(remote.headers.get("content-length")||0);if(declared>4194304)throw Error("Evidence source snapshot too large");const bytes=new Uint8Array(await remote.arrayBuffer());if(!bytes.length||bytes.length>4194304)throw Error("Evidence source snapshot invalid");
+  if(spec.verification_protocol==="exact-statement-v2"){
+   const normalize=value=>String(value).replace(/<[^>]*>/g," ").replace(/&nbsp;|&#160;/g," ").replace(/&amp;/g,"&").replace(/&quot;/g,'"').replace(/&#39;|&apos;/g,"'").replace(/&#(\d+);/g,(_,n)=>String.fromCodePoint(Number(n))).replace(/\s+/g," ").trim();
+   const passage=normalize(source.passage);if(passage.length<12||!normalize(new TextDecoder().decode(bytes)).includes(passage))throw Error("Cited passage is not in retrieved source");
+  }
+  const digest=hex(new Uint8Array(await crypto.subtle.digest("SHA-256",bytes)));source.content_sha256=digest;if(env.EVIDENCE)await env.EVIDENCE.put(`source-snapshots/${digest}`,bytes,{customMetadata:{source_url:source.url,retrieved_at:new Date().toISOString()}});
  }
  return packet;
 }
@@ -76,6 +81,7 @@ async function adjudicateStored(env,specRow){
   const conclusions=new Set(packets.map(packet=>packet.conclusion)),contradictions=packets.flatMap(packet=>packet.contradictions||[]).filter(Boolean);
   if(conclusions.has("contradicts")||(conclusions.has("supports")&&conclusions.has("insufficient")))decision={...base,publication_state:"contradicted",human_intervention:true,reasons:["independent-runs-disagree"]};
   else if(conclusions.size!==1||!conclusions.has("supports"))decision={...base,reasons:["evidence-does-not-fully-support-exact-claim"]};
+  else if(spec.verification_protocol==="exact-statement-v2"&&(packets.some(p=>p.proposed_statement!==spec.statement)||byRole.researcher.scope!==byRole.verifier.scope||!byRole.verifier.scope.trim()||(spec.scope&&byRole.verifier.scope!==spec.scope)))decision={...base,reasons:["exact-statement-and-scope-reverification-required"]};
   else{
    const sources=[...new Map(packets.flatMap(packet=>packet.sources||[]).map(source=>[`${source.url}|${source.content_sha256}`,source])).values()],policy=policies[spec.claim_type]||policies.factual;const next={...base,source_count:sources.length};
    if(sources.length<policy.min)decision={...next,reasons:["minimum-independent-source-count-not-met"]};
@@ -138,6 +144,19 @@ export async function handleAutonomy(request,env,context){
  }
  if(!db)return respond(503,{error:"Autonomous evidence storage is not configured"});
  try{
+  if(["ledger","decisions"].includes(path)&&request.method==="GET"){
+   if(!await reviewer(request,env.REVIEW_TOKEN))return respond(401,{error:"Reviewer authorization required"});
+   const cursor=url.searchParams.get("cursor")||"";if(cursor&&!/^[0-9a-f]{24}$/.test(cursor))return respond(400,{error:"Invalid cursor"});
+   const limit=path==="ledger"?100:25;
+   const result=path==="ledger"
+    ?await db.prepare("SELECT id,state,data FROM research_specs WHERE id>?1 ORDER BY id LIMIT ?2").bind(cursor,limit).all()
+    :await db.prepare("SELECT d.id,d.data,s.data spec_data,d.spec_id FROM evidence_decisions d JOIN research_specs s ON s.id=d.spec_id WHERE d.id>?1 ORDER BY d.id LIMIT ?2").bind(cursor,limit).all();
+   const rows=[];for(const row of result.results){
+    if(path==="ledger")rows.push({id:row.id,state:row.state,spec:JSON.parse(row.data)});
+    else{const packets=await db.prepare("SELECT p.data FROM evidence_packets p JOIN research_jobs j ON j.id=p.job_id WHERE j.spec_id=?1 ORDER BY p.role").bind(row.spec_id).all();rows.push({decision:JSON.parse(row.data),spec:JSON.parse(row.spec_data),packets:packets.results.map(p=>JSON.parse(p.data))});}
+   }
+   return respond(200,{rows,next_cursor:result.results.length===limit?result.results.at(-1).id:null});
+  }
   if(path==="specs"&&request.method==="POST"){
    if(!await reviewer(request,env.REVIEW_TOKEN))return respond(401,{error:"Reviewer authorization required"});
    const input=cleanSpec((await body(request,65536)).data),now=new Date().toISOString(),data=JSON.stringify(input);
@@ -179,5 +198,5 @@ export async function handleAutonomy(request,env,context){
    const data={action:input.action,notes};const event_id=await recordEvent(env,"decision",decision.id,"reviewer-disposition",data);return respond(200,{id:decision.id,event_id,disposition:data});
   }
   return respond(404,{error:"Autonomy route unavailable"});
- }catch(error){const message=error?.message||"";if(/Invalid|too large|JSON/i.test(message))return respond(400,{error:message});return respond(503,{error:"Autonomous evidence operation failed closed"});}
+ }catch(error){const message=error?.message||"";if(message.startsWith('Trial stopped:')||message==='Trial is not active')return respond(503,{error:message});if(/Invalid|too large|JSON/i.test(message))return respond(400,{error:message});return respond(503,{error:"Autonomous evidence operation failed closed"});}
 }

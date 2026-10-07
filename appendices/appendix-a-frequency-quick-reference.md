@@ -1,122 +1,33 @@
-# Appendix A — Frequency Quick Reference Card
+# Appendix A — Frequency Planning Quick Reference
 
-*Print, laminate, and carry. One page for multi-drone frequency planning.*
+This card supports planning and calculations. It is not a frequency authorization, equipment certification or guaranteed-range table. Use the current [regulatory resources](appendix-f-regulatory-resources.md) and [frequency planning worksheet](../field/frequency-planning.md).
 
----
+## Record before selecting a channel
 
-## Band Summary
+| Item | Required record |
+|---|---|
+| Jurisdiction and authority | Applicable rules, license/authorization, current equipment approval and permitted operating mode |
+| Equipment | Exact radio/adapter revision, firmware, antennas and configured power |
+| Occupied spectrum | Center frequency, bandwidth, harmonics and all co-located transmitters |
+| Separation test | Receiver filtering, near/far geometry, antenna isolation and simultaneous-link test result |
+| Performance | Packet mode/rate, sensitivity for that mode, link margin and measured conditions |
 
-| Band | Frequency | Use | Notes |
-|------|-----------|-----|-------|
-| 433 MHz | 433–434 MHz | RC long-range, telemetry | EU only without license; ISM band |
-| 868 MHz | 863–870 MHz | ELRS EU, CRSF EU | EU ISM; better penetration than 2.4 |
-| 900 MHz | 902–928 MHz | ELRS US, LoRa RC | US ISM; best range/penetration |
-| 1.2 GHz | 1.2–1.3 GHz | Analog video (legacy) | Avoid near GPS (L1=1575MHz) |
-| 2.4 GHz | 2.400–2.483 GHz | ELRS 2.4, WiFi RC, RC standard | Crowded; shorter range |
-| 4.9 GHz | 4.940–4.990 GHz | Public safety C2 | Licensed (Part 90); PS only |
-| 5.8 GHz | 5.725–5.875 GHz | FPV video | ISM; 40 channels |
-| 900 MHz | 916–928 MHz | MANET mesh (Doodle Labs) | Licensed version available |
+A center-frequency list is not an occupied-bandwidth plan. There is no universal 40 MHz spacing that guarantees zero interference and no universal limit of three simultaneous FPV links. Channel labels can include frequencies outside the permitted band. Obtain the exact device channel table and coordinate the complete installation.
 
----
+## Free-space loss
 
-## GPS / GNSS Reference
+For frequency in MHz and distance in km:
 
-| System | L1 | L2 | L5 |
-|--------|----|----|-----|
-| GPS (US) | 1575.42 MHz | 1227.60 MHz | 1176.45 MHz |
-| GLONASS (RU) | 1598–1606 MHz | 1242–1249 MHz | — |
-| Galileo (EU) | 1575.42 MHz | 1207.14 MHz | 1176.45 MHz |
-| BeiDou (CN) | 1561.10 MHz | 1207.14 MHz | 1176.45 MHz |
+`FSPL_dB = 32.45 + 20 log10(f_MHz) + 20 log10(d_km)`
 
-**Interference risk:** 1.2 GHz video transmitters overlap GPS L2.
-Keep analog 1.2 GHz video away from L2 GPS modules.
+At **915 MHz and 10 km**, this convention gives **111.68 dB**, not 91.5 dB. The 32.4 rounded convention used by the handbook calculator differs by 0.05 dB. State the constant and units when comparing results.
 
----
+[claim:rf-card-fspl-915-10]
 
-## 5.8 GHz FPV Channel Map
+A usable link budget also includes receive antenna gain, cable/installation losses, receiver sensitivity for the selected mode and a stated fade margin. Terrain, Fresnel clearance, interference, antenna orientation and equipment restrictions affect the result. Free-space loss is a calculation, not field evidence or permission to operate at the calculated distance.
 
-```
-Band A: A1(5865) A2(5845) A3(5825) A4(5805) A5(5785) A6(5765) A7(5745) A8(5725)
-Band B: B1(5733) B2(5752) B3(5771) B4(5790) B5(5809) B6(5828) B7(5847) B8(5866)
-Band E: E1(5705) E2(5685) E3(5665) E4(5645) E5(5885) E6(5905) E7(5925) E8(5945)
-Band F: F1(5740) F2(5760) F3(5780) F4(5800) F5(5820) F6(5840) F7(5860) F8(5880)
-Band R: R1(5658) R2(5695) R3(5732) R4(5769) R5(5806) R6(5843) R7(5880) R8(5917)
-```
+See [Link Budgets](../fundamentals/link-budgets.md) for the calculator and managed mathematical references. The former generic ELRS range promises and obstacle divisors are withdrawn.
 
-**Minimum channel separation for zero interference: 40 MHz**
-(adjacent channel bleedover starts at <30 MHz separation)
+## Procurement status
 
-### 4-Drone Deconfliction Template
-
-```
-Drone 1: F1 (5740 MHz)
-Drone 2: F4 (5800 MHz)  — 60 MHz separation
-Drone 3: F7 (5860 MHz)  — 60 MHz separation
-Drone 4: A1 (5865 MHz)  — NOT usable with F7 simultaneously
-         → Use E5 (5885 MHz) instead — 25 MHz from F7 (marginal)
-         → Better: use 2.4 GHz analog for drone 4
-```
-
-**Practical limit: 3 simultaneous 5.8 GHz FPV video links** in one location
-without careful planning. 4+ requires frequency coordination worksheet.
-
----
-
-## RC Control Link Comparison
-
-| System | Frequency | Range | Latency | NDAA |
-|--------|-----------|-------|---------|------|
-| ELRS 2.4 GHz | 2400–2483 MHz | 2–10 km typical | 4–8 ms | ✗ (Chinese) |
-| ELRS 900 MHz | 868/915 MHz | 10–40 km | 10–20 ms | ✗ (Chinese) |
-| TBS Crossfire | 868/915 MHz | 10–40 km | 5–12 ms | ✓ (Swiss) |
-| TBS Tracer | 2.4 GHz | 2–8 km | 4–8 ms | ✓ (Swiss) |
-| Orqa IRONghost | Dual-band FHSS | 5–15 km | 8–15 ms | ✓ (Croatian) |
-| Herelink Blue | 2.4 GHz | 15 km | 20–30 ms | ✓ (Australian) |
-| Silvus SC4200 | 2.4/5 GHz | 15 km | 10 ms | ✓ (US) |
-
----
-
-## Mesh Radio Frequencies
-
-| System | Frequency | Channel Width |
-|--------|-----------|--------------|
-| Doodle Labs RM-915 | 902–928 MHz | 5/10/20 MHz |
-| Silvus StreamCaster | 2.4 or 4.9 GHz | 5/10/20 MHz |
-| Rajant BreadCrumb | 900/2.4/5 GHz | 5/10/20 MHz |
-| TrellisWare | 225–450 MHz (military) | Classified |
-| MPU5 (Persistent) | 4.9 GHz | 5/10 MHz |
-
----
-
-## Interference Risk Matrix
-
-| Your system | Interferes with |
-|-------------|----------------|
-| 2.4 GHz RC | WiFi (ch 1–13), Bluetooth, 2.4 GHz video |
-| 5.8 GHz video | 5 GHz WiFi (ch 149–165), other 5.8 GHz video |
-| 900 MHz ELRS | ISM devices (door openers, wireless), MANET mesh |
-| GPS L1 | 1575 MHz jammer, 1.5 GHz downlinks |
-| 4.9 GHz mesh | Other 4.9 GHz users (coordinate with dispatch) |
-
----
-
-## Quick Link Budget Rule of Thumb
-
-```
-Range (km) ≈ 10^((EIRP_dBm - Sensitivity_dBm - 20*log10(f_MHz) - 32.45) / 20)
-
-Typical EIRP:     ELRS 900 = 27 dBm, Crossfire = 30 dBm
-Typical sensitivity: ELRS = -130 dBm, Crossfire = -130 dBm
-Free space at 915 MHz, 10 km: ~91.5 dB path loss
-```
-
-In practice: ELRS 900 at 100mW = 30–50 km in open terrain.
-Real-world with obstacles: divide by 3–5.
-
----
-
-## Related
-
-- [Fundamentals — Frequency Bands](../fundamentals/frequency-bands.md)
-- [Frequency Planning Worksheet](../field/frequency-planning.md)
-- [Link Budgets](../fundamentals/link-budgets.md)
+Country of headquarters is not a compliance conclusion. Record the exact item, configuration, buyer, applicable prohibition/contract clause and dated evidence using the [federal procurement screening guide](../components/ndaa-compliance.md). This card assigns no nationality-based compliance badges.

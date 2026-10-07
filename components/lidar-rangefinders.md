@@ -1,63 +1,26 @@
 # LiDAR Rangefinders
 
-> **Forge cross-reference:** 13 entries in `lidar_rangefinders` category  
-> **Related handbook chapters:** LiDAR & Mapping Payloads, Optical Flow, Navigation & PNT
+A single-point rangefinder and a scanning mapping LiDAR have different coverage and data contracts. A distance measurement is not automatically vertical terrain height: orientation, field of view, target reflectivity, ambient light and estimator use matter.
 
-## Rangefinders vs. Mapping LiDAR
+## Exact variant reference
 
-The `lidar_rangefinders` category is distinct from `lidar` (the mapping/scanning LiDAR category). Rangefinders measure distance to a single point directly below or ahead of the drone. Mapping LiDAR scans a point cloud of the environment in 3D.
+| Model | Manufacturer-reported mass | Scope |
+|---|---|---|
+| Benewake TFmini-S | 5 ± 0.3 g | Exact module; installation/cables/mounts add mass |
+| Benewake TFmini Plus | 12 ± 1 g | Different variant, not interchangeable by family name |
 
-Rangefinders serve three functions on a drone:
-1. **Altitude above ground (AGL):** More accurate than barometer for terrain following and precision landing
-2. **Terrain following:** Combined with GPS position, enables the drone to maintain constant height above uneven terrain
-3. **Obstacle detection:** Forward-facing rangefinders provide basic proximity sensing
+The former “TFmini 180 g” entry is withdrawn. Benewake advertises TFmini-S up to 12 m under its specified conditions; maximum range is not a universal obstacle-detection or terrain-following guarantee. [Benewake TFmini-S source](https://en.benewake.com/TFminiS/index.html), checked 2026-10-07; use its exact variant manual for interfaces and operating conditions.
 
-The physics is the same as mapping LiDAR — a laser pulse is emitted, reflects off a surface, and the time-of-flight gives distance. The difference is resolution: a rangefinder measures one point, a mapping LiDAR measures millions per second.
+[claim:tfmini-s-mass]
 
-## Key Products
+## Firmware integration
 
-### LightWare LW20 / SF11 / LW3
-LightWare Lidar (South Africa — allied ✓) produces the most widely-used rangefinders in the ArduPilot/PX4 ecosystem. The SF11/C (120m range, I2C/serial, 20g) and LW20/C (100m, I2C/serial, 22g) are reference integrations in both autopilot firmware stacks.
+Use the exact sensor/transport driver in the target autopilot release. UART, I²C and CAN variants require different interfaces; a sensor family name is not a driver value. The previous unversioned `RNGFND1_TYPE` example and centimeter-unit limits are withdrawn. ArduPilot releases can change parameter names/units; look up the installed release and read back after configuration.
 
-**Why LightWare dominates:** Their sensors are explicitly listed in ArduPilot and PX4 documentation, have UAVCAN/DroneCAN support in newer versions, and have a decade of drone integration history. The SF11 is what most documentation examples reference.
+[ArduPilot rangefinder documentation](https://ardupilot.org/copter/docs/common-rangefinder-landingpage.html) and [Copter 4.7.1 parameter reference](https://ardupilot.org/copter/docs/parameters-Copter-stable-V4.7.1.html), checked 2026-10-07. For PX4, use the matching release's sensor and estimator documentation rather than a universal height-reference preset.
 
-**LW3:** Newer generation with 200m range, industrial-grade, used in survey platforms and large commercial drones.
+Observe missing, saturated, implausible and stale samples in software before hardware integration. A terrain database, range measurement and flight-mode terrain-following implementation are separate functions. Record the downward/body frame, sensor position and tested surface/lighting conditions.
 
-### Benewake TFmini / TF03
-Benewake (China — NDAA ✗) produces inexpensive ToF rangefinders. The TFmini (180g, 12m range, UART, ~$40) is extremely common in DIY drone builds. TF03 extends range to 180m.
+## Procurement
 
-**Not for federal procurement.** For commercial non-federal use, TFmini is the practical budget option and is widely supported in Betaflight, ArduPilot, and PX4.
-
-### Garmin LIDAR-Lite v3/v4
-Garmin (USA — NDAA ✓) produces the LIDAR-Lite series. v3 (40m, I2C/PWM, 22g) was the first widely integrated rangefinder in the ArduPilot ecosystem. v4 improves performance in bright sunlight (common failure mode for optical rangefinders).
-
-**Limitation:** 40m range limits usefulness for fixed-wing or high-altitude operations.
-
-### TeraRanger (Terabee)
-Terabee (France — EU/NATO ✓) produces multi-zone ToF sensors. TeraRanger One and Evo series offer I2C/serial interfaces and up to 14m range. Designed specifically for drone integration. Compact and light.
-
-### LightWare GRF-500
-Designed for precision landing on the LightWare SF platform. 50m range, GPS-fused altitude estimation. DroneCAN support.
-
-## Integration
-
-### ArduPilot
-```
-RNGFND1_TYPE = 7         # LightWare serial (or appropriate type for your sensor)
-RNGFND1_MIN_CM = 5
-RNGFND1_MAX_CM = 10000   # in cm — 100m
-RNGFND1_ORIENT = 25      # downward facing
-SERIAL4_PROTOCOL = 9     # rangefinder on UART4
-```
-
-### PX4
-Set `EKF2_HGT_REF = 2` to use rangefinder as primary altitude reference when below `EKF2_RNG_A_HMAX` (typically 8m).
-
-**Terrain following:** In ArduPilot, `TERRAIN_ENABLE = 1` combined with a downward rangefinder enables true terrain following — the drone maintains constant AGL altitude over hills and valleys.
-
-### Precision Landing
-A downward rangefinder is required for precision landing accuracy below ~1m altitude where GPS altitude measurement becomes unreliable. Combined with optical flow and an IR beacon, rangefinders enable sub-0.5m landing accuracy.
-
-## NDAA Summary
-
-LightWare (South Africa), Garmin (USA), and Terabee (France) are the NDAA-compliant options. Benewake (China) is non-compliant. For federal programs, LightWare SF11/C or Garmin LIDAR-Lite v4 are the practical choices with full ArduPilot/PX4 support.
+Screen exact item/configuration and applicable authority using the [federal procurement guide](ndaa-compliance.md). Country of origin alone is not a certification or compliance determination.
