@@ -44,18 +44,9 @@ Phase One (Denmark — procurement status unverified) produces the highest-resol
 
 **Price point:** $30,000+. Enterprise/government procurement only.
 
-## NDAA Summary
+## Procurement evidence
 
-| Product | Manufacturer | Origin | NDAA |
-|---|---|---|---|
-| RedEdge-P / Altum-PT | AgEagle (MicaSense) | USA | ✓ |
-| Sentera 6X | John Deere | USA | ✓ |
-| Sony ILX-LR1 | Sony | Japan | ✓ Allied |
-| Phase One iXM | Phase One | Denmark | ✓ EU/NATO |
-| DJI Zenmuse P1/L3 | DJI | China | ✗ |
-| RoboSense RS-Helios | RoboSense | China | ✗ |
-
-Survey sensors are a cleaner NDAA category than consumer FPV hardware. The professional precision agriculture camera market is dominated by US manufacturers (AgEagle, John Deere). The main NDAA risk is in the integrated platform — a procurement status unverified sensor on a DJI Matrice 300 still creates a procurement problem for federal programs due to the FCC Covered List status of DJI platforms.
+Country of headquarters or assembly does not establish eligibility. Check the exact item, revision, bill of materials, applicable contracting authority and dated supporting documentation using [federal procurement screening](ndaa-compliance.md). This reference does not certify the listed products.
 
 ## Processing Pipeline
 

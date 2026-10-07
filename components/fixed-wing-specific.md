@@ -202,16 +202,9 @@ Configure a glide ratio parameter so the autopilot plans for engine-out:
 
 ---
 
-## NDAA-Compliant Fixed-Wing Options
+## Procurement evidence
 
-| Platform | Blue UAS | Endurance | Range | Notes |
-|----------|----------|-----------|-------|-------|
-| WingtraOne GEN II | YES | 59 min | 30km | Mapping specialist |
-| AgEagle eBee VISION | YES | 90+ min | 40km | Long-endurance survey |
-| AgEagle eBee TAC | YES | 90+ min | 40km | Defense variant |
-| Censys Sentaero | YES | 70 min | 20km | BVLOS certified |
-
----
+Country of headquarters or assembly does not establish eligibility. Check the exact item, revision, bill of materials, applicable contracting authority and dated supporting documentation using [federal procurement screening](ndaa-compliance.md). This reference does not certify the listed products.
 
 ## Related
 

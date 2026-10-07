@@ -20,7 +20,7 @@ Rajant Corporation (Malvern PA, USA — procurement status unverified) invented 
 
 **Drone applications:** Multi-drone swarm coordination, mining/industrial autonomous vehicle fleets, military multi-platform operations. Extensively deployed in DoD programs.
 
-**Specs (LX5):** 5 radio interfaces, 900MHz + 2.4GHz + 4.9GHz + 5.8GHz options. 1W max per radio. ~120g. Ethernet + serial interfaces. IP67. NDAA compliant.
+**Specs (LX5):** 5 radio interfaces, 900MHz + 2.4GHz + 4.9GHz + 5.8GHz options. 1W max per radio. ~120g. Ethernet + serial interfaces. IP67. Exact variant specifications and procurement status require current primary evidence.
 
 ### Silvus StreamCaster
 Silvus Technologies (Los Angeles CA, USA — procurement status unverified) produces the MANET (Mobile Ad-hoc Network) radios used extensively in DoD programs. StreamCaster uses MIMO (Multiple Input Multiple Output) OFDM to maximize throughput and range in multipath environments.
@@ -43,7 +43,7 @@ Doodle Labs (USA/Singapore — verify per contract) produces compact mesh radios
 **Why it matters:** Most mesh radios require a companion computer for protocol translation. Mesh Rider handles MAVLink natively, which simplifies integration dramatically for small drones.
 
 ### Elsight HALO
-Elsight (Petah Tikva, Israel — allied nation ✓) produces the HALO multi-link connectivity platform. HALO differs from pure mesh radios — it's a multi-WAN bonding device that aggregates cellular (4G/5G), satellite, and RF links simultaneously.
+Elsight (Petah Tikva, Israel — procurement status unverified) produces the HALO multi-link connectivity platform. HALO differs from pure mesh radios — it's a multi-WAN bonding device that aggregates cellular (4G/5G), satellite, and RF links simultaneously.
 
 **Use case:** BVLOS operations where no single link is reliable. HALO bonds 4G + satellite + RF into a single virtual connection, automatically routing traffic over the best-available path. Latency and bandwidth are load-balanced across all active links.
 
@@ -57,19 +57,9 @@ A growing category of mesh software that runs on commodity hardware (Raspberry P
 
 **Advantage:** Flexibility, upgradability, cost. **Disadvantage:** Integration complexity, no hardened RF front end, regulatory compliance varies.
 
-## NDAA Landscape
+## Procurement evidence
 
-| Product | Manufacturer | Origin | NDAA |
-|---|---|---|---|
-| BreadCrumb (all variants) | Rajant | USA | ✓ |
-| StreamCaster 4200/4400 | Silvus | USA | ✓ |
-| Mesh Rider | Doodle Labs | USA | ✓ |
-| HALO | Elsight | Israel | ✓ Allied |
-| MobileMesh | Horizon31 | USA | ✓ |
-| Meshmerize | Meshmerize | Germany | ✓ EU/NATO |
-| CreoAir | Creomagic | Israel | ✓ Allied |
-
-Mesh radios are one of the cleanest NDAA categories — the serious players are all US, Israeli, or European. No Chinese-manufactured mesh radio has established a foothold in this market segment.
+Country of headquarters or assembly does not establish eligibility. Check the exact item, revision, bill of materials, applicable contracting authority and dated supporting documentation using [federal procurement screening](ndaa-compliance.md). This reference does not certify the listed products.
 
 ## Integration Patterns
 

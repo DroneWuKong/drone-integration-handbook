@@ -235,10 +235,9 @@ further advantage fiber-optic platforms.
 
 ---
 
-## NDAA RC & C2 Links
+## RC and C2 Link Discovery
 
-Most consumer RC links (ELRS, CRSF, FrSky) are Chinese-manufactured.
-For procurement status unverified builds, the options narrow significantly.
+Use protocol and hardware documentation to identify candidates. Procurement status requires an exact-item review under the applicable authority; an origin filter does not establish eligibility.
 
 ### Orqa Ghost — 2.4 GHz RC Link
 
