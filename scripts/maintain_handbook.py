@@ -32,11 +32,31 @@ def private_rows(origin, token, resource):
             body=response.read(4*1024*1024+1)
             if len(body)>4*1024*1024:raise ValueError('Private response too large')
             page=json.loads(body)
+        if not isinstance(page,dict) or not isinstance(page.get('rows'),list) or not all(isinstance(row,dict) for row in page['rows']):
+            raise ValueError('Invalid private evidence page')
         rows.extend(page['rows']);new=page.get('next_cursor')
         if not new:return rows
         if new==cursor:raise ValueError('Nonadvancing private cursor')
         cursor=new
     raise ValueError('Private pagination exceeded bounded limit')
+
+def private_evidence(origin, token):
+    """An unavailable ledger must stop paid dispatch, not public metadata upkeep."""
+    state={'configured':bool(origin and token),'connected':False,'deferred_reason':None}
+    if not state['configured']:
+        state['deferred_reason']='Dispatcher credentials not configured; software planning only'
+        return [],[],state
+    try:
+        ledger=private_rows(origin,token,'ledger')
+        bundles=private_rows(origin,token,'decisions')
+    except (OSError,ValueError,KeyError,TypeError) as error:
+        # Discard partial reads: neither duplicate detection nor publication
+        # may rely on an incomplete private snapshot. Do not log response bodies.
+        state.update(error_type=type(error).__name__,
+            deferred_reason='Private evidence unavailable; factual publication and paid dispatch deferred')
+        return [],[],state
+    state['connected']=True
+    return ledger,bundles,state
 
 def correction_candidates(bundles, current):
     records=[];by_id={r['id']:r for r in current}
@@ -88,9 +108,9 @@ def main():
         if fingerprints or versions:record['evidence_revision']=hashlib.sha256(json.dumps({'sources':fingerprints,'versions':versions},sort_keys=True).encode()).hexdigest()
     records+=candidates
     origin=os.environ.get('AUTONOMY_DISPATCH_URL','').strip();token=os.environ.get('AUTONOMY_REVIEW_TOKEN','').strip()
-    ledger=[];bundles=[]
-    if origin and token:
-        ledger=private_rows(origin,token,'ledger');bundles=private_rows(origin,token,'decisions')
+    ledger,bundles,private_state=private_evidence(origin,token)
+    if private_state.get('error_type'):
+        print('::warning::Private evidence unavailable ('+private_state['error_type']+'); public metadata upkeep continues, paid dispatch is deferred.',file=sys.stderr)
     if args.apply:
         applied,outcomes=apply_verified(ROOT,bundles,today=today);changed+=applied
         json_write(ROOT/'.local/autonomy/publication-summary.json',{'outcomes':outcomes,'changed':applied})
@@ -107,11 +127,14 @@ def main():
     # Corrected wording is independently rechecked; the first model suggestion
     # never becomes a public patch. Stable ledger identities prevent repeats.
     records+=correction_candidates(bundles,records)
-    queue={'release':snapshot['release'],'records':pending(records,ledger,snapshot['release'])}
+    dispatch_blocked=private_state['configured'] and not private_state['connected']
+    queue={'release':snapshot['release'],'records':[] if dispatch_blocked else pending(records,ledger,snapshot['release'])}
     json_write(ROOT/'.local/autonomy/maintenance-queue.json',queue)
     json_write(ROOT/'.local/autonomy/changed-files.json',sorted(set(changed)))
     print(json.dumps({'release_checks':len(config['releases']) if args.refresh else 0,
         'repository_candidates':len(candidates),'pending_records':len(queue['records']),
         'durable_specs':len(ledger),'changed_files':len(set(changed)),
-        'private_ledger_connected':bool(origin and token),'paid_research_started':False},indent=2))
+        'private_ledger_connected':private_state['connected'],
+        'research_deferred_reason':private_state['deferred_reason'],
+        'paid_research_started':False},indent=2))
 if __name__=='__main__':main()
