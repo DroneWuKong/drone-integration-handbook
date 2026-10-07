@@ -71,6 +71,10 @@ jobs:
           AUTONOMY_REVIEW_TOKEN: ${{ secrets.AUTONOMY_REVIEW_TOKEN }}
         run: .venv/bin/python scripts/maintain_handbook.py --refresh --apply | tee .local/maintenance-summary.json
       - name: Start the next bounded independent evidence batch
+        id: research
+        # Provider outages or exhausted credits must not block public metadata.
+        # Source retrieval, validation and publication remain required steps.
+        continue-on-error: true
         env:
           AUTONOMY_DISPATCH_URL: ${{ secrets.AUTONOMY_DISPATCH_URL }}
           AUTONOMY_REVIEW_TOKEN: ${{ secrets.AUTONOMY_REVIEW_TOKEN }}
@@ -86,9 +90,11 @@ jobs:
           retention-days: 2
       - name: Summarize maintenance
         if: always()
+        env:
+          RESEARCH_STEP_OUTCOME: ${{ steps.research.outcome }}
         run: |
           .venv/bin/python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
-          import json
+          import json, os, sys
           from pathlib import Path
           for name in ['maintenance-summary.json','autonomy/publication-summary.json','autonomy/plan.json']:
               path=Path('.local')/name
@@ -96,6 +102,12 @@ jobs:
                   data=json.loads(path.read_text())
                   print('### '+name+'\n')
                   print('```json\n'+json.dumps(data.get('summary',data),indent=2)+'\n```\n')
+          outcome=os.environ.get('RESEARCH_STEP_OUTCOME','unknown')
+          print('### Optional paid research step: '+outcome+'\n')
+          if outcome=='failure':
+              print('Paid research did not complete. Public metadata can still be validated and published; this is not successful factual verification. Inspect the research step before retrying any uncertain dispatch.\n')
+              print('::warning::Optional paid research failed; public metadata upkeep continues.',file=sys.stderr)
+          Path('.local/research-step-status.json').write_text(json.dumps({'outcome':outcome})+'\n')
           print('Progress comes from the private durable ledger; deployment changes do not reset paid research. Metadata checks continue after the non-renewing trial stops.')
           PY
       - name: Preserve source fingerprints
@@ -111,6 +123,7 @@ jobs:
           name: handbook-maintenance-${{ github.run_id }}
           path: |
             .local/maintenance-summary.json
+            .local/research-step-status.json
             .local/autonomy/publication-summary.json
             .local/browser-check/results.json
             data/update-status.json
