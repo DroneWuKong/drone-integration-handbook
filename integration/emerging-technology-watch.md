@@ -4,9 +4,9 @@ Observed **2026-10-07**; next scheduled check by **2026-10-14**. This automatica
 
 | Project | Project description (unverified) | Latest stable GitHub release / date | Last code push | License | Evidence status |
 |---|---|---|---|---|---|
+| [kolabuzlu/MavGCS](https://github.com/kolabuzlu/MavGCS) | MavGCS - Ground Control Station for MAVLink | V2.4.0 / 2026-10-07 | 2026-10-07 | GPL-3.0 | watch-only; capability unverified |
 | [forgetheworlds/metal-drone-nav](https://github.com/forgetheworlds/metal-drone-nav) | Metal-native RL for local drone navigation with RAPTOR, reproducible experiments, and independent Webots evaluation. | none observed / unknown | 2026-10-07 | NOASSERTION | watch-only; capability unverified |
 | [alireza787b/PixEagle](https://github.com/alireza787b/PixEagle) | Computer vision, object tracking, and target following for PX4 drones using OpenCV, YOLO, MAVSDK, MAVLink, and a real-time web dashboard | v7.2.0 / 2026-08-30 | 2026-10-07 | Apache-2.0 | watch-only; capability unverified |
-| [kolabuzlu/MavGCS](https://github.com/kolabuzlu/MavGCS) | MavGCS - Ground Control Station for MAVLink | V2.4.0 / 2026-10-07 | 2026-10-07 | GPL-3.0 | watch-only; capability unverified |
 | [teklot/MavlinkSharp](https://github.com/teklot/MavlinkSharp) | MavlinkSharp is a lightweight .NET library for parsing MAVLink v1/v2 raw messages using standard or custom dialects. It is extremely fast, flexible, and easy to use, and also provides tools for constructing and encoding | none observed / unknown | 2026-10-07 | MIT | watch-only; capability unverified |
 | [rsasaki0109/visloc-rs](https://github.com/rsasaki0109/visloc-rs) | SfM, visual-inertial SLAM, 3D Gaussian Splatting and localization in pure Rust | v0.2.0 / 2026-09-15 | 2026-10-07 | NOASSERTION | watch-only; capability unverified |
 | [rubenCodeforges/ardudeck](https://github.com/rubenCodeforges/ardudeck) | One GCS to rule them all. ArduPilot, Betaflight, iNav - all in one app. Mission planning, PID tuning, OSD simulator, SITL with FlightGear. Cross-platform (Win/Mac/Linux) | v0.1.1 / 2026-09-07 | 2026-10-07 | GPL-3.0 | watch-only; capability unverified |

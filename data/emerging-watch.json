@@ -4,11 +4,28 @@
   "next_check": "2026-10-14",
   "projects": [
     {
+      "repository": "kolabuzlu/MavGCS",
+      "url": "https://github.com/kolabuzlu/MavGCS",
+      "description": "MavGCS - Ground Control Station for MAVLink",
+      "created": "2026-08-28T08:39:32Z",
+      "pushed": "2026-10-07T19:45:29Z",
+      "license": "GPL-3.0",
+      "stars": 5,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-07",
+      "release": "V2.4.0",
+      "released": "2026-10-07",
+      "preview": null
+    },
+    {
       "repository": "forgetheworlds/metal-drone-nav",
       "url": "https://github.com/forgetheworlds/metal-drone-nav",
       "description": "Metal-native RL for local drone navigation with RAPTOR, reproducible experiments, and independent Webots evaluation.",
       "created": "2026-10-01T13:10:23Z",
-      "pushed": "2026-10-07T18:54:41Z",
+      "pushed": "2026-10-07T19:43:42Z",
       "license": "NOASSERTION",
       "stars": 0,
       "matched_queries": [
@@ -25,7 +42,7 @@
       "url": "https://github.com/alireza787b/PixEagle",
       "description": "Computer vision, object tracking, and target following for PX4 drones using OpenCV, YOLO, MAVSDK, MAVLink, and a real-time web dashboard",
       "created": "2024-02-16T09:43:16Z",
-      "pushed": "2026-10-07T18:48:50Z",
+      "pushed": "2026-10-07T19:20:54Z",
       "license": "Apache-2.0",
       "stars": 71,
       "matched_queries": [
@@ -36,23 +53,6 @@
       "release": "v7.2.0",
       "released": "2026-08-30",
       "preview": "v7.0.0-beta.29"
-    },
-    {
-      "repository": "kolabuzlu/MavGCS",
-      "url": "https://github.com/kolabuzlu/MavGCS",
-      "description": "MavGCS - Ground Control Station for MAVLink",
-      "created": "2026-08-28T08:39:32Z",
-      "pushed": "2026-10-07T18:10:39Z",
-      "license": "GPL-3.0",
-      "stars": 5,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
-      "release": "V2.4.0",
-      "released": "2026-10-07",
-      "preview": null
     },
     {
       "repository": "teklot/MavlinkSharp",
@@ -78,7 +78,7 @@
       "created": "2026-05-05T02:35:57Z",
       "pushed": "2026-10-07T13:27:13Z",
       "license": "NOASSERTION",
-      "stars": 77,
+      "stars": 78,
       "matched_queries": [
         "topic:visual-inertial-odometry"
       ],

@@ -34,9 +34,9 @@ See [emerging projects](../integration/emerging-technology-watch.md) and [reposi
 | [DroneWuKong/MultiProtocol-UAS-TAK-Bridge](https://github.com/DroneWuKong/MultiProtocol-UAS-TAK-Bridge) | 3177a1ffdf91 | 2026-10-04 | 2026-10-07 | observed |
 | [DroneWuKong/Orqa_H7_PX4_Ports](https://github.com/DroneWuKong/Orqa_H7_PX4_Ports) | 5dca93e099f4 | 2026-10-04 | 2026-10-07 | observed |
 | [DroneWuKong/Field-Kit](https://github.com/DroneWuKong/Field-Kit) | 784d74a0f9b9 | 2026-10-02 | 2026-10-07 | observed |
-| [forgetheworlds/metal-drone-nav](https://github.com/forgetheworlds/metal-drone-nav) | 95b739a1a508 | 2026-10-07 | 2026-10-07 | observed |
+| [kolabuzlu/MavGCS](https://github.com/kolabuzlu/MavGCS) | d3947de93ea9 | 2026-10-07 | 2026-10-07 | observed |
+| [forgetheworlds/metal-drone-nav](https://github.com/forgetheworlds/metal-drone-nav) | adf3997f23ed | 2026-10-07 | 2026-10-07 | observed |
 | [alireza787b/PixEagle](https://github.com/alireza787b/PixEagle) | 5fcd76ec81b6 | 2026-10-07 | 2026-10-07 | observed |
-| [kolabuzlu/MavGCS](https://github.com/kolabuzlu/MavGCS) | 1da5d681487f | 2026-10-07 | 2026-10-07 | observed |
 
 ## Source checks and review dates
 
