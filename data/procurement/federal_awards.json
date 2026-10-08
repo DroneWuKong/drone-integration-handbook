@@ -132,7 +132,7 @@
       "internal_id": 298377557,
       "Award ID": "FA807522F0011",
       "Recipient Name": "MANTECH TSG-2 JOINT VENTURE",
-      "Award Amount": 99662764.01,
+      "Award Amount": 100984054.77,
       "Total Outlays": 0.0,
       "Description": "UNMANNED AIRCRAFT SYSTEMS ENGINEERING AND ANALYSIS FOR NAVAL AIR SYSTEMS COMMAND AND NAVAL SURFACE WARFARE CENTER, CRANE DIVISION",
       "Start Date": "2021-12-09",
@@ -164,7 +164,7 @@
       "internal_id": 298377538,
       "Award ID": "FA807521F0077",
       "Recipient Name": "CACI, INC. - FEDERAL",
-      "Award Amount": 80969838.96,
+      "Award Amount": 81355601.96,
       "Total Outlays": 6838377.24,
       "Description": "COUNTER UNMANNED AIRCRAFT SYSTEMS RESEARCH, DEVELOPMENT, AND SUSTAINMENT FOR THE DIGITAL INTEGRATION SUPPORT CELL AND NAVAL SURFACE WARFARE CENTER, CRANE DIVISION",
       "Start Date": "2021-09-27",
@@ -9089,6 +9089,22 @@
       "generated_internal_id": "CONT_AWD_80NSSC22CA226_8000_-NONE-_-NONE-"
     },
     {
+      "internal_id": 298209536,
+      "Award ID": "FA486124P0086",
+      "Recipient Name": "KESTRELX LLC",
+      "Award Amount": 2059501.78,
+      "Total Outlays": 0.0,
+      "Description": "MANNED AIRBORNE PLATFORM TO OPERATE AS AN UNMANNED AIRCRAFT VEHICLE (UAV) AND CRUISE MISSILE TO PROVIDE THE UNITED STATES GOVERNMENT (USG) WITH A COST-EFFECTIVE TRAINING TOOL. FLIGHTS CAN INCLUDE SUPPORTING TWO TO GREATER NUMBER OF MANNED AIRCRAFTS.",
+      "Start Date": "2024-06-11",
+      "End Date": "2026-06-09",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA486124P0086_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 307973538,
       "Award ID": "HY023325PE014",
       "Recipient Name": "TYCHO AI INC.",
@@ -9103,22 +9119,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_HY023325PE014_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 298209536,
-      "Award ID": "FA486124P0086",
-      "Recipient Name": "KESTRELX LLC",
-      "Award Amount": 1980559.78,
-      "Total Outlays": 0.0,
-      "Description": "MANNED AIRBORNE PLATFORM TO OPERATE AS AN UNMANNED AIRCRAFT VEHICLE (UAV) AND CRUISE MISSILE TO PROVIDE THE UNITED STATES GOVERNMENT (USG) WITH A COST-EFFECTIVE TRAINING TOOL. FLIGHTS CAN INCLUDE SUPPORTING TWO TO GREATER NUMBER OF MANNED AIRCRAFTS.",
-      "Start Date": "2024-06-11",
-      "End Date": "2026-06-02",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA486124P0086_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 309513643,
@@ -12801,6 +12801,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-10-07T10:43:27.017327+00:00",
+  "scraped_at": "2026-10-08T10:44:02.299006+00:00",
   "count": 800
 }
