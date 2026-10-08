@@ -154,8 +154,8 @@
   "repositories": [
     {
       "repository": "DroneWuKong/droneclear_Forge",
-      "revision": "f34ab8162ae6a92fa27e8afefef3ea0700ad5b64",
-      "pushed": "2026-10-07T14:28:24Z",
+      "revision": "6305e172c8ad9d28e044899b558afe7f9785ae9a",
+      "pushed": "2026-10-08T02:02:22Z",
       "checked": "2026-10-07",
       "status": "observed"
     },
@@ -188,23 +188,23 @@
       "status": "observed"
     },
     {
-      "repository": "kolabuzlu/MavGCS",
-      "revision": "d3947de93ea91aec16d39a1e5967e23636df1756",
-      "pushed": "2026-10-07T19:45:29Z",
-      "checked": "2026-10-07",
-      "status": "observed"
-    },
-    {
-      "repository": "forgetheworlds/metal-drone-nav",
-      "revision": "adf3997f23eda5884981ea3758217fdc791ec6b2",
-      "pushed": "2026-10-07T19:43:42Z",
-      "checked": "2026-10-07",
-      "status": "observed"
-    },
-    {
       "repository": "alireza787b/PixEagle",
       "revision": "5fcd76ec81b6053a9874f02265f261e88ff7753f",
-      "pushed": "2026-10-07T19:20:54Z",
+      "pushed": "2026-10-08T03:06:44Z",
+      "checked": "2026-10-07",
+      "status": "observed"
+    },
+    {
+      "repository": "henry40408/learn-drone",
+      "revision": "222ea69c470da9380e36a72d66b0af1f498b7897",
+      "pushed": "2026-10-08T02:51:18Z",
+      "checked": "2026-10-07",
+      "status": "observed"
+    },
+    {
+      "repository": "500ft/multirotor-recovery-dynamics",
+      "revision": "d20c5295d133d9bf26abb6aee52e510ca630d8f7",
+      "pushed": "2026-10-08T01:48:13Z",
       "checked": "2026-10-07",
       "status": "observed"
     }
