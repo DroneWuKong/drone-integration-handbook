@@ -1,123 +1,106 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-07",
-  "next_check": "2026-10-14",
+  "checked": "2026-10-08",
+  "next_check": "2026-10-15",
   "projects": [
+    {
+      "repository": "Ivanlim556/pi5-drone-vision",
+      "url": "https://github.com/Ivanlim556/pi5-drone-vision",
+      "description": "Drone vision on a Raspberry Pi 5: in-house AR0234 global-shutter camera (CM3 backup), YOLOv8 on Hailo-8L, VL53L5CX distance, MAVLink obstacle reports to ArduPilot",
+      "created": "2026-09-30T03:52:08Z",
+      "pushed": "2026-10-09T02:55:46Z",
+      "license": "unknown",
+      "stars": 0,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-08",
+      "release": "v2.0-ar0234",
+      "released": "2026-10-05",
+      "preview": null
+    },
+    {
+      "repository": "dustbowlair424/NavCore-Pixhawk",
+      "url": "https://github.com/dustbowlair424/NavCore-Pixhawk",
+      "description": "Perform real-time GPS-denied INS navigation for drones using a Pixhawk Cube Orange and Raspberry Pi 4 via MAVLink.",
+      "created": "2026-04-29T21:43:42Z",
+      "pushed": "2026-10-09T01:59:34Z",
+      "license": "MIT",
+      "stars": 7,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-08",
+      "release": null,
+      "released": null,
+      "preview": null
+    },
     {
       "repository": "alireza787b/PixEagle",
       "url": "https://github.com/alireza787b/PixEagle",
       "description": "Computer vision, object tracking, and target following for PX4 drones using OpenCV, YOLO, MAVSDK, MAVLink, and a real-time web dashboard",
       "created": "2024-02-16T09:43:16Z",
-      "pushed": "2026-10-08T03:06:44Z",
+      "pushed": "2026-10-09T01:48:20Z",
       "license": "Apache-2.0",
-      "stars": 71,
+      "stars": 73,
       "matched_queries": [
         "topic:gstreamer topic:robotics"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
-      "release": "v7.2.0",
-      "released": "2026-08-30",
+      "checked": "2026-10-08",
+      "release": "v7.3.0",
+      "released": "2026-10-08",
       "preview": "v7.0.0-beta.29"
-    },
-    {
-      "repository": "henry40408/learn-drone",
-      "url": "https://github.com/henry40408/learn-drone",
-      "description": "Self-study notes on autonomous drone flight and programming: 12-week plan with ArduPilot SITL, pymavlink and mdBook (Traditional Chinese)",
-      "created": "2026-10-07T07:44:14Z",
-      "pushed": "2026-10-08T02:51:18Z",
-      "license": "MIT",
-      "stars": 0,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
-      "release": null,
-      "released": null,
-      "preview": null
-    },
-    {
-      "repository": "500ft/multirotor-recovery-dynamics",
-      "url": "https://github.com/500ft/multirotor-recovery-dynamics",
-      "description": "Crazyflie dynamics replay and tumble-recovery modeling using public flight data and firmware. Simulation-first study; hardware recovery validation pending.",
-      "created": "2026-08-31T14:55:25Z",
-      "pushed": "2026-10-08T01:48:13Z",
-      "license": "MIT",
-      "stars": 1,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
-      "release": null,
-      "released": null,
-      "preview": null
-    },
-    {
-      "repository": "hoseony/flight-debrief",
-      "url": "https://github.com/hoseony/flight-debrief",
-      "description": "Record and Replay MAVLink flight telemetry",
-      "created": "2026-07-18T03:39:32Z",
-      "pushed": "2026-10-08T01:27:11Z",
-      "license": "MIT",
-      "stars": 0,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
-      "release": null,
-      "released": null,
-      "preview": null
     },
     {
       "repository": "forgetheworlds/metal-drone-nav",
       "url": "https://github.com/forgetheworlds/metal-drone-nav",
       "description": "Metal-native RL for local drone navigation with RAPTOR, reproducible experiments, and independent Webots evaluation.",
       "created": "2026-10-01T13:10:23Z",
-      "pushed": "2026-10-08T00:40:57Z",
+      "pushed": "2026-10-09T01:44:53Z",
       "license": "NOASSERTION",
       "stars": 0,
       "matched_queries": [
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
+      "checked": "2026-10-08",
       "release": null,
       "released": null,
       "preview": null
     },
     {
-      "repository": "kolabuzlu/MavGCS",
-      "url": "https://github.com/kolabuzlu/MavGCS",
-      "description": "MavGCS - Ground Control Station for MAVLink",
-      "created": "2026-08-28T08:39:32Z",
-      "pushed": "2026-10-07T19:45:29Z",
-      "license": "GPL-3.0",
-      "stars": 5,
+      "repository": "SuperdeMan/drone-agent",
+      "url": "https://github.com/SuperdeMan/drone-agent",
+      "description": "Safety-constrained drone mission runtime: natural-language planning, signed approvals, deterministic execution, and evidence-based reports. Validated in PX4 SITL + Gazebo.",
+      "created": "2026-09-19T06:58:09Z",
+      "pushed": "2026-10-09T01:03:00Z",
+      "license": "Apache-2.0",
+      "stars": 0,
       "matched_queries": [
-        "topic:mavlink created:>={created_after}"
+        "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
-      "release": "V2.4.0",
-      "released": "2026-10-07",
+      "checked": "2026-10-08",
+      "release": null,
+      "released": null,
       "preview": null
     },
     {
-      "repository": "teklot/MavlinkSharp",
-      "url": "https://github.com/teklot/MavlinkSharp",
-      "description": "MavlinkSharp is a lightweight .NET library for parsing MAVLink v1/v2 raw messages using standard or custom dialects. It is extremely fast, flexible, and easy to use, and also provides tools for constructing and encoding MAVLink packets for transmission over any communication protocol.",
-      "created": "2025-12-02T14:22:26Z",
-      "pushed": "2026-10-07T14:00:27Z",
-      "license": "MIT",
-      "stars": 4,
+      "repository": "demna63/DroneHub-GCS",
+      "url": "https://github.com/demna63/DroneHub-GCS",
+      "description": "DroneHub GCS — ქართული Ground Control Station (QGroundControl v5.1.5 · Qt 6.11.1) · Windows · Linux · macOS · Android",
+      "created": "2026-06-26T08:46:14Z",
+      "pushed": "2026-10-08T22:02:54Z",
+      "license": "GPL-3.0",
+      "stars": 1,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
+      "checked": "2026-10-08",
       "release": null,
       "released": null,
       "preview": null
@@ -127,16 +110,33 @@
       "url": "https://github.com/rsasaki0109/visloc-rs",
       "description": "SfM, visual-inertial SLAM, 3D Gaussian Splatting and localization in pure Rust",
       "created": "2026-05-05T02:35:57Z",
-      "pushed": "2026-10-07T13:27:13Z",
+      "pushed": "2026-10-08T18:25:15Z",
       "license": "NOASSERTION",
-      "stars": 77,
+      "stars": 79,
       "matched_queries": [
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
+      "checked": "2026-10-08",
       "release": "v0.2.0",
       "released": "2026-09-15",
+      "preview": null
+    },
+    {
+      "repository": "deepak61296/mavlink-mcp",
+      "url": "https://github.com/deepak61296/mavlink-mcp",
+      "description": "MAVLink MCP server: let Claude, Codex or any AI agent fly ArduPilot drones over MAVLink. Missions, camera vision, SITL, safety-gated. pip install mavlink-mcp",
+      "created": "2026-07-17T10:49:27Z",
+      "pushed": "2026-10-08T10:11:53Z",
+      "license": "MIT",
+      "stars": 6,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-08",
+      "release": "v0.1.5",
+      "released": "2026-09-25",
       "preview": null
     },
     {
@@ -151,7 +151,7 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
+      "checked": "2026-10-08",
       "release": null,
       "released": null,
       "preview": null
@@ -168,24 +168,7 @@
         "topic:dronecan"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
-      "release": null,
-      "released": null,
-      "preview": null
-    },
-    {
-      "repository": "eforus-overseer/propwash",
-      "url": "https://github.com/eforus-overseer/propwash",
-      "description": "FPV drone simulator on real satellite terrain + a Gymnasium RL environment. Single HTML file to fly, Python package to train.",
-      "created": "2026-08-07T10:21:57Z",
-      "pushed": "2026-10-06T21:01:46Z",
-      "license": "unknown",
-      "stars": 0,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
+      "checked": "2026-10-08",
       "release": null,
       "released": null,
       "preview": null
@@ -202,9 +185,26 @@
         "topic:dronecan"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-07",
+      "checked": "2026-10-08",
       "release": "V1.1",
       "released": "2025-07-22",
+      "preview": null
+    },
+    {
+      "repository": "formiat/px4-ros2-drone-nav",
+      "url": "https://github.com/formiat/px4-ros2-drone-nav",
+      "description": "Autonomous UAV navigation in GNSS-denied indoor spaces with no prior map: stereo VIO (MSCKF) and lidar-inertial odometry with map-based relocalization (SLAM), 3D occupancy mapping, D* Lite path planning and GPU MPPI obstacle avoidance. PX4 + ROS 2 + Gazebo SITL, DARPA SubT Urban.",
+      "created": "2026-07-06T00:14:21Z",
+      "pushed": "2026-10-05T12:34:25Z",
+      "license": "MIT",
+      "stars": 147,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-08",
+      "release": "v0.4.0",
+      "released": "2026-09-20",
       "preview": null
     }
   ],
