@@ -3208,7 +3208,7 @@
       "Total Outlays": 113819875.94,
       "Description": "UFMS/UAMS OPERATIONS AND MAINTENANCE FOR JMD",
       "Start Date": "2022-02-01",
-      "End Date": "2026-09-30",
+      "End Date": "2027-09-30",
       "Awarding Agency": "Department of Justice",
       "Awarding Sub Agency": "Offices, Boards and Divisions",
       "Award Type": null,
@@ -3364,7 +3364,7 @@
       "internal_id": 298649634,
       "Award ID": "FA945120F0004",
       "Recipient Name": "UNIVERSITY OF HAWAII",
-      "Award Amount": 42238884.1,
+      "Award Amount": 42188374.6,
       "Total Outlays": 839821.96,
       "Description": "THE VANGUARD CENTERS UNIFIED UARC FOR MHPCC SUPPORT TO 0001 EFFORTS SHALL FOCUS ON THREE HPCMP FUNDED RESEARCH AND DEVELOPMENT OBJECTIVES CENTERS, PORTAL, AND CREATE.",
       "Start Date": "2020-05-01",
@@ -6529,6 +6529,22 @@
       "generated_internal_id": "CONT_AWD_W58RGZ26F0332_9700_W58RGZ26G0061_9700"
     },
     {
+      "internal_id": 363278942,
+      "Award ID": "W58RGZ26F0363",
+      "Recipient Name": "GRIFFON AEROSPACE, INC.",
+      "Award Amount": 37004023.84,
+      "Total Outlays": null,
+      "Description": "IN SUPPORT OF EXECUTIVE ORDER- UNLEASHING DRONE DOMINANCE, THE ARMY CONTRACTING COMMAND-REDSTONE ARSENAL ESTABLISHED THE BASIC ORDERING AGREEMENT TO PROCURE DRONES AND DRONE DOMINANT COMPONENTS.",
+      "Start Date": "2026-07-09",
+      "End Date": "2027-03-01",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W58RGZ26F0363_9700_W58RGZ26G0061_9700"
+    },
+    {
       "internal_id": 278754626,
       "Award ID": "19AQMM25C1050",
       "Recipient Name": "ECHODYNE CORP",
@@ -6833,6 +6849,22 @@
       "generated_internal_id": "CONT_AWD_W912CH26CA014_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 363263783,
+      "Award ID": "FA489026P0011",
+      "Recipient Name": "FLEX FORCE ENTERPRISES, LLC",
+      "Award Amount": 2182384.99,
+      "Total Outlays": null,
+      "Description": "PURCHASE OF DRONEBUSTER BLOCK 4S (QUANTITY: 40) IN SUPPORT OF ACC/A4SA.",
+      "Start Date": "2026-07-10",
+      "End Date": "2026-11-07",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA489026P0011_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 298072176,
       "Award ID": "FA448425P0027",
       "Recipient Name": "TEMPEST DRONEWORX, INC.",
@@ -7135,38 +7167,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_H9240325F0025_9700_H9240324D0003_9700"
-    },
-    {
-      "internal_id": 359168772,
-      "Award ID": "W58RGZ26F0221",
-      "Recipient Name": "JOVIAN SOFTWARE CONSULTING LLC",
-      "Award Amount": 1375724.66,
-      "Total Outlays": null,
-      "Description": "IN ACCORDANCE WITH THE DIRECTIVES ESTABLISHED IN THE DEPARTMENT OF WAR MEMORANDUM DATED 10 JULY 2025, IN SUPPORT OF EXECUTIVE ORDER 14307 - UNLEASHING U.S. MILITARY DRONE DOMINANCE.",
-      "Start Date": "2026-03-12",
-      "End Date": "2027-03-12",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W58RGZ26F0221_9700_W58RGZ26G0018_9700"
-    },
-    {
-      "internal_id": 348989708,
-      "Award ID": "W51AA125P0058",
-      "Recipient Name": "ORQA INC",
-      "Award Amount": 1364988.38,
-      "Total Outlays": null,
-      "Description": "DRONE COMPONENT KITS AND TECHNICAL SUPPORT PACKAGE",
-      "Start Date": "2025-07-23",
-      "End Date": "2025-09-30",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W51AA125P0058_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 356590756,
@@ -12801,6 +12801,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-10-08T10:44:02.299006+00:00",
+  "scraped_at": "2026-10-09T10:44:11.321387+00:00",
   "count": 800
 }
