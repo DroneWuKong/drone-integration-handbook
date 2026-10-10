@@ -3377,6 +3377,22 @@
       "generated_internal_id": "CONT_AWD_FA945120F0004_9700_FA945120D0004_9700"
     },
     {
+      "internal_id": 309487310,
+      "Award ID": "N0001424C1515",
+      "Recipient Name": "GEORGIA TECH APPLIED RESEARCH CORP",
+      "Award Amount": 40266707.25,
+      "Total Outlays": null,
+      "Description": "THIS EFFORT IS TO INVESTIGATE THE EXTENSION OF SWARMING AUTONOMY FROM EXPENDABLE, AUTONOMOUS UNMANNED AERIAL VEHICLES (UAVS) TO ENABLE HETEROGENEITY ACROSS SENSOR MODALITIES, AND SUPER SWARM SYSTEMS.",
+      "Start Date": "2024-09-12",
+      "End Date": "2028-09-03",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_N0001424C1515_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 352908067,
       "Award ID": "N0016425FJ608",
       "Recipient Name": "PLATFORM SYSTEMS, INCORPORATED",
@@ -3423,22 +3439,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W58RGZ19F0014_9700_W58RGZ13D0048_9700"
-    },
-    {
-      "internal_id": 309487310,
-      "Award ID": "N0001424C1515",
-      "Recipient Name": "GEORGIA TECH APPLIED RESEARCH CORP",
-      "Award Amount": 37041478.25,
-      "Total Outlays": null,
-      "Description": "THIS EFFORT IS TO INVESTIGATE THE EXTENSION OF SWARMING AUTONOMY FROM EXPENDABLE, AUTONOMOUS UNMANNED AERIAL VEHICLES (UAVS) TO ENABLE HETEROGENEITY ACROSS SENSOR MODALITIES, AND SUPER SWARM SYSTEMS.",
-      "Start Date": "2024-09-12",
-      "End Date": "2028-09-03",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Navy",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_N0001424C1515_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 309499810,
@@ -4693,7 +4693,7 @@
       "Award ID": "15F06722P0001119",
       "Recipient Name": "MOTOROLA SOLUTIONS, INC.",
       "Award Amount": 30485826.48,
-      "Total Outlays": 23711413.01,
+      "Total Outlays": 23761434.18,
       "Description": "OTD20220230  REU GENERAL INFRASTRUCTURE  EXERCISE OY 1 OF CONTRACT WITH MOTOROLA SOLUTIONS, INC. FOR LIFE CYCLE SUSTAINMENT SERVICES FOR THE FBI/DOJ MOTOROLA M3 RNI SYSTEM.  THESE SERVICES ENTAIL A SYSTEM UPGRADE AGREEMENT (SUA) SECURITY UPDATE SERV",
       "Start Date": "2022-09-30",
       "End Date": "2027-09-29",
@@ -7697,22 +7697,6 @@
       "generated_internal_id": "ASST_NON_60NANB23D182_013"
     },
     {
-      "internal_id": 253726578,
-      "Award ID": "80NSSC23K0606",
-      "Recipient Name": "MINGO COUNTY REDEVELOPMENT AUTHORITY",
-      "Award Amount": 2892156.81,
-      "Total Outlays": 2892156.81,
-      "Description": "THIS MCRA AAM EDUCATION PROGRAM WILL INSPIRE  ENGAGE  EDUCATE  AND EMPLOY THE  NEXT GENERATION OF EXPLORERS  IN WEST VIRGINIA AND APPALACHIA FOR THE FUTURE JOBS IN THE AAM MARKETPLACE. TODAY  MANY INDUSTRIES ARE NOW DEVELOPING AND LEVERAGING DRONE TECHNOLOGIES TO ADVANCE THE DELIVERY OF GOODS AND SERVICES FROM HEALTHCARE USE CASES TO INFRASTRUCTURE INSPECTION USE CASES  TO FIRST RESPONDER AND NATURAL DISASTER DEPLOYMENT USE CASES  AND WITH MORE APPLICATIONS OF THESE TECHNOLOGIES YET TO BE DISCOVERED. ALL THESE UNCREWED AERIAL SYSTEMS (UAS) ACTIVITIES AND OPERATIONS WILL CREATE SIGNIFICANT JOB OPPORTUNITIES FOR THOSE WHO ARE PREPARED AS THIS MARKET REALIZES SIGNIFICANT GROWTH OVER THE NEXT DECADE. MINGO COUNTY  WHERE COAL MINING ONCE PROVIDED SUFFICIENT ECONOMIC OPPORTUNITY FOR FAMILIES  IS NOW AN UNDERREPRESENTED GROUP WITHOUT EQUAL OPPORTUNITY WITHIN OUR SCHOOL SYSTEMS AND WITH SIGNIFICANT CHALLENGES IN ACHIEVING ECONOMIC DEVELOPMENT FOR THE JOBS OF THE FUTURE.",
-      "Start Date": "2023-07-01",
-      "End Date": "2025-09-30",
-      "Awarding Agency": "National Aeronautics and Space Administration",
-      "Awarding Sub Agency": "National Aeronautics and Space Administration",
-      "Award Type": "PROJECT GRANT (B)",
-      "awarding_agency_id": 862,
-      "agency_slug": "national-aeronautics-and-space-administration",
-      "generated_internal_id": "ASST_NON_80NSSC23K0606_080"
-    },
-    {
       "internal_id": 354335185,
       "Award ID": "NI261444XXXXG009",
       "Recipient Name": "SOUTH CAROLINA STATE UNIVERSITY",
@@ -7967,6 +7951,22 @@
       "awarding_agency_id": 731,
       "agency_slug": "department-of-transportation",
       "generated_internal_id": "ASST_NON_69A3552341057_069"
+    },
+    {
+      "internal_id": 260347610,
+      "Award ID": "DEAR0001386",
+      "Recipient Name": "MICHIGAN AEROSPACE CORP",
+      "Award Amount": 1967438.76,
+      "Total Outlays": 1864809.56,
+      "Description": "----------\n\nMICHIGAN AEROSPACE CORPORATION:  NEW CONDITIONAL SMARTFARM SBIR/STTR AWARD.\nCONTROL NUMBER: 2251-1511\nTITLE: \u201cDRON2O: A DRONE-BASED SYSTEM FOR MEASURING NITROUS OXIDE EMISSIONS FROM AGRICULTURAL FIELDS\u201d\n\n----------",
+      "Start Date": "2021-01-01",
+      "End Date": "2024-08-31",
+      "Awarding Agency": "Department of Energy",
+      "Awarding Sub Agency": "Department of Energy",
+      "Award Type": "COOPERATIVE AGREEMENT (B)",
+      "awarding_agency_id": 930,
+      "agency_slug": "department-of-energy",
+      "generated_internal_id": "ASST_NON_DEAR0001386_089"
     },
     {
       "internal_id": 361851472,
@@ -12801,6 +12801,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-10-09T10:44:11.321387+00:00",
+  "scraped_at": "2026-10-10T10:40:40.739114+00:00",
   "count": 800
 }
