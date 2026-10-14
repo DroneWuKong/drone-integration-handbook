@@ -17,15 +17,14 @@ permissions:
   contents: read
 
 concurrency:
-  # Isolate the split pipeline from a stalled legacy all-in-one runner.
-  # Both generations reject a push if main moved since their checkout.
-  group: evidence-review-queue-v2
+  # Public upkeep must not wait for the private research pool.
+  group: evidence-public-metadata-v1
   cancel-in-progress: false
 
 jobs:
-  inventory:
+  prepare:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     outputs:
       base_sha: ${{ steps.base.outputs.sha }}
     steps:
@@ -40,114 +39,30 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
-      - name: Build the public inventory
-        run: |
-          python3 -m pip install -r requirements.txt
-          GITHUB_SHA="$(git rev-parse HEAD)" python3 build.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: handbook-inventory-${{ github.run_id }}
-          path: site/assets/reference-data.json
-          retention-days: 2
-
-  prepare:
-    needs: inventory
-    runs-on: [self-hosted, prismo]
-    timeout-minutes: 15
-    outputs:
-      base_sha: ${{ steps.base.outputs.sha }}
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: ${{ needs.inventory.outputs.base_sha }}
-          fetch-depth: 0
-      - name: Record the source revision
-        id: base
-        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-      - name: Require the self-hosted research pool
-        run: test "${RUNNER_ENVIRONMENT:-}" = "self-hosted"
-      - name: Install research dependencies
-        run: |
-          python3 -m venv .venv
-          .venv/bin/python -m pip install -r requirements.txt
-      - uses: actions/download-artifact@v4
-        with:
-          name: handbook-inventory-${{ github.run_id }}
-          path: site/assets
-      - name: Verify the inventory source revision
-        run: |
-          .venv/bin/python - <<'PY'
-          import json, subprocess
-          from pathlib import Path
-          inventory=json.loads(Path('site/assets/reference-data.json').read_text())
-          expected=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
-          if inventory.get('commit')!=expected:
-              raise ValueError('Public inventory does not match the checked-out source revision')
-          PY
+      - name: Install public metadata dependencies
+        run: python3 -m pip install -r requirements.txt
       - name: Restore source fingerprints
         uses: actions/cache/restore@v4
         with:
           path: .local/source-review.json
           key: evidence-source-state-${{ github.run_id }}
           restore-keys: evidence-source-state-
-      - name: Verify deployment before using its private ledger
-        if: github.event_name == 'push'
+      - name: Build public inventory and check dated sources
         run: |
-          # Pages completion and custom-domain propagation can exceed 3 minutes.
-          for attempt in $(seq 1 24); do
-            if .venv/bin/python scripts/check_deployment.py https://uas-handbook.com --expected-commit "$(git rev-parse HEAD)" --require-storage --require-attachments; then exit 0; fi
-            sleep 15
-          done
-          exit 1
-      - name: Check dated sources
-        run: |
-          .venv/bin/python scripts/check_sources.py | tee .local/source-monitor-summary.json
-      - name: Discover releases and projects; apply independently verified facts
+          GITHUB_SHA="$(git rev-parse HEAD)" python3 build.py
+          python3 scripts/check_sources.py | tee .local/source-monitor-summary.json
+      - name: Refresh public release and emerging-project metadata
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          AUTONOMY_DISPATCH_URL: ${{ secrets.AUTONOMY_DISPATCH_URL }}
-          AUTONOMY_REVIEW_TOKEN: ${{ secrets.AUTONOMY_REVIEW_TOKEN }}
-        run: .venv/bin/python scripts/maintain_handbook.py --refresh --apply | tee .local/maintenance-summary.json
-      - name: Start the next bounded independent evidence batch
-        id: research
-        # Provider outages or exhausted credits must not block public metadata.
-        # Source retrieval, validation and publication remain required steps.
-        continue-on-error: true
-        env:
-          AUTONOMY_DISPATCH_URL: ${{ secrets.AUTONOMY_DISPATCH_URL }}
-          AUTONOMY_REVIEW_TOKEN: ${{ secrets.AUTONOMY_REVIEW_TOKEN }}
-        run: |
-          .venv/bin/python scripts/run_autonomous_evidence.py --input .local/autonomy/maintenance-queue.json --provider auto --maximum 2 --start-limit 4 --request-limit 4 --model gpt-5.5
-      - name: Package public candidate files
-        run: .venv/bin/python scripts/package_maintenance.py --output .local/maintenance-candidate
+        run: python3 scripts/maintain_handbook.py --refresh | tee .local/maintenance-summary.json
+      - name: Package public metadata changes
+        run: python3 scripts/package_maintenance.py --output .local/maintenance-candidate
       - uses: actions/upload-artifact@v4
         with:
           name: handbook-candidate-${{ github.run_id }}
           path: .local/maintenance-candidate/
           include-hidden-files: true
           retention-days: 2
-      - name: Summarize maintenance
-        if: always()
-        env:
-          RESEARCH_STEP_OUTCOME: ${{ steps.research.outcome }}
-        run: |
-          .venv/bin/python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
-          import json, os, sys
-          from pathlib import Path
-          for name in ['maintenance-summary.json','autonomy/publication-summary.json','autonomy/plan.json']:
-              path=Path('.local')/name
-              if path.exists():
-                  data=json.loads(path.read_text())
-                  print('### '+name+'\n')
-                  print('```json\n'+json.dumps(data.get('summary',data),indent=2)+'\n```\n')
-          outcome=os.environ.get('RESEARCH_STEP_OUTCOME','unknown')
-          print('### Optional paid research step: '+outcome+'\n')
-          if outcome=='failure':
-              print('Paid research did not complete. Public metadata can still be validated and published; this is not successful factual verification. Inspect the research step before retrying any uncertain dispatch.\n')
-              print('::warning::Optional paid research failed; public metadata upkeep continues.',file=sys.stderr)
-          Path('.local/research-step-status.json').write_text(json.dumps({'outcome':outcome})+'\n')
-          print('Progress comes from the private durable ledger; deployment changes do not reset paid research. Metadata checks continue after the non-renewing trial stops.')
-          PY
       - name: Preserve source fingerprints
         if: always() && hashFiles('.local/source-review.json') != ''
         uses: actions/cache/save@v4
@@ -161,12 +76,9 @@ jobs:
           name: handbook-maintenance-${{ github.run_id }}
           path: |
             .local/maintenance-summary.json
-            .local/research-step-status.json
-            .local/autonomy/publication-summary.json
-            .local/browser-check/results.json
             data/update-status.json
             data/emerging-watch.json
-          if-no-files-found: warn
+          include-hidden-files: true
           retention-days: 30
 
   validate:
@@ -200,7 +112,7 @@ jobs:
           for file in assets/*.js server/*.mjs functions/api/*.js; do node --check "$file"; done
           python3 scripts/check_links.py
           python3 scripts/check_integration_replay.py
-          python3 build.py
+          GITHUB_SHA="$(git rev-parse HEAD)" python3 build.py
           python3 scripts/reconcile_tables.py
           python3 scripts/check_generated_site.py site/index.html
           python3 scripts/check_evidence.py
