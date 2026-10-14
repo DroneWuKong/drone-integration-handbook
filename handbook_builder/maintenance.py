@@ -34,6 +34,13 @@ def plain(value):
 def cell(value):
     return html.escape(plain(value)).replace("|", "&#124;").replace("[", "&#91;").replace("]", "&#93;")
 
+def utc_today():
+    """Match GitHub publication dates regardless of the runner's timezone."""
+    return datetime.now(timezone.utc).date()
+
+class GitHubResponseTooLarge(ValueError):
+    pass
+
 class GitHubReader:
     def __init__(self, token=""):
         self.token = token
@@ -48,8 +55,33 @@ class GitHubReader:
             def redirect_request(self, *args, **kwargs): raise ValueError("Unexpected API redirect")
         with urllib.request.build_opener(NoRedirect()).open(request, timeout=20) as response:
             body = response.read(4 * 1024 * 1024 + 1)
-            if len(body) > 4 * 1024 * 1024: raise ValueError("API response too large")
+            if len(body) > 4 * 1024 * 1024: raise GitHubResponseTooLarge("API response too large")
             return json.loads(body)
+
+def release_rows(reader, repository, maximum=100):
+    """Keep the existing history window without lifting the response-size cap."""
+    resource = "repos/" + repository + "/releases"
+    fields = ("tag_name", "published_at", "prerelease", "draft", "html_url")
+    def compact(rows):
+        if not isinstance(rows, list) or not all(isinstance(row, dict) for row in rows):
+            raise ValueError("Invalid release response")
+        return [{key: row.get(key) for key in fields} for row in rows]
+    try:
+        return compact(reader(resource + "?per_page=" + str(maximum)))[:maximum]
+    except GitHubResponseTooLarge:
+        # Firmware releases can include hundreds of assets each. Restart a
+        # bounded scan at smaller pages; discard asset bodies immediately.
+        for size in (20, 5, 1):
+            rows = []
+            try:
+                for page in range(1, (maximum + size - 1) // size + 1):
+                    batch = compact(reader(resource + "?" + urlencode({"per_page": size, "page": page})))
+                    if len(batch) > size: raise ValueError("Invalid release page")
+                    rows.extend(batch)
+                    if len(batch) < size: break
+                return rows[:maximum]
+            except GitHubResponseTooLarge:
+                if size == 1: raise
 
 def releases(rows, today, prefix=""):
     """Future/undated/draft entries cannot be described as released."""
@@ -70,7 +102,7 @@ def update_watchlist(config, reader, today, previous=None):
     for item in config["releases"]:
         row = {**item, "checked": today.isoformat(), "next_check": (today + timedelta(days=item.get("check_days", 7))).isoformat()}
         try:
-            stable, preview = releases(reader("repos/" + item["repository"] + "/releases?per_page=100"), today, item.get("tag_prefix", ""))
+            stable, preview = releases(release_rows(reader, item["repository"]), today, item.get("tag_prefix", ""))
             row.update(latest=stable["tag_name"] if stable else None,
                 released=stable["published_at"][:10] if stable else None,
                 url=stable["html_url"] if stable else "https://github.com/" + item["repository"] + "/releases",
@@ -127,6 +159,7 @@ def discover(config, reader, today):
 
 def emerging_watch(config, reader, today, previous=None):
     found, errors = {}, []
+    previous_projects = {p['repository']: p for p in (previous or {}).get('projects', [])}
     cutoff = (today - timedelta(days=180)).isoformat()
     for query in config["emerging_queries"]:
         q = query.format(created_after=(today-timedelta(days=365)).isoformat()) + " archived:false fork:false pushed:>=" + cutoff
@@ -153,14 +186,19 @@ def emerging_watch(config, reader, today, previous=None):
     projects = sorted(found.values(), key=lambda x: (-len(x["matched_queries"]), -datetime.fromisoformat(x["pushed"].replace("Z", "+00:00")).timestamp() if x.get("pushed") else 0, x["repository"]), reverse=False)[:12]
     for project in projects:
         try:
-            stable, preview = releases(reader("repos/" + project["repository"] + "/releases?per_page=30"), today)
+            stable, preview = releases(release_rows(reader, project["repository"], 30), today)
             project.update(release=stable["tag_name"] if stable else None, released=stable["published_at"][:10] if stable else None,
-                preview=preview["tag_name"] if preview else None)
-        except Exception: project.update(release=None, released=None, release_status="unavailable")
+                preview=preview["tag_name"] if preview else None,
+                release_status="observed" if stable else "no-published-release",
+                release_checked=today.isoformat(), release_observed=today.isoformat())
+        except Exception:
+            old = previous_projects.get(project['repository'], {})
+            project.update({key: old.get(key) for key in ('release', 'released', 'preview', 'release_observed')})
+            project.update(release_status="unavailable", release_checked=today.isoformat())
     return {"schema_version": 1, "checked": today.isoformat(), "next_check": (today + timedelta(days=7)).isoformat(), "projects": projects, "errors": errors}
 
 def render_watch(status):
-    lines = ["# Release and Information Update Watchlist", "", f"Last checked: **{status['checked']}**. Version matches establish metadata only; they do not verify every claim in a chapter. A changed release opens a section check. Preview releases remain separate from published stable releases. This table observes GitHub releases; projects may also distribute builds through other channels. A tag or code push is not a published release.", "", "| Project | Version covered | Latest stable GitHub release / date | Preview | Status | Check these sections | Next check |", "|---|---|---|---|---|---|---|"]
+    lines = ["# Release and Information Update Watchlist", "", f"Last checked: **{status['checked']} UTC**. Version matches establish metadata only; they do not verify every claim in a chapter. A changed release opens a section check. Preview releases remain separate from published stable releases. This table observes GitHub releases; projects may also distribute builds through other channels. A tag or code push is not a published release.", "", "| Project | Version covered | Latest stable GitHub release / date | Preview | Status | Check these sections | Next check |", "|---|---|---|---|---|---|---|"]
     for row in status["items"]:
         links = ", ".join(f"[{Path(p).stem}]({Path('..') / p})" for p in row["sections"])
         url = row.get("url") or "https://github.com/" + row["repository"] + "/releases"
@@ -177,9 +215,12 @@ def render_watch(status):
     return "\n".join(lines) + "\n"
 
 def render_emerging(status):
-    lines = ["# Emerging Technology Watch", "", f"Observed **{status['checked']}**; next scheduled check by **{status['next_check']}**. This automatically maintained list uses GitHub search metadata. Selection is an editorial inference from topic relevance and recent activity, not a performance endorsement or hardware acceptance.", "", "| Project | Project description (unverified) | Latest stable GitHub release / date | Last code push | License | Evidence status |", "|---|---|---|---|---|---|"]
+    lines = ["# Emerging Technology Watch", "", f"Observed **{status['checked']} UTC**; next scheduled check by **{status['next_check']} UTC**. This automatically maintained list uses GitHub search metadata. Selection is an editorial inference from topic relevance and recent activity, not a performance endorsement or hardware acceptance.", "", "| Project | Project description (unverified) | Latest stable GitHub release / date | Last code push | License | Evidence status |", "|---|---|---|---|---|---|"]
     for p in status["projects"]:
-        lines.append(f"| [{cell(p['repository'])}]({p['url']}) | {cell(p['description'][:220])} | {cell(p.get('release') or 'none observed')} / {cell(p.get('released') or 'unknown')} | {cell((p.get('pushed') or 'unknown')[:10])} | {cell(p['license'])} | {cell(p['status'])} |")
+        release = f"{cell(p.get('release') or 'none observed')} / {cell(p.get('released') or 'unknown')}"
+        if p.get('release_status') == 'unavailable':
+            release = f"last observed {cell(p['release'])} / {cell(p.get('released') or 'unknown')}; check unavailable" if p.get('release') else 'check unavailable; release unknown'
+        lines.append(f"| [{cell(p['repository'])}]({p['url']}) | {cell(p['description'][:220])} | {release} | {cell((p.get('pushed') or 'unknown')[:10])} | {cell(p['license'])} | {cell(p['status'])} |")
     if not status["projects"]: lines.append("| No results available | Search will retry; no capability inferred | unknown | unknown | unknown | unverified |")
     lines += ["", "## What the next check must establish", "", "- Exact released version and publication date; a recent code push is not a release.", "- License/rights, supported interfaces, reproducible examples and active issue/release history.", "- Whether the claimed capability exists in source/tests, and what remains simulation, bench or field evidence.", "- Primary documentation, conflicting evidence and relevance to an existing integration gap.", "", "No discovered code is executed, installed or granted credentials. Repository descriptions are attributed claims. Relevant factual additions enter separate researcher/verifier checks before becoming handbook guidance. Stars and commit activity indicate attention/activity, not technical quality."]
     if status["errors"]: lines += ["", "Some searches were unavailable; retained entries may be stale. The next cycle retries them."]
@@ -205,13 +246,14 @@ def scheduled_records(snapshot, sources, source_state, today, watched=None):
     return records
 
 def pending(records, ledger, release):
+    today = utc_today()
     known = {row["id"] for row in ledger if row.get('state') != 'planned'}
     result = []
     for record in records:
         spec = research_spec(record, release)
         if spec["id"] in known: continue
         # Migrate old deploy-bound jobs without restarting active/completed work.
-        if any(row.get("spec", {}).get("verification_protocol") is None and row.get("spec", {}).get("claim_id") == spec["claim_id"] and row.get("spec", {}).get("statement") == spec["statement"] and row.get("state") in {"researching", "adjudicating", "complete", "exception", "abstained"} and (row.get('state') in {'researching','adjudicating'} or (date.today()-date.fromisoformat(row['spec'].get('created_at','1970-01-01')[:10])).days<30) for row in ledger): continue
+        if any(row.get("spec", {}).get("verification_protocol") is None and row.get("spec", {}).get("claim_id") == spec["claim_id"] and row.get("spec", {}).get("statement") == spec["statement"] and row.get("state") in {"researching", "adjudicating", "complete", "exception", "abstained"} and (row.get('state') in {'researching','adjudicating'} or (today-date.fromisoformat(row['spec'].get('created_at','1970-01-01')[:10])).days<30) for row in ledger): continue
         result.append(record)
         known.add(spec['id'])
     ordered=sorted(result, key=lambda x: ({"P0":0,"P1":1,"P2":2,"P3":3}.get(x.get("priority"),3), -x.get("score",0), x["id"]))
