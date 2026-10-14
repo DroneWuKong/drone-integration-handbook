@@ -23,9 +23,9 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  prepare:
-    runs-on: [self-hosted, prismo]
-    timeout-minutes: 15
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
     outputs:
       base_sha: ${{ steps.base.outputs.sha }}
     steps:
@@ -36,16 +36,54 @@ jobs:
       - name: Record the source revision
         id: base
         run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-python@v5
         with:
-          node-version: "24"
+          python-version: "3.12"
+          cache: pip
+      - name: Build the public inventory
+        run: |
+          python3 -m pip install -r requirements.txt
+          GITHUB_SHA="$(git rev-parse HEAD)" python3 build.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: handbook-inventory-${{ github.run_id }}
+          path: site/assets/reference-data.json
+          retention-days: 2
+
+  prepare:
+    needs: inventory
+    runs-on: [self-hosted, prismo]
+    timeout-minutes: 15
+    outputs:
+      base_sha: ${{ steps.base.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.inventory.outputs.base_sha }}
+          fetch-depth: 0
+      - name: Record the source revision
+        id: base
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
       - name: Require the self-hosted research pool
         run: test "${RUNNER_ENVIRONMENT:-}" = "self-hosted"
-      - name: Install build dependencies
+      - name: Install research dependencies
         run: |
           python3 -m venv .venv
           .venv/bin/python -m pip install -r requirements.txt
-          npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          name: handbook-inventory-${{ github.run_id }}
+          path: site/assets
+      - name: Verify the inventory source revision
+        run: |
+          .venv/bin/python - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          inventory=json.loads(Path('site/assets/reference-data.json').read_text())
+          expected=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          if inventory.get('commit')!=expected:
+              raise ValueError('Public inventory does not match the checked-out source revision')
+          PY
       - name: Restore source fingerprints
         uses: actions/cache/restore@v4
         with:
@@ -61,9 +99,8 @@ jobs:
             sleep 15
           done
           exit 1
-      - name: Build and check dated sources
+      - name: Check dated sources
         run: |
-          .venv/bin/python build.py
           .venv/bin/python scripts/check_sources.py | tee .local/source-monitor-summary.json
       - name: Discover releases and projects; apply independently verified facts
         env:
