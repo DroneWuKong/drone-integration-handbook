@@ -42,3 +42,7 @@ Preserve tested repairs as a patch, check whether main has advanced before resum
 ## Deployment timing follow-up
 
 The [post-merge run](https://github.com/DroneWuKong/drone-integration-handbook/actions/runs/38580912121) exhausted its twelve deployment checks at 14:32:44 UTC; Cloudflare completed at 14:32:46 UTC. The failure occurred before discovery or paid dispatch. Both deployment waits now allow twenty-four attempts with the same fifteen-second interval, still requiring the exact commit, public snapshot and durable capabilities. Preparation/publication job timeouts remain fifteen/ten minutes; failed verification cannot publish an unvalidated revision.
+
+## Public inventory isolation
+
+The [next run](https://github.com/DroneWuKong/drone-integration-handbook/actions/runs/38583117502) passed deployment verification, but its self-hosted handbook build was killed with exit code 137 before source discovery or paid dispatch. The public inventory build now runs on hosted Ubuntu and transfers only `site/assets/reference-data.json` to the cluster. The private job checks out that inventory's exact source commit, reads its public records, and retains all ledger credentials, packets and paid orchestration in the existing research pool. Full validation and fast-forward publication remain separate hosted jobs. No private files enter the inventory artifact.
