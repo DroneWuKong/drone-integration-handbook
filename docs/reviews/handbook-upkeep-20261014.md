@@ -46,3 +46,7 @@ The [post-merge run](https://github.com/DroneWuKong/drone-integration-handbook/a
 ## Public inventory isolation
 
 The [next run](https://github.com/DroneWuKong/drone-integration-handbook/actions/runs/38583117502) passed deployment verification, but its self-hosted handbook build was killed with exit code 137 before source discovery or paid dispatch. The public inventory build now runs on hosted Ubuntu and transfers only `site/assets/reference-data.json` to the cluster. The private job checks out that inventory's exact source commit, reads its public records, and retains all ledger credentials, packets and paid orchestration in the existing research pool. Full validation and fast-forward publication remain separate hosted jobs. No private files enter the inventory artifact.
+
+## Metadata availability when the cluster is unavailable
+
+The [inventory-isolated run](https://github.com/DroneWuKong/drone-integration-handbook/actions/runs/38586958744) built its public inventory successfully, but the private preparation job remained queued for over ten minutes. Public release/source/project upkeep now has its own hosted workflow and concurrency group. A separate private fact-research workflow follows successful trusted main-branch public runs and preserves the same research limits and independent exact-statement gate. It receives public snapshots/candidates/source fingerprints only, and publishes eligible factual edits only after full validation. A busy or offline cluster therefore defers fact research without preventing watchlist refreshes.
