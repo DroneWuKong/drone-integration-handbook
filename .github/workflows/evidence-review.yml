@@ -55,7 +55,8 @@ jobs:
       - name: Verify deployment before using its private ledger
         if: github.event_name == 'push'
         run: |
-          for attempt in $(seq 1 12); do
+          # Pages completion and custom-domain propagation can exceed 3 minutes.
+          for attempt in $(seq 1 24); do
             if .venv/bin/python scripts/check_deployment.py https://uas-handbook.com --expected-commit "$(git rev-parse HEAD)" --require-storage --require-attachments; then exit 0; fi
             sleep 15
           done
@@ -215,7 +216,8 @@ jobs:
           git push origin HEAD:main
       - name: Verify the published revision
         run: |
-          for attempt in $(seq 1 12); do
+          # Keep the exact-commit gate while allowing custom-domain propagation.
+          for attempt in $(seq 1 24); do
             if python3 scripts/check_deployment.py https://uas-handbook.com --expected-commit "$(git rev-parse HEAD)" --require-storage --require-attachments; then exit 0; fi
             sleep 15
           done

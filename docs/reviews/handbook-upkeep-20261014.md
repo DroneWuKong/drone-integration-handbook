@@ -38,3 +38,7 @@ Related public repository checks found Forge updated on 14 October, while forge-
 ## Future upkeep when access is unavailable
 
 Preserve tested repairs as a patch, check whether main has advanced before resuming, and publish through the existing validation gate. Do not retry paid research without consulting the durable private ledger. Continue the recurring audit; public inspection remains useful while write access is unavailable.
+
+## Deployment timing follow-up
+
+The [post-merge run](https://github.com/DroneWuKong/drone-integration-handbook/actions/runs/38580912121) exhausted its twelve deployment checks at 14:32:44 UTC; Cloudflare completed at 14:32:46 UTC. The failure occurred before discovery or paid dispatch. Both deployment waits now allow twenty-four attempts with the same fifteen-second interval, still requiring the exact commit, public snapshot and durable capabilities. Preparation/publication job timeouts remain fifteen/ten minutes; failed verification cannot publish an unvalidated revision.
