@@ -276,7 +276,7 @@
       "internal_id": 298377619,
       "Award ID": "FA807523F0009",
       "Recipient Name": "NAVAL SYSTEMS, INC.",
-      "Award Amount": 12110801.42,
+      "Award Amount": 12360801.42,
       "Total Outlays": null,
       "Description": "SMALL UNMANNED AIRCRAFT SYSTEMS AND ENABLING TECHNOLOGIES ANALYSIS FOR NAVAL SURFACE WARFARE CENTER, PANAMA CITY DIVISION",
       "Start Date": "2022-12-21",
@@ -4689,6 +4689,22 @@
       "generated_internal_id": "CONT_AWD_FA862926FB002_9700_FA862926DB001_9700"
     },
     {
+      "internal_id": 352789518,
+      "Award ID": "FA875025FB013",
+      "Recipient Name": "TRUST AUTOMATION INC",
+      "Award Amount": 32967548.0,
+      "Total Outlays": null,
+      "Description": "ACCELERATE THE PROCUREMENT AND FIELDING OF INNOVATIVE TECHNOLOGIES (APFIT) SMALL UNCREWED AIR DEFENSE SYSTEM (SUADS) PROTOTYPE SYSTEMS AIMS TO PROCURE OPERATIONAL PROTOTYPES TO EVALUATE AND REPEAT.",
+      "Start Date": "2025-08-20",
+      "End Date": "2027-05-19",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Air Force",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_FA875025FB013_9700_FA875025DB002_9700"
+    },
+    {
       "internal_id": 278266999,
       "Award ID": "15F06722P0001119",
       "Recipient Name": "MOTOROLA SOLUTIONS, INC.",
@@ -4724,7 +4740,7 @@
       "internal_id": 353698296,
       "Award ID": "FA875025FB014",
       "Recipient Name": "BOOZ ALLEN HAMILTON INC",
-      "Award Amount": 21811112.0,
+      "Award Amount": 25901112.0,
       "Total Outlays": null,
       "Description": "MULTI MODAL C-SUAS INNOVATION (M2CI) THE SCOPE OF THIS EFFORT IS TO PERFORM RESEARCH ,DEVELOPMENT, TEST, AND EVALUATION OF ALL TECHNOLOGIES NEEDED TO ACCOMPLISH THE OBJECTIVE.",
       "Start Date": "2025-09-19",
@@ -4735,22 +4751,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_FA875025FB014_9700_FA875021D1100_9700"
-    },
-    {
-      "internal_id": 352789518,
-      "Award ID": "FA875025FB013",
-      "Recipient Name": "TRUST AUTOMATION INC",
-      "Award Amount": 20315558.0,
-      "Total Outlays": null,
-      "Description": "ACCELERATE THE PROCUREMENT AND FIELDING OF INNOVATIVE TECHNOLOGIES (APFIT) SMALL UNCREWED AIR DEFENSE SYSTEM (SUADS) PROTOTYPE SYSTEMS AIMS TO PROCURE OPERATIONAL PROTOTYPES TO EVALUATE AND REPEAT.",
-      "Start Date": "2025-08-20",
-      "End Date": "2026-05-19",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Air Force",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_FA875025FB013_9700_FA875025DB002_9700"
     },
     {
       "internal_id": 278339269,
@@ -7969,6 +7969,22 @@
       "generated_internal_id": "ASST_NON_DEAR0001386_089"
     },
     {
+      "internal_id": 361851475,
+      "Award ID": "W56KGU25C0009",
+      "Recipient Name": "VIRGINIA POLYTECHNIC INSTITUTE & STATE UNIVERSITY",
+      "Award Amount": 4666000.0,
+      "Total Outlays": 0.0,
+      "Description": "BROAD AGENCY ANNOUNCEMENT FOR VIRGINIA TECH WITHIN AN EXISTING COUNTER UAS (CUAS) SOFTWARE",
+      "Start Date": "2025-03-18",
+      "End Date": "2026-07-31",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W56KGU25C0009_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 361851472,
       "Award ID": "W56KGU25C0003",
       "Recipient Name": "BLACK SAGE TECHNOLOGIES INC",
@@ -7983,22 +7999,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W56KGU25C0003_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 361851475,
-      "Award ID": "W56KGU25C0009",
-      "Recipient Name": "VIRGINIA POLYTECHNIC INSTITUTE & STATE UNIVERSITY",
-      "Award Amount": 4566000.0,
-      "Total Outlays": 0.0,
-      "Description": "BROAD AGENCY ANNOUNCEMENT FOR VIRGINIA TECH WITHIN AN EXISTING COUNTER UAS (CUAS) SOFTWARE",
-      "Start Date": "2025-03-18",
-      "End Date": "2026-07-31",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W56KGU25C0009_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 353884265,
@@ -12801,6 +12801,6 @@
       "generated_internal_id": "ASST_NON_2500656_049"
     }
   ],
-  "scraped_at": "2026-10-13T10:45:35.767189+00:00",
+  "scraped_at": "2026-10-14T10:41:18.677988+00:00",
   "count": 800
 }
