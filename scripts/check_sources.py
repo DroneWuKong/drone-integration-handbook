@@ -4,7 +4,7 @@ import hashlib
 import json
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def fetch_source(url):
@@ -31,7 +31,7 @@ def inspect(source,previous,today,fetch=fetch_source):
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument("--state",type=Path,default=ROOT/".local/source-review.json");args=p.parse_args()
     data=json.loads((ROOT/"data/evidence.json").read_text());state=json.loads(args.state.read_text()) if args.state.exists() else {"sources":{},"tasks":{}}
-    today=date.today()
+    today=datetime.now(timezone.utc).date()
     with ThreadPoolExecutor(max_workers=5) as pool:
         results=list(pool.map(lambda s:inspect(s,state["sources"].get(s["id"],{}),today),data["sources"]))
     for sid,result,tasks in results:

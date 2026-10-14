@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from handbook_builder.maintenance import (GitHubReader, apply_verified, discover, emerging_watch,
-    json_write, pending, render_emerging, render_watch, scheduled_records, update_watchlist)
+    json_write, pending, render_emerging, render_watch, scheduled_records, update_watchlist, utc_today)
 from handbook_builder.review import extract_article_sources
 
 def read(path, default):
@@ -77,7 +77,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--refresh',action='store_true',help='Read public release/repository metadata')
     parser.add_argument('--apply',action='store_true',help='Apply only independently verified exact facts')
-    args=parser.parse_args();today=date.today()
+    args=parser.parse_args();today=utc_today()
     config=read(ROOT/'data/maintenance-config.json',{})
     changed=[];candidates=[];observations=[]
     if args.refresh:
