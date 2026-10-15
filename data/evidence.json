@@ -168,6 +168,14 @@
       "passage": "eIQ Neutron and device variants",
       "accessed": "2026-10-07",
       "review_days": 30
+    },
+    {
+      "id": "reboot-hub-parts-buying-checklist",
+      "title": "Reboot Hub: DJI Parts and Accessories \u2014 Verify Fit Before Buying",
+      "url": "https://reboot-hub.com/pages/dji-parts-accessories-buying-guide",
+      "passage": "What this page does not decide; Fit workflow; What to ask before checkout",
+      "accessed": "2026-10-15",
+      "review_days": 90
     }
   ],
   "claims": [
@@ -976,6 +984,19 @@
       "history": [],
       "reviewer": "Primary source text and arithmetic checked during the October audit",
       "statement": "Benewake lists TFmini-S mass as 5 \u00b1 0.3 g and TFmini Plus as 12 \u00b1 1 g. Exact variant specifications only."
+    },
+    {
+      "id": "reboot-hub-parts-buying-checklist-scope",
+      "sources": [
+        "reboot-hub-parts-buying-checklist"
+      ],
+      "status": "manufacturer-reported",
+      "verified": "2026-10-15",
+      "scope": "Supplier-authored purchase-documentation wording only. Reboot Hub maintains the linked checklist and is not DJI or a manufacturer-authorized reviewer. No exact-part fit, installation, serviceability, stock, price, physical test or repair outcome is qualified here.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public source wording read on the access date; no hardware, supplier or field audit.",
+      "statement": "Reboot Hub's consumer parts/accessories guide distinguishes replacement components, accessories and aircraft listings, and asks buyers to confirm the exact model, current item record, model-specific evidence and unresolved questions before ordering."
     }
   ]
 }

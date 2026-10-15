@@ -8,6 +8,7 @@ Print or copy this worksheet into the existing **Report / add field evidence** f
 |---|---|
 | Date and purpose | Observation time/timezone and exact question |
 | Hardware | Aircraft/board/peripheral model and revision; module versus assembled board |
+| Replacement item (when relevant) | Original and candidate part identities/revisions, component position, seller-stated condition, included pieces and unresolved fit or service requirements; keep a proposed replacement separate from a measured installation |
 | Software | Firmware/image/GCS versions, release dates, source hashes and build options |
 | Connection | UART logical/physical mapping, TX/RX/GND and measured logic levels; CAN protocol/pinout/termination separately |
 | Power | Rail voltage, measured steady/transient demand, converter and thermal conditions |
@@ -15,6 +16,8 @@ Print or copy this worksheet into the existing **Report / add field evidence** f
 | Expected/observed | Procedure, result, units, sample distribution and uncertainty |
 | Evidence | Original logs/captures, configuration readback and artifact hashes |
 | Limits | Simulation/bench/field category, untested cases and relevant relationship |
+
+**Supplier-published pre-order example:** consumer-drone parts buying questions belong in the proposed-item record, separately from installation or field-test evidence. [claim:reboot-hub-parts-buying-checklist-scope]
 
 Do not use a UART drawing as a CAN wiring map or infer logic voltage from supply voltage. Resolve pinouts against exact board documentation. The [UART chapter](../firmware/uart-layout.md) and [CAN reference](../firmware/can-dronecan-cyphal.md) provide separate record structures.
 
