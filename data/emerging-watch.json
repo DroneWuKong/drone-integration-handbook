@@ -1,27 +1,127 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-14",
-  "next_check": "2026-10-21",
+  "checked": "2026-10-15",
+  "next_check": "2026-10-22",
   "projects": [
+    {
+      "repository": "forgetheworlds/metal-drone-nav",
+      "url": "https://github.com/forgetheworlds/metal-drone-nav",
+      "description": "Metal-native RL for local drone navigation with RAPTOR, reproducible experiments, and independent Webots evaluation.",
+      "created": "2026-10-01T13:10:23Z",
+      "pushed": "2026-10-15T03:03:41Z",
+      "license": "NOASSERTION",
+      "stars": 0,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-15",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
+    },
     {
       "repository": "rsasaki0109/visloc-rs",
       "url": "https://github.com/rsasaki0109/visloc-rs",
       "description": "SfM, visual-inertial SLAM, 3D Gaussian Splatting and localization in pure Rust",
       "created": "2026-05-05T02:35:57Z",
-      "pushed": "2026-10-14T15:40:05Z",
+      "pushed": "2026-10-15T01:52:08Z",
       "license": "NOASSERTION",
       "stars": 91,
       "matched_queries": [
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "release": "v0.2.0",
       "released": "2026-09-15",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
+    },
+    {
+      "repository": "NIKX-Tech/karshipta",
+      "url": "https://github.com/NIKX-Tech/karshipta",
+      "description": "Open-source, self-hosted command and control for fleets of unmanned vehicles and trackers, in your browser. Live web console for real or simulated MAVLink vehicles (PX4, ArduPilot): fleet map, telemetry, commands, missions.",
+      "created": "2026-07-08T21:52:56Z",
+      "pushed": "2026-10-15T00:50:46Z",
+      "license": "AGPL-3.0",
+      "stars": 7,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-15",
+      "release": "v0.2.0",
+      "released": "2026-10-15",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
+    },
+    {
+      "repository": "Raidenn-dev/Mars-Drone-Swarm-Simulation",
+      "url": "https://github.com/Raidenn-dev/Mars-Drone-Swarm-Simulation",
+      "description": "2D Python simulation of a drone swarm scanning uneven and flat terrain on Mars.",
+      "created": "2026-10-11T13:32:52Z",
+      "pushed": "2026-10-14T23:32:30Z",
+      "license": "MIT",
+      "stars": 0,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-15",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
+    },
+    {
+      "repository": "Koldiya/uav-vision-tracking",
+      "url": "https://github.com/Koldiya/uav-vision-tracking",
+      "description": "UAV precision landing on a moving UGV: pymavlink/ArduPilot control, HSV marker tracking, PID + Kalman + feed-forward, UGV obstacle avoidance, closed-loop simulation",
+      "created": "2026-10-14T22:41:33Z",
+      "pushed": "2026-10-14T22:41:42Z",
+      "license": "unknown",
+      "stars": 0,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-15",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
+    },
+    {
+      "repository": "mertacar-git/mission-control",
+      "url": "https://github.com/mertacar-git/mission-control",
+      "description": "Mission planning, owned ArduCopter SITL, telemetry recording, replay and flight reports",
+      "created": "2026-10-14T21:35:39Z",
+      "pushed": "2026-10-14T22:09:15Z",
+      "license": "MIT",
+      "stars": 0,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-15",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
     },
     {
       "repository": "ANetResearch/ANet-Drone4D",
@@ -35,113 +135,13 @@
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "release": "v0.2.0",
       "released": "2026-10-13",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
-    },
-    {
-      "repository": "forgetheworlds/metal-drone-nav",
-      "url": "https://github.com/forgetheworlds/metal-drone-nav",
-      "description": "Metal-native RL for local drone navigation with RAPTOR, reproducible experiments, and independent Webots evaluation.",
-      "created": "2026-10-01T13:10:23Z",
-      "pushed": "2026-10-14T15:16:00Z",
-      "license": "NOASSERTION",
-      "stars": 0,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
-    },
-    {
-      "repository": "breuerpeter/nexus",
-      "url": "https://github.com/breuerpeter/nexus",
-      "description": "Flight stack simulation with Newton",
-      "created": "2026-09-17T19:27:43Z",
-      "pushed": "2026-10-14T15:00:37Z",
-      "license": "Apache-2.0",
-      "stars": 2,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
-      "release": "nexus-uav-v0.3.0",
-      "released": "2026-10-13",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
-    },
-    {
-      "repository": "altnautica/ADOSMissionControl",
-      "url": "https://github.com/altnautica/ADOSMissionControl",
-      "description": "Open-source web-based Ground Control Station for autonomous drones. FC config, sensor calibration, mission planning, MAVLink protocol, manual flight control. Supports multi drone fleet and companion software for true software defined drones.",
-      "created": "2026-02-27T13:29:45Z",
-      "pushed": "2026-10-14T13:33:29Z",
-      "license": "NOASSERTION",
-      "stars": 246,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
-      "release": "v0.60.0",
-      "released": "2026-10-11",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
-    },
-    {
-      "repository": "SuperdeMan/drone-agent",
-      "url": "https://github.com/SuperdeMan/drone-agent",
-      "description": "Safety-constrained drone mission runtime: natural-language planning, signed approvals, deterministic execution, and evidence-based reports. Validated in PX4 SITL + Gazebo.",
-      "created": "2026-09-19T06:58:09Z",
-      "pushed": "2026-10-14T12:44:20Z",
-      "license": "Apache-2.0",
-      "stars": 0,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
-    },
-    {
-      "repository": "rubenCodeforges/ardudeck",
-      "url": "https://github.com/rubenCodeforges/ardudeck",
-      "description": "One GCS to rule them all. ArduPilot, Betaflight, iNav - all in one app. Mission planning, PID tuning, OSD simulator, SITL with FlightGear. Cross-platform (Win/Mac/Linux)",
-      "created": "2025-12-28T23:40:20Z",
-      "pushed": "2026-10-14T12:00:07Z",
-      "license": "GPL-3.0",
-      "stars": 162,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
-      "release": "v0.1.1",
-      "released": "2026-09-07",
-      "preview": "v0.1.2-rc10",
-      "release_status": "observed",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
     },
     {
       "repository": "kornia/kornia-slam",
@@ -150,58 +150,18 @@
       "created": "2025-01-20T22:47:57Z",
       "pushed": "2026-10-14T10:32:25Z",
       "license": "Apache-2.0",
-      "stars": 65,
+      "stars": 66,
       "matched_queries": [
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "release": "v0.1.0",
       "released": "2026-09-27",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
-    },
-    {
-      "repository": "Xarin94/Corv-GCS",
-      "url": "https://github.com/Xarin94/Corv-GCS",
-      "description": "3D ground control station for ArduPilot (Copter, Plane, Rover, Sub/ROV), INAV and Betaflight — terrain, mission planning, radio link coverage, navigation without GPS. Windows & Linux.",
-      "created": "2026-03-13T17:02:30Z",
-      "pushed": "2026-10-14T09:50:21Z",
-      "license": "Apache-2.0",
-      "stars": 8,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
-      "release": "v1.8.4",
-      "released": "2026-10-14",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
-    },
-    {
-      "repository": "vishwagw/Sky-Sim-drone-simulator-3.0",
-      "url": "https://github.com/vishwagw/Sky-Sim-drone-simulator-3.0",
-      "description": "An open source drone flight simulator that runs on the web browser and test autonomous drones. Easy to use. version3.0. HITL is included with latest updates.",
-      "created": "2026-08-10T04:49:15Z",
-      "pushed": "2026-10-14T06:57:33Z",
-      "license": "MIT",
-      "stars": 7,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
-      "release": "v3.1",
-      "released": "2026-09-12",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
     },
     {
       "repository": "formiat/px4-ros2-drone-nav",
@@ -215,13 +175,13 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "release": "v0.5.0",
       "released": "2026-10-10",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
     },
     {
       "repository": "sriram-0311/MC-SLAM",
@@ -235,13 +195,53 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-14",
+      "checked": "2026-10-15",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-10-14",
-      "release_observed": "2026-10-14"
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
+    },
+    {
+      "repository": "alireza787b/PixEagle",
+      "url": "https://github.com/alireza787b/PixEagle",
+      "description": "Computer vision, object tracking, and target following for PX4 drones using OpenCV, YOLO, MAVSDK, MAVLink, and a real-time web dashboard",
+      "created": "2024-02-16T09:43:16Z",
+      "pushed": "2026-10-09T16:28:49Z",
+      "license": "Apache-2.0",
+      "stars": 74,
+      "matched_queries": [
+        "topic:gstreamer topic:robotics"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-15",
+      "release": "v7.4.1",
+      "released": "2026-10-09",
+      "preview": "v7.0.0-beta.29",
+      "release_status": "observed",
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
+    },
+    {
+      "repository": "PonomarevDA/libdcnode",
+      "url": "https://github.com/PonomarevDA/libdcnode",
+      "description": "Lightweight DroneCAN node toolkit built on top of libcanard, platform_specific and libparams",
+      "created": "2023-12-21T15:40:36Z",
+      "pushed": "2026-10-06T21:46:52Z",
+      "license": "MPL-2.0",
+      "stars": 5,
+      "matched_queries": [
+        "topic:dronecan"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-15",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-10-15",
+      "release_observed": "2026-10-15"
     }
   ],
   "errors": []
