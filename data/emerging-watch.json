@@ -1,167 +1,208 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-16",
-  "next_check": "2026-10-23",
+  "checked": "2026-10-17",
+  "next_check": "2026-10-24",
   "projects": [
+    {
+      "repository": "dashkov1/north-end-drone",
+      "url": "https://github.com/dashkov1/north-end-drone",
+      "description": "Budget DIY drone with on-board AI: ArduPilot SITL + YOLOv8n follow-me simulator in TypeScript/Bun",
+      "created": "2026-10-16T22:49:46Z",
+      "pushed": "2026-10-16T22:49:52Z",
+      "license": "MIT",
+      "stars": 0,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}",
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-17",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
+    },
+    {
+      "repository": "ANetResearch/ANet-Drone4D",
+      "url": "https://github.com/ANetResearch/ANet-Drone4D",
+      "description": "Real-world 4D simulation for multi-agent drones: city-scale point-cloud digital twins, drone swarm simulation and swarm control, target perception and an interactive sandbox in the browser. PX4-style flight model; Gazebo Sim, LiDAR and 3DGS in development and research.",
+      "created": "2026-09-29T11:52:22Z",
+      "pushed": "2026-10-17T02:42:55Z",
+      "license": "NOASSERTION",
+      "stars": 3,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-17",
+      "release": "v0.2.0",
+      "released": "2026-10-13",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
+    },
     {
       "repository": "rsasaki0109/visloc-rs",
       "url": "https://github.com/rsasaki0109/visloc-rs",
       "description": "SfM, visual-inertial SLAM, 3D Gaussian Splatting and localization in pure Rust",
       "created": "2026-05-05T02:35:57Z",
-      "pushed": "2026-10-16T03:10:02Z",
+      "pushed": "2026-10-17T02:07:01Z",
       "license": "NOASSERTION",
-      "stars": 91,
+      "stars": 98,
       "matched_queries": [
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
+      "checked": "2026-10-17",
       "release": "v0.2.0",
       "released": "2026-09-15",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
     },
     {
-      "repository": "hudasol/post-quantum-security",
-      "url": "https://github.com/hudasol/post-quantum-security",
-      "description": "Sourced review of what post quantum cryptography costs on drone and robot microcontrollers, with a link simulator, a fleet migration planner and a free benchmark plan.",
-      "created": "2026-10-11T02:32:37Z",
-      "pushed": "2026-10-16T01:34:59Z",
-      "license": "NOASSERTION",
-      "stars": 0,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
-      "release": "v0.1.0",
-      "released": "2026-10-12",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
-    },
-    {
-      "repository": "hudasol/marsad",
-      "url": "https://github.com/hudasol/marsad",
-      "description": "Position-trust layer for autonomous systems and decision platforms. Detects GNSS jamming and spoofing, scores track integrity across sources, and recommends fallback navigation. PX4/MAVLink-native, MCP-ready.",
-      "created": "2026-10-09T00:49:59Z",
-      "pushed": "2026-10-16T01:22:12Z",
-      "license": "Apache-2.0",
-      "stars": 0,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
-      "release": "v1.1.0",
-      "released": "2026-10-09",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
-    },
-    {
-      "repository": "celttechie/tactical-edge-gateway",
-      "url": "https://github.com/celttechie/tactical-edge-gateway",
-      "description": "Air-gapped resilient tactical telemetry gateway bridging MAVLink, ROS2, and NetworkTables autonomy streams to Cursor on Target (CoT) and TAK Server over DIL networks.",
-      "created": "2026-10-13T15:42:24Z",
-      "pushed": "2026-10-15T23:29:58Z",
-      "license": "unknown",
-      "stars": 0,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
-    },
-    {
-      "repository": "mertacar-git/mission-control",
-      "url": "https://github.com/mertacar-git/mission-control",
-      "description": "Mission planning, owned ArduCopter SITL, telemetry recording, replay and flight reports",
-      "created": "2026-10-14T21:35:39Z",
-      "pushed": "2026-10-15T21:49:25Z",
+      "repository": "DrakRosmann/aracua-7",
+      "url": "https://github.com/DrakRosmann/aracua-7",
+      "description": "Aracuã-7: drone de mapeamento LiDAR e entrega — estação de solo (React + Rust), código de bordo ROS 2 e controladora STM32H743/ArduPilot",
+      "created": "2026-10-16T16:10:00Z",
+      "pushed": "2026-10-16T23:41:55Z",
       "license": "MIT",
       "stars": 0,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
-      "release": null,
-      "released": null,
+      "checked": "2026-10-17",
+      "release": "v0.4.0",
+      "released": "2026-10-16",
       "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
+      "release_status": "observed",
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
     },
     {
-      "repository": "dddddddddl/smartboat-ros2-edge-control",
-      "url": "https://github.com/dddddddddl/smartboat-ros2-edge-control",
-      "description": "SURF team project: Jetson/ROS 2 USV platform with real YSI EXO telemetry, ROS-native PX4 bridging and local navigation/control integration.",
-      "created": "2026-10-15T07:04:21Z",
-      "pushed": "2026-10-15T20:33:02Z",
-      "license": "unknown",
-      "stars": 1,
+      "repository": "M-BSquared/CorvusGCS",
+      "url": "https://github.com/M-BSquared/CorvusGCS",
+      "description": "Offline-first ground control station for PX4 and ArduPilot autonomous aircraft. Live map, floating flight HUD, guided sensor calibration, motor and safety setup, parameter editing and built-in flight-log review. One self-contained desktop app for Windows, macOS and Linux, no internet required.",
+      "created": "2026-09-03T23:44:38Z",
+      "pushed": "2026-10-16T23:23:16Z",
+      "license": "NOASSERTION",
+      "stars": 6,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
-      "release": "portfolio-v1.0",
-      "released": "2026-10-15",
+      "checked": "2026-10-17",
+      "release": "v2026.10.29",
+      "released": "2026-10-16",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
     },
     {
-      "repository": "breuerpeter/nexus",
-      "url": "https://github.com/breuerpeter/nexus",
-      "description": "Flight stack simulation with Newton",
-      "created": "2026-09-17T19:27:43Z",
-      "pushed": "2026-10-15T14:04:51Z",
-      "license": "Apache-2.0",
-      "stars": 2,
+      "repository": "altnautica/ADOSMissionControl",
+      "url": "https://github.com/altnautica/ADOSMissionControl",
+      "description": "Open-source web-based Ground Control Station for autonomous drones. FC config, sensor calibration, mission planning, MAVLink protocol, manual flight control. Supports multi drone fleet and companion software for true software defined drones.",
+      "created": "2026-02-27T13:29:45Z",
+      "pushed": "2026-10-16T19:00:11Z",
+      "license": "NOASSERTION",
+      "stars": 247,
       "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
+        "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
-      "release": "nexus-uav-v0.4.0",
-      "released": "2026-10-15",
+      "checked": "2026-10-17",
+      "release": "v0.60.0",
+      "released": "2026-10-11",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
+    },
+    {
+      "repository": "mertacar-git/mission-control",
+      "url": "https://github.com/mertacar-git/mission-control",
+      "description": "Mission planning, owned ArduCopter SITL, telemetry recording, replay and flight reports",
+      "created": "2026-10-14T21:35:39Z",
+      "pushed": "2026-10-16T18:48:10Z",
+      "license": "MIT",
+      "stars": 0,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-17",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
     },
     {
       "repository": "kornia/kornia-slam",
       "url": "https://github.com/kornia/kornia-slam",
       "description": "Real-time visual-inertial SLAM in Rust, built on kornia-rs.",
       "created": "2025-01-20T22:47:57Z",
-      "pushed": "2026-10-15T11:30:04Z",
+      "pushed": "2026-10-16T15:32:55Z",
       "license": "Apache-2.0",
-      "stars": 85,
+      "stars": 93,
       "matched_queries": [
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
+      "checked": "2026-10-17",
       "release": "v0.1.0",
       "released": "2026-09-27",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
+    },
+    {
+      "repository": "Tanishk756/vio-stress-lab",
+      "url": "https://github.com/Tanishk756/vio-stress-lab",
+      "description": "15-State Error-State Kalman Filter (ESKF) Stereo Visual-Inertial Odometry Pipeline & Degradation Stress-Testing Suite",
+      "created": "2026-10-16T12:31:17Z",
+      "pushed": "2026-10-16T13:04:31Z",
+      "license": "unknown",
+      "stars": 0,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-17",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
+    },
+    {
+      "repository": "breuerpeter/nexus",
+      "url": "https://github.com/breuerpeter/nexus",
+      "description": "Flight stack simulation with Newton",
+      "created": "2026-09-17T19:27:43Z",
+      "pushed": "2026-10-16T05:31:06Z",
+      "license": "Apache-2.0",
+      "stars": 2,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-17",
+      "release": "nexus-uav-v0.4.0",
+      "released": "2026-10-15",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
     },
     {
       "repository": "PonomarevDA/libdcnode",
@@ -175,53 +216,13 @@
         "topic:dronecan"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
+      "checked": "2026-10-17",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
-    },
-    {
-      "repository": "ANetResearch/ANet-Drone4D",
-      "url": "https://github.com/ANetResearch/ANet-Drone4D",
-      "description": "Real-world 4D simulation for multi-agent drones: city-scale point-cloud digital twins, drone swarm simulation and swarm control, target perception and an interactive sandbox in the browser. PX4-style flight model; Gazebo Sim, LiDAR and 3DGS in development and research.",
-      "created": "2026-09-29T11:52:22Z",
-      "pushed": "2026-10-15T07:25:24Z",
-      "license": "NOASSERTION",
-      "stars": 3,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
-      "release": "v0.2.0",
-      "released": "2026-10-13",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
-    },
-    {
-      "repository": "SuperdeMan/drone-agent",
-      "url": "https://github.com/SuperdeMan/drone-agent",
-      "description": "Safety-constrained drone mission runtime: natural-language planning, signed approvals, deterministic execution, and evidence-based reports. Validated in PX4 SITL + Gazebo.",
-      "created": "2026-09-19T06:58:09Z",
-      "pushed": "2026-10-15T06:59:46Z",
-      "license": "Apache-2.0",
-      "stars": 0,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
     },
     {
       "repository": "formiat/px4-ros2-drone-nav",
@@ -235,13 +236,13 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-16",
+      "checked": "2026-10-17",
       "release": "v0.5.0",
       "released": "2026-10-10",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-16",
-      "release_observed": "2026-10-16"
+      "release_checked": "2026-10-17",
+      "release_observed": "2026-10-17"
     }
   ],
   "errors": []
