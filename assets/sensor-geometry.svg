@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 440" role="img" aria-labelledby="title desc">
+  <title id="title">Lever arm and boresight describe different parts of sensor geometry</title>
+  <desc id="desc">Two side views. The first shows a camera origin 0.20 meters forward and 0.05 meters below an IMU origin in a forward-right-down body frame. The second shows the camera optical direction angled relative to a line parallel to body forward. A translation locates the origin; a rotation orients its axes. The drawing is schematic.</desc>
+  <defs>
+    <marker id="blue-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#245a9a"/></marker>
+    <marker id="purple-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#763e9b"/></marker>
+    <marker id="gray-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#526375"/></marker>
+  </defs>
+  <rect width="1080" height="440" rx="16" fill="#f6f8fb"/>
+  <g font-family="system-ui, sans-serif" fill="#172738">
+    <text x="32" y="42" font-size="24" font-weight="700">Where is the sensor, and which way does it look?</text>
+    <text x="32" y="70" font-size="16">Side views · body +X forward, +Z down, +Y out of the page · schematic, not to scale</text>
+    <rect x="24" y="92" width="508" height="282" rx="12" fill="white" stroke="#c8d3df"/>
+    <rect x="548" y="92" width="508" height="282" rx="12" fill="white" stroke="#c8d3df"/>
+    <text x="44" y="126" font-size="21" font-weight="700">Lever arm: position</text>
+    <text x="568" y="126" font-size="21" font-weight="700">Boresight: orientation</text>
+    <g stroke="#526375" stroke-width="2" marker-end="url(#gray-arrow)">
+      <path d="M110 195H210"/>
+      <path d="M110 195V298"/>
+    </g>
+    <text x="175" y="178" font-size="16">+X</text>
+    <text x="82" y="320" font-size="16">+Z</text>
+    <path d="M110 195H392V267" fill="none" stroke="#8b9aab" stroke-width="2" stroke-dasharray="6 5"/>
+    <path d="M110 195L390 266" fill="none" stroke="#245a9a" stroke-width="3" marker-end="url(#blue-arrow)"/>
+    <circle cx="110" cy="195" r="7" fill="#172738"/>
+    <circle cx="392" cy="267" r="7" fill="#763e9b"/>
+    <text x="63" y="171" font-size="17">IMU origin</text>
+    <text x="234" y="181" font-size="17">+0.20 m forward</text>
+    <text x="410" y="225" font-size="15">+0.05 m</text>
+    <text x="410" y="246" font-size="15">down</text>
+    <text x="298" y="300" font-size="17">Camera origin</text>
+    <text x="132" y="346" font-size="17" fill="#245a9a">t = [+0.20, 0, +0.05] m in body axes</text>
+    <circle cx="630" cy="220" r="7" fill="#763e9b"/>
+    <path d="M630 220H997" stroke="#8b9aab" stroke-width="2" stroke-dasharray="6 5"/>
+    <path d="M630 220L993 302" stroke="#763e9b" stroke-width="3" marker-end="url(#purple-arrow)"/>
+    <path d="M758 220A128 128 0 0 1 755 248" fill="none" stroke="#763e9b" stroke-width="3"/>
+    <text x="775" y="252" font-size="17" fill="#763e9b">Angle</text>
+    <text x="772" y="201" font-size="16">Parallel to body +X</text>
+    <text x="705" y="319" font-size="17" fill="#763e9b">Camera optical direction (+Z optical)</text>
+    <text x="577" y="180" font-size="17">Camera origin</text>
+    <text x="578" y="346" font-size="16">Full alignment also includes roll around this axis.</text>
+    <text x="32" y="408" font-size="18">Translation locates the sensor origin. Rotation maps its axes into the reference frame.</text>
+  </g>
+</svg>

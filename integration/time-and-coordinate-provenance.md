@@ -17,4 +17,6 @@ PPS, PTP, NTP and a camera event signal serve different timing contracts. Receip
 
 For a survey, retain reference-frame realization and epoch, base coordinate provenance, antenna height/type, raw observation overlap, correction age, camera event records, lever arm, boresight and independent checkpoint residuals. [NOAA geodetic resources](https://geodesy.noaa.gov/) and [OPUS](https://geodesy.noaa.gov/OPUS/), checked 2026-10-07.
 
+For mounting diagrams, signed offsets, boresight and camera/IMU timing examples, see [Sensors and Calibration](sensors-and-calibration.md) and the [sensor installation record](../appendices/appendix-g-sensor-calibration-record.md).
+
 See [RTK/PPK integration](../components/rtk-ppk-gps-integration.md), [video diagnostics](video-pipeline-troubleshooting.md) and [evidence records](../field/evidence-record.md).

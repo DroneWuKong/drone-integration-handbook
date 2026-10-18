@@ -1,5 +1,7 @@
 # Optical Flow & GPS-Denied Positioning
 
+For mounting axes, sensor offsets, distance conventions and calibration evidence, see [Sensors and Calibration](../integration/sensors-and-calibration.md). A flow-scale result depends on the recorded motion and distance model.
+
 > **Forge cross-reference:** 7 entries in `optical_flow` category  
 > **Related handbook chapters:** Navigation & PNT, Companion Computers, Flight Controllers
 
