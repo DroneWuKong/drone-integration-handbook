@@ -168,6 +168,78 @@
       "passage": "eIQ Neutron and device variants",
       "accessed": "2026-10-07",
       "review_days": 30
+    },
+    {
+      "id": "px4-controller-mounting",
+      "title": "PX4 Guide: Mounting the Flight Controller",
+      "url": "https://docs.px4.io/main/en/assembly/mount_and_orient_controller",
+      "passage": "Orientation, Position, and Vibration Isolation sections",
+      "accessed": "2026-10-18",
+      "review_days": 180
+    },
+    {
+      "id": "ardupilot-sensor-offsets",
+      "title": "ArduPilot: Sensor Position Offset Compensation",
+      "url": "https://ardupilot.org/copter/docs/common-sensor-offset-compensation.html",
+      "passage": "Signed X/Y/Z definitions, reference-origin explanation, Parameter Details and partial IMU compensation limits",
+      "accessed": "2026-10-18",
+      "review_days": 180
+    },
+    {
+      "id": "ros-rep-103",
+      "title": "ROS REP 103: Standard Units of Measure and Coordinate Conventions",
+      "url": "https://www.ros.org/reps/rep-0103.html",
+      "passage": "Coordinate Frame Conventions: Axis Orientation, Suffix Frames and Rotation Representation",
+      "accessed": "2026-10-18",
+      "review_days": 180
+    },
+    {
+      "id": "kalibr-camera-imu",
+      "title": "Kalibr: Camera IMU calibration",
+      "url": "https://github.com/ethz-asl/kalibr/wiki/camera-imu-calibration",
+      "passage": "Opening description, requirements, image acquisition tips and timestamp diagnostics",
+      "accessed": "2026-10-18",
+      "review_days": 180
+    },
+    {
+      "id": "novatel-lever-arm-remount",
+      "title": "NovAtel OEM7: Lever arm calibration routine",
+      "url": "https://docs.novatel.com/OEM7/Content/SPAN_Operation/Lever_Arm_Calibration_Routine.htm",
+      "passage": "Opening remounting requirement, measurement recommendation and observability limitations",
+      "accessed": "2026-10-18",
+      "review_days": 180
+    },
+    {
+      "id": "ardupilot-magnetic-compensation",
+      "title": "ArduPilot: Advanced Compass Setup",
+      "url": "https://ardupilot.org/copter/docs/common-compass-setup-advanced.html",
+      "passage": "CompassMot section: load-dependent compensation and current-monitor dependence; no procedure imported",
+      "accessed": "2026-10-18",
+      "review_days": 180
+    },
+    {
+      "id": "px4-ekf-pressure",
+      "title": "PX4 EKF2: Static pressure position error",
+      "url": "https://docs.px4.io/main/en/advanced_config/tuning_the_ecl_ekf",
+      "passage": "Correction for Static Pressure Position Error: compensation model and required wind-state estimation",
+      "accessed": "2026-10-18",
+      "review_days": 180
+    },
+    {
+      "id": "noaa-antenna-reference",
+      "title": "NOAA NGS Antenna Calibration FAQ",
+      "url": "https://geodesy.noaa.gov/ANTCAL/FAQ.xhtml",
+      "passage": "Questions 1, 4, 8 and 9: physical ARP, frequency-dependent PCO and direction-dependent PCV",
+      "accessed": "2026-10-18",
+      "review_days": 180
+    },
+    {
+      "id": "vins-calibration-degeneracy-v3",
+      "title": "Yang et al.: Online Self-Calibration for VINS, arXiv:2201.09170v3",
+      "url": "https://arxiv.org/html/2201.09170v3",
+      "passage": "Sections 6 and 7.2: motion-conditioned observability, pure translation and single-axis rotation degeneracies",
+      "accessed": "2026-10-18",
+      "review_days": 180
     }
   ],
   "claims": [
@@ -976,6 +1048,111 @@
       "history": [],
       "reviewer": "Primary source text and arithmetic checked during the October audit",
       "statement": "Benewake lists TFmini-S mass as 5 \u00b1 0.3 g and TFmini Plus as 12 \u00b1 1 g. Exact variant specifications only."
+    },
+    {
+      "id": "sensor-fc-mounting",
+      "sources": [
+        "px4-controller-mounting"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-18",
+      "scope": "PX4 documentation recommendation only; actual board orientation, estimator configuration, vibration performance and aircraft behavior require separate checks.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Documentation inspected on access date; no independent human, physical or flight qualification claimed",
+      "statement": "PX4 recommends mounting the flight controller close to the center of gravity, with its actual orientation configured and the manufacturer-recommended vibration mounting strategy."
+    },
+    {
+      "id": "sensor-ros-frames",
+      "sources": [
+        "ros-rep-103"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-18",
+      "scope": "ROS convention definitions only. Individual drivers and destinations may use documented exceptions; this does not verify any installed transform.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Documentation inspected on access date; no independent human, physical or flight qualification claimed",
+      "statement": "ROS REP 103 defines body axes as forward-left-up, camera optical axes as right-down-forward, and local ENU axes as east-north-up."
+    },
+    {
+      "id": "sensor-ardupilot-offset-convention",
+      "sources": [
+        "ardupilot-sensor-offsets"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-18",
+      "scope": "ArduPilot documentation read on the access date; check exact installed firmware and parameter definitions. No device offsets are supplied or applied.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Documentation inspected on access date; no independent human, physical or flight qualification claimed",
+      "statement": "ArduPilot documents sensor position offsets in meters using positive forward, right and down directions; the applicable origin is the IMU or the center of gravity, depending on the IMU-offset configuration."
+    },
+    {
+      "id": "sensor-camera-imu-acquisition",
+      "sources": [
+        "kalibr-camera-imu"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-18",
+      "scope": "Kalibr acquisition/model prerequisites only; the procedure and model must match the tool used. A fit is not physical synchronization or aircraft qualification.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Documentation inspected on access date; no independent human, physical or flight qualification claimed",
+      "statement": "Kalibr camera/IMU calibration estimates spatial and temporal relationships and calls for appropriate IMU intrinsic correction, motion exciting all axes, low image blur and low-jitter timestamps in a common clock."
+    },
+    {
+      "id": "sensor-lever-arm-remount",
+      "sources": [
+        "novatel-lever-arm-remount"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-18",
+      "scope": "Vendor-specific OEM7/SPAN guidance. This does not prescribe calibration maneuvers, thresholds or measurement accuracy for another system.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Documentation inspected on access date; no independent human, physical or flight qualification claimed",
+      "statement": "NovAtel requires its SPAN lever arm to be redefined when the system is remounted or the IMU or antenna moves, and recommends precise physical measurement where feasible."
+    },
+    {
+      "id": "sensor-compensation-limits",
+      "sources": [
+        "ardupilot-magnetic-compensation",
+        "px4-ekf-pressure"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-18",
+      "scope": "Documented capabilities and prerequisites only. No powered test, compensation tuning or installed performance was verified.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Primary documentation or research text inspected; self-review only, no independent human or physical qualification",
+      "statement": "Some systems compensate modeled installation disturbances: ArduPilot documents current-related magnetic compensation, and PX4 documents static-pressure position-error compensation with estimator prerequisites. These mechanisms have defined models and limits; a static calibration alone does not establish their effectiveness."
+    },
+    {
+      "id": "sensor-gnss-reference-points",
+      "sources": [
+        "noaa-antenna-reference"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-18",
+      "scope": "NGS antenna-model definitions only. A GNSS antenna calibration is different from measuring an aircraft sensor lever arm; no antenna or installation accuracy is certified.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Primary documentation or research text inspected; self-review only, no independent human or physical qualification",
+      "statement": "The GNSS antenna reference point is a physical reference. Phase-center offsets depend on signal frequency, and phase-center variations depend on signal direction. Record the antenna/radome model and applied corrections; a ruler measurement to the housing does not determine these electrical effects."
+    },
+    {
+      "id": "sensor-motion-observability",
+      "sources": [
+        "vins-calibration-degeneracy-v3"
+      ],
+      "status": "official-source",
+      "verified": "2026-10-18",
+      "scope": "Primary research result for the paper's stated model and motion conditions. It is not a guarantee for another solver or proof of physical calibration. Version 3 was checked against the arXiv record and in-body passages.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Primary documentation or research text inspected; self-review only, no independent human or physical qualification",
+      "statement": "In the analyzed visual-inertial model, pure translation leaves the camera/IMU translation unobservable, and rotation about only one axis leaves its component along that axis unobservable. A converged solver and additional samples do not by themselves establish that every parameter is observable."
     }
   ]
 }

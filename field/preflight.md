@@ -7,6 +7,7 @@ Use the aircraft and firmware manufacturer's checklist alongside this integratio
 Remove **every propeller** before motor-output, receiver-loss or arming tests. Keep the aircraft secured, disconnect propulsion power before touching it, and follow the board/ESC manufacturer's test procedure. Never tilt an armed aircraft by hand or use a throttle blip as a ground control-direction test.
 
 - Confirm board orientation and sensor directions in the configuration tool while disarmed.
+- Match installed sensor positions, orientations and calibration files to the current installation revision. Use the [sensor calibration chapter](../integration/sensors-and-calibration.md) and [installation record](../appendices/appendix-g-sensor-calibration-record.md) after a new build or geometry change.
 - Verify receiver channels, mode assignments, arming switch and command ownership.
 - Verify motor numbering and rotation using the firmware's documented props-off test facility.
 - Save/read back the configuration and check battery monitoring against a reference instrument.

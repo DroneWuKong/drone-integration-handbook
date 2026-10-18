@@ -1223,6 +1223,56 @@
       "tool": null
     },
     {
+      "id": "table-dc493cbdda61e0ae0a8d",
+      "article_id": "article-65",
+      "path": "integration/sensors-and-calibration.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8,
+      "tool": null
+    },
+    {
+      "id": "table-61639b2ab78d38aafd20",
+      "article_id": "article-65",
+      "path": "integration/sensors-and-calibration.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 8,
+      "tool": null
+    },
+    {
+      "id": "table-d2178f1412d64e688d12",
+      "article_id": "article-65",
+      "path": "integration/sensors-and-calibration.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 5,
+      "tool": null
+    },
+    {
+      "id": "table-37a815f8f936d93f375f",
+      "article_id": "article-65",
+      "path": "integration/sensors-and-calibration.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 4,
+      "tool": null
+    },
+    {
+      "id": "table-6cc0f5584f318e65a8c9",
+      "article_id": "article-65",
+      "path": "integration/sensors-and-calibration.md",
+      "disposition": "comparison",
+      "classification_basis": "multi-attribute-comparison",
+      "review": "machine-classified",
+      "rows": 7,
+      "tool": null
+    },
+    {
       "id": "table-6e6313d162d4a8f941fc",
       "article_id": "article-59",
       "path": "integration/secure-multiclient-telemetry.md",
@@ -1620,6 +1670,46 @@
       "classification_basis": "identifier-led-reference",
       "review": "machine-classified",
       "rows": 3,
+      "tool": null
+    },
+    {
+      "id": "table-b54fced54128fea471af",
+      "article_id": "article-66",
+      "path": "appendices/appendix-g-sensor-calibration-record.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 8,
+      "tool": null
+    },
+    {
+      "id": "table-44951a891cd771d9d6a5",
+      "article_id": "article-66",
+      "path": "appendices/appendix-g-sensor-calibration-record.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 13,
+      "tool": null
+    },
+    {
+      "id": "table-d10c8fab60e8c5ff985f",
+      "article_id": "article-66",
+      "path": "appendices/appendix-g-sensor-calibration-record.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 11,
+      "tool": null
+    },
+    {
+      "id": "table-47e903583f3abb8a7467",
+      "article_id": "article-66",
+      "path": "appendices/appendix-g-sensor-calibration-record.md",
+      "disposition": "queryable-lookup",
+      "classification_basis": "two-column-property-map",
+      "review": "machine-classified",
+      "rows": 7,
       "tool": null
     },
     {
