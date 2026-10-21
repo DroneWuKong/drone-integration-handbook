@@ -113,6 +113,15 @@
       "paths": [
         "README.md"
       ]
+    },
+    {
+      "repository": "DroneWuKong/Prismo-Calibration",
+      "paths": [
+        "README.md",
+        "apb/docs/ORQA_EDITION.md",
+        "apb/docs/SENSOR_RECORDINGS.md",
+        "apb/docs/MANUAL_ALIGNMENT.md"
+      ]
     }
   ],
   "private_discovery_route": "Ai-Project sanitized public data via DroneWuKong/forge-data; raw private content is excluded",
