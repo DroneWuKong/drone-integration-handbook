@@ -29,14 +29,15 @@ See [emerging projects](../integration/emerging-technology-watch.md) and [reposi
 
 | Repository | Observed revision | Last push | Check attempted | Status |
 |---|---|---|---|---|
-| [DroneWuKong/droneclear_Forge](https://github.com/DroneWuKong/droneclear_Forge) | 354dee1dc7a5 | 2026-10-20 | 2026-10-21 | observed |
+| [DroneWuKong/droneclear_Forge](https://github.com/DroneWuKong/droneclear_Forge) | ad2dad14d9a4 | 2026-10-21 | 2026-10-21 | observed |
 | [DroneWuKong/forge-data](https://github.com/DroneWuKong/forge-data) | 3041642fdca3 | 2026-10-04 | 2026-10-21 | observed |
 | [DroneWuKong/MultiProtocol-UAS-TAK-Bridge](https://github.com/DroneWuKong/MultiProtocol-UAS-TAK-Bridge) | 3177a1ffdf91 | 2026-10-04 | 2026-10-21 | observed |
 | [DroneWuKong/Orqa_H7_PX4_Ports](https://github.com/DroneWuKong/Orqa_H7_PX4_Ports) | 5dca93e099f4 | 2026-10-14 | 2026-10-21 | observed |
 | [DroneWuKong/Field-Kit](https://github.com/DroneWuKong/Field-Kit) | 784d74a0f9b9 | 2026-10-02 | 2026-10-21 | observed |
-| [dashkov1/north-end-drone](https://github.com/dashkov1/north-end-drone) | 4d47045265ca | 2026-10-20 | 2026-10-21 | observed |
-| [hudasol/post-quantum-security](https://github.com/hudasol/post-quantum-security) | fff2b1d17bce | 2026-10-21 | 2026-10-21 | observed |
-| [alexnieves-cs/frontier-fly](https://github.com/alexnieves-cs/frontier-fly) | c9b65d7ccca9 | 2026-10-21 | 2026-10-21 | observed |
+| [DroneWuKong/Prismo-Calibration](https://github.com/DroneWuKong/Prismo-Calibration) | 82ac97c9e958 | 2026-10-18 | 2026-10-21 | observed |
+| [Yookio-Z/Airsim-Agent](https://github.com/Yookio-Z/Airsim-Agent) | a0d97732ebee | 2026-10-21 | 2026-10-21 | observed |
+| [rsasaki0109/visloc-rs](https://github.com/rsasaki0109/visloc-rs) | 87f5df38bd44 | 2026-10-21 | 2026-10-21 | observed |
+| [M-BSquared/CorvusGCS](https://github.com/M-BSquared/CorvusGCS) | 26847bb9b614 | 2026-10-21 | 2026-10-21 | observed |
 
 ## Source checks and review dates
 

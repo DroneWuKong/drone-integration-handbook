@@ -151,8 +151,8 @@
   "repositories": [
     {
       "repository": "DroneWuKong/droneclear_Forge",
-      "revision": "354dee1dc7a530e6da59de0c6bf2f1a4df584800",
-      "pushed": "2026-10-20T14:40:50Z",
+      "revision": "ad2dad14d9a40bc0e93a7ce9fb87780195a1c660",
+      "pushed": "2026-10-21T13:35:23Z",
       "checked": "2026-10-21",
       "status": "observed"
     },
@@ -185,23 +185,30 @@
       "status": "observed"
     },
     {
-      "repository": "dashkov1/north-end-drone",
-      "revision": "4d47045265cae76e6bd951101d0e5cfc3dc762df",
-      "pushed": "2026-10-20T21:29:05Z",
+      "repository": "DroneWuKong/Prismo-Calibration",
+      "revision": "82ac97c9e95807b9bf9d0d7785f54644ec210bbb",
+      "pushed": "2026-10-18T21:10:21Z",
       "checked": "2026-10-21",
       "status": "observed"
     },
     {
-      "repository": "hudasol/post-quantum-security",
-      "revision": "fff2b1d17bcedcf5b19627f487eeca43efea0be9",
-      "pushed": "2026-10-21T01:51:51Z",
+      "repository": "Yookio-Z/Airsim-Agent",
+      "revision": "a0d97732ebee9dcd5f2144da28151631aa575944",
+      "pushed": "2026-10-21T13:17:54Z",
       "checked": "2026-10-21",
       "status": "observed"
     },
     {
-      "repository": "alexnieves-cs/frontier-fly",
-      "revision": "c9b65d7ccca90d3d5893ca05ba47a237520b4ba9",
-      "pushed": "2026-10-21T01:23:23Z",
+      "repository": "rsasaki0109/visloc-rs",
+      "revision": "87f5df38bd4435f4d5d53bb7d08d5b21bf37c46b",
+      "pushed": "2026-10-21T12:27:20Z",
+      "checked": "2026-10-21",
+      "status": "observed"
+    },
+    {
+      "repository": "M-BSquared/CorvusGCS",
+      "revision": "26847bb9b614b8c90978dba480e125a8181a368f",
+      "pushed": "2026-10-21T12:27:07Z",
       "checked": "2026-10-21",
       "status": "observed"
     }
