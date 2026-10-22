@@ -1896,7 +1896,7 @@
       "Total Outlays": 1601714.9,
       "Description": "TO PROVIDE ACCREDITED, THREAT REPRESENTATIVE UNMANNED AERIAL TARGET SYSTEMS FOR USE IN SENSOR PRESENTATIONS OR LIVE FIRE TRACKING AND ENGAGEMENT FOR WEAPON SYSTEMS TESTING.",
       "Start Date": "2025-07-01",
-      "End Date": "2026-06-30",
+      "End Date": "2027-01-02",
       "Awarding Agency": "Department of Defense",
       "Awarding Sub Agency": "Department of the Army",
       "Award Type": null,
@@ -10769,6 +10769,22 @@
       "generated_internal_id": "CONT_AWD_FA864926P0182_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 363596519,
+      "Award ID": "W58RGZ26F0393",
+      "Recipient Name": "W S DARLEY & CO",
+      "Award Amount": 39600.0,
+      "Total Outlays": null,
+      "Description": "THE UNCREWED AIRCRAFT SYSTEMS (UAS) HAS A REQUIREMENT TO PROCURE PARROT ANAFI UKR SYSTEMS.",
+      "Start Date": "2026-07-22",
+      "End Date": "2027-08-07",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W58RGZ26F0393_9700_W58RGZ26G0002_9700"
+    },
+    {
       "internal_id": 358466282,
       "Award ID": "1333ND26PNB670141",
       "Recipient Name": "BRINC DRONES, INC",
@@ -12801,6 +12817,6 @@
       "generated_internal_id": "ASST_NON_693JJ22430000Y550MAUPW2412_069"
     }
   ],
-  "scraped_at": "2026-10-21T10:41:55.807969+00:00",
-  "count": 800
+  "scraped_at": "2026-10-22T10:41:46.549643+00:00",
+  "count": 801
 }
