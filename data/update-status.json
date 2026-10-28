@@ -38,8 +38,7 @@
       "url": "https://github.com/betaflight/betaflight/releases/tag/2026.6.2",
       "preview": "2026.6.0-rc3",
       "preview_released": "2026-07-23",
-      "status": "unavailable",
-      "error": "RemoteDisconnected"
+      "status": "check-section"
     },
     {
       "id": "Betaflight App",
@@ -152,8 +151,8 @@
   "repositories": [
     {
       "repository": "DroneWuKong/droneclear_Forge",
-      "revision": "541bc26c1df0ba793cb56ae00d1cdd5b7a5d5986",
-      "pushed": "2026-10-27T17:38:38Z",
+      "revision": "02f684b5583ff8729cde9f05a3c05629b0a5efa8",
+      "pushed": "2026-10-28T13:00:40Z",
       "checked": "2026-10-28",
       "status": "observed"
     },
@@ -193,23 +192,44 @@
       "status": "observed"
     },
     {
-      "repository": "VOLTEKOVER/OmniRID-Universal-Drone-ID",
-      "revision": "3c25519ff9d3a0abf536bc2e563f192ba49ea37c",
-      "pushed": "2026-10-27T22:57:10Z",
+      "repository": "DroneWuKong/Orqa_Betaflight_Ports",
+      "revision": "ca30cf5cba1fc0ab74cc147ea2fd26707277fd74",
+      "pushed": "2026-10-24T09:58:46Z",
+      "checked": "2026-10-28",
+      "status": "observed"
+    },
+    {
+      "repository": "DroneWuKong/Orqa_ArduPilot_Ports",
+      "revision": "ee71ab28c3a90791a442ffdb0397f9d78245fb9b",
+      "pushed": "2026-10-24T09:58:37Z",
+      "checked": "2026-10-28",
+      "status": "observed"
+    },
+    {
+      "repository": "DroneWuKong/betaflight-improvements",
+      "revision": "48f0c9a3f37c68a5d4f0f2bbc25c20f7e5e36c2f",
+      "pushed": "2026-10-23T11:25:27Z",
       "checked": "2026-10-28",
       "status": "observed"
     },
     {
       "repository": "rsasaki0109/visloc-rs",
-      "revision": "c07e2c4c0a46f5b625e211197c9108897902f285",
-      "pushed": "2026-10-28T03:12:30Z",
+      "revision": "19e312de356dd46a2ba553a2df8f268e7ba627f3",
+      "pushed": "2026-10-28T13:23:57Z",
       "checked": "2026-10-28",
       "status": "observed"
     },
     {
-      "repository": "fredgaffey/skydock2",
-      "revision": "801e1edc71def621996904b8ecf21fc117181e81",
-      "pushed": "2026-10-28T03:04:30Z",
+      "repository": "tecelskyyivan-alt/ardu-field-planner",
+      "revision": "152d0c43318a0afc6ff47c0db7e45d9d25c459b6",
+      "pushed": "2026-10-28T12:38:18Z",
+      "checked": "2026-10-28",
+      "status": "observed"
+    },
+    {
+      "repository": "hudasol/post-quantum-security",
+      "revision": "789abd449cc29a7e689190bac0b0be8eeada5908",
+      "pushed": "2026-10-28T12:02:18Z",
       "checked": "2026-10-28",
       "status": "observed"
     }

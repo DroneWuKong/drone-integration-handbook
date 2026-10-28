@@ -5,7 +5,7 @@ Last checked: **2026-10-28 UTC**. Version matches establish metadata only; they 
 | Project | Version covered | Latest stable GitHub release / date | Preview | Status | Check these sections | Next check |
 |---|---|---|---|---|---|---|
 | [ArduCopter](https://github.com/ArduPilot/ardupilot/releases/tag/Copter-4.7.2) | Copter-4.7.1 | Copter-4.7.2 / 2026-10-14 | none observed | check-section | [rtk-ppk-gps-integration](../components/rtk-ppk-gps-integration.md), [mavlink-protocol](../firmware/mavlink-protocol.md), [lidar-rangefinders](../components/lidar-rangefinders.md) | 2026-11-04 |
-| [Betaflight](https://github.com/betaflight/betaflight/releases/tag/2026.6.2) | 2025.12.0 | 2026.6.2 / 2026-09-16 | 2026.6.0-rc3 | unavailable | [four-firmwares](../firmware/four-firmwares.md), [preflight](../field/preflight.md) | 2026-11-04 |
+| [Betaflight](https://github.com/betaflight/betaflight/releases/tag/2026.6.2) | 2025.12.0 | 2026.6.2 / 2026-09-16 | 2026.6.0-rc3 | check-section | [four-firmwares](../firmware/four-firmwares.md), [preflight](../field/preflight.md) | 2026-11-04 |
 | [Betaflight App](https://github.com/betaflight/betaflight-configurator/releases/tag/2026.6.2) | 2025.12.1 | 2026.6.2 / 2026-09-16 | 2026.6.0-RC3 | check-section | [four-firmwares](../firmware/four-firmwares.md), [backup-upgrade-recovery](../firmware/backup-upgrade-recovery.md) | 2026-11-04 |
 | [PX4](https://github.com/PX4/PX4-Autopilot/releases/tag/v1.17.0) | v1.17.0 | v1.17.0 / 2026-05-13 | v1.18.0-rc1 | version-matches | [onboard-ai-control](../autonomy/onboard-ai-control.md), [secure-multiclient-telemetry](../integration/secure-multiclient-telemetry.md) | 2026-11-04 |
 | [INAV](https://github.com/iNavFlight/inav/releases/tag/9.1.0) | not version-pinned | 9.1.0 / 2026-07-09 | 10.0.0-rc2 | check-section | [four-firmwares](../firmware/four-firmwares.md), [msp-protocol](../firmware/msp-protocol.md) | 2026-11-04 |
@@ -29,15 +29,18 @@ See [emerging projects](../integration/emerging-technology-watch.md) and [reposi
 
 | Repository | Observed revision | Last push | Check attempted | Status |
 |---|---|---|---|---|
-| [DroneWuKong/droneclear_Forge](https://github.com/DroneWuKong/droneclear_Forge) | 541bc26c1df0 | 2026-10-27 | 2026-10-28 | observed |
+| [DroneWuKong/droneclear_Forge](https://github.com/DroneWuKong/droneclear_Forge) | 02f684b5583f | 2026-10-28 | 2026-10-28 | observed |
 | [DroneWuKong/forge-data](https://github.com/DroneWuKong/forge-data) | 3041642fdca3 | 2026-10-04 | 2026-10-28 | observed |
 | [DroneWuKong/MultiProtocol-UAS-TAK-Bridge](https://github.com/DroneWuKong/MultiProtocol-UAS-TAK-Bridge) | 3177a1ffdf91 | 2026-10-04 | 2026-10-28 | observed |
 | [DroneWuKong/Orqa_H7_PX4_Ports](https://github.com/DroneWuKong/Orqa_H7_PX4_Ports) | 84d228c63dc8 | 2026-10-24 | 2026-10-28 | observed |
 | [DroneWuKong/Field-Kit](https://github.com/DroneWuKong/Field-Kit) | d1ff7d542900 | 2026-10-25 | 2026-10-28 | observed |
 | [DroneWuKong/Prismo-Calibration](https://github.com/DroneWuKong/Prismo-Calibration) | 82ac97c9e958 | 2026-10-18 | 2026-10-28 | observed |
-| [VOLTEKOVER/OmniRID-Universal-Drone-ID](https://github.com/VOLTEKOVER/OmniRID-Universal-Drone-ID) | 3c25519ff9d3 | 2026-10-27 | 2026-10-28 | observed |
-| [rsasaki0109/visloc-rs](https://github.com/rsasaki0109/visloc-rs) | c07e2c4c0a46 | 2026-10-28 | 2026-10-28 | observed |
-| [fredgaffey/skydock2](https://github.com/fredgaffey/skydock2) | 801e1edc71de | 2026-10-28 | 2026-10-28 | observed |
+| [DroneWuKong/Orqa_Betaflight_Ports](https://github.com/DroneWuKong/Orqa_Betaflight_Ports) | ca30cf5cba1f | 2026-10-24 | 2026-10-28 | observed |
+| [DroneWuKong/Orqa_ArduPilot_Ports](https://github.com/DroneWuKong/Orqa_ArduPilot_Ports) | ee71ab28c3a9 | 2026-10-24 | 2026-10-28 | observed |
+| [DroneWuKong/betaflight-improvements](https://github.com/DroneWuKong/betaflight-improvements) | 48f0c9a3f37c | 2026-10-23 | 2026-10-28 | observed |
+| [rsasaki0109/visloc-rs](https://github.com/rsasaki0109/visloc-rs) | 19e312de356d | 2026-10-28 | 2026-10-28 | observed |
+| [tecelskyyivan-alt/ardu-field-planner](https://github.com/tecelskyyivan-alt/ardu-field-planner) | 152d0c43318a | 2026-10-28 | 2026-10-28 | observed |
+| [hudasol/post-quantum-security](https://github.com/hudasol/post-quantum-security) | 789abd449cc2 | 2026-10-28 | 2026-10-28 | observed |
 
 ## Source checks and review dates
 
