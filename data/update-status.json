@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-27",
+  "checked": "2026-10-28",
   "items": [
     {
       "id": "ArduCopter",
@@ -13,8 +13,8 @@
         "firmware/mavlink-protocol.md",
         "components/lidar-rangefinders.md"
       ],
-      "checked": "2026-10-27",
-      "next_check": "2026-11-03",
+      "checked": "2026-10-28",
+      "next_check": "2026-11-04",
       "latest": "Copter-4.7.2",
       "released": "2026-10-14",
       "url": "https://github.com/ArduPilot/ardupilot/releases/tag/Copter-4.7.2",
@@ -31,14 +31,15 @@
         "firmware/four-firmwares.md",
         "field/preflight.md"
       ],
-      "checked": "2026-10-27",
-      "next_check": "2026-11-03",
+      "checked": "2026-10-28",
+      "next_check": "2026-11-04",
       "latest": "2026.6.2",
       "released": "2026-09-16",
       "url": "https://github.com/betaflight/betaflight/releases/tag/2026.6.2",
       "preview": "2026.6.0-rc3",
       "preview_released": "2026-07-23",
-      "status": "check-section"
+      "status": "unavailable",
+      "error": "RemoteDisconnected"
     },
     {
       "id": "Betaflight App",
@@ -49,8 +50,8 @@
         "firmware/four-firmwares.md",
         "firmware/backup-upgrade-recovery.md"
       ],
-      "checked": "2026-10-27",
-      "next_check": "2026-11-03",
+      "checked": "2026-10-28",
+      "next_check": "2026-11-04",
       "latest": "2026.6.2",
       "released": "2026-09-16",
       "url": "https://github.com/betaflight/betaflight-configurator/releases/tag/2026.6.2",
@@ -67,8 +68,8 @@
         "autonomy/onboard-ai-control.md",
         "integration/secure-multiclient-telemetry.md"
       ],
-      "checked": "2026-10-27",
-      "next_check": "2026-11-03",
+      "checked": "2026-10-28",
+      "next_check": "2026-11-04",
       "latest": "v1.17.0",
       "released": "2026-05-13",
       "url": "https://github.com/PX4/PX4-Autopilot/releases/tag/v1.17.0",
@@ -85,8 +86,8 @@
         "firmware/four-firmwares.md",
         "firmware/msp-protocol.md"
       ],
-      "checked": "2026-10-27",
-      "next_check": "2026-11-03",
+      "checked": "2026-10-28",
+      "next_check": "2026-11-04",
       "latest": "9.1.0",
       "released": "2026-07-09",
       "url": "https://github.com/iNavFlight/inav/releases/tag/9.1.0",
@@ -103,8 +104,8 @@
         "components/openhd-implementation-guide.md",
         "components/comms-datalinks.md"
       ],
-      "checked": "2026-10-27",
-      "next_check": "2026-11-03",
+      "checked": "2026-10-28",
+      "next_check": "2026-11-04",
       "latest": "v2.6.0",
       "released": "2024-05-24",
       "url": "https://github.com/OpenHD/OpenHD/releases/tag/v2.6.0",
@@ -121,8 +122,8 @@
         "firmware/mavlink-protocol.md",
         "appendices/appendix-c-mavlink-quick-reference.md"
       ],
-      "checked": "2026-10-27",
-      "next_check": "2026-11-03",
+      "checked": "2026-10-28",
+      "next_check": "2026-11-04",
       "latest": null,
       "released": null,
       "url": "https://github.com/mavlink/mavlink/releases",
@@ -138,8 +139,8 @@
       "sections": [
         "firmware/can-dronecan-cyphal.md"
       ],
-      "checked": "2026-10-27",
-      "next_check": "2026-11-03",
+      "checked": "2026-10-28",
+      "next_check": "2026-11-04",
       "latest": null,
       "released": null,
       "url": "https://github.com/DroneCAN/libcanard/releases",
@@ -151,65 +152,65 @@
   "repositories": [
     {
       "repository": "DroneWuKong/droneclear_Forge",
-      "revision": "2f317e7480766dd5c39bb98b608809fa65e6abd6",
-      "pushed": "2026-10-26T14:37:06Z",
-      "checked": "2026-10-27",
+      "revision": "541bc26c1df0ba793cb56ae00d1cdd5b7a5d5986",
+      "pushed": "2026-10-27T17:38:38Z",
+      "checked": "2026-10-28",
       "status": "observed"
     },
     {
       "repository": "DroneWuKong/forge-data",
       "revision": "3041642fdca338e550670af01b09a9c886a195f9",
       "pushed": "2026-10-04T05:41:15Z",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "observed"
     },
     {
       "repository": "DroneWuKong/MultiProtocol-UAS-TAK-Bridge",
       "revision": "3177a1ffdf918b549f360081a5f53ff37e42f73a",
       "pushed": "2026-10-04T05:30:27Z",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "observed"
     },
     {
       "repository": "DroneWuKong/Orqa_H7_PX4_Ports",
       "revision": "84d228c63dc80945ee36ab3f872286dbc3c43571",
       "pushed": "2026-10-24T09:58:28Z",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "observed"
     },
     {
       "repository": "DroneWuKong/Field-Kit",
       "revision": "d1ff7d542900294d91608a0a90c743490bb0ed24",
       "pushed": "2026-10-25T19:42:43Z",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "observed"
     },
     {
       "repository": "DroneWuKong/Prismo-Calibration",
       "revision": "82ac97c9e95807b9bf9d0d7785f54644ec210bbb",
       "pushed": "2026-10-18T21:10:21Z",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "observed"
     },
     {
-      "repository": "alireza787b/PixEagle",
-      "revision": "985944d833387d02fa33311a3f4c4a63ed7a2962",
-      "pushed": "2026-10-27T03:10:21Z",
-      "checked": "2026-10-27",
+      "repository": "VOLTEKOVER/OmniRID-Universal-Drone-ID",
+      "revision": "3c25519ff9d3a0abf536bc2e563f192ba49ea37c",
+      "pushed": "2026-10-27T22:57:10Z",
+      "checked": "2026-10-28",
       "status": "observed"
     },
     {
-      "repository": "alexnieves-cs/frontier-fly",
-      "revision": "d29be469779f38558d5b0267f575fc74252e5ca2",
-      "pushed": "2026-10-27T02:51:49Z",
-      "checked": "2026-10-27",
+      "repository": "rsasaki0109/visloc-rs",
+      "revision": "c07e2c4c0a46f5b625e211197c9108897902f285",
+      "pushed": "2026-10-28T03:12:30Z",
+      "checked": "2026-10-28",
       "status": "observed"
     },
     {
-      "repository": "heoconngoc/swarmlab-formations",
-      "revision": "4e96685e34a648990b21455fa79be083b3beeffe",
-      "pushed": "2026-10-27T02:40:25Z",
-      "checked": "2026-10-27",
+      "repository": "fredgaffey/skydock2",
+      "revision": "801e1edc71def621996904b8ecf21fc117181e81",
+      "pushed": "2026-10-28T03:04:30Z",
+      "checked": "2026-10-28",
       "status": "observed"
     }
   ],
@@ -218,7 +219,7 @@
       "title": "Reboot Hub: DJI Drone Parts — OEM-Pulled Parts and Compatibility",
       "url": "https://reboot-hub.com/blogs/the-reboot-hub-chronicle/dji-drone-parts-oem-pulled-replacements-compatibility",
       "accessed": "2026-10-03",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-01-01"
     },
@@ -226,7 +227,7 @@
       "title": "ITU-R P.525-5 (November 2024)",
       "url": "https://www.itu.int/rec/R-REC-P.525-5-202411-I/en",
       "accessed": "2026-10-01",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-10-01"
     },
@@ -234,7 +235,7 @@
       "title": "NIST SP 811 unit conversions",
       "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8",
       "accessed": "2026-10-01",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-10-01"
     },
@@ -242,7 +243,7 @@
       "title": "NIST SP 811 derived units",
       "url": "https://www.nist.gov/pml/special-publication-811/nist-guide-si-chapter-4-two-classes-si-units-and-si-prefixes",
       "accessed": "2026-10-01",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-10-01"
     },
@@ -250,7 +251,7 @@
       "title": "BIPM CIPM Recommendation 1 (2002)",
       "url": "https://www.bipm.org/en/committees/ci/cipm/91-2002/resolution-1",
       "accessed": "2026-10-01",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-10-01"
     },
@@ -258,7 +259,7 @@
       "title": "Rohde & Schwarz dB Calculator application note 1GP77",
       "url": "https://scdn.rohde-schwarz.com/ur/pws/dl_downloads/dl_application/application_notes/1gp77/1GP77_8e_dB_Calculator.pdf",
       "accessed": "2026-10-01",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-10-01"
     },
@@ -266,7 +267,7 @@
       "title": "Federal Register: TSA Part 108 security roundtables notice (September 4, 2026)",
       "url": "https://www.federalregister.gov/documents/2026/09/04/2026-18124/notice-soliciting-representatives-for-technical-roundtables-on-security-of-unmanned-aircraft-systems",
       "accessed": "2026-10-02",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-12-31"
     },
@@ -274,7 +275,7 @@
       "title": "FAA Part 107 Waivers",
       "url": "https://www.faa.gov/uas/commercial_operators/part_107_waivers",
       "accessed": "2026-10-02",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-12-31"
     },
@@ -282,7 +283,7 @@
       "title": "FAA Small Unmanned Aircraft Systems Regulations (Part 107)",
       "url": "https://www.faa.gov/newsroom/small-unmanned-aircraft-systems-uas-regulations-part-107",
       "accessed": "2026-10-02",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-12-31"
     },
@@ -290,7 +291,7 @@
       "title": "FAA Part 91 Public Aircraft/Public Safety CoW/A FAQ v9",
       "url": "https://www.faa.gov/uas/public_safety_gov/public_safety_toolkit/Public_Aircraft-Public_Safety_Operation_CoW-COA_FAQ.pdf",
       "accessed": "2026-10-02",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-12-31"
     },
@@ -298,7 +299,7 @@
       "title": "FAA UAS Data Exchange (LAANC)",
       "url": "https://www.faa.gov/uas/getting_started/laanc",
       "accessed": "2026-10-02",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-12-31"
     },
@@ -306,7 +307,7 @@
       "title": "Hailo-8 specifications",
       "url": "https://hailo.ai/products/ai-accelerators/hailo-8-ai-accelerator/",
       "accessed": "2026-10-07",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-11-06"
     },
@@ -314,7 +315,7 @@
       "title": "Benewake TFmini-S specifications",
       "url": "https://en.benewake.com/TFminiS/index.html",
       "accessed": "2026-10-07",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-11-06"
     },
@@ -322,7 +323,7 @@
       "title": "MAVLink packet serialization",
       "url": "https://mavlink.io/en/guide/serialization.html",
       "accessed": "2026-10-07",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-11-06"
     },
@@ -330,7 +331,7 @@
       "title": "MAVLink common dialect",
       "url": "https://mavlink.io/en/messages/common.html",
       "accessed": "2026-10-07",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-11-06"
     },
@@ -338,7 +339,7 @@
       "title": "MAVLink signing",
       "url": "https://mavlink.io/en/guide/message_signing.html",
       "accessed": "2026-10-07",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-11-06"
     },
@@ -346,7 +347,7 @@
       "title": "Betaflight 2025.12 position hold",
       "url": "https://betaflight.com/docs/wiki/guides/current/Position-Hold-2025-12",
       "accessed": "2026-10-07",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-11-06"
     },
@@ -354,7 +355,7 @@
       "title": "OpenHD adapter compatibility",
       "url": "https://openhdfpv.org/hardware/wifi-adapters/",
       "accessed": "2026-10-07",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-11-06"
     },
@@ -362,7 +363,7 @@
       "title": "PX4 v1.17 Offboard",
       "url": "https://docs.px4.io/v1.17/en/flight_modes/offboard",
       "accessed": "2026-10-07",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2026-11-06"
     },
@@ -370,7 +371,7 @@
       "title": "STM32N6 manufacturer series page",
       "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html",
       "accessed": "2026-10-07",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "unavailable",
       "due": "2026-11-06"
     },
@@ -378,7 +379,7 @@
       "title": "NXP i.MX 95 manufacturer page",
       "url": "https://www.nxp.com/products/i.MX95",
       "accessed": "2026-10-07",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "unavailable",
       "due": "2026-11-06"
     },
@@ -386,7 +387,7 @@
       "title": "PX4 Guide: Mounting the Flight Controller",
       "url": "https://docs.px4.io/main/en/assembly/mount_and_orient_controller",
       "accessed": "2026-10-18",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-04-16"
     },
@@ -394,7 +395,7 @@
       "title": "ArduPilot: Sensor Position Offset Compensation",
       "url": "https://ardupilot.org/copter/docs/common-sensor-offset-compensation.html",
       "accessed": "2026-10-18",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-04-16"
     },
@@ -402,7 +403,7 @@
       "title": "ROS REP 103: Standard Units of Measure and Coordinate Conventions",
       "url": "https://www.ros.org/reps/rep-0103.html",
       "accessed": "2026-10-18",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-04-16"
     },
@@ -410,7 +411,7 @@
       "title": "Kalibr: Camera IMU calibration",
       "url": "https://github.com/ethz-asl/kalibr/wiki/camera-imu-calibration",
       "accessed": "2026-10-18",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-04-16"
     },
@@ -418,7 +419,7 @@
       "title": "NovAtel OEM7: Lever arm calibration routine",
       "url": "https://docs.novatel.com/OEM7/Content/SPAN_Operation/Lever_Arm_Calibration_Routine.htm",
       "accessed": "2026-10-18",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-04-16"
     },
@@ -426,7 +427,7 @@
       "title": "ArduPilot: Advanced Compass Setup",
       "url": "https://ardupilot.org/copter/docs/common-compass-setup-advanced.html",
       "accessed": "2026-10-18",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-04-16"
     },
@@ -434,7 +435,7 @@
       "title": "PX4 EKF2: Static pressure position error",
       "url": "https://docs.px4.io/main/en/advanced_config/tuning_the_ecl_ekf",
       "accessed": "2026-10-18",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-04-16"
     },
@@ -442,7 +443,7 @@
       "title": "NOAA NGS Antenna Calibration FAQ",
       "url": "https://geodesy.noaa.gov/ANTCAL/FAQ.xhtml",
       "accessed": "2026-10-18",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-04-16"
     },
@@ -450,7 +451,7 @@
       "title": "Yang et al.: Online Self-Calibration for VINS, arXiv:2201.09170v3",
       "url": "https://arxiv.org/html/2201.09170v3",
       "accessed": "2026-10-18",
-      "checked": "2026-10-27",
+      "checked": "2026-10-28",
       "status": "reachable",
       "due": "2027-04-16"
     }
