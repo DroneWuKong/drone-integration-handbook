@@ -25,6 +25,8 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
+          # Preserve operator diagnostics already present in the retained runner worktree.
+          clean: false
       - name: Require the private self-hosted pool
         run: test "${RUNNER_ENVIRONMENT:-}" = "self-hosted"
       - name: Verify the exact production deployment
