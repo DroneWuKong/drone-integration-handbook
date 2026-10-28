@@ -122,6 +122,34 @@
         "apb/docs/SENSOR_RECORDINGS.md",
         "apb/docs/MANUAL_ALIGNMENT.md"
       ]
+    },
+    {
+      "repository": "DroneWuKong/Orqa_Betaflight_Ports",
+      "paths": [
+        "README.md",
+        "docs/AUDIT.md",
+        "docs/TESTING.md",
+        "docs/MAINTENANCE.md",
+        "companion/apb/QUICKSTART.md"
+      ]
+    },
+    {
+      "repository": "DroneWuKong/Orqa_ArduPilot_Ports",
+      "paths": [
+        "README.md",
+        "docs/AUDIT.md",
+        "docs/TESTING.md",
+        "docs/MAINTENANCE.md",
+        "companion/apb/QUICKSTART.md"
+      ]
+    },
+    {
+      "repository": "DroneWuKong/betaflight-improvements",
+      "paths": [
+        "README.md",
+        "backlog/README.md",
+        "docs/WORKFLOW.md"
+      ]
     }
   ],
   "private_discovery_route": "Ai-Project sanitized public data via DroneWuKong/forge-data; raw private content is excluded",

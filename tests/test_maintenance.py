@@ -1,11 +1,14 @@
 import hashlib
+import http.client
 import json
 import tempfile
 import unittest
+import urllib.error
 from datetime import date
 from pathlib import Path
+from unittest.mock import Mock, patch
 from handbook_builder.autonomous import research_spec, verify_source_snapshots
-from handbook_builder.maintenance import apply_verified, pending, releases, update_watchlist, cell, scheduled_records
+from handbook_builder.maintenance import apply_verified, pending, releases, update_watchlist, cell, scheduled_records, GitHubReader
 
 TODAY=date(2026,10,7)
 STATEMENT='The documented protocol includes a sequence field.'
@@ -26,6 +29,19 @@ def bundle(path='integration/repository-updates.md'):
     return {'spec':spec,'packets':packets,'decision':{'id':'d'*24,'created_at':'2026-10-07T03:00:00Z'}}
 
 class MaintenanceTests(unittest.TestCase):
+    def test_github_reader_retries_transient_disconnect_only(self):
+        response=Mock();response.read.return_value=b'{"ok": true}'
+        response.__enter__=Mock(return_value=response);response.__exit__=Mock(return_value=False)
+        opener=Mock();opener.open.side_effect=[http.client.RemoteDisconnected("closed"),response]
+        with patch('handbook_builder.maintenance.urllib.request.build_opener',return_value=opener),patch('handbook_builder.maintenance.time.sleep'):
+            self.assertEqual(GitHubReader()('repos/owner/repo'),{'ok':True})
+        self.assertEqual(opener.open.call_count,2)
+        opener.open.reset_mock()
+        opener.open.side_effect=urllib.error.HTTPError('https://api.github.com/repos/o/r',404,'not found',{},None)
+        with patch('handbook_builder.maintenance.urllib.request.build_opener',return_value=opener):
+            with self.assertRaises(urllib.error.HTTPError):GitHubReader()('repos/o/r')
+        self.assertEqual(opener.open.call_count,1)
+
     def test_release_date_and_preview_are_not_conflated(self):
         rows=[{'tag_name':'v2','published_at':'2026-11-01T00:00:00Z'},
             {'tag_name':'v1.1-rc','published_at':'2026-10-06T00:00:00Z','prerelease':True},
