@@ -9,7 +9,7 @@ from unittest.mock import patch
 from handbook_builder.evidence import load_evidence,decorate_and_inventory
 from handbook_builder.site import discover_entries
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from check_sources import inspect
+from check_sources import inspect,merge_tasks,task_id
 ROOT=Path(__file__).resolve().parents[1]
 class EvidenceTests(unittest.TestCase):
     def test_frozen_profile_urls_do_not_follow_directory_order(self):
@@ -41,6 +41,19 @@ class EvidenceTests(unittest.TestCase):
         result=inspect(source,{"digest":"old"},date(2026,10,1),unavailable)
         self.assertEqual(result[1]["digest"],"old")
         self.assertIn("source-unavailable",{t["reason"] for t in result[2]})
+
+    def test_monitor_compacts_duplicate_open_tasks_without_erasing_history(self):
+        old={
+            "legacy-a":{"id":"legacy-a","source_id":"test","reason":"source-content-changed","observed":"2026-09-01","state":"needs-review"},
+            "legacy-b":{"id":"legacy-b","source_id":"test","reason":"source-content-changed","observed":"2026-09-02","state":"needs-review"}}
+        incoming=[{"id":task_id("test","source-content-changed"),"source_id":"test","reason":"source-content-changed",
+            "latest_revision":"new","observed":"2026-10-28","state":"needs-review","scope":"monitor only"}]
+        merged=merge_tasks(old,incoming,date(2026,10,28));stable=task_id("test","source-content-changed")
+        self.assertEqual(sum(t["state"]=="needs-review" for t in merged.values()),1)
+        self.assertEqual(merged[stable]["latest_revision"],"new")
+        self.assertEqual(merged[stable]["first_observed"],"2026-09-01")
+        self.assertEqual(merged["legacy-a"]["superseded_by"],stable)
+        self.assertEqual(merged["legacy-b"]["state"],"superseded")
 
     def test_correction_is_draft_deduplicable_and_preserves_old_version(self):
         from prepare_correction import prepare

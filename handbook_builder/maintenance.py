@@ -7,12 +7,15 @@ from __future__ import annotations
 import copy
 import hashlib
 import html
+import http.client
 import json
 import re
+import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote, urlencode, urlsplit
 import urllib.request
+import urllib.error
 import markdown
 from .autonomous import adjudicate, research_spec, stable_id, verify_source_snapshots, claim_type
 from .evidence import text
@@ -53,10 +56,18 @@ class GitHubReader:
         # Never forward a token to redirects or arbitrary source hosts.
         class NoRedirect(urllib.request.HTTPRedirectHandler):
             def redirect_request(self, *args, **kwargs): raise ValueError("Unexpected API redirect")
-        with urllib.request.build_opener(NoRedirect()).open(request, timeout=20) as response:
-            body = response.read(4 * 1024 * 1024 + 1)
-            if len(body) > 4 * 1024 * 1024: raise GitHubResponseTooLarge("API response too large")
-            return json.loads(body)
+        opener = urllib.request.build_opener(NoRedirect())
+        for attempt in range(3):
+            try:
+                with opener.open(request, timeout=20) as response:
+                    body = response.read(4 * 1024 * 1024 + 1)
+                    if len(body) > 4 * 1024 * 1024: raise GitHubResponseTooLarge("API response too large")
+                    return json.loads(body)
+            except urllib.error.HTTPError as error:
+                if error.code not in (429, 500, 502, 503, 504) or attempt == 2: raise
+            except (http.client.RemoteDisconnected, urllib.error.URLError, TimeoutError, ConnectionError):
+                if attempt == 2: raise
+            time.sleep(.2 * (attempt + 1))
 
 def release_rows(reader, repository, maximum=100):
     """Keep the existing history window without lifting the response-size cap."""
