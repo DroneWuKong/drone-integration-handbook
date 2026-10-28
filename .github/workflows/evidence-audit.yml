@@ -1,0 +1,53 @@
+name: evidence-autonomy-audit
+
+on:
+  workflow_dispatch:
+    inputs:
+      reconcile_existing:
+        description: Reconcile only already-reserved jobs; never dispatch new work
+        required: true
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: evidence-autonomy-audit-v1
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: [self-hosted, prismo]
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Require the private self-hosted pool
+        run: test "${RUNNER_ENVIRONMENT:-}" = "self-hosted"
+      - name: Verify the exact production deployment
+        run: |
+          for attempt in $(seq 1 24); do
+            if python3 scripts/check_deployment.py https://uas-handbook.com --expected-commit "$(git rev-parse HEAD)" --require-storage --require-attachments; then exit 0; fi
+            sleep 15
+          done
+          exit 1
+      - name: Audit the private durable ledger without dispatching
+        env:
+          AUTONOMY_DISPATCH_URL: ${{ secrets.AUTONOMY_DISPATCH_URL }}
+          AUTONOMY_REVIEW_TOKEN: ${{ secrets.AUTONOMY_REVIEW_TOKEN }}
+          RECONCILE_EXISTING: ${{ inputs.reconcile_existing }}
+        run: |
+          args=()
+          if test "$RECONCILE_EXISTING" = "true"; then args+=(--reconcile-existing); fi
+          python3 scripts/audit_autonomy.py "${args[@]}" --output .local/autonomy/private-audit.json
+      - name: Confirm the audit never starts paid work
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          value=json.loads(Path('.local/autonomy/private-audit.json').read_text())
+          assert value.get('schema_version')==1
+          PY

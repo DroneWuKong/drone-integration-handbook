@@ -42,6 +42,30 @@ test("status is explicit with and without storage",async()=>{
  const {env,sql}=setup();const value=await (await handleAutonomy(req("status"),env)).json();assert.equal(value.enabled,true);assert.equal(value.live_research,true);sql.close();
 });
 
+test("reviewer audit reports configuration, reservations and jobs without spec payloads",async()=>{
+ const {env,sql}=setup();assert.equal((await handleAutonomy(req("audit"),env)).status,401);
+ await handleAutonomy(req("specs","POST",spec,"review"),env);
+ const job=sql.prepare("SELECT id,spec_id FROM research_jobs ORDER BY id LIMIT 1").get();
+ sql.prepare("INSERT INTO research_trial_dispatches VALUES(?,?,?)").run(job.id,job.spec_id,Date.now());
+ const response=await handleAutonomy(req("audit","GET",undefined,"review"),env),value=await response.json();
+ assert.equal(response.status,200);assert.equal(value.provider_configured,true);assert.equal(value.webhook_configured,true);assert.equal(value.trial.active,true);
+ assert.equal(value.reservations.total,1);assert.equal(value.jobs.length,2);assert.equal(value.jobs.filter(row=>row.reserved).length,1);
+ assert.equal(JSON.stringify(value).includes('"statement":"Example"'),false);sql.close();
+});
+
+test("expired reserved jobs without response ids reconcile to an abstention without retry",async()=>{
+ const {env,sql}=setup(),now=Date.now();await handleAutonomy(req("specs","POST",spec,"review"),env);
+ sql.prepare("UPDATE research_trial SET starts_ms=?,ends_ms=?").run(now-3*86400000,now-2*86400000);
+ for(const job of sql.prepare("SELECT id,spec_id FROM research_jobs").all())sql.prepare("INSERT INTO research_trial_dispatches VALUES(?,?,?)").run(job.id,job.spec_id,now-3*86400000);
+ sql.prepare("UPDATE research_jobs SET updated='2026-10-02T00:00:00Z'").run();
+ assert.equal((await handleAutonomy(req("reconcile","POST",{},"review"),env)).status,400);
+ const response=await handleAutonomy(req("reconcile","POST",{confirm:"existing-jobs-only"},"review"),env),value=await response.json();
+ assert.equal(response.status,200);assert.equal(value.summary.stale_without_response,2);assert.equal(value.after.reservations.total,2);
+ assert.equal(sql.prepare("SELECT count(*) n FROM research_jobs WHERE state='failed'").get().n,2);
+ assert.equal(sql.prepare("SELECT state FROM research_specs").get().state,"abstained");
+ assert.equal(sql.prepare("SELECT publication_state FROM evidence_decisions").get().publication_state,"abstained");sql.close();
+});
+
 test("trial fails closed when absent, disabled, future, expired, or malformed",async()=>{
  const {env,sql}=setup(),now=Date.now();
  for(const [enabled,start,end] of [[0,now-1000,now+1000],[1,now+1000,now+2000],[1,now-2000,now]]){
@@ -118,6 +142,26 @@ test("webhook signature validation rejects stale and altered payloads",async()=>
  const key=await crypto.subtle.importKey("raw",Buffer.from("example-secret"),{name:"HMAC",hash:"SHA-256"},false,["sign"]);const signed=Buffer.from(await crypto.subtle.sign("HMAC",key,new TextEncoder().encode(`${id}.${timestamp}.${raw}`))).toString("base64");
  const headers=new Headers({"webhook-id":id,"webhook-timestamp":timestamp,"webhook-signature":"v1,"+signed});
  assert.equal(await verifyWebhook(raw,headers,secret,1790942400),true);assert.equal(await verifyWebhook(raw+"x",headers,secret,1790942400),false);assert.equal(await verifyWebhook(raw,headers,secret,1790943001),false);
+});
+test("reconciliation consumes completed existing response ids without a new dispatch",async()=>{
+ const {env,sql}=setup(),original=globalThis.fetch;await handleAutonomy(req("specs","POST",spec,"review"),env);
+ for(const [index,job] of sql.prepare("SELECT id,spec_id,role FROM research_jobs ORDER BY role").all().entries()){
+  sql.prepare("UPDATE research_jobs SET response_id=?,state='queued',attempts=1 WHERE id=?").run(`resp_existing_${index+1}`,job.id);
+  sql.prepare("INSERT INTO research_trial_dispatches VALUES(?,?,?)").run(job.id,job.spec_id,Date.now()-1000);
+ }
+ let dispatches=0;
+ globalThis.fetch=async(url,options={})=>{
+  const value=String(url);if(options.method==="POST")dispatches++;
+  if(value.includes("/v1/responses/")){const role=value.endsWith("_1")?"researcher":"verifier";return new Response(JSON.stringify({status:"completed",output:[{type:"message",content:[{type:"output_text",text:JSON.stringify(evidencePacket(role))}]}]}));}
+  return new Response("<p>Exact passage</p>");
+ };
+ try{
+  const response=await handleAutonomy(req("reconcile","POST",{confirm:"existing-jobs-only"},"review"),env),value=await response.json();
+  assert.equal(response.status,200);assert.equal(value.summary.completed,2);assert.equal(dispatches,0);
+  assert.equal(sql.prepare("SELECT count(*) n FROM evidence_packets").get().n,2);
+  assert.equal(sql.prepare("SELECT state FROM research_specs").get().state,"complete");
+  assert.equal(sql.prepare("SELECT publication_state FROM evidence_decisions").get().publication_state,"corroborated");
+ }finally{globalThis.fetch=original;sql.close();}
 });
 test("exceptions remain private and reviewer dispositions are idempotent",async()=>{const {env,sql}=setup();assert.equal((await handleAutonomy(req("exceptions"),env)).status,401);await handleAutonomy(req("specs","POST",spec,"review"),env);const decision={id:"b".repeat(24),claim_id:spec.claim_id,publication_state:"exception",reasons:["critical-risk-policy-requires-exception-review"]};sql.prepare("INSERT INTO evidence_decisions(id,spec_id,claim_id,publication_state,publish,human_intervention,data,created) VALUES(?1,?2,?3,'exception',0,1,?4,?5)").run(decision.id,spec.id,spec.claim_id,JSON.stringify(decision),"2026-10-02T00:00:00Z");const listed=await (await handleAutonomy(req("exceptions","GET",undefined,"review"),env)).json();assert.equal(listed.exceptions.length,1);assert.equal(listed.exceptions[0].spec.anchor,"ch1");const payload={action:"needs-field-evidence",notes:"Bench evidence cannot establish field behavior."};for(let i=0;i<2;i++)assert.equal((await handleAutonomy(req("exceptions/"+decision.id,"POST",payload,"review"),env)).status,200);assert.equal(sql.prepare("SELECT count(*) n FROM evidence_events WHERE event_type='reviewer-disposition'").get().n,1);sql.close();});
 test("dispatched background jobs complete through signed webhooks and deterministic adjudication",async()=>{

@@ -149,6 +149,19 @@ Resolution records Brier scores for the AI and frozen baseline. The public evide
 - Source monitoring compares current content with preserved fingerprints and reopens affected work rather than overwriting history.
 - Hardware validation, if later added, must remain an explicit `field-observation` source class. It cannot replace or disable the software-only path.
 
+The public status route deliberately reports only aggregate state. A reviewer-authenticated
+`GET /api/autonomy/audit?probe=1` reports provider/webhook presence, the fixed trial window,
+reservation counts and the provider status of existing nonterminal response IDs without
+returning evidence packets. It never creates a reservation or provider request.
+
+If a webhook was missed, `POST /api/autonomy/reconcile` with the exact confirmation
+`{"confirm":"existing-jobs-only"}` retrieves only response IDs already stored in the ledger.
+Completed responses pass through the normal source retrieval, packet validation and deterministic
+adjudication path. Provider-terminal responses and stale expired-trial reservations with no
+response ID become terminal and can abstain; they are never resubmitted or refunded. The manual
+`evidence-autonomy-audit` workflow runs this path only on `[self-hosted, prismo]`, verifies the
+exact production deployment first, and prints a sanitized summary without private evidence or IDs.
+
 ## Verification
 
 ```sh
