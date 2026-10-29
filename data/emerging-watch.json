@@ -1,167 +1,167 @@
 {
   "schema_version": 1,
-  "checked": "2026-10-28",
-  "next_check": "2026-11-04",
+  "checked": "2026-10-29",
+  "next_check": "2026-11-05",
   "projects": [
     {
       "repository": "rsasaki0109/visloc-rs",
       "url": "https://github.com/rsasaki0109/visloc-rs",
       "description": "SfM, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
       "created": "2026-05-05T02:35:57Z",
-      "pushed": "2026-10-28T13:23:57Z",
+      "pushed": "2026-10-29T03:10:31Z",
       "license": "NOASSERTION",
-      "stars": 148,
+      "stars": 151,
       "matched_queries": [
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
+      "checked": "2026-10-29",
       "release": "v0.3.0",
       "released": "2026-10-24",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
     },
     {
-      "repository": "tecelskyyivan-alt/ardu-field-planner",
-      "url": "https://github.com/tecelskyyivan-alt/ardu-field-planner",
-      "description": "ArduCopter field-coverage mission planner + MAVLink GCS for agricultural spraying — draw a field, generate a boustrophedon route, export .plan/.waypoints or live-upload with telemetry. Planner runs offline (satellite map needs internet or pre-cache). PWA + Android/iOS + desktop.",
-      "created": "2026-07-12T09:55:48Z",
-      "pushed": "2026-10-28T12:38:18Z",
-      "license": "GPL-3.0",
-      "stars": 4,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
-      "release": "v2.5.88",
-      "released": "2026-10-28",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
-    },
-    {
-      "repository": "hudasol/post-quantum-security",
-      "url": "https://github.com/hudasol/post-quantum-security",
-      "description": "Sourced review of what post quantum cryptography costs on drone and robot microcontrollers, with a link simulator, a fleet migration planner and a free benchmark plan.",
-      "created": "2026-10-11T02:32:37Z",
-      "pushed": "2026-10-28T12:02:18Z",
-      "license": "NOASSERTION",
-      "stars": 0,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
-      "release": "v0.1.0",
-      "released": "2026-10-12",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
-    },
-    {
-      "repository": "breuerpeter/nexus",
-      "url": "https://github.com/breuerpeter/nexus",
-      "description": "Flight stack simulation with Newton",
-      "created": "2026-09-17T19:27:43Z",
-      "pushed": "2026-10-28T11:03:26Z",
-      "license": "Apache-2.0",
-      "stars": 5,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
-      "release": "nexus-uav-v0.6.1",
-      "released": "2026-10-21",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
-    },
-    {
-      "repository": "DavidAlpert11/SignalViewer",
-      "url": "https://github.com/DavidAlpert11/SignalViewer",
-      "description": "Offline desktop app to plot, compare and report on flight logs, test runs and simulation data - ArduPilot, PX4, MAVLink, MATLAB, CSV, CAN; pass / fail in CI",
-      "created": "2026-10-11T19:22:58Z",
-      "pushed": "2026-10-28T10:48:37Z",
+      "repository": "formiat/px4-ros2-drone-nav",
+      "url": "https://github.com/formiat/px4-ros2-drone-nav",
+      "description": "Autonomous UAV navigation in GNSS-denied indoor spaces with no prior map: stereo VIO (MSCKF) and lidar-inertial odometry with map-based relocalization (SLAM), 3D occupancy mapping, D* Lite path planning and GPU MPPI obstacle avoidance. PX4 + ROS 2 + Gazebo SITL, DARPA SubT Urban.",
+      "created": "2026-07-06T00:14:21Z",
+      "pushed": "2026-10-29T02:42:29Z",
       "license": "MIT",
-      "stars": 0,
+      "stars": 161,
       "matched_queries": [
-        "topic:mavlink created:>={created_after}"
+        "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
-      "release": "v1.14.0",
-      "released": "2026-10-26",
+      "checked": "2026-10-29",
+      "release": "v0.6.0",
+      "released": "2026-10-24",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
-    },
-    {
-      "repository": "M-BSquared/CorvusGCS",
-      "url": "https://github.com/M-BSquared/CorvusGCS",
-      "description": "Offline-first ground control station for PX4 and ArduPilot autonomous aircraft. Live map, floating flight HUD, guided sensor calibration, motor and safety setup, parameter editing and built-in flight-log review. One self-contained desktop app for Windows, macOS and Linux, no internet required.",
-      "created": "2026-09-03T23:44:38Z",
-      "pushed": "2026-10-28T08:51:03Z",
-      "license": "NOASSERTION",
-      "stars": 8,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
-      "release": "v2026.10.44",
-      "released": "2026-10-27",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
     },
     {
       "repository": "alexnieves-cs/frontier-fly",
       "url": "https://github.com/alexnieves-cs/frontier-fly",
       "description": "A drone that teaches itself to search buildings, from the treeline to the last room, entirely in the browser.",
       "created": "2026-10-18T17:03:20Z",
-      "pushed": "2026-10-28T02:02:06Z",
+      "pushed": "2026-10-28T23:07:54Z",
       "license": "MIT",
       "stars": 0,
       "matched_queries": [
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
+      "checked": "2026-10-29",
       "release": "v1.0.0",
       "released": "2026-10-28",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
+    },
+    {
+      "repository": "breuerpeter/nexus",
+      "url": "https://github.com/breuerpeter/nexus",
+      "description": "Flight stack simulation with Newton",
+      "created": "2026-09-17T19:27:43Z",
+      "pushed": "2026-10-28T21:35:56Z",
+      "license": "Apache-2.0",
+      "stars": 5,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-29",
+      "release": "nexus-uav-v0.6.1",
+      "released": "2026-10-21",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
+    },
+    {
+      "repository": "DavidAlpert11/SignalViewer",
+      "url": "https://github.com/DavidAlpert11/SignalViewer",
+      "description": "Offline desktop app to plot, compare and report on flight logs, test runs and simulation data - ArduPilot, PX4, MAVLink, MATLAB, CSV, CAN; pass / fail in CI",
+      "created": "2026-10-11T19:22:58Z",
+      "pushed": "2026-10-28T21:09:41Z",
+      "license": "MIT",
+      "stars": 0,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-29",
+      "release": "v1.15.0",
+      "released": "2026-10-28",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
     },
     {
       "repository": "hammerill/libfpv",
       "url": "https://github.com/hammerill/libfpv",
       "description": "FPV drone in any game.",
       "created": "2026-10-12T18:59:51Z",
-      "pushed": "2026-10-27T19:44:22Z",
+      "pushed": "2026-10-28T20:32:03Z",
       "license": "GPL-3.0",
       "stars": 29,
       "matched_queries": [
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
+      "checked": "2026-10-29",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
+    },
+    {
+      "repository": "hudasol/marsad",
+      "url": "https://github.com/hudasol/marsad",
+      "description": "Position-trust layer for autonomous systems and decision platforms. Detects GNSS jamming and spoofing, scores track integrity across sources, and recommends fallback navigation. PX4/MAVLink-native, MCP-ready.",
+      "created": "2026-10-09T00:49:59Z",
+      "pushed": "2026-10-28T20:17:53Z",
+      "license": "Apache-2.0",
+      "stars": 0,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-29",
+      "release": "v1.3.0",
+      "released": "2026-10-18",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
+    },
+    {
+      "repository": "hudasol/post-quantum-security",
+      "url": "https://github.com/hudasol/post-quantum-security",
+      "description": "Sourced review of what post quantum cryptography costs on drone and robot microcontrollers, with a link simulator, a fleet migration planner and a free benchmark plan.",
+      "created": "2026-10-11T02:32:37Z",
+      "pushed": "2026-10-28T19:50:31Z",
+      "license": "NOASSERTION",
+      "stars": 0,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-10-29",
+      "release": "v0.1.0",
+      "released": "2026-10-12",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
     },
     {
       "repository": "introlab/opentera-webrtc",
@@ -175,13 +175,13 @@
         "topic:gstreamer topic:robotics"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
+      "checked": "2026-10-29",
       "release": "v1.2.6",
       "released": "2024-12-18",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
     },
     {
       "repository": "PXLAIRobotics/PX4ROS2Docker",
@@ -195,13 +195,13 @@
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
+      "checked": "2026-10-29",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
     },
     {
       "repository": "alireza787b/PixEagle",
@@ -210,18 +210,18 @@
       "created": "2024-02-16T09:43:16Z",
       "pushed": "2026-10-27T05:18:00Z",
       "license": "Apache-2.0",
-      "stars": 76,
+      "stars": 77,
       "matched_queries": [
         "topic:gstreamer topic:robotics"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
+      "checked": "2026-10-29",
       "release": "v7.5.3",
       "released": "2026-10-27",
       "preview": "v7.5.0-rc.2",
       "release_status": "observed",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
     },
     {
       "repository": "heoconngoc/swarmlab-formations",
@@ -235,13 +235,13 @@
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-10-28",
+      "checked": "2026-10-29",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-10-28",
-      "release_observed": "2026-10-28"
+      "release_checked": "2026-10-29",
+      "release_observed": "2026-10-29"
     }
   ],
   "errors": []
