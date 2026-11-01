@@ -878,6 +878,8 @@ main {
 
 .chapter-body {
   padding: clamp(25px, 5vw, 50px);
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1200px;
 }
 
 .chapter-body > :first-child {
@@ -1764,6 +1766,10 @@ main {
 }
 
 @media print {
+  .chapter-body {
+    content-visibility: visible;
+    contain-intrinsic-size: none;
+  }
   :root {
     color-scheme: light;
   }
