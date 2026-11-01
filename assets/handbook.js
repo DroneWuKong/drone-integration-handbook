@@ -529,7 +529,7 @@
     // Measure the entire document before changing focusability. Interleaving
     // layout reads and attribute writes makes text-size changes repeatedly
     // recalculate hundreds of tables on the full handbook.
-    const measurements = Array.from(nearbyScrollRegions).map((region) => ({
+    const measurements = scrollRegions.filter((region) => nearbyScrollRegions.has(region)).map((region) => ({
       region,
       overflowing: region.scrollWidth > region.clientWidth + 1 || region.scrollHeight > region.clientHeight + 1,
     }));
