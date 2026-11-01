@@ -524,9 +524,16 @@
 
   // Only genuinely overflowing reference content adds a keyboard tab stop.
   const scrollRegions = $$(".chapter-body table, .chapter-body pre, .chapter-body .codehilite");
+  const nearbyScrollRegions = new Set();
   function updateScrollRegions() {
-    scrollRegions.forEach((region) => {
-      const overflowing = region.scrollWidth > region.clientWidth + 1 || region.scrollHeight > region.clientHeight + 1;
+    // Measure the entire document before changing focusability. Interleaving
+    // layout reads and attribute writes makes text-size changes repeatedly
+    // recalculate hundreds of tables on the full handbook.
+    const measurements = Array.from(nearbyScrollRegions).map((region) => ({
+      region,
+      overflowing: region.scrollWidth > region.clientWidth + 1 || region.scrollHeight > region.clientHeight + 1,
+    }));
+    measurements.forEach(({ region, overflowing }) => {
       const nestedScroller = region.parentElement?.closest("[data-keyboard-scroll]");
       if (overflowing && !nestedScroller) {
         region.tabIndex = 0;
@@ -547,6 +554,18 @@
     if (scrollRegionsScheduled) return;
     scrollRegionsScheduled = true;
     requestAnimationFrame(() => { scrollRegionsScheduled = false; updateScrollRegions(); });
+  }
+  if ("IntersectionObserver" in window) {
+    const regionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(({ target, isIntersecting }) => {
+        if (isIntersecting) nearbyScrollRegions.add(target);
+        else nearbyScrollRegions.delete(target);
+      });
+      scheduleScrollRegions();
+    }, { rootMargin: "1000px 0px" });
+    scrollRegions.forEach((region) => regionObserver.observe(region));
+  } else {
+    scrollRegions.forEach((region) => nearbyScrollRegions.add(region));
   }
   scheduleScrollRegions();
   window.addEventListener("resize", scheduleScrollRegions);
