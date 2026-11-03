@@ -1,127 +1,147 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-02",
-  "next_check": "2026-11-09",
+  "checked": "2026-11-03",
+  "next_check": "2026-11-10",
   "projects": [
     {
       "repository": "alexnieves-cs/frontier-fly",
       "url": "https://github.com/alexnieves-cs/frontier-fly",
       "description": "A drone that teaches itself to search buildings, from the treeline to the last room, entirely in the browser.",
       "created": "2026-10-18T17:03:20Z",
-      "pushed": "2026-11-02T02:44:33Z",
+      "pushed": "2026-11-03T03:05:49Z",
       "license": "MIT",
       "stars": 0,
       "matched_queries": [
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
+      "checked": "2026-11-03",
       "release": "v1.0.0",
       "released": "2026-10-28",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
     },
     {
-      "repository": "rsasaki0109/visloc-rs",
-      "url": "https://github.com/rsasaki0109/visloc-rs",
-      "description": "SfM, MVS, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
-      "created": "2026-05-05T02:35:57Z",
-      "pushed": "2026-11-02T02:15:30Z",
-      "license": "NOASSERTION",
-      "stars": 153,
-      "matched_queries": [
-        "topic:visual-inertial-odometry"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
-      "release": "v0.3.0",
-      "released": "2026-10-24",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
-    },
-    {
-      "repository": "DavidAlpert11/SignalViewer",
-      "url": "https://github.com/DavidAlpert11/SignalViewer",
-      "description": "Offline desktop app to plot, compare and report on flight logs, test runs and simulation data - ArduPilot, PX4, MAVLink, MATLAB, CSV, CAN; pass / fail in CI",
-      "created": "2026-10-11T19:22:58Z",
-      "pushed": "2026-11-01T21:36:50Z",
-      "license": "MIT",
+      "repository": "mirmoosa1014-rgb/flood-drone-research",
+      "url": "https://github.com/mirmoosa1014-rgb/flood-drone-research",
+      "description": "Research prototype for quality-gated telemetry, synthetic flood forecasts and interactive 3D crossing replay.",
+      "created": "2026-10-26T21:40:13Z",
+      "pushed": "2026-11-03T00:16:08Z",
+      "license": "unknown",
       "stars": 0,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
-      "release": "v1.17.0",
-      "released": "2026-11-01",
+      "checked": "2026-11-03",
+      "release": null,
+      "released": null,
       "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
     },
     {
-      "repository": "goldarte/mavlink-joystick",
-      "url": "https://github.com/goldarte/mavlink-joystick",
-      "description": "Mavlink Joystick App",
-      "created": "2026-04-27T21:41:41Z",
-      "pushed": "2026-11-01T21:02:16Z",
-      "license": "unknown",
-      "stars": 14,
+      "repository": "hudasol/post-quantum-security",
+      "url": "https://github.com/hudasol/post-quantum-security",
+      "description": "Sourced review of what post quantum cryptography costs on drone and robot microcontrollers, with a link simulator, a fleet migration planner and a free benchmark plan.",
+      "created": "2026-10-11T02:32:37Z",
+      "pushed": "2026-11-03T00:10:03Z",
+      "license": "NOASSERTION",
+      "stars": 0,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
-      "release": "v2.0",
-      "released": "2026-11-01",
-      "preview": "v2.0-rc3",
+      "checked": "2026-11-03",
+      "release": "v0.1.0",
+      "released": "2026-10-12",
+      "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
     },
     {
       "repository": "damir-lebedev/OpenPlaneProject",
       "url": "https://github.com/damir-lebedev/OpenPlaneProject",
       "description": "Open-source flight controller & autopilot for RC airplanes — 12 flight modes, RTH failsafe, black box, MAVLink. ESP32-S3 and STM32H743. Header-only C++, 387 tests.",
       "created": "2026-09-05T00:05:32Z",
-      "pushed": "2026-11-01T20:24:53Z",
+      "pushed": "2026-11-02T23:50:22Z",
       "license": "NOASSERTION",
       "stars": 1,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
+      "checked": "2026-11-03",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
     },
     {
-      "repository": "Vishnu-3727/ASCEND",
-      "url": "https://github.com/Vishnu-3727/ASCEND",
-      "description": "GPS-denied autonomous drone stack for IRoC-U 2026: Pixhawk, Raspberry Pi 5, optical-flow navigation, precision landing.",
-      "created": "2026-05-29T01:17:43Z",
-      "pushed": "2026-11-01T16:14:14Z",
-      "license": "unknown",
-      "stars": 0,
+      "repository": "breuerpeter/nexus",
+      "url": "https://github.com/breuerpeter/nexus",
+      "description": "Flight stack simulation with Newton",
+      "created": "2026-09-17T19:27:43Z",
+      "pushed": "2026-11-02T18:09:25Z",
+      "license": "Apache-2.0",
+      "stars": 5,
       "matched_queries": [
-        "topic:mavlink created:>={created_after}"
+        "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
+      "checked": "2026-11-03",
+      "release": "nexus-uav-v0.6.1",
+      "released": "2026-10-21",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
+    },
+    {
+      "repository": "rsasaki0109/visloc-rs",
+      "url": "https://github.com/rsasaki0109/visloc-rs",
+      "description": "SfM, MVS, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
+      "created": "2026-05-05T02:35:57Z",
+      "pushed": "2026-11-02T15:25:35Z",
+      "license": "NOASSERTION",
+      "stars": 153,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-03",
+      "release": "v0.3.0",
+      "released": "2026-10-24",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
+    },
+    {
+      "repository": "ThomasGust/TritonOS",
+      "url": "https://github.com/ThomasGust/TritonOS",
+      "description": "Onboard software for Triton Robotics' underwater ROV (2nd overall, 2026 MATE ROV Worlds): control loop, thrusters, telemetry, video.",
+      "created": "2025-10-30T19:31:11Z",
+      "pushed": "2026-11-02T05:24:19Z",
+      "license": "unknown",
+      "stars": 1,
+      "matched_queries": [
+        "topic:gstreamer topic:robotics"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-03",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
     },
     {
       "repository": "eforus-overseer/propwash",
@@ -135,33 +155,13 @@
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
+      "checked": "2026-11-03",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
-    },
-    {
-      "repository": "hammerill/libfpv",
-      "url": "https://github.com/hammerill/libfpv",
-      "description": "FPV drone in any game.",
-      "created": "2026-10-12T18:59:51Z",
-      "pushed": "2026-11-01T15:23:48Z",
-      "license": "GPL-3.0",
-      "stars": 31,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
     },
     {
       "repository": "michaelyuuu/ECE-276A_Visual-Inertial-SLAM",
@@ -175,13 +175,13 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
+      "checked": "2026-11-03",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
     },
     {
       "repository": "Lin-Ruipeng/vins-fusion-map-localization",
@@ -195,33 +195,13 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
+      "checked": "2026-11-03",
       "release": "v0.1.0-euroc",
       "released": "2026-11-01",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
-    },
-    {
-      "repository": "Folding-Chair-Labs/zed-mac",
-      "url": "https://github.com/Folding-Chair-Labs/zed-mac",
-      "description": "Stereolabs ZED Mini on macOS (Apple Silicon) without the ZED SDK: stereo capture, neural depth on MPS, 800 Hz IMU with frame sync, live visual-inertial odometry (Basalt).",
-      "created": "2026-11-01T06:36:36Z",
-      "pushed": "2026-11-01T06:36:40Z",
-      "license": "MIT",
-      "stars": 0,
-      "matched_queries": [
-        "topic:visual-inertial-odometry"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
     },
     {
       "repository": "alireza787b/PixEagle",
@@ -235,13 +215,33 @@
         "topic:gstreamer topic:robotics"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-02",
+      "checked": "2026-11-03",
       "release": "v7.5.3",
       "released": "2026-10-27",
       "preview": "v7.5.0-rc.2",
       "release_status": "observed",
-      "release_checked": "2026-11-02",
-      "release_observed": "2026-11-02"
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
+    },
+    {
+      "repository": "introlab/opentera-webrtc",
+      "url": "https://github.com/introlab/opentera-webrtc",
+      "description": "WebRTC JavaScript, C++ and Python libraries and signaling server for the OpenTera project with hardware acceleration with GStreamer",
+      "created": "2020-06-01T22:36:39Z",
+      "pushed": "2026-10-27T15:05:46Z",
+      "license": "Apache-2.0",
+      "stars": 41,
+      "matched_queries": [
+        "topic:gstreamer topic:robotics"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-03",
+      "release": "v1.2.6",
+      "released": "2024-12-18",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-03",
+      "release_observed": "2026-11-03"
     }
   ],
   "errors": []
