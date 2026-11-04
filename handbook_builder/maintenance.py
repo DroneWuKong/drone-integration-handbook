@@ -142,6 +142,9 @@ def discover(config, reader, today):
             if not re.fullmatch(r"[0-9a-f]{40}", sha): raise ValueError("Invalid source revision")
             observations.append({"repository": repo, "revision": sha, "pushed": meta.get("pushed_at"), "checked": today.isoformat(), "status": "observed"})
             for path in source.get("paths", ["README.md"]):
+                # The discovery budget belongs to the repository, not each file.
+                # Also account for repeated repository entries in configuration.
+                if sum(x.get("discovery_repository") == repo for x in records) >= 3: break
                 if not re.fullmatch(r"[a-zA-Z0-9_./-]+", path) or ".." in Path(path).parts: raise ValueError("Invalid discovery path")
                 obj = reader("repos/" + repo + "/contents/" + path + "?ref=" + sha)
                 body = base64.b64decode(obj["content"], validate=False).decode("utf-8")

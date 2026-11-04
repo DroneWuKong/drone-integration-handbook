@@ -8,7 +8,7 @@ from datetime import date
 from pathlib import Path
 from unittest.mock import Mock, patch
 from handbook_builder.autonomous import research_spec, verify_source_snapshots
-from handbook_builder.maintenance import apply_verified, pending, releases, update_watchlist, cell, scheduled_records, GitHubReader
+from handbook_builder.maintenance import apply_verified, pending, releases, update_watchlist, cell, scheduled_records, GitHubReader, discover
 
 TODAY=date(2026,10,7)
 STATEMENT='The documented protocol includes a sequence field.'
@@ -29,6 +29,24 @@ def bundle(path='integration/repository-updates.md'):
     return {'spec':spec,'packets':packets,'decision':{'id':'d'*24,'created_at':'2026-10-07T03:00:00Z'}}
 
 class MaintenanceTests(unittest.TestCase):
+    def test_discovery_budget_spans_files_and_repeated_repository_entries(self):
+        import base64
+        calls=[]
+        def reader(resource):
+            calls.append(resource)
+            if '/contents/' in resource:
+                body='The documented telemetry protocol supports replay of recorded sensor messages for offline analysis.'
+                return {'content':base64.b64encode(body.encode()).decode(),'sha':'b'*40}
+            if '/commits/' in resource:return {'sha':'a'*40}
+            return {'default_branch':'main','private':False}
+        source={'repository':'example/repo','paths':['README.md','docs/one.md','docs/two.md','docs/three.md']}
+        other={'repository':'example/other','paths':['README.md']}
+        records,_=discover({'repositories':[source,source,other]},reader,TODAY)
+        self.assertEqual(sum(r['discovery_repository']=='example/repo' for r in records),3)
+        self.assertEqual(sum(r['discovery_repository']=='example/other' for r in records),1)
+        self.assertEqual(len([c for c in calls if '/contents/' in c]),4)
+        self.assertTrue(all('no hardware acceptance' in r['scope'] for r in records))
+
     def test_github_reader_retries_transient_disconnect_only(self):
         response=Mock();response.read.return_value=b'{"ok": true}'
         response.__enter__=Mock(return_value=response);response.__exit__=Mock(return_value=False)

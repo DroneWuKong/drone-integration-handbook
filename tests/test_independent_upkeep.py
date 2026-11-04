@@ -12,6 +12,15 @@ from scripts import maintain_handbook, package_maintenance, run_autonomous_evide
 
 
 class IndependentUpkeepTests(unittest.TestCase):
+    def test_private_inventory_restores_shared_source_history_before_monitoring(self):
+        workflow=(Path(__file__).resolve().parents[1]/'.github/workflows/evidence-facts.yml').read_text()
+        inventory=workflow.split('\n  inventory:',1)[1].split('\n  prepare:',1)[0]
+        self.assertLess(inventory.index('uses: actions/cache/restore@v4'),
+                        inventory.index('python3 scripts/check_sources.py'))
+        restore=inventory.split('uses: actions/cache/restore@v4',1)[1].split('      - name:',1)[0]
+        self.assertIn('path: .local/source-review.json',restore)
+        self.assertIn('restore-keys: evidence-source-state-',restore)
+
     def run_cycle(self, private_reads, *, configured=True):
         directory = tempfile.TemporaryDirectory()
         self.addCleanup(directory.cleanup)
