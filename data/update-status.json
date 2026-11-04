@@ -151,8 +151,8 @@
   "repositories": [
     {
       "repository": "DroneWuKong/droneclear_Forge",
-      "revision": "185f7a3193f6b3b66ff39f8362a08eaf459c1aeb",
-      "pushed": "2026-11-03T13:29:23Z",
+      "revision": "c5eea593c754ba17409b58e9be2fe4bc091f65ce",
+      "pushed": "2026-11-04T13:28:41Z",
       "checked": "2026-11-04",
       "status": "observed"
     },
@@ -213,23 +213,23 @@
       "status": "observed"
     },
     {
-      "repository": "hsb020524/DroneC2",
-      "revision": "f37503e3ccad0e64e7f904720fe9b64ef242e5e0",
-      "pushed": "2026-11-04T00:03:15Z",
+      "repository": "breuerpeter/nexus",
+      "revision": "5a6b5872c287a4c4adebc52f908922ee92932856",
+      "pushed": "2026-11-04T14:43:11Z",
       "checked": "2026-11-04",
       "status": "observed"
     },
     {
-      "repository": "hammerill/libfpv",
-      "revision": "52be06cecb96884038d8aa947fcbc948ea5c6530",
-      "pushed": "2026-11-03T20:49:58Z",
+      "repository": "cmc0619/node-red-contrib-mavlink",
+      "revision": "7c83673cc33e846f0b8777472fbcdac4dacd0fd4",
+      "pushed": "2026-11-04T14:14:33Z",
       "checked": "2026-11-04",
       "status": "observed"
     },
     {
-      "repository": "tecelskyyivan-alt/ardu-field-planner",
-      "revision": "4c4e28fef2ceff12c4d2d7b811a8e852d9a84257",
-      "pushed": "2026-11-03T19:07:59Z",
+      "repository": "alexnieves-cs/frontier-fly",
+      "revision": "c4edbc17464573b2b9664a5807eb01c89af40a1d",
+      "pushed": "2026-11-04T14:08:27Z",
       "checked": "2026-11-04",
       "status": "observed"
     }

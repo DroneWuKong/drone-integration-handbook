@@ -29,7 +29,7 @@ See [emerging projects](../integration/emerging-technology-watch.md) and [reposi
 
 | Repository | Observed revision | Last push | Check attempted | Status |
 |---|---|---|---|---|
-| [DroneWuKong/droneclear_Forge](https://github.com/DroneWuKong/droneclear_Forge) | 185f7a3193f6 | 2026-11-03 | 2026-11-04 | observed |
+| [DroneWuKong/droneclear_Forge](https://github.com/DroneWuKong/droneclear_Forge) | c5eea593c754 | 2026-11-04 | 2026-11-04 | observed |
 | [DroneWuKong/forge-data](https://github.com/DroneWuKong/forge-data) | 3041642fdca3 | 2026-10-04 | 2026-11-04 | observed |
 | [DroneWuKong/MultiProtocol-UAS-TAK-Bridge](https://github.com/DroneWuKong/MultiProtocol-UAS-TAK-Bridge) | 3177a1ffdf91 | 2026-10-04 | 2026-11-04 | observed |
 | [DroneWuKong/Orqa_H7_PX4_Ports](https://github.com/DroneWuKong/Orqa_H7_PX4_Ports) | 84d228c63dc8 | 2026-10-24 | 2026-11-04 | observed |
@@ -38,9 +38,9 @@ See [emerging projects](../integration/emerging-technology-watch.md) and [reposi
 | [DroneWuKong/Orqa_Betaflight_Ports](https://github.com/DroneWuKong/Orqa_Betaflight_Ports) | b868a56f4392 | 2026-11-03 | 2026-11-04 | observed |
 | [DroneWuKong/Orqa_ArduPilot_Ports](https://github.com/DroneWuKong/Orqa_ArduPilot_Ports) | ee71ab28c3a9 | 2026-10-24 | 2026-11-04 | observed |
 | [DroneWuKong/betaflight-improvements](https://github.com/DroneWuKong/betaflight-improvements) | 48f0c9a3f37c | 2026-10-23 | 2026-11-04 | observed |
-| [hsb020524/DroneC2](https://github.com/hsb020524/DroneC2) | f37503e3ccad | 2026-11-04 | 2026-11-04 | observed |
-| [hammerill/libfpv](https://github.com/hammerill/libfpv) | 52be06cecb96 | 2026-11-03 | 2026-11-04 | observed |
-| [tecelskyyivan-alt/ardu-field-planner](https://github.com/tecelskyyivan-alt/ardu-field-planner) | 4c4e28fef2ce | 2026-11-03 | 2026-11-04 | observed |
+| [breuerpeter/nexus](https://github.com/breuerpeter/nexus) | 5a6b5872c287 | 2026-11-04 | 2026-11-04 | observed |
+| [cmc0619/node-red-contrib-mavlink](https://github.com/cmc0619/node-red-contrib-mavlink) | 7c83673cc33e | 2026-11-04 | 2026-11-04 | observed |
+| [alexnieves-cs/frontier-fly](https://github.com/alexnieves-cs/frontier-fly) | c4edbc174645 | 2026-11-04 | 2026-11-04 | observed |
 
 ## Source checks and review dates
 
