@@ -43,6 +43,12 @@ jobs:
         run: |
           python3 -m pip install -r requirements.txt
           GITHUB_SHA="$(git rev-parse HEAD)" python3 build.py
+      - name: Restore source fingerprints and open review history
+        uses: actions/cache/restore@v4
+        with:
+          path: .local/source-review.json
+          key: evidence-source-state-${{ github.run_id }}
+          restore-keys: evidence-source-state-
       - name: Discover public candidates and check dated sources
         env:
           GITHUB_TOKEN: ${{ github.token }}
