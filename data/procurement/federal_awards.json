@@ -33,6 +33,22 @@
       "generated_internal_id": "CONT_AWD_W58RGZ08C0023_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 349075357,
+      "Award ID": "W58RGZ21C0013",
+      "Recipient Name": "TEXTRON SYSTEMS CORPORATION",
+      "Award Amount": 651695139.58,
+      "Total Outlays": 0.0,
+      "Description": "CONTRACTOR LOGISTICS SUPPORT FOR THE SHADOW UNMANNED AIRCRAFT SYSTEM.",
+      "Start Date": "2020-12-31",
+      "End Date": "2025-03-08",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W58RGZ21C0013_9700_-NONE-_-NONE-"
+    },
+    {
       "internal_id": 349073654,
       "Award ID": "W58RGZ15C0047",
       "Recipient Name": "TEXTRON SYSTEMS CORPORATION",
@@ -47,22 +63,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W58RGZ15C0047_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 349075357,
-      "Award ID": "W58RGZ21C0013",
-      "Recipient Name": "TEXTRON SYSTEMS CORPORATION",
-      "Award Amount": 325847569.79,
-      "Total Outlays": 0.0,
-      "Description": "CONTRACTOR LOGISTICS SUPPORT FOR THE SHADOW UNMANNED AIRCRAFT SYSTEM.",
-      "Start Date": "2020-12-31",
-      "End Date": "2025-03-08",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W58RGZ21C0013_9700_-NONE-_-NONE-"
     },
     {
       "internal_id": 349076205,
@@ -3361,6 +3361,22 @@
       "generated_internal_id": "CONT_AWD_80NM0018F0795_8000_80NM0018D0004_8000"
     },
     {
+      "internal_id": 348950763,
+      "Award ID": "W31P4Q23F0256",
+      "Recipient Name": "SRC INC",
+      "Award Amount": 53702663.88,
+      "Total Outlays": null,
+      "Description": "C-UAS, E-LIDS, INC2 W/) MMR, PART NUMBER SRC7118 PURCHASE",
+      "Start Date": "2023-08-30",
+      "End Date": "2025-11-30",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W31P4Q23F0256_9700_W31P4Q20D0032_9700"
+    },
+    {
       "internal_id": 307706797,
       "Award ID": "HSDTCG2302C2DW001HSDTCG2304F2DW096",
       "Recipient Name": "INTEGRATED COAST GUARD SYSTEMS LLC",
@@ -3583,22 +3599,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_N0001924C0029_9700_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 348950763,
-      "Award ID": "W31P4Q23F0256",
-      "Recipient Name": "SRC INC",
-      "Award Amount": 26851331.94,
-      "Total Outlays": null,
-      "Description": "C-UAS, E-LIDS, INC2 W/) MMR, PART NUMBER SRC7118 PURCHASE",
-      "Start Date": "2023-08-30",
-      "End Date": "2025-11-30",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Army",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_W31P4Q23F0256_9700_W31P4Q20D0032_9700"
     },
     {
       "internal_id": 278314530,
@@ -12705,6 +12705,6 @@
       "generated_internal_id": "ASST_NON_693JJ32540186_069"
     }
   ],
-  "scraped_at": "2026-11-05T10:35:42.278962+00:00",
+  "scraped_at": "2026-11-06T10:35:42.634098+00:00",
   "count": 794
 }
