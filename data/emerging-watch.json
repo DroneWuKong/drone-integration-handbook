@@ -1,87 +1,127 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-08",
-  "next_check": "2026-11-15",
+  "checked": "2026-11-09",
+  "next_check": "2026-11-16",
   "projects": [
     {
       "repository": "rsasaki0109/visloc-rs",
       "url": "https://github.com/rsasaki0109/visloc-rs",
       "description": "SfM, MVS, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
       "created": "2026-05-05T02:35:57Z",
-      "pushed": "2026-11-08T03:02:40Z",
+      "pushed": "2026-11-09T03:00:18Z",
       "license": "NOASSERTION",
-      "stars": 161,
+      "stars": 162,
       "matched_queries": [
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "release": "v0.3.0",
       "released": "2026-10-24",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
     },
     {
-      "repository": "balax-24/aerothon-2026-drone-gcs",
-      "url": "https://github.com/balax-24/aerothon-2026-drone-gcs",
-      "description": "Team Ignite Knights 4.0 · SAE AeroTHON 2026: browser GCS for ArduPilot on Raspberry Pi 5, Mission 2 (SkyScan) autonomy, YOLOv8n detector and Simscape simulation.",
-      "created": "2026-05-16T13:36:31Z",
-      "pushed": "2026-11-08T02:35:38Z",
+      "repository": "otaviorossi07/kv260-uav-vision",
+      "url": "https://github.com/otaviorossi07/kv260-uav-vision",
+      "description": "Embedded vision on an AMD Kria KV260 companion computer for PX4/ArduPilot UAVs, bench-first (SITL/HITL)",
+      "created": "2026-11-09T01:38:39Z",
+      "pushed": "2026-11-09T01:38:45Z",
       "license": "MIT",
       "stars": 0,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
     },
     {
       "repository": "LoftedAero/loftygcs",
       "url": "https://github.com/LoftedAero/loftygcs",
       "description": "Cross-platform ground control station for ArduPilot, in the browser and on the desktop",
       "created": "2026-08-30T02:39:02Z",
-      "pushed": "2026-11-08T02:34:42Z",
+      "pushed": "2026-11-09T00:03:18Z",
       "license": "GPL-3.0",
       "stars": 2,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
-      "release": "v0.9.1",
-      "released": "2026-10-14",
+      "checked": "2026-11-09",
+      "release": "v0.9.3",
+      "released": "2026-11-09",
       "preview": "v0.9.0",
       "release_status": "observed",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
     },
     {
-      "repository": "RickyWu18/plotjuggler-drone",
-      "url": "https://github.com/RickyWu18/plotjuggler-drone",
-      "description": "Unofficial PlotJuggler plugins for drone flight analysis and visualization",
-      "created": "2026-05-22T02:15:19Z",
-      "pushed": "2026-11-08T02:15:27Z",
+      "repository": "DavidAlpert11/SignalViewer",
+      "url": "https://github.com/DavidAlpert11/SignalViewer",
+      "description": "Offline desktop app to plot, compare and report on flight logs, test runs and simulation data - ArduPilot, PX4, MAVLink, MATLAB, CSV, CAN; pass / fail in CI",
+      "created": "2026-10-11T19:22:58Z",
+      "pushed": "2026-11-08T21:21:12Z",
       "license": "MIT",
-      "stars": 1,
+      "stars": 0,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
-      "release": "data_load_ardupilot/v1.0.0",
+      "checked": "2026-11-09",
+      "release": "v1.22.0",
+      "released": "2026-11-07",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
+    },
+    {
+      "repository": "hammerill/libfpv",
+      "url": "https://github.com/hammerill/libfpv",
+      "description": "FPV drone in any game.",
+      "created": "2026-10-12T18:59:51Z",
+      "pushed": "2026-11-08T14:15:47Z",
+      "license": "GPL-3.0",
+      "stars": 33,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-09",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
+    },
+    {
+      "repository": "Enginar140/hangar",
+      "url": "https://github.com/Enginar140/hangar",
+      "description": "Multi-vehicle ArduPilot SITL + Gazebo from one terminal: TUI, one port plan, MAVLink router, one-line install.",
+      "created": "2026-10-17T23:58:49Z",
+      "pushed": "2026-11-08T13:12:09Z",
+      "license": "MIT",
+      "stars": 4,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-09",
+      "release": "v0.3.8",
       "released": "2026-11-08",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
     },
     {
       "repository": "VOLTEKOVER/OmniRID-Universal-Drone-ID",
@@ -95,13 +135,13 @@
         "topic:dronecan"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
     },
     {
       "repository": "ChRotsides/3d-recon",
@@ -115,13 +155,13 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
     },
     {
       "repository": "kudratsingh/banshee",
@@ -135,13 +175,13 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
     },
     {
       "repository": "forgetheworlds/drone-rl",
@@ -155,13 +195,13 @@
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
     },
     {
       "repository": "BeyondRobotix/Arduino-DroneCAN",
@@ -175,13 +215,13 @@
         "topic:dronecan"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "release": "2.1.0",
       "released": "2026-08-04",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
     },
     {
       "repository": "alexnieves-cs/frontier-fly",
@@ -195,53 +235,13 @@
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
+      "checked": "2026-11-09",
       "release": "v1.0.0",
       "released": "2026-10-28",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
-    },
-    {
-      "repository": "Blackcipher101/uw-vslam-bench",
-      "url": "https://github.com/Blackcipher101/uw-vslam-bench",
-      "description": "Underwater visual SLAM benchmark harness and baselines, with the negative results published (learned failure warning, sonar-in-camera).",
-      "created": "2026-11-05T03:29:44Z",
-      "pushed": "2026-11-06T09:37:57Z",
-      "license": "unknown",
-      "stars": 0,
-      "matched_queries": [
-        "topic:visual-inertial-odometry"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
-    },
-    {
-      "repository": "Blackcipher101/uw-vio-dvl",
-      "url": "https://github.com/Blackcipher101/uw-vio-dvl",
-      "description": "Underwater stereo-inertial-pressure VIO (GTSAM) with a tightly coupled DVL factor that survives dropouts. 20 s camera blackout: ATE 3.88 m -> 0.66 m (simulated DVL); Stonefish benchmark.",
-      "created": "2026-11-05T03:57:11Z",
-      "pushed": "2026-11-06T09:37:49Z",
-      "license": "unknown",
-      "stars": 0,
-      "matched_queries": [
-        "topic:visual-inertial-odometry"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-08",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-08",
-      "release_observed": "2026-11-08"
+      "release_checked": "2026-11-09",
+      "release_observed": "2026-11-09"
     }
   ],
   "errors": []
