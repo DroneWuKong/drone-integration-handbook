@@ -1,247 +1,247 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-09",
-  "next_check": "2026-11-16",
+  "checked": "2026-11-10",
+  "next_check": "2026-11-17",
   "projects": [
     {
-      "repository": "rsasaki0109/visloc-rs",
-      "url": "https://github.com/rsasaki0109/visloc-rs",
-      "description": "SfM, MVS, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
-      "created": "2026-05-05T02:35:57Z",
-      "pushed": "2026-11-09T03:00:18Z",
-      "license": "NOASSERTION",
-      "stars": 162,
-      "matched_queries": [
-        "topic:visual-inertial-odometry"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
-      "release": "v0.3.0",
-      "released": "2026-10-24",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
-    },
-    {
-      "repository": "otaviorossi07/kv260-uav-vision",
-      "url": "https://github.com/otaviorossi07/kv260-uav-vision",
-      "description": "Embedded vision on an AMD Kria KV260 companion computer for PX4/ArduPilot UAVs, bench-first (SITL/HITL)",
-      "created": "2026-11-09T01:38:39Z",
-      "pushed": "2026-11-09T01:38:45Z",
-      "license": "MIT",
-      "stars": 0,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
-    },
-    {
-      "repository": "LoftedAero/loftygcs",
-      "url": "https://github.com/LoftedAero/loftygcs",
-      "description": "Cross-platform ground control station for ArduPilot, in the browser and on the desktop",
-      "created": "2026-08-30T02:39:02Z",
-      "pushed": "2026-11-09T00:03:18Z",
+      "repository": "altnautica/ADOSDroneAgent",
+      "url": "https://github.com/altnautica/ADOSDroneAgent",
+      "description": "ADOS Drone Agent: onboard software for the drone's companion computer. MAVLink routing, HD video, long-range radio link, plugins and published Rust crates.",
+      "created": "2026-03-03T08:31:25Z",
+      "pushed": "2026-11-10T03:01:14Z",
       "license": "GPL-3.0",
-      "stars": 2,
+      "stars": 27,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
-      "release": "v0.9.3",
-      "released": "2026-11-09",
-      "preview": "v0.9.0",
+      "checked": "2026-11-10",
+      "release": "v0.109.29",
+      "released": "2026-11-08",
+      "preview": "rev-0628c182e22a4da9e1670a22565a40761eddd6e5",
       "release_status": "observed",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
-    },
-    {
-      "repository": "DavidAlpert11/SignalViewer",
-      "url": "https://github.com/DavidAlpert11/SignalViewer",
-      "description": "Offline desktop app to plot, compare and report on flight logs, test runs and simulation data - ArduPilot, PX4, MAVLink, MATLAB, CSV, CAN; pass / fail in CI",
-      "created": "2026-10-11T19:22:58Z",
-      "pushed": "2026-11-08T21:21:12Z",
-      "license": "MIT",
-      "stars": 0,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
-      "release": "v1.22.0",
-      "released": "2026-11-07",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
     },
     {
       "repository": "hammerill/libfpv",
       "url": "https://github.com/hammerill/libfpv",
       "description": "FPV drone in any game.",
       "created": "2026-10-12T18:59:51Z",
-      "pushed": "2026-11-08T14:15:47Z",
+      "pushed": "2026-11-10T02:44:56Z",
       "license": "GPL-3.0",
-      "stars": 33,
+      "stars": 35,
       "matched_queries": [
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
+      "checked": "2026-11-10",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
     },
     {
-      "repository": "Enginar140/hangar",
-      "url": "https://github.com/Enginar140/hangar",
-      "description": "Multi-vehicle ArduPilot SITL + Gazebo from one terminal: TUI, one port plan, MAVLink router, one-line install.",
-      "created": "2026-10-17T23:58:49Z",
-      "pushed": "2026-11-08T13:12:09Z",
-      "license": "MIT",
-      "stars": 4,
+      "repository": "altnautica/ADOSMissionControl",
+      "url": "https://github.com/altnautica/ADOSMissionControl",
+      "description": "ADOS Mission Control: open-source ground control station for browser and desktop. FC setup, mission planning, flight, 3D simulation and fleet.",
+      "created": "2026-02-27T13:29:45Z",
+      "pushed": "2026-11-10T02:13:47Z",
+      "license": "NOASSERTION",
+      "stars": 255,
       "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
+        "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
-      "release": "v0.3.8",
-      "released": "2026-11-08",
+      "checked": "2026-11-10",
+      "release": "v0.62.0",
+      "released": "2026-11-10",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
     },
     {
-      "repository": "VOLTEKOVER/OmniRID-Universal-Drone-ID",
-      "url": "https://github.com/VOLTEKOVER/OmniRID-Universal-Drone-ID",
-      "description": "OmniRID — A universal, hardware-agnostic drone identification transmitter, built in Rust. Any protocol in, any protocol out.Input drivers read GPS/telemetry from any flight controller protocol (MAVLink, MSP, NMEA, DroneCAN...). Output drivers broadcast via any RID standard (ASTM F3411, EU ASD-STAN, China's GB42590-2023(to-do), or future ones)",
-      "created": "2026-06-05T10:27:12Z",
-      "pushed": "2026-11-07T17:07:33Z",
-      "license": "AGPL-3.0",
-      "stars": 0,
-      "matched_queries": [
-        "topic:dronecan"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
-    },
-    {
-      "repository": "ChRotsides/3d-recon",
-      "url": "https://github.com/ChRotsides/3d-recon",
-      "description": "Phone-only room scanning for Android: 360° panoramas, metric point clouds and live on-device TSDF reconstruction from camera + IMU, no LiDAR or ARCore. Visual-inertial odometry, monocular depth, simulator.",
-      "created": "2026-11-07T12:41:58Z",
-      "pushed": "2026-11-07T14:35:12Z",
-      "license": "AGPL-3.0",
-      "stars": 0,
+      "repository": "rsasaki0109/visloc-rs",
+      "url": "https://github.com/rsasaki0109/visloc-rs",
+      "description": "SfM, MVS, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
+      "created": "2026-05-05T02:35:57Z",
+      "pushed": "2026-11-10T01:57:11Z",
+      "license": "NOASSERTION",
+      "stars": 166,
       "matched_queries": [
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
-      "release": null,
-      "released": null,
+      "checked": "2026-11-10",
+      "release": "v0.3.0",
+      "released": "2026-10-24",
       "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
+      "release_status": "observed",
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
     },
     {
-      "repository": "kudratsingh/banshee",
-      "url": "https://github.com/kudratsingh/banshee",
-      "description": "Autonomous aerial robotics platform for GPS-denied navigation, visual-inertial localization and inspection. Built around PX4, ROS 2, Gazebo SITL, offboard mission control, deterministic command gating, fault injection and contract-based trajectory logging.",
-      "created": "2026-10-31T09:08:08Z",
-      "pushed": "2026-11-07T09:12:17Z",
+      "repository": "mirmoosa1014-rgb/flood-drone-research",
+      "url": "https://github.com/mirmoosa1014-rgb/flood-drone-research",
+      "description": "Research prototype for quality-gated telemetry, synthetic flood forecasts and interactive 3D crossing replay.",
+      "created": "2026-10-26T21:40:13Z",
+      "pushed": "2026-11-10T00:06:23Z",
       "license": "unknown",
       "stars": 0,
       "matched_queries": [
-        "topic:visual-inertial-odometry"
+        "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
+      "checked": "2026-11-10",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
-    },
-    {
-      "repository": "forgetheworlds/drone-rl",
-      "url": "https://github.com/forgetheworlds/drone-rl",
-      "description": "Stereo-depth indoor drone navigation: DAgger student policy, RAPTOR control, honest sim eval under camera noise. Sim-to-real prep for a cheap ESP32 build.",
-      "created": "2026-10-23T20:38:42Z",
-      "pushed": "2026-11-06T19:27:34Z",
-      "license": "MIT",
-      "stars": 0,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
-    },
-    {
-      "repository": "BeyondRobotix/Arduino-DroneCAN",
-      "url": "https://github.com/BeyondRobotix/Arduino-DroneCAN",
-      "description": "DroneCAN support for Arduino on STM32!",
-      "created": "2024-12-30T22:55:10Z",
-      "pushed": "2026-11-06T15:54:01Z",
-      "license": "MIT",
-      "stars": 25,
-      "matched_queries": [
-        "topic:dronecan"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
-      "release": "2.1.0",
-      "released": "2026-08-04",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
     },
     {
       "repository": "alexnieves-cs/frontier-fly",
       "url": "https://github.com/alexnieves-cs/frontier-fly",
       "description": "A drone that teaches itself to search buildings, from the treeline to the last room, entirely in the browser.",
       "created": "2026-10-18T17:03:20Z",
-      "pushed": "2026-11-06T13:02:35Z",
+      "pushed": "2026-11-09T23:18:47Z",
       "license": "MIT",
       "stars": 0,
       "matched_queries": [
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-09",
+      "checked": "2026-11-10",
       "release": "v1.0.0",
       "released": "2026-10-28",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-09",
-      "release_observed": "2026-11-09"
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
+    },
+    {
+      "repository": "formiat/px4-ros2-drone-nav",
+      "url": "https://github.com/formiat/px4-ros2-drone-nav",
+      "description": "Autonomous UAV navigation in GNSS-denied indoor spaces with no prior map: stereo VIO (MSCKF) and lidar-inertial odometry with map-based relocalization (SLAM), 3D occupancy mapping, D* Lite path planning and GPU MPPI obstacle avoidance. PX4 + ROS 2 + Gazebo SITL, DARPA SubT Urban.",
+      "created": "2026-07-06T00:14:21Z",
+      "pushed": "2026-11-09T20:18:55Z",
+      "license": "MIT",
+      "stars": 170,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-10",
+      "release": "v0.7.0",
+      "released": "2026-10-31",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
+    },
+    {
+      "repository": "red-straw/drone-surveillance-system",
+      "url": "https://github.com/red-straw/drone-surveillance-system",
+      "description": "Unity drone simulation that detects intruders via CCTV and tracks them with a YOLO server",
+      "created": "2026-11-09T17:52:50Z",
+      "pushed": "2026-11-09T18:37:24Z",
+      "license": "MIT",
+      "stars": 1,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-10",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
+    },
+    {
+      "repository": "VOLTEKOVER/OmniRID-Universal-Drone-ID",
+      "url": "https://github.com/VOLTEKOVER/OmniRID-Universal-Drone-ID",
+      "description": "OmniRID — A universal, hardware-agnostic drone identification transmitter, built in Rust. Any protocol in, any protocol out.Input drivers read GPS/telemetry from any flight controller protocol (MAVLink, MSP, NMEA, DroneCAN...). Output drivers broadcast via any RID standard (ASTM F3411, EU ASD-STAN, China's GB42590-2023(to-do), or future ones)",
+      "created": "2026-06-05T10:27:12Z",
+      "pushed": "2026-11-09T14:52:50Z",
+      "license": "AGPL-3.0",
+      "stars": 0,
+      "matched_queries": [
+        "topic:dronecan"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-10",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
+    },
+    {
+      "repository": "iis-esslingen/rover_benchmark",
+      "url": "https://github.com/iis-esslingen/rover_benchmark",
+      "description": "[T-RO 2025] The ROVER Visual SLAM Benchmark",
+      "created": "2024-12-04T06:56:04Z",
+      "pushed": "2026-11-09T12:37:33Z",
+      "license": "MIT",
+      "stars": 43,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-10",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
+    },
+    {
+      "repository": "ThomasGust/TritonOS",
+      "url": "https://github.com/ThomasGust/TritonOS",
+      "description": "Onboard software for Triton Robotics' underwater ROV (2nd overall, 2026 MATE ROV Worlds): control loop, thrusters, telemetry, video.",
+      "created": "2025-10-30T19:31:11Z",
+      "pushed": "2026-11-09T05:38:45Z",
+      "license": "unknown",
+      "stars": 3,
+      "matched_queries": [
+        "topic:gstreamer topic:robotics"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-10",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
+    },
+    {
+      "repository": "kornia/kornia-slam",
+      "url": "https://github.com/kornia/kornia-slam",
+      "description": "Real-time visual-inertial SLAM in Rust, built on kornia-rs.",
+      "created": "2025-01-20T22:47:57Z",
+      "pushed": "2026-11-08T16:09:09Z",
+      "license": "Apache-2.0",
+      "stars": 112,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-10",
+      "release": "v0.1.0",
+      "released": "2026-09-27",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-10",
+      "release_observed": "2026-11-10"
     }
   ],
   "errors": []
