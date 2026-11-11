@@ -13,3 +13,9 @@ The watchlist now separates overdue and due-today reviews from fetch availabilit
 ## Discovery and publication boundaries
 
 [MAVLink SITL Assurance Lab](https://github.com/JasonStys/mavlink-sitl-assurance-lab) is a public, simulator-only candidate, not an observed hardware result or a published release. It remains watch-only. No new facts qualified for automatic publication. The exact-statement research/verifier gate, publication holds, sanitized private-export path, durable ledger and non-renewing trial limits remain unchanged.
+
+## Validation follow-up
+
+The [initial PR check](https://github.com/DroneWuKong/drone-integration-handbook/actions/runs/43042060726) passed the build and evidence checks but could not install browser dependencies: the hosted runner failed to resolve `security.ubuntu.com`. The three hosted validation jobs now use the official, digest-pinned Playwright image matching the lockfile, which includes Chromium and its libraries. They still run the same browser checks before publication.
+
+Subsequent direct probes from a separate environment returned HTTP 200 for both vendor URLs using the monitor's request headers. That does not establish recovery on the hosted runner; its own next observation controls the watchlist. No vendor URLs or evidence dates were changed.

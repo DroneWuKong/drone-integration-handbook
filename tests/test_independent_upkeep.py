@@ -12,6 +12,18 @@ from scripts import maintain_handbook, package_maintenance, run_autonomous_evide
 
 
 class IndependentUpkeepTests(unittest.TestCase):
+    def test_browser_validators_use_the_lockfile_playwright_image(self):
+        root = Path(__file__).resolve().parents[1]
+        lock = json.loads((root / "package-lock.json").read_text())
+        version = lock["packages"]["node_modules/playwright"]["version"]
+        for name in ("link-check", "evidence-review", "evidence-facts"):
+            with self.subTest(workflow=name):
+                workflow = (root / ".github" / "workflows" / f"{name}.yml").read_text()
+                validate = workflow.split("\n  validate:", 1)[1].split("\n  publish:", 1)[0]
+                self.assertRegex(validate, rf"image: mcr\.microsoft\.com/playwright:v{version.replace('.', '[.]')}-noble@sha256:[0-9a-f]{{64}}")
+                self.assertIn("npm run test:browser", validate)
+                self.assertNotIn("playwright install --with-deps", validate)
+
     def test_private_inventory_restores_shared_source_history_before_monitoring(self):
         workflow=(Path(__file__).resolve().parents[1]/'.github/workflows/evidence-facts.yml').read_text()
         inventory=workflow.split('\n  inventory:',1)[1].split('\n  prepare:',1)[0]

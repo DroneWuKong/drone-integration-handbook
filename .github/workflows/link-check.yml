@@ -18,6 +18,12 @@ concurrency:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    # Keep Chromium and its system libraries matched to package-lock.json.
+    container:
+      image: mcr.microsoft.com/playwright:v1.63.0-noble@sha256:eff16c30e6f3f4af0a03fa4b706120d5e9b0891c344a27d64559aff5900a4a27
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
 
@@ -65,9 +71,6 @@ jobs:
 
       - name: Compile Pages Functions
         run: npm run build:functions
-
-      - name: Install test browser
-        run: npx playwright install --with-deps chromium
 
       - name: Check mobile reporting, review, offline recovery and no-JavaScript access
         run: npm run test:browser

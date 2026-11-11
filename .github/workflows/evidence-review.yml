@@ -84,6 +84,12 @@ jobs:
   validate:
     needs: prepare
     runs-on: ubuntu-latest
+    # Keep Chromium and its system libraries matched to package-lock.json.
+    container:
+      image: mcr.microsoft.com/playwright:v1.63.0-noble@sha256:eff16c30e6f3f4af0a03fa4b706120d5e9b0891c344a27d64559aff5900a4a27
+    defaults:
+      run:
+        shell: bash
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
@@ -118,7 +124,6 @@ jobs:
           python3 scripts/check_evidence.py
           python3 scripts/build_review_queue.py
           npm run build:functions
-          npx playwright install --with-deps chromium
           npm run test:browser
       - name: Package the validated public revision
         run: python3 scripts/package_maintenance.py --output .local/maintenance-validated --include-tables
