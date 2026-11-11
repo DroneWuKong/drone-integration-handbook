@@ -16,12 +16,15 @@ class IndependentUpkeepTests(unittest.TestCase):
         root = Path(__file__).resolve().parents[1]
         lock = json.loads((root / "package-lock.json").read_text())
         version = lock["packages"]["node_modules/playwright"]["version"]
+        launcher = (root / "scripts" / "check_browser_container.sh").read_text()
+        self.assertRegex(launcher, rf'mcr\.microsoft\.com/playwright:v{version.replace(".", "[.]")}-noble@sha256:[0-9a-f]{{64}}')
+        self.assertIn("--network none", launcher)
+        self.assertIn("npm run test:browser", launcher)
         for name in ("link-check", "evidence-review", "evidence-facts"):
             with self.subTest(workflow=name):
                 workflow = (root / ".github" / "workflows" / f"{name}.yml").read_text()
                 validate = workflow.split("\n  validate:", 1)[1].split("\n  publish:", 1)[0]
-                self.assertRegex(validate, rf"image: mcr\.microsoft\.com/playwright:v{version.replace('.', '[.]')}-noble@sha256:[0-9a-f]{{64}}")
-                self.assertIn("npm run test:browser", validate)
+                self.assertIn("bash scripts/check_browser_container.sh", validate)
                 self.assertNotIn("playwright install --with-deps", validate)
 
     def test_private_inventory_restores_shared_source_history_before_monitoring(self):
