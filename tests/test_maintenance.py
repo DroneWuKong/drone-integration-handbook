@@ -8,7 +8,7 @@ from datetime import date
 from pathlib import Path
 from unittest.mock import Mock, patch
 from handbook_builder.autonomous import research_spec, verify_source_snapshots
-from handbook_builder.maintenance import apply_verified, pending, releases, update_watchlist, cell, scheduled_records, GitHubReader, discover
+from handbook_builder.maintenance import apply_verified, pending, releases, update_watchlist, cell, scheduled_records, GitHubReader, discover, render_watch
 
 TODAY=date(2026,10,7)
 STATEMENT='The documented protocol includes a sequence field.'
@@ -29,6 +29,19 @@ def bundle(path='integration/repository-updates.md'):
     return {'spec':spec,'packets':packets,'decision':{'id':'d'*24,'created_at':'2026-10-07T03:00:00Z'}}
 
 class MaintenanceTests(unittest.TestCase):
+    def test_source_deadlines_are_relative_to_the_published_snapshot(self):
+        source = {"title": "Example", "url": "https://example.test", "accessed": "2026-10-07",
+                  "checked": "2026-11-11", "status": "reachable"}
+        snapshot = {"checked": "2026-11-11", "items": [], "sources": [
+            {**source, "due": "2026-11-06"}, {**source, "due": "2026-11-11"},
+            {**source, "due": "2026-11-12", "status": "unavailable"}]}
+        rendered = render_watch(snapshot)
+        self.assertIn("Overdue factual reviews: 1", rendered)
+        self.assertIn("| reachable | 2026-11-06 (overdue) |", rendered)
+        self.assertIn("| reachable | 2026-11-11 (due today) |", rendered)
+        self.assertIn("| unavailable | 2026-11-12 |", rendered)
+        self.assertNotIn("reviewed today", rendered)
+
     def test_discovery_budget_spans_files_and_repeated_repository_entries(self):
         import base64
         calls=[]

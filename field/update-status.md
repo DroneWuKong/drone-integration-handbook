@@ -46,6 +46,8 @@ See [emerging projects](../integration/emerging-technology-watch.md) and [reposi
 
 Reachability is a check; the verification date below is the last factual review. Unavailable checks retain prior fingerprints.
 
+**Overdue factual reviews: 10** as of 2026-11-11 UTC.
+
 | Source | Last verified/accessed | Check attempted | Availability | Next factual review |
 |---|---|---|---|---|
 | [Reboot Hub: DJI Drone Parts — OEM-Pulled Parts and Compatibility](https://reboot-hub.com/blogs/the-reboot-hub-chronicle/dji-drone-parts-oem-pulled-replacements-compatibility) | 2026-10-03 | 2026-11-11 | reachable | 2027-01-01 |
@@ -59,16 +61,16 @@ Reachability is a check; the verification date below is the last factual review.
 | [FAA Small Unmanned Aircraft Systems Regulations (Part 107)](https://www.faa.gov/newsroom/small-unmanned-aircraft-systems-uas-regulations-part-107) | 2026-10-02 | 2026-11-11 | reachable | 2026-12-31 |
 | [FAA Part 91 Public Aircraft/Public Safety CoW/A FAQ v9](https://www.faa.gov/uas/public_safety_gov/public_safety_toolkit/Public_Aircraft-Public_Safety_Operation_CoW-COA_FAQ.pdf) | 2026-10-02 | 2026-11-11 | reachable | 2026-12-31 |
 | [FAA UAS Data Exchange (LAANC)](https://www.faa.gov/uas/getting_started/laanc) | 2026-10-02 | 2026-11-11 | reachable | 2026-12-31 |
-| [Hailo-8 specifications](https://hailo.ai/products/ai-accelerators/hailo-8-ai-accelerator/) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 |
-| [Benewake TFmini-S specifications](https://en.benewake.com/TFminiS/index.html) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 |
-| [MAVLink packet serialization](https://mavlink.io/en/guide/serialization.html) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 |
-| [MAVLink common dialect](https://mavlink.io/en/messages/common.html) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 |
-| [MAVLink signing](https://mavlink.io/en/guide/message_signing.html) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 |
-| [Betaflight 2025.12 position hold](https://betaflight.com/docs/wiki/guides/current/Position-Hold-2025-12) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 |
-| [OpenHD adapter compatibility](https://openhdfpv.org/hardware/wifi-adapters/) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 |
-| [PX4 v1.17 Offboard](https://docs.px4.io/v1.17/en/flight_modes/offboard) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 |
-| [STM32N6 manufacturer series page](https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html) | 2026-10-07 | 2026-11-11 | unavailable | 2026-11-06 |
-| [NXP i.MX 95 manufacturer page](https://www.nxp.com/products/i.MX95) | 2026-10-07 | 2026-11-11 | unavailable | 2026-11-06 |
+| [Hailo-8 specifications](https://hailo.ai/products/ai-accelerators/hailo-8-ai-accelerator/) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 (overdue) |
+| [Benewake TFmini-S specifications](https://en.benewake.com/TFminiS/index.html) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 (overdue) |
+| [MAVLink packet serialization](https://mavlink.io/en/guide/serialization.html) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 (overdue) |
+| [MAVLink common dialect](https://mavlink.io/en/messages/common.html) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 (overdue) |
+| [MAVLink signing](https://mavlink.io/en/guide/message_signing.html) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 (overdue) |
+| [Betaflight 2025.12 position hold](https://betaflight.com/docs/wiki/guides/current/Position-Hold-2025-12) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 (overdue) |
+| [OpenHD adapter compatibility](https://openhdfpv.org/hardware/wifi-adapters/) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 (overdue) |
+| [PX4 v1.17 Offboard](https://docs.px4.io/v1.17/en/flight_modes/offboard) | 2026-10-07 | 2026-11-11 | reachable | 2026-11-06 (overdue) |
+| [STM32N6 manufacturer series page](https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html) | 2026-10-07 | 2026-11-11 | unavailable | 2026-11-06 (overdue) |
+| [NXP i.MX 95 manufacturer page](https://www.nxp.com/products/i.MX95) | 2026-10-07 | 2026-11-11 | unavailable | 2026-11-06 (overdue) |
 | [PX4 Guide: Mounting the Flight Controller](https://docs.px4.io/main/en/assembly/mount_and_orient_controller) | 2026-10-18 | 2026-11-11 | reachable | 2027-04-16 |
 | [ArduPilot: Sensor Position Offset Compensation](https://ardupilot.org/copter/docs/common-sensor-offset-compensation.html) | 2026-10-18 | 2026-11-11 | reachable | 2027-04-16 |
 | [ROS REP 103: Standard Units of Measure and Coordinate Conventions](https://www.ros.org/reps/rep-0103.html) | 2026-10-18 | 2026-11-11 | reachable | 2027-04-16 |

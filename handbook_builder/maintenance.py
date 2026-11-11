@@ -223,9 +223,13 @@ def render_watch(status):
         for row in status['repositories']:
             lines.append(f"| [{cell(row['repository'])}](https://github.com/{row['repository']}) | {cell((row.get('revision') or 'unknown')[:12])} | {cell((row.get('pushed') or 'unknown')[:10])} | {row['checked']} | {cell(row['status'])} |")
     if status.get("sources"):
-        lines += ["", "## Source checks and review dates", "", "Reachability is a check; the verification date below is the last factual review. Unavailable checks retain prior fingerprints.", "", "| Source | Last verified/accessed | Check attempted | Availability | Next factual review |", "|---|---|---|---|---|"]
+        as_of = date.fromisoformat(status["checked"])
+        overdue = sum(date.fromisoformat(source["due"]) < as_of for source in status["sources"])
+        lines += ["", "## Source checks and review dates", "", "Reachability is a check; the verification date below is the last factual review. Unavailable checks retain prior fingerprints.", "", f"**Overdue factual reviews: {overdue}** as of {as_of.isoformat()} UTC.", "", "| Source | Last verified/accessed | Check attempted | Availability | Next factual review |", "|---|---|---|---|---|"]
         for source in status["sources"]:
-            lines.append(f"| [{cell(source['title'])}]({source['url']}) | {source['accessed']} | {source['checked']} | {cell(source['status'])} | {source['due']} |")
+            due = date.fromisoformat(source["due"])
+            label = " (overdue)" if due < as_of else " (due today)" if due == as_of else ""
+            lines.append(f"| [{cell(source['title'])}]({source['url']}) | {source['accessed']} | {source['checked']} | {cell(source['status'])} | {source['due']}{label} |")
     return "\n".join(lines) + "\n"
 
 def render_emerging(status):
