@@ -29,7 +29,7 @@ See [emerging projects](../integration/emerging-technology-watch.md) and [reposi
 
 | Repository | Observed revision | Last push | Check attempted | Status |
 |---|---|---|---|---|
-| [DroneWuKong/droneclear_Forge](https://github.com/DroneWuKong/droneclear_Forge) | d676e5eb4bfd | 2026-11-10 | 2026-11-11 | observed |
+| [DroneWuKong/droneclear_Forge](https://github.com/DroneWuKong/droneclear_Forge) | 013c4f0bce13 | 2026-11-11 | 2026-11-11 | observed |
 | [DroneWuKong/forge-data](https://github.com/DroneWuKong/forge-data) | 3041642fdca3 | 2026-10-04 | 2026-11-11 | observed |
 | [DroneWuKong/MultiProtocol-UAS-TAK-Bridge](https://github.com/DroneWuKong/MultiProtocol-UAS-TAK-Bridge) | 3177a1ffdf91 | 2026-10-04 | 2026-11-11 | observed |
 | [DroneWuKong/Orqa_H7_PX4_Ports](https://github.com/DroneWuKong/Orqa_H7_PX4_Ports) | 84d228c63dc8 | 2026-10-24 | 2026-11-11 | observed |
@@ -38,9 +38,9 @@ See [emerging projects](../integration/emerging-technology-watch.md) and [reposi
 | [DroneWuKong/Orqa_Betaflight_Ports](https://github.com/DroneWuKong/Orqa_Betaflight_Ports) | b868a56f4392 | 2026-11-04 | 2026-11-11 | observed |
 | [DroneWuKong/Orqa_ArduPilot_Ports](https://github.com/DroneWuKong/Orqa_ArduPilot_Ports) | ee71ab28c3a9 | 2026-11-04 | 2026-11-11 | observed |
 | [DroneWuKong/betaflight-improvements](https://github.com/DroneWuKong/betaflight-improvements) | 48f0c9a3f37c | 2026-10-23 | 2026-11-11 | observed |
-| [JasonStys/mavlink-sitl-assurance-lab](https://github.com/JasonStys/mavlink-sitl-assurance-lab) | 643d39b73486 | 2026-11-11 | 2026-11-11 | observed |
-| [tacitech/nyxhop](https://github.com/tacitech/nyxhop) | ff0ea316608c | 2026-11-11 | 2026-11-11 | observed |
-| [alexnieves-cs/frontier-fly](https://github.com/alexnieves-cs/frontier-fly) | 8c523de4ee61 | 2026-11-10 | 2026-11-11 | observed |
+| [Sarcastic-Soul/px4-qnx](https://github.com/Sarcastic-Soul/px4-qnx) | 2daea44f087d | 2026-11-11 | 2026-11-11 | observed |
+| [ChengCK18/Murmur](https://github.com/ChengCK18/Murmur) | 9b56bc347ed8 | 2026-11-11 | 2026-11-11 | observed |
+| [JasonStys/drone-operations-console](https://github.com/JasonStys/drone-operations-console) | 97f595f1f3af | 2026-11-11 | 2026-11-11 | observed |
 
 ## Source checks and review dates
 

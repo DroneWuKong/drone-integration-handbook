@@ -151,8 +151,8 @@
   "repositories": [
     {
       "repository": "DroneWuKong/droneclear_Forge",
-      "revision": "d676e5eb4bfd55dc9778f9afd9f01c3240216d34",
-      "pushed": "2026-11-10T13:28:30Z",
+      "revision": "013c4f0bce13c34f1fd90051f717e06bff228378",
+      "pushed": "2026-11-11T13:29:44Z",
       "checked": "2026-11-11",
       "status": "observed"
     },
@@ -213,23 +213,23 @@
       "status": "observed"
     },
     {
-      "repository": "JasonStys/mavlink-sitl-assurance-lab",
-      "revision": "643d39b73486b4d0b20f224f248d9ee100fcaf69",
-      "pushed": "2026-11-11T01:55:35Z",
+      "repository": "Sarcastic-Soul/px4-qnx",
+      "revision": "2daea44f087dc6d688b4f19c30be1b79a094eb87",
+      "pushed": "2026-11-11T16:13:02Z",
       "checked": "2026-11-11",
       "status": "observed"
     },
     {
-      "repository": "tacitech/nyxhop",
-      "revision": "ff0ea316608c18e88644293016e2e966e3e29357",
-      "pushed": "2026-11-11T01:00:45Z",
+      "repository": "ChengCK18/Murmur",
+      "revision": "9b56bc347ed81d65d5fead7f11d2b4528212bd86",
+      "pushed": "2026-11-11T16:02:19Z",
       "checked": "2026-11-11",
       "status": "observed"
     },
     {
-      "repository": "alexnieves-cs/frontier-fly",
-      "revision": "8c523de4ee612cbce6dbbaf258b3e60e16555f0e",
-      "pushed": "2026-11-10T23:19:17Z",
+      "repository": "JasonStys/drone-operations-console",
+      "revision": "97f595f1f3afbe612350018fc0bd7df68ebe633a",
+      "pushed": "2026-11-11T16:01:21Z",
       "checked": "2026-11-11",
       "status": "observed"
     }
