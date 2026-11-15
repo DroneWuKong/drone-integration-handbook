@@ -1,107 +1,127 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-14",
-  "next_check": "2026-11-21",
+  "checked": "2026-11-15",
+  "next_check": "2026-11-22",
   "projects": [
     {
-      "repository": "altnautica/ADOSDroneAgent",
-      "url": "https://github.com/altnautica/ADOSDroneAgent",
-      "description": "ADOS Drone Agent: onboard software for the drone's companion computer. MAVLink routing, HD video, long-range radio link, plugins and published Rust crates.",
-      "created": "2026-03-03T08:31:25Z",
-      "pushed": "2026-11-14T03:04:51Z",
-      "license": "GPL-3.0",
-      "stars": 27,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
-      "release": "v0.109.134",
-      "released": "2026-11-13",
-      "preview": "rev-41501a82acd88dd66f08e5f40a406fa4b1fac7c9",
-      "release_status": "observed",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
-    },
-    {
-      "repository": "altnautica/ADOSMissionControl",
-      "url": "https://github.com/altnautica/ADOSMissionControl",
-      "description": "ADOS Mission Control: open-source ground control station for browser and desktop. FC setup, mission planning, flight, 3D simulation and fleet.",
-      "created": "2026-02-27T13:29:45Z",
-      "pushed": "2026-11-14T02:44:28Z",
+      "repository": "rsasaki0109/visloc-rs",
+      "url": "https://github.com/rsasaki0109/visloc-rs",
+      "description": "SfM, MVS, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
+      "created": "2026-05-05T02:35:57Z",
+      "pushed": "2026-11-15T02:53:50Z",
       "license": "NOASSERTION",
-      "stars": 255,
+      "stars": 172,
       "matched_queries": [
-        "topic:mavlink created:>={created_after}"
+        "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
-      "release": "v0.64.0",
-      "released": "2026-11-13",
+      "checked": "2026-11-15",
+      "release": "v0.3.0",
+      "released": "2026-10-24",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
+    },
+    {
+      "repository": "DavidAlpert11/SignalViewer",
+      "url": "https://github.com/DavidAlpert11/SignalViewer",
+      "description": "Offline desktop app to plot, compare and report on flight logs, test runs and simulation data - ArduPilot, PX4, MAVLink, MATLAB, CSV, CAN; pass / fail in CI",
+      "created": "2026-10-11T19:22:58Z",
+      "pushed": "2026-11-14T23:26:49Z",
+      "license": "MIT",
+      "stars": 2,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-15",
+      "release": "v1.26.0",
+      "released": "2026-11-12",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
     },
     {
       "repository": "tecelskyyivan-alt/ardu-field-planner",
       "url": "https://github.com/tecelskyyivan-alt/ardu-field-planner",
       "description": "ArduCopter field-coverage mission planner + MAVLink GCS for agricultural spraying — draw a field, generate a boustrophedon route, export .plan/.waypoints or live-upload with telemetry. Planner runs offline (satellite map needs internet or pre-cache). PWA + Android/iOS + desktop.",
       "created": "2026-07-12T09:55:48Z",
-      "pushed": "2026-11-13T23:13:13Z",
+      "pushed": "2026-11-14T21:54:52Z",
       "license": "GPL-3.0",
       "stars": 5,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
-      "release": "v2.5.112",
-      "released": "2026-11-13",
+      "checked": "2026-11-15",
+      "release": "v2.5.113",
+      "released": "2026-11-14",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
-    },
-    {
-      "repository": "hammerill/libfpv",
-      "url": "https://github.com/hammerill/libfpv",
-      "description": "FPV drone in any game.",
-      "created": "2026-10-12T18:59:51Z",
-      "pushed": "2026-11-13T22:42:37Z",
-      "license": "GPL-3.0",
-      "stars": 43,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
     },
     {
       "repository": "kornia/kornia-slam",
       "url": "https://github.com/kornia/kornia-slam",
       "description": "Real-time visual-inertial SLAM in Rust, built on kornia-rs.",
       "created": "2025-01-20T22:47:57Z",
-      "pushed": "2026-11-13T22:29:40Z",
+      "pushed": "2026-11-14T20:19:01Z",
       "license": "Apache-2.0",
-      "stars": 112,
+      "stars": 113,
       "matched_queries": [
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "release": "v0.1.0",
       "released": "2026-09-27",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
+    },
+    {
+      "repository": "Official-John/AERIS",
+      "url": "https://github.com/Official-John/AERIS",
+      "description": "Self-diagnosing aircraft digital twin: fault detection, diagnosis and capability-aware recovery for a simulated drone, with a 1,620-flight fault campaign, requirement traceability and an interactive flight replay.",
+      "created": "2026-09-12T01:31:36Z",
+      "pushed": "2026-11-14T18:06:24Z",
+      "license": "BSD-3-Clause",
+      "stars": 0,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-15",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
+    },
+    {
+      "repository": "hammerill/libfpv",
+      "url": "https://github.com/hammerill/libfpv",
+      "description": "FPV drone in any game.",
+      "created": "2026-10-12T18:59:51Z",
+      "pushed": "2026-11-14T17:38:58Z",
+      "license": "GPL-3.0",
+      "stars": 46,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-15",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
     },
     {
       "repository": "formiat/px4-ros2-drone-nav",
@@ -115,13 +135,13 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "release": "v0.7.0",
       "released": "2026-10-31",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
     },
     {
       "repository": "Nikita-Beliaiev/mini-gcs",
@@ -135,13 +155,13 @@
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
     },
     {
       "repository": "AkshayLaddha943/MonoDeepVIO-PX4",
@@ -155,33 +175,13 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
-    },
-    {
-      "repository": "rsasaki0109/visloc-rs",
-      "url": "https://github.com/rsasaki0109/visloc-rs",
-      "description": "SfM, MVS, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
-      "created": "2026-05-05T02:35:57Z",
-      "pushed": "2026-11-13T00:12:01Z",
-      "license": "NOASSERTION",
-      "stars": 171,
-      "matched_queries": [
-        "topic:visual-inertial-odometry"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
-      "release": "v0.3.0",
-      "released": "2026-10-24",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
     },
     {
       "repository": "rafal7466/vins-mono-standalone",
@@ -195,13 +195,13 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
     },
     {
       "repository": "VOLTEKOVER/OmniRID-Universal-Drone-ID",
@@ -215,13 +215,13 @@
         "topic:dronecan"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
     },
     {
       "repository": "ThomasGust/TritonOS",
@@ -235,13 +235,13 @@
         "topic:gstreamer topic:robotics"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-14",
+      "checked": "2026-11-15",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-14",
-      "release_observed": "2026-11-14"
+      "release_checked": "2026-11-15",
+      "release_observed": "2026-11-15"
     }
   ],
   "errors": []
