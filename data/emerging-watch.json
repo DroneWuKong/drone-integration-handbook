@@ -1,87 +1,207 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-19",
-  "next_check": "2026-11-26",
+  "checked": "2026-11-20",
+  "next_check": "2026-11-27",
   "projects": [
     {
-      "repository": "rsasaki0109/visloc-rs",
-      "url": "https://github.com/rsasaki0109/visloc-rs",
-      "description": "SfM, MVS, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
-      "created": "2026-05-05T02:35:57Z",
-      "pushed": "2026-11-19T03:04:45Z",
-      "license": "NOASSERTION",
-      "stars": 178,
-      "matched_queries": [
-        "topic:visual-inertial-odometry"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
-      "release": "v0.4.0",
-      "released": "2026-11-17",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
-    },
-    {
-      "repository": "L-X-Yao/arduscope",
-      "url": "https://github.com/L-X-Yao/arduscope",
-      "description": "ArduPilot .BIN flight log diagnostic tool — turns 'it flies bad' into 'change this parameter'",
-      "created": "2026-11-11T13:05:24Z",
-      "pushed": "2026-11-19T03:04:02Z",
-      "license": "MIT",
-      "stars": 0,
+      "repository": "altnautica/ADOSDroneAgent",
+      "url": "https://github.com/altnautica/ADOSDroneAgent",
+      "description": "ADOS Drone Agent: onboard software for the drone's companion computer. MAVLink routing, HD video, long-range radio link, plugins and published Rust crates.",
+      "created": "2026-03-03T08:31:25Z",
+      "pushed": "2026-11-20T03:08:13Z",
+      "license": "GPL-3.0",
+      "stars": 27,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
-      "release": "v0.12.9",
+      "checked": "2026-11-20",
+      "release": "v0.123.1",
       "released": "2026-11-19",
-      "preview": null,
+      "preview": "rev-23cc959294e0ee6208f01249d1edc1bab2b77331",
       "release_status": "observed",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
-    },
-    {
-      "repository": "tacitech/nyxhop",
-      "url": "https://github.com/tacitech/nyxhop",
-      "description": "FPGA modem for frequency-hopping video and data links on drones and robots: up to 48 Mbit/s, your channels from 70 MHz to 6 GHz, leaves interference by itself. Video, telemetry, data and IP over one link; apps for Windows, Linux and Android.",
-      "created": "2026-09-08T14:44:56Z",
-      "pushed": "2026-11-19T03:01:08Z",
-      "license": "Unlicense",
-      "stars": 24,
-      "matched_queries": [
-        "topic:mavlink created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
     },
     {
       "repository": "mangod12/skydash",
       "url": "https://github.com/mangod12/skydash",
       "description": "Open-source spatial intelligence dashboard with geospatial maps, OSINT-style entities, link analysis, missions, exports, and simulated drone telemetry. React + FastAPI + Leaflet + WebSockets.",
       "created": "2025-12-04T14:23:57Z",
-      "pushed": "2026-11-19T02:49:56Z",
+      "pushed": "2026-11-20T03:04:14Z",
       "license": "MIT",
       "stars": 7,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
+      "checked": "2026-11-20",
       "release": "v1.0.0",
       "released": "2026-02-23",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
+    },
+    {
+      "repository": "chansoopark98/Deep-Visual-SLAM-Monodepth2",
+      "url": "https://github.com/chansoopark98/Deep-Visual-SLAM-Monodepth2",
+      "description": "Deep based Visual SLAM Project(Depth estimation, Optical flow, Visual inertial odometry)",
+      "created": "2024-07-22T07:00:06Z",
+      "pushed": "2026-11-20T01:16:53Z",
+      "license": "MIT",
+      "stars": 16,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-20",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
+    },
+    {
+      "repository": "rsasaki0109/visloc-rs",
+      "url": "https://github.com/rsasaki0109/visloc-rs",
+      "description": "SfM, MVS, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
+      "created": "2026-05-05T02:35:57Z",
+      "pushed": "2026-11-20T00:13:24Z",
+      "license": "NOASSERTION",
+      "stars": 183,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-20",
+      "release": "v0.4.0",
+      "released": "2026-11-17",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
+    },
+    {
+      "repository": "goldarte/mavlink-joystick",
+      "url": "https://github.com/goldarte/mavlink-joystick",
+      "description": "Mavlink Joystick App",
+      "created": "2026-04-27T21:41:41Z",
+      "pushed": "2026-11-19T23:40:01Z",
+      "license": "unknown",
+      "stars": 15,
+      "matched_queries": [
+        "topic:mavlink created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-20",
+      "release": "v2.0",
+      "released": "2026-11-01",
+      "preview": "v2.0-rc3",
+      "release_status": "observed",
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
+    },
+    {
+      "repository": "mevlt01001/GstPipeStudio",
+      "url": "https://github.com/mevlt01001/GstPipeStudio",
+      "description": "A GUI for GStreamer. Makes easier to manage optimize and launch AI/Signal processing pipeline.",
+      "created": "2026-11-02T13:39:26Z",
+      "pushed": "2026-11-19T22:34:28Z",
+      "license": "MIT",
+      "stars": 4,
+      "matched_queries": [
+        "topic:gstreamer topic:robotics"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-20",
+      "release": "v0.3.0",
+      "released": "2026-11-06",
+      "preview": "v0.3.1",
+      "release_status": "observed",
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
+    },
+    {
+      "repository": "hammerill/libfpv",
+      "url": "https://github.com/hammerill/libfpv",
+      "description": "FPV drone in any game.",
+      "created": "2026-10-12T18:59:51Z",
+      "pushed": "2026-11-19T22:10:42Z",
+      "license": "GPL-3.0",
+      "stars": 56,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-20",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
+    },
+    {
+      "repository": "god88844-hub/aerodynamics-lab",
+      "url": "https://github.com/god88844-hub/aerodynamics-lab",
+      "description": "Open-source desktop engineering laboratory for designing, simulating and validating flying machines. Phase 0 develops the shared drone foundation.",
+      "created": "2026-11-15T18:36:56Z",
+      "pushed": "2026-11-19T21:58:10Z",
+      "license": "Apache-2.0",
+      "stars": 0,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-20",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
+    },
+    {
+      "repository": "palcode/opendronelab",
+      "url": "https://github.com/palcode/opendronelab",
+      "description": "Sim-first drone autonomy lab: PX4 SITL + ROS 2 Jazzy + Gazebo with scored VIO/EKF regression",
+      "created": "2026-11-16T18:00:19Z",
+      "pushed": "2026-11-19T18:10:08Z",
+      "license": "AGPL-3.0",
+      "stars": 1,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-20",
+      "release": "v0.1.0",
+      "released": "2026-11-17",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
+    },
+    {
+      "repository": "breuerpeter/nexus",
+      "url": "https://github.com/breuerpeter/nexus",
+      "description": "Flight stack simulation with Newton",
+      "created": "2026-09-17T19:27:43Z",
+      "pushed": "2026-11-19T11:17:48Z",
+      "license": "Apache-2.0",
+      "stars": 5,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-20",
+      "release": "nexus-uav-v0.10.0",
+      "released": "2026-11-10",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
     },
     {
       "repository": "Pengcheng1208/isaac-drone-sim",
@@ -95,33 +215,13 @@
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
+      "checked": "2026-11-20",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
-    },
-    {
-      "repository": "chansoopark98/Deep-Visual-SLAM-Monodepth2",
-      "url": "https://github.com/chansoopark98/Deep-Visual-SLAM-Monodepth2",
-      "description": "Deep based Visual SLAM Project(Depth estimation, Optical flow, Visual inertial odometry)",
-      "created": "2024-07-22T07:00:06Z",
-      "pushed": "2026-11-19T01:25:39Z",
-      "license": "MIT",
-      "stars": 16,
-      "matched_queries": [
-        "topic:visual-inertial-odometry"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
     },
     {
       "repository": "formiat/px4-ros2-drone-nav",
@@ -135,113 +235,13 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
+      "checked": "2026-11-20",
       "release": "v0.7.0",
       "released": "2026-10-31",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
-    },
-    {
-      "repository": "god88844-hub/aeroforge",
-      "url": "https://github.com/god88844-hub/aeroforge",
-      "description": "Physics-based drone simulation lab: modular digital-twin for multi-rotor UAVs with V&V built in (NASA-STD-7009 / ASME V&V 10 philosophy). Python/React monorepo.",
-      "created": "2026-11-15T18:36:56Z",
-      "pushed": "2026-11-18T18:40:46Z",
-      "license": "Apache-2.0",
-      "stars": 0,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
-    },
-    {
-      "repository": "BeyondRobotix/Arduino-DroneCAN",
-      "url": "https://github.com/BeyondRobotix/Arduino-DroneCAN",
-      "description": "DroneCAN support for Arduino on STM32!",
-      "created": "2024-12-30T22:55:10Z",
-      "pushed": "2026-11-18T17:43:31Z",
-      "license": "MIT",
-      "stars": 26,
-      "matched_queries": [
-        "topic:dronecan"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
-      "release": "2.1.0",
-      "released": "2026-08-04",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
-    },
-    {
-      "repository": "palcode/opendronelab",
-      "url": "https://github.com/palcode/opendronelab",
-      "description": "Sim-first drone autonomy lab: PX4 SITL + ROS 2 Jazzy + Gazebo with scored VIO/EKF regression",
-      "created": "2026-11-16T18:00:19Z",
-      "pushed": "2026-11-18T13:32:11Z",
-      "license": "AGPL-3.0",
-      "stars": 1,
-      "matched_queries": [
-        "topic:visual-inertial-odometry"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
-      "release": "v0.1.0",
-      "released": "2026-11-17",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
-    },
-    {
-      "repository": "hammerill/libfpv",
-      "url": "https://github.com/hammerill/libfpv",
-      "description": "FPV drone in any game.",
-      "created": "2026-10-12T18:59:51Z",
-      "pushed": "2026-11-18T10:03:03Z",
-      "license": "GPL-3.0",
-      "stars": 55,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
-    },
-    {
-      "repository": "mevlt01001/GstPipeStudio",
-      "url": "https://github.com/mevlt01001/GstPipeStudio",
-      "description": "A GUI for GStreamer. Makes easier to manage optimize and launch AI/Signal processing pipeline.",
-      "created": "2026-11-02T13:39:26Z",
-      "pushed": "2026-11-18T09:52:24Z",
-      "license": "MIT",
-      "stars": 4,
-      "matched_queries": [
-        "topic:gstreamer topic:robotics"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-19",
-      "release": "v0.3.0",
-      "released": "2026-11-06",
-      "preview": "v0.2.1",
-      "release_status": "observed",
-      "release_checked": "2026-11-19",
-      "release_observed": "2026-11-19"
+      "release_checked": "2026-11-20",
+      "release_observed": "2026-11-20"
     }
   ],
   "errors": []
