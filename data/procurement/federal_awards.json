@@ -5041,6 +5041,22 @@
       "generated_internal_id": "CONT_AWD_FA864923P1029_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 364125912,
+      "Award ID": "80TECH27FA029",
+      "Recipient Name": "NEW TECH SOLUTIONS, INC.",
+      "Award Amount": 1090045.31,
+      "Total Outlays": null,
+      "Description": "MOTOROLA HARDWARE AND ADVANCED PLUS SERVICES & SUAII",
+      "Start Date": "2026-11-18",
+      "End Date": "2027-11-17",
+      "Awarding Agency": "National Aeronautics and Space Administration",
+      "Awarding Sub Agency": "National Aeronautics and Space Administration",
+      "Award Type": null,
+      "awarding_agency_id": 862,
+      "agency_slug": "national-aeronautics-and-space-administration",
+      "generated_internal_id": "CONT_AWD_80TECH27FA029_8000_NNG15SC82B_8000"
+    },
+    {
       "internal_id": 277587440,
       "Award ID": "1305M225F0288",
       "Recipient Name": "FEDERAL WORKING GROUP, INC",
@@ -5311,22 +5327,6 @@
       "awarding_agency_id": 766,
       "agency_slug": "department-of-homeland-security",
       "generated_internal_id": "CONT_AWD_70CMSD25P00000095_7012_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 355647897,
-      "Award ID": "1305M226F0084",
-      "Recipient Name": "BLACK SWIFT TECHNOLOGIES LLC",
-      "Award Amount": 483000.0,
-      "Total Outlays": 306000.0,
-      "Description": "OMAO/PIAD, BLACK SWIFT IDIQ, SUAS PLATFORM, OPERATIONAL AND TECHNICAL SUPPORT SERVICES",
-      "Start Date": "2026-02-25",
-      "End Date": "2026-12-31",
-      "Awarding Agency": "Department of Commerce",
-      "Awarding Sub Agency": "National Oceanic and Atmospheric Administration",
-      "Award Type": null,
-      "awarding_agency_id": 183,
-      "agency_slug": "department-of-commerce",
-      "generated_internal_id": "CONT_AWD_1305M226F0084_1330_1305M226D0012_1330"
     },
     {
       "internal_id": 260370560,
@@ -10433,6 +10433,22 @@
       "generated_internal_id": "CONT_AWD_89233126FNA400749_8900_89233126DNA000072_8900"
     },
     {
+      "internal_id": 357715408,
+      "Award ID": "89233126FNA400787",
+      "Recipient Name": "ANDURIL INDUSTRIES, INC.",
+      "Award Amount": 9073144.0,
+      "Total Outlays": 0.0,
+      "Description": "PROCURE THE BASE YEAR COSTS WITH BASE YEAR OPERATIONS AND SUSTAINMENT, AND 5-YEAR OPERATIONS AND SUSTAINMENT SUPPORT WITH OPTIONS. LOS ALAMOS NATIONAL LABORATORY (LANL) SITE. PROVIDING A COUNTER UNCREWED AIRCRAFT SYSTEM (CUAS) PLATFORM FOR THE NATION",
+      "Start Date": "2026-05-15",
+      "End Date": "2027-05-14",
+      "Awarding Agency": "Department of Energy",
+      "Awarding Sub Agency": "Department of Energy",
+      "Award Type": null,
+      "awarding_agency_id": 930,
+      "agency_slug": "department-of-energy",
+      "generated_internal_id": "CONT_AWD_89233126FNA400787_8900_89233126DNA000072_8900"
+    },
+    {
       "internal_id": 361852969,
       "Award ID": "W58RGZ25F0139",
       "Recipient Name": "GENERAL ATOMICS AERONAUTICAL SYSTEMS, INC.",
@@ -10561,6 +10577,22 @@
       "generated_internal_id": "CONT_AWD_FA864924P0399_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 364126197,
+      "Award ID": "W58RGZ26F0419",
+      "Recipient Name": "AEROVIRONMENT, INC",
+      "Award Amount": 414575.0,
+      "Total Outlays": null,
+      "Description": "THE UNCREWED AIRCRAFT SYSTEMS (UAS) PROJECT OFFICE, LAUNCHED EFFECTS  HAS A REQUIREMENT TO PROCURE RED DRAGON SYSTEMS",
+      "Start Date": "2026-08-19",
+      "End Date": "2026-08-31",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Army",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_W58RGZ26F0419_9700_W58RGZ26G0062_9700"
+    },
+    {
       "internal_id": 349251860,
       "Award ID": "W911NF24P0034",
       "Recipient Name": "DRAGOON TECHNOLOGY LLC",
@@ -10687,22 +10719,6 @@
       "awarding_agency_id": 183,
       "agency_slug": "department-of-commerce",
       "generated_internal_id": "CONT_AWD_1333ND24PNB670268_1341_-NONE-_-NONE-"
-    },
-    {
-      "internal_id": 357715408,
-      "Award ID": "89233126FNA400787",
-      "Recipient Name": "ANDURIL INDUSTRIES, INC.",
-      "Award Amount": 0.0,
-      "Total Outlays": 0.0,
-      "Description": "PROCURE THE BASE YEAR COSTS WITH BASE YEAR OPERATIONS AND SUSTAINMENT, AND 5-YEAR OPERATIONS AND SUSTAINMENT SUPPORT WITH OPTIONS. LOS ALAMOS NATIONAL LABORATORY (LANL) SITE. PROVIDING A COUNTER UNCREWED AIRCRAFT SYSTEM (CUAS) PLATFORM FOR THE NATION",
-      "Start Date": "2026-05-15",
-      "End Date": "2027-05-14",
-      "Awarding Agency": "Department of Energy",
-      "Awarding Sub Agency": "Department of Energy",
-      "Award Type": null,
-      "awarding_agency_id": 930,
-      "agency_slug": "department-of-energy",
-      "generated_internal_id": "CONT_AWD_89233126FNA400787_8900_89233126DNA000072_8900"
     },
     {
       "internal_id": 361822673,
@@ -12673,6 +12689,6 @@
       "generated_internal_id": "ASST_NON_693JJ22540000Z9V0VTP231730_069"
     }
   ],
-  "scraped_at": "2026-11-19T10:36:05.332837+00:00",
-  "count": 792
+  "scraped_at": "2026-11-20T10:35:53.956480+00:00",
+  "count": 793
 }
