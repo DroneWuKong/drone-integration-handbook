@@ -11397,7 +11397,7 @@
       "Award ID": "75P00123F80214",
       "Recipient Name": "GOVERNMENT ACQUISITIONS LLC",
       "Award Amount": 2361648.0,
-      "Total Outlays": 1418454.21,
+      "Total Outlays": 1462200.59,
       "Description": "ROBOTIC PROCESS AUTOMATION RPA PROGRAM SUPPORT (UIPATH) - BASE - FY23",
       "Start Date": "2023-09-30",
       "End Date": "2027-09-29",
@@ -11553,6 +11553,22 @@
       "generated_internal_id": "CONT_AWD_20340923F00023_2036_20340923D00001_2036"
     },
     {
+      "internal_id": 353818188,
+      "Award ID": "N0003025F4542",
+      "Recipient Name": "GOVERNMENT ACQUISITIONS LLC",
+      "Award Amount": 497014.66,
+      "Total Outlays": null,
+      "Description": "ROBOTIC PROCESS AUTOMATION (RPA) (FY26) FOR ORGANIZATION SPEBO-ENTERPRISE BUSINESS OFFICE FY: 2025, AMS: N00030-25-RFPREQ-SPEBO-0012",
+      "Start Date": "2025-09-19",
+      "End Date": "2027-09-25",
+      "Awarding Agency": "Department of Defense",
+      "Awarding Sub Agency": "Department of the Navy",
+      "Award Type": null,
+      "awarding_agency_id": 1173,
+      "agency_slug": "department-of-defense",
+      "generated_internal_id": "CONT_AWD_N0003025F4542_9700_NNG15SD23B_8000"
+    },
+    {
       "internal_id": 356164136,
       "Award ID": "FA810926CB001",
       "Recipient Name": "COMPUTER TECHNOLOGY ASSOCIATES, INC.",
@@ -11647,22 +11663,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_SP470923F0065_9700_SP470917D0002_9700"
-    },
-    {
-      "internal_id": 353818188,
-      "Award ID": "N0003025F4542",
-      "Recipient Name": "GOVERNMENT ACQUISITIONS LLC",
-      "Award Amount": 245058.0,
-      "Total Outlays": null,
-      "Description": "ROBOTIC PROCESS AUTOMATION (RPA) (FY26) FOR ORGANIZATION SPEBO-ENTERPRISE BUSINESS OFFICE FY: 2025, AMS: N00030-25-RFPREQ-SPEBO-0012",
-      "Start Date": "2025-09-19",
-      "End Date": "2026-09-25",
-      "Awarding Agency": "Department of Defense",
-      "Awarding Sub Agency": "Department of the Navy",
-      "Award Type": null,
-      "awarding_agency_id": 1173,
-      "agency_slug": "department-of-defense",
-      "generated_internal_id": "CONT_AWD_N0003025F4542_9700_NNG15SD23B_8000"
     },
     {
       "internal_id": 277758212,
@@ -12689,6 +12689,6 @@
       "generated_internal_id": "ASST_NON_693JJ22540000Z9V0VTP231730_069"
     }
   ],
-  "scraped_at": "2026-11-21T10:35:29.411411+00:00",
+  "scraped_at": "2026-11-22T10:35:12.038797+00:00",
   "count": 793
 }
