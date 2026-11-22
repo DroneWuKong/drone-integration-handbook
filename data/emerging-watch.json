@@ -1,147 +1,167 @@
 {
   "schema_version": 1,
-  "checked": "2026-11-21",
-  "next_check": "2026-11-28",
+  "checked": "2026-11-22",
+  "next_check": "2026-11-29",
   "projects": [
+    {
+      "repository": "rsasaki0109/visloc-rs",
+      "url": "https://github.com/rsasaki0109/visloc-rs",
+      "description": "SfM, MVS, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
+      "created": "2026-05-05T02:35:57Z",
+      "pushed": "2026-11-22T03:00:59Z",
+      "license": "NOASSERTION",
+      "stars": 185,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-22",
+      "release": "v0.4.0",
+      "released": "2026-11-17",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
+    },
     {
       "repository": "mangod12/skydash",
       "url": "https://github.com/mangod12/skydash",
       "description": "Open-source spatial intelligence dashboard with geospatial maps, OSINT-style entities, link analysis, missions, exports, and simulated drone telemetry. React + FastAPI + Leaflet + WebSockets.",
       "created": "2025-12-04T14:23:57Z",
-      "pushed": "2026-11-21T02:32:47Z",
+      "pushed": "2026-11-22T02:58:49Z",
       "license": "MIT",
       "stars": 7,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
+      "checked": "2026-11-22",
       "release": "v1.0.0",
       "released": "2026-02-23",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
-    },
-    {
-      "repository": "rsasaki0109/visloc-rs",
-      "url": "https://github.com/rsasaki0109/visloc-rs",
-      "description": "SfM, MVS, visual-inertial SLAM, 3D Gaussian Splatting and map-based localization in Rust",
-      "created": "2026-05-05T02:35:57Z",
-      "pushed": "2026-11-21T02:30:10Z",
-      "license": "NOASSERTION",
-      "stars": 184,
-      "matched_queries": [
-        "topic:visual-inertial-odometry"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
-      "release": "v0.4.0",
-      "released": "2026-11-17",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
     },
     {
       "repository": "altnautica/ADOSDroneAgent",
       "url": "https://github.com/altnautica/ADOSDroneAgent",
       "description": "ADOS Drone Agent: onboard software for the drone's companion computer. MAVLink routing, HD video, long-range radio link, plugins and published Rust crates.",
       "created": "2026-03-03T08:31:25Z",
-      "pushed": "2026-11-21T01:22:41Z",
+      "pushed": "2026-11-22T01:34:07Z",
       "license": "GPL-3.0",
       "stars": 27,
       "matched_queries": [
         "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
+      "checked": "2026-11-22",
       "release": "v0.123.1",
       "released": "2026-11-19",
-      "preview": "rev-ae5d6257fcb4492589b22ff5499ca79428cf9f6d",
+      "preview": "rev-44f28cb3005525448aad7fb77b63c45ce41f60d3",
       "release_status": "observed",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
     },
     {
-      "repository": "formiat/px4-ros2-drone-nav",
-      "url": "https://github.com/formiat/px4-ros2-drone-nav",
-      "description": "Autonomous UAV navigation in GNSS-denied indoor spaces with no prior map: stereo VIO (MSCKF) and lidar-inertial odometry with map-based relocalization (SLAM), 3D occupancy mapping, D* Lite path planning and GPU MPPI obstacle avoidance. PX4 + ROS 2 + Gazebo SITL, DARPA SubT Urban.",
-      "created": "2026-07-06T00:14:21Z",
-      "pushed": "2026-11-20T21:38:20Z",
-      "license": "MIT",
-      "stars": 175,
+      "repository": "altnautica/ADOSMissionControlGCS",
+      "url": "https://github.com/altnautica/ADOSMissionControlGCS",
+      "description": "ADOS Mission Control: open-source ground control station for browser and desktop. FC setup, mission planning, flight, 3D simulation and fleet.",
+      "created": "2026-02-27T13:29:45Z",
+      "pushed": "2026-11-22T01:31:56Z",
+      "license": "NOASSERTION",
+      "stars": 256,
       "matched_queries": [
-        "topic:visual-inertial-odometry"
+        "topic:mavlink created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
-      "release": "v0.8.0",
-      "released": "2026-11-20",
+      "checked": "2026-11-22",
+      "release": "v0.66.0",
+      "released": "2026-11-19",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
-    },
-    {
-      "repository": "god88844-hub/aerodynamics-lab",
-      "url": "https://github.com/god88844-hub/aerodynamics-lab",
-      "description": "Open-source desktop engineering laboratory for designing, simulating and validating flying machines. Phase 0 develops the shared drone foundation.",
-      "created": "2026-11-15T18:36:56Z",
-      "pushed": "2026-11-20T19:27:05Z",
-      "license": "Apache-2.0",
-      "stars": 0,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
-    },
-    {
-      "repository": "palcode/opendronelab",
-      "url": "https://github.com/palcode/opendronelab",
-      "description": "Sim-first drone autonomy lab: PX4 SITL + ROS 2 Jazzy + Gazebo with scored VIO/EKF regression",
-      "created": "2026-11-16T18:00:19Z",
-      "pushed": "2026-11-20T17:50:50Z",
-      "license": "AGPL-3.0",
-      "stars": 1,
-      "matched_queries": [
-        "topic:visual-inertial-odometry"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
-      "release": "v0.1.0",
-      "released": "2026-11-17",
-      "preview": null,
-      "release_status": "observed",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
     },
     {
       "repository": "hammerill/libfpv",
       "url": "https://github.com/hammerill/libfpv",
       "description": "FPV drone in any game.",
       "created": "2026-10-12T18:59:51Z",
-      "pushed": "2026-11-20T17:28:28Z",
+      "pushed": "2026-11-22T01:24:39Z",
       "license": "GPL-3.0",
-      "stars": 58,
+      "stars": 59,
       "matched_queries": [
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
+      "checked": "2026-11-22",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
+    },
+    {
+      "repository": "god88844-hub/aerodynamics-lab",
+      "url": "https://github.com/god88844-hub/aerodynamics-lab",
+      "description": "Open-source desktop engineering laboratory for designing, simulating and validating flying machines. Phase 0 develops the shared drone foundation.",
+      "created": "2026-11-15T18:36:56Z",
+      "pushed": "2026-11-21T21:25:28Z",
+      "license": "Apache-2.0",
+      "stars": 0,
+      "matched_queries": [
+        "topic:drone topic:simulation created:>={created_after}"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-22",
+      "release": null,
+      "released": null,
+      "preview": null,
+      "release_status": "no-published-release",
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
+    },
+    {
+      "repository": "palcode/opendronelab",
+      "url": "https://github.com/palcode/opendronelab",
+      "description": "Sim-first drone autonomy lab: PX4 SITL + ROS 2 Jazzy + Gazebo with scored VIO/EKF regression",
+      "created": "2026-11-16T18:00:19Z",
+      "pushed": "2026-11-21T05:13:01Z",
+      "license": "AGPL-3.0",
+      "stars": 1,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-22",
+      "release": "v0.1.0",
+      "released": "2026-11-17",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
+    },
+    {
+      "repository": "formiat/px4-ros2-drone-nav",
+      "url": "https://github.com/formiat/px4-ros2-drone-nav",
+      "description": "Autonomous UAV navigation in GNSS-denied indoor spaces with no prior map: stereo VIO (MSCKF) and lidar-inertial odometry with map-based relocalization (SLAM), 3D occupancy mapping, D* Lite path planning and GPU MPPI obstacle avoidance. PX4 + ROS 2 + Gazebo SITL, DARPA SubT Urban.",
+      "created": "2026-07-06T00:14:21Z",
+      "pushed": "2026-11-21T05:00:42Z",
+      "license": "MIT",
+      "stars": 175,
+      "matched_queries": [
+        "topic:visual-inertial-odometry"
+      ],
+      "status": "watch-only; capability unverified",
+      "checked": "2026-11-22",
+      "release": "v0.8.0",
+      "released": "2026-11-20",
+      "preview": null,
+      "release_status": "observed",
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
     },
     {
       "repository": "chansoopark98/Deep-Visual-SLAM-Monodepth2",
@@ -155,13 +175,13 @@
         "topic:visual-inertial-odometry"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
+      "checked": "2026-11-22",
       "release": null,
       "released": null,
       "preview": null,
       "release_status": "no-published-release",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
     },
     {
       "repository": "mevlt01001/GstPipeStudio",
@@ -175,13 +195,13 @@
         "topic:gstreamer topic:robotics"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
+      "checked": "2026-11-22",
       "release": "v0.3.1",
       "released": "2026-11-19",
       "preview": "v0.2.1",
       "release_status": "observed",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
     },
     {
       "repository": "breuerpeter/nexus",
@@ -195,33 +215,13 @@
         "topic:drone topic:simulation created:>={created_after}"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
+      "checked": "2026-11-22",
       "release": "nexus-uav-v0.10.0",
       "released": "2026-11-10",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
-    },
-    {
-      "repository": "Pengcheng1208/isaac-drone-sim",
-      "url": "https://github.com/Pengcheng1208/isaac-drone-sim",
-      "description": "Quadrotor simulation in Isaac Sim / Isaac Lab that I built to learn drone flight control: hover, helix trajectory tracking, wind disturbances, and sensor error models.",
-      "created": "2026-09-26T23:53:48Z",
-      "pushed": "2026-11-19T02:33:16Z",
-      "license": "unknown",
-      "stars": 1,
-      "matched_queries": [
-        "topic:drone topic:simulation created:>={created_after}"
-      ],
-      "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
-      "release": null,
-      "released": null,
-      "preview": null,
-      "release_status": "no-published-release",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
     },
     {
       "repository": "BeyondRobotix/Arduino-DroneCAN",
@@ -235,13 +235,13 @@
         "topic:dronecan"
       ],
       "status": "watch-only; capability unverified",
-      "checked": "2026-11-21",
+      "checked": "2026-11-22",
       "release": "2.1.0",
       "released": "2026-08-04",
       "preview": null,
       "release_status": "observed",
-      "release_checked": "2026-11-21",
-      "release_observed": "2026-11-21"
+      "release_checked": "2026-11-22",
+      "release_observed": "2026-11-22"
     }
   ],
   "errors": []
