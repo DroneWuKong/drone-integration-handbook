@@ -35,18 +35,18 @@ These links are research leads, not approval to upgrade. Covered versions and fa
 
 | Repository | Observed revision | Last push | Check attempted | Status |
 |---|---|---|---|---|
-| [DroneWuKong/droneclear_Forge](https://github.com/DroneWuKong/droneclear_Forge) | c281a0d5c4e3 | 2026-11-24 | 2026-11-25 | observed |
+| [DroneWuKong/droneclear_Forge](https://github.com/DroneWuKong/droneclear_Forge) | fbd4297ce8bb | 2026-11-25 | 2026-11-25 | observed |
 | [DroneWuKong/forge-data](https://github.com/DroneWuKong/forge-data) | 3041642fdca3 | 2026-10-04 | 2026-11-25 | observed |
-| [DroneWuKong/MultiProtocol-UAS-TAK-Bridge](https://github.com/DroneWuKong/MultiProtocol-UAS-TAK-Bridge) | 3177a1ffdf91 | 2026-10-04 | 2026-11-25 | observed |
+| [DroneWuKong/MultiProtocol-UAS-TAK-Bridge](https://github.com/DroneWuKong/MultiProtocol-UAS-TAK-Bridge) | ec888fe0437d | 2026-11-25 | 2026-11-25 | observed |
 | [DroneWuKong/Orqa_H7_PX4_Ports](https://github.com/DroneWuKong/Orqa_H7_PX4_Ports) | 84d228c63dc8 | 2026-10-24 | 2026-11-25 | observed |
 | [DroneWuKong/Field-Kit](https://github.com/DroneWuKong/Field-Kit) | d1ff7d542900 | 2026-10-25 | 2026-11-25 | observed |
 | [DroneWuKong/Prismo-Calibration](https://github.com/DroneWuKong/Prismo-Calibration) | 82ac97c9e958 | 2026-10-18 | 2026-11-25 | observed |
 | [DroneWuKong/Orqa_Betaflight_Ports](https://github.com/DroneWuKong/Orqa_Betaflight_Ports) | b868a56f4392 | 2026-11-04 | 2026-11-25 | observed |
 | [DroneWuKong/Orqa_ArduPilot_Ports](https://github.com/DroneWuKong/Orqa_ArduPilot_Ports) | b86bbcfa77be | 2026-11-24 | 2026-11-25 | observed |
 | [DroneWuKong/betaflight-improvements](https://github.com/DroneWuKong/betaflight-improvements) | 48f0c9a3f37c | 2026-10-23 | 2026-11-25 | observed |
-| [L-X-Yao/arduscope](https://github.com/L-X-Yao/arduscope) | 90aa6c321cbf | 2026-11-25 | 2026-11-25 | observed |
-| [rsasaki0109/visloc-rs](https://github.com/rsasaki0109/visloc-rs) | a6cba76ab806 | 2026-11-25 | 2026-11-25 | observed |
-| [kartikenc/vqa-ekf-ardupilot-landing](https://github.com/kartikenc/vqa-ekf-ardupilot-landing) | d0ca5bc33e7a | 2026-11-25 | 2026-11-25 | observed |
+| [breuerpeter/nexus](https://github.com/breuerpeter/nexus) | c28a2e5a4ef1 | 2026-11-25 | 2026-11-25 | observed |
+| [Prateek-elec/ardupilot-log-doctor](https://github.com/Prateek-elec/ardupilot-log-doctor) | 0425a4c191fe | 2026-11-25 | 2026-11-25 | observed |
+| [fonneyx/autonomous-drone-vision](https://github.com/fonneyx/autonomous-drone-vision) | 06afc4a0ae59 | 2026-11-25 | 2026-11-25 | observed |
 
 ## Source checks and review dates
 
@@ -75,8 +75,8 @@ Reachability is a check; the verification date below is the last factual review.
 | [Betaflight 2025.12 position hold](https://betaflight.com/docs/wiki/guides/current/Position-Hold-2025-12) | 2026-10-07 | 2026-11-25 | reachable | 2026-11-06 (overdue) |
 | [OpenHD adapter compatibility](https://openhdfpv.org/hardware/wifi-adapters/) | 2026-10-07 | 2026-11-25 | reachable | 2026-11-06 (overdue) |
 | [PX4 v1.17 Offboard](https://docs.px4.io/v1.17/en/flight_modes/offboard) | 2026-10-07 | 2026-11-25 | reachable | 2026-11-06 (overdue) |
-| [STM32N6 manufacturer series page](https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html) | 2026-10-07 | 2026-11-25 | unavailable | 2026-11-06 (overdue) |
-| [NXP i.MX 95 manufacturer page](https://www.nxp.com/products/i.MX95) | 2026-10-07 | 2026-11-25 | unavailable | 2026-11-06 (overdue) |
+| [STM32N6 manufacturer series page](https://www.st.com/en/microcontrollers-microprocessors/stm32n6-series.html) | 2026-10-07 | 2026-11-25 | unavailable (TimeoutError) | 2026-11-06 (overdue) |
+| [NXP i.MX 95 manufacturer page](https://www.nxp.com/products/i.MX95) | 2026-10-07 | 2026-11-25 | unavailable (HTTP 404) | 2026-11-06 (overdue) |
 | [PX4 Guide: Mounting the Flight Controller](https://docs.px4.io/main/en/assembly/mount_and_orient_controller) | 2026-10-18 | 2026-11-25 | reachable | 2027-04-16 |
 | [ArduPilot: Sensor Position Offset Compensation](https://ardupilot.org/copter/docs/common-sensor-offset-compensation.html) | 2026-10-18 | 2026-11-25 | reachable | 2027-04-16 |
 | [ROS REP 103: Standard Units of Measure and Coordinate Conventions](https://www.ros.org/reps/rep-0103.html) | 2026-10-18 | 2026-11-25 | reachable | 2027-04-16 |

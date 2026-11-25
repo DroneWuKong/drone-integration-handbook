@@ -158,8 +158,8 @@
   "repositories": [
     {
       "repository": "DroneWuKong/droneclear_Forge",
-      "revision": "c281a0d5c4e38b250d2cccff522dec0626ff8099",
-      "pushed": "2026-11-24T13:30:10Z",
+      "revision": "fbd4297ce8bb7136159a085c9b6f0113aa647bcc",
+      "pushed": "2026-11-25T13:31:54Z",
       "checked": "2026-11-25",
       "status": "observed"
     },
@@ -172,8 +172,8 @@
     },
     {
       "repository": "DroneWuKong/MultiProtocol-UAS-TAK-Bridge",
-      "revision": "3177a1ffdf918b549f360081a5f53ff37e42f73a",
-      "pushed": "2026-10-04T05:30:27Z",
+      "revision": "ec888fe0437d917b6e8180e2abec463a4b23679c",
+      "pushed": "2026-11-25T15:19:26Z",
       "checked": "2026-11-25",
       "status": "observed"
     },
@@ -220,23 +220,23 @@
       "status": "observed"
     },
     {
-      "repository": "L-X-Yao/arduscope",
-      "revision": "90aa6c321cbf94e03bc57b3095839b69cc0e3849",
-      "pushed": "2026-11-25T02:34:44Z",
+      "repository": "breuerpeter/nexus",
+      "revision": "c28a2e5a4ef1e857cd8d58ecbdfa8c01ef69e963",
+      "pushed": "2026-11-25T15:18:50Z",
       "checked": "2026-11-25",
       "status": "observed"
     },
     {
-      "repository": "rsasaki0109/visloc-rs",
-      "revision": "a6cba76ab806fe78bf931f3b7c6dc7381186c391",
-      "pushed": "2026-11-25T02:29:07Z",
+      "repository": "Prateek-elec/ardupilot-log-doctor",
+      "revision": "0425a4c191febf655e4659ea930b877c3af0a12a",
+      "pushed": "2026-11-25T14:40:40Z",
       "checked": "2026-11-25",
       "status": "observed"
     },
     {
-      "repository": "kartikenc/vqa-ekf-ardupilot-landing",
-      "revision": "d0ca5bc33e7a05eafaf1dc6b3491840041173d23",
-      "pushed": "2026-11-25T02:15:51Z",
+      "repository": "fonneyx/autonomous-drone-vision",
+      "revision": "06afc4a0ae59efea4806ab56aba3bf986630e373",
+      "pushed": "2026-11-25T14:19:45Z",
       "checked": "2026-11-25",
       "status": "observed"
     }
@@ -248,6 +248,9 @@
       "accessed": "2026-10-03",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-01-01"
     },
     {
@@ -256,6 +259,9 @@
       "accessed": "2026-10-01",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-10-01"
     },
     {
@@ -264,6 +270,9 @@
       "accessed": "2026-10-01",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-10-01"
     },
     {
@@ -272,6 +281,9 @@
       "accessed": "2026-10-01",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-10-01"
     },
     {
@@ -280,6 +292,9 @@
       "accessed": "2026-10-01",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-10-01"
     },
     {
@@ -288,6 +303,9 @@
       "accessed": "2026-10-01",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-10-01"
     },
     {
@@ -296,6 +314,9 @@
       "accessed": "2026-10-02",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-12-31"
     },
     {
@@ -304,6 +325,9 @@
       "accessed": "2026-10-02",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-12-31"
     },
     {
@@ -312,6 +336,9 @@
       "accessed": "2026-10-02",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-12-31"
     },
     {
@@ -320,6 +347,9 @@
       "accessed": "2026-10-02",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-12-31"
     },
     {
@@ -328,6 +358,9 @@
       "accessed": "2026-10-02",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-12-31"
     },
     {
@@ -336,6 +369,9 @@
       "accessed": "2026-10-07",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-11-06"
     },
     {
@@ -344,6 +380,9 @@
       "accessed": "2026-10-07",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-11-06"
     },
     {
@@ -352,6 +391,9 @@
       "accessed": "2026-10-07",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-11-06"
     },
     {
@@ -360,6 +402,9 @@
       "accessed": "2026-10-07",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-11-06"
     },
     {
@@ -368,6 +413,9 @@
       "accessed": "2026-10-07",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-11-06"
     },
     {
@@ -376,6 +424,9 @@
       "accessed": "2026-10-07",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-11-06"
     },
     {
@@ -384,6 +435,9 @@
       "accessed": "2026-10-07",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-11-06"
     },
     {
@@ -392,6 +446,9 @@
       "accessed": "2026-10-07",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2026-11-06"
     },
     {
@@ -400,6 +457,9 @@
       "accessed": "2026-10-07",
       "checked": "2026-11-25",
       "status": "unavailable",
+      "error": "TimeoutError",
+      "http_status": null,
+      "last_success": null,
       "due": "2026-11-06"
     },
     {
@@ -408,6 +468,9 @@
       "accessed": "2026-10-07",
       "checked": "2026-11-25",
       "status": "unavailable",
+      "error": "HTTPError",
+      "http_status": 404,
+      "last_success": null,
       "due": "2026-11-06"
     },
     {
@@ -416,6 +479,9 @@
       "accessed": "2026-10-18",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-04-16"
     },
     {
@@ -424,6 +490,9 @@
       "accessed": "2026-10-18",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-04-16"
     },
     {
@@ -432,6 +501,9 @@
       "accessed": "2026-10-18",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-04-16"
     },
     {
@@ -440,6 +512,9 @@
       "accessed": "2026-10-18",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-04-16"
     },
     {
@@ -448,6 +523,9 @@
       "accessed": "2026-10-18",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-04-16"
     },
     {
@@ -456,6 +534,9 @@
       "accessed": "2026-10-18",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-04-16"
     },
     {
@@ -464,6 +545,9 @@
       "accessed": "2026-10-18",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-04-16"
     },
     {
@@ -472,6 +556,9 @@
       "accessed": "2026-10-18",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-04-16"
     },
     {
@@ -480,6 +567,9 @@
       "accessed": "2026-10-18",
       "checked": "2026-11-25",
       "status": "reachable",
+      "error": null,
+      "http_status": null,
+      "last_success": "2026-11-25",
       "due": "2027-04-16"
     }
   ]
