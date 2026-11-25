@@ -6,6 +6,9 @@
       "repository": "ArduPilot/ardupilot",
       "tag_prefix": "Copter-",
       "covered": "Copter-4.7.1",
+      "review_urls": [
+        "https://github.com/ArduPilot/ardupilot/blob/Copter-4.7.3/ArduCopter/ReleaseNotes.txt"
+      ],
       "check_days": 7,
       "sections": [
         "components/rtk-ppk-gps-integration.md",
@@ -37,6 +40,10 @@
       "id": "PX4",
       "repository": "PX4/PX4-Autopilot",
       "covered": "v1.17.0",
+      "review_urls": [
+        "https://docs.px4.io/v1.18/en/releases/1.18",
+        "https://docs.px4.io/v1.17/en/flight_modes/offboard"
+      ],
       "check_days": 7,
       "sections": [
         "autonomy/onboard-ai-control.md",

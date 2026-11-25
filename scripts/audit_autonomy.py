@@ -47,6 +47,18 @@ def iso_time(milliseconds):
     return datetime.fromtimestamp(milliseconds / 1000, timezone.utc).isoformat()
 
 
+def dispatch_ready(summary):
+    """A preflight only; backend atomic reservations remain authoritative."""
+    reservations=summary.get("reservations",{})
+    total=reservations.get("total")
+    daily=reservations.get("distinct_claims_last_24h")
+    return (summary.get("provider_configured") is True and
+            summary.get("webhook_configured") is True and
+            summary.get("trial",{}).get("active") is True and
+            type(total) is int and 0 <= total < 56 and
+            type(daily) is int and 0 <= daily < 2)
+
+
 def sanitized(value, reconciliation=None):
     jobs = []
     for job in value.get("jobs", []):
