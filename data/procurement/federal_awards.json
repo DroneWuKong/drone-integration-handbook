@@ -6449,6 +6449,22 @@
       "generated_internal_id": "CONT_AWD_W31P4Q06C0292_9700_-NONE-_-NONE-"
     },
     {
+      "internal_id": 357468540,
+      "Award ID": "80NM0026F7025",
+      "Recipient Name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
+      "Award Amount": 87370288.39,
+      "Total Outlays": 34711361.82,
+      "Description": "JPL LUNAR DRONES (54-232663)",
+      "Start Date": "2026-04-27",
+      "End Date": "2028-09-24",
+      "Awarding Agency": "National Aeronautics and Space Administration",
+      "Awarding Sub Agency": "National Aeronautics and Space Administration",
+      "Award Type": null,
+      "awarding_agency_id": 862,
+      "agency_slug": "national-aeronautics-and-space-administration",
+      "generated_internal_id": "CONT_AWD_80NM0026F7025_8000_80NM0018D0004_8000"
+    },
+    {
       "internal_id": 359204810,
       "Award ID": "W58RGZ26F0211",
       "Recipient Name": "GRIFFON AEROSPACE, INC.",
@@ -6463,22 +6479,6 @@
       "awarding_agency_id": 1173,
       "agency_slug": "department-of-defense",
       "generated_internal_id": "CONT_AWD_W58RGZ26F0211_9700_W58RGZ26G0061_9700"
-    },
-    {
-      "internal_id": 357468540,
-      "Award ID": "80NM0026F7025",
-      "Recipient Name": "CALIFORNIA INSTITUTE OF TECHNOLOGY",
-      "Award Amount": 75729570.39,
-      "Total Outlays": 22279582.86,
-      "Description": "JPL LUNAR DRONES (54-232663)",
-      "Start Date": "2026-04-27",
-      "End Date": "2028-09-24",
-      "Awarding Agency": "National Aeronautics and Space Administration",
-      "Awarding Sub Agency": "National Aeronautics and Space Administration",
-      "Award Type": null,
-      "awarding_agency_id": 862,
-      "agency_slug": "national-aeronautics-and-space-administration",
-      "generated_internal_id": "CONT_AWD_80NM0026F7025_8000_80NM0018D0004_8000"
     },
     {
       "internal_id": 361963710,
@@ -12657,6 +12657,6 @@
       "generated_internal_id": "ASST_NON_693JJ22540000Z9V0VTP231730_069"
     }
   ],
-  "scraped_at": "2026-11-24T10:36:19.299037+00:00",
+  "scraped_at": "2026-11-25T10:36:14.463794+00:00",
   "count": 791
 }
