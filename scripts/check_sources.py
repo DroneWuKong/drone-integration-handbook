@@ -65,9 +65,11 @@ def inspect(source,previous,today,fetch=fetch_source):
     try:
         digest=fetch(source["url"])
         if previous.get("digest") and previous["digest"]!=digest:task("source-content-changed",digest)
-        result={"digest":digest,"checked":today.isoformat(),"status":"reachable"}
+        result={"digest":digest,"checked":today.isoformat(),"last_success":today.isoformat(),"status":"reachable"}
     except Exception as error:
         result={**previous,"checked":today.isoformat(),"status":"unavailable","error":type(error).__name__}
+        result.pop("http_status",None)
+        if isinstance(error,urllib.error.HTTPError):result["http_status"]=error.code
         task("source-unavailable",previous.get("digest","unknown"))
     age=(today-date.fromisoformat(source["accessed"])).days
     if age>=source.get("review_days",365):task("verification-due",source["accessed"])

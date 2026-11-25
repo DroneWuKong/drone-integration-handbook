@@ -12,6 +12,16 @@ from scripts import maintain_handbook, package_maintenance, run_autonomous_evide
 
 
 class IndependentUpkeepTests(unittest.TestCase):
+    def test_private_recovery_precedes_publication_and_cannot_dispatch(self):
+        workflow=(Path(__file__).resolve().parents[1]/'.github/workflows/evidence-facts.yml').read_text()
+        prepare=workflow.split('\n  prepare:',1)[1].split('\n  validate:',1)[0]
+        recovery=prepare.index('scripts/audit_autonomy.py --reconcile-existing')
+        self.assertLess(recovery,prepare.index('scripts/maintain_handbook.py --apply'))
+        self.assertLess(recovery,prepare.index('scripts/run_autonomous_evidence.py'))
+        self.assertIn('autonomy/recovery-summary.json',prepare)
+        # No raw audit file belongs in artifacts or the public candidate package.
+        self.assertNotIn('--output',prepare[prepare.index('- name: Recover existing'):prepare.index('- name: Apply independently')])
+
     def test_browser_validators_use_the_lockfile_playwright_image(self):
         root = Path(__file__).resolve().parents[1]
         lock = json.loads((root / "package-lock.json").read_text())

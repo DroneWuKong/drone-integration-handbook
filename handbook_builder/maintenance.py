@@ -218,6 +218,13 @@ def render_watch(status):
         url = row.get("url") or "https://github.com/" + row["repository"] + "/releases"
         lines.append(f"| [{cell(row['id'])}]({url}) | {cell(row.get('covered') or 'not version-pinned')} | {cell(row.get('latest') or 'unknown')} / {cell(row.get('released') or 'unknown')} | {cell(row.get('preview') or 'none observed')} | {cell(row['status'])} | {links} | {row['next_check']} |")
     lines += ["", "## Check list", "", "- Firmware: changed parameters, units, defaults, board targets and configurator compatibility.", "- Protocols: XML/DSDL definitions, versioned serialization, enums and service support.", "- Video/compute: image/kernel/driver/compiler compatibility, model operators and timing boundary.", "- Procurement/regulations: exact authority, effective date, configuration and superseding material.", "- Prices/availability: current first-party offer/date; a release is not stock availability.", "", "Source availability and due dates are checked nightly. Software release metadata is refreshed nightly; each entry has a seven-day maximum intended interval. A failed check retains the previous observation as unavailable rather than claiming freshness. New releases trigger independent claim checks; they never silently change an aircraft's configuration.", "", "See [emerging projects](../integration/emerging-technology-watch.md) and [repository notes](../integration/repository-updates.md)."]
+    review_rows = [r for r in status["items"] if r.get("status") == "check-section" and r.get("review_urls")]
+    if review_rows:
+        lines += ["", "## Primary sources for version review", "",
+            "These links are research leads, not approval to upgrade. Covered versions and factual verification dates remain unchanged until the independent exact-statement gate passes."]
+        for row in review_rows:
+            links = ", ".join(f"[source {i}]({url})" for i,url in enumerate(row["review_urls"],1))
+            lines.append(f"- {cell(row['id'])}: covered {cell(row.get('covered') or 'not pinned')}; observed stable {cell(row.get('latest') or 'unknown')}. {links}")
     if status.get('repositories'):
         lines += ['', '## Related repository discovery', '', '| Repository | Observed revision | Last push | Check attempted | Status |', '|---|---|---|---|---|']
         for row in status['repositories']:
@@ -229,7 +236,11 @@ def render_watch(status):
         for source in status["sources"]:
             due = date.fromisoformat(source["due"])
             label = " (overdue)" if due < as_of else " (due today)" if due == as_of else ""
-            lines.append(f"| [{cell(source['title'])}]({source['url']}) | {source['accessed']} | {source['checked']} | {cell(source['status'])} | {source['due']}{label} |")
+            availability = source["status"]
+            if availability == "unavailable":
+                detail = "HTTP " + str(source["http_status"]) if source.get("http_status") else source.get("error")
+                if detail: availability += " (" + str(detail) + ")"
+            lines.append(f"| [{cell(source['title'])}]({source['url']}) | {source['accessed']} | {source['checked']} | {cell(availability)} | {source['due']}{label} |")
     return "\n".join(lines) + "\n"
 
 def render_emerging(status):
@@ -259,7 +270,12 @@ def scheduled_records(snapshot, sources, source_state, today, watched=None):
             cycle = max(1, (today - verified).days // days)
         else: cycle = today.toordinal() // 30
         fingerprints = {s: source_state.get("sources", {}).get(s, {}).get("digest", "") for s in record.get("sources", [])}
+        review_leads = [url for row in (watched or [])
+            if record.get("path") in row["sections"] and row.get("status") == "check-section"
+            for url in [row.get("url"), *row.get("review_urls", [])] if url]
         item = {**record, "review_cycle": cycle, "evidence_revision": stable_id(json.dumps(fingerprints, sort_keys=True)) if fingerprints else ""}
+        if review_leads:
+            item["source_candidates"] = sorted(set(item.get("source_candidates", []) + review_leads))
         item.update(triage(item)); records.append(item)
     return records
 

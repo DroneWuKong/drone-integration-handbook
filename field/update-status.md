@@ -25,6 +25,12 @@ Source availability and due dates are checked nightly. Software release metadata
 
 See [emerging projects](../integration/emerging-technology-watch.md) and [repository notes](../integration/repository-updates.md).
 
+## Primary sources for version review
+
+These links are research leads, not approval to upgrade. Covered versions and factual verification dates remain unchanged until the independent exact-statement gate passes.
+- ArduCopter: covered Copter-4.7.1; observed stable Copter-4.7.3. [source 1](https://github.com/ArduPilot/ardupilot/blob/Copter-4.7.3/ArduCopter/ReleaseNotes.txt)
+- PX4: covered v1.17.0; observed stable v1.18.0. [source 1](https://docs.px4.io/v1.18/en/releases/1.18), [source 2](https://docs.px4.io/v1.17/en/flight_modes/offboard)
+
 ## Related repository discovery
 
 | Repository | Observed revision | Last push | Check attempted | Status |

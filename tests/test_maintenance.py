@@ -29,6 +29,18 @@ def bundle(path='integration/repository-updates.md'):
     return {'spec':spec,'packets':packets,'decision':{'id':'d'*24,'created_at':'2026-10-07T03:00:00Z'}}
 
 class MaintenanceTests(unittest.TestCase):
+    def test_release_review_leads_reach_only_affected_claims(self):
+        rows=[{'id':'affected','path':'autonomy/example.md','status':'unreviewed','statement':STATEMENT,'source_candidates':['https://example.test/old']},
+              {'id':'other','path':'autonomy/other.md','status':'unreviewed','statement':STATEMENT}]
+        watched=[{'id':'Example','status':'check-section','sections':['autonomy/example.md'],
+                  'url':'https://example.test/releases/v2','review_urls':['https://example.test/migration']}]
+        planned=scheduled_records({'records':rows},[],{},TODAY,watched)
+        self.assertEqual(planned[0]['source_candidates'],['https://example.test/migration','https://example.test/old','https://example.test/releases/v2'])
+        self.assertNotIn('source_candidates',planned[1])
+        self.assertEqual(rows[0]['source_candidates'],['https://example.test/old'])
+        watched[0]['status']='unavailable'
+        self.assertEqual(scheduled_records({'records':rows},[],{},TODAY,watched)[0]['source_candidates'],['https://example.test/old'])
+
     def test_source_deadlines_are_relative_to_the_published_snapshot(self):
         source = {"title": "Example", "url": "https://example.test", "accessed": "2026-10-07",
                   "checked": "2026-11-11", "status": "reachable"}

@@ -3,6 +3,7 @@ import json
 import sys
 import tempfile
 import unittest
+import urllib.error
 from datetime import date
 from pathlib import Path
 from unittest.mock import patch
@@ -12,6 +13,22 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
 from check_sources import inspect,merge_tasks,task_id
 ROOT=Path(__file__).resolve().parents[1]
 class EvidenceTests(unittest.TestCase):
+    def test_monitor_errors_keep_prior_success_but_not_stale_http_codes(self):
+        source={"id":"test","url":"https://example.test","accessed":"2026-10-07","review_days":30}
+        old={"digest":"old","last_success":"2026-10-30","http_status":403}
+        def forbidden(_):raise urllib.error.HTTPError(source["url"],403,"forbidden",{},None)
+        _,result,tasks=inspect(source,old,date(2026,11,25),forbidden)
+        self.assertEqual((result["digest"],result["last_success"],result["http_status"]),("old","2026-10-30",403))
+        def timeout(_):raise TimeoutError()
+        _,result,_=inspect(source,result,date(2026,11,26),timeout)
+        self.assertNotIn("http_status",result)
+        self.assertEqual(result["error"],"TimeoutError")
+        _,result,_=inspect(source,result,date(2026,11,27),lambda _:"new")
+        self.assertEqual(result["last_success"],"2026-11-27")
+        self.assertNotIn("error",result)
+        self.assertNotIn("http_status",result)
+        self.assertIn("verification-due",{t["reason"] for t in tasks})
+
     def test_frozen_profile_urls_do_not_follow_directory_order(self):
         current={e.relative_path:(e.identity,e.anchor) for e in discover_entries(ROOT)}
         original=Path.iterdir
