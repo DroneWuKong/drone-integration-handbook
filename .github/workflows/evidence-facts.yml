@@ -179,7 +179,7 @@ jobs:
               print('Paid research did not complete. Public metadata can still be validated and published; this is not successful factual verification. Inspect the research step before retrying any uncertain dispatch.\n')
               print('::warning::Optional paid research failed; public metadata upkeep continues.',file=sys.stderr)
           elif outcome=='skipped':
-              print('New paid research was skipped: the existing trial/provider/workload gate is not ready. Existing-job recovery and exact factual publication checks still ran. No trial was activated or renewed.\n')
+              print('New paid research was skipped. Check recovery and publication-step outcomes to distinguish a closed trial/provider/workload gate from an earlier workflow failure. No trial was activated or renewed.\n')
           Path('.local/research-step-status.json').write_text(json.dumps({'outcome':outcome})+'\n')
           print('Progress comes from the private durable ledger; deployment changes do not reset paid research. Metadata checks continue after the non-renewing trial stops.')
           PY

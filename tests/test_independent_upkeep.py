@@ -19,6 +19,8 @@ class IndependentUpkeepTests(unittest.TestCase):
         self.assertLess(recovery,prepare.index('scripts/maintain_handbook.py --apply'))
         self.assertLess(recovery,prepare.index('scripts/run_autonomous_evidence.py'))
         self.assertIn('autonomy/recovery-summary.json',prepare)
+        self.assertIn('distinguish a closed trial/provider/workload gate from an earlier workflow failure',prepare)
+        self.assertNotIn('exact factual publication checks still ran',prepare)
         # No raw audit file belongs in artifacts or the public candidate package.
         self.assertNotIn('--output',prepare[prepare.index('- name: Recover existing'):prepare.index('- name: Apply independently')])
 
