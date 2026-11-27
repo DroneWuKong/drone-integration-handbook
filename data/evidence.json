@@ -240,6 +240,14 @@
       "passage": "Sections 6 and 7.2: motion-conditioned observability, pure translation and single-axis rotation degeneracies",
       "accessed": "2026-10-18",
       "review_days": 180
+    },
+    {
+      "id": "reboot-hub-parts-buying-checklist",
+      "title": "Reboot Hub: DJI Parts and Accessories \u2014 Verify Fit Before Buying",
+      "url": "https://reboot-hub.com/pages/dji-parts-accessories-buying-guide",
+      "passage": "What this page does not decide; Fit workflow; What to ask before checkout",
+      "accessed": "2026-10-15",
+      "review_days": 90
     }
   ],
   "claims": [
@@ -1153,6 +1161,19 @@
       "history": [],
       "reviewer": "Primary documentation or research text inspected; self-review only, no independent human or physical qualification",
       "statement": "In the analyzed visual-inertial model, pure translation leaves the camera/IMU translation unobservable, and rotation about only one axis leaves its component along that axis unobservable. A converged solver and additional samples do not by themselves establish that every parameter is observable."
+    },
+    {
+      "id": "reboot-hub-parts-buying-checklist-scope",
+      "sources": [
+        "reboot-hub-parts-buying-checklist"
+      ],
+      "status": "manufacturer-reported",
+      "verified": "2026-10-15",
+      "scope": "Supplier-authored purchase-documentation wording only. Reboot Hub maintains the linked checklist and is not DJI or a manufacturer-authorized reviewer. No exact-part fit, installation, serviceability, stock, price, physical test or repair outcome is qualified here.",
+      "revision": 1,
+      "history": [],
+      "reviewer": "Public source wording read on the access date; no hardware, supplier or field audit.",
+      "statement": "Reboot Hub's consumer parts/accessories guide distinguishes replacement components, accessories and aircraft listings, and asks buyers to confirm the exact model, current item record, model-specific evidence and unresolved questions before ordering."
     }
   ]
 }
