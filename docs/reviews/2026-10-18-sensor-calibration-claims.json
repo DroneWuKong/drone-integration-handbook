@@ -1,0 +1,1016 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-10-18",
+  "review_type": "self-review of grouped material claims",
+  "scope": "New sensors/calibration chapter and Appendix G; not a handbook-wide semantic audit, independent human review or physical qualification",
+  "base_commit": "ed320f4bb0f234b269d6063a33ef8febca1b0a12",
+  "sources": [
+    {
+      "id": "gnss-arp",
+      "kind": "primary-documentation",
+      "url": "https://geodesy.noaa.gov/ANTCAL/FAQ.xhtml",
+      "title": "ANTCAL FAQ",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "f4f1781c4fbd4c7a426b14b2be1d66cb76748d04f1e21e5debb93f24f4a46375",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "flow",
+      "kind": "primary-documentation",
+      "url": "https://docs.px4.io/main/en/sensor/optical_flow",
+      "title": "Optical Flow | PX4 Guide (main)",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "fa417b4026893773d18a4004f0f4e7e2230c1039137121b63fa74212fcd2a819",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "ekf",
+      "kind": "primary-documentation",
+      "url": "https://docs.px4.io/main/en/advanced_config/tuning_the_ecl_ekf",
+      "title": "Using PX4's Navigation Filter (EKF2) | PX4 Guide (main)",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "c496b22c0e3d0ff66a045c17af8b85935339be8a4c871a6bcaf35dcf23e00d05",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "rolling",
+      "kind": "primary-documentation",
+      "url": "https://docs.baslerweb.com/electronic-shutter-types",
+      "title": "Electronic Shutter Types | Basler Product Documentation",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "3a7831860808e0c9fc5b593ce7282ae8bd82d129d3ef5a0da2e5b77b573257d4",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "ros-camera",
+      "kind": "primary-documentation",
+      "url": "https://docs.ros.org/en/jazzy/p/sensor_msgs/msg/CameraInfo.html",
+      "title": "CameraInfo — sensor_msgs: Jazzy 5.3.8 documentation",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "904fedcd5d2de8d42d11842cc6117f365ee2f96d5d63be4a0df4e0033445195b",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "kalibr",
+      "kind": "primary-documentation",
+      "url": "https://github.com/ethz-asl/kalibr/wiki/camera-imu-calibration",
+      "title": "Camera IMU calibration · ethz-asl/kalibr Wiki · GitHub",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "98679a02837fe640cc1a9b202760d616301a53dc5e9f35c5d918a7f04ca2a6fc",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "kalibr-target",
+      "kind": "primary-documentation",
+      "url": "https://github.com/ethz-asl/kalibr/wiki/calibration-targets",
+      "title": "Calibration targets · ethz-asl/kalibr Wiki · GitHub",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "8fd4428ba169f918791c61023bc1ee2e58fa02c7362602a13238de9c0420cb3a",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "compass",
+      "kind": "primary-documentation",
+      "url": "https://ardupilot.org/copter/docs/common-compass-setup-advanced.html",
+      "title": "Advanced Compass Setup — Copter  documentation",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "ff8f1934c142b562152adec6899b2d2e075ae187c0894a65b9005db4051321b8",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "vim-calibration",
+      "kind": "primary-documentation",
+      "url": "https://jcgm.bipm.org/vim/en/2.39.html",
+      "title": "[VIM3] 2.39 calibration",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "804da3e327143de336715c9983f27e1487c935669e354dd684f5e14a0cab58f0",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "vim-validation",
+      "kind": "primary-documentation",
+      "url": "https://jcgm.bipm.org/vim/en/2.45.html",
+      "title": "[VIM3] 2.45 validation",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "aea4652bd8ab8b6d23d57b8bcbd1cab874a9952070afc3c4260738430ea17b13",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "opencv",
+      "kind": "primary-documentation",
+      "url": "https://docs.opencv.org/4.13.0/d9/d0c/group__calib3d.html",
+      "title": "OpenCV: Camera Calibration and 3D Reconstruction",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "3c173f018033c1e2cc9e01318ce2a2e42bc02115a3fbb5b28856eaa2ed724178",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "rigid-transform",
+      "kind": "primary-documentation",
+      "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/3-3-1-homogeneous-transformation-matrices/",
+      "title": "3.3.1. Homogeneous Transformation Matrices – Modern Robotics",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "e6cbce3fdc2a8b7e03ffe8460370ae8866a4faa3df41beab3c99006e41d09fba",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "rigid-velocity",
+      "kind": "primary-documentation",
+      "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/3-2-2-angular-velocities/",
+      "title": "3.2.2. Angular Velocities – Modern Robotics",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "68664496be5da468f316d27cbe314d16325954532da943dfc8572e7de3f6ba6f",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "board-orientation",
+      "kind": "primary-documentation",
+      "url": "https://docs.px4.io/main/en/config/flight_controller_orientation",
+      "title": "Flight Controller/Sensor Orientation | PX4 Guide (main)",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "cbd3c1e51aa95e9fc28068511a5f3ba0b3cdf549588f69540e5ca198d4fdd6ee",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "ardupilot-offsets",
+      "kind": "primary-documentation",
+      "url": "https://ardupilot.org/copter/docs/common-sensor-offset-compensation.html",
+      "title": "Sensor Position Offset Compensation — Copter  documentation",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "526cd9bbc965fa7e17497eb0fd679a987d5831b01ce989098587d678a33f8324",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "px4-mount",
+      "kind": "primary-documentation",
+      "url": "https://docs.px4.io/main/en/assembly/mount_and_orient_controller",
+      "title": "Mounting the Flight Controller | PX4 Guide (main)",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "8215ec4bb73c802f4a084a7399efc8c8d7f22ba78fc166fac12a3c4db1694303",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "boresight",
+      "kind": "primary-documentation",
+      "url": "https://docs.novatel.com/Waypoint/Content/Inertial_Explorer/Solve_Boresighting_Angles.htm",
+      "title": "Solve Boresighting Angles",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "62d8034ad9794ce709bc9a5460ac800a4c25901587e8cf5e067d64c19ba62f09",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "lever-remount",
+      "kind": "primary-documentation",
+      "url": "https://docs.novatel.com/OEM7/Content/SPAN_Operation/Lever_Arm_Calibration_Routine.htm",
+      "title": "Lever arm calibration routine",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "3ff455b4940f244a7c44cdce19818209909ded12c87ac8b312947e89a7b8f76e",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "frames",
+      "kind": "primary-documentation",
+      "url": "https://www.ros.org/reps/rep-0103.html",
+      "title": "REP 103 -- Standard Units of Measure and Coordinate Conventions (ROS.org)",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "8feda3bf65be13a375b2dd8bc1adcbb778b73a372cb4c5a600aae8ddc819f527",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "opencv-target-scale",
+      "kind": "primary-documentation",
+      "url": "https://docs.opencv.org/4.13.0/dc/dbb/tutorial_py_calibration.html",
+      "title": "OpenCV: Camera Calibration",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "3d3488b09b99e5e0273db5e805d7c34dbbdf09c4488c597d6494c8e6b7f954a5",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "airspeed",
+      "kind": "primary-documentation",
+      "url": "https://ardupilot.org/plane/docs/airspeed.html",
+      "title": "Using an Airspeed Sensor — Plane  documentation",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "67ec5e48a3ca771a1a5ab9b3cb0c978e21e58ec62e50d165ecb00e0b74598cc7",
+      "capture_scope": "Tool-normalized Markdown; digest is not a raw publisher-response-byte hash. Relevant sections were read."
+    },
+    {
+      "id": "paper-v3",
+      "kind": "primary-research",
+      "url": "https://arxiv.org/html/2201.09170v3",
+      "version_record": "https://arxiv.org/abs/2201.09170v3",
+      "title": "Yang et al., Online Self-Calibration for Visual-Inertial Navigation Systems",
+      "version": "arXiv:2201.09170v3; revised 2022-01-29",
+      "passages": "Sections 6 and 7.2; paper body and version record read",
+      "accessed": "2026-10-18",
+      "limits": "Research model conditions; no peer-review or certification status inferred."
+    },
+    {
+      "id": "app-tasks",
+      "kind": "private-pinned-source-inspection",
+      "repository": "Sensor-Calibration-Lab",
+      "revision": "8db0394",
+      "paths": "src/sensor_calibration_lab/tasks.py",
+      "accessed": "2026-10-18",
+      "limits": "Source inspected read-only. No source text or runtime verification exported."
+    },
+    {
+      "id": "app-validation",
+      "kind": "private-pinned-source-inspection",
+      "repository": "Sensor-Calibration-Lab",
+      "revision": "8db0394",
+      "paths": "src/sensor_calibration_lab/validation.py",
+      "accessed": "2026-10-18",
+      "limits": "Source inspected read-only. No source text or runtime verification exported."
+    },
+    {
+      "id": "app-motion",
+      "kind": "private-pinned-source-inspection",
+      "repository": "Sensor-Calibration-Lab",
+      "revision": "8db0394",
+      "paths": "src/sensor_calibration_lab/motion_adapter.py; docs/CAMERA_IMU_FORMAT.md",
+      "accessed": "2026-10-18",
+      "limits": "Source inspected read-only. No source text or runtime verification exported."
+    },
+    {
+      "id": "app-bench",
+      "kind": "private-pinned-source-inspection",
+      "repository": "Sensor-Calibration-Lab",
+      "revision": "8db0394",
+      "paths": "src/sensor_calibration_lab/bench_adapter.py; src/sensor_calibration_lab/bench_core.py; docs/BENCH_FORMAT.md",
+      "accessed": "2026-10-18",
+      "limits": "Source inspected read-only. No source text or runtime verification exported."
+    },
+    {
+      "id": "app-exports",
+      "kind": "private-pinned-source-inspection",
+      "repository": "Sensor-Calibration-Lab",
+      "revision": "8db0394",
+      "paths": "src/sensor_calibration_lab/exports.py",
+      "accessed": "2026-10-18",
+      "limits": "Source inspected read-only. No source text or runtime verification exported."
+    },
+    {
+      "id": "app-workspace",
+      "kind": "private-pinned-source-inspection",
+      "repository": "Sensor-Calibration-Lab",
+      "revision": "8db0394",
+      "paths": "src/sensor_calibration_lab/workspace.py",
+      "accessed": "2026-10-18",
+      "limits": "Source inspected read-only. No source text or runtime verification exported."
+    },
+    {
+      "id": "app-distribution",
+      "kind": "private-pinned-source-inspection",
+      "repository": "Sensor-Calibration-Lab",
+      "revision": "8db0394",
+      "paths": "docs/DISTRIBUTION.md",
+      "accessed": "2026-10-18",
+      "limits": "Source inspected read-only. No source text or runtime verification exported."
+    },
+    {
+      "id": "prismo-edition",
+      "kind": "private-pinned-documentation",
+      "repository": "Prismo-Calibration",
+      "revision": "46a69f7",
+      "paths": "README.md",
+      "accessed": "2026-10-18"
+    },
+    {
+      "id": "math-checks",
+      "kind": "original-geometric-derivation",
+      "artifact": "Local math-checks.json; methods and numerical results summarized in the review report",
+      "limits": "Synthetic algebra only; not a physical or app solver test."
+    },
+    {
+      "id": "openvins-reader",
+      "kind": "pinned-primary-upstream-code",
+      "url": "https://raw.githubusercontent.com/rpng/open_vins/69488123ed9362dd44b6f28e7f4680abbff1442b/ov_msckf/src/core/VioManagerOptions.h",
+      "title": "openvins-reader",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "68ceb7fbf67d52e24eab4552ac202ab0299e6dad9cfbcc497a5d4752e13e4aac",
+      "capture_scope": "Tool-normalized code text; source mapping inspection, no destination runtime execution."
+    },
+    {
+      "id": "ros-yaml-reader",
+      "kind": "pinned-primary-upstream-code",
+      "url": "https://raw.githubusercontent.com/ros-perception/image_common/5.1.8/camera_calibration_parsers/src/parse_yml.cpp",
+      "title": "ros-yaml-reader",
+      "accessed": "2026-10-18",
+      "retrieval_status": 200,
+      "normalized_markdown_sha256": "581456c360409a291ff4b9c6b6f5663047fc310a62740be6fb27b21df36c6cb1",
+      "capture_scope": "Tool-normalized code text; source mapping inspection, no destination runtime execution."
+    }
+  ],
+  "coverage": {
+    "groups": 57,
+    "dispositions": {
+      "retained": 30,
+      "corrected": 5,
+      "expanded": 22
+    },
+    "primary_documentation_pages": 21,
+    "versioned_research_papers": 1,
+    "pinned_primary_upstream_code_files": 2
+  },
+  "claims": [
+    {
+      "id": "SC-01",
+      "disposition": "retained",
+      "section": "Terms",
+      "conclusion": "Intrinsic parameters and inter-sensor extrinsics are different model quantities.",
+      "evidence_sources": [
+        "opencv",
+        "rigid-transform"
+      ],
+      "basis_type": "source",
+      "limits": "Definitions are model-specific; this does not measure an installation."
+    },
+    {
+      "id": "SC-02",
+      "disposition": "corrected",
+      "section": "Terms",
+      "conclusion": "Engineering parameter fitting is distinguished from metrological calibration and adjustment.",
+      "evidence_sources": [
+        "vim-calibration"
+      ],
+      "basis_type": "source",
+      "limits": "A parameter file alone is not a traceability or uncertainty statement."
+    },
+    {
+      "id": "SC-03",
+      "disposition": "corrected",
+      "section": "Terms",
+      "conclusion": "Fresh-data consistency checking alone is narrower than validation for intended use.",
+      "evidence_sources": [
+        "vim-validation",
+        "app-validation"
+      ],
+      "basis_type": "source",
+      "limits": "Application requirements and reference uncertainty remain necessary."
+    },
+    {
+      "id": "SC-04",
+      "disposition": "retained",
+      "section": "Terms",
+      "conclusion": "Imaging boresight relates sensor orientations; a shared optical-axis direction leaves image roll undetermined.",
+      "evidence_sources": [
+        "boresight",
+        "rigid-transform"
+      ],
+      "basis_type": "source-and-derivation",
+      "limits": "The optical-axis observation alone does not define all three rotation degrees of freedom."
+    },
+    {
+      "id": "SC-05",
+      "disposition": "expanded",
+      "section": "Terms",
+      "conclusion": "Mount orientation, estimator initialization and level correction should be distinguished.",
+      "evidence_sources": [
+        "board-orientation",
+        "lever-remount"
+      ],
+      "basis_type": "source",
+      "limits": "Exact firmware/calibration procedures remain system-specific."
+    },
+    {
+      "id": "SC-06",
+      "disposition": "retained",
+      "section": "Placement",
+      "conclusion": "PX4 recommends controller placement near the center of gravity and configuration of actual orientation.",
+      "evidence_sources": [
+        "px4-mount"
+      ],
+      "basis_type": "source",
+      "limits": "A documented recommendation does not prove installed performance."
+    },
+    {
+      "id": "SC-07",
+      "disposition": "retained",
+      "section": "Placement",
+      "conclusion": "Mounting strategy and vibration must be checked against the board and measurements.",
+      "evidence_sources": [
+        "px4-mount",
+        "ekf"
+      ],
+      "basis_type": "source",
+      "limits": "No universal isolation material, distance or vibration threshold is supplied."
+    },
+    {
+      "id": "SC-08",
+      "disposition": "retained",
+      "section": "Placement",
+      "conclusion": "Antenna sky view and any required ground plane are installation questions for its manufacturer.",
+      "evidence_sources": [
+        "gnss-arp"
+      ],
+      "basis_type": "editorial-guidance",
+      "limits": "No universal ground-plane requirement or separation distance is asserted."
+    },
+    {
+      "id": "SC-09",
+      "disposition": "corrected",
+      "section": "Placement",
+      "conclusion": "Load-dependent magnetic interference can have supported compensation; static calibration alone is insufficient evidence.",
+      "evidence_sources": [
+        "compass"
+      ],
+      "basis_type": "source",
+      "limits": "CompassMot has model/current-monitor limitations; no powered procedure is reproduced."
+    },
+    {
+      "id": "SC-10",
+      "disposition": "retained",
+      "section": "Placement",
+      "conclusion": "A static extrinsic transform assumes a stable relative sensor relationship.",
+      "evidence_sources": [
+        "rigid-transform",
+        "kalibr"
+      ],
+      "basis_type": "source-and-derivation",
+      "limits": "Moving or flexing assemblies need a suitable time-varying model or mechanical correction."
+    },
+    {
+      "id": "SC-11",
+      "disposition": "retained",
+      "section": "Placement",
+      "conclusion": "Camera configurations such as optics and image geometry belong with the calibration.",
+      "evidence_sources": [
+        "opencv",
+        "ros-camera"
+      ],
+      "basis_type": "source",
+      "limits": "Changed settings need reassessment; known image rescaling is treated separately."
+    },
+    {
+      "id": "SC-12",
+      "disposition": "corrected",
+      "section": "Placement",
+      "conclusion": "Slant range can be converted using geometry when attitude and terrain assumptions are known.",
+      "evidence_sources": [
+        "ekf"
+      ],
+      "basis_type": "model-derivation",
+      "limits": "The simple cosine example is restricted to a single beam and flat level ground."
+    },
+    {
+      "id": "SC-13",
+      "disposition": "expanded",
+      "section": "Placement",
+      "conclusion": "PX4 integrated flow fields are angular axis measurements rather than XY displacement.",
+      "evidence_sources": [
+        "flow"
+      ],
+      "basis_type": "source",
+      "limits": "No raw MAVLink-to-app conversion is claimed."
+    },
+    {
+      "id": "SC-14",
+      "disposition": "corrected",
+      "section": "Placement",
+      "conclusion": "PX4 supports modeled static-pressure position-error compensation with estimator prerequisites.",
+      "evidence_sources": [
+        "ekf"
+      ],
+      "basis_type": "source",
+      "limits": "This is not a generic correction for blocked ports, arbitrary airflow or leaks."
+    },
+    {
+      "id": "SC-15",
+      "disposition": "retained",
+      "section": "Placement",
+      "conclusion": "A combined GNSS/compass module has separate position and orientation records.",
+      "evidence_sources": [
+        "ardupilot-offsets",
+        "board-orientation"
+      ],
+      "basis_type": "source-and-derivation",
+      "limits": "A single mounting arrow does not describe every sensor reference point."
+    },
+    {
+      "id": "SC-16",
+      "disposition": "retained",
+      "section": "Frames",
+      "conclusion": "Aircraft FRD uses positive forward, right and down axes.",
+      "evidence_sources": [
+        "ardupilot-offsets",
+        "board-orientation"
+      ],
+      "basis_type": "source",
+      "limits": "Actual configured sensor/estimator frames still require inspection."
+    },
+    {
+      "id": "SC-17",
+      "disposition": "retained",
+      "section": "Frames",
+      "conclusion": "ROS body FLU, camera optical RDF, ENU and NED conventions are distinct.",
+      "evidence_sources": [
+        "frames"
+      ],
+      "basis_type": "source",
+      "limits": "ROS REP 103 permits documented exceptions."
+    },
+    {
+      "id": "SC-18",
+      "disposition": "retained",
+      "section": "Frames",
+      "conclusion": "Body and navigation frame horizontal directions generally change relative to each other with attitude.",
+      "evidence_sources": [
+        "frames",
+        "rigid-transform"
+      ],
+      "basis_type": "model-derivation",
+      "limits": "Axis names do not imply coincident frame origins."
+    },
+    {
+      "id": "SC-19",
+      "disposition": "retained",
+      "section": "Frames",
+      "conclusion": "Units, quaternion ordering, Euler ordering and transform direction must be explicit.",
+      "evidence_sources": [
+        "frames",
+        "rigid-transform"
+      ],
+      "basis_type": "source",
+      "limits": "No convention is inferred merely from a rotation field name."
+    },
+    {
+      "id": "SC-20",
+      "disposition": "expanded",
+      "section": "Transforms",
+      "conclusion": "The example uses column-vector point coordinates with p_B = R_BC p_C + t_BC.",
+      "evidence_sources": [
+        "rigid-transform"
+      ],
+      "basis_type": "source-and-derivation",
+      "limits": "A coordinate-map convention is specified rather than presumed universal."
+    },
+    {
+      "id": "SC-21",
+      "disposition": "expanded",
+      "section": "Transforms",
+      "conclusion": "The inverse translation is -R^T t; its meaning changes with transform direction.",
+      "evidence_sources": [
+        "rigid-transform",
+        "app-exports",
+        "openvins-reader"
+      ],
+      "basis_type": "model-derivation",
+      "limits": "Numerical rigid-transform round-trip check passed."
+    },
+    {
+      "id": "SC-22",
+      "disposition": "retained",
+      "section": "Transforms",
+      "conclusion": "Avoid applying the same physical correction twice across drivers and estimators.",
+      "evidence_sources": [
+        "rigid-transform"
+      ],
+      "basis_type": "editorial-guidance",
+      "limits": "No installed driver or estimator was inspected."
+    },
+    {
+      "id": "SC-23",
+      "disposition": "retained",
+      "section": "Lever arms",
+      "conclusion": "The example 120 mm forward, 40 mm right, 80 mm above becomes [0.120,0.040,-0.080] m in FRD.",
+      "evidence_sources": [
+        "ardupilot-offsets",
+        "math-checks"
+      ],
+      "basis_type": "model-derivation",
+      "limits": "Hypothetical input; not a firmware preset."
+    },
+    {
+      "id": "SC-24",
+      "disposition": "retained",
+      "section": "Lever arms",
+      "conclusion": "ArduPilot documents IMU/center-of-gravity origin conditions.",
+      "evidence_sources": [
+        "ardupilot-offsets"
+      ],
+      "basis_type": "source",
+      "limits": "Exact release/parameter semantics must match the consuming firmware."
+    },
+    {
+      "id": "SC-25",
+      "disposition": "expanded",
+      "section": "Lever arms",
+      "conclusion": "Physical reference points may differ from housing centers.",
+      "evidence_sources": [
+        "gnss-arp",
+        "ros-camera"
+      ],
+      "basis_type": "source",
+      "limits": "Inaccessible origins must retain estimates and measurement uncertainty."
+    },
+    {
+      "id": "SC-26",
+      "disposition": "expanded",
+      "section": "Lever arms",
+      "conclusion": "GNSS ARP, frequency-dependent PCO and direction-dependent PCV are different.",
+      "evidence_sources": [
+        "gnss-arp"
+      ],
+      "basis_type": "source",
+      "limits": "Mechanical lever-arm measurement does not determine electrical antenna calibration."
+    },
+    {
+      "id": "SC-27",
+      "disposition": "expanded",
+      "section": "Camera model",
+      "conclusion": "The image principal point is different from the three-dimensional optical/projection origin.",
+      "evidence_sources": [
+        "opencv",
+        "ros-camera"
+      ],
+      "basis_type": "source",
+      "limits": "Pixel units and metric transform units must remain separate."
+    },
+    {
+      "id": "SC-28",
+      "disposition": "expanded",
+      "section": "Lever arms",
+      "conclusion": "Inertial velocities of rigidly connected points differ by omega cross r.",
+      "evidence_sources": [
+        "rigid-velocity",
+        "math-checks"
+      ],
+      "basis_type": "model-derivation",
+      "limits": "This is not the derivative of a constant body-coordinate offset; 0.314159 m/s is a calculated example."
+    },
+    {
+      "id": "SC-29",
+      "disposition": "expanded",
+      "section": "Lever arms",
+      "conclusion": "ArduPilot describes IMU-offset compensation as partial rather than full acceleration compensation.",
+      "evidence_sources": [
+        "ardupilot-offsets"
+      ],
+      "basis_type": "source",
+      "limits": "No conclusion is generalized to all estimators."
+    },
+    {
+      "id": "SC-30",
+      "disposition": "retained",
+      "section": "Boresight",
+      "conclusion": "A one-degree ray error at a perpendicular plane 100 m away gives 1.745506 m lateral offset.",
+      "evidence_sources": [
+        "math-checks"
+      ],
+      "basis_type": "model-derivation",
+      "limits": "Plane geometry, not a ground-survey accuracy guarantee."
+    },
+    {
+      "id": "SC-31",
+      "disposition": "retained",
+      "section": "Boresight",
+      "conclusion": "Nominal mounting rotation and residual misalignment are different inputs.",
+      "evidence_sources": [
+        "board-orientation",
+        "boresight"
+      ],
+      "basis_type": "source",
+      "limits": "Destination definitions must be checked before conversion."
+    },
+    {
+      "id": "SC-32",
+      "disposition": "retained",
+      "section": "Boresight",
+      "conclusion": "A moving gimbal changes the composite body-to-camera transform.",
+      "evidence_sources": [
+        "rigid-transform"
+      ],
+      "basis_type": "model-derivation",
+      "limits": "Requires actual joint geometry, conventions and measurement time."
+    },
+    {
+      "id": "SC-33",
+      "disposition": "expanded",
+      "section": "Boresight",
+      "conclusion": "A nonzero baseline can produce depth-dependent parallax despite parallel viewing axes.",
+      "evidence_sources": [
+        "ros-camera"
+      ],
+      "basis_type": "source-and-derivation",
+      "limits": "No universal pixel overlay or stereo rectification is supplied."
+    },
+    {
+      "id": "SC-34",
+      "disposition": "expanded",
+      "section": "Timing",
+      "conclusion": "Image acquisition event and receipt timestamp are different concepts.",
+      "evidence_sources": [
+        "ros-camera",
+        "kalibr"
+      ],
+      "basis_type": "source",
+      "limits": "Exposure start versus midpoint must be explicitly identified by the recorder."
+    },
+    {
+      "id": "SC-35",
+      "disposition": "retained",
+      "section": "Timing",
+      "conclusion": "At constant rates, 20 ms corresponds to 0.30 m at 15 m/s or 1.2 degrees at 60 degrees/s.",
+      "evidence_sources": [
+        "math-checks"
+      ],
+      "basis_type": "model-derivation",
+      "limits": "Separate hypothetical constant-rate cases; no flight observation."
+    },
+    {
+      "id": "SC-36",
+      "disposition": "retained",
+      "section": "Timing",
+      "conclusion": "A constant fitted shift does not establish clock stability or eliminate arbitrary jitter.",
+      "evidence_sources": [
+        "kalibr"
+      ],
+      "basis_type": "model-derivation",
+      "limits": "Hardware clock behavior and resets remain acquisition evidence."
+    },
+    {
+      "id": "SC-37",
+      "disposition": "expanded",
+      "section": "Timing",
+      "conclusion": "Rolling-shutter row timing remains even with short exposure.",
+      "evidence_sources": [
+        "rolling"
+      ],
+      "basis_type": "source",
+      "limits": "Camera-specific row timing/readout configuration remains necessary."
+    },
+    {
+      "id": "SC-38",
+      "disposition": "expanded",
+      "section": "Acquisition",
+      "conclusion": "Target dimensions, flatness, border, inner corners and corner ordering must match the chosen model.",
+      "evidence_sources": [
+        "kalibr-target",
+        "opencv-target-scale",
+        "app-bench"
+      ],
+      "basis_type": "source",
+      "limits": "No universal target type or capture count is prescribed."
+    },
+    {
+      "id": "SC-39",
+      "disposition": "expanded",
+      "section": "Acquisition",
+      "conclusion": "Incorrect target length scale can preserve ideal reprojections while scaling recovered pose translations.",
+      "evidence_sources": [
+        "opencv-target-scale",
+        "math-checks"
+      ],
+      "basis_type": "model-derivation",
+      "limits": "The 20/25 example applies to target-based pinhole pose, not every jointly constrained solver."
+    },
+    {
+      "id": "SC-40",
+      "disposition": "retained",
+      "section": "Acquisition",
+      "conclusion": "Informative camera/IMU motion matters more than repeating uninformative observations.",
+      "evidence_sources": [
+        "kalibr",
+        "paper-v3"
+      ],
+      "basis_type": "source",
+      "limits": "Excitation requirements depend on the estimated model."
+    },
+    {
+      "id": "SC-41",
+      "disposition": "expanded",
+      "section": "Acquisition",
+      "conclusion": "The analyzed VINS model has specific pure-translation and single-axis extrinsic degeneracies.",
+      "evidence_sources": [
+        "paper-v3"
+      ],
+      "basis_type": "source",
+      "limits": "Versioned primary research; not a universal theorem for every calibration application."
+    },
+    {
+      "id": "SC-42",
+      "disposition": "expanded",
+      "section": "Acquisition",
+      "conclusion": "Bias estimation alone is not full IMU intrinsic calibration; selected models may estimate other terms jointly.",
+      "evidence_sources": [
+        "kalibr",
+        "app-motion"
+      ],
+      "basis_type": "source",
+      "limits": "The Lab's importer explicitly requires corrected scale and axes."
+    },
+    {
+      "id": "SC-43",
+      "disposition": "retained",
+      "section": "Validation",
+      "conclusion": "A fixed candidate checked against fresh observations is different from refitting it.",
+      "evidence_sources": [
+        "app-validation"
+      ],
+      "basis_type": "app-source",
+      "limits": "The check still shares modeling assumptions and possible systematic errors."
+    },
+    {
+      "id": "SC-44",
+      "disposition": "retained",
+      "section": "Validation",
+      "conclusion": "Acceptance criteria, references and uncertainty must be related to intended use.",
+      "evidence_sources": [
+        "vim-calibration",
+        "vim-validation"
+      ],
+      "basis_type": "editorial-guidance",
+      "limits": "No universal numerical acceptance threshold is invented."
+    },
+    {
+      "id": "SC-45",
+      "disposition": "retained",
+      "section": "Validation",
+      "conclusion": "Residuals, repeated-fit spread and full measurement uncertainty are different quantities.",
+      "evidence_sources": [
+        "vim-calibration",
+        "app-validation",
+        "app-bench"
+      ],
+      "basis_type": "source-and-derivation",
+      "limits": "No solver diagnostic is relabeled physical accuracy."
+    },
+    {
+      "id": "SC-46",
+      "disposition": "expanded",
+      "section": "App",
+      "conclusion": "The capability summary is pinned to Lab v0.3.0 commit 8db0394 rather than mutable current work.",
+      "evidence_sources": [
+        "app-tasks"
+      ],
+      "basis_type": "app-source",
+      "limits": "Read-only source inspection; no app runtime or hardware test performed."
+    },
+    {
+      "id": "SC-47",
+      "disposition": "expanded",
+      "section": "App",
+      "conclusion": "Camera/IMU input requires metric fixed-world poses, corrected gyro/specific force, linked intrinsics and mapped capture times.",
+      "evidence_sources": [
+        "app-motion"
+      ],
+      "basis_type": "app-source",
+      "limits": "Operator clock/configuration declarations are not independently authenticated."
+    },
+    {
+      "id": "SC-48",
+      "disposition": "expanded",
+      "section": "App",
+      "conclusion": "Optical-flow import assumes normalized axes, a flat normal target, constant window distance and independent planar motion reference.",
+      "evidence_sources": [
+        "app-bench"
+      ],
+      "basis_type": "app-source",
+      "limits": "No automatic raw MAVLink conversion or arbitrary flight-flow calibration."
+    },
+    {
+      "id": "SC-49",
+      "disposition": "retained",
+      "section": "App",
+      "conclusion": "Camera rigs use 2–8 linked cameras and synchronized declared target-corner observations.",
+      "evidence_sources": [
+        "app-bench",
+        "app-tasks"
+      ],
+      "basis_type": "app-source",
+      "limits": "Synchronization declarations and numerical checks do not prove hardware synchronization."
+    },
+    {
+      "id": "SC-50",
+      "disposition": "retained",
+      "section": "App",
+      "conclusion": "Exports include representable ROS files and a version-pinned monocular OpenVINS fragment.",
+      "evidence_sources": [
+        "app-exports",
+        "openvins-reader",
+        "ros-yaml-reader"
+      ],
+      "basis_type": "app-source",
+      "limits": "Coefficient/representation limits remain; no destination runtime qualification."
+    },
+    {
+      "id": "SC-51",
+      "disposition": "retained",
+      "section": "App",
+      "conclusion": "Physical, bench, timing, flight and application flags remain false.",
+      "evidence_sources": [
+        "app-workspace"
+      ],
+      "basis_type": "app-source",
+      "limits": "Passed numerical checks are not silently promoted to physical evidence."
+    },
+    {
+      "id": "SC-52",
+      "disposition": "retained",
+      "section": "App",
+      "conclusion": "Synthetic data retains synthetic provenance.",
+      "evidence_sources": [
+        "app-workspace",
+        "app-bench"
+      ],
+      "basis_type": "app-source",
+      "limits": "A content hash establishes identity, not physical acquisition or authenticity."
+    },
+    {
+      "id": "SC-53",
+      "disposition": "expanded",
+      "section": "App",
+      "conclusion": "Optical-axis adjustment angles are not aircraft Euler angles or actuator commands.",
+      "evidence_sources": [
+        "app-bench"
+      ],
+      "basis_type": "app-source",
+      "limits": "Convert through actual mount/joint geometry and remeasure."
+    },
+    {
+      "id": "SC-54",
+      "disposition": "retained",
+      "section": "App",
+      "conclusion": "The Orqa edition is separate, and both app licensing/distribution boundaries remain unchanged.",
+      "evidence_sources": [
+        "prismo-edition",
+        "app-distribution"
+      ],
+      "basis_type": "app-source",
+      "limits": "Private source/distribution documentation was inspected; nothing was released."
+    },
+    {
+      "id": "SC-55",
+      "disposition": "retained",
+      "section": "Diagnosis",
+      "conclusion": "Symptom rows are hypotheses and checks rather than unique causal diagnoses.",
+      "evidence_sources": [
+        "ardupilot-offsets",
+        "compass",
+        "rolling",
+        "ros-camera"
+      ],
+      "basis_type": "editorial-guidance",
+      "limits": "Logs and reproducible observations are needed to distinguish alternatives."
+    },
+    {
+      "id": "SC-56",
+      "disposition": "expanded",
+      "section": "Change control",
+      "conclusion": "Remounting affects lever arms; known pure image scaling differs from changes to optics or undocumented modes.",
+      "evidence_sources": [
+        "lever-remount",
+        "opencv"
+      ],
+      "basis_type": "source",
+      "limits": "Temperature/impact checks are scoped engineering advice, not an invented universal interval."
+    },
+    {
+      "id": "SC-57",
+      "disposition": "expanded",
+      "section": "Worksheet",
+      "conclusion": "The worksheet records ARP/model, corner counts, shutter/event timing and separate qualification outcomes.",
+      "evidence_sources": [
+        "gnss-arp",
+        "kalibr-target",
+        "rolling",
+        "vim-validation"
+      ],
+      "basis_type": "editorial-guidance",
+      "limits": "A blank or completed template does not itself certify a sensor installation."
+    }
+  ],
+  "artifact_hashes": {
+    "integration/sensors-and-calibration.md": "ffa01256ea07a1699370472f9defb6e73e264acbe6868e412dc864f233cc2900",
+    "appendices/appendix-g-sensor-calibration-record.md": "7817ccef4d25692a770d60064f7ffcd50555271f6ea21e6f67acc6e975915352",
+    "assets/sensor-geometry.svg": "c7f7e2784aa5e2a55ab0a0dd6f602aa1d277ebb9334212f24236710b1c2d39c6"
+  },
+  "original_draft_hashes": {
+    "before-chapter.md": "5dda92a8bae7fc1cf047761150859856dc595a862ef14c8ae7bbf6b646b507d3",
+    "before-record.md": "036aa5706639a3fcf1b3caadca58b41c3a46ae21a2e4f0887fcd8cee39fe3dc9",
+    "before-evidence.json": "e29011f76d430ef82632957e80c844612924abd5457d140e786dae0f9174ada1"
+  }
+}

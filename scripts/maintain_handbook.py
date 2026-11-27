@@ -120,6 +120,9 @@ def main():
         status['sources']=[{'title':s['title'],'url':s['url'],'accessed':s['accessed'],
             'checked':source_state.get('sources',{}).get(s['id'],{}).get('checked','not attempted'),
             'status':source_state.get('sources',{}).get(s['id'],{}).get('status','not checked'),
+            'error':source_state.get('sources',{}).get(s['id'],{}).get('error'),
+            'http_status':source_state.get('sources',{}).get(s['id'],{}).get('http_status'),
+            'last_success':source_state.get('sources',{}).get(s['id'],{}).get('last_success'),
             'due':(date.fromisoformat(s['accessed'])+timedelta(days=s.get('review_days',365))).isoformat()}
             for s in read(ROOT/'data/evidence.json',{})['sources']]
         json_write(ROOT/'data/update-status.json',status)

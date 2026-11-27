@@ -66,11 +66,8 @@ jobs:
       - name: Compile Pages Functions
         run: npm run build:functions
 
-      - name: Install test browser
-        run: npx playwright install --with-deps chromium
-
       - name: Check mobile reporting, review, offline recovery and no-JavaScript access
-        run: npm run test:browser
+        run: bash scripts/check_browser_container.sh
 
       - name: Upload public browser verification
         if: always()

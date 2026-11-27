@@ -13,6 +13,13 @@ async function body(request,limit=262144){const text=await request.text();if(new
 function decodeSecret(secret){const value=secret.startsWith("whsec_")?secret.slice(6):secret;const normalized=value.replace(/-/g,"+").replace(/_/g,"/");try{return Uint8Array.from(atob(normalized),c=>c.charCodeAt(0));}catch{return enc.encode(secret);}}
 async function hmac(secret,message){const key=await crypto.subtle.importKey("raw",decodeSecret(secret),{name:"HMAC",hash:"SHA-256"},false,["sign"]);const signed=new Uint8Array(await crypto.subtle.sign("HMAC",key,enc.encode(message)));let raw="";for(const byte of signed)raw+=String.fromCharCode(byte);return btoa(raw);}
 async function recordEvent(env,entityType,entityId,eventType,data){const serialized=JSON.stringify(data),id=(await sha(`${entityType}\x1f${entityId}\x1f${eventType}\x1f${serialized}`)).slice(0,24),now=new Date().toISOString();await env.REPORTS.prepare("INSERT OR IGNORE INTO evidence_events(id,entity_type,entity_id,event_type,data,created) VALUES(?1,?2,?3,?4,?5,?6)").bind(id,entityType,entityId,eventType,serialized,now).run();return id;}
+async function providerResponse(env,responseId){
+ const remote=await fetch(`https://api.openai.com/v1/responses/${responseId}`,{headers:{authorization:`Bearer ${env.OPENAI_API_KEY}`}});
+ if(!remote.ok)throw Error(`Response retrieval failed: ${remote.status}`);
+ const declared=Number(remote.headers.get("content-length")||0);if(declared>2097152)throw Error("Completed response is too large");
+ const bytes=new Uint8Array(await remote.arrayBuffer());if(bytes.length>2097152)throw Error("Completed response is too large");
+ return JSON.parse(new TextDecoder().decode(bytes));
+}
 export async function verifyWebhook(raw,headers,secret,nowSeconds=Math.floor(Date.now()/1000)){
  const id=headers.get("webhook-id")||"",timestamp=headers.get("webhook-timestamp")||"",signature=headers.get("webhook-signature")||"";
  if(!secret||!id||!/^\d+$/.test(timestamp)||Math.abs(nowSeconds-Number(timestamp))>300)return false;
@@ -104,35 +111,82 @@ async function adjudicateIfTerminal(env,specId,now){
  await env.REPORTS.prepare("UPDATE research_specs SET state=?1,updated=?2 WHERE id=?3").bind(pending.count===0?"adjudicating":"researching",now,specId).run();
  if(pending.count===0){const spec=await env.REPORTS.prepare("SELECT data FROM research_specs WHERE id=?1").bind(specId).first();if(spec)await adjudicateStored(env,spec);}
 }
-async function processResponse(env,event){
+async function processResponse(env,event,response=null){
  const now=new Date().toISOString(),responseId=event.data.id;
  const job=await env.REPORTS.prepare("SELECT id,spec_id,role FROM research_jobs WHERE response_id=?1").bind(responseId).first();
- if(!job){await env.REPORTS.prepare("UPDATE webhook_events SET state='ignored',updated=?1 WHERE id=?2").bind(now,event.id).run();return;}
- const remote=await fetch(`https://api.openai.com/v1/responses/${responseId}`,{headers:{authorization:`Bearer ${env.OPENAI_API_KEY}`}});
- if(!remote.ok)throw Error(`Response retrieval failed: ${remote.status}`);
- const declared=Number(remote.headers.get("content-length")||0);if(declared>2097152)throw Error("Completed response is too large");const responseBytes=new Uint8Array(await remote.arrayBuffer());if(responseBytes.length>2097152)throw Error("Completed response is too large");const response=JSON.parse(new TextDecoder().decode(responseBytes));let packet=packetFromResponse(response);
+ if(!job){if(event.id)await env.REPORTS.prepare("UPDATE webhook_events SET state='ignored',updated=?1 WHERE id=?2").bind(now,event.id).run();return;}
+ response=response||await providerResponse(env,responseId);let packet=packetFromResponse(response);
  const spec=await env.REPORTS.prepare("SELECT claim_id,data FROM research_specs WHERE id=?1").bind(job.spec_id).first();if(!spec)throw Error("Research spec is missing");packet=validatePacket(packet,spec.claim_id,job.role);packet=await verifyPacketSources(packet,JSON.parse(spec.data),env);
  const data=JSON.stringify(packet),digest=await sha(data),packetId=await sha(`${job.id}|${digest}`);
  await env.REPORTS.prepare("INSERT OR IGNORE INTO evidence_packets(id,job_id,claim_id,role,data,digest,created) VALUES(?1,?2,?3,?4,?5,?6,?7)").bind(packetId.slice(0,24),job.id,packet.claim_id,packet.role,data,digest,now).run();
  await recordEvent(env,"job",job.id,"packet-stored",{packet_id:packetId.slice(0,24),digest,role:packet.role});
  await env.REPORTS.prepare("UPDATE research_jobs SET state='completed',updated=?1 WHERE id=?2").bind(now,job.id).run();
  await adjudicateIfTerminal(env,job.spec_id,now);
- await env.REPORTS.prepare("UPDATE webhook_events SET state='processed',updated=?1 WHERE id=?2").bind(now,event.id).run();
+ if(event.id)await env.REPORTS.prepare("UPDATE webhook_events SET state='processed',updated=?1 WHERE id=?2").bind(now,event.id).run();
 }
 async function failResponseProcessing(env,event,error){
  const now=new Date().toISOString(),job=await env.REPORTS.prepare("SELECT id,spec_id,role FROM research_jobs WHERE response_id=?1").bind(event.data.id).first();
  if(job){const reason=String(error?.message||"Evidence response processing failed").slice(0,500);await env.REPORTS.prepare("UPDATE research_jobs SET state='failed',last_error=?1,updated=?2 WHERE id=?3 AND state!='completed'").bind(reason,now,job.id).run();await recordEvent(env,"job",job.id,"packet-rejected",{reason,role:job.role});await adjudicateIfTerminal(env,job.spec_id,now);}
- await env.REPORTS.prepare("UPDATE webhook_events SET state='failed',updated=?1 WHERE id=?2").bind(now,event.id).run();
+ if(event.id)await env.REPORTS.prepare("UPDATE webhook_events SET state='failed',updated=?1 WHERE id=?2").bind(now,event.id).run();
 }
 async function processTerminalResponse(env,event){
  const now=new Date().toISOString(),responseId=event.data.id;
  const job=await env.REPORTS.prepare("SELECT id,spec_id,role FROM research_jobs WHERE response_id=?1").bind(responseId).first();
- if(!job){await env.REPORTS.prepare("UPDATE webhook_events SET state='ignored',updated=?1 WHERE id=?2").bind(now,event.id).run();return;}
+ if(!job){if(event.id)await env.REPORTS.prepare("UPDATE webhook_events SET state='ignored',updated=?1 WHERE id=?2").bind(now,event.id).run();return;}
  const state=event.type==="response.cancelled"?"cancelled":"failed";
  await env.REPORTS.prepare("UPDATE research_jobs SET state=?1,last_error=?2,updated=?3 WHERE id=?4 AND state!='completed'").bind(state,`Provider terminal event: ${event.type}`,now,job.id).run();
  await recordEvent(env,"job",job.id,"provider-terminal",{event_type:event.type,state,role:job.role});
  await adjudicateIfTerminal(env,job.spec_id,now);
- await env.REPORTS.prepare("UPDATE webhook_events SET state='processed',updated=?1 WHERE id=?2").bind(now,event.id).run();
+ if(event.id)await env.REPORTS.prepare("UPDATE webhook_events SET state='processed',updated=?1 WHERE id=?2").bind(now,event.id).run();
+}
+async function auditAutonomy(env,probe=false){
+ const db=env.REPORTS,now=Date.now();let trial={active:false,present:false};
+ try{const value=await trialStatus(db,now);trial={present:value.id===1,enabled:value.enabled===1,active:value.active,starts_ms:value.starts_ms??null,ends_ms:value.ends_ms??null};}catch{/* Missing trial schema remains inactive. */}
+ const dispatches=await db.prepare("SELECT count(*) total,sum(CASE WHEN started_ms>?1 THEN 1 ELSE 0 END) last_24h FROM research_trial_dispatches").bind(now-86400000).first();
+ const dailyClaims=await db.prepare("SELECT count(DISTINCT s.claim_id) count FROM research_trial_dispatches d JOIN research_specs s ON s.id=d.spec_id WHERE d.started_ms>?1").bind(now-86400000).first();
+ const specs=await db.prepare("SELECT state,count(*) count FROM research_specs GROUP BY state ORDER BY state").all();
+ const jobCounts=await db.prepare("SELECT state,count(*) count FROM research_jobs GROUP BY state ORDER BY state").all();
+ const decisions=await db.prepare("SELECT publication_state,count(*) count FROM evidence_decisions GROUP BY publication_state ORDER BY publication_state").all();
+ const rows=await db.prepare(`SELECT j.id,j.spec_id,j.role,j.state,j.attempts,j.response_id,j.created,j.updated,
+    CASE WHEN td.job_id IS NULL THEN 0 ELSE 1 END reserved,
+    CASE WHEN p.job_id IS NULL THEN 0 ELSE 1 END packet_stored
+   FROM research_jobs j JOIN research_specs s ON s.id=j.spec_id
+   LEFT JOIN research_trial_dispatches td ON td.job_id=j.id
+   LEFT JOIN evidence_packets p ON p.job_id=j.id
+   WHERE s.state IN ('planned','researching','adjudicating')
+   ORDER BY j.created,j.id LIMIT 100`).all();
+ const jobs=[];
+ for(const row of rows.results){
+  const job={...row,reserved:row.reserved===1,packet_stored:row.packet_stored===1};
+  if(probe&&job.response_id&&env.OPENAI_API_KEY&&["planned","queued","in_progress"].includes(job.state)){
+   try{const response=await providerResponse(env,job.response_id);job.provider_status=String(response.status||"unknown").slice(0,64);}
+   catch(error){job.provider_probe_error=String(error?.message||"Provider status unavailable").slice(0,128);}
+  }
+  jobs.push(job);
+ }
+ return {schema_version:1,provider_configured:!!env.OPENAI_API_KEY,webhook_configured:!!env.OPENAI_WEBHOOK_SECRET,
+  trial:{...trial,duration_ms:trial.present?trial.ends_ms-trial.starts_ms:null},
+  reservations:{total:Number(dispatches?.total||0),last_24h:Number(dispatches?.last_24h||0),distinct_claims_last_24h:Number(dailyClaims?.count||0),lifetime_limit:56},
+  specs:specs.results,jobs_by_state:jobCounts.results,decisions:decisions.results,jobs};
+}
+async function reconcileExisting(env){
+ const before=await auditAutonomy(env,true),summary={completed:0,terminalized:0,failed_validation:0,stale_without_response:0,unchanged:0};
+ const affected=new Set(),now=new Date().toISOString(),staleBefore=Date.now()-86400000;
+ for(const job of before.jobs){
+  if(job.response_id&&job.provider_status==="completed"){
+   const event={data:{id:job.response_id}};
+   try{await processResponse(env,event);summary.completed++;}
+   catch(error){await failResponseProcessing(env,event,error);summary.failed_validation++;}
+  }else if(job.response_id&&["failed","incomplete","cancelled"].includes(job.provider_status)){
+   const type=job.provider_status==="cancelled"?"response.cancelled":job.provider_status==="incomplete"?"response.incomplete":"response.failed";
+   await processTerminalResponse(env,{type,data:{id:job.response_id}});summary.terminalized++;
+  }else if(!job.response_id&&job.reserved&&!before.trial.active&&Date.parse(job.updated)<staleBefore&&["planned","queued","in_progress"].includes(job.state)){
+   await env.REPORTS.prepare("UPDATE research_jobs SET state='failed',last_error=?1,updated=?2 WHERE id=?3").bind("Reserved request has no response ID; expired trial reconciliation did not retry it",now,job.id).run();
+   await recordEvent(env,"job",job.id,"stale-reservation-closed",{role:job.role,reason:"missing-response-id-no-retry"});affected.add(job.spec_id);summary.stale_without_response++;
+  }else summary.unchanged++;
+ }
+ for(const specId of affected)await adjudicateIfTerminal(env,specId,now);
+ return {schema_version:1,summary,after:await auditAutonomy(env,false)};
 }
 export async function handleAutonomy(request,env,context){
  const url=new URL(request.url),path=url.pathname.replace(/^\/api\/autonomy\/?/,""),db=env.REPORTS;
@@ -144,6 +198,15 @@ export async function handleAutonomy(request,env,context){
  }
  if(!db)return respond(503,{error:"Autonomous evidence storage is not configured"});
  try{
+  if(path==="audit"&&request.method==="GET"){
+   if(!await reviewer(request,env.REVIEW_TOKEN))return respond(401,{error:"Reviewer authorization required"});
+   return respond(200,await auditAutonomy(env,url.searchParams.get("probe")==="1"));
+  }
+  if(path==="reconcile"&&request.method==="POST"){
+   if(!await reviewer(request,env.REVIEW_TOKEN))return respond(401,{error:"Reviewer authorization required"});
+   const input=(await body(request,4096)).data;if(input?.confirm!=="existing-jobs-only")return respond(400,{error:"Explicit existing-jobs-only confirmation is required"});
+   return respond(200,await reconcileExisting(env));
+  }
   if(["ledger","decisions"].includes(path)&&request.method==="GET"){
    if(!await reviewer(request,env.REVIEW_TOKEN))return respond(401,{error:"Reviewer authorization required"});
    const cursor=url.searchParams.get("cursor")||"";if(cursor&&!/^[0-9a-f]{24}$/.test(cursor))return respond(400,{error:"Invalid cursor"});

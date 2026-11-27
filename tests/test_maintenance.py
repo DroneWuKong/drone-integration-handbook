@@ -1,11 +1,14 @@
 import hashlib
+import http.client
 import json
 import tempfile
 import unittest
+import urllib.error
 from datetime import date
 from pathlib import Path
+from unittest.mock import Mock, patch
 from handbook_builder.autonomous import research_spec, verify_source_snapshots
-from handbook_builder.maintenance import apply_verified, pending, releases, update_watchlist, cell, scheduled_records
+from handbook_builder.maintenance import apply_verified, pending, releases, update_watchlist, cell, scheduled_records, GitHubReader, discover, render_watch
 
 TODAY=date(2026,10,7)
 STATEMENT='The documented protocol includes a sequence field.'
@@ -26,6 +29,62 @@ def bundle(path='integration/repository-updates.md'):
     return {'spec':spec,'packets':packets,'decision':{'id':'d'*24,'created_at':'2026-10-07T03:00:00Z'}}
 
 class MaintenanceTests(unittest.TestCase):
+    def test_release_review_leads_reach_only_affected_claims(self):
+        rows=[{'id':'affected','path':'autonomy/example.md','status':'unreviewed','statement':STATEMENT,'source_candidates':['https://example.test/old']},
+              {'id':'other','path':'autonomy/other.md','status':'unreviewed','statement':STATEMENT}]
+        watched=[{'id':'Example','status':'check-section','sections':['autonomy/example.md'],
+                  'url':'https://example.test/releases/v2','review_urls':['https://example.test/migration']}]
+        planned=scheduled_records({'records':rows},[],{},TODAY,watched)
+        self.assertEqual(planned[0]['source_candidates'],['https://example.test/migration','https://example.test/old','https://example.test/releases/v2'])
+        self.assertNotIn('source_candidates',planned[1])
+        self.assertEqual(rows[0]['source_candidates'],['https://example.test/old'])
+        watched[0]['status']='unavailable'
+        self.assertEqual(scheduled_records({'records':rows},[],{},TODAY,watched)[0]['source_candidates'],['https://example.test/old'])
+
+    def test_source_deadlines_are_relative_to_the_published_snapshot(self):
+        source = {"title": "Example", "url": "https://example.test", "accessed": "2026-10-07",
+                  "checked": "2026-11-11", "status": "reachable"}
+        snapshot = {"checked": "2026-11-11", "items": [], "sources": [
+            {**source, "due": "2026-11-06"}, {**source, "due": "2026-11-11"},
+            {**source, "due": "2026-11-12", "status": "unavailable"}]}
+        rendered = render_watch(snapshot)
+        self.assertIn("Overdue factual reviews: 1", rendered)
+        self.assertIn("| reachable | 2026-11-06 (overdue) |", rendered)
+        self.assertIn("| reachable | 2026-11-11 (due today) |", rendered)
+        self.assertIn("| unavailable | 2026-11-12 |", rendered)
+        self.assertNotIn("reviewed today", rendered)
+
+    def test_discovery_budget_spans_files_and_repeated_repository_entries(self):
+        import base64
+        calls=[]
+        def reader(resource):
+            calls.append(resource)
+            if '/contents/' in resource:
+                body='The documented telemetry protocol supports replay of recorded sensor messages for offline analysis.'
+                return {'content':base64.b64encode(body.encode()).decode(),'sha':'b'*40}
+            if '/commits/' in resource:return {'sha':'a'*40}
+            return {'default_branch':'main','private':False}
+        source={'repository':'example/repo','paths':['README.md','docs/one.md','docs/two.md','docs/three.md']}
+        other={'repository':'example/other','paths':['README.md']}
+        records,_=discover({'repositories':[source,source,other]},reader,TODAY)
+        self.assertEqual(sum(r['discovery_repository']=='example/repo' for r in records),3)
+        self.assertEqual(sum(r['discovery_repository']=='example/other' for r in records),1)
+        self.assertEqual(len([c for c in calls if '/contents/' in c]),4)
+        self.assertTrue(all('no hardware acceptance' in r['scope'] for r in records))
+
+    def test_github_reader_retries_transient_disconnect_only(self):
+        response=Mock();response.read.return_value=b'{"ok": true}'
+        response.__enter__=Mock(return_value=response);response.__exit__=Mock(return_value=False)
+        opener=Mock();opener.open.side_effect=[http.client.RemoteDisconnected("closed"),response]
+        with patch('handbook_builder.maintenance.urllib.request.build_opener',return_value=opener),patch('handbook_builder.maintenance.time.sleep'):
+            self.assertEqual(GitHubReader()('repos/owner/repo'),{'ok':True})
+        self.assertEqual(opener.open.call_count,2)
+        opener.open.reset_mock()
+        opener.open.side_effect=urllib.error.HTTPError('https://api.github.com/repos/o/r',404,'not found',{},None)
+        with patch('handbook_builder.maintenance.urllib.request.build_opener',return_value=opener):
+            with self.assertRaises(urllib.error.HTTPError):GitHubReader()('repos/o/r')
+        self.assertEqual(opener.open.call_count,1)
+
     def test_release_date_and_preview_are_not_conflated(self):
         rows=[{'tag_name':'v2','published_at':'2026-11-01T00:00:00Z'},
             {'tag_name':'v1.1-rc','published_at':'2026-10-06T00:00:00Z','prerelease':True},

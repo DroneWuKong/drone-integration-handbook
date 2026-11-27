@@ -43,6 +43,12 @@ jobs:
         run: |
           python3 -m pip install -r requirements.txt
           GITHUB_SHA="$(git rev-parse HEAD)" python3 build.py
+      - name: Restore source fingerprints and open review history
+        uses: actions/cache/restore@v4
+        with:
+          path: .local/source-review.json
+          key: evidence-source-state-${{ github.run_id }}
+          restore-keys: evidence-source-state-
       - name: Discover public candidates and check dated sources
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -112,6 +118,22 @@ jobs:
             sleep 15
           done
           exit 1
+      - name: Recover existing evidence jobs without paid dispatch
+        id: recovery
+        env:
+          AUTONOMY_DISPATCH_URL: ${{ secrets.AUTONOMY_DISPATCH_URL }}
+          AUTONOMY_REVIEW_TOKEN: ${{ secrets.AUTONOMY_REVIEW_TOKEN }}
+        run: |
+          # This only retrieves already-created responses and reconciles the
+          # existing ledger. It cannot reserve or start a replacement request.
+          .venv/bin/python scripts/audit_autonomy.py --reconcile-existing | tee .local/autonomy/recovery-summary.json
+          .venv/bin/python - <<'PY' >> "$GITHUB_OUTPUT"
+          import json
+          from pathlib import Path
+          from scripts.audit_autonomy import dispatch_ready
+          summary=json.loads(Path('.local/autonomy/recovery-summary.json').read_text())
+          print('dispatch_ready='+str(dispatch_ready(summary)).lower())
+          PY
       - name: Apply independently verified facts and prepare bounded research
         env:
           GITHUB_TOKEN: ${{ github.token }}
@@ -120,6 +142,7 @@ jobs:
         run: .venv/bin/python scripts/maintain_handbook.py --apply | tee .local/maintenance-summary.json
       - name: Start the next bounded independent evidence batch
         id: research
+        if: steps.recovery.outputs.dispatch_ready == 'true'
         # Provider outages or exhausted credits must not block public metadata.
         # Source retrieval, validation and publication remain required steps.
         continue-on-error: true
@@ -144,7 +167,7 @@ jobs:
           .venv/bin/python - <<'PY' >> "$GITHUB_STEP_SUMMARY"
           import json, os, sys
           from pathlib import Path
-          for name in ['maintenance-summary.json','autonomy/publication-summary.json','autonomy/plan.json']:
+          for name in ['autonomy/recovery-summary.json','maintenance-summary.json','autonomy/publication-summary.json','autonomy/plan.json']:
               path=Path('.local')/name
               if path.exists():
                   data=json.loads(path.read_text())
@@ -155,6 +178,8 @@ jobs:
           if outcome=='failure':
               print('Paid research did not complete. Public metadata can still be validated and published; this is not successful factual verification. Inspect the research step before retrying any uncertain dispatch.\n')
               print('::warning::Optional paid research failed; public metadata upkeep continues.',file=sys.stderr)
+          elif outcome=='skipped':
+              print('New paid research was skipped. Check recovery and publication-step outcomes to distinguish a closed trial/provider/workload gate from an earlier workflow failure. No trial was activated or renewed.\n')
           Path('.local/research-step-status.json').write_text(json.dumps({'outcome':outcome})+'\n')
           print('Progress comes from the private durable ledger; deployment changes do not reset paid research. Metadata checks continue after the non-renewing trial stops.')
           PY
@@ -216,8 +241,7 @@ jobs:
           python3 scripts/check_evidence.py
           python3 scripts/build_review_queue.py
           npm run build:functions
-          npx playwright install --with-deps chromium
-          npm run test:browser
+          bash scripts/check_browser_container.sh
       - name: Package the validated public revision
         run: python3 scripts/package_maintenance.py --output .local/maintenance-validated --include-tables
       - uses: actions/upload-artifact@v4

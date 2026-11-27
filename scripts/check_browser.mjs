@@ -55,6 +55,9 @@ for(const width of [320,390,1440]){
  await page.locator('[data-text-size-control]').click();await page.locator('.uas-text-size-panel:not([hidden]) input[value="default"]').check();await page.keyboard.press('Escape');
 }
 await page.setViewportSize({width:390,height:844});
+await page.emulateMedia({media:'print'});
+assert.equal(await page.locator('.chapter-body').evaluateAll(bodies=>bodies.every(body=>getComputedStyle(body).contentVisibility==='visible')),true);
+await page.emulateMedia({media:'screen'});
 await page.goto(base+"/reference.html");await page.waitForFunction(()=>document.querySelector("#load-status").textContent.startsWith("Public release"));
 assert.equal(await page.locator(".topbar .brand").textContent(),"UAS Handbookfield reference");assert.equal(await page.locator(".tool-rail").count(),1);assert.equal(await page.evaluate(()=>getComputedStyle(document.body).color),"rgb(210, 204, 190)");
 await page.screenshot({path:resolve(OUTPUT,"reference-mobile.png"),fullPage:false});

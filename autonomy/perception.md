@@ -1,5 +1,7 @@
 # Perception: VIO, SLAM & GPS-Denied State Estimation
 
+For the installation prerequisites behind these estimators, read [Sensors and Calibration](../integration/sensors-and-calibration.md): camera/IMU placement, rigid alignment, lever arms, boresight and timestamp relationships must be defined before interpreting estimator performance.
+
 GPS denial is the operational baseline in contested airspace — jammed,
 spoofed, or simply unavailable. When it happens, the drone still has to know
 where it is. This chapter is about how, and where the common answers break.

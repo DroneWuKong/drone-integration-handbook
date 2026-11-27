@@ -21,6 +21,7 @@ The handbook is independently published. Product and company names are used for 
 | Add companion compute, mesh, or TAK | [Adding a Companion Computer](integration/companion.md) |
 | Compare airframes | [Platform References](platforms/README.md) |
 | Understand autonomy requirements | [Levels of Drone Autonomy](autonomy/autonomy-levels.md) |
+| Place, align and calibrate sensors | [Sensors and Calibration](integration/sensors-and-calibration.md) and [installation record](appendices/appendix-g-sensor-calibration-record.md) |
 | Open a printable field reference | [Frequency Quick Reference Card](appendices/appendix-a-frequency-quick-reference.md) |
 | Check releases and source-review dates | [Update Watchlist](field/update-status.md) |
 | Discover emerging software | [Emerging Technology Watch](integration/emerging-technology-watch.md) |
@@ -85,6 +86,8 @@ Some material is currently represented by visible review notices rather than ope
 5. [Portable Telemetry Edge Node](integration/edge-node-k3s.md)
 6. [AI Wingman on the Orqa DTK APB — review hold](integration/wingman-apb.md)
 
+Sensor integration: [Sensors and Calibration — Placement, Alignment, Boresight and Lever Arms](integration/sensors-and-calibration.md). Covers physical installation, frames, intrinsics/extrinsics, timing, fresh-data checks and the local calibration companion's scope.
+
 ### Additional tracks
 
 - [Unsolved Problems](field/unsolved-problems.md)
@@ -101,6 +104,7 @@ Some material is currently represented by visible review notices rather than ope
 - [Appendix D — MSP Function Code Quick Reference](appendices/appendix-d-msp-quick-reference.md)
 - [Appendix E — CoT Type Code Reference](appendices/appendix-e-cot-type-codes.md)
 - [Appendix F — Regulatory and Open Resources](appendices/appendix-f-regulatory-resources.md)
+- [Appendix G — Sensor Installation and Calibration Record](appendices/appendix-g-sensor-calibration-record.md)
 
 ### Publisher and legal policies
 

@@ -102,6 +102,8 @@ CHAPTERS: Final[tuple[ChapterSpec, ...]] = (
     ChapterSpec("integration/repository-updates.md", 62, "Verified Repository Integration Notes"),
     ChapterSpec("field/update-status.md", 63, "Release and Information Update Watchlist"),
     ChapterSpec("integration/emerging-technology-watch.md", 64, "Emerging Technology Watch"),
+    ChapterSpec("integration/sensors-and-calibration.md", 65, "Sensors and Calibration: Placement, Alignment, Boresight and Lever Arms"),
+    ChapterSpec("appendices/appendix-g-sensor-calibration-record.md", 66, "Appendix G — Sensor Installation and Calibration Record"),
     ChapterSpec("legal/publisher-and-affiliations.md", 49, "Publisher & Editorial Independence"),
     ChapterSpec("legal/editorial-and-corrections-policy.md", 50, "Editorial, Corrections & Right of Reply"),
     ChapterSpec("legal/privacy.md", 51, "Privacy Notice"),
@@ -138,8 +140,8 @@ PARTS: Final[tuple[PartSpec, ...]] = (
     PartSpec(
         "integration",
         "Part 4 — Integration",
-        (13, 14, 15, 16, 36, 48, 55, 57, 58, 59, 60),
-        "Companion compute, mesh, TAK, edge nodes, onboard analysis, and system-level wiring.",
+        (13, 14, 15, 16, 36, 48, 55, 57, 58, 65, 59, 60),
+        "Companion compute, sensors and calibration, mesh, TAK, edge nodes, and system-level wiring.",
     ),
     PartSpec(
         "open-problems",
@@ -162,8 +164,8 @@ PARTS: Final[tuple[PartSpec, ...]] = (
     PartSpec(
         "appendices",
         "Appendices — Quick Reference",
-        (43, 44, 45, 46, 47),
-        "Printable and fast-lookup references for spectrum, MAVLink, MSP, CoT, and public regulatory sources.",
+        (43, 44, 45, 46, 47, 66),
+        "Printable references for spectrum, MAVLink, MSP, CoT, regulatory sources, and sensor calibration records.",
     ),
     PartSpec("updates", "Living Reference — Updates & Emerging Technology", (62, 63, 64),
         "Verified repository notes, dated release checks and emerging software discovery."),

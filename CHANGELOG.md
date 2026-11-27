@@ -1,5 +1,13 @@
 # Changelog
 
+## October 18, 2026 — Sensors and calibration
+
+- Add chapter 65 under Integration: physical sensor placement, coordinate frames, signed lever arms, boresight, intrinsics/extrinsics, timing, validation and fault diagnosis, with an original geometry diagram and calculated examples.
+- Add Appendix G (stable chapter 66), a printable installation/calibration record, and link both pages from related chapters and the content map.
+- Document the local Sensor Calibration Lab's four current workflows and the separate Orqa edition, preserving private distribution and software/physical verification boundaries.
+- Register primary-source claims and new article identities without changing existing anchors or evidence dispositions.
+- Deep fact-check follow-up: review 57 material claim groups against primary documentation, a versioned observability paper and pinned app source; correct calibration/validation terminology and compensation overstatements, and clarify reference points, target scale, flow contracts and timing.
+
 ## October 7, 2026 — Audit and living reference
 
 - Correct bench/preflight instructions, MAVLink serialization/enums/flags, GNSS parameters, free-space loss, companion energy and exact-device specifications. Remove unsupported universal range, video latency, autonomy threshold and nationality-based procurement conclusions.

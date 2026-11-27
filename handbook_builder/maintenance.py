@@ -7,12 +7,15 @@ from __future__ import annotations
 import copy
 import hashlib
 import html
+import http.client
 import json
 import re
+import time
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from urllib.parse import quote, urlencode, urlsplit
 import urllib.request
+import urllib.error
 import markdown
 from .autonomous import adjudicate, research_spec, stable_id, verify_source_snapshots, claim_type
 from .evidence import text
@@ -53,10 +56,18 @@ class GitHubReader:
         # Never forward a token to redirects or arbitrary source hosts.
         class NoRedirect(urllib.request.HTTPRedirectHandler):
             def redirect_request(self, *args, **kwargs): raise ValueError("Unexpected API redirect")
-        with urllib.request.build_opener(NoRedirect()).open(request, timeout=20) as response:
-            body = response.read(4 * 1024 * 1024 + 1)
-            if len(body) > 4 * 1024 * 1024: raise GitHubResponseTooLarge("API response too large")
-            return json.loads(body)
+        opener = urllib.request.build_opener(NoRedirect())
+        for attempt in range(3):
+            try:
+                with opener.open(request, timeout=20) as response:
+                    body = response.read(4 * 1024 * 1024 + 1)
+                    if len(body) > 4 * 1024 * 1024: raise GitHubResponseTooLarge("API response too large")
+                    return json.loads(body)
+            except urllib.error.HTTPError as error:
+                if error.code not in (429, 500, 502, 503, 504) or attempt == 2: raise
+            except (http.client.RemoteDisconnected, urllib.error.URLError, TimeoutError, ConnectionError):
+                if attempt == 2: raise
+            time.sleep(.2 * (attempt + 1))
 
 def release_rows(reader, repository, maximum=100):
     """Keep the existing history window without lifting the response-size cap."""
@@ -131,6 +142,9 @@ def discover(config, reader, today):
             if not re.fullmatch(r"[0-9a-f]{40}", sha): raise ValueError("Invalid source revision")
             observations.append({"repository": repo, "revision": sha, "pushed": meta.get("pushed_at"), "checked": today.isoformat(), "status": "observed"})
             for path in source.get("paths", ["README.md"]):
+                # The discovery budget belongs to the repository, not each file.
+                # Also account for repeated repository entries in configuration.
+                if sum(x.get("discovery_repository") == repo for x in records) >= 3: break
                 if not re.fullmatch(r"[a-zA-Z0-9_./-]+", path) or ".." in Path(path).parts: raise ValueError("Invalid discovery path")
                 obj = reader("repos/" + repo + "/contents/" + path + "?ref=" + sha)
                 body = base64.b64decode(obj["content"], validate=False).decode("utf-8")
@@ -204,14 +218,29 @@ def render_watch(status):
         url = row.get("url") or "https://github.com/" + row["repository"] + "/releases"
         lines.append(f"| [{cell(row['id'])}]({url}) | {cell(row.get('covered') or 'not version-pinned')} | {cell(row.get('latest') or 'unknown')} / {cell(row.get('released') or 'unknown')} | {cell(row.get('preview') or 'none observed')} | {cell(row['status'])} | {links} | {row['next_check']} |")
     lines += ["", "## Check list", "", "- Firmware: changed parameters, units, defaults, board targets and configurator compatibility.", "- Protocols: XML/DSDL definitions, versioned serialization, enums and service support.", "- Video/compute: image/kernel/driver/compiler compatibility, model operators and timing boundary.", "- Procurement/regulations: exact authority, effective date, configuration and superseding material.", "- Prices/availability: current first-party offer/date; a release is not stock availability.", "", "Source availability and due dates are checked nightly. Software release metadata is refreshed nightly; each entry has a seven-day maximum intended interval. A failed check retains the previous observation as unavailable rather than claiming freshness. New releases trigger independent claim checks; they never silently change an aircraft's configuration.", "", "See [emerging projects](../integration/emerging-technology-watch.md) and [repository notes](../integration/repository-updates.md)."]
+    review_rows = [r for r in status["items"] if r.get("status") == "check-section" and r.get("review_urls")]
+    if review_rows:
+        lines += ["", "## Primary sources for version review", "",
+            "These links are research leads, not approval to upgrade. Covered versions and factual verification dates remain unchanged until the independent exact-statement gate passes."]
+        for row in review_rows:
+            links = ", ".join(f"[source {i}]({url})" for i,url in enumerate(row["review_urls"],1))
+            lines.append(f"- {cell(row['id'])}: covered {cell(row.get('covered') or 'not pinned')}; observed stable {cell(row.get('latest') or 'unknown')}. {links}")
     if status.get('repositories'):
         lines += ['', '## Related repository discovery', '', '| Repository | Observed revision | Last push | Check attempted | Status |', '|---|---|---|---|---|']
         for row in status['repositories']:
             lines.append(f"| [{cell(row['repository'])}](https://github.com/{row['repository']}) | {cell((row.get('revision') or 'unknown')[:12])} | {cell((row.get('pushed') or 'unknown')[:10])} | {row['checked']} | {cell(row['status'])} |")
     if status.get("sources"):
-        lines += ["", "## Source checks and review dates", "", "Reachability is a check; the verification date below is the last factual review. Unavailable checks retain prior fingerprints.", "", "| Source | Last verified/accessed | Check attempted | Availability | Next factual review |", "|---|---|---|---|---|"]
+        as_of = date.fromisoformat(status["checked"])
+        overdue = sum(date.fromisoformat(source["due"]) < as_of for source in status["sources"])
+        lines += ["", "## Source checks and review dates", "", "Reachability is a check; the verification date below is the last factual review. Unavailable checks retain prior fingerprints.", "", f"**Overdue factual reviews: {overdue}** as of {as_of.isoformat()} UTC.", "", "| Source | Last verified/accessed | Check attempted | Availability | Next factual review |", "|---|---|---|---|---|"]
         for source in status["sources"]:
-            lines.append(f"| [{cell(source['title'])}]({source['url']}) | {source['accessed']} | {source['checked']} | {cell(source['status'])} | {source['due']} |")
+            due = date.fromisoformat(source["due"])
+            label = " (overdue)" if due < as_of else " (due today)" if due == as_of else ""
+            availability = source["status"]
+            if availability == "unavailable":
+                detail = "HTTP " + str(source["http_status"]) if source.get("http_status") else source.get("error")
+                if detail: availability += " (" + str(detail) + ")"
+            lines.append(f"| [{cell(source['title'])}]({source['url']}) | {source['accessed']} | {source['checked']} | {cell(availability)} | {source['due']}{label} |")
     return "\n".join(lines) + "\n"
 
 def render_emerging(status):
@@ -241,7 +270,12 @@ def scheduled_records(snapshot, sources, source_state, today, watched=None):
             cycle = max(1, (today - verified).days // days)
         else: cycle = today.toordinal() // 30
         fingerprints = {s: source_state.get("sources", {}).get(s, {}).get("digest", "") for s in record.get("sources", [])}
+        review_leads = [url for row in (watched or [])
+            if record.get("path") in row["sections"] and row.get("status") == "check-section"
+            for url in [row.get("url"), *row.get("review_urls", [])] if url]
         item = {**record, "review_cycle": cycle, "evidence_revision": stable_id(json.dumps(fingerprints, sort_keys=True)) if fingerprints else ""}
+        if review_leads:
+            item["source_candidates"] = sorted(set(item.get("source_candidates", []) + review_leads))
         item.update(triage(item)); records.append(item)
     return records
 

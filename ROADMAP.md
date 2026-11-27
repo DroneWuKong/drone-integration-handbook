@@ -1,5 +1,9 @@
 # Drone Integration Handbook Roadmap
 
+## Implemented — sensors and calibration (18 October 2026)
+
+Chapter 65 and Appendix G cover sensor placement, coordinate frames, alignment, boresight, lever arms, timing, fresh-data validation and an installation record. The chapter explains the companion app's scope. The [fact-check report](docs/reviews/2026-10-18-sensor-calibration-fact-check.md) records the source review and software checks; physical qualification remains separate.
+
 This file tracks **current handbook work only**. Completed historical work remains available in Git history and in [`CHANGELOG.md`](CHANGELOG.md).
 
 Last reconciled: **October 7, 2026**

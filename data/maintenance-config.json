@@ -6,6 +6,9 @@
       "repository": "ArduPilot/ardupilot",
       "tag_prefix": "Copter-",
       "covered": "Copter-4.7.1",
+      "review_urls": [
+        "https://github.com/ArduPilot/ardupilot/blob/Copter-4.7.3/ArduCopter/ReleaseNotes.txt"
+      ],
       "check_days": 7,
       "sections": [
         "components/rtk-ppk-gps-integration.md",
@@ -37,6 +40,10 @@
       "id": "PX4",
       "repository": "PX4/PX4-Autopilot",
       "covered": "v1.17.0",
+      "review_urls": [
+        "https://docs.px4.io/v1.18/en/releases/1.18",
+        "https://docs.px4.io/v1.17/en/flight_modes/offboard"
+      ],
       "check_days": 7,
       "sections": [
         "autonomy/onboard-ai-control.md",
@@ -112,6 +119,43 @@
       "repository": "DroneWuKong/Field-Kit",
       "paths": [
         "README.md"
+      ]
+    },
+    {
+      "repository": "DroneWuKong/Prismo-Calibration",
+      "paths": [
+        "README.md",
+        "apb/docs/ORQA_EDITION.md",
+        "apb/docs/SENSOR_RECORDINGS.md",
+        "apb/docs/MANUAL_ALIGNMENT.md"
+      ]
+    },
+    {
+      "repository": "DroneWuKong/Orqa_Betaflight_Ports",
+      "paths": [
+        "README.md",
+        "docs/AUDIT.md",
+        "docs/TESTING.md",
+        "docs/MAINTENANCE.md",
+        "companion/apb/QUICKSTART.md"
+      ]
+    },
+    {
+      "repository": "DroneWuKong/Orqa_ArduPilot_Ports",
+      "paths": [
+        "README.md",
+        "docs/AUDIT.md",
+        "docs/TESTING.md",
+        "docs/MAINTENANCE.md",
+        "companion/apb/QUICKSTART.md"
+      ]
+    },
+    {
+      "repository": "DroneWuKong/betaflight-improvements",
+      "paths": [
+        "README.md",
+        "backlog/README.md",
+        "docs/WORKFLOW.md"
       ]
     }
   ],

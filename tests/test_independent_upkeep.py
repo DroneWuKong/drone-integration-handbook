@@ -12,6 +12,42 @@ from scripts import maintain_handbook, package_maintenance, run_autonomous_evide
 
 
 class IndependentUpkeepTests(unittest.TestCase):
+    def test_private_recovery_precedes_publication_and_cannot_dispatch(self):
+        workflow=(Path(__file__).resolve().parents[1]/'.github/workflows/evidence-facts.yml').read_text()
+        prepare=workflow.split('\n  prepare:',1)[1].split('\n  validate:',1)[0]
+        recovery=prepare.index('scripts/audit_autonomy.py --reconcile-existing')
+        self.assertLess(recovery,prepare.index('scripts/maintain_handbook.py --apply'))
+        self.assertLess(recovery,prepare.index('scripts/run_autonomous_evidence.py'))
+        self.assertIn('autonomy/recovery-summary.json',prepare)
+        self.assertIn('distinguish a closed trial/provider/workload gate from an earlier workflow failure',prepare)
+        self.assertNotIn('exact factual publication checks still ran',prepare)
+        # No raw audit file belongs in artifacts or the public candidate package.
+        self.assertNotIn('--output',prepare[prepare.index('- name: Recover existing'):prepare.index('- name: Apply independently')])
+
+    def test_browser_validators_use_the_lockfile_playwright_image(self):
+        root = Path(__file__).resolve().parents[1]
+        lock = json.loads((root / "package-lock.json").read_text())
+        version = lock["packages"]["node_modules/playwright"]["version"]
+        launcher = (root / "scripts" / "check_browser_container.sh").read_text()
+        self.assertRegex(launcher, rf'mcr\.microsoft\.com/playwright:v{version.replace(".", "[.]")}-noble@sha256:[0-9a-f]{{64}}')
+        self.assertIn("--network none", launcher)
+        self.assertIn("npm run test:browser", launcher)
+        for name in ("link-check", "evidence-review", "evidence-facts"):
+            with self.subTest(workflow=name):
+                workflow = (root / ".github" / "workflows" / f"{name}.yml").read_text()
+                validate = workflow.split("\n  validate:", 1)[1].split("\n  publish:", 1)[0]
+                self.assertIn("bash scripts/check_browser_container.sh", validate)
+                self.assertNotIn("playwright install --with-deps", validate)
+
+    def test_private_inventory_restores_shared_source_history_before_monitoring(self):
+        workflow=(Path(__file__).resolve().parents[1]/'.github/workflows/evidence-facts.yml').read_text()
+        inventory=workflow.split('\n  inventory:',1)[1].split('\n  prepare:',1)[0]
+        self.assertLess(inventory.index('uses: actions/cache/restore@v4'),
+                        inventory.index('python3 scripts/check_sources.py'))
+        restore=inventory.split('uses: actions/cache/restore@v4',1)[1].split('      - name:',1)[0]
+        self.assertIn('path: .local/source-review.json',restore)
+        self.assertIn('restore-keys: evidence-source-state-',restore)
+
     def run_cycle(self, private_reads, *, configured=True):
         directory = tempfile.TemporaryDirectory()
         self.addCleanup(directory.cleanup)

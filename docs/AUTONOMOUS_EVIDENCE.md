@@ -149,6 +149,19 @@ Resolution records Brier scores for the AI and frozen baseline. The public evide
 - Source monitoring compares current content with preserved fingerprints and reopens affected work rather than overwriting history.
 - Hardware validation, if later added, must remain an explicit `field-observation` source class. It cannot replace or disable the software-only path.
 
+The public status route deliberately reports only aggregate state. A reviewer-authenticated
+`GET /api/autonomy/audit?probe=1` reports provider/webhook presence, the fixed trial window,
+reservation counts and the provider status of existing nonterminal response IDs without
+returning evidence packets. It never creates a reservation or provider request.
+
+If a webhook was missed, `POST /api/autonomy/reconcile` with the exact confirmation
+`{"confirm":"existing-jobs-only"}` retrieves only response IDs already stored in the ledger.
+Completed responses pass through the normal source retrieval, packet validation and deterministic
+adjudication path. Provider-terminal responses and stale expired-trial reservations with no
+response ID become terminal and can abstain; they are never resubmitted or refunded. The manual
+`evidence-autonomy-audit` workflow runs this path only on `[self-hosted, prismo]`, verifies the
+exact production deployment first, and prints a sanitized summary without private evidence or IDs.
+
 ## Verification
 
 ```sh
@@ -177,3 +190,9 @@ Public validation runs on GitHub-hosted Ubuntu after the private self-hosted run
 Public metadata and private factual research now run in separate workflows. `evidence-review.yml` builds, checks sources, discovers public projects/releases and validates/publishes watchlists entirely on hosted Ubuntu, with no private reviewer credentials or paid dispatch. Its independent concurrency group lets those updates continue while the cluster is busy or offline.
 
 After a successful trusted main-branch metadata run, `evidence-facts.yml` builds a public inventory and candidate list on hosted Ubuntu, then performs ledger reads, exact fact promotion and the existing bounded research batch in the self-hosted pool. Only public snapshot/discovery/source-monitor files enter the cluster's input artifact. Private packets remain there; eligible public edits still pass the complete hosted validation and fast-forward publication gate. A queued private research run does not imply public watchlist maintenance failed.
+
+Before factual promotion, the private workflow runs `audit_autonomy.py --reconcile-existing` against the exact deployed revision. It retrieves existing provider responses and reconciles terminal or stale reserved work through the existing recovery endpoint; it cannot create a replacement request. Reservation totals must remain unchanged. Only the sanitized summary is retained in the private job log, not raw response IDs or packets. Recovery failures stop private publication rather than inventing successful research.
+
+The sanitized recovery result also preflights the original trial's active state, provider/webhook configuration and remaining lifetime/rolling workload allowance. A closed gate skips new paid dispatch, while existing-job recovery and eligible exact-statement publication still run. Backend atomic limits remain authoritative; this preflight cannot activate, extend or renew the trial. Previously consumed reservations are never refunded.
+
+Version-review source leads in the release configuration flow into affected claim specifications only when a newer stable release requires section review. They are not evidence packets or upgrade approval. Source-monitor failures preserve the prior digest and last successful retrieval where recorded, expose the current HTTP/error class, and leave factual verification dates and overdue reviews unchanged.

@@ -3,15 +3,32 @@ import json
 import sys
 import tempfile
 import unittest
+import urllib.error
 from datetime import date
 from pathlib import Path
 from unittest.mock import patch
 from handbook_builder.evidence import load_evidence,decorate_and_inventory
 from handbook_builder.site import discover_entries
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"scripts"))
-from check_sources import inspect
+from check_sources import inspect,merge_tasks,task_id
 ROOT=Path(__file__).resolve().parents[1]
 class EvidenceTests(unittest.TestCase):
+    def test_monitor_errors_keep_prior_success_but_not_stale_http_codes(self):
+        source={"id":"test","url":"https://example.test","accessed":"2026-10-07","review_days":30}
+        old={"digest":"old","last_success":"2026-10-30","http_status":403}
+        def forbidden(_):raise urllib.error.HTTPError(source["url"],403,"forbidden",{},None)
+        _,result,tasks=inspect(source,old,date(2026,11,25),forbidden)
+        self.assertEqual((result["digest"],result["last_success"],result["http_status"]),("old","2026-10-30",403))
+        def timeout(_):raise TimeoutError()
+        _,result,_=inspect(source,result,date(2026,11,26),timeout)
+        self.assertNotIn("http_status",result)
+        self.assertEqual(result["error"],"TimeoutError")
+        _,result,_=inspect(source,result,date(2026,11,27),lambda _:"new")
+        self.assertEqual(result["last_success"],"2026-11-27")
+        self.assertNotIn("error",result)
+        self.assertNotIn("http_status",result)
+        self.assertIn("verification-due",{t["reason"] for t in tasks})
+
     def test_frozen_profile_urls_do_not_follow_directory_order(self):
         current={e.relative_path:(e.identity,e.anchor) for e in discover_entries(ROOT)}
         original=Path.iterdir
@@ -19,7 +36,7 @@ class EvidenceTests(unittest.TestCase):
         with patch.object(Path,"iterdir",reverse):
             reordered={e.relative_path:(e.identity,e.anchor) for e in discover_entries(ROOT)}
         self.assertEqual(current,reordered)
-        self.assertEqual(len(current),163)
+        self.assertEqual(len(current),165)
     def test_missing_and_duplicate_sources_fail_closed(self):
         data=json.loads((ROOT/"data/evidence.json").read_text())
         with tempfile.TemporaryDirectory() as td:
@@ -41,6 +58,19 @@ class EvidenceTests(unittest.TestCase):
         result=inspect(source,{"digest":"old"},date(2026,10,1),unavailable)
         self.assertEqual(result[1]["digest"],"old")
         self.assertIn("source-unavailable",{t["reason"] for t in result[2]})
+
+    def test_monitor_compacts_duplicate_open_tasks_without_erasing_history(self):
+        old={
+            "legacy-a":{"id":"legacy-a","source_id":"test","reason":"source-content-changed","observed":"2026-09-01","state":"needs-review"},
+            "legacy-b":{"id":"legacy-b","source_id":"test","reason":"source-content-changed","observed":"2026-09-02","state":"needs-review"}}
+        incoming=[{"id":task_id("test","source-content-changed"),"source_id":"test","reason":"source-content-changed",
+            "latest_revision":"new","observed":"2026-10-28","state":"needs-review","scope":"monitor only"}]
+        merged=merge_tasks(old,incoming,date(2026,10,28));stable=task_id("test","source-content-changed")
+        self.assertEqual(sum(t["state"]=="needs-review" for t in merged.values()),1)
+        self.assertEqual(merged[stable]["latest_revision"],"new")
+        self.assertEqual(merged[stable]["first_observed"],"2026-09-01")
+        self.assertEqual(merged["legacy-a"]["superseded_by"],stable)
+        self.assertEqual(merged["legacy-b"]["state"],"superseded")
 
     def test_correction_is_draft_deduplicable_and_preserves_old_version(self):
         from prepare_correction import prepare

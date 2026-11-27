@@ -1,5 +1,7 @@
 # Sensor Payload Integration
 
+Start with [Sensors and Calibration](../integration/sensors-and-calibration.md) for physical placement, coordinate frames, lever arms, boresight and timing. Retain the installation's geometry and checks in the [sensor record](../appendices/appendix-g-sensor-calibration-record.md).
+
 Hanging a sensor off your drone is not plug-and-play. The mechanical interface, the electrical interface, the firmware configuration, and the data pipeline are four separate problems that all interact. Get any one wrong and you either damage the aircraft (CG shift causing attitude instability), damage the payload (vibration destroying a LiDAR scan), or just get useless data (GPS-triggered shutter not synced to IMU). This guide covers all four.
 
 ---
